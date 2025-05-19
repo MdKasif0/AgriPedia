@@ -3,8 +3,7 @@
 
 import Link from 'next/link';
 import { Leaf, Search, Heart, UserCircle, ScanLine } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
@@ -19,7 +18,11 @@ interface LinkButtonProps {
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({ href, icon: Icon, label, currentPathname, isDialog, onDialogTrigger }) => {
-  const isActive = !isDialog && currentPathname === href;
+  const isActive = !isDialog && (
+    currentPathname === href || 
+    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section")
+  );
+
 
   const content = (
     <>
@@ -59,9 +62,15 @@ export default function MobileBottomNav() {
 
   const navItems = [
     { href: "/", icon: Leaf, label: "Discover" },
-    { href: "/search", icon: Search, label: "Search", isDialog: true, onDialogTrigger: () => setIsScanDialogOpen(true) }, // Placeholder for a dedicated search page or scan
+    { 
+      href: "/scan", // href is not strictly used for dialog, but good for consistency
+      icon: ScanLine, 
+      label: "Scan", 
+      isDialog: true, 
+      onDialogTrigger: () => setIsScanDialogOpen(true) 
+    },
     { href: "/#favorites-section", icon: Heart, label: "Favorites" },
-    { href: "/profile", icon: UserCircle, label: "Profile" }, // Placeholder
+    // { href: "/profile", icon: UserCircle, label: "Profile" }, // Placeholder
   ];
 
   return (
@@ -76,7 +85,7 @@ export default function MobileBottomNav() {
               label={item.label}
               currentPathname={pathname}
               isDialog={item.isDialog}
-              onDialogTrigger={item.isDialog ? () => setIsScanDialogOpen(true) : undefined}
+              onDialogTrigger={item.isDialog ? item.onDialogTrigger : undefined}
             />
           ))}
         </div>

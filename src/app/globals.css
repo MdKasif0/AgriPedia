@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif; /* Updated to use --font-sans */
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
 @layer base {
-  /* New Modern Dark Theme (inspired by provided image) */
+  /* Modern Dark Theme (Restored & Refined) */
   :root {
     --background: 220 10% 10%; /* Very Dark Gray/Almost Black */
     --foreground: 220 10% 95%; /* Light Gray/White */

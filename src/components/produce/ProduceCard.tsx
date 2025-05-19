@@ -36,10 +36,8 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
             variant="default" 
             size="sm" 
             className="w-full rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors"
-            // Making the whole card clickable, so this button is more for visual cue
-            // It doesn't need its own separate click handler here.
-            asChild={false} // Important: if Link wraps Card, Button should not be asChild for Link's behavior
-            tabIndex={-1} // Prevents tabbing to this if card is focusable
+            asChild={false}
+            tabIndex={-1}
           >
             View Details <ChevronRight size={18} className="ml-1" />
           </Button>
