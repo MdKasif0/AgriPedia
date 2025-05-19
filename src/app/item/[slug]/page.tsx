@@ -153,7 +153,7 @@ export default function ItemPage() {
         <IconLabel icon={CalendarDays} label="Growth Duration">
           <p>{produce.growthDuration}</p>
         </IconLabel>
-        <IconLabel icon={Sprout} label="Cultivation Process" className="md:col-span-2">
+        <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2">
           <p className="whitespace-pre-line">{produce.cultivationProcess}</p>
         </IconLabel>
       </div>
@@ -203,3 +203,4 @@ export default function ItemPage() {
     </div>
   );
 }
+

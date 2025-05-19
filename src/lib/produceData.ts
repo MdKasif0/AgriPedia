@@ -62,8 +62,21 @@ const produceDatabase: ProduceInfo[] = [
       { name: 'Oral Allergy Syndrome (OAS)', severity: 'Mild', details: 'Often linked to birch pollen allergy. Symptoms include itching or swelling of the mouth, lips, tongue, and throat.'},
       { name: 'Pesticide Residues', severity: 'Varies', details: 'Conventionally grown apples can have pesticide residues. Opting for organic or thorough washing is recommended.'}
     ],
-    cultivationProcess: 'Grown from seeds or grafting. Requires well-drained soil and full sun. Regular pruning is important for fruit production.',
-    growthDuration: '3-5 years to first fruit from sapling; fruits mature in 100-200 days depending on variety.',
+    cultivationProcess: `Step-by-Step Growing Guide:
+1. Planting: Plant bare-root trees in early spring or container-grown trees anytime soil is workable. Choose a sunny location with good air circulation.
+2. Soil: Apples prefer well-drained, loamy soil with a slightly acidic to neutral pH (6.0-7.0). Amend soil with compost before planting.
+3. Watering: Water young trees regularly, especially during dry periods (1-2 inches per week). Mature trees are more drought-tolerant but benefit from deep watering during prolonged drought.
+4. Fertilizing: Apply a balanced fertilizer in early spring before new growth begins. Avoid over-fertilizing, which can lead to excessive vegetative growth.
+5. Pruning: Prune annually during dormancy (late winter/early spring) to maintain shape, remove dead/diseased wood, and encourage fruit production.
+6. Pollination: Most apple varieties require cross-pollination from a different compatible apple variety. Ensure a suitable pollinator is nearby.
+7. Pest & Disease Control: Monitor for common pests (e.g., codling moth, aphids) and diseases (e.g., apple scab, fire blight). Use appropriate organic or chemical controls as needed.
+
+Ideal Conditions:
+- Climate: Temperate climates with a distinct winter chilling period (specific hours vary by variety).
+- Sunlight: Full sun (at least 6-8 hours per day).
+- Soil: Well-drained loam.
+- Water: Consistent moisture, especially for young trees.`,
+    growthDuration: 'Typically 3-5 years for a young tree to bear its first significant fruit crop. Fruits mature in 100-200 days from bloom, depending on the variety and climate.',
   },
   {
     id: 'banana',
@@ -102,8 +115,22 @@ const produceDatabase: ProduceInfo[] = [
       { name: 'Latex-Fruit Syndrome', severity: 'Moderate', details: 'Individuals allergic to latex may also react to bananas. Symptoms can range from mild oral reactions to anaphylaxis in severe cases.' },
       { name: 'Tyramine Content', severity: 'Mild', details: 'Can trigger migraines in sensitive individuals, especially when overripe.' }
     ],
-    cultivationProcess: 'Propagated from suckers or corms. Thrives in tropical climates with high humidity and rainfall. Requires rich, well-drained soil.',
-    growthDuration: '9-12 months from planting to harvest.',
+    cultivationProcess: `Step-by-Step Growing Guide:
+1. Propagation: Bananas are typically grown from "pups" or suckers (side shoots from the main stem) or corms.
+2. Site Selection: Choose a location with full sun, protection from strong winds, and excellent drainage.
+3. Soil: Bananas thrive in rich, fertile, well-drained soil, high in organic matter. Ideal pH is 5.5-6.5.
+4. Planting: Dig a large hole and amend with compost. Plant pups ensuring the corm is well-covered.
+5. Watering: Bananas are heavy feeders and require consistent moisture, especially during warm weather. Water deeply and regularly, but avoid waterlogging.
+6. Fertilizing: Apply a balanced fertilizer rich in potassium regularly (e.g., every 1-2 months during the growing season). Mulching helps retain moisture and suppress weeds.
+7. De-suckering: Remove excess suckers, leaving only one or two strong ones to develop for the next crop.
+8. Harvesting: The fruit bunch is harvested when the bananas are plump but still green. The main plant dies after fruiting, and the next generation grows from the suckers.
+
+Ideal Conditions:
+- Climate: Tropical or subtropical, warm and humid. Frost-sensitive.
+- Sunlight: Full sun (at least 6 hours).
+- Soil: Rich, well-drained, loamy soil with plenty of organic matter.
+- Water: High water requirement; consistent moisture is key.`,
+    growthDuration: 'Approximately 9-12 months from planting a pup to harvesting the first bunch of bananas. Each stem fruits only once.',
   },
   {
     id: 'carrot',
@@ -142,8 +169,21 @@ const produceDatabase: ProduceInfo[] = [
       { name: 'Oral Allergy Syndrome (OAS)', severity: 'Mild', details: 'Associated with celery-mugwort-birch pollen allergies. Symptoms are usually mild and localized to the mouth and throat.' },
       { name: 'Carotenemia', severity: 'Mild', details: 'Excessive consumption can lead to a harmless yellowing of the skin, particularly palms and soles.'}
     ],
-    cultivationProcess: 'Grown from seeds in loose, sandy soil. Prefers cool weather. Thinning is necessary for good root development.',
-    growthDuration: '70-80 days from sowing to harvest.',
+    cultivationProcess: `Step-by-Step Growing Guide:
+1. Soil Preparation: Carrots need loose, well-drained, sandy loam or loamy soil, free of stones and debris, to allow roots to grow straight. Work the soil deeply (12 inches).
+2. Sowing Seeds: Sow seeds directly into the garden bed in early spring, about 2-3 weeks before the last expected frost, or in late summer for a fall harvest. Plant seeds 1/4 to 1/2 inch deep, in rows 1 foot apart.
+3. Watering: Keep the soil consistently moist during germination (can take 1-3 weeks). Water regularly throughout the growing season, aiming for about 1 inch per week.
+4. Thinning: Once seedlings are a few inches tall, thin them to stand 2-3 inches apart. This is crucial for proper root development.
+5. Weeding: Keep the area weed-free, as carrots compete poorly with weeds. Mulch can help.
+6. Fertilizing: Carrots are not heavy feeders. Too much nitrogen can cause hairy roots. A light application of a balanced fertilizer or compost worked into the soil before planting is usually sufficient.
+7. Harvesting: Carrots are typically ready to harvest 60-80 days after sowing, depending on the variety. Harvest when roots reach desired size and color.
+
+Ideal Conditions:
+- Climate: Cool-weather crop. Best growth occurs when temperatures are between 60-70°F (15-21°C).
+- Sunlight: Full sun (at least 6 hours), can tolerate light shade in hotter climates.
+- Soil: Deep, loose, well-drained sandy loam. pH 6.0-6.8.
+- Water: Consistent moisture, especially during root development.`,
+    growthDuration: 'Generally 60-80 days from sowing seeds to harvest, depending on the variety and growing conditions.',
   },
   // Add more produce items here
 ];
@@ -200,3 +240,4 @@ export function getUniqueSeasons(): string[] {
   const allSeasons = produceDatabase.flatMap(p => p.seasons);
   return Array.from(new Set(allSeasons)).sort();
 }
+
