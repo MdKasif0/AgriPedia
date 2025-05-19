@@ -11,9 +11,11 @@ import VitaminChart from '@/components/charts/VitaminChart';
 import MineralChart from '@/components/charts/MineralChart';
 import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
-  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning
+  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
+  CalendarCheck2, CalendarX2, Store, LocateFixed
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
@@ -22,7 +24,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; // Using default for moderate, which is primary color
+      return 'default';
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -36,6 +38,13 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
   }
 };
 
+const getCurrentSeason = (): string => {
+  const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
+  if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
+  if (month >= 5 && month <= 7) return 'Summer'; // Jun, Jul, Aug
+  if (month >= 8 && month <= 10) return 'Autumn'; // Sep, Oct, Nov
+  return 'Winter'; // Dec, Jan, Feb
+};
 
 export default function ItemPage() {
   const params = useParams();
@@ -43,6 +52,12 @@ export default function ItemPage() {
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
+
+  const [isCurrentlyInSeason, setIsCurrentlyInSeason] = useState<boolean | null>(null);
+  const [currentSeasonMessage, setCurrentSeasonMessage] = useState<string>('');
+
+  const [locationInfo, setLocationInfo] = useState<string | null>(null);
+  const [isLocating, setIsLocating] = useState(false);
 
   useEffect(() => {
     if (!slug) {
@@ -92,6 +107,52 @@ export default function ItemPage() {
 
     fetchData();
   }, [slug]);
+
+  useEffect(() => {
+    if (produce) {
+        const seasonName = getCurrentSeason();
+        const isInSeason = produce.seasons.includes(seasonName);
+        setIsCurrentlyInSeason(isInSeason);
+        setCurrentSeasonMessage(
+            isInSeason
+                ? `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely in season now (${seasonName}).`
+                : `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely out of season now (${seasonName}). Check local availability for specifics.`
+        );
+    }
+  }, [produce]);
+
+  const handleLocationClick = () => {
+    setIsLocating(true);
+    setLocationInfo(null);
+    if (!navigator.geolocation) {
+        setLocationInfo("Geolocation is not supported by your browser.");
+        setIsLocating(false);
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            setLocationInfo(`Location (Lat: ${position.coords.latitude.toFixed(2)}, Lng: ${position.coords.longitude.toFixed(2)}). Nearby market information and more precise local availability using this location is coming in a future update!`);
+            setIsLocating(false);
+        },
+        (error) => {
+            let message = "Could not retrieve location.";
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    message = "Location access denied. Please enable location permissions in your browser settings.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    message = "Location information is currently unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    message = "Request to get location timed out.";
+                    break;
+            }
+            setLocationInfo(message);
+            setIsLocating(false);
+        }
+    );
+  };
 
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
@@ -200,6 +261,34 @@ export default function ItemPage() {
           )}
         </IconLabel>
       </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <IconLabel 
+          icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2} 
+          label="Seasonal Availability"
+        >
+          {isCurrentlyInSeason === null ? (
+            <Loader text="Checking seasonality..." size={16} />
+          ) : (
+            <p>{currentSeasonMessage}</p>
+          )}
+          <p className="text-xs text-muted-foreground mt-1">Note: Seasonality can vary by specific locale and year.</p>
+        </IconLabel>
+
+        <IconLabel icon={Store} label="Find Locally (Future Feature)">
+          <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto">
+            {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
+          </Button>
+          {locationInfo && (
+            <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm">
+               <AlertTitle>{locationInfo.startsWith("Location (Lat:") ? "Location Acquired" : "Location Notice"}</AlertTitle>
+              <AlertDescription>{locationInfo}</AlertDescription>
+            </Alert>
+          )}
+           {!locationInfo && !isLocating && <p className="text-xs text-muted-foreground mt-2">Click the button to share your location. This will be used in the future to find nearby markets.</p>}
+        </IconLabel>
+      </div>
+
     </div>
   );
 }
