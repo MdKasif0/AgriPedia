@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,102 +8,101 @@ body {
 }
 
 @layer base {
-  /* Modern Dark Theme (Restored & Refined) */
+  /* Modern Professional Theme */
   :root {
-    --background: 220 10% 10%; /* Very Dark Gray/Almost Black */
-    --foreground: 220 10% 95%; /* Light Gray/White */
+    --background: 220 15% 8%; /* Very Dark Blue-Gray */
+    --foreground: 220 10% 88%; /* Light Gray */
 
-    --card: 0 0% 97%; /* Very Light Gray/Off-White for cards */
-    --card-foreground: 220 10% 15%; /* Dark Gray/Black text on cards */
+    --card: 220 15% 14%; /* Dark Gray for cards */
+    --card-foreground: 220 10% 88%; /* Light Gray text on dark cards */
 
-    --popover: 220 10% 12%; /* Darker popover background */
-    --popover-foreground: 220 10% 95%; /* Light text on popovers */
+    --popover: 220 15% 10%; /* Darker popover background */
+    --popover-foreground: 220 10% 88%; /* Light text on popovers */
 
-    --primary: 100 60% 60%; /* Vibrant Light Green */
-    --primary-foreground: 100 30% 10%; /* Dark Green/Black text on primary */
+    --primary: 150 55% 50%; /* Professional Green */
+    --primary-foreground: 150 30% 95%; /* Very Light Greenish-White text on primary */
 
-    --secondary: 100 50% 50%; /* Slightly darker vibrant green */
-    --secondary-foreground: 100 30% 10%;
+    --secondary: 220 15% 25%; /* Muted Dark Blue-Gray */
+    --secondary-foreground: 220 10% 80%; /* Lighter Gray for secondary text */
 
-    --muted: 220 10% 25%; /* Muted dark gray for less emphasis */
-    --muted-foreground: 220 10% 70%; /* Lighter gray text for muted */
+    --muted: 220 15% 20%; /* Muted Dark Blue-Gray for less emphasis */
+    --muted-foreground: 220 10% 60%; /* Medium-Light Gray text for muted */
 
-    --accent: 100 60% 60%; /* Same as primary green for general accents */
-    --accent-foreground: 100 30% 10%; 
+    --accent: 150 55% 50%; /* Same as primary green for general accents */
+    --accent-foreground: 150 30% 95%; 
     
-    --destructive: 0 70% 60%; /* Bright Red */
+    --destructive: 0 65% 55%; /* Deeper Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */
 
-    --border: 0 0% 88%; /* Light gray border for cards (on dark bg, cards are light) */
-    --input: 0 0% 92%; /* Light gray for input backgrounds on cards */
-    --ring: 100 60% 65%; /* Light Green for focus rings */
+    --border: 220 15% 20%; /* Subtle Dark Border */
+    --input: 220 15% 18%; /* Dark Input Background */
+    --ring: 150 55% 55%; /* Professional Green for focus rings */
 
-    --radius: 1rem; /* Increased for more rounded corners */
+    --radius: 0.75rem; /* Increased for more rounded corners (12px) */
 
     /* Sidebar colors - dark theme */
-    --sidebar-background: 220 10% 12%; /* Darker background for sidebar */
-    --sidebar-foreground: 220 10% 90%;
-    --sidebar-primary: 100 60% 60%; /* Light green accent for sidebar */
-    --sidebar-primary-foreground: 100 30% 10%;
-    --sidebar-accent: 100 55% 65%; 
-    --sidebar-accent-foreground: 100 30% 10%;
-    --sidebar-border: 220 10% 20%;
-    --sidebar-ring: 100 60% 65%;
+    --sidebar-background: 220 15% 10%; 
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 150 55% 50%; 
+    --sidebar-primary-foreground: 150 30% 95%;
+    --sidebar-accent: 150 55% 55%; 
+    --sidebar-accent-foreground: 150 30% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 150 55% 55%;
 
-    /* Chart colors harmonized with new theme */
-    --chart-1: 100 60% 60%;   /* Vibrant Light Green */
-    --chart-2: 120 50% 65%;   /* Another shade of Green */
-    --chart-3: 90 60% 70%;    /* Lighter Green */
-    --chart-4: 100 40% 50%;   /* Deeper Green */
-    --chart-5: 220 10% 50%;   /* Neutral Gray for contrast if needed */
+    /* Chart colors for dark theme */
+    --chart-1: hsl(var(--primary)); 
+    --chart-2: 150 50% 65%;   /* Lighter Green */
+    --chart-3: 150 40% 40%;   /* Darker, Desaturated Green */
+    --chart-4: 210 25% 55%;   /* Muted Blue */
+    --chart-5: 220 10% 50%;   /* Neutral Gray */
   }
 
-  /* Light Theme (standard light with green accent) */
   .light {
-    --background: 0 0% 100%; /* White */
-    --foreground: 220 10% 10%; /* Dark Gray/Black */
+    --background: 0 0% 98%; /* Off-White */
+    --foreground: 220 15% 15%; /* Dark Gray/Black */
 
-    --card: 0 0% 98%; /* Slightly off-white */
-    --card-foreground: 220 10% 10%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 15% 15%;
 
-    --popover: 0 0% 96%; /* Light gray */
-    --popover-foreground: 220 10% 10%;
+    --popover: 0 0% 100%; 
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 100 55% 50%; /* Vibrant Green for light theme */
+    --primary: 150 50% 45%; /* Professional Green (adjusted for light theme) */
     --primary-foreground: 0 0% 100%; /* White text for on-green */
 
-    --secondary: 0 0% 94%; /* Light gray for secondary elements */
-    --secondary-foreground: 220 10% 15%; /* Darker text */
+    --secondary: 220 10% 94%; /* Light gray for secondary elements */
+    --secondary-foreground: 220 15% 25%; /* Darker text */
 
-    --muted: 0 0% 90%; /* Muted gray */
+    --muted: 220 10% 90%; /* Muted gray */
     --muted-foreground: 220 10% 45%; /* Medium gray text */
 
-    --accent: 100 55% 50%; /* Green accent */
+    --accent: 150 50% 45%; /* Green accent */
     --accent-foreground: 0 0% 100%; 
     
     --destructive: 0 60% 50%; 
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 88%; /* Light Gray Border */
-    --input: 0 0% 96%; /* Very Light Gray Input Background */
-    --ring: 100 55% 55%; /* Green for focus rings */
+    --border: 220 10% 88%; /* Light Gray Border */
+    --input: 220 10% 96%; /* Very Light Gray Input Background */
+    --ring: 150 50% 50%; /* Green for focus rings */
 
     /* Sidebar colors - light theme */
     --sidebar-background: 0 0% 96%; 
-    --sidebar-foreground: 220 10% 15%;
-    --sidebar-primary: 100 55% 50%;
+    --sidebar-foreground: 220 15% 15%;
+    --sidebar-primary: 150 50% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 100 50% 55%;
+    --sidebar-accent: 150 50% 50%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 100 55% 50%;
+    --sidebar-border: 220 10% 90%;
+    --sidebar-ring: 150 50% 50%;
 
     /* Chart colors for light theme */
-    --chart-1: 100 50% 55%; 
-    --chart-2: 120 40% 60%; 
-    --chart-3: 90 50% 65%;  
-    --chart-4: 100 30% 45%;  
-    --chart-5: 220 10% 30%; 
+    --chart-1: hsl(var(--primary)); 
+    --chart-2: 150 50% 60%;   /* Lighter Green */
+    --chart-3: 150 40% 35%;   /* Darker, Desaturated Green */
+    --chart-4: 210 30% 50%;   /* Muted Blue */
+    --chart-5: 220 10% 70%;   /* Lighter Neutral Gray */
   }
 }
 
