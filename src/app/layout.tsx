@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning> {/* suppressHydrationWarning for next-themes */}
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
         <ThemeProvider
             attribute="class"
