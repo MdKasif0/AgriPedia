@@ -6,7 +6,7 @@ import ImageUploadForm from '@/components/search/ImageUploadForm';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { Separator } from '@/components/ui/separator';
-import { Fruit, ScanLine } from 'lucide-react';
+import { Apple, ScanLine } from 'lucide-react'; // Changed Fruit to Apple
 
 export default function HomePage() {
   const [searchResults, setSearchResults] = useState<ProduceInfo[]>([]);
@@ -26,7 +26,7 @@ export default function HomePage() {
 
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold flex items-center gap-2"><Fruit className="text-primary" /> Search by Name</h2>
+          <h2 className="text-2xl font-semibold flex items-center gap-2"><Apple className="text-primary" /> Search by Name</h2> {/* Changed Fruit to Apple */}
           <TextSearchForm onResults={handleTextResults} />
         </section>
         <section className="space-y-4">

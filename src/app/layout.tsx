@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from 'next';
-import { GeistSans } from 'next/font/google'; // Corrected import for Geist
-import { GeistMono } from 'next/font/google'; // Corrected import for Geist Mono
+import { Inter, Roboto_Mono } from 'next/font/google'; // Changed from GeistSans and GeistMono
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 
-const geistSans = GeistSans({ // Invoking the font function
-  variable: '--font-geist-sans',
+const inter = Inter({
   subsets: ['latin'],
+  variable: '--font-sans', // Standard CSS variable for sans-serif font
 });
 
-const geistMono = GeistMono({ // Invoking the font function
-  variable: '--font-geist-mono',
+const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
+  variable: '--font-mono', // Standard CSS variable for monospace font
+  weight: ['400', '700'], // Optional: specify weights if needed
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
         <Header />
         <main className="container mx-auto p-4">
           {children}
