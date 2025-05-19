@@ -7,22 +7,42 @@ import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import NutrientChart from '@/components/charts/NutrientChart';
-import VitaminChart from '@/components/charts/VitaminChart'; // New
-import MineralChart from '@/components/charts/MineralChart'; // New
+import VitaminChart from '@/components/charts/VitaminChart';
+import MineralChart from '@/components/charts/MineralChart';
 import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
 import { Badge } from '@/components/ui/badge';
 import {
-  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff
+  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+
+const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0]['severity']): "default" | "secondary" | "destructive" | "outline" => {
+  switch (severity) {
+    case 'Severe':
+      return 'destructive';
+    case 'Moderate':
+      return 'default'; // Using default for moderate, which is primary color
+    case 'Mild':
+      return 'secondary';
+    case 'Common':
+      return 'outline';
+    case 'Rare':
+      return 'outline';
+    case 'Varies':
+      return 'outline';
+    default:
+      return 'secondary';
+  }
+};
+
 
 export default function ItemPage() {
   const params = useParams();
   const slug = typeof params.slug === 'string' ? params.slug : '';
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [isOfflineSource, setIsOfflineSource] = useState(false); // Tracks if data came from localStorage
+  const [isOfflineSource, setIsOfflineSource] = useState(false);
 
   useEffect(() => {
     if (!slug) {
@@ -36,39 +56,32 @@ export default function ItemPage() {
       let itemData: ProduceInfo | null = null;
       let onlineFetchAttempted = false;
 
-      // Check network status
       const isOnline = typeof window !== 'undefined' && navigator.onLine;
 
       if (isOnline) {
         try {
-          // Attempt to fetch fresh data first
           const onlineData = getProduceByCommonName(slug);
           onlineFetchAttempted = true;
           if (onlineData) {
             itemData = onlineData;
-            saveProduceOffline(onlineData); // Save fresh data for offline access
+            saveProduceOffline(onlineData);
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache:', error);
-          // If online fetch fails, we'll proceed to check cache
         }
       }
 
-      // If no data from online source (either offline or fetch failed/no item)
       if (!itemData) {
         const offlineData = getProduceOffline(slug);
         if (offlineData) {
           itemData = offlineData;
-          setIsOfflineSource(true); // Indicate data is from offline store
+          setIsOfflineSource(true);
         }
       }
       
-      // If still no data after online and offline attempts, and online was primary attempt
       if (!itemData && onlineFetchAttempted && isOnline) {
-         // This means the item truly doesn't exist in our primary data source
-         setProduce(null); // This will trigger notFound()
+         setProduce(null);
       } else if (!itemData && !isOnline) {
-        // If offline and not found in cache, also treat as not found for this page
         setProduce(null);
       } else {
         setProduce(itemData);
@@ -85,7 +98,6 @@ export default function ItemPage() {
   }
 
   if (!produce) {
-    // If produce is null and we're not loading, it means it wasn't found either online or offline
     notFound();
     return null;
   }
@@ -93,7 +105,7 @@ export default function ItemPage() {
   return (
     <div className="space-y-8 py-8">
       {isOfflineSource && (
-        <Alert variant="default" className="bg-accent text-accent-foreground border-accent-foreground/30">
+        <Alert variant="default" className="bg-accent/80 text-accent-foreground border-accent-foreground/30">
           <WifiOff className="h-5 w-5 text-accent-foreground" />
           <AlertTitle>Offline Mode</AlertTitle>
           <AlertDescription>
@@ -167,10 +179,25 @@ export default function ItemPage() {
             {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
           </ul>
         </IconLabel>
-        <IconLabel icon={AlertTriangle} label="Potential Allergies">
-          <ul className="list-disc list-inside space-y-1">
-            {produce.potentialAllergies.map(allergy => <li key={allergy}>{allergy}</li>)}
-          </ul>
+        <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities">
+           {produce.potentialAllergies.length > 0 ? (
+            <ul className="space-y-3">
+              {produce.potentialAllergies.map((allergy, index) => (
+                <li key={index} className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2">
+                     <MessageCircleWarning className="h-4 w-4 text-destructive" />
+                    <span className="font-medium">{allergy.name}</span>
+                    <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
+                      {allergy.severity}
+                    </Badge>
+                  </div>
+                  {allergy.details && <p className="text-xs text-muted-foreground pl-6">{allergy.details}</p>}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
+          )}
         </IconLabel>
       </div>
     </div>
