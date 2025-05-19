@@ -7,102 +7,102 @@ body {
 }
 
 @layer base {
-  /* Default: Dark Theme (AgriPedia Theme based on PRD) */
+  /* New Theme: Olive Green & Vibrant Yellow (based on provided image) */
   :root {
-    --background: 120 33% 20%; /* Dark Desaturated Green (#224322) */
-    --foreground: 120 25% 90%; /* Light Off-White/Greenish Tint */
+    --background: 90 25% 45%; /* Muted Olive Green */
+    --foreground: 90 10% 95%; /* Very Light, almost white */
 
-    --card: 120 33% 23%; /* Slightly Lighter Dark Green */
-    --card-foreground: 120 25% 90%;
+    --card: 90 25% 40%; /* Slightly darker olive for cards */
+    --card-foreground: 90 10% 95%;
 
-    --popover: 120 33% 22%; /* Darker Popover Background */
-    --popover-foreground: 120 25% 90%;
+    --popover: 90 25% 38%; /* Darker for popovers */
+    --popover-foreground: 90 10% 95%;
 
-    --primary: 120 73% 75%; /* Vibrant Green (#90EE90) */
-    --primary-foreground: 120 73% 15%; /* Dark Green for contrast on primary */
+    --primary: 55 85% 55%; /* Vibrant Yellow */
+    --primary-foreground: 55 85% 10%; /* Dark Brown/Black for text on yellow */
 
-    --secondary: 120 30% 35%; /* Muted Green */
-    --secondary-foreground: 120 25% 88%; /* Lighter Greenish Tint */
+    --secondary: 90 30% 60%; /* Lighter Olive for secondary elements */
+    --secondary-foreground: 90 25% 15%; /* Darker text for secondary elements */
 
-    --muted: 120 30% 28%; /* Slightly Darker Muted Green */
-    --muted-foreground: 120 20% 70%; /* Medium Greenish Gray */
+    --muted: 90 20% 55%; /* Muted olive for less emphasis text */
+    --muted-foreground: 90 15% 80%; /* Lighter text for muted */
 
-    --accent: 39 90% 65%; /* Vibrant Orange (approx #FFA500) */
-    --accent-foreground: 39 90% 15%; /* Dark Orange/Brown for contrast */
+    --accent: 55 85% 55%; /* Same as primary yellow for general accents */
+    --accent-foreground: 55 85% 10%; 
     
-    --destructive: 0 70% 65%; /* Bright Red */
+    --destructive: 0 70% 60%; /* Bright Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */
 
-    --border: 120 33% 30%; /* Muted Green Border */
-    --input: 120 30% 25%; /* Muted Green Input Background */
-    --ring: 120 73% 75%; /* Vibrant Green for focus rings (same as primary) */
+    --border: 90 20% 50%; /* Subtle olive border */
+    --input: 90 25% 35%; /* Darker olive for input backgrounds */
+    --ring: 55 85% 60%; /* Yellow for focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Increased for more rounded corners */
 
-    /* Sidebar colors - dark theme */
-    --sidebar-background: 120 33% 18%;
-    --sidebar-foreground: 120 20% 88%;
-    --sidebar-primary: 120 73% 75%;
-    --sidebar-primary-foreground: 120 73% 15%;
-    --sidebar-accent: 39 90% 65%;
-    --sidebar-accent-foreground: 39 90% 15%;
-    --sidebar-border: 120 33% 25%;
-    --sidebar-ring: 120 73% 75%;
+    /* Sidebar colors - dark theme (olive) */
+    --sidebar-background: 90 25% 35%; /* Darker olive */
+    --sidebar-foreground: 90 10% 90%;
+    --sidebar-primary: 55 85% 55%; /* Yellow accent for sidebar */
+    --sidebar-primary-foreground: 55 85% 10%;
+    --sidebar-accent: 55 80% 60%; /* Slightly brighter yellow */
+    --sidebar-accent-foreground: 55 80% 10%;
+    --sidebar-border: 90 20% 45%;
+    --sidebar-ring: 55 85% 60%;
 
-    /* Chart colors harmonized with green/orange theme */
-    --chart-1: 120 60% 50%; /* Primary Green */
-    --chart-2: 100 50% 55%; /* Lighter Green */
-    --chart-3: 39 70% 60%;  /* Orange (related to accent) */
-    --chart-4: 45 80% 55%;  /* Brighter Yellow-Orange (accent variation) */
-    --chart-5: 120 40% 35%; /* Darker Green */
+    /* Chart colors harmonized with olive/yellow theme */
+    --chart-1: 55 80% 60%;   /* Yellow */
+    --chart-2: 90 50% 65%;   /* Brighter Green */
+    --chart-3: 40 70% 60%;   /* Orange-ish Yellow */
+    --chart-4: 110 40% 55%;  /* Mid Green */
+    --chart-5: 90 30% 30%;   /* Darker Olive Green */
   }
 
-  /* Light Theme */
+  /* Light Theme (standard light with yellow accent) */
   .light {
-    --background: 0 0% 98%; /* Almost White */
-    --foreground: 120 25% 10%; /* Dark Greenish Black */
+    --background: 0 0% 100%; /* White */
+    --foreground: 90 25% 10%; /* Dark Olive/Black */
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 120 25% 10%;
+    --card: 0 0% 98%; /* Slightly off-white */
+    --card-foreground: 90 25% 10%;
 
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 120 25% 10%;
+    --popover: 0 0% 96%; /* Light gray */
+    --popover-foreground: 90 25% 10%;
 
-    --primary: 120 60% 40%; /* Darker, Saturated Green for light theme primary */
-    --primary-foreground: 0 0% 98%; /* Almost White for contrast on primary */
+    --primary: 55 80% 50%; /* Yellow */
+    --primary-foreground: 0 0% 10%; /* Dark text for on-yellow */
 
-    --secondary: 120 20% 90%; /* Very Light Greenish Gray */
-    --secondary-foreground: 120 25% 15%; /* Dark Greenish Gray */
+    --secondary: 0 0% 94%; /* Light gray for secondary elements */
+    --secondary-foreground: 90 25% 15%; /* Darker text */
 
-    --muted: 120 20% 94%; /* Light Greenish Gray */
-    --muted-foreground: 120 15% 45%; /* Medium Greenish Gray */
+    --muted: 0 0% 90%; /* Muted gray */
+    --muted-foreground: 90 15% 45%; /* Medium gray text */
 
-    --accent: 30 80% 55%; /* Slightly less vibrant Orange for light theme accent */
-    --accent-foreground: 0 0% 100%; /* White for contrast on accent */
+    --accent: 55 80% 50%; /* Yellow accent */
+    --accent-foreground: 0 0% 10%; 
     
-    --destructive: 0 60% 50%; /* Slightly darker Red for light theme */
+    --destructive: 0 60% 50%; 
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 20% 88%; /* Light Greenish Gray Border */
-    --input: 120 20% 96%; /* Very Light Greenish Gray Input Background */
-    --ring: 120 60% 40%; /* Darker, Saturated Green for focus rings */
+    --border: 0 0% 88%; /* Light Gray Border */
+    --input: 0 0% 96%; /* Very Light Gray Input Background */
+    --ring: 55 80% 55%; /* Yellow for focus rings */
 
     /* Sidebar colors - light theme */
-    --sidebar-background: 0 0% 96%; /* Light Gray */
-    --sidebar-foreground: 120 25% 15%;
-    --sidebar-primary: 120 60% 40%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 30 80% 55%;
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-background: 0 0% 96%; 
+    --sidebar-foreground: 90 25% 15%;
+    --sidebar-primary: 55 80% 50%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 55 75% 55%;
+    --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 120 60% 40%;
+    --sidebar-ring: 55 80% 50%;
 
     /* Chart colors for light theme - can be same or adjusted for better visibility */
-    --chart-1: 120 60% 45%; 
-    --chart-2: 100 50% 50%; 
-    --chart-3: 30 70% 55%;  
-    --chart-4: 39 80% 60%;  
-    --chart-5: 120 40% 30%; 
+    --chart-1: 55 75% 55%; 
+    --chart-2: 90 45% 60%; 
+    --chart-3: 40 65% 55%;  
+    --chart-4: 110 35% 50%;  
+    --chart-5: 90 25% 25%; 
   }
 }
 

@@ -10,27 +10,27 @@ interface ProduceCardProps {
 
 export default function ProduceCard({ produce }: ProduceCardProps) {
   return (
-    <Link href={`/item/${produce.id}`} className="block hover:shadow-xl transition-shadow duration-200 rounded-lg">
-      <Card className="h-full flex flex-col group">
-        <CardHeader>
-          <div className="relative w-full h-40 mb-4 rounded-md overflow-hidden">
+    <Link href={`/item/${produce.id}`} className="block hover:shadow-2xl transition-shadow duration-200 rounded-xl group">
+      <Card className="h-full flex flex-col bg-card text-card-foreground rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+        <CardHeader className="p-4">
+          <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
             <Image 
               src={produce.image} 
               alt={produce.commonName} 
               fill 
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" // Adjusted sizes
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               style={{ objectFit: 'cover' }}
               data-ai-hint={`${produce.commonName.toLowerCase()} fruit vegetable`} 
               className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors">{produce.commonName}</CardTitle>
-          <CardDescription className="text-sm text-muted-foreground">{produce.scientificName}</CardDescription>
+          <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">{produce.commonName}</CardTitle>
+          <CardDescription className="text-xs text-muted-foreground">{produce.scientificName}</CardDescription>
         </CardHeader>
-        <CardContent className="flex-grow">
-          <p className="text-sm line-clamp-3">{produce.description}</p>
+        <CardContent className="flex-grow p-4 pt-0">
+          <p className="text-sm text-muted-foreground line-clamp-3">{produce.description}</p>
         </CardContent>
-        <div className="p-6 pt-0 flex justify-end items-center text-sm text-primary group-hover:text-accent transition-colors">
+        <div className="p-4 pt-2 flex justify-end items-center text-sm text-primary group-hover:underline">
           View Details <ChevronRight size={18} className="ml-1" />
         </div>
       </Card>

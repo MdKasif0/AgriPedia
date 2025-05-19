@@ -28,7 +28,6 @@ export default function TextSearchForm({
   onClearSearch,
   inputRef, // Consuming the ref
 }: TextSearchFormProps) {
-  // const internalInputRef = useRef<HTMLInputElement>(null); // Keep internal if no external provided, or remove if external always used
   const suggestionsRef = useRef<HTMLUListElement>(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -46,16 +45,16 @@ export default function TextSearchForm({
       <div className="flex gap-2 items-center">
         <div className="relative flex-grow">
           <Input
-            ref={inputRef} // Use the passed ref
+            ref={inputRef} 
             type="text"
             value={query}
             onChange={handleInputChange}
-            onFocus={() => query.trim() && onQueryChange(query)} // Re-trigger suggestions visibility if needed
+            onFocus={() => query.trim() && onQueryChange(query)} 
             placeholder="E.g., Apple, Banana, Carrot... (Ctrl+K)"
-            className="flex-grow pr-10" 
+            className="flex-grow pr-10 rounded-lg bg-input text-foreground placeholder:text-muted-foreground" 
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
-            id="main-search-input" // Adding an ID for potential direct targeting, though ref is preferred
+            id="main-search-input" 
           />
           {query && (
             <Button
@@ -70,7 +69,7 @@ export default function TextSearchForm({
             </Button>
           )}
         </div>
-        <Button type="submit" variant="default" disabled={!query.trim()}>
+        <Button type="submit" variant="default" disabled={!query.trim()} className="rounded-lg">
           <Search className="mr-2 h-5 w-5" /> Search
         </Button>
       </div>
@@ -78,13 +77,13 @@ export default function TextSearchForm({
       {isSuggestionsVisible && suggestions.length > 0 && (
         <ul
           ref={suggestionsRef}
-          className="absolute z-10 w-full bg-card border border-border rounded-md shadow-lg max-h-60 overflow-y-auto mt-1"
+          className="absolute z-10 w-full bg-popover border-border rounded-md shadow-lg max-h-60 overflow-y-auto mt-1"
         >
           {suggestions.map((item) => (
             <li key={item.id}>
               <button
                 type="button"
-                className="w-full text-left px-4 py-2 hover:bg-accent hover:text-accent-foreground text-sm"
+                className="w-full text-left px-4 py-2 hover:bg-accent hover:text-accent-foreground text-sm text-popover-foreground"
                 onClick={() => onSuggestionClick(item)}
               >
                 {item.commonName}

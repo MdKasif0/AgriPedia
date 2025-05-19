@@ -25,12 +25,10 @@ export default function ThemeToggleButton() {
     return <div className="h-9 w-9 animate-pulse rounded-md bg-muted/50"></div>;
   }
 
-  const Icon = resolvedTheme === 'dark' ? Moon : Sun;
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="gap-1.5 text-sm px-2">
+        <Button variant="ghost" size="sm" className="gap-1.5 text-sm px-2 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground rounded-md">
           {resolvedTheme === 'dark' ? (
             <Moon className="h-4 w-4" />
           ) : (
@@ -39,16 +37,16 @@ export default function ThemeToggleButton() {
           <span className="capitalize hidden sm:inline">{resolvedTheme}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="min-w-[8rem]">
-        <DropdownMenuItem onClick={() => setTheme('light')}>
+      <DropdownMenuContent align="end" className="min-w-[8rem] rounded-lg">
+        <DropdownMenuItem onClick={() => setTheme('light')} className="cursor-pointer">
           <Sun className="mr-2 h-4 w-4" />
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('dark')}>
+        <DropdownMenuItem onClick={() => setTheme('dark')} className="cursor-pointer">
           <Moon className="mr-2 h-4 w-4" />
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('system')}>
+        <DropdownMenuItem onClick={() => setTheme('system')} className="cursor-pointer">
           <Monitor className="mr-2 h-4 w-4" />
           System
         </DropdownMenuItem>

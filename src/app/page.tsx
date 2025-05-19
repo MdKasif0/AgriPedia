@@ -10,7 +10,7 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce } from '@/lib/produceData';
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus } from 'lucide-react';
+import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus, Search } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -256,7 +256,7 @@ export default function HomePage() {
   return (
     <div className="space-y-8">
       <section className="text-center py-8">
-        <h1 className="text-4xl font-bold text-primary mb-2">Welcome to AgriPedia!</h1>
+        <h1 className="text-4xl font-bold text-foreground mb-2">Welcome to AgriPedia!</h1>
         <p className="text-lg text-muted-foreground">
           Discover detailed information about fruits and vegetables.
         </p>
@@ -265,13 +265,13 @@ export default function HomePage() {
       {/* Main content grid: Search + Filters (2/3 width), Notifications (1/3 width) */}
       <div className="grid md:grid-cols-3 gap-8 items-start">
         <section className="space-y-4 md:col-span-2"> {/* Search and filters take 2 columns */}
-          <Card className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl font-semibold flex items-center gap-2">
-                <Apple className="text-primary" /> Search Produce
+          <Card className="shadow-xl rounded-xl bg-card">
+            <CardHeader className="p-6">
+              <CardTitle className="text-2xl font-semibold flex items-center gap-2 text-foreground">
+                <Search className="text-primary" /> Search Produce
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4" ref={searchFormRef}>
+            <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
               <TextSearchForm
                 query={searchQuery}
                 onQueryChange={handleQueryChange}
@@ -286,10 +286,10 @@ export default function HomePage() {
                 <div>
                   <label htmlFor="region-filter" className="block text-sm font-medium text-foreground mb-1">Filter by Region</label>
                   <Select value={selectedRegion} onValueChange={setSelectedRegion}>
-                    <SelectTrigger id="region-filter" className="w-full">
+                    <SelectTrigger id="region-filter" className="w-full rounded-lg">
                       <SelectValue placeholder="All Regions" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="rounded-lg">
                       <SelectItem value="all">All Regions</SelectItem>
                       {availableRegions.map(region => (
                         <SelectItem key={region} value={region}>{region}</SelectItem>
@@ -300,10 +300,10 @@ export default function HomePage() {
                 <div>
                   <label htmlFor="season-filter" className="block text-sm font-medium text-foreground mb-1">Filter by Season</label>
                   <Select value={selectedSeason} onValueChange={setSelectedSeason}>
-                    <SelectTrigger id="season-filter" className="w-full">
+                    <SelectTrigger id="season-filter" className="w-full rounded-lg">
                       <SelectValue placeholder="All Seasons" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="rounded-lg">
                       <SelectItem value="all">All Seasons</SelectItem>
                       {availableSeasons.map(season => (
                         <SelectItem key={season} value={season}>{season}</SelectItem>
@@ -317,15 +317,14 @@ export default function HomePage() {
         </section>
         
         <section className="space-y-4 md:col-span-1"> {/* Notifications card takes 1 column */}
-          {/* ImageUploadForm card removed as it's now accessed via global FAB/Dialog */}
-          <Card className="shadow-lg">
-             <CardHeader>
-                <CardTitle className="text-xl font-semibold flex items-center gap-2">
+          <Card className="shadow-xl rounded-xl bg-card">
+             <CardHeader className="p-6">
+                <CardTitle className="text-xl font-semibold flex items-center gap-2 text-foreground">
                     {notificationPermission === 'granted' ? <BellRing className="text-primary" /> : <BellPlus className="text-primary" />}
                     Notifications
                 </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
+            <CardContent className="space-y-3 p-6 pt-0">
                 {isPushSupported ? (
                     <>
                         <p className="text-sm text-muted-foreground">
@@ -340,7 +339,7 @@ export default function HomePage() {
                             <Button 
                                 onClick={handleNotificationSubscription} 
                                 disabled={isSubscribing || notificationPermission === 'granted'}
-                                className="w-full"
+                                className="w-full rounded-lg"
                                 variant={notificationPermission === 'granted' ? "outline" : "default"}
                             >
                                 {isSubscribing && <Loader text="Processing..." size={18} />}
@@ -362,9 +361,9 @@ export default function HomePage() {
 
       {(!initialLoad && searchResults.length > 0) && (
         <>
-          <Separator className="my-8" />
+          <Separator className="my-8 bg-border/50" />
           <section>
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2"><ListFilter className="text-primary"/>Filtered Results</h2>
+            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><ListFilter className="text-primary"/>Filtered Results</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {searchResults.map((item) => (
                 <ProduceCard key={item.id} produce={item} />
@@ -376,7 +375,7 @@ export default function HomePage() {
 
       {(!initialLoad && searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
         <>
-          <Separator className="my-8" />
+          <Separator className="my-8 bg-border/50" />
           <section className="text-center py-8">
             <p className="text-muted-foreground text-lg">
               No produce found matching your search query and filters.
@@ -387,12 +386,12 @@ export default function HomePage() {
       
       {recentSearchTerms.length > 0 && (
         <>
-          <Separator className="my-8" />
+          <Separator className="my-8 bg-border/50" />
           <section>
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2"><History className="text-primary"/>Recent Searches</h2>
+            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><History className="text-primary"/>Recent Searches</h2>
             <div className="flex flex-wrap gap-2">
               {recentSearchTerms.map((term, index) => (
-                <Button key={index} variant="outline" size="sm" onClick={() => handleRecentSearchClick(term)}>
+                <Button key={index} variant="outline" size="sm" onClick={() => handleRecentSearchClick(term)} className="rounded-full hover:bg-primary/10 border-primary/50 text-primary">
                   {term}
                   <ExternalLink size={14} className="ml-2 opacity-70"/>
                 </Button>
@@ -404,9 +403,9 @@ export default function HomePage() {
 
       {favoriteProduceItems.length > 0 && (
         <>
-          <Separator className="my-8" />
+          <Separator className="my-8 bg-border/50" />
           <section id="favorites-section"> {/* Added ID for bottom nav link */}
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2"><Heart className="text-primary"/>My Favorite Produce</h2>
+            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {favoriteProduceItems.map((item) => (
                 <ProduceCard key={item.id} produce={item} />

@@ -29,11 +29,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; // Using default for Moderate to make it stand out more than secondary
+      return 'default'; 
     case 'Mild':
       return 'secondary';
     case 'Common':
-      return 'outline';
+      return 'outline'; // Use outline for less critical, but still notable
     case 'Rare':
       return 'outline';
     case 'Varies':
@@ -225,22 +225,22 @@ export default function ItemPage() {
         </Alert>
       )}
       <header className="text-center relative">
-        <h1 className="text-4xl font-bold text-primary mb-2 flex items-center justify-center gap-3">
-          <Leaf size={40} /> {produce.commonName}
+        <h1 className="text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
+          <Leaf size={40} className="text-primary" /> {produce.commonName}
         </h1>
         <p className="text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <Button 
             variant="ghost" 
             size="icon" 
             onClick={handleToggleBookmark} 
-            className="absolute top-0 right-0 text-primary hover:text-accent"
+            className="absolute top-0 right-0 text-foreground hover:text-primary"
             aria-label={isBookmarked ? 'Remove from favorites' : 'Add to favorites'}
         >
-            {isBookmarked ? <BookmarkCheck size={28} className="text-accent fill-accent" /> : <BookmarkPlus size={28} />}
+            {isBookmarked ? <BookmarkCheck size={28} className="text-primary fill-primary" /> : <BookmarkPlus size={28} />}
         </Button>
       </header>
 
-      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-lg overflow-hidden shadow-xl">
+      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl">
         <Image
           src={produce.image}
           alt={produce.commonName}
@@ -252,61 +252,61 @@ export default function ItemPage() {
         />
       </div>
       
-      <IconLabel icon={Info} label="Description" className="bg-card-foreground/5">
-        <p>{produce.description}</p>
+      <IconLabel icon={Info} label="Description" className="bg-card rounded-xl shadow-lg">
+        <p className="text-card-foreground/90">{produce.description}</p>
       </IconLabel>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel icon={Globe} label="Origin">
-          <p>{produce.origin}</p>
+        <IconLabel icon={Globe} label="Origin" className="bg-card rounded-xl shadow-lg">
+          <p className="text-card-foreground/90">{produce.origin}</p>
         </IconLabel>
-        <IconLabel icon={MapPin} label="Major Growing Regions">
-          <ul className="list-disc list-inside">
+        <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-xl shadow-lg">
+          <ul className="list-disc list-inside text-card-foreground/90">
             {produce.regions.map(region => <li key={region}>{region}</li>)}
           </ul>
         </IconLabel>
-        <IconLabel icon={Languages} label="Local Names">
+        <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-xl shadow-lg">
           <div className="flex flex-wrap gap-2">
-            {produce.localNames.map(name => <Badge key={name} variant="secondary">{name}</Badge>)}
+            {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
           </div>
         </IconLabel>
-        <IconLabel icon={CalendarDays} label="Growth Duration">
-          <p>{produce.growthDuration}</p>
+        <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-xl shadow-lg">
+          <p className="text-card-foreground/90">{produce.growthDuration}</p>
         </IconLabel>
-        <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2">
-          <p className="whitespace-pre-line">{produce.cultivationProcess}</p>
+        <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-xl shadow-lg">
+          <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
         </IconLabel>
       </div>
       
       <section className="space-y-6">
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center"><Activity className="text-primary"/>Nutritional Information</h2>
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
         <p className="text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
         
-        <NutrientChart data={produce.nutrition.macronutrients} />
+        <NutrientChart data={produce.nutrition.macronutrients} className="rounded-xl shadow-lg" />
         
         {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
-            <VitaminChart data={produce.nutrition.vitamins} className="mt-6" />
+            <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-xl shadow-lg" />
         )}
         
         {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
-            <MineralChart data={produce.nutrition.minerals} className="mt-6" />
+            <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-xl shadow-lg" />
         )}
       </section>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel icon={Heart} label="Health Benefits">
-          <ul className="list-disc list-inside space-y-1">
+        <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-xl shadow-lg">
+          <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
             {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
           </ul>
         </IconLabel>
-        <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities">
+        <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-xl shadow-lg">
            {produce.potentialAllergies.length > 0 ? (
             <ul className="space-y-3">
               {produce.potentialAllergies.map((allergy, index) => (
                 <li key={index} className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
                      <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
-                    <span className="font-medium">{allergy.name}</span>
+                    <span className="font-medium text-card-foreground">{allergy.name}</span>
                     <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
                       {allergy.severity}
                     </Badge>
@@ -323,41 +323,41 @@ export default function ItemPage() {
 
       <div className="grid md:grid-cols-2 gap-6">
         {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
-          <IconLabel icon={Recycle} label="Sustainability Tips">
-            <ul className="list-disc list-inside space-y-1">
+          <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-xl shadow-lg">
+            <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
               {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
             </ul>
           </IconLabel>
         )}
         {produce.carbonFootprintInfo && (
-          <IconLabel icon={Footprints} label="Carbon Footprint Info">
-            <p>{produce.carbonFootprintInfo}</p>
+          <IconLabel icon={Footprints} label="Carbon Footprint Info" className="bg-card rounded-xl shadow-lg">
+            <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
           </IconLabel>
         )}
       </div>
       
       <section className="space-y-6">
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
         {isLoadingRecipes && <Loader text="Generating recipe ideas with AI..." />}
-        {recipeError && <Alert variant="destructive"><AlertTriangle className="h-4 w-4" /><AlertTitle>Error</AlertTitle><AlertDescription>{recipeError}</AlertDescription></Alert>}
+        {recipeError && <Alert variant="destructive" className="rounded-xl"><AlertTriangle className="h-4 w-4" /><AlertTitle>Error</AlertTitle><AlertDescription>{recipeError}</AlertDescription></Alert>}
         {!isLoadingRecipes && !recipeError && recipes && recipes.length > 0 && (
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             {recipes.map((recipe, index) => (
-              <Card key={index} className="bg-card shadow-md">
-                <CardHeader>
-                  <CardTitle className="text-xl text-accent">{recipe.name}</CardTitle>
+              <Card key={index} className="bg-card rounded-xl shadow-lg">
+                <CardHeader className="p-4">
+                  <CardTitle className="text-xl text-primary">{recipe.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
+                <CardContent className="space-y-3 p-4">
                   <p className="text-sm text-muted-foreground">{recipe.description}</p>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Main Ingredients:</h4>
-                    <ul className="list-disc list-inside text-sm space-y-0.5">
+                    <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
+                    <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
                       {recipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Steps:</h4>
-                    <ol className="list-decimal list-inside text-sm space-y-1">
+                    <h4 className="font-semibold text-card-foreground mb-1">Steps:</h4>
+                    <ol className="list-decimal list-inside text-sm space-y-1 text-card-foreground/90">
                       {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
                     </ol>
                   </div>
@@ -375,21 +375,22 @@ export default function ItemPage() {
         <IconLabel 
           icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2} 
           label="Seasonal Availability"
+          className="bg-card rounded-xl shadow-lg"
         >
           {isCurrentlyInSeason === null ? (
             <Loader text="Checking seasonality..." size={16} />
           ) : (
-            <p>{currentSeasonMessage}</p>
+            <p className="text-card-foreground/90">{currentSeasonMessage}</p>
           )}
           <p className="text-xs text-muted-foreground mt-1">Note: Seasonality can vary by specific locale and year.</p>
         </IconLabel>
 
-        <IconLabel icon={Store} label="Find Locally (Future Feature)">
-          <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto">
+        <IconLabel icon={Store} label="Find Locally (Future Feature)" className="bg-card rounded-xl shadow-lg">
+          <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto hover:bg-primary/10 border-primary/50 text-primary">
             {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
           </Button>
           {locationInfo && (
-            <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm">
+            <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm rounded-lg">
                <AlertTitle>{locationInfo.startsWith("Location (Lat:") ? "Location Acquired" : "Location Notice"}</AlertTitle>
               <AlertDescription>{locationInfo}</AlertDescription>
             </Alert>
