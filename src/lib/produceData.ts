@@ -18,11 +18,13 @@ export interface ProduceInfo {
   healthBenefits: string[];
   potentialAllergies: Array<{
     name: string;
-    severity: 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies'; // Added severity levels
-    details?: string; // Optional additional details
+    severity: 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies';
+    details?: string;
   }>;
   cultivationProcess: string;
   growthDuration: string;
+  sustainabilityTips?: string[];
+  carbonFootprintInfo?: string;
 }
 
 const produceDatabase: ProduceInfo[] = [
@@ -77,6 +79,13 @@ Ideal Conditions:
 - Soil: Well-drained loam.
 - Water: Consistent moisture, especially for young trees.`,
     growthDuration: 'Typically 3-5 years for a young tree to bear its first significant fruit crop. Fruits mature in 100-200 days from bloom, depending on the variety and climate.',
+    sustainabilityTips: [
+        "Store in the fridge to prolong freshness, not in a fruit bowl.",
+        "Compost apple cores or use them to make apple cider vinegar.",
+        "Buy local apples in season to reduce food miles and support local farmers.",
+        "Consider varieties that require less pesticide if buying conventional."
+    ],
+    carbonFootprintInfo: "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season. Long-distance transport and out-of-season cold storage significantly increase this impact. Choosing organic can also reduce footprint related to synthetic pesticide and fertilizer production.",
   },
   {
     id: 'banana',
@@ -131,6 +140,13 @@ Ideal Conditions:
 - Soil: Rich, well-drained, loamy soil with plenty of organic matter.
 - Water: High water requirement; consistent moisture is key.`,
     growthDuration: 'Approximately 9-12 months from planting a pup to harvesting the first bunch of bananas. Each stem fruits only once.',
+    sustainabilityTips: [
+        "Store at room temperature. Separate from other fruits if you want to slow their ripening.",
+        "Freeze overripe bananas (peeled) for smoothies or banana bread.",
+        "Compost banana peels, or use them in the garden as they are rich in potassium.",
+        "Choose Fair Trade or organic bananas to support sustainable farming and fair labor practices."
+    ],
+    carbonFootprintInfo: "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport from tropical regions. Air-freighted bananas have a significantly higher footprint. Shipping by sea is more carbon-efficient. Choosing certified sustainable bananas can help mitigate environmental impact.",
   },
   {
     id: 'carrot',
@@ -184,6 +200,13 @@ Ideal Conditions:
 - Soil: Deep, loose, well-drained sandy loam. pH 6.0-6.8.
 - Water: Consistent moisture, especially during root development.`,
     growthDuration: 'Generally 60-80 days from sowing seeds to harvest, depending on the variety and growing conditions.',
+    sustainabilityTips: [
+        "Store carrots in the crisper drawer of your refrigerator. If they have greens, remove them to prevent moisture loss from the root.",
+        "Use carrot tops (greens) in pesto, salads, or stocks instead of discarding them.",
+        "Choose 'ugly' or misshapen carrots to reduce food waste, as they are just as nutritious.",
+        "Growing your own carrots is relatively easy and greatly reduces their carbon footprint."
+    ],
+    carbonFootprintInfo: "Carrots grown locally and in season have a very low carbon footprint (around 0.2-0.4 kg CO2e/kg). Processing (like baby carrots), packaging, and long-distance transport can increase this. Field-grown carrots are generally more sustainable than greenhouse-grown out of season.",
   },
   // Add more produce items here
 ];

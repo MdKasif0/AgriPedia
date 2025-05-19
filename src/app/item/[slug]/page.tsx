@@ -7,6 +7,9 @@ import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/userDataStore';
+import { fetchRecipesForProduce } from '@/app/actions';
+import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
+
 import NutrientChart from '@/components/charts/NutrientChart';
 import VitaminChart from '@/components/charts/VitaminChart';
 import MineralChart from '@/components/charts/MineralChart';
@@ -14,9 +17,10 @@ import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
@@ -25,7 +29,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default';
+      return 'default'; // Using default for Moderate to make it stand out more than secondary
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -47,6 +51,13 @@ const getCurrentSeason = (): string => {
   return 'Winter'; // Dec, Jan, Feb
 };
 
+type Recipe = {
+  name: string;
+  description: string;
+  ingredients: string[];
+  steps: string[];
+};
+
 export default function ItemPage() {
   const params = useParams();
   const slug = typeof params.slug === 'string' ? params.slug : '';
@@ -60,6 +71,10 @@ export default function ItemPage() {
 
   const [locationInfo, setLocationInfo] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState(false);
+
+  const [recipes, setRecipes] = useState<Recipe[] | null>(null);
+  const [isLoadingRecipes, setIsLoadingRecipes] = useState(false);
+  const [recipeError, setRecipeError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!slug) {
@@ -81,7 +96,7 @@ export default function ItemPage() {
           onlineFetchAttempted = true;
           if (onlineData) {
             itemData = onlineData;
-            saveProduceOffline(onlineData); // Save to offline store on successful fetch
+            saveProduceOffline(onlineData);
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache:', error);
@@ -106,7 +121,6 @@ export default function ItemPage() {
           setIsBookmarked(isFavorite(itemData.id));
         }
       }
-
       setIsLoading(false);
     }
 
@@ -123,6 +137,27 @@ export default function ItemPage() {
                 ? `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely in season now (${seasonName}).`
                 : `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely out of season now (${seasonName}). Check local availability for specifics.`
         );
+
+        // Fetch recipes
+        const loadRecipes = async () => {
+          setIsLoadingRecipes(true);
+          setRecipeError(null);
+          setRecipes(null);
+          try {
+            const result = await fetchRecipesForProduce(produce.commonName);
+            if (result && result.recipes) {
+              setRecipes(result.recipes);
+            } else {
+              setRecipeError('Could not fetch recipes at this time.');
+            }
+          } catch (err) {
+            console.error("Error fetching recipes:", err);
+            setRecipeError('Failed to load recipes. Please try again later.');
+          } finally {
+            setIsLoadingRecipes(false);
+          }
+        };
+        loadRecipes();
     }
   }, [produce]);
 
@@ -270,7 +305,7 @@ export default function ItemPage() {
               {produce.potentialAllergies.map((allergy, index) => (
                 <li key={index} className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
-                     <MessageCircleWarning className="h-4 w-4 text-destructive" />
+                     <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
                     <span className="font-medium">{allergy.name}</span>
                     <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
                       {allergy.severity}
@@ -285,6 +320,56 @@ export default function ItemPage() {
           )}
         </IconLabel>
       </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
+          <IconLabel icon={Recycle} label="Sustainability Tips">
+            <ul className="list-disc list-inside space-y-1">
+              {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
+            </ul>
+          </IconLabel>
+        )}
+        {produce.carbonFootprintInfo && (
+          <IconLabel icon={Footprints} label="Carbon Footprint Info">
+            <p>{produce.carbonFootprintInfo}</p>
+          </IconLabel>
+        )}
+      </div>
+      
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+        {isLoadingRecipes && <Loader text="Generating recipe ideas with AI..." />}
+        {recipeError && <Alert variant="destructive"><AlertTriangle className="h-4 w-4" /><AlertTitle>Error</AlertTitle><AlertDescription>{recipeError}</AlertDescription></Alert>}
+        {!isLoadingRecipes && !recipeError && recipes && recipes.length > 0 && (
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+            {recipes.map((recipe, index) => (
+              <Card key={index} className="bg-card shadow-md">
+                <CardHeader>
+                  <CardTitle className="text-xl text-accent">{recipe.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-sm text-muted-foreground">{recipe.description}</p>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Main Ingredients:</h4>
+                    <ul className="list-disc list-inside text-sm space-y-0.5">
+                      {recipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Steps:</h4>
+                    <ol className="list-decimal list-inside text-sm space-y-1">
+                      {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
+                    </ol>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        )}
+        {!isLoadingRecipes && !recipeError && (!recipes || recipes.length === 0) && (
+          <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
+        )}
+      </section>
 
       <div className="grid md:grid-cols-2 gap-6">
         <IconLabel 
