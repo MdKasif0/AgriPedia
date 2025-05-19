@@ -212,6 +212,11 @@ export default function ItemPage() {
     notFound();
     return null;
   }
+  
+  // Generate a 1 or 2 word hint from the common name for the main image
+  const commonNameWords = produce.commonName.toLowerCase().split(' ');
+  const imageHint = commonNameWords.slice(0, 1).join(' ') + (commonNameWords.length > 1 ? ' ' + commonNameWords[1] : ' closeup') ;
+
 
   return (
     <div className="space-y-8 py-8">
@@ -234,7 +239,7 @@ export default function ItemPage() {
             size="icon" 
             onClick={handleToggleBookmark} 
             className="absolute top-0 right-0 text-foreground hover:text-primary"
-            aria-label={isBookmarked ? 'Remove from favorites' : 'Add to favorites'}
+            aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
         >
             {isBookmarked ? <BookmarkCheck size={28} className="text-primary fill-primary" /> : <BookmarkPlus size={28} />}
         </Button>
@@ -247,7 +252,7 @@ export default function ItemPage() {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
           style={{ objectFit: 'cover' }}
-          data-ai-hint={`${produce.commonName.toLowerCase()} detail view`}
+          data-ai-hint={imageHint}
           priority={true} 
         />
       </div>
@@ -402,5 +407,3 @@ export default function ItemPage() {
     </div>
   );
 }
-
-    

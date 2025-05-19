@@ -9,6 +9,10 @@ interface ProduceCardProps {
 }
 
 export default function ProduceCard({ produce }: ProduceCardProps) {
+  // Generate a 1 or 2 word hint from the common name
+  const commonNameWords = produce.commonName.toLowerCase().split(' ');
+  const hint = commonNameWords.slice(0, 2).join(' ');
+
   return (
     <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-3xl">
       <div className="relative aspect-[16/9] w-full bg-card text-card-foreground rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
@@ -18,7 +22,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           style={{ objectFit: 'cover' }}
-          data-ai-hint={`${produce.commonName.toLowerCase()} fruit vegetable`} 
+          data-ai-hint={hint} 
           className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent p-4 flex flex-col justify-between">
