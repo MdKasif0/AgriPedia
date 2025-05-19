@@ -8,45 +8,46 @@ body {
 
 @layer base {
   :root {
-    --background: 120 33% 20%; /* #224322 */
-    --foreground: 120 25% 95%; /* #EBF2EB */
+    /* Neutral Dark Theme with Vibrant Accents */
+    --background: 220 20% 12%; /* Dark Slate Blue/Gray */
+    --foreground: 220 15% 92%; /* Light Slate Gray */
 
-    --card: 120 33% 25%; /* #2A4D2A */
-    --card-foreground: 120 25% 95%; /* #EBF2EB */
+    --card: 220 20% 15%; /* Slightly Lighter Dark Slate */
+    --card-foreground: 220 15% 92%; /* Light Slate Gray */
 
-    --popover: 120 33% 22%; /* #254625 */
-    --popover-foreground: 120 25% 95%; /* #EBF2EB */
+    --popover: 220 20% 14%; /* Darker Popover Background */
+    --popover-foreground: 220 15% 92%; /* Light Slate Gray */
 
-    --primary: 120 73% 75%; /* #90EE90 */
-    --primary-foreground: 120 33% 15%; /* #1B361B */
+    --primary: 140 60% 55%; /* Vibrant Green */
+    --primary-foreground: 140 60% 10%; /* Dark Green for contrast on primary */
 
-    --secondary: 120 33% 30%; /* #335C33 */
-    --secondary-foreground: 120 25% 90%; /* #E0EBE0 */
+    --secondary: 220 20% 25%; /* Muted Slate */
+    --secondary-foreground: 220 15% 85%; /* Lighter Slate Gray */
 
-    --muted: 120 33% 28%; /* #2E552E */
-    --muted-foreground: 120 25% 75%; /* #B8CCB8 */
+    --muted: 220 20% 20%; /* Slightly Darker Muted Slate */
+    --muted-foreground: 220 15% 65%; /* Medium Slate Gray */
 
-    --accent: 60 44% 71%; /* #D3D394 */
-    --accent-foreground: 120 33% 15%; /* #1B361B */
+    --accent: 30 90% 55%; /* Vibrant Orange */
+    --accent-foreground: 30 90% 10%; /* Dark Brown/Orange for contrast on accent */
 
-    --destructive: 0 70% 65%; /* #E67373 */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 70% 65%; /* Bright Red */
+    --destructive-foreground: 0 0% 98%; /* Almost White */
 
-    --border: 120 33% 30%; /* #335C33 */
-    --input: 120 33% 28%; /* #2E552E */
-    --ring: 120 73% 75%; /* Primary color #90EE90 */
+    --border: 220 20% 25%; /* Muted Slate Border (same as secondary for harmony) */
+    --input: 220 20% 20%; /* Muted Slate Input Background */
+    --ring: 140 60% 55%; /* Vibrant Green for focus rings */
 
     --radius: 0.5rem;
 
-    /* Sidebar colors - these will inherit or can be specifically themed if sidebar is used */
-    --sidebar-background: 120 33% 18%;
-    --sidebar-foreground: 120 25% 90%;
-    --sidebar-primary: 120 73% 75%;
-    --sidebar-primary-foreground: 120 33% 15%;
-    --sidebar-accent: 60 44% 71%;
-    --sidebar-accent-foreground: 120 33% 15%;
-    --sidebar-border: 120 33% 25%;
-    --sidebar-ring: 120 73% 75%;
+    /* Sidebar colors - updated to match the new theme */
+    --sidebar-background: 220 20% 10%; /* Even Darker Slate for Sidebar */
+    --sidebar-foreground: 220 15% 88%; /* Light Slate Gray for Sidebar Text */
+    --sidebar-primary: 140 60% 55%; /* Vibrant Green (same as main primary) */
+    --sidebar-primary-foreground: 140 60% 10%; /* Dark Green */
+    --sidebar-accent: 30 90% 55%; /* Vibrant Orange (same as main accent) */
+    --sidebar-accent-foreground: 30 90% 10%; /* Dark Brown/Orange */
+    --sidebar-border: 220 20% 22%; /* Slightly darker border for sidebar context */
+    --sidebar-ring: 140 60% 55%; /* Vibrant Green */
 
     --chart-1: 120 70% 50%;
     --chart-2: 90 60% 45%;
