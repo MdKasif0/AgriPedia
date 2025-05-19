@@ -1,49 +1,95 @@
+
 'use client';
 
-import { useState, type FormEvent } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, type FormEvent, useRef, useEffect, type ChangeEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import type { ProduceInfo } from '@/lib/produceData';
-import { searchProduce } from '@/lib/produceData'; // Assuming this is client-side safe or you'll call an action
 
 interface TextSearchFormProps {
-  onResults: (results: ProduceInfo[]) => void;
+  query: string;
+  onQueryChange: (query: string) => void;
+  suggestions: ProduceInfo[];
+  isSuggestionsVisible: boolean;
+  onSuggestionClick: (item: ProduceInfo) => void;
+  onSubmitSearch: (query: string) => void;
+  onClearSearch: () => void;
 }
 
-export default function TextSearchForm({ onResults }: TextSearchFormProps) {
-  const [query, setQuery] = useState('');
-  const router = useRouter();
+export default function TextSearchForm({
+  query,
+  onQueryChange,
+  suggestions,
+  isSuggestionsVisible,
+  onSuggestionClick,
+  onSubmitSearch,
+  onClearSearch,
+}: TextSearchFormProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const suggestionsRef = useRef<HTMLUListElement>(null);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!query.trim()) return;
-    
-    // For now, using client-side search from mock data
-    // In a real app, this might call a server action or API route
-    const results = searchProduce(query);
-    onResults(results);
+    onSubmitSearch(query);
+  };
 
-    // If only one result, directly navigate
-    if (results.length === 1) {
-      router.push(`/item/${results[0].id}`);
-    }
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    onQueryChange(event.target.value);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 items-center p-6 bg-card rounded-lg shadow-lg">
-      <Input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="E.g., Apple, Banana, Carrot..."
-        className="flex-grow"
-        aria-label="Search for fruits or vegetables"
-      />
-      <Button type="submit" variant="default">
-        <Search className="mr-2 h-5 w-5" /> Search
-      </Button>
+    <form onSubmit={handleSubmit} className="relative space-y-2">
+      <div className="flex gap-2 items-center">
+        <div className="relative flex-grow">
+          <Input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onChange={handleInputChange}
+            onFocus={() => query.trim() && onQueryChange(query)} // Re-trigger suggestions visibility if needed
+            placeholder="E.g., Apple, Banana, Carrot..."
+            className="flex-grow pr-10" 
+            aria-label="Search for fruits or vegetables"
+            autoComplete="off"
+          />
+          {query && (
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              onClick={onClearSearch}
+              aria-label="Clear search query"
+            >
+              <X size={18} />
+            </Button>
+          )}
+        </div>
+        <Button type="submit" variant="default" disabled={!query.trim()}>
+          <Search className="mr-2 h-5 w-5" /> Search
+        </Button>
+      </div>
+
+      {isSuggestionsVisible && suggestions.length > 0 && (
+        <ul
+          ref={suggestionsRef}
+          className="absolute z-10 w-full bg-card border border-border rounded-md shadow-lg max-h-60 overflow-y-auto mt-1"
+        >
+          {suggestions.map((item) => (
+            <li key={item.id}>
+              <button
+                type="button"
+                className="w-full text-left px-4 py-2 hover:bg-accent hover:text-accent-foreground text-sm"
+                onClick={() => onSuggestionClick(item)}
+              >
+                {item.commonName}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </form>
   );
 }

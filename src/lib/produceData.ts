@@ -1,3 +1,4 @@
+
 export interface ProduceInfo {
   id: string;
   commonName: string;
@@ -7,8 +8,9 @@ export interface ProduceInfo {
   origin: string;
   localNames: string[];
   regions: string[]; // Regions mostly grown
+  seasons: string[]; // Added seasons
   nutrition: {
-    calories: string; 
+    calories: string;
     macronutrients: Array<{ name: string; value: number; unit: string }>; // Value as number for charts
     vitamins: Array<{ name: string; value: string; unit: string; rdi?: string }>;
     minerals: Array<{ name: string; value: string; unit: string; rdi?: string }>;
@@ -29,6 +31,7 @@ const produceDatabase: ProduceInfo[] = [
     origin: 'Central Asia',
     localNames: ['Manzana (Spanish)', 'Pomme (French)', 'Apfel (German)'],
     regions: ['China', 'United States', 'Turkey', 'Poland', 'India'],
+    seasons: ['Autumn', 'Winter'],
     nutrition: {
       calories: '52 kcal per 100g',
       macronutrients: [
@@ -63,6 +66,7 @@ const produceDatabase: ProduceInfo[] = [
     origin: 'Southeast Asia and Australia',
     localNames: ['Plátano (Spanish)', 'Banane (French/German)'],
     regions: ['India', 'China', 'Indonesia', 'Brazil', 'Ecuador'],
+    seasons: ['Year-round'],
     nutrition: {
       calories: '89 kcal per 100g',
       macronutrients: [
@@ -98,6 +102,7 @@ const produceDatabase: ProduceInfo[] = [
     origin: 'Persia (modern-day Iran and Afghanistan)',
     localNames: ['Zanahoria (Spanish)', 'Carotte (French)', 'Möhre (German)'],
     regions: ['China', 'Uzbekistan', 'Russia', 'United States'],
+    seasons: ['Spring', 'Autumn', 'Winter'],
     nutrition: {
       calories: '41 kcal per 100g',
       macronutrients: [
@@ -131,16 +136,53 @@ export function getProduceByCommonName(name: string): ProduceInfo | undefined {
   return produceDatabase.find(p => p.commonName.toLowerCase() === searchTerm || p.id.toLowerCase() === searchTerm);
 }
 
-export function searchProduce(query: string): ProduceInfo[] {
-  const searchTerm = query.toLowerCase();
-  if (!searchTerm) return [];
-  return produceDatabase.filter(p => 
-    p.commonName.toLowerCase().includes(searchTerm) ||
-    p.scientificName.toLowerCase().includes(searchTerm) ||
-    p.localNames.some(ln => ln.toLowerCase().includes(searchTerm))
-  );
+export function searchProduce(
+  query: string,
+  filters: { region?: string; season?: string } = {}
+): ProduceInfo[] {
+  const searchTerm = query.toLowerCase().trim();
+  let results = produceDatabase;
+
+  if (searchTerm) {
+    results = results.filter(p =>
+      p.commonName.toLowerCase().includes(searchTerm) ||
+      p.scientificName.toLowerCase().includes(searchTerm) ||
+      p.localNames.some(ln => ln.toLowerCase().includes(searchTerm)) ||
+      p.description.toLowerCase().includes(searchTerm) // Added description to searchable fields
+    );
+  }
+
+  if (filters.region && filters.region !== 'all') {
+    results = results.filter(p => p.regions.includes(filters.region!));
+  }
+
+  if (filters.season && filters.season !== 'all') {
+    results = results.filter(p => p.seasons.includes(filters.season!));
+  }
+  
+  // If no search term but filters are applied, return all items matching filters
+  if (!searchTerm && ( (filters.region && filters.region !== 'all') || (filters.season && filters.season !== 'all') )) {
+    // This block is implicitly handled by the structure above if results starts as produceDatabase
+    // and then gets filtered. If query is empty, the first filter block is skipped.
+  } else if (!searchTerm && (!filters.region || filters.region === 'all') && (!filters.season || filters.season === 'all')) {
+    // No search term and no active filters, return empty or all based on desired behavior for empty query
+    return []; // Current behavior: empty if no query or active filters.
+  }
+
+
+  return results;
 }
 
 export function getAllProduce(): ProduceInfo[] {
   return produceDatabase;
+}
+
+export function getUniqueRegions(): string[] {
+  const allRegions = produceDatabase.flatMap(p => p.regions);
+  return Array.from(new Set(allRegions)).sort();
+}
+
+export function getUniqueSeasons(): string[] {
+  const allSeasons = produceDatabase.flatMap(p => p.seasons);
+  return Array.from(new Set(allSeasons)).sort();
 }
