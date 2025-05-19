@@ -1,0 +1,235 @@
+
+[
+  {
+    "id": "carrot",
+    "commonName": "Carrot",
+    "scientificName": "Daucus carota subsp. sativus",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist.",
+    "origin": "Persia (modern-day Iran and Afghanistan)",
+    "localNames": ["Zanahoria (Spanish)", "Carotte (French)", "Möhre (German)"],
+    "regions": ["China", "Uzbekistan", "Russia", "United States"],
+    "seasons": ["Spring", "Autumn", "Winter"],
+    "nutrition": {
+      "calories": "41 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 10, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 2.8, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin A (from Beta-carotene)", "value": 835, "unit": "µg RAE", "rdi": "93%" },
+        { "name": "Vitamin K", "value": 13.2, "unit": "µg", "rdi": "16%" },
+        { "name": "Vitamin B6", "value": 0.1, "unit": "mg", "rdi": "7%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 320, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of beta-carotene, converted to Vitamin A, essential for good vision, immune function, and skin health.",
+      "Rich in antioxidants, which help protect the body from free radical damage and may reduce cancer risk.",
+      "Fiber content aids in digestive health and can help regulate blood sugar levels.",
+      "Linked to lower cholesterol levels and improved heart health."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Associated with celery-mugwort-birch pollen allergies. Symptoms are usually mild and localized to the mouth and throat." },
+      { "name": "Carotenemia", "severity": "Mild", "details": "Excessive consumption can lead to a harmless yellowing of the skin, particularly palms and soles." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Soil Preparation: Carrots need loose, well-drained, sandy loam or loamy soil, free of stones.\n2. Sowing Seeds: Sow seeds directly into the garden bed in early spring or late summer.\n3. Watering: Keep the soil consistently moist during germination. Water regularly.\n4. Thinning: Thin seedlings to 2-3 inches apart for proper root development.\n5. Weeding: Keep the area weed-free. Mulch can help.\n6. Harvesting: Ready in 60-80 days, depending on variety.",
+    "growthDuration": "Generally 60-80 days from sowing seeds to harvest.",
+    "sustainabilityTips": [
+        "Store carrots in the crisper drawer. Remove greens to prevent moisture loss.",
+        "Use carrot tops in pesto or stocks.",
+        "Choose 'ugly' carrots to reduce food waste."
+    ],
+    "carbonFootprintInfo": "Locally grown carrots have a very low carbon footprint (around 0.2-0.4 kg CO2e/kg)."
+  },
+  {
+    "id": "broccoli",
+    "commonName": "Broccoli",
+    "scientificName": "Brassica oleracea var. italica",
+    "image": "https://placehold.co/600x400.png",
+    "description": "An edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable.",
+    "origin": "Mediterranean region",
+    "localNames": ["Brócoli (Spanish)", "Brocoli (French)", "Brokkoli (German)"],
+    "regions": ["China", "India", "United States", "Spain"],
+    "seasons": ["Autumn", "Winter", "Spring"],
+    "nutrition": {
+      "calories": "34 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 2.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 6.6, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 2.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 89.2, "unit": "mg", "rdi": "149%" },
+        { "name": "Vitamin K", "value": 101.6, "unit": "µg", "rdi": "127%" },
+        { "name": "Folate", "value": 63, "unit": "µg", "rdi": "16%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 316, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C and K, supporting immune function and bone health.",
+      "Contains sulforaphane, a compound with potent anti-cancer properties.",
+      "Good source of fiber, aiding digestion.",
+      "May help reduce cholesterol levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Brassica Allergy", "severity": "Rare", "details": "Rare, but can occur in individuals sensitive to cruciferous vegetables." },
+      { "name": "Goitrogens", "severity": "Mild", "details": "Contains goitrogens, which may interfere with thyroid function in individuals with thyroid conditions if consumed in very large amounts, especially raw." }
+    ],
+    "cultivationProcess": "Broccoli is a cool-season crop. Prefers well-drained, fertile soil and full sun. Grown from seeds or transplants. Heads are harvested when florets are tightly packed and before yellow flowers appear.",
+    "growthDuration": "50-100 days from transplant to harvest, depending on variety.",
+    "sustainabilityTips": [
+        "Store unwashed in an open plastic bag in the refrigerator crisper.",
+        "Use the stalks as well as the florets – they are nutritious and can be cooked.",
+        "Blanch and freeze excess broccoli."
+    ],
+    "carbonFootprintInfo": "Relatively low footprint when grown locally (0.4-0.7 kg CO2e/kg). Transport increases this."
+  },
+  {
+    "id": "spinach",
+    "commonName": "Spinach",
+    "scientificName": "Spinacia oleracea",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A leafy green flowering plant native to central and western Asia.",
+    "origin": "Ancient Persia (modern Iran)",
+    "localNames": ["Espinaca (Spanish)", "Épinard (French)", "Spinat (German)"],
+    "regions": ["China", "United States", "Turkey", "Japan"],
+    "seasons": ["Spring", "Autumn"],
+    "nutrition": {
+      "calories": "23 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 2.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 3.6, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 2.2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin A (from carotenoids)", "value": 469, "unit": "µg RAE", "rdi": "52%" },
+        { "name": "Vitamin K", "value": 483, "unit": "µg", "rdi": "604%" },
+        { "name": "Vitamin C", "value": 28.1, "unit": "mg", "rdi": "47%" },
+        { "name": "Folate", "value": 194, "unit": "µg", "rdi": "49%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 2.7, "unit": "mg", "rdi": "15%" },
+        { "name": "Magnesium", "value": 79, "unit": "mg", "rdi": "20%" },
+        { "name": "Manganese", "value": 0.9, "unit": "mg", "rdi": "45%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of vitamins A, C, K, and folate.",
+      "Rich in iron, important for preventing anemia.",
+      "Contains antioxidants like lutein and zeaxanthin, beneficial for eye health.",
+      "May help reduce oxidative stress and lower blood pressure."
+    ],
+    "potentialAllergies": [
+      { "name": "Oxalates", "severity": "Mild", "details": "High in oxalates, which can contribute to kidney stone formation in susceptible individuals. Cooking reduces oxalate levels." }
+    ],
+    "cultivationProcess": "Spinach is a cool-season crop. Prefers well-drained soil rich in organic matter and partial to full sun. Can be grown from seed. Harvest leaves when they reach desired size.",
+    "growthDuration": "4-6 weeks from sowing to first harvest.",
+    "sustainabilityTips": [
+        "Store unwashed in the refrigerator, wrapped in a paper towel inside a plastic bag.",
+        "Wash thoroughly just before use.",
+        "Frozen spinach is a good alternative when fresh is out of season."
+    ],
+    "carbonFootprintInfo": "Generally low footprint (0.3-0.6 kg CO2e/kg), especially if field-grown. Greenhouse production and transport increase it."
+  },
+  {
+    "id": "potato",
+    "commonName": "Potato",
+    "scientificName": "Solanum tuberosum",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A starchy tuber from the nightshade family Solanaceae.",
+    "origin": "Andes region of South America",
+    "localNames": ["Patata (Spanish)", "Pomme de terre (French)", "Kartoffel (German)"],
+    "regions": ["China", "India", "Russia", "Ukraine", "United States"],
+    "seasons": ["Year-round (storage)"],
+    "nutrition": {
+      "calories": "77 kcal per 100g (boiled)",
+      "macronutrients": [
+        { "name": "Protein", "value": 2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 17, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 2.2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 19.7, "unit": "mg", "rdi": "33%" },
+        { "name": "Vitamin B6", "value": 0.3, "unit": "mg", "rdi": "15%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 421, "unit": "mg", "rdi": "12%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of potassium, which helps regulate blood pressure.",
+      "Provides Vitamin C, an antioxidant that supports the immune system.",
+      "Source of Vitamin B6, important for brain development and function.",
+      "Resistant starch (when cooked and cooled) can improve gut health."
+    ],
+    "potentialAllergies": [
+      { "name": "Nightshade Sensitivity", "severity": "Mild", "details": "Some individuals report sensitivity to nightshades, which can exacerbate inflammatory conditions, though this is not a true allergy for most." },
+      { "name": "Glycoalkaloids", "severity": "Moderate", "details": "Green parts of potatoes and sprouts contain solanine and chaconine. These should be removed before eating."}
+    ],
+    "cultivationProcess": "Potatoes are grown from 'seed potatoes' (small tubers). They prefer well-drained, loose soil and full sun. 'Hilling' soil around the plants as they grow encourages tuber development.",
+    "growthDuration": "70-120 days from planting to harvest, depending on variety.",
+    "sustainabilityTips": [
+        "Store in a cool, dark, dry place. Avoid refrigeration, which can turn starch to sugar.",
+        "Keep potatoes away from onions, as they can cause each other to spoil faster.",
+        "Leave the skin on when cooking for extra fiber and nutrients."
+    ],
+    "carbonFootprintInfo": "Relatively low footprint (0.2-0.5 kg CO2e/kg), especially if grown with minimal inputs. Processing (e.g., into fries) and transport significantly increase this."
+  },
+  {
+    "id": "tomato",
+    "commonName": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A berry, considered a culinary vegetable, of the nightshade Solanum lycopersicum.",
+    "origin": "Western South America and Central America",
+    "localNames": ["Tomate (Spanish/German)", "Tomate (French)"],
+    "regions": ["China", "India", "United States", "Turkey", "Egypt"],
+    "seasons": ["Summer", "Autumn"],
+    "nutrition": {
+      "calories": "18 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 3.9, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 1.2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 13.7, "unit": "mg", "rdi": "23%" },
+        { "name": "Vitamin K", "value": 7.9, "unit": "µg", "rdi": "10%" },
+        { "name": "Potassium", "value": 237, "unit": "mg", "rdi": "7%" }
+      ],
+      "minerals": [
+        { "name": "Lycopene (antioxidant)", "value": 2573, "unit": "µg" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of lycopene, a powerful antioxidant linked to reduced risk of heart disease and certain cancers.",
+      "Good source of Vitamin C, Vitamin K, and potassium.",
+      "May support skin health due to antioxidant content.",
+      "Contributes to hydration due to high water content."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can occur in individuals with grass pollen allergies." },
+      { "name": "Nightshade Sensitivity", "severity": "Mild", "details": "Some people report joint pain or inflammation, though not a typical allergy."}
+    ],
+    "cultivationProcess": "Tomatoes are warm-season plants. Grown from seeds or transplants. Require full sun, well-drained, fertile soil. Many varieties need staking or caging for support. Regular watering and fertilization are important.",
+    "growthDuration": "50-90 days from transplant to first ripe fruit, depending on variety.",
+    "sustainabilityTips": [
+        "Store at room temperature, not in the refrigerator, for best flavor.",
+        "Use overripe tomatoes for sauces or soups.",
+        "Consider growing your own tomatoes; they are relatively easy in many climates."
+    ],
+    "carbonFootprintInfo": "Field-grown, local tomatoes have a lower footprint (0.3-0.7 kg CO2e/kg). Greenhouse-grown tomatoes, especially out of season, have a much higher footprint due to energy use."
+  }
+]
+    

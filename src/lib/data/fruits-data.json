@@ -1,0 +1,228 @@
+
+[
+  {
+    "id": "apple",
+    "commonName": "Apple",
+    "scientificName": "Malus domestica",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A sweet, edible fruit produced by an apple tree. Apples are cultivated worldwide and are the most widely grown species in the genus Malus.",
+    "origin": "Central Asia",
+    "localNames": ["Manzana (Spanish)", "Pomme (French)", "Apfel (German)"],
+    "regions": ["China", "United States", "Turkey", "Poland", "India"],
+    "seasons": ["Autumn", "Winter"],
+    "nutrition": {
+      "calories": "52 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.3, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 2.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 4.6, "unit": "mg", "rdi": "8%" },
+        { "name": "Vitamin K", "value": 2.2, "unit": "µg", "rdi": "3%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 107, "unit": "mg", "rdi": "3%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in fiber, aiding digestion and promoting satiety, which can be beneficial for weight management.",
+      "Contains antioxidants like quercetin, which may protect brain cells from oxidative stress.",
+      "Soluble fiber (pectin) can help lower LDL (bad) cholesterol levels, supporting heart health.",
+      "May help regulate blood sugar levels, potentially reducing the risk of type 2 diabetes."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Often linked to birch pollen allergy. Symptoms include itching or swelling of the mouth, lips, tongue, and throat." },
+      { "name": "Pesticide Residues", "severity": "Varies", "details": "Conventionally grown apples can have pesticide residues. Opting for organic or thorough washing is recommended." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Plant bare-root trees in early spring or container-grown trees anytime soil is workable. Choose a sunny location with good air circulation.\n2. Soil: Apples prefer well-drained, loamy soil with a slightly acidic to neutral pH (6.0-7.0). Amend soil with compost before planting.\n3. Watering: Water young trees regularly, especially during dry periods (1-2 inches per week). Mature trees are more drought-tolerant but benefit from deep watering during prolonged drought.\n4. Fertilizing: Apply a balanced fertilizer in early spring before new growth begins. Avoid over-fertilizing.\n5. Pruning: Prune annually during dormancy (late winter/early spring) to maintain shape and encourage fruit production.\n6. Pollination: Most apple varieties require cross-pollination. Ensure a suitable pollinator is nearby.",
+    "growthDuration": "Typically 3-5 years for a young tree to bear its first significant fruit crop. Fruits mature in 100-200 days from bloom.",
+    "sustainabilityTips": [
+        "Store in the fridge to prolong freshness, not in a fruit bowl.",
+        "Compost apple cores or use them to make apple cider vinegar.",
+        "Buy local apples in season to reduce food miles."
+    ],
+    "carbonFootprintInfo": "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season."
+  },
+  {
+    "id": "banana",
+    "commonName": "Banana",
+    "scientificName": "Musa spp.",
+    "image": "https://placehold.co/600x400.png",
+    "description": "An elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+    "origin": "Southeast Asia and Australia",
+    "localNames": ["Plátano (Spanish)", "Banane (French/German)"],
+    "regions": ["India", "China", "Indonesia", "Brazil", "Ecuador"],
+    "seasons": ["Year-round"],
+    "nutrition": {
+      "calories": "89 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 23, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 8.7, "unit": "mg", "rdi": "15%" },
+        { "name": "Vitamin B6", "value": 0.4, "unit": "mg", "rdi": "20%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 358, "unit": "mg", "rdi": "10%" },
+        { "name": "Magnesium", "value": 27, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "High potassium content supports healthy blood pressure levels and cardiovascular function.",
+      "Provides readily available carbohydrates, making it a great natural energy booster for athletes.",
+      "Contains pectin and resistant starch, which may moderate blood sugar levels and improve digestive health.",
+      "Good source of Vitamin B6, important for brain development and function."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex-Fruit Syndrome", "severity": "Moderate", "details": "Individuals allergic to latex may also react to bananas. Symptoms can range from mild oral reactions to anaphylaxis in severe cases." },
+      { "name": "Tyramine Content", "severity": "Mild", "details": "Can trigger migraines in sensitive individuals, especially when overripe." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Bananas are typically grown from \"pups\" or suckers.\n2. Site Selection: Choose a location with full sun, protection from strong winds, and excellent drainage.\n3. Soil: Bananas thrive in rich, fertile, well-drained soil, high in organic matter. Ideal pH is 5.5-6.5.\n4. Planting: Plant pups ensuring the corm is well-covered.\n5. Watering: Bananas are heavy feeders and require consistent moisture.\n6. Fertilizing: Apply a balanced fertilizer rich in potassium regularly.\n7. De-suckering: Remove excess suckers, leaving only one or two strong ones.\n8. Harvesting: Fruit bunch is harvested when bananas are plump but still green.",
+    "growthDuration": "Approximately 9-12 months from planting a pup to harvesting the first bunch of bananas.",
+    "sustainabilityTips": [
+        "Store at room temperature. Separate from other fruits if you want to slow their ripening.",
+        "Freeze overripe bananas (peeled) for smoothies or banana bread.",
+        "Compost banana peels."
+    ],
+    "carbonFootprintInfo": "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport."
+  },
+  {
+    "id": "orange",
+    "commonName": "Orange",
+    "scientificName": "Citrus × sinensis",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A round citrus fruit with a tough bright reddish-yellow rind and pulpy, edible flesh.",
+    "origin": "Southeast Asia",
+    "localNames": ["Naranja (Spanish)", "Orange (French/German)"],
+    "regions": ["Brazil", "United States", "China", "India", "Mexico"],
+    "seasons": ["Winter", "Spring"],
+    "nutrition": {
+      "calories": "47 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 12, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 2.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 53.2, "unit": "mg", "rdi": "89%" },
+        { "name": "Folate", "value": 30, "unit": "µg", "rdi": "8%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 181, "unit": "mg", "rdi": "5%" },
+        { "name": "Calcium", "value": 40, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, boosting the immune system.",
+      "Contains flavonoids, which have antioxidant and anti-inflammatory properties.",
+      "May help lower blood pressure and cholesterol.",
+      "Good source of fiber, promoting digestive health."
+    ],
+    "potentialAllergies": [
+      { "name": "Citrus Allergy", "severity": "Mild", "details": "Can cause skin irritation or oral allergy symptoms in sensitive individuals." }
+    ],
+    "cultivationProcess": "Oranges grow on trees in warm climates. They require sunny conditions, well-drained soil, and regular watering. Trees are often grafted and pruned to improve fruit yield and quality.",
+    "growthDuration": "3-5 years for trees to start bearing fruit, with fruit maturing over several months.",
+    "sustainabilityTips": [
+        "Store oranges at room temperature for a week or in the refrigerator for longer.",
+        "Use the zest in cooking and baking before juicing.",
+        "Compost peels."
+    ],
+    "carbonFootprintInfo": "Can vary significantly based on origin and transport (0.4-0.9 kg CO2e/kg). Local and seasonal oranges are best."
+  },
+  {
+    "id": "strawberry",
+    "commonName": "Strawberry",
+    "scientificName": "Fragaria × ananassa",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A widely grown hybrid species of the genus Fragaria, cultivated worldwide for its fruit.",
+    "origin": "Brittany, France (cultivated hybrid)",
+    "localNames": ["Fresa (Spanish)", "Fraise (French)", "Erdbeere (German)"],
+    "regions": ["United States", "Mexico", "Turkey", "Spain", "Egypt"],
+    "seasons": ["Spring", "Summer"],
+    "nutrition": {
+      "calories": "32 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 7.7, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 58.8, "unit": "mg", "rdi": "98%" },
+        { "name": "Manganese", "value": 0.4, "unit": "mg", "rdi": "19%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 153, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C and antioxidants like anthocyanins.",
+      "May improve heart health by lowering blood pressure and cholesterol.",
+      "Anti-inflammatory properties.",
+      "Can help regulate blood sugar."
+    ],
+    "potentialAllergies": [
+      { "name": "Strawberry Allergy", "severity": "Mild", "details": "Can cause hives, itching, or oral allergy syndrome." }
+    ],
+    "cultivationProcess": "Strawberries are low-growing herbaceous plants. They prefer well-drained, slightly acidic soil and full sun. Often grown from runners or bare-root plants. Mulching helps retain moisture and keep fruit clean.",
+    "growthDuration": "Plants can fruit in their first year. Main harvest typically in late spring/early summer.",
+    "sustainabilityTips": [
+        "Store unwashed in the fridge, in a single layer on a paper towel.",
+        "Wash just before eating.",
+        "Freeze excess strawberries for smoothies or desserts."
+    ],
+    "carbonFootprintInfo": "Highly variable. Local, field-grown strawberries have a lower footprint (0.5-1.5 kg CO2e/kg). Out-of-season, air-freighted, or greenhouse-grown strawberries have a much higher footprint."
+  },
+  {
+    "id": "grapes",
+    "commonName": "Grapes",
+    "scientificName": "Vitis vinifera",
+    "image": "https://placehold.co/600x400.png",
+    "description": "A fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis.",
+    "origin": "Near East",
+    "localNames": ["Uva (Spanish)", "Raisin (French - refers to grape, not dried)", "Traube (German)"],
+    "regions": ["China", "Italy", "United States", "Spain", "France"],
+    "seasons": ["Summer", "Autumn"],
+    "nutrition": {
+      "calories": "69 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 18, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin K", "value": 14.6, "unit": "µg", "rdi": "18%" },
+        { "name": "Vitamin C", "value": 3.2, "unit": "mg", "rdi": "5%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 191, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Contain antioxidants, including resveratrol (especially in red grapes).",
+      "May support heart health.",
+      "Can benefit eye health.",
+      "May help regulate blood sugar levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Grape Allergy", "severity": "Rare", "details": "Uncommon, but can occur." }
+    ],
+    "cultivationProcess": "Grapes grow on vines, typically trained on trellises. They require full sun, well-drained soil, and pruning to manage growth and fruit production. Different varieties have different climate needs.",
+    "growthDuration": "Vines take 2-4 years to produce a good crop. Fruit ripens in late summer to autumn.",
+    "sustainabilityTips": [
+        "Store unwashed in the refrigerator.",
+        "Choose organic grapes to avoid pesticide residues, as they are often on the 'Dirty Dozen' list.",
+        "Freeze grapes for a cool snack."
+    ],
+    "carbonFootprintInfo": "Footprint depends on origin and transport (0.6-1.2 kg CO2e/kg). Locally grown grapes in season are more sustainable."
+  }
+]
+    
