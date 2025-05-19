@@ -8,10 +8,13 @@ import ImageUploadForm from '@/components/search/ImageUploadForm';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce } from '@/lib/produceData';
+import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ScanLine, Filter, ListFilter } from 'lucide-react';
+import { Apple, ScanLine, ListFilter, Heart, History, ExternalLink } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 export default function HomePage() {
   const router = useRouter();
@@ -25,19 +28,27 @@ export default function HomePage() {
   const [availableSeasons, setAvailableSeasons] = useState<string[]>([]);
   
   const [searchResults, setSearchResults] = useState<ProduceInfo[]>([]);
-  const [initialLoad, setInitialLoad] = useState(true); // To control initial display
+  const [initialLoad, setInitialLoad] = useState(true);
+
+  const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
+  const [recentSearchTerms, setRecentSearchTerms] = useState<string[]>([]);
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const searchFormRef = useRef<HTMLDivElement>(null); // Ref for the search form area
+  const searchFormRef = useRef<HTMLDivElement>(null);
+
+  const loadUserData = useCallback(() => {
+    const favIds = getFavoriteIds();
+    const allProduce = getAllProduce();
+    setFavoriteProduceItems(favIds.map(id => allProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
+    setRecentSearchTerms(getRecentSearches());
+  }, []);
 
   useEffect(() => {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
-    // Initially display all produce items or a curated list
-    // For now, let's clear search results to match previous behavior of showing only after search
-    // setSearchResults(getAllProduce()); 
+    loadUserData();
     setInitialLoad(false);
-  }, []);
+  }, [loadUserData]);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
     const results = searchProduce(query, { 
@@ -45,12 +56,10 @@ export default function HomePage() {
       season: season === 'all' ? undefined : season 
     });
     setSearchResults(results);
-    setInitialLoad(false); // Results are from a search/filter action
+    setInitialLoad(false);
   }, []);
 
   useEffect(() => {
-    // This effect runs when query, region, or season changes to update results.
-    // Avoid running on initial empty query unless a filter is set.
     if (!initialLoad) {
        updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
     }
@@ -63,16 +72,14 @@ export default function HomePage() {
       clearTimeout(suggestionsTimeoutRef.current);
     }
     if (newQuery.trim()) {
-      // Debounce suggestion fetching slightly
       suggestionsTimeoutRef.current = setTimeout(() => {
-        const currentSuggestions = searchProduce(newQuery.trim(), {}); // Suggestions based on query only
+        const currentSuggestions = searchProduce(newQuery.trim(), {});
         setSuggestions(currentSuggestions);
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
       setSuggestions([]);
       setIsSuggestionsVisible(false);
-      // If query is cleared, re-evaluate results based on filters only
       updateFilteredResults("", selectedRegion, selectedSeason);
     }
   };
@@ -81,22 +88,24 @@ export default function HomePage() {
     setSearchQuery('');
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    updateFilteredResults("", selectedRegion, selectedSeason); // Update results with no query
+    updateFilteredResults("", selectedRegion, selectedSeason);
   };
 
   const handleSuggestionClick = (item: ProduceInfo) => {
     setSearchQuery(item.commonName);
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    // Directly navigate, as this is a specific selection
+    addRecentSearch(item.commonName);
+    loadUserData(); // Reload user data to update recent searches
     router.push(`/item/${item.id}`);
   };
 
   const handleSubmitSearch = (submittedQuery: string) => {
-    setSearchQuery(submittedQuery); // Ensure query state is updated
+    setSearchQuery(submittedQuery);
     setIsSuggestionsVisible(false);
-    // updateFilteredResults will be triggered by the useEffect watching searchQuery
-    // If there's a single exact match, consider navigating directly.
+    addRecentSearch(submittedQuery);
+    loadUserData(); // Reload user data
+
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
       season: selectedSeason === 'all' ? undefined : selectedSeason
@@ -104,11 +113,15 @@ export default function HomePage() {
     if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
       router.push(`/item/${results[0].id}`);
     } else {
-       setSearchResults(results); // Update searchResults for display
+       setSearchResults(results);
     }
   };
+  
+  const handleRecentSearchClick = (term: string) => {
+    setSearchQuery(term);
+    handleSubmitSearch(term); // This will also add it to recent searches again (and move to top)
+  };
 
-  // Close suggestions when clicking outside
    useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
@@ -214,7 +227,7 @@ export default function HomePage() {
         </>
       )}
 
-      {(!initialLoad &&searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
+      {(!initialLoad && searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
         <>
           <Separator className="my-8" />
           <section className="text-center py-8">
@@ -225,12 +238,44 @@ export default function HomePage() {
         </>
       )}
       
-       <section className="py-8 text-center">
-          <p className="text-muted-foreground">
-            Use the search bar and filters to find produce, or use your camera to identify an item.
-          </p>
-        </section>
+      {recentSearchTerms.length > 0 && (
+        <>
+          <Separator className="my-8" />
+          <section>
+            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2"><History className="text-primary"/>Recent Searches</h2>
+            <div className="flex flex-wrap gap-2">
+              {recentSearchTerms.map((term, index) => (
+                <Button key={index} variant="outline" size="sm" onClick={() => handleRecentSearchClick(term)}>
+                  {term}
+                  <ExternalLink size={14} className="ml-2 opacity-70"/>
+                </Button>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
+
+      {favoriteProduceItems.length > 0 && (
+        <>
+          <Separator className="my-8" />
+          <section>
+            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2"><Heart className="text-primary"/>My Favorite Produce</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {favoriteProduceItems.map((item) => (
+                <ProduceCard key={item.id} produce={item} />
+              ))}
+            </div>
+          </section>
+        </>
+      )}
+
+      {(favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && initialLoad) && (
+         <section className="py-8 text-center">
+            <p className="text-muted-foreground">
+              Use the search bar and filters to find produce, or use your camera to identify an item. Favorite items and recent searches will appear here.
+            </p>
+          </section>
+      )}
     </div>
   );
 }
-

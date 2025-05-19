@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
+import { isFavorite, addFavorite, removeFavorite } from '@/lib/userDataStore';
 import NutrientChart from '@/components/charts/NutrientChart';
 import VitaminChart from '@/components/charts/VitaminChart';
 import MineralChart from '@/components/charts/MineralChart';
@@ -15,7 +16,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
@@ -52,6 +53,7 @@ export default function ItemPage() {
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
+  const [isBookmarked, setIsBookmarked] = useState(false);
 
   const [isCurrentlyInSeason, setIsCurrentlyInSeason] = useState<boolean | null>(null);
   const [currentSeasonMessage, setCurrentSeasonMessage] = useState<string>('');
@@ -79,7 +81,7 @@ export default function ItemPage() {
           onlineFetchAttempted = true;
           if (onlineData) {
             itemData = onlineData;
-            saveProduceOffline(onlineData);
+            saveProduceOffline(onlineData); // Save to offline store on successful fetch
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache:', error);
@@ -100,6 +102,9 @@ export default function ItemPage() {
         setProduce(null);
       } else {
         setProduce(itemData);
+        if (itemData) {
+          setIsBookmarked(isFavorite(itemData.id));
+        }
       }
 
       setIsLoading(false);
@@ -154,6 +159,16 @@ export default function ItemPage() {
     );
   };
 
+  const handleToggleBookmark = () => {
+    if (!produce) return;
+    if (isBookmarked) {
+      removeFavorite(produce.id);
+    } else {
+      addFavorite(produce.id);
+    }
+    setIsBookmarked(!isBookmarked);
+  };
+
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
@@ -174,11 +189,20 @@ export default function ItemPage() {
           </AlertDescription>
         </Alert>
       )}
-      <header className="text-center">
+      <header className="text-center relative">
         <h1 className="text-4xl font-bold text-primary mb-2 flex items-center justify-center gap-3">
           <Leaf size={40} /> {produce.commonName}
         </h1>
         <p className="text-xl text-muted-foreground italic">{produce.scientificName}</p>
+        <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={handleToggleBookmark} 
+            className="absolute top-0 right-0 text-primary hover:text-accent"
+            aria-label={isBookmarked ? 'Remove from favorites' : 'Add to favorites'}
+        >
+            {isBookmarked ? <BookmarkCheck size={28} className="fill-accent" /> : <BookmarkPlus size={28} />}
+        </Button>
       </header>
 
       <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-lg overflow-hidden shadow-xl">
