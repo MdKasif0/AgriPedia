@@ -15,7 +15,7 @@ interface TextSearchFormProps {
   onSuggestionClick: (item: ProduceInfo) => void;
   onSubmitSearch: (query: string) => void;
   onClearSearch: () => void;
-  inputRef?: React.RefObject<HTMLInputElement>; // Added for focusing from parent
+  inputRef?: React.RefObject<HTMLInputElement>; 
 }
 
 export default function TextSearchForm({
@@ -26,7 +26,7 @@ export default function TextSearchForm({
   onSuggestionClick,
   onSubmitSearch,
   onClearSearch,
-  inputRef, // Consuming the ref
+  inputRef, 
 }: TextSearchFormProps) {
   const suggestionsRef = useRef<HTMLUListElement>(null);
 
@@ -50,8 +50,8 @@ export default function TextSearchForm({
             value={query}
             onChange={handleInputChange}
             onFocus={() => query.trim() && onQueryChange(query)} 
-            placeholder="E.g., Apple, Banana, Carrot... (Ctrl+K)"
-            className="flex-grow pr-10 rounded-lg bg-input text-foreground placeholder:text-muted-foreground" 
+            placeholder="E.g., Apple, Banana... (Ctrl+K)"
+            className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary" 
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
             id="main-search-input" 
@@ -61,7 +61,7 @@ export default function TextSearchForm({
               type="button"
               variant="ghost"
               size="icon"
-              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 text-muted-foreground hover:text-card-foreground"
               onClick={onClearSearch}
               aria-label="Clear search query"
             >

@@ -4,18 +4,18 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import TextSearchForm from '@/components/search/TextSearchForm';
-// ImageUploadForm is now accessed via global FAB/Dialog
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce } from '@/lib/produceData';
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus, Search } from 'lucide-react';
+import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus, Search, Info } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import Loader from '@/components/ui/Loader';
+import InfoBanner from '@/components/home/InfoBanner'; // New component for the banner
 
 const VAPID_PUBLIC_KEY = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME'; 
 
@@ -60,7 +60,7 @@ export default function HomePage() {
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
-  const searchInputRef = useRef<HTMLInputElement>(null); // Ref for the search input
+  const searchInputRef = useRef<HTMLInputElement>(null); 
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'Notification' in window && 'PushManager' in window.ServiceWorkerRegistration.prototype) {
@@ -71,7 +71,6 @@ export default function HomePage() {
     }
   }, []);
 
-  // Keyboard shortcut for search (Ctrl+K or Cmd+K)
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
@@ -98,8 +97,13 @@ export default function HomePage() {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
     loadUserData();
-    setInitialLoad(false); // After initial data load, mark as not initial load
-  }, [loadUserData]);
+    
+    // Initially, load all produce items if no search query or filters are set
+    if (initialLoad && searchQuery === '' && selectedRegion === 'all' && selectedSeason === 'all') {
+      setSearchResults(getAllProduce().slice(0, 8)); // Show a limited number initially
+    }
+    setInitialLoad(false);
+  }, [loadUserData, initialLoad, searchQuery, selectedRegion, selectedSeason]);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
     const results = searchProduce(query, { 
@@ -107,11 +111,10 @@ export default function HomePage() {
       season: season === 'all' ? undefined : season 
     });
     setSearchResults(results);
-    setInitialLoad(false); // Any update to filters/query means it's not the initial pristine load
+    setInitialLoad(false); 
   }, []);
 
   useEffect(() => {
-    // Only run filtering if it's not the initial load OR if any filter/query has changed
      if (!initialLoad) {
        updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
      }
@@ -125,14 +128,13 @@ export default function HomePage() {
     }
     if (newQuery.trim()) {
       suggestionsTimeoutRef.current = setTimeout(() => {
-        const currentSuggestions = searchProduce(newQuery.trim(), {}); // Suggestions based on query only
+        const currentSuggestions = searchProduce(newQuery.trim(), {}); 
         setSuggestions(currentSuggestions);
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
       setSuggestions([]);
       setIsSuggestionsVisible(false);
-      // When query is cleared, re-apply current filters to all data
       updateFilteredResults("", selectedRegion, selectedSeason);
     }
   };
@@ -145,21 +147,17 @@ export default function HomePage() {
   };
 
   const handleSuggestionClick = (item: ProduceInfo) => {
-    // setSearchQuery(item.commonName); // This would re-trigger searchResults update
     setSuggestions([]);
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
     loadUserData(); 
-    router.push(`/item/${item.id}`); // Directly navigate to item page
+    router.push(`/item/${item.id}`); 
   };
 
   const handleSubmitSearch = (submittedQuery: string) => {
-    // setSearchQuery(submittedQuery); // This will be set by handleQueryChange or direct input
     setIsSuggestionsVisible(false);
     addRecentSearch(submittedQuery);
     loadUserData(); 
-    // The useEffect for searchQuery, selectedRegion, selectedSeason will handle updating searchResults
-    // If the query comes directly from submit (not suggestion), ensure results are updated:
     updateFilteredResults(submittedQuery, selectedRegion, selectedSeason);
 
     const results = searchProduce(submittedQuery, {
@@ -169,13 +167,10 @@ export default function HomePage() {
     if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
       router.push(`/item/${results[0].id}`);
     }
-    // else, searchResults will be updated by updateFilteredResults and displayed
   };
   
   const handleRecentSearchClick = (term: string) => {
-    setSearchQuery(term); // This will trigger useEffect to update results
-    // No need to call handleSubmitSearch directly, as setSearchQuery + useEffect handles it
-    // Make sure suggestions are closed
+    setSearchQuery(term); 
     setIsSuggestionsVisible(false);
     addRecentSearch(term);
     loadUserData();
@@ -238,8 +233,6 @@ export default function HomePage() {
             });
             
             console.log('User is subscribed:', subscription);
-            // TODO: Send the subscription object to your backend server to store it
-            // Example: await fetch('/api/subscribe-notifications', { method: 'POST', body: JSON.stringify(subscription), headers: {'Content-Type': 'application/json'} });
             toast({ title: "Subscribed!", description: "You'll now receive seasonal updates (once backend is ready)." });
         }
       }
@@ -254,21 +247,26 @@ export default function HomePage() {
 
 
   return (
-    <div className="space-y-8">
-      <section className="text-center py-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">Welcome to AgriPedia!</h1>
+    <div className="space-y-8 py-6">
+      <section className="text-left px-1">
+        <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">Explore Your Produce</h1>
         <p className="text-md sm:text-lg text-muted-foreground">
           Discover detailed information about fruits and vegetables.
         </p>
       </section>
 
-      {/* Main content grid: Search + Filters (2/3 width), Notifications (1/3 width) */}
+      <InfoBanner 
+        title="AgriPedia Tip!"
+        description="Did you know? Apples float because 25% of their volume is air!"
+        icon={Info}
+      />
+      
       <div className="grid md:grid-cols-3 gap-8 items-start">
-        <section className="space-y-4 md:col-span-2"> {/* Search and filters take 2 columns */}
-          <Card className="shadow-xl rounded-xl bg-card">
+        <section className="space-y-4 md:col-span-2"> 
+          <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
             <CardHeader className="p-6">
-              <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-foreground">
-                <Search className="text-primary" /> Search Produce
+              <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
+                <Search className="text-primary" /> Search & Filter
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
@@ -280,16 +278,16 @@ export default function HomePage() {
                 onSuggestionClick={handleSuggestionClick}
                 onSubmitSearch={handleSubmitSearch}
                 onClearSearch={handleClearSearch}
-                inputRef={searchInputRef} // Pass the ref here
+                inputRef={searchInputRef} 
               />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
-                  <label htmlFor="region-filter" className="block text-sm font-medium text-foreground mb-1">Filter by Region</label>
+                  <label htmlFor="region-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Region</label>
                   <Select value={selectedRegion} onValueChange={setSelectedRegion}>
-                    <SelectTrigger id="region-filter" className="w-full rounded-lg">
+                    <SelectTrigger id="region-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
                       <SelectValue placeholder="All Regions" />
                     </SelectTrigger>
-                    <SelectContent className="rounded-lg">
+                    <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
                       <SelectItem value="all">All Regions</SelectItem>
                       {availableRegions.map(region => (
                         <SelectItem key={region} value={region}>{region}</SelectItem>
@@ -298,12 +296,12 @@ export default function HomePage() {
                   </Select>
                 </div>
                 <div>
-                  <label htmlFor="season-filter" className="block text-sm font-medium text-foreground mb-1">Filter by Season</label>
+                  <label htmlFor="season-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Season</label>
                   <Select value={selectedSeason} onValueChange={setSelectedSeason}>
-                    <SelectTrigger id="season-filter" className="w-full rounded-lg">
+                    <SelectTrigger id="season-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
                       <SelectValue placeholder="All Seasons" />
                     </SelectTrigger>
-                    <SelectContent className="rounded-lg">
+                    <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
                       <SelectItem value="all">All Seasons</SelectItem>
                       {availableSeasons.map(season => (
                         <SelectItem key={season} value={season}>{season}</SelectItem>
@@ -316,10 +314,10 @@ export default function HomePage() {
           </Card>
         </section>
         
-        <section className="space-y-4 md:col-span-1"> {/* Notifications card takes 1 column */}
-          <Card className="shadow-xl rounded-xl bg-card">
+        <section className="space-y-4 md:col-span-1"> 
+          <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
              <CardHeader className="p-6">
-                <CardTitle className="text-lg sm:text-xl font-semibold flex items-center gap-2 text-foreground">
+                <CardTitle className="text-lg sm:text-xl font-semibold flex items-center gap-2 text-card-foreground">
                     {notificationPermission === 'granted' ? <BellRing className="text-primary" /> : <BellPlus className="text-primary" />}
                     Notifications
                 </CardTitle>
@@ -332,7 +330,7 @@ export default function HomePage() {
                                 ? "You are subscribed to seasonal notifications."
                                 : notificationPermission === 'denied'
                                 ? "Notifications are disabled. Please update your browser settings to enable them."
-                                : "Enable notifications to get updates on seasonal produce."
+                                : "Enable notifications for seasonal produce updates."
                             }
                         </p>
                         {notificationPermission !== 'denied' && (
@@ -348,7 +346,7 @@ export default function HomePage() {
                             </Button>
                         )}
                          {VAPID_PUBLIC_KEY === 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME' && notificationPermission !== 'denied' && (
-                            <p className="text-xs text-destructive text-center">Note: App config needed for notifications to fully work.</p>
+                            <p className="text-xs text-destructive/80 text-center">Note: App config needed for notifications to fully work.</p>
                         )}
                     </>
                 ) : (
@@ -359,11 +357,14 @@ export default function HomePage() {
         </section>
       </div>
 
-      {(!initialLoad && searchResults.length > 0) && (
+      {(!initialLoad || searchResults.length > 0) && (
         <>
-          <Separator className="my-8 bg-border/50" />
+          <Separator className="my-8 bg-border/20" />
           <section>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><ListFilter className="text-primary"/>Filtered Results</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground">
+              <ListFilter className="text-primary"/> 
+              {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'Discover Produce'}
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {searchResults.map((item) => (
                 <ProduceCard key={item.id} produce={item} />
@@ -375,7 +376,7 @@ export default function HomePage() {
 
       {(!initialLoad && searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
         <>
-          <Separator className="my-8 bg-border/50" />
+          <Separator className="my-8 bg-border/20" />
           <section className="text-center py-8">
             <p className="text-muted-foreground text-lg">
               No produce found matching your search query and filters.
@@ -386,7 +387,7 @@ export default function HomePage() {
       
       {recentSearchTerms.length > 0 && (
         <>
-          <Separator className="my-8 bg-border/50" />
+          <Separator className="my-8 bg-border/20" />
           <section>
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><History className="text-primary"/>Recent Searches</h2>
             <div className="flex flex-wrap gap-2">
@@ -403,8 +404,8 @@ export default function HomePage() {
 
       {favoriteProduceItems.length > 0 && (
         <>
-          <Separator className="my-8 bg-border/50" />
-          <section id="favorites-section"> {/* Added ID for bottom nav link */}
+          <Separator className="my-8 bg-border/20" />
+          <section id="favorites-section"> 
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {favoriteProduceItems.map((item) => (
@@ -415,8 +416,7 @@ export default function HomePage() {
         </>
       )}
 
-      {/* Message when no user data is present and it's the initial view */}
-      {(favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && initialLoad && searchResults.length === 0 && searchQuery.trim() === '' && selectedRegion === 'all' && selectedSeason === 'all') && (
+      {(favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && (initialLoad || searchResults.length === 0) && searchQuery.trim() === '' && selectedRegion === 'all' && selectedSeason === 'all') && (
          <section className="py-8 text-center">
             <p className="text-muted-foreground">
               Use the search bar and filters to find produce, or use the scan button to identify an item. Favorite items and recent searches will appear here.

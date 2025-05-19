@@ -61,10 +61,13 @@ export default {
   				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
-  		borderRadius: { // Updated to use CSS variable
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 0.25rem)', // Adjusted for new base radius
-  			sm: 'calc(var(--radius) - 0.5rem)'  // Adjusted for new base radius
+  		borderRadius: { 
+  			lg: 'var(--radius)', // Using CSS variable for large
+  			xl: 'calc(var(--radius) + 0.25rem)', // For slightly larger rounding
+        '2xl': 'calc(var(--radius) + 0.5rem)', // For even more rounded corners (like in image)
+        '3xl': 'calc(var(--radius) + 1rem)',  // For very rounded corners
+  			md: 'calc(var(--radius) - 0.25rem)', 
+  			sm: 'calc(var(--radius) - 0.5rem)'  
   		},
   		keyframes: {
   			'accordion-down': {
