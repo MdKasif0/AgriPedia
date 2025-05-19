@@ -50,7 +50,7 @@ export default function TextSearchForm({
             value={query}
             onChange={handleInputChange}
             onFocus={() => query.trim() && onQueryChange(query)} 
-            placeholder="E.g., Apple, Banana... (Ctrl+K)"
+            placeholder="E.g., Apple, Banana... (Ctrl/Cmd + K)"
             className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary" 
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
@@ -95,3 +95,4 @@ export default function TextSearchForm({
     </form>
   );
 }
+

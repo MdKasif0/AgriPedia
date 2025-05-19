@@ -439,9 +439,11 @@ export default function HomePage() {
       {/* Show this only if everything is empty AND it's not the initial load AND no active search/filter is causing empty results */}
       {(searchResults.length === 0 && favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && !initialLoad && !(searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
          <section className="py-8 text-center">
-             <Apple className="mx-auto h-16 w-16 text-muted-foreground/50 mb-4" /> {/* Placeholder icon */}
-            <p className="text-muted-foreground">
-              No produce data to display. Try searching or scanning an item. Favorite items and recent searches will appear here.
+             <Apple className="mx-auto h-16 w-16 text-muted-foreground/50 mb-4" />
+            <p className="text-muted-foreground text-lg">
+              No produce data to display. Try searching or scanning an item.
+              <br/>
+              Favorite items and recent searches will appear here.
             </p>
           </section>
       )}

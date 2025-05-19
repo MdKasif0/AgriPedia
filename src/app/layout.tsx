@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [ // Provide light and dark theme colors
-    { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, // Light background
-    { media: '(prefers-color-scheme: dark)', color: 'hsl(220 10% 10%)' }, // Dark background (new default)
+    { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, // Light background from :root .light
+    { media: '(prefers-color-scheme: dark)', color: 'hsl(220 15% 8%)' }, // Dark background from :root
   ],
 }
 
@@ -69,3 +69,4 @@ export default function RootLayout({
     </html>
   );
 }
+
