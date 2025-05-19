@@ -13,9 +13,9 @@ body {
     --background: 220 15% 8%; /* Very Dark Blue-Gray */
     --foreground: 220 10% 88%; /* Light Gray */
 
-    /* Updated Card theme for light cards with dark text */
-    --card: 0 0% 96%; /* Very light gray / off-white */
-    --card-foreground: 220 15% 15%; /* Dark Gray/Black for text on light cards */
+    /* Card theme for dark mode: dark card, light text */
+    --card: 220 15% 12%; /* Dark Blue-Gray, slightly lighter than background */
+    --card-foreground: 220 10% 88%; /* Light Gray, same as main foreground */
 
     --popover: 220 15% 10%; /* Darker popover background */
     --popover-foreground: 220 10% 88%; /* Light text on popovers */
@@ -63,7 +63,7 @@ body {
     --background: 0 0% 98%; /* Off-White */
     --foreground: 220 15% 15%; /* Dark Gray/Black */
 
-    /* Updated Card theme for light cards with dark text */
+    /* Card theme for light mode: light card, dark text */
     --card: 0 0% 100%; /* White */
     --card-foreground: 220 15% 15%; /* Dark Gray/Black for text on light cards */
 
