@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -18,10 +19,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Basic PWA setup - for full PWA capabilities, a package like @ducanh2912/next-pwa would typically be used.
-  // This configuration mainly ensures the manifest is served correctly.
-  // Actual service worker for offline caching requires more setup.
-  // For now, we are relying on localStorage for data and browser caching for assets.
   async headers() {
     return [
       {
@@ -31,6 +28,28 @@ const nextConfig: NextConfig = {
             key: 'Content-Type',
             value: 'application/manifest+json',
           },
+        ],
+      },
+      {
+        // Prevent aggressive caching of service worker during development
+        source: '/sw.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, no-cache, must-revalidate, proxy-revalidate',
+          },
+          { 
+            key: 'Pragma', 
+            value: 'no-cache' 
+          },
+          { 
+            key: 'Expires', 
+            value: '0' 
+          },
+          {
+            key: 'Service-Worker-Allowed',
+            value: '/',
+          }
         ],
       },
     ];

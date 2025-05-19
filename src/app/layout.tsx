@@ -1,8 +1,10 @@
+
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google'; // Changed from GeistSans and GeistMono
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
+import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
+        <ServiceWorkerRegistrar />
         <Header />
         <main className="container mx-auto p-4">
           {children}
