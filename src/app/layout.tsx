@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import Header from '@/components/layout/Header';
+// import Header from '@/components/layout/Header'; // Removed Header import
 import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [ // Provide light and dark theme colors
     { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, // Light background
-    { media: '(prefers-color-scheme: dark)', color: 'hsl(120 33% 20%)' }, // Dark background (current)
+    { media: '(prefers-color-scheme: dark)', color: 'hsl(220 10% 10%)' }, // Dark background (new default)
   ],
 }
 
@@ -51,7 +51,7 @@ export default function RootLayout({
         >
           <ServiceWorkerRegistrar />
           <SidebarProvider defaultOpen={true}>
-            <Header />
+            {/* <Header /> */} {/* Removed Header component usage */}
             <div className="flex">
               <DesktopSidebar />
               <SidebarInset>
