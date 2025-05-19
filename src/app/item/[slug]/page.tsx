@@ -248,7 +248,7 @@ export default function ItemPage() {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
           style={{ objectFit: 'cover' }}
           data-ai-hint={`${produce.commonName.toLowerCase()} detail view`}
-          priority
+          priority={true} 
         />
       </div>
       

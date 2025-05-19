@@ -18,10 +18,10 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
               src={produce.image} 
               alt={produce.commonName} 
               fill 
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" // Adjusted sizes
               style={{ objectFit: 'cover' }}
               data-ai-hint={`${produce.commonName.toLowerCase()} fruit vegetable`} 
-              className="group-hover:scale-105 transition-transform duration-300"
+              className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
             />
           </div>
           <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors">{produce.commonName}</CardTitle>
