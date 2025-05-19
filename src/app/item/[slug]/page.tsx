@@ -1,3 +1,4 @@
+
 'use client'; // For localStorage access and useEffect
 
 import { useEffect, useState } from 'react';
@@ -10,15 +11,16 @@ import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
 import { Badge } from '@/components/ui/badge';
 import {
-  Leaf, BookOpen, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info
+  Leaf, BookOpen, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff
 } from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
 export default function ItemPage() {
   const params = useParams();
   const slug = typeof params.slug === 'string' ? params.slug : '';
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [isOffline, setIsOffline] = useState(false);
+  const [isOfflineSource, setIsOfflineSource] = useState(false); // Tracks if data came from localStorage
 
   useEffect(() => {
     if (!slug) {
@@ -28,28 +30,48 @@ export default function ItemPage() {
 
     async function fetchData() {
       setIsLoading(true);
+      setIsOfflineSource(false);
       let itemData: ProduceInfo | null = null;
+      let onlineFetchAttempted = false;
 
-      if (typeof window !== 'undefined' && !navigator.onLine) {
-         setIsOffline(true);
-      }
-      
-      // Try offline storage first
-      itemData = getProduceOffline(slug);
+      // Check network status
+      const isOnline = typeof window !== 'undefined' && navigator.onLine;
 
-      if (itemData) {
-        setProduce(itemData);
-      } else {
-        // If not offline or not found in offline storage, fetch from "source" (mock data)
-        // In a real app, this might be an API call
-        const onlineData = getProduceByCommonName(slug);
-        if (onlineData) {
-          setProduce(onlineData);
-          saveProduceOffline(onlineData); // Save for offline access
-        } else {
-          setProduce(null); // Triggers notFound below
+      if (isOnline) {
+        try {
+          // Attempt to fetch fresh data first
+          const onlineData = getProduceByCommonName(slug);
+          onlineFetchAttempted = true;
+          if (onlineData) {
+            itemData = onlineData;
+            saveProduceOffline(onlineData); // Save fresh data for offline access
+          }
+        } catch (error) {
+          console.warn('Online fetch failed, trying offline cache:', error);
+          // If online fetch fails, we'll proceed to check cache
         }
       }
+
+      // If no data from online source (either offline or fetch failed/no item)
+      if (!itemData) {
+        const offlineData = getProduceOffline(slug);
+        if (offlineData) {
+          itemData = offlineData;
+          setIsOfflineSource(true); // Indicate data is from offline store
+        }
+      }
+      
+      // If still no data after online and offline attempts, and online was primary attempt
+      if (!itemData && onlineFetchAttempted && isOnline) {
+         // This means the item truly doesn't exist in our primary data source
+         setProduce(null); // This will trigger notFound()
+      } else if (!itemData && !isOnline) {
+        // If offline and not found in cache, also treat as not found for this page
+        setProduce(null);
+      } else {
+        setProduce(itemData);
+      }
+
       setIsLoading(false);
     }
 
@@ -61,16 +83,21 @@ export default function ItemPage() {
   }
 
   if (!produce) {
-    notFound(); // Or display a custom not found component
+    // If produce is null and we're not loading, it means it wasn't found either online or offline
+    notFound();
     return null;
   }
 
   return (
     <div className="space-y-8 py-8">
-      {isOffline && (
-        <div className="p-4 bg-accent text-accent-foreground rounded-md text-center">
-          You are currently viewing this page offline. Some content may be limited.
-        </div>
+      {isOfflineSource && (
+        <Alert variant="default" className="bg-accent text-accent-foreground border-accent-foreground/30">
+          <WifiOff className="h-5 w-5 text-accent-foreground" />
+          <AlertTitle>Offline Mode</AlertTitle>
+          <AlertDescription>
+            You are viewing a cached version of this page. Some information might be outdated.
+          </AlertDescription>
+        </Alert>
       )}
       <header className="text-center">
         <h1 className="text-4xl font-bold text-primary mb-2 flex items-center justify-center gap-3">

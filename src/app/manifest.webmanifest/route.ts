@@ -1,3 +1,4 @@
+
 import { type MetadataRoute } from 'next';
 
 export function GET(): Response {
@@ -7,29 +8,29 @@ export function GET(): Response {
     description: 'Search and scan fruits and vegetables to learn more about them.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#224322',
-    theme_color: '#224322',
+    background_color: '#224322', // Corresponds to --background HSL(120 33% 20%)
+    theme_color: '#224322',     // Corresponds to --background HSL(120 33% 20%)
     icons: [
       {
-        src: 'https://placehold.co/192x192.png',
+        src: 'https://placehold.co/192x192.png', // Placeholder icon
         sizes: '192x192',
         type: 'image/png',
         purpose: 'any',
       },
       {
-        src: 'https://placehold.co/512x512.png',
+        src: 'https://placehold.co/512x512.png', // Placeholder icon
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any',
       },
       {
-        src: 'https://placehold.co/192x192.png',
+        src: 'https://placehold.co/192x192.png', // Placeholder icon - maskable
         sizes: '192x192',
         type: 'image/png',
         purpose: 'maskable',
       },
       {
-        src: 'https://placehold.co/512x512.png',
+        src: 'https://placehold.co/512x512.png', // Placeholder icon - maskable
         sizes: '512x512',
         type: 'image/png',
         purpose: 'maskable',
