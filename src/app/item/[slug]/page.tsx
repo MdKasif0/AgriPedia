@@ -236,7 +236,7 @@ export default function ItemPage() {
             className="absolute top-0 right-0 text-primary hover:text-accent"
             aria-label={isBookmarked ? 'Remove from favorites' : 'Add to favorites'}
         >
-            {isBookmarked ? <BookmarkCheck size={28} className="fill-accent" /> : <BookmarkPlus size={28} />}
+            {isBookmarked ? <BookmarkCheck size={28} className="text-accent fill-accent" /> : <BookmarkPlus size={28} />}
         </Button>
       </header>
 
