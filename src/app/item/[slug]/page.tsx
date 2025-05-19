@@ -225,10 +225,10 @@ export default function ItemPage() {
         </Alert>
       )}
       <header className="text-center relative">
-        <h1 className="text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf size={40} className="text-primary" /> {produce.commonName}
+        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
+          <Leaf size={32} sm:size={40} className="text-primary" /> {produce.commonName}
         </h1>
-        <p className="text-xl text-muted-foreground italic">{produce.scientificName}</p>
+        <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <Button 
             variant="ghost" 
             size="icon" 
@@ -279,7 +279,7 @@ export default function ItemPage() {
       </div>
       
       <section className="space-y-6">
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
         <p className="text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
         
         <NutrientChart data={produce.nutrition.macronutrients} className="rounded-xl shadow-lg" />
@@ -337,7 +337,7 @@ export default function ItemPage() {
       </div>
       
       <section className="space-y-6">
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
         {isLoadingRecipes && <Loader text="Generating recipe ideas with AI..." />}
         {recipeError && <Alert variant="destructive" className="rounded-xl"><AlertTriangle className="h-4 w-4" /><AlertTitle>Error</AlertTitle><AlertDescription>{recipeError}</AlertDescription></Alert>}
         {!isLoadingRecipes && !recipeError && recipes && recipes.length > 0 && (

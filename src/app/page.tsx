@@ -256,8 +256,8 @@ export default function HomePage() {
   return (
     <div className="space-y-8">
       <section className="text-center py-8">
-        <h1 className="text-4xl font-bold text-foreground mb-2">Welcome to AgriPedia!</h1>
-        <p className="text-lg text-muted-foreground">
+        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">Welcome to AgriPedia!</h1>
+        <p className="text-md sm:text-lg text-muted-foreground">
           Discover detailed information about fruits and vegetables.
         </p>
       </section>
@@ -267,7 +267,7 @@ export default function HomePage() {
         <section className="space-y-4 md:col-span-2"> {/* Search and filters take 2 columns */}
           <Card className="shadow-xl rounded-xl bg-card">
             <CardHeader className="p-6">
-              <CardTitle className="text-2xl font-semibold flex items-center gap-2 text-foreground">
+              <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-foreground">
                 <Search className="text-primary" /> Search Produce
               </CardTitle>
             </CardHeader>
@@ -319,7 +319,7 @@ export default function HomePage() {
         <section className="space-y-4 md:col-span-1"> {/* Notifications card takes 1 column */}
           <Card className="shadow-xl rounded-xl bg-card">
              <CardHeader className="p-6">
-                <CardTitle className="text-xl font-semibold flex items-center gap-2 text-foreground">
+                <CardTitle className="text-lg sm:text-xl font-semibold flex items-center gap-2 text-foreground">
                     {notificationPermission === 'granted' ? <BellRing className="text-primary" /> : <BellPlus className="text-primary" />}
                     Notifications
                 </CardTitle>
@@ -363,7 +363,7 @@ export default function HomePage() {
         <>
           <Separator className="my-8 bg-border/50" />
           <section>
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><ListFilter className="text-primary"/>Filtered Results</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><ListFilter className="text-primary"/>Filtered Results</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {searchResults.map((item) => (
                 <ProduceCard key={item.id} produce={item} />
@@ -388,7 +388,7 @@ export default function HomePage() {
         <>
           <Separator className="my-8 bg-border/50" />
           <section>
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><History className="text-primary"/>Recent Searches</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><History className="text-primary"/>Recent Searches</h2>
             <div className="flex flex-wrap gap-2">
               {recentSearchTerms.map((term, index) => (
                 <Button key={index} variant="outline" size="sm" onClick={() => handleRecentSearchClick(term)} className="rounded-full hover:bg-primary/10 border-primary/50 text-primary">
@@ -405,7 +405,7 @@ export default function HomePage() {
         <>
           <Separator className="my-8 bg-border/50" />
           <section id="favorites-section"> {/* Added ID for bottom nav link */}
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {favoriteProduceItems.map((item) => (
                 <ProduceCard key={item.id} produce={item} />
