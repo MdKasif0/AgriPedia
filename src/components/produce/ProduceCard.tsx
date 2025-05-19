@@ -1,9 +1,8 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import type { ProduceInfo } from '@/lib/produceData';
 import { ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 interface ProduceCardProps {
   produce: ProduceInfo;
@@ -11,38 +10,33 @@ interface ProduceCardProps {
 
 export default function ProduceCard({ produce }: ProduceCardProps) {
   return (
-    <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl">
-      <Card className="h-full flex flex-col bg-card text-card-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-        <CardHeader className="p-4 pb-2">
-          <div className="relative w-full h-40 sm:h-48 mb-3 rounded-lg overflow-hidden">
-            <Image 
-              src={produce.image} 
-              alt={produce.commonName} 
-              fill 
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              style={{ objectFit: 'cover' }}
-              data-ai-hint={`${produce.commonName.toLowerCase()} fruit vegetable`} 
-              className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
-            />
+    <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-3xl">
+      <div className="relative aspect-[16/9] w-full bg-card text-card-foreground rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+        <Image 
+          src={produce.image} 
+          alt={produce.commonName} 
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          style={{ objectFit: 'cover' }}
+          data-ai-hint={`${produce.commonName.toLowerCase()} fruit vegetable`} 
+          className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent p-4 flex flex-col justify-between">
+          {/* Top-left text overlay */}
+          <div>
+            <h3 className="text-xl font-bold text-white drop-shadow-md">{produce.commonName}</h3>
+            <p className="text-sm text-gray-200 drop-shadow-md">({produce.scientificName})</p>
           </div>
-          <CardTitle className="text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">{produce.commonName}</CardTitle>
-          <CardDescription className="text-xs text-muted-foreground group-hover:text-primary/80 transition-colors">{produce.scientificName}</CardDescription>
-        </CardHeader>
-        <CardContent className="flex-grow p-4 pt-2">
-          <p className="text-sm text-card-foreground/80 line-clamp-3 mb-3">{produce.description}</p>
-        </CardContent>
-        <div className="p-4 pt-0 mt-auto">
-          <Button 
-            variant="default" 
-            size="sm" 
-            className="w-full rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors"
-            asChild={false}
-            tabIndex={-1}
-          >
-            View Details <ChevronRight size={18} className="ml-1" />
-          </Button>
+
+          {/* Bottom-right "See Details" button overlay */}
+          <div className="self-end">
+            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/80 backdrop-blur-sm text-primary font-medium rounded-full text-sm shadow-md group-hover:bg-white transition-colors">
+              <span>See Details</span>
+              <ChevronRight size={16} />
+            </div>
+          </div>
         </div>
-      </Card>
+      </div>
     </Link>
   );
 }
