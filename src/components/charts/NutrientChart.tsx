@@ -1,0 +1,81 @@
+'use client';
+
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Tooltip as RechartsTooltip } from 'recharts';
+import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import type { ProduceInfo } from '@/lib/produceData';
+
+interface NutrientChartProps {
+  data: ProduceInfo['nutrition']['macronutrients'];
+  className?: string;
+}
+
+const chartConfig = {
+  value: {
+    label: "Amount",
+    color: "hsl(var(--primary))",
+  },
+} satisfies ChartConfig;
+
+export default function NutrientChart({ data, className }: NutrientChartProps) {
+  if (!data || data.length === 0) {
+    return <p className="text-muted-foreground">No macronutrient data available to display chart.</p>;
+  }
+  
+  const chartData = data.map(nutrient => ({
+    name: nutrient.name,
+    value: nutrient.value,
+    unit: nutrient.unit,
+    fill: "hsl(var(--primary))", // Default fill color
+  }));
+
+  // Dynamically assign colors to bars if needed, or use a predefined palette
+  const colorPalette = [
+    "hsl(var(--chart-1))",
+    "hsl(var(--chart-2))",
+    "hsl(var(--chart-3))",
+    "hsl(var(--chart-4))",
+    "hsl(var(--chart-5))",
+  ];
+
+  chartData.forEach((item, index) => {
+    item.fill = colorPalette[index % colorPalette.length];
+  });
+
+
+  return (
+    <div className={`p-4 bg-card rounded-lg shadow ${className}`}>
+      <h4 className="text-lg font-semibold mb-4 text-primary">Macronutrients per 100g</h4>
+      <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={chartData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+            <XAxis 
+              dataKey="name" 
+              tickLine={false} 
+              axisLine={false} 
+              stroke="hsl(var(--foreground))"
+              fontSize={12}
+            />
+            <YAxis 
+              stroke="hsl(var(--foreground))"
+              fontSize={12}
+              tickFormatter={(value) => `${value}g`} 
+            />
+            <ChartTooltip
+              cursor={false}
+              content={<ChartTooltipContent 
+                labelFormatter={(label, payload) => {
+                  if (payload && payload.length > 0 && payload[0].payload) {
+                    return `${payload[0].payload.name}: ${payload[0].payload.value}${payload[0].payload.unit}`;
+                  }
+                  return label;
+                }}
+              />} 
+            />
+            <Bar dataKey="value" radius={4} />
+          </BarChart>
+        </ResponsiveContainer>
+      </ChartContainer>
+    </div>
+  );
+}
