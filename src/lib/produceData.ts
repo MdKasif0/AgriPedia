@@ -62,15 +62,8 @@ export function searchProduce(
     results = results.filter(p => p.seasons.includes(filters.season!));
   }
   
-  if (!searchTerm && ( (filters.region && filters.region !== 'all') || (filters.season && filters.season !== 'all') )) {
-    // This block is implicitly handled by the structure above if results starts as allProduceData
-    // and then gets filtered. If query is empty, the first filter block is skipped.
-  } else if (!searchTerm && (!filters.region || filters.region === 'all') && (!filters.season || filters.season === 'all')) {
-    // If no search term and no filters (or 'all' filters), return a limited set or empty
-    // For now, returning an empty array to avoid showing all data on initial load without interaction.
-    // This behavior can be adjusted if needed.
-     return []; 
-  }
+  // If no search term and no specific filters are applied, 'results' will remain as 'allProduceData'.
+  // The previous logic that returned an empty array in this case has been removed.
 
   return results;
 }

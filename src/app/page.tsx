@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import TextSearchForm from '@/components/search/TextSearchForm';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
-import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce } from '@/lib/produceData';
+import { searchProduce, getUniqueRegions, getUniqueSeasons } from '@/lib/produceData'; // Removed getAllProduce as searchProduce handles it
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
 import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus, Search, Info } from 'lucide-react';
@@ -15,7 +15,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import Loader from '@/components/ui/Loader';
-import InfoBanner from '@/components/home/InfoBanner'; // New component for the banner
+import InfoBanner from '@/components/home/InfoBanner';
 
 const VAPID_PUBLIC_KEY = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME'; 
 
@@ -48,7 +48,7 @@ export default function HomePage() {
   const [availableSeasons, setAvailableSeasons] = useState<string[]>([]);
   
   const [searchResults, setSearchResults] = useState<ProduceInfo[]>([]);
-  const [initialLoad, setInitialLoad] = useState(true);
+  const [initialLoad, setInitialLoad] = useState(true); // To manage the very first load effects
 
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [recentSearchTerms, setRecentSearchTerms] = useState<string[]>([]);
@@ -85,25 +85,14 @@ export default function HomePage() {
     };
   }, []);
 
-
   const loadUserData = useCallback(() => {
     const favIds = getFavoriteIds();
-    const allProduce = getAllProduce();
-    setFavoriteProduceItems(favIds.map(id => allProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
+    // Fetch all produce once to map favIds to actual items
+    // This could be optimized if getAllProduce() is expensive, but with local JSON it's fine.
+    const allCurrentProduce = searchProduce('', { region: 'all', season: 'all' }); 
+    setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
     setRecentSearchTerms(getRecentSearches());
   }, []);
-
-  useEffect(() => {
-    setAvailableRegions(getUniqueRegions());
-    setAvailableSeasons(getUniqueSeasons());
-    loadUserData();
-    
-    // Initially, load all produce items if no search query or filters are set
-    if (initialLoad && searchQuery === '' && selectedRegion === 'all' && selectedSeason === 'all') {
-      setSearchResults(getAllProduce().slice(0, 8)); // Show a limited number initially
-    }
-    setInitialLoad(false);
-  }, [loadUserData, initialLoad, searchQuery, selectedRegion, selectedSeason]);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
     const results = searchProduce(query, { 
@@ -111,14 +100,26 @@ export default function HomePage() {
       season: season === 'all' ? undefined : season 
     });
     setSearchResults(results);
-    setInitialLoad(false); 
   }, []);
 
+
+  // Effect for one-time setup and initial data load
   useEffect(() => {
-     if (!initialLoad) {
-       updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
-     }
-  }, [searchQuery, selectedRegion, selectedSeason, updateFilteredResults, initialLoad]);
+    setAvailableRegions(getUniqueRegions());
+    setAvailableSeasons(getUniqueSeasons());
+    loadUserData();
+    // Trigger initial load of all produce items
+    updateFilteredResults('', 'all', 'all'); 
+    setInitialLoad(false); // Mark initial setup as done
+  }, [loadUserData, updateFilteredResults]); // updateFilteredResults is stable via useCallback
+
+  // Effect for subsequent filter/search changes
+  useEffect(() => {
+    // Only run if initialLoad is false, to avoid redundant call with initial empty/all state
+    if (!initialLoad) {
+      updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
+    }
+  }, [searchQuery, selectedRegion, selectedSeason, initialLoad, updateFilteredResults]);
 
 
   const handleQueryChange = (newQuery: string) => {
@@ -128,6 +129,7 @@ export default function HomePage() {
     }
     if (newQuery.trim()) {
       suggestionsTimeoutRef.current = setTimeout(() => {
+        // Suggestions should be based on query only, not existing filters for broader matches
         const currentSuggestions = searchProduce(newQuery.trim(), {}); 
         setSuggestions(currentSuggestions);
         setIsSuggestionsVisible(true);
@@ -135,7 +137,8 @@ export default function HomePage() {
     } else {
       setSuggestions([]);
       setIsSuggestionsVisible(false);
-      updateFilteredResults("", selectedRegion, selectedSeason);
+      // When query is cleared, update results based on current filters (which might be 'all')
+      // updateFilteredResults("", selectedRegion, selectedSeason); // This is handled by the useEffect for search/filter changes
     }
   };
   
@@ -143,7 +146,7 @@ export default function HomePage() {
     setSearchQuery('');
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    updateFilteredResults("", selectedRegion, selectedSeason);
+    // updateFilteredResults("", selectedRegion, selectedSeason); // This is handled by the useEffect for search/filter changes
   };
 
   const handleSuggestionClick = (item: ProduceInfo) => {
@@ -156,10 +159,13 @@ export default function HomePage() {
 
   const handleSubmitSearch = (submittedQuery: string) => {
     setIsSuggestionsVisible(false);
-    addRecentSearch(submittedQuery);
-    loadUserData(); 
-    updateFilteredResults(submittedQuery, selectedRegion, selectedSeason);
+    if (submittedQuery.trim()) { // Only add non-empty searches
+        addRecentSearch(submittedQuery);
+        loadUserData(); 
+    }
+    // updateFilteredResults(submittedQuery, selectedRegion, selectedSeason); // Handled by useEffect
 
+    // Navigate to item page if search query is an exact match to a single result
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
       season: selectedSeason === 'all' ? undefined : selectedSeason
@@ -172,8 +178,9 @@ export default function HomePage() {
   const handleRecentSearchClick = (term: string) => {
     setSearchQuery(term); 
     setIsSuggestionsVisible(false);
-    addRecentSearch(term);
+    addRecentSearch(term); // This will move it to the front
     loadUserData();
+    // The useEffect for searchQuery change will trigger updateFilteredResults
   };
 
    useEffect(() => {
@@ -357,7 +364,8 @@ export default function HomePage() {
         </section>
       </div>
 
-      {(!initialLoad || searchResults.length > 0) && (
+      {/* Display produce results if available */}
+      {(searchResults.length > 0) && (
         <>
           <Separator className="my-8 bg-border/20" />
           <section>
@@ -374,6 +382,7 @@ export default function HomePage() {
         </>
       )}
 
+      {/* Display message if no results found for a specific search/filter */}
       {(!initialLoad && searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
         <>
           <Separator className="my-8 bg-border/20" />
@@ -416,10 +425,11 @@ export default function HomePage() {
         </>
       )}
 
-      {(favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && (initialLoad || searchResults.length === 0) && searchQuery.trim() === '' && selectedRegion === 'all' && selectedSeason === 'all') && (
+      {/* Fallback message if no produce, no favorites, and no recent searches are shown */}
+      {(searchResults.length === 0 && favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && !initialLoad && !(searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
          <section className="py-8 text-center">
             <p className="text-muted-foreground">
-              Use the search bar and filters to find produce, or use the scan button to identify an item. Favorite items and recent searches will appear here.
+              No produce data to display. Try searching or scanning an item. Favorite items and recent searches will appear here.
             </p>
           </section>
       )}
