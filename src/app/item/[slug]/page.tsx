@@ -7,11 +7,13 @@ import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import NutrientChart from '@/components/charts/NutrientChart';
+import VitaminChart from '@/components/charts/VitaminChart'; // New
+import MineralChart from '@/components/charts/MineralChart'; // New
 import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
 import { Badge } from '@/components/ui/badge';
 import {
-  Leaf, BookOpen, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff
+  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
@@ -144,22 +146,19 @@ export default function ItemPage() {
         </IconLabel>
       </div>
       
-      <section>
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2"><Activity className="text-primary"/>Nutritional Information</h2>
-        <p className="text-muted-foreground mb-4">Calories: {produce.nutrition.calories}</p>
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2 justify-center"><Activity className="text-primary"/>Nutritional Information</h2>
+        <p className="text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+        
         <NutrientChart data={produce.nutrition.macronutrients} />
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <IconLabel icon={BookOpen} label="Vitamins">
-                <ul className="space-y-1">
-                    {produce.nutrition.vitamins.map(v => <li key={v.name}>{v.name}: {v.value}{v.unit} {v.rdi && `(${v.rdi} RDI)`}</li>)}
-                </ul>
-            </IconLabel>
-            <IconLabel icon={BookOpen} label="Minerals">
-                 <ul className="space-y-1">
-                    {produce.nutrition.minerals.map(m => <li key={m.name}>{m.name}: {m.value}{m.unit} {m.rdi && `(${m.rdi} RDI)`}</li>)}
-                </ul>
-            </IconLabel>
-        </div>
+        
+        {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
+            <VitaminChart data={produce.nutrition.vitamins} className="mt-6" />
+        )}
+        
+        {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
+            <MineralChart data={produce.nutrition.minerals} className="mt-6" />
+        )}
       </section>
 
       <div className="grid md:grid-cols-2 gap-6">

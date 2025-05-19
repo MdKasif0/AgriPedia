@@ -12,8 +12,8 @@ export interface ProduceInfo {
   nutrition: {
     calories: string;
     macronutrients: Array<{ name: string; value: number; unit: string }>; // Value as number for charts
-    vitamins: Array<{ name: string; value: string; unit: string; rdi?: string }>;
-    minerals: Array<{ name: string; value: string; unit: string; rdi?: string }>;
+    vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>; // Value changed to number
+    minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>; // Value changed to number
   };
   healthBenefits: string[];
   potentialAllergies: string[];
@@ -41,11 +41,11 @@ const produceDatabase: ProduceInfo[] = [
         { name: 'Fiber', value: 2.4, unit: 'g' },
       ],
       vitamins: [
-        { name: 'Vitamin C', value: '4.6', unit: 'mg', rdi: '8%' },
-        { name: 'Vitamin K', value: '2.2', unit: 'µg', rdi: '3%' },
+        { name: 'Vitamin C', value: 4.6, unit: 'mg', rdi: '8%' },
+        { name: 'Vitamin K', value: 2.2, unit: 'µg', rdi: '3%' },
       ],
       minerals: [
-        { name: 'Potassium', value: '107', unit: 'mg', rdi: '3%' },
+        { name: 'Potassium', value: 107, unit: 'mg', rdi: '3%' },
       ],
     },
     healthBenefits: [
@@ -76,12 +76,12 @@ const produceDatabase: ProduceInfo[] = [
         { name: 'Fiber', value: 2.6, unit: 'g' },
       ],
       vitamins: [
-        { name: 'Vitamin C', value: '8.7', unit: 'mg', rdi: '15%' },
-        { name: 'Vitamin B6', value: '0.4', unit: 'mg', rdi: '20%' },
+        { name: 'Vitamin C', value: 8.7, unit: 'mg', rdi: '15%' },
+        { name: 'Vitamin B6', value: 0.4, unit: 'mg', rdi: '20%' },
       ],
       minerals: [
-        { name: 'Potassium', value: '358', unit: 'mg', rdi: '10%' },
-        { name: 'Magnesium', value: '27', unit: 'mg', rdi: '7%' },
+        { name: 'Potassium', value: 358, unit: 'mg', rdi: '10%' },
+        { name: 'Magnesium', value: 27, unit: 'mg', rdi: '7%' },
       ],
     },
     healthBenefits: [
@@ -112,12 +112,12 @@ const produceDatabase: ProduceInfo[] = [
         { name: 'Fiber', value: 2.8, unit: 'g' },
       ],
       vitamins: [
-        { name: 'Vitamin A (from Beta-carotene)', value: '835', unit: 'µg RAE', rdi: '93%' },
-        { name: 'Vitamin K', value: '13.2', unit: 'µg', rdi: '16%' },
-        { name: 'Vitamin B6', value: '0.1', unit: 'mg', rdi: '7%' },
+        { name: 'Vitamin A (from Beta-carotene)', value: 835, unit: 'µg RAE', rdi: '93%' },
+        { name: 'Vitamin K', value: 13.2, unit: 'µg', rdi: '16%' },
+        { name: 'Vitamin B6', value: 0.1, unit: 'mg', rdi: '7%' },
       ],
       minerals: [
-        { name: 'Potassium', value: '320', unit: 'mg', rdi: '9%' },
+        { name: 'Potassium', value: 320, unit: 'mg', rdi: '9%' },
       ],
     },
     healthBenefits: [
