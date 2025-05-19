@@ -15,6 +15,7 @@ interface TextSearchFormProps {
   onSuggestionClick: (item: ProduceInfo) => void;
   onSubmitSearch: (query: string) => void;
   onClearSearch: () => void;
+  inputRef?: React.RefObject<HTMLInputElement>; // Added for focusing from parent
 }
 
 export default function TextSearchForm({
@@ -25,8 +26,9 @@ export default function TextSearchForm({
   onSuggestionClick,
   onSubmitSearch,
   onClearSearch,
+  inputRef, // Consuming the ref
 }: TextSearchFormProps) {
-  const inputRef = useRef<HTMLInputElement>(null);
+  // const internalInputRef = useRef<HTMLInputElement>(null); // Keep internal if no external provided, or remove if external always used
   const suggestionsRef = useRef<HTMLUListElement>(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -44,15 +46,16 @@ export default function TextSearchForm({
       <div className="flex gap-2 items-center">
         <div className="relative flex-grow">
           <Input
-            ref={inputRef}
+            ref={inputRef} // Use the passed ref
             type="text"
             value={query}
             onChange={handleInputChange}
             onFocus={() => query.trim() && onQueryChange(query)} // Re-trigger suggestions visibility if needed
-            placeholder="E.g., Apple, Banana, Carrot..."
+            placeholder="E.g., Apple, Banana, Carrot... (Ctrl+K)"
             className="flex-grow pr-10" 
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
+            id="main-search-input" // Adding an ID for potential direct targeting, though ref is preferred
           />
           {query && (
             <Button

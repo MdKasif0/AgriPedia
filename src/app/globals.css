@@ -8,52 +8,53 @@ body {
 
 @layer base {
   :root {
-    /* Neutral Dark Theme with Vibrant Accents */
-    --background: 220 20% 12%; /* Dark Slate Blue/Gray */
-    --foreground: 220 15% 92%; /* Light Slate Gray */
+    /* AgriPedia Theme based on PRD */
+    --background: 120 33% 20%; /* Dark Desaturated Green (#224322) */
+    --foreground: 120 25% 90%; /* Light Off-White/Greenish Tint */
 
-    --card: 220 20% 15%; /* Slightly Lighter Dark Slate */
-    --card-foreground: 220 15% 92%; /* Light Slate Gray */
+    --card: 120 33% 23%; /* Slightly Lighter Dark Green */
+    --card-foreground: 120 25% 90%; /* Consistent with main foreground */
 
-    --popover: 220 20% 14%; /* Darker Popover Background */
-    --popover-foreground: 220 15% 92%; /* Light Slate Gray */
+    --popover: 120 33% 22%; /* Darker Popover Background */
+    --popover-foreground: 120 25% 90%; /* Consistent with main foreground */
 
-    --primary: 140 60% 55%; /* Vibrant Green */
-    --primary-foreground: 140 60% 10%; /* Dark Green for contrast on primary */
+    --primary: 120 73% 75%; /* Vibrant Green (#90EE90) */
+    --primary-foreground: 120 73% 15%; /* Dark Green for contrast on primary */
 
-    --secondary: 220 20% 25%; /* Muted Slate */
-    --secondary-foreground: 220 15% 85%; /* Lighter Slate Gray */
+    --secondary: 120 30% 35%; /* Muted Green */
+    --secondary-foreground: 120 25% 88%; /* Lighter Greenish Tint */
 
-    --muted: 220 20% 20%; /* Slightly Darker Muted Slate */
-    --muted-foreground: 220 15% 65%; /* Medium Slate Gray */
+    --muted: 120 30% 28%; /* Slightly Darker Muted Green */
+    --muted-foreground: 120 20% 70%; /* Medium Greenish Gray */
 
-    --accent: 30 90% 55%; /* Vibrant Orange */
-    --accent-foreground: 30 90% 10%; /* Dark Brown/Orange for contrast on accent */
+    --accent: 60 44% 71%; /* Muted Yellow (#D3D394) */
+    --accent-foreground: 60 44% 15%; /* Dark Yellow/Brown for contrast on accent */
 
     --destructive: 0 70% 65%; /* Bright Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */
 
-    --border: 220 20% 25%; /* Muted Slate Border (same as secondary for harmony) */
-    --input: 220 20% 20%; /* Muted Slate Input Background */
-    --ring: 140 60% 55%; /* Vibrant Green for focus rings */
+    --border: 120 33% 30%; /* Muted Green Border */
+    --input: 120 30% 25%; /* Muted Green Input Background */
+    --ring: 120 73% 75%; /* Vibrant Green for focus rings (same as primary) */
 
     --radius: 0.5rem;
 
     /* Sidebar colors - updated to match the new theme */
-    --sidebar-background: 220 20% 10%; /* Even Darker Slate for Sidebar */
-    --sidebar-foreground: 220 15% 88%; /* Light Slate Gray for Sidebar Text */
-    --sidebar-primary: 140 60% 55%; /* Vibrant Green (same as main primary) */
-    --sidebar-primary-foreground: 140 60% 10%; /* Dark Green */
-    --sidebar-accent: 30 90% 55%; /* Vibrant Orange (same as main accent) */
-    --sidebar-accent-foreground: 30 90% 10%; /* Dark Brown/Orange */
-    --sidebar-border: 220 20% 22%; /* Slightly darker border for sidebar context */
-    --sidebar-ring: 140 60% 55%; /* Vibrant Green */
+    --sidebar-background: 120 33% 18%; /* Even Darker Green for Sidebar */
+    --sidebar-foreground: 120 20% 88%; /* Light Greenish Tint for Sidebar Text */
+    --sidebar-primary: 120 73% 75%; /* Vibrant Green (same as main primary) */
+    --sidebar-primary-foreground: 120 73% 15%; /* Dark Green */
+    --sidebar-accent: 60 44% 71%; /* Muted Yellow (same as main accent) */
+    --sidebar-accent-foreground: 60 44% 15%; /* Dark Yellow/Brown */
+    --sidebar-border: 120 33% 25%; /* Slightly darker border for sidebar context */
+    --sidebar-ring: 120 73% 75%; /* Vibrant Green */
 
-    --chart-1: 120 70% 50%;
-    --chart-2: 90 60% 45%;
-    --chart-3: 60 80% 55%;
-    --chart-4: 30 65% 60%;
-    --chart-5: 0 75% 55%;
+    /* Chart colors harmonized with green/yellow theme */
+    --chart-1: 120 60% 50%; /* Primary Green */
+    --chart-2: 100 50% 55%; /* Lighter Green */
+    --chart-3: 70 60% 60%;  /* Yellow-Green (related to accent) */
+    --chart-4: 60 70% 65%;  /* Brighter Yellow (accent variation) */
+    --chart-5: 120 40% 35%; /* Darker Green */
   }
 
   /* The .dark class is not needed as dark is the default theme */

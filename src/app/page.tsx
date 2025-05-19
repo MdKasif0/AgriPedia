@@ -60,6 +60,7 @@ export default function HomePage() {
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null); // Ref for the search input
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'Notification' in window && 'PushManager' in window.ServiceWorkerRegistration.prototype) {
@@ -68,6 +69,21 @@ export default function HomePage() {
     } else {
       setIsPushSupported(false);
     }
+  }, []);
+
+  // Keyboard shortcut for search (Ctrl+K or Cmd+K)
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
 
@@ -264,6 +280,7 @@ export default function HomePage() {
                 onSuggestionClick={handleSuggestionClick}
                 onSubmitSearch={handleSubmitSearch}
                 onClearSearch={handleClearSearch}
+                inputRef={searchInputRef} // Pass the ref here
               />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
