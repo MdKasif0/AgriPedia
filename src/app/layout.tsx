@@ -9,6 +9,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import ScanFAB from '@/components/layout/ScanFAB';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,7 +29,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: 'hsl(var(--background))', // Updated to use theme variable
+  themeColor: [ // Provide light and dark theme colors
+    { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, // Light background
+    { media: '(prefers-color-scheme: dark)', color: 'hsl(120 33% 20%)' }, // Dark background (current)
+  ],
 }
 
 export default function RootLayout({
@@ -37,23 +41,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning> {/* suppressHydrationWarning for next-themes */}
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
-        <ServiceWorkerRegistrar />
-        <SidebarProvider defaultOpen={true}> {/* Control sidebar state here */}
-          <Header /> {/* Header remains outside sidebar logic for this layout */}
-          <div className="flex"> {/* Flex container for sidebar and main content */}
-            <DesktopSidebar /> {/* Conditionally rendered via CSS by sidebar.tsx */}
-            <SidebarInset> {/* This handles the main content area correctly with the sidebar */}
-              <main className="container mx-auto p-4 pb-20 md:pb-4"> {/* Added padding-bottom for mobile nav */}
-                {children}
-              </main>
-            </SidebarInset>
-          </div>
-          <MobileBottomNav /> {/* Conditionally rendered via CSS (md:hidden) */}
-          <ScanFAB />
-        </SidebarProvider>
-        <Toaster />
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+        >
+          <ServiceWorkerRegistrar />
+          <SidebarProvider defaultOpen={true}>
+            <Header />
+            <div className="flex">
+              <DesktopSidebar />
+              <SidebarInset>
+                <main className="container mx-auto p-4 pb-20 md:pb-4">
+                  {children}
+                </main>
+              </SidebarInset>
+            </div>
+            <MobileBottomNav />
+            <ScanFAB />
+          </SidebarProvider>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
