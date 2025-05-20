@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import { isFavorite, addFavorite, removeFavorite } from '@/lib/userDataStore';
+import { isFavorite, addFavorite, removeFavorite, addRecentView } from '@/lib/userDataStore'; // Added addRecentView
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 
@@ -98,6 +98,7 @@ export default function ItemPage() {
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
+            addRecentView(onlineData.id); // Add to recent views
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache:', error);
@@ -109,6 +110,7 @@ export default function ItemPage() {
         if (offlineData) {
           itemData = offlineData;
           setIsOfflineSource(true);
+          // Do not add to recent views again if loaded offline, it was added when first viewed online
         }
       }
       
@@ -214,9 +216,8 @@ export default function ItemPage() {
     return null;
   }
   
-  // Generate a 1 or 2 word hint from the common name for the main image
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
-  const imageHint = commonNameWords.slice(0, 1).join(' ') + (commonNameWords.length > 1 ? ' ' + commonNameWords[1] : ' closeup') ;
+  const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
 
   return (

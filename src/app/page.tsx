@@ -6,21 +6,21 @@ import { useRouter } from 'next/navigation';
 import TextSearchForm from '@/components/search/TextSearchForm';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
-import { searchProduce, getUniqueRegions, getUniqueSeasons } from '@/lib/produceData';
-import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
+import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce } from '@/lib/produceData';
+import { getFavoriteIds, addRecentSearch, getRecentViewIds } from '@/lib/userDataStore'; // Removed getRecentSearches, added getRecentViewIds, getAllProduce
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info, AlertTriangle, Loader2 } from 'lucide-react';
+import { Apple, ListFilter, Heart, History, Search, Info, AlertTriangle, Loader2 } from 'lucide-react'; // Removed ExternalLink
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
+// import { Button } from '@/components/ui/button'; // Removed Button as it's not directly used for recent searches text
+// import { useToast } from '@/hooks/use-toast'; // useToast not used
 import Loader from '@/components/ui/Loader';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
 
 export default function HomePage() {
   const router = useRouter();
-  const { toast } = useToast();
+  // const { toast } = useToast(); // toast is not used
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<ProduceInfo[]>([]);
   const [isSuggestionsVisible, setIsSuggestionsVisible] = useState(false);
@@ -34,7 +34,7 @@ export default function HomePage() {
   const [initialLoad, setInitialLoad] = useState(true);
 
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
-  const [recentSearchTerms, setRecentSearchTerms] = useState<string[]>([]);
+  const [recentViewedItems, setRecentViewedItems] = useState<ProduceInfo[]>([]); // New state for recently viewed items
 
   const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
   const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
@@ -76,9 +76,14 @@ export default function HomePage() {
 
   const loadUserData = useCallback(() => {
     const favIds = getFavoriteIds();
-    const allCurrentProduce = searchProduce('', { region: 'all', season: 'all' }); 
+    const allCurrentProduce = getAllProduce(); // Use getAllProduce for efficiency
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-    setRecentSearchTerms(getRecentSearches());
+    
+    // Load recently viewed items
+    const recentIds = getRecentViewIds();
+    const viewedItems = recentIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[];
+    setRecentViewedItems(viewedItems);
+
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -131,7 +136,7 @@ export default function HomePage() {
   const handleSuggestionClick = (item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    addRecentSearch(item.commonName);
+    addRecentSearch(item.commonName); // Still add to text search history if desired, or remove this line
     loadUserData(); 
     router.push(`/item/${item.id.toLowerCase().replace(/\s+/g, '-')}`);
   };
@@ -139,7 +144,7 @@ export default function HomePage() {
   const handleSubmitSearch = (submittedQuery: string) => {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
-        addRecentSearch(submittedQuery);
+        addRecentSearch(submittedQuery); // Still add to text search history if desired
         loadUserData(); 
     }
     const results = searchProduce(submittedQuery, {
@@ -151,13 +156,6 @@ export default function HomePage() {
     }
   };
   
-  const handleRecentSearchClick = (term: string) => {
-    setSearchQuery(term);
-    setIsSuggestionsVisible(false);
-    addRecentSearch(term);
-    loadUserData();
-  };
-
    useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
@@ -175,8 +173,6 @@ export default function HomePage() {
 
   return (
     <div className="space-y-8 py-6">
-      {/* The "Explore Your Produce" section has been removed */}
-      
       <InfoBanner 
         title="AgriPedia Tip!"
         description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
@@ -238,13 +234,32 @@ export default function HomePage() {
         </section>
       </div>
 
+      {recentViewedItems.length > 0 && (
+        <>
+          <Separator className="my-8 bg-border/20" />
+          <section>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground">
+              <History className="text-primary"/>Recently Viewed
+            </h2>
+            <div className="flex overflow-x-auto space-x-4 pb-4 -mx-4 px-4"> {/* Added -mx-4 px-4 for edge padding */}
+              {recentViewedItems.map((item) => (
+                <div key={item.id} className="flex-shrink-0 w-56 sm:w-64"> {/* Adjust width as needed */}
+                  <ProduceCard produce={item} />
+                </div>
+              ))}
+            </div>
+             {recentViewedItems.length > 3 && <p className="text-xs text-muted-foreground text-right mt-1">Scroll for more &rarr;</p>}
+          </section>
+        </>
+      )}
+
       {(searchResults.length > 0) && (
         <>
           <Separator className="my-8 bg-border/20" />
           <section>
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground">
               <ListFilter className="text-primary"/> 
-              {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'All Produce'} {/* Changed from Discover Produce */}
+              {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'All Produce'}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {searchResults.map((item) => (
@@ -266,23 +281,6 @@ export default function HomePage() {
         </>
       )}
       
-      {recentSearchTerms.length > 0 && (
-        <>
-          <Separator className="my-8 bg-border/20" />
-          <section>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><History className="text-primary"/>Recent Searches</h2>
-            <div className="flex flex-wrap gap-2">
-              {recentSearchTerms.map((term, index) => (
-                <Button key={index} variant="outline" size="sm" onClick={() => handleRecentSearchClick(term)} className="rounded-full hover:bg-primary/10 border-primary/50 text-primary">
-                  {term}
-                  <ExternalLink size={14} className="ml-2 opacity-70"/>
-                </Button>
-              ))}
-            </div>
-          </section>
-        </>
-      )}
-
       {favoriteProduceItems.length > 0 && (
         <>
           <Separator className="my-8 bg-border/20" />
@@ -297,13 +295,13 @@ export default function HomePage() {
         </>
       )}
 
-      {(searchResults.length === 0 && favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && !initialLoad && !(searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
+      {(searchResults.length === 0 && favoriteProduceItems.length === 0 && recentViewedItems.length === 0 && !initialLoad && !(searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
          <section className="py-8 text-center">
              <Apple className="mx-auto h-16 w-16 text-muted-foreground/50 mb-4" />
             <p className="text-muted-foreground text-lg">
               No produce data to display. Try searching or scanning an item.
               <br/>
-              Favorite items and recent searches will appear here.
+              Favorite items and recently viewed items will appear here.
             </p>
           </section>
       )}

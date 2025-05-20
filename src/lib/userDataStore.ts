@@ -3,7 +3,9 @@
 
 const FAVORITES_KEY = 'agripedia-favorites';
 const RECENT_SEARCHES_KEY = 'agripedia-recent-searches';
+const RECENT_VIEWS_KEY = 'agripedia-recent-views';
 const MAX_RECENT_SEARCHES = 5;
+const MAX_RECENT_VIEWS = 10; // Store more than 5 to make scrolling meaningful
 
 // --- Favorites ---
 
@@ -35,7 +37,7 @@ export function isFavorite(produceId: string): boolean {
   return favorites.includes(produceId);
 }
 
-// --- Recent Searches ---
+// --- Recent Searches (Text Terms) ---
 
 export function getRecentSearches(): string[] {
   if (typeof window === 'undefined') return [];
@@ -58,4 +60,29 @@ export function addRecentSearch(query: string): void {
 export function clearRecentSearches(): void {
   if (typeof window === 'undefined') return;
   localStorage.removeItem(RECENT_SEARCHES_KEY);
+}
+
+// --- Recently Viewed Produce Items ---
+
+export function getRecentViewIds(): string[] {
+  if (typeof window === 'undefined') return [];
+  const storedViews = localStorage.getItem(RECENT_VIEWS_KEY);
+  return storedViews ? JSON.parse(storedViews) : [];
+}
+
+export function addRecentView(produceId: string): void {
+  if (typeof window === 'undefined' || !produceId) return;
+  let views = getRecentViewIds();
+  // Remove existing instance of the produceId to move it to the front
+  views = views.filter(id => id !== produceId);
+  // Add new produceId to the beginning
+  views.unshift(produceId);
+  // Limit the number of recent views
+  views = views.slice(0, MAX_RECENT_VIEWS);
+  localStorage.setItem(RECENT_VIEWS_KEY, JSON.stringify(views));
+}
+
+export function clearRecentViews(): void {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem(RECENT_VIEWS_KEY);
 }
