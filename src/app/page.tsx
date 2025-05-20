@@ -3,20 +3,20 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-// import TextSearchForm from '@/components/search/TextSearchForm'; // Now handled by ClientOnly
-import dynamic from 'next/dynamic'; // For dynamic import
+import dynamic from 'next/dynamic';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
 import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2 } from 'lucide-react'; // Added Loader2
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2 } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
 import ClientOnly from '@/components/ClientOnly';
 import { triggerHapticFeedback } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast'; // Ensure useToast is imported
 
 // Dynamically import TextSearchForm
 const TextSearchForm = dynamic(() => import('@/components/search/TextSearchForm'), {
@@ -24,14 +24,11 @@ const TextSearchForm = dynamic(() => import('@/components/search/TextSearchForm'
   loading: () => <SearchFormFallback />, // Provide a loading component
 });
 
-
 function SearchFormFallback() {
   return (
     <div className="space-y-2 animate-pulse">
-      <div className="flex gap-2 items-center">
-        <div className="h-10 bg-muted rounded-lg flex-grow"></div>
-        <div className="h-10 w-24 bg-muted rounded-lg"></div>
-      </div>
+      <div className="h-10 bg-muted rounded-lg flex-grow"></div>
+      <div className="h-10 w-24 bg-muted rounded-lg"></div>
       <div className="grid sm:grid-cols-2 gap-4 pt-2">
         <div className="h-10 bg-muted rounded-lg"></div>
         <div className="h-10 bg-muted rounded-lg"></div>
@@ -40,9 +37,9 @@ function SearchFormFallback() {
   );
 }
 
-
 export default function HomePage() {
   const router = useRouter();
+  const { toast } = useToast(); // Initialize toast
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<ProduceInfo[]>([]);
   const [isSuggestionsVisible, setIsSuggestionsVisible] = useState(false);
@@ -58,14 +55,29 @@ export default function HomePage() {
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [seasonalSuggestions, setSeasonalSuggestions] = useState<ProduceInfo[]>([]);
 
-
   const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
   const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
   const [tipError, setTipError] = useState<string | null>(null);
 
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [notificationStatus, setNotificationStatus] = useState<string | null>(null);
+  const [vapidKeyConfigured, setVapidKeyConfigured] = useState(false);
+
+  const VAPID_PUBLIC_KEY_PLACEHOLDER = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME';
+
+
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const key = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+    if (key && key !== VAPID_PUBLIC_KEY_PLACEHOLDER) {
+      setVapidKeyConfigured(true);
+    } else {
+      setVapidKeyConfigured(false);
+    }
+  }, []);
 
   useEffect(() => {
     const loadTip = async () => {
@@ -108,7 +120,7 @@ export default function HomePage() {
     const favIds = getFavoriteIds();
     const allCurrentProduce = getAllProduce();
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-    setSeasonalSuggestions(getInSeasonProduce(5)); // Get 5 in-season suggestions
+    setSeasonalSuggestions(getInSeasonProduce(5)); 
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -118,7 +130,6 @@ export default function HomePage() {
     });
     setSearchResults(results);
   }, []);
-
 
   useEffect(() => {
     setAvailableRegions(getUniqueRegions());
@@ -134,7 +145,6 @@ export default function HomePage() {
     }
   }, [searchQuery, selectedRegion, selectedSeason, initialLoad, updateFilteredResults]);
 
-
   const handleQueryChange = useCallback((newQuery: string) => {
     setSearchQuery(newQuery);
     if (suggestionsTimeoutRef.current) {
@@ -147,24 +157,24 @@ export default function HomePage() {
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
-      // Show seasonal suggestions if query is empty and input is focused
       setSuggestions(seasonalSuggestions);
       setIsSuggestionsVisible(true);
     }
-  }, [seasonalSuggestions]);
+  }, [seasonalSuggestions]); 
 
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
-    setSuggestions(seasonalSuggestions); // Show seasonal suggestions on clear if input is focused
-    setIsSuggestionsVisible(true); // Keep suggestions visible
+    setSuggestions(seasonalSuggestions); 
+    setIsSuggestionsVisible(true); 
     searchInputRef.current?.focus();
+    triggerHapticFeedback();
   }, [seasonalSuggestions]);
 
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
-    loadUserData();
+    loadUserData(); 
     triggerHapticFeedback();
     router.push(`/item/${item.id.toLowerCase().replace(/\s+/g, '-')}`);
   }, [loadUserData, router]);
@@ -173,7 +183,7 @@ export default function HomePage() {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
         addRecentSearch(submittedQuery);
-        loadUserData();
+        loadUserData(); 
     }
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
@@ -183,6 +193,67 @@ export default function HomePage() {
       router.push(`/item/${results[0].id.toLowerCase().replace(/\s+/g, '-')}`);
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
+
+
+  const handleNotificationSubscription = async () => {
+    if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+      setNotificationStatus('Push notifications are not supported by your browser.');
+      return;
+    }
+    if (!vapidKeyConfigured) {
+        setNotificationStatus('Notifications not configured by site admin (VAPID key missing).');
+        console.error('VAPID public key is not configured or is the placeholder.');
+        toast({
+          title: 'Setup Incomplete',
+          description: 'Push notifications are not fully configured for this site yet.',
+          variant: 'destructive'
+        });
+        return;
+    }
+
+    setIsSubscribing(true);
+    setNotificationStatus('Processing...');
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission !== 'granted') {
+        setNotificationStatus('Notification permission denied.');
+        setIsSubscribing(false);
+        return;
+      }
+
+      const registration = await navigator.serviceWorker.ready;
+      let subscription = await registration.pushManager.getSubscription();
+
+      if (!subscription) {
+        const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+        if (!vapidKey || vapidKey === VAPID_PUBLIC_KEY_PLACEHOLDER) {
+          throw new Error('VAPID public key is not configured.');
+        }
+        subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: vapidKey,
+        });
+      }
+      
+      console.log('Push subscription:', subscription);
+      toast({
+        title: 'Subscribed!',
+        description: 'You are now subscribed to notifications.',
+      });
+      setNotificationStatus('Subscribed to notifications successfully!');
+    } catch (error) {
+      console.error('Error subscribing to push notifications:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      setNotificationStatus("Error: " + errorMessage);
+      toast({
+        title: 'Subscription Failed',
+        description: "Error: " + errorMessage,
+        variant: 'destructive'
+      });
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
 
    useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -197,18 +268,10 @@ export default function HomePage() {
         clearTimeout(suggestionsTimeoutRef.current);
       }
     };
-  }, []);
+  }, []); // Added semicolon
 
-  const handleFocusSearch = useCallback(() => {
-    if (!searchQuery.trim()) {
-      setSuggestions(seasonalSuggestions);
-      setIsSuggestionsVisible(true);
-    } else {
-      // Re-trigger normal suggestions if there's already a query
-      handleQueryChange(searchQuery);
-    }
-  }, [searchQuery, seasonalSuggestions, handleQueryChange]);
-
+  // Removed unused handleFocusSearch useCallback hook
+  
   return (
     <div className="space-y-8 py-6">
       <ClientOnly fallback={<div className="h-24 bg-muted rounded-xl animate-pulse"></div>}>
@@ -217,64 +280,65 @@ export default function HomePage() {
           description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
           icon={isTipLoading ? Loader2 : (tipError ? AlertTriangle : Info)}
           iconProps={isTipLoading ? {className: "animate-spin"} : {}}
-          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-md border-transparent"
+          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-lg"
         />
       </ClientOnly>
 
       <div className="grid md:grid-cols-1 gap-8 items-start">
         <section className="space-y-4">
-          <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
-            <CardHeader className="p-6">
-              <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
-                <Search className="text-primary" /> Search & Filter
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
-              <TextSearchForm
-                  query={searchQuery}
-                  onQueryChange={handleQueryChange}
-                  suggestions={suggestions}
-                  isSuggestionsVisible={isSuggestionsVisible}
-                  onSuggestionClick={handleSuggestionClick}
-                  onSubmitSearch={handleSubmitSearch}
-                  onClearSearch={handleClearSearch}
-                  inputRef={searchInputRef}
-              />
-              <div className="grid sm:grid-cols-2 gap-4 pt-2">
-                <div>
-                  <label htmlFor="region-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Region</label>
-                  <Select value={selectedRegion} onValueChange={setSelectedRegion}>
-                    <SelectTrigger id="region-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
-                      <SelectValue placeholder="All Regions" />
-                    </SelectTrigger>
-                    <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
-                      <SelectItem value="all">All Regions</SelectItem>
-                      {availableRegions.map(region => (
-                        <SelectItem key={region} value={region}>{region}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+          <ClientOnly fallback={<SearchFormFallback />}>
+            <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
+              <CardHeader className="p-6">
+                <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
+                  <Search className="text-primary" /> Search & Filter
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
+                <TextSearchForm
+                    query={searchQuery}
+                    onQueryChange={handleQueryChange}
+                    suggestions={suggestions}
+                    isSuggestionsVisible={isSuggestionsVisible}
+                    onSuggestionClick={handleSuggestionClick}
+                    onSubmitSearch={handleSubmitSearch}
+                    onClearSearch={handleClearSearch}
+                    inputRef={searchInputRef}
+                />
+                <div className="grid sm:grid-cols-2 gap-4 pt-2">
+                  <div>
+                    <label htmlFor="region-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Region</label>
+                    <Select value={selectedRegion} onValueChange={setSelectedRegion}>
+                      <SelectTrigger id="region-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
+                        <SelectValue placeholder="All Regions" />
+                      </SelectTrigger>
+                      <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
+                        <SelectItem value="all">All Regions</SelectItem>
+                        {availableRegions.map(region => (
+                          <SelectItem key={region} value={region}>{region}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <label htmlFor="season-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Season</label>
+                    <Select value={selectedSeason} onValueChange={setSelectedSeason}>
+                      <SelectTrigger id="season-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
+                        <SelectValue placeholder="All Seasons" />
+                      </SelectTrigger>
+                      <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
+                        <SelectItem value="all">All Seasons</SelectItem>
+                        {availableSeasons.map(season => (
+                          <SelectItem key={season} value={season}>{season}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="season-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Season</label>
-                  <Select value={selectedSeason} onValueChange={setSelectedSeason}>
-                    <SelectTrigger id="season-filter" className="w-full rounded-lg bg-input border-border text-card-foreground">
-                      <SelectValue placeholder="All Seasons" />
-                    </SelectTrigger>
-                    <SelectContent className="rounded-lg bg-popover text-popover-foreground border-border">
-                      <SelectItem value="all">All Seasons</SelectItem>
-                      {availableSeasons.map(season => (
-                        <SelectItem key={season} value={season}>{season}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </ClientOnly>
         </section>
       </div>
-
 
       {(searchResults.length > 0) && (
         <>
