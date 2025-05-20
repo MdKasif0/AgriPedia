@@ -59,8 +59,9 @@ type Recipe = {
 };
 
 export default function ItemPage() {
-  const params = useParams();
-  const slug = typeof params.slug === 'string' ? params.slug : '';
+  const { slug: slugParam } = useParams<{ slug?: string | string[] }>();
+  const slug = typeof slugParam === 'string' ? decodeURIComponent(slugParam) : Array.isArray(slugParam) ? decodeURIComponent(slugParam[0]) : '';
+
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
