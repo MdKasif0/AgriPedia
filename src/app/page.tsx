@@ -3,20 +3,27 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import TextSearchForm from '@/components/search/TextSearchForm';
+// import TextSearchForm from '@/components/search/TextSearchForm'; // Now handled by ClientOnly
+import dynamic from 'next/dynamic'; // For dynamic import
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
 import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2 } from 'lucide-react';
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2 } from 'lucide-react'; // Added Loader2
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-// import Loader from '@/components/ui/Loader'; // Already have a Loader component, ensure only one is used or aliased.
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
 import ClientOnly from '@/components/ClientOnly';
 import { triggerHapticFeedback } from '@/lib/utils';
+
+// Dynamically import TextSearchForm
+const TextSearchForm = dynamic(() => import('@/components/search/TextSearchForm'), {
+  ssr: false, // Ensure it's only client-side
+  loading: () => <SearchFormFallback />, // Provide a loading component
+});
+
 
 function SearchFormFallback() {
   return (
@@ -39,12 +46,12 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<ProduceInfo[]>([]);
   const [isSuggestionsVisible, setIsSuggestionsVisible] = useState(false);
-  
+
   const [selectedRegion, setSelectedRegion] = useState<string>('all');
   const [selectedSeason, setSelectedSeason] = useState<string>('all');
   const [availableRegions, setAvailableRegions] = useState<string[]>([]);
   const [availableSeasons, setAvailableSeasons] = useState<string[]>([]);
-  
+
   const [searchResults, setSearchResults] = useState<ProduceInfo[]>([]);
   const [initialLoad, setInitialLoad] = useState(true);
 
@@ -58,7 +65,7 @@ export default function HomePage() {
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
-  const searchInputRef = useRef<HTMLInputElement>(null); 
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const loadTip = async () => {
@@ -105,9 +112,9 @@ export default function HomePage() {
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
-    const results = searchProduce(query, { 
-      region: region === 'all' ? undefined : region, 
-      season: season === 'all' ? undefined : season 
+    const results = searchProduce(query, {
+      region: region === 'all' ? undefined : region,
+      season: season === 'all' ? undefined : season
     });
     setSearchResults(results);
   }, []);
@@ -117,7 +124,7 @@ export default function HomePage() {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
     loadUserData();
-    updateFilteredResults('', 'all', 'all'); 
+    updateFilteredResults('', 'all', 'all');
     setInitialLoad(false);
   }, [loadUserData, updateFilteredResults]);
 
@@ -135,7 +142,7 @@ export default function HomePage() {
     }
     if (newQuery.trim()) {
       suggestionsTimeoutRef.current = setTimeout(() => {
-        const currentSuggestions = searchProduce(newQuery.trim(), {}); 
+        const currentSuggestions = searchProduce(newQuery.trim(), {});
         setSuggestions(currentSuggestions);
         setIsSuggestionsVisible(true);
       }, 150);
@@ -145,7 +152,7 @@ export default function HomePage() {
       setIsSuggestionsVisible(true);
     }
   }, [seasonalSuggestions]);
-  
+
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
     setSuggestions(seasonalSuggestions); // Show seasonal suggestions on clear if input is focused
@@ -156,8 +163,8 @@ export default function HomePage() {
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    addRecentSearch(item.commonName); 
-    loadUserData(); 
+    addRecentSearch(item.commonName);
+    loadUserData();
     triggerHapticFeedback();
     router.push(`/item/${item.id.toLowerCase().replace(/\s+/g, '-')}`);
   }, [loadUserData, router]);
@@ -165,8 +172,8 @@ export default function HomePage() {
   const handleSubmitSearch = useCallback((submittedQuery: string) => {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
-        addRecentSearch(submittedQuery); 
-        loadUserData(); 
+        addRecentSearch(submittedQuery);
+        loadUserData();
     }
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
@@ -176,7 +183,7 @@ export default function HomePage() {
       router.push(`/item/${results[0].id.toLowerCase().replace(/\s+/g, '-')}`);
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
-  
+
    useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
@@ -205,15 +212,15 @@ export default function HomePage() {
   return (
     <div className="space-y-8 py-6">
       <ClientOnly fallback={<div className="h-24 bg-muted rounded-xl animate-pulse"></div>}>
-        <InfoBanner 
+        <InfoBanner
           title="AgriPedia Tip!"
           description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
           icon={isTipLoading ? Loader2 : (tipError ? AlertTriangle : Info)}
           iconProps={isTipLoading ? {className: "animate-spin"} : {}}
-          className="bg-primary/90 backdrop-blur-sm text-primary-foreground"
+          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-md border-transparent"
         />
       </ClientOnly>
-      
+
       <div className="grid md:grid-cols-1 gap-8 items-start">
         <section className="space-y-4">
           <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
@@ -223,18 +230,16 @@ export default function HomePage() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
-              <ClientOnly fallback={<SearchFormFallback />}>
-                  <TextSearchForm
-                    query={searchQuery}
-                    onQueryChange={handleQueryChange}
-                    suggestions={suggestions}
-                    isSuggestionsVisible={isSuggestionsVisible}
-                    onSuggestionClick={handleSuggestionClick}
-                    onSubmitSearch={handleSubmitSearch}
-                    onClearSearch={handleClearSearch}
-                    inputRef={searchInputRef}
-                  />
-              </ClientOnly>
+              <TextSearchForm
+                  query={searchQuery}
+                  onQueryChange={handleQueryChange}
+                  suggestions={suggestions}
+                  isSuggestionsVisible={isSuggestionsVisible}
+                  onSuggestionClick={handleSuggestionClick}
+                  onSubmitSearch={handleSubmitSearch}
+                  onClearSearch={handleClearSearch}
+                  inputRef={searchInputRef}
+              />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
                   <label htmlFor="region-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Region</label>
@@ -276,7 +281,7 @@ export default function HomePage() {
           <Separator className="my-8 bg-border/20" />
           <section>
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground">
-              <ListFilter className="text-primary"/> 
+              <ListFilter className="text-primary"/>
               {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'All Produce'}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -298,11 +303,11 @@ export default function HomePage() {
           </section>
         </>
       )}
-      
+
       {favoriteProduceItems.length > 0 && (
         <>
           <Separator className="my-8 bg-border/20" />
-          <section id="favorites-section"> 
+          <section id="favorites-section">
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {favoriteProduceItems.map((item) => (
