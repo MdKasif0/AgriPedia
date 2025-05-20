@@ -3,12 +3,11 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-// import Header from '@/components/layout/Header'; // Removed Header import
 import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
-import ScanFAB from '@/components/layout/ScanFAB';
+// import ScanFAB from '@/components/layout/ScanFAB'; // Removed ScanFAB import
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
 const inter = Inter({
@@ -29,9 +28,9 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [ // Provide light and dark theme colors
-    { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, // Light background from :root .light
-    { media: '(prefers-color-scheme: dark)', color: 'hsl(220 15% 8%)' }, // Dark background from :root
+  themeColor: [ 
+    { media: '(prefers-color-scheme: light)', color: 'hsl(0 0% 98%)' }, 
+    { media: '(prefers-color-scheme: dark)', color: 'hsl(220 15% 8%)' }, 
   ],
 }
 
@@ -51,7 +50,6 @@ export default function RootLayout({
         >
           <ServiceWorkerRegistrar />
           <SidebarProvider defaultOpen={true}>
-            {/* <Header /> */} {/* Removed Header component usage */}
             <div className="flex">
               <DesktopSidebar />
               <SidebarInset>
@@ -61,7 +59,7 @@ export default function RootLayout({
               </SidebarInset>
             </div>
             <MobileBottomNav />
-            <ScanFAB />
+            {/* <ScanFAB /> */} {/* Removed ScanFAB component usage */}
           </SidebarProvider>
           <Toaster />
         </ThemeProvider>
@@ -69,4 +67,3 @@ export default function RootLayout({
     </html>
   );
 }
-
