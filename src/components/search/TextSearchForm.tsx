@@ -1,11 +1,12 @@
 
 'use client';
 
-import { useState, type FormEvent, useRef, useEffect, type ChangeEvent } from 'react';
+import { type FormEvent, useRef, type ChangeEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search, X } from 'lucide-react';
 import type { ProduceInfo } from '@/lib/produceData';
+// Removed ClientOnly import as it's not used here anymore
 
 interface TextSearchFormProps {
   query: string;
@@ -15,7 +16,7 @@ interface TextSearchFormProps {
   onSuggestionClick: (item: ProduceInfo) => void;
   onSubmitSearch: (query: string) => void;
   onClearSearch: () => void;
-  inputRef?: React.RefObject<HTMLInputElement>; 
+  inputRef?: React.RefObject<HTMLInputElement>;
 }
 
 export default function TextSearchForm({
@@ -26,13 +27,13 @@ export default function TextSearchForm({
   onSuggestionClick,
   onSubmitSearch,
   onClearSearch,
-  inputRef, 
+  inputRef,
 }: TextSearchFormProps) {
   const suggestionsRef = useRef<HTMLUListElement>(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!query.trim()) return;
+    if (!query.trim()) return; // Keep this check
     onSubmitSearch(query);
   };
 
@@ -45,16 +46,16 @@ export default function TextSearchForm({
       <div className="flex gap-2 items-center">
         <div className="relative flex-grow">
           <Input
-            ref={inputRef} 
+            ref={inputRef}
             type="text"
             value={query}
             onChange={handleInputChange}
-            onFocus={() => query.trim() && onQueryChange(query)} 
+            onFocus={() => query.trim() && onQueryChange(query)}
             placeholder="E.g., Apple, Banana... (Ctrl/Cmd + K)"
-            className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary" 
+            className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary"
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
-            id="main-search-input" 
+            id="main-search-input"
           />
           {query && (
             <Button
@@ -69,7 +70,7 @@ export default function TextSearchForm({
             </Button>
           )}
         </div>
-        <Button type="submit" variant="default" disabled={!query.trim()} className="rounded-lg">
+        <Button type="submit" variant="default" className="rounded-lg">
           <Search className="mr-2 h-5 w-5" /> Search
         </Button>
       </div>
@@ -95,4 +96,3 @@ export default function TextSearchForm({
     </form>
   );
 }
-

@@ -40,6 +40,7 @@ function SearchFormFallback() {
 export default function HomePage() {
   const router = useRouter();
   const { toast } = useToast();
+
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<ProduceInfo[]>([]);
   const [isSuggestionsVisible, setIsSuggestionsVisible] = useState(false);
@@ -101,21 +102,6 @@ export default function HomePage() {
     loadTip();
   }, []);
 
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
-        event.preventDefault();
-        searchInputRef.current?.focus();
-        triggerHapticFeedback();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
   const loadUserData = useCallback(() => {
     const favIds = getFavoriteIds();
     const allCurrentProduce = getAllProduce();
@@ -139,120 +125,129 @@ export default function HomePage() {
     setInitialLoad(false);
   }, [loadUserData, updateFilteredResults]);
 
-  // useEffect(() => {
-  //   if (!initialLoad) {
-  //     updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
-  //   }
-  // }, [searchQuery, selectedRegion, selectedSeason, initialLoad, updateFilteredResults]);
+  useEffect(() => {
+    if (!initialLoad) {
+      updateFilteredResults(searchQuery, selectedRegion, selectedSeason);
+    }
+  }, [searchQuery, selectedRegion, selectedSeason, initialLoad, updateFilteredResults]);
 
    useEffect(() => {
-    // function handleClickOutside(event: MouseEvent) {
-    //   if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
-    //     setIsSuggestionsVisible(false);
-    //   }
-    // }
-    // document.addEventListener("mousedown", handleClickOutside);
-    // return () => {
-    //   document.removeEventListener("mousedown", handleClickOutside);
-    //   if (suggestionsTimeoutRef.current) {
-    //     clearTimeout(suggestionsTimeoutRef.current);
-    //   }
-    // };
+    function handleClickOutside(event: MouseEvent) {
+      if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
+        setIsSuggestionsVisible(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      if (suggestionsTimeoutRef.current) {
+        clearTimeout(suggestionsTimeoutRef.current);
+      }
+    };
   }, []);
 
-  // const handleQueryChange = useCallback((newQuery: string) => {
-  //   setSearchQuery(newQuery);
-  //   if (suggestionsTimeoutRef.current) {
-  //     clearTimeout(suggestionsTimeoutRef.current);
-  //   }
-  //   if (newQuery.trim()) {
-  //     suggestionsTimeoutRef.current = setTimeout(() => {
-  //       const currentSuggestions = searchProduce(newQuery.trim(), {});
-  //       setSuggestions(currentSuggestions);
-  //       setIsSuggestionsVisible(true);
-  //     }, 150);
-  //   } else {
-  //     setSuggestions(seasonalSuggestions); // Show seasonal if query is cleared
-  //     setIsSuggestionsVisible(true);
-  //   }
-  // }, [seasonalSuggestions]);
+  const handleQueryChange = useCallback((newQuery: string) => {
+    setSearchQuery(newQuery);
+    if (suggestionsTimeoutRef.current) {
+      clearTimeout(suggestionsTimeoutRef.current);
+    }
+    if (newQuery.trim()) {
+      suggestionsTimeoutRef.current = setTimeout(() => {
+        const currentSuggestions = searchProduce(newQuery.trim(), {});
+        setSuggestions(currentSuggestions);
+        setIsSuggestionsVisible(true);
+      }, 150);
+    } else {
+      setSuggestions(seasonalSuggestions); // Show seasonal if query is cleared
+      setIsSuggestionsVisible(true);
+    }
+  }, [seasonalSuggestions]);
 
-  // const handleSuggestionClick = useCallback((item: ProduceInfo) => {
-  //   setSuggestions([]);
-  //   setIsSuggestionsVisible(false);
-  //   addRecentSearch(item.commonName);
-  //   loadUserData();
-  //   triggerHapticFeedback();
-  //   router.push(`/item/${encodeURIComponent(item.id)}`);
-  // }, [loadUserData, router]);
-  
-  // const handleClearSearch = useCallback(() => {
-  //   setSearchQuery('');
-  //   setSuggestions(seasonalSuggestions);
-  //   setIsSuggestionsVisible(true);
-  //   searchInputRef.current?.focus();
-  //   triggerHapticFeedback();
-  // }, [seasonalSuggestions]);
+  const handleSuggestionClick = useCallback((item: ProduceInfo) => {
+    setSuggestions([]);
+    setIsSuggestionsVisible(false);
+    addRecentSearch(item.commonName);
+    loadUserData();
+    triggerHapticFeedback();
+    router.push(`/item/${encodeURIComponent(item.id)}`);
+  }, [loadUserData, router]);
 
-  // const handleSubmitSearch = useCallback((submittedQuery: string) => {
-  //   setIsSuggestionsVisible(false);
-  //   if (submittedQuery.trim()) {
-  //       addRecentSearch(submittedQuery);
-  //       loadUserData();
-  //   }
-  //   const results = searchProduce(submittedQuery, {
-  //     region: selectedRegion === 'all' ? undefined : selectedRegion,
-  //     season: selectedSeason === 'all' ? undefined : selectedSeason
-  //   });
-  //   if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
-  //     router.push(`/item/${encodeURIComponent(results[0].id)}`);
-  //   }
-  // }, [loadUserData, router, selectedRegion, selectedSeason]);
-  
-  const VAPID_PUBLIC_KEY = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || VAPID_PUBLIC_KEY_PLACEHOLDER;
+  const handleClearSearch = useCallback(() => {
+    setSearchQuery('');
+    setSuggestions(seasonalSuggestions);
+    setIsSuggestionsVisible(true);
+    searchInputRef.current?.focus();
+    triggerHapticFeedback();
+  }, [seasonalSuggestions]);
 
-  // const handleNotificationSubscription = async () => {
-    // setIsSubscribing(true);
-    // setNotificationStatus(null);
+  const handleSubmitSearch = useCallback((submittedQuery: string) => {
+    setIsSuggestionsVisible(false);
+    if (submittedQuery.trim()) {
+        addRecentSearch(submittedQuery);
+        loadUserData();
+    }
+    const results = searchProduce(submittedQuery, {
+      region: selectedRegion === 'all' ? undefined : selectedRegion,
+      season: selectedSeason === 'all' ? undefined : selectedSeason
+    });
+    if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
+      router.push(`/item/${encodeURIComponent(results[0].id)}`);
+    }
+  }, [loadUserData, router, selectedRegion, selectedSeason]);
 
-    // if (VAPID_PUBLIC_KEY === VAPID_PUBLIC_KEY_PLACEHOLDER || !vapidKeyConfigured) {
-    //   const message = 'VAPID public key not configured. Cannot subscribe to notifications.';
-    //   setNotificationStatus(message);
-    //   toast({ title: 'Setup Incomplete', description: message, variant: 'destructive' });
-    //   setIsSubscribing(false);
-    //   return;
-    // }
+  const handleNotificationSubscription = async () => {
+    setIsSubscribing(true);
+    setNotificationStatus(null);
 
-    // if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
-    //   setNotificationStatus('Push notifications are not supported by your browser.');
-    //   setIsSubscribing(false);
-    //   return;
-    // }
+    if (!vapidKeyConfigured) {
+      toast({
+        title: 'Notifications Not Configured',
+        description: "Push notifications require VAPID key setup by the site administrator.",
+        variant: 'destructive',
+      });
+      setIsSubscribing(false);
+      return;
+    }
 
-    // try {
-    //   const registration = await navigator.serviceWorker.ready;
-    //   const existingSubscription = await registration.pushManager.getSubscription();
+    if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+      setNotificationStatus('Push notifications are not supported by your browser.');
+      setIsSubscribing(false);
+      return;
+    }
 
-    //   if (existingSubscription) {
-    //     setNotificationStatus('You are already subscribed to notifications.');
-    //     toast({ title: 'Already Subscribed', description: 'You are already receiving notifications.' });
-    //   } else {
-    //     const subscription = await registration.pushManager.subscribe({
-    //       userVisibleOnly: true,
-    //       applicationServerKey: VAPID_PUBLIC_KEY,
-    //     });
-    //     // TODO: Send the subscription object to your backend server
-    //     console.log('Push subscription object:', JSON.stringify(subscription));
-    //     setNotificationStatus('Successfully subscribed to notifications!');
-    //     toast({ title: 'Subscribed!', description: 'You will now receive notifications.' });
-    //   }
-    // } catch (error) {
-    //   console.error('Error subscribing to push notifications:', error);
-    //   setNotificationStatus('Error: ' + (error instanceof Error ? error.message : 'Unknown error'));
-    // } finally {
-    //   setIsSubscribing(false);
-    // }
-  // };
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission !== 'granted') {
+        setNotificationStatus('Notification permission denied.');
+        setIsSubscribing(false);
+        return;
+      }
+
+      const registration = await navigator.serviceWorker.ready;
+      let subscription = await registration.pushManager.getSubscription();
+
+      if (subscription) {
+        setNotificationStatus('Already subscribed to notifications.');
+        // You might want to send the subscription to your backend here if it's not already there
+        // console.log('Existing subscription:', JSON.stringify(subscription));
+      } else {
+        subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+        });
+        setNotificationStatus('Successfully subscribed to notifications!');
+        // Send the new subscription to your backend
+        // console.log('New subscription:', JSON.stringify(subscription));
+        // Example: await fetch('/api/subscribe', { method: 'POST', body: JSON.stringify(subscription), headers: {'Content-Type': 'application/json'} });
+        playSound('/sounds/scan-success.mp3'); // Or a more appropriate notification sound
+      }
+    } catch (error) {
+      console.error('Error subscribing to push notifications:', error);
+      setNotificationStatus("Error: " + (error instanceof Error ? error.message : "Unknown error"));
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
   
   const pageContent = (
     <div className="space-y-8 py-6">
@@ -275,15 +270,15 @@ export default function HomePage() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
-               <ClientOnly fallback={<SearchFormFallback />}>
+              <ClientOnly fallback={<SearchFormFallback />}>
                 <TextSearchForm
                     query={searchQuery}
-                    onQueryChange={() => {}} // Pass empty function since handleQueryChange is commented out
+                    onQueryChange={handleQueryChange}
                     suggestions={suggestions}
                     isSuggestionsVisible={isSuggestionsVisible}
-                    onSuggestionClick={() => {}} // Pass empty function
-                    onSubmitSearch={() => {}} // Pass empty function
-                    onClearSearch={() => {}} // Pass empty function
+                    onSuggestionClick={handleSuggestionClick}
+                    onSubmitSearch={handleSubmitSearch}
+                    onClearSearch={handleClearSearch}
                     inputRef={searchInputRef}
                 />
               </ClientOnly>
