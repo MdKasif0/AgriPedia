@@ -4,6 +4,7 @@
 import { identifyFruitOrVegetableFromImage, IdentifyFruitOrVegetableFromImageOutput } from '@/ai/flows/identify-fruit-or-vegetable-from-image';
 import { validateImageOfProduce, ValidateImageOfProduceOutput } from '@/ai/flows/validate-image-of-produce';
 import { generateRecipes, GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
+import { generateAgriTip, GenerateAgriTipOutput } from '@/ai/flows/generate-agri-tip-flow'; // Added new flow import
 
 interface ProcessImageResult {
   success: boolean;
@@ -67,4 +68,16 @@ export async function fetchRecipesForProduce(produceName: string): Promise<Gener
   }
 }
 
+export async function fetchDynamicAgriTip(): Promise<string | null> {
+  try {
+    const result: GenerateAgriTipOutput = await generateAgriTip();
+    if (result && result.tip) {
+      return result.tip;
+    }
+    return "Keep exploring the fascinating world of produce!"; // Fallback tip
+  } catch (error) {
+    console.error('Error fetching dynamic agri tip:', error);
+    return "Could not load a tip right now. Check back soon!"; // Error message tip
+  }
+}
     

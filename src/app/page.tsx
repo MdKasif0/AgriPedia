@@ -9,32 +9,14 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons } from '@/lib/produceData';
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info } from 'lucide-react'; // Removed Bell icons
+import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info, AlertTriangle, Loader2 } from 'lucide-react'; // Added Loader2
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import Loader from '@/components/ui/Loader';
 import InfoBanner from '@/components/home/InfoBanner';
-
-// VAPID_PUBLIC_KEY and related functions remain, assuming push notification logic might be used elsewhere or in future.
-const VAPID_PUBLIC_KEY = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME';
-
-function urlBase64ToUint8Array(base64String: string) {
-  const padding = '='.repeat((4 - base64String.length % 4) % 4);
-  const base64 = (base64String + padding)
-    .replace(/-/g, '+')
-    .replace(/_/g, '/');
-
-  const rawData = window.atob(base64);
-  const outputArray = new Uint8Array(rawData.length);
-
-  for (let i = 0; i < rawData.length; ++i) {
-    outputArray[i] = rawData.charCodeAt(i);
-  }
-  return outputArray;
-}
-
+import { fetchDynamicAgriTip } from '@/app/actions'; // Import the new action
 
 export default function HomePage() {
   const router = useRouter();
@@ -54,25 +36,29 @@ export default function HomePage() {
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [recentSearchTerms, setRecentSearchTerms] = useState<string[]>([]);
 
-  // Notification related states remain, as they might be tied to other UI or future features
-  const [notificationPermission, setNotificationPermission] = useState<NotificationPermission | null>(null);
-  const [isSubscribing, setIsSubscribing] = useState(false);
-  const [isPushSupported, setIsPushSupported] = useState(false);
-  const [isVAPIDKeyConfigured, setIsVAPIDKeyConfigured] = useState(false);
-
+  const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
+  const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
+  const [tipError, setTipError] = useState<string | null>(null);
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null); 
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && 'Notification' in window && 'PushManager' in window.ServiceWorkerRegistration.prototype) {
-      setNotificationPermission(Notification.permission);
-      setIsPushSupported(true);
-    } else {
-      setIsPushSupported(false);
-    }
-    setIsVAPIDKeyConfigured(VAPID_PUBLIC_KEY !== 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME');
+    const loadTip = async () => {
+      setIsTipLoading(true);
+      setTipError(null);
+      const tip = await fetchDynamicAgriTip();
+      if (tip) {
+        setDynamicTip(tip);
+      } else {
+        setTipError("Could not load a fresh tip today!");
+        // Keep default tip or set a fallback
+        setDynamicTip("Discover amazing facts about your food!");
+      }
+      setIsTipLoading(false);
+    };
+    loadTip();
   }, []);
 
   useEffect(() => {
@@ -148,7 +134,7 @@ export default function HomePage() {
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
     loadUserData(); 
-    router.push(`/item/${item.id}`); 
+    router.push(`/item/${item.id.toLowerCase().replace(/\s+/g, '-')}`);
   };
 
   const handleSubmitSearch = (submittedQuery: string) => {
@@ -162,7 +148,7 @@ export default function HomePage() {
       season: selectedSeason === 'all' ? undefined : selectedSeason
     });
     if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
-      router.push(`/item/${results[0].id}`);
+      router.push(`/item/${results[0].id.toLowerCase().replace(/\s+/g, '-')}`);
     }
   };
   
@@ -188,65 +174,6 @@ export default function HomePage() {
     };
   }, []);
 
-  const handleNotificationSubscription = async () => {
-    if (!isPushSupported || !navigator.serviceWorker) {
-      toast({ title: "Notifications Not Supported", description: "Your browser does not support push notifications.", variant: "destructive" });
-      return;
-    }
-
-    if (!isVAPIDKeyConfigured) {
-      toast({ 
-        title: "Push Notification Setup Incomplete", 
-        description: "The VAPID public key for push notifications is not configured in the application. Please add it to enable subscriptions.", 
-        variant: "destructive",
-        duration: 7000,
-      });
-      console.warn("VAPID_PUBLIC_KEY is not set. Push subscription cannot proceed.");
-      return;
-    }
-
-    setIsSubscribing(true);
-
-    try {
-      let currentPermission = notificationPermission;
-      if (currentPermission === 'default') {
-        const permissionResult = await Notification.requestPermission();
-        setNotificationPermission(permissionResult); 
-        currentPermission = permissionResult; 
-      }
-
-      if (currentPermission === 'denied') {
-        toast({ title: "Permission Denied", description: "Notification permissions are currently denied. Please check your browser settings.", variant: "destructive" });
-        setIsSubscribing(false);
-        return;
-      }
-      
-      if (currentPermission === 'granted') {
-        const registration = await navigator.serviceWorker.ready;
-        let subscription = await registration.pushManager.getSubscription();
-
-        if (subscription) {
-            toast({ title: "Already Subscribed", description: "You are already subscribed to notifications." });
-        } else {
-            subscription = await registration.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-            });
-            
-            console.log('User is subscribed:', subscription);
-            toast({ title: "Subscribed!", description: "You'll now receive seasonal updates (once backend is fully implemented)." });
-        }
-      }
-    } catch (error) {
-      console.error('Failed to subscribe to push notifications:', error);
-      const errorMessage = error instanceof Error ? error.message : "An unknown error occurred.";
-      toast({ title: "Subscription Failed", description: `Could not subscribe: ${errorMessage}`, variant: "destructive" });
-    } finally {
-      setIsSubscribing(false);
-    }
-  };
-
-
   return (
     <div className="space-y-8 py-6">
       <section className="text-left px-1">
@@ -258,13 +185,13 @@ export default function HomePage() {
 
       <InfoBanner 
         title="AgriPedia Tip!"
-        description="Did you know? Apples float because 25% of their volume is air!"
-        icon={Info}
+        description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
+        icon={isTipLoading ? Loader2 : (tipError ? AlertTriangle : Info)}
+        iconProps={isTipLoading ? {className: "animate-spin"} : {}}
       />
       
-      {/* Grid for Search/Filter card */}
-      <div className="grid md:grid-cols-1 gap-8 items-start"> {/* Changed md:grid-cols-3 to md:grid-cols-1 */}
-        <section className="space-y-4"> {/* Removed md:col-span-2 */}
+      <div className="grid md:grid-cols-1 gap-8 items-start">
+        <section className="space-y-4">
           <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
             <CardHeader className="p-6">
               <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
@@ -315,8 +242,6 @@ export default function HomePage() {
             </CardContent>
           </Card>
         </section>
-        
-        {/* Notifications card section has been removed */}
       </div>
 
       {(searchResults.length > 0) && (
@@ -391,4 +316,3 @@ export default function HomePage() {
     </div>
   );
 }
-

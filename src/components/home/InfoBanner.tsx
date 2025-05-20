@@ -13,14 +13,15 @@ interface InfoBannerProps {
     value: string;
   };
   className?: string;
+  iconProps?: LucideProps; // For passing props like className="animate-spin"
 }
 
-export default function InfoBanner({ icon: Icon, title, description, asideText, className }: InfoBannerProps) {
+export default function InfoBanner({ icon: Icon, title, description, asideText, className, iconProps }: InfoBannerProps) {
   return (
     <Card className={`bg-primary text-primary-foreground p-4 rounded-xl shadow-md ${className}`}>
       <CardContent className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between gap-3 sm:gap-4 p-0">
         <div className="flex items-center gap-3">
-          {Icon && <Icon size={28} className="shrink-0" />}
+          {Icon && <Icon size={28} className="shrink-0" {...iconProps} />}
           <div className="flex flex-col text-left">
             <h3 className="text-md font-semibold">{title}</h3>
             <p className="text-sm opacity-90">{description}</p>
