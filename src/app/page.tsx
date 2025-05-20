@@ -9,14 +9,14 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons } from '@/lib/produceData';
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info, AlertTriangle, Loader2 } from 'lucide-react'; // Added Loader2
+import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info, AlertTriangle, Loader2 } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import Loader from '@/components/ui/Loader';
 import InfoBanner from '@/components/home/InfoBanner';
-import { fetchDynamicAgriTip } from '@/app/actions'; // Import the new action
+import { fetchDynamicAgriTip } from '@/app/actions';
 
 export default function HomePage() {
   const router = useRouter();
@@ -53,7 +53,6 @@ export default function HomePage() {
         setDynamicTip(tip);
       } else {
         setTipError("Could not load a fresh tip today!");
-        // Keep default tip or set a fallback
         setDynamicTip("Discover amazing facts about your food!");
       }
       setIsTipLoading(false);
@@ -176,13 +175,8 @@ export default function HomePage() {
 
   return (
     <div className="space-y-8 py-6">
-      <section className="text-left px-1">
-        <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">Explore Your Produce</h1>
-        <p className="text-md sm:text-lg text-muted-foreground">
-          Discover detailed information about fruits and vegetables.
-        </p>
-      </section>
-
+      {/* The "Explore Your Produce" section has been removed */}
+      
       <InfoBanner 
         title="AgriPedia Tip!"
         description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
@@ -250,7 +244,7 @@ export default function HomePage() {
           <section>
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground">
               <ListFilter className="text-primary"/> 
-              {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'Discover Produce'}
+              {searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all' ? 'Filtered Results' : 'All Produce'} {/* Changed from Discover Produce */}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {searchResults.map((item) => (

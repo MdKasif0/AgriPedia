@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Leaf, Heart, ScanLine, Settings as SettingsIcon, MessagesSquare } from 'lucide-react'; // Added MessagesSquare
+import { Leaf, Heart, ScanLine, Settings as SettingsIcon, MessagesSquare } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
@@ -27,7 +27,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
   const isActive = isActiveOverride !== undefined ? isActiveOverride : (href && (
     currentPathname === href ||
     (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section") ||
-    (href === "/chat" && currentPathname === "/chat") // Active state for Chat AI
+    (href === "/chat" && currentPathname === "/chat") 
   ));
 
   const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none";
@@ -85,8 +85,8 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   const navItemsConfig = [
-    { href: "/", icon: Leaf, label: "Discover" },
-    { href: "/chat", icon: MessagesSquare, label: "Chat AI" }, // New "Chat AI" tab
+    { href: "/", icon: Leaf, label: "Home" }, // Changed "Discover" to "Home"
+    { href: "/chat", icon: MessagesSquare, label: "Chat AI" }, 
     { 
       icon: ScanLine, 
       label: "Scan Produce", 
@@ -106,7 +106,6 @@ export default function MobileBottomNav() {
               return (
                 <Sheet key={index} open={isSettingsSheetOpen} onOpenChange={setIsSettingsSheetOpen}>
                   <SheetTrigger asChild>
-                    {/* The NavItem itself will be the trigger content. Pass isActive for styling. */}
                     <button className="flex flex-col items-center justify-center p-1 group focus:outline-none flex-1" aria-label={item.label}>
                        <SettingsIcon size={24} className={cn(isSettingsSheetOpen ? 'text-black' : 'text-gray-500', "mb-0.5 group-hover:text-black transition-colors")} />
                        <span className={cn("text-xs", isSettingsSheetOpen ? 'text-black font-semibold' : 'text-gray-500', "group-hover:text-black transition-colors")}>
