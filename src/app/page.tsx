@@ -9,19 +9,19 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
 import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2 } from 'lucide-react';
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
 import ClientOnly from '@/components/ClientOnly';
 import { triggerHapticFeedback } from '@/lib/utils';
-import { useToast } from '@/hooks/use-toast'; // Ensure useToast is imported
+import { useToast } from '@/hooks/use-toast';
+import { Button } from '@/components/ui/button';
 
-// Dynamically import TextSearchForm
 const TextSearchForm = dynamic(() => import('@/components/search/TextSearchForm'), {
-  ssr: false, // Ensure it's only client-side
-  loading: () => <SearchFormFallback />, // Provide a loading component
+  ssr: false,
+  loading: () => <SearchFormFallback />,
 });
 
 function SearchFormFallback() {
@@ -39,7 +39,7 @@ function SearchFormFallback() {
 
 export default function HomePage() {
   const router = useRouter();
-  const { toast } = useToast(); // Initialize toast
+  const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<ProduceInfo[]>([]);
   const [isSuggestionsVisible, setIsSuggestionsVisible] = useState(false);
@@ -65,7 +65,6 @@ export default function HomePage() {
 
   const VAPID_PUBLIC_KEY_PLACEHOLDER = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME';
 
-
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchFormRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -76,6 +75,7 @@ export default function HomePage() {
       setVapidKeyConfigured(true);
     } else {
       setVapidKeyConfigured(false);
+      console.warn("VAPID public key is not configured. Push notifications will not work.");
     }
   }, []);
 
@@ -120,7 +120,7 @@ export default function HomePage() {
     const favIds = getFavoriteIds();
     const allCurrentProduce = getAllProduce();
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-    setSeasonalSuggestions(getInSeasonProduce(5)); 
+    setSeasonalSuggestions(getInSeasonProduce(5));
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -157,7 +157,7 @@ export default function HomePage() {
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
-      setSuggestions(seasonalSuggestions);
+      setSuggestions(seasonalSuggestions); 
       setIsSuggestionsVisible(true);
     }
   }, [seasonalSuggestions]); 
@@ -165,10 +165,10 @@ export default function HomePage() {
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
     setSuggestions(seasonalSuggestions); 
-    setIsSuggestionsVisible(true); 
+    setIsSuggestionsVisible(true);
     searchInputRef.current?.focus();
     triggerHapticFeedback();
-  }, [seasonalSuggestions]);
+  }, [seasonalSuggestions]); 
 
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
@@ -176,7 +176,7 @@ export default function HomePage() {
     addRecentSearch(item.commonName);
     loadUserData(); 
     triggerHapticFeedback();
-    router.push(`/item/${item.id.toLowerCase().replace(/\s+/g, '-')}`);
+    router.push(`/item/${encodeURIComponent(item.id)}`);
   }, [loadUserData, router]);
 
   const handleSubmitSearch = useCallback((submittedQuery: string) => {
@@ -190,22 +190,22 @@ export default function HomePage() {
       season: selectedSeason === 'all' ? undefined : selectedSeason
     });
     if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
-      router.push(`/item/${results[0].id.toLowerCase().replace(/\s+/g, '-')}`);
+      router.push(`/item/${encodeURIComponent(results[0].id)}`);
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
 
-
   const handleNotificationSubscription = async () => {
+    /*
     if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
       setNotificationStatus('Push notifications are not supported by your browser.');
+      toast({ title: 'Not Supported', description: 'Push notifications are not supported by your browser.', variant: 'default' });
       return;
     }
     if (!vapidKeyConfigured) {
         setNotificationStatus('Notifications not configured by site admin (VAPID key missing).');
-        console.error('VAPID public key is not configured or is the placeholder.');
         toast({
           title: 'Setup Incomplete',
-          description: 'Push notifications are not fully configured for this site yet.',
+          description: 'Push notifications are not fully configured for this site yet. Admin: Please set NEXT_PUBLIC_VAPID_PUBLIC_KEY.',
           variant: 'destructive'
         });
         return;
@@ -218,6 +218,7 @@ export default function HomePage() {
       if (permission !== 'granted') {
         setNotificationStatus('Notification permission denied.');
         setIsSubscribing(false);
+        toast({ title: 'Permission Denied', description: 'Notification permission was not granted.', variant: 'default' });
         return;
       }
 
@@ -227,7 +228,7 @@ export default function HomePage() {
       if (!subscription) {
         const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
         if (!vapidKey || vapidKey === VAPID_PUBLIC_KEY_PLACEHOLDER) {
-          throw new Error('VAPID public key is not configured.');
+          throw new Error('VAPID public key is not configured or is the placeholder.');
         }
         subscription = await registration.pushManager.subscribe({
           userVisibleOnly: true,
@@ -235,7 +236,7 @@ export default function HomePage() {
         });
       }
       
-      console.log('Push subscription:', subscription);
+      console.log('Push subscription:', JSON.stringify(subscription));
       toast({
         title: 'Subscribed!',
         description: 'You are now subscribed to notifications.',
@@ -243,34 +244,17 @@ export default function HomePage() {
       setNotificationStatus('Subscribed to notifications successfully!');
     } catch (error) {
       console.error('Error subscribing to push notifications:', error);
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-      setNotificationStatus("Error: " + errorMessage);
+      setNotificationStatus("Error: " + (error instanceof Error ? error.message : 'Unknown error'));
       toast({
         title: 'Subscription Failed',
-        description: "Error: " + errorMessage,
+        description: "Error: " + (error instanceof Error ? error.message : 'Unknown error'),
         variant: 'destructive'
       });
     } finally {
       setIsSubscribing(false);
     }
+    */
   };
-
-   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
-        setIsSuggestionsVisible(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      if (suggestionsTimeoutRef.current) {
-        clearTimeout(suggestionsTimeoutRef.current);
-      }
-    };
-  }, []); // Added semicolon
-
-  // Removed unused handleFocusSearch useCallback hook
   
   return (
     <div className="space-y-8 py-6">
@@ -280,13 +264,13 @@ export default function HomePage() {
           description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
           icon={isTipLoading ? Loader2 : (tipError ? AlertTriangle : Info)}
           iconProps={isTipLoading ? {className: "animate-spin"} : {}}
-          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-lg"
+          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-lg border-transparent"
         />
       </ClientOnly>
 
       <div className="grid md:grid-cols-1 gap-8 items-start">
         <section className="space-y-4">
-          <ClientOnly fallback={<SearchFormFallback />}>
+           <ClientOnly fallback={<SearchFormFallback />}>
             <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
               <CardHeader className="p-6">
                 <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
@@ -336,7 +320,7 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
-          </ClientOnly>
+           </ClientOnly>
         </section>
       </div>
 
@@ -367,7 +351,7 @@ export default function HomePage() {
           </section>
         </>
       )}
-
+      
       {favoriteProduceItems.length > 0 && (
         <>
           <Separator className="my-8 bg-border/20" />
