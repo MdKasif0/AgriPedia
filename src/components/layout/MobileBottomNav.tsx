@@ -20,20 +20,22 @@ interface NavItemProps {
   currentPathname: string;
   isCentralScan?: boolean;
   onClick?: () => void;
-  isActiveOverride?: boolean; // For settings sheet trigger
+  isActiveOverride?: boolean; 
 }
 
 const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathname, isCentralScan, onClick, isActiveOverride }) => {
   const isActive = isActiveOverride !== undefined ? isActiveOverride : (href && (
-    currentPathname === href ||
-    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section") ||
-    (href === "/chat" && currentPathname === "/chat") 
+    (href === "/" && currentPathname === href) || // Exact match for home
+    (href !== "/" && currentPathname.startsWith(href)) || // Starts with for other main routes
+    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section")
   ));
 
-  const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none";
+  const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none transition-colors duration-200";
   const iconSize = isCentralScan ? 30 : 24;
-  const iconColor = isActive ? 'text-black' : 'text-gray-500';
-  const labelColor = isActive ? 'text-black font-semibold' : 'text-gray-500';
+  
+  // Adjusted colors for dark, transparent nav bar
+  const iconColor = isActive ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100';
+  const labelColor = isActive ? 'text-primary font-semibold' : 'text-neutral-400 group-hover:text-neutral-100';
 
   const content = (
     <>
@@ -42,17 +44,17 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
           <Icon size={iconSize} className="text-white" />
         </div>
       ) : (
-        <Icon size={iconSize} className={cn(iconColor, "mb-0.5 group-hover:text-black transition-colors")} />
+        <Icon size={iconSize} className={cn(iconColor, "mb-0.5")} />
       )}
       {!isCentralScan && (
-        <span className={cn("text-xs", labelColor, "group-hover:text-black transition-colors")}>
+        <span className={cn("text-xs", labelColor)}>
           {label}
         </span>
       )}
     </>
   );
 
-  if (onClick && !href) { // For buttons like scan or settings trigger
+  if (onClick && !href) { 
     return (
       <button onClick={onClick} className={cn(itemBaseClass, "flex-1")} aria-label={label}>
         {content}
@@ -60,15 +62,13 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
     );
   }
   
-  // For SheetTrigger wrapped NavItem (Settings)
-  if (!href && !onClick && label === "Settings") {
+  if (!href && !onClick && label === "Settings") { // For SheetTrigger wrapped NavItem
      return (
       <div className={cn(itemBaseClass, "flex-1")} aria-label={label}>
         {content}
       </div>
     );
   }
-
 
   return (
     <Link href={href!} passHref legacyBehavior>
@@ -85,7 +85,7 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   const navItemsConfig = [
-    { href: "/", icon: Leaf, label: "Home" }, // Changed "Discover" to "Home"
+    { href: "/", icon: Leaf, label: "Home" },
     { href: "/chat", icon: MessagesSquare, label: "Chat AI" }, 
     { 
       icon: ScanLine, 
@@ -99,21 +99,35 @@ export default function MobileBottomNav() {
 
   return (
     <>
-      <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-3 bg-gray-50 border border-gray-200 shadow-xl rounded-2xl md:hidden z-50 h-16">
+      <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-4 
+                      bg-neutral-900/80 backdrop-blur-lg 
+                      border border-neutral-700/60 
+                      shadow-xl rounded-2xl md:hidden z-50 h-16">
         <div className="flex justify-around items-center h-full px-1">
           {navItemsConfig.map((item, index) => {
             if (item.label === "Settings") {
               return (
                 <Sheet key={index} open={isSettingsSheetOpen} onOpenChange={setIsSettingsSheetOpen}>
                   <SheetTrigger asChild>
-                    <button className="flex flex-col items-center justify-center p-1 group focus:outline-none flex-1" aria-label={item.label}>
-                       <SettingsIcon size={24} className={cn(isSettingsSheetOpen ? 'text-black' : 'text-gray-500', "mb-0.5 group-hover:text-black transition-colors")} />
-                       <span className={cn("text-xs", isSettingsSheetOpen ? 'text-black font-semibold' : 'text-gray-500', "group-hover:text-black transition-colors")}>
+                    <button 
+                        className={cn(
+                            "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-colors duration-200",
+                            isSettingsSheetOpen ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100'
+                        )} 
+                        aria-label={item.label}
+                    >
+                       <SettingsIcon size={24} className={cn("mb-0.5", isSettingsSheetOpen ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100')} />
+                       <span className={cn("text-xs", isSettingsSheetOpen ? 'text-primary font-semibold' : 'text-neutral-400 group-hover:text-neutral-100')}>
                         {item.label}
                        </span>
                     </button>
                   </SheetTrigger>
-                  <SheetContent side="bottom" className="h-[60vh] flex flex-col rounded-t-2xl bg-card text-card-foreground">
+                  <SheetContent 
+                    side="bottom" 
+                    className="h-[60vh] flex flex-col rounded-t-2xl 
+                               bg-card text-card-foreground 
+                               border-t border-neutral-700/60" // Match nav bar border style
+                  >
                     <SheetHeader className="px-4 pt-4 pb-2">
                       <SheetTitle className="text-card-foreground text-center text-lg">App Settings</SheetTitle>
                     </SheetHeader>
