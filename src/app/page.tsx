@@ -9,7 +9,7 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons } from '@/lib/produceData';
 import { getFavoriteIds, getRecentSearches, addRecentSearch } from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, History, ExternalLink, BellRing, BellOff, BellPlus, Search, Info } from 'lucide-react';
+import { Apple, ListFilter, Heart, History, ExternalLink, Search, Info } from 'lucide-react'; // Removed Bell icons
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -17,7 +17,8 @@ import { useToast } from '@/hooks/use-toast';
 import Loader from '@/components/ui/Loader';
 import InfoBanner from '@/components/home/InfoBanner';
 
-const VAPID_PUBLIC_KEY = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME'; 
+// VAPID_PUBLIC_KEY and related functions remain, assuming push notification logic might be used elsewhere or in future.
+const VAPID_PUBLIC_KEY = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME';
 
 function urlBase64ToUint8Array(base64String: string) {
   const padding = '='.repeat((4 - base64String.length % 4) % 4);
@@ -53,6 +54,7 @@ export default function HomePage() {
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [recentSearchTerms, setRecentSearchTerms] = useState<string[]>([]);
 
+  // Notification related states remain, as they might be tied to other UI or future features
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission | null>(null);
   const [isSubscribing, setIsSubscribing] = useState(false);
   const [isPushSupported, setIsPushSupported] = useState(false);
@@ -89,7 +91,6 @@ export default function HomePage() {
 
   const loadUserData = useCallback(() => {
     const favIds = getFavoriteIds();
-    // Ensure allProduce is fetched correctly for mapping IDs to items
     const allCurrentProduce = searchProduce('', { region: 'all', season: 'all' }); 
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
     setRecentSearchTerms(getRecentSearches());
@@ -156,24 +157,20 @@ export default function HomePage() {
         addRecentSearch(submittedQuery);
         loadUserData(); 
     }
-    // Directly update search results based on the submitted query and current filters
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
       season: selectedSeason === 'all' ? undefined : selectedSeason
     });
-    // If there's exactly one result and it's a perfect match for the query, navigate directly
     if (results.length === 1 && results[0].commonName.toLowerCase() === submittedQuery.toLowerCase()) {
       router.push(`/item/${results[0].id}`);
     }
-    // Otherwise, setSearchResults will update the view, which is handled by the useEffect watching searchQuery
   };
   
   const handleRecentSearchClick = (term: string) => {
-    setSearchQuery(term); // This will trigger updateFilteredResults via useEffect
+    setSearchQuery(term);
     setIsSuggestionsVisible(false);
     addRecentSearch(term);
     loadUserData();
-    // No need to call handleSubmitSearch here, as useEffect on searchQuery handles it
   };
 
    useEffect(() => {
@@ -211,45 +208,32 @@ export default function HomePage() {
     setIsSubscribing(true);
 
     try {
-      if (notificationPermission === 'default') {
+      let currentPermission = notificationPermission;
+      if (currentPermission === 'default') {
         const permissionResult = await Notification.requestPermission();
-        setNotificationPermission(permissionResult); // Update state with new permission
-        if (permissionResult !== 'granted') {
-          toast({ title: "Permission Denied", description: "You've denied notification permissions.", variant: "destructive" });
-          setIsSubscribing(false);
-          return;
-        }
+        setNotificationPermission(permissionResult); 
+        currentPermission = permissionResult; 
       }
 
-      if (notificationPermission === 'denied') {
+      if (currentPermission === 'denied') {
         toast({ title: "Permission Denied", description: "Notification permissions are currently denied. Please check your browser settings.", variant: "destructive" });
         setIsSubscribing(false);
         return;
       }
       
-      // Proceed only if permission is granted (either newly or previously)
-      if (notificationPermission === 'granted' || (await Notification.requestPermission()) === 'granted') {
-        // Update state again in case it was 'default' and just granted
-        if(notificationPermission !== 'granted') setNotificationPermission('granted');
-
+      if (currentPermission === 'granted') {
         const registration = await navigator.serviceWorker.ready;
         let subscription = await registration.pushManager.getSubscription();
 
         if (subscription) {
-            // TODO: Implement unsubscription logic if desired
-            // For now, just inform the user they are already subscribed.
-            // Or, could send the subscription to backend again to ensure it's up-to-date.
             toast({ title: "Already Subscribed", description: "You are already subscribed to notifications." });
         } else {
             subscription = await registration.pushManager.subscribe({
-                userVisibleOnly: true, // Required for web push
+                userVisibleOnly: true,
                 applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
             });
             
             console.log('User is subscribed:', subscription);
-            // TODO: Send the subscription object to your backend server to store it
-            // For example: await fetch('/api/subscribe', { method: 'POST', body: JSON.stringify(subscription), headers: {'Content-Type': 'application/json'} });
-            
             toast({ title: "Subscribed!", description: "You'll now receive seasonal updates (once backend is fully implemented)." });
         }
       }
@@ -278,8 +262,9 @@ export default function HomePage() {
         icon={Info}
       />
       
-      <div className="grid md:grid-cols-3 gap-8 items-start">
-        <section className="space-y-4 md:col-span-2"> 
+      {/* Grid for Search/Filter card */}
+      <div className="grid md:grid-cols-1 gap-8 items-start"> {/* Changed md:grid-cols-3 to md:grid-cols-1 */}
+        <section className="space-y-4"> {/* Removed md:col-span-2 */}
           <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
             <CardHeader className="p-6">
               <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
@@ -331,49 +316,7 @@ export default function HomePage() {
           </Card>
         </section>
         
-        <section className="space-y-4 md:col-span-1"> 
-          <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
-             <CardHeader className="p-6">
-                <CardTitle className="text-lg sm:text-xl font-semibold flex items-center gap-2 text-card-foreground">
-                    {notificationPermission === 'granted' ? <BellRing className="text-primary" /> : <BellPlus className="text-primary" />}
-                    Notifications
-                </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 p-6 pt-0">
-                {isPushSupported ? (
-                    <>
-                        <p className="text-sm text-muted-foreground">
-                            {notificationPermission === 'granted' 
-                                ? "You are subscribed to seasonal notifications."
-                                : notificationPermission === 'denied'
-                                ? "Notifications are disabled. Please update your browser settings to enable them."
-                                : "Enable notifications for seasonal produce updates."
-                            }
-                        </p>
-                        {notificationPermission !== 'denied' && (
-                            <Button 
-                                onClick={handleNotificationSubscription} 
-                                disabled={isSubscribing || notificationPermission === 'granted' || !isVAPIDKeyConfigured}
-                                className="w-full rounded-lg"
-                                variant={notificationPermission === 'granted' ? "outline" : "default"}
-                            >
-                                {isSubscribing && <Loader text="Processing..." size={18} />}
-                                {!isSubscribing && notificationPermission === 'granted' && <><BellOff className="mr-2"/> Unsubscribe (Future)</>}
-                                {!isSubscribing && notificationPermission !== 'granted' && <><BellPlus className="mr-2"/> Enable Notifications</>}
-                            </Button>
-                        )}
-                         {!isVAPIDKeyConfigured && notificationPermission !== 'denied' && (
-                            <p className="text-xs text-destructive/80 text-center mt-2">
-                              Note: Push notification setup is incomplete (VAPID key missing). Please configure it to enable subscriptions.
-                            </p>
-                        )}
-                    </>
-                ) : (
-                    <p className="text-sm text-muted-foreground">Push notifications are not supported by your browser or device.</p>
-                )}
-            </CardContent>
-          </Card>
-        </section>
+        {/* Notifications card section has been removed */}
       </div>
 
       {(searchResults.length > 0) && (
@@ -393,7 +336,6 @@ export default function HomePage() {
         </>
       )}
 
-      {/* Show message if no results found after searching/filtering */}
       {(!initialLoad && searchResults.length === 0 && (searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
         <>
           <Separator className="my-8 bg-border/20" />
@@ -425,7 +367,7 @@ export default function HomePage() {
       {favoriteProduceItems.length > 0 && (
         <>
           <Separator className="my-8 bg-border/20" />
-          <section id="favorites-section"> {/* Added id for potential direct linking */}
+          <section id="favorites-section"> 
             <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2 text-foreground"><Heart className="text-primary"/>My Favorite Produce</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {favoriteProduceItems.map((item) => (
@@ -436,7 +378,6 @@ export default function HomePage() {
         </>
       )}
 
-      {/* Show this only if everything is empty AND it's not the initial load AND no active search/filter is causing empty results */}
       {(searchResults.length === 0 && favoriteProduceItems.length === 0 && recentSearchTerms.length === 0 && !initialLoad && !(searchQuery.trim() !== '' || selectedRegion !== 'all' || selectedSeason !== 'all')) && (
          <section className="py-8 text-center">
              <Apple className="mx-auto h-16 w-16 text-muted-foreground/50 mb-4" />
