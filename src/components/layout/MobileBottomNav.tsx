@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Leaf, Heart, ScanLine, Settings as SettingsIcon } from 'lucide-react'; // Renamed Settings to SettingsIcon
+import { Leaf, Heart, ScanLine, Settings as SettingsIcon, MessagesSquare } from 'lucide-react'; // Added MessagesSquare
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
@@ -26,7 +26,8 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathname, isCentralScan, onClick, isActiveOverride }) => {
   const isActive = isActiveOverride !== undefined ? isActiveOverride : (href && (
     currentPathname === href ||
-    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section")
+    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section") ||
+    (href === "/chat" && currentPathname === "/chat") // Active state for Chat AI
   ));
 
   const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none";
@@ -85,6 +86,7 @@ export default function MobileBottomNav() {
 
   const navItemsConfig = [
     { href: "/", icon: Leaf, label: "Discover" },
+    { href: "/chat", icon: MessagesSquare, label: "Chat AI" }, // New "Chat AI" tab
     { 
       icon: ScanLine, 
       label: "Scan Produce", 
@@ -92,13 +94,13 @@ export default function MobileBottomNav() {
       onClick: () => setIsScanDialogOpen(true) 
     },
     { href: "/#favorites-section", icon: Heart, label: "Favorites" },
-    { icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) }, // Special handling for sheet
+    { icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) }, 
   ];
 
   return (
     <>
-      <nav className="fixed bottom-0 left-0 right-0 bg-gray-50 border-t border-gray-200 shadow-lg md:hidden z-50 h-16">
-        <div className="mx-auto flex justify-around items-center h-full max-w-md px-2">
+      <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-3 bg-gray-50 border border-gray-200 shadow-xl rounded-2xl md:hidden z-50 h-16">
+        <div className="flex justify-around items-center h-full px-1">
           {navItemsConfig.map((item, index) => {
             if (item.label === "Settings") {
               return (
@@ -141,6 +143,7 @@ export default function MobileBottomNav() {
                 currentPathname={pathname}
                 isCentralScan={item.isCentralScan}
                 onClick={item.onClick}
+                isActiveOverride={item.label === "Settings" ? isSettingsSheetOpen : undefined}
               />
             );
           })}
