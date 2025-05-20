@@ -35,7 +35,7 @@ function SearchFormFallback() {
       </div>
     </div>
   );
-}
+};
 
 export default function HomePage() {
   const router = useRouter();
@@ -62,7 +62,6 @@ export default function HomePage() {
   const [isSubscribing, setIsSubscribing] = useState(false);
   const [notificationStatus, setNotificationStatus] = useState<string | null>(null);
   const [vapidKeyConfigured, setVapidKeyConfigured] = useState(false);
-
   const VAPID_PUBLIC_KEY_PLACEHOLDER = 'YOUR_VAPID_PUBLIC_KEY_HERE_REPLACE_ME';
 
   const suggestionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -107,6 +106,7 @@ export default function HomePage() {
       if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
         event.preventDefault();
         searchInputRef.current?.focus();
+        triggerHapticFeedback();
       }
     };
 
@@ -160,7 +160,7 @@ export default function HomePage() {
       setSuggestions(seasonalSuggestions); 
       setIsSuggestionsVisible(true);
     }
-  }, [seasonalSuggestions]); 
+  }, [seasonalSuggestions]);
 
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
@@ -168,22 +168,23 @@ export default function HomePage() {
     setIsSuggestionsVisible(true);
     searchInputRef.current?.focus();
     triggerHapticFeedback();
-  }, [seasonalSuggestions]); 
+  }, [seasonalSuggestions]);
 
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
-    loadUserData(); 
+    loadUserData();
     triggerHapticFeedback();
     router.push(`/item/${encodeURIComponent(item.id)}`);
   }, [loadUserData, router]);
 
+  /*
   const handleSubmitSearch = useCallback((submittedQuery: string) => {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
         addRecentSearch(submittedQuery);
-        loadUserData(); 
+        loadUserData();
     }
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
@@ -193,70 +194,25 @@ export default function HomePage() {
       router.push(`/item/${encodeURIComponent(results[0].id)}`);
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
+  */
 
-  const handleNotificationSubscription = async () => {
-    /*
-    if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
-      setNotificationStatus('Push notifications are not supported by your browser.');
-      toast({ title: 'Not Supported', description: 'Push notifications are not supported by your browser.', variant: 'default' });
-      return;
-    }
-    if (!vapidKeyConfigured) {
-        setNotificationStatus('Notifications not configured by site admin (VAPID key missing).');
-        toast({
-          title: 'Setup Incomplete',
-          description: 'Push notifications are not fully configured for this site yet. Admin: Please set NEXT_PUBLIC_VAPID_PUBLIC_KEY.',
-          variant: 'destructive'
-        });
-        return;
-    }
-
-    setIsSubscribing(true);
-    setNotificationStatus('Processing...');
-    try {
-      const permission = await Notification.requestPermission();
-      if (permission !== 'granted') {
-        setNotificationStatus('Notification permission denied.');
-        setIsSubscribing(false);
-        toast({ title: 'Permission Denied', description: 'Notification permission was not granted.', variant: 'default' });
-        return;
-      }
-
-      const registration = await navigator.serviceWorker.ready;
-      let subscription = await registration.pushManager.getSubscription();
-
-      if (!subscription) {
-        const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
-        if (!vapidKey || vapidKey === VAPID_PUBLIC_KEY_PLACEHOLDER) {
-          throw new Error('VAPID public key is not configured or is the placeholder.');
-        }
-        subscription = await registration.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: vapidKey,
-        });
-      }
-      
-      console.log('Push subscription:', JSON.stringify(subscription));
-      toast({
-        title: 'Subscribed!',
-        description: 'You are now subscribed to notifications.',
-      });
-      setNotificationStatus('Subscribed to notifications successfully!');
-    } catch (error) {
-      console.error('Error subscribing to push notifications:', error);
-      setNotificationStatus("Error: " + (error instanceof Error ? error.message : 'Unknown error'));
-      toast({
-        title: 'Subscription Failed',
-        description: "Error: " + (error instanceof Error ? error.message : 'Unknown error'),
-        variant: 'destructive'
-      });
-    } finally {
-      setIsSubscribing(false);
-    }
-    */
-  };
+  useEffect(() => {
+    // function handleClickOutside(event: MouseEvent) {
+    //   if (searchFormRef.current && !searchFormRef.current.contains(event.target as Node)) {
+    //     setIsSuggestionsVisible(false);
+    //   }
+    // }
+    // document.addEventListener("mousedown", handleClickOutside);
+    // return () => {
+    //   document.removeEventListener("mousedown", handleClickOutside);
+    //   if (suggestionsTimeoutRef.current) {
+    //     clearTimeout(suggestionsTimeoutRef.current);
+    //   }
+    // };
+  }, []);
   
-  return (
+
+  const pageContent = (
     <div className="space-y-8 py-6">
       <ClientOnly fallback={<div className="h-24 bg-muted rounded-xl animate-pulse"></div>}>
         <InfoBanner
@@ -284,7 +240,7 @@ export default function HomePage() {
                     suggestions={suggestions}
                     isSuggestionsVisible={isSuggestionsVisible}
                     onSuggestionClick={handleSuggestionClick}
-                    onSubmitSearch={handleSubmitSearch}
+                    onSubmitSearch={() => { /* handleSubmitSearch is commented out */ }}
                     onClearSearch={handleClearSearch}
                     inputRef={searchInputRef}
                 />
@@ -351,7 +307,7 @@ export default function HomePage() {
           </section>
         </>
       )}
-      
+
       {favoriteProduceItems.length > 0 && (
         <>
           <Separator className="my-8 bg-border/20" />
@@ -378,4 +334,5 @@ export default function HomePage() {
       )}
     </div>
   );
+  return pageContent;
 }
