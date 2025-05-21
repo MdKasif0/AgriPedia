@@ -14,7 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
-import ClientOnly from '@/components/ClientOnly'; // Reverted to alias
+import ClientOnly from '@/components/ClientOnly'; // Ensure this alias import is correct
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
