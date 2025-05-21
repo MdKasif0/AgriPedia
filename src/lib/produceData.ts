@@ -62,9 +62,6 @@ export function searchProduce(
     results = results.filter(p => p.seasons.includes(filters.season!));
   }
   
-  // If no search term and no specific filters are applied, 'results' will remain as 'allProduceData'.
-  // The previous logic that returned an empty array in this case has been removed.
-
   return results;
 }
 
@@ -81,4 +78,26 @@ export function getUniqueSeasons(): string[] {
   const allSeasons = allProduceData.flatMap(p => p.seasons);
   return Array.from(new Set(allSeasons)).sort();
 }
-    
+
+// Helper function to determine current season (Northern Hemisphere)
+function getCurrentSeasonName(): string {
+  const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
+  if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
+  if (month >= 5 && month <= 7) return 'Summer'; // Jun, Jul, Aug
+  if (month >= 8 && month <= 10) return 'Autumn'; // Sep, Oct, Nov
+  return 'Winter'; // Dec, Jan, Feb
+}
+
+export function getInSeasonProduce(limit?: number): ProduceInfo[] {
+  const currentSeason = getCurrentSeasonName();
+  const inSeasonItems = allProduceData.filter(produce => 
+    produce.seasons.includes(currentSeason)
+  );
+
+  if (limit) {
+    // Optionally shuffle before slicing for variety, or just take the first few
+    // For simplicity, we'll take the first `limit` items.
+    return inSeasonItems.slice(0, limit);
+  }
+  return inSeasonItems;
+}
