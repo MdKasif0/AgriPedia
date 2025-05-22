@@ -34,11 +34,12 @@ const prompt = ai.definePrompt({
   name: 'validateImageOfProducePrompt',
   input: {schema: ValidateImageOfProduceInputSchema},
   output: {schema: ValidateImageOfProduceOutputSchema},
-  prompt: `You are an AI image validator.  You will determine if the image is a valid picture of a fruit or vegetable.
-
-  If it is, you will set isValid to true.  If it is not, you will set isValid to false and provide a reason why.
-
-  Here is the image: {{media url=photoDataUri}}`,
+  prompt: `You are an AI image analysis expert with a specific task: to validate whether an image primarily features a recognizable fruit or vegetable. Your reasoning should be based on visual evidence.
+Critically assess the provided image.
+- If the image clearly shows a fruit or vegetable, set 'isValid' to true.
+- If the image does NOT clearly show a fruit or vegetable (e.g., it's a picture of a car, an animal, a landscape, or an abstract pattern), set 'isValid' to false and provide a concise 'reason' explaining why it's not a valid image of produce.
+Respond with a JSON object.
+Here is the image: {{media url=photoDataUri}}`,
 });
 
 const validateImageOfProduceFlow = ai.defineFlow(
@@ -52,3 +53,4 @@ const validateImageOfProduceFlow = ai.defineFlow(
     return output!;
   }
 );
+

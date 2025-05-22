@@ -36,6 +36,7 @@ const IdentifyFruitOrVegetableFromImageOutputSchema = z.object({
     .describe('The scientific name of the identified fruit or vegetable.'),
   confidence: z
     .number()
+    .min(0).max(1) // Ensure confidence is between 0 and 1
     .describe(
       'A number, between 0 and 1 inclusive, indicating the confidence in the identification.'
     ),
@@ -55,9 +56,11 @@ const prompt = ai.definePrompt({
   input: {schema: IdentifyFruitOrVegetableFromImageInputSchema},
   output: {schema: IdentifyFruitOrVegetableFromImageOutputSchema},
   prompt: `You are an expert in identifying fruits and vegetables from images.
-
-  Analyze the image and identify the fruit or vegetable. Respond with a JSON object.
-
+  Analyze the image provided.
+  Determine if the image primarily contains a fruit or vegetable.
+  If it is, provide its common name, scientific name, and a confidence score between 0.0 and 1.0 for your identification.
+  If it is not a fruit or vegetable, or if you cannot identify it with reasonable confidence, set 'isFruitOrVegetable' to false and commonName/scientificName to empty strings or "Unknown".
+  Respond with a JSON object matching the defined output schema.
   Here is the image: {{media url=photoDataUri}}
   `,
 });
@@ -70,6 +73,15 @@ const identifyFruitOrVegetableFromImageFlow = ai.defineFlow(
   },
   async input => {
     const {output} = await prompt(input);
-    return output!;
+    // Ensure fallback for nullish output to prevent runtime errors
+    if (!output) {
+      return {
+        isFruitOrVegetable: false,
+        commonName: "Unknown",
+        scientificName: "Unknown",
+        confidence: 0
+      };
+    }
+    return output;
   }
 );

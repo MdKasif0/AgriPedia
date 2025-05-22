@@ -226,33 +226,42 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         <div className="space-y-4">
           {hasCameraPermission === null && <Loader text="Initializing camera..." />}
           
-          {hasCameraPermission === false && error && (
-            <Alert variant="destructive">
-              <AlertTriangle className="h-4 w-4" />
-              <AlertTitle>Camera Error</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
+          {hasCameraPermission === false && error && ( // Only show error if permission explicitly denied or other camera error
+              <Alert variant="destructive">
+                <AlertTriangle className="h-4 w-4" />
+                <AlertTitle>Camera Error</AlertTitle>
+                <AlertDescription>{error}</AlertDescription>
+              </Alert>
           )}
 
-          {(hasCameraPermission || preview && isCameraMode) && ( // Keep showing preview even if camera stream stopped
-            <>
-              <div className="relative w-full aspect-[4/3] bg-muted rounded-md overflow-hidden">
-                {preview && isCameraMode ? (
-                   <NextImage src={preview} alt="Camera capture preview" layout="fill" objectFit="contain" />
-                ) : (
-                  <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
-                )}
-                <canvas ref={canvasRef} className="hidden" />
-              </div>
-               <Button
-                onClick={handleCaptureAndProcess}
-                disabled={isLoading || isProcessingCapture || hasCameraPermission === false || (hasCameraPermission === true && !videoRef.current?.srcObject && !preview)}
-                className="w-full"
-              >
-                {isProcessingCapture ? <Loader text="Capturing..." size={18}/> : isLoading ? <Loader text="Identifying..." size={18}/> : <><Camera className="mr-2" /> Capture & Identify</>}
-              </Button>
-            </>
-          )}
+
+          {/* Always show video/preview container elements to prevent hydration issues if hasCameraPermission state changes quickly */}
+          <div className="relative w-full aspect-[4/3] bg-muted rounded-md overflow-hidden">
+            {preview && isCameraMode ? (
+                <NextImage src={preview} alt="Camera capture preview" layout="fill" objectFit="contain" />
+            ) : (
+              <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
+            )}
+            <canvas ref={canvasRef} className="hidden" />
+          </div>
+
+          { hasCameraPermission === false && !error && ( // Show a generic alert if permission is simply false without a specific error message
+              <Alert variant="destructive">
+                <AlertTitle>Camera Access Required</AlertTitle>
+                <AlertDescription>
+                  Please allow camera access to use this feature. You may need to adjust your browser settings.
+                </AlertDescription>
+              </Alert>
+            )
+          }
+          
+          <Button
+            onClick={handleCaptureAndProcess}
+            disabled={isLoading || isProcessingCapture || hasCameraPermission === false || (hasCameraPermission === true && !videoRef.current?.srcObject && !preview) }
+            className="w-full"
+          >
+            {isProcessingCapture ? <Loader text="Capturing..." size={18}/> : isLoading ? <Loader text="Identifying..." size={18}/> : <><Camera className="mr-2" /> Capture & Identify</>}
+          </Button>
         </div>
       ) : (
         <form onSubmit={handleFileUploadSubmit} className="space-y-4">
@@ -313,7 +322,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </form>
       )}
 
-      {preview && (
+      {preview && ( // Show general preview if available (either from upload or capture)
         <div className="mt-4 space-y-2">
           <h4 className="text-sm font-medium text-foreground">Preview:</h4>
           <div className="relative w-full max-w-xs mx-auto aspect-square border rounded-md overflow-hidden bg-muted">
@@ -322,16 +331,16 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </div>
       )}
 
-      {error && !isCameraMode && ( // Only show general error if not in camera mode or if camera error already shown
-         !(hasCameraPermission === false && error) && ( // Don't show if camera error is already displayed
-            <Alert variant="destructive" className="mt-4">
-                <AlertTriangle className="h-4 w-4" />
-                <AlertTitle>Error</AlertTitle>
-                <AlertDescription>{error}</AlertDescription>
-            </Alert>
-        )
+      {/* General error display, avoiding duplication if camera-specific error already shown */}
+      {error && (!isCameraMode || (isCameraMode && hasCameraPermission !== false)) && (
+         <Alert variant="destructive" className="mt-4">
+             <AlertTriangle className="h-4 w-4" />
+             <AlertTitle>Error</AlertTitle>
+             <AlertDescription>{error}</AlertDescription>
+         </Alert>
       )}
-      {isLoading && !isCameraMode && !preview && (
+
+      {isLoading && !isCameraMode && !preview && ( // Show loader for file upload analysis
         <div className="pt-4">
             <Loader text="Analyzing image..." />
         </div>
