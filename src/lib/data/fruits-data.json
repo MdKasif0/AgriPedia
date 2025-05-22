@@ -2296,17 +2296,17 @@
         { "name": "Vitamin K", "value": 19.3, "unit": "µg", "rdi": "24%" },
         { "name": "Manganese", "value": 0.336, "unit": "mg", "rdi": "17%" }
       ],
-      "minerals": []
+      "minerals": [],
+      "potentialAllergies": [
+        { "name": "Blueberry Allergy", "severity": "Rare", "details": "Uncommon, but can occur." }
+      ],
+      "healthBenefits": [
+        "Very high in antioxidants, particularly anthocyanins, which give them their blue color.",
+        "May improve brain health and memory.",
+        "Can help reduce DNA damage and protect against aging and cancer.",
+        "Beneficial for heart health by lowering blood pressure and improving cholesterol levels."
+      ]
     },
-    "healthBenefits": [
-      "Very high in antioxidants, particularly anthocyanins, which give them their blue color.",
-      "May improve brain health and memory.",
-      "Can help reduce DNA damage and protect against aging and cancer.",
-      "Beneficial for heart health by lowering blood pressure and improving cholesterol levels."
-    ],
-    "potentialAllergies": [
-      { "name": "Blueberry Allergy", "severity": "Rare", "details": "Uncommon, but can occur." }
-    ],
     "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate. Require winter chill. Different types (highbush, lowbush, rabbiteye) have different needs.\n2. Soil: Very acidic (pH 4.0-5.0), well-drained, sandy soil rich in organic matter. Amend soil with peat moss or sulfur.\n3. Propagation: From cuttings or nursery plants.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Consistent moisture is crucial, especially during establishment and fruit development. Use rainwater if possible due to acidity preference.\n6. Fertilizing: Use fertilizers formulated for acid-loving plants (e.g., azalea/rhododendron fertilizer).\n7. Mulching: Mulch with pine needles, wood chips, or sawdust to retain moisture, suppress weeds, and maintain soil acidity.\n8. Harvesting: Berries ripen over several weeks. Harvest when they are fully blue, plump, and detach easily.",
     "growthDuration": "Plants typically start producing a good crop 2-3 years after planting. Harvest season is summer.",
     "sustainabilityTips": [
@@ -2347,7 +2347,7 @@
     "regions": ["Turkey", "United States", "Iran", "Chile", "Uzbekistan", "Spain", "Italy"],
     "seasons": ["Late Spring to Summer"],
     "nutrition": {
-      "calories": "50-63 kcal per 100g (sweet cherries)",
+      "calories": "50 kcal per 100g (sweet cherries)",
       "macronutrients": [
         { "name": "Protein", "value": 1, "unit": "g" },
         { "name": "Carbohydrates", "value": 14, "unit": "g" },
@@ -2587,6 +2587,580 @@
         "description": "A refreshing and exotic sorbet highlighting the unique taste of mangosteen.",
         "ingredients": ["2 cups fresh mangosteen pulp (segments, seeds removed from larger ones)", "1/2 cup sugar", "1/2 cup water", "Juice of 1 lime"],
         "steps": ["Make a simple syrup: In a small saucepan, combine sugar and water. Heat over medium heat, stirring, until the sugar is completely dissolved. Let it cool completely.", "If the mangosteen segments are large and have seeds, carefully remove any seeds.", "Combine the mangosteen pulp, cooled simple syrup, and lime juice in a blender or food processor.", "Blend until very smooth.", "Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions.", "If you don't have an ice cream maker, pour the mixture into a freezer-safe container. Freeze for 1-2 hours until partially frozen. Remove from freezer, beat with a hand mixer or whisk vigorously to break up ice crystals, then return to freezer. Repeat this process 2-3 times every hour until the sorbet is firm but scoopable.", "Serve immediately or store in an airtight container in the freezer."]
+      }
+    ]
+  },
+  {
+    "id": "rambutan",
+    "commonName": "Rambutan",
+    "scientificName": "Nephelium lappaceum",
+    "image": "https://placehold.co/600x446.png",
+    "description": "A medium-sized tropical tree in the family Sapindaceae. The name also refers to the edible fruit produced by this tree. The rambutan is native to Southeast Asia. It is closely related to other edible tropical fruits including the lychee, longan, and pulasan. The fruit has a leathery red skin covered with fleshy pliable spines, hence the name, which means 'hairs'.",
+    "origin": "Southeast Asia (Malaysia, Indonesia)",
+    "localNames": ["Chom Chom (Vietnamese)", "Ngo (Thai)"],
+    "regions": ["Thailand", "Malaysia", "Indonesia", "Vietnam", "Philippines", "Sri Lanka"],
+    "seasons": ["Mainly June to August, with a smaller season December to February"],
+    "nutrition": {
+      "calories": "82 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 20.9, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 4.9, "unit": "mg", "rdi": "8%" }
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.343, "unit": "mg", "rdi": "17%" },
+        { "name": "Copper", "value": 0.066, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C, which aids in immune function.",
+      "Contains copper and manganese, important for bone health and metabolism.",
+      "Provides dietary fiber, aiding digestion.",
+      "Rich in antioxidants that help fight free radicals."
+    ],
+    "potentialAllergies": [
+      { "name": "Rambutan Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, requires high humidity and warm temperatures, cannot tolerate frost.\n2. Soil: Deep, well-drained loamy soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Seeds (though fruit quality may vary) or more commonly by budding or grafting for commercial varieties.\n4. Planting: Plant in full sun to partial shade with protection from strong winds.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Fertilizing: Regular application of balanced fertilizer.\n7. Harvesting: Fruits are harvested in clusters when they turn bright red or yellow (depending on variety) and the spines are well-developed. They are picked by hand.",
+    "growthDuration": "Trees may start bearing fruit in 3-5 years. Fruits mature about 100-120 days after flowering.",
+    "sustainabilityTips": [
+      "Store fresh rambutans at room temperature for a day or two, or in the refrigerator for up to a week.",
+      "The leathery skin is not edible; compost it.",
+      "The single seed is also typically not eaten, though some varieties have edible seeds when cooked."
+    ],
+    "carbonFootprintInfo": "Moderate to high if air-freighted from tropical regions (0.9-2.2 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Rambutan",
+        "description": "The best way to enjoy the sweet, grape-like flesh of rambutan.",
+        "ingredients": ["A bunch of fresh rambutans"],
+        "steps": ["Wash the rambutans.", "To open, make a shallow cut around the middle of the fruit with a knife, or use your thumbs to pry the skin open if it's soft enough.", "Peel away one half of the leathery skin. The translucent white flesh will be exposed.", "Pop the fleshy fruit into your mouth and eat around the seed. The seed is usually not eaten, although some varieties have edible seeds when cooked.", "Discard the skin and seed."]
+      },
+      {
+        "name": "Rambutan and Lychee Salad",
+        "description": "A refreshing tropical fruit salad with similar textures and flavors.",
+        "ingredients": ["1 cup fresh rambutan flesh (peeled and seeded)", "1 cup fresh lychees (peeled and seeded)", "1 tbsp lime juice", "1 tsp honey (optional)", "A few mint leaves, chiffonade"],
+        "steps": ["Gently combine the rambutan flesh and lychee flesh in a bowl.", "Drizzle with lime juice and honey (if using).", "Sprinkle with mint chiffonade.", "Toss gently and serve chilled."]
+      },
+      {
+        "name": "Rambutan Infused Water",
+        "description": "A subtly sweet and refreshing infused water.",
+        "ingredients": ["5-6 rambutans, peeled (flesh can be slightly broken)", "1 liter cold water", "Optional: a slice of lime or a few mint sprigs"],
+        "steps": ["Peel the rambutans. You can leave the flesh whole or gently break it to release more flavor.", "Add the rambutan flesh to a pitcher with cold water.", "Add lime slices or mint sprigs if desired.", "Refrigerate for at least 2-4 hours to allow the flavors to infuse.", "Serve chilled."]
+      }
+    ]
+  },
+  {
+    "id": "gooseberry",
+    "commonName": "Gooseberry",
+    "scientificName": "Ribes uva-crispa",
+    "image": "https://placehold.co/600x447.png",
+    "description": "A species of Ribes, native to Europe, northwestern Africa and southwestern Asia. It is one of several similar species in the subgenus Grossularia. The fruit is a berry, varying from green to red or purple, and can be tart or sweet depending on ripeness and variety.",
+    "origin": "Europe, Northwestern Africa, Southwestern Asia",
+    "localNames": ["Groseille à maquereau (French)", "Stachelbeere (German)", "Uva espina (Spanish)"],
+    "regions": ["United Kingdom", "Germany", "Poland", "Scandinavia", "North America"],
+    "seasons": ["Early to Mid Summer"],
+    "nutrition": {
+      "calories": "44 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 10.2, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 4.3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 27.7, "unit": "mg", "rdi": "46%" },
+        { "name": "Vitamin A", "value": 15, "unit": "µg RAE", "rdi": "2%" }
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.144, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C, an antioxidant supporting the immune system.",
+      "High in dietary fiber, aiding digestion and promoting gut health.",
+      "Contains various phytonutrients with antioxidant properties.",
+      "Low in calories."
+    ],
+    "potentialAllergies": [
+      { "name": "Gooseberry Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate, thrives in cool, moist conditions. Tolerates some shade.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Usually by hardwood cuttings.\n4. Planting: Plant bare-root bushes in late autumn to early spring.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Fertilizing: Apply well-rotted manure or balanced fertilizer in spring.\n7. Pruning: Prune in winter to maintain an open, goblet shape, removing old and crossing branches to encourage new fruiting wood.\n8. Harvesting: Berries can be picked slightly underripe (green) for cooking/tartness or when fully ripe (softer, sweeter, and colored according to variety) for eating fresh. Handle thorny varieties with care.",
+    "growthDuration": "Bushes can start fruiting in 1-3 years. Harvest in early to mid-summer.",
+    "sustainabilityTips": [
+      "Gooseberries are versatile: use for pies, crumbles, fools, jams, or eat fresh when ripe.",
+      "They freeze well.",
+      "Choose local varieties when in season."
+    ],
+    "carbonFootprintInfo": "Low to moderate, depending on local availability (0.4-0.8 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Gooseberry Fool",
+        "description": "A classic British dessert, creamy and tart-sweet.",
+        "ingredients": ["1 lb fresh gooseberries, topped and tailed", "1/4 cup granulated sugar (or to taste)", "2 tbsp water", "1 cup heavy whipping cream", "2 tbsp elderflower cordial (optional)"],
+        "steps": ["Combine gooseberries, sugar, and water in a saucepan. Cook over medium-low heat for 10-15 minutes, or until gooseberries are soft and have burst. Mash lightly.", "Let the gooseberry compote cool completely.", "In a chilled bowl, whip the heavy cream until soft peaks form. If using, fold in elderflower cordial.", "Gently fold the cooled gooseberry compote into the whipped cream, creating swirls. Do not overmix.", "Spoon into individual serving glasses and chill for at least 30 minutes before serving."]
+      },
+      {
+        "name": "Gooseberry Crumble",
+        "description": "A comforting dessert with tart gooseberries and a sweet, crunchy topping.",
+        "ingredients": ["For filling: 1.5 lbs gooseberries, topped and tailed", "1/2 cup granulated sugar", "1 tbsp cornstarch (optional, for thickening)", "For crumble: 1 cup all-purpose flour", "1/2 cup rolled oats", "1/2 cup brown sugar", "1/2 cup cold butter, cubed"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, toss gooseberries with sugar and cornstarch (if using). Transfer to an ovenproof dish.", "Crumble: In another bowl, combine flour, oats, and brown sugar. Rub in the cold butter with your fingertips until the mixture resembles coarse breadcrumbs.", "Sprinkle the crumble topping evenly over the gooseberries.", "Bake for 30-40 minutes, or until the topping is golden brown and the fruit is bubbling.", "Serve warm with custard, cream, or ice cream."]
+      },
+      {
+        "name": "Gooseberry Jam",
+        "description": "A tart and flavorful jam, excellent on toast or with scones.",
+        "ingredients": ["2 lbs gooseberries, topped and tailed", "2 lbs granulated sugar", "1/2 cup water"],
+        "steps": ["Combine gooseberries and water in a large, heavy-bottomed pot. Bring to a simmer and cook gently for 15-20 minutes, until the gooseberries are soft.", "Add the sugar to the pot. Stir over low heat until the sugar is completely dissolved.", "Increase heat and bring to a rolling boil. Boil rapidly for about 10-15 minutes, or until setting point is reached (test by dropping a little jam onto a cold saucer; if it wrinkles when pushed, it's ready).", "Skim off any scum from the surface.", "Ladle the hot jam into sterilized jars, seal, and label. Store in a cool, dark place."]
+      }
+    ]
+  },
+  {
+    "id": "karonda",
+    "commonName": "Karonda (Natal Plum)",
+    "scientificName": "Carissa carandas",
+    "image": "https://placehold.co/600x448.png",
+    "description": "A species of flowering shrub in the dogbane family, Apocynaceae. It produces berry-sized fruits that are commonly used as a condiment in Indian pickles and spices. The fruit is a rich source of iron, so it sometimes is used in treatment of anaemia. It contains a fair amount of Vitamin C and is a rich source of pectin.",
+    "origin": "India, Nepal, Afghanistan, Himalayas",
+    "localNames": ["Kalakai (Tamil)", "Vakkaya (Telugu)", "Christ's Thorn"],
+    "regions": ["India", "Pakistan", "Sri Lanka", "Malaysia", "Indonesia"],
+    "seasons": ["Rainy season (July-September in India)"],
+    "nutrition": {
+      "calories": "70 kcal per 100g (estimated)",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.5, "unit": "g" },
+        { "name": "Carbohydrates", "value": 16.5, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 1.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 9, "unit": "mg", "rdi": "15%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 1.3, "unit": "mg", "rdi": "7%" },
+        { "name": "Calcium", "value": 21, "unit": "mg", "rdi": "2%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in iron, traditionally used to combat anemia.",
+      "Good source of Vitamin C, supporting immune function.",
+      "Contains pectin, which aids in digestion and can help make jellies.",
+      "Antioxidant properties."
+    ],
+    "potentialAllergies": [
+      { "name": "Karonda Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Drought-tolerant and hardy plant.\n2. Soil: Grows well in a wide range of soils, including poor soils. Prefers well-drained soil.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun. Can be grown as a hedge due to its thorny nature.\n5. Watering: Water regularly until established. Mature plants are very drought-resistant.\n6. Fertilizing: Generally does not require much fertilization.\n7. Harvesting: Fruits are harvested when they turn from green to reddish-purple or dark purple/black and are slightly soft. Unripe green fruits are also used for pickles.",
+    "growthDuration": "Starts fruiting in 2-3 years. Fruits ripen during the rainy season.",
+    "sustainabilityTips": [
+      "Karonda is commonly used for pickles, chutneys, jams, and jellies due to its tartness.",
+      "Can be eaten fresh when fully ripe, though it's often quite tart.",
+      "The plant is thorny and can be used as a natural fence."
+    ],
+    "carbonFootprintInfo": "Low, as it's a hardy plant often grown locally (0.2-0.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Karonda Pickle (Achar)",
+        "description": "A tangy and spicy Indian pickle made from Karonda fruits.",
+        "ingredients": ["1 lb Karonda, washed, halved, and deseeded (optional)", "1/4 cup mustard oil", "2 tbsp fennel seeds (saunf)", "1 tbsp mustard seeds (rai)", "1 tsp fenugreek seeds (methi dana)", "1/2 tsp asafoetida (hing)", "1 tbsp turmeric powder", "2 tbsp red chili powder (or to taste)", "Salt to taste"],
+        "steps": ["If Karondas are very tart, you can blanch them in hot water for 2 minutes and drain to reduce tartness. Pat dry completely.", "Dry roast fennel seeds, mustard seeds, and fenugreek seeds. Coarsely grind them.", "Heat mustard oil in a pan until it smokes lightly, then let it cool completely.", "In a large mixing bowl, combine Karonda, ground spice mixture, turmeric powder, red chili powder, asafoetida, and salt.", "Pour the cooled mustard oil over the mixture and mix well.", "Transfer the pickle to a sterilized, dry glass jar. Cover and keep in the sun for 4-5 days, shaking the jar daily.", "The pickle is ready to eat once Karondas soften and absorb flavors. Store in a cool, dry place."]
+      },
+      {
+        "name": "Sweet Karonda Chutney",
+        "description": "A sweet and tangy chutney, great as a condiment.",
+        "ingredients": ["1 cup Karonda, halved and deseeded (optional)", "1/2 cup sugar or jaggery", "1/4 cup water", "1/2 inch ginger, grated", "1/4 tsp red chili powder (optional)", "Pinch of salt"],
+        "steps": ["Combine Karonda, sugar/jaggery, water, and grated ginger in a saucepan.", "Cook over medium heat, stirring, until Karondas soften and the mixture thickens to a chutney consistency (about 15-20 minutes).", "Stir in red chili powder (if using) and salt.", "Let it cool completely. Store in an airtight container in the refrigerator."]
+      },
+      {
+        "name": "Karonda Sabzi (Stir-fry)",
+        "description": "A simple stir-fried dish using green or semi-ripe Karondas.",
+        "ingredients": ["1 cup Karonda, washed and slit (or halved)", "1 tbsp oil", "1/2 tsp mustard seeds", "1/2 tsp cumin seeds", "Pinch of asafoetida (hing)", "1-2 green chilies, slit", "1/4 tsp turmeric powder", "Salt to taste", "1 tbsp chopped cilantro for garnish"],
+        "steps": ["Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add asafoetida and green chilies. Sauté for a few seconds.", "Add Karonda and turmeric powder. Mix well.", "Cover and cook on low heat for 5-7 minutes, or until Karondas are tender but not mushy. Stir occasionally.", "Add salt and mix.", "Garnish with chopped cilantro and serve hot with roti or rice."]
+      }
+    ]
+  },
+  {
+    "id": "noni-fruit",
+    "commonName": "Noni Fruit",
+    "scientificName": "Morinda citrifolia",
+    "image": "https://placehold.co/600x449.png",
+    "description": "A fruit-bearing tree in the coffee family, Rubiaceae. It is native to Southeast Asia and Australasia, and is cultivated throughout the tropics. The fruit has a strong, pungent odor when ripening, sometimes described as cheesy or vomit-like, and a bitter taste. It is often consumed for its purported health benefits.",
+    "origin": "Southeast Asia, Australasia",
+    "localNames": ["Indian Mulberry", "Cheese Fruit", "Vomit Fruit", "Bartundi (Hindi)"],
+    "regions": ["Polynesia (Hawaii, Tahiti)", "Southeast Asia", "Australia", "India", "Caribbean"],
+    "seasons": ["Fruits year-round in tropical climates"],
+    "nutrition": {
+      "calories": "15 kcal per 100g (juice, estimated)",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 3.4, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 0.2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 30, "unit": "mg", "rdi": "50%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 150, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Traditionally used for a wide range of ailments, including pain relief, immune support, and anti-inflammatory effects.",
+      "Rich in antioxidants.",
+      "Some studies suggest potential benefits for joint health and skin conditions.",
+      "Noni juice is a popular health supplement."
+    ],
+    "potentialAllergies": [
+      { "name": "Noni Sensitivity", "severity": "Mild", "details": "Some individuals may experience digestive upset. High potassium content may be a concern for those with kidney disease. Consult a doctor before using as a supplement." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, thrives in hot, humid conditions. Tolerant of saline soils and drought once established.\n2. Soil: Adaptable to a wide range of soils, but prefers well-drained soil.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun to partial shade.\n5. Watering: Water regularly until established.\n6. Harvesting: Fruits are harvested when they are firm and have turned from green to light yellow or whitish. They continue to ripen and soften (and develop strong odor) after picking.",
+    "growthDuration": "Trees can start fruiting within a year or two from planting. Fruits year-round.",
+    "sustainabilityTips": [
+      "Noni is primarily consumed as juice or in powdered form due to its strong taste and odor.",
+      "The fruit is often fermented to make juice.",
+      "Leaves and roots also have traditional medicinal uses."
+    ],
+    "carbonFootprintInfo": "Varies greatly depending on processing and transport, especially for juice products.",
+    "staticRecipes": [
+      {
+        "name": "Traditional Noni Juice (Fermented)",
+        "description": "A common way Noni fruit is processed for consumption, often for health benefits.",
+        "ingredients": ["Ripe Noni fruits"],
+        "steps": ["Wash ripe Noni fruits thoroughly. They should be light yellow or whitish and slightly soft.", "Place the whole fruits in a clean, airtight glass jar.", "Seal the jar and leave it in a sunny place for several weeks to a couple of months (e.g., 6-8 weeks). The fruits will ferment and release their juice.", "After the fermentation period, strain the collected juice through a cheesecloth or fine sieve into another clean bottle.", "Store the Noni juice in the refrigerator. It's typically consumed in small amounts (e.g., 1-2 tablespoons daily) due to its strong flavor and potency."]
+      },
+      {
+        "name": "Noni Fruit Leather",
+        "description": "A way to preserve Noni and make its flavor more palatable.",
+        "ingredients": ["Ripe Noni fruit pulp (seeds removed)", "Optional: sweetener like honey or other fruit purees (e.g., apple, pineapple) to taste"],
+        "steps": ["Wash and process ripe Noni fruits to get the pulp. Remove as many seeds as possible.", "Blend the Noni pulp until smooth. If desired, mix with a sweetener or other fruit purees to improve flavor.", "Spread the Noni puree thinly and evenly on a dehydrator sheet lined with parchment paper or a non-stick mat.", "Dehydrate at a low temperature (around 135°F or 57°C) for 6-12 hours, or until the leather is dry to the touch but still pliable (not brittle).", "Once dried, peel the Noni leather off the sheet. Cut into strips or roll it up with parchment paper in between layers.", "Store in an airtight container at room temperature or in the refrigerator."]
+      },
+      {
+        "name": "Noni Leaf Tea",
+        "description": "Noni leaves are also used traditionally to make a tea.",
+        "ingredients": ["A few fresh or dried Noni leaves", "Hot water", "Optional: honey or lemon to taste"],
+        "steps": ["If using fresh Noni leaves, wash them thoroughly.", "Place 1-2 Noni leaves (fresh or dried) in a cup.", "Pour hot (not boiling) water over the leaves.", "Let it steep for 5-10 minutes.", "Strain the tea. Add honey or lemon to taste if desired.", "Consume in moderation. (Note: Always consult with a healthcare professional before using herbal remedies)."]
+      }
+    ]
+  },
+  {
+    "id": "loquat",
+    "commonName": "Loquat",
+    "scientificName": "Eriobotrya japonica",
+    "image": "https://placehold.co/600x450.png",
+    "description": "A species of flowering plant in the family Rosaceae, a native to the cooler hill regions of south-central China. It is a large evergreen shrub or small tree, grown commercially for its yellow or orange fruit, and also cultivated as an ornamental plant.",
+    "origin": "South-central China",
+    "localNames": ["Níspero japonés (Spanish)", "Nèfle du Japon (French)", "Japanische Wollmispel (German)", "Lokat (Hindi)"],
+    "regions": ["China", "Japan", "India", "Pakistan", "Mediterranean countries", "California"],
+    "seasons": ["Late Spring to Early Summer"],
+    "nutrition": {
+      "calories": "47 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 12.1, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 1.7, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin A", "value": 76, "unit": "µg RAE", "rdi": "8%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 266, "unit": "mg", "rdi": "8%" },
+        { "name": "Manganese", "value": 0.148, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin A, important for vision and immune function.",
+      "Contains dietary fiber, aiding digestion.",
+      "Provides antioxidants like carotenoids.",
+      "Traditionally used in Chinese medicine for coughs and respiratory ailments (especially the leaves)."
+    ],
+    "potentialAllergies": [
+      { "name": "Loquat Seed Caution", "severity": "Mild", "details": "Loquat seeds contain small amounts of cyanogenic glycosides. While accidental ingestion of a few seeds is unlikely to cause harm, they should generally not be consumed in quantity." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to mild temperate. Tolerates light frosts once established.\n2. Soil: Well-drained, fertile loamy soil. Adaptable to various soil types.\n3. Propagation: Seeds (germinate easily but may not be true to type) or grafting for superior varieties.\n4. Planting: Plant in full sun to partial shade. Protect from strong winds.\n5. Watering: Water regularly, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer in spring.\n7. Harvesting: Fruits are harvested when they are fully colored (yellow to orange) and slightly soft to the touch. They bruise easily.",
+    "growthDuration": "Seedling trees may fruit in 2-3 years. Fruits ripen in late spring to early summer.",
+    "sustainabilityTips": [
+      "Loquats are best eaten fresh. Peel the skin if desired (it's edible but can be slightly tough).",
+      "The fruit is also used for jams, jellies, and pies.",
+      "Handle gently as they bruise easily."
+    ],
+    "carbonFootprintInfo": "Low to moderate, especially if grown locally (0.3-0.7 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Loquats",
+        "description": "Enjoying the sweet and tangy flavor of fresh loquats.",
+        "ingredients": ["A handful of ripe loquats"],
+        "steps": ["Wash the loquats gently.", "The skin is edible but can be peeled if preferred. To peel, make a small slit and peel it away.", "Cut the loquat in half and remove the large, dark seeds from the center.", "Eat the fleshy part. The flavor is often a mix of peach, citrus, and mild mango."]
+      },
+      {
+        "name": "Loquat Jam",
+        "description": "A sweet and slightly tart jam, perfect for preserving the fruit.",
+        "ingredients": ["2 lbs ripe loquats, peeled, pitted, and roughly chopped", "2 cups granulated sugar", "Juice of 1 lemon", "1/4 cup water"],
+        "steps": ["Combine chopped loquats, sugar, lemon juice, and water in a large, heavy-bottomed pot.", "Bring the mixture to a boil over medium-high heat, stirring until sugar dissolves.", "Reduce heat to medium-low and simmer, stirring occasionally, for 30-45 minutes, or until the jam thickens and reaches the setting point (220°F/105°C on a jam thermometer, or when a small amount on a chilled plate wrinkles when pushed).", "Skim off any foam.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator."]
+      },
+      {
+        "name": "Loquat Crumble",
+        "description": "A warm dessert with a sweet loquat filling and a crunchy topping.",
+        "ingredients": ["For filling: 4 cups loquats, peeled, pitted, and halved", "1/4 cup sugar", "1 tbsp all-purpose flour", "1 tsp lemon juice", "For crumble: 3/4 cup all-purpose flour", "1/2 cup rolled oats", "1/2 cup brown sugar", "1/4 cup cold butter, cubed"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, gently toss loquats with sugar, flour, and lemon juice. Pour into a baking dish.", "Crumble: In another bowl, combine flour, oats, and brown sugar. Cut in butter with your fingertips or a pastry blender until the mixture resembles coarse crumbs.", "Sprinkle the crumble topping evenly over the loquats.", "Bake for 25-35 minutes, or until the topping is golden brown and the filling is bubbly.", "Serve warm, perhaps with vanilla ice cream or custard."]
+      }
+    ]
+  },
+  {
+    "id": "rose-apple",
+    "commonName": "Rose Apple",
+    "scientificName": "Syzygium jambos",
+    "image": "https://placehold.co/600x451.png",
+    "description": "A tree originating in Southeast Asia and occurring widely elsewhere, having been introduced as an ornamental and fruit tree. The fruit is bell-shaped, whitish-green to pale yellow or pink, crisp, and has a unique rose-like aroma and slightly sweet, watery taste.",
+    "origin": "Southeast Asia (Malaysia, Indonesia)",
+    "localNames": ["Jambu Air Mawar (Malay/Indonesian)", "Chomphu Namdokmai (Thai)", "Water Apple", "Wax Apple (related species often grouped)"],
+    "regions": ["Southeast Asia", "India", "Caribbean", "Central and South America"],
+    "seasons": ["Varies, can fruit multiple times a year, often in spring and fall"],
+    "nutrition": {
+      "calories": "25 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.6, "unit": "g" },
+        { "name": "Carbohydrates", "value": 5.7, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 0.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 22.3, "unit": "mg", "rdi": "37%" }
+      ],
+      "minerals": [
+        { "name": "Calcium", "value": 29, "unit": "mg", "rdi": "3%" }
+      ]
+    },
+    "healthBenefits": [
+      "High water content, making it hydrating and refreshing.",
+      "Good source of Vitamin C.",
+      "Low in calories.",
+      "Traditionally used for various medicinal purposes in some cultures."
+    ],
+    "potentialAllergies": [
+      { "name": "Rose Apple Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid conditions.\n2. Soil: Prefers well-drained, fertile loamy soil. Tolerates a range of soils.\n3. Propagation: Seeds, cuttings, or air layering.\n4. Planting: Plant in full sun to partial shade.\n5. Watering: Requires regular watering, especially during dry periods and fruit development.\n6. Harvesting: Fruits are harvested when they are fully colored, crisp, and have a characteristic rose-like fragrance. They are delicate and bruise easily.",
+    "growthDuration": "Trees can start fruiting in 3-5 years. Fruits mature quickly after flowering.",
+    "sustainabilityTips": [
+      "Rose apples are best eaten fresh to enjoy their crisp texture and unique aroma.",
+      "They are highly perishable and should be consumed soon after harvesting.",
+      "Can be used in salads or lightly stewed."
+    ],
+    "carbonFootprintInfo": "Moderate, depends on transport from tropical regions (0.7-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Rose Apples",
+        "description": "The simplest way to enjoy their crisp texture and fragrant aroma.",
+        "ingredients": ["A few ripe Rose Apples"],
+        "steps": ["Wash the rose apples gently.", "They can be eaten whole, skin and all. The flesh is crisp and watery, with a hollow core that may contain a few small, loose seeds.", "Simply bite into them or slice them. They are very refreshing.", "Best served chilled."]
+      },
+      {
+        "name": "Rose Apple Salad with Honey-Lime Dressing",
+        "description": "A light and refreshing salad highlighting the unique fruit.",
+        "ingredients": ["2 cups sliced Rose Apples", "1 small cucumber, thinly sliced", "A handful of fresh mint leaves", "For dressing: 2 tbsp lime juice, 1 tbsp honey, pinch of salt"],
+        "steps": ["Gently combine sliced rose apples and cucumber in a salad bowl.", "In a small bowl, whisk together lime juice, honey, and salt.", "Pour the dressing over the rose apple and cucumber mixture.", "Garnish with fresh mint leaves. Toss gently and serve immediately."]
+      },
+      {
+        "name": "Candied Rose Apples (Lightly Stewed)",
+        "description": "A simple way to sweeten rose apples and use them as a dessert topping.",
+        "ingredients": ["2 cups sliced Rose Apples", "1/4 cup sugar", "1/2 cup water", "1 star anise or a small piece of cinnamon stick (optional)"],
+        "steps": ["Combine sliced rose apples, sugar, water, and star anise/cinnamon (if using) in a saucepan.", "Bring to a gentle simmer over medium-low heat.", "Cook for 5-10 minutes, or until the rose apples are slightly tender but still hold their shape, and the syrup has slightly thickened.", "Remove from heat and discard the spice.", "Let it cool. Serve warm or chilled over yogurt, ice cream, or pancakes."]
+      }
+    ]
+  },
+  {
+    "id": "langsat",
+    "commonName": "Langsat (Lanzones)",
+    "scientificName": "Lansium domesticum",
+    "image": "https://placehold.co/600x452.png",
+    "description": "A species of tree in the Mahogany family. The plant, which originates from western Southeast Asia, bears edible fruit. The fruit is small, ovoid or round, with a thin, leathery yellowish or brownish skin. Inside, the fruit is divided into translucent, juicy segments, some of which may contain a bitter green seed.",
+    "origin": "Western Southeast Asia (Malay Peninsula, Sumatra, Borneo)",
+    "localNames": ["Lanzones (Philippines)", "Longkong/Duku (varieties in Thailand/Malaysia/Indonesia)"],
+    "regions": ["Thailand", "Malaysia", "Indonesia", "Philippines", "Vietnam", "India"],
+    "seasons": ["Varies by region, typically August to October"],
+    "nutrition": {
+      "calories": "60 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14.2, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.8, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 1, "unit": "mg", "rdi": "2%" },
+        { "name": "Riboflavin (B2)", "value": 0.124, "unit": "mg", "rdi": "9%" }
+      ],
+      "minerals": [
+        { "name": "Phosphorus", "value": 31, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Source of carbohydrates for energy.",
+      "Contains some B vitamins.",
+      "Provides dietary fiber.",
+      "Traditional uses in Southeast Asian medicine for various ailments."
+    ],
+    "potentialAllergies": [
+      { "name": "Langsat Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, requires high humidity, warm temperatures, and ample rainfall.\n2. Soil: Prefers deep, fertile, well-drained loamy soil rich in organic matter.\n3. Propagation: Seeds (slow to fruit) or grafting/marcotting for superior varieties.\n4. Planting: Plant in partial shade when young, gradually exposing to more sun.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Harvesting: Fruits are harvested in clusters when the skin turns yellowish-brown and they are slightly soft. They are picked by hand.",
+    "growthDuration": "Seedling trees may take 10-15 years to fruit. Grafted trees much sooner (5-7 years).",
+    "sustainabilityTips": [
+      "Langsat is typically eaten fresh. The skin is peeled to reveal the juicy segments.",
+      "Be careful of the bitter green seeds found in some segments; try not to bite into them.",
+      "Store at room temperature and consume within a few days as they are perishable."
+    ],
+    "carbonFootprintInfo": "Moderate to high if transported from Southeast Asia (0.9-2.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Langsat (Lanzones)",
+        "description": "The primary way to enjoy this sweet and slightly tangy fruit.",
+        "ingredients": ["A cluster of fresh Langsat/Lanzones"],
+        "steps": ["Wash the langsat fruits.", "To open, gently pinch or twist the fruit near the stem end, or make a small slit with your fingernail. The leathery skin should break easily.", "Peel away the skin to reveal the translucent, juicy segments (similar to a small peeled garlic clove in appearance).", "Carefully separate the segments. Eat the fleshy segments, being mindful that some larger segments may contain a bitter green seed. Try to eat around the seed or spit it out if bitten.", "The flavor is sweet with a hint of tartness."]
+      },
+      {
+        "name": "Langsat Syrup or Preserve",
+        "description": "A way to preserve the fruit's flavor, though less common than eating fresh.",
+        "ingredients": ["2 cups Langsat segments (seeds removed from segments that have them)", "1 cup sugar", "1/2 cup water", "Juice of 1/2 lime"],
+        "steps": ["Carefully peel and remove seeds from the langsat segments. This can be tedious for some varieties.", "In a saucepan, combine langsat segments, sugar, water, and lime juice.", "Bring to a gentle simmer over medium-low heat. Cook for 15-20 minutes, stirring occasionally, until the fruits are tender and the syrup has slightly thickened.", "Let it cool. The syrup can be used over desserts or diluted to make a drink. The preserved fruits can be eaten as well.", "Store in a sterilized jar in the refrigerator."]
+      },
+      {
+        "name": "Langsat in Fruit Salad",
+        "description": "Adding a unique tropical flavor to a mixed fruit salad.",
+        "ingredients": ["1 cup Langsat segments (seeds removed)", "1 cup mixed tropical fruits (e.g., pineapple, mango, papaya, rambutan)", "1 tbsp honey or a light syrup (optional)", "A few mint leaves for garnish"],
+        "steps": ["Prepare all fruits: peel, seed, and chop as necessary.", "In a large bowl, gently combine the langsat segments with the other mixed tropical fruits.", "If desired, drizzle with a little honey or light syrup for added sweetness.", "Garnish with fresh mint leaves. Serve chilled."]
+      }
+    ]
+  },
+  {
+    "id": "persimmon",
+    "commonName": "Persimmon",
+    "scientificName": "Diospyros kaki (most common)",
+    "image": "https://placehold.co/600x453.png",
+    "description": "An edible fruit of a number of species of trees in the genus Diospyros. The most widely cultivated of these is the Oriental persimmon, Diospyros kaki. Persimmons are typically orange or reddish-orange, and can be astringent (mouth-puckering until fully ripe and soft, like Hachiya) or non-astringent (can be eaten crisp like an apple, like Fuyu).",
+    "origin": "China",
+    "localNames": ["Caqui (Spanish/Portuguese)", "Kaki (French/German/Japanese)", "Amarphal (Hindi)"],
+    "regions": ["China", "South Korea", "Japan", "Brazil", "Azerbaijan", "United States (California)", "Italy", "Spain"],
+    "seasons": ["Autumn to Early Winter"],
+    "nutrition": {
+      "calories": "70 kcal per 100g (Japanese persimmon, raw)",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.6, "unit": "g" },
+        { "name": "Carbohydrates", "value": 18.6, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 3.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin A", "value": 81, "unit": "µg RAE", "rdi": "9%" },
+        { "name": "Vitamin C", "value": 7.5, "unit": "mg", "rdi": "13%" }
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.355, "unit": "mg", "rdi": "18%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin A and Vitamin C.",
+      "Rich in dietary fiber, aiding digestion.",
+      "Contains antioxidants like carotenoids, flavonoids, and tannins.",
+      "May help lower cholesterol and support heart health."
+    ],
+    "potentialAllergies": [
+      { "name": "Astringency", "severity": "Mild", "details": "Astringent varieties (like Hachiya) are very unpleasant to eat before fully ripe due to high tannin content, causing a dry, puckering sensation. Non-astringent varieties (like Fuyu) do not have this issue." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate to subtropical. Some varieties require winter chill.\n2. Soil: Well-drained, loamy soil. Adaptable but prefers pH 6.0-7.5.\n3. Propagation: Grafting is common for commercial varieties.\n4. Planting: Plant in full sun.\n5. Watering: Regular watering, especially for young trees and during fruit development.\n6. Harvesting: Harvest when fruits are fully colored. Astringent types must be allowed to soften completely (almost jelly-like) before eating. Non-astringent types can be eaten while firm or slightly soft.",
+    "growthDuration": "Trees may start bearing fruit in 3-7 years. Fruits ripen in autumn and early winter.",
+    "sustainabilityTips": [
+      "Know your persimmon type: Fuyu (non-astringent) can be eaten firm like an apple. Hachiya (astringent) must be very soft before eating.",
+      "Store at room temperature to ripen. Ripe persimmons can be refrigerated.",
+      "Excellent for drying (Hoshigaki in Japan)."
+    ],
+    "carbonFootprintInfo": "Moderate, depending on origin and transport (0.5-1.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Persimmons (Fuyu type)",
+        "description": "Enjoying crisp, non-astringent Fuyu persimmons.",
+        "ingredients": ["1-2 ripe Fuyu persimmons"],
+        "steps": ["Wash the Fuyu persimmon. The skin is edible.", "You can eat it like an apple, biting directly into it, or slice it.", "Remove the core/calyx (leafy top) if desired.", "Slices can be added to salads, cheese boards, or eaten as a snack."]
+      },
+      {
+        "name": "Persimmon and Pomegranate Salad",
+        "description": "A vibrant autumn salad with sweet persimmons and tart pomegranate seeds.",
+        "ingredients": ["2 ripe Fuyu persimmons, peeled (optional) and sliced or diced", "1/2 cup pomegranate arils", "2 cups mixed greens (e.g., arugula, spinach)", "1/4 cup toasted walnuts or pecans", "Optional: crumbled goat cheese", "Dressing: 2 tbsp olive oil, 1 tbsp apple cider vinegar, 1 tsp honey, salt and pepper to taste"],
+        "steps": ["In a large bowl, combine mixed greens, persimmon slices/dices, pomegranate arils, and toasted nuts.", "Add goat cheese if using.", "In a small bowl, whisk together olive oil, apple cider vinegar, honey, salt, and pepper.", "Drizzle dressing over the salad and toss gently. Serve immediately."]
+      },
+      {
+        "name": "Baked Persimmon (Hachiya type, when very ripe)",
+        "description": "A simple way to enjoy the custardy sweetness of fully ripe astringent persimmons.",
+        "ingredients": ["1-2 very ripe Hachiya persimmons (should feel like a water balloon)", "Optional: a sprinkle of cinnamon, a dollop of yogurt or cream"],
+        "steps": ["Preheat oven to 350°F (175°C).", "Ensure Hachiya persimmons are extremely soft and ripe to avoid astringency.", "Cut the persimmons in half horizontally or remove the top calyx.", "Place cut-side up in a small baking dish.", "Bake for 15-20 minutes, or until heated through and slightly caramelized.", "Serve warm. You can scoop out the pulp with a spoon. Add cinnamon or serve with yogurt/cream if desired."]
+      }
+    ]
+  },
+  {
+    "id": "surinam-cherry",
+    "commonName": "Surinam Cherry (Pitanga)",
+    "scientificName": "Eugenia uniflora",
+    "image": "https://placehold.co/600x454.png",
+    "description": "A plant in the family Myrtaceae, native to tropical South America’s east coast, ranging from Suriname, French Guiana to southern Brazil, as well as Uruguay and parts of Paraguay and Argentina. It is often used in gardens as a hedge or screen. The fruit is a ribbed berry, typically red to dark crimson or almost black when ripe, with a tart to sweet, resinous flavor.",
+    "origin": "Tropical South America (east coast)",
+    "localNames": ["Pitanga (Brazil/Portuguese)", "Brazilian Cherry", "Cayenne Cherry"],
+    "regions": ["Brazil", "Caribbean", "Florida", "Hawaii", "Southeast Asia (introduced)"],
+    "seasons": ["Fruits multiple times a year, often spring and fall peaks"],
+    "nutrition": {
+      "calories": "33 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 7.5, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 0.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 26.3, "unit": "mg", "rdi": "44%" },
+        { "name": "Vitamin A", "value": 75, "unit": "µg RAE", "rdi": "8%" }
+      ],
+      "minerals": [
+        { "name": "Phosphorus", "value": 11, "unit": "mg", "rdi": "2%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C and Vitamin A.",
+      "Contains antioxidants like lycopene and beta-cryptoxanthin.",
+      "Traditionally used for its astringent and anti-diarrheal properties.",
+      "Low in calories."
+    ],
+    "potentialAllergies": [
+      { "name": "Resinous Flavor", "severity": "Mild", "details": "Some people find the resinous note in the flavor unpleasant. Darker, fully ripe fruits are usually sweeter and less resinous." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Tolerates brief, light frost once established.\n2. Soil: Adaptable to a wide range of soils but prefers well-drained, slightly acidic soil.\n3. Propagation: Seeds (germinate easily) or cuttings.\n4. Planting: Plant in full sun to partial shade. Can be grown as a shrub or small tree, excellent for hedges.\n5. Watering: Water regularly until established. Mature plants are relatively drought-tolerant.\n6. Harvesting: Fruits are harvested when they are fully colored (deep red to almost black) and detach easily from the stem. They are delicate.",
+    "growthDuration": "Can start fruiting in 2-3 years from seed. Fruits multiple times a year in suitable climates.",
+    "sustainabilityTips": [
+      "Eat fresh when fully ripe for the best flavor (less resinous).",
+      "Excellent for making jams, jellies, and syrups due to its tartness and pectin content.",
+      "The plant is often grown ornamentally or as a hedge."
+    ],
+    "carbonFootprintInfo": "Low, especially if grown locally or foraged (0.2-0.6 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Surinam Cherries",
+        "description": "Enjoying the unique tart-sweet flavor of ripe Surinam cherries.",
+        "ingredients": ["A handful of ripe Surinam cherries"],
+        "steps": ["Wash the Surinam cherries gently.", "They are best when deep red to almost black, indicating full ripeness, which reduces the resinous taste some find strong.", "Eat them whole, skin and all. There is usually one or sometimes two small seeds inside, which are typically discarded.", "The flavor is a unique blend of sweet, tart, and slightly resinous or spicy."]
+      },
+      {
+        "name": "Surinam Cherry Jam",
+        "description": "A flavorful jam that captures the unique taste of Surinam cherries.",
+        "ingredients": ["4 cups Surinam cherries, pitted (can be tedious)", "2 cups sugar", "Juice of 1 lemon"],
+        "steps": ["Wash and pit the Surinam cherries. This may take some time as the seeds are small.", "Combine pitted Surinam cherries, sugar, and lemon juice in a large, heavy-bottomed pot.", "Bring the mixture to a boil over medium-high heat, stirring until sugar dissolves.", "Reduce heat and simmer, stirring occasionally, for 30-45 minutes, or until the jam thickens and reaches setting point (220°F/105°C, or wrinkles on a cold plate).", "Skim off any foam.", "Ladle hot jam into sterilized jars and seal. Process in a boiling water bath for 10 minutes if desired for longer shelf life."]
+      },
+      {
+        "name": "Surinam Cherry Cooler",
+        "description": "A refreshing drink made from Surinam cherry juice.",
+        "ingredients": ["2 cups ripe Surinam cherries, washed", "1 cup water", "1/4 cup sugar or honey (or to taste)", "Sparkling water or club soda", "Ice cubes", "Lime wedges for garnish"],
+        "steps": ["In a saucepan, combine Surinam cherries and 1 cup of water. Bring to a simmer and cook for 5-10 minutes, until the fruits are soft and have released their juice. Mash them gently.", "Strain the mixture through a fine-mesh sieve, pressing the fruit to extract as much juice as possible. Discard solids.", "Stir sugar or honey into the warm juice until dissolved. Let it cool.", "To serve, fill glasses with ice. Pour about 1/4 to 1/3 cup of the Surinam cherry syrup into each glass.", "Top with sparkling water or club soda. Stir gently.", "Garnish with a lime wedge."]
       }
     ]
   }
