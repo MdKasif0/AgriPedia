@@ -12,103 +12,101 @@ body {
 }
 
 @layer base {
-  /* Modern Professional Theme */
+  /* Natural, Fresh Theme with Leafy Greens, Sunset Oranges, Soft Purples */
   :root {
-    --background: 220 15% 8%; /* Very Dark Blue-Gray */
-    --foreground: 220 10% 88%; /* Light Gray */
+    --background: 220 15% 10%; /* Very Dark Desaturated Blue - Muted Background */
+    --foreground: 220 10% 88%; /* Light Gray - Text on Dark Background */
 
-    /* Card theme for dark mode: dark card, light text */
-    --card: 220 15% 12%; /* Dark Blue-Gray, slightly lighter than background */
-    --card-foreground: 220 10% 88%; /* Light Gray, same as main foreground */
+    --card: 220 15% 15%; /* Dark Gray-Blue Card, slightly lighter than background */
+    --card-foreground: 220 10% 88%; /* Light Gray Text on Dark Cards */
 
-    --popover: 220 15% 10%; /* Darker popover background */
-    --popover-foreground: 220 10% 88%; /* Light text on popovers */
+    --popover: 220 15% 12%; /* Dark Popover Background */
+    --popover-foreground: 220 10% 88%; /* Light Text on Popovers */
 
-    --primary: 150 55% 50%; /* Professional Green */
-    --primary-foreground: 150 30% 95%; /* Very Light Greenish-White text on primary */
+    --primary: 130 50% 55%; /* Leafy Green */
+    --primary-foreground: 130 20% 95%; /* Very Light Greenish-White Text on Primary */
 
-    --secondary: 220 15% 25%; /* Muted Dark Blue-Gray */
-    --secondary-foreground: 220 10% 80%; /* Lighter Gray for secondary text */
+    --secondary: 30 85% 60%; /* Sunset Orange */
+    --secondary-foreground: 30 80% 15%; /* Dark Brown/Orange Text on Secondary */
 
-    --muted: 220 15% 20%; /* Muted Dark Blue-Gray for less emphasis */
-    --muted-foreground: 220 10% 60%; /* Medium-Light Gray text for muted */
+    --muted: 220 15% 25%; /* Muted Dark Blue-Gray for less emphasis */
+    --muted-foreground: 220 10% 65%; /* Medium-Light Gray Text for Muted */
 
-    --accent: 150 55% 50%; /* Same as primary green for general accents */
-    --accent-foreground: 150 30% 95%; 
+    --accent: 270 50% 70%; /* Soft Purple */
+    --accent-foreground: 270 40% 15%; /* Dark Purple Text on Accent */
     
-    --destructive: 0 65% 55%; /* Deeper Red */
+    --destructive: 0 70% 55%; /* Deeper Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */
 
-    --border: 220 15% 20%; /* Subtle Dark Border */
-    --input: 220 15% 18%; /* Dark Input Background */
-    --ring: 150 55% 55%; /* Professional Green for focus rings */
+    --border: 220 15% 25%; /* Subtle Dark Border - matches muted background */
+    --input: 220 15% 20%; /* Dark Input Background - slightly lighter than card */
+    --ring: 130 50% 60%; /* Leafy Green for focus rings */
 
-    --radius: 1rem; /* Increased for more rounded corners (16px) */
+    --radius: 0.75rem; /* Default rounded corners (12px) */
 
     /* Sidebar colors - dark theme */
-    --sidebar-background: 220 15% 10%; 
-    --sidebar-foreground: 220 10% 85%;
-    --sidebar-primary: 150 55% 50%; 
-    --sidebar-primary-foreground: 150 30% 95%;
-    --sidebar-accent: 150 55% 55%; 
-    --sidebar-accent-foreground: 150 30% 95%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 150 55% 55%;
+    --sidebar-background: hsl(var(--card)); 
+    --sidebar-foreground: hsl(var(--card-foreground));
+    --sidebar-primary: hsl(var(--primary)); 
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--secondary)); /* Use secondary for sidebar hover/active accent */
+    --sidebar-accent-foreground: hsl(var(--secondary-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
 
     /* Chart colors for dark theme */
-    --chart-1: hsl(var(--primary)); 
-    --chart-2: 150 50% 65%;   /* Lighter Green */
-    --chart-3: 150 40% 40%;   /* Darker, Desaturated Green */
-    --chart-4: 210 25% 55%;   /* Muted Blue */
-    --chart-5: 220 10% 50%;   /* Neutral Gray */
+    --chart-1: hsl(var(--primary));       /* Leafy Green */
+    --chart-2: hsl(var(--secondary));     /* Sunset Orange */
+    --chart-3: hsl(var(--accent));        /* Soft Purple */
+    --chart-4: 130 40% 70%;             /* Lighter Leafy Green */
+    --chart-5: 30 70% 75%;              /* Lighter Sunset Orange */
   }
 
   .light {
-    --background: 0 0% 98%; /* Off-White */
-    --foreground: 220 15% 15%; /* Dark Gray/Black */
+    --background: 220 20% 97%; /* Very Light Cool Gray - Muted Background */
+    --foreground: 220 15% 15%; /* Dark Gray-Blue - Text on Light Background */
 
-    /* Card theme for light mode: light card, dark text */
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 220 15% 15%; /* Dark Gray/Black for text on light cards */
+    --card: 0 0% 100%; /* White Card */
+    --card-foreground: 220 15% 15%; /* Dark Gray-Blue Text on Light Cards */
 
     --popover: 0 0% 100%; 
     --popover-foreground: 220 15% 15%;
 
-    --primary: 150 50% 45%; /* Professional Green (adjusted for light theme) */
-    --primary-foreground: 0 0% 100%; /* White text for on-green */
+    --primary: 130 45% 45%; /* Leafy Green - adjusted for light theme contrast */
+    --primary-foreground: 0 0% 100%; /* White Text on Primary */
 
-    --secondary: 220 10% 94%; /* Light gray for secondary elements */
-    --secondary-foreground: 220 15% 25%; /* Darker text */
+    --secondary: 30 80% 55%; /* Sunset Orange - adjusted for light theme */
+    --secondary-foreground: 30 75% 10%; /* Very Dark Brown/Orange Text on Secondary */
 
-    --muted: 220 10% 90%; /* Muted gray */
-    --muted-foreground: 220 10% 45%; /* Medium gray text */
+    --muted: 220 15% 90%; /* Light Gray for muted elements */
+    --muted-foreground: 220 10% 45%; /* Medium Gray Text for Muted */
 
-    --accent: 150 50% 45%; /* Green accent */
-    --accent-foreground: 0 0% 100%; 
+    --accent: 270 55% 65%; /* Soft Purple - adjusted for light theme */
+    --accent-foreground: 0 0% 100%; /* White text on Accent */
     
-    --destructive: 0 60% 50%; 
+    --destructive: 0 65% 50%; 
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 10% 88%; /* Light Gray Border */
-    --input: 220 10% 96%; /* Very Light Gray Input Background */
-    --ring: 150 50% 50%; /* Green for focus rings */
+    --border: 220 15% 85%; /* Light Gray Border */
+    --input: 220 15% 94%; /* Very Light Gray Input Background */
+    --ring: 130 45% 50%; /* Leafy Green for focus rings */
 
     /* Sidebar colors - light theme */
-    --sidebar-background: 0 0% 96%; 
-    --sidebar-foreground: 220 15% 15%;
-    --sidebar-primary: 150 50% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 150 50% 50%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 10% 90%;
-    --sidebar-ring: 150 50% 50%;
+    --sidebar-background: 220 20% 94%; /* Slightly off-white from page background */
+    --sidebar-foreground: hsl(var(--foreground));
+    --sidebar-primary: hsl(var(--primary));
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--secondary)); /* Use secondary for sidebar hover/active accent */
+    --sidebar-accent-foreground: hsl(var(--secondary-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
 
     /* Chart colors for light theme */
-    --chart-1: hsl(var(--primary)); 
-    --chart-2: 150 50% 60%;   /* Lighter Green */
-    --chart-3: 150 40% 35%;   /* Darker, Desaturated Green */
-    --chart-4: 210 30% 50%;   /* Muted Blue */
-    --chart-5: 220 10% 70%;   /* Lighter Neutral Gray */
+    --chart-1: hsl(var(--primary));       /* Leafy Green */
+    --chart-2: hsl(var(--secondary));     /* Sunset Orange */
+    --chart-3: hsl(var(--accent));        /* Soft Purple */
+    --chart-4: 130 35% 60%;             /* Lighter/Muted Leafy Green */
+    --chart-5: 30 70% 65%;              /* Lighter/Muted Sunset Orange */
   }
 }
 
@@ -120,4 +118,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
