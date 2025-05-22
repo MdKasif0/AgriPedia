@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useParams, notFound, usePathname } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import * as UserDataStore from '@/lib/userDataStore';
+import * as UserDataStore from '@/lib/userDataStore'; // Still used for favorites
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -44,7 +44,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; // Using default for Moderate as it stands out
+      return 'default'; 
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -57,11 +57,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
 };
 
 const getCurrentSeason = (): string => {
-  const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
-  if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
-  if (month >= 5 && month <= 7) return 'Summer'; // Jun, Jul, Aug
-  if (month >= 8 && month <= 10) return 'Autumn'; // Sep, Oct, Nov
-  return 'Winter'; // Dec, Jan, Feb
+  const month = new Date().getMonth(); 
+  if (month >= 2 && month <= 4) return 'Spring'; 
+  if (month >= 5 && month <= 7) return 'Summer'; 
+  if (month >= 8 && month <= 10) return 'Autumn'; 
+  return 'Winter'; 
 };
 
 type Recipe = {
@@ -73,10 +73,9 @@ type Recipe = {
 
 export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: string | string[] }) {
   const { toast } = useToast();
-  const params = useParams<{ slug?: string | string[] }>(); // For potential direct access if slugFromParams isn't passed
-  const pathname = usePathname(); // Can be useful for constructing share URLs if needed
+  const params = useParams<{ slug?: string | string[] }>(); 
+  const pathname = usePathname(); 
 
-  // Use slugFromParams if provided (from Server Component), otherwise fallback to params from hook
   const actualSlugParam = slugFromParams || params?.slug;
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
@@ -120,11 +119,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            if (UserDataStore && typeof UserDataStore.addRecentView === 'function') {
-              UserDataStore.addRecentView(onlineData.id);
-            } else {
-              console.warn('UserDataStore.addRecentView is not available');
-            }
+            // Removed UserDataStore.addRecentView call
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -224,7 +219,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       UserDataStore.addFavorite(produce.id);
       playSound('/sounds/bookmark-added.mp3');
       setAnimateBookmark(true);
-      setTimeout(() => setAnimateBookmark(false), 300); // Animation duration
+      setTimeout(() => setAnimateBookmark(false), 300); 
     }
     setIsBookmarked(!isBookmarked);
   };
@@ -235,14 +230,13 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     const shareData = {
       title: `Learn about ${produce.commonName} - AgriPedia`,
       text: `Check out ${produce.commonName} on AgriPedia: ${produce.description.substring(0, 100)}...`,
-      url: window.location.href, // Uses the current page URL
+      url: window.location.href, 
     };
     try {
       if (navigator.share) {
         await navigator.share(shareData);
         toast({ title: 'Shared!', description: `${produce.commonName} details shared successfully.` });
       } else {
-        // Fallback for browsers that don't support Web Share API
         await navigator.clipboard.writeText(window.location.href);
         toast({ title: 'Link Copied!', description: `URL for ${produce.commonName} copied to clipboard.` });
       }
@@ -261,7 +255,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     notFound();
     return null;
   }
-  if (!produce) return null; // Should be caught by the above, but good for type safety
+  if (!produce) return null; 
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];

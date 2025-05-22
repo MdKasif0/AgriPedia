@@ -7,10 +7,9 @@ import dynamic from 'next/dynamic';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
-import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
-import * as UserDataStore from '@/lib/userDataStore';
+import * as UserDataStore from '@/lib/userDataStore'; // Keep for favorites and recent searches
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell, History } from 'lucide-react';
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell } from 'lucide-react'; // Removed History
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
@@ -57,8 +56,7 @@ export default function HomePage() {
 
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [seasonalSuggestions, setSeasonalSuggestions] = useState<ProduceInfo[]>([]);
-  const [recentViewedItems, setRecentViewedItems] = useState<ProduceInfo[]>([]);
-
+  // Removed recentViewedItems state
 
   const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
   const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
@@ -111,12 +109,10 @@ export default function HomePage() {
     const allCurrentProduce = getAllProduce();
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
     
-    const currentSeasonal = getInSeasonProduce(5); // Get 5 random seasonal items
+    const currentSeasonal = getInSeasonProduce(5);
     setSeasonalSuggestions(currentSeasonal);
 
-    const recentIds = UserDataStore.getRecentViewIds();
-    setRecentViewedItems(recentIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-
+    // Removed logic for recent viewed items
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -178,7 +174,7 @@ export default function HomePage() {
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    addRecentSearch(item.commonName);
+    UserDataStore.addRecentSearch(item.commonName); // Still keep recent text searches
     loadUserData();
     triggerHapticFeedback();
     router.push(`/item/${encodeURIComponent(item.id)}`);
@@ -195,7 +191,7 @@ export default function HomePage() {
   const handleSubmitSearch = useCallback((submittedQuery: string) => {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
-        addRecentSearch(submittedQuery);
+        UserDataStore.addRecentSearch(submittedQuery);
         loadUserData();
     }
     const results = searchProduce(submittedQuery, {
@@ -301,7 +297,7 @@ export default function HomePage() {
                   onSubmitSearch={handleSubmitSearch}
                   onClearSearch={handleClearSearch}
                   inputRef={searchInputRef}
-                  onFocus={() => handleQueryChange(searchQuery)} // Existing onFocus, triggers seasonal if query is empty
+                  onFocus={() => handleQueryChange(searchQuery)} 
                 />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
@@ -338,20 +334,7 @@ export default function HomePage() {
         </section>
       </div>
 
-      {recentViewedItems.length > 0 && (
-        <section className="space-y-4 w-full">
-          <h2 className="text-2xl font-semibold flex items-center gap-2 text-foreground"><History className="text-primary" /> Recently Viewed</h2>
-          <div className="flex overflow-x-auto space-x-4 pb-4 min-w-0 touch-pan-x">
-            {recentViewedItems.map(item => (
-              <div key={item.id} className="flex-shrink-0 w-56 sm:w-64">
-                <ProduceCard produce={item} />
-              </div>
-            ))}
-          </div>
-          {recentViewedItems.length > 1 && <p className="text-xs text-muted-foreground text-right mt-1">Scroll for more &rarr;</p>}
-        </section>
-      )}
-
+      {/* Recently Viewed Section Removed */}
 
       <section className="space-y-4">
         <div className="flex items-center justify-between">

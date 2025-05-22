@@ -3,10 +3,9 @@
 
 const FAVORITES_KEY = 'agripedia-favorites';
 const RECENT_SEARCHES_KEY = 'agripedia-recent-searches';
-const RECENT_VIEWS_KEY = 'agripedia-recent-views'; // Added
+// RECENT_VIEWS_KEY and MAX_RECENT_VIEWS removed
 
 const MAX_RECENT_SEARCHES = 5;
-const MAX_RECENT_VIEWS = 5; // Added: Limit for recently viewed items
 
 // --- Favorites ---
 
@@ -60,27 +59,5 @@ export function clearRecentSearches(): void {
   localStorage.removeItem(RECENT_SEARCHES_KEY);
 }
 
-// --- Recently Viewed Items (Produce IDs) --- Added this section
-
-export function getRecentViewIds(): string[] {
-  if (typeof window === 'undefined') return [];
-  const storedViews = localStorage.getItem(RECENT_VIEWS_KEY);
-  return storedViews ? JSON.parse(storedViews) : [];
-}
-
-export function addRecentView(produceId: string): void {
-  if (typeof window === 'undefined' || !produceId.trim()) return;
-  let views = getRecentViewIds();
-  // Remove existing instance of the ID to move it to the front
-  views = views.filter(id => id !== produceId);
-  // Add new ID to the beginning
-  views.unshift(produceId);
-  // Limit the number of recent views
-  views = views.slice(0, MAX_RECENT_VIEWS);
-  localStorage.setItem(RECENT_VIEWS_KEY, JSON.stringify(views));
-}
-
-export function clearRecentViews(): void {
-  if (typeof window === 'undefined') return;
-  localStorage.removeItem(RECENT_VIEWS_KEY);
-}
+// --- Recently Viewed Items (Produce IDs) --- Section Removed
+// getRecentViewIds, addRecentView, clearRecentViews functions removed
