@@ -10,10 +10,22 @@ import * as UserDataStore from '@/lib/userDataStore';
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
+import dynamic from 'next/dynamic';
 
-import NutrientChart from '@/components/charts/NutrientChart';
-import VitaminChart from '@/components/charts/VitaminChart';
-import MineralChart from '@/components/charts/MineralChart';
+// Dynamically import chart components
+const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
+  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  ssr: false
+});
+const VitaminChart = dynamic(() => import('@/components/charts/VitaminChart'), {
+  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  ssr: false
+});
+const MineralChart = dynamic(() => import('@/components/charts/MineralChart'), {
+  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  ssr: false
+});
+
 import IconLabel from '@/components/ui/IconLabel';
 import Loader from '@/components/ui/Loader';
 import { Button } from '@/components/ui/button';
@@ -64,6 +76,9 @@ type Recipe = {
 
 export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: string | string[] }) {
   const { toast } = useToast();
+  const { slug: slugParamFromHook } = useParams<{ slug?: string | string[] }>();
+  const actualSlugParam = slugFromParams || slugParamFromHook;
+
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
@@ -81,9 +96,9 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
   const [recipeError, setRecipeError] = useState<string | null>(null);
 
   const processedSlug = useMemo(() => {
-    if (!slugFromParams) return '';
-    return typeof slugFromParams === 'string' ? decodeURIComponent(slugFromParams) : Array.isArray(slugFromParams) ? decodeURIComponent(slugFromParams[0]) : '';
-  }, [slugFromParams]);
+    if (!actualSlugParam) return '';
+    return typeof actualSlugParam === 'string' ? decodeURIComponent(actualSlugParam) : Array.isArray(actualSlugParam) ? decodeURIComponent(actualSlugParam[0]) : '';
+  }, [actualSlugParam]);
 
 
   useEffect(() => {
@@ -97,25 +112,22 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       setIsLoading(true);
       setIsOfflineSource(false);
       let itemData: ProduceInfo | null = null;
-      let onlineFetchAttempted = false;
-
       const isOnline = typeof window !== 'undefined' && navigator.onLine;
 
       if (isOnline) {
         try {
           const onlineData = getProduceByCommonName(processedSlug);
-          onlineFetchAttempted = true;
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            if (typeof UserDataStore.addRecentView === 'function') {
-               UserDataStore.addRecentView(onlineData.id);
+            if (UserDataStore && typeof UserDataStore.addRecentView === 'function') {
+              UserDataStore.addRecentView(onlineData.id);
             } else {
               console.warn('UserDataStore.addRecentView is not available');
             }
           }
         } catch (error) {
-          console.warn('Online fetch failed, trying offline cache:', error);
+          console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
         }
       }
 
@@ -256,8 +268,8 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
   return (
     <div className="space-y-8 py-8">
       {isOfflineSource && (
-        <Alert variant="default" className="bg-accent/80 text-accent-foreground border-accent-foreground/30">
-          <WifiOff className="h-5 w-5 text-accent-foreground" />
+        <Alert variant="default" className="bg-secondary/80 text-secondary-foreground border-secondary-foreground/30">
+          <WifiOff className="h-5 w-5 text-secondary-foreground" />
           <AlertTitle>Offline Mode</AlertTitle>
           <AlertDescription>
             You are viewing a cached version of this page. Some information might be outdated.
