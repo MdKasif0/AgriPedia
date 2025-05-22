@@ -1646,7 +1646,7 @@
         { "name": "Fiber", "value": 4.3, "unit": "g" }
       ],
       "vitamins": [
-        { "name": "Vitamin C", "value": 27.7, "unit": "mg", "rdi": "46%" } 
+        { "name": "Vitamin C", "value": 27.7, "unit": "mg", "rdi": "46%" }
       ],
       "minerals": [
         { "name": "Manganese", "value": 0.144, "unit": "mg", "rdi": "7%" }
@@ -2011,7 +2011,583 @@
         "steps": ["In a medium bowl, gently combine diced/sliced kiwi and other chosen fruits.", "In a small bowl, whisk together lime juice and honey (if using).", "Drizzle the lime-honey mixture over the fruit salad.", "Sprinkle with fresh chopped mint.", "Toss gently to combine. Serve chilled or at room temperature."]
       }
     ]
+  },
+  {
+    "id": "dragon-fruit",
+    "commonName": "Dragon Fruit (Pitaya)",
+    "scientificName": "Hylocereus undatus (most common), Selenicereus spp.",
+    "image": "https://placehold.co/600x437.png",
+    "description": "A fruit from several different cactus species. It has a vibrant pink or yellow skin with green scales and white or red flesh dotted with tiny black seeds. The flavor is mildly sweet.",
+    "origin": "Mexico, Central and South America",
+    "localNames": ["Pitaya (Spanish)", "Thang Loy (Thai)", "Buah Naga (Indonesian/Malay)"],
+    "regions": ["Vietnam", "Thailand", "China", "Mexico", "Israel", "Australia", "United States (Florida, California)"],
+    "seasons": ["Summer to early Autumn, varies by region"],
+    "nutrition": {
+      "calories": "60 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 13, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 2.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 2.5, "unit": "mg", "rdi": "4%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 0.74, "unit": "mg", "rdi": "4%" },
+        { "name": "Magnesium", "value": 18, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of fiber, aiding digestion.",
+      "Contains antioxidants like betacyanins (in red-fleshed varieties) and hydroxycinnamates.",
+      "May boost the immune system due to its Vitamin C and carotenoid content.",
+      "Rich in prebiotics, which feed healthy gut bacteria."
+    ],
+    "potentialAllergies": [
+      { "name": "Dragon Fruit Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical or subtropical, thrives in warm, humid environments. Needs support for climbing (cactus vine).\n2. Soil: Well-draining soil, sandy loam is ideal. Tolerates poor soils but benefits from organic matter.\n3. Propagation: Easily grown from seeds or stem cuttings.\n4. Planting: Plant cuttings or seedlings near a sturdy trellis, post, or wall for support.\n5. Watering: Water regularly, but allow soil to dry out slightly between waterings. Drought-tolerant once established.\n6. Fertilizing: Apply balanced fertilizer or organic compost during the growing season.\n7. Pollination: Flowers are nocturnal and often require hand pollination or specific pollinators (moths, bats) for good fruit set, especially for some varieties.\n8. Harvesting: Fruit is ready when the skin color is vibrant (pink or yellow) and the 'wings' or scales start to wither slightly. It should detach easily.",
+    "growthDuration": "Can start bearing fruit in 1-3 years from cuttings. Fruits mature 30-50 days after flowering.",
+    "sustainabilityTips": [
+      "Store at room temperature for a few days or refrigerate for longer life.",
+      "Eat fresh by scooping out the flesh. The tiny black seeds are edible.",
+      "Compost the skin."
+    ],
+    "carbonFootprintInfo": "Moderate to high if transported from distant tropical regions (0.8-2.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Dragon Fruit Smoothie Bowl",
+        "description": "A vibrant and healthy smoothie bowl topped with fresh fruits and nuts.",
+        "ingredients": ["1 frozen dragon fruit (pink or white flesh), chopped", "1/2 frozen banana", "1/2 cup coconut water or almond milk", "Toppings: Sliced fresh dragon fruit, berries, granola, chia seeds, coconut flakes"],
+        "steps": ["Combine frozen dragon fruit, frozen banana, and coconut water/milk in a high-speed blender.", "Blend until thick and smooth, like soft-serve ice cream. Add a little more liquid if needed, but keep it thick.", "Pour the smoothie into a bowl.", "Arrange toppings decoratively over the smoothie bowl.", "Serve immediately."]
+      },
+      {
+        "name": "Dragon Fruit Salad",
+        "description": "A refreshing and visually stunning fruit salad.",
+        "ingredients": ["1 dragon fruit, peeled and cubed", "1 cup mixed berries (strawberries, blueberries)", "1 kiwi, peeled and sliced", "1/2 mango, peeled and cubed (optional)", "Juice of 1/2 lime", "1 tbsp honey or agave (optional)", "Fresh mint leaves for garnish"],
+        "steps": ["In a large bowl, gently combine cubed dragon fruit, mixed berries, sliced kiwi, and mango (if using).", "In a small bowl, whisk together lime juice and honey/agave (if using).", "Drizzle the dressing over the fruit salad.", "Garnish with fresh mint leaves. Toss gently and serve chilled."]
+      },
+      {
+        "name": "Dragon Fruit Lemonade",
+        "description": "A colorful and exotic twist on classic lemonade.",
+        "ingredients": ["1/4 cup dragon fruit puree (blend flesh of 1/2 dragon fruit)", "1 cup fresh lemon juice", "1/2 cup sugar (or to taste)", "4 cups cold water", "Ice cubes", "Dragon fruit slices and lemon slices for garnish"],
+        "steps": ["In a small saucepan, make simple syrup by combining sugar and 1 cup of water. Heat until sugar dissolves, then let cool.", "In a large pitcher, combine lemon juice, cooled simple syrup, dragon fruit puree, and the remaining 3 cups of cold water.", "Stir well to combine. Taste and adjust sweetness if needed.", "Serve over ice, garnished with dragon fruit slices and lemon slices."]
+      }
+    ]
+  },
+  {
+    "id": "avocado",
+    "commonName": "Avocado",
+    "scientificName": "Persea americana",
+    "image": "https://placehold.co/600x438.png",
+    "description": "A large berry containing a single large seed. It has a creamy texture and rich, buttery flavor. Known for its healthy fats.",
+    "origin": "South-central Mexico",
+    "localNames": ["Aguacate (Spanish)", "Avocat (French)", "Palta (some South American countries)"],
+    "regions": ["Mexico", "Dominican Republic", "Peru", "Indonesia", "Colombia", "Brazil", "United States (California)"],
+    "seasons": ["Varies by variety and region; often year-round availability due to global sourcing"],
+    "nutrition": {
+      "calories": "160 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 8.5, "unit": "g" },
+        { "name": "Fat", "value": 14.7, "unit": "g" },
+        { "name": "Fiber", "value": 6.7, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin K", "value": 21, "unit": "µg", "rdi": "26%" },
+        { "name": "Folate", "value": 81, "unit": "µg", "rdi": "20%" },
+        { "name": "Vitamin C", "value": 10, "unit": "mg", "rdi": "17%" },
+        { "name": "Vitamin B5 (Pantothenic Acid)", "value": 1.4, "unit": "mg", "rdi": "28%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 485, "unit": "mg", "rdi": "14%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in monounsaturated fats, particularly oleic acid, beneficial for heart health.",
+      "High in fiber, aiding digestion and promoting satiety.",
+      "Excellent source of potassium, which helps regulate blood pressure.",
+      "Contains various vitamins and antioxidants that support overall health."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex-Fruit Syndrome", "severity": "Mild", "details": "Individuals allergic to latex may also react to avocados." },
+      { "name": "Avocado Allergy", "severity": "Rare", "details": "True avocado allergy is rare but can cause oral allergy symptoms or more severe reactions." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to tropical. Different varieties have different cold tolerances.\n2. Soil: Well-drained, aerated soil with a pH of 6.0-7.0. Avoid heavy clay soils.\n3. Propagation: Usually by grafting onto rootstock. Growing from seed is possible but fruit quality is unpredictable and takes longer.\n4. Planting: Plant in full sun, protected from strong winds.\n5. Watering: Regular, deep watering, especially for young trees and during fruit development. Allow soil to dry slightly between waterings.\n6. Fertilizing: Apply balanced citrus/avocado fertilizer several times a year.\n7. Harvesting: Avocados do not ripen on the tree. They are harvested when mature (size and oil content) and then ripen at room temperature. Maturity signs vary by variety.",
+    "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Fruits take 6-18 months to mature on the tree, depending on variety.",
+    "sustainabilityTips": [
+      "Store unripe avocados at room temperature; ripened ones in the refrigerator.",
+      "To speed up ripening, place in a paper bag with an apple or banana.",
+      "Use lemon/lime juice on cut avocado to prevent browning.",
+      "Consider water usage in avocado production; choose sources with sustainable water practices if possible."
+    ],
+    "carbonFootprintInfo": "Can be high due to water requirements and transportation (0.8-2.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Classic Guacamole",
+        "description": "A staple Mexican dip made from mashed avocados, lime juice, onions, cilantro, and seasonings.",
+        "ingredients": ["3 ripe avocados", "1/2 small onion, finely chopped", "1-2 jalapeños or serrano peppers, minced (optional)", "1/2 cup chopped fresh cilantro", "Juice of 1-2 limes", "Salt to taste", "Optional: 1/2 cup diced tomatoes"],
+        "steps": ["Cut avocados in half, remove pits, and scoop flesh into a medium bowl.", "Mash the avocado with a fork to desired consistency (chunky or smooth).", "Add chopped onion, minced jalapeño/serrano (if using), cilantro, and lime juice. Stir to combine.", "Season with salt to taste. If using tomatoes, gently fold them in.", "Serve immediately with tortilla chips or as a topping."]
+      },
+      {
+        "name": "Avocado Toast",
+        "description": "A simple and popular breakfast or snack.",
+        "ingredients": ["1 ripe avocado", "2 slices of your favorite bread, toasted", "Salt and pepper to taste", "Optional toppings: Red pepper flakes, everything bagel seasoning, a drizzle of olive oil, a squeeze of lemon juice, a fried egg"],
+        "steps": ["Toast bread slices to desired crispness.", "Mash avocado in a small bowl with a fork. Season with salt and pepper (and lemon juice if using).", "Spread the mashed avocado evenly over the toasted bread.", "Add any desired toppings. Serve immediately."]
+      },
+      {
+        "name": "Avocado Chocolate Mousse",
+        "description": "A surprisingly delicious and healthy dessert that's rich and creamy.",
+        "ingredients": ["2 ripe avocados", "1/4 cup unsweetened cocoa powder", "1/4 cup maple syrup or honey (or to taste)", "1/4 cup almond milk or other non-dairy milk", "1 tsp vanilla extract", "Pinch of salt"],
+        "steps": ["Combine avocado flesh, cocoa powder, maple syrup/honey, almond milk, vanilla extract, and salt in a food processor or high-speed blender.", "Blend until completely smooth and creamy, scraping down the sides as needed.", "Taste and adjust sweetness if necessary.", "Divide into small serving dishes and chill in the refrigerator for at least 30 minutes to an hour to firm up.", "Serve chilled. Can be topped with berries or chocolate shavings."]
+      }
+    ]
+  },
+  {
+    "id": "mulberry",
+    "commonName": "Mulberry",
+    "scientificName": "Morus spp.",
+    "image": "https://placehold.co/600x439.png",
+    "description": "A fast-growing, small to medium-sized tree native to warm temperate and subtropical regions. The fruit is a multiple fruit, about 2–3 cm long, resembling a blackberry. They can be red, dark purple, or white.",
+    "origin": "Asia, North America",
+    "localNames": ["Shahtoot (Hindi/Urdu)", "Mora (Spanish)", "Mûre (French - also refers to blackberry)"],
+    "regions": ["China", "India", "Turkey", "Iran", "United States", "Southern Europe"],
+    "seasons": ["Late Spring to Summer"],
+    "nutrition": {
+      "calories": "43 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 9.8, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 1.7, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 36.4, "unit": "mg", "rdi": "61%" },
+        { "name": "Vitamin K", "value": 7.8, "unit": "µg", "rdi": "10%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 1.85, "unit": "mg", "rdi": "10%" },
+        { "name": "Potassium", "value": 194, "unit": "mg", "rdi": "6%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C and iron.",
+      "Contain antioxidants like anthocyanins and resveratrol.",
+      "May help lower cholesterol and blood sugar levels.",
+      "Traditionally used to improve eyesight and boost immunity."
+    ],
+    "potentialAllergies": [
+      { "name": "Mulberry Pollen Allergy", "severity": "Mild", "details": "Pollen from mulberry trees can be allergenic for some individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Adaptable to a wide range of temperate and subtropical climates. Some varieties are drought-tolerant.\n2. Soil: Prefers well-drained, fertile loamy soil but tolerates various soil types.\n3. Propagation: Easily grown from seeds, cuttings, or grafting.\n4. Planting: Plant in full sun. Trees can grow quite large and spread.\n5. Watering: Water young trees regularly. Established trees are relatively drought-tolerant.\n6. Fertilizing: Generally do not require much fertilization. Organic compost can be beneficial.\n7. Pruning: Prune to maintain shape and size, and to remove dead or diseased wood.\n8. Harvesting: Fruits are harvested when they are fully colored (red, purple, or white depending on variety) and detach easily. They are very soft and perishable.",
+    "growthDuration": "Can start bearing fruit in 2-3 years. Fruits ripen in late spring to summer.",
+    "sustainabilityTips": [
+      "Mulberries are highly perishable; consume or process them quickly after picking.",
+      "They stain easily, so be careful when harvesting and eating.",
+      "Excellent for jams, jellies, pies, or drying."
+    ],
+    "carbonFootprintInfo": "Low, especially if foraged or grown locally (0.2-0.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Mulberry Jam",
+        "description": "A sweet and slightly tart jam made from fresh mulberries.",
+        "ingredients": ["4 cups fresh mulberries, rinsed", "2 cups granulated sugar", "2 tbsp lemon juice"],
+        "steps": ["Combine mulberries, sugar, and lemon juice in a large, heavy-bottomed pot.", "Mash the mulberries slightly with a potato masher or fork.", "Bring the mixture to a boil over medium-high heat, stirring constantly.", "Reduce heat to medium-low and continue to simmer, stirring frequently, until the jam thickens. This can take 20-30 minutes. To test for doneness, place a small amount of jam on a chilled plate; if it wrinkles when pushed, it's ready.", "Skim off any foam from the surface.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator for up to a few weeks."]
+      },
+      {
+        "name": "Fresh Mulberry Parfait",
+        "description": "A simple and healthy dessert or breakfast layering mulberries, yogurt, and granola.",
+        "ingredients": ["1 cup fresh mulberries", "1 cup plain or vanilla yogurt", "1/2 cup granola", "Honey or maple syrup for drizzling (optional)"],
+        "steps": ["In a glass or small bowl, layer ingredients: start with a layer of yogurt, followed by a layer of mulberries, then a layer of granola.", "Repeat the layers if desired.", "Drizzle with honey or maple syrup if using.", "Serve immediately for best texture."]
+      },
+      {
+        "name": "Mulberry Crumble Pie",
+        "description": "A comforting pie with a sweet mulberry filling and a buttery crumble topping.",
+        "ingredients": ["For filling: 4 cups fresh mulberries", "1/2 cup sugar", "2 tbsp all-purpose flour or cornstarch", "1 tbsp lemon juice", "For crumble: 1 cup all-purpose flour", "1/2 cup brown sugar", "1/2 cup cold butter, cubed", "1/2 cup rolled oats (optional)", "Unbaked 9-inch pie crust"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Prepare pie crust in a 9-inch pie dish.", "Filling: In a large bowl, gently toss mulberries with sugar, flour/cornstarch, and lemon juice. Pour into the unbaked pie crust.", "Crumble: In another bowl, combine flour and brown sugar. Cut in cold butter until the mixture resembles coarse crumbs. Stir in oats if using.", "Sprinkle the crumble topping evenly over the mulberry filling.", "Bake for 40-50 minutes, or until the crust is golden brown and the filling is bubbly. Cover edges of crust with foil if they start to brown too quickly.", "Let cool for at least 30 minutes before slicing and serving."]
+      }
+    ]
+  },
+  {
+    "id": "raspberry",
+    "commonName": "Raspberry",
+    "scientificName": "Rubus idaeus",
+    "image": "https://placehold.co/600x440.png",
+    "description": "An edible fruit of a multitude of plant species in the genus Rubus of the rose family. Most are within the subgenus Idaeobatus. The fruit is a delicate aggregate fruit, typically red, but also black, purple, or golden.",
+    "origin": "Europe, Northern Asia",
+    "localNames": ["Frambuesa (Spanish)", "Framboise (French)", "Himbeere (German)"],
+    "regions": ["Russia", "Mexico", "Poland", "United States", "Serbia"],
+    "seasons": ["Summer to early Autumn"],
+    "nutrition": {
+      "calories": "52 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 11.9, "unit": "g" },
+        { "name": "Fat", "value": 0.7, "unit": "g" },
+        { "name": "Fiber", "value": 6.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 26.2, "unit": "mg", "rdi": "44%" },
+        { "name": "Manganese", "value": 0.67, "unit": "mg", "rdi": "34%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 151, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "High in dietary fiber, promoting digestive health.",
+      "Rich in Vitamin C and antioxidants like anthocyanins and ellagic acid.",
+      "May have anti-inflammatory properties.",
+      "Can contribute to brain health and protect against age-related cognitive decline."
+    ],
+    "potentialAllergies": [
+      { "name": "Raspberry Allergy", "severity": "Rare", "details": "Uncommon, but can cause oral allergy symptoms or skin reactions in sensitive individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Many varieties require winter chill.\n2. Soil: Well-drained, fertile soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: From suckers or cane cuttings.\n4. Planting: Plant in early spring. Provide support like a trellis or wires for canes.\n5. Watering: Consistent moisture is important, especially during fruit development. Avoid waterlogged soil.\n6. Fertilizing: Apply balanced fertilizer or compost in spring.\n7. Pruning: Pruning methods vary depending on whether they are summer-bearing or everbearing varieties. Generally involves removing old, fruited canes.\n8. Harvesting: Berries are harvested when they are fully colored and detach easily from the receptacle. They are very delicate.",
+    "growthDuration": "Canes often produce fruit in their second year. Harvest season is typically summer to early autumn.",
+    "sustainabilityTips": [
+      "Store unwashed raspberries in the refrigerator in a shallow container; consume within 1-2 days.",
+      "Wash gently just before eating.",
+      "Freeze excess raspberries on a baking sheet before transferring to a freezer bag."
+    ],
+    "carbonFootprintInfo": "Moderate, can be higher if air-freighted due to perishability (0.8-2.0 kg CO2e/kg). Local and seasonal are best.",
+    "staticRecipes": [
+      {
+        "name": "Fresh Raspberries with Cream",
+        "description": "A simple and elegant dessert highlighting the natural flavor of raspberries.",
+        "ingredients": ["1 pint fresh raspberries", "1/4 cup heavy cream or crème fraîche", "1-2 tsp powdered sugar (optional)"],
+        "steps": ["Gently rinse raspberries and pat dry.", "Divide raspberries among serving bowls.", "If using powdered sugar, lightly sweeten the heavy cream or crème fraîche.", "Drizzle the cream over the raspberries.", "Serve immediately."]
+      },
+      {
+        "name": "Raspberry Vinaigrette",
+        "description": "A vibrant and flavorful dressing for salads.",
+        "ingredients": ["1/2 cup fresh or frozen raspberries", "1/4 cup olive oil", "2 tbsp red wine vinegar or apple cider vinegar", "1 tbsp honey or maple syrup", "1 tsp Dijon mustard", "Salt and pepper to taste"],
+        "steps": ["If using frozen raspberries, thaw them slightly.", "Combine raspberries, olive oil, vinegar, honey/maple syrup, and Dijon mustard in a blender or food processor.", "Blend until smooth.", "Strain the mixture through a fine-mesh sieve to remove seeds, if desired.", "Season with salt and pepper to taste. Store in an airtight container in the refrigerator."]
+      },
+      {
+        "name": "Raspberry Oatmeal Crumble Bars",
+        "description": "Delicious and relatively healthy bars with a raspberry filling and an oat crumble topping.",
+        "ingredients": ["For crust/crumble: 1 1/2 cups rolled oats, 1 cup all-purpose flour, 3/4 cup brown sugar, 1/2 tsp cinnamon, 1/2 cup cold butter (cubed)", "For filling: 2 cups fresh or frozen raspberries, 1/4 cup granulated sugar, 1 tbsp cornstarch, 1 tbsp lemon juice"],
+        "steps": ["Preheat oven to 375°F (190°C). Grease and flour an 8x8 inch baking pan.", "Crust/Crumble: In a medium bowl, combine rolled oats, flour, brown sugar, and cinnamon. Cut in cold butter using a pastry blender or your fingers until the mixture resembles coarse crumbs. Reserve about 1 cup of the crumble mixture for the topping. Press the remaining mixture firmly into the bottom of the prepared pan to form the crust.", "Bake the crust for 10 minutes.", "Filling: While crust is baking, combine raspberries, granulated sugar, cornstarch, and lemon juice in a saucepan. Cook over medium heat, stirring frequently, until the mixture thickens and raspberries start to break down (about 5-7 minutes).", "Pour the raspberry filling evenly over the partially baked crust.", "Sprinkle the reserved crumble mixture over the filling.", "Bake for another 20-25 minutes, or until the topping is golden brown and the filling is bubbly.", "Let cool completely in the pan before cutting into bars."]
+      }
+    ]
+  },
+  {
+    "id": "blueberry",
+    "commonName": "Blueberry",
+    "scientificName": "Vaccinium sect. Cyanococcus",
+    "image": "https://placehold.co/600x441.png",
+    "description": "A small, round, blue to purple berry, known for its sweet and slightly tart flavor. They are native to North America.",
+    "origin": "North America",
+    "localNames": ["Arándano (Spanish)", "Myrtille (French - often refers to bilberry, but also blueberry)", "Blaubeere/Heidelbeere (German)"],
+    "regions": ["United States", "Canada", "Chile", "Peru", "Poland", "Mexico"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "57 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14.5, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 9.7, "unit": "mg", "rdi": "16%" },
+        { "name": "Vitamin K", "value": 19.3, "unit": "µg", "rdi": "24%" },
+        { "name": "Manganese", "value": 0.336, "unit": "mg", "rdi": "17%" }
+      ],
+      "minerals": []
+    },
+    "healthBenefits": [
+      "Very high in antioxidants, particularly anthocyanins, which give them their blue color.",
+      "May improve brain health and memory.",
+      "Can help reduce DNA damage and protect against aging and cancer.",
+      "Beneficial for heart health by lowering blood pressure and improving cholesterol levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Blueberry Allergy", "severity": "Rare", "details": "Uncommon, but can occur." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate. Require winter chill. Different types (highbush, lowbush, rabbiteye) have different needs.\n2. Soil: Very acidic (pH 4.0-5.0), well-drained, sandy soil rich in organic matter. Amend soil with peat moss or sulfur.\n3. Propagation: From cuttings or nursery plants.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Consistent moisture is crucial, especially during establishment and fruit development. Use rainwater if possible due to acidity preference.\n6. Fertilizing: Use fertilizers formulated for acid-loving plants (e.g., azalea/rhododendron fertilizer).\n7. Mulching: Mulch with pine needles, wood chips, or sawdust to retain moisture, suppress weeds, and maintain soil acidity.\n8. Harvesting: Berries ripen over several weeks. Harvest when they are fully blue, plump, and detach easily.",
+    "growthDuration": "Plants typically start producing a good crop 2-3 years after planting. Harvest season is summer.",
+    "sustainabilityTips": [
+      "Store unwashed blueberries in the refrigerator; consume within a week or two.",
+      "Wash just before eating.",
+      "Excellent for freezing: spread on a baking sheet to freeze individually, then transfer to a freezer bag."
+    ],
+    "carbonFootprintInfo": "Moderate, depending on origin and transport (0.7-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Classic Blueberry Muffins",
+        "description": "Moist and fluffy muffins packed with fresh blueberries.",
+        "ingredients": ["1 1/2 cups all-purpose flour", "3/4 cup granulated sugar", "1/2 tsp salt", "2 tsp baking powder", "1/3 cup vegetable oil", "1 egg, lightly beaten", "1/3 cup milk", "1 cup fresh or frozen blueberries (if frozen, do not thaw)"],
+        "steps": ["Preheat oven to 400°F (200°C). Grease or line a 12-cup muffin tin.", "In a large bowl, combine flour, sugar, salt, and baking powder.", "In a separate small bowl, combine vegetable oil, egg, and milk.", "Pour the wet ingredients into the dry ingredients and mix until just moistened (do not overmix).", "Gently fold in the blueberries.", "Divide batter evenly among the prepared muffin cups.", "Bake for 20-25 minutes, or until a toothpick inserted into the center comes out clean. Let cool in pan for a few minutes before transferring to a wire rack."]
+      },
+      {
+        "name": "Blueberry Pancakes",
+        "description": "Fluffy pancakes dotted with juicy blueberries.",
+        "ingredients": ["1 1/2 cups all-purpose flour", "2 tbsp sugar", "2 tsp baking powder", "1/2 tsp salt", "1 1/4 cups milk", "1 egg", "2 tbsp melted butter", "1 cup fresh or frozen blueberries"],
+        "steps": ["In a large bowl, whisk together flour, sugar, baking powder, and salt.", "In a separate bowl, whisk together milk, egg, and melted butter.", "Pour the wet ingredients into the dry ingredients and stir until just combined (a few lumps are okay).", "Gently fold in the blueberries.", "Heat a lightly oiled griddle or frying pan over medium heat.", "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle. Cook for 2-3 minutes per side, or until golden brown and cooked through.", "Serve warm with maple syrup and extra blueberries if desired."]
+      },
+      {
+        "name": "Simple Blueberry Sauce (Compote)",
+        "description": "A versatile sauce perfect for topping pancakes, yogurt, ice cream, or cheesecake.",
+        "ingredients": ["2 cups fresh or frozen blueberries", "1/4 cup sugar (or to taste)", "1 tbsp lemon juice", "2 tbsp water"],
+        "steps": ["Combine blueberries, sugar, lemon juice, and water in a medium saucepan.", "Bring to a simmer over medium heat, stirring occasionally.", "Reduce heat to low and cook for 10-15 minutes, or until the blueberries have burst and the sauce has thickened slightly. Mash some of the berries against the side of the pan if you prefer a smoother sauce.", "Remove from heat and let cool. The sauce will thicken more as it cools.", "Serve warm or chilled. Store in an airtight container in the refrigerator."]
+      }
+    ]
+  },
+  {
+    "id": "cherry",
+    "commonName": "Cherry",
+    "scientificName": "Prunus spp. (e.g., Prunus avium - sweet, Prunus cerasus - sour)",
+    "image": "https://placehold.co/600x442.png",
+    "description": "A small, round, fleshy stone fruit that is typically bright or dark red. There are two main types: sweet cherries and sour (or tart) cherries.",
+    "origin": "Europe and Western Asia",
+    "localNames": ["Cereza (Spanish)", "Cerise (French)", "Kirsche (German)"],
+    "regions": ["Turkey", "United States", "Iran", "Chile", "Uzbekistan", "Spain", "Italy"],
+    "seasons": ["Late Spring to Summer"],
+    "nutrition": {
+      "calories": "50-63 kcal per 100g (sweet cherries)",
+      "macronutrients": [
+        { "name": "Protein", "value": 1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 2, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 7, "unit": "mg", "rdi": "12%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 222, "unit": "mg", "rdi": "6%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in antioxidants and anti-inflammatory compounds, like anthocyanins and cyanidin.",
+      "May help reduce muscle soreness and improve recovery after exercise.",
+      "Can promote better sleep due to natural melatonin content (especially tart cherries).",
+      "May help lower risk of gout attacks by reducing uric acid levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Cherry Allergy / Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can occur, often linked to birch pollen allergy." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Sweet cherries require more sun and warmth than sour cherries. Both need winter chill.\n2. Soil: Deep, well-drained, fertile loamy soil. pH 6.0-7.0.\n3. Propagation: Grafting onto rootstock.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Regular watering, especially for young trees and during fruit development.\n6. Fertilizing: Apply balanced fertilizer in early spring.\n7. Pruning: Prune to maintain an open structure for good air circulation and light penetration. Sweet cherries are often trained to a central leader, sour cherries more to an open center.\n8. Harvesting: Cherries are picked when fully ripe and have developed their characteristic color and sweetness. They do not ripen further after picking.",
+    "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Harvest season is typically late spring to summer.",
+    "sustainabilityTips": [
+      "Store cherries unwashed in the refrigerator; consume within a few days for best quality.",
+      "Wash just before eating.",
+      "Pit cherries before freezing for easier use in recipes later."
+    ],
+    "carbonFootprintInfo": "Moderate, transport is a key factor (0.6-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Classic Cherry Pie",
+        "description": "A beloved pie with a sweet or tart cherry filling encased in a flaky crust.",
+        "ingredients": ["Double-crust pie dough (for a 9-inch pie)", "5-6 cups fresh or frozen pitted cherries (sweet or sour)", "3/4 to 1 cup granulated sugar (adjust based on cherry sweetness)", "1/4 cup cornstarch or all-purpose flour", "1 tbsp lemon juice", "1/4 tsp almond extract (optional)", "1 tbsp butter, cut into small pieces", "1 egg, beaten (for egg wash, optional)"],
+        "steps": ["Preheat oven to 400°F (200°C). Line a 9-inch pie plate with bottom crust.", "In a large bowl, combine cherries, sugar, cornstarch/flour, lemon juice, and almond extract (if using). Toss gently to coat.", "Pour the cherry filling into the prepared pie crust. Dot with pieces of butter.", "Place the top crust over the filling. Crimp edges to seal. Cut vents in the top crust to allow steam to escape. If desired, brush with beaten egg for a golden finish.", "Bake for 40-50 minutes, or until the crust is golden brown and the filling is bubbly. Cover edges with foil if they brown too quickly.", "Let cool for at least 2-3 hours before slicing and serving to allow the filling to set."]
+      },
+      {
+        "name": "Cherry Clafoutis",
+        "description": "A rustic French dessert similar to a flan or baked pancake, filled with cherries.",
+        "ingredients": ["1 lb fresh sweet cherries, pitted", "3 eggs", "1/2 cup granulated sugar", "1/2 cup all-purpose flour", "Pinch of salt", "1 cup milk (whole or 2%)", "1 tsp vanilla extract", "Powdered sugar for dusting"],
+        "steps": ["Preheat oven to 350°F (175°C). Butter a 9-inch pie dish or shallow baking dish.", "Arrange the pitted cherries in a single layer in the prepared dish.", "In a medium bowl, whisk together eggs and sugar until pale and slightly thickened.", "Gradually whisk in flour and salt until smooth.", "Slowly whisk in milk and vanilla extract until the batter is smooth and resembles pancake batter.", "Pour the batter evenly over the cherries in the baking dish.", "Bake for 35-45 minutes, or until the clafoutis is puffed, golden brown, and set (a knife inserted near the center should come out clean).", "Let cool slightly. Dust with powdered sugar before serving warm or at room temperature."]
+      },
+      {
+        "name": "Simple Cherry Sauce for Desserts",
+        "description": "A quick and delicious sauce perfect for ice cream, cheesecake, or pancakes.",
+        "ingredients": ["2 cups fresh or frozen pitted cherries", "1/4 cup sugar (or to taste)", "2 tbsp water", "1 tsp lemon juice", "1/4 tsp almond extract (optional)"],
+        "steps": ["Combine cherries, sugar, water, and lemon juice in a medium saucepan.", "Bring to a simmer over medium heat, stirring occasionally.", "Reduce heat to low and cook for 10-15 minutes, or until the cherries have softened and released their juices, and the sauce has thickened slightly.", "Stir in almond extract if using.", "Serve warm or chilled. Store in an airtight container in the refrigerator."]
+      }
+    ]
+  },
+  {
+    "id": "blackcurrant",
+    "commonName": "Blackcurrant",
+    "scientificName": "Ribes nigrum",
+    "image": "https://placehold.co/600x443.png",
+    "description": "A woody shrub in the family Grossulariaceae grown for its piquant berries. It is native to temperate parts of central and northern Europe and northern Asia.",
+    "origin": "Northern Europe and Northern Asia",
+    "localNames": ["Cassis (French)", "Schwarze Johannisbeere (German)", "Grosella negra (Spanish)"],
+    "regions": ["Poland", "Russia", "Germany", "United Kingdom", "France", "New Zealand"],
+    "seasons": ["Mid to Late Summer"],
+    "nutrition": {
+      "calories": "63 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 15.4, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 4.3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 181, "unit": "mg", "rdi": "302%" }
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.256, "unit": "mg", "rdi": "13%" },
+        { "name": "Potassium", "value": 322, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Exceptionally high in Vitamin C, a powerful antioxidant.",
+      "Rich in anthocyanins and other polyphenols, which have strong antioxidant and anti-inflammatory effects.",
+      "May improve eye health and reduce visual fatigue.",
+      "Can boost immune function and support cardiovascular health."
+    ],
+    "potentialAllergies": [
+      { "name": "Blackcurrant Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate, requires winter chill. Tolerates cooler summers.\n2. Soil: Well-drained, fertile soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Hardwood cuttings are most common.\n4. Planting: Plant in early spring or autumn in full sun or partial shade.\n5. Watering: Regular watering, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer or well-rotted manure in spring.\n7. Pruning: Prune in late winter, removing old, unproductive wood to encourage new growth, as fruit is borne on young wood.\n8. Harvesting: Berries are harvested in clusters (strigs) when they are fully black, plump, and slightly soft. They ripen in mid to late summer.",
+    "growthDuration": "Bushes can start fruiting 1-2 years after planting. Productive for 10-15 years.",
+    "sustainabilityTips": [
+      "Blackcurrants are often used for jams, jellies, syrups (like Ribena), and liqueurs (Crème de Cassis).",
+      "They freeze very well.",
+      "Consume fresh quickly as they are somewhat perishable."
+    ],
+    "carbonFootprintInfo": "Moderate, higher if imported (0.7-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Blackcurrant Jam",
+        "description": "A classic, intensely flavored jam with a beautiful deep purple color.",
+        "ingredients": ["2 lbs fresh blackcurrants, stemmed", "2 lbs granulated sugar", "1/2 cup water", "Juice of 1 lemon (optional, for pectin boost)"],
+        "steps": ["Combine blackcurrants, water, and lemon juice (if using) in a large, heavy-bottomed pot.", "Bring to a simmer and cook gently for 15-20 minutes, or until the blackcurrants are soft and have released their juice.", "Add sugar to the pot. Stir over low heat until the sugar is completely dissolved.", "Increase heat to high and bring the mixture to a rolling boil (a boil that continues even when stirred).", "Boil rapidly for 10-15 minutes, or until the jam reaches setting point (220°F/105°C on a jam thermometer, or when a small amount dropped onto a chilled plate wrinkles when pushed).", "Skim off any foam from the surface.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator."]
+      },
+      {
+        "name": "Blackcurrant Cordial (Syrup)",
+        "description": "A concentrated syrup that can be diluted with water or sparkling water for a refreshing drink.",
+        "ingredients": ["2 lbs fresh blackcurrants, stemmed", "2 cups water", "2 cups granulated sugar (or to taste)"],
+        "steps": ["Place blackcurrants and water in a large saucepan. Bring to a boil, then reduce heat and simmer for 20-30 minutes, or until the berries are very soft and have burst.", "Strain the mixture through a jelly bag or several layers of cheesecloth set over a bowl. Allow to drip overnight without squeezing for a clear cordial (or gently squeeze for more yield but a cloudier result).", "Measure the extracted juice. For every 2 cups of juice, add 1 1/2 to 2 cups of sugar (adjust to sweetness preference).", "Combine the juice and sugar in a clean saucepan. Heat gently, stirring, until the sugar is completely dissolved. Do not boil.", "Once sugar is dissolved, pour the hot cordial into sterilized bottles and seal. Store in a cool, dark place or refrigerate after opening."]
+      },
+      {
+        "name": "Blackcurrant Fool",
+        "description": "A simple English dessert made by folding stewed blackcurrants into whipped cream.",
+        "ingredients": ["1 pint (about 2 cups) fresh blackcurrants, stemmed", "1/4 cup granulated sugar (or to taste)", "2 tbsp water", "1 cup heavy whipping cream", "1-2 tbsp powdered sugar (optional, for cream)"],
+        "steps": ["Make a blackcurrant compote: Combine blackcurrants, granulated sugar, and water in a saucepan. Bring to a simmer and cook for 5-10 minutes, until berries are soft and have released their juice. Mash lightly. Let cool completely.", "In a chilled bowl, whip the heavy cream until soft peaks form. If desired, sweeten with powdered sugar during whipping.", "Gently fold the cooled blackcurrant compote into the whipped cream, creating swirls. Do not overmix.", "Spoon into individual serving glasses or bowls.", "Chill for at least 30 minutes before serving."]
+      }
+    ]
+  },
+  {
+    "id": "longan",
+    "commonName": "Longan",
+    "scientificName": "Dimocarpus longan",
+    "image": "https://placehold.co/600x444.png",
+    "description": "A tropical tree species that produces edible fruit. It is one of the better-known tropical members of the soapberry family (Sapindaceae), to which the lychee and rambutan also belong. The fruit is small, round, with a thin brownish shell, translucent white flesh, and a single black seed.",
+    "origin": "Southern China, Southeast Asia (Myanmar, India)",
+    "localNames": ["Dragon's Eye (literal translation of Chinese name)", "Mata Kucing (Malay/Indonesian - Cat's Eye)"],
+    "regions": ["China", "Thailand", "Vietnam", "Taiwan", "India", "Australia", "United States (Florida, Hawaii)"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "60 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.3, "unit": "g" },
+        { "name": "Carbohydrates", "value": 15.1, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 1.1, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 84, "unit": "mg", "rdi": "140%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 266, "unit": "mg", "rdi": "8%" },
+        { "name": "Copper", "value": 0.169, "unit": "mg", "rdi": "19%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, supporting immune function.",
+      "Good source of potassium and copper.",
+      "Traditionally used in Chinese medicine for its calming effects and to improve sleep.",
+      "Contains antioxidants."
+    ],
+    "potentialAllergies": [
+      { "name": "Longan Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Prefers warm, humid conditions. Sensitive to frost.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. Slightly acidic pH.\n3. Propagation: Air layering (marcotting) is common for commercial cultivation. Can be grown from seed, but may take longer to fruit.\n4. Planting: Plant in full sun with good air circulation.\n5. Watering: Requires regular watering, especially during flowering and fruit development.\n6. Fertilizing: Apply balanced fertilizer regularly during the growing season.\n7. Pruning: Prune to shape the tree and improve light penetration.\n8. Harvesting: Fruits are harvested in bunches when the skin turns light brown and the fruit is plump. They do not ripen much after picking.",
+    "growthDuration": "Air-layered trees can fruit in 2-4 years. Fruits mature in summer.",
+    "sustainabilityTips": [
+      "Store fresh longans in the refrigerator; they can last for a couple of weeks.",
+      "Often eaten fresh by peeling the thin shell.",
+      "Dried longans are a popular snack and ingredient in Asian desserts and teas."
+    ],
+    "carbonFootprintInfo": "Moderate, depending on transport (0.8-1.8 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Longans",
+        "description": "The most common way to enjoy the sweet, juicy flesh of longans.",
+        "ingredients": ["A bunch of fresh longans"],
+        "steps": ["Wash the longans.", "To open, gently squeeze the fruit near the stem end until the thin shell cracks, or use your fingernail to make a small break in the shell.", "Peel away the shell to reveal the translucent white flesh.", "Eat the flesh and discard the single, hard black seed in the center (it looks like an eye, hence 'dragon's eye').", "Longans are best enjoyed fresh and chilled."]
+      },
+      {
+        "name": "Longan and Coconut Jelly",
+        "description": "A refreshing and light Asian-style dessert.",
+        "ingredients": ["1 cup fresh longan pulp, seeded (or canned longans, drained)", "1 can (13.5 oz) coconut milk", "1/2 cup sugar (or to taste)", "1 tbsp agar-agar powder", "1 cup water", "Optional: A few pandan leaves for fragrance"],
+        "steps": ["If using fresh longans, peel and seed them. Roughly chop the flesh if desired.", "In a saucepan, combine agar-agar powder and water. Let it sit for 5-10 minutes to bloom.", "Add coconut milk, sugar, and pandan leaves (if using) to the saucepan. Heat over medium heat, stirring constantly, until the sugar and agar-agar are completely dissolved. Bring to a gentle simmer, but do not boil vigorously.", "Simmer for 2-3 minutes, stirring. Remove pandan leaves.", "Stir in the longan pulp.", "Pour the mixture into a jelly mold or individual ramekins.", "Let it cool to room temperature, then transfer to the refrigerator to set completely (at least 2-3 hours).", "To serve, unmold the jelly (if using a large mold) or serve directly from ramekins."]
+      },
+      {
+        "name": "Dried Longan Tea (Longan Gui Yuan Cha)",
+        "description": "A traditional Chinese herbal tea known for its warming and calming properties.",
+        "ingredients": ["1/4 cup dried longan pulp (Gui Yuan Rou)", "2-3 dried red dates (jujubes), pitted and sliced (optional)", "1 small piece of ginger, sliced (optional)", "4 cups water", "Honey or rock sugar to taste (optional)"],
+        "steps": ["Rinse the dried longan pulp and red dates (if using).", "In a small pot, combine dried longan, red dates, ginger (if using), and water.", "Bring to a boil, then reduce heat and simmer gently for 20-30 minutes. The longans will plump up, and the tea will become fragrant and slightly sweet.", "Strain the tea into cups.", "Sweeten with honey or rock sugar if desired. The rehydrated longans and dates can also be eaten.", "Serve warm."]
+      }
+    ]
+  },
+  {
+    "id": "mangosteen",
+    "commonName": "Mangosteen",
+    "scientificName": "Garcinia mangostana",
+    "image": "https://placehold.co/600x445.png",
+    "description": "A tropical evergreen tree believed to have originated in the Sunda Islands and the Moluccas of Indonesia. It grows mainly in Southeast Asia, southwest India and other tropical areas such as Colombia, Puerto Rico and Florida. The fruit is sweet and tangy, juicy, somewhat fibrous, with fluid-filled vesicles (like citrus fruit), with an inedible, deep reddish-purple rind when ripe.",
+    "origin": "Sunda Islands and Moluccas (Indonesia)",
+    "localNames": ["Manggis (Malay/Indonesian)", "Mangkhut (Thai)", "Queen of Fruits"],
+    "regions": ["Thailand", "Malaysia", "Indonesia", "Philippines", "India", "Sri Lanka", "Vietnam"],
+    "seasons": ["Varies by region, typically a main season in summer/rainy season"],
+    "nutrition": {
+      "calories": "73 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 18, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 1.8, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 2.9, "unit": "mg", "rdi": "5%" }
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.102, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in antioxidants, particularly xanthones found in the rind and fruit.",
+      "May have anti-inflammatory, anti-cancer, and anti-aging properties.",
+      "Supports immune function.",
+      "Traditionally used for various medicinal purposes in Southeast Asia."
+    ],
+    "potentialAllergies": [
+      { "name": "Mangosteen Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Strictly tropical, requires high humidity, warm temperatures (cannot tolerate below 40°F/4°C or above 100°F/38°C), and ample rainfall.\n2. Soil: Deep, rich, well-drained organic soil. Slightly acidic pH.\n3. Propagation: Very slow growing from seeds. Grafting is difficult. Usually propagated by seedlings.\n4. Planting: Plant in a location with partial shade when young, moving to more sun as it matures. Protect from strong winds.\n5. Watering: Requires consistent moisture and high humidity. Cannot tolerate drought.\n6. Fertilizing: Regular application of organic matter and balanced fertilizer.\n7. Harvesting: Fruits are harvested when the rind turns deep purple and yields slightly to pressure. They are picked by hand. The number of lobes at the bottom of the fruit corresponds to the number of fleshy segments inside.",
+    "growthDuration": "Very slow-growing trees, may take 7-10 years or more to bear first fruit from seed. Fruits mature 5-6 months after flowering.",
+    "sustainabilityTips": [
+      "Mangosteens are highly perishable once ripe. Store at room temperature if consuming soon, or refrigerate for a few days.",
+      "The rind is inedible but is studied for its medicinal compounds.",
+      "Enjoy the delicate, sweet-tart segments fresh."
+    ],
+    "carbonFootprintInfo": "High, due to strict tropical growing conditions and often requiring air freight (can be 2.0-5.0 kg CO2e/kg or higher).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Mangosteen",
+        "description": "The best way to enjoy the unique flavor of the 'Queen of Fruits'.",
+        "ingredients": ["1-2 ripe mangosteens"],
+        "steps": ["Select a mangosteen with a vibrant deep purple rind that yields slightly to pressure. The green cap and stem should look fresh.", "Wash the fruit.", "To open, gently make a shallow cut around the equator of the fruit with a small knife, being careful not to cut into the white flesh.", "Alternatively, hold the fruit firmly and twist the top and bottom halves in opposite directions until the rind cracks open.", "Carefully remove the top half of the rind. The white, juicy, segmented flesh will be revealed.", "Use a small fork or your fingers to scoop out the fleshy segments. Usually, one or two larger segments contain a seed, while smaller ones are seedless. The seeds are not eaten.", "Enjoy the sweet, tangy, and aromatic flesh immediately."]
+      },
+      {
+        "name": "Mangosteen and Lychee Salad",
+        "description": "A delightful tropical fruit salad combining two exquisite flavors.",
+        "ingredients": ["1 cup fresh mangosteen segments (from about 4-5 fruits)", "1 cup fresh lychees, peeled and seeded", "1 tbsp lime juice", "1 tsp honey or agave nectar (optional)", "A few fresh mint leaves, finely chopped"],
+        "steps": ["Carefully prepare the mangosteen segments and lychees.", "In a bowl, gently combine the mangosteen segments and lychees.", "In a small separate bowl, whisk together lime juice and honey/agave (if using).", "Drizzle the dressing over the fruits.", "Sprinkle with finely chopped mint leaves.", "Toss very gently and serve chilled."]
+      },
+      {
+        "name": "Mangosteen Sorbet",
+        "description": "A refreshing and exotic sorbet highlighting the unique taste of mangosteen.",
+        "ingredients": ["2 cups fresh mangosteen pulp (segments, seeds removed from larger ones)", "1/2 cup sugar", "1/2 cup water", "Juice of 1 lime"],
+        "steps": ["Make a simple syrup: In a small saucepan, combine sugar and water. Heat over medium heat, stirring, until the sugar is completely dissolved. Let it cool completely.", "If the mangosteen segments are large and have seeds, carefully remove any seeds.", "Combine the mangosteen pulp, cooled simple syrup, and lime juice in a blender or food processor.", "Blend until very smooth.", "Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions.", "If you don't have an ice cream maker, pour the mixture into a freezer-safe container. Freeze for 1-2 hours until partially frozen. Remove from freezer, beat with a hand mixer or whisk vigorously to break up ice crystals, then return to freezer. Repeat this process 2-3 times every hour until the sorbet is firm but scoopable.", "Serve immediately or store in an airtight container in the freezer."]
+      }
+    ]
   }
 ]
-
-    
