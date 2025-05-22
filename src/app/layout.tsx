@@ -82,7 +82,7 @@ export default function RootLayout({
             <div className="flex">
               <DesktopSidebar />
               <SidebarInset>
-                <main className="container mx-auto p-6 md:p-8">
+                <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
                   {children}
                 </main>
               </SidebarInset>
