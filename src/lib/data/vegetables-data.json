@@ -4,7 +4,7 @@
     "id": "carrot",
     "commonName": "Carrot",
     "scientificName": "Daucus carota subsp. sativus",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x406.png",
     "description": "A root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist.",
     "origin": "Persia (modern-day Iran and Afghanistan)",
     "localNames": ["Zanahoria (Spanish)", "Carotte (French)", "Möhre (German)"],
@@ -44,13 +44,33 @@
         "Use carrot tops in pesto or stocks.",
         "Choose 'ugly' carrots to reduce food waste."
     ],
-    "carbonFootprintInfo": "Locally grown carrots have a very low carbon footprint (around 0.2-0.4 kg CO2e/kg)."
+    "carbonFootprintInfo": "Locally grown carrots have a very low carbon footprint (around 0.2-0.4 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Honey Glazed Carrots",
+        "description": "Sweet and tender carrots, a perfect side dish for any meal.",
+        "ingredients": ["1 lb carrots, peeled and sliced", "2 tbsp butter", "2 tbsp honey", "1 tbsp fresh parsley, chopped (optional)", "Salt and pepper to taste"],
+        "steps": ["Steam or boil carrots until tender-crisp (about 5-7 minutes). Drain well.", "In a skillet, melt butter over medium heat. Add honey and stir.", "Add cooked carrots to the skillet. Cook, stirring gently, for 2-3 minutes until carrots are coated and glaze has slightly thickened.", "Season with salt and pepper. Garnish with fresh parsley if desired."]
+      },
+      {
+        "name": "Creamy Carrot Ginger Soup",
+        "description": "A warming and flavorful soup with a hint of ginger.",
+        "ingredients": ["1 tbsp olive oil", "1 onion, chopped", "2 cloves garlic, minced", "1 inch ginger, grated", "1 lb carrots, peeled and chopped", "4 cups vegetable broth", "1/2 cup coconut milk or heavy cream", "Salt and pepper to taste"],
+        "steps": ["Heat olive oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.", "Add garlic and ginger, cook for 1 minute more until fragrant.", "Add chopped carrots and vegetable broth. Bring to a boil, then reduce heat and simmer for 15-20 minutes, or until carrots are very tender.", "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.", "Stir in coconut milk or cream. Season with salt and pepper to taste. Reheat gently if needed."]
+      },
+      {
+        "name": "Simple Roasted Carrots",
+        "description": "Carrots roasted to bring out their natural sweetness.",
+        "ingredients": ["1 lb carrots, peeled and cut into sticks or chunks", "2 tbsp olive oil", "1/2 tsp dried thyme (or other herbs)", "Salt and pepper to taste"],
+        "steps": ["Preheat oven to 400°F (200°C).", "On a large baking sheet, toss carrots with olive oil, thyme, salt, and pepper.", "Spread carrots in a single layer.", "Roast for 20-25 minutes, flipping halfway, until tender and slightly caramelized.", "Serve immediately."]
+      }
+    ]
   },
   {
     "id": "broccoli",
     "commonName": "Broccoli",
     "scientificName": "Brassica oleracea var. italica",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x407.png",
     "description": "An edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable.",
     "origin": "Mediterranean region",
     "localNames": ["Brócoli (Spanish)", "Brocoli (French)", "Brokkoli (German)"],
@@ -90,13 +110,33 @@
         "Use the stalks as well as the florets – they are nutritious and can be cooked.",
         "Blanch and freeze excess broccoli."
     ],
-    "carbonFootprintInfo": "Relatively low footprint when grown locally (0.4-0.7 kg CO2e/kg). Transport increases this."
+    "carbonFootprintInfo": "Relatively low footprint when grown locally (0.4-0.7 kg CO2e/kg). Transport increases this.",
+    "staticRecipes": [
+      {
+        "name": "Simple Steamed Broccoli",
+        "description": "A quick and healthy way to prepare broccoli, preserving its nutrients.",
+        "ingredients": ["1 head of broccoli, cut into florets", "1-2 tbsp water", "Salt and pepper to taste", "Lemon wedge (optional)"],
+        "steps": ["Place broccoli florets in a steamer basket over boiling water, or in a microwave-safe dish with 1-2 tbsp of water.", "Steam for 3-5 minutes (stovetop) or microwave on high for 2-4 minutes, until tender-crisp.", "Season with salt and pepper. Squeeze fresh lemon juice over if desired.", "Serve immediately."]
+      },
+      {
+        "name": "Broccoli Cheddar Soup",
+        "description": "A creamy and comforting soup packed with broccoli and cheesy goodness.",
+        "ingredients": ["1 tbsp butter", "1 small onion, chopped", "2 cloves garlic, minced", "1/4 cup all-purpose flour", "2 cups milk", "2 cups vegetable or chicken broth", "1 lb broccoli florets (fresh or frozen)", "1 1/2 cups shredded cheddar cheese", "Salt and pepper to taste"],
+        "steps": ["Melt butter in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.", "Add garlic and cook for 1 minute more. Stir in flour and cook for 1 minute.", "Gradually whisk in milk and broth. Bring to a simmer, stirring constantly.", "Add broccoli florets. Cook for 10-15 minutes, or until broccoli is tender.", "Reduce heat to low. Stir in cheddar cheese until melted and smooth. Do not boil.", "Season with salt and pepper. Use an immersion blender for a smoother soup if desired."]
+      },
+      {
+        "name": "Garlic Roasted Broccoli",
+        "description": "Roasting broccoli brings out its nutty flavor, enhanced with garlic.",
+        "ingredients": ["1 lb broccoli florets", "2-3 cloves garlic, minced or thinly sliced", "2 tbsp olive oil", "Salt and pepper to taste", "Red pepper flakes (optional)"],
+        "steps": ["Preheat oven to 400°F (200°C).", "On a large baking sheet, toss broccoli florets with olive oil, minced garlic, salt, pepper, and red pepper flakes (if using).", "Spread in a single layer.", "Roast for 15-20 minutes, or until tender-crisp and lightly browned at the edges.", "Serve immediately."]
+      }
+    ]
   },
   {
     "id": "spinach",
     "commonName": "Spinach",
     "scientificName": "Spinacia oleracea",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x408.png",
     "description": "A leafy green flowering plant native to central and western Asia.",
     "origin": "Ancient Persia (modern Iran)",
     "localNames": ["Espinaca (Spanish)", "Épinard (French)", "Spinat (German)"],
@@ -138,13 +178,33 @@
         "Wash thoroughly just before use.",
         "Frozen spinach is a good alternative when fresh is out of season."
     ],
-    "carbonFootprintInfo": "Generally low footprint (0.3-0.6 kg CO2e/kg), especially if field-grown. Greenhouse production and transport increase it."
+    "carbonFootprintInfo": "Generally low footprint (0.3-0.6 kg CO2e/kg), especially if field-grown. Greenhouse production and transport increase it.",
+    "staticRecipes": [
+      {
+        "name": "Simple Sautéed Spinach",
+        "description": "A quick and easy way to cook spinach, perfect as a side dish.",
+        "ingredients": ["1 tbsp olive oil", "1-2 cloves garlic, minced", "10 oz fresh spinach", "Salt and pepper to taste", "Pinch of nutmeg (optional)"],
+        "steps": ["Heat olive oil in a large skillet or pot over medium heat.", "Add minced garlic and cook for about 30 seconds until fragrant (do not brown).", "Add fresh spinach to the skillet (it will look like a lot, but it wilts down).", "Cook, stirring occasionally, until spinach is wilted, about 2-4 minutes.", "Season with salt, pepper, and a pinch of nutmeg if desired. Serve immediately."]
+      },
+      {
+        "name": "Creamy Spinach Dip",
+        "description": "A classic party dip that's rich, creamy, and full of spinach flavor.",
+        "ingredients": ["10 oz frozen chopped spinach, thawed and squeezed dry", "8 oz cream cheese, softened", "1/2 cup sour cream or Greek yogurt", "1/4 cup mayonnaise", "1/2 cup grated Parmesan cheese", "1 clove garlic, minced", "1/4 tsp salt", "1/4 tsp black pepper", "Dash of hot sauce (optional)"],
+        "steps": ["Preheat oven to 375°F (190°C) if baking, or prepare for stovetop.", "In a mixing bowl, combine thawed and squeezed spinach, softened cream cheese, sour cream, mayonnaise, Parmesan cheese, minced garlic, salt, pepper, and hot sauce (if using).", "Mix well until everything is evenly incorporated.", "Transfer to an oven-safe dish and bake for 20-25 minutes until bubbly and lightly golden, or heat gently in a saucepan on the stove until warmed through.", "Serve warm with bread, crackers, or vegetable sticks."]
+      },
+      {
+        "name": "Spinach and Strawberry Salad",
+        "description": "A refreshing and colorful salad combining sweet strawberries and earthy spinach.",
+        "ingredients": ["5 oz fresh baby spinach", "1 cup sliced fresh strawberries", "1/4 cup crumbled feta or goat cheese", "1/4 cup toasted pecans or walnuts", "For dressing: 3 tbsp olive oil, 1 tbsp balsamic vinegar, 1 tsp honey or maple syrup, 1/2 tsp Dijon mustard, salt and pepper to taste"],
+        "steps": ["In a large salad bowl, combine baby spinach, sliced strawberries, crumbled cheese, and toasted nuts.", "In a small bowl or jar, whisk or shake together olive oil, balsamic vinegar, honey/maple syrup, Dijon mustard, salt, and pepper.", "Pour dressing over the salad just before serving and toss gently to combine.", "Serve immediately."]
+      }
+    ]
   },
   {
     "id": "potato",
     "commonName": "Potato",
     "scientificName": "Solanum tuberosum",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x409.png",
     "description": "A starchy tuber from the nightshade family Solanaceae.",
     "origin": "Andes region of South America",
     "localNames": ["Patata (Spanish)", "Pomme de terre (French)", "Kartoffel (German)"],
@@ -183,13 +243,33 @@
         "Keep potatoes away from onions, as they can cause each other to spoil faster.",
         "Leave the skin on when cooking for extra fiber and nutrients."
     ],
-    "carbonFootprintInfo": "Relatively low footprint (0.2-0.5 kg CO2e/kg), especially if grown with minimal inputs. Processing (e.g., into fries) and transport significantly increase this."
+    "carbonFootprintInfo": "Relatively low footprint (0.2-0.5 kg CO2e/kg), especially if grown with minimal inputs. Processing (e.g., into fries) and transport significantly increase this.",
+    "staticRecipes": [
+      {
+        "name": "Classic Mashed Potatoes",
+        "description": "Fluffy, creamy mashed potatoes – a comforting classic side dish.",
+        "ingredients": ["2 lbs potatoes (Russet or Yukon Gold recommended), peeled and quartered", "1/2 cup milk or cream, warmed", "1/4 cup butter, softened", "Salt and freshly ground black pepper to taste"],
+        "steps": ["Place potatoes in a large pot and cover with cold, salted water.", "Bring to a boil, then reduce heat and simmer for 15-20 minutes, or until potatoes are very tender when pierced with a fork.", "Drain potatoes well and return them to the pot over low heat for 1-2 minutes to evaporate any excess moisture.", "Mash the potatoes using a potato masher or ricer until smooth.", "Gradually add warmed milk/cream and softened butter, mixing until creamy and smooth.", "Season generously with salt and pepper. Serve hot."]
+      },
+      {
+        "name": "Garlic Herb Roasted Potatoes",
+        "description": "Crispy on the outside, tender on the inside, and full of flavor.",
+        "ingredients": ["1.5 lbs small potatoes (red, new, or fingerling), halved or quartered", "3 tbsp olive oil", "3-4 cloves garlic, minced", "1 tsp dried rosemary", "1 tsp dried thyme", "Salt and freshly ground black pepper to taste"],
+        "steps": ["Preheat oven to 400°F (200°C).", "In a large bowl, toss potatoes with olive oil, minced garlic, rosemary, thyme, salt, and pepper until evenly coated.", "Spread potatoes in a single layer on a large baking sheet.", "Roast for 30-40 minutes, flipping halfway, until potatoes are golden brown and tender.", "Serve immediately."]
+      },
+      {
+        "name": "Simple Potato Leek Soup",
+        "description": "A creamy and satisfying soup, perfect for a chilly day.",
+        "ingredients": ["2 tbsp butter or olive oil", "2 large leeks, white and light green parts only, cleaned and sliced", "2 lbs potatoes, peeled and diced", "6 cups vegetable or chicken broth", "1/2 cup heavy cream or milk (optional)", "Salt and freshly ground black pepper to taste", "Fresh chives or parsley for garnish (optional)"],
+        "steps": ["Melt butter or heat olive oil in a large pot or Dutch oven over medium heat.", "Add sliced leeks and cook, stirring occasionally, until softened, about 8-10 minutes. Do not brown.", "Add diced potatoes and broth. Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until potatoes are very tender.", "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.", "Stir in heavy cream or milk if using. Season with salt and pepper to taste.", "Reheat gently if needed. Garnish with fresh chives or parsley before serving."]
+      }
+    ]
   },
   {
     "id": "tomato",
     "commonName": "Tomato",
     "scientificName": "Solanum lycopersicum",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x410.png",
     "description": "A berry, considered a culinary vegetable, of the nightshade Solanum lycopersicum.",
     "origin": "Western South America and Central America",
     "localNames": ["Tomate (Spanish/German)", "Tomate (French)"],
@@ -205,10 +285,10 @@
       ],
       "vitamins": [
         { "name": "Vitamin C", "value": 13.7, "unit": "mg", "rdi": "23%" },
-        { "name": "Vitamin K", "value": 7.9, "unit": "µg", "rdi": "10%" },
-        { "name": "Potassium", "value": 237, "unit": "mg", "rdi": "7%" }
+        { "name": "Vitamin K", "value": 7.9, "unit": "µg", "rdi": "10%" }
       ],
       "minerals": [
+        { "name": "Potassium", "value": 237, "unit": "mg", "rdi": "7%" },
         { "name": "Lycopene (antioxidant)", "value": 2573, "unit": "µg" }
       ]
     },
@@ -229,7 +309,27 @@
         "Use overripe tomatoes for sauces or soups.",
         "Consider growing your own tomatoes; they are relatively easy in many climates."
     ],
-    "carbonFootprintInfo": "Field-grown, local tomatoes have a lower footprint (0.3-0.7 kg CO2e/kg). Greenhouse-grown tomatoes, especially out of season, have a much higher footprint due to energy use."
+    "carbonFootprintInfo": "Field-grown, local tomatoes have a lower footprint (0.3-0.7 kg CO2e/kg). Greenhouse-grown tomatoes, especially out of season, have a much higher footprint due to energy use.",
+    "staticRecipes": [
+      {
+        "name": "Classic Tomato Soup",
+        "description": "A simple, comforting, and flavorful homemade tomato soup.",
+        "ingredients": ["1 tbsp olive oil", "1 onion, chopped", "2 cloves garlic, minced", "1 (28 oz) can crushed tomatoes", "2 cups vegetable or chicken broth", "1 tsp sugar (optional, to balance acidity)", "1/2 cup heavy cream or milk (optional)", "Salt and freshly ground black pepper to taste", "Fresh basil for garnish (optional)"],
+        "steps": ["Heat olive oil in a large pot or Dutch oven over medium heat.", "Add chopped onion and cook until softened, about 5-7 minutes.", "Add minced garlic and cook for 1 minute more until fragrant.", "Stir in crushed tomatoes, broth, and sugar (if using). Bring to a simmer.", "Reduce heat, cover, and cook for 15-20 minutes to allow flavors to meld.", "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.", "Stir in heavy cream or milk if using. Season with salt and pepper to taste.", "Reheat gently if needed. Garnish with fresh basil before serving."]
+      },
+      {
+        "name": "Simple Bruschetta",
+        "description": "A classic Italian appetizer featuring fresh tomatoes, garlic, basil, and olive oil on toasted bread.",
+        "ingredients": ["4-5 ripe Roma tomatoes, diced", "2-3 cloves garlic, minced (or 1 clove rubbed on bread)", "1/4 cup fresh basil, chopped", "2 tbsp olive oil", "1 tbsp balsamic vinegar (optional)", "Salt and freshly ground black pepper to taste", "1 baguette, sliced into 1/2-inch rounds", "Olive oil for brushing bread"],
+        "steps": ["Preheat broiler or grill.", "In a medium bowl, combine diced tomatoes, minced garlic (if not rubbing on bread), chopped basil, olive oil, and balsamic vinegar (if using). Season with salt and pepper. Let sit for at least 10 minutes to allow flavors to meld.", "Brush baguette slices lightly with olive oil. Toast under the broiler or on the grill until golden brown and crisp (watch carefully to prevent burning). If desired, rub the toasted bread with a cut clove of garlic.", "Spoon the tomato mixture generously onto the toasted bread slices.", "Serve immediately."]
+      },
+      {
+        "name": "Caprese Salad",
+        "description": "A simple Italian salad, made of sliced fresh mozzarella, tomatoes, and sweet basil, seasoned with salt and olive oil.",
+        "ingredients": ["2-3 ripe tomatoes, sliced 1/4-inch thick", "8 oz fresh mozzarella cheese, sliced 1/4-inch thick", "Fresh basil leaves", "Extra virgin olive oil", "Balsamic glaze (optional)", "Salt and freshly ground black pepper to taste"],
+        "steps": ["On a platter or individual plates, arrange alternating slices of tomato and mozzarella.", "Tuck fresh basil leaves between the slices or scatter them over the top.", "Drizzle generously with extra virgin olive oil.", "If using, drizzle with balsamic glaze.", "Season with salt and freshly ground black pepper to taste.", "Serve immediately."]
+      }
+    ]
   }
 ]
     

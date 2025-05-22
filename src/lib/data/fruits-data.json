@@ -4,7 +4,7 @@
     "id": "apple",
     "commonName": "Apple",
     "scientificName": "Malus domestica",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x401.png",
     "description": "A sweet, edible fruit produced by an apple tree. Apples are cultivated worldwide and are the most widely grown species in the genus Malus.",
     "origin": "Central Asia",
     "localNames": ["Manzana (Spanish)", "Pomme (French)", "Apfel (German)"],
@@ -43,13 +43,33 @@
         "Compost apple cores or use them to make apple cider vinegar.",
         "Buy local apples in season to reduce food miles."
     ],
-    "carbonFootprintInfo": "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season."
+    "carbonFootprintInfo": "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season.",
+    "staticRecipes": [
+      {
+        "name": "Classic Apple Crumble",
+        "description": "A warm and comforting dessert with a sweet apple filling and a crunchy oat topping.",
+        "ingredients": ["6 medium apples, peeled, cored and sliced", "1/2 cup granulated sugar", "1 tsp cinnamon", "1 cup all-purpose flour", "1/2 cup brown sugar", "1/2 cup cold butter, cubed", "1/2 cup rolled oats"],
+        "steps": ["Preheat oven to 375°F (190°C).", "In a large bowl, toss sliced apples with granulated sugar and cinnamon. Transfer to a baking dish.", "In another bowl, combine flour and brown sugar. Cut in butter until mixture resembles coarse crumbs. Stir in oats.", "Sprinkle topping evenly over apples.", "Bake for 30-40 minutes, or until topping is golden brown and apples are tender."]
+      },
+      {
+        "name": "Homemade Applesauce",
+        "description": "Simple and delicious applesauce, perfect as a side or a healthy snack.",
+        "ingredients": ["4 large apples, peeled, cored, and quartered", "1/4 cup water", "1-2 tbsp sugar (optional)", "1/2 tsp cinnamon (optional)"],
+        "steps": ["Combine apples and water in a saucepan.", "Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until apples are very tender.", "Remove from heat. Mash with a potato masher or fork for chunky applesauce, or process in a blender for smooth applesauce.", "Stir in sugar and cinnamon if desired. Serve warm or chilled."]
+      },
+      {
+        "name": "Apple Walnut Salad",
+        "description": "A refreshing salad with crisp apples, crunchy walnuts, and a light vinaigrette.",
+        "ingredients": ["2 crisp apples, cored and diced", "1/2 cup chopped walnuts, toasted", "2 celery stalks, thinly sliced", "1/4 cup dried cranberries", "For dressing: 3 tbsp olive oil, 1 tbsp apple cider vinegar, 1 tsp honey, salt and pepper to taste"],
+        "steps": ["In a large bowl, combine diced apples, toasted walnuts, celery, and dried cranberries.", "In a small bowl, whisk together olive oil, apple cider vinegar, honey, salt, and pepper.", "Pour dressing over the salad and toss gently to coat.", "Serve immediately or chill for later."]
+      }
+    ]
   },
   {
     "id": "banana",
     "commonName": "Banana",
     "scientificName": "Musa spp.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x402.png",
     "description": "An elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.",
     "origin": "Southeast Asia and Australia",
     "localNames": ["Plátano (Spanish)", "Banane (French/German)"],
@@ -89,13 +109,33 @@
         "Freeze overripe bananas (peeled) for smoothies or banana bread.",
         "Compost banana peels."
     ],
-    "carbonFootprintInfo": "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport."
+    "carbonFootprintInfo": "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport.",
+    "staticRecipes": [
+      {
+        "name": "Classic Banana Bread",
+        "description": "A moist and delicious banana bread, perfect for using up ripe bananas.",
+        "ingredients": ["3 ripe bananas, mashed", "1/3 cup melted butter", "1/2 cup sugar", "1 egg, beaten", "1 tsp vanilla extract", "1 tsp baking soda", "Pinch of salt", "1 1/2 cups all-purpose flour"],
+        "steps": ["Preheat oven to 350°F (175°C). Grease a loaf pan.", "In a mixing bowl, combine mashed bananas and melted butter. Stir in sugar, egg, and vanilla extract.", "Sprinkle baking soda and salt over the mixture and stir in. Add flour and mix until just combined.", "Pour batter into prepared loaf pan.", "Bake for 50-60 minutes, or until a toothpick inserted into the center comes out clean."]
+      },
+      {
+        "name": "Simple Banana Smoothie",
+        "description": "A quick and healthy smoothie, great for breakfast or a snack.",
+        "ingredients": ["1 ripe banana, sliced", "1/2 cup milk (dairy or non-dairy)", "1/4 cup yogurt (optional)", "1 tsp honey or maple syrup (optional)", "Few ice cubes"],
+        "steps": ["Combine banana, milk, yogurt (if using), honey (if using), and ice cubes in a blender.", "Blend until smooth and creamy.", "Pour into a glass and serve immediately."]
+      },
+      {
+        "name": "Pan-Fried Cinnamon Bananas",
+        "description": "A sweet and simple dessert or topping for pancakes or ice cream.",
+        "ingredients": ["2 ripe but firm bananas, sliced", "1 tbsp butter", "1 tbsp brown sugar", "1/4 tsp cinnamon"],
+        "steps": ["Melt butter in a skillet over medium heat.", "Add banana slices and cook for 1-2 minutes per side, until lightly golden.", "Sprinkle with brown sugar and cinnamon. Cook for another minute, stirring gently, until sugar is melted and bananas are coated.", "Serve warm."]
+      }
+    ]
   },
   {
     "id": "orange",
     "commonName": "Orange",
     "scientificName": "Citrus × sinensis",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x403.png",
     "description": "A round citrus fruit with a tough bright reddish-yellow rind and pulpy, edible flesh.",
     "origin": "Southeast Asia",
     "localNames": ["Naranja (Spanish)", "Orange (French/German)"],
@@ -134,13 +174,33 @@
         "Use the zest in cooking and baking before juicing.",
         "Compost peels."
     ],
-    "carbonFootprintInfo": "Can vary significantly based on origin and transport (0.4-0.9 kg CO2e/kg). Local and seasonal oranges are best."
+    "carbonFootprintInfo": "Can vary significantly based on origin and transport (0.4-0.9 kg CO2e/kg). Local and seasonal oranges are best.",
+    "staticRecipes": [
+      {
+        "name": "Fresh Squeezed Orange Juice",
+        "description": "The purest way to enjoy oranges - refreshing and full of Vitamin C.",
+        "ingredients": ["3-4 large oranges"],
+        "steps": ["Wash oranges thoroughly.", "Cut oranges in half.", "Use a citrus juicer (manual or electric) to extract the juice.", "Strain if desired for a smoother juice. Serve immediately."]
+      },
+      {
+        "name": "Orange Glazed Salmon",
+        "description": "A flavorful and healthy main course featuring a sweet and tangy orange glaze.",
+        "ingredients": ["2 salmon fillets", "For glaze: 1/4 cup orange juice, 1 tbsp soy sauce, 1 tbsp honey, 1 clove garlic (minced), 1/2 tsp ginger (grated)", "Salt and pepper to taste", "1 tbsp olive oil"],
+        "steps": ["Preheat oven to 400°F (200°C).", "In a small bowl, whisk together orange juice, soy sauce, honey, minced garlic, and grated ginger for the glaze.", "Season salmon fillets with salt and pepper.", "Heat olive oil in an oven-safe skillet over medium-high heat. Sear salmon for 2-3 minutes per side.", "Pour glaze over salmon. Transfer skillet to the oven and bake for 8-12 minutes, or until salmon is cooked through.", "Spoon extra glaze over salmon before serving."]
+      },
+      {
+        "name": "Simple Orange Salad",
+        "description": "A light and refreshing salad that highlights the sweetness of oranges.",
+        "ingredients": ["2 large oranges, peeled and sliced into rounds", "1/4 red onion, thinly sliced (optional)", "Handful of fresh mint leaves, chopped", "1 tbsp olive oil", "Pinch of salt"],
+        "steps": ["Arrange orange slices on a plate.", "If using, scatter red onion slices over the oranges.", "Drizzle with olive oil and sprinkle with chopped mint and a pinch of salt.", "Serve immediately."]
+      }
+    ]
   },
   {
     "id": "strawberry",
     "commonName": "Strawberry",
     "scientificName": "Fragaria × ananassa",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x404.png",
     "description": "A widely grown hybrid species of the genus Fragaria, cultivated worldwide for its fruit.",
     "origin": "Brittany, France (cultivated hybrid)",
     "localNames": ["Fresa (Spanish)", "Fraise (French)", "Erdbeere (German)"],
@@ -178,13 +238,33 @@
         "Wash just before eating.",
         "Freeze excess strawberries for smoothies or desserts."
     ],
-    "carbonFootprintInfo": "Highly variable. Local, field-grown strawberries have a lower footprint (0.5-1.5 kg CO2e/kg). Out-of-season, air-freighted, or greenhouse-grown strawberries have a much higher footprint."
+    "carbonFootprintInfo": "Highly variable. Local, field-grown strawberries have a lower footprint (0.5-1.5 kg CO2e/kg). Out-of-season, air-freighted, or greenhouse-grown strawberries have a much higher footprint.",
+    "staticRecipes": [
+      {
+        "name": "Classic Strawberry Shortcake",
+        "description": "A beloved dessert featuring fresh strawberries, sweet biscuits, and whipped cream.",
+        "ingredients": ["For biscuits: 2 cups all-purpose flour, 2 tbsp sugar, 1 tbsp baking powder, 1/2 tsp salt, 1/2 cup cold butter (cubed), 3/4 cup milk", "For filling: 1 quart fresh strawberries (hulled and sliced), 1/4 cup sugar", "Whipped cream for topping"],
+        "steps": ["Preheat oven to 425°F (220°C). Line a baking sheet with parchment paper.", "Biscuits: In a large bowl, whisk together flour, sugar, baking powder, and salt. Cut in butter until mixture resembles coarse crumbs. Stir in milk until just combined. Drop by spoonfuls onto baking sheet.", "Bake biscuits for 12-15 minutes, or until golden brown.", "Filling: In a medium bowl, gently toss sliced strawberries with sugar. Let sit for 15-20 minutes to release juices.", "To assemble: Split warm biscuits in half. Spoon strawberries and their juice over the bottom half. Top with whipped cream and the other biscuit half."]
+      },
+      {
+        "name": "Easy Strawberry Jam",
+        "description": "Homemade strawberry jam with just a few ingredients.",
+        "ingredients": ["2 pounds fresh strawberries, hulled and crushed", "4 cups granulated sugar", "1/4 cup lemon juice"],
+        "steps": ["Combine strawberries, sugar, and lemon juice in a large, heavy-bottomed pot.", "Bring to a rolling boil over high heat, stirring constantly.", "Continue to boil, stirring frequently, until mixture reaches 220°F (105°C) on a candy thermometer, or until a small amount dropped onto a chilled plate gels. This usually takes 10-20 minutes.", "Skim off any foam. Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath if desired for longer storage, or store in refrigerator."]
+      },
+      {
+        "name": "Strawberry Spinach Salad",
+        "description": "A vibrant and healthy salad with sweet strawberries, tender spinach, and a tangy poppy seed dressing.",
+        "ingredients": ["6 cups fresh spinach", "1 pint fresh strawberries, sliced", "1/4 cup sliced almonds, toasted", "1/4 red onion, thinly sliced (optional)", "For dressing: 1/4 cup olive oil, 2 tbsp balsamic vinegar, 1 tbsp honey, 1 tsp poppy seeds, salt and pepper to taste"],
+        "steps": ["In a large salad bowl, combine spinach, sliced strawberries, toasted almonds, and red onion (if using).", "In a small bowl or jar, whisk or shake together olive oil, balsamic vinegar, honey, poppy seeds, salt, and pepper.", "Pour dressing over salad and toss gently to combine.", "Serve immediately."]
+      }
+    ]
   },
   {
     "id": "grapes",
     "commonName": "Grapes",
     "scientificName": "Vitis vinifera",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://placehold.co/600x405.png",
     "description": "A fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis.",
     "origin": "Near East",
     "localNames": ["Uva (Spanish)", "Raisin (French - refers to grape, not dried)", "Traube (German)"],
@@ -222,7 +302,27 @@
         "Choose organic grapes to avoid pesticide residues, as they are often on the 'Dirty Dozen' list.",
         "Freeze grapes for a cool snack."
     ],
-    "carbonFootprintInfo": "Footprint depends on origin and transport (0.6-1.2 kg CO2e/kg). Locally grown grapes in season are more sustainable."
+    "carbonFootprintInfo": "Footprint depends on origin and transport (0.6-1.2 kg CO2e/kg). Locally grown grapes in season are more sustainable.",
+    "staticRecipes": [
+      {
+        "name": "Chicken Salad with Grapes",
+        "description": "A classic creamy chicken salad with the sweet burst of fresh grapes.",
+        "ingredients": ["2 cups cooked chicken, shredded or diced", "1/2 cup halved seedless grapes (red or green)", "1/4 cup chopped celery", "1/4 cup chopped pecans or walnuts (optional)", "1/2 cup mayonnaise", "1 tbsp lemon juice", "Salt and pepper to taste"],
+        "steps": ["In a medium bowl, combine shredded chicken, grapes, celery, and nuts (if using).", "In a small bowl, mix together mayonnaise, lemon juice, salt, and pepper.", "Add the mayonnaise mixture to the chicken mixture and stir until well combined.", "Serve on lettuce leaves, in sandwiches, or with crackers."]
+      },
+      {
+        "name": "Roasted Grapes with Rosemary",
+        "description": "A simple yet elegant side dish or appetizer, bringing out the sweetness of grapes.",
+        "ingredients": ["2 cups seedless grapes (red or black recommended)", "1 tbsp olive oil", "1 sprig fresh rosemary, chopped (or 1/2 tsp dried)", "Pinch of salt", "Pinch of black pepper"],
+        "steps": ["Preheat oven to 400°F (200°C).", "In a bowl, toss grapes with olive oil, chopped rosemary, salt, and pepper.", "Spread grapes in a single layer on a baking sheet.", "Roast for 15-20 minutes, or until grapes are slightly softened and beginning to caramelize.", "Serve warm as a side, with cheese, or on crostini."]
+      },
+      {
+        "name": "Grape and Feta Salad",
+        "description": "A refreshing salad combining sweet grapes, salty feta, and crisp greens.",
+        "ingredients": ["4 cups mixed greens (spinach, arugula, etc.)", "1 cup halved seedless grapes", "1/2 cup crumbled feta cheese", "1/4 cup toasted slivered almonds", "For dressing: 3 tbsp olive oil, 1 tbsp red wine vinegar, 1 tsp Dijon mustard, salt and pepper to taste"],
+        "steps": ["In a large salad bowl, combine mixed greens, grapes, feta cheese, and toasted almonds.", "In a small bowl, whisk together olive oil, red wine vinegar, Dijon mustard, salt, and pepper.", "Drizzle dressing over the salad and toss gently to combine.", "Serve immediately."]
+      }
+    ]
   }
 ]
     

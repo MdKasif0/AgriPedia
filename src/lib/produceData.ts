@@ -2,6 +2,12 @@
 import fruitsData from './data/fruits-data.json';
 import vegetablesData from './data/vegetables-data.json';
 
+export interface Recipe {
+  name: string;
+  description: string;
+  ingredients: string[];
+  steps: string[];
+}
 export interface ProduceInfo {
   id: string;
   commonName: string;
@@ -28,6 +34,7 @@ export interface ProduceInfo {
   growthDuration: string;
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
+  staticRecipes?: Recipe[]; // Added static recipes
 }
 
 const allProduceData: ProduceInfo[] = [...fruitsData, ...vegetablesData];
@@ -105,3 +112,4 @@ export function getInSeasonProduce(limit?: number): ProduceInfo[] {
   }
   return inSeasonItems;
 }
+

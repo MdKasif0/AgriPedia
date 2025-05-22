@@ -4,11 +4,9 @@
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import { useParams, notFound, usePathname } from 'next/navigation';
-import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
+import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import * as UserDataStore from '@/lib/userDataStore'; // Used for favorites
-import { fetchRecipesForProduce } from '@/app/actions';
-import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
+import * as UserDataStore from '@/lib/userDataStore';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import dynamic from 'next/dynamic';
 
@@ -64,13 +62,6 @@ const getCurrentSeason = (): string => {
   return 'Winter'; 
 };
 
-type Recipe = {
-  name: string;
-  description: string;
-  ingredients: string[];
-  steps: string[];
-};
-
 interface ItemDetailsPageProps {
   slugFromParams?: string | string[];
 }
@@ -78,8 +69,7 @@ interface ItemDetailsPageProps {
 export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps) {
   const { toast } = useToast();
   const params = useParams<{ slug?: string | string[] }>(); 
-  // const pathname = usePathname(); // Not strictly needed if slugFromParams is reliable
-
+  
   const actualSlugParam = slugFromParams || params?.slug;
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
@@ -93,10 +83,6 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
 
   const [locationInfo, setLocationInfo] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState(false);
-
-  const [recipes, setRecipes] = useState<Recipe[] | null>(null);
-  const [isLoadingRecipes, setIsLoadingRecipes] = useState(false);
-  const [recipeError, setRecipeError] = useState<string | null>(null);
 
   const processedSlug = useMemo(() => {
     if (!actualSlugParam) return '';
@@ -123,7 +109,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // Removed as per previous request
+            // UserDataStore.addRecentView(onlineData.id); // Removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -158,26 +144,6 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
                 ? `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely in season now (${seasonName}).`
                 : `Based on typical Northern Hemisphere timing, ${produce.commonName}s are likely out of season now (${seasonName}). Check local availability for specifics.`
         );
-
-        const loadRecipes = async () => {
-          setIsLoadingRecipes(true);
-          setRecipeError(null);
-          setRecipes(null);
-          try {
-            const result = await fetchRecipesForProduce(produce.commonName);
-            if (result && result.recipes) {
-              setRecipes(result.recipes);
-            } else {
-              setRecipeError('Could not fetch recipes at this time.');
-            }
-          } catch (err) {
-            console.error("Error fetching recipes:", err);
-            setRecipeError('Failed to load recipes. Please try again later.');
-          } finally {
-            setIsLoadingRecipes(false);
-          }
-        };
-        loadRecipes();
     }
   }, [produce]);
 
@@ -256,13 +222,15 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
   }
 
   if (!produce && !isLoading) {
-    notFound(); // This will trigger the not-found.tsx page
-    return null; // Ensure nothing else is rendered
+    notFound(); 
+    return null; 
   }
-  if (!produce) return null; // Should be caught by the above, but good for type safety
+  if (!produce) return null; 
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
+
+  const recipesToDisplay = produce.staticRecipes || [];
 
 
   return (
@@ -278,7 +246,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       )}
       <header className="text-center relative">
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
+          <Leaf size={32} className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <div className="absolute top-0 right-0 flex items-center gap-1">
@@ -407,11 +375,9 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
 
       <section className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
-        {isLoadingRecipes && <Loader text="Generating recipe ideas with AI..." />}
-        {recipeError && <Alert variant="destructive" className="rounded-lg"><AlertTriangle className="h-4 w-4" /><AlertTitle>Error</AlertTitle><AlertDescription>{recipeError}</AlertDescription></Alert>}
-        {!isLoadingRecipes && !recipeError && recipes && recipes.length > 0 && (
+        {recipesToDisplay.length > 0 ? (
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
-            {recipes.map((recipe, index) => (
+            {recipesToDisplay.map((recipe, index) => (
               <Card key={index} className="bg-card rounded-lg shadow-lg">
                 <CardHeader className="p-4">
                   <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
@@ -434,8 +400,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
               </Card>
             ))}
           </div>
-        )}
-        {!isLoadingRecipes && !recipeError && (!recipes || recipes.length === 0) && (
+        ) : (
           <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
         )}
       </section>
@@ -471,3 +436,4 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
     </div>
   );
 }
+
