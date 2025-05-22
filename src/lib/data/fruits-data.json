@@ -766,7 +766,7 @@
         "description": "A simple guide to easily remove the arils (seeds) from a pomegranate.",
         "ingredients": ["1 ripe pomegranate"],
         "steps": [
-          "Cut off the crown (flower end) of the pomegranate.", 
+          "Cut off the crown (flower end) of the pomegranate.",
           "Lightly score the rind vertically from top to bottom in 4-6 sections, without cutting too deep into the fruit.",
           "Submerge the pomegranate in a large bowl of water. Gently break apart the sections under water. The arils will sink to the bottom, and the white membrane will float.",
           "Scoop out the floating membrane and discard. Drain the water and collect the arils.",
@@ -784,6 +784,587 @@
         "description": "A tangy and slightly sweet glaze perfect for chicken or fish.",
         "ingredients": ["For the glaze: 1/4 cup pomegranate molasses, 1 tbsp olive oil, 1 tbsp honey or maple syrup, 1 clove garlic (minced), 1/2 tsp Dijon mustard, pinch of salt and pepper", "4 chicken breasts or salmon fillets"],
         "steps": ["Preheat oven to 400°F (200°C) or prepare grill.", "In a small bowl, whisk together all glaze ingredients: pomegranate molasses, olive oil, honey/maple syrup, minced garlic, Dijon mustard, salt, and pepper.", "Season chicken or salmon with additional salt and pepper if desired.", "Brush the chicken/salmon generously with half of the pomegranate glaze.", "Bake or grill the chicken/salmon until cooked through (internal temperature of 165°F for chicken). Basting with remaining glaze during the last few minutes of cooking.", "Let rest for a few minutes before serving. Drizzle with any remaining pan juices or extra glaze."]
+      }
+    ]
+  },
+  {
+    "id": "sapota",
+    "commonName": "Sapota (Chikoo)",
+    "scientificName": "Manilkara zapota",
+    "image": "https://placehold.co/600x418.png",
+    "description": "A long-lived, evergreen tree native to southern Mexico, Central America and the Caribbean. It produces a sweet, fleshy fruit with a grainy texture, often brown on the outside and inside.",
+    "origin": "Southern Mexico, Central America, Caribbean",
+    "localNames": ["Chikoo (Hindi)", "Nispero (Spanish - can be ambiguous)", "Sapodilla"],
+    "regions": ["India", "Thailand", "Mexico", "Indonesia", "Bangladesh", "Pakistan"],
+    "seasons": ["Varies, often two crops per year, peak in late winter/spring and late summer/autumn"],
+    "nutrition": {
+      "calories": "83 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 20, "unit": "g" },
+        { "name": "Fat", "value": 1.1, "unit": "g" },
+        { "name": "Fiber", "value": 5.3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 14.7, "unit": "mg", "rdi": "25%" },
+        { "name": "Folate", "value": 14, "unit": "µg", "rdi": "4%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 193, "unit": "mg", "rdi": "6%" },
+        { "name": "Iron", "value": 0.8, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of dietary fiber, promoting digestive health and preventing constipation.",
+      "Contains tannins, which have anti-inflammatory and antioxidant properties.",
+      "Provides some Vitamin C, supporting the immune system.",
+      "Natural sugars offer a quick energy boost."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex Sensitivity", "severity": "Rare", "details": "Unripe fruit contains latex which can cause mouth irritation in some individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid conditions. Drought tolerant once established but needs protection from frost.\n2. Soil: Well-drained, sandy loam or lateritic soils are ideal. Tolerates a range of soil types.\n3. Propagation: Usually by seeds, grafting, or air layering. Seeds may take a long time to fruit and may not be true to type.\n4. Planting: Plant in full sun, providing ample space for growth.\n5. Watering: Young trees require regular watering. Mature trees are drought-resistant but benefit from irrigation during dry spells, especially during fruit development.\n6. Fertilizing: Apply balanced fertilizer during active growth, typically twice a year.\n7. Harvesting: Fruits are picked when they are fully mature but still firm. Maturity is judged by a dull brown color and sometimes a slight give. They ripen off the tree.",
+    "growthDuration": "Seedling trees can take 5-8 years to bear fruit. Grafted trees may start in 2-4 years.",
+    "sustainabilityTips": [
+      "Store unripe sapotas at room temperature until they soften. Ripe ones can be refrigerated for a few days.",
+      "Sapota seeds are not edible and should be discarded.",
+      "Compost the peel after consuming the fruit."
+    ],
+    "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.7-1.4 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Sapota (Chikoo) Milkshake",
+        "description": "A creamy and sweet milkshake, popular in South Asia.",
+        "ingredients": ["2 ripe sapotas (chikoo), peeled, seeded, and chopped", "1 cup chilled milk", "1-2 tbsp sugar (or to taste)", "1/4 tsp cardamom powder (optional)", "Few ice cubes"],
+        "steps": ["Combine chopped sapota, milk, sugar, and cardamom powder (if using) in a blender.", "Blend until smooth and creamy.", "Add ice cubes and blend again briefly.", "Pour into glasses and serve immediately."]
+      },
+      {
+        "name": "Fresh Sapota Slices",
+        "description": "The simplest way to enjoy the unique flavor of sapota.",
+        "ingredients": ["2-3 ripe sapotas (chikoo)"],
+        "steps": ["Wash the sapotas.", "Peel the fruit. The skin is typically not eaten.", "Slice the fruit in half and remove the black, shiny seeds from the center.", "Cut the flesh into slices or wedges.", "Serve immediately. Some enjoy a sprinkle of chaat masala for a tangy twist."]
+      },
+      {
+        "name": "Sapota Kheer (Pudding)",
+        "description": "A sweet Indian dessert made with sapota pulp, milk, and nuts.",
+        "ingredients": ["1 cup sapota pulp (from 3-4 ripe sapotas, peeled and seeded)", "2 cups full-fat milk", "1/4 cup sugar (adjust to taste)", "2 tbsp chopped mixed nuts (almonds, cashews, pistachios)", "A few strands of saffron (optional)", "1/4 tsp cardamom powder"],
+        "steps": ["In a heavy-bottomed pan, bring the milk to a boil. Reduce heat and simmer, stirring occasionally, until the milk thickens slightly (about 15-20 minutes).", "Add sugar and saffron (if using) to the milk. Stir until sugar dissolves.", "Add the sapota pulp and cardamom powder. Mix well and cook for another 5-7 minutes, stirring continuously, until the kheer thickens to desired consistency.", "Remove from heat and let it cool slightly. Garnish with chopped nuts.", "Serve warm or chilled."]
+      }
+    ]
+  },
+  {
+    "id": "lychee",
+    "commonName": "Lychee",
+    "scientificName": "Litchi chinensis",
+    "image": "https://placehold.co/600x419.png",
+    "description": "A tropical tree native to the Guangdong and Fujian provinces of southeastern China. The fruit is a drupe, with a rough, red rind and sweet, translucent white flesh.",
+    "origin": "Southeastern China",
+    "localNames": ["Lichi (Spanish)", "Litchi (French)", "Leechee"],
+    "regions": ["China", "India", "Thailand", "Vietnam", "Madagascar", "South Africa", "Australia", "United States (Florida, Hawaii)"],
+    "seasons": ["Early to Mid Summer"],
+    "nutrition": {
+      "calories": "66 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 17, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 1.3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 71.5, "unit": "mg", "rdi": "119%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 171, "unit": "mg", "rdi": "5%" },
+        { "name": "Copper", "value": 0.148, "unit": "mg", "rdi": "16%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, an antioxidant that boosts immunity.",
+      "Contains oligonol, a polyphenol with antioxidant and anti-influenza virus activities.",
+      "Good source of copper, important for red blood cell formation and nerve function.",
+      "Provides B-complex vitamins like riboflavin and niacin."
+    ],
+    "potentialAllergies": [
+      { "name": "Lychee Allergy", "severity": "Rare", "details": "Uncommon, but can cause reactions like itching or hives in sensitive individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to tropical, requiring warm, humid summers and cool, dry, frost-free winters for good fruit set.\n2. Soil: Prefers well-drained, slightly acidic (pH 5.5-6.5) soil rich in organic matter.\n3. Propagation: Usually by air layering (marcotting) for true-to-type fruit. Seeds can be grown but are unreliable.\n4. Planting: Plant in full sun with protection from strong winds.\n5. Watering: Requires regular and abundant watering, especially during flowering and fruit development. Do not let soil dry out completely.\n6. Fertilizing: Feed with a balanced fertilizer suitable for fruit trees, especially during active growth phases.\n7. Pruning: Prune after harvest to shape the tree and encourage new growth for the next season's fruit.\n8. Harvesting: Fruits are harvested in bunches when the skin turns bright red and the fruit is plump and fragrant. They do not ripen further after picking.",
+    "growthDuration": "Air-layered trees can start bearing fruit in 3-5 years. Fruit matures 60-100 days after flowering.",
+    "sustainabilityTips": [
+      "Store lychees in the refrigerator in a plastic bag; they lose quality quickly at room temperature.",
+      "Lychee skin is not edible; compost it.",
+      "Enjoy fresh during their short season; canned lychees are also available."
+    ],
+    "carbonFootprintInfo": "Can be high if air-freighted due to their perishability and short season (1.0-3.0 kg CO2e/kg or more).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Lychees",
+        "description": "The best way to enjoy the delicate flavor of lychees is fresh and chilled.",
+        "ingredients": ["1 lb fresh lychees"],
+        "steps": ["Wash lychees gently under cold water.", "To eat, gently peel away the rough red skin with your fingers or a small knife. The skin should come off easily if the fruit is ripe.", "The translucent white flesh is edible. There is a single, dark brown seed in the center which is not edible and should be discarded.", "Serve chilled for best flavor."]
+      },
+      {
+        "name": "Lychee Martini (or Mocktail)",
+        "description": "An elegant and fragrant cocktail showcasing the sweet taste of lychee.",
+        "ingredients": ["For Martini: 2 oz vodka or gin, 1 oz lychee liqueur or lychee syrup (from canned lychees), 1/2 oz dry vermouth (optional), 1-2 fresh or canned lychees for garnish", "For Mocktail: 3 oz lychee juice or puree, 1 oz lime juice, sparkling water or club soda to top, 1-2 lychees for garnish"],
+        "steps": ["For Martini: Chill a martini glass. Combine vodka/gin, lychee liqueur/syrup, and vermouth (if using) in a shaker with ice. Shake well until chilled. Strain into the chilled martini glass. Garnish with a lychee.", "For Mocktail: Fill a glass with ice. Add lychee juice/puree and lime juice. Stir. Top with sparkling water or club soda. Garnish with a lychee."]
+      },
+      {
+        "name": "Lychee and Coconut Panna Cotta",
+        "description": "A creamy Italian dessert with a tropical twist of lychee and coconut.",
+        "ingredients": ["1 can (13.5 oz) full-fat coconut milk", "1/2 cup heavy cream", "1/4 cup sugar", "1 tsp agar-agar powder (or 1 tbsp gelatin bloomed in 2 tbsp water)", "1 cup lychee pulp (fresh or canned, drained and pureed)", "1 tsp vanilla extract", "Fresh lychees and mint for garnish"],
+        "steps": ["In a saucepan, combine coconut milk, heavy cream, and sugar. Whisk in agar-agar powder (if using gelatin, bloom it first and add later).", "Bring the mixture to a gentle simmer over medium heat, whisking constantly until sugar and agar-agar are dissolved. Simmer for 2 minutes.", "Remove from heat. If using gelatin, stir it in now until dissolved.", "Stir in lychee pulp and vanilla extract.", "Pour the mixture into individual ramekins or a serving dish.", "Chill in the refrigerator for at least 4 hours, or until set.", "To serve, garnish with fresh lychee halves and mint leaves."]
+      }
+    ]
+  },
+  {
+    "id": "custard-apple",
+    "commonName": "Custard Apple (Sitaphal)",
+    "scientificName": "Annona squamosa",
+    "image": "https://placehold.co/600x420.png",
+    "description": "A tropical fruit with a knobby, greenish skin and sweet, creamy white flesh segmented around numerous black seeds. It has a custard-like texture and flavor.",
+    "origin": "Tropical Americas and West Indies",
+    "localNames": ["Sitaphal (Hindi)", "Sugar Apple", "Sweetsop", "Anón (Spanish)"],
+    "regions": ["India", "Thailand", "Philippines", "Indonesia", "Brazil", "Australia", "United States (Florida)"],
+    "seasons": ["Late Summer to Early Winter"],
+    "nutrition": {
+      "calories": "101 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 25, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 2.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 19.2, "unit": "mg", "rdi": "32%" },
+        { "name": "Vitamin B6", "value": 0.221, "unit": "mg", "rdi": "13%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 382, "unit": "mg", "rdi": "11%" },
+        { "name": "Magnesium", "value": 21, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C, boosting the immune system.",
+      "Contains Vitamin B6, important for brain health and development.",
+      "Rich in potassium, which helps regulate blood pressure.",
+      "Provides dietary fiber, aiding in digestion."
+    ],
+    "potentialAllergies": [
+      { "name": "Seed Toxicity", "severity": "Moderate", "details": "Custard apple seeds contain neurotoxins and should not be consumed. Always remove seeds." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, requires warm temperatures and is sensitive to frost.\n2. Soil: Well-drained, fertile soil with good organic matter. Tolerates a range of soil types but prefers pH 6.0-7.5.\n3. Propagation: Primarily by seeds, which germinate readily. Grafting is used for superior varieties.\n4. Planting: Plant in full sun. Trees can grow quite large.\n5. Watering: Regular watering is needed, especially for young trees and during dry periods. Avoid waterlogging.\n6. Fertilizing: Apply balanced fertilizer during growth periods.\n7. Pollination: May require hand pollination in some areas for good fruit set due to dichogamy (male and female parts mature at different times).\n8. Harvesting: Fruits are harvested when they are mature (skin turns lighter green, segments slightly separate) but still firm. They ripen quickly off the tree.",
+    "growthDuration": "Seedling trees may bear fruit in 3-5 years. Fruit ripens 3-4 months after flowering.",
+    "sustainabilityTips": [
+      "Store unripe custard apples at room temperature until they yield to gentle pressure. Ripe fruit can be refrigerated for 1-2 days.",
+      "The fruit is typically broken open, and the fleshy segments are eaten, spitting out the seeds.",
+      "Compost the skin and discarded seeds."
+    ],
+    "carbonFootprintInfo": "Moderate, typical for tropical fruits needing specific climates and transport (0.8-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Eating Fresh Custard Apple",
+        "description": "The most common way to enjoy this fruit is by eating its creamy flesh directly.",
+        "ingredients": ["1 ripe custard apple"],
+        "steps": ["Select a custard apple that yields slightly to gentle pressure.", "Wash the fruit.", "Gently break or cut the fruit open. The segments of creamy white flesh will be visible, each surrounding a black seed.", "Scoop out the fleshy segments with a spoon or your fingers. Eat the flesh and discard the black seeds (do not eat the seeds).", "The skin is not typically eaten."]
+      },
+      {
+        "name": "Custard Apple (Sitaphal) Milkshake",
+        "description": "A delicious and creamy milkshake made from the pulp of custard apple.",
+        "ingredients": ["Pulp of 1-2 ripe custard apples (seeds removed)", "1 cup chilled milk", "1-2 tbsp sugar (or to taste, custard apples are quite sweet)", "A few ice cubes", "Pinch of cardamom powder (optional)"],
+        "steps": ["Carefully scoop out the flesh from the ripe custard apple and remove all black seeds. This might take some patience.", "Combine the deseeded custard apple pulp, chilled milk, sugar, and cardamom powder (if using) in a blender.", "Blend until smooth and creamy.", "Add ice cubes and blend again briefly.", "Pour into glasses and serve immediately."]
+      },
+      {
+        "name": "Custard Apple Rabri (Sitaphal Rabri)",
+        "description": "A rich Indian dessert where custard apple pulp is added to thickened, sweetened milk.",
+        "ingredients": ["4 cups full-fat milk", "1/2 cup sugar (adjust to taste)", "Pulp of 2 ripe custard apples (seeds removed)", "1/4 tsp cardamom powder", "2 tbsp chopped mixed nuts (almonds, pistachios) for garnish", "A few strands of saffron (optional)"],
+        "steps": ["In a heavy, wide pan, bring the milk to a boil. Reduce heat to medium-low.", "Simmer the milk, stirring frequently to prevent scorching and a skin from forming on top. Scrape the sides of the pan regularly and add the collected cream back into the milk. Continue to simmer until the milk reduces to about half its original volume and thickens (this can take 30-45 minutes).", "Add sugar and saffron (if using). Stir until the sugar dissolves completely.", "Stir in the cardamom powder.", "Remove from heat and let the thickened milk (rabri) cool down completely.", "Once cooled, gently fold in the deseeded custard apple pulp.", "Chill in the refrigerator for at least 2-3 hours.", "Serve chilled, garnished with chopped nuts."]
+      }
+    ]
+  },
+  {
+    "id": "lemon",
+    "commonName": "Lemon",
+    "scientificName": "Citrus limon",
+    "image": "https://placehold.co/600x421.png",
+    "description": "A species of small evergreen trees in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China. The tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world.",
+    "origin": "Northeast India, Northern Myanmar or China",
+    "localNames": ["Limón (Spanish)", "Citron (French)", "Zitrone (German)"],
+    "regions": ["India", "Mexico", "China", "Argentina", "Brazil", "Spain", "Turkey", "United States (California, Arizona)"],
+    "seasons": ["Year-round, with peaks depending on variety and region"],
+    "nutrition": {
+      "calories": "29 kcal per 100g (raw fruit without peel)",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 9.3, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.8, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 53, "unit": "mg", "rdi": "88%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 138, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, a powerful antioxidant that supports the immune system and skin health.",
+      "May aid in digestion and relieve indigestion.",
+      "Citric acid content may help prevent kidney stones.",
+      "Antioxidants in lemons can help protect against cell damage."
+    ],
+    "potentialAllergies": [
+      { "name": "Citrus Allergy", "severity": "Mild", "details": "Can cause skin irritation (contact dermatitis) or oral allergy symptoms in sensitive individuals. Usually mild." },
+      { "name": "Tooth Enamel Erosion", "severity": "Varies", "details": "High acidity can erode tooth enamel over time if consumed frequently in large amounts without dilution or rinsing."}
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, thrives in warm climates but can tolerate cooler temperatures better than other citrus. Needs full sun.\n2. Soil: Well-drained, slightly acidic (pH 6.0-7.0) loamy soil. Good drainage is crucial.\n3. Propagation: Usually by grafting or budding onto rootstock. Can be grown from seed, but may not be true to type and takes longer to fruit.\n4. Planting: Plant in a sunny, sheltered location. Can be grown in containers.\n5. Watering: Regular, deep watering, especially during dry periods and fruit development. Allow soil to dry slightly between waterings.\n6. Fertilizing: Feed regularly with a balanced citrus fertilizer, especially during active growth and fruiting seasons.\n7. Pruning: Prune to shape, remove dead or crossing branches, and improve air circulation.\n8. Harvesting: Lemons can be harvested at various stages of ripeness, often when they reach full size and have a good yellow color (some varieties are picked green). They can often be left on the tree for extended periods.",
+    "growthDuration": "Grafted trees can start bearing fruit in 2-3 years. Lemons often fruit year-round in suitable climates, with peak harvest seasons.",
+    "sustainabilityTips": [
+      "Store lemons at room temperature for about a week, or in the refrigerator for several weeks.",
+      "Use the entire lemon: zest for flavoring, juice for drinks and cooking. Lemon peels can be candied or used in cleaning.",
+      "Freeze lemon juice in ice cube trays for later use."
+    ],
+    "carbonFootprintInfo": "Generally moderate (0.4-0.8 kg CO2e/kg), depending on origin, transport, and whether greenhouse-grown.",
+    "staticRecipes": [
+      {
+        "name": "Classic Lemonade",
+        "description": "A refreshing and tangy homemade drink, perfect for a hot day.",
+        "ingredients": ["1 cup freshly squeezed lemon juice (about 4-6 lemons)", "1 cup granulated sugar (or to taste)", "4-5 cups cold water", "Ice cubes", "Lemon slices and mint sprigs for garnish (optional)"],
+        "steps": ["In a small saucepan, combine sugar and 1 cup of water. Heat over medium heat, stirring, until the sugar is completely dissolved. This is your simple syrup. Let it cool.", "In a large pitcher, combine lemon juice, cooled simple syrup, and the remaining 3-4 cups of cold water. Stir well.", "Taste and adjust sweetness or tartness by adding more sugar/syrup or lemon juice/water as needed.", "Serve over ice, garnished with lemon slices and mint sprigs if desired."]
+      },
+      {
+        "name": "Lemon Herb Roasted Chicken",
+        "description": "A flavorful and juicy roasted chicken infused with lemon and herbs.",
+        "ingredients": ["1 whole chicken (3-4 lbs)", "1-2 lemons, halved or quartered", "4-5 sprigs fresh rosemary or thyme (or 1-2 tsp dried)", "3-4 cloves garlic, smashed", "2 tbsp olive oil", "Salt and freshly ground black pepper to taste"],
+        "steps": ["Preheat oven to 400°F (200°C).", "Rinse the chicken inside and out, and pat dry with paper towels.", "Stuff the chicken cavity with half of the lemon pieces, garlic cloves, and herb sprigs.", "Place the chicken in a roasting pan. Rub the outside of the chicken with olive oil. Squeeze the juice of the remaining lemon over the chicken and place the squeezed lemon pieces around/under the chicken.", "Season generously with salt and pepper. Scatter remaining herbs over the chicken.", "Roast for 1 hour to 1 hour 30 minutes, or until the internal temperature reaches 165°F (74°C) in the thickest part of the thigh and juices run clear. Baste occasionally with pan juices.", "Let the chicken rest for 10-15 minutes before carving and serving."]
+      },
+      {
+        "name": "Simple Lemon Vinaigrette",
+        "description": "A bright and versatile salad dressing.",
+        "ingredients": ["1/4 cup extra virgin olive oil", "2 tbsp freshly squeezed lemon juice", "1 tsp Dijon mustard", "1/2 tsp honey or maple syrup (optional, for sweetness)", "1 small clove garlic, minced (optional)", "Salt and freshly ground black pepper to taste"],
+        "steps": ["In a small bowl or jar, combine olive oil, lemon juice, Dijon mustard, honey/maple syrup (if using), and minced garlic (if using).", "Whisk well or shake the jar vigorously until the dressing is emulsified (thickened and well-combined).", "Season with salt and pepper to taste.", "Use immediately on salads or store in an airtight container in the refrigerator for up to a week."]
+      }
+    ]
+  },
+  {
+    "id": "sweet-lime",
+    "commonName": "Sweet Lime (Mosambi)",
+    "scientificName": "Citrus limetta",
+    "image": "https://placehold.co/600x422.png",
+    "description": "A citrus fruit, typically round to oval, with a greenish-yellow rind when ripe and a sweet, mild, low-acid pulp. It's less tart than a lemon.",
+    "origin": "Southeast Asia (likely India or Malaysia)",
+    "localNames": ["Mosambi (Hindi)", "Mausambi", "Musambi", "Limu Shirin (Persian)"],
+    "regions": ["India", "Pakistan", "Egypt", "Vietnam", "Mediterranean basin"],
+    "seasons": ["Primarily Summer and Monsoon season (in India)"],
+    "nutrition": {
+      "calories": "43 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 9.3, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 0.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 50, "unit": "mg", "rdi": "83%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 490, "unit": "mg", "rdi": "14%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, boosting the immune system.",
+      "High in potassium, which can help manage blood pressure.",
+      "Aids in hydration due to high water content.",
+      "May improve digestion and relieve constipation due to its mild acidity and flavonoids."
+    ],
+    "potentialAllergies": [
+      { "name": "Citrus Allergy", "severity": "Mild", "details": "Less common than with more acidic citrus, but can cause oral allergy symptoms or skin irritation in sensitive individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, prefers warm climates with distinct summers and winters, but is sensitive to frost.\n2. Soil: Well-drained, loamy soil is ideal. pH 6.0-7.5.\n3. Propagation: Usually by budding or grafting onto suitable rootstock. Can be grown from seeds, but may not be true to type.\n4. Planting: Plant in full sun with good air circulation.\n5. Watering: Regular watering, especially during dry periods and fruit development. Avoid waterlogging.\n6. Fertilizing: Requires regular fertilization with a balanced citrus fertilizer.\n7. Pruning: Prune to shape the tree, remove dead wood, and improve light penetration.\n8. Harvesting: Fruits are picked when they reach full size and the skin turns from green to light greenish-yellow. They should feel slightly soft to the touch.",
+    "growthDuration": "Grafted trees may start bearing fruit in 3-4 years. Fruit typically matures in 6-9 months after flowering.",
+    "sustainabilityTips": [
+      "Store at room temperature for a few days or in the refrigerator for longer life.",
+      "Sweet lime juice is best consumed fresh as it can turn bitter if stored for too long.",
+      "Compost the peels."
+    ],
+    "carbonFootprintInfo": "Moderate, similar to other citrus fruits, depending on origin and transport (0.4-0.9 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Mosambi (Sweet Lime) Juice",
+        "description": "A popular and refreshing juice, especially in India.",
+        "ingredients": ["3-4 ripe sweet limes (mosambi)", "Pinch of black salt (kala namak) or regular salt (optional)", "1/2 tsp sugar (optional, if limes are not very sweet)"],
+        "steps": ["Wash the sweet limes.", "Cut them in half.", "Extract the juice using a citrus juicer (manual or electric). Avoid pressing too hard on the peel to prevent bitterness.", "Strain the juice if desired.", "Add salt and sugar (if using) to taste. Stir well.", "Serve immediately, chilled or with ice."]
+      },
+      {
+        "name": "Sweet Lime and Mint Cooler",
+        "description": "A refreshing drink with sweet lime and fresh mint.",
+        "ingredients": ["1 cup fresh sweet lime juice", "1/4 cup fresh mint leaves", "1 tbsp sugar or honey (optional)", "1/2 cup sparkling water or club soda", "Ice cubes"],
+        "steps": ["Gently muddle mint leaves with sugar/honey (if using) in a sturdy glass or shaker.", "Add sweet lime juice and ice cubes. Stir or shake well.", "Strain into a serving glass filled with fresh ice.", "Top with sparkling water or club soda.", "Garnish with a mint sprig and a slice of sweet lime."]
+      },
+      {
+        "name": "Sweet Lime Salad with Chaat Masala",
+        "description": "A simple fruit salad highlighting the flavor of sweet lime with a tangy twist.",
+        "ingredients": ["2 ripe sweet limes, peeled and segmented (membranes removed if desired)", "1/2 apple, diced (optional)", "1/2 cucumber, diced (optional)", "1/4 tsp chaat masala", "Pinch of black salt (optional)"],
+        "steps": ["Gently combine sweet lime segments, diced apple (if using), and diced cucumber (if using) in a bowl.", "Sprinkle chaat masala and black salt (if using) over the fruits.", "Toss gently to coat.", "Serve immediately or chilled."]
+      }
+    ]
+  },
+  {
+    "id": "jackfruit",
+    "commonName": "Jackfruit",
+    "scientificName": "Artocarpus heterophyllus",
+    "image": "https://placehold.co/600x423.png",
+    "description": "A species of tree in the fig, mulberry, and breadfruit family. Its fruit is the largest tree-borne fruit, reaching as much as 55 kg in weight. Ripe jackfruit is sweet, while unripe jackfruit has a neutral flavor and meat-like texture, often used in savory dishes.",
+    "origin": "Southwestern India (Western Ghats)",
+    "localNames": ["Kathal (Hindi)", "Jaca (Spanish/Portuguese)", "Nangka (Malay/Indonesian)"],
+    "regions": ["India", "Bangladesh", "Thailand", "Indonesia", "Vietnam", "Brazil", "Sri Lanka"],
+    "seasons": ["Primarily Summer, can vary with region and type"],
+    "nutrition": {
+      "calories": "95 kcal per 100g (ripe fruit pulp)",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 23, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 1.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 13.7, "unit": "mg", "rdi": "23%" },
+        { "name": "Vitamin B6", "value": 0.329, "unit": "mg", "rdi": "19%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 448, "unit": "mg", "rdi": "13%" },
+        { "name": "Magnesium", "value": 29, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of dietary fiber, aiding digestion.",
+      "Contains Vitamin C and B6, supporting immunity and brain function.",
+      "Rich in potassium, which helps regulate blood pressure.",
+      "Unripe jackfruit is a popular meat substitute for vegetarians and vegans due to its texture."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex Allergy Cross-Reactivity", "severity": "Mild", "details": "Some individuals with latex allergy may experience reactions, though less common than with fruits like banana or avocado." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid climates. Sensitive to frost.\n2. Soil: Deep, well-drained, alluvial or loamy soils are best. Tolerates a variety of soils but not waterlogged conditions.\n3. Propagation: Primarily grown from seeds, which should be planted fresh. Grafting is used for select cultivars.\n4. Planting: Plant in full sun with ample space for a large tree.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during dry periods, especially during fruit development.\n6. Fertilizing: Benefit from regular application of organic manure and balanced fertilizers.\n7. Harvesting: Jackfruit is harvested at different stages. Young, unripe fruit for vegetable use is picked when small and green. Ripe fruit is harvested when it emits a strong aroma, the skin turns slightly yellowish-brown, and the spines flatten or yield to pressure.",
+    "growthDuration": "Seedling trees can take 3-8 years to bear fruit. Fruits take 3-8 months to mature on the tree.",
+    "sustainabilityTips": [
+      "Jackfruit is a large fruit; one fruit can provide many meals. Plan accordingly to avoid waste.",
+      "Unripe jackfruit can be stored at room temperature for a few days. Ripe jackfruit or its pods should be refrigerated.",
+      "Jackfruit seeds are edible when cooked (boiled or roasted) and are nutritious."
+    ],
+    "carbonFootprintInfo": "Moderate to high, depending on transport due to its size and weight (0.8-2.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Pulled Jackfruit (BBQ Sandwich Filling)",
+        "description": "A popular vegetarian alternative to pulled pork, using unripe jackfruit.",
+        "ingredients": ["2 cans (20 oz each) young green jackfruit in brine or water, drained and rinsed", "1 tbsp olive oil", "1 onion, chopped", "2 cloves garlic, minced", "1 cup BBQ sauce", "1 tbsp apple cider vinegar", "1 tsp smoked paprika", "Salt and pepper to taste", "Burger buns or rolls for serving"],
+        "steps": ["Rinse and drain the jackfruit. Remove the core and any tough outer pieces. Shred the jackfruit pieces with your fingers or two forks.", "Heat olive oil in a large skillet over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and cook for 1 minute more.", "Add the shredded jackfruit to the skillet. Cook for 5-7 minutes, stirring occasionally, until it starts to brown slightly.", "In a small bowl, mix BBQ sauce, apple cider vinegar, and smoked paprika.", "Pour the sauce over the jackfruit. Stir well to coat. Reduce heat to low, cover, and simmer for 15-20 minutes, allowing the jackfruit to absorb the flavors. Add a little water if it becomes too dry.", "Uncover and cook for another 5-10 minutes, stirring, until some of the liquid has evaporated and the jackfruit is tender and easily shreddable. Season with salt and pepper to taste.", "Serve hot on buns as a sandwich filling, often with coleslaw."]
+      },
+      {
+        "name": "Ripe Jackfruit Pods (Fresh)",
+        "description": "Enjoying the sweet, aromatic flesh of ripe jackfruit pods.",
+        "ingredients": ["1 section of ripe jackfruit"],
+        "steps": ["Handling ripe jackfruit can be sticky due to latex. It's advisable to oil your hands and knife before cutting.", "Cut the ripe jackfruit section open. You will see large, fleshy pods (bulbs) surrounding seeds.", "Carefully extract the yellow to orange fleshy pods. Each pod contains a large seed.", "The fleshy pod is eaten raw. It has a sweet, tropical flavor. The seeds are not eaten raw but can be boiled or roasted separately.", "Store unused pods in an airtight container in the refrigerator."]
+      },
+      {
+        "name": "Jackfruit Seed Curry (Side Dish)",
+        "description": "A South Indian style curry made with nutritious jackfruit seeds.",
+        "ingredients": ["1 cup jackfruit seeds, outer white skin removed", "1 onion, chopped", "1 tomato, chopped", "1 inch ginger, grated", "2 cloves garlic, minced", "1/2 tsp turmeric powder", "1 tsp red chili powder (or to taste)", "1 tsp coriander powder", "1/2 tsp cumin powder", "1/4 cup grated coconut (optional)", "Salt to taste", "1 tbsp oil", "Mustard seeds, curry leaves for tempering"],
+        "steps": ["Boil or pressure cook the jackfruit seeds until tender (they should be easily mashable). Peel off the thin brown inner skin once cooled slightly. Roughly chop or halve the cooked seeds.", "Heat oil in a pan. Add mustard seeds; when they splutter, add curry leaves.", "Add chopped onion and sauté until golden brown. Add ginger and garlic, sauté for a minute.", "Add chopped tomato and cook until soft.", "Add turmeric powder, chili powder, coriander powder, cumin powder, and salt. Sauté for a minute.", "Add the cooked jackfruit seeds and grated coconut (if using). Mix well. Add about 1/2 cup of water, cover, and simmer for 5-7 minutes, allowing flavors to combine.", "Serve hot as a side dish with rice or roti."]
+      }
+    ]
+  },
+  {
+    "id": "starfruit",
+    "commonName": "Starfruit (Carambola)",
+    "scientificName": "Averrhoa carambola",
+    "image": "https://placehold.co/600x424.png",
+    "description": "A tropical fruit with a distinctive star shape when sliced. The fruit has a waxy skin and can range from tart to sweet, with a juicy, crisp texture.",
+    "origin": "Southeast Asia (likely Sri Lanka or Moluccas, Indonesia)",
+    "localNames": ["Carambola (Spanish/Portuguese/English)", "Kamrakh (Hindi)"],
+    "regions": ["Malaysia", "Indonesia", "Philippines", "India", "Thailand", "Taiwan", "Brazil", "United States (Florida, Hawaii)"],
+    "seasons": ["Varies, can fruit multiple times a year, often in fall and winter"],
+    "nutrition": {
+      "calories": "31 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 6.7, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.8, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 34.4, "unit": "mg", "rdi": "57%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 133, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C, an antioxidant supporting the immune system.",
+      "Contains dietary fiber, aiding in digestion.",
+      "Low in calories and sugar, making it a healthy snack option.",
+      "Provides antioxidants that help combat free radicals."
+    ],
+    "potentialAllergies": [
+      { "name": "Oxalic Acid Content", "severity": "Moderate", "details": "Contains high levels of oxalic acid. Individuals with kidney problems (especially kidney failure or those on dialysis) should avoid starfruit as it can cause nephrotoxicity and neurotoxicity (starfruit poisoning)." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, needs warm, humid conditions. Sensitive to frost and strong winds.\n2. Soil: Prefers well-drained, fertile, loamy soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: Can be grown from seeds, but grafting or budding onto seedling rootstock is common for better varieties.\n4. Planting: Plant in full sun to partial shade. Ensure good drainage.\n5. Watering: Requires regular watering, especially during dry periods and fruit development. Do not overwater.\n6. Fertilizing: Apply balanced fertilizer suitable for fruit trees during active growth.\n7. Pruning: Light pruning to shape the tree and remove dead or crowded branches.\n8. Harvesting: Fruits are harvested when they are fully grown, and the color changes from green to yellow or yellowish-orange (depending on variety). They are picked by hand.",
+    "growthDuration": "Trees may start bearing fruit in 2-4 years. Fruits mature 60-75 days after flowering.",
+    "sustainabilityTips": [
+      "Store starfruit at room temperature until ripe, then refrigerate for a few days.",
+      "The entire fruit is edible, including the waxy skin. Just wash, slice, and eat.",
+      "Can be juiced, added to salads, or used as a garnish."
+    ],
+    "carbonFootprintInfo": "Moderate, depending on transport from tropical regions (0.7-1.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Starfruit Slices",
+        "description": "The easiest way to enjoy starfruit is by slicing it to reveal its star shape.",
+        "ingredients": ["1-2 ripe starfruits"],
+        "steps": ["Wash the starfruit thoroughly under running water.", "Trim off the greenish or brownish edges of the five ridges if they are tough or discolored.", "Slice the fruit crosswise into 1/4 to 1/2 inch thick slices. Each slice will look like a star.", "Remove any visible seeds if desired (though small seeds are often edible).", "Serve fresh. They can be eaten as is, added to fruit salads, or used as a garnish."]
+      },
+      {
+        "name": "Starfruit Juice",
+        "description": "A refreshing and slightly tangy juice.",
+        "ingredients": ["2-3 ripe starfruits, washed and roughly chopped (ends trimmed)", "1/2 cup water", "1-2 tbsp sugar or honey (to taste, optional)", "Pinch of salt (optional)"],
+        "steps": ["Combine chopped starfruit and water in a blender.", "Blend until smooth.", "Strain the mixture through a fine-mesh sieve or cheesecloth to remove pulp and any seeds.", "Stir in sugar/honey and salt if using. Taste and adjust sweetness.", "Serve chilled over ice."]
+      },
+      {
+        "name": "Starfruit and Ginger Relish",
+        "description": "A zesty relish that can be served with grilled meats or fish.",
+        "ingredients": ["2 ripe starfruits, finely diced", "1 tbsp finely grated fresh ginger", "1 small red chili, minced (optional)", "1/4 cup chopped fresh cilantro", "2 tbsp lime juice", "1 tbsp rice vinegar", "1 tsp sugar", "Pinch of salt"],
+        "steps": ["In a medium bowl, combine diced starfruit, grated ginger, minced chili (if using), and chopped cilantro.", "In a small bowl, whisk together lime juice, rice vinegar, sugar, and salt until the sugar is dissolved.", "Pour the dressing over the starfruit mixture and toss gently to combine.", "Let the relish sit for at least 15-20 minutes at room temperature to allow flavors to meld before serving."]
+      }
+    ]
+  },
+  {
+    "id": "fig",
+    "commonName": "Fig (Anjeer)",
+    "scientificName": "Ficus carica",
+    "image": "https://placehold.co/600x425.png",
+    "description": "A species of flowering plant in the mulberry family, known as the common fig. It is the source of the fruit also called the fig and as such is an important crop in those areas where it is grown commercially. Native to the Mediterranean and western Asia.",
+    "origin": "Western Asia and Mediterranean region",
+    "localNames": ["Anjeer (Hindi)", "Higo (Spanish)", "Figue (French)"],
+    "regions": ["Turkey", "Egypt", "Morocco", "Iran", "Spain", "Greece", "United States (California)"],
+    "seasons": ["Late Summer to Early Autumn (fresh figs have a short season)"],
+    "nutrition": {
+      "calories": "74 kcal per 100g (fresh)",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 19, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin K", "value": 4.7, "unit": "µg", "rdi": "6%" },
+        { "name": "Vitamin B6", "value": 0.113, "unit": "mg", "rdi": "7%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 232, "unit": "mg", "rdi": "7%" },
+        { "name": "Calcium", "value": 35, "unit": "mg", "rdi": "4%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of dietary fiber, promoting digestive health and preventing constipation.",
+      "Contains minerals like potassium and calcium, important for bone health and blood pressure regulation.",
+      "Rich in antioxidants, which can help protect against chronic diseases.",
+      "Dried figs are a concentrated source of nutrients and energy."
+    ],
+    "potentialAllergies": [
+      { "name": "Fig Allergy / Latex Sensitivity", "severity": "Mild", "details": "Some people may be allergic to figs, possibly due to cross-reactivity with birch pollen or latex. Symptoms can include itching or oral allergy syndrome." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate to subtropical, thrives in areas with long, hot summers and mild winters. Some varieties are more cold-hardy.\n2. Soil: Adaptable to various soils but prefers well-drained, fertile loam. Tolerates slightly alkaline conditions.\n3. Propagation: Easily propagated from cuttings. Can also be grown from seeds, but quality may vary.\n4. Planting: Plant in full sun. Can be grown in containers, especially in colder regions.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but produce better fruit with consistent moisture, especially during fruit development.\n6. Fertilizing: Generally light feeders. A balanced fertilizer in spring may be beneficial.\n7. Pruning: Prune during dormancy to shape the tree, remove dead wood, and encourage fruit production (figs often fruit on new and old wood, depending on variety).\n8. Harvesting: Figs are harvested when they are soft to the touch, droop slightly on the stem, and have fully developed color. They do not ripen much after picking.",
+    "growthDuration": "Trees from cuttings can start bearing fruit in 1-3 years. Figs typically have two crops per year in suitable climates (breba crop on old wood, main crop on new wood).",
+    "sustainabilityTips": [
+      "Fresh figs are highly perishable; store in the refrigerator and consume within a few days.",
+      "Dried figs have a long shelf life and are a good way to preserve the fruit.",
+      "Enjoy fresh figs with their skin; wash thoroughly.",
+      "Compost any unused parts."
+    ],
+    "carbonFootprintInfo": "Moderate. Fresh figs can have a higher footprint if air-freighted due to perishability (0.8-2.0 kg CO2e/kg). Dried figs generally have a lower footprint.",
+    "staticRecipes": [
+      {
+        "name": "Fresh Figs with Prosciutto and Balsamic Glaze",
+        "description": "An elegant appetizer combining sweet figs, salty prosciutto, and tangy balsamic.",
+        "ingredients": ["8-12 ripe fresh figs, halved or quartered", "4-6 slices prosciutto, torn into pieces", "2 tbsp balsamic glaze (store-bought or homemade by reducing balsamic vinegar)", "Fresh basil leaves or microgreens for garnish (optional)"],
+        "steps": ["Wash figs gently and pat dry. Cut them in half or quarters depending on size.", "Arrange fig pieces on a serving platter.", "Drape pieces of prosciutto around or over the figs.", "Drizzle generously with balsamic glaze.", "Garnish with fresh basil or microgreens if desired. Serve immediately."]
+      },
+      {
+        "name": "Baked Figs with Goat Cheese and Honey",
+        "description": "A warm, delicious dessert or appetizer featuring sweet figs and creamy goat cheese.",
+        "ingredients": ["8 ripe fresh figs", "4 oz soft goat cheese (chèvre)", "2 tbsp honey (plus more for drizzling)", "1 tbsp chopped walnuts or pecans, toasted (optional)"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Wash figs. Cut a small 'X' into the top of each fig, about halfway down, without cutting all the way through.", "Gently open the fig slightly at the cuts to create a small pocket.", "Stuff each fig with a small amount of goat cheese.", "Arrange the stuffed figs in a small baking dish.", "Drizzle with honey.", "Bake for 10-15 minutes, or until the figs are softened and the goat cheese is warm and slightly melted.", "Sprinkle with toasted nuts (if using) and an extra drizzle of honey before serving warm."]
+      },
+      {
+        "name": "Fig and Almond Smoothie",
+        "description": "A nutritious and flavorful smoothie made with fresh or dried figs.",
+        "ingredients": ["4-5 fresh ripe figs (or 3-4 dried figs, soaked in hot water for 15 mins and drained)", "1 cup almond milk (or other milk)", "1/2 banana, frozen (for creaminess)", "1 tbsp almond butter", "1/2 tsp vanilla extract", "Pinch of cinnamon", "Ice cubes (optional)"],
+        "steps": ["If using fresh figs, remove stems and roughly chop. If using dried figs, ensure they are soft from soaking.", "Combine figs, almond milk, frozen banana, almond butter, vanilla extract, and cinnamon in a blender.", "Blend until smooth and creamy. Add ice cubes if a colder, thicker smoothie is desired and blend again.", "Pour into a glass and serve immediately."]
+      }
+    ]
+  },
+  {
+    "id": "peach",
+    "commonName": "Peach",
+    "scientificName": "Prunus persica",
+    "image": "https://placehold.co/600x426.png",
+    "description": "A deciduous tree native to Northwest China. It bears an edible juicy fruit also called a peach or a nectarine (nectarines are a variety of peach that lack fuzz).",
+    "origin": "Northwest China",
+    "localNames": ["Melocotón (Spanish)", "Pêche (French)", "Pfirsich (German)"],
+    "regions": ["China", "Spain", "Italy", "United States (California, Georgia, South Carolina)", "Greece", "Turkey"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "39 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 9.5, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 1.5, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 6.6, "unit": "mg", "rdi": "11%" },
+        { "name": "Vitamin A (from carotenoids)", "value": 16, "unit": "µg RAE", "rdi": "2%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 190, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of Vitamin C, supporting immune function.",
+      "Contains antioxidants that can help protect cells from damage.",
+      "Provides dietary fiber, which aids in digestion.",
+      "May contribute to skin health due to vitamin content."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Often linked to birch pollen allergy. Symptoms include itching or swelling of the mouth, lips, and throat." },
+      { "name": "Peach Fuzz Sensitivity", "severity": "Mild", "details": "Some people find the fuzz on peach skin irritating, though it's not a true allergy. Nectarines are a fuzz-free alternative."}
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill hours for bud break, followed by warm summers for fruit ripening. Protect from late spring frosts.\n2. Soil: Well-drained, sandy loam soil with good organic content. pH 6.0-7.0.\n3. Propagation: Usually grafted onto rootstock to ensure variety characteristics and disease resistance.\n4. Planting: Plant bare-root trees in late winter or early spring. Container-grown trees can be planted more flexibly. Full sun is essential.\n5. Watering: Regular, deep watering, especially during fruit development and dry spells. Avoid waterlogged soil.\n6. Fertilizing: Apply balanced fertilizer in early spring and possibly again in early summer.\n7. Pruning: Prune annually during dormancy to maintain an open center or vase shape, remove dead/diseased wood, and encourage fruit production on one-year-old wood.\n8. Thinning: Thin young fruits to 6-8 inches apart to ensure larger, higher-quality mature fruits.\n9. Harvesting: Peaches are harvested when they reach full color (yellow/red, depending on variety), soften slightly, and have a sweet aroma. They are typically picked by hand.",
+    "growthDuration": "Grafted trees can start bearing fruit in 2-4 years. Fruits mature 3-5 months after flowering.",
+    "sustainabilityTips": [
+      "Store unripe peaches at room temperature. Once ripe, they can be refrigerated for a few days.",
+      "Peaches bruise easily; handle with care.",
+      "Freeze sliced peaches for later use in smoothies, pies, or cobblers.",
+      "Compost peach pits."
+    ],
+    "carbonFootprintInfo": "Moderate. Locally grown peaches in season have a lower footprint (0.4-0.8 kg CO2e/kg). Transport significantly increases this.",
+    "staticRecipes": [
+      {
+        "name": "Classic Peach Cobbler",
+        "description": "A warm and comforting dessert with sweet, juicy peaches and a buttery biscuit topping.",
+        "ingredients": ["For filling: 5-6 ripe peaches, peeled, pitted, and sliced", "1/4 cup granulated sugar", "1 tbsp lemon juice", "1/4 tsp cinnamon", "For topping: 1 cup all-purpose flour, 1/4 cup granulated sugar, 1 tsp baking powder, 1/4 tsp salt, 1/4 cup cold butter (cubed), 1/4 cup milk", "1 tbsp melted butter for brushing (optional)"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a large bowl, gently toss sliced peaches with sugar, lemon juice, and cinnamon. Pour into a 9x9 inch baking dish or similar.", "Topping: In another bowl, whisk together flour, sugar, baking powder, and salt. Cut in cold butter until mixture resembles coarse crumbs. Stir in milk until just combined.", "Drop spoonfuls of the topping mixture over the peaches.", "If desired, brush the topping with melted butter.", "Bake for 30-40 minutes, or until the topping is golden brown and the peach filling is bubbly. Let cool slightly before serving warm, perhaps with vanilla ice cream."]
+      },
+      {
+        "name": "Grilled Peaches with Honey and Yogurt",
+        "description": "Grilling brings out the sweetness of peaches, perfect for a light dessert or breakfast.",
+        "ingredients": ["2-3 ripe but firm peaches, halved and pitted", "1 tbsp olive oil or melted butter", "2 tbsp honey or maple syrup", "1 cup plain Greek yogurt", "Chopped nuts or granola for topping (optional)"],
+        "steps": ["Preheat grill to medium heat. Clean and lightly oil the grates.", "Brush the cut sides of the peach halves with olive oil or melted butter.", "Place peaches cut-side down on the grill. Grill for 3-5 minutes per side, or until they have nice grill marks and are slightly softened.", "Remove peaches from the grill. Serve warm topped with a dollop of Greek yogurt, a drizzle of honey or maple syrup, and a sprinkle of nuts or granola if desired."]
+      },
+      {
+        "name": "Fresh Peach Salsa",
+        "description": "A sweet and savory salsa, great with grilled chicken, fish, or tortilla chips.",
+        "ingredients": ["2 ripe peaches, peeled, pitted, and diced", "1/2 red bell pepper, diced", "1/4 red onion, finely chopped", "1 jalapeño, minced (optional, seeds removed for less heat)", "1/4 cup chopped fresh cilantro", "Juice of 1 lime", "Salt and pepper to taste"],
+        "steps": ["In a medium bowl, combine diced peaches, red bell pepper, red onion, jalapeño (if using), and cilantro.", "Add lime juice and season with salt and pepper to taste.", "Stir gently to combine all ingredients.", "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld before serving."]
       }
     ]
   }
