@@ -8,7 +8,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import ImageUploadForm from '@/components/search/ImageUploadForm';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { cn } from '@/lib/utils';
+import { cn, triggerHapticFeedback } from '@/lib/utils';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
 import { Separator } from '@/components/ui/separator';
@@ -20,7 +20,7 @@ interface NavItemProps {
   currentPathname: string;
   isCentralScan?: boolean;
   onClick?: () => void;
-  isActiveOverride?: boolean; 
+  isActiveOverride?: boolean;
 }
 
 const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathname, isCentralScan, onClick, isActiveOverride }) => {
@@ -32,8 +32,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
 
   const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none transition-colors duration-200";
   const iconSize = isCentralScan ? 30 : 24;
-  
-  // Adjusted colors for dark, transparent nav bar
+
   const iconColor = isActive ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100';
   const labelColor = isActive ? 'text-primary font-semibold' : 'text-neutral-400 group-hover:text-neutral-100';
 
@@ -54,17 +53,24 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
     </>
   );
 
-  if (onClick && !href) { 
+  const handleItemClick = () => {
+    triggerHapticFeedback();
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  if (onClick && !href) {
     return (
-      <button onClick={onClick} className={cn(itemBaseClass, "flex-1")} aria-label={label}>
+      <button onClick={handleItemClick} className={cn(itemBaseClass, "flex-1")} aria-label={label}>
         {content}
       </button>
     );
   }
-  
+
   if (!href && !onClick && label === "Settings") { // For SheetTrigger wrapped NavItem
      return (
-      <div className={cn(itemBaseClass, "flex-1")} aria-label={label}>
+      <div className={cn(itemBaseClass, "flex-1")} aria-label={label} onClick={triggerHapticFeedback}>
         {content}
       </div>
     );
@@ -72,7 +78,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
 
   return (
     <Link href={href!} passHref legacyBehavior>
-      <a className={cn(itemBaseClass, "flex-1")} aria-label={label}>
+      <a className={cn(itemBaseClass, "flex-1")} aria-label={label} onClick={triggerHapticFeedback}>
         {content}
       </a>
     </Link>
@@ -86,22 +92,22 @@ export default function MobileBottomNav() {
 
   const navItemsConfig = [
     { href: "/", icon: Leaf, label: "Home" },
-    { href: "/chat", icon: MessagesSquare, label: "Chat AI" }, 
-    { 
-      icon: ScanLine, 
-      label: "Scan Produce", 
+    { href: "/chat", icon: MessagesSquare, label: "Chat AI" },
+    {
+      icon: ScanLine,
+      label: "Scan Produce",
       isCentralScan: true,
-      onClick: () => setIsScanDialogOpen(true) 
+      onClick: () => setIsScanDialogOpen(true)
     },
     { href: "/#favorites-section", icon: Heart, label: "Favorites" },
-    { icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) }, 
+    { icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) },
   ];
 
   return (
     <>
-      <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-4 
-                      bg-neutral-900/80 backdrop-blur-lg 
-                      border border-neutral-700/60 
+      <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-4
+                      bg-neutral-900/80 backdrop-blur-lg
+                      border border-neutral-700/60
                       shadow-xl rounded-2xl md:hidden z-50 h-16">
         <div className="flex justify-around items-center h-full px-1">
           {navItemsConfig.map((item, index) => {
@@ -109,11 +115,15 @@ export default function MobileBottomNav() {
               return (
                 <Sheet key={index} open={isSettingsSheetOpen} onOpenChange={setIsSettingsSheetOpen}>
                   <SheetTrigger asChild>
-                    <button 
+                    <button
+                        onClick={() => {
+                          triggerHapticFeedback();
+                          setIsSettingsSheetOpen(true);
+                        }}
                         className={cn(
                             "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-colors duration-200",
                             isSettingsSheetOpen ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100'
-                        )} 
+                        )}
                         aria-label={item.label}
                     >
                        <SettingsIcon size={24} className={cn("mb-0.5", isSettingsSheetOpen ? 'text-primary' : 'text-neutral-400 group-hover:text-neutral-100')} />
@@ -122,11 +132,11 @@ export default function MobileBottomNav() {
                        </span>
                     </button>
                   </SheetTrigger>
-                  <SheetContent 
-                    side="bottom" 
-                    className="h-[60vh] flex flex-col rounded-t-2xl 
-                               bg-card text-card-foreground 
-                               border-t border-neutral-700/60" // Match nav bar border style
+                  <SheetContent
+                    side="bottom"
+                    className="h-[60vh] flex flex-col rounded-t-2xl
+                               bg-card text-card-foreground
+                               border-t border-neutral-700/60"
                   >
                     <SheetHeader className="px-4 pt-4 pb-2">
                       <SheetTitle className="text-card-foreground text-center text-lg">App Settings</SheetTitle>
@@ -169,9 +179,14 @@ export default function MobileBottomNav() {
               <ScanLine className="text-primary" /> Scan Produce
             </DialogTitle>
           </DialogHeader>
-          <ImageUploadForm />
+          <ImageUploadForm onSuccessfulScan={() => setIsScanDialogOpen(false)} />
         </DialogContent>
       </Dialog>
     </>
   );
 }
+
+// Ensure ImageUploadForm can accept onSuccessfulScan prop
+// Modify ImageUploadForm if it doesn't already have a way to signal success to close the dialog
+// For simplicity, this example assumes ImageUploadForm will handle navigation and the dialog closes.
+// A more robust solution would be for ImageUploadForm to call onSuccessfulScan.

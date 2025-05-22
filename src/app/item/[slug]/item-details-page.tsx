@@ -3,10 +3,10 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound, usePathname } from 'next/navigation'; // usePathname might not be needed if slugFromParams is reliable
+import { useParams, notFound, usePathname } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import * as UserDataStore from '@/lib/userDataStore'; // isFavorite, addFavorite, removeFavorite, addRecentView
+import * as UserDataStore from '@/lib/userDataStore';
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -21,7 +21,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2, History // Added History
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -33,7 +33,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; 
+      return 'default';
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -89,7 +89,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
   useEffect(() => {
     if (!processedSlug) {
       setIsLoading(false);
-      setProduce(null); 
+      setProduce(null);
       return;
     }
 
@@ -126,8 +126,8 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           setIsOfflineSource(true);
         }
       }
-      
-      setProduce(itemData); 
+
+      setProduce(itemData);
       if (itemData) {
         setIsBookmarked(UserDataStore.isFavorite(itemData.id));
       }
@@ -243,12 +243,12 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
 
-  if (!produce && !isLoading) { 
+  if (!produce && !isLoading) {
     notFound();
-    return null; 
+    return null;
   }
-  if (!produce) return null; 
-  
+  if (!produce) return null;
+
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
@@ -270,19 +270,19 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <div className="absolute top-0 right-0 flex items-center gap-1">
-            <Button 
-                variant="ghost" 
-                size="icon" 
-                onClick={handleShare} 
+            <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleShare}
                 className="text-foreground hover:text-primary active:scale-110"
                 aria-label={`Share ${produce.commonName} details`}
             >
                 <Share2 size={24} />
             </Button>
-            <Button 
-                variant="ghost" 
-                size="icon" 
-                onClick={handleToggleBookmark} 
+            <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleToggleBookmark}
                 className="text-foreground hover:text-primary active:scale-110"
                 aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
@@ -299,10 +299,10 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
           style={{ objectFit: 'cover' }}
           data-ai-hint={imageHint}
-          priority={true} 
+          priority={true}
         />
       </div>
-      
+
       <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
         <p className="text-card-foreground/90">{produce.description}</p>
       </IconLabel>
@@ -328,21 +328,21 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
         </IconLabel>
       </div>
-      
+
       <section className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
         <p className="text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
-        
+
         <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
           <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg" />
         </ClientOnly>
-        
+
         {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
           <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
             <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg" />
           </ClientOnly>
         )}
-        
+
         {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
           <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
             <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg" />
@@ -392,7 +392,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           </IconLabel>
         )}
       </div>
-      
+
       <section className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
         {isLoadingRecipes && <Loader text="Generating recipe ideas with AI..." />}
@@ -429,8 +429,8 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       </section>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel 
-          icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2} 
+        <IconLabel
+          icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2}
           label="Seasonal Availability"
           className="bg-card rounded-lg shadow-lg"
         >
@@ -459,4 +459,3 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     </div>
   );
 }
-

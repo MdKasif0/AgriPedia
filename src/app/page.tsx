@@ -10,12 +10,12 @@ import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getIn
 import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
 import * as UserDataStore from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell, History, MessagesSquare, Settings as SettingsIcon } from 'lucide-react'; // Added History, MessagesSquare, SettingsIcon
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell, History } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
-import ClientOnly from '@/components/ClientOnly'; // Reverted to alias
+import ClientOnly from '@/components/ClientOnly';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
@@ -110,7 +110,9 @@ export default function HomePage() {
     const favIds = UserDataStore.getFavoriteIds();
     const allCurrentProduce = getAllProduce();
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-    setSeasonalSuggestions(getInSeasonProduce(5));
+    
+    const currentSeasonal = getInSeasonProduce(5); // Get 5 random seasonal items
+    setSeasonalSuggestions(currentSeasonal);
 
     const recentIds = UserDataStore.getRecentViewIds();
     setRecentViewedItems(recentIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
@@ -129,7 +131,7 @@ export default function HomePage() {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
     loadUserData();
-    updateFilteredResults('', 'all', 'all'); // Initially load all produce
+    updateFilteredResults('', 'all', 'all');
     setInitialLoad(false);
   }, [loadUserData, updateFilteredResults]);
 
@@ -168,7 +170,7 @@ export default function HomePage() {
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
-      setSuggestions(seasonalSuggestions); // Show seasonal if query is cleared
+      setSuggestions(seasonalSuggestions); 
       setIsSuggestionsVisible(true);
     }
   }, [seasonalSuggestions]);
@@ -177,14 +179,14 @@ export default function HomePage() {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
-    loadUserData(); // Refresh user data which might include recent views if navigating
+    loadUserData();
     triggerHapticFeedback();
     router.push(`/item/${encodeURIComponent(item.id)}`);
   }, [loadUserData, router]);
 
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
-    setSuggestions(seasonalSuggestions); // Reset to seasonal suggestions
+    setSuggestions(seasonalSuggestions);
     setIsSuggestionsVisible(true);
     searchInputRef.current?.focus();
     triggerHapticFeedback();
@@ -194,10 +196,8 @@ export default function HomePage() {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
         addRecentSearch(submittedQuery);
-        loadUserData(); // Refresh user data
+        loadUserData();
     }
-    // The actual search results update is handled by the useEffect watching searchQuery
-    // If a direct navigation is desired for exact matches:
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
       season: selectedSeason === 'all' ? undefined : selectedSeason
@@ -211,6 +211,7 @@ export default function HomePage() {
   const handleNotificationSubscription = async () => {
     setIsSubscribing(true);
     setNotificationStatus(null);
+    triggerHapticFeedback();
 
     if (!vapidKeyConfigured) {
       toast({
@@ -257,16 +258,14 @@ export default function HomePage() {
           applicationServerKey: publicKey,
         });
         setNotificationStatus('Successfully subscribed to notifications!');
-        playSound('/sounds/scan-success.mp3'); // Or a generic success sound
+        playSound('/sounds/scan-success.mp3');
         toast({ title: 'Subscribed!', description: 'You will now receive notifications.' });
-        // TODO: Send subscription to your server
-        // console.log('Push subscription:', JSON.stringify(subscription));
       }
     } catch (error) {
       console.error('Error subscribing to push notifications:', error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       setNotificationStatus("Error: " + errorMessage);
-      toast({ title: 'Subscription Error', description: `Failed to subscribe: ${errorMessage}`, variant: 'destructive' });
+      toast({ title: 'Subscription Error', description: "Failed to subscribe: " + errorMessage, variant: 'destructive' });
     } finally {
       setIsSubscribing(false);
     }
@@ -302,6 +301,7 @@ export default function HomePage() {
                   onSubmitSearch={handleSubmitSearch}
                   onClearSearch={handleClearSearch}
                   inputRef={searchInputRef}
+                  onFocus={() => handleQueryChange(searchQuery)} // Existing onFocus, triggers seasonal if query is empty
                 />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
@@ -337,7 +337,7 @@ export default function HomePage() {
           </Card>
         </section>
       </div>
-      
+
       {recentViewedItems.length > 0 && (
         <section className="space-y-4 w-full">
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-foreground"><History className="text-primary" /> Recently Viewed</h2>

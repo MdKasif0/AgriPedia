@@ -1,3 +1,4 @@
+
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -9,7 +10,7 @@ export function triggerHapticFeedback(): void {
   if (typeof window !== 'undefined' && window.navigator && window.navigator.vibrate) {
     // Standard short vibration for most interactions
     // For more specific patterns, you could pass an array like [100, 30, 100]
-    window.navigator.vibrate(50); 
+    window.navigator.vibrate(50);
   }
 }
 
@@ -19,7 +20,7 @@ export function playSound(soundUrl: string): void {
       const audio = new Audio(soundUrl);
       // Attempt to play the sound. Modern browsers might restrict autoplay.
       audio.play().catch(error => console.error(`Error playing sound ${soundUrl}:`, error));
-    } catch (error) {
+    } catch (error) { // Added curly braces here
       console.error(`Error initializing audio for ${soundUrl}:`, error);
     }
   }

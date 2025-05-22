@@ -6,11 +6,11 @@ export interface ProduceInfo {
   id: string;
   commonName: string;
   scientificName: string;
-  image: string; // placeholder URL
+  image: string;
   description: string;
   origin: string;
   localNames: string[];
-  regions: string[]; // Regions mostly grown
+  regions: string[];
   seasons: string[];
   nutrition: {
     calories: string;
@@ -30,7 +30,6 @@ export interface ProduceInfo {
   carbonFootprintInfo?: string;
 }
 
-// Combine data from imported JSON files
 const allProduceData: ProduceInfo[] = [...fruitsData, ...vegetablesData];
 
 export function getProduceByCommonName(name: string): ProduceInfo | undefined {
@@ -61,7 +60,7 @@ export function searchProduce(
   if (filters.season && filters.season !== 'all') {
     results = results.filter(p => p.seasons.includes(filters.season!));
   }
-  
+
   return results;
 }
 
@@ -79,7 +78,6 @@ export function getUniqueSeasons(): string[] {
   return Array.from(new Set(allSeasons)).sort();
 }
 
-// Helper function to determine current season (Northern Hemisphere)
 function getCurrentSeasonName(): string {
   const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
   if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
@@ -90,13 +88,19 @@ function getCurrentSeasonName(): string {
 
 export function getInSeasonProduce(limit?: number): ProduceInfo[] {
   const currentSeason = getCurrentSeasonName();
-  const inSeasonItems = allProduceData.filter(produce => 
+  const inSeasonItems = allProduceData.filter(produce =>
     produce.seasons.includes(currentSeason)
   );
 
+  // Shuffle for variety if more items than limit
+  if (limit && inSeasonItems.length > limit) {
+    for (let i = inSeasonItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [inSeasonItems[i], inSeasonItems[j]] = [inSeasonItems[j], inSeasonItems[i]];
+    }
+    return inSeasonItems.slice(0, limit);
+  }
   if (limit) {
-    // Optionally shuffle before slicing for variety, or just take the first few
-    // For simplicity, we'll take the first `limit` items.
     return inSeasonItems.slice(0, limit);
   }
   return inSeasonItems;
