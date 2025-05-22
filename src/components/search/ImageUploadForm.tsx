@@ -47,8 +47,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   useEffect(() => {
     if (isCameraMode) {
       const getCameraPermission = async () => {
-        setHasCameraPermission(null); // Reset before attempting
-        setError(null); // Reset error before attempting
+        setHasCameraPermission(null); 
+        setError(null);
         if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
           const noApiMessage = 'Camera API is not available in this browser.';
           setError(noApiMessage);
@@ -64,13 +64,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
           const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
           streamRef.current = stream;
           setHasCameraPermission(true);
-          setError(null); // Clear any previous errors on success
+          setError(null); 
           if (videoRef.current) {
             videoRef.current.srcObject = stream;
           }
         } catch (err) {
-          // This console.error is expected if permission is denied or camera is not found.
-          // The application then handles this by showing a toast and an Alert message.
           console.error('Error accessing camera:', err);
           let message = 'Could not access camera. Please ensure it is connected and permissions are granted in your browser settings.';
           if (err instanceof Error) {
@@ -93,7 +91,6 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       };
       getCameraPermission();
     } else {
-      // Cleanup when toggling camera mode off
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
@@ -102,11 +99,12 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         videoRef.current.srcObject = null;
       }
       // Clear error/permission state when explicitly turning camera off
-      // This provides a cleaner state if user toggles camera off and on after an error.
-      setHasCameraPermission(null);
-      setError(null);
+      if(hasCameraPermission === false) { // Only clear if there was a previous denial/error
+        setHasCameraPermission(null);
+        setError(null);
+      }
     }
-  }, [isCameraMode, toast]);
+  }, [isCameraMode, toast, hasCameraPermission]);
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
@@ -136,7 +134,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         triggerHapticFeedback();
         playSound('/sounds/scan-success.mp3');
         if (onSuccessfulScan) onSuccessfulScan();
-        router.push(`/item/${encodeURIComponent(result.data.id)}`);
+        router.push(`/item/${encodeURIComponent(result.data.commonName)}`); // Use commonName for slug as per current setup
       } else {
         setError(result.message || 'Failed to process image.');
         toast({
@@ -226,7 +224,6 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
           setIsCameraMode(!isCameraMode);
           setPreview(null);
           setFile(null);
-          // Error and hasCameraPermission will be reset by the useEffect for isCameraMode
         }}>
           {isCameraMode ? <UploadCloud className="mr-2" /> : <Camera className="mr-2" />}
           {isCameraMode ? 'Upload File' : 'Use Camera'}
@@ -254,7 +251,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             <canvas ref={canvasRef} className="hidden" />
           </div>
 
-          { hasCameraPermission === false && !error && (
+          { hasCameraPermission === false && !error && ( // Show generic error if permission denied but no specific error message from API
               <Alert variant="destructive">
                 <AlertTitle>Camera Access Required</AlertTitle>
                 <AlertDescription>
@@ -310,7 +307,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                     name="image-upload"
                     type="file"
                     accept="image/*"
-                    capture="environment"
+                    capture="environment" 
                     className="sr-only"
                     onChange={handleFileChange}
                     ref={fileInputRef}
@@ -340,7 +337,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </div>
       )}
 
-      {error && (!isCameraMode || (isCameraMode && hasCameraPermission !== false && error)) && (
+      {error && (!isCameraMode || (isCameraMode && hasCameraPermission !== false && error)) && ( // Only show general error if not a camera permission specific error already shown
          <Alert variant="destructive" className="mt-4">
              <AlertTriangle className="h-4 w-4" />
              <AlertTitle>Error</AlertTitle>
@@ -348,7 +345,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
          </Alert>
       )}
 
-      {isLoading && !isCameraMode && !preview && (
+      {isLoading && !isCameraMode && !preview && ( // Show loader if file is selected but preview isn't ready yet
         <div className="pt-4">
             <Loader text="Analyzing image..." />
         </div>
@@ -356,4 +353,3 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     </div>
   );
 }
-

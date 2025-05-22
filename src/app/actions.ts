@@ -4,7 +4,7 @@
 import { identifyFruitOrVegetableFromImage, IdentifyFruitOrVegetableFromImageOutput } from '@/ai/flows/identify-fruit-or-vegetable-from-image';
 import { validateImageOfProduce, ValidateImageOfProduceOutput } from '@/ai/flows/validate-image-of-produce';
 import { generateRecipes, GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
-import { generateAgriTip, GenerateAgriTipOutput } from '@/ai/flows/generate-agri-tip-flow'; // Added new flow import
+import { generateAgriTip, GenerateAgriTipOutput } from '@/ai/flows/generate-agri-tip-flow';
 
 interface ProcessImageResult {
   success: boolean;
@@ -34,7 +34,7 @@ export async function processImageWithAI(photoDataUri: string): Promise<ProcessI
     }
     
     // Check if a common name was actually returned
-    if (!identificationResult.commonName || identificationResult.commonName.trim() === "") {
+    if (!identificationResult.commonName || identificationResult.commonName.trim() === "" || identificationResult.commonName.toLowerCase() === "unknown") {
         return { success: false, message: 'AI could not determine a common name for the item. Please try again.' };
     }
 
@@ -54,17 +54,14 @@ export async function fetchRecipesForProduce(produceName: string): Promise<Gener
   }
   try {
     const result = await generateRecipes({ produceName });
-    // Ensure the output structure is as expected, even if recipes array is empty
     if (result && Array.isArray(result.recipes)) {
         return result;
     }
-    // If the structure is not as expected, treat it as an error or no recipes found
     console.warn(`Unexpected recipe generation result for ${produceName}:`, result);
-    return { recipes: [] }; // Return empty recipes array to prevent client errors
+    return { recipes: [] }; 
   } catch (error) {
     console.error(`Error fetching recipes for ${produceName}:`, error);
-    // const errorMessage = error instanceof Error ? error.message : 'An unexpected error occurred while fetching recipes.';
-    return null; // Indicate failure to the client
+    return null; 
   }
 }
 
