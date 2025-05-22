@@ -8,13 +8,14 @@ import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
 import { getFavoriteIds, addRecentSearch } from '@/lib/userDataStore';
+import * as UserDataStore from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell } from 'lucide-react';
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell, History, MessagesSquare, Settings as SettingsIcon } from 'lucide-react'; // Added History, MessagesSquare, SettingsIcon
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
 import { fetchDynamicAgriTip } from '@/app/actions';
-import ClientOnly from '@/components/ClientOnly'; // Ensure this alias import is correct
+import ClientOnly from '@/components/ClientOnly'; // Reverted to alias
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
@@ -37,6 +38,7 @@ const TextSearchForm = dynamic(() => import('@/components/search/TextSearchForm'
   loading: () => <SearchFormFallback />,
 });
 
+
 export default function HomePage() {
   const router = useRouter();
   const { toast } = useToast();
@@ -55,6 +57,8 @@ export default function HomePage() {
 
   const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [seasonalSuggestions, setSeasonalSuggestions] = useState<ProduceInfo[]>([]);
+  const [recentViewedItems, setRecentViewedItems] = useState<ProduceInfo[]>([]);
+
 
   const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
   const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
@@ -103,10 +107,14 @@ export default function HomePage() {
   }, []);
 
   const loadUserData = useCallback(() => {
-    const favIds = getFavoriteIds();
+    const favIds = UserDataStore.getFavoriteIds();
     const allCurrentProduce = getAllProduce();
     setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
     setSeasonalSuggestions(getInSeasonProduce(5));
+
+    const recentIds = UserDataStore.getRecentViewIds();
+    setRecentViewedItems(recentIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
+
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -121,9 +129,10 @@ export default function HomePage() {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
     loadUserData();
-    updateFilteredResults('', 'all', 'all');
+    updateFilteredResults('', 'all', 'all'); // Initially load all produce
     setInitialLoad(false);
   }, [loadUserData, updateFilteredResults]);
+
 
   useEffect(() => {
     if (!initialLoad) {
@@ -159,7 +168,7 @@ export default function HomePage() {
         setIsSuggestionsVisible(true);
       }, 150);
     } else {
-      setSuggestions(seasonalSuggestions);
+      setSuggestions(seasonalSuggestions); // Show seasonal if query is cleared
       setIsSuggestionsVisible(true);
     }
   }, [seasonalSuggestions]);
@@ -168,14 +177,14 @@ export default function HomePage() {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
     addRecentSearch(item.commonName);
-    loadUserData();
+    loadUserData(); // Refresh user data which might include recent views if navigating
     triggerHapticFeedback();
     router.push(`/item/${encodeURIComponent(item.id)}`);
   }, [loadUserData, router]);
 
   const handleClearSearch = useCallback(() => {
     setSearchQuery('');
-    setSuggestions(seasonalSuggestions);
+    setSuggestions(seasonalSuggestions); // Reset to seasonal suggestions
     setIsSuggestionsVisible(true);
     searchInputRef.current?.focus();
     triggerHapticFeedback();
@@ -185,8 +194,10 @@ export default function HomePage() {
     setIsSuggestionsVisible(false);
     if (submittedQuery.trim()) {
         addRecentSearch(submittedQuery);
-        loadUserData();
+        loadUserData(); // Refresh user data
     }
+    // The actual search results update is handled by the useEffect watching searchQuery
+    // If a direct navigation is desired for exact matches:
     const results = searchProduce(submittedQuery, {
       region: selectedRegion === 'all' ? undefined : selectedRegion,
       season: selectedSeason === 'all' ? undefined : selectedSeason
@@ -195,6 +206,7 @@ export default function HomePage() {
       router.push(`/item/${encodeURIComponent(results[0].id)}`);
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
+
 
   const handleNotificationSubscription = async () => {
     setIsSubscribing(true);
@@ -212,6 +224,7 @@ export default function HomePage() {
 
     if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
       setNotificationStatus('Push notifications are not supported by your browser.');
+      toast({ title: 'Unsupported Browser', description: 'Push notifications not supported.', variant: 'destructive' });
       setIsSubscribing(false);
       return;
     }
@@ -220,6 +233,7 @@ export default function HomePage() {
       const permission = await Notification.requestPermission();
       if (permission !== 'granted') {
         setNotificationStatus('Notification permission denied.');
+        toast({ title: 'Permission Denied', description: 'Notifications permission was denied.', variant: 'destructive' });
         setIsSubscribing(false);
         return;
       }
@@ -229,10 +243,12 @@ export default function HomePage() {
 
       if (subscription) {
         setNotificationStatus('Already subscribed to notifications.');
+        toast({ title: 'Already Subscribed', description: 'You are already subscribed to notifications.' });
       } else {
         const publicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
         if (!publicKey || publicKey === VAPID_PUBLIC_KEY_PLACEHOLDER) {
           setNotificationStatus('VAPID public key not configured. Cannot subscribe.');
+          toast({ title: 'Setup Incomplete', description: 'VAPID public key not configured.', variant: 'destructive' });
           setIsSubscribing(false);
           return;
         }
@@ -241,16 +257,21 @@ export default function HomePage() {
           applicationServerKey: publicKey,
         });
         setNotificationStatus('Successfully subscribed to notifications!');
-        playSound('/sounds/scan-success.mp3');
+        playSound('/sounds/scan-success.mp3'); // Or a generic success sound
+        toast({ title: 'Subscribed!', description: 'You will now receive notifications.' });
+        // TODO: Send subscription to your server
+        // console.log('Push subscription:', JSON.stringify(subscription));
       }
     } catch (error) {
       console.error('Error subscribing to push notifications:', error);
-      setNotificationStatus("Error: " + (error instanceof Error ? error.message : "Unknown error"));
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      setNotificationStatus("Error: " + errorMessage);
+      toast({ title: 'Subscription Error', description: `Failed to subscribe: ${errorMessage}`, variant: 'destructive' });
     } finally {
       setIsSubscribing(false);
     }
   };
-  
+
   const pageContent = (
     <div className="space-y-8 py-6">
       <ClientOnly fallback={<div className="h-24 bg-muted rounded-xl animate-pulse"></div>}>
@@ -259,7 +280,7 @@ export default function HomePage() {
           description={isTipLoading ? "Loading a fresh tip..." : tipError || dynamicTip}
           icon={isTipLoading ? Loader2 : (tipError ? AlertTriangle : Info)}
           iconProps={isTipLoading ? {className: "animate-spin"} : {}}
-          className="bg-primary/90 backdrop-blur-sm text-primary-foreground rounded-xl shadow-lg border-transparent"
+          className="bg-primary/80 backdrop-blur-md text-primary-foreground rounded-xl shadow-xl border border-primary-foreground/20"
         />
       </ClientOnly>
 
@@ -268,22 +289,20 @@ export default function HomePage() {
           <Card className="shadow-xl rounded-2xl bg-card text-card-foreground">
             <CardHeader className="p-6">
               <CardTitle className="text-xl sm:text-2xl font-semibold flex items-center gap-2 text-card-foreground">
-                <Search className="text-primary" /> Search & Filter
+                <Search className="text-primary" /> Search & Filter Produce
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 p-6 pt-0" ref={searchFormRef}>
-              <ClientOnly fallback={<SearchFormFallback />}>
-                <TextSearchForm
-                    query={searchQuery}
-                    onQueryChange={handleQueryChange}
-                    suggestions={suggestions}
-                    isSuggestionsVisible={isSuggestionsVisible}
-                    onSuggestionClick={handleSuggestionClick}
-                    onSubmitSearch={handleSubmitSearch}
-                    onClearSearch={handleClearSearch}
-                    inputRef={searchInputRef}
+               <TextSearchForm
+                  query={searchQuery}
+                  onQueryChange={handleQueryChange}
+                  suggestions={suggestions}
+                  isSuggestionsVisible={isSuggestionsVisible}
+                  onSuggestionClick={handleSuggestionClick}
+                  onSubmitSearch={handleSubmitSearch}
+                  onClearSearch={handleClearSearch}
+                  inputRef={searchInputRef}
                 />
-              </ClientOnly>
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
                   <label htmlFor="region-filter" className="block text-sm font-medium text-card-foreground mb-1">Filter by Region</label>
@@ -318,6 +337,21 @@ export default function HomePage() {
           </Card>
         </section>
       </div>
+      
+      {recentViewedItems.length > 0 && (
+        <section className="space-y-4 w-full">
+          <h2 className="text-2xl font-semibold flex items-center gap-2 text-foreground"><History className="text-primary" /> Recently Viewed</h2>
+          <div className="flex overflow-x-auto space-x-4 pb-4 min-w-0 touch-pan-x">
+            {recentViewedItems.map(item => (
+              <div key={item.id} className="flex-shrink-0 w-56 sm:w-64">
+                <ProduceCard produce={item} />
+              </div>
+            ))}
+          </div>
+          {recentViewedItems.length > 1 && <p className="text-xs text-muted-foreground text-right mt-1">Scroll for more &rarr;</p>}
+        </section>
+      )}
+
 
       <section className="space-y-4">
         <div className="flex items-center justify-between">
