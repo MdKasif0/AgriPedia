@@ -3,10 +3,10 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound } from 'next/navigation';
+import { useParams, notFound, usePathname } from 'next/navigation'; // usePathname might not be needed if slugFromParams is reliable
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import * as UserDataStore from '@/lib/userDataStore'; // isFavorite, addFavorite, removeFavorite
+import * as UserDataStore from '@/lib/userDataStore'; // isFavorite, addFavorite, removeFavorite, addRecentView
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -21,10 +21,12 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2, History // Added History
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
+import ClientOnly from '@/components/ClientOnly';
+
 
 const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0]['severity']): "default" | "secondary" | "destructive" | "outline" => {
   switch (severity) {
@@ -87,7 +89,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
   useEffect(() => {
     if (!processedSlug) {
       setIsLoading(false);
-      setProduce(null); // Ensure produce is null if no slug
+      setProduce(null); 
       return;
     }
 
@@ -107,7 +109,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
             itemData = onlineData;
             saveProduceOffline(onlineData);
             if (typeof UserDataStore.addRecentView === 'function') {
-              // UserDataStore.addRecentView(onlineData.id); // Removed as feature is removed
+               UserDataStore.addRecentView(onlineData.id);
             } else {
               console.warn('UserDataStore.addRecentView is not available');
             }
@@ -125,7 +127,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
         }
       }
       
-      setProduce(itemData); // Set produce, even if null
+      setProduce(itemData); 
       if (itemData) {
         setIsBookmarked(UserDataStore.isFavorite(itemData.id));
       }
@@ -228,7 +230,6 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
         await navigator.share(shareData);
         toast({ title: 'Shared!', description: `${produce.commonName} details shared successfully.` });
       } else {
-        // Fallback for browsers that don't support Web Share API
         await navigator.clipboard.writeText(window.location.href);
         toast({ title: 'Link Copied!', description: `URL for ${produce.commonName} copied to clipboard.` });
       }
@@ -242,11 +243,11 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
 
-  if (!produce && !isLoading) { // Ensure notFound is called only after loading and if produce is null
+  if (!produce && !isLoading) { 
     notFound();
     return null; 
   }
-  if (!produce) return null; // Should be caught by above, but as a safeguard
+  if (!produce) return null; 
   
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
@@ -458,3 +459,4 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     </div>
   );
 }
+
