@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Settings, Bell, Palette, Leaf } from 'lucide-react'; // Added Leaf
+import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine } from 'lucide-react'; // Added MessagesSquare, ScanLine
 import {
   Sidebar,
   SidebarHeader,
@@ -44,7 +44,20 @@ export default function DesktopSidebar() {
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
-          {/* Add other primary navigation items here if needed */}
+          <SidebarMenuItem>
+            <Link href="/chat" legacyBehavior passHref>
+              <SidebarMenuButton asChild tooltip="Chat with AgriAI" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                <a><MessagesSquare /> <span>Chat AI</span></a>
+              </SidebarMenuButton>
+            </Link>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <Link href="/scan" legacyBehavior passHref>
+              <SidebarMenuButton asChild tooltip="Scan Produce" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                <a><ScanLine /> <span>Scan Produce</span></a>
+              </SidebarMenuButton>
+            </Link>
+          </SidebarMenuItem>
         </SidebarMenu>
 
         <SidebarSeparator className="my-4 bg-sidebar-border" />
