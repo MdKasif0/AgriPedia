@@ -8,32 +8,32 @@ export function GET(): Response {
     description: 'Search and scan fruits and vegetables to learn more about them.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#224322', // Dark Desaturated Green (PRD) - for splash screen
-    theme_color: '#90EE90',     // Vibrant Green (PRD Primary) - for app toolbar/status bar
+    background_color: '#151921', // Updated: Dark theme page background (approx hsl(220, 15%, 10%))
+    theme_color: '#5CBB7C',     // Updated: Primary leafy green (approx hsl(130, 50%, 55%))
     icons: [
       {
-        src: 'https://placehold.co/192x192.png', 
+        src: 'https://placehold.co/192x192.png',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'any',
         "data-ai-hint": "logo app icon"
       },
       {
-        src: 'https://placehold.co/512x512.png', 
+        src: 'https://placehold.co/512x512.png',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any',
         "data-ai-hint": "logo app icon"
       },
       {
-        src: 'https://placehold.co/192x192.png', 
+        src: 'https://placehold.co/192x192.png',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'maskable',
         "data-ai-hint": "logo app icon"
       },
       {
-        src: 'https://placehold.co/512x512.png', 
+        src: 'https://placehold.co/512x512.png',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'maskable',
@@ -47,4 +47,3 @@ export function GET(): Response {
     },
   });
 }
-
