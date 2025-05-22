@@ -323,6 +323,470 @@
         "steps": ["In a large salad bowl, combine mixed greens, grapes, feta cheese, and toasted almonds.", "In a small bowl, whisk together olive oil, red wine vinegar, Dijon mustard, salt, and pepper.", "Drizzle dressing over the salad and toss gently to combine.", "Serve immediately."]
       }
     ]
+  },
+  {
+    "id": "mango",
+    "commonName": "Mango",
+    "scientificName": "Mangifera indica",
+    "image": "https://placehold.co/600x411.png",
+    "description": "A tropical stone fruit, juicy and sweet, with a range of colors including yellow, orange, red, or green. Known as the 'king of fruits' in some regions.",
+    "origin": "South Asia (India, Myanmar)",
+    "localNames": ["Aam (Hindi)", "Manga (Spanish/Portuguese)", "Mangue (French)"],
+    "regions": ["India", "China", "Thailand", "Mexico", "Indonesia", "Pakistan", "Brazil"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "60 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 15, "unit": "g" },
+        { "name": "Fat", "value": 0.4, "unit": "g" },
+        { "name": "Fiber", "value": 1.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 36.4, "unit": "mg", "rdi": "61%" },
+        { "name": "Vitamin A (from Beta-carotene)", "value": 54, "unit": "µg RAE", "rdi": "6%" },
+        { "name": "Folate", "value": 43, "unit": "µg", "rdi": "11%" },
+        { "name": "Vitamin E", "value": 0.9, "unit": "mg", "rdi": "6%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 168, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C, boosting immunity and promoting skin health.",
+      "Good source of Vitamin A (as beta-carotene), crucial for vision and immune function.",
+      "Contains antioxidants like mangiferin, which may protect against chronic diseases.",
+      "Dietary fiber aids in digestion and can help regulate blood sugar levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex-Fruit Syndrome", "severity": "Mild", "details": "Some individuals with latex allergy may react to mangoes, particularly the skin. Symptoms usually involve oral itching." },
+      { "name": "Urushiol Sensitivity", "severity": "Mild", "details": "Mango skin, leaves, and sap contain urushiol (similar to poison ivy); can cause contact dermatitis in sensitive individuals. The flesh itself is generally safe." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Mangoes thrive in tropical and subtropical climates with distinct wet and dry seasons and protection from frost.\n2. Soil: Prefer deep, well-drained, loamy soil with a pH between 5.5 and 7.5.\n3. Planting: Usually propagated from grafted seedlings for fruit quality. Plant in full sun with ample space.\n4. Watering: Young trees need regular watering. Mature trees are relatively drought-tolerant but require irrigation during fruit development for best yield.\n5. Fertilizing: Apply balanced fertilizer during active growth periods, especially when young and during fruit set.\n6. Pruning: Prune to shape the tree, remove dead or diseased wood, and improve air circulation and light penetration.\n7. Pest & Disease Control: Monitor for common issues like mango hoppers, fruit flies, and anthracnose.",
+    "growthDuration": "Grafted trees may start bearing fruit in 3-5 years. Fruit matures 100-150 days after flowering, depending on the variety and climate.",
+    "sustainabilityTips": [
+      "Choose locally grown mangoes when in season to reduce food miles.",
+      "Compost mango peels and seeds, or try growing a tree from the seed (though fruit quality may vary).",
+      "Freeze ripe mango chunks for later use in smoothies or desserts."
+    ],
+    "carbonFootprintInfo": "Varies widely based on origin and transport method (0.5-1.5 kg CO2e/kg). Air-freighted mangoes have a significantly higher footprint.",
+    "staticRecipes": [
+      {
+        "name": "Classic Mango Lassi",
+        "description": "A refreshing and creamy yogurt-based drink popular in India.",
+        "ingredients": ["1 cup ripe mango pulp (fresh or canned)", "1 cup plain yogurt", "1/2 cup milk (or water for a lighter version)", "2-4 tbsp sugar or honey (to taste)", "A pinch of cardamom powder (optional)", "Ice cubes"],
+        "steps": ["Combine mango pulp, yogurt, milk, sugar/honey, and cardamom powder (if using) in a blender.", "Blend until smooth and creamy.", "Add ice cubes and blend again briefly until desired consistency.", "Pour into glasses and serve chilled. Garnish with a mint sprig if desired."]
+      },
+      {
+        "name": "Fresh Mango Salsa",
+        "description": "A vibrant and flavorful salsa perfect with grilled fish, chicken, or as a dip with tortilla chips.",
+        "ingredients": ["2 ripe mangoes, peeled, pitted, and diced", "1/2 red onion, finely chopped", "1 jalapeño, minced (seeds removed for less heat, optional)", "1/2 red bell pepper, diced", "1/4 cup chopped fresh cilantro", "Juice of 1 lime", "Salt to taste"],
+        "steps": ["In a medium bowl, gently combine diced mangoes, red onion, jalapeño (if using), and red bell pepper.", "Add chopped cilantro and fresh lime juice.", "Season with salt to taste and stir gently to combine all ingredients.", "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld. Serve chilled or at room temperature."]
+      },
+      {
+        "name": "Mango Sticky Rice",
+        "description": "A popular Thai dessert made with glutinous rice, fresh mango, and a sweet coconut milk sauce.",
+        "ingredients": ["1 cup glutinous (sweet) rice, soaked in water for at least 4 hours or overnight", "1 cup coconut milk, full-fat", "1/2 cup granulated sugar (or to taste)", "1/4 tsp salt", "2 ripe mangoes, peeled, pitted, and sliced", "Toasted sesame seeds or a sprig of mint for garnish (optional)"],
+        "steps": ["Drain the soaked glutinous rice. Steam the rice for 20-25 minutes, or until tender and cooked through (it should be translucent).", "While rice is steaming, prepare the coconut sauce: In a small saucepan, heat coconut milk, sugar, and salt over medium-low heat. Stir constantly until the sugar and salt are completely dissolved. Do not boil. Reserve about 1/4 cup of this sauce for drizzling.", "Once the rice is cooked, transfer it to a bowl. Gradually pour the remaining warm coconut milk mixture (not the reserved portion) over the hot rice, stirring gently to combine. Cover the bowl and let the rice sit for 20-30 minutes to allow it to absorb the coconut milk and become creamy.", "To serve, place a portion of the sweet sticky rice on a plate. Arrange fresh mango slices alongside. Drizzle with a little of the reserved coconut sauce and garnish with toasted sesame seeds or mint if desired."]
+      }
+    ]
+  },
+  {
+    "id": "papaya",
+    "commonName": "Papaya",
+    "scientificName": "Carica papaya",
+    "image": "https://placehold.co/600x412.png",
+    "description": "A tropical fruit with a sweet, musky flavor and soft, butter-like consistency. The flesh is typically orange or pinkish, with numerous small black seeds in the central cavity.",
+    "origin": "Southern Mexico and Central America",
+    "localNames": ["Lechosa (Spanish in some regions)", "Pawpaw (in some regions, can be confusing)", "Fruit à bombes (French Caribbean)"],
+    "regions": ["India", "Brazil", "Indonesia", "Nigeria", "Mexico"],
+    "seasons": ["Year-round in tropical climates, peak in early summer/fall"],
+    "nutrition": {
+      "calories": "43 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.5, "unit": "g" },
+        { "name": "Carbohydrates", "value": 11, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 1.7, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 60.9, "unit": "mg", "rdi": "102%" },
+        { "name": "Vitamin A (from carotenoids)", "value": 47, "unit": "µg RAE", "rdi": "5%" },
+        { "name": "Folate", "value": 37, "unit": "µg", "rdi": "9%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 182, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C, boosting the immune system.",
+      "Contains papain, an enzyme that aids in protein digestion.",
+      "Good source of antioxidants like carotenoids and flavonoids.",
+      "May improve heart health and reduce inflammation."
+    ],
+    "potentialAllergies": [
+      { "name": "Latex-Fruit Syndrome", "severity": "Mild", "details": "Individuals with latex allergies may react to papaya." },
+      { "name": "Papain Sensitivity", "severity": "Rare", "details": "Some people may be sensitive to the papain enzyme, causing oral irritation." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Papayas are tropical plants needing warm weather, full sun, and protection from frost.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.5.\n3. Propagation: Grown from seeds. Plant seeds in pots or directly in the ground.\n4. Watering: Requires regular watering, especially during dry periods, but dislikes waterlogged soil.\n5. Fertilizing: Feed regularly with a balanced fertilizer.\n6. Sexing Plants: Papaya plants can be male, female, or hermaphrodite. Hermaphrodite plants are preferred for fruit production. Usually, multiple seedlings are planted and thinned later.\n7. Harvesting: Fruits are harvested when they start showing yellow/orange color and yield slightly to pressure.",
+    "growthDuration": "Can bear fruit within 6-12 months from seed under ideal conditions.",
+    "sustainabilityTips": [
+        "Store unripe papayas at room temperature; ripe papayas in the refrigerator.",
+        "Papaya seeds are edible and have a peppery taste; can be dried and ground.",
+        "Compost papaya skin."
+    ],
+    "carbonFootprintInfo": "Moderate carbon footprint, largely dependent on transport from tropical regions (0.6-1.2 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Simple Papaya Boat",
+        "description": "A refreshing and easy way to enjoy papaya, often served with lime.",
+        "ingredients": ["1 ripe papaya", "1 lime, cut into wedges"],
+        "steps": ["Cut the papaya in half lengthwise.", "Scoop out the black seeds from the center cavity of each half.", "Squeeze fresh lime juice over the papaya flesh.", "Serve immediately with a spoon to scoop out the flesh."]
+      },
+      {
+        "name": "Papaya Smoothie",
+        "description": "A tropical and nutritious smoothie.",
+        "ingredients": ["1 cup ripe papaya chunks, frozen or fresh", "1/2 banana (optional, for creaminess)", "1/2 cup coconut water or milk", "1 tbsp lime juice", "Honey or agave to taste (optional)"],
+        "steps": ["Combine papaya chunks, banana (if using), coconut water/milk, and lime juice in a blender.", "Blend until smooth and creamy.", "Taste and add honey or agave if a sweeter smoothie is desired. Blend again briefly.", "Pour into a glass and serve immediately."]
+      },
+      {
+        "name": "Green Papaya Salad (Som Tum Style)",
+        "description": "A zesty and spicy salad made with unripe papaya, common in Southeast Asian cuisine (simplified version).",
+        "ingredients": ["1 small green (unripe) papaya, peeled, seeded, and shredded or julienned", "2-3 cherry tomatoes, halved", "1-2 tbsp crushed roasted peanuts", "For the dressing: 1 tbsp lime juice, 1 tbsp fish sauce (or soy sauce for vegetarian), 1 tsp sugar, 1 small chili, minced (optional)"],
+        "steps": ["Prepare the dressing: In a small bowl, whisk together lime juice, fish sauce (or soy sauce), sugar, and minced chili (if using) until sugar is dissolved.", "In a larger bowl (or traditionally a mortar and pestle), combine the shredded green papaya and cherry tomatoes.", "Pour the dressing over the papaya mixture. Toss well to combine. If using a mortar, gently pound to bruise the ingredients and help them absorb the dressing.", "Transfer to a serving plate and garnish with crushed roasted peanuts. Serve immediately for best texture."]
+      }
+    ]
+  },
+  {
+    "id": "guava",
+    "commonName": "Guava",
+    "scientificName": "Psidium guajava",
+    "image": "https://placehold.co/600x413.png",
+    "description": "A tropical fruit, typically round or pear-shaped, with green or yellow skin and pink or white flesh containing many small, hard seeds. Known for its strong, sweet fragrance.",
+    "origin": "Tropical Americas (Mexico to northern South America)",
+    "localNames": ["Guayaba (Spanish)", "Goyave (French)", "Amrood (Hindi)"],
+    "regions": ["India", "China", "Thailand", "Pakistan", "Mexico", "Brazil", "Egypt"],
+    "seasons": ["Varies by region, often multiple crops per year; common in late summer/fall"],
+    "nutrition": {
+      "calories": "68 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 2.6, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14, "unit": "g" },
+        { "name": "Fat", "value": 1, "unit": "g" },
+        { "name": "Fiber", "value": 5.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 228.3, "unit": "mg", "rdi": "381%" },
+        { "name": "Vitamin A (from carotenoids)", "value": 31, "unit": "µg RAE", "rdi": "3%" },
+        { "name": "Folate", "value": 49, "unit": "µg", "rdi": "12%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 417, "unit": "mg", "rdi": "12%" }
+      ]
+    },
+    "healthBenefits": [
+      "Exceptionally high in Vitamin C, a powerful antioxidant that boosts the immune system.",
+      "Rich in dietary fiber, aiding digestion and promoting satiety.",
+      "May help lower blood sugar levels and improve insulin resistance.",
+      "Contains antioxidants that can protect against cell damage."
+    ],
+    "potentialAllergies": [
+      { "name": "Guava Allergy", "severity": "Rare", "details": "Allergies to guava are uncommon but can occur." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Guavas are tropical and subtropical plants, sensitive to cold. Prefer full sun.\n2. Soil: Adaptable to various soils but prefer well-drained, fertile loam with pH 5-7.\n3. Propagation: Can be grown from seeds, cuttings, or air layering. Seeds may not grow true to type.\n4. Watering: Young trees need regular watering. Mature trees are drought-tolerant but fruit better with consistent moisture.\n5. Fertilizing: Apply balanced fertilizer regularly, especially during growth and fruiting stages.\n6. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruiting.\n7. Harvesting: Fruits are picked when they change color (usually from dark green to light green or yellow) and emit a strong fragrance. They soften after picking.",
+    "growthDuration": "Seedling trees may fruit in 2-4 years. Fruit ripens 3-5 months after flowering.",
+    "sustainabilityTips": [
+        "Guava is often eaten fresh, skin and seeds included (for some varieties).",
+        "Ripe guavas are fragile; handle with care and consume quickly or refrigerate.",
+        "Can be used to make juices, jams, and jellies."
+    ],
+    "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.6-1.3 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Guava Juice (Agua de Guayaba)",
+        "description": "A refreshing and popular Latin American fruit drink.",
+        "ingredients": ["4-5 ripe guavas, washed and roughly chopped (ends trimmed)", "4 cups water", "1/2 cup sugar (or to taste)", "Juice of 1/2 lime (optional)"],
+        "steps": ["Combine chopped guavas and 2 cups of water in a blender.", "Blend until smooth.", "Strain the mixture through a fine-mesh sieve into a pitcher, pressing on the solids to extract as much juice as possible. Discard the pulp and seeds.", "Add the remaining 2 cups of water, sugar, and lime juice (if using) to the pitcher. Stir well until the sugar is dissolved.", "Taste and adjust sweetness if necessary. Serve chilled over ice."]
+      },
+      {
+        "name": "Guava Paste (Goiabada / Bocadillo)",
+        "description": "A thick, sweet paste made from guava, often served with cheese.",
+        "ingredients": ["2 lbs ripe guavas, washed, ends trimmed, and quartered", "1 cup sugar (or more, depending on guava sweetness and desired firmness)", "Juice of 1 lime"],
+        "steps": ["Place guava quarters in a saucepan with about 1/2 cup of water. Bring to a simmer, cover, and cook for 15-20 minutes, or until very soft.", "Allow to cool slightly, then pass the cooked guavas through a food mill or press through a sieve to remove seeds and create a smooth pulp.", "Measure the pulp. For every cup of pulp, add about 3/4 to 1 cup of sugar (adjust to taste) and the lime juice. Combine in a heavy-bottomed saucepan.", "Cook over medium-low heat, stirring constantly, until the mixture thickens significantly and pulls away from the sides of the pan. This can take 30-60 minutes. Be careful as it may splatter.", "Pour the hot paste into a lightly greased mold or a shallow dish lined with parchment paper. Smooth the top.", "Allow to cool completely at room temperature, then refrigerate until firm. Cut into squares or slices to serve."]
+      },
+      {
+        "name": "Spiced Guava Slices",
+        "description": "A simple way to enjoy fresh guava with a touch of spice.",
+        "ingredients": ["2 ripe guavas", "Pinch of salt", "Pinch of chili powder or cayenne pepper (optional)", "Lime wedge for squeezing (optional)"],
+        "steps": ["Wash the guavas thoroughly.", "Slice the guavas into wedges or rounds, as preferred. You can eat the skin and seeds of most common varieties.", "Arrange the guava slices on a plate.", "Sprinkle lightly with salt and chili powder (if using).", "Squeeze a bit of fresh lime juice over the top if desired. Serve immediately."]
+      }
+    ]
+  },
+  {
+    "id": "watermelon",
+    "commonName": "Watermelon",
+    "scientificName": "Citrullus lanatus",
+    "image": "https://placehold.co/600x414.png",
+    "description": "A large, sweet fruit originally from southern Africa. It's known for its high water content and refreshing taste, typically with green rind and red, juicy flesh.",
+    "origin": "Southern Africa (Kalahari Desert region)",
+    "localNames": ["Sandía (Spanish)", "Pastèque (French)", "Wassermelone (German)"],
+    "regions": ["China", "Turkey", "Iran", "Brazil", "United States"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "30 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.6, "unit": "g" },
+        { "name": "Carbohydrates", "value": 7.6, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 8.1, "unit": "mg", "rdi": "14%" },
+        { "name": "Vitamin A (from carotenoids)", "value": 28, "unit": "µg RAE", "rdi": "3%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 112, "unit": "mg", "rdi": "3%" },
+        { "name": "Lycopene (antioxidant)", "value": 4532, "unit": "µg" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent for hydration due to high water content (about 92%).",
+      "Good source of lycopene, an antioxidant linked to heart health and cancer prevention.",
+      "Contains citrulline, an amino acid that may improve blood flow and reduce muscle soreness.",
+      "Provides Vitamin C, supporting immune function."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Rare, but can occur in individuals with ragweed pollen allergy." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Watermelons are warm-season crops, requiring long, hot summers. Full sun is essential.\n2. Soil: Prefer sandy loam soil that is well-drained and rich in organic matter. pH 6.0-6.8.\n3. Planting: Typically grown from seeds, started indoors in cooler climates or sown directly when soil is warm.\n4. Spacing: Vines need ample space to spread. Plant hills 6-8 feet apart.\n5. Watering: Consistent and deep watering is crucial, especially during fruit set and development. Reduce watering as fruits ripen.\n6. Fertilizing: Benefit from fertilizers rich in potassium and phosphorus.\n7. Pollination: Bees are essential for pollinating watermelon flowers.\n8. Harvesting: Judged by a dull sound when thumped, drying of the tendril nearest the fruit, and a yellowing of the underside where it touches the ground.",
+    "growthDuration": "70-90 days from sowing to harvest, depending on variety.",
+    "sustainabilityTips": [
+        "Store uncut watermelon at room temperature; cut watermelon in the refrigerator.",
+        "Use the entire watermelon: rind can be pickled or candied, seeds can be roasted.",
+        "Choose locally grown watermelons in season for best flavor and lower impact."
+    ],
+    "carbonFootprintInfo": "Generally low (0.2-0.4 kg CO2e/kg) if field-grown and consumed locally. Transport can increase this significantly.",
+    "staticRecipes": [
+      {
+        "name": "Classic Watermelon Slices",
+        "description": "The simplest and most refreshing way to enjoy watermelon.",
+        "ingredients": ["1 ripe watermelon"],
+        "steps": ["Wash the outside of the watermelon thoroughly.", "Place the watermelon on a sturdy cutting board.", "Using a large, sharp knife, cut the watermelon in half lengthwise or crosswise.", "Lay each half cut-side down and slice into wedges or rounds of desired thickness.", "Serve immediately or chill for later."]
+      },
+      {
+        "name": "Watermelon Feta Mint Salad",
+        "description": "A refreshing and flavorful salad combining sweet watermelon, salty feta, and fresh mint.",
+        "ingredients": ["4 cups cubed seedless watermelon", "1/2 cup crumbled feta cheese", "1/4 cup fresh mint leaves, chopped or torn", "1-2 tbsp olive oil", "1 tbsp lime juice or red wine vinegar", "Pinch of salt and black pepper (optional)"],
+        "steps": ["In a large bowl, gently combine cubed watermelon, crumbled feta cheese, and fresh mint.", "In a small bowl, whisk together olive oil and lime juice or red wine vinegar. Season lightly with salt and pepper if desired (feta is already salty).", "Drizzle the dressing over the watermelon mixture.", "Toss gently to combine. Serve immediately or chilled. For best results, assemble just before serving as watermelon can release a lot of water."]
+      },
+      {
+        "name": "Refreshing Watermelon Juice/Agua Fresca",
+        "description": "A simple and hydrating drink perfect for hot days.",
+        "ingredients": ["4-5 cups cubed seedless watermelon", "1/2 cup water (optional, for easier blending)", "Juice of 1/2 to 1 lime (to taste)", "1-2 tbsp sugar or agave (optional, to taste)", "Fresh mint sprigs for garnish (optional)"],
+        "steps": ["Place cubed watermelon into a blender. Add water if your watermelon isn't very juicy or to help with blending.", "Blend until smooth.", "Strain the mixture through a fine-mesh sieve into a pitcher if you prefer a very smooth juice, pressing gently on the solids. For a more rustic agua fresca, straining is optional.", "Stir in lime juice and sweetener (if using) to taste.", "Serve chilled over ice, garnished with a mint sprig if desired."]
+      }
+    ]
+  },
+  {
+    "id": "muskmelon",
+    "commonName": "Muskmelon (Cantaloupe)",
+    "scientificName": "Cucumis melo var. cantalupensis",
+    "image": "https://placehold.co/600x415.png",
+    "description": "A type of melon with a rough, webbed or netted rind, typically with sweet, orange flesh. Cantaloupe is a common variety of muskmelon.",
+    "origin": "Persia (Iran) or Africa",
+    "localNames": ["Cantalupo (Spanish/Italian)", "Kharbooja (Hindi)"],
+    "regions": ["China", "Turkey", "Iran", "United States", "Egypt", "India", "Spain"],
+    "seasons": ["Summer"],
+    "nutrition": {
+      "calories": "34 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 8.2, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 36.7, "unit": "mg", "rdi": "61%" },
+        { "name": "Vitamin A (from Beta-carotene)", "value": 169, "unit": "µg RAE", "rdi": "19%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 267, "unit": "mg", "rdi": "8%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin A (as beta-carotene) and Vitamin C, supporting vision, immune function, and skin health.",
+      "Good source of potassium, which helps regulate blood pressure.",
+      "High water content contributes to hydration.",
+      "Contains antioxidants that protect against cell damage."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "May occur in individuals allergic to ragweed or grass pollens." },
+      { "name": "Listeria/Salmonella Risk", "severity": "Varies", "details": "The netted rind can harbor bacteria; thorough washing of the rind before cutting is crucial."}
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Warm-season crop requiring plenty of sun and warm temperatures.\n2. Soil: Prefers well-drained, sandy loam soil rich in organic matter, pH 6.0-6.8.\n3. Planting: Sow seeds directly after the last frost or start indoors 3-4 weeks prior.\n4. Spacing: Vines need space; plant in hills or rows with adequate spacing.\n5. Watering: Consistent watering is needed, especially during fruit development. Avoid wetting foliage if possible.\n6. Fertilizing: Benefit from balanced fertilizer, with increased potassium during fruiting.\n7. Harvesting: Ripeness indicated by a sweet aroma, rind changing color (often to beige or yellow under the netting), and the melon easily detaching from the vine ('full slip').",
+    "growthDuration": "70-90 days from sowing to harvest.",
+    "sustainabilityTips": [
+        "Store uncut muskmelons at room temperature until ripe, then refrigerate.",
+        "Wash the rind thoroughly before cutting to prevent transferring bacteria to the flesh.",
+        "Compost the rind and seeds."
+    ],
+    "carbonFootprintInfo": "Generally low to moderate (0.3-0.6 kg CO2e/kg) if field-grown. Transport and out-of-season greenhouse production increase this.",
+    "staticRecipes": [
+      {
+        "name": "Cantaloupe and Prosciutto",
+        "description": "A classic Italian appetizer balancing sweet cantaloupe with salty prosciutto.",
+        "ingredients": ["1 ripe cantaloupe (muskmelon)", "4-6 oz thinly sliced prosciutto"],
+        "steps": ["Wash the cantaloupe rind thoroughly. Cut the cantaloupe in half and scoop out the seeds.", "Slice the cantaloupe flesh into wedges or cubes.", "Wrap each cantaloupe piece with a slice of prosciutto.", "Arrange on a platter and serve immediately or chilled. A drizzle of balsamic glaze or fresh basil can be added if desired."]
+      },
+      {
+        "name": "Chilled Cantaloupe Soup",
+        "description": "A refreshing and light cold soup, perfect for a hot summer day.",
+        "ingredients": ["1 medium ripe cantaloupe, peeled, seeded, and cubed (about 4 cups)", "1/2 cup orange juice", "1/4 cup plain yogurt or coconut milk", "1 tbsp fresh lime juice", "1 tsp grated fresh ginger (optional)", "Fresh mint leaves for garnish"],
+        "steps": ["Combine cubed cantaloupe, orange juice, yogurt/coconut milk, lime juice, and ginger (if using) in a blender.", "Blend until completely smooth.", "Taste and adjust sweetness or tanginess if needed (a little honey can be added if cantaloupe isn't very sweet).", "Chill the soup in the refrigerator for at least 30 minutes, or until well-chilled.", "Serve in bowls or glasses, garnished with fresh mint leaves."]
+      },
+      {
+        "name": "Muskmelon (Kharbooja) Shake",
+        "description": "A sweet and refreshing Indian-style milkshake.",
+        "ingredients": ["2 cups cubed ripe muskmelon (cantaloupe/kharbooja)", "1 cup chilled milk (dairy or non-dairy)", "2-3 tbsp sugar (or to taste)", "1/4 tsp cardamom powder (optional)", "A few ice cubes"],
+        "steps": ["Combine cubed muskmelon, chilled milk, sugar, and cardamom powder (if using) in a blender.", "Blend until smooth and frothy.", "Add ice cubes and blend again briefly until the shake is cold and slightly thickened.", "Pour into glasses and serve immediately. Can be garnished with a small melon wedge or a sprinkle of cardamom."]
+      }
+    ]
+  },
+  {
+    "id": "pineapple",
+    "commonName": "Pineapple",
+    "scientificName": "Ananas comosus",
+    "image": "https://placehold.co/600x416.png",
+    "description": "A tropical plant with an edible fruit, consisting of coalesced berries. It's known for its tough, spiky exterior and sweet, tangy yellow flesh.",
+    "origin": "South America (Brazil, Paraguay)",
+    "localNames": ["Piña (Spanish)", "Ananas (French/German/many other languages)"],
+    "regions": ["Costa Rica", "Philippines", "Indonesia", "Thailand", "India", "Brazil"],
+    "seasons": ["Year-round availability due to different growing regions, peak varies"],
+    "nutrition": {
+      "calories": "50 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.5, "unit": "g" },
+        { "name": "Carbohydrates", "value": 13, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 1.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 47.8, "unit": "mg", "rdi": "80%" },
+        { "name": "Manganese", "value": 0.9, "unit": "mg", "rdi": "46%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 109, "unit": "mg", "rdi": "3%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C, an antioxidant that boosts the immune system.",
+      "Contains bromelain, an enzyme mixture that aids digestion and has anti-inflammatory properties.",
+      "Good source of manganese, important for bone health and metabolism.",
+      "May help reduce inflammation and swelling."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can cause itching or tingling in the mouth due to bromelain, especially with very ripe or raw pineapple." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Commonly grown from the crown (top) of a mature pineapple fruit, or from slips or suckers.\n2. Climate: Tropical plant, needs warm temperatures, high humidity, and full sun.\n3. Soil: Well-drained, acidic (pH 4.5-6.5), sandy loam soil rich in organic matter.\n4. Planting: Plant the crown after allowing the cut base to dry for a few days. Can be grown in pots or ground.\n5. Watering: Requires regular watering but dislikes waterlogged conditions.\n6. Fertilizing: Feed with a balanced liquid fertilizer every few months during the growing season.\n7. Fruiting: Takes a long time to fruit, often 18-24 months or more from planting a crown.\n8. Harvesting: Fruit is ready when it develops a golden-yellow color at the base and has a strong sweet fragrance.",
+    "growthDuration": "18-24 months from planting a crown to first fruit. Plants typically produce one fruit at a time.",
+    "sustainabilityTips": [
+        "You can grow a new pineapple plant from the top of a store-bought pineapple.",
+        "Use pineapple core in smoothies or to infuse water (it's tougher but still flavorful).",
+        "Compost pineapple skin and leaves."
+    ],
+    "carbonFootprintInfo": "High carbon footprint if transported long distances, especially by air (can be 1.5-5 kg CO2e/kg). Canned pineapple generally has a lower footprint than air-freighted fresh pineapple.",
+    "staticRecipes": [
+      {
+        "name": "Grilled Pineapple Slices",
+        "description": "Grilling pineapple caramelizes its sugars and enhances its sweetness, perfect as a side or dessert.",
+        "ingredients": ["1 ripe pineapple, peeled, cored, and sliced into rings or wedges", "1-2 tbsp melted butter or coconut oil (optional)", "1-2 tsp brown sugar (optional)", "Pinch of cinnamon or chili powder (optional)"],
+        "steps": ["Preheat grill to medium-high heat.", "If using, brush pineapple slices lightly with melted butter or coconut oil. If desired, sprinkle with brown sugar and cinnamon/chili powder.", "Place pineapple slices directly on the grill grates.", "Grill for 3-5 minutes per side, or until pineapple is heated through and has nice grill marks.", "Serve warm, on its own, with ice cream, or as a side for grilled meats."]
+      },
+      {
+        "name": "Pineapple Fried Rice",
+        "description": "A flavorful and visually appealing fried rice dish, often served in a pineapple shell.",
+        "ingredients": ["1 tbsp cooking oil", "2 cloves garlic, minced", "1/2 cup diced chicken, shrimp, or tofu (optional)", "2 cups cooked and chilled rice (day-old rice works best)", "1/2 cup diced fresh pineapple", "1/4 cup peas", "1/4 cup diced carrots", "2 tbsp soy sauce", "1 tbsp fish sauce (optional)", "1 egg, lightly beaten", "Chopped green onions and cashews for garnish"],
+        "steps": ["Heat oil in a large skillet or wok over medium-high heat. Add garlic and cook until fragrant (about 30 seconds).", "If using protein, add chicken/shrimp/tofu and cook until done. Remove and set aside.", "Push rice to one side of the wok. Pour beaten egg onto the empty side and scramble until cooked. Mix with the rice.", "Add cooked protein (if used), diced pineapple, peas, and carrots to the wok. Stir-fry for 2-3 minutes.", "Add soy sauce and fish sauce (if using). Stir well to combine all ingredients.", "Serve hot, garnished with chopped green onions and cashews. For a fancier presentation, serve in a hollowed-out pineapple half."]
+      },
+      {
+        "name": "Classic Piña Colada (Non-alcoholic version option)",
+        "description": "A sweet and creamy tropical cocktail (or mocktail) featuring pineapple and coconut.",
+        "ingredients": ["1 1/2 cups pineapple juice", "1 cup coconut cream or full-fat coconut milk", "1 cup crushed ice", "1/2 cup fresh or frozen pineapple chunks", "(Optional for alcoholic version: 3-4 oz white rum)", "Pineapple wedges and maraschino cherries for garnish"],
+        "steps": ["Combine pineapple juice, coconut cream/milk, crushed ice, and pineapple chunks in a blender.", "If making an alcoholic version, add the rum.", "Blend until smooth and frothy.", "Pour into chilled glasses.", "Garnish with a pineapple wedge and a maraschino cherry. Serve immediately."]
+      }
+    ]
+  },
+  {
+    "id": "pomegranate",
+    "commonName": "Pomegranate",
+    "scientificName": "Punica granatum",
+    "image": "https://placehold.co/600x417.png",
+    "description": "A fruit-bearing deciduous shrub or small tree. The fruit is known for its tough reddish rind and hundreds of edible seeds (arils) encased in juicy, gem-like pulp.",
+    "origin": "Iran to northern India",
+    "localNames": ["Granada (Spanish)", "Grenade (French)", "Anar (Hindi)"],
+    "regions": ["India", "China", "Iran", "Turkey", "United States (California)", "Spain"],
+    "seasons": ["Autumn", "Early Winter"],
+    "nutrition": {
+      "calories": "83 kcal per 100g (arils)",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 19, "unit": "g" },
+        { "name": "Fat", "value": 1.2, "unit": "g" },
+        { "name": "Fiber", "value": 4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 10.2, "unit": "mg", "rdi": "17%" },
+        { "name": "Vitamin K", "value": 16.4, "unit": "µg", "rdi": "21%" },
+        { "name": "Folate", "value": 38, "unit": "µg", "rdi": "10%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 236, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in powerful antioxidants, particularly punicalagins and punicic acid.",
+      "May have anti-inflammatory effects.",
+      "Can contribute to heart health by improving cholesterol levels and blood pressure.",
+      "Some research suggests benefits for memory and brain health."
+    ],
+    "potentialAllergies": [
+      { "name": "Pomegranate Allergy", "severity": "Rare", "details": "Allergies are uncommon but can cause reactions in sensitive individuals." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Pomegranates prefer climates with hot, dry summers and cool winters. They are relatively drought-tolerant once established.\n2. Soil: Adaptable to various soils but thrive in well-drained, deep loamy soil. Slightly acidic to neutral pH.\n3. Planting: Can be grown from seeds, cuttings, or suckers. Plant in full sun.\n4. Watering: Water deeply but infrequently. Allow soil to dry out somewhat between waterings.\n5. Fertilizing: Light fertilization in spring. Avoid over-fertilizing, which can reduce fruit yield.\n6. Pruning: Prune to shape, remove suckers, and thin out dense growth to improve air circulation and light penetration.\n7. Harvesting: Fruits are ready when they develop full color (typically deep red) and make a metallic sound when tapped. They do not ripen further after picking.",
+    "growthDuration": "Trees may start bearing fruit in 2-3 years, with good production by 5-6 years.",
+    "sustainabilityTips": [
+        "Store pomegranates at room temperature for a few days or in the refrigerator for several weeks.",
+        "Learn efficient ways to de-seed a pomegranate to avoid waste.",
+        "Pomegranate juice can be frozen for later use."
+    ],
+    "carbonFootprintInfo": "Moderate, depending on origin and transport (0.5-1.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "How to De-seed a Pomegranate",
+        "description": "A simple guide to easily remove the arils (seeds) from a pomegranate.",
+        "ingredients": ["1 ripe pomegranate"],
+        "steps": [
+          "Cut off the crown (flower end) of the pomegranate.", 
+          "Lightly score the rind vertically from top to bottom in 4-6 sections, without cutting too deep into the fruit.",
+          "Submerge the pomegranate in a large bowl of water. Gently break apart the sections under water. The arils will sink to the bottom, and the white membrane will float.",
+          "Scoop out the floating membrane and discard. Drain the water and collect the arils.",
+          "Alternatively, hold a section over a bowl, cut-side down, and firmly tap the rind with a wooden spoon. The arils should fall out easily."
+        ]
+      },
+      {
+        "name": "Pomegranate and Walnut Salad (e.g., Gavurdagi Salatasi variation)",
+        "description": "A refreshing and crunchy salad featuring pomegranate seeds and walnuts.",
+        "ingredients": ["1 cup pomegranate arils", "1/2 cup chopped walnuts, toasted", "1 cucumber, diced", "2 ripe tomatoes, diced", "1/2 small red onion, thinly sliced or finely chopped", "1/4 cup chopped fresh parsley", "Dressing: 2 tbsp olive oil, 1 tbsp lemon juice, 1 tsp pomegranate molasses (optional), salt and pepper to taste"],
+        "steps": ["In a large bowl, combine pomegranate arils, toasted walnuts, diced cucumber, diced tomatoes, red onion, and chopped parsley.", "In a small bowl, whisk together olive oil, lemon juice, pomegranate molasses (if using), salt, and pepper.", "Pour the dressing over the salad and toss gently to combine.", "Serve immediately or chill for 30 minutes to allow flavors to meld."]
+      },
+      {
+        "name": "Pomegranate Molasses Glazed Chicken or Salmon",
+        "description": "A tangy and slightly sweet glaze perfect for chicken or fish.",
+        "ingredients": ["For the glaze: 1/4 cup pomegranate molasses, 1 tbsp olive oil, 1 tbsp honey or maple syrup, 1 clove garlic (minced), 1/2 tsp Dijon mustard, pinch of salt and pepper", "4 chicken breasts or salmon fillets"],
+        "steps": ["Preheat oven to 400°F (200°C) or prepare grill.", "In a small bowl, whisk together all glaze ingredients: pomegranate molasses, olive oil, honey/maple syrup, minced garlic, Dijon mustard, salt, and pepper.", "Season chicken or salmon with additional salt and pepper if desired.", "Brush the chicken/salmon generously with half of the pomegranate glaze.", "Bake or grill the chicken/salmon until cooked through (internal temperature of 165°F for chicken). Basting with remaining glaze during the last few minutes of cooking.", "Let rest for a few minutes before serving. Drizzle with any remaining pan juices or extra glaze."]
+      }
+    ]
   }
 ]
+
     
