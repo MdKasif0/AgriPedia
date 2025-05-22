@@ -12,7 +12,6 @@ import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import dynamic from 'next/dynamic';
 
-// Dynamically import chart components
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
   loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
@@ -45,13 +44,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default';
+      return 'default'; // Using default for Moderate as it stands out
     case 'Mild':
       return 'secondary';
     case 'Common':
-      return 'outline';
     case 'Rare':
-      return 'outline';
     case 'Varies':
       return 'outline';
     default:
@@ -76,8 +73,11 @@ type Recipe = {
 
 export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: string | string[] }) {
   const { toast } = useToast();
-  const { slug: slugParamFromHook } = useParams<{ slug?: string | string[] }>();
-  const actualSlugParam = slugFromParams || slugParamFromHook;
+  const params = useParams<{ slug?: string | string[] }>(); // For potential direct access if slugFromParams isn't passed
+  const pathname = usePathname(); // Can be useful for constructing share URLs if needed
+
+  // Use slugFromParams if provided (from Server Component), otherwise fallback to params from hook
+  const actualSlugParam = slugFromParams || params?.slug;
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -235,13 +235,14 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     const shareData = {
       title: `Learn about ${produce.commonName} - AgriPedia`,
       text: `Check out ${produce.commonName} on AgriPedia: ${produce.description.substring(0, 100)}...`,
-      url: window.location.href,
+      url: window.location.href, // Uses the current page URL
     };
     try {
       if (navigator.share) {
         await navigator.share(shareData);
         toast({ title: 'Shared!', description: `${produce.commonName} details shared successfully.` });
       } else {
+        // Fallback for browsers that don't support Web Share API
         await navigator.clipboard.writeText(window.location.href);
         toast({ title: 'Link Copied!', description: `URL for ${produce.commonName} copied to clipboard.` });
       }
@@ -251,6 +252,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     }
   };
 
+
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
@@ -259,7 +261,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
     notFound();
     return null;
   }
-  if (!produce) return null;
+  if (!produce) return null; // Should be caught by the above, but good for type safety
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
@@ -278,7 +280,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       )}
       <header className="text-center relative">
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf className="text-primary h-8 w-8 sm:h-10 sm:w-10" /> {produce.commonName}
+          <Leaf size={32} className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <div className="absolute top-0 right-0 flex items-center gap-1">
@@ -303,7 +305,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
         </div>
       </header>
 
-      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl">
+      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
         <Image
           src={produce.image}
           alt={produce.commonName}
@@ -416,7 +418,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
                 <CardHeader className="p-4">
                   <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3 p-4">
+                <CardContent className="space-y-3 p-4 pt-0">
                   <p className="text-sm text-muted-foreground">{recipe.description}</p>
                   <div>
                     <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
