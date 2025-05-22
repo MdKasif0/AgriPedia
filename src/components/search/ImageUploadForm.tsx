@@ -47,8 +47,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   useEffect(() => {
     const getCameraPermissionInternal = async () => {
-      setHasCameraPermission(null); // Reset for UI feedback
-      setError(null); // Reset for UI feedback
+      setHasCameraPermission(null); 
+      setError(null); 
 
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         const noApiMessage = 'Camera API is not available in this browser.';
@@ -64,8 +64,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       try {
         const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
         streamRef.current = stream;
-        setHasCameraPermission(true); // Set after successfully getting stream
-        // setError(null); // Already reset at the beginning
+        setHasCameraPermission(true); 
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
         }
@@ -92,7 +91,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     };
 
     if (isCameraMode) {
-      if (!streamRef.current) { // Only get permission if no stream is active
+      if (!streamRef.current && hasCameraPermission !== false) { 
         getCameraPermissionInternal();
       }
     } else {
@@ -104,14 +103,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       if (videoRef.current) {
         videoRef.current.srcObject = null;
       }
-      // Optional: Clear error/permission UI if camera is toggled off after an error
-      // This was the previous logic, seems reasonable to keep if user explicitly toggles off after failure
-      if(error && hasCameraPermission === false) { 
-        setHasCameraPermission(null);
-        setError(null);
-      }
+      setHasCameraPermission(null); // Reset permission state
+      setError(null); // Reset error state
     }
-  }, [isCameraMode, toast]); // Removed 'error' and 'hasCameraPermission' from dependencies
+  }, [isCameraMode, toast]);
+
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
@@ -191,12 +187,12 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   const handleCaptureAndProcess = async () => {
     triggerHapticFeedback();
-    if (!videoRef.current || !canvasRef.current || !hasCameraPermission) {
+    if (!videoRef.current || !canvasRef.current || hasCameraPermission !== true || !videoRef.current.srcObject) {
       setError('Camera not ready or permission denied.');
       return;
     }
     setIsProcessingCapture(true);
-    setPreview(null); // Clear previous file preview if any
+    setPreview(null); 
 
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -206,9 +202,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
       const capturedDataUri = canvas.toDataURL('image/jpeg');
-      setPreview(capturedDataUri); // Show captured image as preview
+      setPreview(capturedDataUri); 
 
-      // Stop camera stream after capture
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
@@ -232,9 +227,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       <div className="flex justify-end">
         <Button variant="outline" size="sm" onClick={() => {
           setIsCameraMode(!isCameraMode);
-          setPreview(null); // Clear preview when toggling mode
-          setFile(null); // Clear file when toggling mode
-          // Error and permission state are handled by the camera mode useEffect
+          setPreview(null); 
+          setFile(null); 
         }}>
           {isCameraMode ? <UploadCloud className="mr-2" /> : <Camera className="mr-2" />}
           {isCameraMode ? 'Upload File' : 'Use Camera'}
@@ -245,6 +239,28 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         <div className="space-y-4">
           {hasCameraPermission === null && !error && <Loader text="Initializing camera..." />}
           
+          <div className="relative w-full aspect-[4/3] bg-muted rounded-md overflow-hidden">
+             <video
+              ref={videoRef}
+              className={`w-full h-full object-cover transition-opacity duration-200 ${
+                preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              }`}
+              autoPlay
+              playsInline
+              muted
+            />
+            {preview && !isProcessingCapture && !isLoading && (
+              <NextImage
+                src={preview}
+                alt="Camera capture preview"
+                layout="fill"
+                objectFit="contain"
+                className="absolute inset-0"
+              />
+            )}
+            <canvas ref={canvasRef} className="hidden" />
+          </div>
+          
           {hasCameraPermission === false && error && (
               <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
@@ -252,18 +268,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
           )}
-
-          <div className="relative w-full aspect-[4/3] bg-muted rounded-md overflow-hidden">
-             {/* Show preview if captured & stream is stopped, otherwise show video feed if permission granted */}
-            {preview && !streamRef.current ? (
-                <NextImage src={preview} alt="Camera capture preview" layout="fill" objectFit="contain" />
-            ) : (
-              <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
-            )}
-            <canvas ref={canvasRef} className="hidden" />
-          </div>
-          
-          { hasCameraPermission === false && !error && ( 
+          {hasCameraPermission === false && !error && ( 
               <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Camera Access Required</AlertTitle>
@@ -276,7 +281,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
           
           <Button
             onClick={handleCaptureAndProcess}
-            disabled={isLoading || isProcessingCapture || hasCameraPermission === false || (hasCameraPermission === true && !videoRef.current?.srcObject && !preview) }
+            disabled={hasCameraPermission !== true || !videoRef.current?.srcObject || isProcessingCapture || isLoading}
             className="w-full"
           >
             {isProcessingCapture ? <Loader text="Capturing..." size={18}/> : isLoading ? <Loader text="Identifying..." size={18}/> : <><Camera className="mr-2" /> Capture & Identify</>}
@@ -298,7 +303,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 if (droppedFile) {
                   setFile(droppedFile);
                   setError(null);
-                  setPreview(null); // Reset preview for new file
+                  setPreview(null); 
                   const reader = new FileReader();
                   reader.onloadend = () => setPreview(reader.result as string);
                   reader.readAsDataURL(droppedFile);
@@ -333,7 +338,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             {file && preview && <p className="text-sm text-muted-foreground mt-2">Selected: {file.name}</p>}
           </div>
           
-          {preview && !isCameraMode && ( // Only show submit button if there's a preview and not in camera mode
+          {preview && !isCameraMode && (
             <Button type="submit" disabled={isLoading || !file || !preview} className="w-full">
               {isLoading ? <Loader text="Identifying..." size={18} /> : <><UploadCloud className="mr-2 h-5 w-5" /> Identify Produce</>}
             </Button>
@@ -341,8 +346,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </form>
       )}
 
-      {/* Show general preview if not in camera mode, or if in camera mode but processing/loading */}
-      {preview && !isCameraMode && (isLoading || isProcessingCapture ) && ( 
+      {preview && (isLoading || isProcessingCapture ) && ( 
         <div className="mt-4 space-y-2">
           <h4 className="text-sm font-medium text-foreground">Preview:</h4>
           <div className="relative w-full max-w-xs mx-auto aspect-square border rounded-md overflow-hidden bg-muted">
@@ -351,7 +355,6 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </div>
       )}
       
-      {/* Show general error if not camera mode OR if it's a camera mode but not a permission specific error shown above, and not processing */}
       {error && (!isCameraMode || (isCameraMode && hasCameraPermission !== false && error && !isProcessingCapture && !isLoading)) && (
          <Alert variant="destructive" className="mt-4">
              <AlertTriangle className="h-4 w-4" />
@@ -368,5 +371,4 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     </div>
   );
 }
-
     
