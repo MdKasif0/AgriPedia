@@ -36,7 +36,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const { toast } = useToast();
 
   useEffect(() => {
-    // Cleanup stream when component unmounts
+    // Cleanup stream when component unmounts or isCameraMode changes to false
     return () => {
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
@@ -45,57 +45,56 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     };
   }, []);
 
+  const getCameraPermissionInternal = async () => {
+    setHasCameraPermission(null); 
+    setError(null); 
+
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      const noApiMessage = 'Camera API is not available in this browser.';
+      setError(noApiMessage);
+      setHasCameraPermission(false);
+      toast({
+        variant: 'destructive',
+        title: 'Camera Not Supported',
+        description: noApiMessage,
+      });
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
+      streamRef.current = stream;
+      setHasCameraPermission(true); 
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+      }
+    } catch (err) {
+      console.error('Error accessing camera:', err);
+      let message = 'Could not access camera. Please ensure it is connected and permissions are granted in your browser settings.';
+      if (err instanceof Error) {
+        if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
+          message = 'Camera permission was denied. Please check your browser settings to allow camera access for this site.';
+        } else if (err.name === 'NotFoundError') {
+          message = 'No camera found on your device. Please ensure a camera is connected and enabled.';
+        } else {
+          message = `Could not access camera: ${err.message}. Try checking browser permissions or ensure no other app is using the camera.`;
+        }
+      }
+      setError(message);
+      setHasCameraPermission(false);
+      toast({
+        variant: 'destructive',
+        title: 'Camera Access Issue',
+        description: message,
+      });
+    }
+  };
+
   useEffect(() => {
-    const getCameraPermissionInternal = async () => {
-      setHasCameraPermission(null); 
-      setError(null); 
-
-      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        const noApiMessage = 'Camera API is not available in this browser.';
-        setError(noApiMessage);
-        setHasCameraPermission(false);
-        toast({
-          variant: 'destructive',
-          title: 'Camera Not Supported',
-          description: noApiMessage,
-        });
-        return;
-      }
-      try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
-        streamRef.current = stream;
-        setHasCameraPermission(true); 
-        if (videoRef.current) {
-          videoRef.current.srcObject = stream;
-        }
-      } catch (err) {
-        console.error('Error accessing camera:', err);
-        let message = 'Could not access camera. Please ensure it is connected and permissions are granted in your browser settings.';
-        if (err instanceof Error) {
-          if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
-            message = 'Camera permission was denied. Please check your browser settings to allow camera access for this site.';
-          } else if (err.name === 'NotFoundError') {
-            message = 'No camera found on your device. Please ensure a camera is connected and enabled.';
-          } else {
-            message = `Could not access camera: ${err.message}. Try checking browser permissions or ensure no other app is using the camera.`;
-          }
-        }
-        setError(message);
-        setHasCameraPermission(false);
-        toast({
-          variant: 'destructive',
-          title: 'Camera Access Issue',
-          description: message,
-        });
-      }
-    };
-
     if (isCameraMode) {
       if (!streamRef.current && hasCameraPermission !== false) { 
         getCameraPermissionInternal();
       }
     } else {
-      // Cleanup logic when toggling isCameraMode to false
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
@@ -103,18 +102,30 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       if (videoRef.current) {
         videoRef.current.srcObject = null;
       }
-      setHasCameraPermission(null); // Reset permission state
-      setError(null); // Reset error state
+      if (hasCameraPermission !== false) {
+        setHasCameraPermission(null);
+      }
     }
-  }, [isCameraMode, toast]);
+  }, [isCameraMode, toast, hasCameraPermission]);
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
+      if (selectedFile.size > 10 * 1024 * 1024) { // 10MB limit
+        setError('File is too large. Please select an image under 10MB.');
+        toast({
+          title: 'File Too Large',
+          description: 'Please select an image under 10MB.',
+          variant: 'destructive',
+        });
+        setFile(null);
+        setPreview(null);
+        return;
+      }
       setFile(selectedFile);
       setError(null);
-      setPreview(null);
+      setPreview(null); 
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreview(reader.result as string);
@@ -165,13 +176,13 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const handleFileUploadSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     triggerHapticFeedback();
-    if (!file) {
-      setError('Please select an image file.');
+    if (!file && !preview) { 
+      setError('Please select or capture an image.');
       return;
     }
-    if (preview) {
+    if (preview) { 
       initiateImageProcessing(preview);
-    } else {
+    } else if (file) { 
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = async () => {
@@ -201,7 +212,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     const context = canvas.getContext('2d');
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
-      const capturedDataUri = canvas.toDataURL('image/jpeg');
+      const capturedDataUri = canvas.toDataURL('image/jpeg'); 
       setPreview(capturedDataUri); 
 
       if (streamRef.current) {
@@ -226,9 +237,18 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     <div className="space-y-6 p-4 bg-card rounded-lg ">
       <div className="flex justify-end">
         <Button variant="outline" size="sm" onClick={() => {
+          triggerHapticFeedback();
           setIsCameraMode(!isCameraMode);
           setPreview(null); 
           setFile(null); 
+          setError(null); 
+          if (isCameraMode && streamRef.current) { 
+              streamRef.current.getTracks().forEach(track => track.stop());
+              streamRef.current = null;
+          }
+          if (!isCameraMode) { 
+            setHasCameraPermission(null);
+          }
         }}>
           {isCameraMode ? <UploadCloud className="mr-2" /> : <Camera className="mr-2" />}
           {isCameraMode ? 'Upload File' : 'Use Camera'}
@@ -236,6 +256,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       </div>
 
       {isCameraMode ? (
+        // Camera Mode UI
         <div className="space-y-4">
           {hasCameraPermission === null && !error && <Loader text="Initializing camera..." />}
           
@@ -243,41 +264,31 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
              <video
               ref={videoRef}
               className={`w-full h-full object-cover transition-opacity duration-200 ${
-                preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'
+                (preview && !isProcessingCapture && !isLoading) || hasCameraPermission !== true ? 'opacity-0 pointer-events-none' : 'opacity-100'
               }`}
               autoPlay
-              playsInline
-              muted
+              playsInline 
+              muted 
             />
             {preview && !isProcessingCapture && !isLoading && (
               <NextImage
                 src={preview}
                 alt="Camera capture preview"
-                layout="fill"
-                objectFit="contain"
+                fill 
+                style={{ objectFit: 'contain' }} 
                 className="absolute inset-0"
               />
             )}
-            <canvas ref={canvasRef} className="hidden" />
+            <canvas ref={canvasRef} className="hidden" /> 
           </div>
           
-          {hasCameraPermission === false && error && (
+          {hasCameraPermission === false && (
               <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Camera Error</AlertTitle>
-                <AlertDescription>{error}</AlertDescription>
+                <AlertDescription>{error || "Camera access was denied or no camera was found. Please check your browser settings and ensure a camera is available."}</AlertDescription>
               </Alert>
           )}
-          {hasCameraPermission === false && !error && ( 
-              <Alert variant="destructive">
-                <AlertTriangle className="h-4 w-4" />
-                <AlertTitle>Camera Access Required</AlertTitle>
-                <AlertDescription>
-                  Please allow camera access to use this feature. You may need to adjust your browser settings.
-                </AlertDescription>
-              </Alert>
-            )
-          }
           
           <Button
             onClick={handleCaptureAndProcess}
@@ -288,19 +299,31 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
           </Button>
         </div>
       ) : (
+        // File Upload Mode UI
         <form onSubmit={handleFileUploadSubmit} className="space-y-4">
           <div>
             <label htmlFor="image-upload" className="block text-sm font-medium text-foreground mb-1">
               Upload an image of a fruit or vegetable
             </label>
             <div
-              className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-dashed rounded-md cursor-pointer border-primary hover:border-accent transition-colors"
+              className="mt-1 flex flex-col items-center justify-center px-6 pt-5 pb-6 border-2 border-dashed rounded-md cursor-pointer border-primary hover:border-accent transition-colors h-48"
               onClick={triggerFileInput}
               onDrop={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
                 const droppedFile = e.dataTransfer.files?.[0];
                 if (droppedFile) {
+                  if (droppedFile.size > 10 * 1024 * 1024) { // 10MB limit
+                    setError('File is too large. Please select an image under 10MB.');
+                    toast({
+                      title: 'File Too Large',
+                      description: 'Please select an image under 10MB.',
+                      variant: 'destructive',
+                    });
+                    setFile(null);
+                    setPreview(null);
+                    return;
+                  }
                   setFile(droppedFile);
                   setError(null);
                   setPreview(null); 
@@ -312,50 +335,49 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
               onDragOver={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
+                e.currentTarget.classList.add('border-accent');
               }}
+              onDragEnter={(e) => e.currentTarget.classList.add('border-accent')}
+              onDragLeave={(e) => e.currentTarget.classList.remove('border-accent')}
             >
-              <div className="space-y-1 text-center">
-                {!preview && <ImageIcon className="mx-auto h-12 w-12 text-muted-foreground" aria-hidden="true" />}
-                <div className="flex text-sm text-muted-foreground">
-                  <span className="relative rounded-md font-medium text-primary hover:text-accent focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-ring">
-                    Click to upload or drag and drop
-                  </span>
-                  <Input
-                    id="image-upload"
-                    name="image-upload"
-                    type="file"
-                    accept="image/*"
-                    capture="environment" 
-                    className="sr-only"
-                    onChange={handleFileChange}
-                    ref={fileInputRef}
-                  />
+              {preview ? (
+                <div className="relative w-32 h-32 border rounded-md overflow-hidden bg-muted">
+                  <NextImage src={preview} alt="Upload preview" fill style={{ objectFit: 'contain' }} />
                 </div>
-                <p className="text-xs text-muted-foreground">PNG, JPG, WebP up to 10MB</p>
-              </div>
+              ) : (
+                <div className="space-y-1 text-center">
+                  <ImageIcon className="mx-auto h-12 w-12 text-muted-foreground" aria-hidden="true" />
+                  <div className="flex text-sm text-muted-foreground">
+                    <span className="relative rounded-md font-medium text-primary hover:text-accent focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-ring">
+                      Click to upload or drag and drop
+                    </span>
+                    <Input
+                      id="image-upload"
+                      name="image-upload"
+                      type="file"
+                      accept="image/*" 
+                      className="sr-only"
+                      onChange={handleFileChange}
+                      ref={fileInputRef}
+                    />
+                  </div>
+                  <p className="text-xs text-muted-foreground">PNG, JPG, WebP up to 10MB</p>
+                </div>
+              )}
             </div>
-            {file && !preview && <p className="text-sm text-muted-foreground mt-2">Loading preview for: {file.name}</p>}
             {file && preview && <p className="text-sm text-muted-foreground mt-2">Selected: {file.name}</p>}
+            {file && !preview && <p className="text-sm text-muted-foreground mt-2">Loading preview for: {file.name}</p>}
           </div>
           
-          {preview && !isCameraMode && (
-            <Button type="submit" disabled={isLoading || !file || !preview} className="w-full">
+          {(file || preview) && !isCameraMode && ( 
+            <Button type="submit" disabled={isLoading || (!file && !preview)} className="w-full">
               {isLoading ? <Loader text="Identifying..." size={18} /> : <><UploadCloud className="mr-2 h-5 w-5" /> Identify Produce</>}
             </Button>
           )}
         </form>
       )}
-
-      {preview && (isLoading || isProcessingCapture ) && ( 
-        <div className="mt-4 space-y-2">
-          <h4 className="text-sm font-medium text-foreground">Preview:</h4>
-          <div className="relative w-full max-w-xs mx-auto aspect-square border rounded-md overflow-hidden bg-muted">
-            <NextImage src={preview} alt="Upload preview" layout="fill" objectFit="contain" />
-          </div>
-        </div>
-      )}
       
-      {error && (!isCameraMode || (isCameraMode && hasCameraPermission !== false && error && !isProcessingCapture && !isLoading)) && (
+      {error && ( 
          <Alert variant="destructive" className="mt-4">
              <AlertTriangle className="h-4 w-4" />
              <AlertTitle>Error</AlertTitle>
@@ -363,9 +385,9 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
          </Alert>
       )}
 
-      {isLoading && !isCameraMode && !preview && ( 
+      {isLoading && !isCameraMode && !preview && !file && ( 
         <div className="pt-4">
-            <Loader text="Analyzing image..." />
+            <Loader text="Processing..." />
         </div>
       )}
     </div>
