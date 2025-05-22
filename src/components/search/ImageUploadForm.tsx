@@ -11,7 +11,7 @@ import { processImageWithAI } from '@/app/actions';
 import Loader from '@/components/ui/Loader';
 import NextImage from 'next/image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { triggerHapticFeedback, playSound } from '@/lib/utils';
+import { triggerHapticFeedback, playSound } from '@/lib/utils'; // Added playSound
 
 interface ImageUploadFormProps {
   onSuccessfulScan?: () => void; // Optional callback for successful scan
@@ -95,6 +95,20 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     }
   }, [isCameraMode, toast]);
 
+  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = event.target.files?.[0];
+    if (selectedFile) {
+      setFile(selectedFile);
+      setError(null);
+      setPreview(null); // Clear previous preview
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPreview(reader.result as string);
+      };
+      reader.readAsDataURL(selectedFile);
+    }
+  };
+
   const initiateImageProcessing = async (photoDataUri: string) => {
     setIsLoading(true);
     setError(null);
@@ -107,7 +121,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
           description: `Identified: ${result.data.commonName} (Confidence: ${confidencePercentage}%)`,
         });
         triggerHapticFeedback();
-        playSound('/sounds/scan-success.mp3');
+        playSound('/sounds/scan-success.mp3'); // Play sound on successful scan
         if (onSuccessfulScan) onSuccessfulScan(); // Call callback to close dialog
         router.push(`/item/${result.data.commonName.toLowerCase().replace(/\s+/g, '-')}`);
       } else {
@@ -142,6 +156,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     if (preview) {
       initiateImageProcessing(preview);
     } else {
+      // This case should ideally not happen if preview is always set on file change
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = async () => {
@@ -308,7 +323,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       )}
 
       {error && !isCameraMode && ( // Only show general error if not in camera mode or if camera error already shown
-         !hasCameraPermission && (
+         !(hasCameraPermission === false && error) && ( // Don't show if camera error is already displayed
             <Alert variant="destructive" className="mt-4">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Error</AlertTitle>

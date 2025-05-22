@@ -20,7 +20,7 @@ export function playSound(soundUrl: string): void {
       const audio = new Audio(soundUrl);
       // Attempt to play the sound. Modern browsers might restrict autoplay.
       audio.play().catch(error => console.error(`Error playing sound ${soundUrl}:`, error));
-    } catch (error) { // Added curly braces here
+    } catch (error) {
       console.error(`Error initializing audio for ${soundUrl}:`, error);
     }
   }

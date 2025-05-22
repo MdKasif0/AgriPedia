@@ -3,11 +3,11 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound, usePathname } from 'next/navigation';
+import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
-import { triggerHapticFeedback, playSound } from '@/lib/utils';
+import { triggerHapticFeedback, playSound } from '@/lib/utils'; // Added playSound
 import dynamic from 'next/dynamic';
 
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
@@ -68,9 +68,9 @@ interface ItemDetailsPageProps {
 
 export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const params = useParams<{ slug?: string | string[] }>(); 
+  const { slug: slugParamFromHook } = useParams<{ slug?: string | string[] }>();
   
-  const actualSlugParam = slugFromParams || params?.slug;
+  const actualSlugParam = slugFromParams || slugParamFromHook;
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -109,7 +109,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // Removed
+            // UserDataStore.addRecentView(onlineData.id); // No longer used
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -187,7 +187,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       UserDataStore.removeFavorite(produce.id);
     } else {
       UserDataStore.addFavorite(produce.id);
-      playSound('/sounds/bookmark-added.mp3');
+      playSound('/sounds/bookmark-added.mp3'); // Play sound on adding bookmark
       setAnimateBookmark(true);
       setTimeout(() => setAnimateBookmark(false), 300); // Match animation duration
     }
@@ -246,7 +246,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       )}
       <header className="text-center relative">
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf size={32} className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
+          <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <div className="absolute top-0 right-0 flex items-center gap-1">
@@ -254,7 +254,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
                 variant="ghost"
                 size="icon"
                 onClick={handleShare}
-                className="text-foreground hover:text-primary active:scale-110"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={`Share ${produce.commonName} details`}
             >
                 <Share2 size={24} />
@@ -263,7 +263,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
                 variant="ghost"
                 size="icon"
                 onClick={handleToggleBookmark}
-                className="text-foreground hover:text-primary active:scale-110"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
                 {isBookmarked ? <BookmarkCheck size={28} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={28} />}
@@ -436,4 +436,3 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
     </div>
   );
 }
-
