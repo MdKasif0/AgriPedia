@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
@@ -39,7 +43,7 @@ body {
     --input: 220 15% 18%; /* Dark Input Background */
     --ring: 150 55% 55%; /* Professional Green for focus rings */
 
-    --radius: 0.75rem; /* Increased for more rounded corners (12px) */
+    --radius: 1rem; /* Increased for more rounded corners (16px) */
 
     /* Sidebar colors - dark theme */
     --sidebar-background: 220 15% 10%; 
@@ -116,3 +120,4 @@ body {
     @apply bg-background text-foreground;
   }
 }
+

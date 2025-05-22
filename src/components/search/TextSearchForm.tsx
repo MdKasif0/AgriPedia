@@ -18,7 +18,7 @@ interface TextSearchFormProps {
   onSubmitSearch: (query: string) => void;
   onClearSearch: () => void;
   inputRef?: React.RefObject<HTMLInputElement>;
-  onFocus?: () => void; // Added onFocus prop
+  onFocus?: () => void; 
 }
 
 export default function TextSearchForm({
@@ -30,21 +30,19 @@ export default function TextSearchForm({
   onSubmitSearch,
   onClearSearch,
   inputRef,
-  onFocus, // Destructure onFocus
+  onFocus, 
 }: TextSearchFormProps) {
   const suggestionsRef = useRef<HTMLUListElement>(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // The check for empty query is removed as per request to always enable the button
-    // if (!query.trim()) return;
     onSubmitSearch(query);
   };
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     onQueryChange(event.target.value);
   };
-
+  
   const disabledSearchButtonFallback = (
     <Button type="submit" variant="default" className="rounded-lg" disabled={true}>
       <Search className="mr-2 h-5 w-5" /> Search
@@ -60,7 +58,7 @@ export default function TextSearchForm({
             type="text"
             value={query}
             onChange={handleInputChange}
-            onFocus={onFocus || (() => onQueryChange(query))} // Use passed onFocus or default
+            onFocus={onFocus} 
             placeholder="E.g., Apple, Banana... (Ctrl/Cmd + K)"
             className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary"
             aria-label="Search for fruits or vegetables"
@@ -80,6 +78,7 @@ export default function TextSearchForm({
             </Button>
           )}
         </div>
+        {/* ClientOnly wrapper removed as search button is always enabled now */}
         <Button type="submit" variant="default" className="rounded-lg">
           <Search className="mr-2 h-5 w-5" /> Search
         </Button>

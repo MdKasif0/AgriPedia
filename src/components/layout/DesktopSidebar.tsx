@@ -30,8 +30,8 @@ export default function DesktopSidebar() {
                 <Leaf size={28}/> AgriPedia
             </Link>
         ) : (
-            <Link href="/" aria-label="AgriPedia Home">
-                 <Leaf size={28} className="text-sidebar-primary"/>
+            <Link href="/" aria-label="AgriPedia Home" className="text-sidebar-primary hover:text-sidebar-primary/90">
+                 <Leaf size={28} />
             </Link>
         )}
       </SidebarHeader>
