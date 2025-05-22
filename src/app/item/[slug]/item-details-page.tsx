@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useParams, notFound, usePathname } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
-import * as UserDataStore from '@/lib/userDataStore'; // Still used for favorites
+import * as UserDataStore from '@/lib/userDataStore'; // Used for favorites
 import { fetchRecipesForProduce } from '@/app/actions';
 import type { GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -71,10 +71,14 @@ type Recipe = {
   steps: string[];
 };
 
-export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: string | string[] }) {
+interface ItemDetailsPageProps {
+  slugFromParams?: string | string[];
+}
+
+export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps) {
   const { toast } = useToast();
   const params = useParams<{ slug?: string | string[] }>(); 
-  const pathname = usePathname(); 
+  // const pathname = usePathname(); // Not strictly needed if slugFromParams is reliable
 
   const actualSlugParam = slugFromParams || params?.slug;
 
@@ -119,7 +123,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // Removed UserDataStore.addRecentView call
+            // UserDataStore.addRecentView(onlineData.id); // Removed as per previous request
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -219,7 +223,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       UserDataStore.addFavorite(produce.id);
       playSound('/sounds/bookmark-added.mp3');
       setAnimateBookmark(true);
-      setTimeout(() => setAnimateBookmark(false), 300); 
+      setTimeout(() => setAnimateBookmark(false), 300); // Match animation duration
     }
     setIsBookmarked(!isBookmarked);
   };
@@ -252,10 +256,10 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
   }
 
   if (!produce && !isLoading) {
-    notFound();
-    return null;
+    notFound(); // This will trigger the not-found.tsx page
+    return null; // Ensure nothing else is rendered
   }
-  if (!produce) return null; 
+  if (!produce) return null; // Should be caught by the above, but good for type safety
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
@@ -274,7 +278,7 @@ export default function ItemDetailsPage({ slugFromParams }: { slugFromParams?: s
       )}
       <header className="text-center relative">
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf size={32} className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
+          <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         <div className="absolute top-0 right-0 flex items-center gap-1">
