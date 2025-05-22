@@ -752,7 +752,7 @@
     "potentialAllergies": [
       { "name": "Pomegranate Allergy", "severity": "Rare", "details": "Allergies are uncommon but can cause reactions in sensitive individuals." }
     ],
-    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Pomegranates prefer climates with hot, dry summers and cool winters. They are relatively drought-tolerant once established.\n2. Soil: Adaptable to various soils but thrive in well-drained, deep loamy soil. Slightly acidic to neutral pH.\n3. Planting: Can be grown from seeds, cuttings, or suckers. Plant in full sun.\n4. Watering: Water deeply but infrequently. Allow soil to dry out somewhat between waterings.\n5. Fertilizing: Light fertilization in spring. Avoid over-fertilizing, which can reduce fruit yield.\n6. Pruning: Prune to shape, remove suckers, and thin out dense growth to improve air circulation and light penetration.\n7. Harvesting: Fruits are ready when they develop full color (typically deep red) and make a metallic sound when tapped. They do not ripen further after picking.",
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Pomegranates prefer climates with hot, dry summers and cool winters. They are relatively drought-tolerant once established.\n2. Soil: Adaptable to various soils but thrive in well-drained, deep loamy soil. Slightly acidic to neutral pH.\n3. Propagation: Can be grown from seeds, cuttings, or suckers. Plant in full sun.\n4. Watering: Water deeply but infrequently. Allow soil to dry out somewhat between waterings.\n5. Fertilizing: Light fertilization in spring. Avoid over-fertilizing, which can reduce fruit yield.\n6. Pruning: Prune to shape, remove suckers, and thin out dense growth to improve air circulation and light penetration.\n7. Harvesting: Fruits are ready when they develop full color (typically deep red) and make a metallic sound when tapped. They do not ripen further after picking.",
     "growthDuration": "Trees may start bearing fruit in 2-3 years, with good production by 5-6 years.",
     "sustainabilityTips": [
         "Store pomegranates at room temperature for a few days or in the refrigerator for several weeks.",
@@ -1365,6 +1365,650 @@
         "description": "A sweet and savory salsa, great with grilled chicken, fish, or tortilla chips.",
         "ingredients": ["2 ripe peaches, peeled, pitted, and diced", "1/2 red bell pepper, diced", "1/4 red onion, finely chopped", "1 jalapeño, minced (optional, seeds removed for less heat)", "1/4 cup chopped fresh cilantro", "Juice of 1 lime", "Salt and pepper to taste"],
         "steps": ["In a medium bowl, combine diced peaches, red bell pepper, red onion, jalapeño (if using), and cilantro.", "Add lime juice and season with salt and pepper to taste.", "Stir gently to combine all ingredients.", "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld before serving."]
+      }
+    ]
+  },
+  {
+    "id": "plum",
+    "commonName": "Plum",
+    "scientificName": "Prunus domestica",
+    "image": "https://placehold.co/600x427.png",
+    "description": "A fruit of some species in Prunus subg. Prunus. Mature plum fruits may have a dusty-white waxy coating that gives them a glaucous appearance. This is an epicuticular wax coating and is known as 'wax bloom'.",
+    "origin": "Caucasus Mountains, Eastern Europe or Western Asia",
+    "localNames": ["Ciruela (Spanish)", "Prune (French - also means dried plum)", "Pflaume (German)"],
+    "regions": ["China", "Romania", "Serbia", "United States", "Turkey", "Chile"],
+    "seasons": ["Summer", "Early Autumn"],
+    "nutrition": {
+      "calories": "46 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 11.4, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 1.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 9.5, "unit": "mg", "rdi": "16%" },
+        { "name": "Vitamin K", "value": 6.4, "unit": "µg", "rdi": "8%" },
+        { "name": "Vitamin A", "value": 17, "unit": "µg RAE", "rdi": "2%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 157, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of dietary fiber, aiding digestion and preventing constipation.",
+      "Rich in antioxidants, including phenols and anthocyanins.",
+      "May help improve bone health and reduce risk of osteoporosis.",
+      "Can help regulate blood sugar levels due to their low glycemic index."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can occur in individuals allergic to birch pollen." },
+      { "name": "Sorbitol Content", "severity": "Mild", "details": "Can have a laxative effect if consumed in large quantities, especially dried plums (prunes)." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Different varieties have different chilling requirements.\n2. Soil: Well-drained, fertile loamy soil. Slightly acidic to neutral pH (6.0-7.0).\n3. Propagation: Usually by grafting onto rootstock.\n4. Planting: Plant in full sun. Allow adequate space for tree growth.\n5. Watering: Regular watering, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer in early spring.\n7. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruit production.\n8. Thinning: Thin fruits to prevent branch breakage and ensure larger fruit size.",
+    "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Fruit matures in late summer to early autumn.",
+    "sustainabilityTips": [
+      "Store ripe plums in the refrigerator for a few days.",
+      "Plums can be eaten fresh, dried (prunes), or used in jams, jellies, and baked goods.",
+      "Compost plum pits."
+    ],
+    "carbonFootprintInfo": "Moderate (0.4-0.9 kg CO2e/kg). Locally grown plums in season have a lower footprint.",
+    "staticRecipes": [
+      {
+        "name": "Simple Plum Compote",
+        "description": "A sweet and slightly tart compote, perfect over yogurt, ice cream, or pancakes.",
+        "ingredients": ["1 lb plums, pitted and sliced or quartered", "1/4 cup sugar (or to taste)", "1/4 cup water", "1 cinnamon stick (optional)", "1 star anise (optional)", "1 tsp lemon juice"],
+        "steps": ["Combine plums, sugar, water, cinnamon stick (if using), and star anise (if using) in a saucepan.", "Bring to a simmer over medium heat, then reduce heat to low.", "Cook for 15-20 minutes, or until plums are soft and the sauce has thickened slightly. Stir occasionally.", "Remove from heat, discard cinnamon stick and star anise. Stir in lemon juice.", "Serve warm or chilled."]
+      },
+      {
+        "name": "Plum Crumble",
+        "description": "A delicious dessert with a sweet plum filling and a buttery crumble topping.",
+        "ingredients": ["For filling: 2 lbs plums, pitted and sliced", "1/2 cup granulated sugar", "1 tbsp cornstarch", "1/2 tsp cinnamon", "For topping: 1 cup all-purpose flour, 1/2 cup brown sugar, 1/2 cup cold butter (cubed), 1/2 cup rolled oats (optional)"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a large bowl, toss sliced plums with granulated sugar, cornstarch, and cinnamon. Transfer to a baking dish.", "Topping: In another bowl, combine flour and brown sugar. Cut in butter until mixture resembles coarse crumbs. Stir in oats if using.", "Sprinkle topping evenly over the plums.", "Bake for 30-40 minutes, or until topping is golden brown and filling is bubbly. Let cool slightly before serving."]
+      },
+      {
+        "name": "Fresh Plum Salad with Mint",
+        "description": "A refreshing and simple salad showcasing the flavor of fresh plums.",
+        "ingredients": ["4-5 ripe plums, pitted and sliced", "1 tbsp honey", "1 tbsp lime juice", "1/4 cup fresh mint leaves, chopped", "Optional: A sprinkle of feta cheese or toasted almonds"],
+        "steps": ["In a bowl, gently combine sliced plums.", "In a small bowl, whisk together honey and lime juice.", "Drizzle the honey-lime mixture over the plums.", "Sprinkle with fresh chopped mint.", "If desired, add feta cheese or toasted almonds. Toss gently and serve immediately."]
+      }
+    ]
+  },
+  {
+    "id": "pear",
+    "commonName": "Pear",
+    "scientificName": "Pyrus communis",
+    "image": "https://placehold.co/600x428.png",
+    "description": "A sweet, bell-shaped fruit that has been enjoyed since ancient times. It can be eaten crisp or soft.",
+    "origin": "Central Asia and Europe",
+    "localNames": ["Pera (Spanish/Italian)", "Poire (French)", "Birne (German)"],
+    "regions": ["China", "United States", "Argentina", "Italy", "Turkey"],
+    "seasons": ["Late Summer", "Autumn", "Winter"],
+    "nutrition": {
+      "calories": "57 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.4, "unit": "g" },
+        { "name": "Carbohydrates", "value": 15, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 3.1, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 4.3, "unit": "mg", "rdi": "7%" },
+        { "name": "Vitamin K", "value": 4.4, "unit": "µg", "rdi": "6%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 116, "unit": "mg", "rdi": "3%" }
+      ]
+    },
+    "healthBenefits": [
+      "Good source of dietary fiber, promoting digestive health.",
+      "Contains antioxidants, including flavonoids.",
+      "May help reduce inflammation and risk of chronic diseases.",
+      "Hypoallergenic properties make it a good fruit for weaning babies."
+    ],
+    "potentialAllergies": [
+      { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can occur in individuals allergic to birch pollen." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Require chilling hours for bud development.\n2. Soil: Deep, well-drained loamy soil. pH 6.0-7.0.\n3. Propagation: Usually by grafting specific varieties onto rootstock.\n4. Planting: Plant in full sun. Provide support for young trees.\n5. Watering: Regular watering, especially during dry spells and fruit development.\n6. Fertilizing: Apply balanced fertilizer in spring.\n7. Pruning: Prune to maintain shape, remove dead wood, and encourage fruiting spurs.\n8. Thinning: Thin young fruit to improve size and quality of remaining pears.",
+    "growthDuration": "Grafted trees start bearing fruit in 3-5 years. Fruit matures in late summer to autumn.",
+    "sustainabilityTips": [
+      "Store pears at room temperature to ripen; refrigerate ripe pears to slow further ripening.",
+      "Pears ripen from the inside out; check for ripeness near the stem.",
+      "Compost pear cores."
+    ],
+    "carbonFootprintInfo": "Moderate (0.4-0.8 kg CO2e/kg). Local and seasonal pears are best.",
+    "staticRecipes": [
+      {
+        "name": "Poached Pears in Spiced Syrup",
+        "description": "Elegant and flavorful poached pears, perfect as a dessert.",
+        "ingredients": ["4 firm ripe pears (e.g., Bosc or Anjou), peeled, halved, and cored", "3 cups water or red/white wine", "1 cup sugar", "1 cinnamon stick", "2-3 cloves", "1 star anise", "Peel of 1 lemon"],
+        "steps": ["In a saucepan large enough to hold pears in a single layer, combine water/wine, sugar, cinnamon stick, cloves, star anise, and lemon peel.", "Bring to a simmer over medium heat, stirring until sugar dissolves.", "Add pear halves to the simmering syrup. Ensure they are mostly submerged (add more water if needed).", "Reduce heat to low, cover, and simmer gently for 15-25 minutes, or until pears are tender when pierced with a knife. Cooking time varies with pear ripeness and variety.", "Carefully remove pears from syrup. If desired, boil the syrup for another 10-15 minutes to reduce and thicken it slightly.", "Serve pears warm or chilled, drizzled with the syrup. Great with yogurt or ice cream."]
+      },
+      {
+        "name": "Pear and Blue Cheese Salad",
+        "description": "A sophisticated salad balancing sweet pears, tangy blue cheese, and crunchy nuts.",
+        "ingredients": ["5 oz mixed greens (arugula, spinach)", "2 ripe pears, cored and thinly sliced", "1/2 cup crumbled blue cheese (Gorgonzola, Roquefort)", "1/4 cup toasted walnuts or pecans, chopped", "For dressing: 3 tbsp olive oil, 1 tbsp balsamic vinegar, 1 tsp Dijon mustard, 1 tsp honey, salt and pepper to taste"],
+        "steps": ["In a large salad bowl, combine mixed greens, sliced pears, crumbled blue cheese, and toasted nuts.", "In a small bowl, whisk together olive oil, balsamic vinegar, Dijon mustard, honey, salt, and pepper.", "Drizzle dressing over the salad and toss gently to combine.", "Serve immediately."]
+      },
+      {
+        "name": "Simple Pear Crisp",
+        "description": "A warm and comforting dessert with a sweet pear filling and a crispy oat topping.",
+        "ingredients": ["For filling: 5-6 ripe pears, peeled, cored, and sliced", "1/4 cup sugar", "1 tbsp lemon juice", "1/2 tsp cinnamon", "For topping: 3/4 cup all-purpose flour, 1/2 cup brown sugar, 1/2 tsp cinnamon, 1/4 cup cold butter (cubed), 1/2 cup rolled oats"],
+        "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, toss sliced pears with sugar, lemon juice, and 1/2 tsp cinnamon. Transfer to a baking dish.", "Topping: In another bowl, combine flour, brown sugar, and 1/2 tsp cinnamon. Cut in butter until mixture resembles coarse crumbs. Stir in oats.", "Sprinkle topping evenly over the pears.", "Bake for 30-35 minutes, or until topping is golden and filling is bubbly. Let cool slightly before serving."]
+      }
+    ]
+  },
+  {
+    "id": "ber",
+    "commonName": "Ber (Indian Jujube)",
+    "scientificName": "Ziziphus mauritiana",
+    "image": "https://placehold.co/600x429.png",
+    "description": "A tropical fruit tree species belonging to the family Rhamnaceae. The fruit is a drupe, varying in shape from round to oblong, and in size from a cherry to a plum. The flesh is white and crisp.",
+    "origin": "Indo-Malaysian region of South-East Asia",
+    "localNames": ["Indian Plum", "Chinee Apple", "Jujube", "Bor (Bengali)", "Badri (Sanskrit)"],
+    "regions": ["India", "Pakistan", "Bangladesh", "Parts of Africa and Middle East"],
+    "seasons": ["Winter", "Early Spring"],
+    "nutrition": {
+      "calories": "79 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 20.2, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 69, "unit": "mg", "rdi": "115%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 250, "unit": "mg", "rdi": "7%" },
+        { "name": "Phosphorus", "value": 23, "unit": "mg", "rdi": "3%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in Vitamin C, boosting immunity and skin health.",
+      "Contains antioxidants that help fight free radicals.",
+      "Traditionally used for digestive issues and to improve sleep.",
+      "Good source of energy due to natural sugars."
+    ],
+    "potentialAllergies": [
+      { "name": "Ber Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Thrives in tropical and subtropical climates; drought-resistant.\n2. Soil: Adaptable to a wide range of soils, including poor, alkaline, or saline soils, but prefers well-drained sandy loam.\n3. Propagation: Usually by seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Young plants need regular watering. Mature trees are very drought-tolerant.\n6. Fertilizing: Responds well to organic manure. Light fertilization may be needed.\n7. Pruning: Prune annually to encourage new growth, as fruits are borne on new shoots.\n8. Harvesting: Fruits are harvested when they turn yellowish-green to reddish-brown, depending on variety.",
+    "growthDuration": "Starts bearing fruit in 2-3 years. Fruits mature in winter to early spring.",
+    "sustainabilityTips": [
+      "Ber can be eaten fresh, dried, or pickled.",
+      "Store fresh ber at room temperature for a few days or refrigerate for longer.",
+      "Dried ber has a long shelf life."
+    ],
+    "carbonFootprintInfo": "Relatively low, especially if grown locally. (0.3-0.7 kg CO2e/kg)",
+    "staticRecipes": [
+      {
+        "name": "Fresh Ber (Indian Jujube)",
+        "description": "Enjoyed fresh, often with a sprinkle of salt and chili powder.",
+        "ingredients": ["1 cup fresh Ber (Indian Jujube)", "Pinch of salt (optional)", "Pinch of red chili powder (optional)"],
+        "steps": ["Wash the ber fruits thoroughly.", "They can be eaten whole, like a small apple. The skin is edible, and the flesh is crisp around a central stone.", "If desired, sprinkle with a little salt and/or red chili powder for a tangy and spicy flavor.", "Discard the stone."]
+      },
+      {
+        "name": "Dried Ber (Sukha Ber)",
+        "description": "Ber fruits are often sun-dried for preservation and eaten as a snack.",
+        "ingredients": ["Fresh Ber fruits"],
+        "steps": ["Wash fresh ber fruits thoroughly.", "Spread them on a clean cloth or tray in direct sunlight.", "Allow them to dry completely, which may take several days depending on the sun's intensity. Turn them occasionally for even drying.", "Once fully dried, they will be shriveled and hard. Store in an airtight container.", "Dried ber can be eaten as is or used in traditional preparations."]
+      },
+      {
+        "name": "Ber Pickle (Achar)",
+        "description": "A tangy and spicy pickle made from fresh Ber fruits.",
+        "ingredients": ["1 lb fresh Ber, washed and slit", "1/4 cup mustard oil", "2 tbsp fennel seeds (saunf)", "1 tbsp mustard seeds (rai)", "1 tsp fenugreek seeds (methi dana)", "1/2 tsp asafoetida (hing)", "1 tbsp turmeric powder", "2 tbsp red chili powder (or to taste)", "Salt to taste", "2 tbsp vinegar (optional, for longer shelf life)"],
+        "steps": ["Sun-dry the slit ber fruits for a day or two to remove some moisture.", "Dry roast fennel seeds, mustard seeds, and fenugreek seeds separately. Coarsely grind them.", "Heat mustard oil in a pan until it smokes lightly, then let it cool completely.", "In a large mixing bowl, combine the sun-dried ber, ground spice mixture, turmeric powder, red chili powder, asafoetida, and salt.", "Pour the cooled mustard oil over the mixture and mix well.", "If using, add vinegar and mix again.", "Transfer the pickle to a sterilized, dry glass jar. Cover and keep in the sun for 4-5 days, shaking the jar daily.", "The pickle is ready to eat once the ber softens and absorbs the flavors. Store in a cool, dry place."]
+      }
+    ]
+  },
+  {
+    "id": "jamun",
+    "commonName": "Jamun (Java Plum)",
+    "scientificName": "Syzygium cumini",
+    "image": "https://placehold.co/600x430.png",
+    "description": "An evergreen tropical tree in the flowering plant family Myrtaceae. The fruit is oblong, ovoid, starts green and turns pink to shining crimson black as it matures. It has a sweet, sour, and astringent flavor.",
+    "origin": "Indian subcontinent and Southeast Asia",
+    "localNames": ["Java Plum", "Black Plum", "Jambolan", "Kala Jamun (Hindi)"],
+    "regions": ["India", "Pakistan", "Indonesia", "Philippines", "Brazil", "Suriname"],
+    "seasons": ["Summer (May-July in India)"],
+    "nutrition": {
+      "calories": "60 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.7, "unit": "g" },
+        { "name": "Carbohydrates", "value": 15.6, "unit": "g" },
+        { "name": "Fat", "value": 0.2, "unit": "g" },
+        { "name": "Fiber", "value": 0.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 14.3, "unit": "mg", "rdi": "24%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 0.2, "unit": "mg", "rdi": "1%" },
+        { "name": "Magnesium", "value": 15, "unit": "mg", "rdi": "4%" },
+        { "name": "Potassium", "value": 79, "unit": "mg", "rdi": "2%" }
+      ]
+    },
+    "healthBenefits": [
+      "Traditionally used in Ayurvedic medicine for managing diabetes due to its potential to lower blood sugar.",
+      "Rich in antioxidants, including anthocyanins, which give it its dark color.",
+      "Good source of Vitamin C and iron.",
+      "May aid in digestion and improve liver function."
+    ],
+    "potentialAllergies": [
+      { "name": "Jamun Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Tolerates a range of conditions but prefers distinct dry and wet seasons.\n2. Soil: Grows well in a variety of soils, from sandy loam to clayey soils, but prefers deep, well-drained loamy soil.\n3. Propagation: Commonly grown from seeds. Grafting or budding can be used for superior varieties.\n4. Planting: Plant in full sun.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during fruit development.\n6. Fertilizing: Generally does not require heavy fertilization. Organic manure can be beneficial.\n7. Harvesting: Fruits are harvested when they turn deep purple or black and detach easily from the tree.",
+    "growthDuration": "Seedling trees may take 8-10 years to fruit. Grafted trees start earlier (4-5 years). Fruits mature in summer.",
+    "sustainabilityTips": [
+      "Jamun stains easily; handle with care.",
+      "The fruit is perishable; consume fresh or make juice, vinegar, or wine.",
+      "Seeds can be dried and powdered for medicinal uses (consult an expert)."
+    ],
+    "carbonFootprintInfo": "Relatively low to moderate (0.4-0.8 kg CO2e/kg), especially if consumed locally.",
+    "staticRecipes": [
+      {
+        "name": "Fresh Jamun with Black Salt",
+        "description": "The simplest way to enjoy jamun, enhancing its unique flavor.",
+        "ingredients": ["1 cup fresh Jamun (Java Plum)", "A pinch of black salt (kala namak)"],
+        "steps": ["Wash the jamun fruits thoroughly.", "Place them in a bowl.", "Sprinkle a pinch of black salt over the fruits.", "Toss gently and enjoy. The fruit is eaten whole, and the seed is discarded."]
+      },
+      {
+        "name": "Jamun Juice",
+        "description": "A refreshing and nutritious juice with a distinct tangy-sweet taste.",
+        "ingredients": ["2 cups fresh Jamun, deseeded", "1 cup cold water", "2-3 tbsp sugar or honey (or to taste)", "1/2 tsp black salt (optional)", "Juice of 1/2 lime (optional)"],
+        "steps": ["Wash jamun fruits and remove the seeds. This can be done by gently squeezing the pulp off the seed.", "Combine deseeded jamun pulp, cold water, sugar/honey, black salt (if using), and lime juice (if using) in a blender.", "Blend until smooth.", "Strain the juice through a fine-mesh sieve if you prefer a smoother texture, or enjoy it with the pulp.", "Serve chilled or over ice."]
+      },
+      {
+        "name": "Jamun Vinegar (Homemade)",
+        "description": "A traditional way to preserve jamun and utilize its health benefits.",
+        "ingredients": ["1 lb ripe Jamun fruits", "1/2 cup sugar (or jaggery)", "4 cups water", "A piece of 'mother of vinegar' (optional, for faster fermentation)"],
+        "steps": ["Wash jamun fruits thoroughly. Lightly crush them.", "In a clean, sterilized glass or ceramic jar, combine the crushed jamun, sugar/jaggery, and water.", "If using mother of vinegar, add it to the jar.", "Cover the mouth of the jar with a clean cheesecloth or muslin cloth and secure it with a rubber band or string. This allows air to circulate but keeps insects out.", "Keep the jar in a warm, dark place for 2-4 weeks. Stir the mixture every couple of days with a clean wooden or plastic spoon.", "After 2-4 weeks (fermentation time can vary depending on temperature), the mixture will start to smell vinegary. Strain the liquid through a cheesecloth into another clean jar.", "Cover the new jar again with cheesecloth and let it age for another 4-6 weeks, or until the desired acidity is achieved.", "Once ready, the jamun vinegar can be strained again and stored in airtight bottles."]
+      }
+    ]
+  },
+  {
+    "id": "amla",
+    "commonName": "Amla (Indian Gooseberry)",
+    "scientificName": "Phyllanthus emblica",
+    "image": "https://placehold.co/600x431.png",
+    "description": "A deciduous tree of the family Phyllanthaceae. It is known for its edible fruit of the same name. The fruit is nearly spherical, light greenish-yellow, quite smooth and hard on appearance, with six vertical stripes or furrows.",
+    "origin": "India and Southeast Asia",
+    "localNames": ["Indian Gooseberry", "Nellikkai (Tamil)", "Usirikaya (Telugu)"],
+    "regions": ["India", "Sri Lanka", "Thailand", "Malaysia"],
+    "seasons": ["Autumn", "Winter"],
+    "nutrition": {
+      "calories": "44 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.9, "unit": "g" },
+        { "name": "Carbohydrates", "value": 10.2, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 4.3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 27.7, "unit": "mg", "rdi": "46%" } 
+      ],
+      "minerals": [
+        { "name": "Manganese", "value": 0.144, "unit": "mg", "rdi": "7%" }
+      ]
+    },
+    "healthBenefits": [
+      "Extremely rich in Vitamin C, a potent antioxidant.",
+      "Traditionally used in Ayurveda for boosting immunity, improving hair and skin health, and aiding digestion.",
+      "May help regulate blood sugar levels.",
+      "Anti-inflammatory properties."
+    ],
+    "potentialAllergies": [
+      { "name": "Amla Allergy", "severity": "Rare", "details": "Very rare, but excessive consumption might cause acidity in some." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Prefers hot summers and mild winters.\n2. Soil: Adaptable to a wide range of soils but prefers well-drained, loamy to clay-loam soil.\n3. Propagation: Seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Regular watering for young plants. Mature trees are drought-tolerant.\n6. Fertilizing: Organic manure is beneficial. Light fertilization may be required.\n7. Harvesting: Fruits are harvested when they turn from light green to a dull greenish-yellow.",
+    "growthDuration": "Starts fruiting in 3-5 years for grafted plants. Fruits mature in autumn and winter.",
+    "sustainabilityTips": [
+      "Amla is often preserved as pickles, candies (murabba), or juice due to its tartness.",
+      "Dried amla powder is a popular supplement.",
+      "Store fresh amla in the refrigerator."
+    ],
+    "carbonFootprintInfo": "Relatively low (0.3-0.6 kg CO2e/kg), particularly when processed and consumed locally.",
+    "staticRecipes": [
+      {
+        "name": "Amla Juice",
+        "description": "A tangy and highly nutritious juice known for its health benefits.",
+        "ingredients": ["5-6 fresh Amla (Indian Gooseberries)", "1 cup water", "Pinch of black salt (optional)", "1 tsp honey or jaggery (optional, to taste)"],
+        "steps": ["Wash amla thoroughly. Cut them into pieces and remove the seeds.", "Combine amla pieces and water in a blender.", "Blend until smooth. You might need to add a little more water for easier blending.", "Strain the mixture through a fine-mesh sieve or cheesecloth, pressing to extract all the juice.", "Stir in black salt and honey/jaggery if using.", "Serve immediately. Can be diluted further if too strong."]
+      },
+      {
+        "name": "Amla Murabba (Sweet Amla Preserve)",
+        "description": "A traditional Indian sweet preserve made from amla, often eaten for its health benefits.",
+        "ingredients": ["1 lb Amla (Indian Gooseberries)", "1.5 cups sugar", "1 cup water", "1/2 tsp cardamom powder", "Few strands of saffron (optional)"],
+        "steps": ["Wash amla and prick them all over with a fork. This helps them absorb the syrup.", "Blanch the amla in boiling water for 2-3 minutes, or until they soften slightly. Drain.", "In a separate saucepan, make a sugar syrup by dissolving sugar in 1 cup of water. Bring to a boil and cook until the syrup reaches a one-string consistency (a drop of syrup between thumb and forefinger forms a single thread when pulled apart).", "Add the blanched amla to the sugar syrup. Cook on low heat for 20-25 minutes, or until amla pieces become translucent and tender, and the syrup thickens further.", "Stir in cardamom powder and saffron (if using).", "Let it cool completely. Store in a sterilized airtight glass jar. The murabba tastes better after a few days as the amla absorbs the syrup."]
+      },
+      {
+        "name": "Salted Amla (Sun-dried)",
+        "description": "A simple way to preserve amla and enjoy its tangy taste.",
+        "ingredients": ["1 lb Amla (Indian Gooseberries)", "2-3 tbsp salt", "1 tsp turmeric powder (optional)"],
+        "steps": ["Wash amla thoroughly. You can either keep them whole or cut them into segments and deseed.", "If keeping whole, prick them with a fork. If segmenting, remove seeds.", "In a bowl, toss the amla pieces with salt and turmeric powder (if using) until well coated.", "Spread the salted amla on a clean tray or cloth.", "Sun-dry for 4-7 days, or until they are completely dry and shriveled. Bring them indoors at night.", "Once fully dried, store in an airtight container. They can be eaten as a tangy snack."]
+      }
+    ]
+  },
+  {
+    "id": "wood-apple",
+    "commonName": "Wood Apple (Bael)",
+    "scientificName": "Aegle marmelos",
+    "image": "https://placehold.co/600x432.png",
+    "description": "A species of tree native to the Indian subcontinent and Southeast Asia. It has a hard, woody shell and aromatic, sticky pulp with numerous seeds.",
+    "origin": "Indian subcontinent and Southeast Asia",
+    "localNames": ["Bael (Hindi)", "Stone Apple", "Bengal Quince", "Bilva"],
+    "regions": ["India", "Sri Lanka", "Bangladesh", "Thailand", "Myanmar"],
+    "seasons": ["Summer (April-June in India)"],
+    "nutrition": {
+      "calories": "137 kcal per 100g (pulp)",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 31.8, "unit": "g" },
+        { "name": "Fat", "value": 0.3, "unit": "g" },
+        { "name": "Fiber", "value": 2.9, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 8, "unit": "mg", "rdi": "13%" },
+        { "name": "Riboflavin (B2)", "value": 1.19, "unit": "mg", "rdi": "92%" }
+      ],
+      "minerals": [
+        { "name": "Calcium", "value": 85, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Traditionally used in Ayurveda for digestive disorders like constipation and diarrhea.",
+      "Rich in tannins, which have anti-inflammatory and astringent properties.",
+      "Contains antioxidants that help combat oxidative stress.",
+      "The pulp is cooling and often consumed as a summer drink."
+    ],
+    "potentialAllergies": [
+      { "name": "Wood Apple Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Thrives in tropical and subtropical climates with a distinct dry season.\n2. Soil: Adaptable to various soils, including poor or alkaline soils, but prefers well-drained sandy loam.\n3. Propagation: Usually by seeds. Budding and grafting are also practiced.\n4. Planting: Plant in full sun.\n5. Watering: Young plants need regular watering. Mature trees are extremely drought-tolerant.\n6. Fertilizing: Generally does not require much fertilizer. Organic manure is beneficial.\n7. Harvesting: Fruits are harvested when they change from greenish-gray to yellowish. The hard shell needs to be cracked open.",
+    "growthDuration": "Seedling trees may take 6-8 years to bear fruit. Fruits mature in summer.",
+    "sustainabilityTips": [
+      "The hard shell can be challenging to open; use a heavy knife or crack it like a coconut.",
+      "The pulp is often mixed with water and sugar to make a refreshing drink (sherbet).",
+      "Unripe bael fruit is also used for medicinal purposes."
+    ],
+    "carbonFootprintInfo": "Relatively low, especially when consumed locally (0.4-0.7 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Bael Sherbet (Wood Apple Drink)",
+        "description": "A traditional Indian summer cooler made from wood apple pulp.",
+        "ingredients": ["1 medium ripe Wood Apple (Bael)", "2 cups cold water", "4-5 tbsp sugar or jaggery (or to taste)", "1/2 tsp black salt (optional)", "Juice of 1/2 lime (optional)", "Roasted cumin powder (optional, a pinch)"],
+        "steps": ["Wash the bael fruit. Crack open the hard shell using a hammer or a heavy pestle.", "Scoop out the fibrous, aromatic pulp into a bowl. Discard the shell and seeds.", "Add about 1 cup of water to the pulp and let it soak for 20-30 minutes. This helps soften the pulp.", "Using your hands, mash the pulp well in the water to extract its flavor and essence. Squeeze out as much liquid as possible.", "Strain the mixture through a sieve into a pitcher, pressing the pulp to get all the juice. Discard the fibrous residue.", "Add the remaining 1 cup of cold water, sugar/jaggery, black salt (if using), lime juice (if using), and roasted cumin powder (if using) to the pitcher. Stir well until the sugar/jaggery is dissolved.", "Taste and adjust sweetness or tanginess. Serve chilled or with ice cubes."]
+      },
+      {
+        "name": "Bael Murabba (Wood Apple Preserve)",
+        "description": "A sweet preserve made from wood apple, similar to amla murabba.",
+        "ingredients": ["1 large ripe Wood Apple (Bael) pulp", "1.5 cups sugar", "1 cup water", "1/2 tsp cardamom powder"],
+        "steps": ["Extract the pulp from the bael fruit and remove seeds.", "In a saucepan, combine sugar and water. Heat until sugar dissolves and forms a syrup of one-string consistency.", "Add the bael pulp to the sugar syrup. Cook on low heat, stirring continuously, until the mixture thickens and the bael pulp becomes translucent (about 20-30 minutes).", "Stir in cardamom powder.", "Let it cool completely. Store in a sterilized airtight glass jar."]
+      },
+      {
+        "name": "Dried Bael Slices for Tea/Infusion",
+        "description": "Dried bael fruit slices can be used to make a healthy infusion.",
+        "ingredients": ["Ripe Bael fruit"],
+        "steps": ["Wash and crack open the bael fruit. Scoop out the pulp.", "Separate the pulp from the seeds and fibers as much as possible.", "Slice the pulp into thin pieces or small chunks.", "Sun-dry these slices on a clean tray for several days until they are completely dry and hard.", "Alternatively, you can dry them in a dehydrator or a very low oven.", "Store the dried bael slices in an airtight container.", "To make an infusion, steep a few dried slices in hot water for 5-10 minutes. Sweeten if desired."]
+      }
+    ]
+  },
+  {
+    "id": "kokum",
+    "commonName": "Kokum",
+    "scientificName": "Garcinia indica",
+    "image": "https://placehold.co/600x433.png",
+    "description": "A fruit-bearing tree that has culinary, pharmaceutical, and industrial uses. The fruit is small, round, and dark purple when ripe. The outer cover is dried and used as a souring agent.",
+    "origin": "Western Ghats region of India",
+    "localNames": ["Amsol (Marathi/Konkani)", "Brinda (Konkani)", "Murugala Hannu (Kannada)"],
+    "regions": ["Western Ghats of India (Maharashtra, Goa, Karnataka, Kerala)"],
+    "seasons": ["Summer (April-May for fresh fruit, dried available year-round)"],
+    "nutrition": {
+      "calories": "60 kcal per 100g (fresh fruit, estimated)",
+      "macronutrients": [
+        { "name": "Protein", "value": 0.5, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14.3, "unit": "g" },
+        { "name": "Fat", "value": 0.1, "unit": "g" },
+        { "name": "Fiber", "value": 1.6, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 5, "unit": "mg", "rdi": "8%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 170, "unit": "mg", "rdi": "5%" }
+      ]
+    },
+    "healthBenefits": [
+      "Traditionally used as an antacid and to improve digestion.",
+      "Rich in antioxidants, including garcinol and anthocyanins.",
+      "May have anti-inflammatory and anti-allergic properties.",
+      "Kokum butter (from seeds) is used as a moisturizer."
+    ],
+    "potentialAllergies": [
+      { "name": "Kokum Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, prefers warm and humid conditions with well-distributed rainfall.\n2. Soil: Grows well in lateritic, alluvial, or sandy loam soils with good drainage.\n3. Propagation: Seeds or grafting.\n4. Planting: Plant in partial shade when young, moving to full sun as it matures.\n5. Watering: Regular watering for young plants. Mature trees are somewhat drought-tolerant.\n6. Fertilizing: Responds well to organic manure.\n7. Harvesting: Fruits are harvested when they turn deep purple. The rind is then typically dried.",
+    "growthDuration": "Trees start bearing fruit in 7-10 years. Fruits ripen in summer.",
+    "sustainabilityTips": [
+      "Dried kokum rind (amsol) has a long shelf life and is a staple souring agent in coastal Indian cuisine.",
+      "Kokum sherbet is a popular cooling drink.",
+      "Kokum butter is a sustainable alternative to cocoa butter in cosmetics."
+    ],
+    "carbonFootprintInfo": "Low, as it's primarily consumed locally or in dried form which is light to transport (0.2-0.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Kokum Sherbet (Sol Kadi Base)",
+        "description": "A refreshing and tangy drink made from dried kokum, often used as a base for Sol Kadi.",
+        "ingredients": ["1/2 cup dried Kokum rinds (Amsol)", "2 cups warm water", "1/4 cup sugar or jaggery (or to taste)", "1/2 tsp roasted cumin powder", "Pinch of black salt"],
+        "steps": ["Soak dried kokum rinds in 2 cups of warm water for about 1-2 hours. This helps soften them and extract the color and flavor.", "After soaking, squeeze the kokum rinds well in the water to release all their essence. The water will turn deep pink/purple.", "Strain the liquid through a fine-mesh sieve into a pitcher, pressing the rinds to extract maximum juice. Discard the rinds.", "Add sugar or jaggery to the kokum extract and stir until completely dissolved.", "Stir in roasted cumin powder and black salt.", "Chill thoroughly. Serve as a refreshing drink or use as a base for Sol Kadi (by adding coconut milk and spices)."]
+      },
+      {
+        "name": "Using Dried Kokum (Amsol) in Curries",
+        "description": "Dried kokum is used as a souring agent in many coastal Indian curries and dals.",
+        "ingredients": ["3-4 pieces of dried Kokum rind (Amsol)", "Your curry or dal preparation"],
+        "steps": ["Rinse the dried kokum pieces briefly.", "Add the kokum pieces to your curry or dal while it's simmering. They will release their tartness and a beautiful pinkish hue to the dish.", "The amount to use depends on the desired level of sourness and the quantity of the dish. Start with a few pieces and add more if needed.", "Remove the kokum pieces before serving, or leave them in if preferred (they are edible but mainly used for flavor)."]
+      },
+      {
+        "name": "Kokum Infused Water",
+        "description": "A simple digestive aid and cooling drink.",
+        "ingredients": ["4-5 pieces of dried Kokum rind (Amsol)", "1 liter water", "Optional: pinch of black salt, a few mint leaves"],
+        "steps": ["Rinse the dried kokum pieces.", "Add them to a bottle or jar with 1 liter of water.", "Let it infuse for at least 2-3 hours at room temperature, or overnight in the refrigerator.", "The water will turn a light pink and acquire a tangy flavor.", "Strain if desired. Add black salt or mint leaves for extra flavor.", "Drink throughout the day as a cooling and digestive beverage."]
+      }
+    ]
+  },
+  {
+    "id": "tamarind",
+    "commonName": "Tamarind",
+    "scientificName": "Tamarindus indica",
+    "image": "https://placehold.co/600x434.png",
+    "description": "A leguminous tree bearing edible fruit that is indigenous to tropical Africa. The fruit is a pod-like legume, which contains a sweet, tangy pulp.",
+    "origin": "Tropical Africa",
+    "localNames": ["Imli (Hindi)", "Tamarindo (Spanish/Portuguese)"],
+    "regions": ["India", "Thailand", "Mexico", "Other tropical regions worldwide"],
+    "seasons": ["Late Winter to Spring (for fresh pods)"],
+    "nutrition": {
+      "calories": "239 kcal per 100g (pulp)",
+      "macronutrients": [
+        { "name": "Protein", "value": 2.8, "unit": "g" },
+        { "name": "Carbohydrates", "value": 62.5, "unit": "g" },
+        { "name": "Fat", "value": 0.6, "unit": "g" },
+        { "name": "Fiber", "value": 5.1, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Thiamin (B1)", "value": 0.428, "unit": "mg", "rdi": "36%" }
+      ],
+      "minerals": [
+        { "name": "Iron", "value": 2.8, "unit": "mg", "rdi": "16%" },
+        { "name": "Magnesium", "value": 92, "unit": "mg", "rdi": "23%" },
+        { "name": "Potassium", "value": 628, "unit": "mg", "rdi": "18%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in tartaric acid, a potent antioxidant.",
+      "Used traditionally as a laxative and to aid digestion.",
+      "Contains essential minerals like iron, magnesium, and potassium.",
+      "May help lower cholesterol levels."
+    ],
+    "potentialAllergies": [
+      { "name": "Tamarind Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Drought-resistant once established.\n2. Soil: Grows in a wide variety of soils but prefers deep, well-drained loamy soil.\n3. Propagation: Primarily by seeds. Grafting can be used for superior types.\n4. Planting: Plant in full sun. Trees can grow very large.\n5. Watering: Young trees need regular watering. Mature trees are very drought-tolerant.\n6. Harvesting: Pods are harvested when they turn brown and brittle. The pulp is extracted from the pods.",
+    "growthDuration": "Seedling trees may take 6-12 years to bear fruit. Fruits ripen in late winter to spring.",
+    "sustainabilityTips": [
+      "Tamarind pulp is often sold as a paste or block, which has a long shelf life.",
+      "Used extensively as a souring agent in Asian, Latin American, and Caribbean cuisines.",
+      "Seeds can be roasted or boiled and eaten, or ground into flour."
+    ],
+    "carbonFootprintInfo": "Moderate, as it's often transported in processed forms (paste, block) which are dense (0.5-1.0 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Tamarind Paste/Pulp from Block",
+        "description": "How to make tamarind paste from a block of tamarind pulp for use in cooking.",
+        "ingredients": ["1 block of tamarind pulp (about 200g)", "1.5 - 2 cups hot water"],
+        "steps": ["Break the tamarind block into smaller pieces and place it in a heatproof bowl.", "Pour hot (not boiling) water over the tamarind pieces, just enough to cover them. Let it soak for 20-30 minutes, or until the pulp softens.", "Once softened, use your fingers (clean hands!) or a sturdy spoon to mash the pulp thoroughly in the water. Squeeze the pulp to release its essence into the water. The water will turn brown and thick.", "Strain the mixture through a fine-mesh sieve into another bowl. Press down firmly on the solids in the sieve with the back of a spoon to extract as much thick pulp as possible.", "Discard the seeds and fibrous material left in the sieve.", "The resulting thick liquid is tamarind paste/pulp. It can be stored in an airtight container in the refrigerator for a few weeks or frozen for longer storage."]
+      },
+      {
+        "name": "Tamarind Chutney (Imli Chutney)",
+        "description": "A sweet and tangy Indian chutney, perfect with snacks like samosas or chaat.",
+        "ingredients": ["1/2 cup tamarind paste (see recipe above, or store-bought)", "1 cup water", "1/2 cup jaggery or brown sugar, grated or powdered", "1/2 tsp roasted cumin powder", "1/4 tsp red chili powder (optional)", "1/4 tsp ginger powder (saunth)", "Black salt (kala namak) to taste", "Pinch of asafoetida (hing, optional)"],
+        "steps": ["In a saucepan, combine tamarind paste and 1 cup of water. Bring to a simmer and cook for 5-7 minutes, stirring occasionally.", "Add jaggery/brown sugar and continue to cook, stirring, until it dissolves completely.", "Stir in roasted cumin powder, red chili powder (if using), ginger powder, and black salt.", "If using asafoetida, you can temper it in a tiny bit of hot oil and add to the chutney for extra flavor (optional).", "Simmer the chutney for another 5-10 minutes, or until it thickens to your desired consistency. It will thicken more as it cools.", "Let the chutney cool completely. Store in an airtight container in the refrigerator. It lasts for several weeks."]
+      },
+      {
+        "name": "Tamarind Rice (Pulihora/Puliyogare - Simplified)",
+        "description": "A tangy and flavorful South Indian rice dish.",
+        "ingredients": ["1 cup cooked rice, cooled", "2-3 tbsp tamarind paste", "For tempering: 1 tbsp oil, 1 tsp mustard seeds, 1 tsp chana dal (split chickpeas), 1 tsp urad dal (split black lentils), 2-3 dried red chilies (broken), a few curry leaves, 1/4 tsp asafoetida (hing)", "2 tbsp peanuts or cashews", "1/4 tsp turmeric powder", "Salt to taste", "Optional: 1 tbsp jaggery (for a hint of sweetness)"],
+        "steps": ["Heat oil in a pan. Add mustard seeds; when they splutter, add chana dal, urad dal, and peanuts/cashews. Sauté until dals turn golden and nuts are roasted.", "Add dried red chilies, curry leaves, and asafoetida. Sauté for a few seconds.", "Add tamarind paste and turmeric powder. Cook for 2-3 minutes, stirring, until the raw smell of tamarind disappears. If it's too thick, add a little water.", "Add salt and jaggery (if using). Mix well.", "Add the cooked rice to the pan. Gently mix everything together until the rice is well coated with the tamarind mixture.", "Cook for another 2-3 minutes, stirring gently. Serve warm or at room temperature."]
+      }
+    ]
+  },
+  {
+    "id": "passion-fruit",
+    "commonName": "Passion Fruit",
+    "scientificName": "Passiflora edulis",
+    "image": "https://placehold.co/600x435.png",
+    "description": "A vine species of passion flower native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.",
+    "origin": "Southern Brazil, Paraguay, Northern Argentina",
+    "localNames": ["Maracuyá (Spanish)", "Fruit de la passion (French)", "Granadilla (some varieties)"],
+    "regions": ["Brazil", "Colombia", "Ecuador", "Australia", "New Zealand", "Kenya", "Hawaii"],
+    "seasons": ["Varies by region, can fruit year-round in some tropical climates"],
+    "nutrition": {
+      "calories": "97 kcal per 100g (pulp)",
+      "macronutrients": [
+        { "name": "Protein", "value": 2.2, "unit": "g" },
+        { "name": "Carbohydrates", "value": 23.4, "unit": "g" },
+        { "name": "Fat", "value": 0.7, "unit": "g" },
+        { "name": "Fiber", "value": 10.4, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 30, "unit": "mg", "rdi": "50%" },
+        { "name": "Vitamin A", "value": 64, "unit": "µg RAE", "rdi": "7%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 348, "unit": "mg", "rdi": "10%" },
+        { "name": "Iron", "value": 1.6, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Rich in dietary fiber, promoting digestive health and regularity.",
+      "Good source of Vitamin C and Vitamin A, supporting immune function and vision.",
+      "Contains antioxidants that help combat free radicals.",
+      "May have calming effects and aid in sleep due to certain compounds."
+    ],
+    "potentialAllergies": [
+      { "name": "Passion Fruit Allergy", "severity": "Rare", "details": "Allergies are uncommon but can occur." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Some varieties tolerate cooler conditions.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.5-7.5.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun against a trellis, fence, or arbor for support as it's a vigorous vine.\n5. Watering: Requires regular watering, especially during flowering and fruiting.\n6. Fertilizing: Feed regularly with a balanced fertilizer during the growing season.\n7. Pollination: Some varieties are self-pollinating; others require cross-pollination or hand pollination.\n8. Harvesting: Fruits drop from the vine when ripe or can be picked when they change color (purple or yellow, depending on variety) and become slightly wrinkled.",
+    "growthDuration": "Vines can start fruiting within 6-12 months from planting. Fruits mature in 70-80 days after pollination.",
+    "sustainabilityTips": [
+      "Store passion fruit at room temperature until wrinkled (indicating ripeness), then refrigerate.",
+      "Pulp can be scooped out and eaten fresh, added to drinks, or used in desserts.",
+      "Freeze pulp for later use."
+    ],
+    "carbonFootprintInfo": "Moderate to high if air-freighted from distant tropical regions (0.8-2.5 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Passion Fruit Pulp",
+        "description": "The simplest way to enjoy the intense, aromatic flavor of passion fruit.",
+        "ingredients": ["1-2 ripe Passion Fruits"],
+        "steps": ["Wash the passion fruit.", "Cut the fruit in half crosswise.", "Use a spoon to scoop out the aromatic, jelly-like pulp along with the edible black seeds.", "The pulp can be eaten directly, seeds and all. It's tangy, sweet, and highly flavorful. Often used as a topping for yogurt, ice cream, or desserts."]
+      },
+      {
+        "name": "Passion Fruit Juice/Cooler",
+        "description": "A refreshing tropical drink bursting with flavor.",
+        "ingredients": ["Pulp of 4-5 ripe Passion Fruits", "1 cup cold water (or sparkling water)", "2-4 tbsp sugar or simple syrup (to taste)", "Ice cubes", "Mint sprig for garnish (optional)"],
+        "steps": ["Scoop the pulp from the passion fruits into a blender or a bowl.", "If using a blender, add a little water and pulse a few times briefly just to loosen the pulp from the seeds (don't over-blend or you'll crush the seeds too much). If not using a blender, mash the pulp with a fork in a bowl with a little water.", "Strain the mixture through a fine-mesh sieve into a pitcher, pressing down on the pulp to extract as much juice as possible. Discard the seeds and membrane caught in the sieve.", "Add the remaining cold/sparkling water and sugar/simple syrup to the pitcher. Stir well until the sweetener is dissolved.", "Taste and adjust sweetness. Serve chilled over ice, garnished with a mint sprig if desired."]
+      },
+      {
+        "name": "Passion Fruit Mousse",
+        "description": "A light and airy dessert with the exotic taste of passion fruit.",
+        "ingredients": ["1/2 cup passion fruit pulp (seeds strained if preferred)", "1 cup heavy whipping cream", "1/4 cup powdered sugar (or to taste)", "1 tsp gelatin dissolved in 2 tbsp hot water (or agar-agar for vegetarian)", "Optional: extra passion fruit pulp for topping"],
+        "steps": ["If using gelatin, dissolve it in hot water and let it cool slightly. If using agar-agar, prepare according to package instructions with a little liquid and heat.", "In a chilled bowl, whip the heavy cream with powdered sugar until soft peaks form.", "Gently fold the passion fruit pulp into the whipped cream.", "If using gelatin/agar-agar, gently fold the cooled (but still liquid) mixture into the cream and passion fruit mixture until just combined.", "Spoon the mousse into individual serving glasses or a larger bowl.", "Chill in the refrigerator for at least 2-3 hours, or until set.", "Serve chilled, optionally topped with a drizzle of fresh passion fruit pulp."]
+      }
+    ]
+  },
+  {
+    "id": "kiwi",
+    "commonName": "Kiwi (Kiwifruit)",
+    "scientificName": "Actinidia deliciosa",
+    "image": "https://placehold.co/600x436.png",
+    "description": "An edible berry of several species of woody vines in the genus Actinidia. The most common cultivar group of kiwifruit is oval, about the size of a large hen's egg. It has a fibrous, dull greenish-brown skin and bright green or golden flesh with rows of tiny, black, edible seeds.",
+    "origin": "Eastern China",
+    "localNames": ["Chinese Gooseberry (older name)", "Kiwi (common worldwide)"],
+    "regions": ["China", "New Zealand", "Italy", "Chile", "Greece", "France"],
+    "seasons": ["Varies by hemisphere; generally late autumn to spring"],
+    "nutrition": {
+      "calories": "61 kcal per 100g",
+      "macronutrients": [
+        { "name": "Protein", "value": 1.1, "unit": "g" },
+        { "name": "Carbohydrates", "value": 14.7, "unit": "g" },
+        { "name": "Fat", "value": 0.5, "unit": "g" },
+        { "name": "Fiber", "value": 3, "unit": "g" }
+      ],
+      "vitamins": [
+        { "name": "Vitamin C", "value": 92.7, "unit": "mg", "rdi": "155%" },
+        { "name": "Vitamin K", "value": 40.3, "unit": "µg", "rdi": "50%" },
+        { "name": "Vitamin E", "value": 1.5, "unit": "mg", "rdi": "10%" }
+      ],
+      "minerals": [
+        { "name": "Potassium", "value": 312, "unit": "mg", "rdi": "9%" }
+      ]
+    },
+    "healthBenefits": [
+      "Excellent source of Vitamin C, boosting the immune system and skin health.",
+      "Rich in Vitamin K, important for blood clotting and bone health.",
+      "Good source of dietary fiber, aiding digestion and promoting satiety.",
+      "Contains antioxidants and serotonin, which may improve sleep quality."
+    ],
+    "potentialAllergies": [
+      { "name": "Kiwi Allergy", "severity": "Mild", "details": "Can cause oral allergy syndrome (itching of mouth, lips, tongue) in sensitive individuals. Contains actinidin, an enzyme that can be an allergen." }
+    ],
+    "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill. Requires a long growing season.\n2. Soil: Well-drained, fertile, slightly acidic soil (pH 5.5-6.5) rich in organic matter.\n3. Propagation: Seeds, cuttings, or grafting. Most commercial kiwis are dioecious (separate male and female plants), requiring both for fruit production.\n4. Planting: Plant in full sun on a sturdy trellis or pergola for the vigorous vines.\n5. Watering: Requires consistent moisture, especially during the growing season and fruit development.\n6. Fertilizing: Apply balanced fertilizer regularly during the growing season.\n7. Pruning: Extensive pruning is necessary during dormancy and summer to manage growth and encourage fruiting.\n8. Harvesting: Fruits are harvested when firm and mature. They ripen off the vine.",
+    "growthDuration": "Vines typically start bearing fruit in 3-5 years. Fruit matures in late autumn.",
+    "sustainabilityTips": [
+      "Store kiwis at room temperature to ripen, then refrigerate for longer storage.",
+      "Kiwis can be eaten by cutting in half and scooping out the flesh, or by peeling and slicing.",
+      "The skin is edible for some varieties if well-washed (and fuzz removed for green kiwis)."
+    ],
+    "carbonFootprintInfo": "Moderate to high if transported long distances (0.7-1.8 kg CO2e/kg).",
+    "staticRecipes": [
+      {
+        "name": "Fresh Kiwi Slices",
+        "description": "The simplest way to enjoy the refreshing taste and vibrant color of kiwi.",
+        "ingredients": ["1-2 ripe Kiwis"],
+        "steps": ["Wash the kiwi.", "You can either cut the kiwi in half crosswise and scoop out the flesh with a spoon, or peel the kiwi with a knife or vegetable peeler and then slice it into rounds.", "The small black seeds are edible.", "Serve immediately."]
+      },
+      {
+        "name": "Kiwi and Strawberry Smoothie",
+        "description": "A vibrant and vitamin-packed smoothie.",
+        "ingredients": ["2 ripe kiwis, peeled and chopped", "1 cup fresh or frozen strawberries", "1/2 banana (optional, for creaminess)", "1/2 cup yogurt (plain or vanilla)", "1/4 cup milk or orange juice", "Honey or maple syrup to taste (optional)"],
+        "steps": ["Combine chopped kiwi, strawberries, banana (if using), yogurt, and milk/orange juice in a blender.", "Blend until smooth and creamy.", "Taste and add honey or maple syrup if a sweeter smoothie is desired. Blend again briefly.", "Pour into a glass and serve immediately."]
+      },
+      {
+        "name": "Kiwi Fruit Salad with Mint and Lime",
+        "description": "A refreshing fruit salad where kiwi takes center stage.",
+        "ingredients": ["3 ripe kiwis, peeled and diced or sliced", "1 cup other fruits (e.g., pineapple chunks, grapes, melon balls)", "Juice of 1/2 lime", "1 tbsp honey (optional)", "A few fresh mint leaves, chopped"],
+        "steps": ["In a medium bowl, gently combine diced/sliced kiwi and other chosen fruits.", "In a small bowl, whisk together lime juice and honey (if using).", "Drizzle the lime-honey mixture over the fruit salad.", "Sprinkle with fresh chopped mint.", "Toss gently to combine. Serve chilled or at room temperature."]
       }
     ]
   }
