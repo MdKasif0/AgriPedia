@@ -833,7 +833,7 @@
         "Peel before cooking. The flesh is spongy and cooks quickly.",
         "Widely used in Indian cuisine for curries, koftas, soups, and even desserts."
     ],
-    "carbonFootprintInfo": "Low to moderate, depending on local availability and transport (0.3-0.7 kg CO2e/kg).",
+    "carbonFootprintInfo": "Low to moderate (0.3-0.7 kg CO2e/kg).",
     "staticRecipes": [
       {
         "name": "Lauki Chana Dal (Bottle Gourd with Split Chickpeas)",
@@ -1360,8 +1360,8 @@
       {
         "name": "Methi Dal (Fenugreek Leaves with Lentils)",
         "description": "A nutritious lentil dish flavored with fresh fenugreek leaves.",
-        "ingredients": ["1/2 cup toor dal (split pigeon peas) or moong dal (split yellow lentils), rinsed", "1 cup chopped fresh fenugreek leaves (methi)", "1 small onion, chopped", "1 small tomato, chopped", "1/2 tsp turmeric powder", "Salt to taste", "For tempering: 1 tbsp ghee or oil, 1/2 tsp mustard seeds, 1/2 tsp cumin seeds, 1-2 dried red chilies, pinch of asafoetida, 2 cloves garlic (chopped)"],
-        "steps": ["Pressure cook rinsed dal with 1.5 cups water, turmeric powder, and a little salt for 3-4 whistles or until soft. Mash lightly.", "In a separate pan, heat ghee/oil for tempering. Add mustard seeds and cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic. Sauté until garlic is golden.", "Add chopped onion to the tempering and sauté until translucent.", "Add chopped tomato and cook until softened.", "Add chopped fenugreek leaves and sauté for 2-3 minutes until wilted.", "Pour the cooked dal into the pan with the fenugreek mixture. Add salt to taste (if more is needed). Mix well.", "Simmer for 5-7 minutes, allowing flavors to blend. Add more water if dal is too thick. Serve hot with rice or roti."]
+        "ingredients": ["1/2 cup toor dal (split pigeon peas) or moong dal (split yellow lentils), rinsed", "1 cup chopped fresh fenugreek leaves (methi)", "1 small onion, chopped", "1 small tomato, chopped", "1/2 tsp turmeric powder", "Salt to taste", "For tempering: 1 tbsp ghee or oil, 1/2 tsp mustard seeds, 1/2 tsp cumin seeds, 1-2 dried red chilies, pinch of asafoetida, 2 cloves garlic (chopped, optional)"],
+        "steps": ["Pressure cook rinsed dal with 1.5 cups water, turmeric powder, and a little salt for 3-4 whistles or until soft. Mash lightly.", "In a separate pan, heat ghee/oil for tempering. Add mustard seeds and cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Sauté until garlic is lightly golden.", "Add chopped onion to the tempering and sauté until translucent.", "Add chopped tomato and cook until softened.", "Add chopped fenugreek leaves and sauté for 2-3 minutes until wilted.", "Pour the cooked dal into the pan with the fenugreek mixture. Add salt to taste (if more is needed). Mix well.", "Simmer for 5-7 minutes, allowing flavors to blend. Add more water if dal is too thick. Serve hot with rice or roti."]
       }
     ]
   },
@@ -1784,7 +1784,7 @@
     "healthBenefits": [
       "Excellent source of Vitamin C, especially red and yellow varieties.",
       "Red bell peppers are rich in Vitamin A (beta-carotene).",
-      "Contain antioxidants like carotenoids and flavonoids.",
+      "Contains antioxidants like carotenoids and flavonoids.",
       "Low in calories and a good source of fiber."
     ],
     "potentialAllergies": [
@@ -3047,7 +3047,7 @@
   },
   {
     "id": "raw-mango",
-    "commonName": "Raw Mango (Green Mango)",
+    "commonName": "Raw Mango",
     "scientificName": "Mangifera indica (unripe fruit)",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtRZ0C8dig-gXWKIHwbOIQL1u2OGyUi-J4enHacBfMQ&s",
     "description": "The unripe fruit of the mango tree. It is typically green, firm, and very tart or sour, in contrast to the sweet, soft flesh of ripe mangoes. Raw mango is widely used in culinary applications, especially in pickles, chutneys, and souring agents.",
