@@ -34,7 +34,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
 
           {/* Bottom-right "See Details" button overlay */}
           <div className="self-end">
-            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/70 backdrop-blur-sm text-primary font-medium rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-primary/90 transition-colors">
+            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/70 backdrop-blur-sm text-black font-medium rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-black/80 transition-colors">
               <span>See Details</span>
               <ChevronRight size={16} />
             </div>
