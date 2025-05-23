@@ -4,10 +4,10 @@
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import { useParams, notFound } from 'next/navigation';
-import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
+import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData'; // Recipe type is implicitly available via ProduceInfo
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
-import { triggerHapticFeedback, playSound } from '@/lib/utils'; // Added playSound
+import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import dynamic from 'next/dynamic';
 
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
@@ -42,7 +42,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; 
+      return 'default';
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -55,11 +55,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
 };
 
 const getCurrentSeason = (): string => {
-  const month = new Date().getMonth(); 
-  if (month >= 2 && month <= 4) return 'Spring'; 
-  if (month >= 5 && month <= 7) return 'Summer'; 
-  if (month >= 8 && month <= 10) return 'Autumn'; 
-  return 'Winter'; 
+  const month = new Date().getMonth();
+  if (month >= 2 && month <= 4) return 'Spring';
+  if (month >= 5 && month <= 7) return 'Summer';
+  if (month >= 8 && month <= 10) return 'Autumn';
+  return 'Winter';
 };
 
 interface ItemDetailsPageProps {
@@ -68,9 +68,10 @@ interface ItemDetailsPageProps {
 
 export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const { slug: slugParamFromHook } = useParams<{ slug?: string | string[] }>();
+  const params = useParams<{ slug?: string | string[] }>();
   
-  const actualSlugParam = slugFromParams || slugParamFromHook;
+  // Prioritize slugFromParams (passed from server component) over params from hook
+  const actualSlugParam = slugFromParams || params.slug;
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -86,7 +87,13 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
 
   const processedSlug = useMemo(() => {
     if (!actualSlugParam) return '';
-    return typeof actualSlugParam === 'string' ? decodeURIComponent(actualSlugParam) : Array.isArray(actualSlugParam) ? decodeURIComponent(actualSlugParam[0]) : '';
+    const slug = typeof actualSlugParam === 'string' ? actualSlugParam : Array.isArray(actualSlugParam) ? actualSlugParam[0] : '';
+    try {
+        return decodeURIComponent(slug);
+    } catch (e) {
+        console.error("Failed to decode slug:", slug, e);
+        return slug; // Return original if decoding fails
+    }
   }, [actualSlugParam]);
 
 
@@ -109,7 +116,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // No longer used
+            // UserDataStore.addRecentView(onlineData.id); // Removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -187,9 +194,9 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       UserDataStore.removeFavorite(produce.id);
     } else {
       UserDataStore.addFavorite(produce.id);
-      playSound('/sounds/bookmark-added.mp3'); // Play sound on adding bookmark
+      playSound('/sounds/bookmark-added.mp3');
       setAnimateBookmark(true);
-      setTimeout(() => setAnimateBookmark(false), 300); // Match animation duration
+      setTimeout(() => setAnimateBookmark(false), 300);
     }
     setIsBookmarked(!isBookmarked);
   };
@@ -200,7 +207,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
     const shareData = {
       title: `Learn about ${produce.commonName} - AgriPedia`,
       text: `Check out ${produce.commonName} on AgriPedia: ${produce.description.substring(0, 100)}...`,
-      url: window.location.href, 
+      url: window.location.href,
     };
     try {
       if (navigator.share) {
@@ -222,10 +229,10 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
   }
 
   if (!produce && !isLoading) {
-    notFound(); 
-    return null; 
+    notFound();
+    return null;
   }
-  if (!produce) return null; 
+  if (!produce) return null;
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
@@ -244,12 +251,14 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           </AlertDescription>
         </Alert>
       )}
-      <header className="text-center relative">
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 flex items-center justify-center gap-3">
-          <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
-        </h1>
-        <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
-        <div className="absolute top-0 right-0 flex items-center gap-1">
+      <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+        <div className="flex-1 text-center sm:text-left">
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
+            <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
+          </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
+        </div>
+        <div className="flex items-center justify-center sm:justify-end gap-1 mt-2 sm:mt-0 flex-shrink-0">
             <Button
                 variant="ghost"
                 size="icon"
@@ -310,8 +319,8 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       </div>
 
       <section className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
-        <p className="text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
+        <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
 
         <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
           <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg" />
@@ -374,7 +383,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
       </div>
 
       <section className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
         {recipesToDisplay.length > 0 ? (
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             {recipesToDisplay.map((recipe, index) => (
@@ -436,3 +445,6 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
     </div>
   );
 }
+
+
+    
