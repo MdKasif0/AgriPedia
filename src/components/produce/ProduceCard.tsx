@@ -11,7 +11,7 @@ interface ProduceCardProps {
 export default function ProduceCard({ produce }: ProduceCardProps) {
   // Generate a 1 or 2 word hint from the common name
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
-  const hint = commonNameWords.slice(0, 2).join(' ');
+  const hint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
   return (
     <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl">
@@ -34,7 +34,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
 
           {/* Bottom-right "See Details" button overlay */}
           <div className="self-end">
-            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/80 backdrop-blur-sm text-primary font-medium rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-primary/90 transition-colors">
+            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/70 backdrop-blur-sm text-primary font-medium rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-primary/90 transition-colors">
               <span>See Details</span>
               <ChevronRight size={16} />
             </div>
