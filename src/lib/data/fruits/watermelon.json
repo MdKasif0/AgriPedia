@@ -1,0 +1,65 @@
+{
+  "id": "watermelon",
+  "commonName": "Watermelon",
+  "scientificName": "Citrullus lanatus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Watermelon.jpg",
+  "description": "A large, sweet fruit originally from southern Africa. It's known for its high water content and refreshing taste, typically with green rind and red, juicy flesh.",
+  "origin": "Southern Africa (Kalahari Desert region)",
+  "localNames": ["Sandía (Spanish)", "Pastèque (French)", "Wassermelone (German)"],
+  "regions": ["China", "Turkey", "Iran", "Brazil", "United States"],
+  "seasons": ["Summer"],
+  "nutrition": {
+    "calories": "30 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 7.6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 0.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 8.1, "unit": "mg", "rdi": "14%" },
+      { "name": "Vitamin A (from carotenoids)", "value": 28, "unit": "µg RAE", "rdi": "3%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 112, "unit": "mg", "rdi": "3%" },
+      { "name": "Lycopene (antioxidant)", "value": 4532, "unit": "µg" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent for hydration due to high water content (about 92%).",
+    "Good source of lycopene, an antioxidant linked to heart health and cancer prevention.",
+    "Contains citrulline, an amino acid that may improve blood flow and reduce muscle soreness.",
+    "Provides Vitamin C, supporting immune function."
+  ],
+  "potentialAllergies": [
+    { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Rare, but can occur in individuals with ragweed pollen allergy." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Watermelons are warm-season crops, requiring long, hot summers. Full sun is essential.\n2. Soil: Prefer sandy loam soil that is well-drained and rich in organic matter. pH 6.0-6.8.\n3. Planting: Typically grown from seeds, started indoors in cooler climates or sown directly when soil is warm.\n4. Spacing: Vines need ample space to spread. Plant hills 6-8 feet apart.\n5. Watering: Consistent and deep watering is crucial, especially during fruit set and development. Reduce watering as fruits ripen.\n6. Fertilizing: Benefit from fertilizers rich in potassium and phosphorus.\n7. Pollination: Bees are essential for pollinating watermelon flowers.\n8. Harvesting: Judged by a dull sound when thumped, drying of the tendril nearest the fruit, and a yellowing of the underside where it touches the ground.",
+  "growthDuration": "70-90 days from sowing to harvest, depending on variety.",
+  "sustainabilityTips": [
+      "Store uncut watermelon at room temperature; cut watermelon in the refrigerator.",
+      "Use the entire watermelon: rind can be pickled or candied, seeds can be roasted.",
+      "Choose locally grown watermelons in season for best flavor and lower impact."
+  ],
+  "carbonFootprintInfo": "Generally low (0.2-0.4 kg CO2e/kg) if field-grown and consumed locally. Transport can increase this significantly.",
+  "staticRecipes": [
+    {
+      "name": "Classic Watermelon Slices",
+      "description": "The simplest and most refreshing way to enjoy watermelon.",
+      "ingredients": ["1 ripe watermelon"],
+      "steps": ["Wash the outside of the watermelon thoroughly.", "Place the watermelon on a sturdy cutting board.", "Using a large, sharp knife, cut the watermelon in half lengthwise or crosswise.", "Lay each half cut-side down and slice into wedges or rounds of desired thickness.", "Serve immediately or chill for later."]
+    },
+    {
+      "name": "Watermelon Feta Mint Salad",
+      "description": "A refreshing and flavorful salad combining sweet watermelon, salty feta, and fresh mint.",
+      "ingredients": ["4 cups cubed seedless watermelon", "1/2 cup crumbled feta cheese", "1/4 cup fresh mint leaves, chopped or torn", "1-2 tbsp olive oil", "1 tbsp lime juice or red wine vinegar", "Pinch of salt and black pepper (optional)"],
+      "steps": ["In a large bowl, gently combine cubed watermelon, crumbled feta cheese, and fresh mint.", "In a small bowl, whisk together olive oil and lime juice or red wine vinegar. Season lightly with salt and pepper if desired (feta is already salty).", "Drizzle the dressing over the watermelon mixture.", "Toss gently to combine. Serve immediately or chilled. For best results, assemble just before serving as watermelon can release a lot of water."]
+    },
+    {
+      "name": "Refreshing Watermelon Juice/Agua Fresca",
+      "description": "A simple and hydrating drink perfect for hot days.",
+      "ingredients": ["4-5 cups cubed seedless watermelon", "1/2 cup water (optional, for easier blending)", "Juice of 1/2 to 1 lime (to taste)", "1-2 tbsp sugar or agave (optional, to taste)", "Fresh mint sprigs for garnish (optional)"],
+      "steps": ["Place cubed watermelon into a blender. Add water if your watermelon isn't very juicy or to help with blending.", "Blend until smooth.", "Strain the mixture through a fine-mesh sieve into a pitcher if you prefer a very smooth juice, pressing gently on the solids. For a more rustic agua fresca, straining is optional.", "Stir in lime juice and sweetener (if using) to taste.", "Serve chilled over ice, garnished with a mint sprig if desired."]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "blackcurrant",
+  "commonName": "Blackcurrant",
+  "scientificName": "Ribes nigrum",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Blackcurrant-cropped.jpg/600px-Blackcurrant-cropped.jpg",
+  "description": "A woody shrub in the family Grossulariaceae grown for its piquant berries. It is native to temperate parts of central and northern Europe and northern Asia.",
+  "origin": "Northern Europe and Northern Asia",
+  "localNames": ["Cassis (French)", "Schwarze Johannisbeere (German)", "Grosella negra (Spanish)"],
+  "regions": ["Poland", "Russia", "Germany", "United Kingdom", "France", "New Zealand"],
+  "seasons": ["Mid to Late Summer"],
+  "nutrition": {
+    "calories": "63 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 15.4, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 4.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 181, "unit": "mg", "rdi": "302%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.256, "unit": "mg", "rdi": "13%" },
+      { "name": "Potassium", "value": 322, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Exceptionally high in Vitamin C, a powerful antioxidant.",
+    "Rich in anthocyanins and other polyphenols, which have strong antioxidant and anti-inflammatory effects.",
+    "May improve eye health and reduce visual fatigue.",
+    "Can boost immune function and support cardiovascular health."
+  ],
+  "potentialAllergies": [
+    { "name": "Blackcurrant Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate, requires winter chill. Tolerates cooler summers.\n2. Soil: Well-drained, fertile soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Hardwood cuttings are most common.\n4. Planting: Plant in early spring or autumn in full sun or partial shade.\n5. Watering: Regular watering, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer or well-rotted manure in spring.\n7. Pruning: Prune in late winter, removing old, unproductive wood to encourage new growth, as fruit is borne on young wood.\n8. Harvesting: Berries are harvested in clusters (strigs) when they are fully black, plump, and slightly soft. They ripen in mid to late summer.",
+  "growthDuration": "Bushes can start fruiting 1-2 years after planting. Productive for 10-15 years.",
+  "sustainabilityTips": [
+    "Blackcurrants are often used for jams, jellies, syrups (like Ribena), and liqueurs (Crème de Cassis).",
+    "They freeze very well.",
+    "Consume fresh quickly as they are somewhat perishable."
+  ],
+  "carbonFootprintInfo": "Moderate, higher if imported (0.7-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Blackcurrant Jam",
+      "description": "A classic, intensely flavored jam with a beautiful deep purple color.",
+      "ingredients": ["2 lbs fresh blackcurrants, stemmed", "2 lbs granulated sugar", "1/2 cup water", "Juice of 1 lemon (optional, for pectin boost)"],
+      "steps": ["Combine blackcurrants, water, and lemon juice (if using) in a large, heavy-bottomed pot.", "Bring to a simmer and cook gently for 15-20 minutes, or until the blackcurrants are soft and have released their juice.", "Add sugar to the pot. Stir over low heat until the sugar is completely dissolved.", "Increase heat to high and bring the mixture to a rolling boil (a boil that continues even when stirred).", "Boil rapidly for 10-15 minutes, or until the jam reaches setting point (220°F/105°C on a jam thermometer, or when a small amount dropped onto a chilled plate wrinkles when pushed).", "Skim off any foam from the surface.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator."]
+    },
+    {
+      "name": "Blackcurrant Cordial (Syrup)",
+      "description": "A concentrated syrup that can be diluted with water or sparkling water for a refreshing drink.",
+      "ingredients": ["2 lbs fresh blackcurrants, stemmed", "2 cups water", "2 cups granulated sugar (or to taste)"],
+      "steps": ["Place blackcurrants and water in a large saucepan. Bring to a boil, then reduce heat and simmer for 20-30 minutes, or until the berries are very soft and have burst.", "Strain the mixture through a jelly bag or several layers of cheesecloth set over a bowl. Allow to drip overnight without squeezing for a clear cordial (or gently squeeze for more yield but a cloudier result).", "Measure the extracted juice. For every 2 cups of juice, add 1 1/2 to 2 cups of sugar (adjust to sweetness preference).", "Combine the juice and sugar in a clean saucepan. Heat gently, stirring, until the sugar is completely dissolved. Do not boil.", "Once sugar is dissolved, pour the hot cordial into sterilized bottles and seal. Store in a cool, dark place or refrigerate after opening."]
+    },
+    {
+      "name": "Blackcurrant Fool",
+      "description": "A simple English dessert made by folding stewed blackcurrants into whipped cream.",
+      "ingredients": ["1 pint (about 2 cups) fresh blackcurrants, stemmed", "1/4 cup granulated sugar (or to taste)", "2 tbsp water", "1 cup heavy whipping cream", "1-2 tbsp powdered sugar (optional, for cream)"],
+      "steps": ["Make a blackcurrant compote: Combine blackcurrants, granulated sugar, and water in a saucepan. Bring to a simmer and cook for 5-10 minutes, until berries are soft and have released their juice. Mash lightly. Let cool completely.", "In a chilled bowl, whip the heavy cream until soft peaks form. If desired, sweeten with powdered sugar during whipping.", "Gently fold the cooled blackcurrant compote into the whipped cream, creating swirls. Do not overmix.", "Spoon into individual serving glasses or bowls.", "Chill for at least 30 minutes before serving."]
+    }
+  ]
+}

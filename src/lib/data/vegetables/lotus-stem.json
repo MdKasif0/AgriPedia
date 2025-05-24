@@ -1,0 +1,64 @@
+{
+  "id": "lotus-stem",
+  "commonName": "Lotus Stem (Kamal Kakdi)",
+  "scientificName": "Nelumbo nucifera (stem/rhizome)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5esODvRcqNHtlGmWdBO4pHeu4p2p03z3-bumCNHuBQ&s",
+  "description": "The edible rhizome (underwater stem) of the lotus plant. It has a crunchy texture and a mild, slightly sweet flavor. When sliced, it reveals a beautiful lace-like pattern of air channels.",
+  "origin": "Asia and Australia",
+  "localNames": ["Kamal Kakdi (Hindi)", "Bhein (Punjabi)", "Renkon (Japanese)", "Nadru (Kashmiri)"],
+  "regions": ["India", "China", "Japan", "Southeast Asia"],
+  "seasons": ["Mainly Autumn and Winter"],
+  "nutrition": {
+    "calories": "74 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 17.2, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 4.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 44, "unit": "mg", "rdi": "73%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 556, "unit": "mg", "rdi": "16%" },
+      { "name": "Copper", "value": 0.258, "unit": "mg", "rdi": "29%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting gut health.",
+    "Rich in Vitamin C, an antioxidant that supports the immune system.",
+    "Provides important minerals like potassium and copper.",
+    "Contains B vitamins like pyridoxine (B6)."
+  ],
+  "potentialAllergies": [
+    { "name": "Lotus Stem Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Growing Conditions: Lotus is an aquatic perennial. Grown in ponds, marshes, or large water-filled containers.\n2. Propagation: From seeds or rhizome division.\n3. Soil: Rich loamy soil at the bottom of the water body.\n4. Location: Full sun.\n5. Harvesting: Rhizomes are harvested when the plant goes dormant in late fall or winter, by digging them out from the mud.",
+  "growthDuration": "Rhizomes mature in about 6-9 months.",
+  "sustainabilityTips": [
+      "Store fresh lotus stem wrapped in damp paper towels in the refrigerator for up to a week.",
+      "Clean thoroughly: wash and scrub the exterior. Peel off the tough outer skin. Ensure all air channels are cleaned of any mud by holding slices under running water.",
+      "Often used in curries, stir-fries, soups, or made into crispy chips."
+  ],
+  "carbonFootprintInfo": "Moderate, can vary depending on cultivation methods and transport (0.5-1.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Kamal Kakdi ki Sabzi (Lotus Stem Curry)",
+      "description": "A flavorful North Indian curry made with lotus stem, onions, and tomatoes.",
+      "ingredients": ["1 lb lotus stem (kamal kakdi), peeled and sliced", "1 large onion, finely chopped", "2 tomatoes, pureed", "1 tbsp ginger-garlic paste", "1/2 tsp cumin seeds", "1/2 tsp turmeric powder", "1 tsp coriander powder", "1/2 tsp red chili powder (or to taste)", "1/2 tsp garam masala", "Salt to taste", "2 tbsp oil", "Fresh cilantro for garnish"],
+      "steps": ["Prepare lotus stem: Peel, slice into 1/4-inch thick rounds. Wash thoroughly, ensuring holes are clean. Boil or pressure cook slices with a little salt until tender but still slightly crisp (1-2 whistles in pressure cooker). Drain.", "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden brown.", "Add ginger-garlic paste and sauté for a minute.", "Add tomato puree and cook until oil starts to separate.", "Add turmeric powder, coriander powder, chili powder, and salt. Mix well.", "Add the cooked lotus stem slices. Stir gently to coat with the masala.", "Add about 1/2 cup of water. Cover and simmer for 7-10 minutes, allowing lotus stem to absorb flavors.", "Sprinkle with garam masala. Garnish with fresh cilantro. Serve hot with roti or rice."]
+    },
+    {
+      "name": "Crispy Lotus Stem Chips (Kamal Kakdi Chips)",
+      "description": "Thinly sliced lotus stem, fried or baked until crispy, like potato chips.",
+      "ingredients": ["1 medium lotus stem, peeled and very thinly sliced", "Oil for deep frying (or olive oil for baking)", "Salt to taste", "Chaat masala or red chili powder for sprinkling (optional)"],
+      "steps": ["Peel lotus stem and slice very thinly using a mandoline or sharp knife. Wash slices thoroughly, ensuring holes are clean. Pat completely dry with paper towels (very important for crispiness).", "For frying: Heat oil in a deep pan. Fry lotus stem slices in batches on medium heat until golden brown and very crispy. Drain on paper towels. Sprinkle with salt and optional spices while hot.", "For baking: Preheat oven to 375°F (190°C). Toss thin slices with a little olive oil and salt. Spread in a single layer on a baking sheet. Bake for 10-15 minutes, flipping once, until crisp and lightly browned. Watch carefully to prevent burning.", "Let cool completely. Store in an airtight container."]
+    },
+    {
+      "name": "Nadru Yakhni (Kashmiri Lotus Stem in Yogurt Gravy)",
+      "description": "A traditional Kashmiri dish where lotus stem is cooked in a fragrant yogurt-based gravy.",
+      "ingredients": ["1 lb lotus stem, peeled, sliced", "1 cup plain yogurt, whisked", "1-2 tbsp gram flour (besan, mixed with a little water to a paste - optional for thickening)", "Spices: 1 tsp fennel powder (saunf), 1/2 tsp ginger powder (sonth), 1-2 black cardamoms, 2-3 green cardamoms, 1-inch cinnamon stick, 2-3 cloves", "Pinch of asafoetida (hing)", "Salt to taste", "2 tbsp ghee or oil", "Few mint leaves for garnish"],
+      "steps": ["Prepare and boil/pressure cook lotus stem slices until tender. Drain.", "Heat ghee/oil in a pan. Add whole spices (cardamoms, cinnamon, cloves) and asafoetida. Sauté for a minute until fragrant.", "Reduce heat to low. Slowly add whisked yogurt, stirring continuously to prevent curdling. If using besan paste, add it now and keep stirring.", "Add fennel powder, ginger powder, and salt. Mix well.", "Add the cooked lotus stem slices to the yogurt gravy.", "Simmer on very low heat for 10-15 minutes, allowing lotus stem to absorb the flavors. Do not boil vigorously.", "Garnish with fresh mint leaves. Serve hot with rice."]
+    }
+  ]
+}

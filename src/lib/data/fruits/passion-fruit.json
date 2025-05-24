@@ -1,0 +1,65 @@
+{
+  "id": "passion-fruit",
+  "commonName": "Passion Fruit",
+  "scientificName": "Passiflora edulis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Purple_passionfruit.jpg",
+  "description": "A vine species of passion flower native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.",
+  "origin": "Southern Brazil, Paraguay, Northern Argentina",
+  "localNames": ["Maracuyá (Spanish)", "Fruit de la passion (French)", "Granadilla (some varieties)"],
+  "regions": ["Brazil", "Colombia", "Ecuador", "Australia", "New Zealand", "Kenya", "Hawaii"],
+  "seasons": ["Varies by region, can fruit year-round in some tropical climates"],
+  "nutrition": {
+    "calories": "97 kcal per 100g (pulp)",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 23.4, "unit": "g" },
+      { "name": "Fat", "value": 0.7, "unit": "g" },
+      { "name": "Fiber", "value": 10.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 30, "unit": "mg", "rdi": "50%" },
+      { "name": "Vitamin A", "value": 64, "unit": "µg RAE", "rdi": "7%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 348, "unit": "mg", "rdi": "10%" },
+      { "name": "Iron", "value": 1.6, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in dietary fiber, promoting digestive health and regularity.",
+    "Good source of Vitamin C and Vitamin A, supporting immune function and vision.",
+    "Contains antioxidants that help combat free radicals.",
+    "May have calming effects and aid in sleep due to certain compounds."
+  ],
+  "potentialAllergies": [
+    { "name": "Passion Fruit Allergy", "severity": "Rare", "details": "Allergies are uncommon but can occur." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Some varieties tolerate cooler conditions.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.5-7.5.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun against a trellis, fence, or arbor for support as it's a vigorous vine.\n5. Watering: Requires regular watering, especially during flowering and fruiting.\n6. Fertilizing: Feed regularly with a balanced fertilizer during the growing season.\n7. Pollination: Some varieties are self-pollinating; others require cross-pollination or hand pollination.\n8. Harvesting: Fruits drop from the vine when ripe or can be picked when they change color (purple or yellow, depending on variety) and become slightly wrinkled.",
+  "growthDuration": "Vines can start fruiting within 6-12 months from planting. Fruits mature in 70-80 days after pollination.",
+  "sustainabilityTips": [
+    "Store passion fruit at room temperature until wrinkled (indicating ripeness), then refrigerate.",
+    "Pulp can be scooped out and eaten fresh, added to drinks, or used in desserts.",
+    "Freeze pulp for later use."
+  ],
+  "carbonFootprintInfo": "Moderate to high if air-freighted from distant tropical regions (0.8-2.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Passion Fruit Pulp",
+      "description": "The simplest way to enjoy the intense, aromatic flavor of passion fruit.",
+      "ingredients": ["1-2 ripe Passion Fruits"],
+      "steps": ["Wash the passion fruit.", "Cut the fruit in half crosswise.", "Use a spoon to scoop out the aromatic, jelly-like pulp along with the edible black seeds.", "The pulp can be eaten directly, seeds and all. It's tangy, sweet, and highly flavorful. Often used as a topping for yogurt, ice cream, or desserts."]
+    },
+    {
+      "name": "Passion Fruit Juice/Cooler",
+      "description": "A refreshing tropical drink bursting with flavor.",
+      "ingredients": ["Pulp of 4-5 ripe Passion Fruits", "1 cup cold water (or sparkling water)", "2-4 tbsp sugar or simple syrup (to taste)", "Ice cubes", "Mint sprig for garnish (optional)"],
+      "steps": ["Scoop the pulp from the passion fruits into a blender or a bowl.", "If using a blender, add a little water and pulse a few times briefly just to loosen the pulp from the seeds (don't over-blend or you'll crush the seeds too much). If not using a blender, mash the pulp with a fork in a bowl with a little water.", "Strain the mixture through a fine-mesh sieve into a pitcher, pressing down on the pulp to extract as much juice as possible. Discard the seeds and membrane caught in the sieve.", "Add the remaining cold/sparkling water and sugar/simple syrup to the pitcher. Stir well until the sweetener is dissolved.", "Taste and adjust sweetness. Serve chilled over ice, garnished with a mint sprig if desired."]
+    },
+    {
+      "name": "Passion Fruit Mousse",
+      "description": "A light and airy dessert with the exotic taste of passion fruit.",
+      "ingredients": ["1/2 cup passion fruit pulp (seeds strained if preferred)", "1 cup heavy whipping cream", "1/4 cup powdered sugar (or to taste)", "1 tsp gelatin dissolved in 2 tbsp hot water (or agar-agar for vegetarian)", "Optional: extra passion fruit pulp for topping"],
+      "steps": ["If using gelatin, dissolve it in hot water and let it cool slightly. If using agar-agar, prepare according to package instructions with a little liquid and heat.", "In a chilled bowl, whip the heavy cream with powdered sugar until soft peaks form.", "Gently fold the passion fruit pulp into the whipped cream.", "If using gelatin/agar-agar, gently fold the cooled (but still liquid) mixture into the cream and passion fruit mixture until just combined.", "Spoon the mousse into individual serving glasses or a larger bowl.", "Chill in the refrigerator for at least 2-3 hours, or until set.", "Serve chilled, optionally topped with a drizzle of fresh passion fruit pulp."]
+    }
+  ]
+}

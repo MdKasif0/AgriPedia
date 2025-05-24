@@ -1,0 +1,64 @@
+{
+  "id": "capsicum",
+  "commonName": "Capsicum (Bell Pepper)",
+  "scientificName": "Capsicum annuum (Grossum Group)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmQGBR_TZ0RYhJreD52GaMWPsZ5hDGFbdLw&s",
+  "description": "A cultivar group of the species Capsicum annuum. Cultivars of the plant produce fruits in different colors, including red, yellow, orange, green, white, and purple. Bell peppers are sometimes grouped with less pungent chili varieties as 'sweet peppers'.",
+  "origin": "Mexico, Central America, and northern South America",
+  "localNames": ["Bell Pepper", "Pimiento (Spanish)", "Poivron (French)", "Paprika (German - also refers to spice)", "Shimla Mirch (Hindi)"],
+  "regions": ["China", "Mexico", "Turkey", "Indonesia", "Spain", "United States"],
+  "seasons": ["Summer (field-grown); Year-round (greenhouse)"],
+  "nutrition": {
+    "calories": "20-31 kcal per 100g (green lowest, red highest)",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 4.6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 1.7, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 80.4, "unit": "mg", "rdi": "134% (green); 127.7mg for red" },
+      { "name": "Vitamin A", "value": 18, "unit": "µg RAE", "rdi": "2% (green); 157µg for red" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 175, "unit": "mg", "rdi": "5%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, especially red and yellow varieties.",
+    "Red bell peppers are rich in Vitamin A (beta-carotene).",
+    "Contains antioxidants like carotenoids and flavonoids.",
+    "Low in calories and a good source of fiber."
+  ],
+  "potentialAllergies": [
+    { "name": "Nightshade Sensitivity", "severity": "Mild", "details": "Some individuals report sensitivity to nightshades." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Start seeds indoors 8-10 weeks before last frost, or buy transplants.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.8. Full sun.\n3. Spacing: Space plants 18-24 inches apart.\n4. Watering: Consistent watering, especially during flowering and fruiting.\n5. Harvesting: Can be harvested green, or allowed to ripen to yellow, orange, or red for sweeter flavor. Cut from plant with a short stem.",
+  "growthDuration": "60-90 days from transplanting to first harvest (green); longer for colored varieties.",
+  "sustainabilityTips": [
+      "Store bell peppers in the refrigerator crisper drawer for up to a week.",
+      "Core and seeds are usually removed before eating, but can be added to stocks.",
+      "Versatile for raw use in salads, or cooked in stir-fries, fajitas, stuffed peppers, etc."
+  ],
+  "carbonFootprintInfo": "Moderate, can be high if greenhouse-grown out of season or transported long distances (0.6-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Stuffed Bell Peppers",
+      "description": "Bell peppers hollowed out and filled with a savory mixture of ground meat or grains, vegetables, and spices, then baked.",
+      "ingredients": ["4 large bell peppers (any color), halved lengthwise and seeded", "Filling: 1 lb ground beef/turkey or 1.5 cups cooked rice/quinoa, 1 onion (chopped), 1 cup chopped mushrooms, 1/2 cup breadcrumbs, 1 egg (beaten), 1/4 cup tomato sauce, 1 tsp Italian seasoning, salt and pepper", "1 cup tomato sauce or marinara for topping", "1/2 cup shredded cheese (optional)"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Filling: Cook ground meat (if using) until browned; drain fat. Add onion and mushrooms, cook until soft. Stir in rice/quinoa, breadcrumbs, egg, 1/4 cup tomato sauce, Italian seasoning, salt, and pepper. Mix well.", "Spoon the filling into the bell pepper halves.", "Arrange peppers in a baking dish. Pour remaining 1 cup tomato sauce around (not over) the peppers. Add a little water to the bottom of the dish.", "Bake for 40-50 minutes, or until peppers are tender and filling is cooked through. If using cheese, sprinkle on top during the last 10 minutes of baking.", "Let rest for a few minutes before serving."]
+    },
+    {
+      "name": "Bell Pepper and Onion Stir-fry",
+      "description": "A quick and colorful stir-fry, perfect as a side or part of a larger Asian-inspired meal.",
+      "ingredients": ["2-3 bell peppers (assorted colors), sliced", "1 large onion, sliced", "2 cloves garlic, minced", "1 tbsp soy sauce", "1 tsp sesame oil", "1 tbsp vegetable oil", "Optional: ginger, other vegetables like broccoli or carrots"],
+      "steps": ["Heat vegetable oil in a large skillet or wok over medium-high heat.", "Add sliced onions and stir-fry for 2-3 minutes until slightly softened.", "Add sliced bell peppers and stir-fry for another 4-5 minutes, until tender-crisp.", "Add minced garlic and cook for 30 seconds more until fragrant.", "Stir in soy sauce and sesame oil. Toss to coat.", "Serve immediately with rice or noodles."]
+    },
+    {
+      "name": "Roasted Red Pepper Dip (Muhammara style - simplified)",
+      "description": "A flavorful dip made from roasted red peppers, walnuts, and spices.",
+      "ingredients": ["2-3 red bell peppers", "1/2 cup walnuts, toasted", "1 clove garlic", "1 tbsp lemon juice", "1 tbsp olive oil", "1/2 tsp cumin", "Pinch of red pepper flakes (optional)", "Salt to taste", "Optional: 1 tbsp pomegranate molasses"],
+      "steps": ["Roast red bell peppers: Char them over an open flame, under a broiler, or bake at 450°F (230°C) until skin is blistered and blackened. Place in a bowl and cover with plastic wrap for 10-15 minutes. Peel off skin, remove stem and seeds.", "In a food processor, combine roasted red peppers, toasted walnuts, garlic, lemon juice, olive oil, cumin, red pepper flakes (if using), and pomegranate molasses (if using).", "Process until mostly smooth but can have some texture. Add a little water if too thick.", "Season with salt to taste.", "Serve with pita bread, crackers, or vegetables for dipping."]
+    }
+  ]
+}

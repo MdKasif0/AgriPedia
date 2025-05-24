@@ -1,0 +1,65 @@
+{
+  "id": "beetroot",
+  "commonName": "Beetroot",
+  "scientificName": "Beta vulgaris",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVOJyjLMi9JgCcYPNoqrDrxXQKJJ3UyNI0KJ6pdZtdl4V4YF7wwEssk-i7&s=10",
+  "description": "The taproot portion of the beet plant, usually known in North America as the beet, and also known as the table beet, garden beet, red beet, dinner beet or golden beet. It is one of several of the cultivated varieties of Beta vulgaris grown for their edible taproots and their leaves (called beet greens).",
+  "origin": "Mediterranean region",
+  "localNames": ["Remolacha (Spanish)", "Betterave (French)", "Rote Bete (German)", "Chukandar (Hindi)"],
+  "regions": ["Russia", "France", "Germany", "United States", "Poland"],
+  "seasons": ["Year-round (main crop in summer/fall, stores well)"],
+  "nutrition": {
+    "calories": "43 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 2.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate", "value": 109, "unit": "µg", "rdi": "27%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.329, "unit": "mg", "rdi": "16%" },
+      { "name": "Potassium", "value": 325, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in folate, essential for cell growth and development.",
+    "Good source of manganese and potassium.",
+    "Contains nitrates, which can help lower blood pressure and improve blood flow.",
+    "Betalain pigments provide antioxidant and anti-inflammatory benefits."
+  ],
+  "potentialAllergies": [
+    { "name": "Beeturia", "severity": "Harmless", "details": "Consumption can cause urine or stools to turn red or pink in some individuals; this is harmless." },
+    { "name": "Oxalates", "severity": "Mild", "details": "Contains oxalates, which may contribute to kidney stone formation in susceptible individuals."}
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in spring or late summer.\n2. Soil: Well-drained, loose, fertile soil. pH 6.0-7.5.\n3. Spacing: Sow seeds 1/2 inch deep. Thin seedlings to 3-4 inches apart.\n4. Watering: Consistent moisture, especially during root development.\n5. Harvesting: Harvest roots when they are 1.5-3 inches in diameter. Greens can be harvested when young.",
+  "growthDuration": "50-70 days from sowing to harvest.",
+  "sustainabilityTips": [
+      "Store beetroot (greens removed) in the refrigerator for several weeks.",
+      "Beet greens are edible and highly nutritious; cook them like spinach.",
+      "Roast, boil, steam, or pickle beetroots. They can also be eaten raw (grated or thinly sliced)."
+  ],
+  "carbonFootprintInfo": "Low, around 0.3-0.5 kg CO2e/kg for field-grown beetroot.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Beetroot with Feta and Walnuts",
+      "description": "Sweet roasted beetroot paired with salty feta and crunchy walnuts.",
+      "ingredients": ["4 medium beetroots, peeled and cubed", "2 tbsp olive oil", "Salt and pepper to taste", "1/4 cup crumbled feta cheese", "1/4 cup chopped walnuts, toasted", "Fresh parsley or mint for garnish"],
+      "steps": ["Preheat oven to 400°F (200°C).", "Toss cubed beetroot with olive oil, salt, and pepper on a baking sheet.", "Roast for 25-35 minutes, or until tender, stirring halfway through.", "Transfer roasted beetroot to a serving bowl. While still warm, toss with crumbled feta cheese and toasted walnuts.", "Garnish with fresh parsley or mint. Serve warm or at room temperature."]
+    },
+    {
+      "name": "Beetroot and Orange Salad with Citrus Vinaigrette",
+      "description": "A vibrant and refreshing salad with earthy beets and sweet oranges.",
+      "ingredients": ["2 large cooked beetroots, peeled and sliced or diced", "2 oranges, peeled and segmented (membranes removed)", "1/4 red onion, thinly sliced (optional)", "For dressing: 2 tbsp olive oil, 1 tbsp orange juice, 1 tsp apple cider vinegar, salt and pepper"],
+      "steps": ["Arrange beetroot slices/dices and orange segments on a platter or in a bowl. Add red onion if using.", "Dressing: Whisk together olive oil, orange juice, apple cider vinegar, salt, and pepper.", "Drizzle dressing over the salad. Toss gently if desired.", "Serve chilled or at room temperature. Can be garnished with mint or goat cheese."]
+    },
+    {
+      "name": "Classic Borscht (Simplified Beet Soup)",
+      "description": "A hearty and flavorful beet soup, popular in Eastern Europe.",
+      "ingredients": ["1 tbsp olive oil", "1 onion, chopped", "2 carrots, chopped", "2 celery stalks, chopped", "2 medium beetroots, peeled and grated or diced", "4 cups vegetable or beef broth", "1 bay leaf", "1 tbsp apple cider vinegar or lemon juice", "Salt and pepper to taste", "Sour cream or plain yogurt for serving", "Fresh dill for garnish"],
+      "steps": ["Heat olive oil in a large pot or Dutch oven. Add onion, carrots, and celery. Cook until softened, about 7-10 minutes.", "Add grated/diced beetroot and cook for another 5 minutes, stirring.", "Pour in broth and add bay leaf. Bring to a boil, then reduce heat, cover, and simmer for 20-30 minutes, or until all vegetables are tender.", "Remove bay leaf. If a smoother soup is desired, use an immersion blender or carefully blend in batches.", "Stir in vinegar/lemon juice. Season with salt and pepper.", "Serve hot, with a dollop of sour cream/yogurt and a sprinkle of fresh dill."]
+    }
+  ]
+}

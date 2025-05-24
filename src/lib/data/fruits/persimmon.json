@@ -1,0 +1,64 @@
+{
+  "id": "persimmon",
+  "commonName": "Persimmon",
+  "scientificName": "Diospyros kaki (most common)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Fuyu_Persimmon_%28Diospyros_Kaki%29.jpg/640px-Fuyu_Persimmon_%28Diospyros_Kaki%29.jpg",
+  "description": "An edible fruit of a number of species of trees in the genus Diospyros. The most widely cultivated of these is the Oriental persimmon, Diospyros kaki. Persimmons are typically orange or reddish-orange, and can be astringent (mouth-puckering until fully ripe and soft, like Hachiya) or non-astringent (can be eaten crisp like an apple, like Fuyu).",
+  "origin": "China",
+  "localNames": ["Caqui (Spanish/Portuguese)", "Kaki (French/German/Japanese)", "Amarphal (Hindi)"],
+  "regions": ["China", "South Korea", "Japan", "Brazil", "Azerbaijan", "United States (California)", "Italy", "Spain"],
+  "seasons": ["Autumn to Early Winter"],
+  "nutrition": {
+    "calories": "70 kcal per 100g (Japanese persimmon, raw)",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 18.6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 3.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": 81, "unit": "µg RAE", "rdi": "9%" },
+      { "name": "Vitamin C", "value": 7.5, "unit": "mg", "rdi": "13%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.355, "unit": "mg", "rdi": "18%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin A and Vitamin C.",
+    "Rich in dietary fiber, aiding digestion.",
+    "Contains antioxidants like carotenoids, flavonoids, and tannins.",
+    "May help lower cholesterol and support heart health."
+  ],
+  "potentialAllergies": [
+    { "name": "Astringency", "severity": "Mild", "details": "Astringent varieties (like Hachiya) are very unpleasant to eat before fully ripe due to high tannin content, causing a dry, puckering sensation. Non-astringent varieties (like Fuyu) do not have this issue." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate to subtropical. Some varieties require winter chill.\n2. Soil: Well-drained, loamy soil. Adaptable but prefers pH 6.0-7.5.\n3. Propagation: Grafting is common for commercial varieties.\n4. Planting: Plant in full sun.\n5. Watering: Regular watering, especially for young trees and during fruit development.\n6. Harvesting: Harvest when fruits are fully colored. Astringent types must be allowed to soften completely (almost jelly-like) before eating. Non-astringent types can be eaten while firm or slightly soft.",
+  "growthDuration": "Trees may start bearing fruit in 3-7 years. Fruits ripen in autumn and early winter.",
+  "sustainabilityTips": [
+    "Know your persimmon type: Fuyu (non-astringent) can be eaten firm like an apple. Hachiya (astringent) must be very soft before eating.",
+    "Store at room temperature to ripen. Ripe persimmons can be refrigerated.",
+    "Excellent for drying (Hoshigaki in Japan)."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on origin and transport (0.5-1.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Persimmons (Fuyu type)",
+      "description": "Enjoying crisp, non-astringent Fuyu persimmons.",
+      "ingredients": ["1-2 ripe Fuyu persimmons"],
+      "steps": ["Wash the Fuyu persimmon. The skin is edible.", "You can eat it like an apple, biting directly into it, or slice it.", "Remove the core/calyx (leafy top) if desired.", "Slices can be added to salads, cheese boards, or eaten as a snack."]
+    },
+    {
+      "name": "Persimmon and Pomegranate Salad",
+      "description": "A vibrant autumn salad with sweet persimmons and tart pomegranate seeds.",
+      "ingredients": ["2 ripe Fuyu persimmons, peeled (optional) and sliced or diced", "1/2 cup pomegranate arils", "2 cups mixed greens (e.g., arugula, spinach)", "1/4 cup toasted walnuts or pecans", "Optional: crumbled goat cheese", "Dressing: 2 tbsp olive oil, 1 tbsp apple cider vinegar, 1 tsp honey, salt and pepper to taste"],
+      "steps": ["In a large bowl, combine mixed greens, persimmon slices/dices, pomegranate arils, and toasted nuts.", "Add goat cheese if using.", "In a small bowl, whisk together olive oil, apple cider vinegar, honey, salt, and pepper.", "Drizzle dressing over the salad and toss gently. Serve immediately."]
+    },
+    {
+      "name": "Baked Persimmon (Hachiya type, when very ripe)",
+      "description": "A simple way to enjoy the custardy sweetness of fully ripe astringent persimmons.",
+      "ingredients": ["1-2 very ripe Hachiya persimmons (should feel like a water balloon)", "Optional: a sprinkle of cinnamon, a dollop of yogurt or cream"],
+      "steps": ["Preheat oven to 350°F (175°C).", "Ensure Hachiya persimmons are extremely soft and ripe to avoid astringency.", "Cut the persimmons in half horizontally or remove the top calyx.", "Place cut-side up in a small baking dish.", "Bake for 15-20 minutes, or until heated through and slightly caramelized.", "Serve warm. You can scoop out the pulp with a spoon. Add cinnamon or serve with yogurt/cream if desired."]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "mulberry",
+  "commonName": "Mulberry",
+  "scientificName": "Morus spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Morus_alba_fruits.jpg/800px-Morus_alba_fruits.jpg",
+  "description": "A fast-growing, small to medium-sized tree native to warm temperate and subtropical regions. The fruit is a multiple fruit, about 2–3 cm long, resembling a blackberry. They can be red, dark purple, or white.",
+  "origin": "Asia, North America",
+  "localNames": ["Shahtoot (Hindi/Urdu)", "Mora (Spanish)", "Mûre (French - also refers to blackberry)"],
+  "regions": ["China", "India", "Turkey", "Iran", "United States", "Southern Europe"],
+  "seasons": ["Late Spring to Summer"],
+  "nutrition": {
+    "calories": "43 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.8, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 1.7, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 36.4, "unit": "mg", "rdi": "61%" },
+      { "name": "Vitamin K", "value": 7.8, "unit": "µg", "rdi": "10%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 1.85, "unit": "mg", "rdi": "10%" },
+      { "name": "Potassium", "value": 194, "unit": "mg", "rdi": "6%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C and iron.",
+    "Contain antioxidants like anthocyanins and resveratrol.",
+    "May help lower cholesterol and blood sugar levels.",
+    "Traditionally used to improve eyesight and boost immunity."
+  ],
+  "potentialAllergies": [
+    { "name": "Mulberry Pollen Allergy", "severity": "Mild", "details": "Pollen from mulberry trees can be allergenic for some individuals." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Adaptable to a wide range of temperate and subtropical climates. Some varieties are drought-tolerant.\n2. Soil: Prefers well-drained, fertile loamy soil but tolerates various soil types.\n3. Propagation: Easily grown from seeds, cuttings, or grafting.\n4. Planting: Plant in full sun. Trees can grow quite large and spread.\n5. Watering: Water young trees regularly. Established trees are relatively drought-tolerant.\n6. Fertilizing: Generally do not require much fertilization. Organic compost can be beneficial.\n7. Pruning: Prune to maintain shape and size, and to remove dead or diseased wood.\n8. Harvesting: Fruits are harvested when they are fully colored (red, purple, or white depending on variety) and detach easily. They are very soft and perishable.",
+  "growthDuration": "Can start bearing fruit in 2-3 years. Fruits ripen in late spring to summer.",
+  "sustainabilityTips": [
+    "Mulberries are highly perishable; consume or process them quickly after picking.",
+    "They stain easily, so be careful when harvesting and eating.",
+    "Excellent for jams, jellies, pies, or drying."
+  ],
+  "carbonFootprintInfo": "Low, especially if foraged or grown locally (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Mulberry Jam",
+      "description": "A sweet and slightly tart jam made from fresh mulberries.",
+      "ingredients": ["4 cups fresh mulberries, rinsed", "2 cups granulated sugar", "2 tbsp lemon juice"],
+      "steps": ["Combine mulberries, sugar, and lemon juice in a large, heavy-bottomed pot.", "Mash the mulberries slightly with a potato masher or fork.", "Bring the mixture to a boil over medium-high heat, stirring constantly.", "Reduce heat to medium-low and continue to simmer, stirring frequently, until the jam thickens. This can take 20-30 minutes. To test for doneness, place a small amount of jam on a chilled plate; if it wrinkles when pushed, it's ready.", "Skim off any foam from the surface.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator."]
+    },
+    {
+      "name": "Fresh Mulberry Parfait",
+      "description": "A simple and healthy dessert or breakfast layering mulberries, yogurt, and granola.",
+      "ingredients": ["1 cup fresh mulberries", "1 cup plain or vanilla yogurt", "1/2 cup granola", "Honey or maple syrup for drizzling (optional)"],
+      "steps": ["In a glass or small bowl, layer ingredients: start with a layer of yogurt, followed by a layer of mulberries, then a layer of granola.", "Repeat the layers if desired.", "Drizzle with honey or maple syrup if using.", "Serve immediately for best texture."]
+    },
+    {
+      "name": "Mulberry Crumble Pie",
+      "description": "A comforting pie with a sweet mulberry filling and a buttery crumble topping.",
+      "ingredients": ["For filling: 4 cups fresh mulberries", "1/2 cup sugar", "2 tbsp all-purpose flour or cornstarch", "1 tbsp lemon juice", "For crumble: 1 cup all-purpose flour", "1/2 cup brown sugar", "1/2 cup cold butter, cubed", "1/2 cup rolled oats (optional)", "Unbaked 9-inch pie crust"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Prepare pie crust in a 9-inch pie dish.", "Filling: In a large bowl, gently toss mulberries with sugar, flour/cornstarch, and lemon juice. Pour into the unbaked pie crust.", "Crumble: In another bowl, combine flour and brown sugar. Cut in cold butter until the mixture resembles coarse crumbs. Stir in oats if using.", "Sprinkle the crumble topping evenly over the mulberry filling.", "Bake for 40-50 minutes, or until the crust is golden brown and the filling is bubbly. Cover edges of crust with foil if they start to brown too quickly.", "Let cool for at least 30 minutes before slicing and serving."]
+    }
+  ]
+}

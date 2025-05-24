@@ -1,0 +1,64 @@
+{
+  "id": "cluster-beans",
+  "commonName": "Cluster Beans (Guar)",
+  "scientificName": "Cyamopsis tetragonoloba",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cluster_bean_cluster.jpg/799px-Cluster_bean_cluster.jpg",
+  "description": "An annual legume and the source of guar gum. It is also grown as a vegetable for its young, tender pods which are slightly bitter and have a distinct flavor.",
+  "origin": "Indian subcontinent",
+  "localNames": ["Guar Phalli (Hindi)", "Gawar (Marathi)", "Kothavarangai (Tamil)"],
+  "regions": ["India", "Pakistan", "United States (Texas)"],
+  "seasons": ["Summer", "Rainy season"],
+  "nutrition": {
+    "calories": "16 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 3.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 10.8, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 5.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 67.5, "unit": "µg", "rdi": "84%" },
+      { "name": "Folate", "value": 177, "unit": "µg", "rdi": "44%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 130, "unit": "mg", "rdi": "13%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of dietary fiber, beneficial for digestive health and blood sugar control.",
+    "Rich in Vitamin K and folate.",
+    "Contains calcium, important for bone health.",
+    "Guar gum extracted from seeds is used as a food thickener and has cholesterol-lowering properties."
+  ],
+  "potentialAllergies": [
+    { "name": "Cluster Bean Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost.\n2. Soil: Well-drained sandy loam soil. Tolerates drought and poor soils better than many legumes. pH 7.0-8.0.\n3. Watering: Water moderately. Overwatering can be detrimental.\n4. Harvesting: Harvest pods when they are young, tender, and flat (about 2-4 inches long). Pods become tough and fibrous as they mature. Pick frequently.",
+  "growthDuration": "45-60 days from sowing to first harvest.",
+  "sustainabilityTips": [
+      "Store fresh cluster beans in the refrigerator for 3-4 days.",
+      "Trim ends and string if necessary before cooking.",
+      "Commonly used in Indian curries and stir-fries. Often boiled or steamed before being added to dishes."
+  ],
+  "carbonFootprintInfo": "Low, similar to other legumes (0.3-0.6 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Guar Phalli ki Sabzi (Cluster Beans Stir-fry)",
+      "description": "A simple and common North Indian dry curry made with cluster beans.",
+      "ingredients": ["1/2 lb cluster beans (guar phalli), trimmed and cut into 1-inch pieces", "1 tbsp oil", "1/2 tsp cumin seeds", "1/2 tsp mustard seeds (optional)", "Pinch of asafoetida (hing)", "1/4 tsp turmeric powder", "1/2 tsp coriander powder", "1/4 tsp red chili powder (or to taste)", "Salt to taste", "1 tbsp water (optional)"],
+      "steps": ["Wash cluster beans, trim the ends, and cut them into 1-inch pieces. If beans are mature, you might need to remove the strings along the edges.", "Heat oil in a pan or kadai over medium heat. Add cumin seeds and mustard seeds (if using). When they splutter, add asafoetida.", "Add the cut cluster beans, turmeric powder, coriander powder, chili powder, and salt. Stir well to coat the beans with spices.", "If the beans seem very dry, sprinkle 1 tbsp of water. Cover the pan and cook on low heat for 10-15 minutes, or until the beans are tender, stirring occasionally.", "Uncover and cook for another 2-3 minutes until any excess moisture evaporates. Serve hot with roti or paratha."]
+    },
+    {
+      "name": "Kothavarangai Vathal (Sun-dried Cluster Beans)",
+      "description": "A traditional South Indian method of preserving cluster beans by sun-drying, which are then fried and served as a side.",
+      "ingredients": ["1 lb cluster beans (kothavarangai)", "1/2 cup plain yogurt or buttermilk", "1 tsp salt", "1/4 tsp turmeric powder"],
+      "steps": ["Wash cluster beans, trim ends, and string them if necessary. Cut into 1-inch pieces.", "In a bowl, mix yogurt/buttermilk, salt, and turmeric powder.", "Add the cut cluster beans to the yogurt mixture and mix well to coat evenly.", "Spread the coated beans in a single layer on a large tray or clean cloth.", "Sun-dry for 3-5 days, or until the beans are completely dry and crisp. Bring them indoors at night or if there's moisture.", "Once fully dried, store the vathal in an airtight container. To serve, deep fry small batches in hot oil until crisp and lightly browned. Drain and serve as a crunchy side dish with rice and sambar/rasam."]
+    },
+    {
+      "name": "Cluster Beans with Coconut (Kothavarangai Poriyal)",
+      "description": "A South Indian stir-fry with cluster beans, tempered spices, and fresh coconut.",
+      "ingredients": ["1/2 lb cluster beans, trimmed and chopped", "1 tbsp oil", "1/2 tsp mustard seeds", "1/2 tsp urad dal (split black lentils)", "1-2 dried red chilies, broken", "Pinch of asafoetida (hing)", "Few curry leaves", "1/4 tsp turmeric powder", "Salt to taste", "2-3 tbsp grated fresh coconut"],
+      "steps": ["Boil or steam chopped cluster beans with a little salt until tender-crisp. Drain and set aside.", "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.", "Add asafoetida and curry leaves. Sauté for a few seconds.", "Add the cooked cluster beans and turmeric powder. Stir well.", "Cook for 2-3 minutes. Add grated coconut and mix gently.", "Cook for another minute. Serve hot as a side dish with rice."]
+    }
+  ]
+}

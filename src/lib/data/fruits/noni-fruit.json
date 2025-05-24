@@ -1,0 +1,63 @@
+{
+  "id": "noni-fruit",
+  "commonName": "Noni Fruit",
+  "scientificName": "Morinda citrifolia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/413px-Noni_fruit_%28Morinda_citrifolia%29.jpg",
+  "description": "A fruit-bearing tree in the coffee family, Rubiaceae. It is native to Southeast Asia and Australasia, and is cultivated throughout the tropics. The fruit has a strong, pungent odor when ripening, sometimes described as cheesy or vomit-like, and a bitter taste. It is often consumed for its purported health benefits.",
+  "origin": "Southeast Asia, Australasia",
+  "localNames": ["Indian Mulberry", "Cheese Fruit", "Vomit Fruit", "Bartundi (Hindi)"],
+  "regions": ["Polynesia (Hawaii, Tahiti)", "Southeast Asia", "Australia", "India", "Caribbean"],
+  "seasons": ["Fruits year-round in tropical climates"],
+  "nutrition": {
+    "calories": "15 kcal per 100g (juice, estimated)",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 3.4, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 0.2, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 30, "unit": "mg", "rdi": "50%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 150, "unit": "mg", "rdi": "4%" }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used for a wide range of ailments, including pain relief, immune support, and anti-inflammatory effects.",
+    "Rich in antioxidants.",
+    "Some studies suggest potential benefits for joint health and skin conditions.",
+    "Noni juice is a popular health supplement."
+  ],
+  "potentialAllergies": [
+    { "name": "Noni Sensitivity", "severity": "Mild", "details": "Some individuals may experience digestive upset. High potassium content may be a concern for those with kidney disease. Consult a doctor before using as a supplement." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, thrives in hot, humid conditions. Tolerant of saline soils and drought once established.\n2. Soil: Adaptable to a wide range of soils, but prefers well-drained soil.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun to partial shade.\n5. Watering: Water regularly until established.\n6. Harvesting: Fruits are harvested when they are firm and have turned from green to light yellow or whitish. They continue to ripen and soften (and develop strong odor) after picking.",
+  "growthDuration": "Trees can start fruiting within a year or two from planting. Fruits year-round.",
+  "sustainabilityTips": [
+    "Noni is primarily consumed as juice or in powdered form due to its strong taste and odor.",
+    "The fruit is often fermented to make juice.",
+    "Leaves and roots also have traditional medicinal uses."
+  ],
+  "carbonFootprintInfo": "Varies greatly depending on processing and transport, especially for juice products.",
+  "staticRecipes": [
+    {
+      "name": "Traditional Noni Juice (Fermented)",
+      "description": "A common way Noni fruit is processed for consumption, often for health benefits.",
+      "ingredients": ["Ripe Noni fruits"],
+      "steps": ["Wash ripe Noni fruits thoroughly. They should be light yellow or whitish and slightly soft.", "Place the whole fruits in a clean, airtight glass jar.", "Seal the jar and leave it in a sunny place for several weeks to a couple of months (e.g., 6-8 weeks). The fruits will ferment and release their juice.", "After the fermentation period, strain the collected juice through a cheesecloth or fine sieve into another clean bottle.", "Store the Noni juice in the refrigerator. It's typically consumed in small amounts (e.g., 1-2 tablespoons daily) due to its strong flavor and potency."]
+    },
+    {
+      "name": "Noni Fruit Leather",
+      "description": "A way to preserve Noni and make its flavor more palatable.",
+      "ingredients": ["Ripe Noni fruit pulp (seeds removed)", "Optional: sweetener like honey or other fruit purees (e.g., apple, pineapple) to taste"],
+      "steps": ["Wash and process ripe Noni fruits to get the pulp. Remove as many seeds as possible.", "Blend the Noni pulp until smooth. If desired, mix with a sweetener or other fruit purees to improve flavor.", "Spread the Noni puree thinly and evenly on a dehydrator sheet lined with parchment paper or a non-stick mat.", "Dehydrate at a low temperature (around 135°F or 57°C) for 6-12 hours, or until the leather is dry to the touch but still pliable (not brittle).", "Once dried, peel the Noni leather off the sheet. Cut into strips or roll it up with parchment paper in between layers.", "Store in an airtight container at room temperature or in the refrigerator."]
+    },
+    {
+      "name": "Noni Leaf Tea",
+      "description": "Noni leaves are also used traditionally to make a tea.",
+      "ingredients": ["A few fresh or dried Noni leaves", "Hot water", "Optional: honey or lemon to taste"],
+      "steps": ["If using fresh Noni leaves, wash them thoroughly.", "Place 1-2 Noni leaves (fresh or dried) in a cup.", "Pour hot (not boiling) water over the leaves.", "Let it steep for 5-10 minutes.", "Strain the tea. Add honey or lemon to taste if desired.", "Consume in moderation. (Note: Always consult with a healthcare professional before using herbal remedies)."]
+    }
+  ]
+}

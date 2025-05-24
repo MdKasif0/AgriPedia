@@ -1,0 +1,65 @@
+{
+  "id": "coriander-leaves",
+  "commonName": "Coriander Leaves (Cilantro)",
+  "scientificName": "Coriandrum sativum",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIV7VM3JhJPxYJjw-7WTAqxFtHG8Km4MPaoPrD_Jfgmr84xSI_gGGq2gzW&s=10",
+  "description": "An annual herb in the family Apiaceae. All parts of the plant are edible, but the fresh leaves and the dried seeds (as a spice) are the parts most traditionally used in cooking.",
+  "origin": "Southern Europe, Northern Africa, Southwestern Asia",
+  "localNames": ["Cilantro (Spanish - referring to leaves)", "Dhania (Hindi - leaves and seeds)", "Persil chinois (French - Chinese parsley)"],
+  "regions": ["India", "Mexico", "China", "Thailand", "Mediterranean countries"],
+  "seasons": ["Year-round (can be grown in various climates, often in pots)"],
+  "nutrition": {
+    "calories": "23 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.1, "unit": "g" },
+      { "name": "Carbohydrates", "value": 3.7, "unit": "g" },
+      { "name": "Fat", "value": 0.5, "unit": "g" },
+      { "name": "Fiber", "value": 2.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 310, "unit": "µg", "rdi": "388%" },
+      { "name": "Vitamin A", "value": 337, "unit": "µg RAE", "rdi": "37%" },
+      { "name": "Vitamin C", "value": 27, "unit": "mg", "rdi": "45%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.426, "unit": "mg", "rdi": "21%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin K, important for blood clotting and bone health.",
+    "Good source of Vitamin A and Vitamin C, supporting vision and immunity.",
+    "Contains antioxidants that may help lower inflammation.",
+    "Traditionally used to aid digestion and as a flavoring agent."
+  ],
+  "potentialAllergies": [
+    { "name": "Cilantro Aversion/Sensitivity", "severity": "Mild", "details": "A significant portion of the population perceives cilantro leaves as having a soapy taste due to genetic factors (OR6A2 gene). This is not an allergy but a taste perception." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season herb, prone to bolting (flowering) in hot weather. Sow seeds directly in spring or fall.\n2. Soil: Well-drained, fertile soil. pH 6.0-7.0. Full sun to partial shade.\n3. Spacing: Sow seeds 1/4-1/2 inch deep. Thin seedlings if needed.\n4. Watering: Keep soil consistently moist, especially during germination and active growth.\n5. Harvesting: Harvest outer leaves when plants are 4-6 inches tall. Pinching back tips encourages bushier growth. Seeds (coriander spice) are harvested when plant flowers and seed heads turn brown.",
+  "growthDuration": "Leaves ready for harvest in 4-6 weeks from sowing.",
+  "sustainabilityTips": [
+      "Store fresh coriander leaves with stems in a jar of water in the refrigerator, covered loosely with a plastic bag, or wrap in a damp paper towel.",
+      "Use both leaves and tender stems.",
+      "Can be chopped and frozen in ice cube trays with water or oil for later use."
+  ],
+  "carbonFootprintInfo": "Very low, especially when home-grown or locally sourced (0.1-0.3 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Coriander (Cilantro) Chutney",
+      "description": "A vibrant and flavorful Indian green chutney, perfect as a dip or accompaniment.",
+      "ingredients": ["2 cups fresh coriander leaves (cilantro), packed", "1/2 cup fresh mint leaves (optional)", "1-2 green chilies, chopped (adjust to spice preference)", "1 inch ginger, roughly chopped", "Juice of 1/2 lemon", "1/4 tsp salt (or to taste)", "2-3 tbsp water (as needed for blending)"],
+      "steps": ["Wash coriander and mint leaves thoroughly.", "Combine all ingredients (coriander, mint, green chilies, ginger, lemon juice, salt, and a little water) in a blender.", "Blend until smooth, adding more water tablespoon by tablespoon if needed to achieve desired consistency. Be careful not to make it too runny.", "Taste and adjust salt or lemon juice if necessary.", "Store in an airtight container in the refrigerator for up to a week. Serve with snacks, sandwiches, or Indian meals."]
+    },
+    {
+      "name": "Cilantro-Lime Rice",
+      "description": "A fragrant and zesty rice dish, a popular side for Mexican or Southwestern meals.",
+      "ingredients": ["1 cup long-grain white rice, rinsed", "2 cups water or chicken broth", "1 tbsp olive oil or butter", "2 cloves garlic, minced (optional)", "1/2 cup chopped fresh coriander (cilantro)", "Juice of 1-2 limes (to taste)", "Salt to taste"],
+      "steps": ["Cook rice according to package directions using water or broth. (Typically, bring liquid to a boil, add rice, cover, reduce heat to low, and simmer for 15-20 minutes or until liquid is absorbed).", "While rice is cooking or once done, heat olive oil/butter in a small skillet if using garlic. Sauté minced garlic for 30 seconds until fragrant. Remove from heat.", "Once rice is cooked, fluff it with a fork. Add chopped cilantro, lime juice, sautéed garlic (if using), and salt to taste.", "Stir gently to combine all ingredients thoroughly.", "Serve warm as a side dish."]
+    },
+    {
+      "name": "Garnish with Fresh Coriander",
+      "description": "Using fresh coriander leaves as a vibrant garnish for various dishes.",
+      "ingredients": ["Fresh coriander leaves (cilantro), chopped or whole"],
+      "steps": ["Wash fresh coriander leaves thoroughly and pat dry.", "For a fine garnish, chop the leaves. For a more rustic look, use whole leaves or sprigs.", "Sprinkle generously over curries, dals, soups, salads, tacos, stir-fries, or any dish just before serving.", "Coriander adds a fresh, bright flavor and visual appeal."]
+    }
+  ]
+}

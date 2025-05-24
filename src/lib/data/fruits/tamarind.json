@@ -1,0 +1,65 @@
+{
+  "id": "tamarind",
+  "commonName": "Tamarind",
+  "scientificName": "Tamarindus indica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tamarind.jpg/800px-Tamarind.jpg",
+  "description": "A leguminous tree bearing edible fruit that is indigenous to tropical Africa. The fruit is a pod-like legume, which contains a sweet, tangy pulp.",
+  "origin": "Tropical Africa",
+  "localNames": ["Imli (Hindi)", "Tamarindo (Spanish/Portuguese)"],
+  "regions": ["India", "Thailand", "Mexico", "Other tropical regions worldwide"],
+  "seasons": ["Late Winter to Spring (for fresh pods)"],
+  "nutrition": {
+    "calories": "239 kcal per 100g (pulp)",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 62.5, "unit": "g" },
+      { "name": "Fat", "value": 0.6, "unit": "g" },
+      { "name": "Fiber", "value": 5.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Thiamin (B1)", "value": 0.428, "unit": "mg", "rdi": "36%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 2.8, "unit": "mg", "rdi": "16%" },
+      { "name": "Magnesium", "value": 92, "unit": "mg", "rdi": "23%" },
+      { "name": "Potassium", "value": 628, "unit": "mg", "rdi": "18%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in tartaric acid, a potent antioxidant.",
+    "Used traditionally as a laxative and to aid digestion.",
+    "Contains essential minerals like iron, magnesium, and potassium.",
+    "May help lower cholesterol levels."
+  ],
+  "potentialAllergies": [
+    { "name": "Tamarind Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Drought-resistant once established.\n2. Soil: Grows in a wide variety of soils but prefers deep, well-drained loamy soil.\n3. Propagation: Primarily by seeds. Grafting can be used for superior types.\n4. Planting: Plant in full sun. Trees can grow very large.\n5. Watering: Young trees need regular watering. Mature trees are very drought-tolerant.\n6. Harvesting: Pods are harvested when they turn brown and brittle. The pulp is extracted from the pods.",
+  "growthDuration": "Seedling trees may take 6-12 years to bear fruit. Fruits ripen in late winter to spring.",
+  "sustainabilityTips": [
+    "Tamarind pulp is often sold as a paste or block, which has a long shelf life.",
+    "Used extensively as a souring agent in Asian, Latin American, and Caribbean cuisines.",
+    "Seeds can be roasted or boiled and eaten, or ground into flour."
+  ],
+  "carbonFootprintInfo": "Moderate, as it's often transported in processed forms (paste, block) which are dense (0.5-1.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Tamarind Paste/Pulp from Block",
+      "description": "How to make tamarind paste from a block of tamarind pulp for use in cooking.",
+      "ingredients": ["1 block of tamarind pulp (about 200g)", "1.5 - 2 cups hot water"],
+      "steps": ["Break the tamarind block into smaller pieces and place it in a heatproof bowl.", "Pour hot (not boiling) water over the tamarind pieces, just enough to cover them. Let it soak for 20-30 minutes, or until the pulp softens.", "Once softened, use your fingers (clean hands!) or a sturdy spoon to mash the pulp thoroughly in the water. Squeeze the pulp to release its essence into the water. The water will turn brown and thick.", "Strain the mixture through a fine-mesh sieve into another bowl. Press down firmly on the solids in the sieve with the back of a spoon to extract as much thick pulp as possible.", "Discard the seeds and fibrous material left in the sieve.", "The resulting thick liquid is tamarind paste/pulp. It can be stored in an airtight container in the refrigerator for a few weeks or frozen for longer storage."]
+    },
+    {
+      "name": "Tamarind Chutney (Imli Chutney)",
+      "description": "A sweet and tangy Indian chutney, perfect with snacks like samosas or chaat.",
+      "ingredients": ["1/2 cup tamarind paste (see recipe above, or store-bought)", "1 cup water", "1/2 cup jaggery or brown sugar, grated or powdered", "1/2 tsp roasted cumin powder", "1/4 tsp red chili powder (optional)", "1/4 tsp ginger powder (saunth)", "Black salt (kala namak) to taste", "Pinch of asafoetida (hing, optional)"],
+      "steps": ["In a saucepan, combine tamarind paste and 1 cup of water. Bring to a simmer and cook for 5-7 minutes, stirring occasionally.", "Add jaggery/brown sugar and continue to cook, stirring, until it dissolves completely.", "Stir in roasted cumin powder, red chili powder (if using), ginger powder, and black salt.", "If using asafoetida, you can temper it in a tiny bit of hot oil and add to the chutney for extra flavor (optional).", "Simmer the chutney for another 5-10 minutes, or until it thickens to your desired consistency. It will thicken more as it cools.", "Let the chutney cool completely. Store in an airtight container in the refrigerator. It lasts for several weeks."]
+    },
+    {
+      "name": "Tamarind Rice (Pulihora/Puliyogare - Simplified)",
+      "description": "A tangy and flavorful South Indian rice dish.",
+      "ingredients": ["1 cup cooked rice, cooled", "2-3 tbsp tamarind paste", "For tempering: 1 tbsp oil, 1 tsp mustard seeds, 1 tsp chana dal (split chickpeas), 1 tsp urad dal (split black lentils), 2-3 dried red chilies (broken), a few curry leaves, 1/4 tsp asafoetida (hing)", "2 tbsp peanuts or cashews", "1/4 tsp turmeric powder", "Salt to taste", "Optional: 1 tbsp jaggery (for a hint of sweetness)"],
+      "steps": ["Heat oil in a pan. Add mustard seeds; when they splutter, add chana dal, urad dal, and peanuts/cashews. Sauté until dals turn golden and nuts are roasted.", "Add dried red chilies, curry leaves, and asafoetida. Sauté for a few seconds.", "Add tamarind paste and turmeric powder. Cook for 2-3 minutes, stirring, until the raw smell of tamarind disappears. If it's too thick, add a little water.", "Add salt and jaggery (if using). Mix well.", "Add the cooked rice to the pan. Gently mix everything together until the rice is well coated with the tamarind mixture.", "Cook for another 2-3 minutes, stirring gently. Serve warm or at room temperature."]
+    }
+  ]
+}

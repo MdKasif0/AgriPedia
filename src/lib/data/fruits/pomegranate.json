@@ -1,0 +1,71 @@
+{
+  "id": "pomegranate",
+  "commonName": "Pomegranate",
+  "scientificName": "Punica granatum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Pomegranate_fruit_-_whole_and_piece_with_arils.jpg",
+  "description": "A fruit-bearing deciduous shrub or small tree. The fruit is known for its tough reddish rind and hundreds of edible seeds (arils) encased in juicy, gem-like pulp.",
+  "origin": "Iran to northern India",
+  "localNames": ["Granada (Spanish)", "Grenade (French)", "Anar (Hindi)"],
+  "regions": ["India", "China", "Iran", "Turkey", "United States (California)", "Spain"],
+  "seasons": ["Autumn", "Early Winter"],
+  "nutrition": {
+    "calories": "83 kcal per 100g (arils)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 19, "unit": "g" },
+      { "name": "Fat", "value": 1.2, "unit": "g" },
+      { "name": "Fiber", "value": 4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 10.2, "unit": "mg", "rdi": "17%" },
+      { "name": "Vitamin K", "value": 16.4, "unit": "µg", "rdi": "21%" },
+      { "name": "Folate", "value": 38, "unit": "µg", "rdi": "10%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 236, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in powerful antioxidants, particularly punicalagins and punicic acid.",
+    "May have anti-inflammatory effects.",
+    "Can contribute to heart health by improving cholesterol levels and blood pressure.",
+    "Some research suggests benefits for memory and brain health."
+  ],
+  "potentialAllergies": [
+    { "name": "Pomegranate Allergy", "severity": "Rare", "details": "Allergies are uncommon but can cause reactions in sensitive individuals." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Pomegranates prefer climates with hot, dry summers and cool winters. They are relatively drought-tolerant once established.\n2. Soil: Adaptable to various soils but thrive in well-drained, deep loamy soil. Slightly acidic to neutral pH.\n3. Propagation: Can be grown from seeds, cuttings, or suckers. Plant in full sun.\n4. Watering: Water deeply but infrequently. Allow soil to dry out somewhat between waterings.\n5. Fertilizing: Light fertilization in spring. Avoid over-fertilizing, which can reduce fruit yield.\n6. Pruning: Prune to shape, remove suckers, and thin out dense growth to improve air circulation and light penetration.\n7. Harvesting: Fruits are ready when they develop full color (typically deep red) and make a metallic sound when tapped. They do not ripen further after picking.",
+  "growthDuration": "Trees may start bearing fruit in 2-3 years, with good production by 5-6 years.",
+  "sustainabilityTips": [
+      "Store pomegranates at room temperature for a few days or in the refrigerator for several weeks.",
+      "Learn efficient ways to de-seed a pomegranate to avoid waste.",
+      "Pomegranate juice can be frozen for later use."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on origin and transport (0.5-1.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "How to De-seed a Pomegranate",
+      "description": "A simple guide to easily remove the arils (seeds) from a pomegranate.",
+      "ingredients": ["1 ripe pomegranate"],
+      "steps": [
+        "Cut off the crown (flower end) of the pomegranate.",
+        "Lightly score the rind vertically from top to bottom in 4-6 sections, without cutting too deep into the fruit.",
+        "Submerge the pomegranate in a large bowl of water. Gently break apart the sections under water. The arils will sink to the bottom, and the white membrane will float.",
+        "Scoop out the floating membrane and discard. Drain the water and collect the arils.",
+        "Alternatively, hold a section over a bowl, cut-side down, and firmly tap the rind with a wooden spoon. The arils should fall out easily."
+      ]
+    },
+    {
+      "name": "Pomegranate and Walnut Salad (e.g., Gavurdagi Salatasi variation)",
+      "description": "A refreshing and crunchy salad featuring pomegranate seeds and walnuts.",
+      "ingredients": ["1 cup pomegranate arils", "1/2 cup chopped walnuts, toasted", "1 cucumber, diced", "2 ripe tomatoes, diced", "1/2 small red onion, thinly sliced or finely chopped", "1/4 cup chopped fresh parsley", "Dressing: 2 tbsp olive oil, 1 tbsp lemon juice, 1 tsp pomegranate molasses (optional), salt and pepper to taste"],
+      "steps": ["In a large bowl, combine pomegranate arils, toasted walnuts, diced cucumber, diced tomatoes, red onion, and chopped parsley.", "In a small bowl, whisk together olive oil, lemon juice, pomegranate molasses (if using), salt, and pepper.", "Pour the dressing over the salad and toss gently to combine.", "Serve immediately or chill for 30 minutes to allow flavors to meld."]
+    },
+    {
+      "name": "Pomegranate Molasses Glazed Chicken or Salmon",
+      "description": "A tangy and slightly sweet glaze perfect for chicken or fish.",
+      "ingredients": ["For the glaze: 1/4 cup pomegranate molasses, 1 tbsp olive oil, 1 tbsp honey or maple syrup, 1 clove garlic (minced), 1/2 tsp Dijon mustard, pinch of salt and pepper", "4 chicken breasts or salmon fillets"],
+      "steps": ["Preheat oven to 400°F (200°C) or prepare grill.", "In a small bowl, whisk together all glaze ingredients: pomegranate molasses, olive oil, honey/maple syrup, minced garlic, Dijon mustard, salt, and pepper.", "Season chicken or salmon with additional salt and pepper if desired.", "Brush the chicken/salmon generously with half of the pomegranate glaze.", "Bake or grill the chicken/salmon until cooked through (internal temperature of 165°F for chicken). Basting with remaining glaze during the last few minutes of cooking.", "Let rest for a few minutes before serving. Drizzle with any remaining pan juices or extra glaze."]
+    }
+  ]
+}

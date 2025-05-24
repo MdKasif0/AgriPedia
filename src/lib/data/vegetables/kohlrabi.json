@@ -1,0 +1,64 @@
+{
+  "id": "kohlrabi",
+  "commonName": "Kohlrabi (Knol-Khol)",
+  "scientificName": "Brassica oleracea (Gongylodes Group)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oFW2GJp0aLjgHwdg3nqWTGkq8bxAGrWU38lG4F2AjA&s",
+  "description": "A stout, round, swollen stem vegetable in the cabbage family. It can be eaten raw or cooked. Kohlrabi has a taste and texture somewhat like a broccoli stem or cabbage heart, but milder and sweeter.",
+  "origin": "Northern Europe",
+  "localNames": ["Knol-Khol (Hindi)", "German Turnip", "Navone (Italian - similar)", "Chou-rave (French)"],
+  "regions": ["Germany", "Northern Europe", "India", "United States"],
+  "seasons": ["Spring", "Autumn (cool-season crop)"],
+  "nutrition": {
+    "calories": "27 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 6.2, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 3.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 62, "unit": "mg", "rdi": "103%" },
+      { "name": "Vitamin B6", "value": 0.15, "unit": "mg", "rdi": "9%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 350, "unit": "mg", "rdi": "10%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, boosting the immune system.",
+    "Good source of dietary fiber, aiding digestion.",
+    "Provides potassium, important for blood pressure regulation.",
+    "Low in calories."
+  ],
+  "potentialAllergies": [
+    { "name": "Brassica Sensitivity", "severity": "Mild", "details": "Like other cruciferous vegetables, may cause gas in some individuals." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring or mid-summer for a fall crop.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.5.\n3. Spacing: Sow seeds 1/2 inch deep. Thin seedlings to 4-6 inches apart.\n4. Watering: Consistent moisture is important for tender, non-woody stems.\n5. Harvesting: Harvest when the swollen stem base is 2-3 inches in diameter. Overmature kohlrabi can become tough and woody.",
+  "growthDuration": "40-60 days from sowing to harvest.",
+  "sustainabilityTips": [
+      "Store kohlrabi (leaves removed) in the refrigerator crisper for several weeks.",
+      "Peel the tough outer skin of the swollen stem before eating or cooking.",
+      "Kohlrabi leaves are also edible and can be cooked like collard greens or kale."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally (0.3-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Kohlrabi Slaw",
+      "description": "A crunchy and refreshing slaw made with raw kohlrabi.",
+      "ingredients": ["1-2 medium kohlrabi bulbs, peeled and julienned or grated", "1 carrot, julienned or grated", "1/4 cup mayonnaise or Greek yogurt", "1 tbsp apple cider vinegar", "1 tsp sugar or honey (optional)", "Salt and freshly ground black pepper to taste", "Optional: chopped fresh parsley or dill"],
+      "steps": ["Peel kohlrabi bulbs, removing the tough outer layer. Julienned or grate the kohlrabi flesh. Do the same for the carrot.", "In a large bowl, combine julienned/grated kohlrabi and carrot.", "In a small bowl, whisk together mayonnaise/yogurt, apple cider vinegar, sugar/honey (if using), salt, and pepper.", "Pour the dressing over the kohlrabi and carrot mixture. Toss well to combine.", "Stir in fresh parsley or dill if desired.", "Cover and refrigerate for at least 15-20 minutes to allow flavors to meld before serving."]
+    },
+    {
+      "name": "Roasted Kohlrabi",
+      "description": "Roasting brings out a sweet, nutty flavor in kohlrabi.",
+      "ingredients": ["2-3 medium kohlrabi bulbs, peeled and cut into 1-inch cubes or wedges", "2 tbsp olive oil", "Salt and freshly ground black pepper to taste", "Optional: garlic powder, paprika, or your favorite herbs"],
+      "steps": ["Preheat oven to 400°F (200°C).", "Peel kohlrabi bulbs thoroughly. Cut into cubes or wedges.", "In a bowl, toss kohlrabi pieces with olive oil, salt, pepper, and any optional seasonings until well coated.", "Spread kohlrabi in a single layer on a baking sheet.", "Roast for 20-30 minutes, flipping halfway, until tender and lightly caramelized with golden brown edges.", "Serve hot as a side dish."]
+    },
+    {
+      "name": "Creamy Kohlrabi Soup",
+      "description": "A smooth and delicate soup featuring kohlrabi.",
+      "ingredients": ["1 tbsp butter or olive oil", "1 onion, chopped", "2 medium kohlrabi bulbs, peeled and diced", "1 medium potato, peeled and diced (for creaminess)", "4 cups vegetable or chicken broth", "1/2 cup heavy cream or milk (optional)", "Salt and pepper to taste", "Fresh chives or parsley for garnish"],
+      "steps": ["Melt butter/oil in a large pot or Dutch oven over medium heat. Add chopped onion and cook until softened, about 5 minutes.", "Add diced kohlrabi and potato. Cook for 5 minutes more, stirring occasionally.", "Pour in broth. Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until kohlrabi and potato are very tender.", "Use an immersion blender to puree the soup until smooth. Alternatively, blend in batches in a regular blender.", "Stir in heavy cream or milk if using. Season with salt and pepper.", "Reheat gently. Serve hot, garnished with fresh chives or parsley."]
+    }
+  ]
+}

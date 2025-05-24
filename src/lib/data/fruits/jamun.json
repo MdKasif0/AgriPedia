@@ -1,0 +1,65 @@
+{
+  "id": "jamun",
+  "commonName": "Jamun (Java Plum)",
+  "scientificName": "Syzygium cumini",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Jamun_Java_plum.jpg",
+  "description": "An evergreen tropical tree in the flowering plant family Myrtaceae. The fruit is oblong, ovoid, starts green and turns pink to shining crimson black as it matures. It has a sweet, sour, and astringent flavor.",
+  "origin": "Indian subcontinent and Southeast Asia",
+  "localNames": ["Java Plum", "Black Plum", "Jambolan", "Kala Jamun (Hindi)"],
+  "regions": ["India", "Pakistan", "Indonesia", "Philippines", "Brazil", "Suriname"],
+  "seasons": ["Summer (May-July in India)"],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 15.6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 0.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 14.3, "unit": "mg", "rdi": "24%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 0.2, "unit": "mg", "rdi": "1%" },
+      { "name": "Magnesium", "value": 15, "unit": "mg", "rdi": "4%" },
+      { "name": "Potassium", "value": 79, "unit": "mg", "rdi": "2%" }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used in Ayurvedic medicine for managing diabetes due to its potential to lower blood sugar.",
+    "Rich in antioxidants, including anthocyanins, which give it its dark color.",
+    "Good source of Vitamin C and iron.",
+    "May aid in digestion and improve liver function."
+  ],
+  "potentialAllergies": [
+    { "name": "Jamun Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Tolerates a range of conditions but prefers distinct dry and wet seasons.\n2. Soil: Grows well in a variety of soils, from sandy loam to clayey soils, but prefers deep, well-drained loamy soil.\n3. Propagation: Commonly grown from seeds. Grafting or budding can be used for superior varieties.\n4. Planting: Plant in full sun.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during fruit development.\n6. Fertilizing: Generally does not require heavy fertilization. Organic manure can be beneficial.\n7. Harvesting: Fruits are harvested when they turn deep purple or black and detach easily from the tree.",
+  "growthDuration": "Seedling trees may take 8-10 years to fruit. Grafted trees start earlier (4-5 years). Fruits mature in summer.",
+  "sustainabilityTips": [
+    "Jamun stains easily; handle with care.",
+    "The fruit is perishable; consume fresh or make juice, vinegar, or wine.",
+    "Seeds can be dried and powdered for medicinal uses (consult an expert)."
+  ],
+  "carbonFootprintInfo": "Relatively low to moderate (0.4-0.8 kg CO2e/kg), especially if consumed locally.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Jamun with Black Salt",
+      "description": "The simplest way to enjoy jamun, enhancing its unique flavor.",
+      "ingredients": ["1 cup fresh Jamun (Java Plum)", "A pinch of black salt (kala namak)"],
+      "steps": ["Wash the jamun fruits thoroughly.", "Place them in a bowl.", "Sprinkle a pinch of black salt over the fruits.", "Toss gently and enjoy. The fruit is eaten whole, and the seed is discarded."]
+    },
+    {
+      "name": "Jamun Juice",
+      "description": "A refreshing and nutritious juice with a distinct tangy-sweet taste.",
+      "ingredients": ["2 cups fresh Jamun, deseeded", "1 cup cold water", "2-3 tbsp sugar or honey (or to taste)", "1/2 tsp black salt (optional)", "Juice of 1/2 lime (optional)"],
+      "steps": ["Wash jamun fruits and remove the seeds. This can be done by gently squeezing the pulp off the seed.", "Combine deseeded jamun pulp, cold water, sugar/honey, black salt (if using), and lime juice (if using) in a blender.", "Blend until smooth.", "Strain the juice through a fine-mesh sieve if you prefer a smoother texture, or enjoy it with the pulp.", "Serve chilled or over ice."]
+    },
+    {
+      "name": "Jamun Vinegar (Homemade)",
+      "description": "A traditional way to preserve jamun and utilize its health benefits.",
+      "ingredients": ["1 lb ripe Jamun fruits", "1/2 cup sugar (or jaggery)", "4 cups water", "A piece of 'mother of vinegar' (optional, for faster fermentation)"],
+      "steps": ["Wash jamun fruits thoroughly. Lightly crush them.", "In a clean, sterilized glass or ceramic jar, combine the crushed jamun, sugar/jaggery, and water.", "If using mother of vinegar, add it to the jar.", "Cover the mouth of the jar with a clean cheesecloth or muslin cloth and secure it with a rubber band or string. This allows air to circulate but keeps insects out.", "Keep the jar in a warm, dark place for 2-4 weeks. Stir the mixture every couple of days with a clean wooden or plastic spoon.", "After 2-4 weeks (fermentation time can vary depending on temperature), the mixture will start to smell vinegary. Strain the liquid through a cheesecloth into another clean jar.", "Cover the new jar again with cheesecloth and let it age for another 4-6 weeks, or until the desired acidity is achieved.", "Once ready, the jamun vinegar can be strained again and stored in airtight bottles."]
+    }
+  ]
+}

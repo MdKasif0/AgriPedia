@@ -1,0 +1,64 @@
+{
+  "id": "strawberry",
+  "commonName": "Strawberry",
+  "scientificName": "Fragaria × ananassa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Strawberries.jpg",
+  "description": "A widely grown hybrid species of the genus Fragaria, cultivated worldwide for its fruit.",
+  "origin": "Brittany, France (cultivated hybrid)",
+  "localNames": ["Fresa (Spanish)", "Fraise (French)", "Erdbeere (German)"],
+  "regions": ["United States", "Mexico", "Turkey", "Spain", "Egypt"],
+  "seasons": ["Spring", "Summer"],
+  "nutrition": {
+    "calories": "32 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 7.7, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 2, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 58.8, "unit": "mg", "rdi": "98%" },
+      { "name": "Manganese", "value": 0.4, "unit": "mg", "rdi": "19%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 153, "unit": "mg", "rdi": "4%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C and antioxidants like anthocyanins.",
+    "May improve heart health by lowering blood pressure and cholesterol.",
+    "Anti-inflammatory properties.",
+    "Can help regulate blood sugar."
+  ],
+  "potentialAllergies": [
+    { "name": "Strawberry Allergy", "severity": "Mild", "details": "Can cause hives, itching, or oral allergy syndrome." }
+  ],
+  "cultivationProcess": "Strawberries are low-growing herbaceous plants. They prefer well-drained, slightly acidic soil and full sun. Often grown from runners or bare-root plants. Mulching helps retain moisture and keep fruit clean.",
+  "growthDuration": "Plants can fruit in their first year. Main harvest typically in late spring/early summer.",
+  "sustainabilityTips": [
+      "Store unwashed in the fridge, in a single layer on a paper towel.",
+      "Wash just before eating.",
+      "Freeze excess strawberries for smoothies or desserts."
+  ],
+  "carbonFootprintInfo": "Highly variable. Local, field-grown strawberries have a lower footprint (0.5-1.5 kg CO2e/kg). Out-of-season, air-freighted, or greenhouse-grown strawberries have a much higher footprint.",
+  "staticRecipes": [
+    {
+      "name": "Classic Strawberry Shortcake",
+      "description": "A beloved dessert featuring fresh strawberries, sweet biscuits, and whipped cream.",
+      "ingredients": ["For biscuits: 2 cups all-purpose flour, 2 tbsp sugar, 1 tbsp baking powder, 1/2 tsp salt, 1/2 cup cold butter (cubed), 3/4 cup milk", "For filling: 1 quart fresh strawberries (hulled and sliced), 1/4 cup sugar", "Whipped cream for topping"],
+      "steps": ["Preheat oven to 425°F (220°C). Line a baking sheet with parchment paper.", "Biscuits: In a large bowl, whisk together flour, sugar, baking powder, and salt. Cut in butter until mixture resembles coarse crumbs. Stir in milk until just combined. Drop by spoonfuls onto baking sheet.", "Bake biscuits for 12-15 minutes, or until golden brown.", "Filling: In a medium bowl, gently toss sliced strawberries with sugar. Let sit for 15-20 minutes to release juices.", "To assemble: Split warm biscuits in half. Spoon strawberries and their juice over the bottom half. Top with whipped cream and the other biscuit half."]
+    },
+    {
+      "name": "Easy Strawberry Jam",
+      "description": "Homemade strawberry jam with just a few ingredients.",
+      "ingredients": ["2 pounds fresh strawberries, hulled and crushed", "4 cups granulated sugar", "1/4 cup lemon juice"],
+      "steps": ["Combine strawberries, sugar, and lemon juice in a large, heavy-bottomed pot.", "Bring to a rolling boil over high heat, stirring constantly.", "Continue to boil, stirring frequently, until mixture reaches 220°F (105°C) on a candy thermometer, or until a small amount dropped onto a chilled plate gels. This usually takes 10-20 minutes.", "Skim off any foam. Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath if desired for longer storage, or store in refrigerator."]
+    },
+    {
+      "name": "Strawberry Spinach Salad",
+      "description": "A vibrant and healthy salad with sweet strawberries, tender spinach, and a tangy poppy seed dressing.",
+      "ingredients": ["6 cups fresh spinach", "1 pint fresh strawberries, sliced", "1/4 cup sliced almonds, toasted", "1/4 red onion, thinly sliced (optional)", "For dressing: 1/4 cup olive oil, 2 tbsp balsamic vinegar, 1 tbsp honey, 1 tsp poppy seeds, salt and pepper to taste"],
+      "steps": ["In a large salad bowl, combine spinach, sliced strawberries, toasted almonds, and red onion (if using).", "In a small bowl or jar, whisk or shake together olive oil, balsamic vinegar, honey, poppy seeds, salt, and pepper.", "Pour dressing over salad and toss gently to combine.", "Serve immediately."]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "karonda",
+  "commonName": "Karonda (Natal Plum)",
+  "scientificName": "Carissa carandas",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Karonda_fruit.JPG/800px-Karonda_fruit.JPG",
+  "description": "A species of flowering shrub in the dogbane family, Apocynaceae. It produces berry-sized fruits that are commonly used as a condiment in Indian pickles and spices. The fruit is a rich source of iron, so it sometimes is used in treatment of anaemia. It contains a fair amount of Vitamin C and is a rich source of pectin.",
+  "origin": "India, Nepal, Afghanistan, Himalayas",
+  "localNames": ["Kalakai (Tamil)", "Vakkaya (Telugu)", "Christ's Thorn"],
+  "regions": ["India", "Pakistan", "Sri Lanka", "Malaysia", "Indonesia"],
+  "seasons": ["Rainy season (July-September in India)"],
+  "nutrition": {
+    "calories": "70 kcal per 100g (estimated)",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.5, "unit": "g" },
+      { "name": "Carbohydrates", "value": 16.5, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 1.5, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 9, "unit": "mg", "rdi": "15%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 1.3, "unit": "mg", "rdi": "7%" },
+      { "name": "Calcium", "value": 21, "unit": "mg", "rdi": "2%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in iron, traditionally used to combat anemia.",
+    "Good source of Vitamin C, supporting immune function.",
+    "Contains pectin, which aids in digestion and can help make jellies.",
+    "Antioxidant properties."
+  ],
+  "potentialAllergies": [
+    { "name": "Karonda Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Drought-tolerant and hardy plant.\n2. Soil: Grows well in a wide range of soils, including poor soils. Prefers well-drained soil.\n3. Propagation: Seeds or cuttings.\n4. Planting: Plant in full sun. Can be grown as a hedge due to its thorny nature.\n5. Watering: Water regularly until established. Mature plants are very drought-resistant.\n6. Fertilizing: Generally does not require much fertilization.\n7. Harvesting: Fruits are harvested when they turn from green to reddish-purple or dark purple/black and are slightly soft. Unripe green fruits are also used for pickles.",
+  "growthDuration": "Starts fruiting in 2-3 years. Fruits ripen during the rainy season.",
+  "sustainabilityTips": [
+    "Karonda is commonly used for pickles, chutneys, jams, and jellies due to its tartness.",
+    "Can be eaten fresh when fully ripe, though it's often quite tart.",
+    "The plant is thorny and can be used as a natural fence."
+  ],
+  "carbonFootprintInfo": "Low, as it's a hardy plant often grown locally (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Karonda Pickle (Achar)",
+      "description": "A tangy and spicy Indian pickle made from Karonda fruits.",
+      "ingredients": ["1 lb Karonda, washed, halved, and deseeded (optional)", "1/4 cup mustard oil", "2 tbsp fennel seeds (saunf)", "1 tbsp mustard seeds (rai)", "1 tsp fenugreek seeds (methi dana)", "1/2 tsp asafoetida (hing)", "1 tbsp turmeric powder", "2 tbsp red chili powder (or to taste)", "Salt to taste"],
+      "steps": ["If Karondas are very tart, you can blanch them in hot water for 2 minutes and drain to reduce tartness. Pat dry completely.", "Dry roast fennel seeds, mustard seeds, and fenugreek seeds. Coarsely grind them.", "Heat mustard oil in a pan until it smokes lightly, then let it cool completely.", "In a large mixing bowl, combine Karonda, ground spice mixture, turmeric powder, red chili powder, asafoetida, and salt.", "Pour the cooled mustard oil over the mixture and mix well.", "Transfer the pickle to a sterilized, dry glass jar. Cover and keep in the sun for 4-5 days, shaking the jar daily.", "The pickle is ready to eat once Karondas soften and absorb flavors. Store in a cool, dry place."]
+    },
+    {
+      "name": "Sweet Karonda Chutney",
+      "description": "A sweet and tangy chutney, great as a condiment.",
+      "ingredients": ["1 cup Karonda, halved and deseeded (optional)", "1/2 cup sugar or jaggery", "1/4 cup water", "1/2 inch ginger, grated", "1/4 tsp red chili powder (optional)", "Pinch of salt"],
+      "steps": ["Combine Karonda, sugar/jaggery, water, and grated ginger in a saucepan.", "Cook over medium heat, stirring, until Karondas soften and the mixture thickens to a chutney consistency (about 15-20 minutes).", "Stir in red chili powder (if using) and salt.", "Let it cool completely. Store in an airtight container in the refrigerator."]
+    },
+    {
+      "name": "Karonda Sabzi (Stir-fry)",
+      "description": "A simple stir-fried dish using green or semi-ripe Karondas.",
+      "ingredients": ["1 cup Karonda, washed and slit (or halved)", "1 tbsp oil", "1/2 tsp mustard seeds", "1/2 tsp cumin seeds", "Pinch of asafoetida (hing)", "1-2 green chilies, slit", "1/4 tsp turmeric powder", "Salt to taste", "1 tbsp chopped cilantro for garnish"],
+      "steps": ["Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add asafoetida and green chilies. Sauté for a few seconds.", "Add Karonda and turmeric powder. Mix well.", "Cover and cook on low heat for 5-7 minutes, or until Karondas are tender but not mushy. Stir occasionally.", "Add salt and mix.", "Garnish with chopped cilantro and serve hot with roti or rice."]
+    }
+  ]
+}

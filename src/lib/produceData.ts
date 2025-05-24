@@ -1,6 +1,6 @@
 
-import fruitsData from './data/fruits-data.json';
-import vegetablesData from './data/vegetables-data.json';
+import fs from 'fs';
+import path from 'path';
 
 export interface Recipe {
   name: string;
@@ -37,7 +37,42 @@ export interface ProduceInfo {
   staticRecipes?: Recipe[]; // Added static recipes
 }
 
-const allProduceData: ProduceInfo[] = [...fruitsData, ...vegetablesData];
+const fruitsDir = path.join(__dirname, 'data', 'fruits');
+const vegetablesDir = path.join(__dirname, 'data', 'vegetables');
+
+function loadProduceFromDir(dirPath: string): ProduceInfo[] {
+  const produceItems: ProduceInfo[] = [];
+  try {
+    const files = fs.readdirSync(dirPath);
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        const filePath = path.join(dirPath, file);
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        // Ensure .gitkeep files or other non-JSON content doesn't cause errors
+        if (fileContent.trim() === "") {
+          console.warn(`Skipping empty file: ${filePath}`);
+          continue;
+        }
+        try {
+          produceItems.push(JSON.parse(fileContent) as ProduceInfo);
+        } catch (parseError) {
+          console.error(`Error parsing JSON from file ${filePath}:`, parseError);
+        }
+      }
+    }
+  } catch (err) {
+    console.error(`Error reading directory ${dirPath}:`, err);
+    // Depending on requirements, you might want to throw the error,
+    // or return an empty array, or handle it differently.
+    // For now, returning empty and logging error.
+  }
+  return produceItems;
+}
+
+const loadedFruits = loadProduceFromDir(fruitsDir);
+const loadedVegetables = loadProduceFromDir(vegetablesDir);
+
+const allProduceData: ProduceInfo[] = [...loadedFruits, ...loadedVegetables];
 
 export function getProduceByCommonName(name: string): ProduceInfo | undefined {
   const searchTerm = name.toLowerCase();

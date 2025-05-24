@@ -1,0 +1,66 @@
+{
+  "id": "amaranth-leaves",
+  "commonName": "Amaranth Leaves",
+  "scientificName": "Amaranthus spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Amaranthus_viridis_leaf1_%2811680672355%29.jpg/500px-Amaranthus_viridis_leaf1_%2811680672355%29.jpg",
+  "description": "The leaves of various species of amaranth, which are cultivated as leaf vegetables in many parts of the world. They come in shades of green, red, or variegated, and have a mild, slightly sweet, earthy flavor similar to spinach.",
+  "origin": "Americas, Africa, Asia (different species native to different regions)",
+  "localNames": ["Chaulai Saag (Hindi)", "Thandu Keerai (Tamil)", "Chinese Spinach", "Callaloo (Caribbean)"],
+  "regions": ["India", "China", "Southeast Asia", "Africa", "Caribbean", "South America"],
+  "seasons": ["Summer", "Warm seasons"],
+  "nutrition": {
+    "calories": "23 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.5, "unit": "g" },
+      { "name": "Carbohydrates", "value": 4, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 2.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 1140, "unit": "µg", "rdi": "1425%" },
+      { "name": "Vitamin A", "value": 292, "unit": "µg RAE", "rdi": "32%" },
+      { "name": "Vitamin C", "value": 43.3, "unit": "mg", "rdi": "72%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 215, "unit": "mg", "rdi": "22%" },
+      { "name": "Manganese", "value": 0.889, "unit": "mg", "rdi": "44%" }
+    ]
+  },
+  "healthBenefits": [
+    "Exceptionally rich in Vitamin K, vital for blood clotting and bone health.",
+    "Excellent source of Vitamin A and Vitamin C.",
+    "Good source of calcium, manganese, and iron.",
+    "Contains antioxidants and dietary fiber."
+  ],
+  "potentialAllergies": [
+    { "name": "Oxalates", "severity": "Mild", "details": "Amaranth leaves contain oxalates, which might be a concern for individuals prone to kidney stones. Cooking can reduce oxalate levels." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile soil. Tolerates a range of conditions but prefers pH 6.0-7.0. Full sun.\n3. Spacing: Sow seeds thinly. Thin seedlings to 6-12 inches apart, depending on variety.\n4. Watering: Water regularly, especially in dry weather.\n5. Harvesting: Harvest young leaves and tender stems when plants are 6-12 inches tall. Can be harvested as cut-and-come-again. Amaranth grown for grain is harvested when seed heads mature.",
+  "growthDuration": "Leaves ready for harvest in 30-50 days from sowing.",
+  "sustainabilityTips": [
+      "Store fresh amaranth leaves loosely wrapped in a damp paper towel in the refrigerator for a few days.",
+      "Wash thoroughly before use.",
+      "Cook like spinach or other leafy greens – sauté, stir-fry, add to soups or stews."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Simple Sautéed Amaranth Leaves (Chaulai Saag)",
+      "description": "A quick and nutritious Indian-style stir-fry of amaranth leaves.",
+      "ingredients": ["1 large bunch amaranth leaves (chaulai), chopped", "1 tbsp oil", "1/2 tsp cumin seeds", "Pinch of asafoetida (hing)", "1-2 cloves garlic, minced", "1-2 dried red chilies, broken (optional)", "Salt to taste", "1/4 tsp turmeric powder (optional)"],
+      "steps": ["Wash amaranth leaves thoroughly in several changes of water to remove any grit. Chop the leaves and tender stems.", "Heat oil in a pan or kadai over medium heat. Add cumin seeds; when they splutter, add asafoetida and dried red chilies (if using).", "Add minced garlic and sauté for about 30 seconds until fragrant.", "Add chopped amaranth leaves, turmeric powder (if using), and salt.", "Stir well. The leaves will start to wilt.", "Cover and cook on low-medium heat for 5-7 minutes, or until the leaves are tender, stirring occasionally.", "Uncover and cook for another 1-2 minutes if there's excess moisture. Serve hot with roti or rice."]
+    },
+    {
+      "name": "Amaranth Leaves with Lentils (Keerai Kootu/Dal)",
+      "description": "A flavorful South Indian stew combining amaranth leaves with lentils and coconut.",
+      "ingredients": ["1 bunch amaranth leaves, chopped", "1/4 cup toor dal or moong dal, cooked", "1/4 cup grated coconut", "1 tsp cumin seeds", "1-2 green chilies", "1/2 tsp turmeric powder", "Salt to taste", "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1/2 tsp urad dal, 1 dried red chili, curry leaves"],
+      "steps": ["Wash and chop amaranth leaves. Cook them with a little water and turmeric powder until tender. Drain if excess water.", "Grind grated coconut, cumin seeds, and green chilies to a smooth paste, adding a little water if needed.", "In a pot, combine cooked amaranth leaves, cooked dal, and the ground coconut paste. Add salt.", "Mix well and simmer for 5-7 minutes, allowing flavors to blend.", "Tempering: Heat oil in a small pan. Add mustard seeds. When they splutter, add urad dal and dried red chili. Sauté until dal is golden. Add curry leaves. Pour tempering over the kootu/dal. Mix and serve hot with rice."]
+    },
+    {
+      "name": "Amaranth Leaf Thoran (Kerala Style Stir-fry with Coconut)",
+      "description": "A dry stir-fry from Kerala with finely chopped amaranth leaves and grated coconut.",
+      "ingredients": ["1 large bunch amaranth leaves, finely chopped", "1/2 cup grated fresh coconut", "2-3 green chilies, slit or chopped", "1/4 tsp turmeric powder", "Salt to taste", "For tempering: 1 tbsp coconut oil, 1/2 tsp mustard seeds, 1/2 tsp urad dal, 1 dried red chili, few curry leaves"],
+      "steps": ["Wash amaranth leaves thoroughly and chop them finely.", "Heat coconut oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chili. Sauté until dal is golden. Add curry leaves.", "Add chopped green chilies and sauté for a moment.", "Add finely chopped amaranth leaves, turmeric powder, and salt.", "Stir well. Cover and cook on medium-low heat for 5-7 minutes, or until leaves are tender and wilted, stirring occasionally.", "Add grated coconut and mix well. Cook uncovered for another 2-3 minutes, until the mixture is dry.", "Serve hot as a side dish with rice."]
+    }
+  ]
+}

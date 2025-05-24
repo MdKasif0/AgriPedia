@@ -1,0 +1,64 @@
+{
+  "id": "loquat",
+  "commonName": "Loquat",
+  "scientificName": "Eriobotrya japonica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Loquat_-whole_and_cross_section.jpg/800px-Loquat-_whole_and_cross_section.jpg",
+  "description": "A species of flowering plant in the family Rosaceae, a native to the cooler hill regions of south-central China. It is a large evergreen shrub or small tree, grown commercially for its yellow or orange fruit, and also cultivated as an ornamental plant.",
+  "origin": "South-central China",
+  "localNames": ["Níspero japonés (Spanish)", "Nèfle du Japon (French)", "Japanische Wollmispel (German)", "Lokat (Hindi)"],
+  "regions": ["China", "Japan", "India", "Pakistan", "Mediterranean countries", "California"],
+  "seasons": ["Late Spring to Early Summer"],
+  "nutrition": {
+    "calories": "47 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 12.1, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 1.7, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": 76, "unit": "µg RAE", "rdi": "8%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 266, "unit": "mg", "rdi": "8%" },
+      { "name": "Manganese", "value": 0.148, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin A, important for vision and immune function.",
+    "Contains dietary fiber, aiding digestion.",
+    "Provides antioxidants like carotenoids.",
+    "Traditionally used in Chinese medicine for coughs and respiratory ailments (especially the leaves)."
+  ],
+  "potentialAllergies": [
+    { "name": "Loquat Seed Caution", "severity": "Mild", "details": "Loquat seeds contain small amounts of cyanogenic glycosides. While accidental ingestion of a few seeds is unlikely to cause harm, they should generally not be consumed in quantity." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to mild temperate. Tolerates light frosts once established.\n2. Soil: Well-drained, fertile loamy soil. Adaptable to various soil types.\n3. Propagation: Seeds (germinate easily but may not be true to type) or grafting for superior varieties.\n4. Planting: Plant in full sun to partial shade. Protect from strong winds.\n5. Watering: Water regularly, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer in spring.\n7. Harvesting: Fruits are harvested when they are fully colored (yellow to orange) and slightly soft to the touch. They bruise easily.",
+  "growthDuration": "Seedling trees may fruit in 2-3 years. Fruits ripen in late spring to early summer.",
+  "sustainabilityTips": [
+    "Loquats are best eaten fresh. Peel the skin if desired (it's edible but can be slightly tough).",
+    "The fruit is also used for jams, jellies, and pies.",
+    "Handle gently as they bruise easily."
+  ],
+  "carbonFootprintInfo": "Low to moderate, especially if grown locally (0.3-0.7 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Loquats",
+      "description": "Enjoying the sweet and tangy flavor of fresh loquats.",
+      "ingredients": ["A handful of ripe loquats"],
+      "steps": ["Wash the loquats gently.", "The skin is edible but can be peeled if preferred. To peel, make a small slit and peel it away.", "Cut the loquat in half and remove the large, dark seeds from the center.", "Eat the fleshy part. The flavor is often a mix of peach, citrus, and mild mango."]
+    },
+    {
+      "name": "Loquat Jam",
+      "description": "A sweet and slightly tart jam, perfect for preserving the fruit.",
+      "ingredients": ["2 lbs ripe loquats, peeled, pitted, and roughly chopped", "2 cups granulated sugar", "Juice of 1 lemon", "1/4 cup water"],
+      "steps": ["Combine chopped loquats, sugar, lemon juice, and water in a large, heavy-bottomed pot.", "Bring the mixture to a boil over medium-high heat, stirring until sugar dissolves.", "Reduce heat to medium-low and simmer, stirring occasionally, for 30-45 minutes, or until the jam thickens and reaches the setting point (220°F/105°C on a jam thermometer, or when a small amount on a chilled plate wrinkles when pushed).", "Skim off any foam.", "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator."]
+    },
+    {
+      "name": "Loquat Crumble",
+      "description": "A warm dessert with a sweet loquat filling and a crunchy topping.",
+      "ingredients": ["For filling: 4 cups loquats, peeled, pitted, and halved", "1/4 cup sugar", "1 tbsp all-purpose flour", "1 tsp lemon juice", "For crumble: 3/4 cup all-purpose flour", "1/2 cup rolled oats", "1/2 cup brown sugar", "1/4 cup cold butter, cubed"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, gently toss loquats with sugar, flour, and lemon juice. Pour into a baking dish.", "Crumble: In another bowl, combine flour, oats, and brown sugar. Cut in butter with your fingertips or a pastry blender until the mixture resembles coarse crumbs.", "Sprinkle the crumble topping evenly over the loquats.", "Bake for 25-35 minutes, or until the topping is golden brown and the filling is bubbly.", "Serve warm, perhaps with vanilla ice cream or custard."]
+    }
+  ]
+}

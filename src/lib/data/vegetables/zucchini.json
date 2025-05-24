@@ -1,0 +1,64 @@
+{
+  "id": "zucchini",
+  "commonName": "Zucchini",
+  "scientificName": "Cucurbita pepo (a type of summer squash)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPmMfJcw51s-ua_0nLwtNZOv5pYgzx9VUhG9m-fyXlw&s",
+  "description": "A summer squash, a vining herbaceous plant whose fruit are harvested when their immature seeds and epicarp (rind) are still soft and edible. It is low in food energy and contains useful amounts of folate, potassium, and provitamin A.",
+  "origin": "Americas (cultivated from wild squashes)",
+  "localNames": ["Courgette (UK, France)", "Calabacín (Spanish)"],
+  "regions": ["China", "India", "United States", "Turkey", "Italy", "Spain"],
+  "seasons": ["Summer", "Early Autumn"],
+  "nutrition": {
+    "calories": "17 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 3.1, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 17.9, "unit": "mg", "rdi": "30%" },
+      { "name": "Vitamin B6", "value": 0.163, "unit": "mg", "rdi": "10%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 261, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and high in water content, beneficial for hydration and weight management.",
+    "Good source of Vitamin C and antioxidants.",
+    "Provides potassium, which can help regulate blood pressure.",
+    "Source of dietary fiber, aiding digestion."
+  ],
+  "potentialAllergies": [
+    { "name": "Cucurbit Allergy", "severity": "Rare", "details": "Allergies to zucchini are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost or start indoors.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.5. Full sun.\n3. Spacing: Bush varieties can be spaced 2-3 feet apart; vining types need more space or trellising.\n4. Watering: Consistent and deep watering, especially during fruit development. Avoid wetting leaves.\n5. Harvesting: Harvest zucchini when they are young and tender (typically 6-8 inches long). Frequent harvesting encourages more production. Skin should be smooth and easily pierced.",
+  "growthDuration": "45-60 days from sowing to first harvest.",
+  "sustainabilityTips": [
+      "Store zucchini unwashed in the refrigerator crisper drawer for up to a week.",
+      "No need to peel young zucchini; the skin is edible and nutritious.",
+      "Grate or spiralize zucchini for salads, 'zoodles' (zucchini noodles), or to add to baked goods."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.3-0.7 kg CO2e/kg) for field-grown zucchini.",
+  "staticRecipes": [
+    {
+      "name": "Sautéed Zucchini with Garlic and Herbs",
+      "description": "A simple and quick side dish showcasing fresh zucchini.",
+      "ingredients": ["2 medium zucchini, sliced or diced", "1 tbsp olive oil", "2 cloves garlic, minced", "1/2 tsp dried Italian herbs or fresh herbs (e.g., parsley, oregano, thyme)", "Salt and freshly ground black pepper to taste", "Optional: Parmesan cheese for topping"],
+      "steps": ["Heat olive oil in a large skillet over medium-high heat.", "Add sliced or diced zucchini and cook, stirring occasionally, for 5-7 minutes, or until tender-crisp and lightly browned.", "Add minced garlic and dried/fresh herbs during the last 1-2 minutes of cooking, stirring until fragrant.", "Season with salt and pepper.", "If desired, sprinkle with Parmesan cheese before serving. Serve hot."]
+    },
+    {
+      "name": "Zucchini Bread",
+      "description": "A moist and flavorful quick bread, a great way to use up excess zucchini.",
+      "ingredients": ["1 1/2 cups all-purpose flour", "1/2 tsp salt", "1/2 tsp baking soda", "1/4 tsp baking powder", "1 tsp ground cinnamon", "1 cup grated zucchini (excess moisture squeezed out)", "1 cup granulated sugar", "1/2 cup vegetable oil or melted butter", "2 large eggs, lightly beaten", "1 tsp vanilla extract", "Optional: 1/2 cup chopped walnuts or chocolate chips"],
+      "steps": ["Preheat oven to 350°F (175°C). Grease and flour a 9x5 inch loaf pan.", "In a large bowl, whisk together flour, salt, baking soda, baking powder, and cinnamon.", "In a separate medium bowl, combine grated zucchini, sugar, oil/butter, beaten eggs, and vanilla extract. Mix well.", "Pour the wet ingredients into the dry ingredients and stir until just combined (do not overmix).", "If using, fold in walnuts or chocolate chips.", "Pour batter into the prepared loaf pan.", "Bake for 50-60 minutes, or until a toothpick inserted into the center comes out clean.", "Let cool in the pan for 10 minutes before transferring to a wire rack to cool completely."]
+    },
+    {
+      "name": "Grilled Zucchini Planks",
+      "description": "Zucchini sliced into planks and grilled until tender with smoky char marks.",
+      "ingredients": ["2-3 medium zucchini", "2 tbsp olive oil", "Salt and freshly ground black pepper", "Optional seasonings: garlic powder, Italian herbs, red pepper flakes"],
+      "steps": ["Preheat grill to medium-high heat.", "Trim ends of zucchini. Slice zucchini lengthwise into 1/4 to 1/2-inch thick planks.", "In a bowl or on a plate, brush zucchini planks on both sides with olive oil. Season generously with salt, pepper, and any optional seasonings.", "Place zucchini planks directly on the grill grates.", "Grill for 3-5 minutes per side, or until tender and well-marked with char lines.", "Serve hot as a side dish. Can be drizzled with balsamic glaze or topped with fresh herbs."]
+    }
+  ]
+}

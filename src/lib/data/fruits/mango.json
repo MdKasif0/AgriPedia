@@ -1,0 +1,67 @@
+{
+  "id": "mango",
+  "commonName": "Mango",
+  "scientificName": "Mangifera indica",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0Wfpzw8BkVS0tkIF8mVR-MatKmkaFlREGA&s",
+  "description": "A tropical stone fruit, juicy and sweet, with a range of colors including yellow, orange, red, or green. Known as the 'king of fruits' in some regions.",
+  "origin": "South Asia (India, Myanmar)",
+  "localNames": ["Aam (Hindi)", "Manga (Spanish/Portuguese)", "Mangue (French)"],
+  "regions": ["India", "China", "Thailand", "Mexico", "Indonesia", "Pakistan", "Brazil"],
+  "seasons": ["Summer"],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 15, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 1.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 36.4, "unit": "mg", "rdi": "61%" },
+      { "name": "Vitamin A (from Beta-carotene)", "value": 54, "unit": "µg RAE", "rdi": "6%" },
+      { "name": "Folate", "value": 43, "unit": "µg", "rdi": "11%" },
+      { "name": "Vitamin E", "value": 0.9, "unit": "mg", "rdi": "6%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 168, "unit": "mg", "rdi": "5%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, boosting immunity and promoting skin health.",
+    "Good source of Vitamin A (as beta-carotene), crucial for vision and immune function.",
+    "Contains antioxidants like mangiferin, which may protect against chronic diseases.",
+    "Dietary fiber aids in digestion and can help regulate blood sugar levels."
+  ],
+  "potentialAllergies": [
+    { "name": "Latex-Fruit Syndrome", "severity": "Mild", "details": "Some individuals with latex allergy may react to mangoes, particularly the skin. Symptoms usually involve oral itching." },
+    { "name": "Urushiol Sensitivity", "severity": "Mild", "details": "Mango skin, leaves, and sap contain urushiol (similar to poison ivy); can cause contact dermatitis in sensitive individuals. The flesh itself is generally safe." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Mangoes thrive in tropical and subtropical climates with distinct wet and dry seasons and protection from frost.\n2. Soil: Prefer deep, well-drained, loamy soil with a pH between 5.5 and 7.5.\n3. Planting: Usually propagated from grafted seedlings for fruit quality. Plant in full sun with ample space.\n4. Watering: Young trees need regular watering. Mature trees are relatively drought-tolerant but require irrigation during fruit development for best yield.\n5. Fertilizing: Apply balanced fertilizer during active growth periods, especially when young and during fruit set.\n6. Pruning: Prune to shape the tree, remove dead or diseased wood, and improve air circulation and light penetration.\n7. Pest & Disease Control: Monitor for common issues like mango hoppers, fruit flies, and anthracnose.",
+  "growthDuration": "Grafted trees may start bearing fruit in 3-5 years. Fruit matures 100-150 days after flowering, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "Choose locally grown mangoes when in season to reduce food miles.",
+    "Compost mango peels and seeds, or try growing a tree from the seed (though fruit quality may vary).",
+    "Freeze ripe mango chunks for later use in smoothies or desserts."
+  ],
+  "carbonFootprintInfo": "Varies widely based on origin and transport method (0.5-1.5 kg CO2e/kg). Air-freighted mangoes have a significantly higher footprint.",
+  "staticRecipes": [
+    {
+      "name": "Classic Mango Lassi",
+      "description": "A refreshing and creamy yogurt-based drink popular in India.",
+      "ingredients": ["1 cup ripe mango pulp (fresh or canned)", "1 cup plain yogurt", "1/2 cup milk (or water for a lighter version)", "2-4 tbsp sugar or honey (to taste)", "A pinch of cardamom powder (optional)", "Ice cubes"],
+      "steps": ["Combine mango pulp, yogurt, milk, sugar/honey, and cardamom powder (if using) in a blender.", "Blend until smooth and creamy.", "Add ice cubes and blend again briefly until desired consistency.", "Pour into glasses and serve chilled. Garnish with a mint sprig if desired."]
+    },
+    {
+      "name": "Fresh Mango Salsa",
+      "description": "A vibrant and flavorful salsa perfect with grilled fish, chicken, or as a dip with tortilla chips.",
+      "ingredients": ["2 ripe mangoes, peeled, pitted, and diced", "1/2 red onion, finely chopped", "1 jalapeño, minced (seeds removed for less heat, optional)", "1/2 red bell pepper, diced", "1/4 cup chopped fresh cilantro", "Juice of 1 lime", "Salt to taste"],
+      "steps": ["In a medium bowl, gently combine diced mangoes, red onion, jalapeño (if using), and red bell pepper.", "Add chopped cilantro and fresh lime juice.", "Season with salt to taste and stir gently to combine all ingredients.", "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld. Serve chilled or at room temperature."]
+    },
+    {
+      "name": "Mango Sticky Rice",
+      "description": "A popular Thai dessert made with glutinous rice, fresh mango, and a sweet coconut milk sauce.",
+      "ingredients": ["1 cup glutinous (sweet) rice, soaked in water for at least 4 hours or overnight", "1 cup coconut milk, full-fat", "1/2 cup granulated sugar (or to taste)", "1/4 tsp salt", "2 ripe mangoes, peeled, pitted, and sliced", "Toasted sesame seeds or a sprig of mint for garnish (optional)"],
+      "steps": ["Drain the soaked glutinous rice. Steam the rice for 20-25 minutes, or until tender and cooked through (it should be translucent).", "While rice is steaming, prepare the coconut sauce: In a small saucepan, heat coconut milk, sugar, and salt over medium-low heat. Stir constantly until the sugar and salt are completely dissolved. Do not boil. Reserve about 1/4 cup of this sauce for drizzling.", "Once the rice is cooked, transfer it to a bowl. Gradually pour the remaining warm coconut milk mixture (not the reserved portion) over the hot rice, stirring gently to combine. Cover the bowl and let the rice sit for 20-30 minutes to allow it to absorb the coconut milk and become creamy.", "To serve, place a portion of the sweet sticky rice on a plate. Arrange fresh mango slices alongside. Drizzle with a little of the reserved coconut sauce and garnish with toasted sesame seeds or mint if desired."]
+    }
+  ]
+}

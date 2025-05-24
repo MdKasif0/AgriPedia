@@ -1,0 +1,64 @@
+{
+  "id": "ivy-gourd",
+  "commonName": "Ivy Gourd (Tindora)",
+  "scientificName": "Coccinia grandis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Coccinia_grandis_%28Koval-ml%29_in_a_plate.jpg",
+  "description": "A tropical vine grown for its edible small, elongated green fruit which is used as a vegetable. The fruit has a crunchy texture and a mild, slightly tangy taste, similar to cucumber when young.",
+  "origin": "Africa and Asia",
+  "localNames": ["Tindora (Hindi/Gujarati)", "Kovakkai (Tamil)", "Dondakaya (Telugu)", "Gentleman's Toes", "Scarlet Gourd"],
+  "regions": ["India", "Southeast Asia", "Africa", "Caribbean"],
+  "seasons": ["Year-round in tropical climates, peaks in summer and rainy season"],
+  "nutrition": {
+    "calories": "18 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 3.1, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 1.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 1.4, "unit": "mg", "rdi": "2%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 40, "unit": "mg", "rdi": "4%" },
+      { "name": "Iron", "value": 1.4, "unit": "mg", "rdi": "8%" }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and a source of dietary fiber.",
+    "Contains beta-carotene, which the body converts to Vitamin A.",
+    "Traditionally used in Ayurvedic medicine for managing blood sugar levels.",
+    "Provides some iron and calcium."
+  ],
+  "potentialAllergies": [
+    { "name": "Ivy Gourd Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Perennial vine, often grown as an annual. Propagated from stem cuttings or seeds.\n2. Soil: Well-drained, fertile soil. pH 6.0-7.0. Full sun.\n3. Support: Requires a trellis, fence, or arbor for the vines to climb vigorously.\n4. Watering: Regular watering, especially during dry periods and fruiting.\n5. Harvesting: Harvest fruits when they are young, tender, and green (about 2-3 inches long). Overripe fruits turn red and become softer.",
+  "growthDuration": "Starts fruiting within 2-3 months from planting cuttings.",
+  "sustainabilityTips": [
+      "Store ivy gourd in the refrigerator for up to a week.",
+      "Trim ends. Can be sliced lengthwise or into rounds for cooking.",
+      "Popular in Indian cuisine for stir-fries, curries, and pickles."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.3-0.7 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Tindora Fry (Kovakkai Poriyal/Fry)",
+      "description": "A simple and popular South Indian stir-fry or shallow-fry of ivy gourd.",
+      "ingredients": ["1 lb tindora (ivy gourd), washed, ends trimmed, and sliced lengthwise or into rounds", "1 tbsp oil", "1/2 tsp mustard seeds", "1/2 tsp urad dal (split black lentils)", "1-2 dried red chilies, broken", "Pinch of asafoetida (hing)", "Few curry leaves", "1/4 tsp turmeric powder", "Salt to taste", "Optional: 1 tsp sambar powder or a pinch of red chili powder"],
+      "steps": ["Wash tindora, trim ends. Slice them lengthwise into quarters or into thin rounds.", "Heat oil in a pan or kadai over medium heat. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.", "Add asafoetida and curry leaves. Sauté for a few seconds.", "Add the sliced tindora, turmeric powder, salt, and sambar/chili powder (if using).", "Stir well to coat. Cook uncovered on medium-low heat, stirring occasionally, for 15-20 minutes, or until tindora is tender and slightly browned and crispy at the edges. If you prefer softer tindora, you can cover the pan for the first 5-7 minutes.", "Serve hot as a side dish with rice and sambar/rasam or with roti."]
+    },
+    {
+      "name": "Stuffed Tindora (Bharwa Tindora)",
+      "description": "Ivy gourds slit and stuffed with a spice mixture, then cooked.",
+      "ingredients": ["1/2 lb tindora, washed and ends trimmed", "For stuffing: 2 tbsp roasted gram flour (besan) or peanut powder, 1 tsp coriander powder, 1/2 tsp cumin powder, 1/2 tsp red chili powder, 1/4 tsp turmeric powder, 1/4 tsp amchur (dry mango powder), salt to taste, 1 tsp oil", "2 tbsp oil for cooking"],
+      "steps": ["Make a lengthwise slit on one side of each tindora, keeping the other side intact, to create a pocket for stuffing. (Alternatively, cut into 2-inch pieces and make slits).", "Stuffing: In a bowl, mix roasted besan/peanut powder, coriander powder, cumin powder, chili powder, turmeric, amchur, and salt. Add 1 tsp oil and a tiny bit of water if needed to make a slightly moist, crumbly mixture.", "Carefully stuff this mixture into the slit tindoras.", "Heat 2 tbsp oil in a wide pan. Arrange the stuffed tindoras in a single layer.", "Cook on low-medium heat, covered, for 15-20 minutes, turning them occasionally, until tindoras are tender and the stuffing is cooked and aromatic. Add a splash of water if they start to stick.", "Serve hot with roti or as a side dish."]
+    },
+    {
+      "name": "Tindora Pickle (Instant)",
+      "description": "A quick and tangy pickle made with fresh tindora.",
+      "ingredients": ["1 cup tindora, thinly sliced into rounds", "1 tbsp mustard oil", "1/2 tsp mustard seeds", "1/4 tsp fenugreek seeds (methi dana)", "Pinch of asafoetida (hing)", "1/4 tsp turmeric powder", "1/2 tsp red chili powder", "Salt to taste", "Juice of 1/2 lemon"],
+      "steps": ["Wash tindora and slice thinly.", "Heat mustard oil in a small pan until lightly smoking, then let it cool slightly.", "Add mustard seeds and fenugreek seeds to the warm oil. When mustard seeds splutter, add asafoetida.", "Pour this tempering over the sliced tindora in a bowl.", "Add turmeric powder, red chili powder, and salt. Mix well.", "Add lemon juice and mix again.", "Let it sit for at least 30 minutes to an hour for flavors to meld. This is an instant pickle and should be consumed within 1-2 days, stored in the refrigerator."]
+    }
+  ]
+}

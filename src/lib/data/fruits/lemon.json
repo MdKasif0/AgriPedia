@@ -1,0 +1,64 @@
+{
+  "id": "lemon",
+  "commonName": "Lemon",
+  "scientificName": "Citrus limon",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg",
+  "description": "A species of small evergreen trees in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China. The tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world.",
+  "origin": "Northeast India, Northern Myanmar or China",
+  "localNames": ["Limón (Spanish)", "Citron (French)", "Zitrone (German)"],
+  "regions": ["India", "Mexico", "China", "Argentina", "Brazil", "Spain", "Turkey", "United States (California, Arizona)"],
+  "seasons": ["Year-round, with peaks depending on variety and region"],
+  "nutrition": {
+    "calories": "29 kcal per 100g (raw fruit without peel)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.1, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.3, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 2.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 53, "unit": "mg", "rdi": "88%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 138, "unit": "mg", "rdi": "4%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that supports the immune system and skin health.",
+    "May aid in digestion and relieve indigestion.",
+    "Citric acid content may help prevent kidney stones.",
+    "Antioxidants in lemons can help protect against cell damage."
+  ],
+  "potentialAllergies": [
+    { "name": "Citrus Allergy", "severity": "Mild", "details": "Can cause skin irritation (contact dermatitis) or oral allergy symptoms in sensitive individuals. Usually mild." },
+    { "name": "Tooth Enamel Erosion", "severity": "Varies", "details": "High acidity can erode tooth enamel over time if consumed frequently in large amounts without dilution or rinsing."}
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, thrives in warm climates but can tolerate cooler temperatures better than other citrus. Needs full sun.\n2. Soil: Well-drained, slightly acidic (pH 6.0-7.0) loamy soil. Good drainage is crucial.\n3. Propagation: Usually by grafting or budding onto rootstock. Can be grown from seed, but may not be true to type and takes longer to fruit.\n4. Planting: Plant in a sunny, sheltered location. Can be grown in containers.\n5. Watering: Regular, deep watering, especially during dry periods and fruit development. Allow soil to dry slightly between waterings.\n6. Fertilizing: Feed regularly with a balanced citrus fertilizer, especially during active growth and fruiting seasons.\n7. Pruning: Prune to shape, remove dead or crossing branches, and improve air circulation.\n8. Harvesting: Lemons can be harvested at various stages of ripeness, often when they reach full size and have a good yellow color (some varieties are picked green). They can often be left on the tree for extended periods.",
+  "growthDuration": "Grafted trees can start bearing fruit in 2-3 years. Lemons often fruit year-round in suitable climates, with peak harvest seasons.",
+  "sustainabilityTips": [
+    "Store lemons at room temperature for about a week, or in the refrigerator for several weeks.",
+    "Use the entire lemon: zest for flavoring, juice for drinks and cooking. Lemon peels can be candied or used in cleaning.",
+    "Freeze lemon juice in ice cube trays for later use."
+  ],
+  "carbonFootprintInfo": "Generally moderate (0.4-0.8 kg CO2e/kg), depending on origin, transport, and whether greenhouse-grown.",
+  "staticRecipes": [
+    {
+      "name": "Classic Lemonade",
+      "description": "A refreshing and tangy homemade drink, perfect for a hot day.",
+      "ingredients": ["1 cup freshly squeezed lemon juice (about 4-6 lemons)", "1 cup granulated sugar (or to taste)", "4-5 cups cold water", "Ice cubes", "Lemon slices and mint sprigs for garnish (optional)"],
+      "steps": ["In a small saucepan, combine sugar and 1 cup of water. Heat over medium heat, stirring, until the sugar is completely dissolved. This is your simple syrup. Let it cool.", "In a large pitcher, combine lemon juice, cooled simple syrup, and the remaining 3-4 cups of cold water. Stir well.", "Taste and adjust sweetness or tartness by adding more sugar/syrup or lemon juice/water as needed.", "Serve over ice, garnished with lemon slices and mint sprigs if desired."]
+    },
+    {
+      "name": "Lemon Herb Roasted Chicken",
+      "description": "A flavorful and juicy roasted chicken infused with lemon and herbs.",
+      "ingredients": ["1 whole chicken (3-4 lbs)", "1-2 lemons, halved or quartered", "4-5 sprigs fresh rosemary or thyme (or 1-2 tsp dried)", "3-4 cloves garlic, smashed", "2 tbsp olive oil", "Salt and freshly ground black pepper to taste"],
+      "steps": ["Preheat oven to 400°F (200°C).", "Rinse the chicken inside and out, and pat dry with paper towels.", "Stuff the chicken cavity with half of the lemon pieces, garlic cloves, and herb sprigs.", "Place the chicken in a roasting pan. Rub the outside of the chicken with olive oil. Squeeze the juice of the remaining lemon over the chicken and place the squeezed lemon pieces around/under the chicken.", "Season generously with salt and pepper. Scatter remaining herbs over the chicken.", "Roast for 1 hour to 1 hour 30 minutes, or until the internal temperature reaches 165°F (74°C) in the thickest part of the thigh and juices run clear. Baste occasionally with pan juices.", "Let the chicken rest for 10-15 minutes before carving and serving."]
+    },
+    {
+      "name": "Simple Lemon Vinaigrette",
+      "description": "A bright and versatile salad dressing.",
+      "ingredients": ["1/4 cup extra virgin olive oil", "2 tbsp freshly squeezed lemon juice", "1 tsp Dijon mustard", "1/2 tsp honey or maple syrup (optional, for sweetness)", "1 small clove garlic, minced (optional)", "Salt and freshly ground black pepper to taste"],
+      "steps": ["In a small bowl or jar, combine olive oil, lemon juice, Dijon mustard, honey/maple syrup (if using), and minced garlic (if using).", "Whisk well or shake the jar vigorously until the dressing is emulsified (thickened and well-combined).", "Season with salt and pepper to taste.", "Use immediately on salads or store in an airtight container in the refrigerator for up to a week."]
+    }
+  ]
+}

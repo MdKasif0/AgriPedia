@@ -1,0 +1,65 @@
+{
+  "id": "brinjal-eggplant",
+  "commonName": "Brinjal (Eggplant)",
+  "scientificName": "Solanum melongena",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Brinjal.jpg",
+  "description": "A species of nightshade grown worldwide for its edible fruit. Most commonly purple, the spongy, absorbent fruit is used in several cuisines. Botanically a berry, it is typically used as a vegetable in cooking.",
+  "origin": "Indian subcontinent or Southeast Asia",
+  "localNames": ["Eggplant (US, Australia)", "Aubergine (UK, Ireland, France)", "Berenjena (Spanish)", "Baingan (Hindi)"],
+  "regions": ["China", "India", "Egypt", "Turkey", "Iran"],
+  "seasons": ["Summer", "Early Autumn"],
+  "nutrition": {
+    "calories": "25 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1, "unit": "g" },
+      { "name": "Carbohydrates", "value": 6, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate", "value": 22, "unit": "µg", "rdi": "5%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.232, "unit": "mg", "rdi": "12%" },
+      { "name": "Potassium", "value": 229, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which aids digestion and can help manage blood sugar.",
+    "Contains antioxidants like nasunin (in the purple skin), which may protect brain cells.",
+    "Low in calories and fat, making it a good choice for weight management.",
+    "Provides some manganese, important for metabolism and bone health."
+  ],
+  "potentialAllergies": [
+    { "name": "Nightshade Sensitivity", "severity": "Mild", "details": "Some individuals are sensitive to nightshades and may experience inflammation or digestive issues. True allergy is rare." },
+    { "name": "Solanine", "severity": "Mild", "details": "Contains small amounts of solanine, especially if overripe or improperly stored. Cooking usually reduces this. Not typically an issue in normal culinary amounts."}
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Start seeds indoors 8-10 weeks before last frost or buy transplants.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 5.5-6.8. Full sun required.\n3. Spacing: Space plants 18-24 inches apart.\n4. Watering: Consistent watering, especially during flowering and fruiting.\n5. Staking: Taller varieties may need staking for support as fruits develop.\n6. Harvesting: Harvest when fruits are glossy, firm, and full-sized for the variety, but before seeds harden. Cut from the plant with about an inch of stem attached.",
+  "growthDuration": "65-80 days from transplanting to first harvest.",
+  "sustainabilityTips": [
+      "Store eggplants at cool room temperature for a few days or in the refrigerator crisper for up to a week (can become sensitive to cold).",
+      "Salting eggplant slices before cooking can draw out moisture and bitterness for some varieties.",
+      "Eggplant is very versatile: grill, roast, fry, bake, or use in stews and curries."
+  ],
+  "carbonFootprintInfo": "Moderate, around 0.5-0.8 kg CO2e/kg for field-grown. Greenhouse production significantly increases this.",
+  "staticRecipes": [
+    {
+      "name": "Baingan Bharta (Smoky Mashed Eggplant)",
+      "description": "A popular North Indian dish made by roasting eggplant over an open flame, then mashing and cooking it with spices.",
+      "ingredients": ["1 large eggplant (brinjal)", "1 onion, finely chopped", "2 tomatoes, finely chopped", "1-2 green chilies, minced", "1 inch ginger, grated", "2-3 cloves garlic, minced", "1/2 tsp cumin seeds", "1/4 tsp turmeric powder", "1/2 tsp coriander powder", "Salt to taste", "2 tbsp oil", "Fresh cilantro, chopped, for garnish"],
+      "steps": ["Roast the eggplant directly over a gas flame (or under a broiler, or bake at 400°F until very soft), turning occasionally, until the skin is charred and blistered and the flesh is soft. Let cool slightly.", "Peel off the charred skin, mash the eggplant pulp. Set aside.", "Heat oil in a pan. Add cumin seeds; when they splutter, add chopped onion and sauté until golden brown.", "Add ginger, garlic, and green chilies. Sauté for a minute.", "Add chopped tomatoes and cook until softened and oil starts to separate.", "Add turmeric powder, coriander powder, and salt. Mix well.", "Add the mashed eggplant. Cook, stirring, for 5-7 minutes until well combined and heated through.", "Garnish with fresh cilantro and serve hot with roti or naan."]
+    },
+    {
+      "name": "Eggplant Parmesan (Parmigiana di Melanzane)",
+      "description": "A classic Italian baked dish with layers of fried eggplant slices, tomato sauce, mozzarella, and Parmesan cheese.",
+      "ingredients": ["2 medium eggplants, sliced 1/4-inch thick", "Salt", "Olive oil for frying", "1 (28 oz) can crushed tomatoes or marinara sauce", "8 oz fresh mozzarella, sliced", "1/2 cup grated Parmesan cheese", "Fresh basil leaves"],
+      "steps": ["Optional: Salt eggplant slices, let sit for 30 minutes to draw out moisture, then pat dry with paper towels.", "Heat olive oil in a large skillet. Fry eggplant slices in batches until golden brown on both sides. Drain on paper towels.", "Preheat oven to 375°F (190°C).", "In a baking dish, spread a thin layer of tomato sauce. Arrange a layer of fried eggplant slices, followed by a layer of mozzarella, a sprinkle of Parmesan, and a few basil leaves. Repeat layers, ending with sauce and Parmesan.", "Bake for 30-40 minutes, or until bubbly and cheese is melted and golden.", "Let rest for 10-15 minutes before serving."]
+    },
+    {
+      "name": "Grilled Eggplant with Balsamic Glaze",
+      "description": "Simple and flavorful grilled eggplant, perfect as a side dish or appetizer.",
+      "ingredients": ["1 large eggplant, sliced into 1/2-inch thick rounds", "3 tbsp olive oil", "Salt and freshly ground black pepper", "2 tbsp balsamic glaze", "Fresh parsley or basil, chopped, for garnish"],
+      "steps": ["Preheat grill to medium-high.", "Brush eggplant slices on both sides with olive oil. Season with salt and pepper.", "Grill eggplant slices for 4-5 minutes per side, or until tender and well-marked.", "Arrange grilled eggplant on a platter. Drizzle with balsamic glaze.", "Garnish with fresh parsley or basil before serving. Can be served warm or at room temperature."]
+    }
+  ]
+}

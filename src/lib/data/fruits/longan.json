@@ -1,0 +1,64 @@
+{
+  "id": "longan",
+  "commonName": "Longan",
+  "scientificName": "Dimocarpus longan",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Longan_fruits_and_seed.jpg/800px-Longan_fruits_and_seed.jpg",
+  "description": "A tropical tree species that produces edible fruit. It is one of the better-known tropical members of the soapberry family (Sapindaceae), to which the lychee and rambutan also belong. The fruit is small, round, with a thin brownish shell, translucent white flesh, and a single black seed.",
+  "origin": "Southern China, Southeast Asia (Myanmar, India)",
+  "localNames": ["Dragon's Eye (literal translation of Chinese name)", "Mata Kucing (Malay/Indonesian - Cat's Eye)"],
+  "regions": ["China", "Thailand", "Vietnam", "Taiwan", "India", "Australia", "United States (Florida, Hawaii)"],
+  "seasons": ["Summer"],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 15.1, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 1.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 84, "unit": "mg", "rdi": "140%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 266, "unit": "mg", "rdi": "8%" },
+      { "name": "Copper", "value": 0.169, "unit": "mg", "rdi": "19%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, supporting immune function.",
+    "Good source of potassium and copper.",
+    "Traditionally used in Chinese medicine for its calming effects and to improve sleep.",
+    "Contains antioxidants."
+  ],
+  "potentialAllergies": [
+    { "name": "Longan Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Prefers warm, humid conditions. Sensitive to frost.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. Slightly acidic pH.\n3. Propagation: Air layering (marcotting) is common for commercial cultivation. Can be grown from seed, but may take longer to fruit.\n4. Planting: Plant in full sun with good air circulation.\n5. Watering: Requires regular watering, especially during flowering and fruit development.\n6. Fertilizing: Apply balanced fertilizer regularly during the growing season.\n7. Pruning: Prune to shape the tree and improve light penetration.\n8. Harvesting: Fruits are harvested in bunches when the skin turns light brown and the fruit is plump. They do not ripen much after picking.",
+  "growthDuration": "Air-layered trees can fruit in 2-4 years. Fruits mature in summer.",
+  "sustainabilityTips": [
+    "Store fresh longans in the refrigerator; they can last for a couple of weeks.",
+    "Often eaten fresh by peeling the thin shell.",
+    "Dried longans are a popular snack and ingredient in Asian desserts and teas."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on transport (0.8-1.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Longans",
+      "description": "The most common way to enjoy the sweet, juicy flesh of longans.",
+      "ingredients": ["A bunch of fresh longans"],
+      "steps": ["Wash the longans.", "To open, gently squeeze the fruit near the stem end until the thin shell cracks, or use your fingernail to make a small break in the shell.", "Peel away the shell to reveal the translucent white flesh.", "Eat the flesh and discard the single, hard black seed in the center (it looks like an eye, hence 'dragon's eye').", "Longans are best enjoyed fresh and chilled."]
+    },
+    {
+      "name": "Longan and Coconut Jelly",
+      "description": "A refreshing and light Asian-style dessert.",
+      "ingredients": ["1 cup fresh longan pulp, seeded (or canned longans, drained)", "1 can (13.5 oz) coconut milk", "1/2 cup sugar (or to taste)", "1 tbsp agar-agar powder", "1 cup water", "Optional: A few pandan leaves for fragrance"],
+      "steps": ["If using fresh longans, peel and seed them. Roughly chop the flesh if desired.", "In a saucepan, combine agar-agar powder and water. Let it sit for 5-10 minutes to bloom.", "Add coconut milk, sugar, and pandan leaves (if using) to the saucepan. Heat over medium heat, stirring constantly, until the sugar and agar-agar are completely dissolved. Bring to a gentle simmer, but do not boil vigorously.", "Simmer for 2-3 minutes, stirring. Remove pandan leaves.", "Stir in the longan pulp.", "Pour the mixture into a jelly mold or individual ramekins.", "Let it cool to room temperature, then transfer to the refrigerator to set completely (at least 2-3 hours).", "To serve, unmold the jelly (if using a large mold) or serve directly from ramekins."]
+    },
+    {
+      "name": "Dried Longan Tea (Longan Gui Yuan Cha)",
+      "description": "A traditional Chinese herbal tea known for its warming and calming properties.",
+      "ingredients": ["1/4 cup dried longan pulp (Gui Yuan Rou)", "2-3 dried red dates (jujubes), pitted and sliced (optional)", "1 small piece of ginger, sliced (optional)", "4 cups water", "Honey or rock sugar to taste (optional)"],
+      "steps": ["Rinse the dried longan pulp and red dates (if using).", "In a small pot, combine dried longan, red dates, ginger (if using), and water.", "Bring to a boil, then reduce heat and simmer gently for 20-30 minutes. The longans will plump up, and the tea will become fragrant and slightly sweet.", "Strain the tea into cups.", "Sweeten with honey or rock sugar if desired. The rehydrated longans and dates can also be eaten.", "Serve warm."]
+    }
+  ]
+}

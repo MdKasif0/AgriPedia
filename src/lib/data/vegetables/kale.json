@@ -1,0 +1,66 @@
+{
+  "id": "kale",
+  "commonName": "Kale",
+  "scientificName": "Brassica oleracea var. sabellica",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRve4rT6MNFfH4jEBYPLhKfFPPFD_vltGji5FGyUTPCYg&s",
+  "description": "A group of cabbage (Brassica oleracea) cultivars grown for their edible leaves, although some are used as ornamentals. Kale plants have green or purple leaves, and the central leaves do not form a head.",
+  "origin": "Eastern Mediterranean or Asia Minor",
+  "localNames": ["Col rizada (Spanish)", "Chou frisé (French)", "Grünkohl (German)"],
+  "regions": ["United States", "Europe", "China"],
+  "seasons": ["Autumn", "Winter (flavor often improves after a frost)"],
+  "nutrition": {
+    "calories": "49 kcal per 100g (raw)",
+    "macronutrients": [
+      { "name": "Protein", "value": 4.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 8.8, "unit": "g" },
+      { "name": "Fat", "value": 0.9, "unit": "g" },
+      { "name": "Fiber", "value": 3.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 704.8, "unit": "µg", "rdi": "881%" },
+      { "name": "Vitamin A", "value": 480, "unit": "µg RAE", "rdi": "53%" },
+      { "name": "Vitamin C", "value": 120, "unit": "mg", "rdi": "200%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.659, "unit": "mg", "rdi": "33%" },
+      { "name": "Calcium", "value": 150, "unit": "mg", "rdi": "15%" }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely nutrient-dense, packed with vitamins K, A, and C.",
+    "Rich in antioxidants, including beta-carotene, flavonoids, and polyphenols.",
+    "Contains compounds that may help lower cholesterol and have anti-cancer properties.",
+    "Good source of minerals like calcium and manganese."
+  ],
+  "potentialAllergies": [
+    { "name": "Oxalates and Goitrogens", "severity": "Mild", "details": "Contains oxalates, potentially an issue for kidney stone formers. Also contains goitrogens, which may affect thyroid function in those with thyroid issues if consumed raw in very large amounts." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly or start indoors in early spring or late summer for fall/winter harvest.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.5.\n3. Spacing: Space plants 12-18 inches apart.\n4. Watering: Consistent moisture, especially in warmer weather.\n5. Harvesting: Harvest outer leaves when they are large enough, allowing inner leaves to continue growing (cut-and-come-again). Flavor is often sweeter after a light frost.",
+  "growthDuration": "55-75 days from transplanting to first harvest.",
+  "sustainabilityTips": [
+      "Store unwashed kale in a plastic bag in the refrigerator crisper for up to a week.",
+      "Remove tough central stems before cooking or using raw in salads (massage leaves with dressing to tenderize).",
+      "Great for smoothies, salads, soups, stir-fries, or making kale chips."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.4-0.7 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Crispy Baked Kale Chips",
+      "description": "A healthy and addictive snack made from baked kale leaves.",
+      "ingredients": ["1 large bunch of kale", "1 tbsp olive oil", "Salt to taste", "Optional: garlic powder, nutritional yeast"],
+      "steps": ["Preheat oven to 300°F (150°C). Line a large baking sheet with parchment paper.", "Wash kale thoroughly and dry completely (this is key for crispiness). Remove tough stems and tear leaves into large, chip-sized pieces.", "In a large bowl, toss kale pieces with olive oil until lightly coated. Do not oversaturate.", "Sprinkle with salt and any optional seasonings. Toss again.", "Spread kale in a single layer on the prepared baking sheet. Do not overcrowd (bake in batches if needed).", "Bake for 10-15 minutes, or until edges are slightly browned and leaves are crispy. Watch carefully as they can burn quickly. You may need to flip or rotate them halfway through.", "Let cool on the baking sheet for a few minutes (they will crisp up more as they cool). Enjoy immediately."]
+    },
+    {
+      "name": "Sautéed Kale with Garlic and Lemon",
+      "description": "A simple and flavorful way to cook kale as a side dish.",
+      "ingredients": ["1 large bunch of kale, stems removed and leaves chopped", "1 tbsp olive oil", "2-3 cloves garlic, thinly sliced", "Pinch of red pepper flakes (optional)", "Salt and freshly ground black pepper to taste", "Juice of 1/2 lemon"],
+      "steps": ["Wash kale leaves thoroughly and chop or tear them. Remove the tough central stems.", "Heat olive oil in a large skillet or pot over medium heat.", "Add sliced garlic and red pepper flakes (if using). Cook for about 30-60 seconds until fragrant (do not brown garlic).", "Add the chopped kale to the skillet (it will seem like a lot, but it will wilt down).", "Cook, stirring occasionally, for 5-8 minutes, or until kale is wilted and tender to your liking.", "Season with salt and pepper. Remove from heat and stir in fresh lemon juice.", "Serve immediately."]
+    },
+    {
+      "name": "Kale and White Bean Soup",
+      "description": "A hearty and nutritious soup packed with kale, beans, and vegetables.",
+      "ingredients": ["1 tbsp olive oil", "1 onion, chopped", "2 carrots, chopped", "2 celery stalks, chopped", "3 cloves garlic, minced", "1 large bunch of kale, stems removed and chopped", "1 (15 oz) can cannellini beans or other white beans, rinsed and drained", "6 cups vegetable or chicken broth", "1 tsp dried thyme or Italian seasoning", "Salt and freshly ground black pepper to taste", "Optional: Parmesan cheese for garnish"],
+      "steps": ["Heat olive oil in a large pot or Dutch oven over medium heat. Add onion, carrots, and celery. Cook, stirring occasionally, until softened, about 7-10 minutes.", "Add minced garlic and cook for 1 minute more until fragrant.", "Add chopped kale and cook, stirring, until it begins to wilt, about 3-5 minutes.", "Stir in rinsed and drained white beans, broth, and dried thyme/Italian seasoning.", "Bring to a simmer, then reduce heat, cover, and cook for 15-20 minutes, or until kale is tender and flavors have melded.", "Season with salt and pepper to taste.", "Serve hot, garnished with Parmesan cheese if desired."]
+    }
+  ]
+}

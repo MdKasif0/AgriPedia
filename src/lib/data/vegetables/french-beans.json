@@ -1,0 +1,65 @@
+{
+  "id": "french-beans",
+  "commonName": "French Beans",
+  "scientificName": "Phaseolus vulgaris (tender varieties)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Green_beans_169clue.jpg",
+  "description": "Also known as green beans, string beans, or snap beans. They are the unripe, young fruit and protective pods of various cultivars of the common bean.",
+  "origin": "Central and South America",
+  "localNames": ["Judías verdes (Spanish)", "Haricots verts (French)", "Grüne Bohnen (German)", "Fansi (Hindi)"],
+  "regions": ["China", "Indonesia", "India", "Turkey", "United States"],
+  "seasons": ["Summer", "Early Autumn"],
+  "nutrition": {
+    "calories": "31 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 7, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 2.7, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 14.4, "unit": "µg", "rdi": "18%" },
+      { "name": "Vitamin C", "value": 12.2, "unit": "mg", "rdi": "20%" },
+      { "name": "Folate", "value": 33, "unit": "µg", "rdi": "8%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.216, "unit": "mg", "rdi": "11%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting satiety.",
+    "Provides Vitamin K, important for bone health and blood clotting.",
+    "Contains Vitamin C, an antioxidant that supports immune function.",
+    "Source of folate, essential for cell growth and development."
+  ],
+  "potentialAllergies": [
+    { "name": "Legume Allergy", "severity": "Mild", "details": "Rare, but some individuals allergic to other legumes might react." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0. Full sun.\n3. Types: Bush beans are compact; pole beans are climbing and need support (trellis, poles).\n4. Watering: Consistent moisture, especially during flowering and pod development.\n5. Harvesting: Harvest pods when they are young, tender, and snap easily. Pick regularly (every few days) to encourage continuous production.",
+  "growthDuration": "50-65 days from sowing to first harvest.",
+  "sustainabilityTips": [
+      "Store fresh beans unwashed in a plastic bag in the refrigerator crisper for up to a week.",
+      "Trim ends before cooking. Can be steamed, boiled, stir-fried, or roasted.",
+      "Blanch and freeze excess beans for longer storage."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.4-0.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Green Beans Almondine",
+      "description": "A classic French side dish featuring tender green beans with toasted almonds and butter.",
+      "ingredients": ["1 lb fresh green beans, trimmed", "2 tbsp butter", "1/4 cup slivered almonds", "1 tbsp lemon juice (optional)", "Salt and freshly ground black pepper to taste"],
+      "steps": ["Cook green beans until tender-crisp: steam for 4-6 minutes, or boil in salted water for 3-5 minutes. Drain well and set aside. (Alternatively, blanch in boiling water for 2-3 minutes, then plunge into ice water to stop cooking and retain color).", "Melt butter in a large skillet over medium heat. Add slivered almonds and cook, stirring frequently, until almonds are golden brown and fragrant (about 2-3 minutes). Be careful not to burn them.", "Add the cooked green beans to the skillet with the almonds and butter. Toss to coat and heat through, about 1-2 minutes.", "If using, stir in lemon juice. Season with salt and pepper to taste.", "Serve immediately."]
+    },
+    {
+      "name": "Sautéed Green Beans with Garlic and Soy Sauce",
+      "description": "A simple and flavorful Asian-inspired side dish.",
+      "ingredients": ["1 lb fresh green beans, trimmed", "1 tbsp sesame oil or vegetable oil", "2-3 cloves garlic, minced", "1 tbsp soy sauce", "1/2 tsp sugar (optional)", "Toasted sesame seeds for garnish (optional)"],
+      "steps": ["Heat oil in a large skillet or wok over medium-high heat.", "Add minced garlic and cook for about 30 seconds until fragrant.", "Add green beans to the skillet. Stir-fry for 5-7 minutes, or until beans are tender-crisp and slightly blistered.", "In a small bowl, mix soy sauce and sugar (if using).", "Pour the soy sauce mixture over the green beans. Toss well to coat and cook for another 1-2 minutes.", "Garnish with toasted sesame seeds if desired. Serve hot."]
+    },
+    {
+      "name": "Three Bean Salad (using Green Beans)",
+      "description": "A classic potluck salad that's tangy, sweet, and refreshing. Green beans are a key component.",
+      "ingredients": ["1 (15 oz) can green beans, drained and rinsed (or 1.5 cups cooked fresh green beans)", "1 (15 oz) can kidney beans, drained and rinsed", "1 (15 oz) can chickpeas or cannellini beans, drained and rinsed", "1/2 red onion, thinly sliced", "For dressing: 1/2 cup apple cider vinegar, 1/4 cup sugar, 1/4 cup olive oil, 1/2 tsp salt, 1/4 tsp black pepper"],
+      "steps": ["In a large bowl, combine drained and rinsed green beans, kidney beans, chickpeas/cannellini beans, and thinly sliced red onion.", "Dressing: In a small bowl or jar, whisk or shake together apple cider vinegar, sugar, olive oil, salt, and pepper until sugar is dissolved.", "Pour the dressing over the bean mixture. Toss gently to combine.", "Cover and refrigerate for at least 1-2 hours (or preferably overnight) to allow flavors to meld. Toss again before serving.", "Can be served chilled or at room temperature."]
+    }
+  ]
+}

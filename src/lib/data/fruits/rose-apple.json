@@ -1,0 +1,63 @@
+{
+  "id": "rose-apple",
+  "commonName": "Rose Apple",
+  "scientificName": "Syzygium jambos",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/RoseApples.jpg/524px-RoseApples.jpg",
+  "description": "A tree originating in Southeast Asia and occurring widely elsewhere, having been introduced as an ornamental and fruit tree. The fruit is bell-shaped, whitish-green to pale yellow or pink, crisp, and has a unique rose-like aroma and slightly sweet, watery taste.",
+  "origin": "Southeast Asia (Malaysia, Indonesia)",
+  "localNames": ["Jambu Air Mawar (Malay/Indonesian)", "Chomphu Namdokmai (Thai)", "Water Apple", "Wax Apple (related species often grouped)"],
+  "regions": ["Southeast Asia", "India", "Caribbean", "Central and South America"],
+  "seasons": ["Varies, can fruit multiple times a year, often in spring and fall"],
+  "nutrition": {
+    "calories": "25 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 5.7, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 0.5, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 22.3, "unit": "mg", "rdi": "37%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 29, "unit": "mg", "rdi": "3%" }
+    ]
+  },
+  "healthBenefits": [
+    "High water content, making it hydrating and refreshing.",
+    "Good source of Vitamin C.",
+    "Low in calories.",
+    "Traditionally used for various medicinal purposes in some cultures."
+  ],
+  "potentialAllergies": [
+    { "name": "Rose Apple Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid conditions.\n2. Soil: Prefers well-drained, fertile loamy soil. Tolerates a range of soils.\n3. Propagation: Seeds, cuttings, or air layering.\n4. Planting: Plant in full sun to partial shade.\n5. Watering: Requires regular watering, especially during dry periods and fruit development.\n6. Harvesting: Fruits are harvested when they are fully colored, crisp, and have a characteristic rose-like fragrance. They are delicate and bruise easily.",
+  "growthDuration": "Trees can start fruiting in 3-5 years. Fruits mature quickly after flowering.",
+  "sustainabilityTips": [
+    "Rose apples are best eaten fresh to enjoy their crisp texture and unique aroma.",
+    "They are highly perishable and should be consumed soon after harvesting.",
+    "Can be used in salads or lightly stewed."
+  ],
+  "carbonFootprintInfo": "Moderate, depends on transport from tropical regions (0.7-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Rose Apples",
+      "description": "The simplest way to enjoy their crisp texture and fragrant aroma.",
+      "ingredients": ["A few ripe Rose Apples"],
+      "steps": ["Wash the rose apples gently.", "They can be eaten whole, skin and all. The flesh is crisp and watery, with a hollow core that may contain a few small, loose seeds.", "Simply bite into them or slice them. They are very refreshing.", "Best served chilled."]
+    },
+    {
+      "name": "Rose Apple Salad with Honey-Lime Dressing",
+      "description": "A light and refreshing salad highlighting the unique fruit.",
+      "ingredients": ["2 cups sliced Rose Apples", "1 small cucumber, thinly sliced", "A handful of fresh mint leaves", "For dressing: 2 tbsp lime juice, 1 tbsp honey, pinch of salt"],
+      "steps": ["Gently combine sliced rose apples and cucumber in a salad bowl.", "In a small bowl, whisk together lime juice, honey, and salt.", "Pour the dressing over the rose apple and cucumber mixture.", "Garnish with fresh mint leaves. Toss gently and serve immediately."]
+    },
+    {
+      "name": "Candied Rose Apples (Lightly Stewed)",
+      "description": "A simple way to sweeten rose apples and use them as a dessert topping.",
+      "ingredients": ["2 cups sliced Rose Apples", "1/4 cup sugar", "1/2 cup water", "1 star anise or a small piece of cinnamon stick (optional)"],
+      "steps": ["Combine sliced rose apples, sugar, water, and star anise/cinnamon (if using) in a saucepan.", "Bring to a gentle simmer over medium-low heat.", "Cook for 5-10 minutes, or until the rose apples are slightly tender but still hold their shape, and the syrup has slightly thickened.", "Remove from heat and discard the spice.", "Let it cool. Serve warm or chilled over yogurt, ice cream, or pancakes."]
+    }
+  ]
+}

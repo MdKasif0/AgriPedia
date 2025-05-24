@@ -1,0 +1,63 @@
+{
+  "id": "sweet-lime",
+  "commonName": "Sweet Lime (Mosambi)",
+  "scientificName": "Citrus limetta",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%28Citrus_limetta%29_Mosambi_at_a_market_in_Seethammadhara.jpg",
+  "description": "A citrus fruit, typically round to oval, with a greenish-yellow rind when ripe and a sweet, mild, low-acid pulp. It's less tart than a lemon.",
+  "origin": "Southeast Asia (likely India or Malaysia)",
+  "localNames": ["Mosambi (Hindi)", "Mausambi", "Musambi", "Limu Shirin (Persian)"],
+  "regions": ["India", "Pakistan", "Egypt", "Vietnam", "Mediterranean basin"],
+  "seasons": ["Primarily Summer and Monsoon season (in India)"],
+  "nutrition": {
+    "calories": "43 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.3, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 0.5, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 50, "unit": "mg", "rdi": "83%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 490, "unit": "mg", "rdi": "14%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, boosting the immune system.",
+    "High in potassium, which can help manage blood pressure.",
+    "Aids in hydration due to high water content.",
+    "May improve digestion and relieve constipation due to its mild acidity and flavonoids."
+  ],
+  "potentialAllergies": [
+    { "name": "Citrus Allergy", "severity": "Mild", "details": "Less common than with more acidic citrus, but can cause oral allergy symptoms or skin irritation in sensitive individuals." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, prefers warm climates with distinct summers and winters, but is sensitive to frost.\n2. Soil: Well-drained, loamy soil is ideal. pH 6.0-7.5.\n3. Propagation: Usually by budding or grafting onto suitable rootstock. Can be grown from seeds, but may not be true to type.\n4. Planting: Plant in full sun with good air circulation.\n5. Watering: Regular watering, especially during dry periods and fruit development. Avoid waterlogging.\n6. Fertilizing: Requires regular fertilization with a balanced citrus fertilizer.\n7. Pruning: Prune to shape the tree, remove dead wood, and improve light penetration.\n8. Harvesting: Fruits are picked when they reach full size and the skin turns from green to light greenish-yellow. They should feel slightly soft to the touch.",
+  "growthDuration": "Grafted trees may start bearing fruit in 3-4 years. Fruit typically matures in 6-9 months after flowering.",
+  "sustainabilityTips": [
+    "Store at room temperature for a few days or in the refrigerator for longer life.",
+    "Sweet lime juice is best consumed fresh as it can turn bitter if stored for too long.",
+    "Compost the peels."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to other citrus fruits, depending on origin and transport (0.4-0.9 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Mosambi (Sweet Lime) Juice",
+      "description": "A popular and refreshing juice, especially in India.",
+      "ingredients": ["3-4 ripe sweet limes (mosambi)", "Pinch of black salt (kala namak) or regular salt (optional)", "1/2 tsp sugar (optional, if limes are not very sweet)"],
+      "steps": ["Wash the sweet limes.", "Cut them in half.", "Extract the juice using a citrus juicer (manual or electric). Avoid pressing too hard on the peel to prevent bitterness.", "Strain the juice if desired.", "Add salt and sugar (if using) to taste. Stir well.", "Serve immediately, chilled or with ice."]
+    },
+    {
+      "name": "Sweet Lime and Mint Cooler",
+      "description": "A refreshing drink with sweet lime and fresh mint.",
+      "ingredients": ["1 cup fresh sweet lime juice", "1/4 cup fresh mint leaves", "1 tbsp sugar or honey (optional)", "1/2 cup sparkling water or club soda", "Ice cubes"],
+      "steps": ["Gently muddle mint leaves with sugar/honey (if using) in a sturdy glass or shaker.", "Add sweet lime juice and ice cubes. Stir or shake well.", "Strain into a serving glass filled with fresh ice.", "Top with sparkling water or club soda.", "Garnish with a mint sprig and a slice of sweet lime."]
+    },
+    {
+      "name": "Sweet Lime Salad with Chaat Masala",
+      "description": "A simple fruit salad highlighting the flavor of sweet lime with a tangy twist.",
+      "ingredients": ["2 ripe sweet limes, peeled and segmented (membranes removed if desired)", "1/2 apple, diced (optional)", "1/2 cucumber, diced (optional)", "1/4 tsp chaat masala", "Pinch of black salt (optional)"],
+      "steps": ["Gently combine sweet lime segments, diced apple (if using), and diced cucumber (if using) in a bowl.", "Sprinkle chaat masala and black salt (if using) over the fruits.", "Toss gently to coat.", "Serve immediately or chilled."]
+    }
+  ]
+}

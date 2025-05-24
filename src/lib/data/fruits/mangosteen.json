@@ -1,0 +1,63 @@
+{
+  "id": "mangosteen",
+  "commonName": "Mangosteen",
+  "scientificName": "Garcinia mangostana",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/800px-Sweet_mangosteen.jpg",
+  "description": "A tropical evergreen tree believed to have originated in the Sunda Islands and the Moluccas of Indonesia. It grows mainly in Southeast Asia, southwest India and other tropical areas such as Colombia, Puerto Rico and Florida. The fruit is sweet and tangy, juicy, somewhat fibrous, with fluid-filled vesicles (like citrus fruit), with an inedible, deep reddish-purple rind when ripe.",
+  "origin": "Sunda Islands and Moluccas (Indonesia)",
+  "localNames": ["Manggis (Malay/Indonesian)", "Mangkhut (Thai)", "Queen of Fruits"],
+  "regions": ["Thailand", "Malaysia", "Indonesia", "Philippines", "India", "Sri Lanka", "Vietnam"],
+  "seasons": ["Varies by region, typically a main season in summer/rainy season"],
+  "nutrition": {
+    "calories": "73 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 18, "unit": "g" },
+      { "name": "Fat", "value": 0.6, "unit": "g" },
+      { "name": "Fiber", "value": 1.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 2.9, "unit": "mg", "rdi": "5%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.102, "unit": "mg", "rdi": "5%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, particularly xanthones found in the rind and fruit.",
+    "May have anti-inflammatory, anti-cancer, and anti-aging properties.",
+    "Supports immune function.",
+    "Traditionally used for various medicinal purposes in Southeast Asia."
+  ],
+  "potentialAllergies": [
+    { "name": "Mangosteen Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Strictly tropical, requires high humidity, warm temperatures (cannot tolerate below 40°F/4°C or above 100°F/38°C), and ample rainfall.\n2. Soil: Deep, rich, well-drained organic soil. Slightly acidic pH.\n3. Propagation: Very slow growing from seeds. Grafting is difficult. Usually propagated by seedlings.\n4. Planting: Plant in a location with partial shade when young, moving to more sun as it matures. Protect from strong winds.\n5. Watering: Requires consistent moisture and high humidity. Cannot tolerate drought.\n6. Fertilizing: Regular application of organic matter and balanced fertilizer.\n7. Harvesting: Fruits are harvested when the rind turns deep purple and yields slightly to pressure. They are picked by hand. The number of lobes at the bottom of the fruit corresponds to the number of fleshy segments inside.",
+  "growthDuration": "Very slow-growing trees, may take 7-10 years or more to bear first fruit from seed. Fruits mature 5-6 months after flowering.",
+  "sustainabilityTips": [
+    "Mangosteens are highly perishable once ripe. Store at room temperature if consuming soon, or refrigerate for a few days.",
+    "The rind is inedible but is studied for its medicinal compounds.",
+    "Enjoy the delicate, sweet-tart segments fresh."
+  ],
+  "carbonFootprintInfo": "High, due to strict tropical growing conditions and often requiring air freight (can be 2.0-5.0 kg CO2e/kg or higher).",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Mangosteen",
+      "description": "The best way to enjoy the unique flavor of the 'Queen of Fruits'.",
+      "ingredients": ["1-2 ripe mangosteens"],
+      "steps": ["Select a mangosteen with a vibrant deep purple rind that yields slightly to pressure. The green cap and stem should look fresh.", "Wash the fruit.", "To open, gently make a shallow cut around the equator of the fruit with a small knife, being careful not to cut into the white flesh.", "Alternatively, hold the fruit firmly and twist the top and bottom halves in opposite directions until the rind cracks open.", "Carefully remove the top half of the rind. The white, juicy, segmented flesh will be revealed.", "Use a small fork or your fingers to scoop out the fleshy segments. Usually, one or two larger segments contain a seed, while smaller ones are seedless. The seeds are not eaten.", "Enjoy the sweet, tangy, and aromatic flesh immediately."]
+    },
+    {
+      "name": "Mangosteen and Lychee Salad",
+      "description": "A delightful tropical fruit salad combining two exquisite flavors.",
+      "ingredients": ["1 cup fresh mangosteen segments (from about 4-5 fruits)", "1 cup fresh lychees, peeled and seeded", "1 tbsp lime juice", "1 tsp honey or agave nectar (optional)", "A few fresh mint leaves, finely chopped"],
+      "steps": ["Carefully prepare the mangosteen segments and lychees.", "In a bowl, gently combine the mangosteen segments and lychees.", "In a small separate bowl, whisk together lime juice and honey/agave (if using).", "Drizzle the dressing over the fruits.", "Sprinkle with finely chopped mint leaves.", "Toss very gently and serve chilled."]
+    },
+    {
+      "name": "Mangosteen Sorbet",
+      "description": "A refreshing and exotic sorbet highlighting the unique taste of mangosteen.",
+      "ingredients": ["2 cups fresh mangosteen pulp (segments, seeds removed from larger ones)", "1/2 cup sugar", "1/2 cup water", "Juice of 1 lime"],
+      "steps": ["Make a simple syrup: In a small saucepan, combine sugar and water. Heat over medium heat, stirring, until the sugar is completely dissolved. Let it cool completely.", "If the mangosteen segments are large and have seeds, carefully remove any seeds.", "Combine the mangosteen pulp, cooled simple syrup, and lime juice in a blender or food processor.", "Blend until very smooth.", "Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions.", "If you don't have an ice cream maker, pour the mixture into a freezer-safe container. Freeze for 1-2 hours until partially frozen. Remove from freezer, beat with a hand mixer or whisk vigorously to break up ice crystals, then return to freezer. Repeat this process 2-3 times every hour until the sorbet is firm but scoopable.", "Serve immediately or store in an airtight container in the freezer."]
+    }
+  ]
+}

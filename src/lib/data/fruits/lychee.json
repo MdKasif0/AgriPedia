@@ -1,0 +1,64 @@
+{
+  "id": "lychee",
+  "commonName": "Lychee",
+  "scientificName": "Litchi chinensis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lychee_fruits_and_seed.jpg",
+  "description": "A tropical tree native to the Guangdong and Fujian provinces of southeastern China. The fruit is a drupe, with a rough, red rind and sweet, translucent white flesh.",
+  "origin": "Southeastern China",
+  "localNames": ["Lichi (Spanish)", "Litchi (French)", "Leechee"],
+  "regions": ["China", "India", "Thailand", "Vietnam", "Madagascar", "South Africa", "Australia", "United States (Florida, Hawaii)"],
+  "seasons": ["Early to Mid Summer"],
+  "nutrition": {
+    "calories": "66 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 17, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 1.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 71.5, "unit": "mg", "rdi": "119%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 171, "unit": "mg", "rdi": "5%" },
+      { "name": "Copper", "value": 0.148, "unit": "mg", "rdi": "16%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, an antioxidant that boosts immunity.",
+    "Contains oligonol, a polyphenol with antioxidant and anti-influenza virus activities.",
+    "Good source of copper, important for red blood cell formation and nerve function.",
+    "Provides B-complex vitamins like riboflavin and niacin."
+  ],
+  "potentialAllergies": [
+    { "name": "Lychee Allergy", "severity": "Rare", "details": "Uncommon, but can cause reactions like itching or hives in sensitive individuals." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to tropical, requiring warm, humid summers and cool, dry, frost-free winters for good fruit set.\n2. Soil: Prefers well-drained, slightly acidic (pH 5.5-6.5) soil rich in organic matter.\n3. Propagation: Usually by air layering (marcotting) for true-to-type fruit. Seeds can be grown but are unreliable.\n4. Planting: Plant in full sun with protection from strong winds.\n5. Watering: Requires regular and abundant watering, especially during flowering and fruit development. Do not let soil dry out completely.\n6. Fertilizing: Feed with a balanced fertilizer suitable for fruit trees, especially during active growth phases.\n7. Pruning: Prune after harvest to shape the tree and encourage new growth for the next season's fruit.\n8. Harvesting: Fruits are harvested in bunches when the skin turns bright red and the fruit is plump and fragrant. They do not ripen further after picking.",
+  "growthDuration": "Air-layered trees can start bearing fruit in 3-5 years. Fruit matures 60-100 days after flowering.",
+  "sustainabilityTips": [
+    "Store lychees in the refrigerator in a plastic bag; they lose quality quickly at room temperature.",
+    "Lychee skin is not edible; compost it.",
+    "Enjoy fresh during their short season; canned lychees are also available."
+  ],
+  "carbonFootprintInfo": "Can be high if air-freighted due to their perishability and short season (1.0-3.0 kg CO2e/kg or more).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Lychees",
+      "description": "The best way to enjoy the delicate flavor of lychees is fresh and chilled.",
+      "ingredients": ["1 lb fresh lychees"],
+      "steps": ["Wash lychees gently under cold water.", "To eat, gently peel away the rough red skin with your fingers or a small knife. The skin should come off easily if the fruit is ripe.", "The translucent white flesh is edible. There is a single, dark brown seed in the center which is not edible and should be discarded.", "Serve chilled for best flavor."]
+    },
+    {
+      "name": "Lychee Martini (or Mocktail)",
+      "description": "An elegant and fragrant cocktail showcasing the sweet taste of lychee.",
+      "ingredients": ["For Martini: 2 oz vodka or gin, 1 oz lychee liqueur or lychee syrup (from canned lychees), 1/2 oz dry vermouth (optional), 1-2 fresh or canned lychees for garnish", "For Mocktail: 3 oz lychee juice or puree, 1 oz lime juice, sparkling water or club soda to top, 1-2 lychees for garnish"],
+      "steps": ["For Martini: Chill a martini glass. Combine vodka/gin, lychee liqueur/syrup, and vermouth (if using) in a shaker with ice. Shake well until chilled. Strain into the chilled martini glass. Garnish with a lychee.", "For Mocktail: Fill a glass with ice. Add lychee juice/puree and lime juice. Stir. Top with sparkling water or club soda. Garnish with a lychee."]
+    },
+    {
+      "name": "Lychee and Coconut Panna Cotta",
+      "description": "A creamy Italian dessert with a tropical twist of lychee and coconut.",
+      "ingredients": ["1 can (13.5 oz) full-fat coconut milk", "1/2 cup heavy cream", "1/4 cup sugar", "1 tsp agar-agar powder (or 1 tbsp gelatin bloomed in 2 tbsp water)", "1 cup lychee pulp (fresh or canned, drained and pureed)", "1 tsp vanilla extract", "Fresh lychees and mint for garnish"],
+      "steps": ["In a saucepan, combine coconut milk, heavy cream, and sugar. Whisk in agar-agar powder (if using gelatin, bloom it first and add later).", "Bring the mixture to a gentle simmer over medium heat, whisking constantly until sugar and agar-agar are dissolved. Simmer for 2 minutes.", "Remove from heat. If using gelatin, stir it in now until dissolved.", "Stir in lychee pulp and vanilla extract.", "Pour the mixture into individual ramekins or a serving dish.", "Chill in the refrigerator for at least 4 hours, or until set.", "To serve, garnish with fresh lychee halves and mint leaves."]
+    }
+  ]
+}

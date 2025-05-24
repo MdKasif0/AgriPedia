@@ -1,0 +1,64 @@
+{
+  "id": "gooseberry",
+  "commonName": "Gooseberry",
+  "scientificName": "Ribes uva-crispa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Gooseberry.jpg",
+  "description": "A species of Ribes, native to Europe, northwestern Africa and southwestern Asia. It is one of several similar species in the subgenus Grossularia. The fruit is a berry, varying from green to red or purple, and can be tart or sweet depending on ripeness and variety.",
+  "origin": "Europe, Northwestern Africa, Southwestern Asia",
+  "localNames": ["Groseille à maquereau (French)", "Stachelbeere (German)", "Uva espina (Spanish)"],
+  "regions": ["United Kingdom", "Germany", "Poland", "Scandinavia", "North America"],
+  "seasons": ["Early to Mid Summer"],
+  "nutrition": {
+    "calories": "44 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 10.2, "unit": "g" },
+      { "name": "Fat", "value": 0.6, "unit": "g" },
+      { "name": "Fiber", "value": 4.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 27.7, "unit": "mg", "rdi": "46%" },
+      { "name": "Vitamin A", "value": 15, "unit": "µg RAE", "rdi": "2%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.144, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant supporting the immune system.",
+    "High in dietary fiber, aiding digestion and promoting gut health.",
+    "Contains various phytonutrients with antioxidant properties.",
+    "Low in calories."
+  ],
+  "potentialAllergies": [
+    { "name": "Gooseberry Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate, thrives in cool, moist conditions. Tolerates some shade.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Usually by hardwood cuttings.\n4. Planting: Plant bare-root bushes in late autumn to early spring.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Fertilizing: Apply well-rotted manure or balanced fertilizer in spring.\n7. Pruning: Prune in winter to maintain an open, goblet shape, removing old and crossing branches to encourage new fruiting wood.\n8. Harvesting: Berries can be picked slightly underripe (green) for cooking/tartness or when fully ripe (softer, sweeter, and colored according to variety) for eating fresh. Handle thorny varieties with care.",
+  "growthDuration": "Bushes can start fruiting in 1-3 years. Harvest in early to mid-summer.",
+  "sustainabilityTips": [
+    "Gooseberries are versatile: use for pies, crumbles, fools, jams, or eat fresh when ripe.",
+    "They freeze well.",
+    "Choose local varieties when in season."
+  ],
+  "carbonFootprintInfo": "Low to moderate, depending on local availability (0.4-0.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Gooseberry Fool",
+      "description": "A classic British dessert, creamy and tart-sweet.",
+      "ingredients": ["1 lb fresh gooseberries, topped and tailed", "1/4 cup granulated sugar (or to taste)", "2 tbsp water", "1 cup heavy whipping cream", "2 tbsp elderflower cordial (optional)"],
+      "steps": ["Combine gooseberries, sugar, and water in a saucepan. Cook over medium-low heat for 10-15 minutes, or until gooseberries are soft and have burst. Mash lightly.", "Let the gooseberry compote cool completely.", "In a chilled bowl, whip the heavy cream until soft peaks form. If using, fold in elderflower cordial.", "Gently fold the cooled gooseberry compote into the whipped cream, creating swirls. Do not overmix.", "Spoon into individual serving glasses and chill for at least 30 minutes before serving."]
+    },
+    {
+      "name": "Gooseberry Crumble",
+      "description": "A comforting dessert with tart gooseberries and a sweet, crunchy topping.",
+      "ingredients": ["For filling: 1.5 lbs gooseberries, topped and tailed", "1/2 cup granulated sugar", "1 tbsp cornstarch (optional, for thickening)", "For crumble: 1 cup all-purpose flour", "1/2 cup rolled oats", "1/2 cup brown sugar", "1/2 cup cold butter, cubed"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, toss gooseberries with sugar and cornstarch (if using). Transfer to an ovenproof dish.", "Crumble: In another bowl, combine flour, oats, and brown sugar. Rub in the cold butter with your fingertips until the mixture resembles coarse breadcrumbs.", "Sprinkle the crumble topping evenly over the gooseberries.", "Bake for 30-40 minutes, or until the topping is golden brown and the fruit is bubbling.", "Serve warm with custard, cream, or ice cream."]
+    },
+    {
+      "name": "Gooseberry Jam",
+      "description": "A tart and flavorful jam, excellent on toast or with scones.",
+      "ingredients": ["2 lbs gooseberries, topped and tailed", "2 lbs granulated sugar", "1/2 cup water"],
+      "steps": ["Combine gooseberries and water in a large, heavy-bottomed pot. Bring to a simmer and cook gently for 15-20 minutes, until the gooseberries are soft.", "Add the sugar to the pot. Stir over low heat until the sugar is completely dissolved.", "Increase heat and bring to a rolling boil. Boil rapidly for about 10-15 minutes, or until setting point is reached (test by dropping a little jam onto a cold saucer; if it wrinkles when pushed, it's ready).", "Skim off any scum from the surface.", "Ladle the hot jam into sterilized jars, seal, and label. Store in a cool, dark place."]
+    }
+  ]
+}

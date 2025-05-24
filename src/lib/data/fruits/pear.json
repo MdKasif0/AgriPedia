@@ -1,0 +1,64 @@
+{
+  "id": "pear",
+  "commonName": "Pear",
+  "scientificName": "Pyrus communis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Pears.jpg",
+  "description": "A sweet, bell-shaped fruit that has been enjoyed since ancient times. It can be eaten crisp or soft.",
+  "origin": "Central Asia and Europe",
+  "localNames": ["Pera (Spanish/Italian)", "Poire (French)", "Birne (German)"],
+  "regions": ["China", "United States", "Argentina", "Italy", "Turkey"],
+  "seasons": ["Late Summer", "Autumn", "Winter"],
+  "nutrition": {
+    "calories": "57 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 15, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 3.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 4.3, "unit": "mg", "rdi": "7%" },
+      { "name": "Vitamin K", "value": 4.4, "unit": "µg", "rdi": "6%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 116, "unit": "mg", "rdi": "3%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, promoting digestive health.",
+    "Contains antioxidants, including flavonoids.",
+    "May help reduce inflammation and risk of chronic diseases.",
+    "Hypoallergenic properties make it a good fruit for weaning babies."
+  ],
+  "potentialAllergies": [
+    { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Can occur in individuals allergic to birch pollen." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Require chilling hours for bud development.\n2. Soil: Deep, well-drained loamy soil. pH 6.0-7.0.\n3. Propagation: Usually by grafting specific varieties onto rootstock.\n4. Planting: Plant in full sun. Provide support for young trees.\n5. Watering: Regular watering, especially during dry spells and fruit development.\n6. Fertilizing: Apply balanced fertilizer in spring.\n7. Pruning: Prune to maintain shape, remove dead wood, and encourage fruiting spurs.\n8. Thinning: Thin young fruit to improve size and quality of remaining pears.",
+  "growthDuration": "Grafted trees start bearing fruit in 3-5 years. Fruit matures in late summer to autumn.",
+  "sustainabilityTips": [
+    "Store pears at room temperature to ripen; refrigerate ripe pears to slow further ripening.",
+    "Pears ripen from the inside out; check for ripeness near the stem.",
+    "Compost pear cores."
+  ],
+  "carbonFootprintInfo": "Moderate (0.4-0.8 kg CO2e/kg). Local and seasonal pears are best.",
+  "staticRecipes": [
+    {
+      "name": "Poached Pears in Spiced Syrup",
+      "description": "Elegant and flavorful poached pears, perfect as a dessert.",
+      "ingredients": ["4 firm ripe pears (e.g., Bosc or Anjou), peeled, halved, and cored", "3 cups water or red/white wine", "1 cup sugar", "1 cinnamon stick", "2-3 cloves", "1 star anise", "Peel of 1 lemon"],
+      "steps": ["In a saucepan large enough to hold pears in a single layer, combine water/wine, sugar, cinnamon stick, cloves, star anise, and lemon peel.", "Bring to a simmer over medium heat, stirring until sugar dissolves.", "Add pear halves to the simmering syrup. Ensure they are mostly submerged (add more water if needed).", "Reduce heat to low, cover, and simmer gently for 15-25 minutes, or until pears are tender when pierced with a knife. Cooking time varies with pear ripeness and variety.", "Carefully remove pears from syrup. If desired, boil the syrup for another 10-15 minutes to reduce and thicken it slightly.", "Serve pears warm or chilled, drizzled with the syrup. Great with yogurt or ice cream."]
+    },
+    {
+      "name": "Pear and Blue Cheese Salad",
+      "description": "A sophisticated salad balancing sweet pears, tangy blue cheese, and crunchy nuts.",
+      "ingredients": ["5 oz mixed greens (arugula, spinach)", "2 ripe pears, cored and thinly sliced", "1/2 cup crumbled blue cheese (Gorgonzola, Roquefort)", "1/4 cup toasted walnuts or pecans, chopped", "For dressing: 3 tbsp olive oil, 1 tbsp balsamic vinegar, 1 tsp Dijon mustard, 1 tsp honey, salt and pepper to taste"],
+      "steps": ["In a large salad bowl, combine mixed greens, sliced pears, crumbled blue cheese, and toasted nuts.", "In a small bowl, whisk together olive oil, balsamic vinegar, Dijon mustard, honey, salt, and pepper.", "Drizzle dressing over the salad and toss gently to combine.", "Serve immediately."]
+    },
+    {
+      "name": "Simple Pear Crisp",
+      "description": "A warm and comforting dessert with a sweet pear filling and a crispy oat topping.",
+      "ingredients": ["For filling: 5-6 ripe pears, peeled, cored, and sliced", "1/4 cup sugar", "1 tbsp lemon juice", "1/2 tsp cinnamon", "For topping: 3/4 cup all-purpose flour, 1/2 cup brown sugar, 1/2 tsp cinnamon, 1/4 cup cold butter (cubed), 1/2 cup rolled oats"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a bowl, toss sliced pears with sugar, lemon juice, and 1/2 tsp cinnamon. Transfer to a baking dish.", "Topping: In another bowl, combine flour, brown sugar, and 1/2 tsp cinnamon. Cut in butter until mixture resembles coarse crumbs. Stir in oats.", "Sprinkle topping evenly over the pears.", "Bake for 30-35 minutes, or until topping is golden and filling is bubbly. Let cool slightly before serving."]
+    }
+  ]
+}

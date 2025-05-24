@@ -1,0 +1,63 @@
+{
+  "id": "ash-gourd",
+  "commonName": "Ash Gourd",
+  "scientificName": "Benincasa hispida",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/India_Ash_Gourd.jpg",
+  "description": "A large fruit grown on a vine, also known as winter melon, wax gourd, or white pumpkin. It is typically round or oblong, with a smooth, waxy green skin that turns ash-colored when mature, and white, crisp flesh.",
+  "origin": "Southeast Asia (likely Java or Japan)",
+  "localNames": ["Petha (Hindi)", "Winter Melon", "Wax Gourd", "Dong Gua (Chinese)"],
+  "regions": ["India", "China", "Southeast Asia", "Japan"],
+  "seasons": ["Year-round in tropical climates, stores well"],
+  "nutrition": {
+    "calories": "13 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 3, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 2.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 13, "unit": "mg", "rdi": "22%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 19, "unit": "mg", "rdi": "2%" }
+    ]
+  },
+  "healthBenefits": [
+    "Very high in water content (about 96%), making it extremely hydrating and cooling.",
+    "Low in calories, beneficial for weight management.",
+    "Aids in digestion and has a mild laxative effect.",
+    "Traditionally used in Ayurvedic and Chinese medicine for its diuretic and detoxifying properties."
+  ],
+  "potentialAllergies": [
+    { "name": "Ash Gourd Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season vine. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. pH 6.0-6.8. Full sun.\n3. Support: Provide strong trellis or support, or allow to ramble on ground if space permits.\n4. Watering: Requires regular watering, especially during fruit development.\n5. Harvesting: Harvest when fruit is mature (indicated by waxy, ash-like coating on skin) but before it becomes too old. Can store for long periods.",
+  "growthDuration": "80-100 days from sowing to harvest.",
+  "sustainabilityTips": [
+      "Whole ash gourd can be stored for several months in a cool, dry place.",
+      "Cut portions should be refrigerated and used within a few days.",
+      "Often used in soups, stews, curries, and famously to make 'Petha' candy in India."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.3-0.6 kg CO2e/kg), especially if consumed locally.",
+  "staticRecipes": [
+    {
+      "name": "Ash Gourd Kootu (South Indian Stew)",
+      "description": "A mild and nutritious South Indian stew with ash gourd and lentils.",
+      "ingredients": ["1 cup ash gourd, peeled, seeded, and cubed", "1/4 cup moong dal or toor dal, cooked", "1/4 cup grated coconut", "1 tsp cumin seeds", "1-2 green chilies", "1/2 tsp turmeric powder", "Salt to taste", "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1 dried red chili, few curry leaves, pinch of asafoetida"],
+      "steps": ["Cook cubed ash gourd with a little water and turmeric powder until tender. Drain any excess water.", "Grind coconut, cumin seeds, and green chilies to a smooth paste with a little water.", "Add cooked dal and ground coconut paste to the cooked ash gourd. Add salt. Mix well.", "Simmer for 5-7 minutes, stirring occasionally, until flavors blend and the kootu thickens slightly.", "Tempering: Heat oil. Add mustard seeds; when they splutter, add dried red chili, asafoetida and curry leaves. Pour over the kootu. Mix and serve hot with rice."]
+    },
+    {
+      "name": "Petha (Agra Petha - Simplified Homemade)",
+      "description": "A translucent soft candy from North India made from ash gourd.",
+      "ingredients": ["2 cups ash gourd, peeled, seeded, and cubed (firm pieces)", "1 cup sugar", "1 cup water", "1/4 tsp alum powder (phitkari) - optional, for firmness", "Few drops of rose water or kewra essence (optional)"],
+      "steps": ["If using alum, dissolve it in water and soak ash gourd cubes for 1-2 hours. Rinse thoroughly. (This step makes petha firmer).", "Prick the ash gourd pieces all over with a fork.", "In a saucepan, combine sugar and water. Bring to a boil to make a sugar syrup. Cook until it reaches a one-string consistency.", "Add the ash gourd pieces to the sugar syrup. Cook on low heat, stirring gently, until the pieces become translucent and the syrup thickens further (about 30-45 minutes).", "Remove from heat. Add rose water or kewra essence if using.", "Let it cool completely. The petha pieces can be separated and air-dried slightly on a rack if desired for a less sticky finish. Store in an airtight container."]
+    },
+    {
+      "name": "Ash Gourd Juice",
+      "description": "A cooling and detoxifying juice.",
+      "ingredients": ["1 cup ash gourd, peeled, seeded, and chopped", "1/2 cup water", "Pinch of black salt (optional)", "1 tsp lime juice (optional)", "Few mint leaves (optional)"],
+      "steps": ["Combine chopped ash gourd and water in a blender.", "Blend until smooth.", "Strain the juice through a fine-mesh sieve or cheesecloth.", "Stir in black salt, lime juice, and mint leaves if using.", "Serve immediately, chilled for best results."]
+    }
+  ]
+}

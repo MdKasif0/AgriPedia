@@ -1,0 +1,64 @@
+{
+  "id": "rambutan",
+  "commonName": "Rambutan",
+  "scientificName": "Nephelium lappaceum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Rambutans_with_seed.jpg",
+  "description": "A medium-sized tropical tree in the family Sapindaceae. The name also refers to the edible fruit produced by this tree. The rambutan is native to Southeast Asia. It is closely related to other edible tropical fruits including the lychee, longan, and pulasan. The fruit has a leathery red skin covered with fleshy pliable spines, hence the name, which means 'hairs'.",
+  "origin": "Southeast Asia (Malaysia, Indonesia)",
+  "localNames": ["Chom Chom (Vietnamese)", "Ngo (Thai)"],
+  "regions": ["Thailand", "Malaysia", "Indonesia", "Vietnam", "Philippines", "Sri Lanka"],
+  "seasons": ["Mainly June to August, with a smaller season December to February"],
+  "nutrition": {
+    "calories": "82 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 20.9, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 0.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 4.9, "unit": "mg", "rdi": "8%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.343, "unit": "mg", "rdi": "17%" },
+      { "name": "Copper", "value": 0.066, "unit": "mg", "rdi": "7%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, which aids in immune function.",
+    "Contains copper and manganese, important for bone health and metabolism.",
+    "Provides dietary fiber, aiding digestion.",
+    "Rich in antioxidants that help fight free radicals."
+  ],
+  "potentialAllergies": [
+    { "name": "Rambutan Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, requires high humidity and warm temperatures, cannot tolerate frost.\n2. Soil: Deep, well-drained loamy soil rich in organic matter. Slightly acidic to neutral pH.\n3. Propagation: Seeds (though fruit quality may vary) or more commonly by budding or grafting for commercial varieties.\n4. Planting: Plant in full sun to partial shade with protection from strong winds.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Fertilizing: Regular application of balanced fertilizer.\n7. Harvesting: Fruits are harvested in clusters when they turn bright red or yellow (depending on variety) and the spines are well-developed. They are picked by hand.",
+  "growthDuration": "Trees may start bearing fruit in 3-5 years. Fruits mature about 100-120 days after flowering.",
+  "sustainabilityTips": [
+    "Store fresh rambutans at room temperature for a day or two, or in the refrigerator for up to a week.",
+    "The leathery skin is not edible; compost it.",
+    "The single seed is also typically not eaten, though some varieties have edible seeds when cooked."
+  ],
+  "carbonFootprintInfo": "Moderate to high if air-freighted from tropical regions (0.9-2.2 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Rambutan",
+      "description": "The best way to enjoy the sweet, grape-like flesh of rambutan.",
+      "ingredients": ["A bunch of fresh rambutans"],
+      "steps": ["Wash the rambutans.", "To open, make a shallow cut around the middle of the fruit with a knife, or use your thumbs to pry the skin open if it's soft enough.", "Peel away one half of the leathery skin. The translucent white flesh will be exposed.", "Pop the fleshy fruit into your mouth and eat around the seed. The seed is usually not eaten, although some varieties have edible seeds when cooked.", "Discard the skin and seed."]
+    },
+    {
+      "name": "Rambutan and Lychee Salad",
+      "description": "A refreshing tropical fruit salad with similar textures and flavors.",
+      "ingredients": ["1 cup fresh rambutan flesh (peeled and seeded)", "1 cup fresh lychees (peeled and seeded)", "1 tbsp lime juice", "1 tsp honey (optional)", "A few mint leaves, chiffonade"],
+      "steps": ["Gently combine the rambutan flesh and lychee flesh in a bowl.", "Drizzle with lime juice and honey (if using).", "Sprinkle with mint chiffonade.", "Toss gently and serve chilled."]
+    },
+    {
+      "name": "Rambutan Infused Water",
+      "description": "A subtly sweet and refreshing infused water.",
+      "ingredients": ["5-6 rambutans, peeled (flesh can be slightly broken)", "1 liter cold water", "Optional: a slice of lime or a few mint sprigs"],
+      "steps": ["Peel the rambutans. You can leave the flesh whole or gently break it to release more flavor.", "Add the rambutan flesh to a pitcher with cold water.", "Add lime slices or mint sprigs if desired.", "Refrigerate for at least 2-4 hours to allow the flavors to infuse.", "Serve chilled."]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "curry-leaves",
+  "commonName": "Curry Leaves",
+  "scientificName": "Murraya koenigii",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-yE609BPe2Sp5UBktfq-aGQXr0oUlc6xu4V_6V0LMuw&s",
+  "description": "The leaves of the curry tree, which is a tropical to sub-tropical tree in the family Rutaceae. The leaves are highly aromatic and are used as a herb in South Indian and Sri Lankan cuisine, among others.",
+  "origin": "Indian subcontinent",
+  "localNames": ["Kadi Patta (Hindi)", "Kariveppilai (Tamil)", "Sweet Neem Leaves"],
+  "regions": ["India", "Sri Lanka", "Southeast Asia", "Australia (introduced)"],
+  "seasons": ["Year-round in tropical climates"],
+  "nutrition": {
+    "calories": "108 kcal per 100g (fresh leaves, estimated)",
+    "macronutrients": [
+      { "name": "Protein", "value": 6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 18.7, "unit": "g" },
+      { "name": "Fat", "value": 1, "unit": "g" },
+      { "name": "Fiber", "value": 6.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": 378, "unit": "µg RAE", "rdi": "42%" },
+      { "name": "Vitamin C", "value": 4, "unit": "mg", "rdi": "7%" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": 830, "unit": "mg", "rdi": "83%" },
+      { "name": "Iron", "value": 7, "unit": "mg", "rdi": "39%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, including carbazole alkaloids.",
+    "Traditionally used to aid digestion, manage diabetes, and improve hair health.",
+    "May have anti-inflammatory and liver-protective properties.",
+    "Good source of iron and calcium."
+  ],
+  "potentialAllergies": [
+    { "name": "Curry Leaf Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Can be grown from seeds or saplings. Prefers a sunny location.\n2. Soil: Well-drained, fertile soil. Tolerates a range of soil types. pH 5.5-7.5.\n3. Watering: Water regularly, especially when young. Established plants are somewhat drought-tolerant.\n4. Harvesting: Pick fresh leaves as needed. Regular picking encourages new growth. Can be grown in pots.",
+  "growthDuration": "Leaves can be harvested throughout the year once the plant is established.",
+  "sustainabilityTips": [
+      "Fresh curry leaves can be stored in the refrigerator for 1-2 weeks (wrapped in paper towel or in an airtight container).",
+      "They can also be dried or frozen, though fresh leaves have the best aroma.",
+      "Typically added to hot oil during tempering (tadka) to release their flavor into dishes."
+  ],
+  "carbonFootprintInfo": "Very low, especially if home-grown or sourced locally (0.1-0.3 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Tempering with Curry Leaves (Tadka/Thaalithal)",
+      "description": "The most common use of curry leaves, adding aromatic flavor to various Indian dishes.",
+      "ingredients": ["1-2 tbsp oil or ghee", "1/2 tsp mustard seeds", "1/2 tsp cumin seeds (optional)", "1-2 dried red chilies, broken (optional)", "8-10 fresh curry leaves", "Pinch of asafoetida (hing, optional)"],
+      "steps": ["Heat oil or ghee in a small pan or tadka pan over medium heat.", "Once the oil is hot, add mustard seeds. Wait for them to splutter (pop).", "If using, add cumin seeds and let them sizzle for a few seconds.", "Add broken dried red chilies (if using) and asafoetida (if using). Sauté briefly.", "Carefully add fresh curry leaves. They will crackle and release their aroma. Stand back as they might splatter.", "Sauté for a few seconds more until curry leaves are crisp. Immediately pour this tempering over your prepared dal, curry, chutney, yogurt dish (raita), or rice dish.", "This tempering adds a burst of flavor and aroma."]
+    },
+    {
+      "name": "Curry Leaf Powder (Karuveppilai Podi)",
+      "description": "A flavorful South Indian spice powder made with roasted curry leaves and lentils, served with rice, idli, or dosa.",
+      "ingredients": ["1 cup fresh curry leaves, washed and patted dry", "2 tbsp chana dal (split chickpeas)", "2 tbsp urad dal (split black lentils)", "4-6 dried red chilies (adjust to spice preference)", "1 tbsp coriander seeds", "1/2 tsp asafoetida powder (hing)", "Salt to taste", "1 tsp oil (optional, for roasting)"],
+      "steps": ["Dry roast curry leaves on low heat until they become crisp and aromatic. Set aside to cool.", "In the same pan (add 1 tsp oil if desired, or dry roast), roast chana dal, urad dal, dried red chilies, and coriander seeds separately on low heat until they turn golden brown and aromatic. Be careful not to burn them.", "Let all roasted ingredients cool completely.", "In a spice grinder or blender, combine roasted curry leaves, roasted dals, chilies, coriander seeds, asafoetida powder, and salt.", "Grind to a slightly coarse or fine powder, according to your preference.", "Store the curry leaf powder in an airtight container. Serve mixed with ghee or sesame oil alongside rice, idli, or dosa."]
+    },
+    {
+      "name": "Curry Leaf Infused Oil",
+      "description": "An aromatic oil that can be used for cooking or as a finishing oil.",
+      "ingredients": ["1 cup coconut oil or other neutral cooking oil", "1/2 cup fresh curry leaves, washed and thoroughly dried"],
+      "steps": ["Ensure curry leaves are completely dry to prevent splattering.", "Gently heat the oil in a small saucepan over low heat. Do not let it smoke.", "Add the dry curry leaves to the warm oil.", "Continue to heat on very low heat for 10-15 minutes, allowing the curry leaves to infuse their flavor into the oil. The leaves will become crisp.", "Remove from heat and let the oil cool completely with the leaves in it.", "Strain the oil through a fine-mesh sieve or cheesecloth into a clean, dry glass bottle.", "Store in a cool, dark place. Use for tempering, stir-frying, or as a flavorful drizzle."]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "langsat",
+  "commonName": "Langsat (Lanzones)",
+  "scientificName": "Lansium domesticum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Lanzones.jpg/800px-Lanzones.jpg",
+  "description": "A species of tree in the Mahogany family. The plant, which originates from western Southeast Asia, bears edible fruit. The fruit is small, ovoid or round, with a thin, leathery yellowish or brownish skin. Inside, the fruit is divided into translucent, juicy segments, some of which may contain a bitter green seed.",
+  "origin": "Western Southeast Asia (Malay Peninsula, Sumatra, Borneo)",
+  "localNames": ["Lanzones (Philippines)", "Longkong/Duku (varieties in Thailand/Malaysia/Indonesia)"],
+  "regions": ["Thailand", "Malaysia", "Indonesia", "Philippines", "Vietnam", "India"],
+  "seasons": ["Varies by region, typically August to October"],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1, "unit": "g" },
+      { "name": "Carbohydrates", "value": 14.2, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 0.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 1, "unit": "mg", "rdi": "2%" },
+      { "name": "Riboflavin (B2)", "value": 0.124, "unit": "mg", "rdi": "9%" }
+    ],
+    "minerals": [
+      { "name": "Phosphorus", "value": 31, "unit": "mg", "rdi": "4%" }
+    ]
+  },
+  "healthBenefits": [
+    "Source of carbohydrates for energy.",
+    "Contains some B vitamins.",
+    "Provides dietary fiber.",
+    "Traditional uses in Southeast Asian medicine for various ailments."
+  ],
+  "potentialAllergies": [
+    { "name": "Langsat Allergy", "severity": "Rare", "details": "Allergies are uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, requires high humidity, warm temperatures, and ample rainfall.\n2. Soil: Prefers deep, fertile, well-drained loamy soil rich in organic matter.\n3. Propagation: Seeds (slow to fruit) or grafting/marcotting for superior varieties.\n4. Planting: Plant in partial shade when young, gradually exposing to more sun.\n5. Watering: Requires consistent moisture, especially during fruit development.\n6. Harvesting: Fruits are harvested in clusters when the skin turns yellowish-brown and they are slightly soft. They are picked by hand.",
+  "growthDuration": "Seedling trees may take 10-15 years to fruit. Grafted trees much sooner (5-7 years).",
+  "sustainabilityTips": [
+    "Langsat is typically eaten fresh. The skin is peeled to reveal the juicy segments.",
+    "Be careful of the bitter green seeds found in some segments; try not to bite into them.",
+    "Store at room temperature and consume within a few days as they are perishable."
+  ],
+  "carbonFootprintInfo": "Moderate to high if transported from Southeast Asia (0.9-2.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Langsat (Lanzones)",
+      "description": "The primary way to enjoy this sweet and slightly tangy fruit.",
+      "ingredients": ["A cluster of fresh Langsat/Lanzones"],
+      "steps": ["Wash the langsat fruits.", "To open, gently pinch or twist the fruit near the stem end, or make a small slit with your fingernail. The leathery skin should break easily.", "Peel away the skin to reveal the translucent, juicy segments (similar to a small peeled garlic clove in appearance).", "Carefully separate the segments. Eat the fleshy segments, being mindful that some larger segments may contain a bitter green seed. Try to eat around the seed or spit it out if bitten.", "The flavor is sweet with a hint of tartness."]
+    },
+    {
+      "name": "Langsat Syrup or Preserve",
+      "description": "A way to preserve the fruit's flavor, though less common than eating fresh.",
+      "ingredients": ["2 cups Langsat segments (seeds removed from segments that have them)", "1 cup sugar", "1/2 cup water", "Juice of 1/2 lime"],
+      "steps": ["Carefully peel and remove seeds from the langsat segments. This can be tedious for some varieties.", "In a saucepan, combine langsat segments, sugar, water, and lime juice.", "Bring to a gentle simmer over medium-low heat. Cook for 15-20 minutes, stirring occasionally, until the fruits are tender and the syrup has slightly thickened.", "Let it cool. The syrup can be used over desserts or diluted to make a drink. The preserved fruits can be eaten as well.", "Store in a sterilized jar in the refrigerator."]
+    },
+    {
+      "name": "Langsat in Fruit Salad",
+      "description": "Adding a unique tropical flavor to a mixed fruit salad.",
+      "ingredients": ["1 cup Langsat segments (seeds removed)", "1 cup mixed tropical fruits (e.g., pineapple, mango, papaya, rambutan)", "1 tbsp honey or a light syrup (optional)", "A few mint leaves for garnish"],
+      "steps": ["Prepare all fruits: peel, seed, and chop as necessary.", "In a large bowl, gently combine the langsat segments with the other mixed tropical fruits.", "If desired, drizzle with a little honey or light syrup for added sweetness.", "Garnish with fresh mint leaves. Serve chilled."]
+    }
+  ]
+}

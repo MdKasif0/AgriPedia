@@ -1,0 +1,63 @@
+{
+  "id": "kokum",
+  "commonName": "Kokum",
+  "scientificName": "Garcinia indica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Kokumfruitsdried.jpg",
+  "description": "A fruit-bearing tree that has culinary, pharmaceutical, and industrial uses. The fruit is small, round, and dark purple when ripe. The outer cover is dried and used as a souring agent.",
+  "origin": "Western Ghats region of India",
+  "localNames": ["Amsol (Marathi/Konkani)", "Brinda (Konkani)", "Murugala Hannu (Kannada)"],
+  "regions": ["Western Ghats of India (Maharashtra, Goa, Karnataka, Kerala)"],
+  "seasons": ["Summer (April-May for fresh fruit, dried available year-round)"],
+  "nutrition": {
+    "calories": "60 kcal per 100g (fresh fruit, estimated)",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.5, "unit": "g" },
+      { "name": "Carbohydrates", "value": 14.3, "unit": "g" },
+      { "name": "Fat", "value": 0.1, "unit": "g" },
+      { "name": "Fiber", "value": 1.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 5, "unit": "mg", "rdi": "8%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 170, "unit": "mg", "rdi": "5%" }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used as an antacid and to improve digestion.",
+    "Rich in antioxidants, including garcinol and anthocyanins.",
+    "May have anti-inflammatory and anti-allergic properties.",
+    "Kokum butter (from seeds) is used as a moisturizer."
+  ],
+  "potentialAllergies": [
+    { "name": "Kokum Allergy", "severity": "Rare", "details": "Allergies are very uncommon." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, prefers warm and humid conditions with well-distributed rainfall.\n2. Soil: Grows well in lateritic, alluvial, or sandy loam soils with good drainage.\n3. Propagation: Seeds or grafting.\n4. Planting: Plant in partial shade when young, moving to full sun as it matures.\n5. Watering: Regular watering for young plants. Mature trees are somewhat drought-tolerant.\n6. Fertilizing: Responds well to organic manure.\n7. Harvesting: Fruits are harvested when they turn deep purple. The rind is then typically dried.",
+  "growthDuration": "Trees start bearing fruit in 7-10 years. Fruits ripen in summer.",
+  "sustainabilityTips": [
+    "Dried kokum rind (amsol) has a long shelf life and is a staple souring agent in coastal Indian cuisine.",
+    "Kokum sherbet is a popular cooling drink.",
+    "Kokum butter is a sustainable alternative to cocoa butter in cosmetics."
+  ],
+  "carbonFootprintInfo": "Low, as it's primarily consumed locally or in dried form which is light to transport (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Kokum Sherbet (Sol Kadi Base)",
+      "description": "A refreshing and tangy drink made from dried kokum, often used as a base for Sol Kadi.",
+      "ingredients": ["1/2 cup dried Kokum rinds (Amsol)", "2 cups warm water", "1/4 cup sugar or jaggery (or to taste)", "1/2 tsp roasted cumin powder", "Pinch of black salt"],
+      "steps": ["Soak dried kokum rinds in 2 cups of warm water for about 1-2 hours. This helps soften them and extract the color and flavor.", "After soaking, squeeze the kokum rinds well in the water to release all their essence. The water will turn deep pink/purple.", "Strain the liquid through a fine-mesh sieve into a pitcher, pressing the rinds to extract maximum juice. Discard the rinds.", "Add sugar or jaggery to the kokum extract and stir until completely dissolved.", "Stir in roasted cumin powder and black salt.", "Chill thoroughly. Serve as a refreshing drink or use as a base for Sol Kadi (by adding coconut milk and spices)."]
+    },
+    {
+      "name": "Using Dried Kokum (Amsol) in Curries",
+      "description": "Dried kokum is used as a souring agent in many coastal Indian curries and dals.",
+      "ingredients": ["3-4 pieces of dried Kokum rind (Amsol)", "Your curry or dal preparation"],
+      "steps": ["Rinse the dried kokum pieces briefly.", "Add the kokum pieces to your curry or dal while it's simmering. They will release their tartness and a beautiful pinkish hue to the dish.", "The amount to use depends on the desired level of sourness and the quantity of the dish. Start with a few pieces and add more if needed.", "Remove the kokum pieces before serving, or leave them in if preferred (they are edible but mainly used for flavor)."]
+    },
+    {
+      "name": "Kokum Infused Water",
+      "description": "A simple digestive aid and cooling drink.",
+      "ingredients": ["4-5 pieces of dried Kokum rind (Amsol)", "1 liter water", "Optional: pinch of black salt, a few mint leaves"],
+      "steps": ["Rinse the dried kokum pieces.", "Add them to a bottle or jar with 1 liter of water.", "Let it infuse for at least 2-3 hours at room temperature, or overnight in the refrigerator.", "The water will turn a light pink and acquire a tangy flavor.", "Strain if desired. Add black salt or mint leaves for extra flavor.", "Drink throughout the day as a cooling and digestive beverage."]
+    }
+  ]
+}

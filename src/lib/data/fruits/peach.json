@@ -1,0 +1,66 @@
+{
+  "id": "peach",
+  "commonName": "Peach",
+  "scientificName": "Prunus persica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
+  "description": "A deciduous tree native to Northwest China. It bears an edible juicy fruit also called a peach or a nectarine (nectarines are a variety of peach that lack fuzz).",
+  "origin": "Northwest China",
+  "localNames": ["Melocotón (Spanish)", "Pêche (French)", "Pfirsich (German)"],
+  "regions": ["China", "Spain", "Italy", "United States (California, Georgia, South Carolina)", "Greece", "Turkey"],
+  "seasons": ["Summer"],
+  "nutrition": {
+    "calories": "39 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 0.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.5, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 1.5, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 6.6, "unit": "mg", "rdi": "11%" },
+      { "name": "Vitamin A (from carotenoids)", "value": 16, "unit": "µg RAE", "rdi": "2%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 190, "unit": "mg", "rdi": "5%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, supporting immune function.",
+    "Contains antioxidants that can help protect cells from damage.",
+    "Provides dietary fiber, which aids in digestion.",
+    "May contribute to skin health due to vitamin content."
+  ],
+  "potentialAllergies": [
+    { "name": "Oral Allergy Syndrome (OAS)", "severity": "Mild", "details": "Often linked to birch pollen allergy. Symptoms include itching or swelling of the mouth, lips, and throat." },
+    { "name": "Peach Fuzz Sensitivity", "severity": "Mild", "details": "Some people find the fuzz on peach skin irritating, though it's not a true allergy. Nectarines are a fuzz-free alternative."}
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill hours for bud break, followed by warm summers for fruit ripening. Protect from late spring frosts.\n2. Soil: Well-drained, sandy loam soil with good organic content. pH 6.0-7.0.\n3. Propagation: Usually grafted onto rootstock to ensure variety characteristics and disease resistance.\n4. Planting: Plant bare-root trees in late winter or early spring. Container-grown trees can be planted more flexibly. Full sun is essential.\n5. Watering: Regular, deep watering, especially during fruit development and dry spells. Avoid waterlogged soil.\n6. Fertilizing: Apply balanced fertilizer in early spring and possibly again in early summer.\n7. Pruning: Prune annually during dormancy to maintain an open center or vase shape, remove dead/diseased wood, and encourage fruit production on one-year-old wood.\n8. Thinning: Thin young fruits to 6-8 inches apart to ensure larger, higher-quality mature fruits.\n9. Harvesting: Peaches are harvested when they reach full color (yellow/red, depending on variety), soften slightly, and have a sweet aroma. They are typically picked by hand.",
+  "growthDuration": "Grafted trees can start bearing fruit in 2-4 years. Fruits mature 3-5 months after flowering.",
+  "sustainabilityTips": [
+    "Store unripe peaches at room temperature. Once ripe, they can be refrigerated for a few days.",
+    "Peaches bruise easily; handle with care.",
+    "Freeze sliced peaches for later use in smoothies, pies, or cobblers.",
+    "Compost peach pits."
+  ],
+  "carbonFootprintInfo": "Moderate. Locally grown peaches in season have a lower footprint (0.4-0.8 kg CO2e/kg). Transport significantly increases this.",
+  "staticRecipes": [
+    {
+      "name": "Classic Peach Cobbler",
+      "description": "A warm and comforting dessert with sweet, juicy peaches and a buttery biscuit topping.",
+      "ingredients": ["For filling: 5-6 ripe peaches, peeled, pitted, and sliced", "1/4 cup granulated sugar", "1 tbsp lemon juice", "1/4 tsp cinnamon", "For topping: 1 cup all-purpose flour, 1/4 cup granulated sugar, 1 tsp baking powder, 1/4 tsp salt, 1/4 cup cold butter (cubed), 1/4 cup milk", "1 tbsp melted butter for brushing (optional)"],
+      "steps": ["Preheat oven to 375°F (190°C).", "Filling: In a large bowl, gently toss sliced peaches with sugar, lemon juice, and cinnamon. Pour into a 9x9 inch baking dish or similar.", "Topping: In another bowl, whisk together flour, sugar, baking powder, and salt. Cut in cold butter until mixture resembles coarse crumbs. Stir in milk until just combined.", "Drop spoonfuls of the topping mixture over the peaches.", "If desired, brush the topping with melted butter.", "Bake for 30-40 minutes, or until the topping is golden brown and the peach filling is bubbly. Let cool slightly before serving warm, perhaps with vanilla ice cream."]
+    },
+    {
+      "name": "Grilled Peaches with Honey and Yogurt",
+      "description": "Grilling brings out the sweetness of peaches, perfect for a light dessert or breakfast.",
+      "ingredients": ["2-3 ripe but firm peaches, halved and pitted", "1 tbsp olive oil or melted butter", "2 tbsp honey or maple syrup", "1 cup plain Greek yogurt", "Chopped nuts or granola for topping (optional)"],
+      "steps": ["Preheat grill to medium heat. Clean and lightly oil the grates.", "Brush the cut sides of the peach halves with olive oil or melted butter.", "Place peaches cut-side down on the grill. Grill for 3-5 minutes per side, or until they have nice grill marks and are slightly softened.", "Remove peaches from the grill. Serve warm topped with a dollop of Greek yogurt, a drizzle of honey or maple syrup, and a sprinkle of nuts or granola if desired."]
+    },
+    {
+      "name": "Fresh Peach Salsa",
+      "description": "A sweet and savory salsa, great with grilled chicken, fish, or tortilla chips.",
+      "ingredients": ["2 ripe peaches, peeled, pitted, and diced", "1/2 red bell pepper, diced", "1/4 red onion, finely chopped", "1 jalapeño, minced (optional, seeds removed for less heat)", "1/4 cup chopped fresh cilantro", "Juice of 1 lime", "Salt and pepper to taste"],
+      "steps": ["In a medium bowl, combine diced peaches, red bell pepper, red onion, jalapeño (if using), and cilantro.", "Add lime juice and season with salt and pepper to taste.", "Stir gently to combine all ingredients.", "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld before serving."]
+    }
+  ]
+}

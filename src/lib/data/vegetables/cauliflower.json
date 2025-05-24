@@ -1,0 +1,66 @@
+{
+  "id": "cauliflower",
+  "commonName": "Cauliflower",
+  "scientificName": "Brassica oleracea var. botrytis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Cauliflower.jpg",
+  "description": "One of several vegetables in the species Brassica oleracea in the genus Brassica, which is in the Brassicaceae (or mustard) family. It is an annual plant that reproduces by seed. Typically, only the head (the white curd) is eaten.",
+  "origin": "Northeast Mediterranean (Cyprus region)",
+  "localNames": ["Coliflor (Spanish)", "Chou-fleur (French)", "Blumenkohl (German)", "Phool Gobhi (Hindi)"],
+  "regions": ["China", "India", "United States", "Spain", "Italy"],
+  "seasons": ["Autumn", "Winter", "Spring"],
+  "nutrition": {
+    "calories": "25 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 5, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 2, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 48.2, "unit": "mg", "rdi": "80%" },
+      { "name": "Vitamin K", "value": 15.5, "unit": "µg", "rdi": "19%" },
+      { "name": "Folate", "value": 57, "unit": "µg", "rdi": "14%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 299, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, an antioxidant that supports immune function.",
+    "Good source of Vitamin K and folate.",
+    "Contains glucosinolates, which may have anti-cancer properties.",
+    "High in fiber, aiding digestion and promoting satiety."
+  ],
+  "potentialAllergies": [
+    { "name": "Brassica Sensitivity", "severity": "Mild", "details": "Like other cruciferous vegetables, can cause gas and bloating in some individuals." },
+    { "name": "Goitrogens", "severity": "Mild", "details": "Contains goitrogens, which may affect thyroid function in those with thyroid conditions if consumed raw in very large amounts."}
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Start seeds indoors or sow directly for spring or fall harvest.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0.\n3. Blanching: For white varieties, tie outer leaves over the developing head when it's 2-3 inches across to keep it white and tender.\n4. Watering: Consistent moisture is essential.\n5. Harvesting: Harvest when heads are firm, compact, and desired size (usually 6-8 inches). Cut the head with a few surrounding leaves.",
+  "growthDuration": "50-100 days from transplanting, depending on variety.",
+  "sustainabilityTips": [
+      "Store cauliflower heads stem-up in the refrigerator for up to two weeks.",
+      "Use the core and leaves in stocks or roast them; they are edible.",
+      "Cauliflower can be riced as a low-carb alternative to grains."
+  ],
+  "carbonFootprintInfo": "Relatively low, around 0.4-0.7 kg CO2e/kg for field-grown cauliflower.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Cauliflower with Turmeric and Cumin",
+      "description": "Roasting cauliflower brings out its sweetness, enhanced by warm spices.",
+      "ingredients": ["1 medium head of cauliflower, cut into florets", "2 tbsp olive oil", "1 tsp ground cumin", "1/2 tsp ground turmeric", "Salt and pepper to taste"],
+      "steps": ["Preheat oven to 400°F (200°C).", "In a large bowl, toss cauliflower florets with olive oil, cumin, turmeric, salt, and pepper until evenly coated.", "Spread the cauliflower in a single layer on a baking sheet.", "Roast for 20-25 minutes, flipping halfway, until tender and lightly caramelized with crispy edges.", "Serve hot as a side dish."]
+    },
+    {
+      "name": "Creamy Cauliflower Mash",
+      "description": "A lower-carb alternative to mashed potatoes, creamy and delicious.",
+      "ingredients": ["1 large head of cauliflower, cut into florets", "2-3 cloves garlic, peeled (optional)", "2 tbsp butter or olive oil", "1/4 cup milk, cream, or unsweetened almond milk", "Salt and pepper to taste", "Chopped chives or parsley for garnish (optional)"],
+      "steps": ["Steam or boil cauliflower florets (and garlic cloves, if using) until very tender, about 10-15 minutes. Drain thoroughly.", "Transfer cooked cauliflower (and garlic) to a food processor or use an immersion blender. Add butter/oil, milk/cream, salt, and pepper.", "Blend until smooth and creamy. Add more liquid if needed to reach desired consistency.", "Taste and adjust seasonings. Garnish with chives or parsley if desired. Serve hot."]
+    },
+    {
+      "name": "Cauliflower Rice",
+      "description": "A popular low-carb, grain-free alternative to rice.",
+      "ingredients": ["1 medium head of cauliflower", "1 tbsp olive oil or coconut oil (optional)", "Salt and pepper to taste (optional)"],
+      "steps": ["Remove outer leaves and core from cauliflower. Cut into large chunks.", "Using a food processor, pulse the cauliflower chunks until they are broken down into rice-sized pieces. Do not over-process or it will become mushy. Alternatively, use a box grater (large holes).", "To cook (optional, can be eaten raw): Heat oil in a large skillet over medium heat. Add cauliflower rice and stir-fry for 5-7 minutes, or until tender but still slightly firm.", "Season with salt and pepper if desired. Serve as a side dish or base for other meals."]
+    }
+  ]
+}

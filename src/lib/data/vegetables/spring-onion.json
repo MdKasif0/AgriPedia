@@ -1,0 +1,65 @@
+{
+  "id": "spring-onion",
+  "commonName": "Spring Onion",
+  "scientificName": "Allium fistulosum (Welsh onion) or young Allium cepa",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoTJnJnQTqj4faR3TxRxJvtNQS4ZrV33qkvGUhYIeMw&s",
+  "description": "Also known as scallions or green onions, these are young onions harvested before the bulb has swollen. They have a long, green stalk and a small, white undeveloped bulb, offering a milder flavor than mature onions.",
+  "origin": "Siberia or Central Asia",
+  "localNames": ["Scallion", "Green Onion", "Cebolleta (Spanish)", "Ciboule (French)", "Frühlingszwiebel (German)", "Hara Pyaaz (Hindi)"],
+  "regions": ["Widely cultivated globally, especially in East Asia, Europe, and North America"],
+  "seasons": ["Spring", "Summer", "Autumn (can be grown year-round in some climates)"],
+  "nutrition": {
+    "calories": "32 kcal per 100g",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 7.3, "unit": "g" },
+      { "name": "Fat", "value": 0.2, "unit": "g" },
+      { "name": "Fiber", "value": 2.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 207, "unit": "µg", "rdi": "259%" },
+      { "name": "Vitamin C", "value": 18.8, "unit": "mg", "rdi": "31%" },
+      { "name": "Vitamin A", "value": 50, "unit": "µg RAE", "rdi": "6%" }
+    ],
+    "minerals": [
+      { "name": "Folate", "value": 64, "unit": "µg", "rdi": "16%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin K, important for bone health and blood clotting.",
+    "Good source of Vitamin C and Vitamin A.",
+    "Contains antioxidants and sulfur compounds with potential health benefits.",
+    "Provides dietary fiber."
+  ],
+  "potentialAllergies": [
+    { "name": "Allium Sensitivity", "severity": "Mild", "details": "Some individuals may experience digestive upset if sensitive to allium vegetables." }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Can be grown from seeds or sets. Sow seeds in early spring or late summer.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0. Full sun to partial shade.\n3. Spacing: Sow seeds thinly. Can be grown closely together in clumps or thinned for larger individual plants.\n4. Watering: Keep soil consistently moist.\n5. Harvesting: Harvest when stalks are pencil-thick or desired size. Pull entire plant or cut above roots for regrowth (for some types).",
+  "growthDuration": "60-80 days from seed; faster from sets.",
+  "sustainabilityTips": [
+      "Store spring onions wrapped in a damp paper towel in the refrigerator crisper, or upright in a jar with a little water covering the roots.",
+      "Use both the white bulb and green stalk portions. Green tops are milder.",
+      "Can be regrown by placing the root ends in water."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Simple Stir-fried Spring Onions",
+      "description": "A quick and easy way to cook spring onions, bringing out their mild sweetness.",
+      "ingredients": ["1 bunch spring onions, trimmed and cut into 1-2 inch pieces (separate white/light green and dark green parts)", "1 tbsp oil (e.g., sesame or vegetable oil)", "1 clove garlic, minced (optional)", "Pinch of salt", "Optional: a splash of soy sauce or a sprinkle of toasted sesame seeds"],
+      "steps": ["Wash spring onions thoroughly. Trim root ends and any wilted tops. Cut into 1-2 inch pieces, keeping the white/light green parts separate from the dark green tops.", "Heat oil in a skillet or wok over medium-high heat.", "Add the white and light green parts of the spring onions (and garlic, if using). Stir-fry for 1-2 minutes until slightly softened and fragrant.", "Add the dark green tops and stir-fry for another 1-2 minutes until wilted but still bright green.", "Season with salt. If desired, add a splash of soy sauce in the last 30 seconds of cooking.", "Garnish with toasted sesame seeds if using. Serve immediately as a side dish or topping."]
+    },
+    {
+      "name": "Scallion Pancakes (Cong You Bing - Simplified)",
+      "description": "A savory Chinese flatbread folded with oil and minced scallions.",
+      "ingredients": ["2 cups all-purpose flour", "3/4 cup hot water (just off the boil)", "1/4 cup cold water", "1/2 cup chopped spring onions (scallions)", "2-3 tbsp sesame oil (or vegetable oil)", "Salt to taste", "Oil for cooking"],
+      "steps": ["In a large bowl, add flour. Gradually pour in hot water while stirring with chopsticks or a fork until a shaggy dough forms. Then, add cold water and mix until a dough comes together. Knead on a lightly floured surface for 5-7 minutes until smooth. Cover and let rest for 30 minutes.", "Divide dough into 4-6 equal pieces. Roll each piece into a thin circle (about 8 inches).", "Brush the surface of the circle lightly with sesame oil, sprinkle with salt and chopped spring onions.", "Roll the circle up tightly like a cigar. Then, coil the cigar into a spiral or snail shape. Tuck the end under.", "Gently flatten the spiral with your palm, then roll it out again into a thin pancake (about 1/4 inch thick).", "Heat a little oil in a non-stick skillet over medium heat. Cook pancake for 2-3 minutes per side, until golden brown and crispy.", "Cut into wedges and serve hot with dipping sauce (e.g., soy sauce with vinegar and chili oil)."]
+    },
+    {
+      "name": "Garnish with Fresh Spring Onions",
+      "description": "Using thinly sliced spring onions as a fresh, flavorful garnish for various dishes.",
+      "ingredients": ["Fresh spring onions (scallions)"],
+      "steps": ["Wash spring onions thoroughly. Trim root ends and any wilted parts of the green tops.", "Thinly slice the spring onions, both the white/light green and dark green parts, depending on preference (dark greens are milder).", "Sprinkle generously over soups (like ramen or pho), stews, stir-fries, omelets, salads, noodles, rice dishes, or savory pancakes just before serving.", "They add a fresh, mild onion flavor, a pop of color, and a slight crunch."]
+    }
+  ]
+}
