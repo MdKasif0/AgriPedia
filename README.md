@@ -3,6 +3,8 @@
 
 AgriPedia is a smart digital encyclopedia for fruits and vegetables. It empowers users to identify produce through image recognition or text search, offering detailed insights including nutritional facts, cultivation guides, recipes, and much more.
 
+**➡️ Live Demo: [https://agripedia.netlify.app/](https://agripedia.netlify.app/)**
+
 ## ✨ Key Features
 
 *   **🔍 Smart Identification:**
