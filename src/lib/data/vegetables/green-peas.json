@@ -1,0 +1,171 @@
+{
+  "id": "green-peas",
+  "commonName": "Green Peas",
+  "scientificName": "Pisum sativum",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDYCV-z1cdLHqhn4iEL3gsnioyzcgE3spue49-v75VQ&s",
+  "description": "Small, spherical seeds that come from pods produced by the Pisum sativum plant. They are widely grown as a cool-season vegetable crop.",
+  "origin": "Mediterranean basin and Near East",
+  "localNames": [
+    "Guisantes (Spanish)",
+    "Petits pois (French)",
+    "Erbsen (German)",
+    "Matar (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "United States",
+    "France",
+    "United Kingdom"
+  ],
+  "seasons": [
+    "Spring",
+    "Early Summer",
+    "Autumn"
+  ],
+  "nutrition": {
+    "calories": "81 kcal per 100g (cooked)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 5.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 24.8,
+        "unit": "µg",
+        "rdi": "31%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 40,
+        "unit": "mg",
+        "rdi": "67%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.266,
+        "unit": "mg",
+        "rdi": "22%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.41,
+        "unit": "mg",
+        "rdi": "21%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of plant-based protein and dietary fiber, promoting satiety and digestive health.",
+    "Rich in Vitamin K, Vitamin C, and Thiamin.",
+    "Contains antioxidants and anti-inflammatory compounds.",
+    "May help regulate blood sugar levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Mild",
+      "details": "Rare, but individuals allergic to other legumes might react. Some find them gas-producing."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring as soon as soil is workable, or in late summer for a fall crop.\n2. Soil: Well-drained, fertile soil. pH 6.0-7.5.\n3. Support: Most varieties (except bush types) require a trellis or support for the vines to climb.\n4. Watering: Keep soil consistently moist, especially during flowering and pod formation.\n5. Harvesting: Harvest pods when they are plump and well-filled but still tender. Pick regularly to encourage more production. Shell peas soon after picking for best flavor.",
+  "growthDuration": "55-70 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Fresh peas are best cooked soon after picking. Store unshelled pods in the refrigerator for a few days.",
+    "Shelled peas can be blanched and frozen for longer storage.",
+    "Add to soups, stews, stir-fries, salads, or eat as a side dish."
+  ],
+  "carbonFootprintInfo": "Low, around 0.3-0.6 kg CO2e/kg, especially if field-grown. Frozen peas can have a slightly higher footprint due to processing and freezing energy.",
+  "staticRecipes": [
+    {
+      "name": "Simple Buttered Peas",
+      "description": "A classic and easy side dish highlighting the sweetness of fresh peas.",
+      "ingredients": [
+        "2 cups fresh or frozen green peas",
+        "1-2 tbsp butter",
+        "Salt and freshly ground black pepper to taste",
+        "Optional: a sprig of fresh mint during cooking"
+      ],
+      "steps": [
+        "If using fresh peas, shell them. If using frozen, no need to thaw.",
+        "Bring a small amount of water to a boil in a saucepan. Add peas (and mint sprig if using). Cook for 2-5 minutes (less time for frozen) until tender-crisp. Do not overcook.",
+        "Drain peas well.",
+        "Return peas to the warm saucepan. Add butter and stir until melted and peas are coated.",
+        "Season with salt and pepper. Remove mint sprig before serving. Serve hot."
+      ]
+    },
+    {
+      "name": "Pea and Mint Soup",
+      "description": "A vibrant and refreshing soup, perfect for spring or summer.",
+      "ingredients": [
+        "1 tbsp olive oil or butter",
+        "1 small onion, chopped",
+        "1 clove garlic, minced (optional)",
+        "4 cups fresh or frozen green peas",
+        "4 cups vegetable or chicken broth",
+        "1/2 cup fresh mint leaves, chopped",
+        "Salt and freshly ground black pepper to taste",
+        "Optional: a swirl of cream or yogurt for serving"
+      ],
+      "steps": [
+        "Heat oil/butter in a large pot or Dutch oven over medium heat. Add chopped onion and cook until softened, about 5 minutes.",
+        "Add minced garlic (if using) and cook for 1 minute more until fragrant.",
+        "Add peas and broth. Bring to a simmer and cook for 5-10 minutes, or until peas are tender.",
+        "Remove from heat. Stir in chopped mint leaves.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.",
+        "Season with salt and pepper to taste. If the soup is too thick, add a little more broth or water.",
+        "Serve hot or chilled. Garnish with a swirl of cream or yogurt and a mint sprig if desired."
+      ]
+    },
+    {
+      "name": "Matar Paneer (Peas and Indian Cheese Curry)",
+      "description": "A popular North Indian curry made with green peas and paneer (Indian cottage cheese) in a tomato-based gravy.",
+      "ingredients": [
+        "1 cup paneer, cubed",
+        "1 cup green peas (fresh or frozen)",
+        "1 large onion, finely chopped or pureed",
+        "2 medium tomatoes, pureed",
+        "1 tbsp ginger-garlic paste",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "1/2 tsp red chili powder (or to taste)",
+        "1/2 tsp garam masala",
+        "Salt to taste",
+        "2 tbsp oil or ghee",
+        "Optional: 1/4 cup cream or cashew paste for richness"
+      ],
+      "steps": [
+        "Optional: Lightly fry paneer cubes in a little oil until golden brown. Set aside. (Or use raw).",
+        "Heat oil/ghee in a pan. Add chopped/pureed onion and sauté until golden brown.",
+        "Add ginger-garlic paste and sauté for a minute.",
+        "Add tomato puree and cook until oil starts to separate from the masala.",
+        "Add turmeric powder, coriander powder, chili powder, and salt. Sauté for a minute.",
+        "Add green peas and 1/2 cup of water. Cover and cook until peas are tender.",
+        "Add paneer cubes and garam masala. Stir gently. If using cream/cashew paste, add it now.",
+        "Simmer for 5-7 minutes, allowing flavors to meld. Adjust consistency with water if needed.",
+        "Garnish with fresh cilantro. Serve hot with roti, naan, or rice."
+      ]
+    }
+  ]
+}

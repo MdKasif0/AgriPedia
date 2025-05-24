@@ -1,0 +1,154 @@
+{
+  "id": "pineapple",
+  "commonName": "Pineapple",
+  "scientificName": "Ananas comosus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
+  "description": "A tropical plant with an edible fruit, consisting of coalesced berries. It's known for its tough, spiky exterior and sweet, tangy yellow flesh.",
+  "origin": "South America (Brazil, Paraguay)",
+  "localNames": [
+    "Piña (Spanish)",
+    "Ananas (French/German/many other languages)"
+  ],
+  "regions": [
+    "Costa Rica",
+    "Philippines",
+    "Indonesia",
+    "Thailand",
+    "India",
+    "Brazil"
+  ],
+  "seasons": [
+    "Year-round availability due to different growing regions, peak varies"
+  ],
+  "nutrition": {
+    "calories": "50 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 13,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 47.8,
+        "unit": "mg",
+        "rdi": "80%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.9,
+        "unit": "mg",
+        "rdi": "46%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 109,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, an antioxidant that boosts the immune system.",
+    "Contains bromelain, an enzyme mixture that aids digestion and has anti-inflammatory properties.",
+    "Good source of manganese, important for bone health and metabolism.",
+    "May help reduce inflammation and swelling."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can cause itching or tingling in the mouth due to bromelain, especially with very ripe or raw pineapple."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Commonly grown from the crown (top) of a mature pineapple fruit, or from slips or suckers.\n2. Climate: Tropical plant, needs warm temperatures, high humidity, and full sun.\n3. Soil: Well-drained, acidic (pH 4.5-6.5), sandy loam soil rich in organic matter.\n4. Planting: Plant the crown after allowing the cut base to dry for a few days. Can be grown in pots or ground.\n5. Watering: Requires regular watering but dislikes waterlogged conditions.\n6. Fertilizing: Feed with a balanced liquid fertilizer every few months during the growing season.\n7. Fruiting: Takes a long time to fruit, often 18-24 months or more from planting a crown.\n8. Harvesting: Fruit is ready when it develops a golden-yellow color at the base and has a strong sweet fragrance.",
+  "growthDuration": "18-24 months from planting a crown to first fruit. Plants typically produce one fruit at a time.",
+  "sustainabilityTips": [
+    "You can grow a new pineapple plant from the top of a store-bought pineapple.",
+    "Use pineapple core in smoothies or to infuse water (it's tougher but still flavorful).",
+    "Compost pineapple skin and leaves."
+  ],
+  "carbonFootprintInfo": "High carbon footprint if transported long distances, especially by air (can be 1.5-5 kg CO2e/kg). Canned pineapple generally has a lower footprint than air-freighted fresh pineapple.",
+  "staticRecipes": [
+    {
+      "name": "Grilled Pineapple Slices",
+      "description": "Grilling pineapple caramelizes its sugars and enhances its sweetness, perfect as a side or dessert.",
+      "ingredients": [
+        "1 ripe pineapple, peeled, cored, and sliced into rings or wedges",
+        "1-2 tbsp melted butter or coconut oil (optional)",
+        "1-2 tsp brown sugar (optional)",
+        "Pinch of cinnamon or chili powder (optional)"
+      ],
+      "steps": [
+        "Preheat grill to medium-high heat.",
+        "If using, brush pineapple slices lightly with melted butter or coconut oil. If desired, sprinkle with brown sugar and cinnamon/chili powder.",
+        "Place pineapple slices directly on the grill grates.",
+        "Grill for 3-5 minutes per side, or until pineapple is heated through and has nice grill marks.",
+        "Serve warm, on its own, with ice cream, or as a side for grilled meats."
+      ]
+    },
+    {
+      "name": "Pineapple Fried Rice",
+      "description": "A flavorful and visually appealing fried rice dish, often served in a pineapple shell.",
+      "ingredients": [
+        "1 tbsp cooking oil",
+        "2 cloves garlic, minced",
+        "1/2 cup diced chicken, shrimp, or tofu (optional)",
+        "2 cups cooked and chilled rice (day-old rice works best)",
+        "1/2 cup diced fresh pineapple",
+        "1/4 cup peas",
+        "1/4 cup diced carrots",
+        "2 tbsp soy sauce",
+        "1 tbsp fish sauce (optional)",
+        "1 egg, lightly beaten",
+        "Chopped green onions and cashews for garnish"
+      ],
+      "steps": [
+        "Heat oil in a large skillet or wok over medium-high heat. Add garlic and cook until fragrant (about 30 seconds).",
+        "If using protein, add chicken/shrimp/tofu and cook until done. Remove and set aside.",
+        "Push rice to one side of the wok. Pour beaten egg onto the empty side and scramble until cooked. Mix with the rice.",
+        "Add cooked protein (if used), diced pineapple, peas, and carrots to the wok. Stir-fry for 2-3 minutes.",
+        "Add soy sauce and fish sauce (if using). Stir well to combine all ingredients.",
+        "Serve hot, garnished with chopped green onions and cashews. For a fancier presentation, serve in a hollowed-out pineapple half."
+      ]
+    },
+    {
+      "name": "Classic Piña Colada (Non-alcoholic version option)",
+      "description": "A sweet and creamy tropical cocktail (or mocktail) featuring pineapple and coconut.",
+      "ingredients": [
+        "1 1/2 cups pineapple juice",
+        "1 cup coconut cream or full-fat coconut milk",
+        "1 cup crushed ice",
+        "1/2 cup fresh or frozen pineapple chunks",
+        "(Optional for alcoholic version: 3-4 oz white rum)",
+        "Pineapple wedges and maraschino cherries for garnish"
+      ],
+      "steps": [
+        "Combine pineapple juice, coconut cream/milk, crushed ice, and pineapple chunks in a blender.",
+        "If making an alcoholic version, add the rum.",
+        "Blend until smooth and frothy.",
+        "Pour into chilled glasses.",
+        "Garnish with a pineapple wedge and a maraschino cherry. Serve immediately."
+      ]
+    }
+  ]
+}

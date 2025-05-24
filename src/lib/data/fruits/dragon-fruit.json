@@ -1,0 +1,149 @@
+{
+  "id": "dragon-fruit",
+  "commonName": "Dragon Fruit (Pitaya)",
+  "scientificName": "Hylocereus undatus (most common), Selenicereus spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/588px-Pitaya_cross_section_ed2.jpg",
+  "description": "A fruit from several different cactus species. It has a vibrant pink or yellow skin with green scales and white or red flesh dotted with tiny black seeds. The flavor is mildly sweet.",
+  "origin": "Mexico, Central and South America",
+  "localNames": [
+    "Pitaya (Spanish)",
+    "Thang Loy (Thai)",
+    "Buah Naga (Indonesian/Malay)"
+  ],
+  "regions": [
+    "Vietnam",
+    "Thailand",
+    "China",
+    "Mexico",
+    "Israel",
+    "Australia",
+    "United States (Florida, California)"
+  ],
+  "seasons": [
+    "Summer to early Autumn, varies by region"
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 13,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 2.5,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 0.74,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 18,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of fiber, aiding digestion.",
+    "Contains antioxidants like betacyanins (in red-fleshed varieties) and hydroxycinnamates.",
+    "May boost the immune system due to its Vitamin C and carotenoid content.",
+    "Rich in prebiotics, which feed healthy gut bacteria."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Dragon Fruit Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical or subtropical, thrives in warm, humid environments. Needs support for climbing (cactus vine).\n2. Soil: Well-draining soil, sandy loam is ideal. Tolerates poor soils but benefits from organic matter.\n3. Propagation: Easily grown from seeds or stem cuttings.\n4. Planting: Plant cuttings or seedlings near a sturdy trellis, post, or wall for support.\n5. Watering: Water regularly, but allow soil to dry out slightly between waterings. Drought-tolerant once established.\n6. Fertilizing: Apply balanced fertilizer or organic compost during the growing season.\n7. Pollination: Flowers are nocturnal and often require hand pollination or specific pollinators (moths, bats) for good fruit set, especially for some varieties.\n8. Harvesting: Fruit is ready when the skin color is vibrant (pink or yellow) and the 'wings' or scales start to wither slightly. It should detach easily.",
+  "growthDuration": "Can start bearing fruit in 1-3 years from cuttings. Fruits mature 30-50 days after flowering.",
+  "sustainabilityTips": [
+    "Store at room temperature for a few days or refrigerate for longer life.",
+    "Eat fresh by scooping out the flesh. The tiny black seeds are edible.",
+    "Compost the skin."
+  ],
+  "carbonFootprintInfo": "Moderate to high if transported from distant tropical regions (0.8-2.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Dragon Fruit Smoothie Bowl",
+      "description": "A vibrant and healthy smoothie bowl topped with fresh fruits and nuts.",
+      "ingredients": [
+        "1 frozen dragon fruit (pink or white flesh), chopped",
+        "1/2 frozen banana",
+        "1/2 cup coconut water or almond milk",
+        "Toppings: Sliced fresh dragon fruit, berries, granola, chia seeds, coconut flakes"
+      ],
+      "steps": [
+        "Combine frozen dragon fruit, frozen banana, and coconut water/milk in a high-speed blender.",
+        "Blend until thick and smooth, like soft-serve ice cream. Add a little more liquid if needed, but keep it thick.",
+        "Pour the smoothie into a bowl.",
+        "Arrange toppings decoratively over the smoothie bowl.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Dragon Fruit Salad",
+      "description": "A refreshing and visually stunning fruit salad.",
+      "ingredients": [
+        "1 dragon fruit, peeled and cubed",
+        "1 cup mixed berries (strawberries, blueberries)",
+        "1 kiwi, peeled and sliced",
+        "1/2 mango, peeled and cubed (optional)",
+        "Juice of 1/2 lime",
+        "1 tbsp honey or agave (optional)",
+        "Fresh mint leaves for garnish"
+      ],
+      "steps": [
+        "In a large bowl, gently combine cubed dragon fruit, mixed berries, sliced kiwi, and mango (if using).",
+        "In a small bowl, whisk together lime juice and honey/agave (if using).",
+        "Drizzle the dressing over the fruit salad.",
+        "Garnish with fresh mint leaves. Toss gently and serve chilled."
+      ]
+    },
+    {
+      "name": "Dragon Fruit Lemonade",
+      "description": "A colorful and exotic twist on classic lemonade.",
+      "ingredients": [
+        "1/4 cup dragon fruit puree (blend flesh of 1/2 dragon fruit)",
+        "1 cup fresh lemon juice",
+        "1/2 cup sugar (or to taste)",
+        "4 cups cold water",
+        "Ice cubes",
+        "Dragon fruit slices and lemon slices for garnish"
+      ],
+      "steps": [
+        "In a small saucepan, make simple syrup by combining sugar and 1 cup of water. Heat until sugar dissolves, then let cool.",
+        "In a large pitcher, combine lemon juice, cooled simple syrup, dragon fruit puree, and the remaining 3 cups of cold water.",
+        "Stir well to combine. Taste and adjust sweetness if needed.",
+        "Serve over ice, garnished with dragon fruit slices and lemon slices."
+      ]
+    }
+  ]
+}

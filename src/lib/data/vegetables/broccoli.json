@@ -1,0 +1,167 @@
+{
+  "id": "broccoli",
+  "commonName": "Broccoli",
+  "scientificName": "Brassica oleracea var. italica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Broccoli_and_cross_section_edit.jpg",
+  "description": "An edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable.",
+  "origin": "Mediterranean region (likely Italy)",
+  "localNames": [
+    "Brócoli (Spanish)",
+    "Brocoli (French)",
+    "Brokkoli (German)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "United States",
+    "Spain",
+    "Mexico"
+  ],
+  "seasons": [
+    "Autumn",
+    "Winter",
+    "Spring"
+  ],
+  "nutrition": {
+    "calories": "34 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 89.2,
+        "unit": "mg",
+        "rdi": "149%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 101.6,
+        "unit": "µg",
+        "rdi": "127%"
+      },
+      {
+        "name": "Folate",
+        "value": 63,
+        "unit": "µg",
+        "rdi": "16%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 316,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C and K, supporting immune function and bone health.",
+    "Contains sulforaphane, a compound with potent anti-cancer properties and detoxification support.",
+    "Good source of fiber, aiding digestion and promoting gut health.",
+    "May help reduce cholesterol levels and support cardiovascular health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassica Allergy",
+      "severity": "Rare",
+      "details": "Rare, but can occur in individuals sensitive to cruciferous vegetables. Symptoms may include skin rash or digestive upset."
+    },
+    {
+      "name": "Goitrogens",
+      "severity": "Mild",
+      "details": "Contains goitrogens, which may interfere with thyroid function in individuals with pre-existing thyroid conditions if consumed raw in very large amounts. Cooking typically reduces goitrogen levels."
+    }
+  ],
+  "cultivationProcess": "Broccoli is a cool-season crop. Prefers well-drained, fertile soil rich in organic matter and full sun (at least 6 hours). Grown from seeds started indoors or direct-sown, or from transplants. Main heads are harvested when florets are tightly packed and dark green, before yellow flowers appear. Side shoots may develop after the main head is cut.",
+  "growthDuration": "50-100 days from transplant to harvest, depending on variety and conditions.",
+  "sustainabilityTips": [
+    "Store unwashed broccoli in an open plastic bag in the refrigerator crisper for up to a week.",
+    "Utilize the stalks as well as the florets – peel the tough outer layer of stalks and slice; they are nutritious and can be cooked.",
+    "Blanch and freeze excess broccoli for longer storage to use in soups, stir-fries, or smoothies."
+  ],
+  "carbonFootprintInfo": "Relatively low footprint when grown locally (0.4-0.7 kg CO2e/kg). Long-distance transport, especially refrigerated, increases this.",
+  "staticRecipes": [
+    {
+      "name": "Simple Steamed Broccoli",
+      "description": "A quick and healthy way to prepare broccoli, preserving its nutrients and vibrant color.",
+      "ingredients": [
+        "1 head of broccoli, cut into florets",
+        "1-2 tbsp water (if microwaving)",
+        "Salt and pepper to taste",
+        "Lemon wedge (optional)",
+        "Olive oil drizzle (optional)"
+      ],
+      "steps": [
+        "Place broccoli florets in a steamer basket over an inch of boiling water. Cover and steam for 3-5 minutes, until tender-crisp.",
+        "Alternatively, place florets in a microwave-safe dish with 1-2 tbsp of water. Cover and microwave on high for 2-4 minutes.",
+        "Season with salt and pepper. Squeeze fresh lemon juice over and drizzle with olive oil if desired.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Broccoli Cheddar Soup",
+      "description": "A creamy and comforting soup packed with broccoli and cheesy goodness.",
+      "ingredients": [
+        "1 tbsp butter",
+        "1 small onion, chopped",
+        "2 cloves garlic, minced",
+        "1/4 cup all-purpose flour",
+        "2 cups milk",
+        "2 cups vegetable or chicken broth",
+        "1 lb broccoli florets (fresh or frozen), roughly chopped",
+        "1 1/2 cups shredded sharp cheddar cheese",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Melt butter in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and cook for 1 minute more. Stir in flour and cook, stirring, for 1 minute.",
+        "Gradually whisk in milk and broth until smooth. Bring to a simmer, stirring constantly.",
+        "Add broccoli florets. Cook for 10-15 minutes, or until broccoli is very tender.",
+        "Reduce heat to low. If desired, use an immersion blender to partially or fully blend the soup for a smoother texture.",
+        "Stir in shredded cheddar cheese until melted and smooth. Do not allow the soup to boil after adding cheese.",
+        "Season with salt and pepper. Serve hot."
+      ]
+    },
+    {
+      "name": "Garlic Roasted Broccoli with Parmesan",
+      "description": "Roasting broccoli brings out its nutty flavor, enhanced beautifully with garlic and Parmesan cheese.",
+      "ingredients": [
+        "1 lb broccoli florets",
+        "2-3 cloves garlic, minced or thinly sliced",
+        "2 tbsp olive oil",
+        "Salt and freshly ground black pepper to taste",
+        "1/4 cup grated Parmesan cheese",
+        "Red pepper flakes (optional, for a kick)"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "On a large baking sheet, toss broccoli florets with olive oil, minced garlic, salt, pepper, and red pepper flakes (if using) until evenly coated.",
+        "Spread broccoli in a single layer to ensure even roasting.",
+        "Roast for 15-20 minutes, or until tender-crisp and lightly browned at the edges. Florets should be slightly charred.",
+        "Remove from oven, sprinkle immediately with grated Parmesan cheese, and toss gently.",
+        "Serve hot."
+      ]
+    }
+  ]
+}

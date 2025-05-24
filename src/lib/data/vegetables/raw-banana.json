@@ -1,0 +1,158 @@
+{
+  "id": "raw-banana",
+  "commonName": "Raw Banana (Plantain)",
+  "scientificName": "Musa paradisiaca (culinary varieties)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKpSHTMQGxkN4K_SMcmRSpUMP0hYTpnzGbXAbd_68hw&s",
+  "description": "The unripe fruit of banana plants, specifically cooking varieties often referred to as plantains. They are starchy, less sweet than ripe dessert bananas, and are typically cooked as a vegetable.",
+  "origin": "Southeast Asia and Oceania",
+  "localNames": [
+    "Kach Kela (Hindi/Bengali)",
+    "Vazhakkai (Tamil)",
+    "Plantain (English for cooking bananas)"
+  ],
+  "regions": [
+    "India",
+    "Southeast Asia",
+    "Africa",
+    "Caribbean",
+    "Central and South America"
+  ],
+  "seasons": [
+    "Year-round in tropical climates"
+  ],
+  "nutrition": {
+    "calories": "122 kcal per 100g (cooked plantain)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 32,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 18.4,
+        "unit": "mg",
+        "rdi": "31%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "18%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 56,
+        "unit": "µg RAE",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 499,
+        "unit": "mg",
+        "rdi": "14%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of complex carbohydrates, providing sustained energy.",
+    "Rich in Vitamin C, Vitamin B6, and Vitamin A.",
+    "High in potassium, which helps regulate blood pressure.",
+    "Contains resistant starch, beneficial for gut health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-Fruit Syndrome",
+      "severity": "Mild",
+      "details": "Individuals allergic to latex may also react to bananas/plantains."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide: (Similar to dessert bananas)\n1. Propagation: From suckers or corms.\n2. Soil: Rich, fertile, well-drained soil. pH 5.5-7.0. Full sun.\n3. Watering: Requires abundant water and humidity.\n4. Harvesting: Harvested green and firm for culinary use as a vegetable. Size and maturity depend on variety and intended use.",
+  "growthDuration": "9-12 months from planting to first harvest of bunches.",
+  "sustainabilityTips": [
+    "Store raw bananas/plantains at room temperature if you want them to ripen slightly, or in the refrigerator to slow ripening.",
+    "Peel before cooking. The flesh is firm and starchy.",
+    "Versatile: can be boiled, fried, baked, or mashed. Used to make chips, curries, and side dishes."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to dessert bananas, depending on transport (0.5-0.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Raw Banana Fry (Vazhakkai Poriyal/Varuval)",
+      "description": "A simple South Indian stir-fry or shallow-fry of raw banana slices with spices.",
+      "ingredients": [
+        "2 raw bananas (plantains)",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp urad dal",
+        "1-2 dried red chilies",
+        "Pinch of asafoetida",
+        "1/4 tsp turmeric powder",
+        "1/2 tsp sambar powder or red chili powder (optional)",
+        "Salt to taste",
+        "Few curry leaves"
+      ],
+      "steps": [
+        "Peel raw bananas and slice them into rounds or semi-circles. Keep them in water mixed with a little buttermilk or turmeric to prevent discoloration.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
+        "Add asafoetida and curry leaves. Sauté for a few seconds.",
+        "Drain banana slices and add them to the pan. Add turmeric powder, sambar/chili powder (if using), and salt.",
+        "Stir well to coat. Cook on medium heat, stirring occasionally, for 10-15 minutes, or until bananas are tender and slightly crisp. For a crispier version (varuval), add more oil and cook longer until browned.",
+        "Serve hot as a side dish."
+      ]
+    },
+    {
+      "name": "Kele ke Kofte (Raw Banana Dumplings in Gravy)",
+      "description": "Soft dumplings made from mashed raw banana, served in a savory Indian gravy.",
+      "ingredients": [
+        "For Koftas: 2 raw bananas (boiled, peeled, mashed), 2 tbsp gram flour (besan), 1/2 tsp ginger paste, salt, oil for frying",
+        "For Gravy: 1 onion (pureed), 2 tomatoes (pureed), 1 tsp ginger-garlic paste, 1/2 tsp turmeric, 1 tsp coriander powder, 1/2 tsp cumin powder, garam masala, salt, oil"
+      ],
+      "steps": [
+        "Koftas: Combine mashed raw banana, besan, ginger paste, and salt. Mix well to form a dough. Make small balls and deep fry until golden brown. Set aside.",
+        "Gravy: Heat oil. Sauté onion puree until golden. Add ginger-garlic paste. Add tomato puree and cook until oil separates.",
+        "Add all spice powders (turmeric, coriander, cumin, chili if using) and salt. Sauté for a minute.",
+        "Add about 1 cup of water and bring to a simmer. Adjust consistency as needed.",
+        "Gently add fried koftas to the gravy. Simmer for 5-7 minutes.",
+        "Sprinkle with garam masala. Serve hot with roti or rice."
+      ]
+    },
+    {
+      "name": "Raw Banana Chips (Plantain Chips)",
+      "description": "Crispy, savory chips made from thinly sliced raw bananas.",
+      "ingredients": [
+        "2-3 firm raw bananas (plantains)",
+        "Oil for deep frying",
+        "Salt to taste",
+        "Optional: turmeric powder, chili powder"
+      ],
+      "steps": [
+        "Peel raw bananas. It's easiest to score the skin lengthwise in a few places and then peel it off.",
+        "Thinly slice the peeled bananas into rounds using a mandoline slicer or a sharp knife. For best results, slice directly into hot oil or keep slices in water with turmeric to prevent browning, then pat very dry before frying.",
+        "Heat oil in a deep pan or kadai for frying.",
+        "Carefully drop banana slices into hot oil in batches, without overcrowding. Fry on medium heat, stirring occasionally, until golden brown and crisp (about 3-5 minutes).",
+        "Remove with a slotted spoon and drain on paper towels.",
+        "While still warm, sprinkle with salt and optional chili powder. Toss to coat.",
+        "Let cool completely before storing in an airtight container. They will become crispier as they cool."
+      ]
+    }
+  ]
+}
