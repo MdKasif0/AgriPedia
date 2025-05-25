@@ -1,0 +1,146 @@
+{
+  "id": "raspberry",
+  "commonName": "Raspberry",
+  "scientificName": "Rubus idaeus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/800px-Raspberries_%28Rubus_idaeus%29.jpg",
+  "description": "An edible fruit of a multitude of plant species in the genus Rubus of the rose family. Most are within the subgenus Idaeobatus. The fruit is a delicate aggregate fruit, typically red, but also black, purple, or golden.",
+  "origin": "Europe, Northern Asia",
+  "localNames": [
+    "Frambuesa (Spanish)",
+    "Framboise (French)",
+    "Himbeere (German)"
+  ],
+  "regions": [
+    "Russia",
+    "Mexico",
+    "Poland",
+    "United States",
+    "Serbia"
+  ],
+  "seasons": [
+    "Summer to early Autumn"
+  ],
+  "nutrition": {
+    "calories": "52 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11.9,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 6.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 26.2,
+        "unit": "mg",
+        "rdi": "44%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.67,
+        "unit": "mg",
+        "rdi": "34%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 151,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "High in dietary fiber, promoting digestive health.",
+    "Rich in Vitamin C and antioxidants like anthocyanins and ellagic acid.",
+    "May have anti-inflammatory properties.",
+    "Can contribute to brain health and protect against age-related cognitive decline."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Raspberry Allergy",
+      "severity": "Rare",
+      "details": "Uncommon, but can cause oral allergy symptoms or skin reactions in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Many varieties require winter chill.\n2. Soil: Well-drained, fertile soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: From suckers or cane cuttings.\n4. Planting: Plant in early spring. Provide support like a trellis or wires for canes.\n5. Watering: Consistent moisture is important, especially during fruit development. Avoid waterlogged soil.\n6. Fertilizing: Apply balanced fertilizer or compost in spring.\n7. Pruning: Pruning methods vary depending on whether they are summer-bearing or everbearing varieties. Generally involves removing old, fruited canes.\n8. Harvesting: Berries are harvested when they are fully colored and detach easily from the receptacle. They are very delicate.",
+  "growthDuration": "Canes often produce fruit in their second year. Harvest season is typically summer to early autumn.",
+  "sustainabilityTips": [
+    "Store unwashed raspberries in the refrigerator in a shallow container; consume within 1-2 days.",
+    "Wash gently just before eating.",
+    "Freeze excess raspberries on a baking sheet before transferring to a freezer bag."
+  ],
+  "carbonFootprintInfo": "Moderate, can be higher if air-freighted due to perishability (0.8-2.0 kg CO2e/kg). Local and seasonal are best.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Raspberries with Cream",
+      "description": "A simple and elegant dessert highlighting the natural flavor of raspberries.",
+      "ingredients": [
+        "1 pint fresh raspberries",
+        "1/4 cup heavy cream or crème fraîche",
+        "1-2 tsp powdered sugar (optional)"
+      ],
+      "steps": [
+        "Gently rinse raspberries and pat dry.",
+        "Divide raspberries among serving bowls.",
+        "If using powdered sugar, lightly sweeten the heavy cream or crème fraîche.",
+        "Drizzle the cream over the raspberries.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Raspberry Vinaigrette",
+      "description": "A vibrant and flavorful dressing for salads.",
+      "ingredients": [
+        "1/2 cup fresh or frozen raspberries",
+        "1/4 cup olive oil",
+        "2 tbsp red wine vinegar or apple cider vinegar",
+        "1 tbsp honey or maple syrup",
+        "1 tsp Dijon mustard",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "If using frozen raspberries, thaw them slightly.",
+        "Combine raspberries, olive oil, vinegar, honey/maple syrup, and Dijon mustard in a blender or food processor.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve to remove seeds, if desired.",
+        "Season with salt and pepper to taste. Store in an airtight container in the refrigerator."
+      ]
+    },
+    {
+      "name": "Raspberry Oatmeal Crumble Bars",
+      "description": "Delicious and relatively healthy bars with a raspberry filling and an oat crumble topping.",
+      "ingredients": [
+        "For crust/crumble: 1 1/2 cups rolled oats, 1 cup all-purpose flour, 3/4 cup brown sugar, 1/2 tsp cinnamon, 1/2 cup cold butter (cubed)",
+        "For filling: 2 cups fresh or frozen raspberries, 1/4 cup granulated sugar, 1 tbsp cornstarch, 1 tbsp lemon juice"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C). Grease and flour an 8x8 inch baking pan.",
+        "Crust/Crumble: In a medium bowl, combine rolled oats, flour, brown sugar, and cinnamon. Cut in cold butter using a pastry blender or your fingers until the mixture resembles coarse crumbs. Reserve about 1 cup of the crumble mixture for the topping. Press the remaining mixture firmly into the bottom of the prepared pan to form the crust.",
+        "Bake the crust for 10 minutes.",
+        "Filling: While crust is baking, combine raspberries, granulated sugar, cornstarch, and lemon juice in a saucepan. Cook over medium heat, stirring frequently, until the mixture thickens and raspberries start to break down (about 5-7 minutes).",
+        "Pour the raspberry filling evenly over the partially baked crust.",
+        "Sprinkle the reserved crumble mixture over the filling.",
+        "Bake for another 20-25 minutes, or until the topping is golden brown and the filling is bubbly.",
+        "Let cool completely in the pan before cutting into bars."
+      ]
+    }
+  ]
+}

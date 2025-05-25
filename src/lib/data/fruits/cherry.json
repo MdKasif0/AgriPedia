@@ -1,0 +1,153 @@
+{
+  "id": "cherry",
+  "commonName": "Cherry",
+  "scientificName": "Prunus spp. (e.g., Prunus avium - sweet, Prunus cerasus - sour)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cherry_fruit_high_resolution.jpg",
+  "description": "A small, round, fleshy stone fruit that is typically bright or dark red. There are two main types: sweet cherries and sour (or tart) cherries.",
+  "origin": "Europe and Western Asia",
+  "localNames": [
+    "Cereza (Spanish)",
+    "Cerise (French)",
+    "Kirsche (German)"
+  ],
+  "regions": [
+    "Turkey",
+    "United States",
+    "Iran",
+    "Chile",
+    "Uzbekistan",
+    "Spain",
+    "Italy"
+  ],
+  "seasons": [
+    "Late Spring to Summer"
+  ],
+  "nutrition": {
+    "calories": "50 kcal per 100g (sweet cherries)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 7,
+        "unit": "mg",
+        "rdi": "12%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 222,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants and anti-inflammatory compounds, like anthocyanins and cyanidin.",
+    "May help reduce muscle soreness and improve recovery after exercise.",
+    "Can promote better sleep due to natural melatonin content (especially tart cherries).",
+    "May help lower risk of gout attacks by reducing uric acid levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cherry Allergy / Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can occur, often linked to birch pollen allergy."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Sweet cherries require more sun and warmth than sour cherries. Both need winter chill.\n2. Soil: Deep, well-drained, fertile loamy soil. pH 6.0-7.0.\n3. Propagation: Grafting onto rootstock.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Regular watering, especially for young trees and during fruit development.\n6. Fertilizing: Apply balanced fertilizer in early spring.\n7. Pruning: Prune to maintain an open structure for good air circulation and light penetration. Sweet cherries are often trained to a central leader, sour cherries more to an open center.\n8. Harvesting: Cherries are picked when fully ripe and have developed their characteristic color and sweetness. They do not ripen further after picking.",
+  "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Harvest season is typically late spring to summer.",
+  "sustainabilityTips": [
+    "Store cherries unwashed in the refrigerator; consume within a few days for best quality.",
+    "Wash just before eating.",
+    "Pit cherries before freezing for easier use in recipes later."
+  ],
+  "carbonFootprintInfo": "Moderate, transport is a key factor (0.6-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Classic Cherry Pie",
+      "description": "A beloved pie with a sweet or tart cherry filling encased in a flaky crust.",
+      "ingredients": [
+        "Double-crust pie dough (for a 9-inch pie)",
+        "5-6 cups fresh or frozen pitted cherries (sweet or sour)",
+        "3/4 to 1 cup granulated sugar (adjust based on cherry sweetness)",
+        "1/4 cup cornstarch or all-purpose flour",
+        "1 tbsp lemon juice",
+        "1/4 tsp almond extract (optional)",
+        "1 tbsp butter, cut into small pieces",
+        "1 egg, beaten (for egg wash, optional)"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C). Line a 9-inch pie plate with bottom crust.",
+        "In a large bowl, combine cherries, sugar, cornstarch/flour, lemon juice, and almond extract (if using). Toss gently to coat.",
+        "Pour the cherry filling into the prepared pie crust. Dot with pieces of butter.",
+        "Place the top crust over the filling. Crimp edges to seal. Cut vents in the top crust to allow steam to escape. If desired, brush with beaten egg for a golden finish.",
+        "Bake for 40-50 minutes, or until the crust is golden brown and the filling is bubbly. Cover edges with foil if they brown too quickly.",
+        "Let cool for at least 2-3 hours before slicing and serving to allow the filling to set."
+      ]
+    },
+    {
+      "name": "Cherry Clafoutis",
+      "description": "A rustic French dessert similar to a flan or baked pancake, filled with cherries.",
+      "ingredients": [
+        "1 lb fresh sweet cherries, pitted",
+        "3 eggs",
+        "1/2 cup granulated sugar",
+        "1/2 cup all-purpose flour",
+        "Pinch of salt",
+        "1 cup milk (whole or 2%)",
+        "1 tsp vanilla extract",
+        "Powdered sugar for dusting"
+      ],
+      "steps": [
+        "Preheat oven to 350°F (175°C). Butter a 9-inch pie dish or shallow baking dish.",
+        "Arrange the pitted cherries in a single layer in the prepared dish.",
+        "In a medium bowl, whisk together eggs and sugar until pale and slightly thickened.",
+        "Gradually whisk in flour and salt until smooth.",
+        "Slowly whisk in milk and vanilla extract until the batter is smooth and resembles pancake batter.",
+        "Pour the batter evenly over the cherries in the baking dish.",
+        "Bake for 35-45 minutes, or until the clafoutis is puffed, golden brown, and set (a knife inserted near the center should come out clean).",
+        "Let cool slightly. Dust with powdered sugar before serving warm or at room temperature."
+      ]
+    },
+    {
+      "name": "Simple Cherry Sauce for Desserts",
+      "description": "A quick and delicious sauce perfect for ice cream, cheesecake, or pancakes.",
+      "ingredients": [
+        "2 cups fresh or frozen pitted cherries",
+        "1/4 cup sugar (or to taste)",
+        "2 tbsp water",
+        "1 tsp lemon juice",
+        "1/4 tsp almond extract (optional)"
+      ],
+      "steps": [
+        "Combine cherries, sugar, water, and lemon juice in a medium saucepan.",
+        "Bring to a simmer over medium heat, stirring occasionally.",
+        "Reduce heat to low and cook for 10-15 minutes, or until the cherries have softened and released their juices, and the sauce has thickened slightly.",
+        "Stir in almond extract if using.",
+        "Serve warm or chilled. Store in an airtight container in the refrigerator."
+      ]
+    }
+  ]
+}

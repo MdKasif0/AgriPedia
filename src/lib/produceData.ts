@@ -1,6 +1,82 @@
+// Import individual fruit data
+import amlaFruit from './data/fruits/amla.json';
+import appleFruit from './data/fruits/apple.json';
+import avocadoFruit from './data/fruits/avocado.json';
+import bananaFruit from './data/fruits/banana.json';
+import berFruit from './data/fruits/ber.json';
+import blueberryFruit from './data/fruits/blueberry.json';
+import cherryFruit from './data/fruits/cherry.json';
+import custardAppleFruit from './data/fruits/custard-apple.json';
+import dragonFruitFruit from './data/fruits/dragon-fruit.json';
+import figFruit from './data/fruits/fig.json';
+import grapesFruit from './data/fruits/grapes.json';
+import guavaFruit from './data/fruits/guava.json';
+import jackfruitFruit from './data/fruits/jackfruit.json';
+import jamunFruit from './data/fruits/jamun.json';
+import kiwiFruit from './data/fruits/kiwi.json';
+import kokumFruit from './data/fruits/kokum.json';
+import lemonFruit from './data/fruits/lemon.json';
+import lycheeFruit from './data/fruits/lychee.json';
+import mangoFruit from './data/fruits/mango.json';
+import mulberryFruit from './data/fruits/mulberry.json';
+import muskmelonFruit from './data/fruits/muskmelon.json';
+import orangeFruit from './data/fruits/orange.json';
+import papayaFruit from './data/fruits/papaya.json';
+import passionFruitFruit from './data/fruits/passion-fruit.json';
+import peachFruit from './data/fruits/peach.json';
+import pearFruit from './data/fruits/pear.json';
+import pineappleFruit from './data/fruits/pineapple.json';
+import plumFruit from './data/fruits/plum.json';
+import pomegranateFruit from './data/fruits/pomegranate.json';
+import raspberryFruit from './data/fruits/raspberry.json';
+import sapotaFruit from './data/fruits/sapota.json';
+import starfruitFruit from './data/fruits/starfruit.json';
+import strawberryFruit from './data/fruits/strawberry.json';
+import sweetLimeFruit from './data/fruits/sweet-lime.json';
+import tamarindFruit from './data/fruits/tamarind.json';
+import watermelonFruit from './data/fruits/watermelon.json';
+import woodAppleFruit from './data/fruits/wood-apple.json';
 
-import fruitsData from './data/fruits-data.json';
-import vegetablesData from './data/vegetables-data.json';
+// Import individual vegetable data
+import arbiTaroRootVegetable from './data/vegetables/arbi-taro-root.json';
+import ashGourdVegetable from './data/vegetables/ash-gourd.json';
+import beetrootVegetable from './data/vegetables/beetroot.json';
+import bitterGourdVegetable from './data/vegetables/bitter-gourd.json';
+import bottleGourdVegetable from './data/vegetables/bottle-gourd.json';
+import brinjalEggplantVegetable from './data/vegetables/brinjal-eggplant.json';
+import broccoliVegetable from './data/vegetables/broccoli.json';
+import cabbageVegetable from './data/vegetables/cabbage.json';
+import capsicumVegetable from './data/vegetables/capsicum.json';
+import carrotVegetable from './data/vegetables/carrot.json';
+import cauliflowerVegetable from './data/vegetables/cauliflower.json';
+import chilliesVegetable from './data/vegetables/chillies.json';
+import clusterBeansVegetable from './data/vegetables/cluster-beans.json';
+import corianderLeavesVegetable from './data/vegetables/coriander-leaves.json';
+import cucumberVegetable from './data/vegetables/cucumber.json';
+import dillLeavesVegetable from './data/vegetables/dill-leaves.json';
+import drumstickMoringaVegetable from './data/vegetables/drumstick-moringa.json';
+import elephantFootYamVegetable from './data/vegetables/elephant-foot-yam.json';
+import fenugreekLeavesVegetable from './data/vegetables/fenugreek-leaves.json';
+import frenchBeansVegetable from './data/vegetables/french-beans.json';
+import garlicVegetable from './data/vegetables/garlic.json';
+import gingerVegetable from './data/vegetables/ginger.json';
+import greenGarlicVegetable from './data/vegetables/green-garlic.json';
+import greenPeasVegetable from './data/vegetables/green-peas.json';
+import ladyfingerOkraVegetable from './data/vegetables/ladyfinger-okra.json';
+import mintLeavesVegetable from './data/vegetables/mint-leaves.json';
+import mustardGreensVegetable from './data/vegetables/mustard-greens.json';
+import onionVegetable from './data/vegetables/onion.json';
+import potatoVegetable from './data/vegetables/potato.json';
+import pumpkinVegetable from './data/vegetables/pumpkin.json';
+import radishVegetable from './data/vegetables/radish.json';
+import rawBananaVegetable from './data/vegetables/raw-banana.json';
+import rawMangoVegetable from './data/vegetables/raw-mango.json';
+import ridgeGourdVegetable from './data/vegetables/ridge-gourd.json';
+import snakeGourdVegetable from './data/vegetables/snake-gourd.json';
+import spinachVegetable from './data/vegetables/spinach.json';
+import tindaAppleGourdVegetable from './data/vegetables/tinda-apple-gourd.json';
+import tomatoVegetable from './data/vegetables/tomato.json';
+import turnipVegetable from './data/vegetables/turnip.json';
 
 export interface Recipe {
   name: string;
@@ -34,10 +110,92 @@ export interface ProduceInfo {
   growthDuration: string;
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
-  staticRecipes?: Recipe[]; // Added static recipes
+  staticRecipes?: Recipe[];
 }
 
-const allProduceData: ProduceInfo[] = [...fruitsData, ...vegetablesData];
+const fruits: ProduceInfo[] = [
+  amlaFruit as ProduceInfo,
+  appleFruit as ProduceInfo,
+  avocadoFruit as ProduceInfo,
+  bananaFruit as ProduceInfo,
+  berFruit as ProduceInfo,
+  blueberryFruit as ProduceInfo,
+  cherryFruit as ProduceInfo,
+  custardAppleFruit as ProduceInfo,
+  dragonFruitFruit as ProduceInfo,
+  figFruit as ProduceInfo,
+  grapesFruit as ProduceInfo,
+  guavaFruit as ProduceInfo,
+  jackfruitFruit as ProduceInfo,
+  jamunFruit as ProduceInfo,
+  kiwiFruit as ProduceInfo,
+  kokumFruit as ProduceInfo,
+  lemonFruit as ProduceInfo,
+  lycheeFruit as ProduceInfo,
+  mangoFruit as ProduceInfo,
+  mulberryFruit as ProduceInfo,
+  muskmelonFruit as ProduceInfo,
+  orangeFruit as ProduceInfo,
+  papayaFruit as ProduceInfo,
+  passionFruitFruit as ProduceInfo,
+  peachFruit as ProduceInfo,
+  pearFruit as ProduceInfo,
+  pineappleFruit as ProduceInfo,
+  plumFruit as ProduceInfo,
+  pomegranateFruit as ProduceInfo,
+  raspberryFruit as ProduceInfo,
+  sapotaFruit as ProduceInfo,
+  starfruitFruit as ProduceInfo,
+  strawberryFruit as ProduceInfo,
+  sweetLimeFruit as ProduceInfo,
+  tamarindFruit as ProduceInfo,
+  watermelonFruit as ProduceInfo,
+  woodAppleFruit as ProduceInfo,
+];
+
+const vegetables: ProduceInfo[] = [
+  arbiTaroRootVegetable as ProduceInfo,
+  ashGourdVegetable as ProduceInfo,
+  beetrootVegetable as ProduceInfo,
+  bitterGourdVegetable as ProduceInfo,
+  bottleGourdVegetable as ProduceInfo,
+  brinjalEggplantVegetable as ProduceInfo,
+  broccoliVegetable as ProduceInfo,
+  cabbageVegetable as ProduceInfo,
+  capsicumVegetable as ProduceInfo,
+  carrotVegetable as ProduceInfo,
+  cauliflowerVegetable as ProduceInfo,
+  chilliesVegetable as ProduceInfo,
+  clusterBeansVegetable as ProduceInfo,
+  corianderLeavesVegetable as ProduceInfo,
+  cucumberVegetable as ProduceInfo,
+  dillLeavesVegetable as ProduceInfo,
+  drumstickMoringaVegetable as ProduceInfo,
+  elephantFootYamVegetable as ProduceInfo,
+  fenugreekLeavesVegetable as ProduceInfo,
+  frenchBeansVegetable as ProduceInfo,
+  garlicVegetable as ProduceInfo,
+  gingerVegetable as ProduceInfo,
+  greenGarlicVegetable as ProduceInfo,
+  greenPeasVegetable as ProduceInfo,
+  ladyfingerOkraVegetable as ProduceInfo,
+  mintLeavesVegetable as ProduceInfo,
+  mustardGreensVegetable as ProduceInfo,
+  onionVegetable as ProduceInfo,
+  potatoVegetable as ProduceInfo,
+  pumpkinVegetable as ProduceInfo,
+  radishVegetable as ProduceInfo,
+  rawBananaVegetable as ProduceInfo,
+  rawMangoVegetable as ProduceInfo,
+  ridgeGourdVegetable as ProduceInfo,
+  snakeGourdVegetable as ProduceInfo,
+  spinachVegetable as ProduceInfo,
+  tindaAppleGourdVegetable as ProduceInfo,
+  tomatoVegetable as ProduceInfo,
+  turnipVegetable as ProduceInfo,
+];
+
+const allProduceData: ProduceInfo[] = [...fruits, ...vegetables];
 
 export function getProduceByCommonName(name: string): ProduceInfo | undefined {
   const searchTerm = name.toLowerCase();
@@ -112,4 +270,3 @@ export function getInSeasonProduce(limit?: number): ProduceInfo[] {
   }
   return inSeasonItems;
 }
-

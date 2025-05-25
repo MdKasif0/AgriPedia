@@ -1,0 +1,150 @@
+{
+  "id": "ber",
+  "commonName": "Ber (Indian Jujube)",
+  "scientificName": "Ziziphus mauritiana",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Indian_jujube_%28fruit%29.jpg/640px-Indian_jujube_%28fruit%29.jpg",
+  "description": "A tropical fruit tree species belonging to the family Rhamnaceae. The fruit is a drupe, varying in shape from round to oblong, and in size from a cherry to a plum. The flesh is white and crisp.",
+  "origin": "Indo-Malaysian region of South-East Asia",
+  "localNames": [
+    "Indian Plum",
+    "Chinee Apple",
+    "Jujube",
+    "Bor (Bengali)",
+    "Badri (Sanskrit)"
+  ],
+  "regions": [
+    "India",
+    "Pakistan",
+    "Bangladesh",
+    "Parts of Africa and Middle East"
+  ],
+  "seasons": [
+    "Winter",
+    "Early Spring"
+  ],
+  "nutrition": {
+    "calories": "79 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 20.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 69,
+        "unit": "mg",
+        "rdi": "115%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 250,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 23,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, boosting immunity and skin health.",
+    "Contains antioxidants that help fight free radicals.",
+    "Traditionally used for digestive issues and to improve sleep.",
+    "Good source of energy due to natural sugars."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ber Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Thrives in tropical and subtropical climates; drought-resistant.\n2. Soil: Adaptable to a wide range of soils, including poor, alkaline, or saline soils, but prefers well-drained sandy loam.\n3. Propagation: Usually by seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Young plants need regular watering. Mature trees are very drought-tolerant.\n6. Fertilizing: Responds well to organic manure. Light fertilization may be needed.\n7. Pruning: Prune annually to encourage new growth, as fruits are borne on new shoots.\n8. Harvesting: Fruits are harvested when they turn yellowish-green to reddish-brown, depending on variety.",
+  "growthDuration": "Starts bearing fruit in 2-3 years. Fruits mature in winter to early spring.",
+  "sustainabilityTips": [
+    "Ber can be eaten fresh, dried, or pickled.",
+    "Store fresh ber at room temperature for a few days or refrigerate for longer.",
+    "Dried ber has a long shelf life."
+  ],
+  "carbonFootprintInfo": "Relatively low, especially if grown locally. (0.3-0.7 kg CO2e/kg)",
+  "staticRecipes": [
+    {
+      "name": "Fresh Ber (Indian Jujube)",
+      "description": "Enjoyed fresh, often with a sprinkle of salt and chili powder.",
+      "ingredients": [
+        "1 cup fresh Ber (Indian Jujube)",
+        "Pinch of salt (optional)",
+        "Pinch of red chili powder (optional)"
+      ],
+      "steps": [
+        "Wash the ber fruits thoroughly.",
+        "They can be eaten whole, like a small apple. The skin is edible, and the flesh is crisp around a central stone.",
+        "If desired, sprinkle with a little salt and/or red chili powder for a tangy and spicy flavor.",
+        "Discard the stone."
+      ]
+    },
+    {
+      "name": "Dried Ber (Sukha Ber)",
+      "description": "Ber fruits are often sun-dried for preservation and eaten as a snack.",
+      "ingredients": [
+        "Fresh Ber fruits"
+      ],
+      "steps": [
+        "Wash fresh ber fruits thoroughly.",
+        "Spread them on a clean cloth or tray in direct sunlight.",
+        "Allow them to dry completely, which may take several days depending on the sun's intensity. Turn them occasionally for even drying.",
+        "Once fully dried, they will be shriveled and hard. Store in an airtight container.",
+        "Dried ber can be eaten as is or used in traditional preparations."
+      ]
+    },
+    {
+      "name": "Ber Pickle (Achar)",
+      "description": "A tangy and spicy pickle made from fresh Ber fruits.",
+      "ingredients": [
+        "1 lb fresh Ber, washed and slit",
+        "1/4 cup mustard oil",
+        "2 tbsp fennel seeds (saunf)",
+        "1 tbsp mustard seeds (rai)",
+        "1 tsp fenugreek seeds (methi dana)",
+        "1/2 tsp asafoetida (hing)",
+        "1 tbsp turmeric powder",
+        "2 tbsp red chili powder (or to taste)",
+        "Salt to taste",
+        "2 tbsp vinegar (optional, for longer shelf life)"
+      ],
+      "steps": [
+        "Sun-dry the slit ber fruits for a day or two to remove some moisture.",
+        "Dry roast fennel seeds, mustard seeds, and fenugreek seeds separately. Coarsely grind them.",
+        "Heat mustard oil in a pan until it smokes lightly, then let it cool completely.",
+        "In a large mixing bowl, combine the sun-dried ber, ground spice mixture, turmeric powder, red chili powder, asafoetida, and salt.",
+        "Pour the cooled mustard oil over the mixture and mix well.",
+        "If using, add vinegar and mix again.",
+        "Transfer the pickle to a sterilized, dry glass jar. Cover and keep in the sun for 4-5 days, shaking the jar daily.",
+        "The pickle is ready to eat once the ber softens and absorbs the flavors. Store in a cool, dry place."
+      ]
+    }
+  ]
+}

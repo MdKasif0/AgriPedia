@@ -1,0 +1,140 @@
+{
+  "id": "starfruit",
+  "commonName": "Starfruit (Carambola)",
+  "scientificName": "Averrhoa carambola",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Carambola_Starfruit.jpg",
+  "description": "A tropical fruit with a distinctive star shape when sliced. The fruit has a waxy skin and can range from tart to sweet, with a juicy, crisp texture.",
+  "origin": "Southeast Asia (likely Sri Lanka or Moluccas, Indonesia)",
+  "localNames": [
+    "Carambola (Spanish/Portuguese/English)",
+    "Kamrakh (Hindi)"
+  ],
+  "regions": [
+    "Malaysia",
+    "Indonesia",
+    "Philippines",
+    "India",
+    "Thailand",
+    "Taiwan",
+    "Brazil",
+    "United States (Florida, Hawaii)"
+  ],
+  "seasons": [
+    "Varies, can fruit multiple times a year, often in fall and winter"
+  ],
+  "nutrition": {
+    "calories": "31 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 34.4,
+        "unit": "mg",
+        "rdi": "57%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 133,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant supporting the immune system.",
+    "Contains dietary fiber, aiding in digestion.",
+    "Low in calories and sugar, making it a healthy snack option.",
+    "Provides antioxidants that help combat free radicals."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oxalic Acid Content",
+      "severity": "Moderate",
+      "details": "Contains high levels of oxalic acid. Individuals with kidney problems (especially kidney failure or those on dialysis) should avoid starfruit as it can cause nephrotoxicity and neurotoxicity (starfruit poisoning)."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, needs warm, humid conditions. Sensitive to frost and strong winds.\n2. Soil: Prefers well-drained, fertile, loamy soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: Can be grown from seeds, but grafting or budding onto seedling rootstock is common for better varieties.\n4. Planting: Plant in full sun to partial shade. Ensure good drainage.\n5. Watering: Requires regular watering, especially during dry periods and fruit development. Do not overwater.\n6. Fertilizing: Apply balanced fertilizer suitable for fruit trees during active growth.\n7. Pruning: Light pruning to shape the tree and remove dead or crowded branches.\n8. Harvesting: Fruits are harvested when they are fully grown, and the color changes from green to yellow or yellowish-orange (depending on variety). They are picked by hand.",
+  "growthDuration": "Trees may start bearing fruit in 2-4 years. Fruits mature 60-75 days after flowering.",
+  "sustainabilityTips": [
+    "Store starfruit at room temperature until ripe, then refrigerate for a few days.",
+    "The entire fruit is edible, including the waxy skin. Just wash, slice, and eat.",
+    "Can be juiced, added to salads, or used as a garnish."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on transport from tropical regions (0.7-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Starfruit Slices",
+      "description": "The easiest way to enjoy starfruit is by slicing it to reveal its star shape.",
+      "ingredients": [
+        "1-2 ripe starfruits"
+      ],
+      "steps": [
+        "Wash the starfruit thoroughly under running water.",
+        "Trim off the greenish or brownish edges of the five ridges if they are tough or discolored.",
+        "Slice the fruit crosswise into 1/4 to 1/2 inch thick slices. Each slice will look like a star.",
+        "Remove any visible seeds if desired (though small seeds are often edible).",
+        "Serve fresh. They can be eaten as is, added to fruit salads, or used as a garnish."
+      ]
+    },
+    {
+      "name": "Starfruit Juice",
+      "description": "A refreshing and slightly tangy juice.",
+      "ingredients": [
+        "2-3 ripe starfruits, washed and roughly chopped (ends trimmed)",
+        "1/2 cup water",
+        "1-2 tbsp sugar or honey (to taste, optional)",
+        "Pinch of salt (optional)"
+      ],
+      "steps": [
+        "Combine chopped starfruit and water in a blender.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve or cheesecloth to remove pulp and any seeds.",
+        "Stir in sugar/honey and salt if using. Taste and adjust sweetness.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "name": "Starfruit and Ginger Relish",
+      "description": "A zesty relish that can be served with grilled meats or fish.",
+      "ingredients": [
+        "2 ripe starfruits, finely diced",
+        "1 tbsp finely grated fresh ginger",
+        "1 small red chili, minced (optional)",
+        "1/4 cup chopped fresh cilantro",
+        "2 tbsp lime juice",
+        "1 tbsp rice vinegar",
+        "1 tsp sugar",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "In a medium bowl, combine diced starfruit, grated ginger, minced chili (if using), and chopped cilantro.",
+        "In a small bowl, whisk together lime juice, rice vinegar, sugar, and salt until the sugar is dissolved.",
+        "Pour the dressing over the starfruit mixture and toss gently to combine.",
+        "Let the relish sit for at least 15-20 minutes at room temperature to allow flavors to meld before serving."
+      ]
+    }
+  ]
+}

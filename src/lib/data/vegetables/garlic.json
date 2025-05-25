@@ -1,0 +1,164 @@
+{
+  "id": "garlic",
+  "commonName": "Garlic",
+  "scientificName": "Allium sativum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/800px-Garlic.jpg",
+  "description": "A species in the onion genus, Allium. It is native to Central Asia and northeastern Iran and has long been a common seasoning worldwide, with a history of several thousand years of human consumption and use.",
+  "origin": "Central Asia and northeastern Iran",
+  "localNames": [
+    "Ajo (Spanish)",
+    "Ail (French)",
+    "Knoblauch (German)",
+    "Lahsun (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "Bangladesh",
+    "Egypt",
+    "South Korea"
+  ],
+  "seasons": [
+    "Year-round (harvested in summer, stores well)"
+  ],
+  "nutrition": {
+    "calories": "149 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 6.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 33.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 31.2,
+        "unit": "mg",
+        "rdi": "52%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 1.235,
+        "unit": "mg",
+        "rdi": "73%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 1.672,
+        "unit": "mg",
+        "rdi": "84%"
+      },
+      {
+        "name": "Selenium",
+        "value": 14.2,
+        "unit": "µg",
+        "rdi": "20%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains allicin, a sulfur compound with potent medicinal properties, including immune-boosting effects.",
+    "May help lower blood pressure and cholesterol levels, supporting heart health.",
+    "Has antioxidant and anti-inflammatory properties.",
+    "Traditionally used for its antibacterial and antiviral effects."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Garlic Intolerance/Allergy",
+      "severity": "Mild",
+      "details": "Can cause digestive issues (heartburn, gas) in some individuals. True allergy is rare but can cause skin reactions or more severe symptoms."
+    },
+    {
+      "name": "Blood Thinning",
+      "severity": "Moderate",
+      "details": "Garlic can have blood-thinning properties; individuals on anticoagulant medication should consult their doctor before consuming large amounts or supplements."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Plant individual cloves (pointy end up) in autumn or early spring.\n2. Soil: Well-drained, fertile soil rich in organic matter with a pH of 6.0-7.0.\n3. Spacing: Space cloves 4-6 inches apart, 2 inches deep.\n4. Watering: Water regularly, especially during bulb development. Reduce watering as harvest approaches.\n5. Weeding: Keep weed-free.\n6. Harvesting: Harvest when lower leaves turn yellow/brown and begin to dry. Gently dig up bulbs and cure in a shady, airy spot for a few weeks.",
+  "growthDuration": "About 8-9 months if planted in autumn; shorter for spring planting.",
+  "sustainabilityTips": [
+    "Store whole garlic bulbs in a cool, dark, dry place with good air circulation (not in the refrigerator).",
+    "Once a clove is broken from the bulb, use remaining cloves within a week or two.",
+    "Garlic scapes (flower stalks of hardneck varieties) are edible and delicious."
+  ],
+  "carbonFootprintInfo": "Generally low, around 0.4-0.6 kg CO2e/kg for field-grown garlic.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Garlic",
+      "description": "Roasting garlic transforms it into a sweet, creamy, and spreadable delight.",
+      "ingredients": [
+        "1-2 whole heads of garlic",
+        "1-2 tsp olive oil",
+        "Pinch of salt and pepper"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "Slice off the top 1/4 to 1/2 inch of the garlic head(s) to expose the tops of the cloves.",
+        "Place garlic head(s) on a piece of aluminum foil. Drizzle with olive oil and sprinkle with salt and pepper.",
+        "Wrap the garlic loosely in the foil.",
+        "Roast for 30-45 minutes, or until the cloves are very soft and light golden brown.",
+        "Let cool slightly. Squeeze the roasted garlic cloves out of their skins. Use as a spread, in dips, or add to dishes."
+      ]
+    },
+    {
+      "name": "Garlic Butter Shrimp Scampi",
+      "description": "A quick and flavorful pasta dish or appetizer featuring shrimp cooked in garlic butter sauce.",
+      "ingredients": [
+        "1 lb large shrimp, peeled and deveined",
+        "8 tbsp (1 stick) butter",
+        "4-6 cloves garlic, minced",
+        "1/4 cup dry white wine or chicken broth",
+        "2 tbsp lemon juice",
+        "1/4 cup chopped fresh parsley",
+        "Red pepper flakes to taste (optional)",
+        "Cooked pasta (e.g., linguine) or crusty bread for serving"
+      ],
+      "steps": [
+        "Melt butter in a large skillet over medium heat. Add minced garlic and red pepper flakes (if using); cook for 1-2 minutes until fragrant (do not brown garlic).",
+        "Add shrimp to the skillet in a single layer. Cook for 1-2 minutes per side, until pink and opaque.",
+        "Pour in white wine or broth and lemon juice. Bring to a simmer and cook for 1-2 minutes more, until sauce slightly reduces.",
+        "Remove from heat. Stir in chopped parsley.",
+        "Serve immediately over cooked pasta or with crusty bread for dipping."
+      ]
+    },
+    {
+      "name": "Aglio e Olio (Garlic and Oil Pasta)",
+      "description": "A simple yet classic Italian pasta dish where garlic and olive oil are the stars.",
+      "ingredients": [
+        "1 lb spaghetti or linguine",
+        "1/2 cup good quality extra virgin olive oil",
+        "6-8 cloves garlic, thinly sliced",
+        "1/2 tsp red pepper flakes (or to taste)",
+        "1/4 cup chopped fresh parsley",
+        "Salt to taste",
+        "Grated Parmesan cheese for serving (optional)"
+      ],
+      "steps": [
+        "Cook pasta according to package directions until al dente. Reserve about 1 cup of pasta water before draining.",
+        "While pasta is cooking, heat olive oil in a large skillet over medium-low heat. Add sliced garlic and red pepper flakes.",
+        "Cook slowly, stirring frequently, until garlic is lightly golden and fragrant (about 3-5 minutes). Be careful not to burn the garlic, as it will become bitter.",
+        "Add cooked and drained pasta to the skillet with the garlic and oil. Add a few tablespoons of the reserved pasta water to help create a light sauce.",
+        "Toss well to coat the pasta. Stir in chopped parsley and season with salt.",
+        "Serve immediately, topped with grated Parmesan cheese if desired."
+      ]
+    }
+  ]
+}

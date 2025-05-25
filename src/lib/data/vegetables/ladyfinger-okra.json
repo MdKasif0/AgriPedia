@@ -1,0 +1,173 @@
+{
+  "id": "ladyfinger-okra",
+  "commonName": "Ladyfinger (Okra)",
+  "scientificName": "Abelmoschus esculentus",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLcl8Um6O6sFQFe08oQaDuCeHoWfczlHLsF0mwfKbhJC5dhVTHy1SNG7Kp&s=10",
+  "description": "A flowering plant in the mallow family valued for its edible green seed pods. It is known for its mucilaginous (slimy) texture when cooked, which can be reduced by certain cooking methods.",
+  "origin": "Northeast Africa (Ethiopian highlands)",
+  "localNames": [
+    "Okra",
+    "Bhindi (Hindi)",
+    "Gumbo (Southern US)",
+    "Bamia (Arabic/Middle Eastern)"
+  ],
+  "regions": [
+    "India",
+    "Nigeria",
+    "Sudan",
+    "Pakistan",
+    "United States (Southern states)"
+  ],
+  "seasons": [
+    "Summer",
+    "Warm seasons"
+  ],
+  "nutrition": {
+    "calories": "33 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 31.3,
+        "unit": "µg",
+        "rdi": "39%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 23,
+        "unit": "mg",
+        "rdi": "38%"
+      },
+      {
+        "name": "Folate",
+        "value": 60,
+        "unit": "µg",
+        "rdi": "15%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.94,
+        "unit": "mg",
+        "rdi": "47%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting gut health.",
+    "Rich in Vitamin K, important for blood clotting and bone health.",
+    "Provides Vitamin C, an antioxidant that supports the immune system.",
+    "Contains folate, crucial for cell growth and development."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Okra Allergy",
+      "severity": "Rare",
+      "details": "Allergies are uncommon, but some people may experience skin irritation from handling the fuzzy pods."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after the last frost when soil is warm.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0. Full sun.\n3. Spacing: Space plants 12-18 inches apart in rows 3 feet apart.\n4. Watering: Requires consistent moisture, especially during flowering and pod development. Drought-tolerant once established but yields better with water.\n5. Harvesting: Harvest pods when they are young and tender (typically 2-4 inches long), about 4-6 days after flowering. Harvest frequently to encourage continuous production. Use gloves as some varieties have irritating fuzz.",
+  "growthDuration": "50-65 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store fresh okra in a paper bag or perforated plastic bag in the refrigerator for 2-3 days.",
+    "To reduce sliminess, cook okra whole, quickly at high heat (e.g., stir-frying, grilling), or with acidic ingredients like tomatoes or vinegar.",
+    "Okra can be pickled or frozen (blanch first)."
+  ],
+  "carbonFootprintInfo": "Moderate, around 0.5-0.9 kg CO2e/kg for field-grown okra.",
+  "staticRecipes": [
+    {
+      "name": "Bhindi Masala (Spiced Okra Stir-fry)",
+      "description": "A popular North Indian dry curry where okra is cooked with onions, tomatoes, and spices.",
+      "ingredients": [
+        "1 lb okra (bhindi), washed, dried, and ends trimmed, cut into 1-inch pieces",
+        "1 large onion, thinly sliced",
+        "2 medium tomatoes, chopped",
+        "1 tbsp oil",
+        "1 tsp cumin seeds",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "1/2 tsp red chili powder (or to taste)",
+        "1/2 tsp amchur (dried mango powder) or lemon juice",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Heat oil in a pan or kadai over medium heat. Add cumin seeds; when they splutter, add sliced onions.",
+        "Sauté onions until light golden brown.",
+        "Add cut okra and sauté for 5-7 minutes, stirring occasionally, until okra is lightly browned and no longer slimy. (Tip: Don't cover the pan initially).",
+        "Add chopped tomatoes, turmeric powder, coriander powder, chili powder, and salt. Mix well.",
+        "Cover and cook on low heat for 8-10 minutes, or until okra is tender, stirring occasionally.",
+        "Uncover, add amchur powder or lemon juice. Mix and cook for another 2 minutes.",
+        "Serve hot with roti or paratha."
+      ]
+    },
+    {
+      "name": "Crispy Fried Okra",
+      "description": "A Southern US classic, okra coated in cornmeal and fried until golden and crisp.",
+      "ingredients": [
+        "1 lb fresh okra, sliced into 1/2-inch rounds",
+        "1/2 cup cornmeal",
+        "1/4 cup all-purpose flour",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "1/4 tsp cayenne pepper (optional)",
+        "1 egg, beaten with 1 tbsp milk or buttermilk",
+        "Vegetable oil for frying"
+      ],
+      "steps": [
+        "In a shallow dish, combine cornmeal, flour, salt, pepper, and cayenne pepper (if using).",
+        "In another shallow dish, place the beaten egg mixture.",
+        "Dip okra slices first into the egg mixture, then dredge them in the cornmeal mixture, ensuring they are well coated.",
+        "Heat about 1/2 inch of vegetable oil in a large skillet over medium-high heat.",
+        "Carefully add coated okra to the hot oil in a single layer (fry in batches if necessary).",
+        "Fry for 2-3 minutes per side, or until golden brown and crispy.",
+        "Remove with a slotted spoon and drain on paper towels. Serve immediately."
+      ]
+    },
+    {
+      "name": "Okra and Tomato Stew (e.g., Gumbo base element)",
+      "description": "A simple stew combining okra and tomatoes, often a component in gumbos or other Southern dishes.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "1 bell pepper (any color), chopped",
+        "2 celery stalks, chopped (optional)",
+        "1 lb okra, sliced",
+        "1 (14.5 oz) can diced tomatoes, undrained",
+        "1 cup vegetable or chicken broth",
+        "1 bay leaf",
+        "Salt and pepper to taste",
+        "Hot sauce to taste (optional)"
+      ],
+      "steps": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat. Add onion, bell pepper, and celery (if using). Cook until softened, about 5-7 minutes.",
+        "Add sliced okra and cook for 5 minutes, stirring occasionally.",
+        "Stir in diced tomatoes (with their juice), broth, and bay leaf.",
+        "Bring to a simmer, then reduce heat, cover, and cook for 20-25 minutes, or until okra is tender and flavors have melded.",
+        "Remove bay leaf. Season with salt, pepper, and hot sauce to taste.",
+        "Serve as a side dish or over rice."
+      ]
+    }
+  ]
+}

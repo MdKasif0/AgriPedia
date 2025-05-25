@@ -1,0 +1,186 @@
+{
+  "id": "spinach",
+  "commonName": "Spinach",
+  "scientificName": "Spinacia oleracea",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Spinach.JPG",
+  "description": "A leafy green flowering plant native to central and western Asia. Its leaves are a common edible vegetable consumed either fresh, or after storage using preservation techniques by canning, freezing, or dehydration.",
+  "origin": "Ancient Persia (modern Iran)",
+  "localNames": [
+    "Espinaca (Spanish)",
+    "Épinard (French)",
+    "Spinat (German)",
+    "Palak (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "United States",
+    "Turkey",
+    "Japan",
+    "Indonesia"
+  ],
+  "seasons": [
+    "Spring",
+    "Autumn",
+    "Winter (in milder climates)"
+  ],
+  "nutrition": {
+    "calories": "23 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 469,
+        "unit": "µg RAE",
+        "rdi": "52%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 483,
+        "unit": "µg",
+        "rdi": "604%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 28.1,
+        "unit": "mg",
+        "rdi": "47%"
+      },
+      {
+        "name": "Folate",
+        "value": 194,
+        "unit": "µg",
+        "rdi": "49%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 2.7,
+        "unit": "mg",
+        "rdi": "15%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 79,
+        "unit": "mg",
+        "rdi": "20%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.9,
+        "unit": "mg",
+        "rdi": "45%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of vitamins A, C, K, and folate, crucial for various bodily functions.",
+    "Rich in iron, important for preventing anemia and supporting energy levels.",
+    "Contains antioxidants like lutein and zeaxanthin, which are beneficial for eye health.",
+    "May help reduce oxidative stress, lower blood pressure, and support bone health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oxalates",
+      "severity": "Mild",
+      "details": "High in oxalates, which can contribute to kidney stone formation in susceptible individuals. Cooking spinach can reduce oxalate levels. People with a history of calcium oxalate kidney stones may need to moderate intake."
+    },
+    {
+      "name": "Histamine",
+      "severity": "Mild",
+      "details": "Spinach is moderately high in histamine, which may trigger symptoms in individuals with histamine intolerance."
+    }
+  ],
+  "cultivationProcess": "Spinach is a cool-season crop, growing best in spring and fall. Prefers well-drained soil rich in organic matter and partial to full sun. Can be grown from seed sown directly in the garden. Harvest leaves when they reach desired size; outer leaves can be picked for a continuous harvest, or the whole plant can be cut.",
+  "growthDuration": "Approximately 4-6 weeks from sowing to first harvest. Successive sowings can provide a continuous supply.",
+  "sustainabilityTips": [
+    "Store unwashed spinach in the refrigerator, wrapped loosely in a paper towel inside a plastic bag, for up to a week.",
+    "Wash thoroughly just before use, as leaves can trap grit.",
+    "Frozen spinach is a nutritious and convenient alternative when fresh is out of season or to prevent spoilage."
+  ],
+  "carbonFootprintInfo": "Generally low footprint (0.3-0.6 kg CO2e/kg), especially if field-grown and consumed locally. Greenhouse production and long-distance transport increase its impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Sautéed Spinach with Garlic",
+      "description": "A quick and easy way to cook spinach, perfect as a healthy side dish.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1-2 cloves garlic, minced",
+        "10 oz fresh spinach (about 1 large bunch or bag)",
+        "Salt and freshly ground black pepper to taste",
+        "Pinch of nutmeg (optional)",
+        "Squeeze of lemon juice (optional)"
+      ],
+      "steps": [
+        "Heat olive oil in a large skillet or pot over medium heat.",
+        "Add minced garlic and cook for about 30 seconds until fragrant (be careful not to burn it).",
+        "Add fresh spinach to the skillet. It will look like a lot, but it wilts down significantly. You may need to add it in batches.",
+        "Cook, stirring occasionally, until spinach is wilted, about 2-4 minutes.",
+        "Season with salt, pepper, and a pinch of nutmeg if desired. Remove from heat and stir in a squeeze of lemon juice if using.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Creamy Spinach Dip (Hot or Cold)",
+      "description": "A classic party dip that's rich, creamy, and full of spinach flavor, great for gatherings.",
+      "ingredients": [
+        "10 oz frozen chopped spinach, thawed and squeezed very dry",
+        "8 oz cream cheese, softened",
+        "1/2 cup sour cream or Greek yogurt",
+        "1/4 cup mayonnaise",
+        "1/2 cup grated Parmesan cheese",
+        "1 clove garlic, minced or 1/4 tsp garlic powder",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "Dash of hot sauce or cayenne pepper (optional)",
+        "Optional: 1/4 cup chopped artichoke hearts, drained"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C) if baking. Otherwise, can be served cold or gently warmed on stovetop.",
+        "In a mixing bowl, combine the thoroughly squeezed spinach, softened cream cheese, sour cream, mayonnaise, Parmesan cheese, minced garlic (or garlic powder), salt, pepper, and hot sauce (if using). Add artichoke hearts if desired.",
+        "Mix well until all ingredients are evenly incorporated.",
+        "For a hot dip, transfer to an oven-safe dish and bake for 20-25 minutes until bubbly and lightly golden on top. Alternatively, heat gently in a saucepan on the stove until warmed through.",
+        "Serve warm with tortilla chips, pita bread, crackers, or vegetable sticks. Can also be served chilled."
+      ]
+    },
+    {
+      "name": "Spinach and Strawberry Salad with Poppy Seed Dressing",
+      "description": "A refreshing and colorful salad combining sweet strawberries, tender spinach, and a tangy poppy seed dressing.",
+      "ingredients": [
+        "5-6 oz fresh baby spinach",
+        "1 cup sliced fresh strawberries",
+        "1/4 cup crumbled feta or goat cheese (optional)",
+        "1/4 cup toasted pecans or slivered almonds",
+        "For dressing: 1/4 cup olive oil, 2 tbsp balsamic vinegar or red wine vinegar, 1 tbsp honey or maple syrup, 1 tsp poppy seeds, 1/2 tsp Dijon mustard (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "In a large salad bowl, combine baby spinach, sliced strawberries, crumbled cheese (if using), and toasted nuts.",
+        "In a small bowl or jar, whisk or shake together olive oil, vinegar, honey/maple syrup, poppy seeds, and Dijon mustard (if using). Season with salt and pepper.",
+        "Pour dressing over the salad just before serving and toss gently to combine.",
+        "Serve immediately for best texture."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "blueberry",
+  "commonName": "Blueberry",
+  "scientificName": "Vaccinium sect. Cyanococcus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Blueberries.jpg",
+  "description": "A small, round, blue to purple berry, known for its sweet and slightly tart flavor. They are native to North America.",
+  "origin": "North America",
+  "localNames": [
+    "Arándano (Spanish)",
+    "Myrtille (French - often refers to bilberry, but also blueberry)",
+    "Blaubeere/Heidelbeere (German)"
+  ],
+  "regions": [
+    "United States",
+    "Canada",
+    "Chile",
+    "Peru",
+    "Poland",
+    "Mexico"
+  ],
+  "seasons": [
+    "Summer"
+  ],
+  "nutrition": {
+    "calories": "57 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 9.7,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 19.3,
+        "unit": "µg",
+        "rdi": "24%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.336,
+        "unit": "mg",
+        "rdi": "17%"
+      }
+    ],
+    "minerals": [],
+    "potentialAllergies": [
+      {
+        "name": "Blueberry Allergy",
+        "severity": "Rare",
+        "details": "Uncommon, but can occur."
+      }
+    ],
+    "healthBenefits": [
+      "Very high in antioxidants, particularly anthocyanins, which give them their blue color.",
+      "May improve brain health and memory.",
+      "Can help reduce DNA damage and protect against aging and cancer.",
+      "Beneficial for heart health by lowering blood pressure and improving cholesterol levels."
+    ]
+  },
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate. Require winter chill. Different types (highbush, lowbush, rabbiteye) have different needs.\n2. Soil: Very acidic (pH 4.0-5.0), well-drained, sandy soil rich in organic matter. Amend soil with peat moss or sulfur.\n3. Propagation: From cuttings or nursery plants.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Consistent moisture is crucial, especially during establishment and fruit development. Use rainwater if possible due to acidity preference.\n6. Fertilizing: Use fertilizers formulated for acid-loving plants (e.g., azalea/rhododendron fertilizer).\n7. Mulching: Mulch with pine needles, wood chips, or sawdust to retain moisture, suppress weeds, and maintain soil acidity.\n8. Harvesting: Berries ripen over several weeks. Harvest when they are fully blue, plump, and detach easily.",
+  "growthDuration": "Plants typically start producing a good crop 2-3 years after planting. Harvest season is summer.",
+  "sustainabilityTips": [
+    "Store unwashed blueberries in the refrigerator; consume within a week or two.",
+    "Wash just before eating.",
+    "Excellent for freezing: spread on a baking sheet to freeze individually, then transfer to a freezer bag."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on origin and transport (0.7-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Classic Blueberry Muffins",
+      "description": "Moist and fluffy muffins packed with fresh blueberries.",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "3/4 cup granulated sugar",
+        "1/2 tsp salt",
+        "2 tsp baking powder",
+        "1/3 cup vegetable oil",
+        "1 egg, lightly beaten",
+        "1/3 cup milk",
+        "1 cup fresh or frozen blueberries (if frozen, do not thaw)"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C). Grease or line a 12-cup muffin tin.",
+        "In a large bowl, combine flour, sugar, salt, and baking powder.",
+        "In a separate small bowl, combine vegetable oil, egg, and milk.",
+        "Pour the wet ingredients into the dry ingredients and mix until just moistened (do not overmix).",
+        "Gently fold in the blueberries.",
+        "Divide batter evenly among the prepared muffin cups.",
+        "Bake for 20-25 minutes, or until a toothpick inserted into the center comes out clean. Let cool in pan for a few minutes before transferring to a wire rack."
+      ]
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "description": "Fluffy pancakes dotted with juicy blueberries.",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 1/4 cups milk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "1 cup fresh or frozen blueberries"
+      ],
+      "steps": [
+        "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+        "In a separate bowl, whisk together milk, egg, and melted butter.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined (a few lumps are okay).",
+        "Gently fold in the blueberries.",
+        "Heat a lightly oiled griddle or frying pan over medium heat.",
+        "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle. Cook for 2-3 minutes per side, or until golden brown and cooked through.",
+        "Serve warm with maple syrup and extra blueberries if desired."
+      ]
+    },
+    {
+      "name": "Simple Blueberry Sauce (Compote)",
+      "description": "A versatile sauce perfect for topping pancakes, yogurt, ice cream, or cheesecake.",
+      "ingredients": [
+        "2 cups fresh or frozen blueberries",
+        "1/4 cup sugar (or to taste)",
+        "1 tbsp lemon juice",
+        "2 tbsp water"
+      ],
+      "steps": [
+        "Combine blueberries, sugar, lemon juice, and water in a medium saucepan.",
+        "Bring to a simmer over medium heat, stirring occasionally.",
+        "Reduce heat to low and cook for 10-15 minutes, or until the blueberries have burst and the sauce has thickened slightly. Mash some of the berries against the side of the pan if you prefer a smoother sauce.",
+        "Remove from heat and let cool. The sauce will thicken more as it cools.",
+        "Serve warm or chilled. Store in an airtight container in the refrigerator."
+      ]
+    }
+  ]
+}

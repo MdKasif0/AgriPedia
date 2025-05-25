@@ -1,0 +1,149 @@
+{
+  "id": "tinda-apple-gourd",
+  "commonName": "Tinda (Apple Gourd)",
+  "scientificName": "Praecitrullus fistulosus",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJK7qg900IUR29u1EVzihtWsOAKMyZLbIImwShTgn8cSKXlQjhZ4ZlOuA&s=10",
+  "description": "A squash-like cucurbit grown for its immature fruit, a vegetable popular in South Asia. It is a small, round, light green fruit, also known as Indian round gourd or apple gourd.",
+  "origin": "India",
+  "localNames": [
+    "Indian Round Gourd",
+    "Apple Gourd",
+    "Baby Pumpkin"
+  ],
+  "regions": [
+    "India",
+    "Pakistan",
+    "Bangladesh"
+  ],
+  "seasons": [
+    "Summer"
+  ],
+  "nutrition": {
+    "calories": "21 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 18,
+        "unit": "mg",
+        "rdi": "30%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 224,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and a good source of dietary fiber.",
+    "Provides Vitamin C, supporting the immune system.",
+    "Easy to digest and has a cooling effect on the body.",
+    "Contains antioxidants."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Tinda Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile sandy loam soil. pH 6.0-7.0. Full sun.\n3. Watering: Requires regular watering, especially during fruit development.\n4. Harvesting: Harvest fruits when they are young, tender, and about the size of a small apple or tennis ball. Skin should be smooth and light green.",
+  "growthDuration": "50-70 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store tinda in the refrigerator for 3-5 days.",
+    "Peel or lightly scrape the skin before cooking.",
+    "Often used in North Indian curries, stuffed dishes, or stir-fries."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.3-0.6 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Bharwa Tinda (Stuffed Apple Gourd)",
+      "description": "Tender apple gourds stuffed with a savory spice mixture and cooked.",
+      "ingredients": [
+        "8-10 small, tender tindas",
+        "For stuffing: 1 large onion (grated or finely minced), 1 tbsp ginger-garlic paste, 1 tsp coriander powder, 1/2 tsp turmeric powder, 1/2 tsp cumin powder, 1/4 tsp garam masala, salt to taste, 1 tbsp oil",
+        "2 tbsp oil for cooking",
+        "1/2 cup water"
+      ],
+      "steps": [
+        "Wash tindas. Lightly peel or scrape the skin. Cut off the top (stem end) to make a lid and scoop out the seeds and soft pulp from the center, creating a cavity. (Alternatively, make crosswise slits without cutting through).",
+        "Stuffing: Heat 1 tbsp oil. Sauté grated/minced onion until golden. Add ginger-garlic paste, sauté. Add all spice powders and salt. Cook for 2-3 minutes until fragrant. Let cool.",
+        "Carefully stuff the prepared spice mixture into the tindas. Close with the lid (if made).",
+        "Heat 2 tbsp oil in a wide pan or pressure cooker. Arrange stuffed tindas in a single layer.",
+        "Add 1/2 cup water. If in a pan, cover and cook on low-medium heat for 15-20 minutes, or until tindas are tender, turning occasionally. If in a pressure cooker, cook for 1-2 whistles. Serve hot."
+      ]
+    },
+    {
+      "name": "Tinda Masala (Apple Gourd Curry)",
+      "description": "A simple and flavorful North Indian curry made with tinda.",
+      "ingredients": [
+        "1 lb tinda, peeled and cubed",
+        "1 large onion, chopped",
+        "2 tomatoes, chopped or pureed",
+        "1 tbsp ginger-garlic paste",
+        "1/2 tsp cumin seeds",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "1/2 tsp red chili powder (or to taste)",
+        "Salt to taste",
+        "2 tbsp oil",
+        "Fresh cilantro for garnish"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden brown.",
+        "Add ginger-garlic paste and sauté for a minute.",
+        "Add chopped/pureed tomatoes and cook until oil starts to separate.",
+        "Add turmeric powder, coriander powder, chili powder, and salt. Mix well and cook for a minute.",
+        "Add cubed tinda and stir to coat with the masala.",
+        "Add about 1/2 cup of water. Cover and simmer for 15-20 minutes, or until tinda is tender.",
+        "Garnish with fresh cilantro. Serve hot with roti or rice."
+      ]
+    },
+    {
+      "name": "Tinda Aloo Sabzi (Apple Gourd and Potato Stir-fry)",
+      "description": "A dry vegetable dish combining tinda and potatoes.",
+      "ingredients": [
+        "1/2 lb tinda, peeled and diced",
+        "2 medium potatoes, peeled and diced",
+        "1 tbsp oil",
+        "1/2 tsp cumin seeds",
+        "Pinch of asafoetida (hing)",
+        "1/4 tsp turmeric powder",
+        "1/2 tsp coriander powder",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add cumin seeds; when they splutter, add asafoetida.",
+        "Add diced potatoes and turmeric powder. Sauté for 3-4 minutes.",
+        "Add diced tinda, coriander powder, and salt. Mix well.",
+        "Cover and cook on low heat for 12-15 minutes, or until both vegetables are tender, stirring occasionally. Add a splash of water if it gets too dry.",
+        "Uncover and cook for a few more minutes until any excess moisture evaporates. Serve hot."
+      ]
+    }
+  ]
+}

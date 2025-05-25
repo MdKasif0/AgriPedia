@@ -1,0 +1,171 @@
+{
+  "id": "fenugreek-leaves",
+  "commonName": "Fenugreek Leaves (Methi)",
+  "scientificName": "Trigonella foenum-graecum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Methi_Fenugreek_Indian_Food.jpg",
+  "description": "An annual plant in the family Fabaceae, with leaves consisting of three small obovate to oblong leaflets. It is cultivated worldwide as a semiarid crop. Its seeds and leaves are common ingredients in dishes from the Indian subcontinent.",
+  "origin": "Mediterranean region, Western Asia",
+  "localNames": [
+    "Methi (Hindi)",
+    "Alholva (Spanish - for seeds), Fenogreco (Spanish - plant)",
+    "Fenugrec (French)"
+  ],
+  "regions": [
+    "India",
+    "Pakistan",
+    "Nepal",
+    "Bangladesh",
+    "Egypt",
+    "Middle East"
+  ],
+  "seasons": [
+    "Winter",
+    "Early Spring"
+  ],
+  "nutrition": {
+    "calories": "49 kcal per 100g (fresh leaves)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 4.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 220,
+        "unit": "mg",
+        "rdi": "367%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 395,
+        "unit": "µg RAE",
+        "rdi": "44%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 16.5,
+        "unit": "mg",
+        "rdi": "92%"
+      },
+      {
+        "name": "Calcium",
+        "value": 440,
+        "unit": "mg",
+        "rdi": "44%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely rich in iron, beneficial for preventing anemia.",
+    "High in Vitamin C and Vitamin A.",
+    "May help lower blood sugar and cholesterol levels.",
+    "Traditionally used to aid digestion and improve milk production in lactating mothers."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Fenugreek Allergy",
+      "severity": "Mild",
+      "details": "Can cause allergic reactions in individuals sensitive to legumes (e.g., peanuts, chickpeas). Symptoms can include skin rash or asthma."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in late summer/early fall for winter harvest, or early spring.\n2. Soil: Well-drained soil. Tolerates poor soil but prefers moderately fertile conditions. pH 6.0-7.0.\n3. Spacing: Sow seeds shallowly, about 1/4 inch deep. Can be broadcast or sown in rows.\n4. Watering: Regular watering, keep soil consistently moist but not waterlogged.\n5. Harvesting: Harvest young leaves and tender stems when plants are 6-8 inches tall. Can be cut multiple times. Seeds are harvested when pods mature and dry.",
+  "growthDuration": "Leaves ready for harvest in 20-30 days from sowing.",
+  "sustainabilityTips": [
+    "Store fresh fenugreek leaves wrapped in a damp paper towel in the refrigerator for a few days.",
+    "Leaves can be dried (Kasuri Methi) for longer storage and a more intense flavor.",
+    "Use in curries, flatbreads (thepla), lentil dishes, and vegetable stir-fries."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Aloo Methi (Potato and Fenugreek Leaves Stir-fry)",
+      "description": "A popular and simple North Indian dish combining potatoes with the slightly bitter and aromatic fenugreek leaves.",
+      "ingredients": [
+        "2 cups chopped fresh fenugreek leaves (methi)",
+        "2 medium potatoes, peeled and diced",
+        "1 tbsp oil",
+        "1/2 tsp cumin seeds",
+        "Pinch of asafoetida (hing)",
+        "1-2 cloves garlic, minced",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "Optional: 1/2 tsp red chili powder"
+      ],
+      "steps": [
+        "Wash fenugreek leaves thoroughly in several changes of water to remove grit. Chop them roughly.",
+        "Heat oil in a pan. Add cumin seeds; when they splutter, add asafoetida and minced garlic. Sauté for a few seconds.",
+        "Add diced potatoes and turmeric powder. Sauté for 2-3 minutes.",
+        "Add chopped fenugreek leaves and salt (and chili powder if using). Mix well.",
+        "Cover and cook on low-medium heat for 10-15 minutes, or until potatoes are tender and fenugreek leaves are cooked, stirring occasionally. Add a splash of water if it becomes too dry.",
+        "Serve hot with roti or paratha."
+      ]
+    },
+    {
+      "name": "Methi Thepla (Fenugreek Flatbread)",
+      "description": "A soft and flavorful Gujarati flatbread made with whole wheat flour and fresh fenugreek leaves.",
+      "ingredients": [
+        "1 cup whole wheat flour (atta)",
+        "1/2 cup chopped fresh fenugreek leaves (methi)",
+        "1/4 cup gram flour (besan, optional)",
+        "2 tbsp plain yogurt",
+        "1 tsp ginger-green chili paste",
+        "1/2 tsp turmeric powder",
+        "1/2 tsp red chili powder (optional)",
+        "Salt to taste",
+        "Water to knead",
+        "Oil or ghee for cooking"
+      ],
+      "steps": [
+        "In a mixing bowl, combine whole wheat flour, fenugreek leaves, gram flour (if using), yogurt, ginger-chili paste, turmeric powder, chili powder, and salt.",
+        "Gradually add water and knead into a soft, pliable dough. Add a teaspoon of oil and knead again.",
+        "Cover and let the dough rest for 20-30 minutes.",
+        "Divide the dough into small balls. Roll each ball into a thin circle (about 6-7 inches) using a little flour for dusting.",
+        "Heat a tawa (griddle) over medium heat. Cook the thepla for about 30 seconds on one side. Flip and cook for another 30 seconds.",
+        "Apply a little oil or ghee on both sides and cook, pressing gently with a spatula, until golden brown spots appear on both sides.",
+        "Serve hot with yogurt, pickle, or tea."
+      ]
+    },
+    {
+      "name": "Methi Dal (Fenugreek Leaves with Lentils)",
+      "description": "A nutritious lentil dish flavored with fresh fenugreek leaves.",
+      "ingredients": [
+        "1/2 cup toor dal (split pigeon peas) or moong dal (split yellow lentils), rinsed",
+        "1 cup chopped fresh fenugreek leaves (methi)",
+        "1 small onion, chopped",
+        "1 small tomato, chopped",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp ghee or oil, 1/2 tsp mustard seeds, 1/2 tsp cumin seeds, 1-2 dried red chilies, pinch of asafoetida, 2 cloves garlic (chopped, optional)"
+      ],
+      "steps": [
+        "Pressure cook rinsed dal with 1.5 cups water, turmeric powder, and a little salt for 3-4 whistles or until soft. Mash lightly.",
+        "In a separate pan, heat ghee/oil for tempering. Add mustard seeds and cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Sauté until garlic is lightly golden.",
+        "Add chopped onion to the tempering and sauté until translucent.",
+        "Add chopped tomato and cook until softened.",
+        "Add chopped fenugreek leaves and sauté for 2-3 minutes until wilted.",
+        "Pour the cooked dal into the pan with the fenugreek mixture. Add salt to taste (if more is needed). Mix well.",
+        "Simmer for 5-7 minutes, allowing flavors to blend. Add more water if dal is too thick. Serve hot with rice or roti."
+      ]
+    }
+  ]
+}

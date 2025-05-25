@@ -1,0 +1,168 @@
+{
+  "id": "drumstick-moringa",
+  "commonName": "Drumstick (Moringa)",
+  "scientificName": "Moringa oleifera",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Drumstick_Tree_%28Moringa_oleifera%29_4.jpg",
+  "description": "A fast-growing, drought-resistant tree of the family Moringaceae, native to the Indian subcontinent. The long, slender seed pods (drumsticks) are used as a vegetable. The leaves and flowers are also edible and highly nutritious.",
+  "origin": "Indian subcontinent (Himalayan foothills)",
+  "localNames": [
+    "Moringa",
+    "Sanjana (Hindi)",
+    "Murungai (Tamil)",
+    "Horseradish Tree",
+    "Ben Oil Tree"
+  ],
+  "regions": [
+    "India",
+    "Southeast Asia",
+    "Africa",
+    "Central and South America",
+    "Caribbean"
+  ],
+  "seasons": [
+    "Fruits mainly in spring and summer, leaves available year-round in tropical climates"
+  ],
+  "nutrition": {
+    "calories": "37 kcal per 100g (pods, cooked)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 8.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 141,
+        "unit": "mg",
+        "rdi": "235%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 30,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.36,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Drumstick pods are rich in Vitamin C and various minerals.",
+    "Moringa leaves are exceptionally nutritious, packed with vitamins A, C, E, calcium, potassium, and protein.",
+    "Contains powerful antioxidants and anti-inflammatory compounds.",
+    "Traditionally used to treat various ailments, boost energy, and improve overall health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Moringa Root Bark Caution",
+      "severity": "Moderate",
+      "details": "The root and root bark contain potentially toxic compounds and should generally not be consumed. Stick to pods, leaves, and flowers."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Fast-growing tree. Can be grown from seeds or cuttings.\n2. Soil: Well-drained sandy or loamy soil. Tolerates poor soils. pH 6.3-7.0.\n3. Climate: Tropical and subtropical. Drought-resistant. Prefers full sun.\n4. Watering: Water young plants regularly. Mature trees are drought-tolerant but produce better with occasional deep watering.\n5. Pruning: Prune regularly to encourage branching and keep the tree at a manageable height for harvesting leaves and pods.\n6. Harvesting: Pods are harvested when young and tender (about pencil thickness). Leaves can be harvested at any time once tree is established.",
+  "growthDuration": "Can start producing pods within 6-12 months in ideal conditions.",
+  "sustainabilityTips": [
+    "All parts of the moringa tree (leaves, pods, flowers, seeds) are utilized in some way.",
+    "Moringa leaves can be dried and powdered for use as a nutritional supplement.",
+    "A very resilient and fast-growing tree, excellent for agroforestry and combating malnutrition."
+  ],
+  "carbonFootprintInfo": "Low, as it's a hardy, fast-growing tree often cultivated with minimal inputs (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Drumstick Sambar (South Indian Lentil Stew)",
+      "description": "A popular South Indian stew where drumstick pieces are cooked with lentils, tamarind, and a special spice blend (sambar powder).",
+      "ingredients": [
+        "4-5 drumsticks, cut into 2-3 inch pieces",
+        "1/2 cup toor dal (split pigeon peas), cooked",
+        "1 small onion, chopped",
+        "1 tomato, chopped",
+        "Small lemon-sized ball of tamarind, soaked in warm water and pulp extracted",
+        "2 tbsp sambar powder",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1/4 tsp fenugreek seeds, 1-2 dried red chilies, few curry leaves, pinch of asafoetida"
+      ],
+      "steps": [
+        "In a pot, cook drumstick pieces with some water, turmeric powder, and salt until tender but not mushy. Set aside.",
+        "Heat oil in a pan for tempering. Add mustard seeds; when they splutter, add fenugreek seeds, dried red chilies, asafoetida, and curry leaves. Sauté.",
+        "Add chopped onion and sauté until translucent. Add chopped tomato and cook until soft.",
+        "Add sambar powder and sauté for a minute. Add tamarind pulp and cook for 2-3 minutes.",
+        "Add cooked toor dal, cooked drumstick pieces (with their cooking water), and salt to taste. Mix well. Add more water if needed to reach desired consistency.",
+        "Simmer for 10-15 minutes, allowing flavors to blend. Serve hot with rice, idli, or dosa."
+      ]
+    },
+    {
+      "name": "Moringa Leaf Stir-fry (Murungai Keerai Poriyal)",
+      "description": "A simple and nutritious South Indian stir-fry made with moringa leaves.",
+      "ingredients": [
+        "2 cups fresh moringa leaves, picked from stems and washed",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp urad dal (split black lentils)",
+        "1-2 dried red chilies, broken",
+        "Pinch of asafoetida",
+        "1 small onion, finely chopped (optional)",
+        "Salt to taste",
+        "2 tbsp grated fresh coconut (optional)"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
+        "Add asafoetida and chopped onion (if using). Sauté until onion is translucent.",
+        "Add washed moringa leaves and salt. Stir well.",
+        "Cover and cook on low-medium heat for 5-7 minutes, or until leaves are wilted and tender, stirring occasionally.",
+        "If using, stir in grated coconut. Cook for another minute.",
+        "Serve hot as a side dish with rice."
+      ]
+    },
+    {
+      "name": "Drumstick and Potato Curry",
+      "description": "A flavorful North Indian style curry with drumsticks and potatoes.",
+      "ingredients": [
+        "2-3 drumsticks, cut into 2-inch pieces",
+        "2 medium potatoes, peeled and cubed",
+        "1 large onion, pureed",
+        "1 tbsp ginger-garlic paste",
+        "2 tomatoes, pureed",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "1/2 tsp cumin powder",
+        "1/2 tsp red chili powder (or to taste)",
+        "Salt to taste",
+        "2 tbsp oil",
+        "1/2 cup water"
+      ],
+      "steps": [
+        "Heat oil in a pan or pressure cooker. Add onion puree and sauté until golden brown.",
+        "Add ginger-garlic paste and sauté for a minute.",
+        "Add tomato puree and cook until oil starts to separate.",
+        "Add turmeric powder, coriander powder, cumin powder, chili powder, and salt. Mix well and cook for a minute.",
+        "Add drumstick pieces and cubed potatoes. Sauté for 2-3 minutes, coating them with the masala.",
+        "Add 1/2 cup of water. If using a pressure cooker, cook for 1-2 whistles. If in a pan, cover and simmer for 15-20 minutes or until vegetables are tender.",
+        "Garnish with fresh cilantro. Serve hot with roti or rice."
+      ]
+    }
+  ]
+}

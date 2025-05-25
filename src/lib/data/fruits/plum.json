@@ -1,0 +1,161 @@
+{
+  "id": "plum",
+  "commonName": "Plum",
+  "scientificName": "Prunus domestica",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOd7670XKnVjyGjMbTj16ANV0jdCLLC-5MQ&s",
+  "description": "A fruit of some species in Prunus subg. Prunus. Mature plum fruits may have a dusty-white waxy coating that gives them a glaucous appearance. This is an epicuticular wax coating and is known as 'wax bloom'.",
+  "origin": "Caucasus Mountains, Eastern Europe or Western Asia",
+  "localNames": [
+    "Ciruela (Spanish)",
+    "Prune (French - also means dried plum)",
+    "Pflaume (German)"
+  ],
+  "regions": [
+    "China",
+    "Romania",
+    "Serbia",
+    "United States",
+    "Turkey",
+    "Chile"
+  ],
+  "seasons": [
+    "Summer",
+    "Early Autumn"
+  ],
+  "nutrition": {
+    "calories": "46 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 9.5,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 6.4,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 17,
+        "unit": "µg RAE",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 157,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and preventing constipation.",
+    "Rich in antioxidants, including phenols and anthocyanins.",
+    "May help improve bone health and reduce risk of osteoporosis.",
+    "Can help regulate blood sugar levels due to their low glycemic index."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can occur in individuals allergic to birch pollen."
+    },
+    {
+      "name": "Sorbitol Content",
+      "severity": "Mild",
+      "details": "Can have a laxative effect if consumed in large quantities, especially dried plums (prunes)."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Different varieties have different chilling requirements.\n2. Soil: Well-drained, fertile loamy soil. Slightly acidic to neutral pH (6.0-7.0).\n3. Propagation: Usually by grafting onto rootstock.\n4. Planting: Plant in full sun. Allow adequate space for tree growth.\n5. Watering: Regular watering, especially during dry periods and fruit development.\n6. Fertilizing: Apply balanced fertilizer in early spring.\n7. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruit production.\n8. Thinning: Thin fruits to prevent branch breakage and ensure larger fruit size.",
+  "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Fruit matures in late summer to early autumn.",
+  "sustainabilityTips": [
+    "Store ripe plums in the refrigerator for a few days.",
+    "Plums can be eaten fresh, dried (prunes), or used in jams, jellies, and baked goods.",
+    "Compost plum pits."
+  ],
+  "carbonFootprintInfo": "Moderate (0.4-0.9 kg CO2e/kg). Locally grown plums in season have a lower footprint.",
+  "staticRecipes": [
+    {
+      "name": "Simple Plum Compote",
+      "description": "A sweet and slightly tart compote, perfect over yogurt, ice cream, or pancakes.",
+      "ingredients": [
+        "1 lb plums, pitted and sliced or quartered",
+        "1/4 cup sugar (or to taste)",
+        "1/4 cup water",
+        "1 cinnamon stick (optional)",
+        "1 star anise (optional)",
+        "1 tsp lemon juice"
+      ],
+      "steps": [
+        "Combine plums, sugar, water, cinnamon stick (if using), and star anise (if using) in a saucepan.",
+        "Bring to a simmer over medium heat, then reduce heat to low.",
+        "Cook for 15-20 minutes, or until plums are soft and the sauce has thickened slightly. Stir occasionally.",
+        "Remove from heat, discard cinnamon stick and star anise. Stir in lemon juice.",
+        "Serve warm or chilled."
+      ]
+    },
+    {
+      "name": "Plum Crumble",
+      "description": "A delicious dessert with a sweet plum filling and a buttery crumble topping.",
+      "ingredients": [
+        "For filling: 2 lbs plums, pitted and sliced",
+        "1/2 cup granulated sugar",
+        "1 tbsp cornstarch",
+        "1/2 tsp cinnamon",
+        "For topping: 1 cup all-purpose flour, 1/2 cup brown sugar, 1/2 cup cold butter (cubed), 1/2 cup rolled oats (optional)"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Filling: In a large bowl, toss sliced plums with granulated sugar, cornstarch, and cinnamon. Transfer to a baking dish.",
+        "Topping: In another bowl, combine flour and brown sugar. Cut in butter until mixture resembles coarse crumbs. Stir in oats if using.",
+        "Sprinkle topping evenly over the plums.",
+        "Bake for 30-40 minutes, or until topping is golden brown and filling is bubbly. Let cool slightly before serving."
+      ]
+    },
+    {
+      "name": "Fresh Plum Salad with Mint",
+      "description": "A refreshing and simple salad showcasing the flavor of fresh plums.",
+      "ingredients": [
+        "4-5 ripe plums, pitted and sliced",
+        "1 tbsp honey",
+        "1 tbsp lime juice",
+        "1/4 cup fresh mint leaves, chopped",
+        "Optional: A sprinkle of feta cheese or toasted almonds"
+      ],
+      "steps": [
+        "In a bowl, gently combine sliced plums.",
+        "In a small bowl, whisk together honey and lime juice.",
+        "Drizzle the honey-lime mixture over the plums.",
+        "Sprinkle with fresh chopped mint.",
+        "If desired, add feta cheese or toasted almonds. Toss gently and serve immediately."
+      ]
+    }
+  ]
+}

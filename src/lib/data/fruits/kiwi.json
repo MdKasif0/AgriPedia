@@ -1,0 +1,148 @@
+{
+  "id": "kiwi",
+  "commonName": "Kiwi (Kiwifruit)",
+  "scientificName": "Actinidia deliciosa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg",
+  "description": "An edible berry of several species of woody vines in the genus Actinidia. The most common cultivar group of kiwifruit is oval, about the size of a large hen's egg. It has a fibrous, dull greenish-brown skin and bright green or golden flesh with rows of tiny, black, edible seeds.",
+  "origin": "Eastern China",
+  "localNames": [
+    "Chinese Gooseberry (older name)",
+    "Kiwi (common worldwide)"
+  ],
+  "regions": [
+    "China",
+    "New Zealand",
+    "Italy",
+    "Chile",
+    "Greece",
+    "France"
+  ],
+  "seasons": [
+    "Varies by hemisphere; generally late autumn to spring"
+  ],
+  "nutrition": {
+    "calories": "61 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 92.7,
+        "unit": "mg",
+        "rdi": "155%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 40.3,
+        "unit": "µg",
+        "rdi": "50%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 1.5,
+        "unit": "mg",
+        "rdi": "10%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 312,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, boosting the immune system and skin health.",
+    "Rich in Vitamin K, important for blood clotting and bone health.",
+    "Good source of dietary fiber, aiding digestion and promoting satiety.",
+    "Contains antioxidants and serotonin, which may improve sleep quality."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Kiwi Allergy",
+      "severity": "Mild",
+      "details": "Can cause oral allergy syndrome (itching of mouth, lips, tongue) in sensitive individuals. Contains actinidin, an enzyme that can be an allergen."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill. Requires a long growing season.\n2. Soil: Well-drained, fertile, slightly acidic soil (pH 5.5-6.5) rich in organic matter.\n3. Propagation: Seeds, cuttings, or grafting. Most commercial kiwis are dioecious (separate male and female plants), requiring both for fruit production.\n4. Planting: Plant in full sun on a sturdy trellis or pergola for the vigorous vines.\n5. Watering: Requires consistent moisture, especially during the growing season and fruit development.\n6. Fertilizing: Apply balanced fertilizer regularly during the growing season.\n7. Pruning: Extensive pruning is necessary during dormancy and summer to manage growth and encourage fruiting.\n8. Harvesting: Fruits are harvested when firm and mature. They ripen off the vine.",
+  "growthDuration": "Vines typically start bearing fruit in 3-5 years. Fruit matures in late autumn.",
+  "sustainabilityTips": [
+    "Store kiwis at room temperature to ripen, then refrigerate for longer storage.",
+    "Kiwis can be eaten by cutting in half and scooping out the flesh, or by peeling and slicing.",
+    "The skin is edible for some varieties if well-washed (and fuzz removed for green kiwis)."
+  ],
+  "carbonFootprintInfo": "Moderate to high if transported long distances (0.7-1.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Kiwi Slices",
+      "description": "The simplest way to enjoy the refreshing taste and vibrant color of kiwi.",
+      "ingredients": [
+        "1-2 ripe Kiwis"
+      ],
+      "steps": [
+        "Wash the kiwi.",
+        "You can either cut the kiwi in half crosswise and scoop out the flesh with a spoon, or peel the kiwi with a knife or vegetable peeler and then slice it into rounds.",
+        "The small black seeds are edible.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Kiwi and Strawberry Smoothie",
+      "description": "A vibrant and vitamin-packed smoothie.",
+      "ingredients": [
+        "2 ripe kiwis, peeled and chopped",
+        "1 cup fresh or frozen strawberries",
+        "1/2 banana (optional, for creaminess)",
+        "1/2 cup yogurt (plain or vanilla)",
+        "1/4 cup milk or orange juice",
+        "Honey or maple syrup to taste (optional)"
+      ],
+      "steps": [
+        "Combine chopped kiwi, strawberries, banana (if using), yogurt, and milk/orange juice in a blender.",
+        "Blend until smooth and creamy.",
+        "Taste and add honey or maple syrup if a sweeter smoothie is desired. Blend again briefly.",
+        "Pour into a glass and serve immediately."
+      ]
+    },
+    {
+      "name": "Kiwi Fruit Salad with Mint and Lime",
+      "description": "A refreshing fruit salad where kiwi takes center stage.",
+      "ingredients": [
+        "3 ripe kiwis, peeled and diced or sliced",
+        "1 cup other fruits (e.g., pineapple chunks, grapes, melon balls)",
+        "Juice of 1/2 lime",
+        "1 tbsp honey (optional)",
+        "A few fresh mint leaves, chopped"
+      ],
+      "steps": [
+        "In a medium bowl, gently combine diced/sliced kiwi and other chosen fruits.",
+        "In a small bowl, whisk together lime juice and honey (if using).",
+        "Drizzle the lime-honey mixture over the fruit salad.",
+        "Sprinkle with fresh chopped mint.",
+        "Toss gently to combine. Serve chilled or at room temperature."
+      ]
+    }
+  ]
+}
