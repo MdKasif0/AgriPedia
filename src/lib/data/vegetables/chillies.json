@@ -1,0 +1,156 @@
+{
+  "id": "chillies",
+  "commonName": "Chillies (Green/Red)",
+  "scientificName": "Capsicum annuum, Capsicum frutescens, et al.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLdfDxbrT-f1SLP8j_1Qzu7WiVSyzTrSlOrGbho6mB17FKYc-PM1jEB2TR&s=10",
+  "description": "The fruit of plants from the genus Capsicum which are members of the nightshade family, Solanaceae. Chilies are widely used as a spice to add pungent 'heat' to dishes. Colors range from green (unripe) to red, yellow, orange, or purple (ripe).",
+  "origin": "Americas (Central and South America)",
+  "localNames": [
+    "Chiles (Spanish)",
+    "Piments (French)",
+    "Chili (German/English)",
+    "Mirch (Hindi)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Thailand",
+    "Mexico",
+    "Peru",
+    "Spain",
+    "Turkey"
+  ],
+  "seasons": [
+    "Summer (field-grown); Year-round (greenhouse/various climates)"
+  ],
+  "nutrition": {
+    "calories": "40 kcal per 100g (generic red chili)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 8.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 143.7,
+        "unit": "mg",
+        "rdi": "240%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.506,
+        "unit": "mg",
+        "rdi": "30%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 48,
+        "unit": "µg RAE",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 322,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant.",
+    "Contain capsaicin, the compound responsible for their pungency, which has anti-inflammatory properties and may boost metabolism.",
+    "Can help clear nasal congestion.",
+    "May have pain-relieving effects (capsaicin is used in topical creams)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Capsaicin Sensitivity",
+      "severity": "Mild",
+      "details": "Can cause burning sensation in the mouth, stomach upset, or heartburn in sensitive individuals. Handling can irritate skin (wear gloves)."
+    },
+    {
+      "name": "Nightshade Sensitivity",
+      "severity": "Mild",
+      "details": "Some individuals may be sensitive to nightshades."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Start seeds indoors 8-10 weeks before last frost or buy transplants.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.8. Full sun.\n3. Spacing: Space plants 12-18 inches apart.\n4. Watering: Consistent watering, especially during flowering and fruiting. Avoid waterlogging.\n5. Harvesting: Harvest when fruits reach desired size and color. Green chilies are unripe; many turn red, orange, or yellow when fully ripe. Heat often increases with ripeness.",
+  "growthDuration": "60-100+ days from transplanting to first harvest, depending on variety.",
+  "sustainabilityTips": [
+    "Store fresh chilies in the refrigerator for 1-2 weeks. Dried chilies can be stored for months.",
+    "Wear gloves when handling very hot chilies to avoid skin irritation.",
+    "Chilies can be dried, pickled, or frozen for preservation."
+  ],
+  "carbonFootprintInfo": "Generally low for fresh chilies (0.4-0.8 kg CO2e/kg). Dried and processed forms (powders, sauces) will have variations.",
+  "staticRecipes": [
+    {
+      "name": "Simple Chili Garlic Sauce",
+      "description": "A versatile and spicy sauce, great as a condiment or cooking ingredient.",
+      "ingredients": [
+        "10-15 fresh red chilies (e.g., Thai chilies or similar), stemmed",
+        "4-6 cloves garlic",
+        "1 tbsp rice vinegar",
+        "1 tsp sugar",
+        "1/2 tsp salt",
+        "2 tbsp water (or more for desired consistency)"
+      ],
+      "steps": [
+        "Roughly chop chilies and garlic.",
+        "Combine all ingredients (chilies, garlic, vinegar, sugar, salt, water) in a blender or food processor.",
+        "Blend until mostly smooth, or to desired texture (some prefer it slightly chunky). Add more water if too thick.",
+        "Taste and adjust seasoning (sugar, salt, vinegar) if needed.",
+        "Transfer to a clean jar and store in the refrigerator. It will keep for several weeks."
+      ]
+    },
+    {
+      "name": "Stuffed Green Chilies (Mirchi Bajji/Pakora style filling)",
+      "description": "Large green chilies stuffed with a savory filling, often battered and fried (filling recipe only).",
+      "ingredients": [
+        "6-8 large, mildly hot green chilies (e.g., Anaheim, Poblano, or Indian Bajji Mirchi)",
+        "For stuffing: 1/2 cup gram flour (besan), 1/4 tsp turmeric powder, 1/2 tsp cumin powder, 1/2 tsp coriander powder, 1/4 tsp amchur (dry mango powder), pinch of asafoetida (hing), salt to taste, 2-3 tbsp water to make a thick paste"
+      ],
+      "steps": [
+        "Wash chilies. Make a lengthwise slit on one side of each chili, keeping the stem intact. Carefully remove seeds if you want to reduce heat.",
+        "Stuffing: In a bowl, mix gram flour, turmeric powder, cumin powder, coriander powder, amchur, asafoetida, and salt. Add water gradually to form a very thick, spreadable paste.",
+        "Carefully stuff this paste into each slit chili.",
+        "These stuffed chilies can then be shallow fried, baked, or dipped in a separate pakora batter and deep-fried according to various recipes for Mirchi Bajji or Stuffed Peppers."
+      ]
+    },
+    {
+      "name": "Homemade Red Chili Flakes",
+      "description": "Make your own dried red chili flakes for a fresh, potent spice.",
+      "ingredients": [
+        "A handful of dried red chilies (e.g., Cayenne, Arbol, or any hot variety)"
+      ],
+      "steps": [
+        "Ensure chilies are completely dry and brittle.",
+        "Remove stems. If you want milder flakes, you can slit the chilies and shake out some or all of the seeds.",
+        "Wear gloves if handling very hot chilies.",
+        "Break the dried chilies into smaller pieces by hand or roughly chop them.",
+        "Place the chili pieces in a spice grinder, coffee grinder (dedicated to spices), or a mortar and pestle.",
+        "Pulse or grind briefly until they are crushed into flakes of desired size. Be careful not to over-grind into a fine powder unless intended.",
+        "Store in an airtight container in a cool, dark place. Use to add heat to pizzas, pastas, stir-fries, etc."
+      ]
+    }
+  ]
+}

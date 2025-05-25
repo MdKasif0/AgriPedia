@@ -1,0 +1,150 @@
+{
+  "id": "sapota",
+  "commonName": "Sapota (Chikoo)",
+  "scientificName": "Manilkara zapota",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chikoo.JPG",
+  "description": "A long-lived, evergreen tree native to southern Mexico, Central America and the Caribbean. It produces a sweet, fleshy fruit with a grainy texture, often brown on the outside and inside.",
+  "origin": "Southern Mexico, Central America, Caribbean",
+  "localNames": [
+    "Chikoo (Hindi)",
+    "Nispero (Spanish - can be ambiguous)",
+    "Sapodilla"
+  ],
+  "regions": [
+    "India",
+    "Thailand",
+    "Mexico",
+    "Indonesia",
+    "Bangladesh",
+    "Pakistan"
+  ],
+  "seasons": [
+    "Varies, often two crops per year, peak in late winter/spring and late summer/autumn"
+  ],
+  "nutrition": {
+    "calories": "83 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 20,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 14.7,
+        "unit": "mg",
+        "rdi": "25%"
+      },
+      {
+        "name": "Folate",
+        "value": 14,
+        "unit": "µg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 193,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, promoting digestive health and preventing constipation.",
+    "Contains tannins, which have anti-inflammatory and antioxidant properties.",
+    "Provides some Vitamin C, supporting the immune system.",
+    "Natural sugars offer a quick energy boost."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex Sensitivity",
+      "severity": "Rare",
+      "details": "Unripe fruit contains latex which can cause mouth irritation in some individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid conditions. Drought tolerant once established but needs protection from frost.\n2. Soil: Well-drained, sandy loam or lateritic soils are ideal. Tolerates a range of soil types.\n3. Propagation: Usually by seeds, grafting, or air layering. Seeds may take a long time to fruit and may not be true to type.\n4. Planting: Plant in full sun, providing ample space for growth.\n5. Watering: Young trees require regular watering. Mature trees are drought-resistant but benefit from irrigation during dry spells, especially during fruit development.\n6. Fertilizing: Apply balanced fertilizer during active growth, typically twice a year.\n7. Harvesting: Fruits are picked when they are fully mature but still firm. Maturity is judged by a dull brown color and sometimes a slight give. They ripen off the tree.",
+  "growthDuration": "Seedling trees can take 5-8 years to bear fruit. Grafted trees may start in 2-4 years.",
+  "sustainabilityTips": [
+    "Store unripe sapotas at room temperature until they soften. Ripe ones can be refrigerated for a few days.",
+    "Sapota seeds are not edible and should be discarded.",
+    "Compost the peel after consuming the fruit."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.7-1.4 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Sapota (Chikoo) Milkshake",
+      "description": "A creamy and sweet milkshake, popular in South Asia.",
+      "ingredients": [
+        "2 ripe sapotas (chikoo), peeled, seeded, and chopped",
+        "1 cup chilled milk",
+        "1-2 tbsp sugar (or to taste)",
+        "1/4 tsp cardamom powder (optional)",
+        "Few ice cubes"
+      ],
+      "steps": [
+        "Combine chopped sapota, milk, sugar, and cardamom powder (if using) in a blender.",
+        "Blend until smooth and creamy.",
+        "Add ice cubes and blend again briefly.",
+        "Pour into glasses and serve immediately."
+      ]
+    },
+    {
+      "name": "Fresh Sapota Slices",
+      "description": "The simplest way to enjoy the unique flavor of sapota.",
+      "ingredients": [
+        "2-3 ripe sapotas (chikoo)"
+      ],
+      "steps": [
+        "Wash the sapotas.",
+        "Peel the fruit. The skin is typically not eaten.",
+        "Slice the fruit in half and remove the black, shiny seeds from the center.",
+        "Cut the flesh into slices or wedges.",
+        "Serve immediately. Some enjoy a sprinkle of chaat masala for a tangy twist."
+      ]
+    },
+    {
+      "name": "Sapota Kheer (Pudding)",
+      "description": "A sweet Indian dessert made with sapota pulp, milk, and nuts.",
+      "ingredients": [
+        "1 cup sapota pulp (from 3-4 ripe sapotas, peeled and seeded)",
+        "2 cups full-fat milk",
+        "1/4 cup sugar (adjust to taste)",
+        "2 tbsp chopped mixed nuts (almonds, cashews, pistachios)",
+        "A few strands of saffron (optional)",
+        "1/4 tsp cardamom powder"
+      ],
+      "steps": [
+        "In a heavy-bottomed pan, bring the milk to a boil. Reduce heat and simmer, stirring occasionally, until the milk thickens slightly (about 15-20 minutes).",
+        "Add sugar and saffron (if using) to the milk. Stir until sugar dissolves.",
+        "Add the sapota pulp and cardamom powder. Mix well and cook for another 5-7 minutes, stirring continuously, until the kheer thickens to desired consistency.",
+        "Remove from heat and let it cool slightly. Garnish with chopped nuts.",
+        "Serve warm or chilled."
+      ]
+    }
+  ]
+}

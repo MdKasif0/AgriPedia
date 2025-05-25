@@ -1,0 +1,152 @@
+{
+  "id": "guava",
+  "commonName": "Guava",
+  "scientificName": "Psidium guajava",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Guava.JPG",
+  "description": "A tropical fruit, typically round or pear-shaped, with green or yellow skin and pink or white flesh containing many small, hard seeds. Known for its strong, sweet fragrance.",
+  "origin": "Tropical Americas (Mexico to northern South America)",
+  "localNames": [
+    "Guayaba (Spanish)",
+    "Goyave (French)",
+    "Amrood (Hindi)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Thailand",
+    "Pakistan",
+    "Mexico",
+    "Brazil",
+    "Egypt"
+  ],
+  "seasons": [
+    "Varies by region, often multiple crops per year; common in late summer/fall"
+  ],
+  "nutrition": {
+    "calories": "68 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.6,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 228.3,
+        "unit": "mg",
+        "rdi": "381%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 31,
+        "unit": "µg RAE",
+        "rdi": "3%"
+      },
+      {
+        "name": "Folate",
+        "value": 49,
+        "unit": "µg",
+        "rdi": "12%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 417,
+        "unit": "mg",
+        "rdi": "12%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Exceptionally high in Vitamin C, a powerful antioxidant that boosts the immune system.",
+    "Rich in dietary fiber, aiding digestion and promoting satiety.",
+    "May help lower blood sugar levels and improve insulin resistance.",
+    "Contains antioxidants that can protect against cell damage."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Guava Allergy",
+      "severity": "Rare",
+      "details": "Allergies to guava are uncommon but can occur."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Guavas are tropical and subtropical plants, sensitive to cold. Prefer full sun.\n2. Soil: Adaptable to various soils but prefer well-drained, fertile loam with pH 5-7.\n3. Propagation: Can be grown from seeds, cuttings, or air layering. Seeds may not grow true to type.\n4. Watering: Young trees need regular watering. Mature trees are drought-tolerant but fruit better with consistent moisture.\n5. Fertilizing: Apply balanced fertilizer regularly, especially during growth and fruiting stages.\n6. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruiting.\n7. Harvesting: Fruits are picked when they change color (usually from dark green to light green or yellow) and emit a strong fragrance. They soften after picking.",
+  "growthDuration": "Seedling trees may fruit in 2-4 years. Fruit ripens 3-5 months after flowering.",
+  "sustainabilityTips": [
+    "Guava is often eaten fresh, skin and seeds included (for some varieties).",
+    "Ripe guavas are fragile; handle with care and consume quickly or refrigerate.",
+    "Can be used to make juices, jams, and jellies."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.6-1.3 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Guava Juice (Agua de Guayaba)",
+      "description": "A refreshing and popular Latin American fruit drink.",
+      "ingredients": [
+        "4-5 ripe guavas, washed and roughly chopped (ends trimmed)",
+        "4 cups water",
+        "1/2 cup sugar (or to taste)",
+        "Juice of 1/2 lime (optional)"
+      ],
+      "steps": [
+        "Combine chopped guavas and 2 cups of water in a blender.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve into a pitcher, pressing on the solids to extract as much juice as possible. Discard the pulp and seeds.",
+        "Add the remaining 2 cups of water, sugar, and lime juice (if using) to the pitcher. Stir well until the sugar is dissolved.",
+        "Taste and adjust sweetness if necessary. Serve chilled over ice."
+      ]
+    },
+    {
+      "name": "Guava Paste (Goiabada / Bocadillo)",
+      "description": "A thick, sweet paste made from guava, often served with cheese.",
+      "ingredients": [
+        "2 lbs ripe guavas, washed, ends trimmed, and quartered",
+        "1 cup sugar (or more, depending on guava sweetness and desired firmness)",
+        "Juice of 1 lime"
+      ],
+      "steps": [
+        "Place guava quarters in a saucepan with about 1/2 cup of water. Bring to a simmer, cover, and cook for 15-20 minutes, or until very soft.",
+        "Allow to cool slightly, then pass the cooked guavas through a food mill or press through a sieve to remove seeds and create a smooth pulp.",
+        "Measure the pulp. For every cup of pulp, add about 3/4 to 1 cup of sugar (adjust to taste) and the lime juice. Combine in a heavy-bottomed saucepan.",
+        "Cook over medium-low heat, stirring constantly, until the mixture thickens significantly and pulls away from the sides of the pan. This can take 30-60 minutes. Be careful as it may splatter.",
+        "Pour the hot paste into a lightly greased mold or a shallow dish lined with parchment paper. Smooth the top.",
+        "Allow to cool completely at room temperature, then refrigerate until firm. Cut into squares or slices to serve."
+      ]
+    },
+    {
+      "name": "Spiced Guava Slices",
+      "description": "A simple way to enjoy fresh guava with a touch of spice.",
+      "ingredients": [
+        "2 ripe guavas",
+        "Pinch of salt",
+        "Pinch of chili powder or cayenne pepper (optional)",
+        "Lime wedge for squeezing (optional)"
+      ],
+      "steps": [
+        "Wash the guavas thoroughly.",
+        "Slice the guavas into wedges or rounds, as preferred. You can eat the skin and seeds of most common varieties.",
+        "Arrange the guava slices on a plate.",
+        "Sprinkle lightly with salt and chili powder (if using).",
+        "Squeeze a bit of fresh lime juice over the top if desired. Serve immediately."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "cucumber",
+  "commonName": "Cucumber",
+  "scientificName": "Cucumis sativus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Cucumber.jpg",
+  "description": "A widely cultivated creeping vine plant in the gourd family, Cucurbitaceae. It contains an edible fruit that is also called a cucumber. It is typically cylindrical, elongated with tapered ends, and may be as large as 60 centimeters long and 10 centimeters in diameter.",
+  "origin": "Indian subcontinent",
+  "localNames": [
+    "Pepino (Spanish)",
+    "Concombre (French)",
+    "Gurke (German)",
+    "Kheera (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "Turkey",
+    "Russia",
+    "Iran",
+    "United States"
+  ],
+  "seasons": [
+    "Summer (field-grown); Year-round (greenhouse)"
+  ],
+  "nutrition": {
+    "calories": "15 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 16.4,
+        "unit": "µg",
+        "rdi": "20%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 147,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Very high water content (about 95%), making it extremely hydrating.",
+    "Low in calories, beneficial for weight management.",
+    "Contains antioxidants and anti-inflammatory compounds.",
+    "May help freshen breath and soothe skin."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cucurbitacin Sensitivity",
+      "severity": "Mild",
+      "details": "Some cucumbers (especially wilder or stressed plants) can contain higher levels of cucurbitacins, causing bitterness and potentially digestive upset. Commercially grown cucumbers are usually bred for low bitterness."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost or start indoors.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0. Full sun.\n3. Support: Vining varieties require a trellis or support; bush varieties are more compact.\n4. Watering: Consistent and adequate watering is crucial, especially during flowering and fruiting.\n5. Harvesting: Harvest when fruits are firm, smooth, and have reached the desired size for their variety, before they turn yellow or seeds harden. Harvest frequently.",
+  "growthDuration": "50-70 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store cucumbers in the refrigerator crisper drawer for up to a week.",
+    "Peel if skin is waxy or tough, otherwise, the skin is edible and nutritious.",
+    "Use in salads, sandwiches, pickles, or infused water."
+  ],
+  "carbonFootprintInfo": "Generally low (0.3-0.6 kg CO2e/kg) for field-grown. Greenhouse production, especially out of season, has a higher footprint.",
+  "staticRecipes": [
+    {
+      "name": "Refreshing Cucumber Salad",
+      "description": "A simple and crisp salad, perfect for summer.",
+      "ingredients": [
+        "2 medium cucumbers, thinly sliced",
+        "1/4 red onion, thinly sliced (optional)",
+        "2 tbsp rice vinegar or white wine vinegar",
+        "1 tbsp sugar (optional)",
+        "1 tbsp chopped fresh dill or parsley",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "In a medium bowl, combine sliced cucumbers and red onion (if using).",
+        "In a small bowl, whisk together vinegar, sugar (if using), dill/parsley, salt, and pepper.",
+        "Pour the dressing over the cucumbers and toss gently to coat.",
+        "Cover and refrigerate for at least 15-30 minutes to allow flavors to meld. Serve chilled."
+      ]
+    },
+    {
+      "name": "Cucumber Raita (Yogurt Dip)",
+      "description": "A cooling Indian yogurt dip with grated cucumber and spices.",
+      "ingredients": [
+        "1 cup plain yogurt",
+        "1/2 medium cucumber, peeled and grated",
+        "1/4 tsp roasted cumin powder",
+        "Pinch of black salt (kala namak) or regular salt",
+        "1 tbsp chopped fresh cilantro or mint",
+        "Optional: a pinch of red chili powder for garnish"
+      ],
+      "steps": [
+        "Squeeze out excess water from the grated cucumber.",
+        "In a bowl, whisk yogurt until smooth.",
+        "Add grated cucumber, roasted cumin powder, salt, and chopped cilantro/mint to the yogurt. Mix well.",
+        "Chill for at least 30 minutes before serving.",
+        "Garnish with a sprinkle of red chili powder or a mint sprig if desired. Serve as a side with Indian meals."
+      ]
+    },
+    {
+      "name": "Quick Cucumber Pickles (Refrigerator Pickles)",
+      "description": "Crisp and tangy pickles that are easy to make and don't require canning.",
+      "ingredients": [
+        "2-3 pickling cucumbers (e.g., Kirby), thinly sliced",
+        "1 cup white vinegar",
+        "1 cup water",
+        "1/4 cup sugar",
+        "1 tbsp salt",
+        "Optional: 1-2 cloves garlic (smashed), 1/2 tsp dill seeds or fresh dill sprigs, 1/4 tsp mustard seeds, pinch of red pepper flakes"
+      ],
+      "steps": [
+        "Pack sliced cucumbers tightly into a clean glass jar (or jars). Add garlic and other optional spices if using.",
+        "In a saucepan, combine vinegar, water, sugar, and salt. Bring to a boil over medium heat, stirring until sugar and salt dissolve completely.",
+        "Pour the hot brine over the cucumbers in the jar, ensuring they are fully submerged. Leave about 1/2 inch headspace.",
+        "Let cool to room temperature, then seal the jar and refrigerate. The pickles will be ready to eat in a few hours but are best after 24 hours.",
+        "Store in the refrigerator and consume within 2-3 weeks."
+      ]
+    }
+  ]
+}

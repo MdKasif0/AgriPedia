@@ -1,0 +1,152 @@
+{
+  "id": "bitter-gourd",
+  "commonName": "Bitter Gourd (Karela)",
+  "scientificName": "Momordica charantia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Bitter_Gourd.JPG",
+  "description": "A tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit. Its fruit has a distinctively bitter taste.",
+  "origin": "Indian subcontinent",
+  "localNames": [
+    "Karela (Hindi)",
+    "Ampalaya (Filipino)",
+    "Bitter Melon",
+    "Pavakkai (Tamil)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Southeast Asia",
+    "Africa",
+    "Caribbean"
+  ],
+  "seasons": [
+    "Summer",
+    "Rainy season"
+  ],
+  "nutrition": {
+    "calories": "17 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 84,
+        "unit": "mg",
+        "rdi": "140%"
+      },
+      {
+        "name": "Folate",
+        "value": 72,
+        "unit": "µg",
+        "rdi": "18%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 296,
+        "unit": "mg",
+        "rdi": "8%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used to help regulate blood sugar levels, beneficial for diabetics.",
+    "Rich in Vitamin C and antioxidants.",
+    "May aid in digestion and improve liver function.",
+    "Believed to have blood purifying properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Excessive Consumption",
+      "severity": "Mild",
+      "details": "Can cause abdominal pain or diarrhea in some individuals if consumed in very large quantities. Pregnant women should avoid excessive intake."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season vine. Sow seeds directly after last frost or start indoors.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.7. Full sun.\n3. Support: Provide a strong trellis or support for the vines to climb.\n4. Watering: Requires regular watering, especially during flowering and fruiting.\n5. Harvesting: Harvest fruits when they are young, tender, and green (or light green depending on variety). Overripe fruits turn yellow/orange and split open.",
+  "growthDuration": "50-70 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store bitter gourd in the refrigerator for up to a week.",
+    "To reduce bitterness, scrape the rough skin, slit, remove seeds, and rub with salt. Let it sit for 30 minutes, then squeeze out the bitter juices and rinse before cooking.",
+    "Often used in stir-fries, curries, or stuffed."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.4-0.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Stuffed Karela (Bharwa Karela)",
+      "description": "Bitter gourds stuffed with a spicy onion and spice mixture, then pan-fried or baked.",
+      "ingredients": [
+        "4-5 medium bitter gourds (karela)",
+        "For stuffing: 2 large onions (finely chopped), 1 tbsp ginger-garlic paste, 1 tsp fennel powder, 1 tsp coriander powder, 1/2 tsp turmeric powder, 1/2 tsp amchur (dry mango powder), salt to taste, 1 tbsp oil",
+        "Oil for frying"
+      ],
+      "steps": [
+        "Wash and scrape bitter gourds lightly. Slit them lengthwise, keeping one end intact. Scoop out seeds.",
+        "Optional: Rub salt inside and outside the gourds, let sit for 30 mins, then squeeze out water and rinse to reduce bitterness.",
+        "Stuffing: Heat 1 tbsp oil. Sauté onions until golden. Add ginger-garlic paste, sauté. Add all spice powders and salt. Cook for 2-3 mins. Let cool.",
+        "Stuff the spice mixture tightly into the bitter gourds.",
+        "Heat oil in a pan. Carefully place stuffed gourds. Cook on low-medium heat, covered, turning occasionally, until tender and well-cooked (about 20-25 mins). Alternatively, bake at 375°F (190°C)."
+      ]
+    },
+    {
+      "name": "Karela Chips (Crispy Bitter Gourd)",
+      "description": "Thinly sliced bitter gourd, spiced and deep-fried or air-fried until crispy.",
+      "ingredients": [
+        "2 medium bitter gourds",
+        "1/2 cup rice flour or cornstarch",
+        "1 tsp red chili powder",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "Oil for deep frying or air frying"
+      ],
+      "steps": [
+        "Wash bitter gourds, trim ends. Slice them into thin rounds. Remove seeds if large.",
+        "Optional: Sprinkle salt on slices, let sit for 20-30 mins, squeeze out excess water. Pat dry.",
+        "In a bowl, toss bitter gourd slices with rice flour/cornstarch, chili powder, turmeric, and salt until well coated.",
+        "Deep fry in hot oil in batches until golden brown and crispy. Drain on paper towels.",
+        "Alternatively, air fry at 375°F (190°C) for 10-15 minutes, shaking halfway, until crispy."
+      ]
+    },
+    {
+      "name": "Bitter Gourd and Potato Stir-fry (Karela Aloo Sabzi)",
+      "description": "A simple stir-fry combining the bitterness of karela with the earthiness of potatoes.",
+      "ingredients": [
+        "2 medium bitter gourds, sliced",
+        "2 medium potatoes, peeled and diced",
+        "1 onion, sliced",
+        "1 tsp cumin seeds",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "Salt to taste",
+        "2 tbsp oil"
+      ],
+      "steps": [
+        "Prepare bitter gourd: Wash, slice, remove seeds. Optional: salt and rest to reduce bitterness, then rinse.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add sliced onion and sauté until translucent.",
+        "Add diced potatoes and sauté for 5-7 minutes.",
+        "Add bitter gourd slices, turmeric powder, coriander powder, and salt. Mix well.",
+        "Cover and cook on low-medium heat for 15-20 minutes, or until potatoes and bitter gourd are tender, stirring occasionally. Add a splash of water if it gets too dry.",
+        "Serve hot with roti or rice."
+      ]
+    }
+  ]
+}

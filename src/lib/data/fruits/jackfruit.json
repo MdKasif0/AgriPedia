@@ -1,0 +1,167 @@
+{
+  "id": "jackfruit",
+  "commonName": "Jackfruit",
+  "scientificName": "Artocarpus heterophyllus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Jackfruit_photo.jpg",
+  "description": "A species of tree in the fig, mulberry, and breadfruit family. Its fruit is the largest tree-borne fruit, reaching as much as 55 kg in weight. Ripe jackfruit is sweet, while unripe jackfruit has a neutral flavor and meat-like texture, often used in savory dishes.",
+  "origin": "Southwestern India (Western Ghats)",
+  "localNames": [
+    "Kathal (Hindi)",
+    "Jaca (Spanish/Portuguese)",
+    "Nangka (Malay/Indonesian)"
+  ],
+  "regions": [
+    "India",
+    "Bangladesh",
+    "Thailand",
+    "Indonesia",
+    "Vietnam",
+    "Brazil",
+    "Sri Lanka"
+  ],
+  "seasons": [
+    "Primarily Summer, can vary with region and type"
+  ],
+  "nutrition": {
+    "calories": "95 kcal per 100g (ripe fruit pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 23,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13.7,
+        "unit": "mg",
+        "rdi": "23%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.329,
+        "unit": "mg",
+        "rdi": "19%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 448,
+        "unit": "mg",
+        "rdi": "13%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 29,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion.",
+    "Contains Vitamin C and B6, supporting immunity and brain function.",
+    "Rich in potassium, which helps regulate blood pressure.",
+    "Unripe jackfruit is a popular meat substitute for vegetarians and vegans due to its texture."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex Allergy Cross-Reactivity",
+      "severity": "Mild",
+      "details": "Some individuals with latex allergy may experience reactions, though less common than with fruits like banana or avocado."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid climates. Sensitive to frost.\n2. Soil: Deep, well-drained, alluvial or loamy soils are best. Tolerates a variety of soils but not waterlogged conditions.\n3. Propagation: Primarily grown from seeds, which should be planted fresh. Grafting is used for select cultivars.\n4. Planting: Plant in full sun with ample space for a large tree.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during dry periods, especially during fruit development.\n6. Fertilizing: Benefit from regular application of organic manure and balanced fertilizers.\n7. Harvesting: Jackfruit is harvested at different stages. Young, unripe fruit for vegetable use is picked when small and green. Ripe fruit is harvested when it emits a strong aroma, the skin turns slightly yellowish-brown, and the spines flatten or yield to pressure.",
+  "growthDuration": "Seedling trees can take 3-8 years to bear fruit. Fruits take 3-8 months to mature on the tree.",
+  "sustainabilityTips": [
+    "Jackfruit is a large fruit; one fruit can provide many meals. Plan accordingly to avoid waste.",
+    "Unripe jackfruit can be stored at room temperature for a few days. Ripe jackfruit or its pods should be refrigerated.",
+    "Jackfruit seeds are edible when cooked (boiled or roasted) and are nutritious."
+  ],
+  "carbonFootprintInfo": "Moderate to high, depending on transport due to its size and weight (0.8-2.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Pulled Jackfruit (BBQ Sandwich Filling)",
+      "description": "A popular vegetarian alternative to pulled pork, using unripe jackfruit.",
+      "ingredients": [
+        "2 cans (20 oz each) young green jackfruit in brine or water, drained and rinsed",
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup BBQ sauce",
+        "1 tbsp apple cider vinegar",
+        "1 tsp smoked paprika",
+        "Salt and pepper to taste",
+        "Burger buns or rolls for serving"
+      ],
+      "steps": [
+        "Rinse and drain the jackfruit. Remove the core and any tough outer pieces. Shred the jackfruit pieces with your fingers or two forks.",
+        "Heat olive oil in a large skillet over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and cook for 1 minute more.",
+        "Add the shredded jackfruit to the skillet. Cook for 5-7 minutes, stirring occasionally, until it starts to brown slightly.",
+        "In a small bowl, mix BBQ sauce, apple cider vinegar, and smoked paprika.",
+        "Pour the sauce over the jackfruit. Stir well to coat. Reduce heat to low, cover, and simmer for 15-20 minutes, allowing the jackfruit to absorb the flavors. Add a little water if it becomes too dry.",
+        "Uncover and cook for another 5-10 minutes, stirring, until some of the liquid has evaporated and the jackfruit is tender and easily shreddable. Season with salt and pepper to taste.",
+        "Serve hot on buns as a sandwich filling, often with coleslaw."
+      ]
+    },
+    {
+      "name": "Ripe Jackfruit Pods (Fresh)",
+      "description": "Enjoying the sweet, aromatic flesh of ripe jackfruit pods.",
+      "ingredients": [
+        "1 section of ripe jackfruit"
+      ],
+      "steps": [
+        "Handling ripe jackfruit can be sticky due to latex. It's advisable to oil your hands and knife before cutting.",
+        "Cut the ripe jackfruit section open. You will see large, fleshy pods (bulbs) surrounding seeds.",
+        "Carefully extract the yellow to orange fleshy pods. Each pod contains a large seed.",
+        "The fleshy pod is eaten raw. It has a sweet, tropical flavor. The seeds are not eaten raw but can be boiled or roasted separately.",
+        "Store unused pods in an airtight container in the refrigerator."
+      ]
+    },
+    {
+      "name": "Jackfruit Seed Curry (Side Dish)",
+      "description": "A South Indian style curry made with nutritious jackfruit seeds.",
+      "ingredients": [
+        "1 cup jackfruit seeds, outer white skin removed",
+        "1 onion, chopped",
+        "1 tomato, chopped",
+        "1 inch ginger, grated",
+        "2 cloves garlic, minced",
+        "1/2 tsp turmeric powder",
+        "1 tsp red chili powder (or to taste)",
+        "1 tsp coriander powder",
+        "1/2 tsp cumin powder",
+        "1/4 cup grated coconut (optional)",
+        "Salt to taste",
+        "1 tbsp oil",
+        "Mustard seeds, curry leaves for tempering"
+      ],
+      "steps": [
+        "Boil or pressure cook the jackfruit seeds until tender (they should be easily mashable). Peel off the thin brown inner skin once cooled slightly. Roughly chop or halve the cooked seeds.",
+        "Heat oil in a pan. Add mustard seeds; when they splutter, add curry leaves.",
+        "Add chopped onion and sauté until golden brown. Add ginger and garlic, sauté for a minute.",
+        "Add chopped tomato and cook until soft.",
+        "Add turmeric powder, chili powder, coriander powder, cumin powder, and salt. Sauté for a minute.",
+        "Add the cooked jackfruit seeds and grated coconut (if using). Mix well. Add about 1/2 cup of water, cover, and simmer for 5-7 minutes, allowing flavors to combine.",
+        "Serve hot as a side dish with rice or roti."
+      ]
+    }
+  ]
+}

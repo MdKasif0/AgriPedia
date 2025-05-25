@@ -1,0 +1,167 @@
+{
+  "id": "onion",
+  "commonName": "Onion",
+  "scientificName": "Allium cepa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Onion.jpg",
+  "description": "A versatile vegetable cultivated for its bulb. Onions are a staple in many cuisines worldwide, known for their pungent aroma and flavor when raw, which sweetens upon cooking.",
+  "origin": "Central Asia (likely modern-day Iran or Pakistan)",
+  "localNames": [
+    "Pyaaz (Hindi)",
+    "Cebolla (Spanish)",
+    "Oignon (French)",
+    "Zwiebel (German)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "United States",
+    "Egypt",
+    "Iran",
+    "Turkey"
+  ],
+  "seasons": [
+    "Year-round (due to storage and different varieties)"
+  ],
+  "nutrition": {
+    "calories": "40 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 7.4,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.12,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 146,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains antioxidants like quercetin, which may reduce inflammation and protect against chronic diseases.",
+    "Rich in sulfur compounds that can support heart health.",
+    "May improve bone density.",
+    "Can help regulate blood sugar levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Onion Intolerance/Allergy",
+      "severity": "Mild",
+      "details": "Can cause digestive upset (gas, bloating) in some individuals. True allergy is rare but can cause skin rashes or asthma-like symptoms."
+    },
+    {
+      "name": "Fructan Intolerance",
+      "severity": "Mild",
+      "details": "Onions are high in fructans, which can trigger IBS symptoms in sensitive people."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Can be grown from seeds, sets (small bulbs), or transplants. Plant in early spring for summer harvest or late summer/fall for overwintering in mild climates.\n2. Soil: Prefer well-drained, fertile soil rich in organic matter with a pH of 6.0-7.0.\n3. Spacing: Space sets 4-6 inches apart in rows 12-18 inches apart.\n4. Watering: Requires consistent moisture, especially during bulb formation. Avoid waterlogging.\n5. Weeding: Keep the area weed-free, as onions don't compete well with weeds.\n6. Harvesting: Harvest when tops begin to yellow and fall over. Pull bulbs and cure them in a warm, dry, airy place for 1-2 weeks before storing.",
+  "growthDuration": "90-120 days from sets, longer from seed.",
+  "sustainabilityTips": [
+    "Store whole, unpeeled onions in a cool, dark, dry place with good air circulation.",
+    "Use onion skins to make a natural dye or add to vegetable stock for color and flavor.",
+    "Grow your own from scraps: place the root end of an onion in water to sprout new greens."
+  ],
+  "carbonFootprintInfo": "Relatively low, around 0.3-0.5 kg CO2e/kg, especially when field-grown and transported by land.",
+  "staticRecipes": [
+    {
+      "name": "Classic French Onion Soup",
+      "description": "A rich and savory soup made with caramelized onions, beef broth, and topped with toasted bread and melted cheese.",
+      "ingredients": [
+        "4 large yellow onions, thinly sliced",
+        "3 tbsp butter",
+        "1 tbsp olive oil",
+        "1 tsp sugar",
+        "1/2 cup dry white wine (optional)",
+        "6 cups beef broth",
+        "1 tsp dried thyme",
+        "Bay leaf",
+        "Salt and pepper to taste",
+        "Baguette slices, toasted",
+        "Gruyère or Swiss cheese, grated"
+      ],
+      "steps": [
+        "Melt butter and olive oil in a large pot or Dutch oven over medium heat. Add sliced onions and sugar. Cook slowly, stirring occasionally, for 30-40 minutes, until deeply caramelized and golden brown.",
+        "If using, deglaze with white wine, scraping up any browned bits. Cook until wine reduces by half.",
+        "Add beef broth, thyme, and bay leaf. Bring to a simmer, then reduce heat and cook for at least 30 minutes.",
+        "Season with salt and pepper. Remove bay leaf.",
+        "Ladle soup into oven-safe bowls. Top with toasted baguette slices and a generous amount of grated cheese. Broil until cheese is melted and bubbly."
+      ]
+    },
+    {
+      "name": "Simple Onion Bhaji (Pakora)",
+      "description": "Crispy Indian fritters made with sliced onions and gram flour (besan).",
+      "ingredients": [
+        "2 large onions, thinly sliced",
+        "1 cup gram flour (besan)",
+        "1/4 cup rice flour (for crispiness, optional)",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric powder",
+        "1 tsp red chili powder (or to taste)",
+        "1/2 tsp ajwain (carom seeds)",
+        "Salt to taste",
+        "Water, as needed",
+        "Oil for deep frying"
+      ],
+      "steps": [
+        "In a large bowl, combine sliced onions, gram flour, rice flour (if using), ginger-garlic paste, turmeric powder, chili powder, ajwain, and salt.",
+        "Add a little water at a time and mix to form a thick batter that coats the onions well. Do not make it too runny.",
+        "Heat oil in a deep pan or kadai for frying.",
+        "Once the oil is hot, drop spoonfuls of the onion mixture into the oil. Do not overcrowd.",
+        "Fry on medium heat until golden brown and crispy, turning occasionally.",
+        "Remove with a slotted spoon and drain on paper towels. Serve hot with chutney."
+      ]
+    },
+    {
+      "name": "Quick Pickled Red Onions",
+      "description": "Tangy and vibrant pickled onions, great for tacos, salads, and sandwiches.",
+      "ingredients": [
+        "1 large red onion, thinly sliced",
+        "1/2 cup apple cider vinegar or white vinegar",
+        "1/2 cup water",
+        "1 tbsp sugar",
+        "1 1/2 tsp salt",
+        "Optional: Peppercorns, bay leaf, garlic clove"
+      ],
+      "steps": [
+        "Pack thinly sliced red onions into a clean glass jar.",
+        "In a small saucepan, combine vinegar, water, sugar, and salt. Add optional spices if using.",
+        "Bring the mixture to a boil, stirring until sugar and salt dissolve.",
+        "Pour the hot pickling liquid over the onions in the jar, ensuring they are fully submerged.",
+        "Let it cool to room temperature, then cover and refrigerate. They are ready to eat in about 30 minutes to an hour, but best after a few hours or overnight. Store in the refrigerator for up to 2 weeks."
+      ]
+    }
+  ]
+}

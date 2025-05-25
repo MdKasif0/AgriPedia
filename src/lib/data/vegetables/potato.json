@@ -1,0 +1,161 @@
+{
+  "id": "potato",
+  "commonName": "Potato",
+  "scientificName": "Solanum tuberosum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Potatoes_%281%29.jpg",
+  "description": "A starchy tuber from the nightshade family Solanaceae, native to the Andes region of South America. It is one of the world's most important food crops.",
+  "origin": "Andes region of South America (Peru and Bolivia)",
+  "localNames": [
+    "Patata (Spanish)",
+    "Pomme de terre (French - 'apple of the earth')",
+    "Kartoffel (German)",
+    "Aloo (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "Russia",
+    "Ukraine",
+    "United States",
+    "Germany",
+    "Bangladesh"
+  ],
+  "seasons": [
+    "Year-round (due to global cultivation and storage capabilities)"
+  ],
+  "nutrition": {
+    "calories": "77 kcal per 100g (boiled, skin on)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 17,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 19.7,
+        "unit": "mg",
+        "rdi": "33%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "15%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 421,
+        "unit": "mg",
+        "rdi": "12%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of potassium, which helps regulate blood pressure and fluid balance.",
+    "Provides Vitamin C, an antioxidant that supports the immune system.",
+    "Source of Vitamin B6, important for brain development and function, and metabolism.",
+    "Contains resistant starch (especially when cooked and cooled), which can improve gut health and insulin sensitivity."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nightshade Sensitivity",
+      "severity": "Mild",
+      "details": "Some individuals report sensitivity to nightshade vegetables (including potatoes, tomatoes, eggplants), which can exacerbate inflammatory conditions. This is not a true allergy for most."
+    },
+    {
+      "name": "Glycoalkaloids (Solanine)",
+      "severity": "Moderate",
+      "details": "Green parts of potatoes (skin or flesh exposed to light) and sprouts contain higher levels of solanine and chaconine, which can be toxic in large amounts. Always remove green areas and sprouts before consumption."
+    }
+  ],
+  "cultivationProcess": "Potatoes are grown from 'seed potatoes' (small tubers or pieces of tubers with 'eyes'). They prefer well-drained, loose, slightly acidic soil (pH 5.0-6.0) and full sun. Plants are 'hilled up' by mounding soil around the stems as they grow; this encourages more tubers to form and protects them from sunlight.",
+  "growthDuration": "70-120 days from planting to harvest, depending on the variety (early, mid-season, late) and growing conditions.",
+  "sustainabilityTips": [
+    "Store potatoes in a cool, dark, dry, and well-ventilated place. Avoid refrigeration, as it can cause starch to convert to sugar, affecting taste and texture when cooked.",
+    "Keep potatoes away from onions, as the gases they emit can cause each other to spoil faster.",
+    "Leave the skin on when cooking (after scrubbing well) for extra fiber and nutrients."
+  ],
+  "carbonFootprintInfo": "Relatively low footprint for unprocessed potatoes (0.2-0.5 kg CO2e/kg), especially if grown with minimal inputs. Processing (e.g., into fries or chips) and long-distance refrigerated transport significantly increase this.",
+  "staticRecipes": [
+    {
+      "name": "Classic Mashed Potatoes",
+      "description": "Fluffy, creamy mashed potatoes – a comforting and versatile classic side dish.",
+      "ingredients": [
+        "2 lbs potatoes (Russet or Yukon Gold recommended), peeled and quartered",
+        "1/2 cup milk or cream, warmed",
+        "1/4 cup (4 tbsp) butter, softened",
+        "Salt and freshly ground black pepper to taste",
+        "Optional: chives or parsley for garnish"
+      ],
+      "steps": [
+        "Place peeled and quartered potatoes in a large pot and cover with cold, salted water by about an inch.",
+        "Bring to a boil over high heat, then reduce heat to medium-low and simmer for 15-20 minutes, or until potatoes are very tender when pierced easily with a fork.",
+        "Drain potatoes well in a colander. Return them to the hot pot and place over low heat for 1-2 minutes, shaking the pot, to evaporate any excess moisture.",
+        "Mash the potatoes using a potato masher or ricer until smooth. Avoid overmashing, which can make them gummy.",
+        "Gradually add warmed milk/cream and softened butter, mixing gently until creamy and smooth. Do not overmix.",
+        "Season generously with salt and pepper. Taste and adjust seasoning if needed. Garnish with chives or parsley if desired. Serve hot."
+      ]
+    },
+    {
+      "name": "Garlic Herb Roasted Potatoes",
+      "description": "Crispy on the outside, tender on the inside, and packed with garlic and herb flavor.",
+      "ingredients": [
+        "1.5 lbs small potatoes (such as red potatoes, new potatoes, or fingerlings), halved or quartered if large",
+        "3 tbsp olive oil",
+        "3-4 cloves garlic, minced or thinly sliced",
+        "1 tsp dried rosemary (or 1 tbsp fresh, chopped)",
+        "1 tsp dried thyme (or 1 tbsp fresh, chopped)",
+        "Salt and freshly ground black pepper to taste",
+        "Optional: pinch of red pepper flakes for heat"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a large bowl, toss the potatoes with olive oil, minced garlic, rosemary, thyme, salt, and pepper (and red pepper flakes if using) until evenly coated.",
+        "Spread the potatoes in a single layer on a large baking sheet. Do not overcrowd the pan for best crispiness.",
+        "Roast for 30-40 minutes, flipping the potatoes halfway through, until they are golden brown, crispy on the outside, and tender on the inside.",
+        "Serve immediately as a side dish."
+      ]
+    },
+    {
+      "name": "Simple Potato Leek Soup",
+      "description": "A creamy, warming, and satisfying soup, perfect for cooler weather.",
+      "ingredients": [
+        "2 tbsp butter or olive oil",
+        "2 large leeks (white and light green parts only), thoroughly cleaned and sliced",
+        "2 lbs potatoes (e.g., Yukon Gold or Russet), peeled and diced",
+        "6 cups vegetable or chicken broth",
+        "1/2 cup heavy cream or milk (optional, for extra creaminess)",
+        "Salt and freshly ground black pepper to taste",
+        "Fresh chives or parsley, chopped, for garnish (optional)"
+      ],
+      "steps": [
+        "Melt butter or heat olive oil in a large pot or Dutch oven over medium heat.",
+        "Add sliced leeks (ensure they are well-cleaned to remove any grit) and cook, stirring occasionally, until softened, about 8-10 minutes. Do not let them brown.",
+        "Add diced potatoes and broth to the pot. Bring the mixture to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until the potatoes are very tender.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer the soup in batches to a regular blender and blend until smooth, then return to the pot.",
+        "If using, stir in heavy cream or milk. Season generously with salt and pepper to taste.",
+        "Reheat gently if needed, but do not boil after adding cream. Garnish with fresh chives or parsley before serving."
+      ]
+    }
+  ]
+}

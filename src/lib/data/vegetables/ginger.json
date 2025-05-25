@@ -1,0 +1,154 @@
+{
+  "id": "ginger",
+  "commonName": "Ginger",
+  "scientificName": "Zingiber officinale",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Fresh_Ginger.JPG/800px-Fresh_Ginger.JPG",
+  "description": "A flowering plant whose rhizome, ginger root or ginger, is widely used as a spice and a folk medicine. It is a herbaceous perennial which grows annual pseudostems about a meter tall bearing narrow leaf blades.",
+  "origin": "Maritime Southeast Asia",
+  "localNames": [
+    "Jengibre (Spanish)",
+    "Gingembre (French)",
+    "Ingwer (German)",
+    "Adrak (Hindi)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Nigeria",
+    "Indonesia",
+    "Nepal"
+  ],
+  "seasons": [
+    "Year-round (harvested after rhizomes mature)"
+  ],
+  "nutrition": {
+    "calories": "80 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 17.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 5,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.16,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 415,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.229,
+        "unit": "mg",
+        "rdi": "11%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains gingerol, a substance with powerful anti-inflammatory and antioxidant effects.",
+    "Widely used to treat nausea, including morning sickness and motion sickness.",
+    "May help reduce muscle pain and soreness.",
+    "Can aid digestion and help with indigestion."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ginger Sensitivity",
+      "severity": "Mild",
+      "details": "Can cause mild heartburn, diarrhea, or mouth irritation in some individuals, especially in large doses."
+    },
+    {
+      "name": "Interaction with Blood Thinners",
+      "severity": "Moderate",
+      "details": "Ginger may have mild blood-thinning effects; consult a doctor if taking anticoagulant medication."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Grown from rhizome pieces (with 'eyes' or buds).\n2. Soil: Well-drained, rich, loamy soil. Prefers partial shade in hot climates.\n3. Planting: Plant rhizome pieces 2-4 inches deep in spring after the last frost.\n4. Watering: Keep soil consistently moist, but not waterlogged.\n5. Harvesting: Can be harvested about 8-10 months after planting, when leaves start to yellow and die back. Dig up rhizomes carefully.",
+  "growthDuration": "8-10 months for mature rhizomes.",
+  "sustainabilityTips": [
+    "Store fresh ginger root unpeeled in the refrigerator crisper drawer for several weeks, or freeze for longer storage.",
+    "No need to peel young ginger; older ginger skin can be tough and should be peeled.",
+    "Use leftover ginger scraps to make ginger tea."
+  ],
+  "carbonFootprintInfo": "Generally moderate, but can increase with long-distance transport (0.5-1.0 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Ginger Tea",
+      "description": "A warming and soothing tea, great for digestion and colds.",
+      "ingredients": [
+        "1-2 inch piece of fresh ginger, thinly sliced or grated",
+        "2 cups water",
+        "Honey or lemon to taste (optional)"
+      ],
+      "steps": [
+        "Combine sliced/grated ginger and water in a small saucepan.",
+        "Bring to a boil, then reduce heat and simmer for 10-15 minutes (or longer for stronger flavor).",
+        "Strain the tea into a mug.",
+        "Add honey and/or lemon juice to taste if desired. Serve hot."
+      ]
+    },
+    {
+      "name": "Ginger Garlic Paste (Homemade)",
+      "description": "A staple ingredient in many Indian and Asian cuisines.",
+      "ingredients": [
+        "1 cup peeled fresh ginger, roughly chopped",
+        "1 cup peeled garlic cloves",
+        "1-2 tbsp oil (optional, for preservation)",
+        "Pinch of salt (optional)"
+      ],
+      "steps": [
+        "Combine chopped ginger and garlic cloves in a blender or food processor.",
+        "Blend to a smooth paste. You may need to add a tablespoon or two of water or oil to help it blend smoothly.",
+        "If using for longer storage, add a pinch of salt and a little oil to the paste.",
+        "Store in an airtight container in the refrigerator for up to 2-3 weeks, or freeze in ice cube trays for longer portions."
+      ]
+    },
+    {
+      "name": "Candied Ginger (Crystallized Ginger)",
+      "description": "Sweet and spicy ginger pieces, great for snacking or baking.",
+      "ingredients": [
+        "1 cup fresh ginger, peeled and thinly sliced (about 1/8 inch thick)",
+        "1 cup granulated sugar, plus extra for coating",
+        "1 cup water",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "Place sliced ginger in a saucepan with enough water to cover. Bring to a boil and simmer for 30-40 minutes, or until ginger is tender. Drain.",
+        "In the same saucepan, combine 1 cup sugar, 1 cup water, and the drained ginger slices, and a pinch of salt. Bring to a simmer over medium heat, stirring until sugar dissolves.",
+        "Cook, stirring occasionally, for about 30-45 minutes, or until ginger becomes translucent and the syrup thickens (reaches about 225°F/107°C on a candy thermometer).",
+        "Remove ginger slices with a slotted spoon and place them on a wire rack set over a baking sheet to dry for several hours or overnight.",
+        "Once slightly tacky but not wet, toss the ginger slices in extra granulated sugar to coat.",
+        "Store candied ginger in an airtight container at room temperature."
+      ]
+    }
+  ]
+}
