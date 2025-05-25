@@ -1,0 +1,143 @@
+{
+  "id": "curry-leaves",
+  "commonName": "Curry Leaves",
+  "scientificName": "Bergera koenigii (syn. Murraya koenigii)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fresh_curry_Leaf_%2849697684423%29.jpg/800px-Fresh_curry_Leaf_%2849697684423%29.jpg",
+  "description": "Curry leaves are the highly aromatic leaves of the curry tree (Bergera koenigii). They are a staple in South Indian, Sri Lankan, and Southeast Asian cuisines, prized for their unique, pungent aroma and slightly bitter, citrusy flavor. They are typically used fresh at the beginning of cooking, often fried in oil to release their essence into a dish.",
+  "origin": "Indian subcontinent (India, Sri Lanka).",
+  "localNames": [
+    "Kadi Patta (Hindi)",
+    "Karuveppilai (Tamil)",
+    "Karivepaku (Telugu)",
+    "Limda / Meetho Limdo (Gujarati)",
+    "Karapincha (Sinhalese)",
+    "Daun Kari (Malay/Indonesian)"
+  ],
+  "regions": [
+    "India (especially Southern and Western states)",
+    "Sri Lanka",
+    "Malaysia",
+    "Singapore",
+    "Thailand",
+    "Bangladesh",
+    "Myanmar",
+    "Widely cultivated in tropical and subtropical regions worldwide, including parts of Australia, Africa, and the Americas where there is an Indian diaspora."
+  ],
+  "seasons": [
+    "Available year-round from trees in tropical climates. Leaves can be harvested as needed once the plant is established."
+  ],
+  "nutrition": {
+    "calories": "108 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 6.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 6.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A",
+        "value": 600,
+        "unit": "µg RAE",
+        "rdi": "67%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 4,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.11,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 830,
+        "unit": "mg",
+        "rdi": "64%"
+      },
+      {
+        "name": "Potassium",
+        "value": 540,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.93,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 57,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich source of Vitamin A (from carotenoids), essential for good vision and immune function.",
+    "Excellent source of calcium, crucial for bone health and various physiological processes.",
+    "Traditionally used in Ayurvedic medicine to aid digestion, manage diabetes, and for their antioxidant properties due to various plant compounds."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Contact Dermatitis (rare)",
+      "severity": "Mild",
+      "details": "Handling the plant or its sap may cause skin irritation in highly sensitive individuals. Allergic reactions to consuming cooked curry leaves are very rare."
+    }
+  ],
+  "cultivationProcess": "Curry leaf trees are tropical to subtropical small trees or shrubs. They can be propagated from seeds (though germination can be slow), root suckers, or stem cuttings. They thrive in well-drained soil, prefer full sun to partial shade, and require regular watering, especially when young. Once established, they are relatively hardy. Leaves can be harvested as needed throughout the year.",
+  "growthDuration": "Plants grown from seeds may take 1-2 years to become established enough for regular harvesting. Vegetative propagation can lead to faster establishment. Mature plants provide a continuous supply of leaves.",
+  "sustainabilityTips": [
+    "Growing a curry leaf plant in a pot or garden (in suitable climates) is very sustainable, providing fresh leaves as needed and eliminating packaging and transport.",
+    "Fresh leaves offer the best flavor; they can also be air-dried or frozen for longer storage, reducing waste."
+  ],
+  "carbonFootprintInfo": "Fresh curry leaves picked from a home garden or sourced locally have a negligible carbon footprint. Commercially packaged leaves, especially those transported long distances (sometimes internationally) or requiring refrigeration, will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Basic South Indian Tempering (Tadka/Thaalithal)",
+      "description": "A fundamental flavoring technique in South Indian cooking where spices, including fresh curry leaves, are briefly fried in oil or ghee to release their aromas before being added to a dish like dal, sambar, chutney, or vegetable stir-fries.",
+      "ingredients": [
+        "1 tablespoon cooking oil (e.g., coconut oil, sesame oil, or vegetable oil) or ghee",
+        "1/2 teaspoon black mustard seeds (rai)",
+        "1/2 teaspoon urad dal (split black gram lentils, optional)",
+        "1-2 dried red chilies, broken into pieces (optional, for heat)",
+        "1 sprig (about 10-15) fresh curry leaves",
+        "A pinch of asafoetida (hing) (optional)"
+      ],
+      "steps": [
+        "Ensure all ingredients are prepped and within reach, as tempering is a quick process.",
+        "Heat the oil or ghee in a small pan (often a special tadka pan) over medium-high heat until it's hot but not smoking.",
+        "Add the black mustard seeds to the hot oil. Wait for them to splutter and pop, which usually takes a few seconds. Be cautious as they can jump out of the pan.",
+        "If using, add the urad dal and dried red chilies next. Fry for a few seconds, stirring, until the dal turns a light golden brown. Do not let it burn.",
+        "Carefully add the fresh curry leaves to the pan (they may spatter if there's any moisture on them). Add the asafoetida if using.",
+        "Stir and fry for another 5-10 seconds until the curry leaves become crisp and very aromatic.",
+        "Immediately pour the entire tempering mixture (the oil along with all the spices) over your prepared dish (e.g., dal, sambar, chutney, upma, poha, or a vegetable sabzi).",
+        "Often, the dish is then covered for a minute to allow the flavors to infuse before stirring it in or serving."
+      ]
+    }
+  ]
+}

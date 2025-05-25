@@ -1,0 +1,186 @@
+{
+  "id": "mangosteen",
+  "commonName": "Mangosteen",
+  "scientificName": "Garcinia mangostana",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/MangosteenFruit.jpg",
+  "description": "Mangosteen (Garcinia mangostana), often hailed as the 'Queen of Fruits', is a tropical evergreen tree that yields an exquisite fruit with a deep purple rind and sweet, tangy, juicy white flesh. The fruit is renowned for its unique flavor and delicate texture.",
+  "origin": "Island Southeast Asia (likely the Malay Peninsula, Borneo, or Sumatra)",
+  "localNames": [
+    "Manggis (Malay, Indonesian)",
+    "Măng cụt (Vietnamese)",
+    "Mangkut (มังคุด - Thai)",
+    "Sāntol (Tagalog - sometimes confused, but mangosteen is also directly used)"
+  ],
+  "regions": [
+    "Thailand",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Vietnam",
+    "Myanmar",
+    "Sri Lanka",
+    "India (Kerala, Tamil Nadu)",
+    "Colombia",
+    "Puerto Rico",
+    "Australia (Queensland - limited)",
+    "United States (Florida, Hawaii - limited)"
+  ],
+  "seasons": [
+    "Varies by region, generally during the rainy season. Main harvest often May to October in Southeast Asia."
+  ],
+  "nutrition": {
+    "calories": "73 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.41,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 17.91,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 2.9,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 31,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.054,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.054,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.286,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.032,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.018,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.102,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Potassium",
+        "value": 48,
+        "unit": "mg",
+        "rdi": "1%" 
+      },
+      {
+        "name": "Iron",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.21,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "The fruit's pericarp (rind) is rich in polyphenols, particularly xanthones like mangostin, which possess antioxidant and anti-inflammatory properties (though the rind is bitter and not typically consumed fresh).",
+    "The edible flesh provides dietary fiber, which supports digestive health.",
+    "Contains various vitamins and minerals, contributing to overall nutrition, although generally in modest amounts in the flesh."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-fruit syndrome (potential)",
+      "severity": "Mild to Moderate",
+      "details": "Individuals with latex allergies may rarely experience cross-reactivity with mangosteen. Symptoms could include itching, hives, or other allergic reactions. Otherwise, mangosteen is generally well-tolerated."
+    }
+  ],
+  "cultivationProcess": "Mangosteen is an ultra-tropical tree requiring high humidity, consistent rainfall, and warm temperatures (ideally 25–35°C), with no tolerance for temperatures below 4°C. It prefers deep, well-drained, slightly acidic soil rich in organic matter. Propagation is primarily by seeds, which are apomictic (genetically identical to the mother tree), as vegetative propagation is difficult. Trees are slow-growing, especially in the early years, and require partial shade when young. Full sun is tolerated by mature trees.",
+  "growthDuration": "Mangosteen trees are notoriously slow-growing. They typically take 6 to 12 years from seedling to first fruit production, though some may bear earlier under optimal conditions. The fruit itself takes about 5-6 months to mature after flowering.",
+  "sustainabilityTips": [
+    "Due to its specific tropical climate needs, mangosteens are often imported. Opt for fruit shipped by sea rather than air-freighted to reduce carbon emissions.",
+    "Support fair-trade certified mangosteens if available, as they are often grown by smallholders in developing countries."
+  ],
+  "carbonFootprintInfo": "Fresh mangosteens imported to non-tropical countries generally have a high carbon footprint due to the necessity of air freight for their short shelf life and delicate nature. Locally consumed mangosteens in their native regions have a much lower impact. Processed forms (canned, frozen) may vary depending on processing and transportation methods.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Mangosteen Salad",
+      "description": "A simple and refreshing salad that highlights the unique sweet-tart flavor of fresh mangosteens, often paired with other tropical fruits.",
+      "ingredients": [
+        "8-10 fresh mangosteens",
+        "1 cup diced ripe mango",
+        "1 cup diced fresh pineapple",
+        "1 tablespoon fresh lime juice (optional)",
+        "1 teaspoon honey or agave nectar (optional, if fruits are not very sweet)",
+        "A few fresh mint leaves, chiffonade (optional, for garnish)"
+      ],
+      "steps": [
+        "Prepare the mangosteens: Using a sharp knife, carefully score the rind around the middle of each mangosteen, being cautious not to cut through to the flesh.",
+        "Gently twist the scored rind to separate the two halves. Remove the top half of the rind.",
+        "Carefully scoop out the white, fleshy segments from the rind. The larger segments may contain a seed; these can be removed if desired, though smaller seeds are often soft enough to be eaten.",
+        "In a medium bowl, combine the fresh mangosteen segments, diced mango, and diced pineapple.",
+        "If using, drizzle the lime juice and honey (or agave nectar) over the fruit mixture. Toss gently to combine.",
+        "Serve immediately, or chill for about 15-30 minutes to enhance the refreshing quality.",
+        "Garnish with fresh mint leaves before serving, if desired."
+      ]
+    }
+  ]
+}

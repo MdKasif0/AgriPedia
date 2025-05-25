@@ -1,0 +1,164 @@
+{
+  "id": "rose-apple",
+  "commonName": "Rose Apple",
+  "scientificName": "Syzygium jambos",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Syzygium_jambos.JPG/800px-Syzygium_jambos.JPG",
+  "description": "Syzygium jambos, commonly known as the Rose Apple, is a tropical tree producing bell-shaped to ovoid fruits. The fruit is prized for its crisp, somewhat dry yet juicy flesh, distinctive rose-like aroma, and subtly sweet flavor. The thin, waxy skin is typically pale yellow or whitish, sometimes with a pink blush.",
+  "origin": "Southeast Asia",
+  "localNames": [
+    "Malabar Plum (English)",
+    "Pomarrosa (Spanish)",
+    "Jambu Mawar (Malay/Indonesian)",
+    "Chomphu Namdokmai (ชมพู่น้ำดอกไม้ - Thai)",
+    "Gulab Jamun (Hindi - also name of a sweet)",
+    "Pannerale (Kannada)"
+  ],
+  "regions": [
+    "Southeast Asia (Malaysia, Indonesia, Thailand, Vietnam, Philippines)",
+    "India",
+    "Sri Lanka",
+    "Caribbean Islands (Puerto Rico, Jamaica)",
+    "Central America (Panama, Costa Rica)",
+    "South America (Brazil, Venezuela, Suriname)",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii, California - limited)"
+  ],
+  "seasons": [
+    "Late spring through summer in many tropical and subtropical regions; can have multiple smaller fruiting seasons depending on local climate and rainfall patterns."
+  ],
+  "nutrition": {
+    "calories": "25 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 5.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 22.3,
+        "unit": "mg",
+        "rdi": "25%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 17,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 123,
+        "unit": "mg",
+        "rdi": "3%" 
+      },
+      {
+        "name": "Calcium",
+        "value": 29,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.07,
+        "unit": "mg",
+        "rdi": "0%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 5,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.029,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that supports immune function and skin health.",
+    "Provides some dietary fiber, which can aid in digestion.",
+    "The fruit is hydrating due to its high water content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Seed Ingestion",
+      "severity": "Low to Moderate",
+      "details": "The seeds are generally considered inedible and may contain small amounts of cyanogenic compounds. It is advisable to avoid consuming the seeds. The fruit flesh itself is widely consumed and well-tolerated."
+    }
+  ],
+  "cultivationProcess": "Rose Apple trees (Syzygium jambos) are adaptable evergreens that thrive in tropical and warm subtropical climates. They prefer moist, well-drained soil and can grow in full sun to partial shade. Propagation is often done by seeds (which have short viability), air layering, or budding. Trees are relatively low-maintenance once established but benefit from regular watering, especially during dry periods and fruit development. Pruning can help manage tree size and encourage airflow.",
+  "growthDuration": "Rose Apple trees typically start bearing fruit within 3 to 5 years from planting. They are medium-sized trees that can reach heights of 3-15 meters. Fruiting may occur multiple times a year in favorable tropical climates.",
+  "sustainabilityTips": [
+    "Rose apple trees are often grown in home gardens and as ornamental trees, contributing to local food availability and green spaces.",
+    "Their adaptability to various soil types can make them a resilient fruit tree choice in suitable climates, potentially requiring fewer inputs than more demanding species."
+  ],
+  "carbonFootprintInfo": "Locally grown and consumed rose apples have a minimal carbon footprint. Due to their delicate nature and relatively short shelf life once ripe, long-distance transportation for fresh consumption, especially by air freight, would significantly increase their environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Rose Apple & Toasted Coconut Salad",
+      "description": "A light and refreshing salad that highlights the crisp texture and delicate rose-like aroma of fresh rose apples, complemented by the nuttiness of toasted coconut.",
+      "ingredients": [
+        "4-5 fresh rose apples",
+        "2 tablespoons toasted shredded coconut (unsweetened)",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon honey or agave nectar (optional, to taste)",
+        "A few fresh mint leaves, chopped (for garnish)"
+      ],
+      "steps": [
+        "Wash the rose apples thoroughly. They can be eaten whole after removing the stem end, or sliced. The core usually contains 1-2 loose, inedible seeds which should be discarded.",
+        "Slice the rose apples into bite-sized pieces or thin wedges. The skin is edible and typically left on.",
+        "In a medium bowl, gently toss the sliced rose apples with the fresh lime juice. If using, drizzle with honey or agave nectar and toss again.",
+        "Sprinkle the toasted shredded coconut over the rose apple mixture.",
+        "Garnish with freshly chopped mint leaves.",
+        "Serve immediately to enjoy the crisp texture and fragrant aroma. This salad is best made just before serving."
+      ]
+    }
+  ]
+}

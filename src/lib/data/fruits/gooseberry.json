@@ -1,0 +1,156 @@
+{
+  "id": "gooseberry",
+  "commonName": "Gooseberry",
+  "scientificName": "Ribes uva-crispa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Stachelbeeren.jpg",
+  "description": "Gooseberries are tart to sweet-tart berries, typically green, red, or yellow, belonging to the Ribes genus. They are known for their distinct flavor and are used in desserts, jams, and sauces. The berries can be smooth or hairy depending on the variety.",
+  "origin": "Native to Europe, northwestern Africa, and western, southern, and southeastern Asia.",
+  "localNames": [
+    "Fea-berry (Old English)",
+    "Groseille à maquereau (French)",
+    "Stachelbeere (German)"
+  ],
+  "regions": [
+    "Europe (United Kingdom, Germany, France, Poland, Scandinavia)",
+    "North America (USA, Canada - cultivation limited in some areas due to rust concerns)",
+    "Asia (parts of temperate Asia)"
+  ],
+  "seasons": [
+    "Late spring to mid-summer (typically May to August in the Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "44 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.88,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 10.18,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 27.7,
+        "unit": "mg",
+        "rdi": "31%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 12,
+        "unit": "µg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 10,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.026,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 198,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.144,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.068,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 27,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 25,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.31,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 10,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a potent antioxidant supporting immune function and collagen production.",
+    "Good source of dietary fiber, promoting digestive health and helping to regulate blood sugar levels.",
+    "Contain various phytonutrients and flavonoids, which may contribute to overall health through their antioxidant properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Salicylate sensitivity (rare)",
+      "severity": "Mild",
+      "details": "Individuals sensitive to salicylates might experience reactions. The tiny hairs on some varieties can be a skin irritant for some people during handling."
+    }
+  ],
+  "cultivationProcess": "Gooseberry plants are hardy, deciduous shrubs that thrive in cool, moist temperate climates. They prefer well-drained, loamy soil with good air circulation. Propagation is commonly done through hardwood cuttings taken in autumn or softwood cuttings in summer. Plants require regular pruning to maintain an open, goblet shape, encourage fruit production on young wood (1-3 year old spurs), and improve air circulation to reduce disease risk. They are susceptible to pests like gooseberry sawfly and diseases such as American gooseberry mildew and white pine blister rust (in North America).",
+  "growthDuration": "Gooseberry bushes typically start bearing fruit 1-2 years after planting from cuttings, reaching full productivity within 3-5 years. Fruits ripen in early to mid-summer, depending on the cultivar and local climate.",
+  "sustainabilityTips": [
+    "Plant disease-resistant cultivars to minimize the need for chemical sprays.",
+    "Mulch around the base of bushes to conserve soil moisture, suppress weeds, and regulate soil temperature."
+  ],
+  "carbonFootprintInfo": "Locally grown gooseberries picked in season have a relatively low carbon footprint. Gooseberries imported from distant regions, especially if air-freighted when out of season, will have a significantly higher environmental impact due to transportation and potential refrigeration.",
+  "staticRecipes": [
+    {
+      "name": "Classic Gooseberry Fool",
+      "description": "A simple and traditional English dessert that beautifully balances the tartness of cooked gooseberries with the sweetness and creaminess of custard or whipped cream.",
+      "ingredients": [
+        "500g fresh gooseberries, topped and tailed (ends removed)",
+        "100g granulated sugar (or more, to taste)",
+        "2 tablespoons water",
+        "300ml double cream (heavy cream) or thick vanilla custard (store-bought or homemade)"
+      ],
+      "steps": [
+        "Place the prepared gooseberries, sugar, and water into a medium saucepan.",
+        "Cook over low to medium heat, stirring occasionally, until the sugar has dissolved and the gooseberries have softened and started to burst, becoming pulpy. This usually takes about 10-15 minutes.",
+        "Remove from heat and taste the gooseberry compote. Add more sugar if it's too tart for your liking. Allow the mixture to cool completely.",
+        "If using double cream, pour it into a chilled bowl and whip it using an electric mixer or whisk until it forms soft, billowy peaks. Be careful not to overwhip.",
+        "Once the gooseberry compote is completely cool, gently fold it into the whipped cream or thick custard. Aim for a marbled effect, with streaks of fruit and cream/custard, rather than mixing it uniformly.",
+        "Spoon the gooseberry fool into individual serving glasses or a larger serving bowl.",
+        "Chill in the refrigerator for at least 1 hour before serving to allow the flavors to meld and the dessert to set further. Serve cold."
+      ]
+    }
+  ]
+}
