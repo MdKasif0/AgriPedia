@@ -1,0 +1,192 @@
+{
+  "id": "persimmon",
+  "commonName": "Persimmon",
+  "scientificName": "Diospyros kaki",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kaki_20041002.jpg/800px-Kaki_20041002.jpg",
+  "description": "The Oriental persimmon (Diospyros kaki) is a deciduous tree that produces sweet, edible fruit, typically orange to reddish-orange. Fruits are broadly classified as astringent (e.g., 'Hachiya', which must be fully soft before eating to lose tartness) or non-astringent (e.g., 'Fuyu', which can be eaten firm like an apple). The flesh ranges from soft and jelly-like to crisp, depending on variety and ripeness.",
+  "origin": "Native to China, with cultivation dating back over 2000 years.",
+  "localNames": [
+    "Kaki (柿 - Japanese)",
+    "Shì (柿 - Chinese)",
+    "Gam (감 - Korean)",
+    "Sharon Fruit (Israel - specific 'Triumph' cultivar)",
+    "Caqui (Spanish, Portuguese)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "South Korea",
+    "Japan",
+    "Brazil",
+    "Azerbaijan",
+    "Spain (Valencian region)",
+    "Italy",
+    "Israel",
+    "United States (California, Florida)",
+    "Australia",
+    "New Zealand"
+  ],
+  "seasons": [
+    "Autumn to early Winter (typically September to December in the Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "70 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.59,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A",
+        "value": 81,
+        "unit": "µg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 7.5,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 2.6,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 8,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.355,
+        "unit": "mg",
+        "rdi": "15%"
+      },
+      {
+        "name": "Potassium",
+        "value": 161,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.04,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 17,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.15,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin A (from carotenoids like beta-cryptoxanthin and beta-carotene), which is crucial for good vision, immune function, and skin health.",
+    "Good source of dietary fiber, aiding digestion, promoting regularity, and helping to manage blood sugar levels.",
+    "Contains various antioxidants, including Vitamin C and manganese, which help protect the body against oxidative stress."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Tannin Astringency (unripe fruit)",
+      "severity": "Mild to Moderate (mouthfeel)",
+      "details": "Astringent varieties (e.g., Hachiya) are high in tannins when unripe or firm, causing a dry, puckering sensation in the mouth. These should be eaten only when fully soft and ripe. Non-astringent varieties (e.g., Fuyu) lack this issue. Rarely, consumption of large quantities of unripe astringent persimmons has been linked to bezoar formation."
+    }
+  ],
+  "cultivationProcess": "Persimmon trees (Diospyros kaki) are deciduous and can grow up to 10 meters tall. They prefer temperate and subtropical climates with distinct seasons. Most varieties require a period of winter chill. Trees are often dioecious (separate male and female trees), but many commercial cultivars are parthenocarpic (set fruit without pollination) or self-fruitful. They thrive in deep, well-drained loamy soil and require full sun for optimal fruit production. Pruning is done to maintain tree structure and fruit quality.",
+  "growthDuration": "Persimmon trees typically begin to bear fruit 3 to 6 years after planting. The fruit ripens in the autumn, often after the leaves have started to change color or fall.",
+  "sustainabilityTips": [
+    "Choose locally grown persimmons during their autumn season to reduce the carbon footprint from long-distance transportation and storage.",
+    "Persimmon trees can be relatively low-maintenance in suitable climates, sometimes requiring less water than other fruit trees once established."
+  ],
+  "carbonFootprintInfo": "Locally grown persimmons consumed in season generally have a moderate carbon footprint. However, persimmons imported from distant countries, especially if requiring refrigeration and significant transport logistics, will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Persimmon & Yogurt Parfait",
+      "description": "A quick and healthy breakfast or dessert layering sweet, ripe persimmons with creamy yogurt and crunchy granola. Best made with non-astringent Fuyu persimmons.",
+      "ingredients": [
+        "2 ripe Fuyu persimmons (or other non-astringent type), peeled (optional) and diced",
+        "1 cup Greek yogurt (or plain yogurt of choice)",
+        "1/2 cup granola",
+        "1 tablespoon honey or maple syrup (optional)",
+        "Pinch of ground cinnamon or nutmeg (optional)"
+      ],
+      "steps": [
+        "Prepare the persimmons: Wash the persimmons thoroughly. Peel if desired (the skin of Fuyu persimmons is edible), then dice into bite-sized pieces. Ensure the persimmons are ripe and sweet.",
+        "Choose two serving glasses or small bowls.",
+        "Create the first layer by placing half of the diced persimmons at the bottom of each glass.",
+        "Add a layer of Greek yogurt (about 1/2 cup per glass) over the persimmons.",
+        "Sprinkle a layer of granola (about 1/4 cup per glass) over the yogurt.",
+        "If using, drizzle the top layer of granola with honey or maple syrup.",
+        "Add a final pinch of cinnamon or nutmeg on top if desired.",
+        "Serve immediately to enjoy the contrast of crunchy granola and soft fruit. Alternatively, it can be chilled for a short period, but the granola may soften over time."
+      ]
+    }
+  ]
+}

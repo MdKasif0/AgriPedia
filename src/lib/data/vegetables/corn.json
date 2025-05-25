@@ -1,0 +1,178 @@
+{
+  "id": "corn",
+  "commonName": "Sweet Corn",
+  "scientificName": "Zea mays convar. saccharata var. rugosa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/VegCorn.jpg/800px-VegCorn.jpg",
+  "description": "Sweet corn is a popular variety of maize cherished for its high sugar content. It is harvested at an immature stage (milk stage) when the kernels are tender, juicy, and sweet, and is consumed as a vegetable rather than a grain.",
+  "origin": "Mesoamerica, with specific sweet varieties developed by Native American tribes and further cultivated in North America and worldwide.",
+  "localNames": [
+    "Maíz Dulce (Spanish)",
+    "Maïs Sucré (French)",
+    "Zuckermais (German)",
+    "Elote (Mexican Spanish - for corn on the cob)",
+    "Jagung Manis (Indonesian/Malay)"
+  ],
+  "regions": [
+    "United States (major producer - Iowa, Illinois, Nebraska)",
+    "China",
+    "Brazil",
+    "Mexico",
+    "European Union (France, Hungary, Romania)",
+    "Canada",
+    "Argentina",
+    "South Africa",
+    "Thailand",
+    "India"
+  ],
+  "seasons": [
+    "Summer to early Autumn in temperate climates (typically June to October in the Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "86 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 3.27,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.35,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 6.8,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.155,
+        "unit": "mg",
+        "rdi": "13%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.77,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 42,
+        "unit": "µg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.093,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 10, 
+        "unit": "µg", 
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 0.3,
+        "unit": "µg",
+        "rdi": "0%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 270,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 37,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 89,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.52,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.46,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.163,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which promotes digestive health and can help regulate blood sugar levels.",
+    "Provides essential nutrients including B vitamins (Thiamin, Niacin, Folate, B6) important for energy metabolism and neurological health.",
+    "Contains antioxidants like Vitamin C and ferulic acid (which increases upon cooking) that help protect cells from damage."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Corn Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "While not as common as some other food allergies, corn allergy can occur. Symptoms can range from hives, digestive issues, or asthma-like symptoms to severe anaphylaxis in highly sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Sweet corn is an annual crop grown from seeds planted in warm soil after the danger of frost has passed. It requires full sun, fertile well-drained soil, and consistent moisture, especially during pollination and kernel development. Corn is wind-pollinated, so it's often planted in blocks rather than single rows. Different types of sweet corn (standard sugary (su), sugary enhanced (se), shrunken-2 (sh2)) may require isolation from each other and field corn to prevent cross-pollination that can affect sweetness and texture.",
+  "growthDuration": "Typically 60 to 100 days from planting to harvest, depending on the specific cultivar and growing conditions. Sweet corn is harvested at the 'milk stage,' when kernels are plump, sweet, and exude a milky liquid when pierced.",
+  "sustainabilityTips": [
+    "Practice crop rotation with legumes to improve soil fertility naturally and reduce the need for synthetic nitrogen fertilizers.",
+    "Choose open-pollinated or heirloom varieties for seed saving and to support agricultural biodiversity, though hybrid varieties often offer higher yields and disease resistance."
+  ],
+  "carbonFootprintInfo": "Fresh sweet corn grown locally and consumed in season generally has a relatively low carbon footprint. However, processed corn (canned, frozen) and corn transported long distances (especially out of season) will have a higher footprint due to energy used in processing, packaging, and transportation.",
+  "staticRecipes": [
+    {
+      "name": "Classic Grilled Corn on the Cob",
+      "description": "A quintessential summer side dish where fresh sweet corn is grilled to perfection, enhancing its natural sweetness with a delightful smoky char.",
+      "ingredients": [
+        "4 ears of fresh sweet corn",
+        "2 tablespoons butter, melted (optional)",
+        "Salt to taste",
+        "Black pepper to taste (optional)",
+        "Optional flavorings: chili powder, lime wedges, crumbled cotija cheese, chopped cilantro"
+      ],
+      "steps": [
+        "Preheat your grill to medium-high heat (around 375-450°F or 190-230°C).",
+        "Prepare the corn: You can either remove the husks and silk completely for direct grilling, or carefully pull back the husks, remove all the silk, then reposition the husks over the corn to help steam it (soaking these husked ears in water for 10-15 minutes beforehand can prevent the husks from burning too quickly).",
+        "Grill the corn: Place the prepared corn directly on the hot grill grates.",
+        "Cook for 10-15 minutes, turning the ears every few minutes, until the kernels are tender and nicely charred in spots. If grilling with husks on, the husks will char significantly – this is normal.",
+        "Rest briefly: If you grilled with the husks on, allow the corn to cool for a few minutes before carefully removing the charred husks and any remaining silk.",
+        "Season: If using, brush the hot grilled corn cobs with melted butter. Season generously with salt and black pepper.",
+        "Serve: Serve immediately while warm. Offer optional flavorings on the side like chili powder, fresh lime wedges for squeezing, crumbled cotija cheese, or chopped cilantro."
+      ]
+    }
+  ]
+}

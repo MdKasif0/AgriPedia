@@ -1,0 +1,180 @@
+{
+  "id": "rambutan",
+  "commonName": "Rambutan",
+  "scientificName": "Nephelium lappaceum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rambutan_fruits.jpg/1024px-Rambutan_fruits.jpg",
+  "description": "Rambutan (Nephelium lappaceum) is a tropical fruit native to Southeast Asia, known for its distinctive appearance with a leathery, reddish (or sometimes yellow) skin covered in fleshy, pliable spines or 'hairs'. The translucent, white or pale pink flesh is sweet, juicy, and mildly acidic.",
+  "origin": "Southeast Asia (likely the Malay Archipelago - Indonesia, Malaysia)",
+  "localNames": [
+    "Rambut (Malay/Indonesian, meaning 'hair')",
+    "Chôm chôm (Vietnamese, meaning 'messy hair')",
+    "Ngoh (เงาะ - Thai)",
+    "Hóngmáodān (红毛丹 - Chinese, 'red-haired pellet')"
+  ],
+  "regions": [
+    "Indonesia",
+    "Malaysia",
+    "Thailand",
+    "Vietnam",
+    "Philippines",
+    "Sri Lanka",
+    "India",
+    "Australia (Queensland)",
+    "Central America (Costa Rica, Honduras, Panama)",
+    "South America (Ecuador, Colombia, Suriname)",
+    "Africa (Zanzibar, Pemba)",
+    "Caribbean islands (Puerto Rico, Trinidad, Cuba)"
+  ],
+  "seasons": [
+    "Varies by region; typically late fall to early winter, with a shorter secondary season in late spring to early summer in some areas. Main harvest often August-September in Central America."
+  ],
+  "nutrition": {
+    "calories": "82 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.65,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 20.87,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.21,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 4.9,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.352,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 8,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.022,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.013,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.343,
+        "unit": "mg",
+        "rdi": "15%"
+      },
+      {
+        "name": "Potassium",
+        "value": 42,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Calcium",
+        "value": 22,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.35,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 7,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Provides a good source of manganese, an essential mineral for enzyme function, metabolism, and antioxidant defense.",
+    "Contains Vitamin C, which supports the immune system and acts as an antioxidant.",
+    "Offers dietary fiber, which can aid in digestion and promote gut health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cross-reactivity (rare)",
+      "severity": "Mild",
+      "details": "Generally well-tolerated. Rare cross-reactivity may occur in individuals with allergies to other fruits in the Sapindaceae family (e.g., lychee, longan) or birch pollen (Oral Allergy Syndrome)."
+    }
+  ],
+  "cultivationProcess": "Rambutan trees thrive in warm, humid tropical climates (22–30°C) and prefer deep, well-drained clay loam or sandy loam soil rich in organic matter. Commercial propagation is mainly through grafting, air-layering, or budding to ensure true-to-type fruit. Trees require consistent moisture, especially during fruit development, and benefit from regular fertilization. Pollination is primarily carried out by insects, such as bees and flies.",
+  "growthDuration": "Grafted or budded rambutan trees typically start bearing fruit within 2-3 years, reaching optimal production in 8-10 years. Trees grown from seed may take 5-6 years to begin fruiting. The fruit matures approximately 15-18 weeks after the flowers bloom.",
+  "sustainabilityTips": [
+    "Opt for locally grown rambutans when available to minimize the carbon footprint associated with long-distance transportation.",
+    "Compost the inedible spiny peel and seed to reduce organic waste and create nutrient-rich soil amendment."
+  ],
+  "carbonFootprintInfo": "Rambutans cultivated and consumed locally in tropical regions have a relatively low carbon footprint. However, when imported to non-tropical countries, they often require air freight due to their short shelf life, significantly increasing their environmental impact. Choosing sea-freighted or processed (canned, dried) options can be more sustainable if fresh local fruit isn't available.",
+  "staticRecipes": [
+    {
+      "name": "Refreshing Rambutan & Pineapple Cooler",
+      "description": "A simple and thirst-quenching tropical drink that beautifully combines the sweet, unique flavor of rambutan with the tartness of pineapple.",
+      "ingredients": [
+        "10-12 fresh rambutans",
+        "1 cup fresh pineapple chunks",
+        "1 cup cold water or coconut water",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon sugar or honey (optional, adjust to taste)",
+        "Ice cubes"
+      ],
+      "steps": [
+        "Peel the rambutans: Use a small knife to carefully cut through the skin around the middle of the fruit, or use your fingernails to tear it open. Remove the translucent flesh from the seed. Discard the skin and seed.",
+        "In a blender, combine the peeled rambutan flesh, fresh pineapple chunks, cold water (or coconut water for extra tropical flavor), and fresh lime juice.",
+        "Add sugar or honey if desired, depending on the sweetness of your fruits.",
+        "Blend the mixture until smooth.",
+        "For an extra smooth drink, you can strain the blended mixture through a fine-mesh sieve to remove any pulp, though this is optional.",
+        "Fill glasses with ice cubes and pour the rambutan and pineapple cooler over the ice.",
+        "Garnish with a slice of lime, a pineapple wedge, or a whole rambutan on the rim of the glass if desired. Serve immediately."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "longan",
+  "commonName": "Longan",
+  "scientificName": "Dimocarpus longan",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Dimocarpus_longan_fruits.jpg/1024px-Dimocarpus_longan_fruits.jpg",
+  "description": "Dimocarpus longan, commonly known as the longan or dragon's eye, is a tropical tree species that produces edible fruit. It belongs to the soapberry family Sapindaceae, along with lychee and rambutan. The fruit is characterized by a thin, tan-brown shell, translucent white flesh, and a single black seed, resembling an eyeball.",
+  "origin": "Southeast Asia, particularly the region between Myanmar and Southern China.",
+  "localNames": [
+    "Lóngyǎn (龙眼 - Mandarin Chinese, 'dragon eye')",
+    "Lùhng-ngáahn (龍眼 - Cantonese Chinese, 'dragon eye')",
+    "Nhãn (Vietnamese)",
+    "Mata Kucing (Malay/Indonesian, 'cat's eye')"
+  ],
+  "regions": [
+    "China (Guangdong, Fujian, Guangxi)",
+    "Thailand",
+    "Vietnam",
+    "Indonesia",
+    "Taiwan",
+    "Malaysia",
+    "India",
+    "Sri Lanka",
+    "Philippines",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii, California)"
+  ],
+  "seasons": [
+    "Late Summer to Autumn (typically July to October in the Northern Hemisphere, varying by region)"
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.31,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15.14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 84,
+        "unit": "mg",
+        "rdi": "93%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.14,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.031,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 266,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 10,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.052,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.13,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Calcium",
+        "value": 1,
+        "unit": "mg",
+        "rdi": "0%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "0%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, which boosts the immune system and acts as an antioxidant.",
+    "Provides dietary fiber, which can aid digestion and promote gut health.",
+    "Contains minerals like potassium, important for maintaining healthy blood pressure levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Rare, but individuals with allergies to other fruits in the Sapindaceae family (like lychee or rambutan) or certain pollens might experience OAS. Symptoms are usually mild and localized to the mouth and throat."
+    }
+  ],
+  "cultivationProcess": "Longan trees are subtropical and thrive in warm, humid climates with well-drained, slightly acidic sandy soils. They are typically propagated by air layering (marcotting) for commercial cultivation, as seed propagation takes longer to bear fruit and may not retain parent characteristics. Trees require regular watering, especially during dry periods and fruit development, and benefit from balanced fertilization. Pruning is done to shape the tree, improve air circulation, and encourage fruiting.",
+  "growthDuration": "Grafted or air-layered trees typically begin to bear fruit within 2-4 years, with significant yields achieved by 4-5 years. Trees grown from seed may take 6-8 years or longer to start fruiting. Fruit matures in summer to early autumn.",
+  "sustainabilityTips": [
+    "Choose locally grown longans when in season to reduce carbon emissions from transportation.",
+    "Compost fruit peels and seeds to reduce waste and enrich soil."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of longans is lowest when sourced locally and consumed in season. Long-distance transportation, especially by air freight for fresh fruit, significantly increases its environmental impact. Dried longans have a longer shelf life, potentially reducing waste but involving energy for drying.",
+  "staticRecipes": [
+    {
+      "name": "Sweet Longan and Lotus Seed Dessert Soup (Tong Sui)",
+      "description": "A popular and refreshing Chinese dessert soup (tong sui) featuring the sweet flavors of longan and the soft texture of lotus seeds. Often enjoyed warm or chilled.",
+      "ingredients": [
+        "1/2 cup dried longan pulp",
+        "1/4 cup dried lotus seeds (skinless and cored)",
+        "4-6 cups water",
+        "Rock sugar to taste (e.g., 1/4 to 1/2 cup, or use granulated sugar)"
+      ],
+      "steps": [
+        "Rinse the dried longan pulp and dried lotus seeds thoroughly under cold water.",
+        "If your lotus seeds are not pre-cored, slice each seed in half and remove the bitter green germ (core) from the center.",
+        "Soak the dried lotus seeds in warm water for at least 1 hour, or until they are somewhat softened. Some prefer to soak them for longer (2-3 hours or overnight) for a softer texture.",
+        "In a medium-sized pot, combine the rinsed longan pulp, soaked and cored lotus seeds, and the 4-6 cups of water.",
+        "Bring the mixture to a boil over high heat.",
+        "Once boiling, reduce the heat to low, cover the pot, and let it simmer for 30-45 minutes, or until the lotus seeds are tender and can be easily pierced with a fork.",
+        "Add rock sugar (or granulated sugar) to the pot according to your preference for sweetness. Start with a smaller amount, stir until it dissolves completely, then taste and add more if needed.",
+        "Continue to simmer for another 5-10 minutes to allow the sugar to fully incorporate and the flavors to meld.",
+        "Serve the dessert soup warm in bowls. It can also be chilled in the refrigerator and served cold, which is particularly refreshing in warmer weather."
+      ]
+    }
+  ]
+}

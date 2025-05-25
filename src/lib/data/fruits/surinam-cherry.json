@@ -1,0 +1,156 @@
+{
+  "id": "surinam-cherry",
+  "commonName": "Surinam Cherry",
+  "scientificName": "Eugenia uniflora",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Eugenia_uniflora_fruits.jpg/800px-Eugenia_uniflora_fruits.jpg",
+  "description": "The Surinam Cherry (Eugenia uniflora) is a tropical shrub or small tree that produces distinctive ribbed fruits. The fruit transitions from green to orange, scarlet, and finally deep maroon or nearly black when fully ripe. Its flavor profile ranges from tart to sweet, often with a resinous or spicy note, depending on ripeness and cultivar.",
+  "origin": "Tropical South America's east coast (Suriname, French Guiana, southern Brazil, Uruguay, parts of Paraguay and Argentina).",
+  "localNames": [
+    "Pitanga (Brazil, and widely used)",
+    "Brazilian Cherry (English)",
+    "Cayenne Cherry (English)",
+    "Ñangapirí (Guarani)",
+    "Cerise Carrée (French Caribbean)"
+  ],
+  "regions": [
+    "South America (Brazil, Suriname, French Guiana, Uruguay, Paraguay, Argentina)",
+    "Caribbean Islands (Barbados, Jamaica, Puerto Rico)",
+    "United States (Florida, Hawaii, California - primarily ornamental or home gardens)",
+    "Bermuda (naturalized, invasive)",
+    "Parts of Asia and Africa (introduced as ornamental and for fruit)"
+  ],
+  "seasons": [
+    "Can flower and fruit multiple times a year in warm climates, with main fruiting peaks often occurring in spring and fall."
+  ],
+  "nutrition": {
+    "calories": "33 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.49,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 26.3,
+        "unit": "mg",
+        "rdi": "29%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 75,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.04,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 103,
+        "unit": "mg",
+        "rdi": "2%" 
+      },
+      {
+        "name": "Calcium",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.2,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 11,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that supports the immune system and collagen formation.",
+    "Good source of Vitamin A (as carotenoids), which is important for vision health, immune function, and cell growth.",
+    "Contains various phytochemicals and essential oils that have shown antioxidant, anti-inflammatory, and other potential pharmacological properties in studies."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Seed Ingestion / Leaf Resin",
+      "severity": "Mild to Moderate",
+      "details": "The seeds contain resin and are generally not consumed. The leaves and branches have a spicy, resinous fragrance when crushed that can cause respiratory discomfort in susceptible individuals. The fruit itself is widely eaten."
+    }
+  ],
+  "cultivationProcess": "Surinam Cherry (Eugenia uniflora) is a hardy and adaptable large shrub or small tree, often used as a hedge or ornamental plant. It thrives in tropical and subtropical climates, tolerating a range of soil types provided they are well-drained. Propagation can be from seeds (though fruit quality may vary) or more reliably from cuttings or air layering for specific cultivars. It responds well to pruning and can be shaped easily. It is relatively pest and disease resistant in many areas.",
+  "growthDuration": "Plants can start fruiting within 2-3 years from seed, and often earlier if propagated vegetatively. They are slow-growing, typically reaching up to 8 meters in height, and can produce fruit multiple times a year in favorable conditions.",
+  "sustainabilityTips": [
+    "Due to its hardiness and adaptability, Surinam cherry can be grown with minimal pesticide or fertilizer use in suitable climates, making it an eco-friendly choice for home gardens.",
+    "Often used for hedging, it can provide both fruit and a natural boundary, supporting local biodiversity."
+  ],
+  "carbonFootprintInfo": "Surinam cherries grown and consumed locally (e.g., in home gardens or small local farms) have a very low carbon footprint. If the fruit needs to be transported long distances, especially by air to reach markets where it's not locally grown, the carbon footprint would increase significantly.",
+  "staticRecipes": [
+    {
+      "name": "Simple Surinam Cherry Jam",
+      "description": "A delightful jam that captures the unique sweet-tart and slightly resinous flavor of Surinam cherries. Excellent on toast, with yogurt, or as a glaze.",
+      "ingredients": [
+        "500g ripe Surinam cherries, pitted",
+        "400g granulated sugar (adjust to taste, as ripeness affects sweetness)",
+        "Juice of 1/2 lemon (about 1-2 tablespoons)"
+      ],
+      "steps": [
+        "Wash the ripe Surinam cherries thoroughly. Remove the stems. The single seed in the center can be easily popped out by gently squeezing the fruit, or by halving the fruit and removing it.",
+        "Place the pitted Surinam cherries and granulated sugar into a large, heavy-bottomed saucepan. Stir gently to combine.",
+        "Let the mixture sit at room temperature for at least 1 hour, or up to 4 hours, stirring occasionally. This allows the sugar to draw out juices from the fruit.",
+        "Add the lemon juice to the fruit and sugar mixture.",
+        "Place the saucepan over medium-low heat. Cook, stirring gently and continuously, until the sugar has completely dissolved. Do not allow the mixture to boil before the sugar is dissolved.",
+        "Once the sugar is fully dissolved, increase the heat to medium-high and bring the mixture to a rolling boil (a boil that continues even when you stir).",
+        "Continue to boil rapidly, stirring frequently to prevent sticking, for about 15-25 minutes. The cooking time will vary depending on the ripeness of the fruit and desired thickness. To test for setting point, remove the pan from heat, place a small spoonful of jam onto a chilled saucer (kept in the freezer for a few minutes), let it cool for 30 seconds, then push it with your fingertip. If the surface wrinkles, the jam is set. Alternatively, use a jam thermometer – setting point is 105°C (221°F).",
+        "Once the setting point is reached, remove the jam from the heat. Skim off any foam (scum) from the surface using a slotted spoon, if desired, for a clearer jam.",
+        "Carefully ladle the hot jam into warm, sterilized glass jars, leaving about 1/4 inch (0.5 cm) of headspace at the top.",
+        "Wipe the jar rims clean with a damp cloth, place the lids on, and tighten the screw bands securely. Allow the jars to cool completely undisturbed. As the jam cools, you should hear the lids 'pop', indicating a good seal. The jam will thicken further as it cools."
+      ]
+    }
+  ]
+}

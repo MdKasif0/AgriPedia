@@ -1,0 +1,171 @@
+{
+  "id": "sapodilla",
+  "commonName": "Sapodilla",
+  "scientificName": "Manilkara zapota",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sapodilla_Malay_with_seeds.jpg/800px-Sapodilla_Malay_with_seeds.jpg",
+  "description": "Sapodilla (Manilkara zapota) is a tropical evergreen tree that produces a sweet, malty-flavored fruit with a grainy texture, similar to a pear. The fruit is round to oval, with a dull brown, rough skin. The flesh is pale yellow to an earthy brown and contains a few glossy black seeds.",
+  "origin": "Native to southern Mexico, Central America, and the Caribbean.",
+  "localNames": [
+    "Chikoo (India, Pakistan)",
+    "Chico (Philippines)",
+    "Naseberry (Caribbean)",
+    "Sapote (general term, can be ambiguous)",
+    "Níspero (some Spanish-speaking regions, can be ambiguous)",
+    "Sawo (Indonesia, Malaysia)"
+  ],
+  "regions": [
+    "Mexico",
+    "Central America (Belize, Guatemala)",
+    "Caribbean Islands (Jamaica, Bahamas)",
+    "India (major producer)",
+    "Pakistan",
+    "Thailand",
+    "Malaysia",
+    "Indonesia",
+    "Vietnam",
+    "Bangladesh",
+    "Philippines",
+    "United States (Florida, Hawaii)"
+  ],
+  "seasons": [
+    "Can fruit twice a year in many tropical regions, with main seasons varying (e.g., typically February to June and September to December in some parts of India and Southeast Asia)."
+  ],
+  "nutrition": {
+    "calories": "83 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.44,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 19.96,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 14.7,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 14,
+        "unit": "µg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.252,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.037,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.2,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 193,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Calcium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of dietary fiber, which aids in digestion, helps prevent constipation, and can contribute to feelings of fullness.",
+    "Good source of Vitamin C, an antioxidant that supports the immune system and helps protect against free radical damage.",
+    "Contains tannins (especially when slightly unripe), which have traditionally been thought to possess anti-inflammatory and anti-parasitic properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex in unripe fruit",
+      "severity": "Mild",
+      "details": "Unripe sapodilla fruit contains a high amount of latex and saponins, which are astringent and can cause mouth irritation or dryness. Fully ripe fruit does not have this issue. Seeds are hard and have a small hook, and should not be swallowed."
+    }
+  ],
+  "cultivationProcess": "Sapodilla trees are long-lived, wind-resistant evergreens that thrive in warm, tropical, and subtropical climates. They prefer well-drained soil and full sun. Propagation is commonly done by seeds (though trees take longer to mature), grafting, or air layering to ensure desired fruit quality. The tree's bark contains a white, gummy latex called chicle, famously used for chewing gum. Trees are relatively low-maintenance once established.",
+  "growthDuration": "Sapodilla trees grown from seed may take 5 to 8 years to bear fruit, while grafted or layered trees can start fruiting in 2 to 4 years. The trees can be productive for many decades and may yield fruit twice a year in some regions.",
+  "sustainabilityTips": [
+    "Sapodilla trees are hardy and can be grown with relatively few inputs in suitable climates, making them a sustainable choice for local fruit production.",
+    "The traditional use of its latex (chicle) for natural chewing gum represents a sustainable, non-timber forest product when harvested responsibly."
+  ],
+  "carbonFootprintInfo": "Locally grown sapodilla has a relatively low carbon footprint. However, due to its preference for tropical climates, sapodilla imported to temperate regions often involves long-distance transportation, increasing its environmental impact, especially if air-freighted to maintain freshness.",
+  "staticRecipes": [
+    {
+      "name": "Creamy Sapodilla (Chikoo) Milkshake",
+      "description": "A sweet, rich, and creamy milkshake made from ripe sapodilla fruit, a popular and refreshing beverage in many tropical countries where the fruit is grown.",
+      "ingredients": [
+        "2 large ripe sapodillas (chikoo), peeled, deseeded, and roughly chopped",
+        "1 cup cold milk (dairy like whole milk, or non-dairy like almond or soy milk)",
+        "1-2 teaspoons sugar or honey (optional, adjust to the sweetness of the fruit)",
+        "1/4 teaspoon ground cardamom powder (elaichi) (optional)",
+        "4-5 ice cubes (optional, for a thicker shake)"
+      ],
+      "steps": [
+        "Ensure the sapodillas are fully ripe (soft to a gentle squeeze, skin may look slightly wrinkled).",
+        "Wash the sapodillas, peel off the brown skin, and cut them in half.",
+        "Remove and discard the hard, black, shiny seeds from the center of each half.",
+        "Roughly chop the sapodilla flesh.",
+        "Place the chopped sapodilla, cold milk, sugar or honey (if using), and optional cardamom powder into a blender.",
+        "Add the ice cubes if you desire a colder and thicker milkshake.",
+        "Blend the mixture on high speed for 1-2 minutes, or until it is completely smooth and creamy. If the milkshake is too thick for your liking, add a little more milk and blend briefly to reach the desired consistency.",
+        "Pour the sapodilla milkshake into serving glasses.",
+        "Serve immediately. You can garnish with a pinch of cardamom powder or a thin slice of sapodilla on the rim of the glass if desired."
+      ]
+    }
+  ]
+}

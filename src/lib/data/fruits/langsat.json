@@ -1,0 +1,149 @@
+{
+  "id": "langsat",
+  "commonName": "Langsat",
+  "scientificName": "Lansium domesticum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Paete%2CLagunajf6182_09.JPG/800px-Paete%2CLagunajf6182_09.JPG",
+  "description": "Lansium domesticum, commonly known as langsat or lanzones, is a tropical fruit tree that bears small, ovoid to round fruits in clusters. The fruit has a thin, leathery, pale yellow to brownish skin, and translucent, juicy, sweet-tart flesh divided into segments, some of which may contain a bitter seed.",
+  "origin": "Southeast Asia (specifically Peninsular Thailand, Malaysia, Indonesia, Philippines)",
+  "localNames": [
+    "Lanzones (Philippines)",
+    "Langsat (Malaysia, Indonesia)",
+    "Longkong (Thailand - a popular cultivar)",
+    "Duku (Indonesia, Malaysia - a cultivar group)",
+    "Lòn bon (Vietnamese)"
+  ],
+  "regions": [
+    "Philippines",
+    "Indonesia",
+    "Malaysia",
+    "Thailand",
+    "Vietnam",
+    "India (Southern states)",
+    "Sri Lanka",
+    "Hawaii (USA - limited)",
+    "Costa Rica (limited)",
+    "Suriname"
+  ],
+  "seasons": [
+    "Varies by region, typically during the rainy season, often fruiting from late spring to autumn in Southeast Asia."
+  ],
+  "nutrition": {
+    "calories": "57 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 4.5,
+        "unit": "µg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.5,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 230,
+        "unit": "mg",
+        "rdi": "5%" 
+      },
+      {
+        "name": "Phosphorus",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Provides Vitamin C, an antioxidant that supports immune function.",
+    "Contains B-vitamins like Thiamine, Riboflavin, and Niacin, which are important for energy metabolism.",
+    "Source of dietary fiber, which aids in digestion and promotes gut health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex in skin (some varieties)",
+      "severity": "Mild",
+      "details": "The skin of some langsat varieties (particularly the 'Langsat' type) exudes a sticky latex when peeled, which is generally harmless but can be messy. The seeds are bitter and typically not consumed."
+    }
+  ],
+  "cultivationProcess": "Langsat trees are typically grown in humid, tropical climates and prefer well-drained, slightly acidic soil rich in organic matter. They thrive in partial shade, often cultivated in mixed agroforestry systems. Propagation can be by seeds (which have a long juvenile period, 12-25 years) or more commonly by air layering or grafting onto seedling rootstock for earlier fruiting (2-6 years) and consistent cultivar quality. Trees require consistent moisture, especially during fruit development.",
+  "growthDuration": "Seedling trees may take 12-25 years to bear fruit. Grafted or air-layered trees can start fruiting in 2-6 years, with full production varying. Fruit typically ripens about 4-5 months after flowering.",
+  "sustainabilityTips": [
+    "Supporting agroforestry systems where langsat is traditionally grown helps conserve biodiversity and soil health.",
+    "Choose locally grown langsat fruits when available to reduce the carbon footprint associated with transportation."
+  ],
+  "carbonFootprintInfo": "Langsat grown and consumed within its native Southeast Asian regions generally has a low carbon footprint. When exported, particularly fresh fruit requiring air freight due to its moderate shelf life, the carbon footprint increases significantly. Processed forms (e.g., canned in syrup) also add to the footprint through manufacturing and packaging.",
+  "staticRecipes": [
+    {
+      "name": "Langsat & Coconut Tropical Salad",
+      "description": "A refreshing and simple salad that highlights the sweet-tart flavor of langsat (lanzones), beautifully complemented by toasted coconut and fresh mint.",
+      "ingredients": [
+        "2 cups fresh langsat (lanzones), peeled",
+        "1/2 cup fresh pineapple, diced (optional)",
+        "1/4 cup toasted shredded coconut (unsweetened)",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon honey or palm sugar syrup (optional, to taste)",
+        "A few fresh mint leaves, thinly sliced (chiffonade)"
+      ],
+      "steps": [
+        "Peel the langsat fruits. This is usually done by gently squeezing or pinching the skin until it splits, then removing it. The flesh is divided into segments.",
+        "If the langsat segments contain large, green, bitter seeds, you may choose to remove them, especially from the larger segments. Smaller, undeveloped seeds are often edible or absent.",
+        "In a medium bowl, combine the peeled langsat segments and diced pineapple (if using).",
+        "In a small separate bowl, whisk together the fresh lime juice and honey or palm sugar syrup (if you are using it for added sweetness).",
+        "Pour the lime juice dressing over the fruits and toss gently to ensure they are evenly coated.",
+        "Sprinkle the toasted shredded coconut and thinly sliced fresh mint leaves over the salad.",
+        "Serve immediately for the best taste and texture, or chill for about 15-30 minutes for a more refreshing experience."
+      ]
+    }
+  ]
+}
