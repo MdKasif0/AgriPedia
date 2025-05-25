@@ -1,8 +1,9 @@
+
 {
   "id": "corn",
   "commonName": "Sweet Corn",
   "scientificName": "Zea mays convar. saccharata var. rugosa",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZp0m_uTmL3sd4CuN9x1xxnA_XWmpXGGumYWicGlx9g&s",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Corn_on_the_cob.jpg",
   "description": "Sweet corn is a popular variety of maize cherished for its high sugar content. It is harvested at an immature stage (milk stage) when the kernels are tender, juicy, and sweet, and is consumed as a vegetable rather than a grain.",
   "origin": "Mesoamerica, with specific sweet varieties developed by Native American tribes and further cultivated in North America and worldwide.",
   "localNames": [
@@ -173,6 +174,49 @@
         "Season: If using, brush the hot grilled corn cobs with melted butter. Season generously with salt and black pepper.",
         "Serve: Serve immediately while warm. Offer optional flavorings on the side like chili powder, fresh lime wedges for squeezing, crumbled cotija cheese, or chopped cilantro."
       ]
+    },
+    {
+      "name": "Creamy Corn Chowder",
+      "description": "A rich and comforting soup made with sweet corn, potatoes, and often bacon.",
+      "ingredients": [
+        "4 ears fresh corn (kernels removed, cobs reserved) or 2 cups frozen corn",
+        "4 slices bacon, chopped",
+        "1 onion, chopped",
+        "2 potatoes, peeled and diced",
+        "4 cups chicken or vegetable broth",
+        "1 cup heavy cream or milk",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "If using fresh corn, cut kernels from cobs. Set kernels aside. Break cobs in half.",
+        "In a large pot, cook bacon until crispy. Remove bacon, leave fat in pot.",
+        "Add onion to pot, cook until soft. Add diced potatoes. Cook for 5 minutes.",
+        "Add corn kernels (if fresh), broth, and reserved corn cobs. Bring to a boil, then simmer until potatoes are tender (15-20 mins).",
+        "Remove corn cobs. If using frozen corn, add it now. Simmer for 5 more minutes.",
+        "Stir in cream/milk. Season with salt and pepper. Heat through but do not boil.",
+        "Serve topped with crispy bacon. Can partially blend for a creamier texture."
+      ]
+    },
+    {
+      "name": "Elote (Mexican Street Corn)",
+      "description": "Grilled corn on the cob slathered in a creamy, cheesy, spicy mixture.",
+      "ingredients": [
+        "4 ears corn, grilled or boiled",
+        "1/4 cup mayonnaise",
+        "1/4 cup crumbled cotija cheese (or feta)",
+        "1/2 tsp chili powder (or to taste)",
+        "Juice of 1/2 lime",
+        "Chopped cilantro for garnish"
+      ],
+      "steps": [
+        "Cook corn until tender (grill or boil).",
+        "In a small bowl, mix mayonnaise, cotija cheese, chili powder, and lime juice.",
+        "Brush the cooked corn cobs generously with the mayonnaise mixture.",
+        "Sprinkle with extra cotija cheese and chopped cilantro if desired.",
+        "Serve immediately."
+      ]
     }
   ]
 }
+
+    

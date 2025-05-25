@@ -1,8 +1,9 @@
+
 {
   "id": "gooseberry",
   "commonName": "Gooseberry",
   "scientificName": "Ribes uva-crispa",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMovH95j2lfBmMpBCCWtgvSE16hnCTHCrXjiuUQ0kkw&s",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Gooseberry.jpg",
   "description": "Gooseberries are tart to sweet-tart berries, typically green, red, or yellow, belonging to the Ribes genus. They are known for their distinct flavor and are used in desserts, jams, and sauces. The berries can be smooth or hairy depending on the variety.",
   "origin": "Native to Europe, northwestern Africa, and western, southern, and southeastern Asia.",
   "localNames": [
@@ -151,6 +152,39 @@
         "Spoon the gooseberry fool into individual serving glasses or a larger serving bowl.",
         "Chill in the refrigerator for at least 1 hour before serving to allow the flavors to meld and the dessert to set further. Serve cold."
       ]
+    },
+    {
+      "name": "Gooseberry Crumble",
+      "description": "A tart and sweet crumble, perfect with custard or ice cream.",
+      "ingredients": [
+        "500g gooseberries",
+        "150g sugar",
+        "For crumble: 150g plain flour, 75g butter (cold, cubed), 75g demerara sugar"
+      ],
+      "steps": [
+        "Preheat oven to 180°C (350°F).",
+        "Place gooseberries and sugar in an ovenproof dish.",
+        "Rub flour and butter together until it resembles breadcrumbs. Stir in demerara sugar.",
+        "Sprinkle crumble topping over the fruit.",
+        "Bake for 30-40 minutes, or until golden and fruit is bubbling."
+      ]
+    },
+    {
+      "name": "Gooseberry Sauce for Meats",
+      "description": "A tangy sauce that pairs well with fatty meats like pork or duck.",
+      "ingredients": [
+        "250g gooseberries",
+        "50g sugar",
+        "50ml water",
+        "Pinch of ginger (optional)"
+      ],
+      "steps": [
+        "Combine gooseberries, sugar, and water in a saucepan.",
+        "Simmer gently for 10-15 minutes until berries burst and sauce thickens.",
+        "Stir in ginger if using. Serve warm."
+      ]
     }
   ]
 }
+
+    
