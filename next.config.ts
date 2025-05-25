@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'assets.clevelandclinic.org', // Added Cleveland Clinic
+        hostname: 'assets.clevelandclinic.org',
         port: '',
         pathname: '/**',
       },
@@ -38,6 +38,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'encrypted-tbn0.gstatic.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.rhs.org.uk', // Added this hostname
         port: '',
         pathname: '/**',
       },
