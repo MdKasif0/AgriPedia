@@ -120,9 +120,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            if (typeof UserDataStore.addRecentView === 'function') { // Check if addRecentView exists
-              UserDataStore.addRecentView(onlineData.id);
-            }
+            // UserDataStore.addRecentView was removed, so this call is no longer needed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -259,7 +257,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
         <div className="flex-1 text-center sm:text-left">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
-            <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
+            <Leaf className="text-primary h-8 w-8 sm:h-10 sm:w-10" /> {produce.commonName}
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
         </div>
