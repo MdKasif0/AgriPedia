@@ -1,8 +1,10 @@
+
 'use client';
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Tooltip as RechartsTooltip } from 'recharts';
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import type { ProduceInfo } from '@/lib/produceData';
+import { cn } from "@/lib/utils"; // Added import for cn
 
 interface NutrientChartProps {
   data: ProduceInfo['nutrition']['macronutrients'];
