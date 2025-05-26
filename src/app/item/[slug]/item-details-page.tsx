@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound } from 'next/navigation';
+import { useParams, notFound, useRouter } from 'next/navigation'; // Added useRouter
 import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
@@ -18,7 +18,8 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2,
+  ArrowLeft // Added ArrowLeft
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -73,8 +74,10 @@ interface ItemDetailsPageProps {
 
 export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const params = useParams<{ slug?: string | string[] }>();
-  const slugFromParams = slugFromParamsProp || params.slug;
+  const paramsHook = useParams<{ slug?: string | string[] }>();
+  const router = useRouter(); // Initialize router
+
+  const slugFromParams = slugFromParamsProp || paramsHook.slug;
 
 
   const processedSlug = useMemo(() => {
@@ -119,9 +122,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            if (typeof UserDataStore.addFavorite === 'function') { // Check if addRecentView was intended or just a typo
-              // UserDataStore.addRecentView(itemData.id); // This function was removed
-            }
+            // UserDataStore.addRecentView(itemData.id); // This line was removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -256,14 +257,20 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </Alert>
       )}
       
-      <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
-        <div className="flex-1 text-center sm:text-left">
-          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
-            <Leaf className="text-primary h-8 w-8 sm:h-10 sm:w-10" /> {produce.commonName}
+      <header className="flex items-center justify-between gap-2 mb-4">
+        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="flex-shrink-0">
+          <ArrowLeft size={24} className="text-foreground" />
+        </Button>
+
+        <div className="flex-1 text-center min-w-0"> {/* Added min-w-0 for proper truncation if needed */}
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-0.5 flex items-center justify-center gap-2 truncate">
+            <Leaf className="text-primary h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0" /> 
+            <span className="truncate">{produce.commonName}</span>
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground italic">{produce.scientificName}</p>
+          <p className="text-sm sm:text-md text-muted-foreground italic truncate">{produce.scientificName}</p>
         </div>
-        <div className="flex items-center justify-center sm:justify-end gap-1 mt-2 sm:mt-0 flex-shrink-0">
+
+        <div className="flex items-center gap-1 flex-shrink-0">
             <Button
                 variant="ghost"
                 size="icon"
@@ -271,7 +278,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={`Share ${produce.commonName} details`}
             >
-                <Share2 size={24} />
+                <Share2 size={22} />
             </Button>
             <Button
                 variant="ghost"
@@ -280,7 +287,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
-                {isBookmarked ? <BookmarkCheck size={28} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={28} />}
+                {isBookmarked ? <BookmarkCheck size={26} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={26} />}
             </Button>
         </div>
       </header>
@@ -299,7 +306,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
       <Tabs defaultValue="overview" className="w-full">
         <div className="overflow-x-auto pb-2">
-          <TabsList> {/* Removed grid and w-full classes, relying on parent overflow-x-auto and TabsList default inline-flex behavior */}
+          <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
             <TabsTrigger value="recipe">Recipes</TabsTrigger>
@@ -465,5 +472,3 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     </div>
   );
 }
-
-    
