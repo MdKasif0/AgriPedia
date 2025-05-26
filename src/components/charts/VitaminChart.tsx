@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts';
@@ -13,7 +14,6 @@ interface VitaminChartProps {
 const chartConfig = {
   value: {
     label: "Amount",
-    // color: "hsl(var(--primary))", // Color will be set per bar
   },
 } satisfies ChartConfig;
 
@@ -27,7 +27,6 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
     value: vitamin.value,
     unit: vitamin.unit,
     rdi: vitamin.rdi,
-    // fill: "hsl(var(--primary))", // Default fill color will be overridden
   }));
 
   const colorPalette = [
@@ -48,22 +47,20 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
       <h4 className="text-lg font-semibold mb-4 text-primary text-center">Vitamins per 100g</h4>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={chartData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+          <BarChart data={chartData} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
               axisLine={false} 
               stroke="hsl(var(--foreground))"
-              fontSize={12}
-              interval={0} // Show all labels if possible
-              // angle={-30} // Angle labels if they overlap
-              // textAnchor="end"
+              fontSize={11}
+              interval={0}
             />
             <YAxis 
               stroke="hsl(var(--foreground))"
-              fontSize={12}
-              tickFormatter={(value) => String(value)} // Display raw value, unit in tooltip
+              fontSize={11}
+              tickFormatter={(value) => String(value)} 
             />
             <ChartTooltip
               cursor={false}

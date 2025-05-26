@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts';
@@ -13,7 +14,6 @@ interface MineralChartProps {
 const chartConfig = {
   value: {
     label: "Amount",
-    // color: "hsl(var(--primary))", // Color will be set per bar
   },
 } satisfies ChartConfig;
 
@@ -27,11 +27,10 @@ export default function MineralChart({ data, className }: MineralChartProps) {
     value: mineral.value,
     unit: mineral.unit,
     rdi: mineral.rdi,
-    // fill: "hsl(var(--primary))", // Default fill color will be overridden
   }));
 
   const colorPalette = [
-    "hsl(var(--chart-5))", // Start from different end of palette for variety
+    "hsl(var(--chart-5))", 
     "hsl(var(--chart-4))",
     "hsl(var(--chart-3))",
     "hsl(var(--chart-2))",
@@ -48,20 +47,20 @@ export default function MineralChart({ data, className }: MineralChartProps) {
       <h4 className="text-lg font-semibold mb-4 text-primary text-center">Minerals per 100g</h4>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={chartData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+          <BarChart data={chartData} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
               axisLine={false} 
               stroke="hsl(var(--foreground))"
-              fontSize={12}
+              fontSize={11}
               interval={0}
             />
             <YAxis 
               stroke="hsl(var(--foreground))"
-              fontSize={12}
-              tickFormatter={(value) => String(value)} // Display raw value, unit in tooltip
+              fontSize={11}
+              tickFormatter={(value) => String(value)} 
             />
             <ChartTooltip
               cursor={false}
