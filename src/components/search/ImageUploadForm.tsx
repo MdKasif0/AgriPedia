@@ -35,59 +35,56 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const router = useRouter();
   const { toast } = useToast();
 
-  const getCameraPermissionInternal = async () => {
-    setHasCameraPermission(null); // Reset for new attempt
-    setError(null);
+  useEffect(() => {
+    const getCameraPermissionInternal = async () => {
+      setHasCameraPermission(null); 
+      setError(null);
 
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-      const noApiMessage = 'Camera API is not available in this browser.';
-      setError(noApiMessage);
-      setHasCameraPermission(false);
-      toast({
-        variant: 'destructive',
-        title: 'Camera Not Supported',
-        description: noApiMessage,
-      });
-      return;
-    }
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
-      streamRef.current = stream;
-      setHasCameraPermission(true);
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-        // Attempt to play if autoPlay is not reliable or if srcObject was re-assigned
-        videoRef.current.play().catch(playError => {
-          console.warn('Video play failed:', playError);
-          // This might happen if the user interacts too quickly, or browser restrictions.
-          // The video might still show a static frame if the stream is active.
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        const noApiMessage = 'Camera API is not available in this browser.';
+        setError(noApiMessage);
+        setHasCameraPermission(false);
+        toast({
+          variant: 'destructive',
+          title: 'Camera Not Supported',
+          description: noApiMessage,
+        });
+        return;
+      }
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
+        streamRef.current = stream;
+        setHasCameraPermission(true);
+        if (videoRef.current) {
+          videoRef.current.srcObject = stream;
+          videoRef.current.play().catch(playError => {
+            console.warn('Video play failed:', playError);
+          });
+        }
+      } catch (err) {
+        console.error('Error accessing camera:', err);
+        let message = 'Could not access camera. Please ensure it is connected and permissions are granted in your browser settings.';
+        if (err instanceof Error) {
+          if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
+            message = 'Camera permission was denied. Please check your browser settings to allow camera access for this site.';
+          } else if (err.name === 'NotFoundError') {
+            message = 'No camera found on your device. Please ensure a camera is connected and enabled.';
+          } else {
+            message = `Could not access camera: ${err.message}. Try checking browser permissions or ensure no other app is using the camera.`;
+          }
+        }
+        setError(message);
+        setHasCameraPermission(false);
+        toast({
+          variant: 'destructive',
+          title: 'Camera Access Issue',
+          description: message,
         });
       }
-    } catch (err) {
-      console.error('Error accessing camera:', err);
-      let message = 'Could not access camera. Please ensure it is connected and permissions are granted in your browser settings.';
-      if (err instanceof Error) {
-        if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
-          message = 'Camera permission was denied. Please check your browser settings to allow camera access for this site.';
-        } else if (err.name === 'NotFoundError') {
-          message = 'No camera found on your device. Please ensure a camera is connected and enabled.';
-        } else {
-          message = `Could not access camera: ${err.message}. Try checking browser permissions or ensure no other app is using the camera.`;
-        }
-      }
-      setError(message);
-      setHasCameraPermission(false);
-      toast({
-        variant: 'destructive',
-        title: 'Camera Access Issue',
-        description: message,
-      });
-    }
-  };
+    };
 
-  useEffect(() => {
     if (isCameraMode) {
-      if (!streamRef.current && hasCameraPermission !== false) { // Only attempt if no stream and not hard-denied
+      if (!streamRef.current && hasCameraPermission !== false) {
         getCameraPermissionInternal();
       } else if (hasCameraPermission === true && streamRef.current && videoRef.current && !videoRef.current.srcObject) {
         videoRef.current.srcObject = streamRef.current;
@@ -102,17 +99,16 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         videoRef.current.srcObject = null;
       }
       if (streamRef.current) {
-        streamRef.current.getTracks().forEach(track => track.stop()); // Should be redundant if above worked
+        streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
       }
-      // Reset permission state unless it was a hard denial.
       if (hasCameraPermission !== false) {
          setHasCameraPermission(null);
       }
-      setError(null);
+      setError(null); 
     }
 
-    return () => { // Full cleanup on unmount
+    return () => { 
       if (videoRef.current && videoRef.current.srcObject) {
         videoRef.current.pause();
         const stream = videoRef.current.srcObject as MediaStream;
@@ -124,12 +120,12 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         streamRef.current = null;
       }
     };
-  }, [isCameraMode, toast]); // hasCameraPermission removed to prevent loops
+  }, [isCameraMode, toast]); 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
-      if (selectedFile.size > 10 * 1024 * 1024) { // 10MB limit
+      if (selectedFile.size > 10 * 1024 * 1024) { 
         setError('File is too large. Please select an image under 10MB.');
         toast({
           title: 'File Too Large',
@@ -142,7 +138,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       }
       setFile(selectedFile);
       setError(null);
-      setPreview(null); // Clear old preview immediately
+      setPreview(null); 
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreview(reader.result as string);
@@ -164,8 +160,27 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         });
         triggerHapticFeedback();
         playSound('/sounds/scan-success.mp3');
+
+        // Aggressive cleanup if we were in camera mode, before navigation or dialog close
+        if (isCameraMode && videoRef.current) {
+            if (videoRef.current.srcObject) {
+                videoRef.current.pause();
+                const stream = videoRef.current.srcObject as MediaStream;
+                stream.getTracks().forEach(track => track.stop());
+                videoRef.current.srcObject = null;
+            }
+            // Try to fully reset the video element's source
+            videoRef.current.removeAttribute('src'); // Remove src attribute if it was ever set
+            videoRef.current.src = ""; // Explicitly set src to empty
+            videoRef.current.load(); // Tell the browser to re-evaluate sources (which should be none)
+        }
+        if (streamRef.current) { // Also clear our main stream reference
+            streamRef.current.getTracks().forEach(track => track.stop());
+            streamRef.current = null;
+        }
+
         if (onSuccessfulScan) {
-          onSuccessfulScan();
+          onSuccessfulScan(); // This might close the dialog and unmount the component
         }
         router.push(`/item/${encodeURIComponent(result.data.commonName)}`);
       } else {
@@ -193,14 +208,14 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const handleFileUploadSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     triggerHapticFeedback();
-    if (!file && !preview) { // Check if either file OR preview (from drag-drop) exists
+    if (!file && !preview) { 
       setError('Please select or capture an image.');
       return;
     }
 
-    let dataUriToProcess = preview; // Prefer existing preview (from drag-drop or recent selection)
+    let dataUriToProcess = preview; 
 
-    if (file && !preview) { // If file is set but preview isn't (e.g. direct submit after selection without preview fully loaded)
+    if (file && !preview) { 
       const reader = new FileReader();
       reader.onload = async () => {
         dataUriToProcess = reader.result as string;
@@ -216,7 +231,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         toast({ title: 'File Read Error', description: 'Failed to read file data.', variant: 'destructive' });
       };
       reader.readAsDataURL(file);
-      return; // initiateImageProcessing will be called in reader.onload
+      return; 
     }
     
     if (dataUriToProcess) {
@@ -230,13 +245,13 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     triggerHapticFeedback();
     if (!videoRef.current || !canvasRef.current || hasCameraPermission !== true || !videoRef.current.srcObject) {
       setError('Camera not ready or permission denied.');
-      if(hasCameraPermission !== true) { // If permission denied, try to re-request
-        getCameraPermissionInternal();
+      if(hasCameraPermission !== true) { 
+        // getCameraPermissionInternal(); // Avoid calling this directly here, let useEffect handle it based on isCameraMode
       }
       return;
     }
     setIsProcessingCapture(true);
-    setPreview(null); // Clear previous file upload preview
+    setPreview(null); 
 
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -247,21 +262,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
       const capturedDataUri = canvas.toDataURL('image/jpeg');
-      setPreview(capturedDataUri); // Show captured image preview
+      setPreview(capturedDataUri); 
 
-      // Stop the stream tracks and nullify srcObject *before* async AI call
-      if (videoRef.current) {
-        videoRef.current.pause();
-        if (videoRef.current.srcObject) { // Ensure srcObject exists before trying to get tracks
-          const mediaStream = videoRef.current.srcObject as MediaStream;
-          mediaStream.getTracks().forEach(track => track.stop());
-        }
-        videoRef.current.srcObject = null;
-      }
-      if (streamRef.current) {
-        // streamRef.current.getTracks().forEach(track => track.stop()); // Already done via videoRef
-        streamRef.current = null;
-      }
+      // Stop the stream tracks and nullify srcObject *before* async AI call (moved to initiateImageProcessing)
+      // if (videoRef.current) { ... }
+      // if (streamRef.current) { ... }
       
       await initiateImageProcessing(capturedDataUri);
     } else {
@@ -281,8 +286,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         <Button variant="outline" size="sm" onClick={() => {
           triggerHapticFeedback();
           setIsCameraMode(!isCameraMode);
-          setPreview(null); // Clear preview when switching modes
-          setFile(null); // Clear file when switching modes
+          setPreview(null); 
+          setFile(null); 
         }}>
           {isCameraMode ? <UploadCloud className="mr-2" /> : <Camera className="mr-2" />}
           {isCameraMode ? 'Upload File' : 'Use Camera'}
@@ -301,9 +306,9 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
               }`}
               autoPlay
               playsInline
-              muted // Muted is important for autoPlay to work reliably without user gesture
+              muted 
             />
-            {preview && !isProcessingCapture && !isLoading && ( // Show captured preview on top
+            {preview && !isProcessingCapture && !isLoading && ( 
               <NextImage
                 src={preview}
                 alt="Camera capture preview"
@@ -315,7 +320,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             <canvas ref={canvasRef} className="hidden" />
           </div>
 
-          {(hasCameraPermission === false || error) && ( // Show error if permission denied OR other error
+          {(hasCameraPermission === false || error) && ( 
               <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Camera Error</AlertTitle>
@@ -324,12 +329,12 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 </AlertDescription>
               </Alert>
           )}
-          {hasCameraPermission === true && !error && !streamRef.current && (
+          {isCameraMode && hasCameraPermission === true && !error && !streamRef.current && !videoRef.current?.srcObject && ( // Condition for lost stream if camera was on
             <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Camera Stream Lost</AlertTitle>
                 <AlertDescription>
-                    The camera stream was lost. Try toggling camera mode off and on.
+                    The camera stream was lost. Try toggling camera mode off and on, or ensure camera permissions are still granted.
                 </AlertDescription>
             </Alert>
           )}
@@ -357,7 +362,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 e.stopPropagation();
                 const droppedFile = e.dataTransfer.files?.[0];
                 if (droppedFile) {
-                  if (droppedFile.size > 10 * 1024 * 1024) { // 10MB limit
+                  if (droppedFile.size > 10 * 1024 * 1024) { 
                     setError('File is too large. Please select an image under 10MB.');
                     toast({ title: 'File Too Large', description: 'Please select an image under 10MB.', variant: 'destructive' });
                     setFile(null); setPreview(null); return;
