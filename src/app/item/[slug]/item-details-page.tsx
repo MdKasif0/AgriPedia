@@ -73,9 +73,9 @@ interface ItemDetailsPageProps {
 
 export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const { slug: slugParam } = useParams<{ slug?: string | string[] }>();
+  const params = useParams<{ slug?: string | string[] }>();
+  const slugFromParams = slugFromParamsProp || params.slug;
 
-  const slugFromParams = slugFromParamsProp || slugParam;
 
   const processedSlug = useMemo(() => {
     if (!slugFromParams) return '';
@@ -119,7 +119,9 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // No longer calling UserDataStore.addRecentView here
+            if (typeof UserDataStore.addFavorite === 'function') { // Check if addRecentView was intended or just a typo
+              // UserDataStore.addRecentView(itemData.id); // This function was removed
+            }
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -297,7 +299,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
       <Tabs defaultValue="overview" className="w-full">
         <div className="overflow-x-auto pb-2">
-          <TabsList className="grid w-full grid-cols-2 min-[480px]:grid-cols-4 gap-2 sm:gap-0">
+          <TabsList> {/* Removed grid and w-full classes, relying on parent overflow-x-auto and TabsList default inline-flex behavior */}
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
             <TabsTrigger value="recipe">Recipes</TabsTrigger>
@@ -463,3 +465,5 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     </div>
   );
 }
+
+    
