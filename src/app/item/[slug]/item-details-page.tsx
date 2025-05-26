@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound, useRouter } from 'next/navigation'; // Added useRouter
+import { useParams, notFound, useRouter } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
@@ -19,7 +19,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
   CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2,
-  ArrowLeft // Added ArrowLeft
+  ArrowLeft
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -75,7 +75,7 @@ interface ItemDetailsPageProps {
 export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
   const { toast } = useToast();
   const paramsHook = useParams<{ slug?: string | string[] }>();
-  const router = useRouter(); // Initialize router
+  const router = useRouter();
 
   const slugFromParams = slugFromParamsProp || paramsHook.slug;
 
@@ -122,7 +122,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(itemData.id); // This line was removed
+            // UserDataStore.addRecentView(itemData.id); removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -257,20 +257,20 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </Alert>
       )}
       
-      <header className="flex items-center justify-between gap-2 mb-4">
-        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="flex-shrink-0">
+      <header className="flex flex-col sm:flex-row items-center justify-between gap-2 mb-4">
+        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="flex-shrink-0 self-start sm:self-center">
           <ArrowLeft size={24} className="text-foreground" />
         </Button>
 
-        <div className="flex-1 text-center min-w-0"> {/* Added min-w-0 for proper truncation if needed */}
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-0.5 flex items-center justify-center gap-2 truncate">
+        <div className="flex-1 text-center min-w-0 order-first sm:order-none mb-2 sm:mb-0">
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-0.5 flex items-center justify-center sm:justify-start gap-2 truncate">
             <Leaf className="text-primary h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0" /> 
             <span className="truncate">{produce.commonName}</span>
           </h1>
           <p className="text-sm sm:text-md text-muted-foreground italic truncate">{produce.scientificName}</p>
         </div>
 
-        <div className="flex items-center gap-1 flex-shrink-0">
+        <div className="flex items-center gap-1 flex-shrink-0 self-start sm:self-center">
             <Button
                 variant="ghost"
                 size="icon"
@@ -278,7 +278,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={`Share ${produce.commonName} details`}
             >
-                <Share2 size={22} />
+                <Share2 size={24} />
             </Button>
             <Button
                 variant="ghost"
@@ -287,7 +287,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
-                {isBookmarked ? <BookmarkCheck size={26} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={26} />}
+                {isBookmarked ? <BookmarkCheck size={24} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={24} />}
             </Button>
         </div>
       </header>
@@ -341,18 +341,18 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
 
             <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
-              <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg" />
+              <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
             </ClientOnly>
 
             {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
               <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
-                <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg" />
+                <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
 
             {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
               <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
-                <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg" />
+                <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
           </section>
