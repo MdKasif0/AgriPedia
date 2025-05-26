@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound, usePathname } from 'next/navigation';
+import { useParams, notFound } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
@@ -73,19 +73,18 @@ interface ItemDetailsPageProps {
 
 export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const params = useParams<{ slug?: string | string[] }>();
-  const pathname = usePathname();
+  const { slug: slugParam } = useParams<{ slug?: string | string[] }>();
 
-  const slugFromParams = slugFromParamsProp || params.slug;
+  const slugFromParams = slugFromParamsProp || slugParam;
 
   const processedSlug = useMemo(() => {
     if (!slugFromParams) return '';
-    const slug = typeof slugFromParams === 'string' ? slugFromParams : Array.isArray(slugFromParams) ? slugFromParams[0] : '';
+    const slugValue = typeof slugFromParams === 'string' ? slugFromParams : Array.isArray(slugFromParams) ? slugFromParams[0] : '';
     try {
-        return decodeURIComponent(slug);
+        return decodeURIComponent(slugValue);
     } catch (e) {
-        console.error("Failed to decode slug:", slug, e);
-        return slug;
+        console.error("Failed to decode slug:", slugValue, e);
+        return slugValue;
     }
   }, [slugFromParams]);
 
@@ -120,7 +119,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView was removed, so this call is no longer needed
+            // No longer calling UserDataStore.addRecentView here
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -254,6 +253,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </AlertDescription>
         </Alert>
       )}
+      
       <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
         <div className="flex-1 text-center sm:text-left">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
@@ -283,6 +283,18 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </div>
       </header>
 
+      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl mb-6">
+        <Image
+          src={produce.image}
+          alt={produce.commonName}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
+          style={{ objectFit: 'cover' }}
+          data-ai-hint={imageHint}
+          priority={true}
+        />
+      </div>
+
       <Tabs defaultValue="overview" className="w-full">
         <div className="overflow-x-auto pb-2">
           <TabsList className="grid w-full grid-cols-2 min-[480px]:grid-cols-4 gap-2 sm:gap-0">
@@ -294,17 +306,6 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </div>
 
         <TabsContent value="overview" className="mt-6 space-y-6">
-          <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src={produce.image}
-              alt={produce.commonName}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
-              style={{ objectFit: 'cover' }}
-              data-ai-hint={imageHint}
-              priority={true}
-            />
-          </div>
           <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
             <p className="text-card-foreground/90">{produce.description}</p>
           </IconLabel>
