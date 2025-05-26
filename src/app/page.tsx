@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect, useCallback, useRef } from 'react';
@@ -7,9 +6,9 @@ import dynamic from 'next/dynamic';
 import ProduceCard from '@/components/produce/ProduceCard';
 import type { ProduceInfo } from '@/lib/produceData';
 import { searchProduce, getUniqueRegions, getUniqueSeasons, getAllProduce, getInSeasonProduce } from '@/lib/produceData';
-import * as UserDataStore from '@/lib/userDataStore'; // Keep for favorites and recent searches
+import * as UserDataStore from '@/lib/userDataStore';
 import { Separator } from '@/components/ui/separator';
-import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell } from 'lucide-react'; // Removed History
+import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLine, Bell } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
@@ -54,11 +53,9 @@ export default function HomePage() {
   const [searchResults, setSearchResults] = useState<ProduceInfo[]>([]);
   const [initialLoad, setInitialLoad] = useState(true);
 
-  const [favoriteProduceItems, setFavoriteProduceItems] = useState<ProduceInfo[]>([]);
   const [seasonalSuggestions, setSeasonalSuggestions] = useState<ProduceInfo[]>([]);
-  // Removed recentViewedItems state
 
-  const [dynamicTip, setDynamicTip] = useState<string>("Did you know? Apples float because 25% of their volume is air!");
+  const [dynamicTip, setDynamicTip] = useState<string>("Loading an interesting tip...");
   const [isTipLoading, setIsTipLoading] = useState<boolean>(true);
   const [tipError, setTipError] = useState<string | null>(null);
 
@@ -88,7 +85,12 @@ export default function HomePage() {
       try {
         const tip = await fetchDynamicAgriTip();
         if (tip) {
-          setDynamicTip(tip);
+          if (tip.toLowerCase().includes("could not load") || tip.toLowerCase().includes("failed") || tip.toLowerCase().includes("limited")) {
+            setTipError(tip);
+            setDynamicTip("Discover amazing facts about your food!"); // Fallback description
+          } else {
+            setDynamicTip(tip);
+          }
         } else {
           setTipError("Could not load a fresh tip today!");
           setDynamicTip("Discover amazing facts about your food!");
@@ -105,14 +107,9 @@ export default function HomePage() {
   }, []);
 
   const loadUserData = useCallback(() => {
-    const favIds = UserDataStore.getFavoriteIds();
-    const allCurrentProduce = getAllProduce();
-    setFavoriteProduceItems(favIds.map(id => allCurrentProduce.find(p => p.id === id)).filter(Boolean) as ProduceInfo[]);
-    
+    // Removed favorite items loading from here
     const currentSeasonal = getInSeasonProduce(5);
     setSeasonalSuggestions(currentSeasonal);
-
-    // Removed logic for recent viewed items
   }, []);
 
   const updateFilteredResults = useCallback((query: string, region: string, season: string) => {
@@ -127,7 +124,7 @@ export default function HomePage() {
     setAvailableRegions(getUniqueRegions());
     setAvailableSeasons(getUniqueSeasons());
     loadUserData();
-    updateFilteredResults('', 'all', 'all');
+    updateFilteredResults('', 'all', 'all'); // Load all items initially
     setInitialLoad(false);
   }, [loadUserData, updateFilteredResults]);
 
@@ -174,7 +171,7 @@ export default function HomePage() {
   const handleSuggestionClick = useCallback((item: ProduceInfo) => {
     setSuggestions([]);
     setIsSuggestionsVisible(false);
-    UserDataStore.addRecentSearch(item.commonName); // Still keep recent text searches
+    UserDataStore.addRecentSearch(item.commonName); 
     loadUserData();
     triggerHapticFeedback();
     router.push(`/item/${encodeURIComponent(item.id)}`);
@@ -203,6 +200,14 @@ export default function HomePage() {
     }
   }, [loadUserData, router, selectedRegion, selectedSeason]);
 
+  const handleFocusSearch = useCallback(() => {
+    if (!searchQuery.trim()) {
+      setSuggestions(seasonalSuggestions);
+      setIsSuggestionsVisible(true);
+    } else {
+      handleQueryChange(searchQuery);
+    }
+  }, [searchQuery, seasonalSuggestions, handleQueryChange]);
 
   const handleNotificationSubscription = async () => {
     setIsSubscribing(true);
@@ -297,7 +302,7 @@ export default function HomePage() {
                   onSubmitSearch={handleSubmitSearch}
                   onClearSearch={handleClearSearch}
                   inputRef={searchInputRef}
-                  onFocus={() => handleQueryChange(searchQuery)} 
+                  onFocus={handleFocusSearch}
                 />
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div>
@@ -334,8 +339,6 @@ export default function HomePage() {
         </section>
       </div>
 
-      {/* Recently Viewed Section Removed */}
-
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-foreground">
@@ -354,20 +357,6 @@ export default function HomePage() {
           <p className="text-center text-muted-foreground py-4">No produce found matching your criteria. <Apple className="inline-block h-4 w-4" /></p>
         )}
       </section>
-
-      {favoriteProduceItems.length > 0 && (
-        <>
-          <Separator className="my-8 bg-border/50" />
-          <section className="space-y-4" id="favorites-section">
-            <h2 className="text-2xl font-semibold flex items-center gap-2 text-foreground"><Heart className="text-primary" /> My Favorite Produce</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {favoriteProduceItems.map(item => (
-                <ProduceCard key={item.id} produce={item} />
-              ))}
-            </div>
-          </section>
-        </>
-      )}
     </div>
   );
   return pageContent;

@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine } from 'lucide-react'; // Added MessagesSquare, ScanLine
+import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound } from 'lucide-react'; // Added KeyRound
 import {
   Sidebar,
   SidebarHeader,
@@ -10,7 +10,6 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-  // SidebarFooter, // Temporarily remove if not used
   SidebarGroup,
   SidebarGroupLabel,
   SidebarSeparator,
@@ -18,6 +17,7 @@ import {
 import { useSidebar } from '@/components/ui/sidebar';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
+import ApiKeyManager from '@/components/settings/ApiKeyManager';
 
 export default function DesktopSidebar() {
   const { state } = useSidebar();
@@ -58,6 +58,13 @@ export default function DesktopSidebar() {
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
+          <SidebarMenuItem>
+            <Link href="/favorites" legacyBehavior passHref>
+              <SidebarMenuButton asChild tooltip="Favorites" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                <a><Heart /> <span>Favorites</span></a>
+              </SidebarMenuButton>
+            </Link>
+          </SidebarMenuItem>
         </SidebarMenu>
 
         <SidebarSeparator className="my-4 bg-sidebar-border" />
@@ -86,10 +93,18 @@ export default function DesktopSidebar() {
             <NotificationPreferences />
         </SidebarGroup>
 
+        <SidebarSeparator className="my-2 bg-sidebar-border" />
+
+        <SidebarGroup>
+            <SidebarGroupLabel className="flex items-center gap-2 text-sidebar-foreground/70">
+                <KeyRound size={16} /> {state === 'expanded' ? 'API Key' : ''}
+            </SidebarGroupLabel>
+            <div className="p-2">
+                <ApiKeyManager />
+            </div>
+        </SidebarGroup>
+
       </SidebarContent>
-      {/* <SidebarFooter className="p-2 mt-auto">
-        Footer content if any
-      </SidebarFooter> */}
     </Sidebar>
   );
 }

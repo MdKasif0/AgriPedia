@@ -3,7 +3,7 @@
 
 const FAVORITES_KEY = 'agripedia-favorites';
 const RECENT_SEARCHES_KEY = 'agripedia-recent-searches';
-// RECENT_VIEWS_KEY and MAX_RECENT_VIEWS removed
+const GEMINI_API_KEY_STORAGE_KEY = 'agripedia-gemini-api-key'; // Added
 
 const MAX_RECENT_SEARCHES = 5;
 
@@ -48,6 +48,7 @@ export function getRecentSearches(): string[] {
 export function addRecentSearch(query: string): void {
   if (typeof window === 'undefined' || !query.trim()) return;
   let searches = getRecentSearches();
+  // Remove previous instance of the same query to move it to the top
   searches = searches.filter(s => s.toLowerCase() !== query.toLowerCase());
   searches.unshift(query);
   searches = searches.slice(0, MAX_RECENT_SEARCHES);
@@ -59,5 +60,22 @@ export function clearRecentSearches(): void {
   localStorage.removeItem(RECENT_SEARCHES_KEY);
 }
 
-// --- Recently Viewed Items (Produce IDs) --- Section Removed
-// getRecentViewIds, addRecentView, clearRecentViews functions removed
+// --- Gemini API Key ---
+export function setGeminiApiKey(apiKey: string): void {
+  if (typeof window === 'undefined') return;
+  if (apiKey.trim() === '') {
+    localStorage.removeItem(GEMINI_API_KEY_STORAGE_KEY);
+  } else {
+    localStorage.setItem(GEMINI_API_KEY_STORAGE_KEY, apiKey);
+  }
+}
+
+export function getGeminiApiKey(): string | null {
+  if (typeof window === 'undefined') return null;
+  return localStorage.getItem(GEMINI_API_KEY_STORAGE_KEY);
+}
+
+export function removeGeminiApiKey(): void {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem(GEMINI_API_KEY_STORAGE_KEY);
+}

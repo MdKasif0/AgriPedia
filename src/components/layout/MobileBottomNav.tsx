@@ -1,8 +1,7 @@
-
 'use client';
 
 import Link from 'next/link';
-import { Leaf, Heart, ScanLine, Settings as SettingsIcon, MessagesSquare } from 'lucide-react';
+import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
@@ -25,9 +24,8 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathname, isCentralScan, onClick, isActiveOverride }) => {
   const isActive = isActiveOverride !== undefined ? isActiveOverride : (href && (
-    (href === "/" && currentPathname === href) || // Exact match for home
-    (href !== "/" && currentPathname.startsWith(href)) || // Starts with for other main routes
-    (href === "/#favorites-section" && currentPathname === "/" && typeof window !== "undefined" && window.location.hash === "#favorites-section")
+    (href === "/" && currentPathname === href) || 
+    (href !== "/" && currentPathname.startsWith(href)) 
   ));
 
   const itemBaseClass = "flex flex-col items-center justify-center p-1 group focus:outline-none transition-colors duration-200";
@@ -68,14 +66,14 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
     );
   }
 
-  if (!href && !onClick && label === "Settings") { // For SheetTrigger wrapped NavItem
+  if (!href && !onClick && label === "Settings") { 
      return (
       <div className={cn(itemBaseClass, "flex-1")} aria-label={label} onClick={triggerHapticFeedback}>
         {content}
       </div>
     );
   }
-
+  
   return (
     <Link href={href!} passHref legacyBehavior>
       <a className={cn(itemBaseClass, "flex-1")} aria-label={label} onClick={triggerHapticFeedback}>
@@ -84,6 +82,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, icon: Icon, label, currentPathn
     </Link>
   );
 };
+
 
 export default function MobileBottomNav() {
   const [isScanDialogOpen, setIsScanDialogOpen] = useState(false);
@@ -99,7 +98,7 @@ export default function MobileBottomNav() {
       isCentralScan: true,
       onClick: () => setIsScanDialogOpen(true)
     },
-    { href: "/#favorites-section", icon: Heart, label: "Favorites" },
+    { href: "/favorites", icon: Heart, label: "Favorites" }, // Changed href
     { icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) },
   ];
 
@@ -143,6 +142,11 @@ export default function MobileBottomNav() {
                     </SheetHeader>
                     <Separator className="bg-border/50" />
                     <div className="overflow-y-auto p-4 space-y-6">
+                       <div>
+                        <h3 className="mb-3 text-md font-medium text-muted-foreground">API Key</h3>
+                         {/* Placeholder for ApiKeyManager if it's used here */}
+                      </div>
+                      <Separator className="bg-border/50" />
                       <div>
                         <h3 className="mb-3 text-md font-medium text-muted-foreground">Theme</h3>
                         <ThemeToggleButton />
@@ -185,8 +189,3 @@ export default function MobileBottomNav() {
     </>
   );
 }
-
-// Ensure ImageUploadForm can accept onSuccessfulScan prop
-// Modify ImageUploadForm if it doesn't already have a way to signal success to close the dialog
-// For simplicity, this example assumes ImageUploadForm will handle navigation and the dialog closes.
-// A more robust solution would be for ImageUploadForm to call onSuccessfulScan.
