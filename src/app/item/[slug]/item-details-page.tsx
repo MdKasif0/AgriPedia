@@ -43,7 +43,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default';
+      return 'default'; // Using default (primary) for moderate as orange might be too close to destructive
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -61,12 +61,13 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
 };
 
 const getCurrentSeason = (): string => {
-  const month = new Date().getMonth();
-  if (month >= 2 && month <= 4) return 'Spring';
-  if (month >= 5 && month <= 7) return 'Summer';
-  if (month >= 8 && month <= 10) return 'Autumn';
-  return 'Winter';
+  const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
+  if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
+  if (month >= 5 && month <= 7) return 'Summer'; // Jun, Jul, Aug
+  if (month >= 8 && month <= 10) return 'Autumn'; // Sep, Oct, Nov
+  return 'Winter'; // Dec, Jan, Feb
 };
+
 
 interface ItemDetailsPageProps {
   slugFromParams?: string | string[];
@@ -79,7 +80,6 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
   const slugFromParams = slugFromParamsProp || paramsHook.slug;
 
-
   const processedSlug = useMemo(() => {
     if (!slugFromParams) return '';
     const slugValue = typeof slugFromParams === 'string' ? slugFromParams : Array.isArray(slugFromParams) ? slugFromParams[0] : '';
@@ -87,9 +87,10 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         return decodeURIComponent(slugValue);
     } catch (e) {
         console.error("Failed to decode slug:", slugValue, e);
-        return slugValue;
+        return slugValue; // Return original if decoding fails
     }
   }, [slugFromParams]);
+
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -112,7 +113,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
     async function fetchData() {
       setIsLoading(true);
-      setIsOfflineSource(false);
+      setIsOfflineSource(false); // Reset for each fetch
       let itemData: ProduceInfo | null = null;
       const isOnline = typeof window !== 'undefined' && navigator.onLine;
 
@@ -121,8 +122,10 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           const onlineData = getProduceByCommonName(processedSlug);
           if (onlineData) {
             itemData = onlineData;
-            saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(itemData.id); removed
+            saveProduceOffline(onlineData); // Save fresh data to offline store
+            if (typeof UserDataStore.addRecentView === 'function') { // Check if function exists
+                // UserDataStore.addRecentView(onlineData.id); // Feature was removed
+            }
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -146,6 +149,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
     fetchData();
   }, [processedSlug]);
+
 
   useEffect(() => {
     if (produce) {
@@ -203,7 +207,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       UserDataStore.addFavorite(produce.id);
       playSound('/sounds/bookmark-added.mp3');
       setAnimateBookmark(true);
-      setTimeout(() => setAnimateBookmark(false), 300);
+      setTimeout(() => setAnimateBookmark(false), 300); // Match animation duration
     }
     setIsBookmarked(!isBookmarked);
   };
@@ -221,6 +225,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         await navigator.share(shareData);
         toast({ title: 'Shared!', description: `${produce.commonName} details shared successfully.` });
       } else {
+        // Fallback for browsers that don't support Web Share API
         await navigator.clipboard.writeText(window.location.href);
         toast({ title: 'Link Copied!', description: `URL for ${produce.commonName} copied to clipboard.` });
       }
@@ -230,20 +235,23 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     }
   };
 
+
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
 
   if (!produce && !isLoading) {
-    notFound();
+    notFound(); // Call notFound if produce is null and not loading
     return null;
   }
-  if (!produce) return null;
+  if (!produce) return null; // Should be caught by the above, but good for safety
+
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
   const recipesToDisplay: Recipe[] = produce.staticRecipes || [];
+
 
   return (
     <div className="space-y-6 py-8">
@@ -259,7 +267,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       
       <header className="flex flex-col sm:flex-row items-center justify-between gap-2 mb-4">
         <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="flex-shrink-0 self-start sm:self-center">
-          <ArrowLeft size={24} className="text-foreground" />
+          <ArrowLeft className="text-foreground h-5 w-5 sm:h-6 sm:w-6" />
         </Button>
 
         <div className="flex-1 text-center min-w-0 order-first sm:order-none mb-2 sm:mb-0">
@@ -278,7 +286,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={`Share ${produce.commonName} details`}
             >
-                <Share2 size={24} />
+                <Share2 className="h-5 w-5 sm:h-6 sm:w-6" />
             </Button>
             <Button
                 variant="ghost"
@@ -287,7 +295,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
-                {isBookmarked ? <BookmarkCheck size={24} className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''}`} /> : <BookmarkPlus size={24} />}
+                {isBookmarked ? <BookmarkCheck className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''} h-5 w-5 sm:h-6 sm:w-6`} /> : <BookmarkPlus className="h-5 w-5 sm:h-6 sm:w-6" />}
             </Button>
         </div>
       </header>
@@ -305,7 +313,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       </div>
 
       <Tabs defaultValue="overview" className="w-full">
-        <div className="overflow-x-auto pb-2">
+        <div className="overflow-x-auto pb-2"> {/* Wrapper for horizontal scroll */}
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
