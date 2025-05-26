@@ -19,7 +19,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
   CalendarCheck2, CalendarX2, Store, LocateFixed, Share2,
-  ArrowLeft
+  ArrowLeft, Recycle // Added Recycle here
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -123,7 +123,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData); // Save fresh data to offline store
-            // UserDataStore.addRecentView(onlineData.id); // Feature was removed
+            // UserDataStore.addRecentView(onlineData.id);
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
