@@ -3,12 +3,26 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import { useParams, notFound } from 'next/navigation';
-import { getProduceByCommonName, type ProduceInfo } from '@/lib/produceData'; // Recipe type is implicitly available via ProduceInfo
+import { useParams, notFound, usePathname } from 'next/navigation';
+import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import dynamic from 'next/dynamic';
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import IconLabel from '@/components/ui/IconLabel';
+import Loader from '@/components/ui/Loader';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
+  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2
+} from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { useToast } from '@/hooks/use-toast';
+import ClientOnly from '@/components/ClientOnly';
 
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
   loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
@@ -23,20 +37,6 @@ const MineralChart = dynamic(() => import('@/components/charts/MineralChart'), {
   ssr: false
 });
 
-import IconLabel from '@/components/ui/IconLabel';
-import Loader from '@/components/ui/Loader';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2
-} from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { useToast } from '@/hooks/use-toast';
-import ClientOnly from '@/components/ClientOnly';
-
-
 const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0]['severity']): "default" | "secondary" | "destructive" | "outline" => {
   switch (severity) {
     case 'Severe':
@@ -48,6 +48,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Common':
     case 'Rare':
     case 'Varies':
+    case 'Low':
+    case 'Low to Moderate':
+    case 'Moderate to High':
+    case 'Very Low':
+    case 'Harmless':
       return 'outline';
     default:
       return 'secondary';
@@ -66,12 +71,23 @@ interface ItemDetailsPageProps {
   slugFromParams?: string | string[];
 }
 
-export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps) {
+export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
   const { toast } = useToast();
   const params = useParams<{ slug?: string | string[] }>();
-  
-  // Prioritize slugFromParams (passed from server component) over params from hook
-  const actualSlugParam = slugFromParams || params.slug;
+  const pathname = usePathname();
+
+  const slugFromParams = slugFromParamsProp || params.slug;
+
+  const processedSlug = useMemo(() => {
+    if (!slugFromParams) return '';
+    const slug = typeof slugFromParams === 'string' ? slugFromParams : Array.isArray(slugFromParams) ? slugFromParams[0] : '';
+    try {
+        return decodeURIComponent(slug);
+    } catch (e) {
+        console.error("Failed to decode slug:", slug, e);
+        return slug;
+    }
+  }, [slugFromParams]);
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -84,18 +100,6 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
 
   const [locationInfo, setLocationInfo] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState(false);
-
-  const processedSlug = useMemo(() => {
-    if (!actualSlugParam) return '';
-    const slug = typeof actualSlugParam === 'string' ? actualSlugParam : Array.isArray(actualSlugParam) ? actualSlugParam[0] : '';
-    try {
-        return decodeURIComponent(slug);
-    } catch (e) {
-        console.error("Failed to decode slug:", slug, e);
-        return slug; // Return original if decoding fails
-    }
-  }, [actualSlugParam]);
-
 
   useEffect(() => {
     if (!processedSlug) {
@@ -116,7 +120,9 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // Removed
+            if (typeof UserDataStore.addRecentView === 'function') { // Check if addRecentView exists
+              UserDataStore.addRecentView(onlineData.id);
+            }
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -157,6 +163,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
   const handleLocationClick = () => {
     setIsLocating(true);
     setLocationInfo(null);
+    triggerHapticFeedback();
     if (!navigator.geolocation) {
         setLocationInfo("Geolocation is not supported by your browser.");
         setIsLocating(false);
@@ -223,7 +230,6 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
     }
   };
 
-
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
@@ -237,11 +243,10 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
-  const recipesToDisplay = produce.staticRecipes || [];
-
+  const recipesToDisplay: Recipe[] = produce.staticRecipes || [];
 
   return (
-    <div className="space-y-8 py-8">
+    <div className="space-y-6 py-8">
       {isOfflineSource && (
         <Alert variant="default" className="bg-secondary/80 text-secondary-foreground border-secondary-foreground/30">
           <WifiOff className="h-5 w-5 text-secondary-foreground" />
@@ -251,7 +256,7 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
           </AlertDescription>
         </Alert>
       )}
-      <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+      <header className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
         <div className="flex-1 text-center sm:text-left">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
             <Leaf className="h-8 w-8 sm:h-10 sm:w-10 text-primary" /> {produce.commonName}
@@ -280,171 +285,182 @@ export default function ItemDetailsPage({ slugFromParams }: ItemDetailsPageProps
         </div>
       </header>
 
-      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
-        <Image
-          src={produce.image}
-          alt={produce.commonName}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
-          style={{ objectFit: 'cover' }}
-          data-ai-hint={imageHint}
-          priority={true}
-        />
-      </div>
+      <Tabs defaultValue="overview" className="w-full">
+        <div className="overflow-x-auto pb-2">
+          <TabsList className="grid w-full grid-cols-2 min-[480px]:grid-cols-4 gap-2 sm:gap-0">
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
+            <TabsTrigger value="recipe">Recipes</TabsTrigger>
+            <TabsTrigger value="additional">Details</TabsTrigger>
+          </TabsList>
+        </div>
 
-      <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
-        <p className="text-card-foreground/90">{produce.description}</p>
-      </IconLabel>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
-          <p className="text-card-foreground/90">{produce.origin}</p>
-        </IconLabel>
-        <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg">
-          <ul className="list-disc list-inside text-card-foreground/90">
-            {produce.regions.map(region => <li key={region}>{region}</li>)}
-          </ul>
-        </IconLabel>
-        <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
-          <div className="flex flex-wrap gap-2">
-            {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
+        <TabsContent value="overview" className="mt-6 space-y-6">
+          <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              src={produce.image}
+              alt={produce.commonName}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
+              style={{ objectFit: 'cover' }}
+              data-ai-hint={imageHint}
+              priority={true}
+            />
           </div>
-        </IconLabel>
-        <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
-          <p className="text-card-foreground/90">{produce.growthDuration}</p>
-        </IconLabel>
-        <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-lg shadow-lg">
-          <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
-        </IconLabel>
-      </div>
-
-      <section className="space-y-6">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
-        <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
-
-        <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
-          <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg" />
-        </ClientOnly>
-
-        {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
-          <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
-            <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg" />
-          </ClientOnly>
-        )}
-
-        {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
-          <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
-            <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg" />
-          </ClientOnly>
-        )}
-      </section>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
-          <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-            {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
-          </ul>
-        </IconLabel>
-        <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
-           {produce.potentialAllergies.length > 0 ? (
-            <ul className="space-y-3">
-              {produce.potentialAllergies.map((allergy, index) => (
-                <li key={index} className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2">
-                     <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
-                    <span className="font-medium text-card-foreground">{allergy.name}</span>
-                    <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
-                      {allergy.severity}
-                    </Badge>
-                  </div>
-                  {allergy.details && <p className="text-xs text-muted-foreground pl-6">{allergy.details}</p>}
-                </li>
-              ))}
+          <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
+            <p className="text-card-foreground/90">{produce.description}</p>
+          </IconLabel>
+          <div className="grid md:grid-cols-2 gap-6">
+            <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
+              <p className="text-card-foreground/90">{produce.origin}</p>
+            </IconLabel>
+            <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
+              <div className="flex flex-wrap gap-2">
+                {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
+              </div>
+            </IconLabel>
+          </div>
+          <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg">
+            <ul className="list-disc list-inside text-card-foreground/90">
+              {produce.regions.map(region => <li key={region}>{region}</li>)}
             </ul>
-          ) : (
-            <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
-          )}
-        </IconLabel>
-      </div>
+          </IconLabel>
+        </TabsContent>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
-          <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-lg shadow-lg">
+        <TabsContent value="nutrition" className="mt-6 space-y-6">
+          <section className="space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+
+            <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
+              <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg" />
+            </ClientOnly>
+
+            {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
+              <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
+                <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg" />
+              </ClientOnly>
+            )}
+
+            {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
+              <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
+                <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg" />
+              </ClientOnly>
+            )}
+          </section>
+          <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
             <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-              {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
+              {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
             </ul>
           </IconLabel>
-        )}
-        {produce.carbonFootprintInfo && (
-          <IconLabel icon={Footprints} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
-            <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
-          </IconLabel>
-        )}
-      </div>
+        </TabsContent>
 
-      <section className="space-y-6">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
-        {recipesToDisplay.length > 0 ? (
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
-            {recipesToDisplay.map((recipe, index) => (
-              <Card key={index} className="bg-card rounded-lg shadow-lg">
-                <CardHeader className="p-4">
-                  <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3 p-4 pt-0">
-                  <p className="text-sm text-muted-foreground">{recipe.description}</p>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
-                    <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
-                      {recipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+        <TabsContent value="recipe" className="mt-6 space-y-6">
+          <section className="space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+            {recipesToDisplay.length > 0 ? (
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+                {recipesToDisplay.map((recipe, index) => (
+                  <Card key={index} className="bg-card rounded-lg shadow-lg">
+                    <CardHeader className="p-4">
+                      <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 p-4 pt-0">
+                      <p className="text-sm text-muted-foreground">{recipe.description}</p>
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
+                        <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
+                          {recipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-1">Steps:</h4>
+                        <ol className="list-decimal list-inside text-sm space-y-1 text-card-foreground/90">
+                          {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
+                        </ol>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
+            )}
+          </section>
+        </TabsContent>
+
+        <TabsContent value="additional" className="mt-6 space-y-6">
+            <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
+            {produce.potentialAllergies.length > 0 ? (
+                <ul className="space-y-3">
+                {produce.potentialAllergies.map((allergy, index) => (
+                    <li key={index} className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2">
+                        <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
+                        <span className="font-medium text-card-foreground">{allergy.name}</span>
+                        <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
+                        {allergy.severity}
+                        </Badge>
+                    </div>
+                    {allergy.details && <p className="text-xs text-muted-foreground pl-6">{allergy.details}</p>}
+                    </li>
+                ))}
+                </ul>
+            ) : (
+                <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
+            )}
+            </IconLabel>
+            <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-lg shadow-lg">
+              <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
+            </IconLabel>
+            <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
+              <p className="text-card-foreground/90">{produce.growthDuration}</p>
+            </IconLabel>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <IconLabel
+                icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2}
+                label="Seasonal Availability"
+                className="bg-card rounded-lg shadow-lg"
+                >
+                {isCurrentlyInSeason === null ? (
+                    <Loader text="Checking seasonality..." size={16} />
+                ) : (
+                    <p className="text-card-foreground/90">{currentSeasonMessage}</p>
+                )}
+                <p className="text-xs text-muted-foreground mt-1">Note: Seasonality can vary by specific locale and year.</p>
+                </IconLabel>
+
+                <IconLabel icon={Store} label="Find Locally (Future Feature)" className="bg-card rounded-lg shadow-lg">
+                <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto hover:bg-primary/10 border-primary/50 text-primary">
+                    {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
+                </Button>
+                {locationInfo && (
+                    <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm rounded-lg">
+                    <AlertTitle>{locationInfo.startsWith("Location (Lat:") ? "Location Acquired" : "Location Notice"}</AlertTitle>
+                    <AlertDescription>{locationInfo}</AlertDescription>
+                    </Alert>
+                )}
+                {!locationInfo && !isLocating && <p className="text-xs text-muted-foreground mt-2">Click the button to share your location. This will be used in the future to find nearby markets.</p>}
+                </IconLabel>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
+                <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-lg shadow-lg">
+                    <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
+                    {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
                     </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground mb-1">Steps:</h4>
-                    <ol className="list-decimal list-inside text-sm space-y-1 text-card-foreground/90">
-                      {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
-                    </ol>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        ) : (
-          <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
-        )}
-      </section>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <IconLabel
-          icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2}
-          label="Seasonal Availability"
-          className="bg-card rounded-lg shadow-lg"
-        >
-          {isCurrentlyInSeason === null ? (
-            <Loader text="Checking seasonality..." size={16} />
-          ) : (
-            <p className="text-card-foreground/90">{currentSeasonMessage}</p>
-          )}
-          <p className="text-xs text-muted-foreground mt-1">Note: Seasonality can vary by specific locale and year.</p>
-        </IconLabel>
-
-        <IconLabel icon={Store} label="Find Locally (Future Feature)" className="bg-card rounded-lg shadow-lg">
-          <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto hover:bg-primary/10 border-primary/50 text-primary">
-            {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
-          </Button>
-          {locationInfo && (
-            <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm rounded-lg">
-               <AlertTitle>{locationInfo.startsWith("Location (Lat:") ? "Location Acquired" : "Location Notice"}</AlertTitle>
-              <AlertDescription>{locationInfo}</AlertDescription>
-            </Alert>
-          )}
-           {!locationInfo && !isLocating && <p className="text-xs text-muted-foreground mt-2">Click the button to share your location. This will be used in the future to find nearby markets.</p>}
-        </IconLabel>
-      </div>
-
+                </IconLabel>
+                )}
+                {produce.carbonFootprintInfo && (
+                <IconLabel icon={Footprints} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
+                    <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
+                </IconLabel>
+                )}
+            </div>
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }
-
-
-    
