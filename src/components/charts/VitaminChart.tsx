@@ -43,11 +43,11 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
   });
 
   return (
-    <div className={cn("p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
-      <h4 className="text-lg font-semibold mb-4 text-primary text-center">Vitamins per 100g</h4>
+    <div className={cn("p-2 sm:p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
+      <h4 className="text-md sm:text-lg font-semibold mb-2 sm:mb-4 text-primary text-center">Vitamins per 100g</h4>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={chartData} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
+          <BarChart data={chartData} margin={{ top: 5, right: 5, left: 10, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis 
               dataKey="name" 
@@ -55,7 +55,7 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
               axisLine={false} 
               stroke="hsl(var(--foreground))"
               fontSize={11}
-              interval={0}
+              interval="preserveStartEnd"
             />
             <YAxis 
               stroke="hsl(var(--foreground))"
