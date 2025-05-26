@@ -18,7 +18,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, BookmarkPlus, BookmarkCheck, Recycle, Footprints, ChefHat, Share2,
+  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2,
   ArrowLeft
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -95,8 +95,8 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
-  const [isBookmarked, setIsBookmarked] = useState(false);
-  const [animateBookmark, setAnimateBookmark] = useState(false);
+  const [isFavorited, setIsFavorited] = useState(false);
+  const [animateFavorite, setAnimateFavorite] = useState(false);
 
   const [isCurrentlyInSeason, setIsCurrentlyInSeason] = useState<boolean | null>(null);
   const [currentSeasonMessage, setCurrentSeasonMessage] = useState<string>('');
@@ -123,9 +123,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData); // Save fresh data to offline store
-            if (typeof UserDataStore.addRecentView === 'function') { // Check if function exists
-                // UserDataStore.addRecentView(onlineData.id); // Feature was removed
-            }
+            // UserDataStore.addRecentView(onlineData.id); // Feature was removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -142,7 +140,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
       setProduce(itemData);
       if (itemData) {
-        setIsBookmarked(UserDataStore.isFavorite(itemData.id));
+        setIsFavorited(UserDataStore.isFavorite(itemData.id));
       }
       setIsLoading(false);
     }
@@ -198,18 +196,18 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     );
   };
 
-  const handleToggleBookmark = () => {
+  const handleToggleFavorite = () => {
     if (!produce) return;
     triggerHapticFeedback();
-    if (isBookmarked) {
+    if (isFavorited) {
       UserDataStore.removeFavorite(produce.id);
     } else {
       UserDataStore.addFavorite(produce.id);
       playSound('/sounds/bookmark-added.mp3');
-      setAnimateBookmark(true);
-      setTimeout(() => setAnimateBookmark(false), 300); // Match animation duration
+      setAnimateFavorite(true);
+      setTimeout(() => setAnimateFavorite(false), 300); // Match animation duration
     }
-    setIsBookmarked(!isBookmarked);
+    setIsFavorited(!isFavorited);
   };
 
   const handleShare = async () => {
@@ -291,11 +289,15 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             <Button
                 variant="ghost"
                 size="icon"
-                onClick={handleToggleBookmark}
+                onClick={handleToggleFavorite}
                 className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
-                aria-label={isBookmarked ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
+                aria-label={isFavorited ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
-                {isBookmarked ? <BookmarkCheck className={`text-primary fill-primary ${animateBookmark ? 'animate-pop' : ''} h-5 w-5 sm:h-6 sm:w-6`} /> : <BookmarkPlus className="h-5 w-5 sm:h-6 sm:w-6" />}
+                {isFavorited ? (
+                  <Heart className={`text-primary fill-primary ${animateFavorite ? 'animate-pop' : ''} h-5 w-5 sm:h-6 sm:w-6`} />
+                ) : (
+                  <Heart className="h-5 w-5 sm:h-6 sm:w-6" />
+                )}
             </Button>
         </div>
       </header>
@@ -373,7 +375,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
         <TabsContent value="recipe" className="mt-6 space-y-6">
           <section className="space-y-6">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><ChefHat className="text-primary"/>Recipe Ideas</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Heart className="text-primary"/>Recipe Ideas</h2>
             {recipesToDisplay.length > 0 ? (
               <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
                 {recipesToDisplay.map((recipe, index) => (
@@ -470,7 +472,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </IconLabel>
                 )}
                 {produce.carbonFootprintInfo && (
-                <IconLabel icon={Footprints} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
+                <IconLabel icon={Heart} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
                     <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
                 </IconLabel>
                 )}
