@@ -4,7 +4,7 @@
 import { identifyFruitOrVegetableFromImage, IdentifyFruitOrVegetableFromImageOutput } from '@/ai/flows/identify-fruit-or-vegetable-from-image';
 import { validateImageOfProduce, ValidateImageOfProduceOutput } from '@/ai/flows/validate-image-of-produce';
 import { generateRecipes, GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
-import { generateAgriTip, GenerateAgriTipOutput } from '@/ai/flows/generate-agri-tip-flow';
+import { getRandomAgriTip } from '@/lib/tipUtils'; // Updated import
 
 interface ProcessImageResult {
   success: boolean;
@@ -66,15 +66,24 @@ export async function fetchRecipesForProduce(produceName: string): Promise<Gener
 }
 
 export async function fetchDynamicAgriTip(): Promise<string | null> {
+  const apiKey = process.env.GOOGLE_API_KEY;
+  if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE') {
+    console.warn("GOOGLE_API_KEY is not set or is a placeholder. AgriPedia Tip will use local static tips.");
+    // Fallback to local tips if API key isn't properly configured for other AI features
+    // This specific action now *only* uses local tips.
+  }
+
   try {
-    const result: GenerateAgriTipOutput = await generateAgriTip();
-    if (result && result.tip) {
-      return result.tip;
+    const tip = getRandomAgriTip(); // Now gets a tip from local JSON
+    if (tip) {
+      return tip;
     }
-    return "Keep exploring the fascinating world of produce!"; // Fallback tip
+    // This fallback might be redundant now given getRandomAgriTip has its own, but good for safety.
+    return "Keep exploring the fascinating world of produce!";
   } catch (error) {
-    console.error('Error fetching dynamic agri tip:', error);
-    return "Could not load a tip right now. Check back soon!"; // Error message tip
+    console.error('Error fetching agri tip (from local store):', error);
+    // If local fetching fails for some reason (e.g., JSON parse error, though unlikely with this setup)
+    return "Could not load a tip right now. Check back soon!"; 
   }
 }
     
