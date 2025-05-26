@@ -43,7 +43,7 @@ export default function NutrientChart({ data, className }: NutrientChartProps) {
 
 
   return (
-    <div className={`p-4 bg-card rounded-lg shadow ${className}`}>
+    <div className={cn("p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
       <h4 className="text-lg font-semibold mb-4 text-primary">Macronutrients per 100g</h4>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <ResponsiveContainer width="100%" height={300}>

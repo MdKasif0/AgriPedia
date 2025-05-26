@@ -1,9 +1,9 @@
-
 'use client';
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import type { ProduceInfo } from '@/lib/produceData';
+import { cn } from "@/lib/utils";
 
 interface MineralChartProps {
   data: ProduceInfo['nutrition']['minerals'];
@@ -44,7 +44,7 @@ export default function MineralChart({ data, className }: MineralChartProps) {
   });
 
   return (
-    <div className={`p-4 bg-card rounded-lg shadow ${className}`}>
+    <div className={cn("p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
       <h4 className="text-lg font-semibold mb-4 text-primary text-center">Minerals per 100g</h4>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <ResponsiveContainer width="100%" height={300}>
