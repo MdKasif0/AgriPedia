@@ -1,6 +1,9 @@
 
+'use client';
+import { useState } from 'react';
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
+import VideoPreloader from '@/components/ui/VideoPreloader';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
@@ -68,6 +71,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [showGlobalPreloader, setShowGlobalPreloader] = useState(true);
+
+  if (showGlobalPreloader) {
+    return (
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
+          <VideoPreloader
+            videoSrc="/AgriPedia-preloader-screen.mp4"
+            onVideoEnd={() => setShowGlobalPreloader(false)}
+          />
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
