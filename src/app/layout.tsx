@@ -8,6 +8,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import AppSplashScreen from '@/components/layout/AppSplashScreen';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -77,19 +78,21 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <ServiceWorkerRegistrar />
-          <SidebarProvider defaultOpen={true}>
-            <div className="flex">
-              <DesktopSidebar />
-              <SidebarInset>
-                <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                  {children}
-                </main>
-              </SidebarInset>
-            </div>
-            <MobileBottomNav />
-          </SidebarProvider>
-          <Toaster />
+          <AppSplashScreen>
+            <ServiceWorkerRegistrar />
+            <SidebarProvider defaultOpen={true}>
+              <div className="flex">
+                <DesktopSidebar />
+                <SidebarInset>
+                  <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
+                    {children}
+                  </main>
+                </SidebarInset>
+              </div>
+              <MobileBottomNav />
+            </SidebarProvider>
+            <Toaster />
+          </AppSplashScreen>
         </ThemeProvider>
       </body>
     </html>
