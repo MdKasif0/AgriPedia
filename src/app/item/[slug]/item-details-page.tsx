@@ -18,23 +18,22 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2,
-  ArrowLeft, Recycle // Added Recycle here
+  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
 import ClientOnly from '@/components/ClientOnly';
 
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
-  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
 });
 const VitaminChart = dynamic(() => import('@/components/charts/VitaminChart'), {
-  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
 });
 const MineralChart = dynamic(() => import('@/components/charts/MineralChart'), {
-  loading: () => <div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>,
+  loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
 });
 
@@ -43,7 +42,7 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
     case 'Severe':
       return 'destructive';
     case 'Moderate':
-      return 'default'; // Using default (primary) for moderate as orange might be too close to destructive
+      return 'default';
     case 'Mild':
       return 'secondary';
     case 'Common':
@@ -62,12 +61,11 @@ const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0][
 
 const getCurrentSeason = (): string => {
   const month = new Date().getMonth(); // 0 (Jan) - 11 (Dec)
-  if (month >= 2 && month <= 4) return 'Spring'; // Mar, Apr, May
-  if (month >= 5 && month <= 7) return 'Summer'; // Jun, Jul, Aug
-  if (month >= 8 && month <= 10) return 'Autumn'; // Sep, Oct, Nov
-  return 'Winter'; // Dec, Jan, Feb
+  if (month >= 2 && month <= 4) return 'Spring';
+  if (month >= 5 && month <= 7) return 'Summer';
+  if (month >= 8 && month <= 10) return 'Autumn';
+  return 'Winter';
 };
-
 
 interface ItemDetailsPageProps {
   slugFromParams?: string | string[];
@@ -87,10 +85,9 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         return decodeURIComponent(slugValue);
     } catch (e) {
         console.error("Failed to decode slug:", slugValue, e);
-        return slugValue; // Return original if decoding fails
+        return slugValue;
     }
   }, [slugFromParams]);
-
 
   const [produce, setProduce] = useState<ProduceInfo | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -113,7 +110,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
     async function fetchData() {
       setIsLoading(true);
-      setIsOfflineSource(false); // Reset for each fetch
+      setIsOfflineSource(false);
       let itemData: ProduceInfo | null = null;
       const isOnline = typeof window !== 'undefined' && navigator.onLine;
 
@@ -122,8 +119,8 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           const onlineData = getProduceByCommonName(processedSlug);
           if (onlineData) {
             itemData = onlineData;
-            saveProduceOffline(onlineData); // Save fresh data to offline store
-            // UserDataStore.addRecentView(onlineData.id);
+            saveProduceOffline(onlineData);
+            // UserDataStore.addRecentView(onlineData.id); // Feature removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -147,7 +144,6 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
     fetchData();
   }, [processedSlug]);
-
 
   useEffect(() => {
     if (produce) {
@@ -205,7 +201,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       UserDataStore.addFavorite(produce.id);
       playSound('/sounds/bookmark-added.mp3');
       setAnimateFavorite(true);
-      setTimeout(() => setAnimateFavorite(false), 300); // Match animation duration
+      setTimeout(() => setAnimateFavorite(false), 300);
     }
     setIsFavorited(!isFavorited);
   };
@@ -223,7 +219,6 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         await navigator.share(shareData);
         toast({ title: 'Shared!', description: `${produce.commonName} details shared successfully.` });
       } else {
-        // Fallback for browsers that don't support Web Share API
         await navigator.clipboard.writeText(window.location.href);
         toast({ title: 'Link Copied!', description: `URL for ${produce.commonName} copied to clipboard.` });
       }
@@ -233,28 +228,24 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     }
   };
 
-
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
 
   if (!produce && !isLoading) {
-    notFound(); // Call notFound if produce is null and not loading
+    notFound();
     return null;
   }
-  if (!produce) return null; // Should be caught by the above, but good for safety
-
+  if (!produce) return null;
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
-
   const recipesToDisplay: Recipe[] = produce.staticRecipes || [];
 
-
   return (
-    <div className="space-y-6 py-8">
+    <div className="space-y-4 py-4 md:py-6">
       {isOfflineSource && (
-        <Alert variant="default" className="bg-secondary/80 text-secondary-foreground border-secondary-foreground/30">
+        <Alert variant="default" className="bg-secondary/80 text-secondary-foreground border-secondary-foreground/30 mx-2 md:mx-0">
           <WifiOff className="h-5 w-5 text-secondary-foreground" />
           <AlertTitle>Offline Mode</AlertTitle>
           <AlertDescription>
@@ -263,25 +254,19 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </Alert>
       )}
       
-      <header className="flex flex-col sm:flex-row items-center justify-between gap-2 mb-4">
-        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="flex-shrink-0 self-start sm:self-center">
-          <ArrowLeft className="text-foreground h-5 w-5 sm:h-6 sm:w-6" />
+      <header className="flex items-center justify-between mb-4 px-2 md:px-0 sticky top-0 bg-background/95 backdrop-blur-sm z-10 py-3 border-b border-border">
+        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="text-foreground hover:bg-accent/10">
+          <ArrowLeft className="h-6 w-6" />
         </Button>
-
-        <div className="flex-1 text-center min-w-0 order-first sm:order-none mb-2 sm:mb-0">
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-0.5 flex items-center justify-center sm:justify-start gap-2 truncate">
-            <Leaf className="text-primary h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0" /> 
-            <span className="truncate">{produce.commonName}</span>
-          </h1>
-          <p className="text-sm sm:text-md text-muted-foreground italic truncate">{produce.scientificName}</p>
-        </div>
-
-        <div className="flex items-center gap-1 flex-shrink-0 self-start sm:self-center">
+        <h1 className="text-lg sm:text-xl font-semibold text-foreground flex-1 text-center truncate px-2">
+          {produce.commonName} Details
+        </h1>
+        <div className="flex items-center gap-0">
             <Button
                 variant="ghost"
                 size="icon"
                 onClick={handleShare}
-                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
                 aria-label={`Share ${produce.commonName} details`}
             >
                 <Share2 className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -290,7 +275,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 variant="ghost"
                 size="icon"
                 onClick={handleToggleFavorite}
-                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
                 aria-label={isFavorited ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
                 {isFavorited ? (
@@ -302,20 +287,24 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         </div>
       </header>
 
-      <div className="relative w-full max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl mb-6">
+      <div className="relative w-full max-w-md mx-auto aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-card mb-6">
         <Image
           src={produce.image}
           alt={produce.commonName}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 672px"
+          sizes="(max-width: 640px) 100vw, 512px"
           style={{ objectFit: 'cover' }}
           data-ai-hint={imageHint}
           priority={true}
         />
+        <div className="absolute bottom-4 right-4 p-3 bg-background/80 backdrop-blur-md rounded-lg shadow-md text-right">
+          <h2 className="text-xl font-bold text-foreground">{produce.commonName}</h2>
+          <p className="text-sm text-muted-foreground italic">{produce.scientificName}</p>
+        </div>
       </div>
 
       <Tabs defaultValue="overview" className="w-full">
-        <div className="overflow-x-auto pb-2"> {/* Wrapper for horizontal scroll */}
+        <div className="overflow-x-auto pb-2 px-2 md:px-0">
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
@@ -324,7 +313,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </TabsList>
         </div>
 
-        <TabsContent value="overview" className="mt-6 space-y-6">
+        <TabsContent value="overview" className="mt-6 space-y-6 px-2 md:px-0">
           <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
             <p className="text-card-foreground/90">{produce.description}</p>
           </IconLabel>
@@ -345,23 +334,23 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </IconLabel>
         </TabsContent>
 
-        <TabsContent value="nutrition" className="mt-6 space-y-6">
+        <TabsContent value="nutrition" className="mt-6 space-y-6 px-2 md:px-0">
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
             <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
 
-            <ClientOnly fallback={<div className="h-72 bg-muted rounded-lg animate-pulse"></div>}>
+            <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
               <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
             </ClientOnly>
 
             {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
-              <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
+              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
                 <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
 
             {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
-              <ClientOnly fallback={<div className="mt-6 h-72 bg-muted rounded-lg animate-pulse"></div>}>
+              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
                 <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
@@ -373,7 +362,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </IconLabel>
         </TabsContent>
 
-        <TabsContent value="recipe" className="mt-6 space-y-6">
+        <TabsContent value="recipe" className="mt-6 space-y-6 px-2 md:px-0">
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Heart className="text-primary"/>Recipe Ideas</h2>
             {recipesToDisplay.length > 0 ? (
@@ -407,7 +396,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </section>
         </TabsContent>
 
-        <TabsContent value="additional" className="mt-6 space-y-6">
+        <TabsContent value="additional" className="mt-6 space-y-6 px-2 md:px-0">
             <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
             {produce.potentialAllergies.length > 0 ? (
                 <ul className="space-y-3">
@@ -482,3 +471,5 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     </div>
   );
 }
+
+    
