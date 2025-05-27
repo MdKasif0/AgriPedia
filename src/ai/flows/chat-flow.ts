@@ -1,5 +1,5 @@
-import { defineFlow } from 'genkit/flow';
-import { ai } from '../../genkit'; // Use the configured Genkit instance
+import { defineFlow } from 'genkit'; // Corrected import path
+import { ai } from '../genkit'; // Corrected import path for ai instance
 import * as z from 'zod';
 
 // Define the input schema for the chat flow
