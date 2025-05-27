@@ -5,8 +5,8 @@ import VideoPreloader from '@/components/ui/VideoPreloader';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Send, Loader2 } from 'lucide-react'; // Imported Loader2
-import { runFlow } from 'genkit'; // Corrected import path
-import { chatWithAgriAI } from '../../ai/flows/chat-flow'; // Corrected import path
+import { runFlow } from '@genkit-ai/flow/client'; // Import from new client path
+import { chatWithAgriAI } from '../../ai/flows/chat-assistant-flow'; // Updated import path
 
 interface Message {
   id: number;

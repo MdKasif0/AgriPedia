@@ -1,4 +1,4 @@
-import { defineFlow } from 'genkit'; // Corrected import path
+import { defineFlow } from '@genkit-ai/flow'; // Import from new package
 import { ai } from '../genkit'; // Corrected import path for ai instance
 import * as z from 'zod';
 
