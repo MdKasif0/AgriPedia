@@ -1,16 +1,12 @@
-
-'use client';
-import { useState } from 'react';
+// Removed 'use client'
+// import { useState } from 'react'; // No longer needed here
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
-import VideoPreloader from '@/components/ui/VideoPreloader';
+// import VideoPreloader from '@/components/ui/VideoPreloader'; // Moved to AppBody
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster";
-import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
-import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
-import DesktopSidebar from '@/components/layout/DesktopSidebar';
-import MobileBottomNav from '@/components/layout/MobileBottomNav';
-import { ThemeProvider } from '@/components/providers/ThemeProvider';
+// Imports for components moved to AppBody are removed unless also used by RootLayout directly.
+// For example, Toaster, ServiceWorkerRegistrar, SidebarProvider, etc., are now in AppBody.
+import AppBody from '@/components/layout/AppBody'; // Import the new AppBody component
 
 const inter = Inter({
   subsets: ['latin'],
@@ -71,44 +67,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [showGlobalPreloader, setShowGlobalPreloader] = useState(true);
-
-  if (showGlobalPreloader) {
-    return (
-      <html lang="en" suppressHydrationWarning>
-        <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
-          <VideoPreloader
-            videoSrc="/AgriPedia-preloader-screen.mp4"
-            onVideoEnd={() => setShowGlobalPreloader(false)}
-          />
-        </body>
-      </html>
-    );
-  }
+  const fontClassName = `${inter.variable} ${roboto_mono.variable} font-sans antialiased`;
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-          <ServiceWorkerRegistrar />
-          <SidebarProvider defaultOpen={true}>
-            <div className="flex">
-              <DesktopSidebar />
-              <SidebarInset>
-                <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                  {children}
-                </main>
-              </SidebarInset>
-            </div>
-            <MobileBottomNav />
-          </SidebarProvider>
-          <Toaster />
-        </ThemeProvider>
+      <body className={fontClassName}>
+        <AppBody fontClassName={fontClassName}> {/* Pass fontClassName if AppBody needs it, or remove if not */}
+          {children}
+        </AppBody>
       </body>
     </html>
   );
