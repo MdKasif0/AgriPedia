@@ -93,6 +93,14 @@ const nextConfig: NextConfig = {
     // This prevents webpack from trying to bundle 'firebase'
     // It assumes 'firebase' will be available globally or via other means in the runtime environment (e.g. Netlify functions)
     config.externals = [...(config.externals || []), 'firebase'];
+
+    // Add fallback for 'net' module on the client-side
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...(config.resolve.fallback || {}), // Spread existing fallbacks
+        net: false, // Mock 'net' for client-side
+      };
+    }
     
     // Important: return the modified config
     return config;
