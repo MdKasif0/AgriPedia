@@ -1,5 +1,5 @@
-
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
+// Potentially: import type { Configuration } from 'webpack'; // Not adding for now, will use 'any'
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -83,6 +83,19 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
+  },
+  // Add or modify the webpack key
+  webpack: (
+    config: any, // Using 'any' for simplicity as full webpack types might not be set up
+    { isServer }: { isServer: boolean } // Options object, isServer is commonly used
+  ) => {
+    // Add firebase to externals
+    // This prevents webpack from trying to bundle 'firebase'
+    // It assumes 'firebase' will be available globally or via other means in the runtime environment (e.g. Netlify functions)
+    config.externals = [...(config.externals || []), 'firebase'];
+    
+    // Important: return the modified config
+    return config;
   },
 };
 
