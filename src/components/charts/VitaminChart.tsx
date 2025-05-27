@@ -45,21 +45,21 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
   return (
     <div className={cn("p-2 sm:p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
       <h4 className="text-md sm:text-lg font-semibold mb-2 sm:mb-4 text-primary text-center">Vitamins per 100g</h4>
-      <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={chartData} margin={{ top: 5, right: 5, left: 10, bottom: 5 }}>
+      <ChartContainer config={chartConfig} className="h-[250px] sm:h-[300px] w-full">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={chartData} margin={{ top: 5, right: 0, left: 5, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
               axisLine={false} 
               stroke="hsl(var(--foreground))"
-              fontSize={11}
+              fontSize={10}
               interval="preserveStartEnd"
             />
             <YAxis 
               stroke="hsl(var(--foreground))"
-              fontSize={11}
+              fontSize={10}
               tickFormatter={(value) => String(value)} 
             />
             <ChartTooltip
@@ -75,7 +75,7 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
                 }}
               />} 
             />
-            <Bar dataKey="value" radius={4} />
+            <Bar dataKey="value" radius={4} maxBarSize={50}/>
           </BarChart>
         </ResponsiveContainer>
       </ChartContainer>

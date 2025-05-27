@@ -14,7 +14,6 @@ interface NutrientChartProps {
 const chartConfig = {
   value: {
     label: "Amount",
-    color: "hsl(var(--primary))",
   },
 } satisfies ChartConfig;
 
@@ -27,7 +26,6 @@ export default function NutrientChart({ data, className }: NutrientChartProps) {
     name: nutrient.name,
     value: nutrient.value,
     unit: nutrient.unit,
-    fill: "hsl(var(--primary))", // Default fill color
   }));
 
   const colorPalette = [
@@ -39,6 +37,7 @@ export default function NutrientChart({ data, className }: NutrientChartProps) {
   ];
 
   chartData.forEach((item, index) => {
+    // @ts-ignore an fill is not in the type but it is used by recharts
     item.fill = colorPalette[index % colorPalette.length];
   });
 
@@ -46,20 +45,20 @@ export default function NutrientChart({ data, className }: NutrientChartProps) {
   return (
     <div className={cn("p-2 sm:p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
       <h4 className="text-md sm:text-lg font-semibold mb-2 sm:mb-4 text-primary text-center">Macronutrients per 100g</h4>
-      <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={chartData} margin={{ top: 5, right: 5, left: 10, bottom: 5 }}>
+      <ChartContainer config={chartConfig} className="h-[250px] sm:h-[300px] w-full">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={chartData} margin={{ top: 5, right: 0, left: 5, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
               axisLine={false} 
               stroke="hsl(var(--foreground))"
-              fontSize={11}
+              fontSize={10}
             />
             <YAxis 
               stroke="hsl(var(--foreground))"
-              fontSize={11}
+              fontSize={10}
               tickFormatter={(value) => `${value}g`} 
             />
             <ChartTooltip
@@ -73,7 +72,7 @@ export default function NutrientChart({ data, className }: NutrientChartProps) {
                 }}
               />} 
             />
-            <Bar dataKey="value" radius={4} />
+            <Bar dataKey="value" radius={4} maxBarSize={50} />
           </BarChart>
         </ResponsiveContainer>
       </ChartContainer>
