@@ -8,6 +8,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import Preloader from '@/components/layout/Preloader'; // Added Preloader import
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'AgriPedia',
     images: [
       {
-        url: `${siteBaseUrl}/og-image.png`, // Replace with your actual generic OG image URL
+        url: `${siteBaseUrl}/og-image.png`, 
         width: 1200,
         height: 630,
         alt: 'AgriPedia - Fruits and Vegetables Guide',
@@ -50,10 +51,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AgriPedia',
     description: 'Your ultimate guide to fruits and vegetables.',
-    images: [`${siteBaseUrl}/twitter-image.png`], // Replace with your actual generic Twitter image URL
-     // creator: '@YourTwitterHandle', // Optional: add your Twitter handle
+    images: [`${siteBaseUrl}/twitter-image.png`], 
   },
-  metadataBase: new URL(siteBaseUrl), // Required for resolving relative image paths
+  metadataBase: new URL(siteBaseUrl), 
 };
 
 export const viewport: Viewport = {
@@ -71,26 +71,28 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-          <ServiceWorkerRegistrar />
-          <SidebarProvider defaultOpen={true}>
-            <div className="flex">
-              <DesktopSidebar />
-              <SidebarInset>
-                <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                  {children}
-                </main>
-              </SidebarInset>
-            </div>
-            <MobileBottomNav />
-          </SidebarProvider>
-          <Toaster />
-        </ThemeProvider>
+        <Preloader videoSrc="/videos/AgriPedia-preloader-screen.mp4"> {/* Added Preloader wrapper */}
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+          >
+            <ServiceWorkerRegistrar />
+            <SidebarProvider defaultOpen={true}>
+              <div className="flex">
+                <DesktopSidebar />
+                <SidebarInset>
+                  <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
+                    {children}
+                  </main>
+                </SidebarInset>
+              </div>
+              <MobileBottomNav />
+            </SidebarProvider>
+            <Toaster />
+          </ThemeProvider>
+        </Preloader>
       </body>
     </html>
   );
