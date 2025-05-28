@@ -11,11 +11,11 @@ import { processImageWithAI } from '@/app/actions';
 import NextImage from 'next/image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
-import { DialogClose } from '@/components/ui/dialog';
-import { Progress } from '@/components/ui/progress'; // Using ShadCN Progress
+// DialogClose removed as the X button is being removed
+import { Progress } from '@/components/ui/progress';
 
 interface ImageUploadFormProps {
-  onSuccessfulScan?: () => void; // Callback to close the modal
+  onSuccessfulScan?: () => void;
 }
 
 export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormProps) {
@@ -23,10 +23,12 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const [preview, setPreview] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [scanProgressValue, setScanProgressValue] = useState(0); // For progress bar
+  const [scanProgressValue, setScanProgressValue] = useState(0);
 
-  const [isCameraMode, setIsCameraMode] = useState(true); // Default to camera mode
+  const [isCameraMode, setIsCameraMode] = useState(true);
   const [hasCameraPermission, setHasCameraPermission] = useState<boolean | null>(null);
+  const [isProcessingCapture, setIsProcessingCapture] = useState(false);
+
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -37,7 +39,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const { toast } = useToast();
 
   const getCameraPermissionInternal = async () => {
-    setHasCameraPermission(null); // Reset to show loading/pending state
+    setHasCameraPermission(null); 
     setError(null);
 
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -74,6 +76,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   };
 
   useEffect(() => {
+    let localStreamRef: MediaStream | null = null;
     if (isCameraMode) {
       if (!streamRef.current && hasCameraPermission !== false) {
         getCameraPermissionInternal();
@@ -81,8 +84,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         videoRef.current.srcObject = streamRef.current;
         videoRef.current.play().catch(e => console.warn("Retry play failed", e));
       }
+      localStreamRef = streamRef.current;
     } else {
-      // Cleanup when switching away from camera mode
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
@@ -91,31 +94,28 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         videoRef.current.pause();
         videoRef.current.srcObject = null;
       }
-      // Don't reset hasCameraPermission if it was definitively false
-      if (hasCameraPermission !== false) {
-         setHasCameraPermission(null);
+      if(hasCameraPermission !== false) { // Don't reset if definitively denied
+        setHasCameraPermission(null);
       }
-      setError(null); // Clear camera-specific errors
+      setError(null);
     }
 
-    // Cleanup function for when the component unmounts or isCameraMode changes
     return () => {
-      if (streamRef.current) {
-        streamRef.current.getTracks().forEach(track => track.stop());
-        streamRef.current = null;
+      if (localStreamRef) {
+        localStreamRef.getTracks().forEach(track => track.stop());
       }
       if (videoRef.current && videoRef.current.srcObject) {
         videoRef.current.pause();
         videoRef.current.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]); // Removed hasCameraPermission, error to avoid re-runs
+  }, [isCameraMode, toast]);
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
-      if (selectedFile.size > 10 * 1024 * 1024) { // 10MB limit
+      if (selectedFile.size > 10 * 1024 * 1024) {
         setError('File is too large. Please select an image under 10MB.');
         toast({ title: 'File Too Large', description: 'Please select an image under 10MB.', variant: 'destructive' });
         setFile(null);
@@ -150,7 +150,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     event.currentTarget.classList.remove('border-green-500');
     const droppedFile = event.dataTransfer.files?.[0];
     if (droppedFile) {
-       if (droppedFile.size > 10 * 1024 * 1024) { // 10MB limit
+       if (droppedFile.size > 10 * 1024 * 1024) { 
         setError('File is too large. Please select an image under 10MB.');
         toast({ title: 'File Too Large', description: 'Please select an image under 10MB.', variant: 'destructive' });
         setFile(null);
@@ -164,21 +164,20 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         setPreview(reader.result as string);
       };
       reader.readAsDataURL(droppedFile);
-      setIsCameraMode(false); // Switch to preview mode
+      setIsCameraMode(false); 
     }
   };
-
 
   const initiateImageProcessing = async (photoDataUri: string) => {
     setIsLoading(true);
     setError(null);
-    setScanProgressValue(0); // Reset progress
+    setScanProgressValue(0);
 
     // Simulate progress
     let progress = 0;
     const interval = setInterval(() => {
       progress += Math.floor(Math.random() * 10) + 5;
-      if (progress >= 95) { // Don't let simulated progress hit 100 before result
+      if (progress >= 95) { 
         clearInterval(interval);
         setScanProgressValue(95);
       } else {
@@ -186,24 +185,26 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       }
     }, 300);
 
-    // Aggressive cleanup for camera stream before AI processing
-    if (isCameraMode && videoRef.current && videoRef.current.srcObject) {
+    // Aggressive cleanup specific to this processing flow
+    const wasCameraMode = isCameraMode; // Capture state before potential changes
+    if (videoRef.current && videoRef.current.srcObject) {
+        const currentStream = videoRef.current.srcObject as MediaStream;
+        currentStream.getTracks().forEach(track => track.stop());
         videoRef.current.pause();
-        const stream = videoRef.current.srcObject as MediaStream;
-        stream.getTracks().forEach(track => track.stop());
         videoRef.current.srcObject = null;
-        // videoRef.current.removeAttribute('src'); // Not typically needed with srcObject
-        // videoRef.current.src = ""; // Explicitly set src to empty
-        // videoRef.current.load(); // Tell the browser to re-evaluate sources
+        videoRef.current.removeAttribute('src'); 
+        videoRef.current.src = "";
+        videoRef.current.load();
     }
     if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
     }
 
+
     try {
       const result = await processImageWithAI(photoDataUri);
-      clearInterval(interval); // Stop progress simulation
+      clearInterval(interval); 
       setScanProgressValue(100);
 
       if (result.success && result.data) {
@@ -211,11 +212,13 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         toast({ title: 'Success!', description: `Identified: ${result.data.commonName} (Confidence: ${confidencePercentage}%)` });
         triggerHapticFeedback();
         playSound('/sounds/scan-success.mp3');
+        
         if (onSuccessfulScan) onSuccessfulScan();
         router.push(`/item/${encodeURIComponent(result.data.commonName)}`);
       } else {
         setError(result.message || 'Failed to process image.');
         toast({ title: 'Identification Failed', description: result.message || 'Could not identify the item from the image.', variant: 'destructive' });
+        setIsLoading(false); // Re-enable UI if error
       }
     } catch (err) {
       clearInterval(interval);
@@ -223,24 +226,20 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred during AI processing.';
       setError(errorMessage);
       toast({ title: 'Processing Error', description: errorMessage, variant: 'destructive' });
-    } finally {
-      // Do not set isLoading to false here if navigation occurs,
-      // as component might unmount. If no navigation, then set it.
-      // For simplicity, let's assume successful navigation unmounts.
-      // If there was an error, we need to re-enable UI.
-      if (error || (!isLoading && !router)) { // Check if error is set, or if not loading and no router (shouldn't happen)
-         setIsLoading(false);
-      }
+      setIsLoading(false); // Re-enable UI if error
     }
+     //setIsProcessingCapture(false); // Reset this state after processing
   };
   
-  const handleCapture = () => {
+  const handleCaptureAndProcess = async () => {
     if (!videoRef.current || !canvasRef.current || hasCameraPermission !== true || !videoRef.current.srcObject) {
       setError('Camera not ready or permission denied.');
+      toast({ title: 'Camera Issue', description: 'Camera not ready or permission denied.', variant: 'destructive' });
       return;
     }
     triggerHapticFeedback();
-    setPreview(null); // Clear previous preview
+    setIsProcessingCapture(true);
+    setPreview(null);
 
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -251,12 +250,13 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
       const capturedDataUri = canvas.toDataURL('image/jpeg');
-      setPreview(capturedDataUri);
-      // Don't process immediately, wait for confirm button
+      setPreview(capturedDataUri); // Set preview for confirmation step
+      // No longer calls initiateImageProcessing directly
     } else {
       setError('Failed to capture image from camera.');
       toast({ title: 'Capture Error', description: 'Could not capture image from camera feed.', variant: 'destructive' });
     }
+    setIsProcessingCapture(false);
   };
 
   const handleConfirm = () => {
@@ -265,26 +265,34 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
       initiateImageProcessing(preview);
     }
   };
+  
+  const triggerFileInput = () => {
+    fileInputRef.current?.click();
+  };
 
   const handleGalleryClick = () => {
     triggerHapticFeedback();
-    setIsCameraMode(false);
-    setPreview(null); // Clear camera preview if any
-    setFile(null);
-    fileInputRef.current?.click();
+    if (isCameraMode) {
+      setIsCameraMode(false); // Switch to file upload mode
+      setPreview(null);
+      setFile(null);
+      // No need to click fileInputRef here, user will interact with the upload UI
+    } else {
+       triggerFileInput(); // If already in file mode, open file picker
+    }
   };
 
   const handleShutterOrUploadClick = () => {
     triggerHapticFeedback();
     if (isCameraMode) {
-      handleCapture();
-    } else {
-      if(preview) { // If file preview is shown, switch to camera
+      handleCaptureAndProcess(); // Changed from handleCapture to handleCaptureAndProcess
+    } else { // In file upload mode
+      if(preview){ // If there's a preview from a file, switch to camera mode
         setIsCameraMode(true);
         setPreview(null);
         setFile(null);
-      } else { // If no file preview, open file dialog
-        fileInputRef.current?.click();
+      } else { // If no file preview, trigger file input
+        triggerFileInput();
       }
     }
   };
@@ -292,16 +300,10 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
-      {/* Top Controls */}
-      <div className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 z-20">
-        <DialogClose asChild>
-          <Button variant="ghost" size="icon" className="bg-black/50 text-white rounded-full p-2 hover:bg-black/70 active:scale-95 transition-transform">
-            <X size={24} />
-            <span className="sr-only">Close</span>
-          </Button>
-        </DialogClose>
+      {/* Top Controls - Close button removed */}
+      <div className="absolute top-4 right-4 flex gap-2 z-20">
         {isCameraMode && hasCameraPermission === true && (
-          <div className="flex gap-2">
+          <>
             <Button variant="ghost" size="icon" className="bg-black/50 text-white rounded-full p-2 hover:bg-black/70 active:scale-95 transition-transform" onClick={() => toast({ title: 'Flash control coming soon!'})}>
               <Zap size={20} />
               <span className="sr-only">Toggle Flash</span>
@@ -310,31 +312,26 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
               <RefreshCcw size={20} />
               <span className="sr-only">Switch Camera</span>
             </Button>
-          </div>
+          </>
         )}
       </div>
 
-      {/* Main View Area (Camera or Upload) */}
       <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden pt-16 pb-32 px-4">
         {isCameraMode ? (
           <div className="relative w-full aspect-[3/4] bg-neutral-900 rounded-2xl overflow-hidden shadow-lg max-w-md mx-auto">
             <video
               ref={videoRef}
-              className={`w-full h-full object-cover transition-opacity duration-300 ${preview ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+              className={`w-full h-full object-cover transition-opacity duration-300 ${preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               autoPlay
               playsInline
               muted
             />
-            {preview && (
+            {preview && !isProcessingCapture && !isLoading && (
               <NextImage src={preview} alt="Capture preview" fill style={{ objectFit: 'cover' }} className="absolute inset-0 transition-opacity duration-300 opacity-100" />
             )}
-            {/* Viewfinder Overlay - only in camera mode and no preview */}
             {!preview && hasCameraPermission === true && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 p-8">
-                    <div className="w-full h-full border-2 border-white/30 rounded-[28px] opacity-75" style={{
-                        borderStyle: 'dashed',
-                        animation: 'dash-animate 2s linear infinite'
-                    }}></div>
+                    <div className="w-full h-full border-2 border-white/50 rounded-[28px] opacity-75"></div>
                 </div>
             )}
             <canvas ref={canvasRef} className="hidden" />
@@ -348,11 +345,18 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                     <AlertDescription>{error}</AlertDescription>
                 </Alert>
             )}
+            {hasCameraPermission === true && !videoRef.current?.srcObject && !preview && !error && (
+                <Alert variant="destructive" className="absolute bottom-4 left-4 right-4 max-w-md mx-auto bg-blue-900/80 text-white border-blue-700 z-30">
+                    <Camera className="h-4 w-4 text-blue-300" />
+                    <AlertTitle>Camera Initializing</AlertTitle>
+                    <AlertDescription>Please wait or ensure camera is not in use by another app.</AlertDescription>
+                </Alert>
+            )}
           </div>
-        ) : ( // File Upload Mode
+        ) : ( 
           <div
             className="w-full h-full max-w-md mx-auto flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-600 rounded-2xl cursor-pointer hover:border-green-400/70 transition-colors bg-neutral-800/50"
-            onClick={() => !preview && fileInputRef.current?.click()}
+            onClick={() => !preview && triggerFileInput()}
             onDrop={handleDrop}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
@@ -380,7 +384,6 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         )}
       </div>
 
-      {/* Bottom Controls and Progress */}
       <div className="absolute bottom-0 left-0 right-0 p-6 z-20 space-y-3">
         {isLoading && (
           <div className="flex flex-col items-center space-y-1 mb-2">
@@ -398,7 +401,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             variant="ghost"
             className="w-16 h-16 p-0 rounded-full bg-white hover:bg-gray-200 shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-60"
             onClick={handleShutterOrUploadClick}
-            disabled={isLoading || (isCameraMode && hasCameraPermission !== true)}
+            disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject)) }
             aria-label={isCameraMode ? "Capture Photo" : (preview ? "Switch to Camera" : "Upload Image")}
           >
             {isCameraMode ? 
@@ -411,23 +414,18 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             variant="ghost" size="icon"
             className="bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform disabled:opacity-60"
             onClick={handleConfirm}
-            disabled={!preview || isLoading}
+            disabled={!preview || isLoading || isProcessingCapture}
             aria-label="Confirm Identification"
           >
             <Check size={24} />
           </Button>
         </div>
       </div>
-       {/* CSS for dashed animation */}
       <style jsx global>{`
         @keyframes dash-animate {
           to {
-            stroke-dashoffset: -20; // Adjust this value for speed
+            stroke-dashoffset: -20; 
           }
-        }
-        .border-dashed-animate {
-          stroke-dasharray: 10; // Adjust for dash length and gap
-          animation: dash-animate 1s linear infinite;
         }
       `}</style>
     </div>
