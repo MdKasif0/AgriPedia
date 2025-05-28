@@ -4,7 +4,8 @@
 import { identifyFruitOrVegetableFromImage, IdentifyFruitOrVegetableFromImageOutput } from '@/ai/flows/identify-fruit-or-vegetable-from-image';
 import { validateImageOfProduce, ValidateImageOfProduceOutput } from '@/ai/flows/validate-image-of-produce';
 import { generateRecipes, GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
-import { generateAgriTip } from '@/ai/flows/generate-agri-tip-flow'; // Updated import
+import { generateAgriTip } from '@/ai/flows/generate-agri-tip-flow';
+import { chatWithAgriBot, ChatInput, ChatOutput, ChatMessage } from '@/ai/flows/chat-flow'; // Added chat imports
 
 interface ProcessImageResult {
   success: boolean;
@@ -68,8 +69,7 @@ export async function fetchDynamicAgriTip(): Promise<string> {
   const defaultTip = "Did you know? Eating a variety of colorful fruits and vegetables is key to a healthy diet!";
 
   if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE' || apiKey.trim() === '') {
-    console.warn("GOOGLE_API_KEY is not set or is a placeholder. AgriPedia Tip generation will likely fail or use fallbacks.");
-    // Return a more generic error-like tip if key isn't set, but the Genkit flow itself has a fallback
+    console.warn("GOOGLE_API_KEY is not set or is a placeholder for tip generation. AgriPedia Tip generation will likely fail or use fallbacks.");
     return "AgriPedia Tip: AI features may be limited. Please check server configuration.";
   }
 
@@ -78,13 +78,32 @@ export async function fetchDynamicAgriTip(): Promise<string> {
     if (result && typeof result.tip === 'string' && result.tip.trim() !== '') {
       return result.tip;
     }
-    // This case means the flow ran but returned an empty or invalid tip.
-    console.warn("AI AgriTip flow returned an empty or invalid tip. Using default.");
+    console.warn("AI AgriTip flow returned an empty or invalid tip. Using default from action.");
     return defaultTip;
   } catch (error) {
     console.error('Error fetching AI agri tip:', error);
-    // This catch block will handle errors from calling generateAgriTip() itself
     return `Oops! We couldn't fetch a new tip right now. Tip: ${defaultTip}`;
   }
 }
-    
+
+export async function sendChatMessage(message: string, history?: ChatMessage[]): Promise<string | null> {
+  const apiKey = process.env.GOOGLE_API_KEY;
+  if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE' || apiKey.trim() === '') {
+    console.warn("GOOGLE_API_KEY is not set or is a placeholder for chat. Chatbot will likely fail.");
+    return "I'm sorry, but I'm unable to process requests at the moment due to a configuration issue. Please try again later.";
+  }
+
+  if (!message.trim()) {
+    return "Please provide a message.";
+  }
+
+  const input: ChatInput = { message, history };
+
+  try {
+    const result: ChatOutput = await chatWithAgriBot(input);
+    return result.response;
+  } catch (error) {
+    console.error('Error in sendChatMessage action calling chatWithAgriBot:', error);
+    return "I'm having trouble connecting right now. Please try again in a moment.";
+  }
+}
