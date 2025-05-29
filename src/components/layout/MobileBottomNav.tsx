@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart } from 'lucide-react';
-import { Dialog, DialogContent } from '@/components/ui/dialog'; // Removed DialogHeader, DialogTitle
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'; // Added DialogTitle
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
 import { useState } from 'react';
@@ -12,7 +12,7 @@ import { cn, triggerHapticFeedback } from '@/lib/utils';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
 import { Separator } from '@/components/ui/separator';
-import ApiKeyManager from '@/components/settings/ApiKeyManager'; // Added ApiKeyManager
+import ApiKeyManager from '@/components/settings/ApiKeyManager';
 
 interface NavItemProps {
   href?: string;
@@ -41,7 +41,7 @@ const NavItemLink: React.FC<Omit<NavItemProps, 'isCentralScan' | 'onClick' | 'is
         <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isActive ? "bg-primary/20" : "group-hover:bg-neutral-700/50")}>
           <Icon size={24} className={cn(isActive ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")} />
         </div>
-        <span className={cn("text-xs mt-0.5", isActive ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")}>
+        <span className={cn("text-xs mt-0.5", isActive ? "text-primary font-semibold" : "text-neutral-400 group-hover:text-neutral-100")}>
           {label}
         </span>
       </a>
@@ -112,7 +112,7 @@ export default function MobileBottomNav() {
                       <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isSettingsSheetOpen ? "bg-primary/20" : "group-hover:bg-neutral-700/50")}>
                         <item.icon size={24} className={cn(isSettingsSheetOpen ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")} />
                       </div>
-                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")}>
+                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-primary font-semibold" : "text-neutral-400 group-hover:text-neutral-100")}>
                         {item.label}
                       </span>
                     </button>
@@ -121,7 +121,7 @@ export default function MobileBottomNav() {
                     side="bottom"
                     className="h-auto max-h-[75vh] flex flex-col rounded-t-2xl
                                bg-card text-card-foreground
-                               border-t border-border/50" // Adjusted border
+                               border-t border-border/50"
                   >
                     <SheetHeader className="px-4 pt-4 pb-2 text-center">
                       <SheetTitle className="text-card-foreground text-lg">App Settings</SheetTitle>
@@ -160,8 +160,9 @@ export default function MobileBottomNav() {
         </div>
       </nav>
       <Dialog open={isScanDialogOpen} onOpenChange={setIsScanDialogOpen}>
-        <DialogContent className="w-full h-full p-0 bg-black text-gray-200 sm:max-w-md sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:rounded-2xl sm:shadow-xl">
-          {/* DialogHeader and DialogTitle removed */}
+        <DialogContent className="p-0 bg-black text-gray-200 max-w-full w-full h-full sm:max-w-md sm:h-auto sm:max-h-[90vh] sm:rounded-2xl sm:shadow-xl overflow-hidden">
+          {/* Visually hidden title for accessibility */}
+          <DialogTitle className="sr-only">Scan or Upload Produce Image</DialogTitle>
           <ImageUploadForm onSuccessfulScan={() => setIsScanDialogOpen(false)} />
         </DialogContent>
       </Dialog>
