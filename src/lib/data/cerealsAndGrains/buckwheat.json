@@ -1,0 +1,68 @@
+{
+  "id": "buckwheat",
+  "commonName": "Buckwheat",
+  "scientificName": "Fagopyrum esculentum",
+  "image": "https://images.unsplash.com/photo-1589968310192-1e00d0414190?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Buckwheat is a plant cultivated for its grain-like seeds and as a cover crop. Despite its name, buckwheat is not related to wheat, as it is not a grass. Instead, buckwheat is related to sorrel, knotweed, and rhubarb. Because its seeds are rich in complex carbohydrates, it is referred to as a pseudocereal.",
+  "origin": "Southeast Asia, likely originating in the region of Yunnan in southwestern China.",
+  "localNames": ["Kuttu (Hindi)", "Soba (Japanese - referring to noodles made from it)", "Alforfón (Spanish)", "Sarrasin (French)"],
+  "regions": ["China", "Russia", "Ukraine", "Kazakhstan", "Poland", "United States", "Canada", "Brazil", "France"],
+  "seasons": ["Typically a short-season crop, planted in late spring/early summer and harvested in late summer/fall."],
+  "nutrition": {
+    "calories": "343 kcal per 100g (raw groats)",
+    "macronutrients": [
+      { "name": "Protein", "value": 13.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 71.5, "unit": "g" },
+      { "name": "Fat", "value": 3.4, "unit": "g" },
+      { "name": "Fiber", "value": 10.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 7.02, "unit": "mg", "rdi": "47%" },
+      { "name": "Pantothenic acid (B5)", "value": 1.233, "unit": "mg", "rdi": "25%" },
+      { "name": "Vitamin B6", "value": 0.21, "unit": "mg", "rdi": "16%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.3, "unit": "mg", "rdi": "57%" },
+      { "name": "Magnesium", "value": 231, "unit": "mg", "rdi": "55%" },
+      { "name": "Phosphorus", "value": 347, "unit": "mg", "rdi": "50%" },
+      { "name": "Copper", "value": 1.1, "unit": "mg", "rdi": "122%" }
+    ]
+  },
+  "healthBenefits": [
+    "Naturally gluten-free.",
+    "Good source of high-quality protein, containing all essential amino acids.",
+    "Rich in dietary fiber, aiding digestion and promoting heart health.",
+    "Excellent source of minerals like magnesium, manganese, and copper.",
+    "Contains antioxidants, including rutin, which may improve circulation and prevent LDL cholesterol from blocking blood vessels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Buckwheat Allergy",
+      "severity": "Can be severe",
+      "details": "While not extremely common, buckwheat allergy can cause serious reactions, including anaphylaxis, in sensitized individuals. Symptoms can also include skin rashes, asthma, and digestive issues. It's a known allergen in Japan and Korea where buckwheat noodles (soba) are popular."
+    }
+  ],
+  "cultivationProcess": "Buckwheat cultivation involves preparing a seedbed (can be minimal), sowing seeds, and harvesting before the first hard frost. It is a fast-growing crop and can suppress weeds.",
+  "growthDuration": "Short, typically 70-90 days from planting to harvest.",
+  "sustainabilityTips": [
+    "Excellent as a cover crop or smother crop to suppress weeds and improve soil health.",
+    "Grows well in poor, acidic soils where other crops may fail.",
+    "Attracts beneficial insects, including pollinators, with its flowers.",
+    "Requires minimal fertilizer or pesticides."
+  ],
+  "carbonFootprintInfo": "Buckwheat generally has a low carbon footprint due to its ability to grow with minimal inputs and its use as a soil-improving cover crop.",
+  "uses": ["culinary_flour_groats_noodles", "animal_feed", "cover_crop", "honey_production_flowers"],
+  "originAndDomesticationHistory": "Buckwheat (Fagopyrum esculentum) was domesticated in Southeast Asia, likely in Yunnan province, China, around 6000 BCE. It spread to Central Asia, Tibet, the Middle East, and Europe by the Middle Ages. It was one of the first crops introduced by Europeans to North America.",
+  "climaticRequirements": {
+    "temperature": "Prefers cool, moist conditions. Optimal growing temperatures are 18-22°C. Sensitive to high temperatures and frost, especially during flowering.",
+    "rainfall": "Requires moderate moisture, around 500-700mm during its growing season. Not very drought-tolerant.",
+    "altitude": "Can be grown from sea level to relatively high altitudes (e.g., up to 2800m in Bhutan)."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, including acidic and low-fertility soils. Prefers well-drained sandy loam or loam soils. Does not tolerate waterlogged or heavy clay soils well.",
+  "irrigationAndWaterNeeds": "Typically grown rain-fed. Supplemental irrigation may be beneficial in drier periods, especially during flowering and seed set, but it's not commonly irrigated on a large scale.",
+  "plantingAndHarvestCycles": "Planted after the last frost in late spring or early summer. Seeds germinate quickly. Due to its indeterminate flowering habit (flowers over a long period), harvesting is timed when about 75% of the seeds are mature and brown, usually before a killing frost. Swathing followed by combining, or direct combining, is common.",
+  "pestAndDiseaseManagement": "Relatively few pest and disease problems compared to other grain crops. Deer and birds can sometimes damage crops. Good crop rotation and selecting appropriate planting times can minimize issues.",
+  "postHarvestHandling": "Involves threshing to separate the seeds, followed by drying to a moisture content of 12-15% for safe storage. The triangular seeds are then often dehulled to produce groats. Milling into flour is also common.",
+  "majorProducingCountriesOrRegions": ["Russia (largest producer)", "China", "Ukraine", "France", "Poland", "Kazakhstan", "United States", "Brazil", "Canada"],
+  "marketValueAndGlobalDemand": "Buckwheat is a niche crop but has steady global demand, particularly for its flour (used in pancakes, noodles like Japanese soba, and baked goods) and groats (kasha). Growing interest in gluten-free products has boosted its popularity. It's also valued in honey production (buckwheat honey) and as a cover crop."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "aloe_vera",
+  "commonName": "Aloe Vera",
+  "scientificName": "Aloe barbadensis miller",
+  "image": "https://images.unsplash.com/photo-1561041810-896399680b55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Aloe vera is a succulent plant species of the genus Aloe. It is widely cultivated for its thick, fleshy leaves which contain a gel-like substance used for centuries in traditional medicine and for cosmetic purposes. The plant is stemless or very short-stemmed with thick, greenish, fleshy leaves that are serrated at the margins.",
+  "origin": "Arabian Peninsula (Oman, Yemen).",
+  "localNames": ["Ghritkumari (Hindi)", "Kwar Gandal (Punjabi)", "Sábila (Spanish)", "Aloès (French)"],
+  "regions": ["Cultivated worldwide in tropical, subtropical, and arid climates. Major commercial producers include USA (Texas, Florida), Mexico, Dominican Republic, China, India, Australia, South Africa."],
+  "seasons": ["Perennial; can be harvested year-round in suitable climates. Growth slows in cooler weather."],
+  "nutrition": {
+    "calories": "Aloe vera gel is very low in calories (approx. 15 kcal per 100g, though not typically consumed in large dietary amounts).",
+    "macronutrients": [
+      { "name": "Protein", "value": "Trace", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Primarily polysaccharides (e.g., acemannan)", "unit": "g" },
+      { "name": "Fat", "value": "Trace", "unit": "g" },
+      { "name": "Fiber", "value": "Trace", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": "Present", "unit": "mg", "rdi": "Varies" },
+      { "name": "Vitamin E", "value": "Present", "unit": "mg", "rdi": "Varies" },
+      { "name": "Vitamin A (as beta-carotene)", "value": "Present", "unit": "µg", "rdi": "Varies" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": "Present", "unit": "mg", "rdi": "Varies" },
+      { "name": "Magnesium", "value": "Present", "unit": "mg", "rdi": "Varies" },
+      { "name": "Zinc", "value": "Present", "unit": "mg", "rdi": "Varies" }
+    ]
+  },
+  "healthBenefits": [
+    "Soothes skin burns (sunburn, minor thermal burns) and irritation.",
+    "Promotes wound healing.",
+    "Moisturizes skin and may improve skin conditions like psoriasis and acne.",
+    "May aid digestion and relieve constipation (aloe latex, used cautiously).",
+    "Contains antioxidants and has anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Aloe Vera Allergy/Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Contact dermatitis (skin rash, itching) can occur in sensitive individuals. Internal consumption of aloe latex (aloin) can cause cramping and diarrhea and is not recommended for prolonged use or in high doses."
+    }
+  ],
+  "cultivationProcess": "Aloe vera is propagated by offsets (pups) or suckers that grow from the base of the mother plant. It requires well-drained soil and plenty of sunlight. It is drought-tolerant but benefits from occasional watering.",
+  "growthDuration": "Perennial. Pups can be separated and planted when they are a few inches tall. Leaves can be harvested from mature plants (usually 2-3 years old) as needed.",
+  "sustainabilityTips": [
+    "Drought-tolerant, making it suitable for arid and semi-arid regions and water-wise gardening.",
+    "Easy to propagate, reducing the need for commercial nurseries for home use.",
+    "Can be grown indoors in pots with sufficient light."
+  ],
+  "carbonFootprintInfo": "Locally grown aloe vera for personal use has a very low carbon footprint. Commercial cultivation for gels and juices involves processing, packaging, and transportation, which increases its footprint.",
+  "uses": ["medicinal_gel_for_burns_skin_irritation", "cosmetics_skin_care_hair_care", "food_beverages_aloe_vera_juice_desserts", "traditional_medicine_digestive_aid_laxative_aloe_latex"],
+  "originAndDomesticationHistory": "Aloe vera is believed to have originated in the Arabian Peninsula. Its use dates back nearly 6,000 years to ancient Egypt, where it was known as 'the plant of immortality'. It was used by Greeks, Romans, and Chinese for its medicinal properties. It spread along trade routes and is now naturalized and cultivated worldwide.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm temperatures, 20-30°C. Tolerates heat well but is sensitive to frost (can be damaged or killed by temperatures below 0°C).",
+    "rainfall": "Drought-tolerant. Prefers dry conditions but can handle moderate rainfall if drainage is excellent. Annual rainfall of 250-500mm is often sufficient.",
+    "altitude": "Adaptable to various altitudes, from sea level to mountainous regions in suitable climates."
+  },
+  "soilPreferences": "Requires very well-drained soil. Sandy or loamy soils are ideal. Tolerates poor soils but thrives with some organic matter. Slightly acidic to alkaline pH (6.0-8.0) is acceptable.",
+  "irrigationAndWaterNeeds": "Water thoroughly but infrequently, allowing the soil to dry out completely between waterings. Overwatering is a common cause of root rot. Reduce watering significantly during winter or dormant periods.",
+  "plantingAndHarvestCycles": "Propagated from offsets (pups). Plant in well-draining pots or garden beds. Outer, mature leaves are harvested as needed, typically by cutting them near the base of the plant. A mature plant can yield several leaves per harvest, multiple times a year.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Mealybugs and scale insects can sometimes be an issue, especially on indoor plants. Root rot (due to overwatering) is the most common disease. Fungal leaf spots can occur in overly humid conditions.",
+  "postHarvestHandling": "Harvested leaves are typically processed quickly to extract the gel. The gel can be used fresh or stabilized for commercial products. The outer leaf rind contains aloin (aloe latex), which is often removed or minimized in food/drink products due to its laxative effect.",
+  "majorProducingCountriesOrRegions": ["Mexico", "Dominican Republic", "United States (Texas, Florida, California)", "China", "India", "Thailand", "Australia", "South Africa", "Costa Rica"],
+  "marketValueAndGlobalDemand": "Aloe vera has a large global market, driven by its widespread use in cosmetics, personal care products, food and beverages (juices, health drinks), and herbal remedies. Demand for natural and organic aloe vera products is particularly strong. The market value is significant and continues to grow."
+}

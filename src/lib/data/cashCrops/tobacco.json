@@ -1,0 +1,57 @@
+{
+  "id": "tobacco",
+  "commonName": "Tobacco",
+  "scientificName": "Nicotiana tabacum",
+  "image": "https://images.unsplash.com/photo-1599579105044-693c50f25918?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Tobacco is a plant within the genus Nicotiana and is part of the nightshade family (Solanaceae). It is cultivated for its leaves, which are dried and fermented before being put in tobacco products. The plant contains nicotine, a stimulant, which is addictive. Tobacco use is a major cause of preventable death and disease.",
+  "origin": "Americas (likely the Andes region of South America).",
+  "localNames": ["Tambaku (Hindi)", "Tabako (Japanese)", "Tabaco (Spanish)", "Tabac (French)"],
+  "regions": ["China (leading producer)", "India", "Brazil", "United States", "Indonesia", "Zimbabwe", "Turkey", "Malawi"],
+  "seasons": ["Warm-season annual; planted in spring and harvested in late summer or fall. Specific timings vary by type and region."],
+  "nutrition": {
+    "calories": "Not consumed for nutritional caloric value. Contains nicotine and other alkaloids.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Leaves contain some protein" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Leaves contain carbohydrates, sugars increase during curing" },
+      { "name": "Fat", "unit": "g", "value": "Trace amounts" },
+      { "name": "Fiber", "unit": "g", "value": "Leaves contain fiber" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Historically used in some traditional medicines, but these uses are vastly outweighed by its negative health impacts.",
+    "Nicotine has stimulant effects and can temporarily improve alertness and mood, but is highly addictive.",
+    "No scientifically recognized health benefits from consumption that outweigh the severe health risks."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nicotine Poisoning / Tobacco Sensitivity",
+      "severity": "Can be Severe",
+      "details": "Handling green tobacco leaves can cause Green Tobacco Sickness due to dermal absorption of nicotine. Ingestion of tobacco products can cause nicotine poisoning. Tobacco smoke contains numerous carcinogens and toxins leading to cancer, heart disease, lung diseases, etc."
+    }
+  ],
+  "cultivationProcess": "Tobacco is grown from tiny seeds, usually started in seedbeds and then transplanted. It requires fertile soil, specific nutrient inputs, and careful management of pests and diseases. Leaves are harvested at different stages of maturity depending on the type of tobacco and desired qualities.",
+  "growthDuration": "Approximately 90-150 days from transplanting to final harvest, depending on the tobacco type and climate.",
+  "sustainabilityTips": [
+    "Tobacco cultivation often involves high use of pesticides and fertilizers, and can lead to soil degradation and deforestation if not managed well.",
+    "Crop rotation is important to manage soil fertility and pests.",
+    "Sustainable curing methods (e.g., using less wood for flue-curing) can reduce environmental impact.",
+    "Efforts towards harm reduction and alternative livelihoods for tobacco farmers are key sustainability discussions."
+  ],
+  "carbonFootprintInfo": "Tobacco cultivation and processing have a significant environmental footprint due to land use, high input requirements (pesticides, fertilizers), energy for curing (especially flue-curing, which can use wood or fossil fuels), manufacturing of tobacco products, and transportation. Deforestation for cultivation and curing fuel is a major concern in some regions.",
+  "uses": ["smoking_products_cigarettes_cigars_pipe_tobacco", "smokeless_tobacco_products_chewing_tobacco_snuff_snus_gutka", "nicotine_extraction_for_insecticides_historical_or_pharmaceutical_nicotine_replacement_therapy", "traditional_ceremonial_uses_by_some_indigenous_cultures"],
+  "originAndDomesticationHistory": "Tobacco (Nicotiana tabacum and Nicotiana rustica) was first domesticated in the Americas, possibly in the Andes region of Peru and Ecuador, as early as 5000-3000 BCE. It was widely used by indigenous peoples throughout North and South America in shamanistic rituals, for medicinal purposes, and socially. It was introduced to Europe by Christopher Columbus and his crew in the late 15th century and rapidly spread globally, becoming a major cash crop and trade commodity.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 20-30°C. Requires a frost-free period of 100-130 days. Quality is affected by temperature and sunlight during growth and ripening.",
+    "rainfall": "Requires moderate, well-distributed rainfall (500-1000mm) during the growing season. Does not tolerate waterlogging. Excessive rain during ripening and harvest can damage leaves and reduce quality.",
+    "altitude": "Can be grown from sea level up to 1500m, but quality and type vary with altitude and climate."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy or sandy loam soils with good aeration and water-holding capacity. Slightly acidic to neutral pH (5.5-6.5) is generally optimal. Specific soil requirements vary by tobacco type (e.g., flue-cured tobacco prefers sandy loams, while burley tobacco prefers heavier loams).",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during early growth and leaf development. Irrigation is often necessary to supplement rainfall and ensure optimal yield and quality, particularly in drier regions or for specific tobacco types. Over-irrigation can lead to diseases.",
+  "plantingAndHarvestCycles": "Seeds are sown in protected seedbeds. Seedlings are transplanted to the field after 6-10 weeks. Leaves are harvested progressively from the bottom of the plant upwards as they mature (priming), or the entire plant is cut (stalk-cutting). Harvesting methods and timing depend on the tobacco type (e.g., flue-cured, air-cured, sun-cured, fire-cured).",
+  "pestAndDiseaseManagement": "Susceptible to numerous pests (e.g., aphids, hornworms, budworms, flea beetles, nematodes) and diseases (e.g., tobacco mosaic virus (TMV), black shank, Granville wilt, blue mold, brown spot). Pest and disease management is critical and often involves resistant varieties, crop rotation, field sanitation, biological controls, and extensive use of pesticides and fungicides.",
+  "postHarvestHandling": "Harvested leaves undergo a curing process (air-curing, flue-curing, sun-curing, or fire-curing) which develops their characteristic aroma, flavor, and color. Curing methods vary significantly by tobacco type. After curing, leaves are aged, graded, and often processed (e.g., cut, blended) for use in tobacco products.",
+  "majorProducingCountriesOrRegions": ["China (by far the largest producer)", "India", "Brazil", "United States (North Carolina, Kentucky)", "Indonesia", "Zimbabwe", "Pakistan", "Malawi", "Argentina", "Turkey"],
+  "marketValueAndGlobalDemand": "Tobacco is a high-value cash crop with significant global production and trade, despite declining consumption rates in many high-income countries due to health concerns. Demand remains high in many low and middle-income countries. The industry is dominated by a few large multinational corporations. Taxation and regulation heavily influence the market. There are ongoing efforts to promote alternative crops for tobacco farmers."
+}

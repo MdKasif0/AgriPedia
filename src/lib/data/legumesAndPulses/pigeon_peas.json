@@ -1,0 +1,68 @@
+{
+  "id": "pigeon_peas",
+  "commonName": "Pigeon Peas (Toor Dal, Arhar Dal)",
+  "scientificName": "Cajanus cajan",
+  "image": "https://images.unsplash.com/photo-1605599449028-95605a092974?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Pigeon pea is a perennial legume from the family Fabaceae. Since its domestication in the Indian subcontinent at least 3,500 years ago, its seeds have become a common food in Asia, Africa, and Latin America. It is consumed on a large scale in South Asia and is a major source of protein for the population of the Indian subcontinent.",
+  "origin": "Indian subcontinent (likely Eastern part of peninsular India or South India).",
+  "localNames": ["Toor Dal (Hindi)", "Arhar Dal (Hindi)", "Kandi Pappu (Telugu)", "Thuvaram Paruppu (Tamil)", "Kongo mame (Japanese)"],
+  "regions": ["India", "Myanmar", "Malawi", "Kenya", "Tanzania", "Uganda", "Nepal"],
+  "seasons": ["Typically a Kharif (monsoon) crop in India, sown in June-July and harvested in December-March. Some short-duration varieties allow for multiple cropping cycles."],
+  "nutrition": {
+    "calories": "116 kcal per 100g (cooked, split, mature seeds)",
+    "macronutrients": [
+      { "name": "Protein", "value": 21.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 62.8, "unit": "g" },
+      { "name": "Fat", "value": 1.5, "unit": "g" },
+      { "name": "Fiber", "value": 15.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 456, "unit": "µg", "rdi": "114%" },
+      { "name": "Thiamin (B1)", "value": 0.643, "unit": "mg", "rdi": "54%" },
+      { "name": "Niacin (B3)", "value": 2.945, "unit": "mg", "rdi": "18%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.791, "unit": "mg", "rdi": "78%" },
+      { "name": "Phosphorus", "value": 367, "unit": "mg", "rdi": "52%" },
+      { "name": "Potassium", "value": 1392, "unit": "mg", "rdi": "30%" },
+      { "name": "Magnesium", "value": 183, "unit": "mg", "rdi": "44%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich source of plant-based protein and dietary fiber.",
+    "Excellent source of folate, important for cell growth and metabolism.",
+    "Good source of manganese, phosphorus, and potassium.",
+    "Helps in maintaining digestive health and preventing constipation.",
+    "Low glycemic index, beneficial for blood sugar management."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies",
+      "details": "Allergy to pigeon peas is possible, though not as common as some other legumes. Cross-reactivity with other legumes can occur."
+    }
+  ],
+  "cultivationProcess": "Pigeon pea cultivation involves preparing a well-drained seedbed, sowing seeds (often intercropped with cereals like sorghum or millet), weed management, and harvesting when pods mature and dry. It's a hardy, drought-tolerant crop.",
+  "growthDuration": "Varies widely depending on the variety (short, medium, or long duration). Short-duration varieties can mature in 100-120 days, while long-duration varieties can take 180-280 days.",
+  "sustainabilityTips": [
+    "Deep root system improves soil structure and recycles nutrients from lower soil layers.",
+    "Nitrogen-fixing ability enhances soil fertility.",
+    "Highly drought-tolerant, making it suitable for semi-arid regions.",
+    "Stalks can be used for fuel, fencing, or thatching, promoting resource efficiency."
+  ],
+  "carbonFootprintInfo": "Pigeon peas have a relatively low carbon footprint due to their nitrogen-fixing properties, drought tolerance, and perennial nature in some cultivation systems, which reduces the need for annual tillage.",
+  "uses": ["culinary_dal_sambar_soups", "animal_feed_seeds_leaves_husks", "green_manure", "fuelwood_stalks", "agroforestry_component"],
+  "originAndDomesticationHistory": "Pigeon pea (Cajanus cajan) was domesticated in India at least 3,500 years ago. Its wild progenitor is likely Cajanus cajanifolius, found in eastern peninsular India. From India, it spread to East Africa and then to other parts of the tropics and subtropics. It's a significant crop in both Asia and Africa.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop, thriving in temperatures between 18-30°C. Tolerant of high temperatures but sensitive to frost.",
+    "rainfall": "600-1000mm annually is optimal. Highly drought-tolerant once established due to its deep root system. Can withstand dry spells for extended periods.",
+    "altitude": "Can be grown from sea level up to 2000m, though some varieties are adapted to higher altitudes (up to 3000m)."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, from sandy loams to heavy clays, but prefers well-drained, medium-textured soils with a pH of 5.0-8.0. Can tolerate poor soils better than many other legumes.",
+  "irrigationAndWaterNeeds": "Predominantly grown as a rain-fed crop. Irrigation can be beneficial during prolonged dry spells or for off-season cultivation, particularly during flowering and pod development stages, but it's not essential in many traditional farming systems.",
+  "plantingAndHarvestCycles": "Sown during the rainy season (e.g., June-July in India). Seeds are sown 3-5 cm deep. Long-duration varieties are often intercropped. Harvesting of dry pods is done when most pods turn brown and brittle. Plants are typically cut, stacked to dry, and then threshed.",
+  "pestAndDiseaseManagement": "Major pests include pod borers (Helicoverpa armigera, Maruca vitrata), pod fly, and aphids. Diseases include Fusarium wilt, sterility mosaic disease, and Phytophthora blight. Integrated pest management strategies involve resistant varieties, intercropping, biological control, and need-based pesticide/fungicide application.",
+  "postHarvestHandling": "Harvested plants are dried, and pods are threshed to separate the seeds. Seeds are then cleaned, graded, and further dried to a moisture content of 10-12% for storage. Often processed into split peas (dal) by milling.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Myanmar", "Malawi", "Kenya", "Tanzania", "Uganda", "Nepal", "Dominican Republic", "Haiti"],
+  "marketValueAndGlobalDemand": "Pigeon pea is a vital pulse crop, especially in India, where it's a staple food. It has significant regional importance in Africa and parts of Latin America. International trade is less than for some other pulses but is growing. Demand is driven by its use as food and, to a lesser extent, feed. Prices are influenced by production in major growing regions, particularly India."
+}

@@ -1,0 +1,62 @@
+{
+  "id": "castor",
+  "commonName": "Castor Bean Plant (Castor Oil Plant)",
+  "scientificName": "Ricinus communis",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The castor bean or castor oil plant is a species of perennial flowering plant in the spurge family, Euphorbiaceae. It is the sole species in the monotypic genus, Ricinus, and subtribe, Ricininae. The plant is cultivated for its seeds, which are pressed to produce castor oil, a non-edible oil with numerous industrial and medicinal uses. All parts of the plant, especially the seeds, contain ricin, a potent toxin, which is denatured by heating during oil extraction.",
+  "origin": "Southeastern Mediterranean Basin, Eastern Africa, and India.",
+  "localNames": ["Arandi (Hindi)", "Himashi (Japanese)", "Ricino / Higuerilla (Spanish)", "Ricin (French)"],
+  "regions": ["India (leading producer)", "China", "Brazil", "Mozambique", "Ethiopia", "Paraguay", "Thailand"],
+  "seasons": ["Tropical perennial, often grown as an annual in temperate climates. Planted after the last frost or during the rainy season; seeds harvested when capsules mature and dry."],
+  "nutrition": {
+    "calories": "Castor Seeds: Highly toxic, NOT for consumption. Castor Oil: ~884 kcal per 100g (for industrial/medicinal use, not typically ingested as a food oil).",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: ~15-20" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: ~10-15" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~40-60 (primarily ricinoleic acid in oil)" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Castor oil is primarily used externally or as a strong stimulant laxative.",
+    "Used topically for skin conditions, to promote hair growth, and as a moisturizer.",
+    "Has anti-inflammatory properties when applied topically.",
+    "Ricinoleic acid, the main component of castor oil, has pain-relieving and anti-inflammatory effects.",
+    "Historically used to induce labor (use requires extreme caution and medical supervision)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ricin Poisoning (from seeds)",
+      "severity": "Extremely Severe/Fatal",
+      "details": "Castor beans contain ricin, a highly potent toxin. Ingestion of even a few raw or improperly processed beans can be lethal. The oil extraction process denatures ricin, making castor oil safe for its intended uses."
+    },
+    {
+      "name": "Castor Oil Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Topical application of castor oil can cause skin irritation or allergic reactions (contact dermatitis) in some individuals. Oral use as a laxative can cause cramping, diarrhea, and dehydration if overused."
+    }
+  ],
+  "cultivationProcess": "Castor plants are grown from seeds. They are adaptable to various soil types but prefer well-drained soils. It is a fast-growing plant that can tolerate drought. Seeds are harvested when capsules begin to dry and split.",
+  "growthDuration": "Approximately 140-180 days from planting to first seed harvest. Can be grown as an annual or short-lived perennial.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can be grown in arid and semi-arid regions on marginal lands.",
+    "The oil has many industrial applications, potentially replacing petroleum-based products.",
+    "The seed cake (after oil extraction and detoxification) can be used as organic fertilizer."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of castor oil is influenced by cultivation practices, oil extraction methods (often mechanical pressing), and transportation. Its use in biofuels and bio-based plastics can be a factor in its lifecycle assessment.",
+  "uses": ["industrial_oil_production_lubricants_plastics_resins_paints_inks_cosmetics_biofuel", "medicinal_oil_laxative_skin_conditions_hair_care_anti_inflammatory", "traditional_medicine", "ornamental_plant_though_caution_advised_due_to_toxicity"],
+  "originAndDomesticationHistory": "The castor bean plant (Ricinus communis) is believed to be native to northeastern Africa and the Middle East, near Ethiopia. Evidence of its cultivation and use for oil dates back to ancient Egypt (around 4000 BCE). It spread early to India and China and has been used for millennia for lighting, lubrication, and medicinal purposes.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Thrives in hot climates with optimal temperatures between 20-30°C. Requires a long, frost-free growing season. Sensitive to frost at all stages.",
+    "rainfall": "Drought-tolerant. Can grow with 400-750mm of rainfall, but performs best with 600-700mm, especially during early growth and flowering. Does not tolerate waterlogging.",
+    "altitude": "Adaptable to various altitudes, typically grown in tropical and subtropical regions from sea level up to 2000m."
+  },
+  "soilPreferences": "Prefers well-drained, deep sandy loam or loamy soils with a slightly acidic to neutral pH (5.5-7.0). Can tolerate a range of soil types, including poor or saline soils, but good drainage is essential.",
+  "irrigationAndWaterNeeds": "While drought-tolerant, irrigation is often necessary for commercial cultivation to achieve optimal yields, particularly during seedling establishment, flowering, and seed development. Avoid over-irrigation.",
+  "plantingAndHarvestCycles": "Seeds are sown directly in the field after the last frost or at the onset of the rainy season. Planted 3-6 cm deep. Capsules are harvested when they start to dry and turn brownish, but before they split open and shatter seeds. Harvesting is often done by hand in multiple pickings as capsules mature unevenly.",
+  "pestAndDiseaseManagement": "Pests include capsule borers, semi-loopers, jassids, and whiteflies. Diseases include Fusarium wilt, Alternaria blight, root rot, and seedling blight. Integrated pest management involves resistant varieties (where available), crop rotation, field sanitation, and chemical controls if necessary.",
+  "postHarvestHandling": "Harvested capsules are dried further in the sun until they split open or are threshed to release the seeds. Seeds are then cleaned, dried to a moisture content of 6-8%, and stored. For oil extraction, seeds are typically dehulled and then pressed (cold-pressed or solvent extracted). The oil is then filtered and refined. The seed cake requires detoxification if used for animal feed.",
+  "majorProducingCountriesOrRegions": ["India (world's largest producer, accounting for over 80% of global supply)", "China", "Brazil", "Mozambique", "Ethiopia", "Paraguay", "Thailand", "Vietnam"],
+  "marketValueAndGlobalDemand": "Castor oil is a significant industrial oil with diverse applications in lubricants, plastics, resins, cosmetics, pharmaceuticals, and biofuels. Demand is driven by these industrial uses. India dominates the global castor oil market. The price can be volatile based on production in India and global demand."
+}

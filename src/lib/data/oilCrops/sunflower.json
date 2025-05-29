@@ -1,0 +1,72 @@
+{
+  "id": "sunflower",
+  "commonName": "Sunflower",
+  "scientificName": "Helianthus annuus",
+  "image": "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The sunflower is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits (sunflower seeds). The plant has a large flower head (capitulum), typically with bright yellow ray florets at the outside and dark disc florets inside. Sunflowers are known for heliotropism in their early stages.",
+  "origin": "North America (specifically the southwestern United States).",
+  "localNames": ["Surajmukhi (Hindi)", "Himawari (Japanese)", "Girasol (Spanish)", "Tournesol (French)"],
+  "regions": ["Ukraine", "Russia", "Argentina", "China", "Romania", "United States", "Turkey", "Hungary"],
+  "seasons": ["Warm-season annual; typically planted in spring and harvested in late summer or fall."],
+  "nutrition": {
+    "calories": "Sunflower Seeds (dried): 584 kcal per 100g. Sunflower Oil: 884 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: 20.8" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: 20.0 (Fiber 8.6)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: 51.5 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Seeds: 35.17 (234%)" },
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: 1.48 (123%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "Seeds: 1.345 (103%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Seeds: 227 (57%)" }
+    ],
+    "minerals": [
+      { "name": "Selenium", "unit": "µg", "rdi": "Seeds: 53 (96%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: 325 (77%)" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Seeds: 660 (94%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "Seeds: 1.83 (203%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Sunflower seeds are rich in Vitamin E, a powerful antioxidant.",
+    "Good source of healthy fats (monounsaturated and polyunsaturated), protein, and fiber.",
+    "May help lower cholesterol and reduce risk of heart disease.",
+    "Contains selenium, important for thyroid function and DNA synthesis.",
+    "Sunflower oil is a popular cooking oil; high oleic versions are considered healthier."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Sunflower Seed Allergy",
+      "severity": "Mild to Severe",
+      "details": "Allergy to sunflower seeds can occur, causing symptoms like hives, itching, digestive issues, or (rarely) anaphylaxis. Individuals with allergies to other seeds or nuts might be more susceptible."
+    },
+    {
+      "name": "Asteraceae/Compositae Allergy (Pollen)",
+      "severity": "Mild to Moderate",
+      "details": "Pollen from sunflower plants can cause hay fever symptoms in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Sunflowers are grown from seeds. They require full sun and well-drained soil. They are relatively drought-tolerant once established but perform best with adequate moisture, especially during flowering and seed development.",
+  "growthDuration": "Approximately 70-120 days from planting to harvest, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "Deep root system can help improve soil structure and access nutrients from lower soil layers.",
+    "Attracts pollinators like bees.",
+    "Can be grown with fewer inputs than some other major oilseed crops in certain conditions."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of sunflower products is influenced by farming practices (fertilizer use, tillage), oil extraction methods, and transportation. Biodiesel from sunflower oil is also a factor in its overall lifecycle assessment.",
+  "uses": ["oil_production_seeds_for_cooking_oil_biodiesel", "food_seeds_snack_bakery_confectionery_bird_feed", "animal_feed_seed_meal_fodder", "ornamental_plant_cut_flowers"],
+  "originAndDomesticationHistory": "The sunflower (Helianthus annuus) was domesticated in North America, likely in the southwestern region of what is now the United States, as early as 3000 BCE by Native American tribes. It was used for food (seeds, oil), dye, and medicinal purposes. It was introduced to Europe by Spanish explorers in the 16th century and later spread to Russia, where large-scale oil production began.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 20-28°C. Requires a frost-free period. Tolerates high temperatures but extreme heat during flowering can affect pollination and seed set.",
+    "rainfall": "Requires moderate rainfall, around 500-750mm during the growing season. Drought-tolerant to some extent, but yields are significantly reduced by water stress during critical growth stages.",
+    "altitude": "Adaptable to various altitudes, from sea level up to 2500m in suitable climates."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy soils with a neutral pH (6.0-7.5). Can tolerate a range of soil types, including sandy loams and clay loams, but not waterlogged conditions.",
+  "irrigationAndWaterNeeds": "While somewhat drought-tolerant, irrigation is often necessary for optimal yields, especially during bud formation, flowering, and seed development. Water stress during these periods can severely impact yield and oil content.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring after the last frost when soil temperatures have warmed. Planted 2-5 cm deep. Harvesting occurs when the back of the flower head turns yellow-brown and the seeds are mature and hard. Combine harvesters are typically used for large-scale production.",
+  "pestAndDiseaseManagement": "Pests include sunflower moths, seed weevils, stem weevils, and birds. Diseases include Sclerotinia stem rot (white mold), downy mildew, rust, and Phomopsis stem canker. Integrated pest management involves crop rotation, resistant varieties, timely planting, and appropriate chemical controls if necessary.",
+  "postHarvestHandling": "Harvested sunflower heads are threshed to separate the seeds. Seeds are then cleaned and dried to a moisture content of 8-10% for safe storage and oil extraction. Seeds for confectionery use require careful handling to maintain quality.",
+  "majorProducingCountriesOrRegions": ["Ukraine", "Russia (leading producers)", "European Union (Romania, Bulgaria, Hungary, France, Spain)", "Argentina", "Turkey", "China", "United States (North Dakota, South Dakota, Minnesota)"],
+  "marketValueAndGlobalDemand": "Sunflower seeds and sunflower oil are major agricultural commodities with significant global demand. Sunflower oil is one of the most widely consumed vegetable oils. Demand is driven by the food industry (cooking oil, margarine, snacks) and increasingly for biodiesel. Confectionery sunflower seeds also have a stable market."
+}

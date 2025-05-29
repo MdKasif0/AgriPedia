@@ -1,0 +1,66 @@
+{
+  "id": "rosemary",
+  "commonName": "Rosemary",
+  "scientificName": "Salvia rosmarinus (syn. Rosmarinus officinalis)",
+  "image": "https://images.unsplash.com/photo-1594024448060-9119f998703e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Rosemary is a fragrant evergreen herb native to the Mediterranean region. It has needle-like leaves and woody stems, and produces small blue, white, pink, or purple flowers. Rosemary is prized for its aromatic flavor, which is used in a variety of culinary dishes, and for its essential oil.",
+  "origin": "Mediterranean region.",
+  "localNames": ["Rusmari (Hindi - not common)", "Rōzumari (Japanese)", "Romero (Spanish)", "Romarin (French)"],
+  "regions": ["Mediterranean countries (Spain, France, Italy, Tunisia, Morocco)", "California (USA)", "Mexico", "England"],
+  "seasons": ["Perennial evergreen; can be harvested year-round in suitable climates. Growth is most active in spring and summer."],
+  "nutrition": {
+    "calories": "131 kcal per 100g (fresh)",
+    "macronutrients": [
+      { "name": "Protein", "value": 3.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 20.7, "unit": "g" },
+      { "name": "Fat", "value": 5.9, "unit": "g" },
+      { "name": "Fiber", "value": 14.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 21.8, "unit": "mg", "rdi": "24%" },
+      { "name": "Vitamin A", "value": 146, "unit": "µg", "rdi": "18%" },
+      { "name": "Folate (B9)", "value": 109, "unit": "µg", "rdi": "27%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 6.65, "unit": "mg", "rdi": "37%" },
+      { "name": "Calcium", "value": 317, "unit": "mg", "rdi": "32%" },
+      { "name": "Manganese", "value": 0.96, "unit": "mg", "rdi": "42%" },
+      { "name": "Magnesium", "value": 91, "unit": "mg", "rdi": "22%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, such as carnosic acid and rosmarinic acid, which may have anti-inflammatory and neuroprotective effects.",
+    "May improve memory and concentration (traditional use and some studies).",
+    "Can stimulate hair growth (topical application of rosemary oil).",
+    "Traditionally used to aid digestion and improve circulation."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lamiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to rosemary is uncommon, but individuals sensitive to other Lamiaceae family plants (mint, basil, oregano) might experience cross-reactivity. Symptoms can include skin irritation or contact dermatitis."
+    }
+  ],
+  "cultivationProcess": "Rosemary is typically grown from cuttings, as seeds can be difficult to germinate. It requires well-drained soil and full sun. It is drought-tolerant once established and thrives in slightly alkaline conditions.",
+  "growthDuration": "Perennial. Establishes over the first year, with more vigorous growth and harvesting potential in subsequent years.",
+  "sustainabilityTips": [
+    "Drought-tolerant, making it suitable for xeriscaping and water-wise gardening.",
+    "Can be grown in pots or as a hedge.",
+    "Attracts bees and other pollinators."
+  ],
+  "carbonFootprintInfo": "Locally grown rosemary has a low carbon footprint. Commercial production for essential oils or dried herbs involves energy for distillation, drying, processing, and transport.",
+  "uses": ["culinary_herb_fresh_dried_meats_soups_stews_breads", "essential_oil_production_perfumery_aromatherapy", "traditional_medicine", "ornamental_plant"],
+  "originAndDomesticationHistory": "Rosemary (Salvia rosmarinus) is native to the Mediterranean basin. It has been used for thousands of years by ancient Egyptians, Greeks, and Romans for culinary, medicinal, and ceremonial purposes. Its name is derived from Latin 'ros marinus' meaning 'dew of the sea'.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm, sunny climates, 18-28°C. Tolerates heat well. Some varieties are cold-hardy down to -10°C or lower if well-drained and protected.",
+    "rainfall": "Drought-tolerant. Prefers relatively dry conditions. Well-distributed rainfall of 300-600mm is adequate. Avoid excessive humidity.",
+    "altitude": "Commonly found in coastal regions and hillsides of the Mediterranean, adaptable to various altitudes in suitable climates."
+  },
+  "soilPreferences": "Requires light, very well-drained soil. Sandy or loamy soils with good aeration are ideal. Prefers a neutral to alkaline pH (6.0-7.5). Does not tolerate waterlogged or heavy clay soils.",
+  "irrigationAndWaterNeeds": "Water young plants regularly until established. Once established, rosemary is very drought-tolerant. Water deeply but infrequently, allowing the soil to dry out completely between waterings. Overwatering is a common issue.",
+  "plantingAndHarvestCycles": "Best propagated from softwood or semi-hardwood cuttings in spring or summer. Plant in full sun. Harvest sprigs as needed throughout the year once the plant is established. Prune after flowering to maintain shape and encourage bushy growth.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Spider mites and aphids can sometimes be an issue, especially in stressed plants. Root rot (due to overwatering or poor drainage) and powdery mildew (in humid conditions with poor air circulation) are the main disease concerns. Ensuring good drainage and air circulation is key.",
+  "postHarvestHandling": "Fresh rosemary sprigs can be stored in the refrigerator for several weeks, wrapped in a damp paper towel or with stems in water. To dry, hang bunches in a warm, dark, airy place. Once dry, strip leaves from stems and store in an airtight container. Rosemary retains its flavor well when dried.",
+  "majorProducingCountriesOrRegions": ["Spain", "France", "Italy", "Tunisia", "Morocco", "Turkey", "United States (California)", "Mexico"],
+  "marketValueAndGlobalDemand": "Rosemary is a popular herb with significant global demand for culinary use (fresh and dried) and for its essential oil. The food and beverage industry, cosmetics, and aromatherapy sectors are major consumers. Demand for natural antioxidants from rosemary is also increasing."
+}

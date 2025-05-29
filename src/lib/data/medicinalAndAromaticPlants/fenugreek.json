@@ -1,0 +1,68 @@
+{
+  "id": "fenugreek",
+  "commonName": "Fenugreek",
+  "scientificName": "Trigonella foenum-graecum",
+  "image": "https://images.unsplash.com/photo-1598030304034-03f102026302?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Fenugreek is an annual plant in the family Fabaceae, with leaves consisting of three small obovate to oblong leaflets. It is cultivated worldwide as a semiarid crop. Its seeds and leaves are common ingredients in dishes from the Indian subcontinent, and it's also used in traditional medicine.",
+  "origin": "Near East or Mediterranean region.",
+  "localNames": ["Methi (Hindi - for both seeds and leaves)", "Mente (Kannada)", "Venthiyam (Tamil)", "Fenugurīku (Japanese)"],
+  "regions": ["India (largest producer)", "Afghanistan", "Pakistan", "Iran", "Nepal", "Bangladesh", "Egypt", "Morocco", "Ethiopia", "Spain"],
+  "seasons": ["Cool-season crop; typically sown in autumn/winter (Rabi season in India) and harvested in late winter/spring."],
+  "nutrition": {
+    "calories": "Seeds: 323 kcal per 100g. Leaves (fresh): 49 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: 23, Leaves: 4.4" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: 58.4 (Fiber 24.6), Leaves: 6 (Fiber 1.1)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: 6.4, Leaves: 0.9" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Leaves: Significant amounts" },
+      { "name": "Vitamin A", "unit": "µg", "rdi": "Leaves: Significant as beta-carotene" },
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: 0.322 (27%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "Seeds: 0.600 (46%)" }
+    ],
+    "minerals": [
+      { "name": "Iron", "unit": "mg", "rdi": "Seeds: 33.53 (186%), Leaves: 1.93 (11%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: 1.228 (53%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: 191 (48%)" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Leaves: High amounts" }
+    ]
+  },
+  "healthBenefits": [
+    "Fenugreek seeds may help lower blood sugar levels in people with diabetes.",
+    "Can increase milk production in breastfeeding mothers (galactagogue).",
+    "May help reduce cholesterol levels.",
+    "Has anti-inflammatory properties.",
+    "Fenugreek leaves are rich in vitamins and minerals.",
+    "Traditionally used to aid digestion and improve appetite."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Fabaceae Allergy (Legume family)",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to other legumes like peanuts, chickpeas, or soybeans may experience cross-reactivity with fenugreek. Symptoms can include skin rashes, asthma, or digestive upset. May cause maple syrup odor in urine/sweat with high intake. Can interact with blood thinners and diabetes medications."
+    }
+  ],
+  "cultivationProcess": "Fenugreek is grown from seeds. It is a relatively low-maintenance crop that prefers well-drained soil and sunny conditions. The leaves can be harvested multiple times, and the seeds are harvested when pods are mature and dry.",
+  "growthDuration": "Short-duration crop. Leaves ready for first picking in 20-30 days. Seeds mature in 90-140 days.",
+  "sustainabilityTips": [
+    "As a legume, it fixes atmospheric nitrogen, improving soil fertility.",
+    "Can be grown as a short-duration catch crop or cover crop.",
+    "Requires relatively low inputs compared to some other crops."
+  ],
+  "carbonFootprintInfo": "Fenugreek generally has a low carbon footprint due to its nitrogen-fixing ability and adaptability. Processing (drying, grinding of seeds) and transportation contribute to its overall footprint.",
+  "uses": ["culinary_spice_seeds_whole_ground_curry_powders_spice_blends", "culinary_herb_fresh_dried_leaves_methi_sabzi_flavoring", "traditional_medicine_digestive_aid_galactagogue_blood_sugar_regulation", "animal_feed_fodder", "flavoring_agent_maple_syrup_substitute_sotolon_compound"],
+  "originAndDomesticationHistory": "Fenugreek (Trigonella foenum-graecum) is believed to have originated in the Near East or Mediterranean region. It has been cultivated for thousands of years, with evidence of its use found in ancient Egyptian tombs (around 4000 BCE). It was used by ancient Greeks and Romans for food, medicine, and animal fodder. It spread early to India, where it became an important spice and medicinal herb in Ayurveda.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 10-27°C. Tolerates light frost but sensitive to prolonged freezing. Prefers sunny conditions.",
+    "rainfall": "Requires moderate rainfall (300-500mm). Can be grown as a dryland crop in some areas with good soil moisture retention. Tolerates some drought but yields better with consistent moisture.",
+    "altitude": "Adaptable to various altitudes, commonly grown in plains and foothill regions."
+  },
+  "soilPreferences": "Prefers well-drained loamy or sandy loam soils with a pH of 5.5-8.0. Can tolerate slightly alkaline soils. Good organic matter content is beneficial.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed during the cool season. If irrigation is provided, it's usually 2-3 times during critical growth stages like branching, flowering, and pod development, especially if rainfall is scarce.",
+  "plantingAndHarvestCycles": "Seeds are sown directly in the field in autumn or early winter. For leaves (methi), plants can be harvested multiple times by cutting young shoots. For seeds, plants are allowed to mature until pods turn yellowish-brown and dry. Plants are then uprooted or cut, dried further, and threshed to extract seeds.",
+  "pestAndDiseaseManagement": "Aphids are a common pest. Root rot can occur in poorly drained soils. Powdery mildew and downy mildew can affect the crop in humid conditions. Leaf spot diseases may also occur. Management includes crop rotation, resistant varieties (if available), and need-based application of organic or chemical controls.",
+  "postHarvestHandling": "Fresh leaves are used as a vegetable. For dried leaves (kasuri methi), leaves are dried in shade and stored in airtight containers. Seeds are cleaned, dried to about 10% moisture content, and stored in cool, dry conditions. They are often roasted lightly before grinding to enhance flavor.",
+  "majorProducingCountriesOrRegions": ["India (Rajasthan, Gujarat, Madhya Pradesh are key states - largest producer, consumer, exporter)", "Afghanistan", "Pakistan", "Iran", "Nepal", "Egypt", "Morocco", "Ethiopia", "Bangladesh", "Spain"],
+  "marketValueAndGlobalDemand": "Fenugreek seeds and leaves are important commodities, especially in South Asian, Middle Eastern, and North African cuisines. India dominates global production and trade. Demand is also growing for fenugreek extracts in the dietary supplement market for its purported health benefits (blood sugar control, lactation support). It's also used in spice blends and as a flavoring agent."
+}

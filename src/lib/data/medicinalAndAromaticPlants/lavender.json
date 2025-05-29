@@ -1,0 +1,63 @@
+{
+  "id": "lavender",
+  "commonName": "Lavender",
+  "scientificName": "Lavandula angustifolia (syn. Lavandula officinalis)",
+  "image": "https://images.unsplash.com/photo-1567904799628-8851120702ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Lavender is a flowering plant in the mint family, Lamiaceae, native to the Old World. It is prized for its fragrant purple flowers and aromatic foliage. Lavender is cultivated for its essential oil, which is used in perfumery, aromatherapy, and for medicinal purposes, as well as for ornamental planting.",
+  "origin": "Mediterranean region, Middle East, and India.",
+  "localNames": ["Lavanda (Spanish/Italian)", "Lavande (French)", "Rabendā (Japanese)"],
+  "regions": ["France (Provence)", "Bulgaria", "Spain", "Italy", "United Kingdom", "United States (Washington, Oregon)", "Australia", "China"],
+  "seasons": ["Perennial shrub; flowers typically bloom from late spring to late summer. Harvested during flowering season."],
+  "nutrition": {
+    "calories": "Primarily used for essential oil and aroma, not significant for dietary macronutrients. Dried flowers for tea are very low in calories.",
+    "macronutrients": [
+      { "name": "Protein", "value": "Trace in tea", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Trace in tea", "unit": "g" },
+      { "name": "Fat", "value": "Trace in tea", "unit": "g" },
+      { "name": "Fiber", "value": "Trace in tea", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": "Small amounts in leaves/flowers", "unit": "IU", "rdi": "" },
+      { "name": "Vitamin C", "value": "Small amounts in leaves/flowers", "unit": "mg", "rdi": "" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": "Small amounts in leaves/flowers", "unit": "mg", "rdi": "" },
+      { "name": "Iron", "value": "Small amounts in leaves/flowers", "unit": "mg", "rdi": "" }
+    ]
+  },
+  "healthBenefits": [
+    "Aromatherapy uses lavender oil for its calming and relaxing properties, potentially aiding sleep and reducing anxiety.",
+    "May have antiseptic and anti-inflammatory properties.",
+    "Used topically, diluted lavender oil may help heal minor burns and bug bites.",
+    "Lavender tea is consumed for its soothing effects."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lavender Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Contact dermatitis (skin rash or irritation) can occur in sensitive individuals, especially with undiluted essential oil. Ingestion of large amounts of lavender oil can be toxic. Some evidence suggests potential for hormonal effects (gynecomastia in prepubertal boys) with repeated topical use of lavender oil products, though this is debated."
+    }
+  ],
+  "cultivationProcess": "Lavender is grown from seeds or cuttings. It thrives in well-drained soil and full sun. It is drought-tolerant once established and prefers slightly alkaline conditions. Pruning after flowering helps maintain shape and encourage more blooms.",
+  "growthDuration": "Perennial shrub. Can be harvested starting from the second year after planting. Typically lives for 10-15 years, with peak oil production around 3-5 years.",
+  "sustainabilityTips": [
+    "Drought-tolerant, suitable for xeriscaping.",
+    "Attracts bees, butterflies, and other pollinators.",
+    "Can be grown organically with minimal inputs in suitable climates."
+  ],
+  "carbonFootprintInfo": "Locally grown lavender has a low carbon footprint. Commercial production for essential oil involves energy for steam distillation, processing, and transportation. Dried flowers also require energy for drying if not sun-dried.",
+  "uses": ["essential_oil_production_perfumery_aromatherapy_cosmetics_soaps", "culinary_herb_flowers_leaves_in_teas_baked_goods_herbes_de_provence", "ornamental_plant_gardens_landscaping", "traditional_medicine_calming_agent_sleep_aid", "potpourri_sachets"],
+  "originAndDomesticationHistory": "Lavender (Lavandula angustifolia and other species) originated in the Mediterranean region, Middle East, and India. It has been used for over 2,500 years. Ancient Egyptians used it for mummification and perfume. Greeks and Romans used it for bathing, scenting rooms, and medicinal purposes. Its name is derived from the Latin 'lavare', meaning 'to wash'.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm, sunny climates. Optimal temperatures are 20-30°C during the growing season. Tolerates heat and some cold, but severe frost can damage plants, especially young ones.",
+    "rainfall": "Drought-tolerant once established. Prefers relatively dry conditions. Well-distributed rainfall of 300-600mm is adequate. Good drainage is crucial.",
+    "altitude": "Adaptable to various altitudes, typically grown from sea level up to 1800m in suitable climates."
+  },
+  "soilPreferences": "Requires very well-drained soil, preferably light, sandy, or gravelly. Tolerates poor soils. Prefers a neutral to slightly alkaline pH (6.5-8.0). Does not tolerate waterlogged or acidic soils.",
+  "irrigationAndWaterNeeds": "Water young plants regularly until established. Mature plants are very drought-tolerant. Water deeply but infrequently, allowing the soil to dry out completely between waterings. Overwatering can lead to root rot.",
+  "plantingAndHarvestCycles": "Propagated from seeds (slower) or cuttings (more common) in spring or fall. Plant in full sun. Flowers are harvested when they are in full bloom but before they start to fade, typically in summer. Stems are cut, and flowers are then dried or distilled for oil.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Root rot is the most common issue, caused by overwatering or poor drainage. Fungal diseases like leaf spot can occur in humid conditions. Aphids or spittlebugs may occasionally appear. Good air circulation and proper soil conditions are key preventive measures.",
+  "postHarvestHandling": "Fresh lavender flowers can be used directly or tied in bunches and hung upside down in a cool, dark, airy place to dry. Dried flowers can be stripped from stems and stored in airtight containers. For essential oil, harvested flowers and stems are typically steam distilled shortly after harvest.",
+  "majorProducingCountriesOrRegions": ["Bulgaria (leading producer of lavender oil)", "France (Provence region)", "China", "Spain", "Italy", "United Kingdom", "Australia", "United States"],
+  "marketValueAndGlobalDemand": "Lavender is highly valued for its essential oil, which has a large global market in the fragrance, cosmetics, aromatherapy, and food/beverage industries. Dried lavender flowers also have a significant market for culinary use, potpourri, and herbal products. Demand for high-quality lavender oil and natural lavender products is strong."
+}

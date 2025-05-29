@@ -1,0 +1,72 @@
+{
+  "id": "black_gram",
+  "commonName": "Black Gram (Urad Dal)",
+  "scientificName": "Vigna mungo",
+  "image": "https://images.unsplash.com/photo-1595460004041-5f35132857a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Black gram, also known as urad dal, is a small, black lentil-like legume. It is primarily grown in the Indian subcontinent. When hulled and split, it is known as white lentil (urad dal). It is highly valued for its protein content and is a key ingredient in dishes like dal makhani, idli, and dosa.",
+  "origin": "Indian subcontinent.",
+  "localNames": ["Urad Dal (Hindi)", "Minumulu (Telugu)", "Ulundu Paruppu (Tamil)", "Masha (Sanskrit)"],
+  "regions": ["India", "Pakistan", "Bangladesh", "Myanmar", "Nepal"],
+  "seasons": ["Warm-season crop; typically planted during the Kharif (monsoon) season in India."],
+  "nutrition": {
+    "calories": "341 kcal per 100g (raw)",
+    "macronutrients": [
+      { "name": "Protein", "value": 25.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 58.9, "unit": "g" },
+      { "name": "Fat", "value": 1.6, "unit": "g" },
+      { "name": "Fiber", "value": 18.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 216, "unit": "µg", "rdi": "54%" },
+      { "name": "Thiamin (B1)", "value": 0.273, "unit": "mg", "rdi": "23%" },
+      { "name": "Niacin (B3)", "value": 1.447, "unit": "mg", "rdi": "9%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 7.57, "unit": "mg", "rdi": "42%" },
+      { "name": "Phosphorus", "value": 379, "unit": "mg", "rdi": "54%" },
+      { "name": "Magnesium", "value": 267, "unit": "mg", "rdi": "64%" },
+      { "name": "Potassium", "value": 983, "unit": "mg", "rdi": "21%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of plant-based protein and dietary fiber.",
+    "Rich in iron, folic acid, magnesium, and potassium.",
+    "Aids in digestion and can help prevent constipation.",
+    "Believed to improve skin and hair health in traditional medicine.",
+    "May help boost energy levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies",
+      "details": "Like other legumes, black gram can cause allergic reactions in sensitive individuals, though it's not as common as some other legume allergies."
+    },
+    {
+      "name": "Digestive Issues",
+      "severity": "Mild",
+      "details": "Can cause gas and bloating in some people due to its high fiber content if not consumed regularly or if not properly prepared (e.g., soaking)."
+    }
+  ],
+  "cultivationProcess": "Black gram cultivation involves preparing a well-drained seedbed, sowing seeds, minimal fertilization (as it's a nitrogen-fixer), weed management, and harvesting when pods turn blackish and dry.",
+  "growthDuration": "Approximately 70-90 days, making it a short-duration crop.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing capabilities improve soil fertility, reducing the need for chemical fertilizers.",
+    "Suitable for intercropping and crop rotation systems.",
+    "Drought-resistant varieties are available."
+  ],
+  "carbonFootprintInfo": "Black gram generally has a low carbon footprint due to its nitrogen-fixing ability and relatively low input requirements. It is considered a sustainable crop.",
+  "uses": ["culinary_dal_idli_dosa_vada", "ayurvedic_medicine", "fodder_plant_residue"],
+  "originAndDomesticationHistory": "Black gram (Vigna mungo) is believed to have been domesticated in India from its wild progenitor Vigna mungo var. silvestris. Archaeological evidence suggests its cultivation in India for several thousand years. It is an important pulse crop deeply integrated into Indian cuisine and agriculture.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop, preferring temperatures between 25-35°C. Requires warm and humid conditions during initial growth and dry conditions during maturation.",
+    "rainfall": "600-900mm annually. Tolerates drought to some extent but sensitive to waterlogging.",
+    "altitude": "Mainly cultivated in plains and low-lying areas, but can be grown up to 1800m."
+  },
+  "soilPreferences": "Prefers well-drained loamy or clay-loam soils with a neutral pH (6.5-7.5). Can grow in black cotton soils but requires good drainage.",
+  "irrigationAndWaterNeeds": "Often grown as a rain-fed crop during the monsoon season. If irrigation is provided, it's usually at critical stages like flowering and pod formation, especially if rainfall is insufficient.",
+  "plantingAndHarvestCycles": "Typically sown at the onset of the monsoon (June-July in India). Seeds are sown 2-3 cm deep. Pods mature unevenly, and harvesting is done when most pods are mature and turn black. Plants are usually uprooted or cut, dried, and then threshed.",
+  "pestAndDiseaseManagement": "Common pests include pod borers, aphids, jassids, and whiteflies. Diseases like yellow mosaic virus, powdery mildew, and leaf spot can occur. Integrated pest management strategies include resistant varieties, seed treatment, timely sowing, and need-based application of pesticides/fungicides.",
+  "postHarvestHandling": "Harvested plants are dried in the sun for a few days, then threshed by beating with sticks or by bullocks/tractors. Seeds are cleaned, further dried to about 10-12% moisture content, and stored in gunny bags or bins.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Myanmar", "Pakistan", "Bangladesh", "Nepal", "Thailand"],
+  "marketValueAndGlobalDemand": "Black gram is a highly valued pulse in India and other South Asian countries, forming an essential part of the diet. Demand is consistently high. It is traded locally and internationally, primarily within Asia. Prices are influenced by domestic production and weather conditions."
+}

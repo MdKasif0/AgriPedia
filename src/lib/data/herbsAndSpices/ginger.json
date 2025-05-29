@@ -1,0 +1,67 @@
+{
+  "id": "ginger",
+  "commonName": "Ginger",
+  "scientificName": "Zingiber officinale",
+  "image": "https://images.unsplash.com/photo-1599940778173-024d3c303a04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Ginger is a flowering plant whose rhizome, ginger root or ginger, is widely used as a spice and a folk medicine. It is a herbaceous perennial which grows annual pseudostems (false stems made of the rolled bases of leaves) about one meter tall bearing narrow leaf blades.",
+  "origin": "Maritime Southeast Asia (likely ancient Austronesia).",
+  "localNames": ["Adrak (Hindi)", "Shoga (Japanese)", "Jengibre (Spanish)", "Gingembre (French)"],
+  "regions": ["India", "China", "Nigeria", "Nepal", "Thailand", "Indonesia", "Bangladesh"],
+  "seasons": ["Tropical perennial; typically planted at the beginning of the rainy season and harvested 8-10 months later when leaves turn yellow and dry."],
+  "nutrition": {
+    "calories": "80 kcal per 100g (fresh rhizome)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 17.8, "unit": "g" },
+      { "name": "Fat", "value": 0.8, "unit": "g" },
+      { "name": "Fiber", "value": 2.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 5.0, "unit": "mg", "rdi": "6%" },
+      { "name": "Niacin (B3)", "value": 0.75, "unit": "mg", "rdi": "5%" },
+      { "name": "Vitamin B6", "value": 0.16, "unit": "mg", "rdi": "12%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 415, "unit": "mg", "rdi": "9%" },
+      { "name": "Manganese", "value": 0.229, "unit": "mg", "rdi": "10%" },
+      { "name": "Magnesium", "value": 43, "unit": "mg", "rdi": "10%" },
+      { "name": "Copper", "value": 0.226, "unit": "mg", "rdi": "25%" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains gingerol, a substance with powerful anti-inflammatory and antioxidant effects.",
+    "Widely used to treat nausea, including morning sickness and motion sickness.",
+    "May help reduce muscle pain and soreness.",
+    "Can help lower blood sugar levels and improve heart disease risk factors.",
+    "Aids digestion and can help treat chronic indigestion."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ginger Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to ginger is rare but can cause mild discomfort like heartburn, diarrhea, or mouth irritation in some individuals, especially with high doses. Contact dermatitis can occur from handling fresh ginger."
+    }
+  ],
+  "cultivationProcess": "Ginger is cultivated by planting rhizome pieces (seed pieces or setts). It requires warm, humid conditions and well-drained, rich soil. Mulching is often practiced to conserve moisture and control weeds.",
+  "growthDuration": "Approximately 8-10 months from planting to harvest, when the leaves begin to yellow and die down.",
+  "sustainabilityTips": [
+    "Can be grown in agroforestry systems or intercropped with other plants.",
+    "Organic cultivation methods are common and help maintain soil health.",
+    "Requires significant rainfall or irrigation, so water management is important."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of ginger depends on cultivation practices (e.g., fertilizer use), processing (drying, grinding), and transportation distances. Locally sourced fresh ginger has a lower footprint.",
+  "uses": ["culinary_spice_fresh_dried_powdered_pickled_candied_beverages_tea", "traditional_medicine_nausea_cold_flu_inflammation", "essential_oil_production"],
+  "originAndDomesticationHistory": "Ginger (Zingiber officinale) originated in Maritime Southeast Asia and was likely domesticated by Austronesian peoples. It was spread through the Austronesian expansion into the Pacific Islands and later traded with India, China, and the Middle East. It has been used for thousands of years as a spice and medicine. It was one of the first spices exported from Asia to Europe via the spice trade.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical crop. Prefers warm, humid conditions with temperatures between 20-30°C. Cannot tolerate frost.",
+    "rainfall": "Requires high rainfall, typically 1500-2500mm annually, well-distributed throughout the growing season. If rainfall is insufficient, irrigation is necessary.",
+    "altitude": "Can be grown from sea level up to 1500m in tropical regions."
+  },
+  "soilPreferences": "Prefers rich, loose, well-drained loamy soils with high organic matter content. Optimal pH is slightly acidic to neutral (5.5-6.5). Good drainage is crucial to prevent rhizome rot.",
+  "irrigationAndWaterNeeds": "Requires consistent and abundant moisture throughout the growing period. Irrigation is essential in areas with insufficient or uneven rainfall. However, waterlogging must be avoided.",
+  "plantingAndHarvestCycles": "Propagated from rhizome pieces (setts) with at least one or two buds. Planted at the beginning of the rainy season or under irrigation. Rhizomes are harvested when the leaves turn yellow and start to dry, typically 8-10 months after planting. Young ginger (green ginger) can be harvested earlier (5-6 months) for specific culinary uses.",
+  "pestAndDiseaseManagement": "Major pests include shoot borers, rhizome scale, and nematodes. Diseases include rhizome rot (caused by Pythium, Fusarium, etc.), bacterial wilt, and leaf spot. Management involves using disease-free seed rhizomes, proper soil drainage, crop rotation, solarization of soil, and biological control agents. Chemical control is used when necessary.",
+  "postHarvestHandling": "Rhizomes are carefully dug up, cleaned to remove soil and roots, and then cured (dried slightly in the sun or shade for a few days) to improve skin quality and shelf life. Ginger can be sold fresh or processed into dried ginger, powder, oleoresin, or essential oil. Proper storage in cool, dry, well-ventilated conditions is important.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Nigeria", "China", "Indonesia", "Nepal", "Thailand", "Bangladesh", "Philippines"],
+  "marketValueAndGlobalDemand": "Ginger is a highly valued spice and medicinal plant globally. Demand is strong for fresh ginger, dried ginger, powdered ginger, and ginger oil/oleoresin. It's a key ingredient in Asian cuisines and is increasingly popular in Western food and beverage industries. The market for ginger-based health products is also growing."
+}

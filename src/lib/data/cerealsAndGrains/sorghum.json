@@ -1,0 +1,59 @@
+{
+  "id": "sorghum",
+  "commonName": "Sorghum (Jowar)",
+  "scientificName": "Sorghum bicolor",
+  "image": "https://images.unsplash.com/photo-1546388374-b7674158f153?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Sorghum is a versatile cereal grain that is a staple food in many parts of Africa and Asia. It is drought-tolerant and can be grown in arid and semi-arid regions where other cereals may fail. It is used for food (as grain and sorghum syrup or 'molasses'), animal fodder, and the production of alcoholic beverages and biofuels.",
+  "origin": "Northeastern Africa (likely Ethiopia or Sudan).",
+  "localNames": ["Jowar (Hindi)", "Morokoshi (Japanese)", "Sorgo (Spanish)", "Sorgho (French)"],
+  "regions": ["United States", "Nigeria", "India", "Mexico", "Sudan", "Ethiopia", "Australia"],
+  "seasons": ["Typically a warm-season crop, planted in late spring or early summer and harvested in the fall."],
+  "nutrition": {
+    "calories": "329 kcal per 100g (raw grain)",
+    "macronutrients": [
+      { "name": "Protein", "value": 10.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 72.1, "unit": "g" },
+      { "name": "Fat", "value": 3.5, "unit": "g" },
+      { "name": "Fiber", "value": 6.7, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 3.7, "unit": "mg", "rdi": "25%" },
+      { "name": "Vitamin B6", "value": 0.44, "unit": "mg", "rdi": "26%" },
+      { "name": "Thiamin (B1)", "value": 0.35, "unit": "mg", "rdi": "29%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.6, "unit": "mg", "rdi": "70%" },
+      { "name": "Phosphorus", "value": 289, "unit": "mg", "rdi": "41%" },
+      { "name": "Magnesium", "value": 165, "unit": "mg", "rdi": "39%" }
+    ]
+  },
+  "healthBenefits": [
+    "Naturally gluten-free, making it suitable for individuals with celiac disease.",
+    "Rich in antioxidants, which can help combat oxidative stress.",
+    "Good source of dietary fiber, aiding in digestion and blood sugar regulation.",
+    "Some varieties are rich in tannins, which have potential health benefits."
+  ],
+  "potentialAllergies": [],
+  "cultivationProcess": "Sorghum cultivation involves preparing a warm seedbed, planting seeds once soil temperatures are consistently above 15°C (60°F), managing weeds (especially in early stages), providing adequate nutrients, and harvesting when grains reach physiological maturity.",
+  "growthDuration": "Approximately 90-150 days, depending on the variety, climate, and planting date.",
+  "sustainabilityTips": [
+    "Its drought tolerance makes it a sustainable choice in water-scarce regions.",
+    "Can be grown with fewer inputs (fertilizer, pesticides) than some other major cereals.",
+    "No-till farming and crop rotation can enhance its sustainability."
+  ],
+  "carbonFootprintInfo": "Sorghum generally has a lower carbon footprint compared to other grains like maize, particularly due to its lower nitrogen fertilizer requirements and water use efficiency.",
+  "uses": ["culinary", "animal_feed", "biofuel", "beverages_alcoholic", "building_material"],
+  "originAndDomesticationHistory": "Sorghum bicolor was domesticated in northeastern Africa (likely Ethiopia or Sudan) over 5,000 years ago from its wild ancestor Sorghum arundinaceum. It spread throughout Africa and then to India and China along trade routes. It reached the Americas via the slave trade in the 17th century. Different types (grain, sweet, forage, broom) were developed through selection.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop, requiring average temperatures of 25-30°C for optimal growth. Very drought-tolerant but sensitive to frost.",
+    "rainfall": "Can grow with as little as 300mm but performs best with 450-650mm during the growing season. Tolerates waterlogging better than maize.",
+    "altitude": "Can be grown from sea level up to 2500m in tropical and subtropical regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, including heavy clays and light sands. Tolerates soil pH from 5.0 to 8.5. Can withstand some salinity and poor soil fertility better than many other cereals.",
+  "irrigationAndWaterNeeds": "Highly drought-tolerant and often grown rain-fed. However, supplemental irrigation during critical growth stages (panicle initiation, flowering, grain fill) can significantly increase yields in drier areas.",
+  "plantingAndHarvestCycles": "Planted when soil temperatures are consistently warm (above 15-18°C). Seeds are sown 2-5 cm deep. Harvested when grains are mature and hard, typically 3-5 months after planting. Combine harvesters are used for large-scale production.",
+  "pestAndDiseaseManagement": "Common pests include sorghum midge, aphids, shoot fly, and stem borers. Diseases include anthracnose, grain mold, downy mildew, and charcoal rot. Integrated pest management involves resistant varieties, cultural practices (e.g., planting time adjustment), biological control, and chemical control as a last resort.",
+  "postHarvestHandling": "Grains are threshed, cleaned, and dried to a moisture content of 12-13% for safe storage. Stored in cool, dry, and well-ventilated conditions to prevent mold and insect infestation. Forage sorghum is often ensiled.",
+  "majorProducingCountriesOrRegions": ["United States (Kansas, Texas)", "Nigeria", "Sudan", "Mexico", "Ethiopia", "India", "Argentina", "Brazil", "China", "Australia"],
+  "marketValueAndGlobalDemand": "Sorghum is a vital food source in many parts of Africa and Asia. Globally, a significant portion is used for animal feed. There is growing interest in sorghum for biofuel production (ethanol) and as a gluten-free grain for human consumption. Its drought tolerance makes it increasingly important in the context of climate change."
+}
