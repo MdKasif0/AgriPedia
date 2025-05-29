@@ -165,5 +165,31 @@
         "Uncover and cook for a few more minutes if there's excess moisture. Serve hot."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (leaves cooked as a vegetable in dishes like Sarson ka Saag, stir-fries, soups, stews)",
+    "Spice (seeds of some mustard varieties used to make mustard condiment or oil)",
+    "Cover crop",
+    "Biofumigant (some varieties)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 10-20°C. Can tolerate light frost, which can improve flavor. Hot weather causes bolting and bitterness.",
+    "rainfall": "Prefers consistent moisture, around 300-500 mm during growing season. Avoids drought stress.",
+    "altitude": "Can be grown at various altitudes in temperate and subtropical regions."
+  },
+  "soilPreferences": "Well-drained, fertile, loamy soils rich in organic matter. pH 6.0-7.5. Requires good nutrient supply, especially nitrogen.",
+  "irrigationWaterNeeds": "Requires regular watering to keep the soil consistently moist, especially during active growth. Water stress can lead to premature bolting and affect leaf quality.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly in early spring for a summer crop or in late summer/early autumn for a fall/winter crop. Thin seedlings if necessary. Leaves can be harvested multiple times (cut-and-come-again method) starting from 30-50 days after sowing, or the entire plant can be harvested. Seeds (for spice/oil varieties) are harvested when pods are mature and dry.",
+  "pestDiseaseManagement": "Pests: Aphids, flea beetles, cabbage worms (diamondback moth larvae, cabbage loopers). Diseases: Downy mildew, Alternaria leaf spot, white rust. Management includes crop rotation, row covers, proper spacing for air circulation, and organic or chemical controls when necessary.",
+  "postHarvestHandling": "Leaves are perishable. Harvest in the cool of the morning. Store in perforated plastic bags in the refrigerator for a few days. For seeds, harvested plants are dried, then threshed and cleaned.",
+  "majorProducingCountries": [
+    "India",
+    "China",
+    "Nepal",
+    "Pakistan",
+    "Bangladesh",
+    "United States (Southern states for greens, Northern plains for seed)",
+    "Canada (for mustard seed)"
+  ],
+  "marketValueGlobalDemand": "Mustard greens are popular in regional cuisines (South Asian, Southern US, Chinese). Mustard seeds have a very high global demand as a spice and for oil production. Prices for greens are seasonal; seed prices are commodity-driven."
 }

@@ -12,6 +12,7 @@ import { Apple, ListFilter, Heart, Search, Info, AlertTriangle, Loader2, ScanLin
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import InfoBanner from '@/components/home/InfoBanner';
+import ProduceCardSkeleton from '@/components/produce/ProduceCardSkeleton'; // Import Skeleton
 import { fetchDynamicAgriTip } from '@/app/actions';
 import ClientOnly from '@/components/ClientOnly';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -345,9 +346,15 @@ export default function HomePage() {
             <ListFilter className="text-primary" />
             {(searchQuery || selectedRegion !== 'all' || selectedSeason !== 'all') ? 'Filtered Results' : 'All Produce'}
           </h2>
-          <span className="text-sm text-muted-foreground">{searchResults.length} item(s)</span>
+          <span className="text-sm text-muted-foreground">{searchResults.length > 0 || initialLoad ? (initialLoad && searchResults.length === 0 ? 'Loading...' : `${searchResults.length} item(s)`) : '0 item(s)'}</span>
         </div>
-        {searchResults.length > 0 ? (
+        {initialLoad && searchResults.length === 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[...Array(6)].map((_, index) => (
+              <ProduceCardSkeleton key={index} />
+            ))}
+          </div>
+        ) : searchResults.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {searchResults.map(item => (
               <ProduceCard key={item.id} produce={item} />

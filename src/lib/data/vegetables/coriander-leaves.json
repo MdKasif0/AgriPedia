@@ -148,5 +148,33 @@
         "Coriander adds a fresh, bright flavor and visual appeal."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary herb (fresh leaves - cilantro - used as garnish and flavoring in salads, salsas, curries, soups, chutneys, tacos)",
+    "Spice (dried seeds - coriander - used whole or ground in curries, spice blends, sausages, pickling, baking)",
+    "Roots used in some cuisines (e.g., Thai)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season herb for leaf (cilantro) production, optimal 15-22°C. Tolerates warmer temperatures for seed (coriander) production but bolts quickly. Sensitive to frost.",
+    "rainfall": "Prefers consistent moisture, around 400-600 mm during growing season or regular irrigation. Well-drained soil is crucial to prevent root rot.",
+    "altitude": "Can be grown from sea level to moderate altitudes, typically up to 2000m."
+  },
+  "soilPreferences": "Well-drained, fertile, loamy soil rich in organic matter. Prefers slightly acidic to neutral pH (6.0-7.5).",
+  "irrigationWaterNeeds": "Keep soil consistently moist but not waterlogged, especially during germination and active leaf growth. Water stress can lead to premature bolting (flowering). Drip irrigation or light overhead watering is suitable.",
+  "plantingHarvestCycles": "Propagated by seeds. For cilantro (leaves): sow seeds directly in succession every 2-3 weeks from early spring to early autumn. Harvest outer leaves once plants are 4-6 inches tall. For coriander (seeds): plant in spring. Seeds mature when plants turn brown and seed heads are dry, typically 90-120 days after sowing. Harvest by cutting entire plants/seed heads.",
+  "pestDiseaseManagement": "Pests: Aphids, armyworms, cutworms, leafhoppers. Diseases: Powdery mildew, bacterial leaf spot, Fusarium wilt, stem gall. Management includes crop rotation, good air circulation, avoiding overhead watering in humid conditions, using disease-free seeds, and organic pest controls.",
+  "postHarvestHandling": "Cilantro leaves: Highly perishable. Harvest early in the day. Store in the refrigerator with stems in water, covered loosely, or wrapped in a damp paper towel for a few days. Coriander seeds: Harvest seed heads when dry, complete drying on trays or by hanging. Thresh to separate seeds, then clean and store in an airtight container in a cool, dark place.",
+  "majorProducingCountries": [
+    "India",
+    "Mexico",
+    "China",
+    "Russia",
+    "Ukraine",
+    "Morocco",
+    "Egypt",
+    "Iran",
+    "Turkey",
+    "United States (California for cilantro)"
+  ],
+  "marketValueGlobalDemand": "High global demand for both fresh cilantro leaves and dried coriander seeds. Essential in many international cuisines (Mexican, Indian, Southeast Asian, Middle Eastern). Coriander seed is a major internationally traded spice. Cilantro is primarily traded fresh or as processed paste."
 }

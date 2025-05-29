@@ -88,11 +88,11 @@
   "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Easy to grow. Can be started from seeds, cuttings, or root divisions. Best to grow in pots as it can be invasive in garden beds.\n2. Soil: Well-drained, moist, fertile soil. pH 6.0-7.0.\n3. Location: Full sun to partial shade.\n4. Watering: Keep soil consistently moist, especially in hot weather.\n5. Harvesting: Pick leaves as needed. Regular harvesting encourages bushier growth. Pinch off flower buds to prolong leaf production.",
   "growthDuration": "Leaves can be harvested continuously throughout the growing season once the plant is established.",
   "sustainabilityTips": [
-    "Store fresh mint sprigs with stems in a glass of water at room temperature or in the refrigerator, covered loosely with a plastic bag.",
+    "Store fresh mint sprigs with stems in a glass of water at room temperature or in the refrigerator, covered loosely with a plastic bag, or wrap in a damp paper towel.",
     "Mint leaves can be dried or frozen for later use.",
     "Propagate new plants easily from cuttings placed in water."
   ],
-  "carbonFootprintInfo": "Very low, especially if home-grown or locally sourced (0.1-0.3 kg CO2e/kg).",
+  "carbonFootprintInfo": "Very low, especially when home-grown or locally sourced (0.1-0.3 kg CO2e/kg).",
   "staticRecipes": [
     {
       "name": "Fresh Mint Tea",
@@ -153,5 +153,31 @@
         "Garnish with a mint sprig and a lime wedge. Serve immediately."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary herb (fresh or dried leaves for flavoring teas, beverages like mojitos and mint juleps, sauces like mint sauce for lamb, salads, desserts, chutneys, jellies, candies)",
+    "Essential oil (peppermint oil, spearmint oil used in food flavoring, aromatherapy, cosmetics, toothpaste, chewing gum)",
+    "Traditional medicine (for digestive issues, colds, headaches)",
+    "Ground cover (some creeping varieties, but can be invasive)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Temperate climates. Optimal 15-25°C. Many species are hardy and can tolerate light frost. Some are more sensitive to heat.",
+    "rainfall": "Prefers consistent moisture. About 600-1000 mm annually or regular watering. Good drainage is important to prevent root rot.",
+    "altitude": "Adaptable to various altitudes."
+  },
+  "soilPreferences": "Well-drained, fertile, moist loamy soils rich in organic matter. Prefers neutral to slightly alkaline pH (6.0-7.5), but adaptable.",
+  "irrigationWaterNeeds": "Requires regular watering to keep the soil consistently moist, especially during dry periods and active growth. Drip irrigation or soaker hoses are beneficial. Avoid waterlogging.",
+  "plantingHarvestCycles": "Propagated by seeds (slower), stem cuttings, or division of runners (most common and easiest). Plant in spring or autumn. Perennial plant that spreads vigorously. Harvest leaves and young stems as needed throughout the growing season. Regular harvesting encourages bushier growth. Cut before flowering for best leaf flavor.",
+  "pestDiseaseManagement": "Pests: Aphids, spider mites, flea beetles, cutworms, mint loopers. Diseases: Rust (major fungal disease for some mints), powdery mildew, Verticillium wilt, mint anthracnose. Management includes selecting resistant varieties, ensuring good air circulation, avoiding overhead watering, removing infected plants, and using organic controls like neem oil or insecticidal soap.",
+  "postHarvestHandling": "Fresh mint is best used soon after harvest. Store sprigs with stems in water at room temperature for a few days, or wrapped in a damp paper towel in the refrigerator for up to a week. Can be dried (hang bunches or use dehydrator; loses some aroma) or frozen (chopped in ice cube trays with water/oil) for longer preservation.",
+  "majorProducingCountries": [
+    "United States (leading producer of peppermint and spearmint oil)",
+    "India",
+    "China",
+    "Egypt",
+    "Morocco",
+    "Argentina",
+    "Many European countries cultivate various mints."
+  ],
+  "marketValueGlobalDemand": "High global demand for fresh mint (culinary use), dried mint (teas, culinary), and mint essential oils (flavoring, fragrance, pharmaceutical industries). Peppermint and spearmint are major commercial varieties. Prices depend on type, quality, and oil content."
 }

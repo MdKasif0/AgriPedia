@@ -164,5 +164,35 @@
         "Garnish with fresh cilantro. Serve hot with roti or rice."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (young pods - drumsticks - cooked in curries, soups like sambar; leaves cooked as a vegetable; flowers cooked; seeds from mature pods sometimes eaten roasted or pressed for oil)",
+    "Nutritional supplement (dried leaf powder)",
+    "Traditional medicine (all parts of the tree used for various ailments)",
+    "Water purification (crushed seeds)",
+    "Animal fodder (leaves and young branches)",
+    "Ben oil (from seeds, for cooking, cosmetics, lubrication)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical. Optimal 25-35°C. Tolerates high temperatures (up to 48°C). Young plants are sensitive to frost; mature trees may tolerate light, brief frost.",
+    "rainfall": "Drought-resistant. Can survive with as little as 250 mm annual rainfall but thrives with 1000-2000 mm. Good drainage is essential.",
+    "altitude": "Grows well from sea level up to 1000m, sometimes higher in equatorial regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils but prefers well-drained sandy loam or loamy soil. Tolerates poor soils, including infertile or clayey soils, if drainage is adequate. pH 5.0-9.0 (very adaptable).",
+  "irrigationWaterNeeds": "Highly drought-tolerant once established. Young plants require regular watering for establishment. Irrigation can increase yield of leaves and pods, especially in very arid conditions or for intensive cultivation.",
+  "plantingHarvestCycles": "Propagated by seeds (sown directly or in nurseries) or from large stem cuttings (1-2m long). Fast-growing. Leaves can be harvested multiple times starting a few months after planting. Pods (drumsticks) are harvested when young and tender, typically 6-12 months from planting for annual varieties or continuously from perennial trees. Flowers are also harvested for culinary use.",
+  "pestDiseaseManagement": "Pests: Moringa worm (caterpillar), aphids, mites, fruit flies (for pods). Diseases: Root rot (in waterlogged conditions), canker, powdery mildew (less common). Generally quite resistant to pests and diseases, especially in its native range. Good drainage and avoiding overwatering are key.",
+  "postHarvestHandling": "Young pods (drumsticks) are harvested when tender and snapped easily; they are perishable and should be used within a few days or refrigerated. Leaves are harvested as needed; they can be used fresh, or dried in shade and powdered for longer storage. Flowers are used fresh. Seeds from mature pods are extracted and dried for oil or planting.",
+  "majorProducingCountries": [
+    "India (largest producer)",
+    "Philippines",
+    "Indonesia",
+    "Nigeria",
+    "Kenya",
+    "Ethiopia",
+    "Pakistan",
+    "Bangladesh",
+    "Many countries in Africa, Southeast Asia, and Latin America cultivate it."
+  ],
+  "marketValueGlobalDemand": "High and rapidly growing global demand for moringa leaves, powder, seeds, and oil due to its exceptional nutritional value ('superfood') and diverse medicinal uses. Used in health supplements, teas, cosmetics, and food fortification programs. Significant potential for expansion in international markets."
 }

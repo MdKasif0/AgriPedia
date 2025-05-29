@@ -128,5 +128,33 @@
         "Serve the BBQ pulled jackfruit warm on burger buns, rolls, or in tacos, often accompanied by coleslaw or pickles."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (cooked as a vegetable in curries, stews, stir-fries, as a meat substitute - e.g., pulled jackfruit)",
+    "Pickles",
+    "Canned product"
+  ],
+  "climaticRequirements": {
+    "temperature": "Tropical and warm subtropical. Optimal 20-32°C. Sensitive to frost; temperatures below 5°C can cause damage. Requires high humidity.",
+    "rainfall": "Prefers 1000-2500 mm annually, well-distributed. Can tolerate short dry spells once established, but consistent moisture is best for fruit production.",
+    "altitude": "Typically grown below 1200m, but can be found up to 1600m in equatorial regions."
+  },
+  "soilPreferences": "Deep, well-drained, fertile alluvial or loamy soils, rich in organic matter. pH 5.5-7.5. Cannot tolerate waterlogged conditions.",
+  "irrigationWaterNeeds": "Young trees need regular watering. Mature trees benefit from irrigation during dry periods, especially during flowering and fruit development (even for young fruit harvest), to ensure good yield and fruit quality. Avoid overwatering.",
+  "plantingHarvestCycles": "Propagated by seeds (which have short viability) or grafting/budding for improved varieties. Seedling trees bear in 3-8 years; grafted trees earlier. Flowers in spring/summer. Young/unripe fruits for vegetable use are harvested 2-4 months after flowering, when they are still green, firm, and starchy, well before seeds harden or flesh sweetens. Harvested manually by cutting from the tree.",
+  "pestDiseaseManagement": "Pests: Shoot and fruit borers (e.g., Diaphania caesalis), mealybugs, scale insects, fruit flies. Diseases: Rhizopus fruit rot (major post-harvest issue for ripe fruit, less so for young), pink disease, leaf spot. Management includes orchard sanitation, pruning, fruit bagging (less common for young fruit), biological control, and need-based application of pesticides/fungicides. Careful handling to avoid fruit injury is important.",
+  "postHarvestHandling": "Harvested when young and green. The fruit exudes a sticky latex, so oiling hands and knives is recommended during cutting and preparation. Can be stored at room temperature for a few days or refrigerated for a week or two. Often sold fresh in local markets or processed (canned in brine or water, frozen) for export and wider distribution.",
+  "majorProducingCountries": [
+    "India",
+    "Bangladesh",
+    "Thailand",
+    "Indonesia",
+    "Vietnam",
+    "Malaysia",
+    "Sri Lanka",
+    "Philippines",
+    "Brazil",
+    "Nepal"
+  ],
+  "marketValueGlobalDemand": "Growing global demand, particularly in vegetarian/vegan markets as a meat substitute due to its texture. Canned young jackfruit is widely available internationally. Fresh young jackfruit is more common in local markets in producing countries. Prices are generally stable but can vary with supply and demand for processed forms."
 }

@@ -167,5 +167,33 @@
         "Garnish with fresh cilantro. Serve hot with roti, naan, or rice."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (eaten fresh, steamed, boiled, stir-fried; used in soups, stews, curries like Matar Paneer, salads, side dishes, pot pies, risotto)",
+    "Frozen and canned vegetable",
+    "Dried peas (split peas for soups and stews)",
+    "Pea protein isolates (in food products)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 13-18°C. Tolerates light frost, but flowers and young pods are sensitive. Growth slows above 25°C.",
+    "rainfall": "Prefers consistent moisture, around 350-500 mm during growing season. Avoids waterlogging.",
+    "altitude": "Can be grown at various altitudes, but performs best in cooler, temperate regions."
+  },
+  "soilPreferences": "Well-drained, fertile loamy or sandy loam soils, rich in organic matter. pH 6.0-7.5. Requires good aeration.",
+  "irrigationWaterNeeds": "Requires consistent soil moisture, especially during flowering and pod development. Drip irrigation or light overhead watering is beneficial. Water stress reduces yield and pod quality.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly in early spring as soon as soil can be worked, or in late summer/early autumn for fall/winter crops in milder climates. Bush types are self-supporting; vining types need trellising. Harvest pods when they are well-filled but still tender and sweet, typically 55-75 days after sowing. Pick regularly (every 1-3 days) to encourage continued production. Peas are best shelled and consumed or processed shortly after harvest.",
+  "pestDiseaseManagement": "Pests: Pea aphids, pea weevil, thrips, cutworms, nematodes. Diseases: Powdery mildew, downy mildew, Fusarium wilt, Ascochyta blight, root rots. Management includes resistant varieties, crop rotation (3-4 years), good field sanitation, proper spacing for air circulation, timely planting, and organic or chemical controls when necessary.",
+  "postHarvestHandling": "Harvested pods are perishable. Cool rapidly after picking (e.g., hydro-cooling or forced-air cooling to 0-1°C). Store at 0°C with high humidity (95-98%). Shelf life for fresh peas in pods is 1-2 weeks under optimal conditions. Shelled peas are even more perishable. Often processed by freezing or canning for longer preservation.",
+  "majorProducingCountries": [
+    "China (leading producer of green peas)",
+    "India",
+    "United States",
+    "France",
+    "United Kingdom",
+    "Egypt",
+    "Pakistan",
+    "Algeria",
+    "Peru"
+  ],
+  "marketValueGlobalDemand": "High global demand for fresh, frozen, and canned green peas. Major vegetable crop in terms of production and consumption. Significant international trade for processed peas. Prices vary by form, quality, and season. Important for both fresh market and food processing industries."
 }

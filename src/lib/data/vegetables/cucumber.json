@@ -140,5 +140,33 @@
         "Store in the refrigerator and consume within 2-3 weeks."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (eaten raw in salads, sandwiches, appetizers; pickled; used in soups, gazpacho, tzatziki, raita)",
+    "Beverages (cucumber juice, infused water)",
+    "Skincare (slices placed on eyes to reduce puffiness, in face masks)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Warm season crop. Optimal 18-30°C. Sensitive to frost. Requires full sun. High temperatures (>35°C) can reduce fruit quality.",
+    "rainfall": "Prefers consistent moisture, around 25 mm per week during growing season. Good drainage is essential.",
+    "altitude": "Best grown in lowlands and up to moderate altitudes."
+  },
+  "soilPreferences": "Well-drained, fertile loamy or sandy loam soils, rich in organic matter. pH 6.0-7.0. Avoids heavy clay or waterlogged soils.",
+  "irrigationWaterNeeds": "Requires consistent and adequate moisture, especially during flowering and fruit development. Drip irrigation or soaker hoses are ideal to keep foliage dry and prevent diseases. Water stress can lead to bitter or misshapen fruit.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly after last frost when soil is warm, or started indoors 3-4 weeks prior. Vining types require trellising or support; bush types are more compact. Pollination by bees is important for fruit set. Fruits are harvested when they reach desired size for the variety (slicing, pickling), are firm, and skin is smooth and green (before turning yellow). Harvest frequently (every 1-2 days) to encourage continuous production. Typically 50-70 days from sowing to first harvest.",
+  "pestDiseaseManagement": "Pests: Cucumber beetles (striped and spotted), aphids, spider mites, squash bugs, squash vine borer, whiteflies. Diseases: Powdery mildew, downy mildew, angular leaf spot, anthracnose, cucumber mosaic virus (CMV), bacterial wilt (spread by cucumber beetles). Integrated pest management (IPM) includes resistant varieties, crop rotation, row covers, proper spacing for air circulation, sanitation, and targeted organic or chemical controls.",
+  "postHarvestHandling": "Harvest by cutting the stem above the fruit. Handle carefully to avoid bruising. Store at cool temperatures (10-13°C) with high humidity (90-95%). Susceptible to chilling injury below 10°C (pitting, watery spots). Waxing may be used for some commercial varieties to reduce moisture loss. Shelf life is typically 1-2 weeks.",
+  "majorProducingCountries": [
+    "China (leading producer)",
+    "Turkey",
+    "Russia",
+    "Iran",
+    "Ukraine",
+    "United States",
+    "Spain",
+    "Mexico",
+    "Egypt",
+    "Japan"
+  ],
+  "marketValueGlobalDemand": "Very high global demand for fresh cucumbers (slicing and pickling types) and processed pickles. Significant international trade. Grown extensively in field and greenhouse operations. Prices vary by type, quality, season, and origin. Important for fresh markets, food service, and processing industries."
 }

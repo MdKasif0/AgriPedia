@@ -155,5 +155,31 @@
         "Serve hot with rice. (Traditionally, black-eyed peas are also added)."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (corms cooked as a vegetable in curries, stews, fried chips, pickles; young leaves and stems sometimes eaten)",
+    "Starch production",
+    "Traditional medicine (for digestive ailments, piles, as an emmenagogue)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical warm, humid climate. Optimal 25-35°C. Requires a long growing season. Sensitive to frost.",
+    "rainfall": "Prefers well-distributed rainfall (1000-1500 mm annually) or irrigation. Cannot tolerate waterlogging for extended periods, despite being a wetland plant in some native habitats.",
+    "altitude": "Grows well from sea level up to 800m."
+  },
+  "soilPreferences": "Rich, well-drained, fertile loamy or alluvial soils with high organic matter content. Prefers slightly acidic to neutral pH (5.5-7.0).",
+  "irrigationWaterNeeds": "Requires consistent and ample moisture throughout the growing period, especially during corm development. Regular irrigation is necessary in areas with insufficient rainfall. Good drainage is crucial to prevent corm rot.",
+  "plantingHarvestCycles": "Propagated from corm pieces (setts) or small cormels, planted at the beginning of the rainy season. Matures in 8-10 months. Single large corm per plant. Leaves yellow and die back indicating maturity. Harvested manually by digging up the corms.",
+  "pestDiseaseManagement": "Pests: Aphids, mealybugs, scale insects, nematodes, yam beetles. Diseases: Corm rot (due to Fusarium, Pythium, Sclerotium), mosaic virus, leaf blight. Management includes using healthy planting material, crop rotation, proper field sanitation, good drainage, and chemical control if necessary.",
+  "postHarvestHandling": "Corms are harvested carefully to avoid bruising. Curing (drying the surface) for a few days can improve storage life. Store in cool, dry, well-ventilated conditions (10-15°C) for several months. Handle with care as raw corms contain calcium oxalate crystals which can irritate skin; proper cooking neutralizes this.",
+  "majorProducingCountries": [
+    "India",
+    "Nigeria",
+    "Ghana",
+    "Indonesia",
+    "Philippines",
+    "Sri Lanka",
+    "Malaysia",
+    "Other Southeast Asian and African countries"
+  ],
+  "marketValueGlobalDemand": "Important staple food in many tropical regions, particularly South Asia and parts of Africa. Significant local and regional trade. Limited international trade as a fresh vegetable, but growing interest in processed forms (flour, chips) and for its use in traditional cuisine in diaspora communities."
 }

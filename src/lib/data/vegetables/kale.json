@@ -164,5 +164,29 @@
         "Serve immediately as a healthy side dish."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (raw in salads - often massaged; cooked by steaming, sautéing, boiling, baking into chips; used in soups, stews, smoothies)",
+    "Nutritional supplement (kale powder, juice)",
+    "Ornamental plant (some colorful varieties)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 15-20°C. Very hardy; can tolerate frosts (flavor may improve) and temperatures down to -10°C or lower for some varieties. Hot weather (>25-30°C) can cause bitterness and bolting.",
+    "rainfall": "Prefers consistent moisture, around 400-600 mm during the growing season. Can tolerate some drought but quality suffers.",
+    "altitude": "Adaptable to various altitudes, but performs best in cooler upland areas in warmer regions."
+  },
+  "soilPreferences": "Well-drained, fertile, loamy soils rich in organic matter. pH 6.0-7.5. Requires good nutrient supply, especially nitrogen.",
+  "irrigationWaterNeeds": "Requires consistent moisture for best quality and yield. Water regularly, especially during dry periods. Drip irrigation or soaker hoses are suitable. Avoid water stress, which can lead to tough, bitter leaves.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly in late summer/early autumn for winter/spring harvest, or in early spring for summer/autumn harvest. Can also be started indoors and transplanted. Harvest outer leaves when plants are established (cut-and-come-again method), or harvest the entire plant. Typically 55-75 days from sowing to first leaf harvest, or 70-95 days for mature plants. Continuous harvesting is possible for many varieties.",
+  "pestDiseaseManagement": "Pests: Cabbage worms (diamondback moth larvae, cabbage loopers), aphids, flea beetles, harlequin bugs. Diseases: Clubroot, black rot, downy mildew, Alternaria leaf spot, Sclerotinia stem rot. Integrated pest management (IPM) includes crop rotation, resistant varieties (if available), row covers, proper spacing, sanitation, and organic or chemical controls when necessary.",
+  "postHarvestHandling": "Harvest leaves by cutting from the base. Cool rapidly after harvest. Store in perforated plastic bags in the refrigerator (0-2°C, high humidity) for 1-2 weeks. Kale becomes more bitter with prolonged storage. Often sold as bunches or pre-washed bagged leaves.",
+  "majorProducingCountries": [
+    "United States (California, Georgia, New Jersey)",
+    "Germany",
+    "Netherlands",
+    "France",
+    "China",
+    "Many European countries"
+  ],
+  "marketValueGlobalDemand": "High and growing global demand due to its reputation as a 'superfood' rich in nutrients and antioxidants. Popular in fresh markets, for salads, smoothies, and as cooked greens. Significant market for pre-washed and bagged kale. Prices vary by type (curly, Lacinato, etc.) and whether organic."
 }

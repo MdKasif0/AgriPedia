@@ -33,7 +33,7 @@ body {
     --muted-foreground: 220 10% 65%; /* Medium-Light Gray Text for Muted */
 
     --accent: 270 50% 70%; /* Soft Purple */
-    --accent-foreground: 270 40% 15%; /* Dark Purple Text on Accent */
+    --accent-foreground: 270 30% 95%; /* Very Light Purple/White Text on Accent */
     
     --destructive: 0 70% 55%; /* Deeper Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */

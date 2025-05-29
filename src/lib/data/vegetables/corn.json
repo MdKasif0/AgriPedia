@@ -1,4 +1,3 @@
-
 {
   "id": "corn",
   "commonName": "Sweet Corn",
@@ -85,8 +84,8 @@
       },
       {
         "name": "Vitamin A",
-        "value": 10, 
-        "unit": "µg", 
+        "value": 10,
+        "unit": "µg",
         "rdi": "1%"
       },
       {
@@ -216,7 +215,33 @@
         "Serve immediately."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (eaten as a vegetable: on the cob, kernels in salads, soups, stews, side dishes, salsas, succotash)",
+    "Processed foods (canned corn, frozen corn, corn relish, corn bread - using sweet corn)",
+    "Popcorn (specific varieties of Zea mays everta)",
+    "Cornmeal and cornflour (from field corn, but sweet corn can be used similarly on a small scale)",
+    "Animal feed (limited for sweet corn, primarily field corn is used)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Warm season crop. Optimal soil temperature for germination 18-21°C. Optimal air temperature for growth 20-30°C. Sensitive to frost at all stages.",
+    "rainfall": "Requires 450-600 mm of well-distributed rainfall or irrigation during the growing season. Critical water needs during tasseling, silking (pollination), and kernel fill.",
+    "altitude": "Best grown at low to moderate altitudes, typically below 1500m, though some varieties are adapted higher."
+  },
+  "soilPreferences": "Well-drained, fertile loamy soils with good organic matter content and water-holding capacity. Prefers pH 5.8-7.0. Requires high nutrient availability, especially nitrogen, phosphorus, and potassium.",
+  "irrigationWaterNeeds": "High water requirement, especially during pollination and kernel development. Irrigation (furrow, sprinkler, or drip) is essential in many regions to ensure good yields and quality. Water stress can severely reduce yield.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly after the last frost when soil is warm. Planted in blocks for good wind pollination. Harvested at the 'milk stage' (kernels are plump, sweet, and exude milky liquid when pierced), typically 18-24 days after silking. Ears are hand-picked. Multiple plantings can ensure continuous harvest.",
+  "pestDiseaseManagement": "Pests: Corn earworm (major pest), armyworms, cutworms, corn rootworms, aphids, flea beetles, Japanese beetles. Diseases: Stewart's wilt, common rust, northern corn leaf blight, southern corn leaf blight, stalk rots, ear rots. Management includes resistant hybrids (especially Bt corn for insect resistance), crop rotation, timely planting, weed control, and targeted insecticide/fungicide applications. Isolation from field corn may be needed for some sweet corn types.",
+  "postHarvestHandling": "Highly perishable due to high sugar content which converts to starch rapidly after harvest, especially at warm temperatures. Cool rapidly after picking (hydro-cooling or forced-air cooling) to 0-2°C. Store at 0°C with high humidity (95-98%). Shelf life is short (5-7 days even under ideal conditions). Often sold fresh in local markets or processed (canned, frozen) quickly.",
+  "majorProducingCountries": [
+    "United States (leading producer)",
+    "China",
+    "European Union (France, Hungary)",
+    "Canada",
+    "Mexico",
+    "Brazil",
+    "Thailand",
+    "Indonesia"
+  ],
+  "marketValueGlobalDemand": "High demand for fresh sweet corn, especially in summer. Significant market for processed sweet corn (canned and frozen). Prices fluctuate based on seasonality, regional production, and weather conditions. Important for both fresh consumption and processing industries."
 }
-
-    

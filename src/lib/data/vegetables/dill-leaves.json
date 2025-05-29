@@ -156,5 +156,32 @@
         "Serve hot with rice or roti."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary herb (fresh leaves - dill weed - used in salads, sauces like dill sauce, dressings, fish dishes, egg dishes, soups, potato salads)",
+    "Spice (dried seeds used for pickling, in breads, stews, spice blends)",
+    "Flavoring for vinegar",
+    "Dill water (traditional remedy for colic in infants)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season herb. Optimal 15-25°C. Tolerates light frost. Bolts (flowers) quickly in hot weather (>30°C).",
+    "rainfall": "Prefers consistent moisture. About 400-600 mm during growing season or regular irrigation. Good drainage is important.",
+    "altitude": "Can be grown at various altitudes in temperate climates."
+  },
+  "soilPreferences": "Well-drained, fertile, sandy loam or loamy soils, rich in organic matter. pH 5.5-6.8 (slightly acidic to neutral).",
+  "irrigationWaterNeeds": "Requires regular watering to keep the soil consistently moist, especially during germination and active leaf growth. Water stress can induce premature flowering. Avoid waterlogging.",
+  "plantingHarvestCycles": "Propagated by seeds. Sow directly in the garden in early spring after the last frost, or in succession every few weeks for continuous leaf harvest. Dill does not transplant well. Harvest leaves (dill weed) once plants are established (6-8 inches tall) by snipping outer leaves. For dill seeds, allow plants to flower; seed heads are harvested when they turn brown and dry, typically 80-100 days after sowing.",
+  "pestDiseaseManagement": "Pests: Aphids, parsley worms (caterpillars of black swallowtail butterfly - often tolerated), spider mites. Diseases: Powdery mildew, leaf spot, damping-off (in seedlings). Generally quite hardy. Management includes good air circulation, avoiding overhead watering, and companion planting (e.g., with cabbage family to deter some pests).",
+  "postHarvestHandling": "Fresh dill weed is highly perishable. Store with stems in water in the refrigerator, loosely covered, for up to a week, or wrap in a damp paper towel. Can be chopped and frozen in water or oil in ice cube trays. Dried dill weed loses much of its flavor. Dill seeds are dried thoroughly and stored in an airtight container.",
+  "majorProducingCountries": [
+    "India",
+    "Egypt",
+    "Russia",
+    "United States (California, Pacific Northwest)",
+    "Hungary",
+    "Germany",
+    "Poland",
+    "Scandinavian countries"
+  ],
+  "marketValueGlobalDemand": "Moderate demand for fresh dill weed in culinary uses, especially in European, Middle Eastern, and North American cuisines. Dill seed is an important spice for pickling industries and in spice blends. Essential oil is also extracted. Demand for fresh dill is often met by local or regional production due to its perishability."
 }

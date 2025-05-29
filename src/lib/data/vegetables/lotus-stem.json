@@ -165,5 +165,34 @@
         "Serve immediately as a side dish or as part of a multi-course Asian meal. Enjoy the crunchy texture!"
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (rhizomes cooked as a vegetable in stir-fries, soups, stews, salads, braised dishes, pickled, candied, or made into chips)",
+    "Lotus seeds (eaten raw, roasted, or crystallized; used in pastries and desserts)",
+    "Lotus leaves (used as wraps for steaming food like sticky rice, or as a tea)",
+    "Lotus flowers (used for tea and decoration)",
+    "Traditional medicine (various parts of the plant used for different ailments)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Warm temperate to tropical. Optimal water temperature 20-30°C for growth. Requires a frost-free period of at least 5-6 months. Full sun is essential.",
+    "rainfall": "Aquatic plant; grows in still or slow-moving fresh water. Water depth typically 0.3-1.8 meters. Consistent water supply is crucial.",
+    "altitude": "Typically grown in lowlands, but can be cultivated at higher altitudes if water bodies and temperature permit."
+  },
+  "soilPreferences": "Rich, heavy loamy or clayey mud at the bottom of ponds or flooded fields. Prefers slightly acidic to neutral pH. High organic matter content is beneficial.",
+  "irrigationWaterNeeds": "Requires standing water. Water levels need to be managed throughout the growing cycle. For rhizome harvest, fields are often drained.",
+  "plantingHarvestCycles": "Propagated by rhizome sections (with buds) or seeds. Planted in spring when water temperatures rise. Rhizomes are harvested 6-9 months after planting, typically in autumn or winter after leaves die back or water is drained. Flowers appear in summer.",
+  "pestDiseaseManagement": "Pests: Aphids, leaf-eating caterpillars, snails, water beetles. Diseases: Fungal leaf spots, rhizome rot (in poorly managed conditions). Generally quite resilient. Water quality management is important.",
+  "postHarvestHandling": "Rhizomes are washed thoroughly to remove mud. Sold fresh, often with ends sealed with mud to maintain freshness. Can be stored in cool, moist conditions (e.g., wrapped in damp cloth in refrigerator) for a few weeks. Sliced lotus root is often blanched before further cooking or processing to prevent browning.",
+  "majorProducingCountries": [
+    "China",
+    "Japan",
+    "India",
+    "Vietnam",
+    "South Korea",
+    "Thailand",
+    "Indonesia",
+    "Egypt",
+    "Australia (limited)"
+  ],
+  "marketValueGlobalDemand": "High demand in East Asian, Southeast Asian, and South Asian cuisines. Fresh lotus root, seeds, and processed products (canned, dried, powdered starch) are traded internationally. Valued for its unique texture, flavor, and cultural significance."
 }

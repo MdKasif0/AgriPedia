@@ -163,5 +163,35 @@
         "Let it cool to room temperature, then cover and refrigerate. They are ready to eat in about 30 minutes to an hour, but best after a few hours or overnight. Store in the refrigerator for up to 2 weeks."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary base (raw, sautéed, caramelized, roasted, grilled for flavoring almost all types of savory dishes)",
+    "Salads, sandwiches, burgers, tacos",
+    "Soups (e.g., French onion soup), stews, curries",
+    "Pickled onions, onion rings, bhajis/pakoras",
+    "Spring onions/scallions (immature onions) used as garnish or vegetable"
+  ],
+  "climaticRequirements": {
+    "temperature": "Temperate crop. Optimal for bulbing varies by day-length type: Long-day onions need 14-16 hrs daylight (10-25°C); Short-day need 10-12 hrs (20-30°C). Seed germination 10-25°C. Sensitive to frost during early stages, but some varieties can overwinter.",
+    "rainfall": "Prefers 500-700 mm during growing season, or consistent irrigation. Good drainage is critical. Dry weather needed during bulb curing.",
+    "altitude": "Can be grown from sea level to 2500m, depending on variety and day-length adaptation."
+  },
+  "soilPreferences": "Well-drained, loose, fertile loamy or sandy loam soils, rich in organic matter. pH 6.0-7.0 (slightly acidic to neutral). Heavy clay or compacted soils hinder bulb development.",
+  "irrigationWaterNeeds": "Requires consistent moisture, especially during bulb formation and enlargement. Water stress can lead to small bulbs or splitting. Reduce irrigation as bulbs mature and tops begin to fall, to promote curing.",
+  "plantingHarvestCycles": "Propagated from seeds (direct sown or transplanted), sets (small bulbs from previous season), or transplants. Planting time depends on day-length type and climate (spring or autumn). Bulbs mature in 90-150 days from seed, shorter from sets/transplants. Harvest when tops yellow and fall over. Bulbs are pulled or dug, then field-cured (dried) for 1-2 weeks before storage.",
+  "pestDiseaseManagement": "Pests: Onion thrips (major pest), onion maggot, cutworms, nematodes. Diseases: Downy mildew, purple blotch, white rot (Sclerotium cepivorum - very persistent), pink root, neck rot (Botrytis - during storage). Integrated pest management (IPM) includes crop rotation (3-5 years), resistant varieties, sanitation, proper curing, and targeted chemical or biological controls.",
+  "postHarvestHandling": "Curing is essential: dry bulbs in field (if weather permits) or in well-ventilated sheds until necks are tight and outer skins are dry and papery. Tops are then removed. Store in cool, dry, dark, well-ventilated conditions (0-4°C for long-term storage, with low humidity for storage onions, higher for sweet onions). Avoid storing with potatoes. Graded by size and quality.",
+  "majorProducingCountries": [
+    "China (leading producer)",
+    "India",
+    "United States",
+    "Egypt",
+    "Iran",
+    "Turkey",
+    "Pakistan",
+    "Russia",
+    "Brazil",
+    "Bangladesh"
+  ],
+  "marketValueGlobalDemand": "Extremely high global demand as a fundamental ingredient in nearly all cuisines. Major internationally traded vegetable. Consumed fresh, cooked, and processed (dehydrated flakes/powder, pickled, frozen). Prices fluctuate based on global production, weather, and storage quality."
 }
