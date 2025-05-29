@@ -142,5 +142,33 @@
         "Serve immediately. Often enjoyed open-faced."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (roots eaten raw in salads, sandwiches, as a garnish, or cooked by roasting, pickling, adding to soups and stews; leaves are also edible and can be cooked as greens)",
+    "Seed pods (of some varieties, e.g., 'Münchener Bier') are eaten fresh or pickled",
+    "Fodder (some larger varieties for livestock)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 10-18°C. Can tolerate light frost. Hot weather (>25°C) causes roots to become pungent, woody, and promotes bolting.",
+    "rainfall": "Prefers consistent moisture. About 25 mm per week or equivalent irrigation. Good drainage is essential.",
+    "altitude": "Can be grown at various altitudes, but performs best in cooler conditions."
+  },
+  "soilPreferences": "Loose, well-drained, fertile sandy loam or loamy soils, rich in organic matter. pH 6.0-7.0. Avoids heavy clay or stony soils that impede root development.",
+  "irrigationWaterNeeds": "Requires consistent and regular watering for rapid growth and to prevent roots from becoming woody or splitting. Water stress also increases pungency. Drip irrigation or light overhead watering is suitable.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly in early spring as soon as soil can be worked, or in late summer/early autumn for fall/winter crops. Successive sowings every 1-2 weeks ensure continuous supply. Harvest small round radishes when roots are about 1 inch in diameter (typically 20-35 days after sowing). Winter radishes (like Daikon) take longer (50-70 days). Pull gently from soil before they become pithy or bolt.",
+  "pestDiseaseManagement": "Pests: Flea beetles (can damage leaves, especially of young plants), cabbage root maggot, aphids, cutworms. Diseases: Downy mildew, clubroot (less common than in other Brassicas), white rust, black root. Management includes crop rotation, floating row covers for insect protection, timely harvesting, good field sanitation, and maintaining proper soil pH.",
+  "postHarvestHandling": "Harvest promptly when roots reach desired size. Tops are usually removed if storing roots for more than a few days, to prevent moisture loss from the root. Washed. Can be stored in the refrigerator in plastic bags for 1-2 weeks (small radishes) or longer for winter radishes in root cellar conditions (cool, moist).",
+  "majorProducingCountries": [
+    "China",
+    "Japan",
+    "South Korea",
+    "United States",
+    "Mexico",
+    "Germany",
+    "France",
+    "Egypt",
+    "Turkey",
+    "India (for Mooli/Daikon types)"
+  ],
+  "marketValueGlobalDemand": "High global demand for fresh radishes as a salad vegetable and garnish. Various types (red globe, white icicle, black Spanish, Daikon) cater to different market preferences. Significant local and international trade. Prices are generally stable but can vary with seasonal availability and type."
 }

@@ -255,7 +255,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
       )}
       
       <header className="flex items-center justify-between mb-4 px-2 md:px-0 sticky top-0 bg-background/95 backdrop-blur-sm z-10 py-3 border-b border-border">
-        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="text-foreground hover:bg-accent/10">
+        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="text-foreground">
           <ArrowLeft className="h-6 w-6" />
         </Button>
         <h1 className="text-lg sm:text-xl font-semibold text-foreground flex-1 text-center truncate px-2">
@@ -266,7 +266,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 variant="ghost"
                 size="icon"
                 onClick={handleShare}
-                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={`Share ${produce.commonName} details`}
             >
                 <Share2 className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -275,7 +275,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 variant="ghost"
                 size="icon"
                 onClick={handleToggleFavorite}
-                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90"
                 aria-label={isFavorited ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
             >
                 {isFavorited ? (
@@ -423,6 +423,81 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
               <p className="text-card-foreground/90">{produce.growthDuration}</p>
             </IconLabel>
+            
+            {/* Agricultural Information Section */}
+            <IconLabel icon={Sprout} label="Agricultural Information" className="md:col-span-2 bg-card rounded-lg shadow-lg">
+              <div className="space-y-4">
+                {produce.uses && produce.uses.length > 0 && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mb-1">Primary Uses:</h4>
+                    <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
+                      {produce.uses.map((use, index) => <li key={index}>{use}</li>)}
+                    </ul>
+                  </div>
+                )}
+
+                {produce.climaticRequirements && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Climatic Requirements:</h4>
+                    {produce.climaticRequirements.temperature && <p className="text-sm text-card-foreground/90"><strong>Temperature:</strong> {produce.climaticRequirements.temperature}</p>}
+                    {produce.climaticRequirements.rainfall && <p className="text-sm text-card-foreground/90"><strong>Rainfall:</strong> {produce.climaticRequirements.rainfall}</p>}
+                    {produce.climaticRequirements.altitude && <p className="text-sm text-card-foreground/90"><strong>Altitude:</strong> {produce.climaticRequirements.altitude}</p>}
+                    {(!produce.climaticRequirements.temperature && !produce.climaticRequirements.rainfall && !produce.climaticRequirements.altitude) && <p className="text-sm text-muted-foreground">No specific climatic requirements listed.</p>}
+                  </div>
+                )}
+
+                {produce.soilPreferences && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Soil Preferences:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.soilPreferences}</p>
+                  </div>
+                )}
+
+                {produce.irrigationWaterNeeds && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Irrigation / Water Needs:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.irrigationWaterNeeds}</p>
+                  </div>
+                )}
+
+                {produce.plantingHarvestCycles && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Planting & Harvest Cycles:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.plantingHarvestCycles}</p>
+                  </div>
+                )}
+
+                {produce.pestDiseaseManagement && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Pest & Disease Management:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.pestDiseaseManagement}</p>
+                  </div>
+                )}
+
+                {produce.postHarvestHandling && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Post-Harvest Handling:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.postHarvestHandling}</p>
+                  </div>
+                )}
+                
+                {produce.majorProducingCountries && produce.majorProducingCountries.length > 0 && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Major Producing Countries:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {produce.majorProducingCountries.map(country => <Badge key={country} variant="outline" className="bg-accent/50 text-accent-foreground/90">{country}</Badge>)}
+                    </div>
+                  </div>
+                )}
+
+                {produce.marketValueGlobalDemand && (
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mt-3 mb-1">Market Value & Global Demand:</h4>
+                    <p className="text-sm text-card-foreground/90">{produce.marketValueGlobalDemand}</p>
+                  </div>
+                )}
+              </div>
+            </IconLabel>
 
             <div className="grid md:grid-cols-2 gap-6">
                 <IconLabel
@@ -439,7 +514,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </IconLabel>
 
                 <IconLabel icon={Store} label="Find Locally (Future Feature)" className="bg-card rounded-lg shadow-lg">
-                <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto hover:bg-primary/10 border-primary/50 text-primary">
+                <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto border-primary/50 text-primary hover:bg-primary/10">
                     {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
                 </Button>
                 {locationInfo && (

@@ -171,5 +171,30 @@
         "Serve: Just before serving, give the slaw a final toss. Garnish with fresh chopped parsley or chives if desired. This slaw is excellent as a side dish with grilled meats, sandwiches, or burgers."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (eaten raw in salads, slaws; cooked by steaming, boiling, roasting, stir-frying, added to soups and stews; leaves are also edible and can be cooked like spinach or kale)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 15-21°C. Tolerates light frost. Hot weather can cause the stem to become woody and flavor to be pungent.",
+    "rainfall": "Prefers consistent moisture, around 25-30 mm per week during growing season. Avoids drought stress.",
+    "altitude": "Can be grown at various altitudes in temperate climates."
+  },
+  "soilPreferences": "Well-drained, fertile, loamy soils rich in organic matter. pH 6.0-7.5. Requires good nutrient supply, particularly potassium for bulb development.",
+  "irrigationWaterNeeds": "Requires consistent soil moisture for good quality stems. Water regularly, especially during dry periods, to prevent stems from becoming woody or splitting. Drip irrigation or soaker hoses are ideal.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly in early spring for a summer crop, or in mid-to-late summer for an autumn crop. Thin seedlings to 4-6 inches apart. Harvest when swollen stems reach 2-3 inches in diameter (typically 40-60 days after sowing, depending on variety). Overmature kohlrabi can become tough and woody.",
+  "pestDiseaseManagement": "Pests: Cabbage worms (various caterpillars), aphids, flea beetles, cabbage root maggot. Diseases: Clubroot, black rot, downy mildew, Alternaria leaf spot. Management includes crop rotation, floating row covers for insect protection, proper spacing, and organic or chemical controls when necessary. Good sanitation is important.",
+  "postHarvestHandling": "Harvest by cutting the swollen stem at the base. Trim off leaves (which can be eaten separately). Can be stored for several weeks in cool, moist conditions (0-2°C, 95-100% RH) in a refrigerator or root cellar. Remove leaves before storing the bulbs to prevent moisture loss.",
+  "majorProducingCountries": [
+    "Germany",
+    "Austria",
+    "Switzerland",
+    "Poland",
+    "Netherlands",
+    "United States",
+    "Canada",
+    "India (Kashmir)",
+    "Vietnam"
+  ],
+  "marketValueGlobalDemand": "Popular in Central and Northern Europe, and parts of Asia. Gaining popularity in North America. Primarily consumed fresh. Niche market compared to other Brassicas like cabbage or broccoli, but stable. Prices vary by season and region."
 }

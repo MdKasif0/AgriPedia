@@ -14,7 +14,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
   const hint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
 
   return (
-    <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl">
+    <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl transition-transform duration-200 ease-in-out hover:scale-[1.03]">
       <div className="relative aspect-[16/9] w-full bg-card text-card-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         <Image 
           src={produce.image} 

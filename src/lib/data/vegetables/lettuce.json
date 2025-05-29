@@ -161,5 +161,31 @@
         "Serve immediately as a fresh side dish or as a base for a more substantial salad with added protein."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (raw in salads, sandwiches, wraps, burgers, tacos, as a garnish)",
+    "Cooked (in soups, stir-fries, grilled - less common for most varieties)",
+    "Bed for appetizers or other dishes"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal 15-20°C. Some varieties tolerate light frost. Hot weather (>25-30°C) promotes bolting (premature flowering) and bitterness.",
+    "rainfall": "Prefers consistent moisture. About 20-30 mm per week or equivalent irrigation. Good drainage is essential to prevent root diseases.",
+    "altitude": "Can be grown at various altitudes, but cooler temperatures at higher elevations or during specific seasons are beneficial."
+  },
+  "soilPreferences": "Well-drained, fertile, loose soils rich in organic matter. Prefers slightly acidic to neutral pH (6.0-7.0). Sandy loams or loams are ideal.",
+  "irrigationWaterNeeds": "Requires consistent and shallow watering to keep the soil moist but not waterlogged, especially during head formation for head lettuce types. Drip irrigation or light sprinklers are suitable. Water stress can lead to bitterness or bolting.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly or started indoors and transplanted. Sow in early spring as soon as soil can be worked, or in late summer/early autumn for fall/winter crops in milder climates. Successive sowings every 2-3 weeks ensure continuous harvest. Leaf lettuce can be harvested by picking outer leaves (cut-and-come-again) or the whole plant. Head lettuce is harvested when heads are firm and mature. Typically 45-80 days for leaf lettuce, 60-100 days for head lettuce from sowing.",
+  "pestDiseaseManagement": "Pests: Aphids, slugs, snails, cutworms, leafhoppers, cabbage worms. Diseases: Downy mildew, powdery mildew, lettuce drop (Sclerotinia), bottom rot, mosaic viruses. Management includes resistant varieties, crop rotation, good field sanitation, proper spacing for air circulation, row covers for insects, and organic or chemical controls when necessary.",
+  "postHarvestHandling": "Highly perishable. Harvest in the cool of the morning. Cool rapidly after harvest (0-1°C) using vacuum cooling, hydro-cooling, or forced-air cooling. Store at 0-2°C with high humidity (95-100%). Packed carefully to avoid bruising. Susceptible to wilting and decay. Controlled atmosphere storage can extend shelf life for some types.",
+  "majorProducingCountries": [
+    "China (leading producer)",
+    "United States (California, Arizona)",
+    "Spain",
+    "India",
+    "Italy",
+    "Turkey",
+    "Japan",
+    "Mexico"
+  ],
+  "marketValueGlobalDemand": "Very high global demand as a primary salad green. Significant international trade for fresh lettuce, especially head types like Iceberg and Romaine. Growing market for pre-washed, bagged salads and specialty lettuce mixes. Greenhouse production is significant in many regions for year-round supply."
 }

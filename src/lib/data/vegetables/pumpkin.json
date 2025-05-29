@@ -158,5 +158,33 @@
         "Reheat gently if needed. Serve hot, garnished with toasted pumpkin seeds or croutons if desired."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (flesh used in pies, soups, stews, curries, roasted, steamed, pureed; seeds roasted as a snack or for oil)",
+    "Decorative (e.g., Halloween Jack-o'-lanterns)",
+    "Animal fodder (some varieties and plant parts)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Warm season crop. Optimal 18-30°C. Requires full sun. Sensitive to frost. Some varieties are more heat/cold tolerant than others.",
+    "rainfall": "Prefers moderate rainfall (500-750 mm) during growing season. Consistent moisture is important, but not waterlogging. Dry weather is preferred during fruit ripening and curing.",
+    "altitude": "Best grown at low to medium altitudes, but can adapt to higher elevations with shorter growing seasons if temperatures are suitable."
+  },
+  "soilPreferences": "Well-drained, fertile loamy soils, rich in organic matter. pH 6.0-7.0. Heavy clay or very sandy soils are less ideal. Requires good nutrient supply, especially potassium.",
+  "irrigationWaterNeeds": "Requires consistent and deep watering, especially during vine growth, flowering, and fruit development. Drip irrigation or soaker hoses are efficient. Reduce watering as fruits mature to improve flavor and storage quality. Water stress can lead to blossom drop or small fruits.",
+  "plantingHarvestCycles": "Propagated by seeds, sown directly after last frost when soil is warm, or started indoors 3-4 weeks prior. Vining plants need ample space or trellising for some smaller varieties. Pollination by bees is essential. Harvest when fruits are fully colored, rind is hard, and stem begins to dry. Cut from vine leaving 2-4 inches of stem. Typically 90-120 days from sowing to harvest.",
+  "pestDiseaseManagement": "Pests: Squash bugs, squash vine borers, cucumber beetles, aphids. Diseases: Powdery mildew, downy mildew, Fusarium wilt, various viral diseases, bacterial wilt. Management includes resistant varieties, crop rotation, good field sanitation, row covers for young plants, and targeted organic or chemical controls.",
+  "postHarvestHandling": "Harvest carefully, leaving a portion of the stem attached. Cure in the sun for 1-2 weeks (or indoors at 25-30°C with good ventilation) to harden the skin for longer storage. Store whole, unblemished pumpkins in a cool, dry, dark place (10-15°C) for several months. Cut pumpkin should be refrigerated and used within days.",
+  "majorProducingCountries": [
+    "China (leading producer)",
+    "India",
+    "United States",
+    "Ukraine",
+    "Russia",
+    "Mexico",
+    "Egypt",
+    "Spain",
+    "Italy",
+    "Turkey"
+  ],
+  "marketValueGlobalDemand": "High demand globally, especially for culinary uses (pies, soups, roasting) and decorative purposes (Halloween). Significant market for processed pumpkin puree. Seeds are also a valuable product. Prices vary by variety, size, and season."
 }

@@ -139,5 +139,31 @@
         "Often, the dish is then covered for a minute to allow the flavors to infuse before stirring it in or serving."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary herb (fresh or dried leaves used to flavor curries, soups, stews, rice dishes, snacks, tempering/tadka)",
+    "Traditional medicine (leaves, bark, roots used for digestive issues, diabetes management, skin ailments, as a tonic)",
+    "Essential oil (limited use, for fragrance and traditional remedies)",
+    "Ornamental plant"
+  ],
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical. Optimal 20-30°C. Tolerates heat well but is sensitive to frost. Prefers full sun to light shade.",
+    "rainfall": "Prefers moderate rainfall (1000-1500 mm annually), well-distributed. Can tolerate some drought once established but benefits from moisture for good leaf production.",
+    "altitude": "Grows well from sea level up to 1500m."
+  },
+  "soilPreferences": "Well-drained, fertile loamy or sandy loam soils, rich in organic matter. pH 5.5-7.5. Avoids heavy clay or waterlogged conditions.",
+  "irrigationWaterNeeds": "Young plants require regular watering. Mature plants are relatively drought-tolerant but benefit from irrigation during prolonged dry spells to maintain lush foliage. Good drainage is essential.",
+  "plantingHarvestCycles": "Propagated by seeds (sown fresh), root suckers, or stem cuttings. Seedlings are slow to establish. Plants can be harvested for leaves throughout the year once established (typically after 1-2 years). Harvest sprigs or individual leaves as needed. Regular light harvesting encourages bushier growth.",
+  "pestDiseaseManagement": "Pests: Scale insects, mealybugs, aphids, psyllids. Diseases: Fungal leaf spot, sooty mold (associated with insect honeydew), root rot (in poorly drained soils). Generally quite hardy. Management includes good air circulation, avoiding overwatering, and organic pest controls like neem oil if necessary.",
+  "postHarvestHandling": "Fresh leaves are highly aromatic and best used quickly. Can be stored in the refrigerator for 1-2 weeks (e.g., wrapped in paper towel in a plastic bag). Leaves can be air-dried or sun-dried for longer storage, though some aroma is lost. Freezing fresh leaves is also an option.",
+  "majorProducingCountries": [
+    "India",
+    "Sri Lanka",
+    "Malaysia",
+    "Thailand",
+    "Bangladesh",
+    "Pakistan",
+    "Cultivated in home gardens and on a small commercial scale in many tropical regions globally."
+  ],
+  "marketValueGlobalDemand": "High demand in South Asian and Southeast Asian cuisines worldwide. Fresh leaves are preferred and traded significantly to diaspora markets. Dried leaves and powder also have a market. Essential for authentic flavor in many traditional dishes."
 }

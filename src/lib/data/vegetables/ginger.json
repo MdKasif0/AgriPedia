@@ -150,5 +150,33 @@
         "Store candied ginger in an airtight container at room temperature."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary spice (fresh, dried, powdered, pickled, crystallized/candied; used in Asian, Indian, Caribbean cuisines; stir-fries, curries, soups, baked goods like gingerbread, beverages like ginger ale, ginger beer, tea)",
+    "Traditional medicine (for nausea, colds, arthritis, digestive issues)",
+    "Essential oil (for fragrance and flavoring)",
+    "Flavoring for confectionery"
+  ],
+  "climaticRequirements": {
+    "temperature": "Warm, humid tropical or subtropical climate. Optimal temperature range 20-30°C. Requires partial shade, especially in very hot climates, or can be grown under taller crops. Sensitive to frost.",
+    "rainfall": "High rainfall (1500-3000 mm annually), well-distributed throughout the growing season. Good drainage is essential to prevent rhizome rot.",
+    "altitude": "Can be grown from sea level up to 1500m."
+  },
+  "soilPreferences": "Rich, loose, well-drained loamy or sandy loam soils with high organic matter content. Prefers slightly acidic pH (6.0-6.5). Heavy clay soils or waterlogged conditions are unsuitable.",
+  "irrigationWaterNeeds": "Requires consistent moisture throughout the growing period. Regular irrigation is necessary in areas with insufficient rainfall or during dry spells. Avoid water stress, especially during rhizome development. Mulching helps retain moisture.",
+  "plantingHarvestCycles": "Propagated from rhizome pieces (seed ginger/setts with 1-2 good buds). Planted in spring (after last frost in temperate zones, or at the beginning of rainy season in tropics). Rhizomes are harvested when leaves turn yellow and start to dry, typically 8-10 months after planting. For 'green ginger' (young, tender rhizomes with milder flavor), harvesting can be done earlier (5-6 months).",
+  "pestDiseaseManagement": "Pests: Shoot borer (major pest), rhizome scale, nematodes, aphids, thrips. Diseases: Rhizome rot (Pythium, Fusarium, bacterial wilt - major issue), leaf spot, bacterial leaf blight, anthracnose. Management includes using disease-free seed rhizomes, proper soil drainage, crop rotation, solarization of soil, treating seed rhizomes with fungicides/biocontrol agents, and biological control for pests.",
+  "postHarvestHandling": "Rhizomes are carefully dug up to avoid damage. Cleaned to remove soil and roots. For fresh market, they are washed. For dry ginger: rhizomes are soaked, sometimes peeled (though unpeeled is common for certain markets), and then dried thoroughly in the sun or mechanical dryers until brittle (moisture content <10%). Dried ginger is then often ground into powder. Store in cool, dry, well-ventilated conditions.",
+  "majorProducingCountries": [
+    "India (largest producer)",
+    "Nigeria",
+    "China",
+    "Indonesia",
+    "Nepal",
+    "Thailand",
+    "Bangladesh",
+    "Philippines",
+    "Jamaica"
+  ],
+  "marketValueGlobalDemand": "High global demand for fresh and dried ginger, as well as ginger oil and oleoresin. Widely used as a spice, flavoring, and in traditional medicine and health products. Significant international trade. Prices vary based on quality (fiber content, aroma, pungency), form (fresh, dried, powdered), and origin."
 }

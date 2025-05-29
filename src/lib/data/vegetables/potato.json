@@ -157,5 +157,35 @@
         "Reheat gently if needed, but do not boil after adding cream. Garnish with fresh chives or parsley before serving."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Human food (staple vegetable cooked in numerous ways: boiled, baked, fried - fries/chips, roasted, mashed, in salads, soups, stews)",
+    "Processed foods (potato chips, frozen fries, dehydrated potatoes, potato starch, potato flour)",
+    "Animal feed (cooked potatoes, peels, culled tubers)",
+    "Production of vodka and other alcoholic beverages",
+    "Source of starch for industrial uses"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop. Optimal tuber development occurs at soil temperatures of 15-20°C. Growth slows above 30°C. Sensitive to frost, which can damage foliage and tubers.",
+    "rainfall": "Requires consistent moisture, especially during tuber formation and development. About 300-500 mm of well-distributed rainfall or irrigation during the growing season. Avoids waterlogging.",
+    "altitude": "Can be grown from sea level to high altitudes (up to 4000m in the Andes, its origin). High altitude conditions often favor quality tuber development."
+  },
+  "soilPreferences": "Well-drained, loose, fertile sandy loam or loamy soils, rich in organic matter. Prefers slightly acidic pH (5.0-6.0) to minimize common scab disease. Good aeration is important for tuber development.",
+  "irrigationWaterNeeds": "Requires regular and adequate irrigation if rainfall is insufficient, particularly during tuber initiation and bulking stages. Consistent moisture helps produce well-shaped tubers and prevents issues like cracking or hollow heart.",
+  "plantingHarvestCycles": "Propagated from certified 'seed potatoes' (small tubers or pieces with 'eyes'). Planted in spring after soil warms. Tubers form on underground stolons. 'Hilling' soil around plants encourages tuber development and prevents greening. Harvested when mature (plant tops senesce) or as 'new potatoes' when small. Typically 70-120 days from planting to harvest.",
+  "pestDiseaseManagement": "Pests: Colorado potato beetle, aphids (virus vectors), potato tuber moth, wireworms, nematodes (potato cyst nematode). Diseases: Late blight (Phytophthora infestans - historically devastating), early blight, common scab, black scurf, Fusarium dry rot, bacterial wilt, potato viruses (PVY, PLRV). Integrated pest management (IPM) is crucial: resistant varieties, certified seed, crop rotation, sanitation, and timely fungicide/insecticide applications.",
+  "postHarvestHandling": "Tubers are dug carefully to avoid bruising. Curing: Store at 12-18°C with high humidity for 1-2 weeks to heal injuries and strengthen skins. Storage: Cool, dark, well-ventilated conditions (4-10°C; lower for seed, higher for processing to prevent sugar buildup). Light causes greening (solanine).",
+  "majorProducingCountries": [
+    "China (largest producer)",
+    "India",
+    "Russia",
+    "Ukraine",
+    "United States",
+    "Germany",
+    "Bangladesh",
+    "Poland",
+    "France",
+    "Netherlands"
+  ],
+  "marketValueGlobalDemand": "Extremely high global demand as a staple food and for processed products. Major internationally traded vegetable. Prices fluctuate based on regional production, weather, storage quality, and demand from consumers and processing industries."
 }

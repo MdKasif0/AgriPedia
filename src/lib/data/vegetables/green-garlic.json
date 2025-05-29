@@ -143,5 +143,29 @@
         "Reheat gently. Serve hot, garnished with fresh chives or parsley."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (used like spring onions or young leeks; in stir-fries, soups, omelets, pestos, salads, dressings, as a garnish)",
+    "Adds a mild, fresh garlic flavor to dishes"
+  ],
+  "climaticRequirements": {
+    "temperature": "Cool season crop, tolerant of cold. Optimal growth 12-24°C. Can withstand light frosts. Same as mature garlic but harvested earlier.",
+    "rainfall": "Prefers consistent moisture. About 25 mm per week or equivalent irrigation. Good drainage is important.",
+    "altitude": "Adaptable, similar to mature garlic, grown at various altitudes."
+  },
+  "soilPreferences": "Well-drained, fertile loamy soils rich in organic matter. pH 6.0-7.0 (slightly acidic to neutral). Avoids heavy clay or waterlogged soils.",
+  "irrigationWaterNeeds": "Requires consistent soil moisture throughout its shorter growing period. Water deeply when soil surface begins to dry. Drip irrigation or soaker hoses are effective.",
+  "plantingHarvestCycles": "Propagated from garlic cloves planted in autumn (for overwintering and early spring harvest) or early spring. Harvested when plants are young and tender, typically 2-4 months after planting, before bulbs fully form. Pulled or cut at ground level.",
+  "pestDiseaseManagement": "Pests: Onion thrips, aphids. Diseases: Similar to mature garlic but less susceptible due to shorter growing period; includes white rot, downy mildew, rust. Crop rotation, good drainage, and sanitation are important. Less prone to issues than mature garlic that stays in ground longer.",
+  "postHarvestHandling": "Highly perishable. Best used fresh. Store like spring onions: wrapped in a damp paper towel in the refrigerator crisper drawer for up to a week. Trim roots and any wilted outer leaves before storage or use.",
+  "majorProducingCountries": [
+    "China",
+    "India",
+    "United States (California)",
+    "Spain",
+    "South Korea",
+    "Egypt",
+    "Generally grown wherever mature garlic is cultivated, often for local markets or home use."
+  ],
+  "marketValueGlobalDemand": "Niche market compared to mature garlic. Popular in farmers' markets and specialty grocery stores during its spring season. Valued for its milder flavor and tender texture. Demand is seasonal and often localized."
 }

@@ -8,6 +8,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import PageTransitionWrapper from '@/components/PageTransitionWrapper'; // Import the wrapper
 import Preloader from '@/components/layout/Preloader'; // Added Preloader import
 
 const inter = Inter({
@@ -84,7 +85,7 @@ export default function RootLayout({
                 <DesktopSidebar />
                 <SidebarInset>
                   <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                    {children}
+                    <PageTransitionWrapper>{children}</PageTransitionWrapper>
                   </main>
                 </SidebarInset>
               </div>

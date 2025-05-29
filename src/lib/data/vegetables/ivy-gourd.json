@@ -136,5 +136,32 @@
         "Serve the ivy gourd stir-fry hot as a side dish with rice and sambar/dal, or with roti/chapati."
       ]
     }
-  ]
+  ],
+  "uses": [
+    "Culinary (young green fruits cooked as a vegetable in curries, stir-fries, soups, stews, pickles)",
+    "Traditional medicine (leaves, stems, roots, and fruits used for various ailments, including diabetes, skin diseases, and fever)"
+  ],
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical warm, humid climates. Optimal 20-32°C. Sensitive to frost. Requires full sun to partial shade.",
+    "rainfall": "Prefers moderate to high rainfall (1000-1500 mm annually), well-distributed. Can tolerate some drought once established, but benefits from moisture for good fruiting.",
+    "altitude": "Grows well from sea level up to 1000m."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils but thrives in well-drained, fertile sandy loam or loamy soils, rich in organic matter. pH 6.0-7.0.",
+  "irrigationWaterNeeds": "Requires regular watering, especially during dry periods and active growth phases (flowering and fruiting). Soil should be kept consistently moist but not waterlogged. Drip irrigation is suitable.",
+  "plantingHarvestCycles": "Propagated by stem cuttings (15-20 cm long with 2-3 nodes) or seeds. Cuttings root easily and establish faster. Planted on trellises, fences, or supports. Vigorous climber. Starts fruiting 2-4 months after planting cuttings. Fruits are harvested when young, green, and tender (typically 2-3 inches long). Regular harvesting (every few days) encourages continuous production. Perennial vine, can produce for several years.",
+  "pestDiseaseManagement": "Pests: Fruit flies (major pest), aphids, mealybugs, spider mites, leaf-eating caterpillars. Diseases: Powdery mildew, downy mildew, anthracnose, mosaic viruses. Management includes resistant varieties (if available), good field sanitation, pruning for air circulation, fruit bagging (for fruit flies), biological control, and need-based application of organic or chemical pesticides/fungicides.",
+  "postHarvestHandling": "Harvest young, tender green fruits. Highly perishable. Store in the refrigerator (7-10°C) for a few days. Used fresh in cooking. Overripe fruits (red) are generally not preferred for vegetable use as they become soft and sweet/sour.",
+  "majorProducingCountries": [
+    "India",
+    "Thailand",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Vietnam",
+    "Bangladesh",
+    "Sri Lanka",
+    "Various African countries",
+    "Caribbean countries"
+  ],
+  "marketValueGlobalDemand": "High demand in local and regional markets within producing countries, especially in South and Southeast Asia. Growing popularity in ethnic markets in Western countries. Valued for its crisp texture and culinary versatility. Generally affordable."
 }
