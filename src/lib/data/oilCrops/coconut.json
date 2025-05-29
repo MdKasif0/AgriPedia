@@ -1,0 +1,66 @@
+{
+  "id": "coconut",
+  "commonName": "Coconut",
+  "scientificName": "Cocos nucifera",
+  "image": "https://images.unsplash.com/photo-1580500721791-01ff0517b900?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The coconut tree is a member of the palm tree family (Arecaceae) and the only known living species of the genus Cocos. The term 'coconut' can refer to the whole coconut palm, the seed, or the fruit, which botanically is a drupe, not a nut. Coconuts are known for their versatility, with various parts of the plant and fruit being used for food, drink, oil, fiber, and wood.",
+  "origin": "Indo-Pacific region (Southeast Asia, Melanesia).",
+  "localNames": ["Nariyal (Hindi)", "Kokonattsu (Japanese)", "Coco (Spanish)", "Noix de coco (French)"],
+  "regions": ["Indonesia", "Philippines", "India", "Brazil", "Sri Lanka", "Thailand", "Vietnam", "Mexico", "Papua New Guinea", "Malaysia"],
+  "seasons": ["Perennial palm; fruits year-round in tropical climates, with peak production varying by local conditions. Takes about a year for a coconut to mature."],
+  "nutrition": {
+    "calories": "Coconut Meat (fresh): 354 kcal per 100g. Coconut Oil: 862 kcal per 100g. Coconut Water: 19 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Meat: 3.3" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Meat: 15.2 (Fiber 9.0)" },
+      { "name": "Fat", "unit": "g", "value": "Meat: 33.5 (Oil: 100, primarily saturated fat like lauric acid)" }
+    ],
+    "vitamins": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Meat: 1.5 (65%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "Meat: 0.435 (48%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Meat: 26 (7%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Meat: 356 (8%), Water: 250 (5%)" },
+      { "name": "Iron", "unit": "mg", "rdi": "Meat: 2.43 (14%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Meat: 32 (8%)" },
+      { "name": "Selenium", "unit": "µg", "rdi": "Meat: 10.1 (18%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Coconut oil contains medium-chain triglycerides (MCTs), which may offer quick energy and have some metabolic benefits.",
+    "Coconut water is a hydrating drink rich in electrolytes like potassium.",
+    "Coconut meat provides fiber, manganese, and copper.",
+    "Lauric acid in coconut oil has antimicrobial properties.",
+    "Traditionally used for skin and hair care (coconut oil)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Coconut Allergy",
+      "severity": "Rare",
+      "details": "Coconut allergy is relatively rare compared to tree nut allergies. However, reactions can occur and may range from mild to severe. The FDA classifies coconut as a tree nut for labeling purposes in the US."
+    }
+  ],
+  "cultivationProcess": "Coconut palms are grown from mature coconuts (seed nuts). They thrive in sandy, saline-tolerant soils and require high humidity, warm temperatures, and abundant sunlight. Palms start bearing fruit after 6-10 years.",
+  "growthDuration": "Perennial palm tree. Starts fruiting in 6-10 years, reaches peak production at 15-20 years, and can continue to produce fruit for up to 60-80 years or more.",
+  "sustainabilityTips": [
+    "Coconut palms are resilient and can grow in coastal areas with saline soils where other crops may not thrive.",
+    "Many parts of the plant are used, reducing waste (e.g., husks for coir, shells for charcoal/crafts).",
+    "Intercropping with other compatible crops is possible in coconut plantations."
+  ],
+  "carbonFootprintInfo": "Coconut cultivation can be relatively sustainable, especially in traditional systems. However, factors like transportation for export, processing (oil extraction, drying of copra), and land use practices in large plantations influence the overall carbon footprint.",
+  "uses": ["food_production_meat_fresh_dried_desiccated_milk_cream_water_oil_sugar_vinegar", "oil_production_copra_for_coconut_oil_cooking_cosmetics_industrial", "fiber_coir_from_husk_for_ropes_mats_growing_media", "wood_timber_for_construction_furniture", "beverages_coconut_water_toddy_arrack", "handicrafts_shells_leaves"],
+  "originAndDomesticationHistory": "The coconut palm (Cocos nucifera) is believed to have originated in the Indo-Pacific region, encompassing Southeast Asia and Melanesia. It spread widely through oceanic dispersal (floating nuts) and human migration by Austronesian peoples thousands of years ago. It has been a vital resource for coastal communities for millennia.",
+  "climaticRequirements": {
+    "temperature": "Tropical palm. Optimal growing temperatures are 27-30°C. Requires high humidity (70-80%+) and abundant sunlight. Cannot tolerate frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-2500mm annually. Can tolerate short dry spells but benefits from consistent moisture.",
+    "altitude": "Primarily a lowland crop, thriving near sea level (coastal regions). Can be grown up to 600m, but yields may decrease at higher altitudes."
+  },
+  "soilPreferences": "Prefers well-drained, sandy or loamy soils. Highly tolerant of saline soils and coastal conditions. Optimal pH is 5.5-7.5. Requires good aeration.",
+  "irrigationAndWaterNeeds": "Young palms require regular watering until established. Mature palms benefit from irrigation in areas with prolonged dry seasons or insufficient rainfall to maintain high yields. Good drainage is crucial to prevent root rot.",
+  "plantingAndHarvestCycles": "Propagated from seed nuts (mature coconuts). Seedlings are raised in nurseries and transplanted. Palms start bearing fruit after 6-10 years. Coconuts are harvested year-round, typically every 45-60 days. Harvesting involves climbing the tree or using long poles with knives. Fruits are harvested when mature (for copra/oil) or younger (for coconut water/tender meat).",
+  "pestAndDiseaseManagement": "Pests include rhinoceros beetle, red palm weevil, eriophyid mites, and rats. Diseases include lethal yellowing (phytoplasma disease), bud rot (Phytophthora), and various fungal leaf spots. Integrated pest management involves biological control, phytosanitation, resistant varieties (where available), and sometimes chemical control.",
+  "postHarvestHandling": "Harvested coconuts are de-husked. For copra production (dried coconut meat for oil extraction), nuts are split, and the meat is dried (sun-drying or kilns). For fresh consumption, nuts are sold whole or processed for meat, water, and milk. Coconut oil is extracted from copra by pressing or solvent extraction.",
+  "majorProducingCountriesOrRegions": ["Indonesia (leading producer)", "Philippines", "India", "Brazil", "Sri Lanka", "Vietnam", "Papua New Guinea", "Mexico", "Thailand", "Malaysia"],
+  "marketValueAndGlobalDemand": "Coconuts and coconut products (oil, water, desiccated coconut, copra, coir) have significant global demand. Coconut oil is used for cooking, cosmetics, and industrial purposes. Coconut water is a popular beverage. Demand for virgin coconut oil and other health-related coconut products has increased. Prices fluctuate based on global supply, weather conditions, and demand trends."
+}

@@ -1,0 +1,70 @@
+{
+  "id": "wheat",
+  "commonName": "Wheat",
+  "scientificName": "Triticum aestivum",
+  "image": "https://images.unsplash.com/photo-1507668077129-56e328422ceb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Wheat is a cereal grain, which is a worldwide staple food. It is the third most-produced cereal after maize and rice. Wheat grain is a staple food used to make flour for leavened, flat, and steamed breads; cookies, cakes, breakfast cereal, pasta, noodles, couscous and for fermentation to make beer, other alcoholic beverages, and biofuel.",
+  "origin": "Fertile Crescent region of the Middle East (specifically modern-day Turkey, Syria, Iraq, and Iran).",
+  "localNames": ["Gehun (Hindi)", "Komugi (Japanese)", "Trigo (Spanish)", "Blé (French)"],
+  "regions": ["China", "India", "Russia", "United States", "Canada"],
+  "seasons": ["Spring wheat (planted in spring, harvested in late summer/fall)", "Winter wheat (planted in fall, harvested in spring/early summer)"],
+  "nutrition": {
+    "calories": "327 kcal per 100g (whole grain)",
+    "macronutrients": [
+      { "name": "Protein", "value": 13.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 71.2, "unit": "g" },
+      { "name": "Fat", "value": 2.5, "unit": "g" },
+      { "name": "Fiber", "value": 12.2, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 5.71, "unit": "mg", "rdi": "38%" },
+      { "name": "Thiamin (B1)", "value": 0.383, "unit": "mg", "rdi": "32%" },
+      { "name": "Vitamin B6", "value": 0.3, "unit": "mg", "rdi": "23%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 3.985, "unit": "mg", "rdi": "173%" },
+      { "name": "Selenium", "value": 70.7, "unit": "µg", "rdi": "101%" },
+      { "name": "Phosphorus", "value": 288, "unit": "mg", "rdi": "29%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting satiety.",
+    "Whole wheat consumption is linked to a lower risk of heart disease.",
+    "Provides essential minerals like manganese and selenium.",
+    "Can help regulate blood sugar levels due to its fiber content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Gluten Intolerance/Celiac Disease",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Wheat contains gluten, which can cause adverse reactions in individuals with celiac disease or non-celiac gluten sensitivity. Symptoms can include digestive issues, fatigue, and skin problems."
+    },
+    {
+      "name": "Wheat Allergy",
+      "severity": "Varies",
+      "details": "An allergic reaction to proteins found in wheat, which can cause symptoms like hives, swelling, difficulty breathing, or anaphylaxis in severe cases."
+    }
+  ],
+  "cultivationProcess": "Wheat cultivation involves soil preparation (tillage), sowing seeds, fertilization, irrigation (if needed), weed and pest control, and harvesting when the grain is mature and dry.",
+  "growthDuration": "Typically 4-7 months, depending on the variety (winter or spring) and climate.",
+  "sustainabilityTips": [
+    "No-till farming to conserve soil moisture and reduce erosion.",
+    "Crop rotation to improve soil health and reduce pest buildup.",
+    "Precision agriculture for optimized use of fertilizers and water."
+  ],
+  "carbonFootprintInfo": "Wheat production has a moderate carbon footprint, influenced by factors like fertilizer use (nitrous oxide emissions), tillage practices, and transportation. Sustainable practices can help reduce its impact.",
+  "uses": ["culinary", "animal_feed", "industrial"],
+  "originAndDomesticationHistory": "Wheat was one of the first domesticated food crops, originating in the Fertile Crescent around 10,000 BCE. Einkorn and emmer wheat were early forms, with bread wheat (Triticum aestivum) emerging later through hybridization. Its cultivation spread throughout the Middle East, Europe, Asia, and eventually the Americas.",
+  "climaticRequirements": {
+    "temperature": "Optimal 15-25°C during growing season; can tolerate cooler temperatures, especially winter wheat.",
+    "rainfall": "400-1200mm annually, depending on the type and region. Drought-tolerant varieties exist.",
+    "altitude": "Can be grown from sea level up to 3000m, but performs best at moderate altitudes."
+  },
+  "soilPreferences": "Well-drained loamy soils are ideal. Prefers a pH range of 6.0-7.5. Tolerates a range of soil types but not waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Primarily rain-fed in many regions, but supplementary irrigation is used in drier areas, especially during critical growth stages like flowering and grain filling.",
+  "plantingAndHarvestCycles": "Winter wheat is sown in autumn and harvested in late spring/early summer. Spring wheat is sown in spring and harvested in late summer/early autumn. Combine harvesters are typically used.",
+  "pestAndDiseaseManagement": "Common pests include aphids, Hessian fly, and wheat midge. Diseases include rusts (leaf, stem, stripe), powdery mildew, and Fusarium head blight. Integrated pest management (IPM) strategies include resistant varieties, crop rotation, and targeted pesticide application.",
+  "postHarvestHandling": "Involves threshing to separate grain from chaff, cleaning, and drying to a moisture content of around 12-14% for safe storage. Stored in silos or bins to protect from pests and moisture.",
+  "majorProducingCountriesOrRegions": ["China", "India", "Russia", "United States", "France", "Canada", "Australia", "Ukraine", "Pakistan", "Germany"],
+  "marketValueAndGlobalDemand": "Wheat is a globally traded commodity with high demand for human consumption and animal feed. Its price is influenced by global production, weather patterns, and trade policies."
+}

@@ -1,0 +1,70 @@
+{
+  "id": "oats",
+  "commonName": "Oats",
+  "scientificName": "Avena sativa",
+  "image": "https://images.unsplash.com/photo-1587590590989-BF5577869198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Oats are a species of cereal grain grown for their seed, which is known by the same name. While oats are suitable for human consumption as oatmeal and rolled oats, one of the most common uses is as livestock feed.",
+  "origin": "Fertile Crescent, likely in the Near East or Asia Minor.",
+  "localNames": ["Jai (Hindi)", "Enbaku (Japanese)", "Avena (Spanish)", "Avoine (French)"],
+  "regions": ["Russia", "Canada", "Poland", "Finland", "Australia", "United Kingdom"],
+  "seasons": ["Spring oats (planted in spring, harvested in late summer/fall)"],
+  "nutrition": {
+    "calories": "389 kcal per 100g (raw)",
+    "macronutrients": [
+      { "name": "Protein", "value": 16.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 66.3, "unit": "g" },
+      { "name": "Fat", "value": 6.9, "unit": "g" },
+      { "name": "Fiber", "value": 10.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Thiamin (B1)", "value": 0.763, "unit": "mg", "rdi": "66%" },
+      { "name": "Pantothenic acid (B5)", "value": 1.349, "unit": "mg", "rdi": "27%" },
+      { "name": "Folate (B9)", "value": 56, "unit": "µg", "rdi": "14%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 4.916, "unit": "mg", "rdi": "246%" },
+      { "name": "Phosphorus", "value": 523, "unit": "mg", "rdi": "75%" },
+      { "name": "Magnesium", "value": 177, "unit": "mg", "rdi": "44%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in soluble fiber (beta-glucan), which helps lower LDL cholesterol.",
+    "Can improve blood sugar control.",
+    "Promotes satiety and can aid in weight management.",
+    "Contains unique antioxidants called avenanthramides, which may have anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Gluten Cross-Contamination",
+      "severity": "Varies",
+      "details": "Oats themselves are often gluten-free but can be contaminated with wheat gluten during processing. Individuals with celiac disease should look for certified gluten-free oats."
+    },
+    {
+      "name": "Avenin Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "A small percentage of people with celiac disease may also react to avenin, a protein in oats, similar to gluten."
+    }
+  ],
+  "cultivationProcess": "Oat cultivation involves preparing a seedbed, sowing seeds in early spring, managing weeds, and harvesting when the kernels are mature and the plant has dried down.",
+  "growthDuration": "Approximately 100-120 days.",
+  "sustainabilityTips": [
+    "Oats are often used as a cover crop to prevent soil erosion and improve soil health.",
+    "They require less fertilizer and pesticides compared to some other cereals.",
+    "Crop rotation with oats can break pest cycles."
+  ],
+  "carbonFootprintInfo": "Oats generally have a lower carbon footprint compared to other cereals due to lower input requirements (fertilizer, pesticides).",
+  "uses": ["culinary", "animal_feed", "cover_crop", "cosmetics"],
+  "originAndDomesticationHistory": "Oats (Avena sativa) were likely domesticated later than wheat and barley, possibly around 2000-1500 BCE in Europe. They were initially considered a weed in wheat and barley fields. Their value as a food and feed crop was recognized, particularly in cooler, wetter climates where other cereals struggled.",
+  "climaticRequirements": {
+    "temperature": "Prefers cool, moist climates. Optimal growing temperatures are 15-25°C. More tolerant of rain and less heat-tolerant than other cereals.",
+    "rainfall": "400-750mm annually. Requires consistent moisture, especially during heading and grain fill.",
+    "altitude": "Can be grown at various altitudes, typically in temperate regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types but performs best on well-drained loams or clay loams with a pH of 5.5-7.0. More tolerant of acidic soils than wheat or barley.",
+  "irrigationAndWaterNeeds": "Primarily rain-fed. Irrigation is not common unless in very dry regions or for specific high-value production.",
+  "plantingAndHarvestCycles": "Typically spring-sown as soon as the ground can be worked. Harvested in late summer when grains are hard and have reached about 12-14% moisture content. Combine harvesters are used.",
+  "pestAndDiseaseManagement": "Pests include aphids and wireworms. Major diseases are crown rust and stem rust, and barley yellow dwarf virus. Management includes resistant varieties, crop rotation, and fungicide applications in severe cases.",
+  "postHarvestHandling": "Involves cleaning and drying the grain to safe moisture levels for storage (around 12%). Stored in cool, dry conditions to prevent mold and pest infestation. For food-grade oats, dehulling and further processing (steaming, rolling, cutting) are done.",
+  "majorProducingCountriesOrRegions": ["Russia", "Canada", "European Union (Poland, Finland, Spain, UK)", "Australia", "United States", "Brazil"],
+  "marketValueAndGlobalDemand": "Global demand for oats is stable, with major uses being animal feed (especially for horses) and human food products (oatmeal, rolled oats, oat milk). There's growing interest in oats for their health benefits."
+}

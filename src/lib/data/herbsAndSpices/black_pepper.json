@@ -1,0 +1,67 @@
+{
+  "id": "black_pepper",
+  "commonName": "Black Pepper",
+  "scientificName": "Piper nigrum",
+  "image": "https://images.unsplash.com/photo-1508702476013-f89b82902f3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Black pepper is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, it is about 5 mm in diameter and dark red, and contains a single seed, like all drupes. Peppercorns and the ground pepper derived from them may be described simply as pepper, or more precisely as black pepper, white pepper, or green pepper.",
+  "origin": "South India (Malabar Coast).",
+  "localNames": ["Kali Mirch (Hindi)", "Koshō (Japanese)", "Pimienta negra (Spanish)", "Poivre noir (French)"],
+  "regions": ["Vietnam", "India", "Brazil", "Indonesia", "Sri Lanka", "Malaysia", "China"],
+  "seasons": ["Perennial vine; fruit is typically harvested once or twice a year, depending on the climate. Main harvest season varies by region, often after the monsoon."],
+  "nutrition": {
+    "calories": "251 kcal per 100g (ground black pepper)",
+    "macronutrients": [
+      { "name": "Protein", "value": 10.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 63.9, "unit": "g" },
+      { "name": "Fat", "value": 3.3, "unit": "g" },
+      { "name": "Fiber", "value": 25.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 163.7, "unit": "µg", "rdi": "136%" },
+      { "name": "Vitamin C", "value": 0, "unit": "mg", "rdi": "0%" },
+      { "name": "Vitamin E", "value": 1.04, "unit": "mg", "rdi": "7%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 5.625, "unit": "mg", "rdi": "245%" },
+      { "name": "Iron", "value": 9.71, "unit": "mg", "rdi": "54%" },
+      { "name": "Calcium", "value": 443, "unit": "mg", "rdi": "44%" },
+      { "name": "Potassium", "value": 1329, "unit": "mg", "rdi": "28%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in piperine, a potent antioxidant with anti-inflammatory properties.",
+    "May enhance nutrient absorption, particularly of curcumin and selenium.",
+    "Can stimulate digestion by increasing hydrochloric acid secretion in the stomach.",
+    "May improve brain function and have neuroprotective effects.",
+    "Has antimicrobial properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Pepper Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to black pepper is uncommon but can cause symptoms like skin rash, itching, or digestive upset in sensitive individuals. High doses might irritate the stomach lining."
+    }
+  ],
+  "cultivationProcess": "Black pepper is cultivated from stem cuttings of the vine. It requires a support structure (trees or artificial poles) to climb. It thrives in warm, humid climates with well-distributed rainfall and partial shade.",
+  "growthDuration": "Perennial vine. Begins fruiting in 3-4 years. Can be productive for 15-20 years or more. Peppercorns are harvested when they begin to turn red.",
+  "sustainabilityTips": [
+    "Traditionally grown in agroforestry systems, often intercropped with coffee or areca nut, promoting biodiversity.",
+    "Organic cultivation practices are increasingly common.",
+    "Requires specific tropical conditions, limiting its cultivation range."
+  ],
+  "carbonFootprintInfo": "The carbon footprint is influenced by land use, farming inputs, processing (drying, grinding), and extensive international transportation as it's a globally traded spice.",
+  "uses": ["culinary_spice_whole_peppercorns_ground_powder_seasoning", "traditional_medicine_digestive_aid_anti_inflammatory", "essential_oil_production"],
+  "originAndDomesticationHistory": "Black pepper (Piper nigrum) is native to the Malabar Coast of southwestern India. It has been cultivated there for thousands of years and was a highly prized commodity in ancient times, known as 'black gold'. It was a key driver of the spice trade between India, the Middle East, and Europe.",
+  "climaticRequirements": {
+    "temperature": "Tropical crop. Prefers hot, humid conditions with temperatures between 20-35°C. Cannot tolerate frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-3000mm annually. High humidity (70-90%) is ideal.",
+    "altitude": "Typically grown from sea level up to 1200m in tropical regions."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils rich in organic matter. Slightly acidic to neutral pH (5.5-6.5) is optimal. Good drainage is crucial to prevent root diseases.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture. In areas with distinct dry seasons, supplemental irrigation is necessary, especially during flowering and fruit development. Drip irrigation is efficient.",
+  "plantingAndHarvestCycles": "Propagated from rooted cuttings. Planted at the beginning of the rainy season, usually with support trees. Vines start bearing fruit from the 3rd or 4th year. Spikes are harvested when one or two berries on the spike turn from green to yellowish-orange. The entire spike is hand-picked.",
+  "pestAndDiseaseManagement": "Major pests include pollu beetle (damages berries), top shoot borer, and nematodes. Diseases include quick wilt (foot rot caused by Phytophthora), slow wilt (caused by nematodes and fungi), and anthracnose. Integrated pest management involves phytosanitation, biological control, resistant varieties (where available), and judicious use of pesticides/fungicides.",
+  "postHarvestHandling": "For black pepper, harvested green peppercorns are briefly blanched in hot water, then sun-dried or machine-dried for several days. During drying, the peppercorns shrink and turn black or dark brown. For white pepper, ripe red peppercorns are soaked in water to remove the outer pericarp, then the inner seed is dried. Green peppercorns can also be freeze-dried or pickled.",
+  "majorProducingCountriesOrRegions": ["Vietnam (largest producer and exporter)", "India", "Brazil", "Indonesia", "Sri Lanka", "Malaysia", "China", "Madagascar"],
+  "marketValueAndGlobalDemand": "Black pepper is one of the most widely traded spices globally, often referred to as the 'king of spices'. Demand is consistently high for its culinary uses. Prices can be volatile, influenced by global production, weather conditions in producing countries, and pest/disease outbreaks."
+}

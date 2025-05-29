@@ -1,0 +1,66 @@
+{
+  "id": "sugarcane",
+  "commonName": "Sugarcane",
+  "scientificName": "Saccharum officinarum",
+  "image": "https://images.unsplash.com/photo-1558310029-a49a0c6e0393?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Sugarcane is a species of tall, perennial grass in the genus Saccharum, tribe Andropogoneae, used for sugar production. The plants are 2–6 m (6–20 ft) tall with stout, jointed, fibrous stalks that are rich in sucrose, which accumulates in the stalk internodes. Sugarcane is the world's largest crop by production quantity.",
+  "origin": "New Guinea and Southeast Asia.",
+  "localNames": ["Ganna (Hindi)", "Satōkibi (Japanese)", "Caña de azúcar (Spanish)", "Canne à sucre (French)"],
+  "regions": ["Brazil (leading producer)", "India", "China", "Thailand", "Pakistan", "Mexico", "United States (Florida, Louisiana, Texas)", "Australia", "Colombia"],
+  "seasons": ["Tropical perennial grass; planting and harvesting cycles vary by region and can occur year-round in some places. Typically a 10-18 month crop cycle from planting to harvest, with multiple ratoon crops possible."],
+  "nutrition": {
+    "calories": "Raw Sugarcane Juice: ~40-60 kcal per 100ml. Refined Sugar: ~387 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Juice: ~0.2" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Juice: ~10-15 (primarily sucrose)" },
+      { "name": "Fat", "unit": "g", "value": "Juice: ~0" },
+      { "name": "Fiber", "unit": "g", "value": "Stalk (Bagasse): High in fiber, but juice is low" }
+    ],
+    "vitamins": [
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Juice: Trace" },
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Juice: Trace" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Juice: Moderate" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Juice: Moderate" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Juice: Moderate" },
+      { "name": "Iron", "unit": "mg", "rdi": "Juice: Moderate" }
+    ]
+  },
+  "healthBenefits": [
+    "Primary product, refined sugar, offers energy but limited direct health benefits and should be consumed in moderation.",
+    "Raw sugarcane juice provides hydration and some electrolytes.",
+    "Molasses, a byproduct, contains some iron, calcium, and magnesium.",
+    "Bagasse (fibrous residue) can be used for biofuel production."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Sugarcane Pollen Allergy",
+      "severity": "Mild",
+      "details": "Pollen from sugarcane flowers can cause hay fever in sensitive individuals, though sugarcane is primarily harvested for its stalk before extensive flowering in commercial settings."
+    }
+  ],
+  "cultivationProcess": "Sugarcane is propagated from cuttings (setts) of mature stalks. It requires a tropical or subtropical climate with high rainfall and abundant sunshine. The stalks are harvested when sucrose content is at its peak.",
+  "growthDuration": "Typically 10-18 months for the plant crop. Ratoon crops (regrowth from the stubble) can be harvested for several subsequent cycles at roughly annual intervals.",
+  "sustainabilityTips": [
+    "Efficient water management and irrigation techniques are crucial due to high water requirements.",
+    "Integrated pest and disease management can reduce reliance on chemical inputs.",
+    "Utilization of byproducts like bagasse (for energy) and molasses (for ethanol or feed) improves overall sustainability.",
+    "Trash blanketing (leaving crop residues on the field) can conserve moisture and improve soil health."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of sugar production is influenced by factors like fertilizer use, irrigation (energy for pumping), processing (milling, refining), and transportation. Burning of cane fields before harvest (in some regions) releases CO2 and pollutants. Ethanol production from sugarcane can offer carbon benefits compared to fossil fuels if done sustainably.",
+  "uses": ["sugar_production_sucrose_for_food_beverages_syrups", "ethanol_production_biofuel", "molasses_production_food_feed_rum_production", "bagasse_production_biofuel_paper_building_materials", "fodder_leaves_tops_for_livestock"],
+  "originAndDomesticationHistory": "Sugarcane (Saccharum officinarum) was first domesticated in New Guinea around 8,000-10,000 years ago. It spread throughout Southeast Asia and India. Knowledge of crystal sugar production was developed in India. It was introduced to the Mediterranean by Arabs and then to the Americas by Columbus, becoming a major driver of colonial economies and the slave trade.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical crop. Optimal growing temperatures are 20-32°C. Requires a frost-free period. Growth slows significantly below 20°C.",
+    "rainfall": "Requires high rainfall, typically 1500-2500mm annually, well-distributed throughout the growing season. A dry period is beneficial for maturation and sucrose accumulation before harvest.",
+    "altitude": "Primarily a lowland crop, typically grown from sea level up to 1000m. Yields may decrease at higher altitudes."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils rich in organic matter. Can grow in a range of soil types, including heavy clays and sandy loams, provided there is good drainage and nutrient supply. Optimal pH is 6.0-7.5.",
+  "irrigationAndWaterNeeds": "High water requirement. Irrigation is essential in areas with insufficient or uneven rainfall to ensure good yields. Furrow or drip irrigation is common. Water stress, especially during formative and stalk elongation phases, severely affects yield.",
+  "plantingAndHarvestCycles": "Propagated by planting sections of mature stalks (setts) containing 2-3 buds. Planted in furrows or trenches. The main crop (plant crop) is harvested after 10-18 months. Subsequent ratoon crops can be harvested for 2-5 years or more. Harvesting is done manually or mechanically when sucrose content is maximal.",
+  "pestAndDiseaseManagement": "Major pests include sugarcane borers (stem, internode, top borers), woolly aphids, whiteflies, and termites. Diseases include red rot, smut, mosaic virus, and ratoon stunting disease. Integrated pest management involves resistant varieties, biological control, cultural practices (e.g., trash management, proper drainage), and judicious use of pesticides.",
+  "postHarvestHandling": "Harvested sugarcane stalks must be transported to mills quickly (within 24-48 hours) to minimize sucrose degradation. At the mill, juice is extracted by crushing the stalks. The juice is then clarified, evaporated, and crystallized to produce raw sugar, which is further refined for various sugar products. Bagasse is the fibrous residue.",
+  "majorProducingCountriesOrRegions": ["Brazil (world's largest producer and exporter)", "India", "China", "Thailand", "Pakistan", "Mexico", "Colombia", "Australia", "United States (Florida, Louisiana, Texas)", "Philippines"],
+  "marketValueAndGlobalDemand": "Sugar is a major global commodity with high demand for food and beverage industries. Sugarcane is the primary source of global sugar production. It is also a key feedstock for ethanol production, particularly in Brazil. International sugar prices are influenced by global supply, demand, weather conditions in major producing countries, and trade policies."
+}

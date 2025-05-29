@@ -1,0 +1,72 @@
+{
+  "id": "kidney_beans",
+  "commonName": "Kidney Beans (Rajma)",
+  "scientificName": "Phaseolus vulgaris",
+  "image": "https://images.unsplash.com/photo-1600439022850-809375929205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Kidney beans are a variety of the common bean (Phaseolus vulgaris). They are named for their visual resemblance in shape and color to a kidney. Kidney beans are a staple in many cuisines worldwide, valued for their high protein and fiber content.",
+  "origin": "Mesoamerica (likely modern-day Peru or Mexico).",
+  "localNames": ["Rajma (Hindi)", "Ingen mame (Japanese - general term for common beans)", "Frijol riñón (Spanish)", "Haricot rouge (French)"],
+  "regions": ["India", "Brazil", "Mexico", "United States", "Myanmar", "China", "East African countries"],
+  "seasons": ["Warm-season crop; planted after the last frost in spring and harvested in late summer/fall."],
+  "nutrition": {
+    "calories": "127 kcal per 100g (cooked, canned, drained)",
+    "macronutrients": [
+      { "name": "Protein", "value": 8.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 22.8, "unit": "g" },
+      { "name": "Fat", "value": 0.5, "unit": "g" },
+      { "name": "Fiber", "value": 6.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 130, "unit": "µg", "rdi": "33%" },
+      { "name": "Thiamin (B1)", "value": 0.155, "unit": "mg", "rdi": "13%" },
+      { "name": "Vitamin K", "value": 8.4, "unit": "µg", "rdi": "7%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.433, "unit": "mg", "rdi": "19%" },
+      { "name": "Iron", "value": 2.2, "unit": "mg", "rdi": "12%" },
+      { "name": "Phosphorus", "value": 142, "unit": "mg", "rdi": "20%" },
+      { "name": "Potassium", "value": 403, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of plant-based protein and dietary fiber.",
+    "Rich in folate, manganese, and iron.",
+    "Helps regulate blood sugar levels due to low glycemic index and high fiber.",
+    "May contribute to lowering cholesterol levels.",
+    "Supports digestive health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies",
+      "details": "Kidney bean allergy is possible, particularly in individuals with other legume allergies. Symptoms can vary."
+    },
+    {
+      "name": "Phytohaemagglutinin Toxicity",
+      "severity": "Moderate to Severe",
+      "details": "Raw or improperly cooked kidney beans contain high levels of phytohaemagglutinin, a lectin that can cause nausea, vomiting, and diarrhea. Beans must be soaked and boiled thoroughly to destroy the toxin."
+    }
+  ],
+  "cultivationProcess": "Kidney bean cultivation involves preparing well-drained soil, sowing seeds after the danger of frost has passed, providing support for vining varieties (if applicable), regular watering, weed and pest control, and harvesting when pods are dry.",
+  "growthDuration": "Approximately 90-120 days from planting to dry bean harvest.",
+  "sustainabilityTips": [
+    "As a legume, it fixes atmospheric nitrogen, reducing fertilizer needs.",
+    "Can be part of sustainable crop rotation systems.",
+    "Intercropping with other crops can be beneficial."
+  ],
+  "carbonFootprintInfo": "Common beans, including kidney beans, generally have a lower carbon footprint than animal-based proteins due to nitrogen fixation. However, factors like processing, transportation, and cooking methods (especially for dried beans) influence the overall footprint.",
+  "uses": ["culinary_chili_salads_curries", "canned_food_production"],
+  "originAndDomesticationHistory": "The common bean (Phaseolus vulgaris), including kidney beans, was domesticated independently in two main centers: Mesoamerica (Mexico/Central America) and the Andes (Peru/Ecuador) between 7,000 and 8,000 years ago. Kidney beans, with their characteristic shape, are part of this broader domestication. They were spread globally after European contact with the Americas.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 18-27°C. Sensitive to frost and extreme heat, which can affect pod set.",
+    "rainfall": "400-700mm during the growing season. Requires consistent moisture, especially during flowering and pod development.",
+    "altitude": "Can be grown from sea level to about 2000m, depending on the variety."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy soils with a pH between 6.0 and 7.0. Does not tolerate waterlogged conditions or highly acidic soils.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture. Irrigation is often necessary in drier regions or during periods of low rainfall, especially during flowering and pod filling stages, to ensure good yields and bean quality.",
+  "plantingAndHarvestCycles": "Planted in spring after the last frost. Seeds are sown 2-5 cm deep. Bush varieties are self-supporting, while pole varieties need trellising. Harvested for dry beans when pods are brittle and yellow/brown, and seeds are hard. Plants are cut or pulled, dried further if needed, and then threshed.",
+  "pestAndDiseaseManagement": "Common pests include bean beetles, aphids, spider mites, and leafhoppers. Diseases include anthracnose, bean common mosaic virus (BCMV), rust, and root rots. Integrated pest management involves resistant varieties, crop rotation, clean seed, and targeted pesticide/fungicide use when necessary.",
+  "postHarvestHandling": "Involves threshing to remove beans from pods, cleaning to remove debris and imperfect beans, and drying to a moisture content of 12-14% for safe storage. Stored in cool, dry, and dark conditions to prevent spoilage and pest infestation.",
+  "majorProducingCountriesOrRegions": ["India", "Brazil", "Myanmar", "United States", "Mexico", "Tanzania", "Uganda", "China", "Kenya"],
+  "marketValueAndGlobalDemand": "Kidney beans are a widely consumed pulse globally, with steady demand for both dry and canned forms. They are important for food security in many regions. Prices are influenced by global production, regional demand, and weather patterns."
+}
