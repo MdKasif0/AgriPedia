@@ -1,0 +1,71 @@
+{
+  "id": "mint",
+  "commonName": "Mint",
+  "scientificName": "Mentha spp.",
+  "image": "https://images.unsplash.com/photo-1590005023065-175311ff5d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Mint is an aromatic herb from the genus Mentha, within the Lamiaceae family. There are many species of mint, including peppermint (Mentha × piperita) and spearmint (Mentha spicata), which are popular for their distinct flavors and uses in culinary applications, teas, and essential oils.",
+  "origin": "Mediterranean region and temperate areas of Asia, Europe, and Africa, depending on the species.",
+  "localNames": ["Pudina (Hindi)", "Hakka (Japanese)", "Menta (Spanish/Italian)", "Menthe (French)"],
+  "regions": ["Worldwide cultivation; major producers include USA (Pacific Northwest), India, China, Mediterranean countries."],
+  "seasons": ["Perennial; actively grows in spring and summer. Can be harvested multiple times."],
+  "nutrition": {
+    "calories": "44 kcal per 100g (fresh spearmint)",
+    "macronutrients": [
+      { "name": "Protein", "value": 3.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 8.4, "unit": "g" },
+      { "name": "Fat", "value": 0.7, "unit": "g" },
+      { "name": "Fiber", "value": 6.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": 203, "unit": "µg", "rdi": "25%" },
+      { "name": "Folate (B9)", "value": 105, "unit": "µg", "rdi": "26%" },
+      { "name": "Riboflavin (B2)", "value": 0.175, "unit": "mg", "rdi": "14%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.118, "unit": "mg", "rdi": "49%" },
+      { "name": "Iron", "value": 11.87, "unit": "mg", "rdi": "66%" },
+      { "name": "Copper", "value": 0.240, "unit": "mg", "rdi": "27%" }
+    ]
+  },
+  "healthBenefits": [
+    "Aids digestion and can soothe an upset stomach.",
+    "Freshens breath.",
+    "Menthol, a compound in mint, may help relieve congestion.",
+    "Contains antioxidants.",
+    "Peppermint oil has been studied for its potential to alleviate symptoms of Irritable Bowel Syndrome (IBS)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lamiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to mint is uncommon but can occur, particularly in individuals sensitive to other plants in the Lamiaceae family. Symptoms may include skin rash or oral allergy syndrome."
+    },
+    {
+      "name": "Heartburn Aggravation",
+      "severity": "Mild",
+      "details": "Mint can relax the sphincter between the stomach and esophagus, potentially worsening heartburn in some individuals."
+    }
+  ],
+  "cultivationProcess": "Mint is typically grown from cuttings or runners due to seed variability. It prefers rich, moist soil and partial shade to full sun. Known for its aggressive spreading habit via underground rhizomes.",
+  "growthDuration": "Perennial. Establishes quickly, with harvests possible within 2-3 months of planting. Multiple harvests per year are common.",
+  "sustainabilityTips": [
+    "Can be invasive; grow in containers or with root barriers to control spread.",
+    "Easily propagated from cuttings, reducing need for new plants.",
+    "Attracts beneficial insects like bees when flowering."
+  ],
+  "carbonFootprintInfo": "Locally grown mint has a low carbon footprint. Commercial production for essential oils or large-scale fresh markets involves energy for distillation, processing, and transport, increasing its footprint.",
+  "uses": ["culinary_herb_teas_candies_sauces_garnish", "essential_oil_production_aromatherapy_flavoring", "traditional_medicine", "insect_repellent_some_species"],
+  "originAndDomesticationHistory": "The genus Mentha includes numerous species with diverse origins across Europe, Asia, and Africa. Many have been used for thousands of years. Peppermint (Mentha × piperita) is a hybrid mint, a cross between watermint (Mentha aquatica) and spearmint (Mentha spicata), first described in England in the late 17th century. Spearmint has ancient origins in the Mediterranean.",
+  "climaticRequirements": {
+    "temperature": "Prefers cool to warm temperate climates, 15-25°C. Some species are more cold-hardy than others.",
+    "rainfall": "Requires consistent moisture. Prefers well-distributed rainfall or regular irrigation, around 700-1000mm equivalent.",
+    "altitude": "Adaptable to various altitudes, from sea level to over 2000m for some species."
+  },
+  "soilPreferences": "Prefers rich, moist, well-drained loamy soils with a slightly acidic to neutral pH (6.0-7.5). Tolerates a range of soil types but thrives with good organic matter.",
+  "irrigationAndWaterNeeds": "Requires regular watering to keep the soil consistently moist, especially during dry periods. Drip irrigation is suitable. Good drainage is important to prevent root rot.",
+  "plantingAndHarvestCycles": "Best propagated by runners, cuttings, or division in spring or fall. Plants spread rapidly. Leaves can be harvested as needed once the plant is established. For oil production, typically harvested just before or at early flowering.",
+  "pestAndDiseaseManagement": "Pests include aphids, spider mites, and mint loopers. Diseases include rust, powdery mildew, and verticillium wilt. Management involves good air circulation, avoiding overhead watering, using disease-resistant cultivars, and organic controls. Crop rotation is important in commercial settings.",
+  "postHarvestHandling": "Fresh mint is best used shortly after harvest. It can be stored in the refrigerator with stems in water or wrapped in a damp paper towel. For drying, hang sprigs in a cool, dark, airy place or use a dehydrator. Dried mint should be stored in an airtight container.",
+  "majorProducingCountriesOrRegions": ["United States (Washington, Oregon, Idaho for peppermint/spearmint oil)", "India", "China", "Morocco", "Egypt", "Argentina"],
+  "marketValueAndGlobalDemand": "Mint is a globally important herb for culinary use (fresh and dried) and essential oil production (peppermint and spearmint oils are major commodities). The oils are used in flavorings (gum, toothpaste, candy), aromatherapy, and personal care products. Demand is consistently high."
+}

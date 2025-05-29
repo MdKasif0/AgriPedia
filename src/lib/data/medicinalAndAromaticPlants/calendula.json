@@ -1,0 +1,61 @@
+{
+  "id": "calendula",
+  "commonName": "Calendula (Pot Marigold)",
+  "scientificName": "Calendula officinalis",
+  "image": "https://images.unsplash.com/photo-1589968310192-1e00d0414190?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Calendula, commonly known as pot marigold, is a flowering plant in the daisy family Asteraceae. It is native to Southern Europe but widely cultivated. The bright orange or yellow flower petals are used for medicinal purposes, as a culinary herb, and for dyeing. It is known for its skin-soothing properties.",
+  "origin": "Southern Europe and the Eastern Mediterranean region.",
+  "localNames": ["Genda Phool (Hindi - often refers to Tagetes marigolds, but sometimes Calendula)", "Kinsenka (Japanese)", "Caléndula (Spanish)", "Souci (French)"],
+  "regions": ["Cultivated worldwide in temperate regions; significant cultivation in Europe (Germany, Poland), Egypt, India."],
+  "seasons": ["Cool-season annual or short-lived perennial in mild climates. Flowers bloom from spring through fall, often until the first hard frost."],
+  "nutrition": {
+    "calories": "Primarily used for medicinal purposes or as a colorant; petals have negligible caloric value in typical usage amounts.",
+    "macronutrients": [
+      { "name": "Protein", "value": "Trace", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Trace", "unit": "g" },
+      { "name": "Fat", "value": "Trace", "unit": "g" },
+      { "name": "Fiber", "value": "Trace", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A (as carotenoids)", "value": "Present in petals", "unit": "µg", "rdi": "" },
+      { "name": "Vitamin C", "value": "Present in petals", "unit": "mg", "rdi": "" }
+    ],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Possesses anti-inflammatory and wound-healing properties, excellent for minor burns, cuts, rashes, and insect bites.",
+    "Antimicrobial (antibacterial and antifungal) effects.",
+    "Soothes skin irritation, eczema, and dermatitis.",
+    "Used in traditional medicine to support lymphatic drainage and as an emmenagogue (to promote menstruation).",
+    "Rich in antioxidants like flavonoids and carotenoids."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Asteraceae/Compositae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to plants in the Asteraceae family (e.g., ragweed, daisies, chrysanthemums, chamomile) may experience allergic reactions to calendula, such as contact dermatitis or hay fever symptoms."
+    }
+  ],
+  "cultivationProcess": "Calendula is easily grown from seeds. It prefers well-drained soil and full sun, though it can tolerate partial shade. Deadheading spent flowers encourages continuous blooming.",
+  "growthDuration": "Annual. Flowers can appear as early as 6-8 weeks after sowing. Blooms profusely throughout the growing season.",
+  "sustainabilityTips": [
+    "Attracts beneficial insects like bees and hoverflies, and can deter some garden pests like nematodes.",
+    "Self-seeds readily, often returning year after year.",
+    "Can be grown organically with minimal inputs."
+  ],
+  "carbonFootprintInfo": "Locally grown calendula for personal use has a very low carbon footprint. Commercial production for herbal products and cosmetics involves energy for cultivation, drying, extraction, and transportation.",
+  "uses": ["medicinal_topical_salves_creams_oils_for_skin_inflammation_wound_healing", "culinary_petals_as_food_coloring_saffron_substitute_garnish_in_salads_rice", "cosmetics_skin_care_products", "traditional_medicine_internal_use_as_tea_for_various_ailments", "dyeing_fabric_natural_yellow_orange_dye", "ornamental_plant_bedding_plant_cut_flowers"],
+  "originAndDomesticationHistory": "Calendula officinalis is native to Southern Europe and the Eastern Mediterranean. It has been used for medicinal and culinary purposes since ancient Greek, Roman, and Egyptian times. It was valued for its healing properties and as a coloring agent for food and fabrics. Its name is derived from the Latin 'kalendae', meaning the first day of the month, referring to its long blooming period.",
+  "climaticRequirements": {
+    "temperature": "Cool-season annual. Prefers moderate temperatures, 15-25°C. Tolerates light frost. Can struggle or stop blooming in intense summer heat.",
+    "rainfall": "Requires regular moisture, especially during germination and active growth. About 400-700mm equivalent. Good drainage is key.",
+    "altitude": "Adaptable to various altitudes in temperate regions."
+  },
+  "soilPreferences": "Adaptable to most soil types but prefers well-drained, moderately fertile soil with a pH of 6.0-7.0. Can tolerate poorer soils.",
+  "irrigationAndWaterNeeds": "Water regularly, especially during dry periods, to keep the soil evenly moist but not waterlogged. Allow the top inch of soil to dry out between waterings.",
+  "plantingAndHarvestCycles": "Sow seeds directly in the garden in early spring after the last frost, or in late summer/early fall in mild climates for winter/spring blooms. Deadhead regularly to prolong flowering. Harvest flower heads when they are fully open, preferably in the morning after dew has dried. Petals can be used fresh or dried.",
+  "pestAndDiseaseManagement": "Generally hardy. Aphids, spider mites, and slugs can occasionally be pests. Powdery mildew can occur in humid conditions with poor air circulation. Fungal leaf spots or root rot can happen in overly wet soil. Good spacing and avoiding overhead watering can prevent many issues.",
+  "postHarvestHandling": "For medicinal use, flower heads or petals are harvested and dried. Spread them in a single layer in a warm, dark, airy place or use a dehydrator on low heat. Store dried calendula in an airtight container away from light. Fresh petals are used in culinary applications.",
+  "majorProducingCountriesOrRegions": ["Egypt", "India", "Germany", "Poland", "Hungary", "Balkan countries", "United States", "Cultivated in many home gardens worldwide"],
+  "marketValueAndGlobalDemand": "Calendula is popular in the natural health and cosmetics industries. Demand is high for dried flowers, extracts, and infused oils used in skincare products, herbal teas, and medicinal preparations. The market for organic calendula is also strong."
+}

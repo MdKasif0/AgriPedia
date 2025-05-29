@@ -1,0 +1,73 @@
+{
+  "id": "soybeans",
+  "commonName": "Soybeans (Soya Beans)",
+  "scientificName": "Glycine max",
+  "image": "https://images.unsplash.com/photo-1579080719145-95939101c455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Soybean is a species of legume native to East Asia, widely grown for its edible bean, which has numerous uses. It is a globally important crop, providing protein and oil. Soybeans are ingredients in many processed foods and are also used for animal feed.",
+  "origin": "East Asia (likely China).",
+  "localNames": ["Soya (Hindi)", "Daizu (Japanese)", "Soja (Spanish/French)"],
+  "regions": ["United States", "Brazil", "Argentina", "China", "India", "Canada"],
+  "seasons": ["Warm-season crop; planted in late spring or early summer and harvested in fall."],
+  "nutrition": {
+    "calories": "173 kcal per 100g (cooked, mature seeds)",
+    "macronutrients": [
+      { "name": "Protein", "value": 18.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 8.4, "unit": "g" },
+      { "name": "Fat", "value": 9.0, "unit": "g" },
+      { "name": "Fiber", "value": 6.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 54, "unit": "µg", "rdi": "14%" },
+      { "name": "Vitamin K", "value": 19.2, "unit": "µg", "rdi": "16%" },
+      { "name": "Vitamin C", "value": 1.7, "unit": "mg", "rdi": "2%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.524, "unit": "mg", "rdi": "23%" },
+      { "name": "Iron", "value": 5.14, "unit": "mg", "rdi": "29%" },
+      { "name": "Phosphorus", "value": 245, "unit": "mg", "rdi": "35%" },
+      { "name": "Copper", "value": 0.411, "unit": "mg", "rdi": "46%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of high-quality plant-based protein, containing all essential amino acids.",
+    "Rich in healthy fats, fiber, vitamins, and minerals.",
+    "Contains isoflavones, which may have various health benefits, including reducing risk of certain cancers and improving bone health.",
+    "May help lower LDL (bad) cholesterol levels.",
+    "Versatile food source used to make tofu, tempeh, soy milk, miso, and edamame."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Soy Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Soy is one of the 'Big Eight' allergens. Allergic reactions can range from mild (hives, itching) to severe (anaphylaxis). Soy is present in many processed foods, requiring careful label reading for allergic individuals."
+    },
+    {
+      "name": "Goitrogenic Effects",
+      "severity": "Mild (primarily in individuals with iodine deficiency)",
+      "details": "Soy contains goitrogens, which might interfere with thyroid function in individuals with pre-existing thyroid conditions or iodine deficiency, especially if consumed in very large amounts."
+    }
+  ],
+  "cultivationProcess": "Soybean cultivation involves preparing a well-drained seedbed, inoculating seeds with Bradyrhizobium japonicum (if soybeans haven't been grown recently in the soil), planting seeds, managing weeds and pests, and harvesting when pods are mature and dry.",
+  "growthDuration": "Approximately 100-150 days, depending on the variety (maturity group) and climate.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing crop, reducing the need for nitrogen fertilizers.",
+    "Important in crop rotation systems to improve soil health.",
+    "No-till and conservation tillage practices can reduce soil erosion and improve water retention.",
+    "Concerns exist regarding deforestation for soy cultivation in some regions (e.g., Amazon); sustainable sourcing is crucial."
+  ],
+  "carbonFootprintInfo": "Soybeans' carbon footprint is influenced by land-use change (deforestation is a major factor), farming practices (fertilizer use, tillage), processing, and transportation. Sustainably grown soy has a much lower footprint.",
+  "uses": ["food_production_tofu_tempeh_soy_milk_edamame_soy_sauce_oil", "animal_feed_meal", "industrial_biofuel_plastics_inks"],
+  "originAndDomesticationHistory": "Soybean (Glycine max) was domesticated from its wild ancestor Glycine soja in East Asia, most likely in central China, between 7,000 and 9,000 years ago. It has been a crucial crop in Chinese agriculture for millennia. It was introduced to other parts of Asia, and then to Europe and the Americas much later (18th-19th centuries).",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 20-30°C. Requires a frost-free period of at least 100 days.",
+    "rainfall": "400-800mm during the growing season. Requires adequate moisture, especially during germination, flowering, and pod fill. Tolerant of short dry spells but not prolonged drought.",
+    "altitude": "Typically grown in lowland areas, but can be cultivated up to 2000m."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy soils with a pH between 6.0 and 7.0. Does not tolerate waterlogged or highly acidic/alkaline soils well.",
+  "irrigationAndWaterNeeds": "While it can be rain-fed in areas with sufficient rainfall, supplemental irrigation is often used to ensure optimal yields, particularly during dry periods and critical growth stages (flowering, pod development).",
+  "plantingAndHarvestCycles": "Planted in late spring or early summer after soil temperatures have warmed. Seeds are sown 2-5 cm deep. Most modern varieties are determinate (bush type). Harvested when pods are dry and yellow/brown, and seeds are hard. Combine harvesters are typically used.",
+  "pestAndDiseaseManagement": "Numerous pests (e.g., soybean aphids, bean leaf beetles, stink bugs, nematodes) and diseases (e.g., soybean rust, Phytophthora root rot, sudden death syndrome, soybean cyst nematode) can affect soybeans. Integrated pest management (IPM) strategies include resistant varieties (including genetically modified ones), crop rotation, seed treatments, biological control, and judicious use of pesticides.",
+  "postHarvestHandling": "Involves threshing to separate beans from pods, cleaning to remove debris, and drying to a moisture content of 11-13% for safe storage. Soybeans are stored in silos or bins and are traded as a global commodity.",
+  "majorProducingCountriesOrRegions": ["United States (leading producer)", "Brazil", "Argentina", "China", "India", "Paraguay", "Canada"],
+  "marketValueAndGlobalDemand": "Soybeans are one of the most important agricultural commodities globally, with massive demand for animal feed (soybean meal) and vegetable oil. Demand is also driven by its use in human food products and industrial applications. Prices are influenced by global supply and demand, weather patterns in major producing regions, and trade policies."
+}

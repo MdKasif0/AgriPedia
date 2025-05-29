@@ -1,0 +1,72 @@
+{
+  "id": "fava_beans",
+  "commonName": "Fava Beans (Broad Beans)",
+  "scientificName": "Vicia faba",
+  "image": "https://images.unsplash.com/photo-1597362249468-f92f9d098a28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Fava beans, also known as broad beans, are a species of flowering plant in the pea and bean family Fabaceae. They are cultivated for their large, flat, edible seeds, which are a staple in many cuisines around the world. The young pods can also be eaten.",
+  "origin": "Near East (Fertile Crescent).",
+  "localNames": ["Baakla (Hindi)", "Soramame (Japanese)", "Haba (Spanish)", "Fève (French)"],
+  "regions": ["China", "Ethiopia", "Egypt", "Australia", "United Kingdom", "Italy", "Peru"],
+  "seasons": ["Cool-season crop; planted in early spring or fall (for overwintering in mild climates) and harvested in late spring or summer."],
+  "nutrition": {
+    "calories": "110 kcal per 100g (cooked, mature seeds)",
+    "macronutrients": [
+      { "name": "Protein", "value": 7.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 19.7, "unit": "g" },
+      { "name": "Fat", "value": 0.7, "unit": "g" },
+      { "name": "Fiber", "value": 5.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 104, "unit": "µg", "rdi": "26%" },
+      { "name": "Vitamin K", "value": 2.8, "unit": "µg", "rdi": "2%" },
+      { "name": "Thiamin (B1)", "value": 0.079, "unit": "mg", "rdi": "7%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.385, "unit": "mg", "rdi": "17%" },
+      { "name": "Copper", "value": 0.215, "unit": "mg", "rdi": "24%" },
+      { "name": "Phosphorus", "value": 129, "unit": "mg", "rdi": "18%" },
+      { "name": "Iron", "value": 1.53, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of plant-based protein and dietary fiber.",
+    "Rich in folate, manganese, and copper.",
+    "May help improve bone health due to manganese content.",
+    "Can contribute to lowering cholesterol levels.",
+    "Contains L-dopa, a precursor to dopamine, which may have benefits for Parkinson's disease patients (though not a treatment)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Favism (G6PD Deficiency)",
+      "severity": "Severe",
+      "details": "Individuals with Glucose-6-Phosphate Dehydrogenase (G6PD) deficiency can experience hemolytic anemia (favism) upon consumption of fava beans or inhalation of their pollen. This is a serious genetic condition prevalent in certain populations (Mediterranean, African, Asian)."
+    },
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies",
+      "details": "Allergy to fava beans themselves is also possible."
+    }
+  ],
+  "cultivationProcess": "Fava bean cultivation involves preparing a well-drained seedbed, inoculating seeds with appropriate Rhizobium strains, sowing seeds, managing weeds, and harvesting pods when they are plump (for fresh use) or when pods are dry and brittle (for dry beans).",
+  "growthDuration": "Approximately 80-120 days for fresh beans, and up to 150-180 days for dry beans, depending on climate and variety.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing crop, enriching the soil.",
+    "Can be grown as a winter cover crop in some regions.",
+    "Adaptable to cooler climates where other legumes might not thrive."
+  ],
+  "carbonFootprintInfo": "Fava beans generally have a low carbon footprint due to nitrogen fixation. Their ability to grow in cooler climates can also reduce the need for energy-intensive production in some contexts. However, processing (like canning) and transport add to the footprint.",
+  "uses": ["culinary_fresh_beans_dry_beans_stews_salads_dips", "animal_feed_fodder_seeds", "cover_crop", "green_manure"],
+  "originAndDomesticationHistory": "Fava beans (Vicia faba) are one of the most ancient cultivated plants, with origins in the Near East (Fertile Crescent) dating back to at least 6,000 BCE. They were widely cultivated in ancient Egypt, Greece, and Rome and were a crucial part of the European diet before the introduction of New World beans (Phaseolus species).",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 15-20°C. Tolerant of light frosts, but flowers can be damaged by heavier frosts. Dislikes high temperatures.",
+    "rainfall": "400-700mm annually. Requires consistent moisture, especially during flowering and pod development. Not very drought-tolerant.",
+    "altitude": "Can be grown from sea level up to 2800m in temperate and subtropical regions."
+  },
+  "soilPreferences": "Prefers well-drained, fertile clay loams or heavy loams with a pH of 6.0-7.5. Tolerates heavier soils better than many other beans but not waterlogging.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture. Irrigation is often necessary, especially in drier regions or during periods of low rainfall, to ensure good pod set and bean development.",
+  "plantingAndHarvestCycles": "Planted in early spring as soon as the soil can be worked, or in autumn for overwintering in mild climates. Seeds are large and sown 5-7 cm deep. Harvested for fresh green beans when pods are well-filled but still tender. For dry beans, pods are left to mature and dry on the plant.",
+  "pestAndDiseaseManagement": "Common pests include aphids (especially black bean aphid), pea and bean weevils, and bruchids. Diseases include chocolate spot, Ascochyta blight, rust, and downy mildew. Integrated pest management includes crop rotation, resistant varieties (where available), timely planting, and appropriate chemical controls if necessary.",
+  "postHarvestHandling": "Fresh green fava beans are picked, shelled (if desired), and used quickly or preserved by freezing/canning. For dry beans, harvested plants are threshed, and beans are cleaned and dried to about 12-14% moisture content for storage.",
+  "majorProducingCountriesOrRegions": ["China (largest producer)", "Ethiopia", "Australia", "Egypt", "United Kingdom", "France", "Morocco", "Italy", "Peru", "Sudan"],
+  "marketValueAndGlobalDemand": "Fava beans are an important food crop globally, with significant production and consumption in China, the Middle East, North Africa, and parts of Europe. Demand is stable, driven by their use in traditional cuisines and as a protein source. They are also used for animal feed."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "bay_leaf",
+  "commonName": "Bay Leaf",
+  "scientificName": "Laurus nobilis",
+  "image": "https://images.unsplash.com/photo-1582004681048-34e7f9128c07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Bay leaf refers to the aromatic leaves of several plants used in cooking. True bay leaf is from Laurus nobilis, a small evergreen tree native to the Mediterranean region. The leaves are used fresh or dried, primarily to flavor soups, stews, and braises. They are typically removed before serving.",
+  "origin": "Mediterranean region (Asia Minor).",
+  "localNames": ["Tej Patta (Hindi - though often refers to Indian Bay Leaf, Cinnamomum tamala)", "Gekkeiju no ha (Japanese)", "Hoja de laurel (Spanish)", "Feuille de laurier (French)"],
+  "regions": ["Turkey (major exporter)", "Mediterranean countries (Italy, Greece, Spain)", "California (USA)", "France", "Belgium"],
+  "seasons": ["Perennial evergreen; leaves can be harvested year-round, but flavor is often best from mature leaves in summer."],
+  "nutrition": {
+    "calories": "313 kcal per 100g (dried bay leaf)",
+    "macronutrients": [
+      { "name": "Protein", "value": 7.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 75.0, "unit": "g" },
+      { "name": "Fat", "value": 8.4, "unit": "g" },
+      { "name": "Fiber", "value": 26.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": 309, "unit": "µg", "rdi": "39%" },
+      { "name": "Vitamin C", "value": 46.5, "unit": "mg", "rdi": "52%" },
+      { "name": "Niacin (B3)", "value": 2.005, "unit": "mg", "rdi": "13%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 43.00, "unit": "mg", "rdi": "239%" },
+      { "name": "Manganese", "value": 8.167, "unit": "mg", "rdi": "355%" },
+      { "name": "Calcium", "value": 834, "unit": "mg", "rdi": "83%" },
+      { "name": "Magnesium", "value": 120, "unit": "mg", "rdi": "29%" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains essential oils like eugenol and cineole, which have antiseptic and antioxidant properties.",
+    "Traditionally used to aid digestion and relieve gas.",
+    "May have anti-inflammatory effects.",
+    "Some studies suggest potential benefits for blood sugar control (research limited)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lauraceae Allergy",
+      "severity": "Mild",
+      "details": "Allergy to bay leaf is rare but can cause contact dermatitis or mild allergic reactions in sensitive individuals. Ensure to remove leaves before eating as they can be a choking hazard or cause digestive tract injury if swallowed whole."
+    }
+  ],
+  "cultivationProcess": "Bay laurel trees are grown from seeds or cuttings. They prefer well-drained soil and a sunny or partially shaded location. They are relatively slow-growing and can be pruned into shapes.",
+  "growthDuration": "Perennial evergreen. Leaves can be harvested once the tree is established (2-3 years). Mature leaves are preferred for drying.",
+  "sustainabilityTips": [
+    "Drought-tolerant once established.",
+    "Can be grown in containers.",
+    "Pruning helps maintain shape and provides leaves for use."
+  ],
+  "carbonFootprintInfo": "Locally grown bay leaves have a low carbon footprint. Dried bay leaves involve energy for drying and transportation from major producing regions like Turkey.",
+  "uses": ["culinary_herb_fresh_dried_flavoring_soups_stews_sauces", "traditional_medicine_digestive_aid", "ornamental_plant_topiary", "insect_repellent_in_pantries_historically"],
+  "originAndDomesticationHistory": "The Bay Laurel (Laurus nobilis) is native to the Mediterranean region. It has a long history of use, being sacred in ancient Greek and Roman cultures, where it symbolized wisdom, victory, and honor (e.g., laurel wreaths). It has been used for culinary and medicinal purposes for millennia.",
+  "climaticRequirements": {
+    "temperature": "Mediterranean climate. Prefers mild winters and warm summers, 15-25°C. Tolerates light frost but can be damaged by severe cold.",
+    "rainfall": "Drought-tolerant once established. Requires moderate rainfall, around 600-1000mm. Good drainage is more critical than high rainfall.",
+    "altitude": "Adaptable to various altitudes, commonly found in coastal and hilly areas of the Mediterranean."
+  },
+  "soilPreferences": "Requires well-drained soil. Adaptable to various soil types, including sandy, loamy, or even somewhat clayey soils, as long as drainage is good. Prefers a slightly acidic to slightly alkaline pH (6.0-7.5).",
+  "irrigationAndWaterNeeds": "Water young trees regularly until established. Mature trees are quite drought-tolerant. Water deeply but infrequently, allowing the soil to dry out somewhat between waterings. Avoid waterlogged conditions.",
+  "plantingAndHarvestCycles": "Can be grown from seed (slow) or cuttings (more common). Plant in a sunny or partially shaded location. Leaves can be harvested year-round once the plant is established. For drying, pick mature, unblemished leaves and dry them flat in a warm, dark, airy place.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Scale insects and psyllids (bay suckers) can sometimes be an issue. Fungal leaf spots or root rot can occur in overly wet or poorly drained conditions. Good air circulation and proper watering are important.",
+  "postHarvestHandling": "Fresh bay leaves can be used immediately or stored in the refrigerator for a week or two. Dried bay leaves should be stored in an airtight container away from light and moisture. They develop a stronger, more complex flavor upon drying.",
+  "majorProducingCountriesOrRegions": ["Turkey (dominant exporter)", "Mediterranean countries (Greece, Italy, Spain, Albania)", "France", "Belgium", "United States (California)"],
+  "marketValueAndGlobalDemand": "Bay leaves are a widely used culinary herb globally, with consistent demand for both fresh (less common commercially) and dried forms. Turkey is the main supplier to the international market. They are a staple in many European, Mediterranean, and American cuisines."
+}

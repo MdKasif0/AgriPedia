@@ -1,0 +1,71 @@
+{
+  "id": "cilantro_coriander",
+  "commonName": "Cilantro / Coriander",
+  "scientificName": "Coriandrum sativum",
+  "image": "https://images.unsplash.com/photo-1597583544264-843dba3739a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Coriandrum sativum is an annual herb in the family Apiaceae. All parts of the plant are edible, but the fresh leaves (cilantro) and the dried seeds (coriander) are the parts most traditionally used in cooking. Cilantro has a pungent, citrusy flavor, while coriander seeds have a warm, spicy, and nutty flavor.",
+  "origin": "Southern Europe, North Africa, and Southwestern Asia.",
+  "localNames": ["Dhania (Hindi - for both seeds and leaves)", "Kothimeera (Telugu - leaves)", "Koriandā (Japanese)", "Cilantro / Coriandro (Spanish)", "Coriandre (French)"],
+  "regions": ["India", "Mexico", "China", "Thailand", "Mediterranean region", "Eastern Europe", "Worldwide cultivation"],
+  "seasons": ["Cool-season annual; best grown in spring or fall. Bolts (goes to seed) quickly in hot weather."],
+  "nutrition": {
+    "calories": "Cilantro (fresh leaves): 23 kcal per 100g. Coriander seeds: 298 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Cilantro: 2.1, Coriander seeds: 12.4" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Cilantro: 3.7, Coriander seeds: 55.0" },
+      { "name": "Fat", "unit": "g", "value": "Cilantro: 0.5, Coriander seeds: 17.8" },
+      { "name": "Fiber", "unit": "g", "value": "Cilantro: 2.8, Coriander seeds: 41.9" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Cilantro: 310 (258%), Coriander seeds: 310 (258%)" },
+      { "name": "Vitamin A", "unit": "µg", "rdi": "Cilantro: 337 (42%)" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Cilantro: 27 (30%), Coriander seeds: 21 (23%)" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Cilantro: 0.426 (19%), Coriander seeds: 1.9 (83%)" },
+      { "name": "Iron", "unit": "mg", "rdi": "Cilantro: 1.77 (10%), Coriander seeds: 16.32 (91%)" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Cilantro: 521 (11%), Coriander seeds: 1267 (27%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Cilantro is rich in antioxidants, vitamins A, C, and K.",
+    "Coriander seeds are a good source of dietary fiber, iron, and manganese.",
+    "May help lower blood sugar and cholesterol levels.",
+    "Cilantro may have antibacterial properties and aid in detoxification (heavy metals).",
+    "Coriander seeds can aid digestion and reduce bloating."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Apiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to cilantro/coriander is uncommon but can occur, especially in individuals allergic to other plants in the Apiaceae family (e.g., carrots, celery, parsley). Symptoms can include oral allergy syndrome or skin irritation."
+    },
+    {
+      "name": "Flavor Aversion (Cilantro)",
+      "severity": "N/A (Preference)",
+      "details": "Some individuals have a genetic predisposition that makes cilantro taste soapy due to certain aldehyde compounds."
+    }
+  ],
+  "cultivationProcess": "Coriandrum sativum is grown from seed. For cilantro (leaves), succession planting every few weeks is recommended for a continuous supply as it bolts quickly. For coriander seeds, plants are allowed to flower and set seed.",
+  "growthDuration": "Cilantro leaves: 40-60 days. Coriander seeds: 90-120 days.",
+  "sustainabilityTips": [
+    "Attracts beneficial insects like hoverflies and parasitic wasps when flowering.",
+    "Can be easily grown in home gardens or containers.",
+    "Deadheading (removing flower stalks) can prolong leaf production for cilantro."
+  ],
+  "carbonFootprintInfo": "Locally grown cilantro/coriander has a low carbon footprint. Commercial production for dried seeds or fresh leaves involves energy for cultivation, processing, and transportation.",
+  "uses": ["culinary_herb_cilantro_leaves_fresh_garnish_salsa_curries", "culinary_spice_coriander_seeds_ground_whole_spice_blends_curries", "essential_oil_production_coriander_seed_oil", "traditional_medicine"],
+  "originAndDomesticationHistory": "Coriandrum sativum is native to regions spanning Southern Europe, North Africa, and Southwestern Asia. It is one of the oldest known spices, with evidence of its use dating back to ancient Egypt (seeds found in Tutankhamun's tomb) and Greece (mentioned in Linear B tablets).",
+  "climaticRequirements": {
+    "temperature": "Cool-season herb. Optimal for cilantro leaf production is 15-22°C. Tolerates some heat but bolts quickly above 25°C. Coriander seed production benefits from sunny, warmer conditions during seed maturation.",
+    "rainfall": "Requires consistent moisture, especially for leaf production. Around 400-600mm equivalent. Well-drained soil is crucial.",
+    "altitude": "Adaptable to various altitudes, from sea level up to 2000m."
+  },
+  "soilPreferences": "Prefers well-drained, loamy soil with a pH of 6.0-7.5. Rich in organic matter is beneficial for leaf production.",
+  "irrigationAndWaterNeeds": "Keep soil consistently moist for cilantro. For coriander seed production, reduce watering as seeds mature to allow plants to dry down. Drip irrigation or careful hand watering is best to avoid wetting foliage excessively.",
+  "plantingAndHarvestCycles": "Sow seeds directly into the garden in early spring or fall. For cilantro, harvest outer leaves once plants are established. For coriander seeds, allow plants to flower and form seed heads. Harvest seed heads when they turn brown and dry, before seeds shatter.",
+  "pestAndDiseaseManagement": "Aphids and spider mites can be pests. Bacterial leaf spot and powdery mildew are common diseases, especially in humid conditions or with dense planting. Ensure good air circulation, avoid overhead watering, and use disease-free seeds. Crop rotation is beneficial.",
+  "postHarvestHandling": "Fresh cilantro is perishable; store in the refrigerator with stems in water or wrapped loosely. Coriander seeds should be thoroughly dried after harvest, then stored whole or ground in an airtight container in a cool, dark place.",
+  "majorProducingCountriesOrRegions": ["India (major producer of coriander seeds)", "Mexico (cilantro)", "Russia", "China", "Morocco", "Romania", "Central European countries", "United States (California for cilantro)"],
+  "marketValueAndGlobalDemand": "Both cilantro (fresh leaves) and coriander (dried seeds) have high global demand. Cilantro is a staple in Mexican, Thai, Vietnamese, and Indian cuisines. Coriander seeds are a key spice in Indian, Middle Eastern, and many other global cuisines, and are widely traded. Demand for coriander essential oil is also significant."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "neem",
+  "commonName": "Neem",
+  "scientificName": "Azadirachta indica",
+  "image": "https://images.unsplash.com/photo-1594542880337-69d75a35f746?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Neem is a fast-growing tree of the mahogany family (Meliaceae). It is native to the Indian subcontinent and most of Africa. It is highly valued for its medicinal properties and its use as a natural pesticide. All parts of the tree - leaves, bark, seeds, flowers, and roots - are used in traditional medicine.",
+  "origin": "Indian subcontinent (India, Myanmar, Bangladesh, Sri Lanka, Pakistan) and parts of Southeast Asia.",
+  "localNames": ["Neem (Hindi/English)", "Vepa (Telugu)", "Veppilai (Tamil)", "Nīmu (Japanese - often refers to lemon)", "Margosa (English)"],
+  "regions": ["India", "Pakistan", "Bangladesh", "Nepal", "Myanmar", "Thailand", "African countries (Sudan, Ethiopia, Nigeria)", "Introduced to many other tropical and subtropical regions"],
+  "seasons": ["Evergreen tree; flowers typically in spring/summer, fruits mature in late summer/rainy season. Leaves are available year-round."],
+  "nutrition": {
+    "calories": "Nutritional data for direct consumption of leaves/bark is not commonly emphasized as it's primarily medicinal. Neem oil (from seeds) is not for consumption.",
+    "macronutrients": [
+      { "name": "Protein", "value": "Varies (leaves contain some protein)", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Varies", "unit": "g" },
+      { "name": "Fat", "value": "Neem oil from seeds is rich in fatty acids", "unit": "g" },
+      { "name": "Fiber", "value": "Leaves contain fiber", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": "Present in leaves", "unit": "mg", "rdi": "Varies" },
+      { "name": "Vitamin E", "value": "Present in oil", "unit": "mg", "rdi": "Varies" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": "Present in leaves", "unit": "mg", "rdi": "Varies" },
+      { "name": "Iron", "value": "Present in leaves", "unit": "mg", "rdi": "Varies" }
+    ]
+  },
+  "healthBenefits": [
+    "Possesses antibacterial, antiviral, antifungal, and anti-inflammatory properties.",
+    "Used in traditional medicine to treat skin diseases (e.g., acne, eczema, psoriasis).",
+    "Neem leaf extracts may help purify blood and boost immunity.",
+    "Neem twigs are used as natural toothbrushes for oral hygiene.",
+    "Neem oil (from seeds) is a potent natural insecticide and pesticide (azadirachtin)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Neem Allergy/Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Contact dermatitis can occur from handling neem oil or leaves in sensitive individuals. Internal consumption of large doses of neem oil can be toxic, especially for children. Should be used with caution during pregnancy."
+    }
+  ],
+  "cultivationProcess": "Neem is grown from seeds or cuttings. It is a hardy, drought-tolerant tree that can grow in a wide range of soil types. It requires minimal care once established.",
+  "growthDuration": "Fast-growing perennial tree. Starts fruiting in 3-5 years. Can live for over 200 years. Leaves can be harvested sustainably once the tree is established.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can grow in poor, degraded soils, making it suitable for afforestation and land reclamation.",
+    "Provides shade and reduces soil erosion.",
+    "Its natural pesticide properties reduce the need for synthetic chemicals in agriculture (when neem cake or oil is used)."
+  ],
+  "carbonFootprintInfo": "Neem trees contribute to carbon sequestration. The production of neem-based biopesticides is generally considered more environmentally friendly than synthetic pesticides.",
+  "uses": ["traditional_medicine_leaves_bark_seeds_oil_flowers_roots", "natural_pesticide_neem_oil_azadirachtin_neem_cake", "cosmetics_soaps_shampoos_creams", "afforestation_soil_improvement", "timber_furniture_construction_limited"],
+  "originAndDomesticationHistory": "Neem (Azadirachta indica) is native to the dry tropical and subtropical regions of the Indian subcontinent and Southeast Asia. It has been revered and used in Ayurvedic and Unani medicine for thousands of years, often referred to as 'the village pharmacy'. Its use as a pesticide has also been long known in traditional farming practices.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical tree. Thrives in high temperatures (25-40°C). Tolerates extreme heat but sensitive to frost, especially when young.",
+    "rainfall": "Drought-tolerant. Can grow in areas with annual rainfall ranging from 400mm to 1200mm. Can survive long dry seasons.",
+    "altitude": "Can be grown from sea level up to 1500m."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, including poor, stony, sandy, or shallow soils. Prefers well-drained soils with a pH of 6.2-7.0. Tolerates slightly alkaline soils.",
+  "irrigationAndWaterNeeds": "Young trees require regular watering until established. Mature trees are highly drought-tolerant and generally do not require irrigation, especially in areas with moderate rainfall.",
+  "plantingAndHarvestCycles": "Propagated from seeds (which have short viability) or root/shoot cuttings. Planted during the rainy season. Leaves can be harvested as needed. Fruits (drupes) are collected when they ripen and fall from the tree or are plucked. Seeds are then depulped, washed, and dried to extract neem oil.",
+  "pestAndDiseaseManagement": "Generally resistant to most pests due to its natural insecticidal properties. Some scale insects or mealybugs might occasionally attack. Fungal diseases are rare in well-drained conditions.",
+  "postHarvestHandling": "Leaves are typically used fresh or dried. Fruits are processed to extract seeds, which are then pressed to obtain neem oil. The remaining seed cake is used as a fertilizer and pesticide. Bark is dried and powdered. All parts should be stored in cool, dry conditions.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Pakistan", "Bangladesh", "Nepal", "Myanmar", "Many African nations (Nigeria, Sudan, Ethiopia)", "Introduced and cultivated in other tropical countries"],
+  "marketValueAndGlobalDemand": "Neem products (oil, cake, leaves, bark powder) have a significant global market, driven by demand for natural pesticides, organic farming inputs, herbal medicines, and personal care products. India is a major exporter. The demand for neem-based biopesticides is steadily increasing as an alternative to synthetic pesticides."
+}

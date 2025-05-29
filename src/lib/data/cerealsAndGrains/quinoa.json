@@ -1,0 +1,67 @@
+{
+  "id": "quinoa",
+  "commonName": "Quinoa",
+  "scientificName": "Chenopodium quinoa",
+  "image": "https://images.unsplash.com/photo-1518310601098-024d3c303a04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Quinoa is a flowering plant in the amaranth family. It is a herbaceous annual plant grown as a crop primarily for its edible seeds; the seeds are rich in protein, dietary fiber, B vitamins, and dietary minerals in amounts greater than in many grains. Quinoa is not a grass, but a pseudocereal botanically related to spinach and amaranth.",
+  "origin": "Andean region of South America (Peru, Bolivia, Ecuador, Chile, Colombia).",
+  "localNames": ["Quinua (Spanish/Quechua)", "Kinwa (Quechua)"],
+  "regions": ["Peru", "Bolivia", "Ecuador", "United States", "Canada", "Various European countries"],
+  "seasons": ["Typically planted in spring (varies by altitude and latitude) and harvested in late summer/fall."],
+  "nutrition": {
+    "calories": "120 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 4.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 21.3, "unit": "g" },
+      { "name": "Fat", "value": 1.9, "unit": "g" },
+      { "name": "Fiber", "value": 2.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 42, "unit": "µg", "rdi": "10%" },
+      { "name": "Vitamin B6", "value": 0.123, "unit": "mg", "rdi": "9%" },
+      { "name": "Vitamin E", "value": 0.6, "unit": "mg", "rdi": "4%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.631, "unit": "mg", "rdi": "27%" },
+      { "name": "Phosphorus", "value": 152, "unit": "mg", "rdi": "22%" },
+      { "name": "Magnesium", "value": 64, "unit": "mg", "rdi": "15%" },
+      { "name": "Iron", "value": 1.49, "unit": "mg", "rdi": "8%" }
+    ]
+  },
+  "healthBenefits": [
+    "Complete protein, containing all nine essential amino acids.",
+    "Naturally gluten-free.",
+    "Good source of dietary fiber, aiding digestion and promoting satiety.",
+    "Rich in antioxidants and anti-inflammatory compounds.",
+    "May help improve blood sugar and cholesterol levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Saponin Sensitivity",
+      "severity": "Mild",
+      "details": "Quinoa seeds are coated with saponins, which can be bitter and may cause mild irritation in some individuals if not rinsed properly before cooking. Most commercially available quinoa is pre-rinsed."
+    }
+  ],
+  "cultivationProcess": "Quinoa cultivation involves preparing a well-drained seedbed, sowing seeds, managing weeds (especially in early stages as quinoa seedlings are small), and harvesting when seeds are mature and plants have dried. Seeds need to be processed to remove saponins.",
+  "growthDuration": "Approximately 90-150 days, depending on the variety and environmental conditions.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can grow in marginal soils.",
+    "Has a wide range of genetic diversity, allowing adaptation to various conditions.",
+    "Supports biodiversity in agroecosystems."
+  ],
+  "carbonFootprintInfo": "Quinoa's carbon footprint can vary. Traditional, low-input farming in the Andes has a lower footprint. Increased global demand has led to more intensive farming in some areas, potentially increasing its impact. Focus on sustainable sourcing.",
+  "uses": ["culinary", "flour_production", "animal_feed_leaves"],
+  "originAndDomesticationHistory": "Quinoa (Chenopodium quinoa) was domesticated in the Andean region of South America (around Lake Titicaca in Peru and Bolivia) approximately 3,000 to 4,000 years ago, though archaeological evidence suggests use for pastoral foraging 5,200 to 7,000 years ago. It was a staple food for the Inca Empire and other Andean civilizations, known as 'the mother of all grains'.",
+  "climaticRequirements": {
+    "temperature": "Highly adaptable; grows in temperatures from -4°C to 38°C. Optimal range is 15-20°C. Some varieties are frost-tolerant.",
+    "rainfall": "200-1000mm annually. Very drought-tolerant, but requires adequate moisture during early growth and flowering.",
+    "altitude": "Can be grown from sea level up to 4,500m (Andean highlands)."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, from sandy to clayey, but prefers well-drained loams. Tolerates poor, infertile soils and a pH range from 4.5 to 9.0. Some varieties are salt-tolerant.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed. Its deep taproot allows it to access soil moisture effectively. Supplemental irrigation can improve yields in drier conditions, especially during flowering.",
+  "plantingAndHarvestCycles": "Planting times vary greatly depending on the region and altitude, generally in spring. Seeds are small and sown shallowly. Harvested when seeds are hard and plants have dried and turned yellow-brown. Seeds are threshed and then often processed to remove the bitter saponin coating.",
+  "pestAndDiseaseManagement": "Pests include quinoa moths, aphids, and flea beetles. Diseases include downy mildew, leaf spot, and damping-off. Integrated pest management, including crop rotation and resistant varieties, is important. Traditional farming often relies on natural pest control.",
+  "postHarvestHandling": "Involves threshing to separate seeds, winnowing, and drying. Crucially, most quinoa varieties require processing (washing or mechanical abrasion) to remove the bitter saponin coating from the seeds before consumption. Proper drying to around 10-12% moisture content is needed for storage.",
+  "majorProducingCountriesOrRegions": ["Peru", "Bolivia (historically dominant, now sharing lead with Peru)", "Ecuador", "Increasing production in USA, Canada, Europe (France, Netherlands, Spain), China, India, Australia"],
+  "marketValueAndGlobalDemand": "Global demand for quinoa has surged since the early 2000s due to its nutritional properties and gluten-free status. This has significantly increased its market value, benefiting Andean farmers but also raising concerns about local food security and sustainability of production in some areas. Prices have stabilized somewhat as production has expanded globally."
+}
