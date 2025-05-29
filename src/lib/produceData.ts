@@ -145,7 +145,7 @@ export function getUniqueSeasons(): string[] {
 }
 
 export function getUniqueCategories(): string[] { // New function
-  const allCategories = allProduceData.map(p => p.category);
+  const allCategories = allProduceData.map(p => p.category).filter(Boolean); // Filter out undefined/null categories
   return Array.from(new Set(allCategories)).sort();
 }
 
@@ -181,37 +181,4 @@ export function getInSeasonProduce(limit?: number): ProduceInfo[] {
 // as they might not be present in all old JSON files immediately.
 // The `ProduceInfo` interface has already been updated to make these optional.
 // The `loadAllProduceData` function will add `category` to each item.
-// Old `fruits` and `vegetables` arrays are removed as `allProduceData` is now the single source of truth.Okay, the `src/lib/produceData.ts` file has been refactored to dynamically load all produce data from the subdirectories within `src/lib/data/`.
-
-**Summary of Changes Made:**
-
-1.  **Removed Manual Imports:** All individual `import ... from './data/fruits/...'` and `import ... from './data/vegetables/...'` statements were deleted.
-2.  **Removed Static Arrays:** The static `fruits: ProduceInfo[]` and `vegetables: ProduceInfo[]` array definitions were removed.
-3.  **Added `fs` and `path` Imports:** `import fs from 'fs';` and `import path from 'path';` were added at the top of the file to enable file system operations.
-4.  **`ProduceInfo` Interface Update:**
-    *   Added a new mandatory `category: string;` field to the `ProduceInfo` interface. This field will be populated dynamically based on the subdirectory name.
-    *   The new agricultural fields (`uses`, `climaticRequirements`, etc.) were already marked as optional in the interface from previous tasks, which is good for backward compatibility with any older JSON files that might not have them yet (though all relevant ones should have been updated).
-5.  **Implemented `loadAllProduceData()` Function:**
-    *   This function defines `dataDir` as `src/lib/data`.
-    *   It reads the names of all subdirectories within `dataDir` (these are treated as categories, e.g., "fruits", "vegetables", "cereals-grains").
-    *   For each category subdirectory:
-        *   It reads all file names ending with `.json`.
-        *   For each JSON file, it reads the file content using `fs.readFileSync(filePath, 'utf-8')`.
-        *   It parses the content using `JSON.parse(fileContent) as ProduceInfo`.
-        *   It dynamically adds/updates a `category` property to each loaded `ProduceInfo` object. The category name is derived from the subdirectory name (e.g., "cereals-grains" becomes "Cereals Grains").
-        *   All loaded and parsed `ProduceInfo` objects are collected into a single array.
-    *   Basic error handling for directory and file reading/parsing is included, logging errors to the console.
-6.  **Dynamic Population of `allProduceData`:**
-    *   The `allProduceData` constant is now initialized by calling `loadAllProduceData()`: `const allProduceData: ProduceInfo[] = loadAllProduceData();`. This ensures that all data is loaded dynamically when the module is first imported.
-7.  **Updated Helper Functions:**
-    *   `searchProduce`: Modified to allow filtering by the new `category` field and to include the `category` field in the search terms.
-    *   `getUniqueRegions`, `getUniqueSeasons`, `getInSeasonProduce`: Added checks for potentially undefined `regions` and `seasons` arrays in `ProduceInfo` objects for robustness, although all current data should have these.
-    *   `getUniqueCategories()`: A new exported function was added to retrieve a sorted list of unique category names from `allProduceData`.
-
-**Verification (Conceptual):**
-
-*   With these changes, `getAllProduce()` will now return all items from all category subdirectories found under `src/lib/data/`.
-*   Adding new JSON files to existing category directories or adding entirely new category subdirectories with JSON files within them will automatically be included in `allProduceData` the next time the application builds/runs this module, without requiring any further manual code changes in `produceData.ts`.
-*   The application should now correctly load and make available data from categories like `cereals-grains`, `legumes-pulses`, etc.
-
-This refactoring makes the data loading mechanism truly dynamic and scalable for future additions of produce items and categories.
+// Old `fruits` and `vegetables` arrays are removed as `allProduceData` is now the single source of truth.
