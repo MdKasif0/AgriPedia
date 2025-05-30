@@ -1,0 +1,66 @@
+{
+  "id": "turnip",
+  "commonName": "Turnip",
+  "scientificName": "Brassica rapa subsp. rapa",
+  "image": "https://images.unsplash.com/photo-1590005023065-175311ff5d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The turnip or white turnip is a root vegetable commonly grown in temperate climates worldwide for its white, fleshy taproot. It is a member of the Brassicaceae family. Small, tender varieties are grown for human consumption, while larger varieties are grown as feed for livestock. The green leaves ('turnip tops' or 'turnip greens') are also edible.",
+  "origin": "Europe or Western Asia (exact origin uncertain).",
+  "localNames": ["Shalgam (Hindi)", "Kabu (Japanese)", "Nabo (Spanish/Portuguese)", "Navet (French)"],
+  "regions": ["Europe (UK, France, Germany, Nordic countries)", "United States", "Canada", "China", "Japan", "India", "Middle East"],
+  "seasons": ["Cool-season crop; typically sown in early spring for summer harvest, or late summer/early autumn for late autumn/winter harvest. Best quality when matured in cool weather."],
+  "nutrition": {
+    "calories": "Cooked turnip root: ~28 kcal per 100g. Turnip greens (cooked): ~20 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Root: ~0.9, Greens: ~1.5" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Root: ~6.4 (Fiber 1.8), Greens: ~4.4 (Fiber 3.2)" },
+      { "name": "Fat", "unit": "g", "value": "Root: ~0.1, Greens: ~0.3" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Root: 21 (23%), Greens: 39.2 (44%)" },
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Greens: 368 (307%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Root: 15 (4%), Greens: 194 (49%)" },
+      { "name": "Vitamin A (as carotenoids)", "unit": "µg", "rdi": "Greens: Significant" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Root: 191 (4%)" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Greens: 190 (19%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Root: 0.134 (6%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Turnip roots are low in calories and a good source of Vitamin C.",
+    "Turnip greens are highly nutritious, rich in Vitamin K, Vitamin A, Vitamin C, folate, and calcium.",
+    "Contains dietary fiber, aiding digestion.",
+    "Glucosinolates in turnips may have anti-cancer properties.",
+    "Traditionally used to treat various ailments due to its diuretic and anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassicaceae Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy is rare. Like other Brassicaceae vegetables, turnips contain goitrogens which might affect thyroid function in individuals with iodine deficiency if consumed in very large amounts. Can cause gas in some people."
+    }
+  ],
+  "cultivationProcess": "Turnips are grown from seeds. They are a fast-maturing cool-season crop that prefers well-drained, fertile soil. Roots develop best in cool temperatures.",
+  "growthDuration": "Approximately 30-60 days from sowing to root harvest for smaller varieties, and up to 90 days for larger winter varieties. Greens can be harvested earlier.",
+  "sustainabilityTips": [
+    "Fast growth cycle makes it suitable for succession planting.",
+    "Can be grown with relatively few inputs in suitable cool climates.",
+    "Both roots and leaves are edible, maximizing food use."
+  ],
+  "carbonFootprintInfo": "Turnips generally have a low carbon footprint, especially when grown locally and seasonally. Their fast growth cycle and adaptability to cool climates contribute to this.",
+  "uses": ["culinary_vegetable_root_boiled_mashed_roasted_stewed_pickled_raw_in_salads_when_young", "culinary_vegetable_leaves_turnip_greens_cooked_steamed_sauteed", "animal_feed_fodder_crop_roots_and_leaves_for_livestock", "cover_crop_limited"],
+  "originAndDomesticationHistory": "The turnip (Brassica rapa subsp. rapa) is thought to have been domesticated in Europe or Western Asia, possibly in the Hellenistic or Roman periods, although its wild progenitor Brassica rapa has a much wider distribution. It was a staple food in Europe before the widespread adoption of the potato. Different forms were selected for root size and leaf production.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 10-18°C for root development. Tolerates light frost, which can improve root flavor. Hot weather can cause roots to become woody and pungent.",
+    "rainfall": "Requires consistent moisture for good root development, around 300-500mm during the growing season.",
+    "altitude": "Adaptable to various altitudes in temperate climates."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy or sandy loam soils with a good amount of organic matter. Slightly acidic to neutral pH (6.0-7.0) is optimal. Avoid heavy or compacted soils.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering to ensure rapid growth and prevent roots from becoming tough or bitter. Soil should be kept moist but not waterlogged.",
+  "plantingAndHarvestCycles": "Seeds are sown directly in the garden in early spring for a summer crop, or in late summer/early autumn for a fall/winter crop. Sow seeds shallowly. Thin seedlings to proper spacing. Roots are harvested when they reach the desired size (typically 5-10 cm diameter for table varieties). Greens can be harvested when young and tender.",
+  "pestAndDiseaseManagement": "Pests include flea beetles, root maggots, and aphids. Diseases include clubroot (a major issue for Brassicas, prefers acidic soil), downy mildew, and Alternaria leaf spot. Crop rotation (avoiding other Brassicas), maintaining proper soil pH (slightly alkaline to deter clubroot), and good field sanitation are important. Row covers can protect seedlings from pests.",
+  "postHarvestHandling": "Harvested turnips are topped (leaves removed). They can be stored for several months in cool, moist conditions (near 0°C and 95% humidity), similar to carrots or beetroots, often in root cellars or refrigerators. Turnip greens are perishable and should be used quickly.",
+  "majorProducingCountriesOrRegions": ["Europe (UK, Germany, France, Nordic countries)", "United States", "Canada", "China", "Japan", "India", "Russia"],
+  "marketValueAndGlobalDemand": "Turnips are a traditional vegetable in many temperate regions, with steady demand for fresh market consumption, particularly in Europe and North America. They are less globally traded than potatoes but remain an important cool-season root crop. Different varieties are popular in different regions."
+}

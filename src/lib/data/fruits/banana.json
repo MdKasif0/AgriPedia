@@ -98,6 +98,20 @@
     "Compost banana peels."
   ],
   "carbonFootprintInfo": "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport.",
+  "uses": ["culinary_fresh_eating", "dessert_baking_breads_cakes", "smoothies", "cooking_plantains_savory_dishes", "dried_banana_chips", "baby_food"],
+  "originAndDomesticationHistory": "Bananas originated in Southeast Asia, in the region covering Malaysia, Indonesia, or the Philippines, where wild species like Musa acuminata and Musa balbisiana grew. They were domesticated thousands of years ago, with evidence of cultivation in Papua New Guinea dating back to at least 5000-8000 BCE. Bananas spread through Austronesian expansion to the Pacific Islands and Indian Ocean. They reached Africa, and later the Americas via European explorers and traders.",
+  "climaticRequirements": {
+    "temperature": "Tropical conditions, optimal 26-30°C. Sensitive to frost and temperatures below 14°C.",
+    "rainfall": "Requires high and well-distributed rainfall, 1200-2500mm annually, or regular irrigation. High humidity is preferred.",
+    "altitude": "Typically grown from sea level up to 1500m, though some varieties can grow higher."
+  },
+  "soilPreferences": "Well-drained, deep, fertile loamy soils rich in organic matter. Prefers slightly acidic to neutral pH (5.5-7.0). Requires good aeration and moisture retention.",
+  "irrigationAndWaterNeeds": "High water requirement due to large leaves and rapid growth. Regular irrigation is essential in areas with insufficient rainfall, especially during dry seasons and fruit development. Drip irrigation or micro-sprinklers are efficient.",
+  "plantingAndHarvestCycles": "Propagated from suckers (pups) or corms. Planted year-round in tropical climates. Plants typically fruit 9-12 months after planting. The main stalk produces one bunch of bananas and then dies; new suckers take over. Harvesting is done when fruits are mature green (for export) or partially ripe for local markets. Harvested by cutting the entire bunch.",
+  "pestAndDiseaseManagement": "Common pests include banana weevils, nematodes, and thrips. Major diseases are Panama disease (Fusarium wilt), Black Sigatoka, and Banana Bunchy Top Virus (BBTV). Integrated management involves resistant varieties (e.g., Cavendish for Panama disease TR1, ongoing research for TR4), tissue culture plantlets, field sanitation, and nematicides/fungicides when necessary.",
+  "postHarvestHandling": "Bananas are harvested green and transported under refrigeration (around 13-14°C) to slow ripening. Ripening is often artificially induced using ethylene gas at destination markets. Careful handling is crucial to prevent bruising. Stored at cool room temperatures for home consumption.",
+  "majorProducingCountriesOrRegions": ["India", "China", "Indonesia", "Brazil", "Ecuador (leading exporter)"],
+  "marketValueAndGlobalDemand": "Bananas are one of the most widely consumed fruits globally and a vital staple food in many tropical countries. They are a major export commodity, with significant international trade. Demand is consistently high due to their affordability, nutritional value, and convenience. The global banana industry is very large.",
   "staticRecipes": [
     {
       "name": "Classic Banana Bread",

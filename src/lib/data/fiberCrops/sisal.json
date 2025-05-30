@@ -1,0 +1,58 @@
+{
+  "id": "sisal",
+  "commonName": "Sisal",
+  "scientificName": "Agave sisalana",
+  "image": "https://images.unsplash.com/photo-1555939327-48d69594103a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Sisal is a species of Agave native to southern Mexico but widely cultivated and naturalized in many other countries. It yields a stiff fiber traditionally used in making twine, rope, and dartboards. The fiber is extracted from the plant's long, sword-shaped leaves.",
+  "origin": "Yucatán Peninsula of Mexico.",
+  "localNames": ["Sisal (Spanish/English/French/German)", "Shisarasa (Japanese)"],
+  "regions": ["Brazil (leading producer)", "Tanzania", "Kenya", "Madagascar", "China", "Mexico", "Haiti", "Venezuela"],
+  "seasons": ["Perennial agave; leaves are harvested 1-2 times per year, starting when the plant is 2-4 years old. The plant flowers once at the end of its life cycle (7-15 years)."],
+  "nutrition": {
+    "calories": "Primarily a fiber crop; the plant's core (pina, before flowering) contains sugars used for alcoholic beverages like pulque from other agaves, but sisal is not primarily used for food.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "N/A for fiber" },
+      { "name": "Carbohydrates", "unit": "g", "value": "N/A for fiber (leaves are high in cellulose)" },
+      { "name": "Fat", "unit": "g", "value": "N/A for fiber" },
+      { "name": "Fiber", "unit": "g", "value": "Very high (it is a leaf fiber)" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Sisal fiber is exceptionally strong, durable, and resistant to saltwater.",
+    "Biodegradable and a renewable resource.",
+    "Used in a variety of applications from traditional crafts to industrial products.",
+    "The plant's sap contains compounds like hecogenin, which can be a precursor for steroid hormone synthesis (pharmaceutical use)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Sisal Fiber/Dust Sensitivity",
+      "severity": "Mild",
+      "details": "Contact with sisal fibers or dust during processing can cause skin irritation or respiratory issues in some individuals. The leaves also have sharp spines."
+    }
+  ],
+  "cultivationProcess": "Sisal is propagated vegetatively from bulbils (small plantlets produced on the flower stalk) or suckers from the base of the plant. It is a hardy, drought-tolerant plant that thrives in arid and semi-arid regions with well-drained soil and full sun.",
+  "growthDuration": "Perennial. Plants are typically harvested for fiber for 7-12 years. The first harvest of leaves usually occurs 2-4 years after planting.",
+  "sustainabilityTips": [
+    "Highly drought-tolerant, making it suitable for arid and semi-arid lands where other crops cannot grow.",
+    "Requires minimal pesticides or fertilizers in many traditional systems.",
+    "All parts of the plant can be utilized; biomass can be used for energy or animal feed (after processing).",
+    "Helps in preventing soil erosion in drylands."
+  ],
+  "carbonFootprintInfo": "Sisal cultivation has a relatively low carbon footprint due to its drought tolerance and low input requirements. The main impacts come from processing (decortication, drying) and transportation. As a natural fiber, it's more sustainable than synthetic alternatives.",
+  "uses": ["fiber_production_twine_baler_twine_rope_cordage_dartboards_carpets_rugs_geotextiles_paper_pulp_buffing_cloth_crafts", "pharmaceutical_hecogenin_extraction_from_sap_for_steroid_production", "biofuel_biomass_for_energy_production_limited", "traditional_beverages_sap_fermented_in_some_cultures_similar_to_other_agaves"],
+  "originAndDomesticationHistory": "Sisal (Agave sisalana) originated in the Yucatán Peninsula of Mexico, where it was cultivated by the ancient Maya. It was introduced to Florida in the 1830s and subsequently spread to other tropical and subtropical countries in Africa, Asia, and South America in the late 19th and early 20th centuries for commercial fiber production. It became a major global fiber source, especially for agricultural twines, before the rise of synthetic fibers.",
+  "climaticRequirements": {
+    "temperature": "Prefers hot, arid or semi-arid climates. Optimal growing temperatures are 20-30°C. Tolerates high temperatures well but sensitive to frost.",
+    "rainfall": "Drought-tolerant. Can grow in areas with annual rainfall from 600mm to 1200mm. Requires good drainage and does not tolerate waterlogging.",
+    "altitude": "Adaptable to various altitudes, typically grown from sea level up to 1500m in suitable climates."
+  },
+  "soilPreferences": "Requires very well-drained soil. Prefers sandy or gravelly soils, often calcareous or lateritic. Tolerates poor soils and a wide pH range (5.5-8.0).",
+  "irrigationAndWaterNeeds": "Primarily rain-fed due to its excellent drought tolerance. Irrigation is generally not practiced in commercial cultivation, except possibly during establishment of new plantations in very dry areas.",
+  "plantingAndHarvestCycles": "Propagated from bulbils or suckers. Planted in rows. Leaves are harvested 1-2 times per year. Mature leaves (typically 1-1.5m long) are cut by hand from the base of the plant. Harvesting continues until the plant sends up a tall flower stalk (poles), after which it dies.",
+  "pestAndDiseaseManagement": "The main pest is the sisal weevil (Scyphophorus acupunctatus), which bores into the plant. Sisal is also susceptible to some fungal diseases like anthracnose if conditions are too humid or if plants are damaged. Management involves good field hygiene, biological control, and sometimes insecticides for weevil control.",
+  "postHarvestHandling": "Harvested leaves are transported to a central processing unit for decortication, usually within 24-48 hours. Decortication involves crushing the leaves and scraping away the pulp to extract the long, creamy-white fibers. The fibers are then washed, sun-dried, brushed (to remove impurities and soften), graded by length and quality, and baled for export or further processing.",
+  "majorProducingCountriesOrRegions": ["Brazil (leading producer)", "Tanzania", "Kenya", "Madagascar", "China", "Mexico", "Haiti", "Venezuela", "Mozambique", "Angola"],
+  "marketValueAndGlobalDemand": "Sisal fiber has a significant global market, though it faces competition from synthetic fibers (like polypropylene) for twine and rope applications. Demand is driven by its use in agricultural twines (baler twine), ropes, carpets, dartboards, and increasingly for composite materials and paper pulp. Its natural, biodegradable properties are a key advantage. Prices can fluctuate based on global supply and demand dynamics."
+}

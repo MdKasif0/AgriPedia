@@ -94,6 +94,20 @@
     "Buy local apples in season to reduce food miles."
   ],
   "carbonFootprintInfo": "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season.",
+  "uses": ["culinary_fresh_eating", "baking_pies_crumbles_cakes", "applesauce", "juice_cider_vinegar", "dessert", "salad_ingredient"],
+  "originAndDomesticationHistory": "Apples are thought to have originated in Central Asia, in the region of modern-day Kazakhstan, where their wild ancestor, Malus sieversii, is still found. They were domesticated thousands of years ago and spread along the Silk Road to Europe. The Romans and Greeks cultivated apples, and many varieties were developed. European colonists brought apples to the Americas.",
+  "climaticRequirements": {
+    "temperature": "Prefers temperate climates with chilling period (0-7°C) for bud break; optimal growing temperatures 18-24°C.",
+    "rainfall": "600-1000mm annually, well-distributed, or supplemental irrigation.",
+    "altitude": "Can be grown from sea level to over 2000m, depending on variety and latitude."
+  },
+  "soilPreferences": "Well-drained, deep loamy soil with good organic matter content. Prefers a slightly acidic to neutral pH (6.0-7.0).",
+  "irrigationAndWaterNeeds": "Young trees require regular watering. Mature trees need consistent moisture, especially during fruit development. Deep watering is preferred. Drought stress can affect fruit size and quality.",
+  "plantingAndHarvestCycles": "Planted as grafted saplings, typically in late winter or early spring. Trees start bearing fruit in 2-5 years. Flowers bloom in spring, and fruits mature from late summer to late autumn depending on the variety (100-200 days after bloom). Harvested by hand when firm and fully colored.",
+  "pestAndDiseaseManagement": "Common pests include codling moth, aphids, and apple maggots. Common diseases are apple scab, powdery mildew, and fire blight. Integrated Pest Management (IPM) strategies include resistant varieties, orchard sanitation, biological controls, and targeted chemical applications.",
+  "postHarvestHandling": "Apples are hand-picked to avoid bruising. They can be stored for long periods (months) in controlled atmosphere (CA) storage (low oxygen, high carbon dioxide, low temperature, high humidity). Grading is done by size, color, and quality. Requires careful handling during packing and transport.",
+  "majorProducingCountriesOrRegions": ["China", "United States", "Turkey", "European Union (Poland, Italy, France)", "India"],
+  "marketValueAndGlobalDemand": "Apples are one of the most widely cultivated and consumed fruits globally, with significant international trade. They have high market value both for fresh consumption and for processed products like juice, cider, and applesauce. Demand is consistently strong worldwide.",
   "staticRecipes": [
     {
       "name": "Classic Apple Crumble",

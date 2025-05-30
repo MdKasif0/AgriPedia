@@ -1,0 +1,72 @@
+{
+  "id": "coffee",
+  "commonName": "Coffee",
+  "scientificName": "Coffea spp. (mainly Coffea arabica and Coffea canephora - Robusta)",
+  "image": "https://images.unsplash.com/photo-1511920183303-51705f0517b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. It is one of the most popular drinks in the world and a major global commodity. Coffee plants are small evergreen shrubs or trees native to tropical Africa. The two most commercially important species are Coffea arabica and Coffea canephora (Robusta).",
+  "origin": "Ethiopian highlands (for Coffea arabica); Central and West Africa (for Coffea canephora).",
+  "localNames": ["Kāphī (Hindi)", "Kōhī (Japanese)", "Café (Spanish/French/Portuguese)"],
+  "regions": ["Brazil (leading producer)", "Vietnam", "Colombia", "Indonesia", "Ethiopia", "Honduras", "India", "Uganda", "Mexico", "Peru", "Central America", "Other parts of Africa and Asia"],
+  "seasons": ["Perennial shrub/tree. Fruiting cycle varies by region and species, typically with one or two main harvest seasons per year. It takes several years for a plant to reach full production capacity."],
+  "nutrition": {
+    "calories": "Coffee Beans (unroasted green): ~2-3 kcal per 2g serving for brewed coffee. Roasted beans: ~5-7 kcal. Brewed coffee itself has negligible calories if consumed black.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Fat", "unit": "g", "value": "Beans: ~13% (unroasted), Brewed: Trace" },
+      { "name": "Fiber", "unit": "g", "value": "Beans: Significant, Brewed: Trace" }
+    ],
+    "vitamins": [
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Brewed: ~0.01-0.02 (1-2%) per 100ml" },
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Brewed: ~0.1-0.3 (1-2%) per 100ml" },
+      { "name": "Pantothenic acid (B5)", "unit": "mg", "rdi": "Brewed: ~0.05-0.06 (1%) per 100ml" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Brewed: ~40-50 (1%) per 100ml" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Brewed: ~3-5 (1%) per 100ml" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Brewed: ~0.02-0.03 (1%) per 100ml" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains caffeine, a stimulant that can improve energy levels, mood, and various aspects of brain function.",
+    "Rich in antioxidants.",
+    "May lower the risk of several diseases, including type 2 diabetes, Parkinson's disease, Alzheimer's disease, and certain types of cancer (research ongoing).",
+    "Can enhance physical performance.",
+    "Associated with a lower risk of liver cirrhosis."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Caffeine Sensitivity/Overuse",
+      "severity": "Mild to Moderate",
+      "details": "High caffeine intake can cause anxiety, insomnia, digestive issues, rapid heart rate, and other side effects. Some individuals are more sensitive to caffeine than others. Withdrawal can cause headaches."
+    },
+    {
+      "name": "Coffee Bean Allergy",
+      "severity": "Rare",
+      "details": "True allergy to coffee beans is rare but can occur. Handling green coffee beans can cause allergic reactions in some coffee industry workers."
+    }
+  ],
+  "cultivationProcess": "Coffee is typically grown from seeds (sown in nurseries and transplanted) or cuttings. Plants require specific climatic conditions, including well-drained soil, adequate rainfall, and moderate temperatures. Berries (cherries) are harvested when ripe, then processed (wet or dry methods) to extract the beans, which are then dried, milled, graded, and finally roasted.",
+  "growthDuration": "Perennial. Coffee plants start producing fruit 3-5 years after planting and can remain productive for 20-30 years or more with good management. The cherries take about 7-9 months to mature after flowering.",
+  "sustainabilityTips": [
+    "Shade-grown coffee can promote biodiversity and reduce the need for chemical inputs.",
+    "Sustainable certifications (e.g., Fair Trade, Rainforest Alliance, Organic) address environmental, social, and economic aspects.",
+    "Water conservation in processing (especially wet processing) is important.",
+    "Managing coffee leaf rust and other diseases with resistant varieties and integrated approaches."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of coffee is influenced by deforestation for new plantations, fertilizer and pesticide use, water consumption during processing, energy for roasting and grinding, transportation (it's a globally traded commodity), and consumer brewing methods. Shade-grown and sustainably certified coffees generally have a lower footprint.",
+  "uses": ["beverage_production_roasted_beans_for_brewing_espresso_instant_coffee", "caffeine_extraction_for_pharmaceuticals_soft_drinks", "coffee_pulp_husks_as_fertilizer_animal_feed_biofuel", "cosmetics_coffee_extracts_grounds_in_exfoliants"],
+  "originAndDomesticationHistory": "Coffea arabica, the most cultivated species, originated in the highlands of Ethiopia. Legend attributes its discovery to a goat herder named Kaldi. It was first cultivated in Yemen in the 15th century and spread through the Arab world, then to Europe in the 17th century, and subsequently to the Americas and Asia by colonial powers. Coffea canephora (Robusta) originated in sub-Saharan Africa.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical crop. Arabica: 15-24°C optimal, sensitive to frost and extreme heat. Robusta: 22-30°C optimal, more heat tolerant.",
+    "rainfall": "Arabica: 1200-2200mm annually, well-distributed, with a distinct dry season for flowering initiation. Robusta: 1500-3000mm, tolerates more rainfall.",
+    "altitude": "Arabica: Typically grown at higher altitudes (900-2000m) for best quality. Robusta: Grown at lower altitudes (sea level to 800m)."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils rich in organic matter. Slightly acidic pH (5.0-6.5 for Arabica, 5.5-7.0 for Robusta) is optimal. Volcanic soils are often prized.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during flowering and fruit development. Irrigation is common in areas with insufficient or erratic rainfall. However, a short dry period can stimulate flowering in Arabica.",
+  "plantingAndHarvestCycles": "Propagated from seeds or vegetative cuttings. Seedlings are raised in nurseries for 6-12 months before transplanting. Harvesting is typically done by hand-picking ripe cherries (selective picking for Arabica) or by stripping all cherries from a branch (for Robusta or when labor is scarce). Mechanical harvesting is used in some flat-terrain plantations.",
+  "pestAndDiseaseManagement": "Major pests include coffee berry borer, coffee leaf miner, aphids, and nematodes. Major diseases include coffee leaf rust (CLR), coffee berry disease (CBD), and Fusarium wilt. Integrated pest management involves resistant varieties, biological control, cultural practices (pruning, shade management), and targeted pesticide/fungicide application.",
+  "postHarvestHandling": "Processing of coffee cherries to extract beans is done by either the 'dry method' (cherries are dried in the sun, then hulled) or the 'wet method' (pulp is removed, beans are fermented, washed, and then dried). Dried beans (green coffee) are then hulled (if not already), polished (optional), graded, sorted, and packed for export. Roasting is the final step before consumption.",
+  "majorProducingCountriesOrRegions": ["Brazil (world's largest producer, mainly Arabica and some Robusta)", "Vietnam (second largest, mainly Robusta)", "Colombia (known for high-quality Arabica)", "Indonesia (Arabica and Robusta)", "Ethiopia (origin of Arabica)", "Honduras", "India", "Uganda", "Mexico", "Peru"],
+  "marketValueAndGlobalDemand": "Coffee is one of the most valuable agricultural commodities traded globally. Demand is consistently high worldwide, though consumption patterns vary by region. Prices are volatile and influenced by global supply (weather, disease outbreaks in producing countries), demand, currency fluctuations, and futures market speculation. Specialty coffee market is a growing segment focusing on quality and origin."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "hops",
+  "commonName": "Hops",
+  "scientificName": "Humulus lupulus",
+  "image": "https://images.unsplash.com/photo-1599691898114-980902715bf4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Hops are the flowers (also called seed cones or strobiles) of the hop plant Humulus lupulus, a member of the Cannabaceae family. They are used primarily as a bittering, flavoring, and stability agent in beer, to which, in addition to bitterness, they impart floral, fruity, or citrus flavours and aromas. Hops are also used for various purposes in other beverages and herbal medicine.",
+  "origin": "Europe, Western Asia, and North America.",
+  "localNames": ["Hoppu (Japanese)", "Lúpulo (Spanish)", "Houblon (French)", "Hopfen (German)"],
+  "regions": ["United States (Pacific Northwest - Washington, Oregon, Idaho)", "Germany (Hallertau region)", "Czech Republic (Žatec/Saaz region)", "China", "United Kingdom", "Australia", "New Zealand", "Poland", "Slovenia"],
+  "seasons": ["Perennial climbing bine; cones are harvested in late summer (August-September in the Northern Hemisphere)."],
+  "nutrition": {
+    "calories": "Primarily used for flavoring and aroma in beer; not consumed in significant quantities for nutritional caloric value. Dried cones: ~200-250 kcal per 100g, but usage is grams per batch of beer.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Cones: ~15-20 (dry weight)" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Cones: ~35-40 (Fiber ~20-30)" },
+      { "name": "Fat", "unit": "g", "value": "Cones: ~1-3 (Essential oils are key components)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "Cones: Moderate" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Cones: Moderate" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Cones: Moderate" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Cones: Moderate" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains humulones and lupulones (alpha and beta acids), which contribute bitterness and have antimicrobial properties, helping preserve beer.",
+    "Essential oils (myrcene, humulene, caryophyllene, farnesene) provide aroma and flavor, and may have sedative and anti-inflammatory effects.",
+    "Xanthohumol, a flavonoid found in hops, has antioxidant and potential anti-cancer properties (research ongoing).",
+    "Traditionally used as a mild sedative, to promote sleep, and to stimulate appetite."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Hops Allergy/Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Contact dermatitis can occur in individuals handling hop bines or cones. Pollen can cause hay fever. Some people may experience sedative effects more strongly. Consumption of beer containing hops is the primary exposure route; true hop allergy is rare but possible."
+    }
+  ],
+  "cultivationProcess": "Hops are perennial climbing bines, grown from rhizomes or cuttings. They require a trellis system for support, rich soil, and ample sunshine. Female plants produce the cones used in brewing. They are typically grown in 'hop yards' or 'hop gardens'.",
+  "growthDuration": "Perennial. Bines grow rapidly each spring from overwintering rootstock. Cones are harvested once a year in late summer. Plants can be productive for 10-20 years or more.",
+  "sustainabilityTips": [
+    "Integrated pest management is crucial to reduce pesticide use, as hops can be susceptible to certain pests and diseases.",
+    "Water management is important, especially in drier hop-growing regions.",
+    "Organic hop production is increasing.",
+    "Research into disease-resistant and aroma-specific varieties."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of hops is influenced by cultivation inputs (fertilizers, pesticides, water for irrigation), energy for drying cones (kilning), processing (pelletizing, extraction), cold storage, and transportation. Local sourcing for breweries can reduce transport emissions.",
+  "uses": ["beverage_production_brewing_beer_bittering_flavoring_aroma_preservative", "herbal_medicine_sedative_sleep_aid_digestive_bitter", "food_young_hop_shoots_as_a_vegetable_limited_use", "essential_oil_production_limited_for_flavor_aroma"],
+  "originAndDomesticationHistory": "Hops (Humulus lupulus) are native to temperate regions of the Northern Hemisphere. Their use in brewing beer became widespread in Europe from the 9th century onwards (though earlier evidence exists), gradually replacing other bittering herbs (gruit). Cultivation was established in Germany by the 8th-9th centuries and spread throughout Europe. Hops were introduced to North America by European settlers.",
+  "climaticRequirements": {
+    "temperature": "Temperate climate crop. Requires warm summers (15-25°C) for optimal growth and cone development, and cold winters for dormancy. Sensitive to late spring frosts (damaging young shoots) and extreme summer heat.",
+    "rainfall": "Requires moderate and consistent rainfall (600-800mm) during the growing season, or supplemental irrigation. Good soil moisture is important, but not waterlogging.",
+    "altitude": "Typically grown in valleys or plains with suitable microclimates, often at moderate altitudes.",
+    "dayLength": "Sensitive to day length for flowering; requires long summer days."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils rich in organic matter, with a slightly acidic to neutral pH (6.0-7.0). Good aeration and nutrient availability are key.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during rapid bine growth and cone development. Drip irrigation is commonly used in many modern hop yards to supplement rainfall and ensure water delivery to the root zone.",
+  "plantingAndHarvestCycles": "Propagated from rhizome cuttings (setts) or nursery-grown plants. Planted in early spring. Bines are trained to climb strings or wires on tall trellises (typically 5-6 meters high). Cones are harvested in late summer when they are mature (papery, aromatic, with visible lupulin glands). Mechanical harvesters are used in large-scale operations, cutting down the bines which are then processed to separate cones.",
+  "pestAndDiseaseManagement": "Major pests include hop aphids, spider mites, and various caterpillars. Major diseases include downy mildew and powdery mildew, which can be devastating. Verticillium wilt is also a concern. Integrated pest management involves resistant varieties, cultural practices (pruning, proper spacing, air circulation), biological control, and timely application of fungicides and pesticides.",
+  "postHarvestHandling": "Harvested hop cones must be dried quickly to prevent spoilage and preserve aroma compounds. This is typically done in kilns (oasts) with heated air, reducing moisture content from ~80% to 8-10%. Dried cones are then cooled, pressed into bales or processed into pellets or extracts for brewing. Cold storage is essential to maintain quality.",
+  "majorProducingCountriesOrRegions": ["United States (Pacific Northwest: Washington, Oregon, Idaho - leading producer of aroma hops)", "Germany (Hallertau region - major producer of aroma and bittering hops)", "Czech Republic (Žatec/Saaz region - noble aroma hops)", "China", "United Kingdom", "Australia", "New Zealand", "Poland", "Slovenia", "France"],
+  "marketValueAndGlobalDemand": "Hops are a key ingredient in beer production, and their market is closely tied to the global beer industry, especially the craft beer sector which demands a wide variety of aroma hops. Prices vary significantly based on hop variety (alpha acid content, aroma profile), quality, and supply/demand dynamics. Hops are traded globally as cones, pellets, and extracts. There is a strong trend towards proprietary hop varieties."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rubber",
+  "commonName": "Rubber Tree (Para Rubber Tree)",
+  "scientificName": "Hevea brasiliensis",
+  "image": "https://images.unsplash.com/photo-1589842724900-35297f0b95ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The Pará rubber tree (Hevea brasiliensis), often simply called rubber tree or rubber plant, is a flowering plant belonging to the spurge family Euphorbiaceae. It is the most economically important member of the genus Hevea because the milky latex extracted from the tree is the primary source of natural rubber.",
+  "origin": "Amazon rainforest region of South America (Brazil, Bolivia, Peru, Ecuador, Colombia, Venezuela).",
+  "localNames": ["Rabar (Hindi - general for rubber)", "Gomu no ki (Japanese)", "Caucho / Seringueira (Spanish/Portuguese)", "Hévéa (French)"],
+  "regions": ["Thailand (leading producer)", "Indonesia", "Vietnam", "Malaysia", "India", "China", "Sri Lanka", "West African countries (e.g., Côte d'Ivoire, Nigeria, Liberia)", "Brazil"],
+  "seasons": ["Perennial tree; latex is typically harvested year-round, often with reduced tapping during rainy seasons or when trees are shedding leaves."],
+  "nutrition": {
+    "calories": "Latex/Rubber is not consumed. Rubber seeds contain oil (~40-50%) and protein (~15-20%), but also cyanogenic glycosides, making them unsuitable for direct human consumption without processing.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "N/A for primary product (latex)" },
+      { "name": "Carbohydrates", "unit": "g", "value": "N/A for primary product (latex)" },
+      { "name": "Fat", "unit": "g", "value": "Natural Rubber: ~94% polyisoprene" },
+      { "name": "Fiber", "unit": "g", "value": "N/A for primary product (latex)" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Primary product (natural rubber) is not consumed and has no direct dietary health benefits.",
+    "Natural rubber is used to produce a vast array of products essential for hygiene, safety, and daily life (e.g., gloves, tires, condoms, medical devices)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex Allergy",
+      "severity": "Mild to Severe",
+      "details": "Natural rubber latex contains proteins that can cause allergic reactions in sensitized individuals. Symptoms can range from skin irritation (contact dermatitis) to respiratory issues or severe anaphylaxis. Many products are now available in latex-free alternatives."
+    }
+  ],
+  "cultivationProcess": "Rubber trees are typically grown from seeds or bud-grafted seedlings in large plantations. Latex is harvested by tapping the bark of the tree, making a spiral incision and collecting the dripping latex. Trees need warm, humid climates with well-distributed rainfall.",
+  "growthDuration": "Perennial tree. Trees are typically tapped for latex starting from 5-7 years of age and can remain productive for 25-30 years or more.",
+  "sustainabilityTips": [
+    "Sustainable forestry practices and certification (e.g., Forest Stewardship Council - FSC for rubber wood) are important.",
+    "Monoculture plantations can lead to biodiversity loss; intercropping or agroforestry systems can mitigate this.",
+    "Research into alternative sources of natural rubber (e.g., guayule) and improved Hevea varieties.",
+    "Proper management of wastewater from rubber processing."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of natural rubber is influenced by land-use change (deforestation for new plantations), fertilizer use, processing of latex, and transportation. Rubber trees sequester carbon during their growth. Compared to synthetic rubber (derived from petroleum), natural rubber can have a lower carbon footprint if produced sustainably.",
+  "uses": ["latex_production_for_natural_rubber_tires_gloves_condoms_footwear_adhesives_elastic_products", "rubberwood_timber_furniture_construction_after_latex_production_ceases", "rubber_seed_oil_limited_use_alkyd_resins_soap_after_processing_due_to_toxicity", "animal_feed_rubber_seed_cake_after_detoxification_limited"],
+  "originAndDomesticationHistory": "The Pará rubber tree (Hevea brasiliensis) originated in the Amazon rainforest. Indigenous peoples of the Amazon used its latex for various purposes. Seeds were famously smuggled out of Brazil by Henry Wickham in 1876 and sent to Kew Gardens, London. Seedlings were then sent to British colonies in Southeast Asia (Malaya, Sri Lanka), establishing the foundation of the global natural rubber industry there, breaking the Amazonian monopoly.",
+  "climaticRequirements": {
+    "temperature": "Tropical tree. Optimal growing temperatures are 25-30°C. Requires high humidity (around 80%). Does not tolerate frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 2000-3000mm annually. A short dry spell can be tolerated, but prolonged drought affects latex yield.",
+    "altitude": "Primarily a lowland crop, typically grown from sea level up to 600m."
+  },
+  "soilPreferences": "Prefers deep, well-drained, acidic (pH 4.5-6.0) loamy or lateritic soils rich in organic matter. Good drainage is crucial as it does not tolerate waterlogging.",
+  "irrigationAndWaterNeeds": "Generally rain-fed in suitable climates. Supplemental irrigation may be used in nurseries or during establishment in areas with less consistent rainfall. Mature plantations rely on natural rainfall.",
+  "plantingAndHarvestCycles": "Propagated from seeds or bud-grafted seedlings for uniformity and high yield. Planted at the start of the rainy season. Tapping for latex usually begins when trees reach a girth of about 50 cm at a height of 1m (typically 5-7 years old). Tapping is done by skilled workers, usually every other day or on a specific tapping system, making a thin shaving of bark. Latex drips into collection cups.",
+  "pestAndDiseaseManagement": "Major diseases include South American Leaf Blight (SALB - a devastating fungal disease that has prevented large-scale cultivation in its native Amazon), white root disease, pink disease, and various leaf spots. Pests include scale insects, mealybugs, and mites. Management involves resistant clones (especially for SALB outside South America), good field sanitation, proper tapping techniques to avoid wounding, and chemical controls when necessary.",
+  "postHarvestHandling": "Collected latex is sieved to remove impurities, then coagulated (e.g., with formic acid) to form solid rubber. The coagulum is then processed into various forms like ribbed smoked sheets (RSS), air-dried sheets, crepe rubber, or concentrated latex. Different processing methods yield different grades of natural rubber for specific applications.",
+  "majorProducingCountriesOrRegions": ["Thailand (world's largest producer)", "Indonesia", "Vietnam", "Malaysia", "India", "China", "Côte d'Ivoire", "Nigeria", "Liberia", "Brazil (production is lower due to SALB)"],
+  "marketValueAndGlobalDemand": "Natural rubber is a vital global commodity with high demand from the automotive industry (for tires), as well as for manufacturing a wide range of industrial and consumer goods. Prices are influenced by global supply from Southeast Asia, demand from automotive and other sectors, crude oil prices (as synthetic rubber is an alternative), and weather conditions in producing countries. The International Tripartite Rubber Council (ITRC) involving Thailand, Indonesia, and Malaysia plays a significant role in the market."
+}
