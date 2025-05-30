@@ -35,28 +35,41 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const isMountedRef = useRef(true);
 
   const router = useRouter();
   const { toast } = useToast();
 
   const getCameraPermissionInternal = async () => {
-    setHasCameraPermission(null); 
-    setError(null);
+    if (isMountedRef.current) {
+      setHasCameraPermission(null); 
+      setError(null);
+    }
 
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
       const noApiMessage = 'Camera API is not available in this browser.';
-      setError(noApiMessage);
-      setHasCameraPermission(false);
+      if (isMountedRef.current) {
+        setError(noApiMessage);
+        setHasCameraPermission(false);
+      }
       toast({ variant: 'destructive', title: 'Camera Not Supported', description: noApiMessage });
       return;
     }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
       streamRef.current = stream;
-      setHasCameraPermission(true);
+      if (isMountedRef.current) {
+        setHasCameraPermission(true);
+      }
       if (videoRef.current) {
         videoRef.current.srcObject = stream;
-        videoRef.current.play().catch(playError => console.warn('Video play failed:', playError));
+        // Play is async, if component unmounts before play() promise resolves, it could error
+        // However, modern browsers are generally good at handling this.
+        // The main concern is state updates after unmount.
+        videoRef.current.play().catch(playError => {
+            console.warn('Video play failed:', playError)
+            // Potentially set an error state here if needed, guarded by isMountedRef
+        });
       }
     } catch (err) {
       console.error('Error accessing camera:', err);
@@ -70,23 +83,34 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
           message = `Could not access camera: ${err.message}.`;
         }
       }
-      setError(message);
-      setHasCameraPermission(false);
+      if (isMountedRef.current) {
+        setError(message);
+        setHasCameraPermission(false);
+      }
       toast({ variant: 'destructive', title: 'Camera Access Issue', description: message, duration: 5000 });
     }
   };
 
   useEffect(() => {
-    let localStreamRef: MediaStream | null = null;
+    isMountedRef.current = true;
+    let localStreamRef: MediaStream | null = null; // To hold the stream for cleanup
+
     if (isCameraMode) {
       if (!streamRef.current && hasCameraPermission !== false) {
         getCameraPermissionInternal();
       } else if (hasCameraPermission === true && streamRef.current && videoRef.current && !videoRef.current.srcObject) {
         videoRef.current.srcObject = streamRef.current;
-        videoRef.current.play().catch(e => console.warn("Retry play failed", e));
+        videoRef.current.play().catch(e => {
+            console.warn("Retry play failed", e);
+            // Potentially set an error state here if needed, guarded by isMountedRef
+            if (isMountedRef.current) {
+                // setError("Failed to play video stream.");
+            }
+        });
       }
-      localStreamRef = streamRef.current;
+      localStreamRef = streamRef.current; // Assign current stream to localStreamRef for cleanup
     } else {
+      // Switched away from camera mode
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
@@ -95,39 +119,58 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         videoRef.current.pause();
         videoRef.current.srcObject = null;
       }
-      if(hasCameraPermission !== false) { // Don't reset if definitively denied
-        setHasCameraPermission(null);
+      if (hasCameraPermission !== false) { // Don't reset if definitively denied
+        if (isMountedRef.current) {
+            setHasCameraPermission(null);
+        }
       }
-      setError(null);
+      if (isMountedRef.current) {
+        setError(null);
+      }
     }
 
     return () => {
-      if (localStreamRef) {
-        localStreamRef.getTracks().forEach(track => track.stop());
+      isMountedRef.current = false;
+      // Enhanced cleanup
+      if (streamRef.current) { // Check streamRef.current directly
+        streamRef.current.getTracks().forEach(track => track.stop());
+        streamRef.current = null;
+      } else if (localStreamRef) { // Fallback to localStreamRef if streamRef.current was nulled by other logic
+         localStreamRef.getTracks().forEach(track => track.stop());
       }
+
       if (videoRef.current && videoRef.current.srcObject) {
         videoRef.current.pause();
         videoRef.current.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]);
+  // getCameraPermissionInternal is a dependency if it can change or is defined inside a component
+  // For now, assuming it's stable or correctly handled by its own effects.
+  // Adding `hasCameraPermission` to dependency array as it influences logic within useEffect.
+  }, [isCameraMode, toast, hasCameraPermission]); // Added hasCameraPermission
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
       if (selectedFile.size > 10 * 1024 * 1024) {
-        setError('File is too large. Please select an image under 10MB.');
+        if (isMountedRef.current) {
+            setError('File is too large. Please select an image under 10MB.');
+            setFile(null);
+            setPreview(null);
+        }
         toast({ title: 'File Too Large', description: 'Please select an image under 10MB.', variant: 'destructive' });
-        setFile(null);
-        setPreview(null);
         return;
       }
-      setFile(selectedFile);
-      setError(null);
+      if (isMountedRef.current) {
+        setFile(selectedFile);
+        setError(null);
+      }
       const reader = new FileReader();
       reader.onloadend = () => {
-        setPreview(reader.result as string);
+        if (isMountedRef.current) {
+          setPreview(reader.result as string);
+        }
       };
       reader.readAsDataURL(selectedFile);
     }
@@ -152,27 +195,37 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     const droppedFile = event.dataTransfer.files?.[0];
     if (droppedFile) {
        if (droppedFile.size > 10 * 1024 * 1024) { 
-        setError('File is too large. Please select an image under 10MB.');
+        if (isMountedRef.current) {
+            setError('File is too large. Please select an image under 10MB.');
+            setFile(null);
+            setPreview(null);
+        }
         toast({ title: 'File Too Large', description: 'Please select an image under 10MB.', variant: 'destructive' });
-        setFile(null);
-        setPreview(null);
         return;
       }
-      setFile(droppedFile);
-      setError(null);
+      if (isMountedRef.current) {
+        setFile(droppedFile);
+        setError(null);
+      }
       const reader = new FileReader();
       reader.onloadend = () => {
-        setPreview(reader.result as string);
+        if (isMountedRef.current) {
+          setPreview(reader.result as string);
+        }
       };
       reader.readAsDataURL(droppedFile);
-      setIsCameraMode(false); 
+      if (isMountedRef.current) {
+        setIsCameraMode(false); 
+      }
     }
   };
 
   const initiateImageProcessing = async (photoDataUri: string) => {
-    setIsLoading(true);
-    setError(null);
-    setScanProgressValue(0);
+    if (isMountedRef.current) {
+      setIsLoading(true);
+      setError(null);
+      setScanProgressValue(0);
+    }
 
     // Simulate progress
     let progress = 0;
@@ -180,14 +233,18 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       progress += Math.floor(Math.random() * 10) + 5;
       if (progress >= 95) { 
         clearInterval(interval);
-        setScanProgressValue(95);
+        if (isMountedRef.current) {
+            setScanProgressValue(95);
+        }
       } else {
-        setScanProgressValue(progress);
+        if (isMountedRef.current) {
+            setScanProgressValue(progress);
+        }
       }
     }, 300);
 
     // Aggressive cleanup specific to this processing flow
-    const wasCameraMode = isCameraMode; // Capture state before potential changes
+    // const wasCameraMode = isCameraMode; // Capture state before potential changes
     if (videoRef.current && videoRef.current.srcObject) {
         const currentStream = videoRef.current.srcObject as MediaStream;
         currentStream.getTracks().forEach(track => track.stop());
@@ -206,7 +263,9 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     try {
       const result = await processImageWithAI(photoDataUri);
       clearInterval(interval); 
-      setScanProgressValue(100);
+      if (isMountedRef.current) {
+        setScanProgressValue(100);
+      }
 
       if (result.success && result.data) {
         const confidencePercentage = (result.data.confidence * 100).toFixed(0);
@@ -215,32 +274,44 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         playSound('/sounds/scan-success.mp3');
         
         if (onSuccessfulScan) onSuccessfulScan();
+        // Navigation should ideally happen after ensuring the component is still mounted,
+        // but router.push itself doesn't directly cause issues if the component unmounts.
+        // The main concern is setState calls after unmounting.
         router.push(`/item/${encodeURIComponent(result.data.commonName)}`);
       } else {
-        setError(result.message || 'Failed to process image.');
+        if (isMountedRef.current) {
+            setError(result.message || 'Failed to process image.');
+            setIsLoading(false); // Re-enable UI if error
+        }
         toast({ title: 'Identification Failed', description: result.message || 'Could not identify the item from the image.', variant: 'destructive' });
-        setIsLoading(false); // Re-enable UI if error
       }
     } catch (err) {
       clearInterval(interval);
-      setScanProgressValue(0);
-      const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred during AI processing.';
-      setError(errorMessage);
-      toast({ title: 'Processing Error', description: errorMessage, variant: 'destructive' });
-      setIsLoading(false); // Re-enable UI if error
+      if (isMountedRef.current) {
+        setScanProgressValue(0); // Reset progress on error
+        const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred during AI processing.';
+        setError(errorMessage);
+        setIsLoading(false); // Re-enable UI if error
+      }
+      // Toast can be shown even if unmounted, but good practice to check
+      toast({ title: 'Processing Error', description: err instanceof Error ? err.message : 'An unknown error occurred during AI processing.', variant: 'destructive' });
     }
-     //setIsProcessingCapture(false); // Reset this state after processing
+     //if (isMountedRef.current) setIsProcessingCapture(false); // Reset this state after processing
   };
   
   const handleCaptureAndProcess = async () => {
     if (!videoRef.current || !canvasRef.current || hasCameraPermission !== true || !videoRef.current.srcObject) {
-      setError('Camera not ready or permission denied.');
+      if (isMountedRef.current) {
+        setError('Camera not ready or permission denied.');
+      }
       toast({ title: 'Camera Issue', description: 'Camera not ready or permission denied.', variant: 'destructive' });
       return;
     }
     triggerHapticFeedback();
-    setIsProcessingCapture(true);
-    setPreview(null);
+    if (isMountedRef.current) {
+      setIsProcessingCapture(true);
+      setPreview(null);
+    }
 
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -251,13 +322,19 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
       const capturedDataUri = canvas.toDataURL('image/jpeg');
-      setPreview(capturedDataUri); // Set preview for confirmation step
+      if (isMountedRef.current) {
+        setPreview(capturedDataUri); // Set preview for confirmation step
+      }
       // No longer calls initiateImageProcessing directly
     } else {
-      setError('Failed to capture image from camera.');
+      if (isMountedRef.current) {
+        setError('Failed to capture image from camera.');
+      }
       toast({ title: 'Capture Error', description: 'Could not capture image from camera feed.', variant: 'destructive' });
     }
-    setIsProcessingCapture(false);
+    if (isMountedRef.current) {
+      setIsProcessingCapture(false);
+    }
   };
 
   const handleConfirm = () => {
@@ -273,10 +350,12 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
 
   const handleActivateCameraMode = () => {
     triggerHapticFeedback();
-    setIsCameraMode(true);
-    setFile(null);
-    setPreview(null);
-    setError(null);
+    if (isMountedRef.current) {
+      setIsCameraMode(true);
+      setFile(null);
+      setPreview(null);
+      setError(null);
+    }
     // Ensure camera stream is initialized if permission was previously granted
     // and not currently active (e.g., if user switched from file upload)
     if (hasCameraPermission === true && !streamRef.current) {
@@ -288,7 +367,9 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     triggerHapticFeedback();
     if (isCameraMode) {
       if (preview) { // If in camera mode and there's a preview (Clear Preview action)
-        setPreview(null);
+        if (isMountedRef.current) {
+          setPreview(null);
+        }
         // Ensure camera feed is visible and active
         if (videoRef.current && streamRef.current) {
           if (!videoRef.current.srcObject) {
@@ -301,9 +382,11 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       }
     } else { // In file upload mode
       if (preview) { // If there's a preview from a file (Clear Selected File action)
-        setPreview(null);
-        setFile(null);
-        setError(null);
+        if (isMountedRef.current) {
+          setPreview(null);
+          setFile(null);
+          setError(null);
+        }
       } else { // If no file preview (Upload Image action)
         triggerFileInput();
       }
