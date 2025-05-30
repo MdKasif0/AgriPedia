@@ -271,6 +271,17 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     fileInputRef.current?.click();
   };
 
+jules_wip_2678047440016541899
+  const handleToggleViewMode = () => {
+    triggerHapticFeedback();
+    setPreview(null);
+    setFile(null);
+    setError(null);
+    setIsCameraMode(prevIsCameraMode => !prevIsCameraMode);
+    // Note: The useEffect hook listening to isCameraMode already handles 
+    // camera stream start/stop and calls getCameraPermissionInternal if needed
+    // when switching to camera mode.
+
   const handleActivateCameraMode = () => {
     triggerHapticFeedback();
     setIsCameraMode(true);
@@ -282,6 +293,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     if (hasCameraPermission === true && !streamRef.current) {
         getCameraPermissionInternal(); // This will attempt to re-initialize
     }
+master
   };
 
   const handleShutterOrUploadClick = () => {
@@ -413,11 +425,25 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       {/* Controls Overlay - This is now a direct child of the main component div, always present */}
       <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
         <div className="flex justify-around items-center">
+jules_wip_2678047440016541899
+          {/* Toggle View Mode Button */}
+
           {/* Switch to Camera Button */}
+master
           <Button 
             variant="ghost" 
             size="lg" // Larger touch target
             className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
+jules_wip_2678047440016541899
+            onClick={handleToggleViewMode} 
+            aria-label={isCameraMode ? "Switch to File Upload" : "Switch to Camera"}
+            disabled={isLoading}
+          >
+            {isCameraMode ? <ImageUp size={32} /> : <Camera size={32} />}
+          </Button>
+
+          {/* Shutter / Upload / Clear Button */}
+
             onClick={handleActivateCameraMode} 
             aria-label="Open Camera"
             disabled={isLoading}
@@ -426,6 +452,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
           </Button>
 
           {/* Shutter / Upload / Switch to File Upload Button */}
+ master
           <Button
             variant="outline" // More prominent
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
