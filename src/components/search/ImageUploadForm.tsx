@@ -314,6 +314,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
+ feat/chat-camera-enhancements
       {/* Close button for File Upload mode */}
       {!isCameraMode && (
         <Button
@@ -327,12 +328,16 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         </Button>
       )}
 
+      {/* Top Controls (Flash, Switch Camera) removed */}
+ master
+
       <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
         {/* This div's padding (pt-16 pb-32 px-4) is removed to allow full screen for camera */}
         {/* It will still center the file upload UI */}
         {isCameraMode ? (
           // Camera View Container - Modified for full-screen
           <div className="fixed inset-0 bg-black z-10"> {/* Full screen */}
+ feat/chat-camera-enhancements
             <Button
               variant="ghost"
               size="icon"
@@ -342,6 +347,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             >
               <X className="h-8 w-8" /> {/* Updated size for consistency */}
             </Button>
+ master
             <video
               ref={videoRef}
               className={`w-full h-full object-cover transition-opacity duration-300 ${preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
@@ -367,7 +373,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                  // Consider adding a small, non-intrusive error display here if toasts are missed.
                  // The main controls overlay will be on top, so this needs to be positioned carefully if re-enabled.
                 <Alert variant="destructive" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm w-[90%] bg-red-900/90 text-white border-red-700 z-30 p-4 rounded-lg">
+ feat/chat-camera-enhancements
                     <AlertTriangle className="h-6 w-6 text-yellow-300 mr-2" /> {/* Increased size */}
+
+                    <AlertTriangle className="h-5 w-5 text-yellow-300 mr-2" />
+ master
                     <div>
                         <AlertTitle className="font-semibold">Camera Error</AlertTitle>
                         <AlertDescription className="text-sm">{error}</AlertDescription>
@@ -375,6 +385,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 </Alert>
             )}
             {/* Removed the "Camera Initializing" alert to simplify UI, relying on "Loading camera..." and error states. */}
+ feat/chat-camera-enhancements
 
             {/* Progress Bar Overlay for Camera Preview */}
             {isLoading && preview && isCameraMode && (
@@ -384,6 +395,8 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                 <p className="text-lg font-bold">{scanProgressValue}%</p>
               </div>
             )}
+
+ master
           </div>
         ) : (
           // File Upload UI - Centered by parent's flex properties
@@ -410,7 +423,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
               <Input id="image-upload-input" name="image-upload" type="file" accept="image/*" className="sr-only" onChange={handleFileChange} ref={fileInputRef} />
                {error && !isCameraMode && (
                   <Alert variant="destructive" className="mt-4 w-full bg-red-900/80 text-white border-red-700">
+ feat/chat-camera-enhancements
                       <AlertTriangle className="h-6 w-6 text-yellow-300" /> {/* Increased size */}
+
+                      <AlertTriangle className="h-4 w-4 text-yellow-300" />
+ master
                       <AlertTitle>Upload Error</AlertTitle>
                       <AlertDescription>{error}</AlertDescription>
                   </Alert>
@@ -422,25 +439,43 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
       {/* Controls Overlay - This is now a direct child of the main component div, always present */}
       <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
+ feat/chat-camera-enhancements
         {/* Progress Bar for File Uploads (or camera mode without preview, though less likely) */}
         {isLoading && (!isCameraMode || !preview) && (
           <div className="flex flex-col items-center space-y-1 mb-2 text-center">
             <p className="text-sm text-green-400 font-semibold">Processing... {scanProgressValue}%</p>
+
+        {isLoading && (
+          <div className="flex flex-col items-center space-y-1 mb-2 text-center">
+            <p className="text-sm text-green-400 font-semibold">Scanning... {scanProgressValue}%</p>
+ master
             <Progress value={scanProgressValue} className="w-full max-w-sm h-2.5 bg-gray-700/50 [&>div]:bg-green-500 rounded-full" />
           </div>
         )}
 
         <div className="flex justify-around items-center">
+ feat/chat-camera-enhancements
           {/* Mode Switch Button (Camera/Gallery) */}
+
+          {/* Gallery Button */}
+ master
           <Button 
             variant="ghost" 
             size="lg" // Larger touch target
             className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
+ feat/chat-camera-enhancements
             onClick={handleModeSwitchClick} 
             aria-label={isCameraMode ? "Switch to Gallery" : "Switch to Camera"}
             disabled={isLoading}
           >
             {isCameraMode ? <ImageUp size={28} /> : <Camera size={28} />}
+
+            onClick={handleGalleryClick} 
+            aria-label="Open Gallery"
+            disabled={isLoading}
+          >
+            <ImageUp size={26} />
+ master
           </Button>
 
           {/* Shutter / Upload / Switch to Camera Button */}
@@ -448,22 +483,37 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             variant="outline" // More prominent
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
             onClick={handleShutterOrUploadClick}
+ feat/chat-camera-enhancements
             disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject || (!!preview && !isLoading) ))} // Disable shutter if preview is shown (unless loading starts)
             aria-label={isCameraMode ? ((preview && !isLoading) ? "Clear Preview" : "Capture Photo") : (preview ? "Switch to Camera" : "Upload Image")}
           >
             {isCameraMode ? 
               ((preview && !isLoading) ? <X size={30} /> : <div className="w-14 h-14 rounded-full bg-white border-[6px] border-neutral-700 group-hover:border-neutral-500 transition-colors"></div>) :
+
+            disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject || !!preview))} // Disable shutter if preview is shown
+            aria-label={isCameraMode ? (preview ? "Clear Preview" : "Capture Photo") : (preview ? "Switch to Camera" : "Upload Image")}
+          >
+            {isCameraMode ? 
+              (preview ? <X size={30} /> : <div className="w-14 h-14 rounded-full bg-white border-[6px] border-neutral-700 group-hover:border-neutral-500 transition-colors"></div>) :
+ master
               (preview ? <Camera size={30} /> : <UploadCloud size={30} />)
             }
           </Button>
 
           {/* Confirm Button */}
+ feat/chat-camera-enhancements
           <Button
             variant="ghost"
             size="lg" // Larger touch target
             className={`bg-green-600 hover:bg-green-700 text-white rounded-full p-3.5 active:scale-95 transition-transform disabled:opacity-50 disabled:bg-gray-500/60 ${isLoading && preview ? 'opacity-0 pointer-events-none' : ''}`} // Hide if loading with preview
+
+          <Button 
+            variant="ghost" 
+            size="lg" // Larger touch target
+            className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3.5 active:scale-95 transition-transform disabled:opacity-50 disabled:bg-gray-500/60"
+ master
             onClick={handleConfirm}
-            disabled={!preview || isLoading || isProcessingCapture}
+            disabled={!preview || isLoading || isProcessingCapture} // isProcessingCapture might be redundant if isLoading is true
             aria-label="Confirm Identification"
           >
             <Check size={28} />

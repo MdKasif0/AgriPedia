@@ -173,9 +173,15 @@ export default function ChatPage() {
             size="icon"
             onClick={handleExportChatHistory}
             aria-label="Export chat history"
+ feat/chat-camera-enhancements
             className="text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-500 p-2" // Added padding for larger icon
           >
             <Download className="h-6 w-6" /> {/* Increased size */}
+
+            className="text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-500"
+          >
+            <Download className="h-5 w-5" />
+ master
           </Button>
         </div>
       </CardHeader>
@@ -219,8 +225,13 @@ export default function ChatPage() {
                     <AvatarImage src="https://placehold.co/40x40/2DD4BF/FFFFFF/png?text=AI" alt="AI" />
                     <AvatarFallback className="bg-teal-500 text-white">AI</AvatarFallback>
                 </Avatar>
+ feat/chat-camera-enhancements
                 <div className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 p-3.5 rounded-t-2xl rounded-br-2xl shadow-md border border-slate-200 dark:border-slate-600 flex items-center justify-center"> {/* Added flex for centering loader */}
                   <Loader2 className="h-6 w-6 animate-spin text-teal-600 dark:text-teal-500" /> {/* Increased size */}
+
+                <div className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 p-3.5 rounded-t-2xl rounded-br-2xl shadow-md border border-slate-200 dark:border-slate-600">
+                  <Loader2 className="h-5 w-5 animate-spin text-teal-600 dark:text-teal-500" />
+ master
                 </div>
               </div>
             )}
@@ -240,10 +251,17 @@ export default function ChatPage() {
           <Button 
             type="submit" 
             disabled={isLoadingResponse || !inputValue.trim()} 
+ feat/chat-camera-enhancements
             className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl p-3 aspect-square" // Padding seems fine for a slightly larger icon
             aria-label="Send message"
           >
             <Send className="h-6 w-6" /> {/* Increased size */}
+
+            className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl p-3 aspect-square"
+            aria-label="Send message"
+          >
+            <Send className="h-5 w-5" />
+ master
           </Button>
         </form>
       </CardFooter>
