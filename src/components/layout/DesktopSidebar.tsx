@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound } from 'lucide-react'; // Added KeyRound
+import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound, Users } from 'lucide-react'; // Added KeyRound, Users
 import {
   Sidebar,
   SidebarHeader,
@@ -18,6 +18,7 @@ import { useSidebar } from '@/components/ui/sidebar';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
 import ApiKeyManager from '@/components/settings/ApiKeyManager';
+import UserModeSelector from '@/components/settings/UserModeSelector';
 
 export default function DesktopSidebar() {
   const { state } = useSidebar();
@@ -101,6 +102,17 @@ export default function DesktopSidebar() {
             </SidebarGroupLabel>
             <div className="p-2">
                 <ApiKeyManager />
+            </div>
+        </SidebarGroup>
+
+        <SidebarSeparator className="my-2 bg-sidebar-border" />
+
+        <SidebarGroup>
+            <SidebarGroupLabel className="flex items-center gap-2 text-sidebar-foreground/70">
+                <Users size={16} /> {state === 'expanded' ? 'User Mode' : ''}
+            </SidebarGroupLabel>
+            <div className="p-2">
+                <UserModeSelector />
             </div>
         </SidebarGroup>
 

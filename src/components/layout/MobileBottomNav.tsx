@@ -13,6 +13,7 @@ import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
 import { Separator } from '@/components/ui/separator';
 import ApiKeyManager from '@/components/settings/ApiKeyManager';
+import UserModeSelector from '@/components/settings/UserModeSelector';
 
 interface NavItemProps {
   href?: string;
@@ -141,6 +142,11 @@ export default function MobileBottomNav() {
                       <div>
                         <h3 className="mb-2 text-sm font-medium text-muted-foreground">Notifications</h3>
                         <NotificationPreferences />
+                      </div>
+                      <Separator className="bg-border/50" />
+                       <div>
+                        <h3 className="mb-2 text-sm font-medium text-muted-foreground">User Mode</h3>
+                        <UserModeSelector />
                       </div>
                     </div>
                   </SheetContent>
