@@ -89,6 +89,20 @@
     "Freeze grapes for a cool snack."
   ],
   "carbonFootprintInfo": "Footprint depends on origin and transport (0.6-1.2 kg CO2e/kg). Locally grown grapes in season are more sustainable.",
+  "uses": ["culinary_fresh_eating_table_grapes", "wine_production", "juice_production", "dried_raisins_currants_sultanas", "jams_jellies_preserves", "grape_seed_oil_extract"],
+  "originAndDomesticationHistory": "Grapes (Vitis vinifera) originated in the Near East, specifically in the region between the Black Sea and Iran (Caucasus region, Anatolia, Mesopotamia). Domestication began around 6,000-8,000 years ago, primarily for winemaking. Ancient civilizations like the Egyptians, Greeks, and Romans extensively cultivated grapes and refined winemaking techniques. Grapes spread throughout Europe and later to other parts of the world with European exploration and colonization.",
+  "climaticRequirements": {
+    "temperature": "Temperate climates; optimal 15-25°C during growing season. Requires sufficient chilling hours for bud break. Frost sensitive during spring growth.",
+    "rainfall": "Requires 600-800mm annually, or irrigation. Dry weather during ripening is preferred for quality. Good air circulation is important.",
+    "altitude": "Can be grown from sea level to over 1000m, depending on variety and microclimate."
+  },
+  "soilPreferences": "Well-drained, deep loamy or gravelly soils. Tolerates a range of soil types, including calcareous soils. Prefers slightly acidic to neutral pH (6.0-7.5).",
+  "irrigationAndWaterNeeds": "Irrigation is crucial in many regions, especially in drier climates or sandy soils. Water needs are highest during vine growth and early fruit development. Regulated deficit irrigation is sometimes used to improve fruit quality for wine grapes.",
+  "plantingAndHarvestCycles": "Propagated from cuttings, grafting, or layering. Planted in late winter or early spring. Vines are trained on trellises or other support systems. Pruning is essential for managing growth and fruit production. Vines typically start bearing a significant crop in 2-4 years. Grapes are harvested in late summer to autumn, depending on variety and ripeness (sugar levels, acidity). Hand-picked for table grapes and high-quality wine; mechanical harvesting for some wine grapes and raisins.",
+  "pestAndDiseaseManagement": "Common pests include grape phylloxera (root louse), grape berry moth, leafhoppers, and spider mites. Major diseases are downy mildew, powdery mildew, Botrytis bunch rot (grey mold), and various trunk diseases. Integrated Pest Management (IPM) involves resistant rootstocks (for phylloxera), canopy management, biological controls, and targeted fungicide/insecticide applications.",
+  "postHarvestHandling": "Table grapes require careful handling to prevent bruising and decay. Often field-packed and cooled rapidly (pre-cooling). Stored at low temperatures (around 0°C) and high humidity. Wine grapes are transported to the winery quickly after harvest for crushing and fermentation. Grapes for raisins are typically sun-dried or mechanically dried.",
+  "majorProducingCountriesOrRegions": ["China", "Italy", "United States (California)", "Spain", "France", "Turkey", "India", "Chile", "Argentina", "South Africa"],
+  "marketValueAndGlobalDemand": "Grapes are a major global fruit crop with high economic importance. Demand is strong for fresh table grapes, wine (a multi-billion dollar industry), raisins, and grape juice. International trade is extensive for all grape products. Quality, variety, and origin significantly influence market value.",
   "staticRecipes": [
     {
       "name": "Chicken Salad with Grapes",

@@ -1,0 +1,73 @@
+{
+  "id": "taro",
+  "commonName": "Taro (Dasheen, Eddoe)",
+  "scientificName": "Colocasia esculenta",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Taro is a tropical plant grown primarily for its edible corms, a starchy root vegetable. It is a member of the Araceae family and is believed to be one of the earliest cultivated plants. Taro corms, leaves, and petioles must be cooked properly to break down calcium oxalate crystals. It is a staple food in many Pacific Islands, African, and Asian cultures.",
+  "origin": "Southeast Asia (likely Malesia - Philippines, Indonesia, Malaysia) or Southern Asia.",
+  "localNames": ["Arbi (Hindi)", "Satoimo (Japanese)", "Malanga / Yautía (Spanish - sometimes refers to Xanthosoma spp.)", "Colocase (French)", "Kalo (Hawaiian)"],
+  "regions": ["Nigeria (leading producer)", "China", "Cameroon", "Ghana", "Papua New Guinea", "Pacific Islands (Hawaii, Fiji, Samoa)", "Southeast Asia", "Caribbean"],
+  "seasons": ["Perennial tropical plant; typically grown as an annual. Planting and harvesting vary by region, often tied to rainy seasons. Can be harvested 8-12 months after planting."],
+  "nutrition": {
+    "calories": "Cooked taro corm: ~112-142 kcal per 100g (varies by preparation).",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~1.5-2.0" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~26-35 (Starch and Fiber)" },
+      { "name": "Fat", "unit": "g", "value": "~0.2" },
+      { "name": "Fiber", "unit": "g", "value": "~4-7" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E", "unit": "mg", "rdi": "~2.9 (19%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "~0.28 (22%)" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~4.5 (5%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~591 (13%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.38 (17%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "~0.17 (19%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~33 (8%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting gut health.",
+    "Provides resistant starch, which can help manage blood sugar levels.",
+    "Contains important minerals like potassium and manganese.",
+    "Rich in antioxidants.",
+    "Taro leaves (cooked) are a good source of Vitamin A and C."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Calcium Oxalate Irritation",
+      "severity": "Mild to Moderate",
+      "details": "Raw or improperly cooked taro contains needle-like calcium oxalate crystals (raphides) that can cause severe itching and irritation in the mouth, throat, and skin. Thorough cooking (boiling, roasting, baking) is essential to break down these crystals."
+    },
+    {
+      "name": "Taro Allergy",
+      "severity": "Rare",
+      "details": "True allergy to taro is uncommon."
+    }
+  ],
+  "cultivationProcess": "Taro is propagated from cormels, suckers, or pieces of the main corm. It is grown in both upland (rain-fed or irrigated) and lowland (paddy/wetland) conditions. It requires rich, moist soil and a long, warm growing season.",
+  "growthDuration": "Approximately 8-12 months from planting to corm harvest, depending on the variety and growing conditions.",
+  "sustainabilityTips": [
+    "Can be grown in wetland or paddy systems, utilizing areas not suitable for many other crops.",
+    "Traditional agroforestry systems often incorporate taro.",
+    "Organic cultivation is feasible.",
+    "Conservation of diverse taro cultivars is important for food security and resilience."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of taro is influenced by cultivation methods (upland vs. wetland, which can produce methane if not managed), processing, and transportation. Wetland cultivation can have higher methane emissions.",
+  "uses": ["food_staple_corms_boiled_steamed_roasted_fried_pounded_poi_taro_chips_flour", "food_leaves_petioles_cooked_as_vegetables_e_g_luau_callaloo", "animal_feed_cooked_corms_leaves_limited", "traditional_medicine_various_parts_used_in_some_cultures", "ornamental_plant_some_varieties_with_decorative_leaves"],
+  "originAndDomesticationHistory": "Taro (Colocasia esculenta) is one of the oldest cultivated plants, originating in Southeast Asia or Southern Asia thousands of years ago (possibly in the region of Assam, Myanmar, or Malesia). It spread throughout the Pacific Islands with Polynesian voyagers, becoming a vital staple crop. It also spread to Africa, the Caribbean, and other tropical regions.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical plant. Optimal growing temperatures are 21-30°C. Requires high humidity. Cannot tolerate frost.",
+    "rainfall": "Requires high rainfall, typically 1500-2500mm annually, or consistent irrigation for upland taro. Wetland taro grows in flooded or saturated soils.",
+    "altitude": "Typically grown in lowland areas, but can be cultivated up to 2000m in tropical regions."
+  },
+  "soilPreferences": "Prefers deep, fertile, moist, well-drained loamy soils rich in organic matter for upland taro. Wetland taro thrives in mucky, waterlogged soils. Slightly acidic to neutral pH (5.5-7.0) is optimal.",
+  "irrigationAndWaterNeeds": "Upland taro requires consistent and abundant moisture; irrigation is essential in drier areas. Wetland taro is grown in flooded paddies or saturated soils, similar to rice cultivation.",
+  "plantingAndHarvestCycles": "Propagated from cormels, suckers, or small pieces of the parent corm. Planted at the beginning of the rainy season or under irrigation. Corms are harvested when leaves begin to yellow and droop, or at the desired size. Harvesting is typically done manually.",
+  "pestAndDiseaseManagement": "Pests include taro leaf blight (Phytophthora colocasiae - a major disease), taro beetle, aphids, and spider mites. Diseases also include Pythium rot and various viral diseases. Integrated pest management involves resistant varieties, clean planting material, crop rotation, proper water management, and chemical controls when necessary.",
+  "postHarvestHandling": "Taro corms are perishable and can bruise easily. They should be handled carefully. Curing (drying in a warm, airy place for a few days) can help heal minor wounds. Stored in cool, dry, well-ventilated conditions. Can be processed into flour or chips for longer shelf life. Leaves and petioles must be cooked thoroughly before consumption.",
+  "majorProducingCountriesOrRegions": ["Nigeria (world's largest producer)", "China", "Cameroon", "Ghana", "Papua New Guinea", "Madagascar", "Pacific Islands (Hawaii, Fiji, Samoa, Solomon Islands)", "Southeast Asian countries (Philippines, Indonesia)", "Caribbean countries"],
+  "marketValueAndGlobalDemand": "Taro is a vital staple food for millions in tropical regions, particularly in the Pacific Islands and parts of Africa and Asia. Demand is primarily for local consumption. International trade exists for fresh taro, processed products (flour, chips, frozen taro), and as an ingredient in some specialty foods (e.g., taro bubble tea). There is growing interest in taro's nutritional benefits and as a gluten-free carbohydrate source."
+}

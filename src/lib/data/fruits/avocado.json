@@ -108,6 +108,20 @@
     "Consider water usage in avocado production; choose sources with sustainable water practices if possible."
   ],
   "carbonFootprintInfo": "Can be high due to water requirements and transportation (0.8-2.5 kg CO2e/kg).",
+  "uses": ["culinary_fresh_eating_salads_sandwiches_guacamole", "smoothies", "avocado_oil", "cosmetics_skin_hair_care_limited"],
+  "originAndDomesticationHistory": "Avocados originated in south-central Mexico, sometime between 7,000 and 5,000 B.C. Archaeological evidence shows they were cultivated by ancient Mesoamerican civilizations like the Maya and Olmec. They were later spread throughout South and Central America. European introduction occurred after Spanish colonization, and cultivation expanded to other suitable climates globally from the 19th century.",
+  "climaticRequirements": {
+    "temperature": "Subtropical to tropical; optimal 20-25°C. Most varieties are frost-sensitive. Some (e.g., Mexican race) tolerate light frost.",
+    "rainfall": "1000-1600mm annually, well-distributed. Requires good moisture but dislikes waterlogging. High humidity is beneficial.",
+    "altitude": "Varies by race; Mexican race up to 2500m, Guatemalan 1000-2000m, West Indian below 300m."
+  },
+  "soilPreferences": "Well-drained, aerated, loamy or sandy loam soil with a pH of 5.5-7.0. Sensitive to saline conditions and poor drainage (root rot).",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during flowering, fruit set, and development. Deep watering is preferred. Irrigation is essential in dry climates or during prolonged dry spells. Mature trees can consume significant amounts of water.",
+  "plantingAndHarvestCycles": "Usually propagated by grafting desired cultivars onto rootstock. Planted in full sun, protected from strong winds. Trees typically begin bearing fruit in 3-5 years for grafted trees, much longer for seedlings. Fruits mature on the tree but ripen only after harvest. Harvest season varies greatly by cultivar and location, allowing for year-round supply from different regions. Fruits are hand-picked when they reach mature size and oil content.",
+  "pestAndDiseaseManagement": "Common pests include avocado thrips, persea mites, and various borers. Major disease is Phytophthora root rot, especially in poorly drained soils. Anthracnose can affect fruit. Integrated pest management involves good orchard sanitation, biological controls, resistant rootstocks (for root rot), and targeted chemical applications if necessary.",
+  "postHarvestHandling": "Avocados are harvested mature but firm. They ripen at room temperature (18-24°C) over several days. Ripening can be slowed by refrigeration (around 5°C for Hass). Susceptible to chilling injury if stored too low. Handled carefully to prevent bruising. Often packed in single layers.",
+  "majorProducingCountriesOrRegions": ["Mexico (leading producer)", "Dominican Republic", "Peru", "Indonesia", "Colombia", "Brazil", "United States (California)"],
+  "marketValueAndGlobalDemand": "Avocados have seen a dramatic increase in global demand and market value over the past few decades, driven by their reputation as a healthy 'superfood'. They are a significant export commodity for major producing countries. Demand is high in North America, Europe, and increasingly in Asia.",
   "staticRecipes": [
     {
       "name": "Classic Guacamole",

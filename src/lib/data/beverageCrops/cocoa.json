@@ -1,0 +1,69 @@
+{
+  "id": "cocoa",
+  "commonName": "Cocoa (Cacao - Beverage Crop)",
+  "scientificName": "Theobroma cacao",
+  "image": "https://images.unsplash.com/photo-1559068350-170fcfc9c933?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Cocoa is derived from the fermented seeds of Theobroma cacao. These beans are processed into cocoa solids and cocoa butter, which are key ingredients in chocolate and various beverages like hot cocoa, chocolate milk, and traditional Mesoamerican drinks. While widely used in confectionery, its role as a base for popular beverages is significant globally. The tree is native to the deep tropical regions of the Americas.",
+  "origin": "Amazon basin (Upper Amazon region of South America).",
+  "localNames": ["Kakao (Many languages, including German, Japanese, Indonesian)", "Cacao (Spanish/French)"],
+  "regions": ["Côte d'Ivoire (leading producer)", "Ghana", "Indonesia", "Nigeria", "Cameroon", "Brazil", "Ecuador", "Peru", "Dominican Republic", "Malaysia"],
+  "seasons": ["Perennial tree; main harvests typically occur twice a year, varying by region (e.g., main crop and mid-crop). Flowers and fruits can be present on the tree at the same time."],
+  "nutrition": {
+    "calories": "Cocoa Beans (dried, fermented): ~400-500 kcal per 100g (varies). Cocoa Powder (unsweetened): ~228 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Beans: ~12-15, Powder: ~19.6" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Beans: ~30-35 (Fiber ~15-20), Powder: ~57.9 (Fiber ~37)" },
+      { "name": "Fat", "unit": "g", "value": "Beans: ~40-50 (Cocoa butter)" }
+    ],
+    "vitamins": [
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Powder: 0.241 (18%)" },
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Powder: 2.185 (14%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Powder: 32 (8%)" }
+    ],
+    "minerals": [
+      { "name": "Iron", "unit": "mg", "rdi": "Powder: 13.86 (77%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Powder: 499 (119%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Powder: 3.837 (167%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "Powder: 3.788 (421%)" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Powder: 734 (105%)" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Powder: 1524 (32%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in polyphenols (flavonoids), which have strong antioxidant and anti-inflammatory effects.",
+    "May improve blood flow and lower blood pressure.",
+    "Can enhance brain function and mood (theobromine and phenylethylamine).",
+    "May improve cholesterol levels.",
+    "Cocoa butter is a stable fat used in cosmetics for moisturizing."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cocoa/Chocolate Allergy",
+      "severity": "Rare",
+      "details": "True cocoa allergy is rare. Reactions are often due to other ingredients in chocolate products (e.g., milk, nuts, soy). Some people may be sensitive to theobromine or other compounds in cocoa, leading to headaches or migraines."
+    }
+  ],
+  "cultivationProcess": "Cocoa trees are grown from seeds or vegetatively. They require a tropical climate with high rainfall and humidity, and are often grown under shade (especially when young). Pods are harvested when ripe, then broken open to extract the beans, which are then fermented and dried.",
+  "growthDuration": "Perennial tree. Begins to bear fruit 3-5 years after planting. Can remain productive for 30-40 years or more, with peak yields between 10-25 years.",
+  "sustainabilityTips": [
+    "Agroforestry systems (shade-grown cocoa) can promote biodiversity, improve soil health, and provide diversified income for farmers.",
+    "Sustainable certifications (e.g., Fair Trade, Rainforest Alliance, Organic) address deforestation, child labor, and pesticide use.",
+    "Integrated pest and disease management is crucial to reduce reliance on chemicals.",
+    "Proper fermentation and drying are key to quality and reducing post-harvest losses."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of cocoa is significantly influenced by land-use change (deforestation for new plantations is a major issue, especially in West Africa). Fertilizer use, processing (fermentation, drying, roasting for beans; powder manufacturing for beverages), and transportation also contribute. Sustainably managed agroforestry systems have a lower footprint.",
+  "uses": ["beverage_production_cocoa_powder_for_hot_chocolate_chocolate_milk_traditional_drinks_tejate", "food_production_chocolate_confectionery_cocoa_butter", "cosmetics_cocoa_butter_in_lotions_creams", "pharmaceutical_theobromine_extraction_limited", "waste_products_pod_husks_for_fertilizer_animal_feed_biofuel"],
+  "originAndDomesticationHistory": "Theobroma cacao originated in the upper Amazon basin of South America. It was domesticated by ancient Mesoamerican civilizations like the Olmec, Maya, and Aztec at least 4,000 years ago. Cocoa beans were highly valued, used as currency and primarily to make bitter, frothy ceremonial and everyday beverages. Sugar was added after its introduction to Europe by the Spanish in the 16th century, popularizing chocolate as a sweet drink and eventually as solid confectionery.",
+  "climaticRequirements": {
+    "temperature": "Tropical crop. Optimal growing temperatures are 21-32°C. Requires high humidity (70-100%). Cannot tolerate frost or temperatures below 15°C for extended periods.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-2500mm annually. A short, less rainy period can be tolerated but prolonged drought affects yield.",
+    "altitude": "Typically grown in lowland tropical regions, from sea level up to 800m, though some varieties can grow up to 1200m."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils rich in organic matter. Slightly acidic to neutral pH (5.0-7.5) is optimal. Requires good aeration and moisture retention.",
+  "irrigationAndWaterNeeds": "Primarily rain-fed in suitable climates. Supplemental irrigation may be needed during establishment or in areas with pronounced dry seasons to maintain productivity and ensure fruit set.",
+  "plantingAndHarvestCycles": "Propagated from seeds or by vegetative methods (budding, grafting). Seedlings are raised in nurseries. Trees typically bear fruit directly on the trunk and older branches. Pods are harvested manually using knives or machetes when they are ripe (color changes to yellow, orange, or red depending on variety). Harvesting occurs year-round with peak seasons.",
+  "pestAndDiseaseManagement": "Major pests include mirids (capsids), cocoa pod borer, and mealybugs. Major diseases include black pod rot (Phytophthora), witches' broom, and frosty pod rot (Moniliophthora diseases – devastating in Latin America), and swollen shoot virus (in Africa). Integrated pest and disease management involves resistant varieties, regular pruning, phytosanitation, biological control, and targeted chemical application.",
+  "postHarvestHandling": "Harvested pods are broken open (usually within a few days) to extract the wet beans, which are embedded in a mucilaginous pulp. Beans undergo fermentation for 5-7 days (heap, box, or tray methods), during which flavor precursors develop. After fermentation, beans are dried (sun-drying or artificial driers) to a moisture content of 6-8%. Dried beans are then cleaned, graded, bagged, and exported for processing into chocolate.",
+  "majorProducingCountriesOrRegions": ["Côte d'Ivoire (world's largest producer)", "Ghana", "Indonesia", "Nigeria", "Cameroon", "Brazil", "Ecuador", "Peru", "Dominican Republic", "Malaysia"],
+  "marketValueAndGlobalDemand": "Cocoa beans are a major global commodity with high demand from the chocolate and confectionery industries. Prices are volatile and influenced by global supply (weather, disease in West Africa), demand, currency fluctuations, and futures market trading. There is a growing market for certified sustainable and fine/flavor cocoa."
+}

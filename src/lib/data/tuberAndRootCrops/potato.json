@@ -1,0 +1,70 @@
+{
+  "id": "potato",
+  "commonName": "Potato",
+  "scientificName": "Solanum tuberosum",
+  "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The potato is a starchy tuberous crop from the perennial nightshade Solanum tuberosum. Potatoes are a staple food in many countries and are grown worldwide. They are rich in carbohydrates and provide various vitamins and minerals. There are thousands of potato varieties, differing in size, shape, color, starch content, and flavor.",
+  "origin": "Andean region of South America (Peru and Bolivia).",
+  "localNames": ["Aloo (Hindi)", "Jagaimo (Japanese)", "Patata (Spanish/Italian)", "Pomme de terre (French)"],
+  "regions": ["China (leading producer)", "India", "Russia", "Ukraine", "United States", "Germany", "Bangladesh", "Poland", "France", "Netherlands"],
+  "seasons": ["Cool-season crop; planting times vary by climate. Typically planted in spring for summer/autumn harvest, or as a winter crop in warmer regions."],
+  "nutrition": {
+    "calories": "Cooked potato (with skin, baked): ~93 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~2.0" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~21.2 (Starch and Fiber)" },
+      { "name": "Fat", "unit": "g", "value": "~0.1" },
+      { "name": "Fiber", "unit": "g", "value": "~2.2 (with skin)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~19.7 (22%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "~0.295 (23%)" },
+      { "name": "Potassium", "unit": "mg", "rdi": "~421 (9%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "~16 (4%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~421 (9%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.153 (7%)" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "~57 (8%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~23 (5%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that supports immune function.",
+    "Provides potassium, important for blood pressure regulation.",
+    "Contains Vitamin B6, involved in numerous metabolic processes.",
+    "Dietary fiber (especially in the skin) aids digestion and promotes satiety.",
+    "Resistant starch (formed when potatoes are cooked and cooled) can benefit gut health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nightshade Allergy/Sensitivity",
+      "severity": "Rare, Mild to Moderate",
+      "details": "Potatoes are part of the nightshade family. Some individuals may be sensitive or allergic, experiencing symptoms like skin rashes, digestive issues, or joint pain. Green potatoes contain solanine, a toxic compound, and should not be eaten."
+    }
+  ],
+  "cultivationProcess": "Potatoes are grown from seed potatoes (small tubers or pieces of tubers). They require well-drained, fertile soil and cool growing conditions. Hilling (piling soil around the base of the plants) is done to protect developing tubers from sunlight and encourage tuber formation.",
+  "growthDuration": "Approximately 70-120 days from planting to harvest, depending on the variety (early, mid, late season) and climate.",
+  "sustainabilityTips": [
+    "Crop rotation is important to prevent soilborne diseases and pests.",
+    "Integrated pest management can reduce reliance on chemical pesticides.",
+    "Water-efficient irrigation methods should be used where irrigation is necessary.",
+    "Proper storage conditions can minimize post-harvest losses."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of potatoes is influenced by farming practices (fertilizer use, mechanization), irrigation, storage (refrigeration), processing (e.g., for fries or chips), and transportation. Compared to some other staple foods, potatoes can have a relatively lower footprint per calorie if grown efficiently.",
+  "uses": ["food_staple_boiled_baked_fried_mashed_roasted_salads_soups_stews", "processed_food_french_fries_potato_chips_crisps_starch_flour_vodka_akvavit", "animal_feed_cooked_tubers_peels_processed_residues", "seed_potatoes_for_propagation"],
+  "originAndDomesticationHistory": "The potato (Solanum tuberosum) was domesticated in the Andean region of South America (around present-day Peru and Bolivia) between 7,000 and 10,000 years ago. Indigenous peoples cultivated thousands of varieties. It was introduced to Europe by Spanish explorers in the late 16th century and initially met with suspicion but gradually became a major food staple, profoundly impacting European agriculture and cuisine.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal tuber development occurs at soil temperatures of 15-20°C. Growth slows above 30°C. Frost can damage foliage and tubers near the surface.",
+    "rainfall": "Requires consistent moisture, around 500-750mm during the growing season. Water stress, especially during tuber initiation and bulking, reduces yield.",
+    "altitude": "Adaptable to various altitudes, from sea level to over 4000m in its native Andean region. High-altitude varieties are specialized.",
+    "dayLength": "Most modern varieties are day-neutral or have weak responses to day length for tuberization, but some traditional Andean varieties are short-day plants."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils rich in organic matter with a slightly acidic pH (5.0-6.5). Good aeration is crucial. Avoid heavy clay or waterlogged soils.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, particularly during tuber formation and development. Irrigation (sprinkler, furrow, or drip) is essential in many potato-growing regions to ensure high yields and good quality tubers.",
+  "plantingAndHarvestCycles": "Planted from certified seed potatoes (tubers or tuber pieces with 'eyes'). Planted in spring in temperate climates when soil temperatures are above 7°C. Hilling is done as plants grow. Tubers are harvested when mature, typically after the plant foliage begins to senesce. Harvesting can be done manually or mechanically.",
+  "pestAndDiseaseManagement": "Major pests include Colorado potato beetle, aphids (vector for viruses), potato cyst nematodes, and wireworms. Major diseases include late blight (Phytophthora infestans - historically devastating), early blight, common scab, black scurf, potato viruses (PVY, PLRV), and bacterial soft rot. Integrated pest management involves resistant varieties, certified seed, crop rotation, chemical controls, and biological agents.",
+  "postHarvestHandling": "Harvested potatoes are cured (stored at moderate temperatures and high humidity for 1-2 weeks) to heal minor injuries and strengthen the skin. They are then graded by size and quality and stored in cool, dark, well-ventilated conditions (4-10°C) to prevent sprouting and reduce spoilage. Potatoes for processing (e.g., chips) may have specific storage requirements.",
+  "majorProducingCountriesOrRegions": ["China (world's largest producer)", "India", "Russia", "Ukraine", "United States (Idaho, Washington, North Dakota)", "Germany", "Bangladesh", "Poland", "France", "Netherlands", "Peru (center of diversity)"],
+  "marketValueAndGlobalDemand": "Potatoes are one of the most important food crops globally, ranking among the top staple foods. Demand is high for fresh potatoes for consumption, as well as for processed products like french fries, chips, starch, and dehydrated potatoes. It is a key commodity in global food trade and food security."
+}

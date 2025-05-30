@@ -1,0 +1,73 @@
+{
+  "id": "yam",
+  "commonName": "Yam",
+  "scientificName": "Dioscorea spp. (e.g., Dioscorea rotundata, Dioscorea alata, Dioscorea cayenensis)",
+  "image": "https://images.unsplash.com/photo-1547050605-2f2403817a37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Yam is the common name for some plant species in the genus Dioscorea (family Dioscoreaceae) that form edible tubers. Yams are perennial herbaceous vines cultivated for the consumption of their starchy tubers in many temperate and tropical regions. True yams are distinct from sweet potatoes (Ipomoea batatas), although the terms are sometimes used interchangeably in some regions like the United States.",
+  "origin": "Multiple centers of origin depending on the species: Africa (D. rotundata, D. cayenensis), Southeast Asia (D. alata), Americas (D. trifida).",
+  "localNames": ["Ratalu / Suran / Jimikand (Hindi - various types)", "Yamaimo / Nagaimo (Japanese - specific types)", "Ñame (Spanish)", "Igname (French)"],
+  "regions": ["Nigeria (leading producer)", "Ghana", "Côte d'Ivoire", "Benin", "Togo", "Cameroon", "Colombia", "Brazil", "Papua New Guinea", "Caribbean islands"],
+  "seasons": ["Tropical perennial vine, typically grown as an annual. Planting is usually done at the beginning of the rainy season, and tubers are harvested 7-12 months later, depending on the species."],
+  "nutrition": {
+    "calories": "Cooked yam (D. alata): ~118 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~1.5" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~27.9 (Starch and Fiber)" },
+      { "name": "Fat", "unit": "g", "value": "~0.2" },
+      { "name": "Fiber", "unit": "g", "value": "~4.1" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~17.1 (19%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "~0.293 (23%)" },
+      { "name": "Potassium", "unit": "mg", "rdi": "~816 (17%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~816 (17%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.397 (17%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "~0.178 (20%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~21 (5%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of carbohydrates and dietary fiber.",
+    "Provides Vitamin C, Vitamin B6, potassium, and manganese.",
+    "Resistant starch content may benefit gut health.",
+    "Some species contain diosgenin, a phytoestrogen that can be a precursor for steroid hormone synthesis in labs.",
+    "Traditionally used for various medicinal purposes in different cultures."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Yam Allergy/Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "Allergy to yams is uncommon. Some species contain oxalates, which can cause irritation to the skin or mouth if handled or consumed raw in large quantities. Proper cooking usually neutralizes these."
+    },
+    {
+      "name": "Dioscorea Alkaloids (Wild Yams)",
+      "severity": "Varies",
+      "details": "Some wild yam species can contain bitter or toxic alkaloids and require careful processing before consumption. Cultivated varieties are generally safe."
+    }
+  ],
+  "cultivationProcess": "Yams are typically grown from small tubers (seed yams) or pieces of tubers. They are climbing vines that require staking or trellising for support. They need well-drained, fertile soil and a long, warm, humid growing season.",
+  "growthDuration": "Approximately 7-12 months from planting to tuber harvest, depending on the species and cultivar.",
+  "sustainabilityTips": [
+    "Intercropping yams with other crops (e.g., legumes, vegetables) can improve land use efficiency and soil fertility.",
+    "Mulching helps conserve soil moisture and control weeds.",
+    "Traditional yam cultivation systems often involve minimal inputs.",
+    "Conservation of yam genetic diversity is important due to the many cultivated and wild species."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of yams is influenced by farming practices, land preparation (often involves mounding), storage, and transportation. Traditional, low-input systems generally have a lower footprint.",
+  "uses": ["food_staple_boiled_fried_roasted_mashed_pounded_yam_flour", "traditional_medicine_various_species_used_for_different_ailments", "industrial_diosgenin_extraction_from_some_species_for_pharmaceuticals", "cultural_ceremonial_uses_in_some_societies"],
+  "originAndDomesticationHistory": "Yams (Dioscorea spp.) have multiple independent centers of origin and domestication. Dioscorea rotundata and D. cayenensis (white and yellow yams) were domesticated in West Africa thousands of years ago. Dioscorea alata (water yam or greater yam) originated in Southeast Asia and spread widely. Other species were domesticated in the Americas (D. trifida) and other parts of Asia. Yams are culturally significant food staples in many tropical regions.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical crop. Optimal growing temperatures are 25-30°C. Requires warm, humid conditions. Most species are sensitive to frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1000-2000mm annually, during the growing season. A distinct dry season can aid tuber maturation for some species.",
+    "altitude": "Adaptable to various altitudes, from sea level up to 2000m or higher for certain species, in tropical and subtropical zones."
+  },
+  "soilPreferences": "Prefers deep, well-drained, loose, fertile loamy soils rich in organic matter. Slightly acidic to neutral pH (5.5-7.0) is optimal. Good aeration is crucial for tuber development. Cannot tolerate waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture throughout the growing season, especially during tuber formation and bulking. Irrigation is often necessary in areas with insufficient or erratic rainfall to ensure good yields. However, excessive moisture can lead to tuber rot.",
+  "plantingAndHarvestCycles": "Propagated from small whole tubers (seed yams) or tuber pieces ('setts'), which are often pre-sprouted. Planted in mounds or ridges at the beginning of the rainy season. Vines require staking. Tubers are harvested manually when plants show signs of senescence (yellowing leaves) or at the desired tuber size. Some species can be harvested piecemeal (leaving part of the tuber to regrow).",
+  "pestAndDiseaseManagement": "Major pests include yam beetles, scale insects, mealybugs, and nematodes. Major diseases include anthracnose, dry rot, wet rot, and various viral diseases. Integrated pest management involves using healthy seed yams, crop rotation, resistant varieties, proper field sanitation, and chemical controls when necessary. Storage pests can also cause significant losses.",
+  "postHarvestHandling": "Yam tubers are perishable and susceptible to bruising and rot. After harvest, they are often cured (dried in the sun or a warm, airy place for a few days) to heal minor wounds and improve storage life. Stored in cool, dry, well-ventilated conditions, traditionally in yam barns or pits. They can also be processed into flour or chips for longer storage.",
+  "majorProducingCountriesOrRegions": ["Nigeria (world's largest producer by far, mainly D. rotundata and D. cayenensis)", "Ghana", "Côte d'Ivoire", "Benin", "Togo", "Cameroon", "Central African Republic", "Colombia", "Brazil", "Papua New Guinea", "Caribbean countries (e.g., Jamaica)"],
+  "marketValueAndGlobalDemand": "Yams are a vital staple food crop and a significant source of income for millions of people in West Africa, the Caribbean, and parts of Asia and South America. Demand is high in these regions for local consumption. International trade is less extensive than for potatoes or cassava but exists for specific yam varieties and processed products. They are culturally important and often feature in festivals and ceremonies."
+}

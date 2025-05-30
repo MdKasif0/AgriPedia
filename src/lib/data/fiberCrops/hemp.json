@@ -1,0 +1,71 @@
+{
+  "id": "hemp",
+  "commonName": "Hemp (Industrial Hemp)",
+  "scientificName": "Cannabis sativa L. (low-THC varieties)",
+  "image": "https://images.unsplash.com/photo-1587049011179-3f090b958f8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Hemp, or industrial hemp, is a variety of the Cannabis sativa plant species that is grown specifically for industrial uses. It is one of the fastest growing plants and was one of the first plants to be spun into usable fiber 10,000 years ago. It can be refined into a variety of commercial items, including paper, textiles, clothing, biodegradable plastics, paint, insulation, biofuel, food, and animal feed. Industrial hemp varieties are characterized by having low levels of THC (delta-9-tetrahydrocannabinol).",
+  "origin": "Central Asia.",
+  "localNames": ["Bhang (Hindi - often refers to cannabis generally, but also hemp fiber/seeds)", "Taima / Asa (Japanese)", "Cáñamo (Spanish)", "Chanvre (French)"],
+  "regions": ["China (leading producer)", "Canada", "United States", "European Union (France, Netherlands, Romania)", "Chile", "North Korea", "Australia"],
+  "seasons": ["Warm-season annual; typically planted in spring and harvested in late summer or fall, depending on whether it's grown for fiber, seed, or CBD/floral material."],
+  "nutrition": {
+    "calories": "Hemp Seeds: ~553 kcal per 100g. Hemp Seed Oil: ~884 kcal per 100g. Fiber is not consumed for calories.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: ~31.6" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: ~8.7 (Fiber ~4.0)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~48.8 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Seeds: Significant" },
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: Significant" },
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Seeds: Significant" }
+    ],
+    "minerals": [
+      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: Very High (700mg, 167%)" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Seeds: Very High (1650mg, 236%)" },
+      { "name": "Iron", "unit": "mg", "rdi": "Seeds: High (7.95mg, 44%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: High (7.6mg, 330%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Hemp fiber is strong, durable, and biodegradable.",
+    "Hemp seeds are highly nutritious, providing complete protein, healthy fats (omega-3 and omega-6 fatty acids), and fiber.",
+    "Hemp seed oil is rich in essential fatty acids.",
+    "CBD (cannabidiol) extracted from hemp flowers has various potential therapeutic uses (anti-inflammatory, anxiolytic - distinct from fiber use but often co-produced)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Hemp Seed Allergy",
+      "severity": "Rare, Mild",
+      "details": "Allergy to hemp seeds is uncommon but can occur. Handling hemp fibers can cause skin irritation in some individuals."
+    },
+    {
+      "name": "THC Content",
+      "severity": "N/A for Industrial Hemp",
+      "details": "Industrial hemp is defined by having very low THC levels (typically <0.3%), so psychoactive effects are not a concern. However, legal regulations vary significantly by country regarding cultivation and use."
+    }
+  ],
+  "cultivationProcess": "Hemp is grown from seeds. For fiber production, plants are sown densely to encourage tall, slender stems with minimal branching. It is a fast-growing plant that can outcompete weeds. Stems are harvested before they fully mature.",
+  "growthDuration": "Approximately 70-120 days from planting to fiber harvest.",
+  "sustainabilityTips": [
+    "Requires significantly less water and pesticides than cotton.",
+    "Improves soil health by adding organic matter and can be used for phytoremediation (removing toxins from soil).",
+    "Fast-growing and can be harvested multiple times in some climates.",
+    "All parts of the plant can be utilized, minimizing waste."
+  ],
+  "carbonFootprintInfo": "Hemp is considered a carbon-negative crop as it absorbs more CO2 during its growth than is emitted during its cultivation and processing for fiber. Its use in building materials (hempcrete) can also sequester carbon.",
+  "uses": ["fiber_production_textiles_clothing_rope_canvas_paper_building_materials_hempcrete_bioplastics_insulation", "food_seeds_hemp_hearts_protein_powder_hemp_seed_oil_for_culinary_use_supplements", "cbd_production_floral_biomass_for_cannabidiol_extracts_medicinal_wellness", "animal_feed_seed_cake", "soil_remediation_phytoremediation"],
+  "originAndDomesticationHistory": "Hemp (Cannabis sativa L.) originated in Central Asia. It is one of the oldest domesticated plants, with evidence of its cultivation for fiber dating back over 10,000 years in China and Taiwan. It spread globally and was historically a major source of fiber for textiles (sails, ropes, clothing) and paper before being largely replaced by cotton and synthetic fibers in the 20th century, partly due to its association with drug-type cannabis and subsequent legal restrictions.",
+  "climaticRequirements": {
+    "temperature": "Temperate and warm-season crop. Optimal growing temperatures are 15-27°C. Tolerates a wide range of conditions but sensitive to frost during early growth. Requires good sunlight.",
+    "rainfall": "Requires moderate rainfall, around 600-800mm during the growing season, well-distributed. Can tolerate some drought once established, but yields are better with consistent moisture.",
+    "altitude": "Adaptable to various altitudes, from sea level up to moderate elevations."
+  },
+  "soilPreferences": "Prefers well-drained, deep, loamy soils rich in organic matter with a neutral to slightly alkaline pH (6.0-7.5). Can grow in a variety of soils but not heavy clay or waterlogged conditions.",
+  "irrigationAndWaterNeeds": "While relatively drought-tolerant compared to cotton, hemp benefits from irrigation, especially during establishment and peak growth periods, to maximize fiber or seed yield. Water needs vary with climate and soil type.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring after the last frost. For fiber, plants are sown densely and harvested before flowering or when male plants begin to shed pollen, to obtain long, fine fibers. Stems are cut near the ground. For seeds, plants are spaced further apart and harvested when seeds are mature.",
+  "pestAndDiseaseManagement": "Hemp is relatively resistant to many pests and diseases, often requiring minimal pesticide use. Potential pests include hemp borers, aphids, and various caterpillars. Diseases like Sclerotinia stem rot (white mold) or Botrytis (gray mold) can occur in humid conditions. Crop rotation and good field hygiene are important.",
+  "postHarvestHandling": "For fiber, harvested hemp stalks undergo retting (dew, water, or chemical/enzymatic) to separate the bast fibers from the woody core (hurds). Fibers are then dried, and further processed by breaking (decortication) and scutching to clean and align them for spinning. Hurds can be used for animal bedding or building materials.",
+  "majorProducingCountriesOrRegions": ["China (largest producer of fiber and seed)", "Canada (primarily for seed and CBD)", "France (fiber and seed)", "United States (legalization leading to rapid growth in cultivation for fiber, seed, and CBD)", "European Union (Romania, Netherlands, Italy)", "Chile", "North Korea", "Australia"],
+  "marketValueAndGlobalDemand": "The global market for hemp products (fiber, seed, oil, CBD) is expanding rapidly due to increasing legalization, consumer demand for sustainable products, and recognition of hemp's nutritional and industrial benefits. Fiber is used in textiles, paper, and composites. Seeds and oil are used in food and supplements. CBD is a major driver of new cultivation. The market is dynamic as regulations evolve."
+}

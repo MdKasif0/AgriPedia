@@ -1,0 +1,57 @@
+{
+  "id": "ramie",
+  "commonName": "Ramie (China Grass)",
+  "scientificName": "Boehmeria nivea",
+  "image": "https://images.unsplash.com/photo-1627616239022-542f97a8dd9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Ramie is a flowering plant in the nettle family Urticaceae, native to eastern Asia. It is a herbaceous perennial growing to 1.0–2.5 m tall; the leaves are heart-shaped. Ramie is one of the oldest fiber crops, having been used for at least six thousand years, and is principally used for fabric production. It is a bast fiber, and the part used is the bark (phloem) of the vegetative stalks.",
+  "origin": "Eastern Asia (China, Japan, Malay Peninsula).",
+  "localNames": ["Rhea (Assamese/Bengali)", "Choma (Japanese - refers to ramie fabric/fiber)", "Rami (Spanish/French/German)"],
+  "regions": ["China (leading producer)", "Philippines", "Brazil", "India", "South Korea", "Thailand", "Egypt"],
+  "seasons": ["Perennial; multiple harvests (3-6) of stems possible per year in tropical and subtropical climates. Growth is active during warm, wet seasons."],
+  "nutrition": {
+    "calories": "Primarily a fiber crop. Leaves are sometimes used as animal fodder and are protein-rich.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Leaves: ~20-25 (dry weight)" },
+      { "name": "Carbohydrates", "unit": "g", "value": "N/A for fiber" },
+      { "name": "Fat", "unit": "g", "value": "N/A for fiber" },
+      { "name": "Fiber", "unit": "g", "value": "Stems: Very high in cellulose" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Ramie fiber is known for its strength, absorbency, and natural luster.",
+    "It is resistant to bacteria, mildew, and insect attack.",
+    "Fabric made from ramie is durable, breathable, and comfortable to wear, especially in hot weather.",
+    "Does not shrink and maintains its shape well."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ramie Fiber/Dust Sensitivity",
+      "severity": "Mild",
+      "details": "Dust generated during processing of ramie fibers can cause respiratory irritation in some workers. The finished textile is generally considered hypoallergenic."
+    }
+  ],
+  "cultivationProcess": "Ramie is propagated vegetatively from rhizome or stem cuttings. It requires fertile, well-drained soil and a warm, humid climate with ample rainfall. Stems are harvested when mature, and the bast fibers are extracted, often involving decortication and degumming.",
+  "growthDuration": "Perennial. First harvest is typically 6-12 months after planting. Can be harvested multiple times per year for up to 20 years from a single planting.",
+  "sustainabilityTips": [
+    "Can be harvested multiple times a year, leading to high productivity per hectare.",
+    "Resistant to many pests and diseases, potentially reducing pesticide needs.",
+    "The degumming process (to remove gums and pectins from fibers) can be resource-intensive; research into more eco-friendly degumming methods is ongoing."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of ramie fiber is influenced by cultivation practices, energy and chemicals used in fiber extraction (degumming) and processing, and transportation. Its durability and natural properties are positive sustainability aspects.",
+  "uses": ["fiber_production_textiles_clothing_tablecloths_napkins_handkerchiefs_industrial_sewing_threads_filter_cloths_fishing_nets_paper_currency_banknotes_cigarette_paper", "animal_feed_leaves_as_fodder_for_livestock_poultry", "traditional_medicine_limited_use_of_leaves_roots_in_some_cultures"],
+  "originAndDomesticationHistory": "Ramie (Boehmeria nivea) has been cultivated in East Asia, particularly China, for thousands of years, with archaeological evidence of its use in fabrics dating back over 5,000 years. It was used for clothing, fishing nets, and paper. It was introduced to Europe in the 18th century but didn't achieve widespread commercial success similar to cotton or flax due to processing challenges (degumming).",
+  "climaticRequirements": {
+    "temperature": "Subtropical and tropical plant. Optimal growing temperatures are 20-30°C. Requires a long, warm growing season and high humidity.",
+    "rainfall": "Requires abundant and well-distributed rainfall, typically 1000-1500mm annually, or irrigation. Cannot tolerate drought well during active growth.",
+    "altitude": "Typically grown in lowland areas, but can be cultivated up to 1000m."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained sandy loam or loamy soils rich in organic matter. Slightly acidic to neutral pH (5.5-7.0) is optimal.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture. Irrigation is essential in areas with insufficient rainfall or during dry periods to ensure multiple high-yield harvests per year.",
+  "plantingAndHarvestCycles": "Propagated from rhizome cuttings or stem cuttings. Planted in spring. Stems are harvested 2-6 times a year, depending on the climate and management. Harvesting is done when stems reach maturity, often indicated by a slowing of growth or just before flowering. Stems are cut close to the ground.",
+  "pestAndDiseaseManagement": "Relatively resistant to many pests and diseases. Leaf-eating caterpillars, grasshoppers, and some fungal leaf spots can occur. Good field hygiene and proper crop management are usually sufficient. Less pesticide input is generally needed compared to cotton.",
+  "postHarvestHandling": "Harvested ramie stems undergo decortication (bark removal, often done manually or semi-mechanically in the field) to extract the ribbons containing bast fibers. These ribbons are then dried. The crucial and complex step is degumming, which involves chemical or enzymatic processes to remove the gums, pectins, and waxes that bind the fibers. After degumming, fibers are washed, bleached (optional), dried, and then combed (hackled) before spinning.",
+  "majorProducingCountriesOrRegions": ["China (dominant global producer)", "Philippines", "Brazil", "India", "South Korea", "Thailand", "Taiwan", "Egypt", "Laos"],
+  "marketValueAndGlobalDemand": "Ramie is a specialty natural fiber, not as widely traded as cotton or flax, but valued for its strength, luster, and absorbency. Demand comes from the textile industry for apparel (often blended with other fibers like cotton), home furnishings, and industrial applications like high-quality paper and filter cloths. The complex degumming process contributes to its higher cost compared to some other natural fibers. There is niche market interest in sustainable and high-performance natural fibers."
+}
