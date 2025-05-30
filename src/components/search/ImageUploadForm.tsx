@@ -11,7 +11,6 @@ import { processImageWithAI } from '@/app/actions';
 import NextImage from 'next/image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
-// DialogClose removed as the X button is being removed
 import { Progress } from '@/components/ui/progress';
 
 interface ImageUploadFormProps {
@@ -110,7 +109,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         videoRef.current.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]);
+  }, [isCameraMode, toast]); // hasCameraPermission is not explicitly listed, but its state is managed internally and drives calls to getCameraPermissionInternal within this effect
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -174,7 +173,6 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     setError(null);
     setScanProgressValue(0);
 
-    // Simulate progress
     let progress = 0;
     const interval = setInterval(() => {
       progress += Math.floor(Math.random() * 10) + 5;
@@ -186,8 +184,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       }
     }, 300);
 
-    // Aggressive cleanup specific to this processing flow
-    const wasCameraMode = isCameraMode; // Capture state before potential changes
+    const wasCameraMode = isCameraMode; 
     if (videoRef.current && videoRef.current.srcObject) {
         const currentStream = videoRef.current.srcObject as MediaStream;
         currentStream.getTracks().forEach(track => track.stop());
@@ -201,7 +198,6 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
     }
-
 
     try {
       const result = await processImageWithAI(photoDataUri);
@@ -219,7 +215,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       } else {
         setError(result.message || 'Failed to process image.');
         toast({ title: 'Identification Failed', description: result.message || 'Could not identify the item from the image.', variant: 'destructive' });
-        setIsLoading(false); // Re-enable UI if error
+        setIsLoading(false);
       }
     } catch (err) {
       clearInterval(interval);
@@ -227,9 +223,8 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred during AI processing.';
       setError(errorMessage);
       toast({ title: 'Processing Error', description: errorMessage, variant: 'destructive' });
-      setIsLoading(false); // Re-enable UI if error
+      setIsLoading(false);
     }
-     //setIsProcessingCapture(false); // Reset this state after processing
   };
   
   const handleCaptureAndProcess = async () => {
@@ -251,8 +246,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     if (context) {
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
       const capturedDataUri = canvas.toDataURL('image/jpeg');
-      setPreview(capturedDataUri); // Set preview for confirmation step
-      // No longer calls initiateImageProcessing directly
+      setPreview(capturedDataUri); 
     } else {
       setError('Failed to capture image from camera.');
       toast({ title: 'Capture Error', description: 'Could not capture image from camera feed.', variant: 'destructive' });
@@ -271,45 +265,40 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     fileInputRef.current?.click();
   };
 
-  const handleActivateCameraMode = () => {
+  const handleToggleViewMode = () => {
     triggerHapticFeedback();
-    setIsCameraMode(true);
-    setFile(null);
     setPreview(null);
+    setFile(null);
     setError(null);
-    // Ensure camera stream is initialized if permission was previously granted
-    // and not currently active (e.g., if user switched from file upload)
-    if (hasCameraPermission === true && !streamRef.current) {
-        getCameraPermissionInternal(); // This will attempt to re-initialize
-    }
+    setIsCameraMode(prevIsCameraMode => !prevIsCameraMode);
+    // The useEffect hook listening to isCameraMode handles camera stream start/stop
+    // and calls getCameraPermissionInternal if needed when switching to camera mode.
   };
 
   const handleShutterOrUploadClick = () => {
     triggerHapticFeedback();
     if (isCameraMode) {
-      if (preview) { // If in camera mode and there's a preview (Clear Preview action)
+      if (preview) { 
         setPreview(null);
-        // Ensure camera feed is visible and active
         if (videoRef.current && streamRef.current) {
           if (!videoRef.current.srcObject) {
             videoRef.current.srcObject = streamRef.current;
           }
           videoRef.current.play().catch(playError => console.warn('Retry play after clear preview failed:', playError));
         }
-      } else { // If in camera mode and no preview (Capture Photo action)
+      } else { 
         handleCaptureAndProcess();
       }
-    } else { // In file upload mode
-      if (preview) { // If there's a preview from a file (Clear Selected File action)
+    } else { 
+      if (preview) { 
         setPreview(null);
         setFile(null);
         setError(null);
-      } else { // If no file preview (Upload Image action)
+      } else { 
         triggerFileInput();
       }
     }
   };
-
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
@@ -327,7 +316,6 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
           <X size={32} />
         </Button>
       )}
-      {/* Top Controls (Flash, Switch Camera) removed */}
 
       <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
         {isLoading && (
@@ -336,11 +324,8 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
             <Progress value={scanProgressValue} className="w-full h-2.5 bg-gray-700/70 [&>div]:bg-green-500 rounded-full" />
           </div>
         )}
-        {/* This div's padding (pt-16 pb-32 px-4) is removed to allow full screen for camera */}
-        {/* It will still center the file upload UI */}
         {isCameraMode ? (
-          // Camera View Container - Modified for full-screen
-          <div className="fixed inset-0 bg-black z-10"> {/* Full screen */}
+          <div className="fixed inset-0 bg-black z-10">
             <video
               ref={videoRef}
               className={`w-full h-full object-cover transition-opacity duration-300 ${preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
@@ -361,10 +346,6 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
                  <div className="absolute inset-0 flex items-center justify-center text-white/80 pointer-events-none">Loading camera...</div>
             )}
             {hasCameraPermission === false && error && (
-                 // Error alert for camera, positioned within the full-screen view if needed, or rely on toast.
-                 // For now, keeping it simple, toast is primary feedback for this error.
-                 // Consider adding a small, non-intrusive error display here if toasts are missed.
-                 // The main controls overlay will be on top, so this needs to be positioned carefully if re-enabled.
                 <Alert variant="destructive" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm w-[90%] bg-red-900/90 text-white border-red-700 z-30 p-4 rounded-lg">
                     <AlertTriangle size={24} className="text-yellow-300 mr-2" />
                     <div>
@@ -373,11 +354,8 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
                     </div>
                 </Alert>
             )}
-            {/* Removed the "Camera Initializing" alert to simplify UI, relying on "Loading camera..." and error states. */}
           </div>
         ) : (
-          // File Upload UI - Centered by parent's flex properties
-          // Added padding here since parent's padding was removed
           <div className="flex flex-col items-center justify-center w-full h-full p-4">
             <div
               className="w-full h-full max-w-md flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-600 rounded-2xl cursor-pointer hover:border-green-400/70 transition-colors bg-neutral-800/50"
@@ -410,24 +388,23 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         )}
       </div>
 
-      {/* Controls Overlay - This is now a direct child of the main component div, always present */}
-      <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
+      <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
         <div className="flex justify-around items-center">
-          {/* Switch to Camera Button */}
+          {/* Toggle View Mode Button */}
           <Button 
             variant="ghost" 
-            size="lg" // Larger touch target
+            size="lg" 
             className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
-            onClick={handleActivateCameraMode} 
-            aria-label="Open Camera"
+            onClick={handleToggleViewMode} 
+            aria-label={isCameraMode ? "Switch to File Upload" : "Switch to Camera"}
             disabled={isLoading}
           >
-            <Camera size={32} />
+            {isCameraMode ? <ImageUp size={32} /> : <Camera size={32} />}
           </Button>
 
-          {/* Shutter / Upload / Switch to File Upload Button */}
+          {/* Shutter / Upload / Clear Button */}
           <Button
-            variant="outline" // More prominent
+            variant="outline" 
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
             onClick={handleShutterOrUploadClick}
             disabled={isLoading || (isCameraMode && !preview && (hasCameraPermission !== true || !videoRef.current?.srcObject))}
@@ -442,20 +419,18 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
           {/* Confirm Button */}
           <Button 
             variant="ghost" 
-            size="lg" // Larger touch target
+            size="lg"
             className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3.5 active:scale-95 transition-transform disabled:opacity-50 disabled:bg-gray-500/60"
             onClick={handleConfirm}
-            disabled={!preview || isLoading || isProcessingCapture} // isProcessingCapture might be redundant if isLoading is true
+            disabled={!preview || isLoading || isProcessingCapture} 
             aria-label="Confirm Identification"
           >
             <Check size={32} />
           </Button>
         </div>
       </div>
-      {/* Global style for animation can remain if used elsewhere, or be removed if specific to a removed element */}
       <style jsx global>{`
         /* Removed dash-animate as it's not clear if it's still used. */
-        /* If it was for the dashed border on upload, Tailwind handles that without animation. */
       `}</style>
     </div>
   );
