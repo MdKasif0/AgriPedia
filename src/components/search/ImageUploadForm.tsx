@@ -271,17 +271,15 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
     fileInputRef.current?.click();
   };
 
-  const handleActivateCameraMode = () => {
+  const handleToggleViewMode = () => {
     triggerHapticFeedback();
-    setIsCameraMode(true);
-    setFile(null);
     setPreview(null);
+    setFile(null);
     setError(null);
-    // Ensure camera stream is initialized if permission was previously granted
-    // and not currently active (e.g., if user switched from file upload)
-    if (hasCameraPermission === true && !streamRef.current) {
-        getCameraPermissionInternal(); // This will attempt to re-initialize
-    }
+    setIsCameraMode(prevIsCameraMode => !prevIsCameraMode);
+    // Note: The useEffect hook listening to isCameraMode already handles 
+    // camera stream start/stop and calls getCameraPermissionInternal if needed
+    // when switching to camera mode.
   };
 
   const handleShutterOrUploadClick = () => {
@@ -413,19 +411,19 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       {/* Controls Overlay - This is now a direct child of the main component div, always present */}
       <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
         <div className="flex justify-around items-center">
-          {/* Switch to Camera Button */}
+          {/* Toggle View Mode Button */}
           <Button 
             variant="ghost" 
             size="lg" // Larger touch target
             className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
-            onClick={handleActivateCameraMode} 
-            aria-label="Open Camera"
+            onClick={handleToggleViewMode} 
+            aria-label={isCameraMode ? "Switch to File Upload" : "Switch to Camera"}
             disabled={isLoading}
           >
-            <Camera size={32} />
+            {isCameraMode ? <ImageUp size={32} /> : <Camera size={32} />}
           </Button>
 
-          {/* Shutter / Upload / Switch to File Upload Button */}
+          {/* Shutter / Upload / Clear Button */}
           <Button
             variant="outline" // More prominent
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
