@@ -18,11 +18,13 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle
+  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle,
+  History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, CalendarCog, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTubeDiagonal, NotebookPen, Newspaper
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
 import ClientOnly from '@/components/ClientOnly';
+import CropCalendarDisplay from '@/components/produce/CropCalendarDisplay';
 
 const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
   loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
@@ -466,10 +468,112 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </IconLabel>
                 )}
             </div>
+
+            {/* New Agricultural Information Fields Start Here */}
+
+            {produce.uses && produce.uses.length > 0 && (
+              <IconLabel icon={Leaf} label="Common Uses" className="bg-card rounded-lg shadow-lg">
+                <div className="flex flex-wrap gap-2">
+                  {produce.uses.map(use => <Badge key={use} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{use}</Badge>)}
+                </div>
+              </IconLabel>
+            )}
+
+            {produce.originAndDomesticationHistory && (
+              <IconLabel icon={History} label="Origin & Domestication History" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.originAndDomesticationHistory}</p>
+              </IconLabel>
+            )}
+
+            {produce.climaticRequirements && (
+              <IconLabel icon={Thermometer} label="Climatic Requirements" className="bg-card rounded-lg shadow-lg">
+                {produce.climaticRequirements.temperature && <p className="text-card-foreground/90"><strong>Temperature:</strong> {produce.climaticRequirements.temperature}</p>}
+                {produce.climaticRequirements.rainfall && <p className="text-card-foreground/90"><strong>Rainfall:</strong> {produce.climaticRequirements.rainfall}</p>}
+                {produce.climaticRequirements.altitude && <p className="text-card-foreground/90"><strong>Altitude:</strong> {produce.climaticRequirements.altitude}</p>}
+              </IconLabel>
+            )}
+
+            {produce.soilPreferences && (
+              <IconLabel icon={Layers} label="Soil Preferences" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.soilPreferences}</p>
+              </IconLabel>
+            )}
+
+            {produce.irrigationAndWaterNeeds && (
+              <IconLabel icon={Waves} label="Irrigation & Water Needs" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.irrigationAndWaterNeeds}</p>
+              </IconLabel>
+            )}
+
+            {(produce.plantingAndHarvestCycles || (produce.seasons && produce.seasons.length > 0)) && (
+              <IconLabel icon={CalendarDays} label="Crop Calendar / Planting & Harvesting" className="bg-card rounded-lg shadow-lg">
+                <CropCalendarDisplay produce={produce} />
+              </IconLabel>
+            )}
+
+            {produce.pestAndDiseaseManagement && (
+              <IconLabel icon={Bug} label="Pest & Disease Management" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.pestAndDiseaseManagement}</p>
+              </IconLabel>
+            )}
+
+            {produce.postHarvestHandling && (
+              <IconLabel icon={Truck} label="Post-Harvest Handling" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.postHarvestHandling}</p>
+              </IconLabel>
+            )}
+
+            {produce.majorProducingCountriesOrRegions && produce.majorProducingCountriesOrRegions.length > 0 && (
+              <IconLabel icon={MapPinned} label="Major Producing Countries/Regions" className="bg-card rounded-lg shadow-lg">
+                <div className="flex flex-wrap gap-2">
+                  {produce.majorProducingCountriesOrRegions.map(region => <Badge key={region} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{region}</Badge>)}
+                </div>
+              </IconLabel>
+            )}
+
+            {produce.marketValueAndGlobalDemand && (
+              <IconLabel icon={AreaChart} label="Market Value & Global Demand" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90 whitespace-pre-line">{produce.marketValueAndGlobalDemand}</p>
+              </IconLabel>
+            )}
+
+            {/* New Agricultural Information Fields End Here */}
+
+            <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg">
+              {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
+                <p className="text-card-foreground/90 mb-2">
+                  This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
+                </p>
+              ) : (
+                <p className="text-muted-foreground mb-2">
+                  General soil preference information is not specified for this plant.
+                </p>
+              )}
+              <p className="text-sm text-muted-foreground">
+                An advanced AI-powered Soil Suitability Checker is coming soon! This feature will allow you to input your local soil and climate conditions for a detailed suitability analysis for this plant.
+              </p>
+            </IconLabel>
+
+            <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+              <p className="text-sm text-muted-foreground">
+                A comprehensive guide on organic and chemical fertilizers and treatments, including safe usage guidelines, is planned for this section. For current recommendations, please consult local agricultural extension services or qualified experts.
+              </p>
+            </IconLabel>
+
+            <IconLabel icon={NotebookPen} label="Growth Tracker / Crop Journal (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+              <p className="text-sm text-muted-foreground">
+                Track your planting progress! A personal Crop Journal feature is planned, allowing you to log planting dates, growth stages, notes, and even photos. This feature will require a user account to save your personalized data.
+              </p>
+            </IconLabel>
+
+            <IconLabel icon={Newspaper} label="Agricultural News & Trends (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+              <p className="text-sm text-muted-foreground">
+                Stay updated! This section will feature recent news and trends in the world of agriculture, offering insights and updates relevant to enthusiasts and professionals alike. Integration with a live news source is planned for a future update.
+              </p>
+            </IconLabel>
+            
         </TabsContent>
       </Tabs>
     </div>
   );
 }
-
-    

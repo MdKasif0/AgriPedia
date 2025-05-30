@@ -9,6 +9,7 @@ import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import Preloader from '@/components/layout/Preloader'; // Added Preloader import
+import ActiveUserModeDisplay from '@/components/layout/ActiveUserModeDisplay';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -89,6 +90,7 @@ export default function RootLayout({
                 </SidebarInset>
               </div>
               <MobileBottomNav />
+              <ActiveUserModeDisplay /> {/* Display active mode */}
             </SidebarProvider>
             <Toaster />
           </ThemeProvider>

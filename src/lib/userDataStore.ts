@@ -79,3 +79,21 @@ export function removeGeminiApiKey(): void {
   if (typeof window === 'undefined') return;
   localStorage.removeItem(GEMINI_API_KEY_STORAGE_KEY);
 }
+
+// --- User Mode ---
+import { type UserModeId, DEFAULT_USER_MODE_ID } from './constants'; // Assuming constants.ts is in the same directory
+
+const USER_MODE_KEY = 'agripedia-user-mode';
+
+export function getCurrentUserMode(): UserModeId {
+  if (typeof window === 'undefined') return DEFAULT_USER_MODE_ID;
+  const storedMode = localStorage.getItem(USER_MODE_KEY) as UserModeId | null;
+  return storedMode || DEFAULT_USER_MODE_ID;
+}
+
+export function setCurrentUserMode(modeId: UserModeId): void {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem(USER_MODE_KEY, modeId);
+  // Dispatch a custom event to notify other components of the change
+  window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
+}
