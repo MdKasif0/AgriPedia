@@ -300,25 +300,14 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
-      {/* Top Controls - Close button removed */}
-      <div className="absolute top-4 right-4 flex gap-2 z-20">
-        {isCameraMode && hasCameraPermission === true && (
-          <>
-            <Button variant="ghost" size="icon" className="bg-black/50 text-white rounded-full p-2 hover:bg-black/70 active:scale-95 transition-transform" onClick={() => toast({ title: 'Flash control coming soon!'})}>
-              <Zap size={20} />
-              <span className="sr-only">Toggle Flash</span>
-            </Button>
-            <Button variant="ghost" size="icon" className="bg-black/50 text-white rounded-full p-2 hover:bg-black/70 active:scale-95 transition-transform" onClick={() => toast({ title: 'Camera switch coming soon!'})}>
-              <RefreshCcw size={20} />
-              <span className="sr-only">Switch Camera</span>
-            </Button>
-          </>
-        )}
-      </div>
+      {/* Top Controls (Flash, Switch Camera) removed */}
 
-      <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden pt-16 pb-32 px-4">
+      <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
+        {/* This div's padding (pt-16 pb-32 px-4) is removed to allow full screen for camera */}
+        {/* It will still center the file upload UI */}
         {isCameraMode ? (
-          <div className="relative w-full aspect-[3/4] bg-neutral-900 rounded-2xl overflow-hidden shadow-lg max-w-md mx-auto">
+          // Camera View Container - Modified for full-screen
+          <div className="fixed inset-0 bg-black z-10"> {/* Full screen */}
             <video
               ref={videoRef}
               className={`w-full h-full object-cover transition-opacity duration-300 ${preview && !isProcessingCapture && !isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
@@ -336,97 +325,111 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             )}
             <canvas ref={canvasRef} className="hidden" />
             {hasCameraPermission === null && !error && (
-                 <div className="absolute inset-0 flex items-center justify-center text-white/80">Loading camera...</div>
+                 <div className="absolute inset-0 flex items-center justify-center text-white/80 pointer-events-none">Loading camera...</div>
             )}
             {hasCameraPermission === false && error && (
-                 <Alert variant="destructive" className="absolute bottom-4 left-4 right-4 max-w-md mx-auto bg-red-900/80 text-white border-red-700 z-30">
-                    <AlertTriangle className="h-4 w-4 text-yellow-300" />
-                    <AlertTitle>Camera Error</AlertTitle>
-                    <AlertDescription>{error}</AlertDescription>
+                 // Error alert for camera, positioned within the full-screen view if needed, or rely on toast.
+                 // For now, keeping it simple, toast is primary feedback for this error.
+                 // Consider adding a small, non-intrusive error display here if toasts are missed.
+                 // The main controls overlay will be on top, so this needs to be positioned carefully if re-enabled.
+                <Alert variant="destructive" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm w-[90%] bg-red-900/90 text-white border-red-700 z-30 p-4 rounded-lg">
+                    <AlertTriangle className="h-5 w-5 text-yellow-300 mr-2" />
+                    <div>
+                        <AlertTitle className="font-semibold">Camera Error</AlertTitle>
+                        <AlertDescription className="text-sm">{error}</AlertDescription>
+                    </div>
                 </Alert>
             )}
-            {hasCameraPermission === true && !videoRef.current?.srcObject && !preview && !error && (
-                <Alert variant="destructive" className="absolute bottom-4 left-4 right-4 max-w-md mx-auto bg-blue-900/80 text-white border-blue-700 z-30">
-                    <Camera className="h-4 w-4 text-blue-300" />
-                    <AlertTitle>Camera Initializing</AlertTitle>
-                    <AlertDescription>Please wait or ensure camera is not in use by another app.</AlertDescription>
-                </Alert>
-            )}
+            {/* Removed the "Camera Initializing" alert to simplify UI, relying on "Loading camera..." and error states. */}
           </div>
-        ) : ( 
-          <div
-            className="w-full h-full max-w-md mx-auto flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-600 rounded-2xl cursor-pointer hover:border-green-400/70 transition-colors bg-neutral-800/50"
-            onClick={() => !preview && triggerFileInput()}
-            onDrop={handleDrop}
-            onDragOver={handleDragOver}
-            onDragLeave={handleDragLeave}
-          >
-            {preview ? (
-              <div className="relative w-full h-full rounded-lg overflow-hidden">
-                <NextImage src={preview} alt="Upload preview" fill style={{ objectFit: 'contain' }} />
-              </div>
-            ) : (
-              <div className="text-center">
-                <UploadCloud className="mx-auto h-16 w-16 text-gray-500" />
-                <p className="mt-2 text-sm text-gray-400">Click to upload or drag & drop</p>
-                <p className="text-xs text-gray-500">PNG, JPG, WebP up to 10MB</p>
-              </div>
-            )}
-            <Input id="image-upload-input" name="image-upload" type="file" accept="image/*" className="sr-only" onChange={handleFileChange} ref={fileInputRef} />
-             {error && !isCameraMode && (
-                <Alert variant="destructive" className="mt-4 w-full bg-red-900/80 text-white border-red-700">
-                    <AlertTriangle className="h-4 w-4 text-yellow-300" />
-                    <AlertTitle>Upload Error</AlertTitle>
-                    <AlertDescription>{error}</AlertDescription>
-                </Alert>
-            )}
+        ) : (
+          // File Upload UI - Centered by parent's flex properties
+          // Added padding here since parent's padding was removed
+          <div className="flex flex-col items-center justify-center w-full h-full p-4">
+            <div
+              className="w-full h-full max-w-md flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-600 rounded-2xl cursor-pointer hover:border-green-400/70 transition-colors bg-neutral-800/50"
+              onClick={() => !preview && triggerFileInput()}
+              onDrop={handleDrop}
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+            >
+              {preview ? (
+                <div className="relative w-full h-full rounded-lg overflow-hidden">
+                  <NextImage src={preview} alt="Upload preview" fill style={{ objectFit: 'contain' }} />
+                </div>
+              ) : (
+                <div className="text-center">
+                  <UploadCloud className="mx-auto h-16 w-16 text-gray-500" />
+                  <p className="mt-2 text-sm text-gray-400">Click to upload or drag & drop</p>
+                  <p className="text-xs text-gray-500">PNG, JPG, WebP up to 10MB</p>
+                </div>
+              )}
+              <Input id="image-upload-input" name="image-upload" type="file" accept="image/*" className="sr-only" onChange={handleFileChange} ref={fileInputRef} />
+               {error && !isCameraMode && (
+                  <Alert variant="destructive" className="mt-4 w-full bg-red-900/80 text-white border-red-700">
+                      <AlertTriangle className="h-4 w-4 text-yellow-300" />
+                      <AlertTitle>Upload Error</AlertTitle>
+                      <AlertDescription>{error}</AlertDescription>
+                  </Alert>
+              )}
+            </div>
           </div>
         )}
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 p-6 z-20 space-y-3">
+      {/* Controls Overlay - This is now a direct child of the main component div, always present */}
+      <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
         {isLoading && (
-          <div className="flex flex-col items-center space-y-1 mb-2">
-            <p className="text-sm text-green-400 font-medium">Scanning... {scanProgressValue}%</p>
-            <Progress value={scanProgressValue} className="w-full max-w-xs h-2 bg-gray-700 [&>div]:bg-green-500" />
+          <div className="flex flex-col items-center space-y-1 mb-2 text-center">
+            <p className="text-sm text-green-400 font-semibold">Scanning... {scanProgressValue}%</p>
+            <Progress value={scanProgressValue} className="w-full max-w-sm h-2.5 bg-gray-700/50 [&>div]:bg-green-500 rounded-full" />
           </div>
         )}
 
         <div className="flex justify-around items-center">
-          <Button variant="ghost" size="icon" className="bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform" onClick={handleGalleryClick} aria-label="Open Gallery">
-            <ImageUp size={24} />
+          {/* Gallery Button */}
+          <Button 
+            variant="ghost" 
+            size="lg" // Larger touch target
+            className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
+            onClick={handleGalleryClick} 
+            aria-label="Open Gallery"
+            disabled={isLoading}
+          >
+            <ImageUp size={26} />
           </Button>
 
+          {/* Shutter / Upload / Switch to Camera Button */}
           <Button
-            variant="ghost"
-            className="w-16 h-16 p-0 rounded-full bg-white hover:bg-gray-200 shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-60"
+            variant="outline" // More prominent
+            className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
             onClick={handleShutterOrUploadClick}
-            disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject)) }
-            aria-label={isCameraMode ? "Capture Photo" : (preview ? "Switch to Camera" : "Upload Image")}
+            disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject || !!preview))} // Disable shutter if preview is shown
+            aria-label={isCameraMode ? (preview ? "Clear Preview" : "Capture Photo") : (preview ? "Switch to Camera" : "Upload Image")}
           >
             {isCameraMode ? 
-              <div className="w-12 h-12 rounded-full bg-white border-4 border-neutral-700 group-hover:border-neutral-500 transition-colors"></div> :
-              (preview ? <Camera size={28} className="text-black" /> : <UploadCloud size={28} className="text-black" />)
+              (preview ? <X size={30} /> : <div className="w-14 h-14 rounded-full bg-white border-[6px] border-neutral-700 group-hover:border-neutral-500 transition-colors"></div>) :
+              (preview ? <Camera size={30} /> : <UploadCloud size={30} />)
             }
           </Button>
 
-          <Button
-            variant="ghost" size="icon"
-            className="bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform disabled:opacity-60"
+          {/* Confirm Button */}
+          <Button 
+            variant="ghost" 
+            size="lg" // Larger touch target
+            className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3.5 active:scale-95 transition-transform disabled:opacity-50 disabled:bg-gray-500/60"
             onClick={handleConfirm}
-            disabled={!preview || isLoading || isProcessingCapture}
+            disabled={!preview || isLoading || isProcessingCapture} // isProcessingCapture might be redundant if isLoading is true
             aria-label="Confirm Identification"
           >
-            <Check size={24} />
+            <Check size={28} />
           </Button>
         </div>
       </div>
+      {/* Global style for animation can remain if used elsewhere, or be removed if specific to a removed element */}
       <style jsx global>{`
-        @keyframes dash-animate {
-          to {
-            stroke-dashoffset: -20; 
-          }
-        }
+        /* Removed dash-animate as it's not clear if it's still used. */
+        /* If it was for the dashed border on upload, Tailwind handles that without animation. */
       `}</style>
     </div>
   );
