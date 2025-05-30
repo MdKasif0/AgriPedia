@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Send, User, Bot, Loader2, Play } from 'lucide-react';
+import { Send, User, Bot, Loader2, Play, Download } from 'lucide-react'; // Added Download
 import { sendChatMessage } from '@/app/actions';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -28,13 +28,16 @@ export default function ChatPage() {
   useEffect(() => {
     // Auto-scroll to bottom of chat
     if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTo({
-        top: scrollAreaRef.current.scrollHeight,
-        behavior: 'smooth',
-      });
+      const scrollElement = scrollAreaRef.current.children[1] as HTMLDivElement; // Access the underlying viewport div
+      if (scrollElement) {
+        scrollElement.scrollTo({
+          top: scrollElement.scrollHeight,
+          behavior: 'smooth',
+        });
+      }
     }
   }, [chatHistory]);
-  
+
   useEffect(() => {
     // Attempt to play video on component mount if not played yet
     if (videoRef.current && !videoPlayedOnce) {
@@ -56,6 +59,21 @@ export default function ChatPage() {
     if (videoRef.current) {
       videoRef.current.play();
     }
+  };
+
+  const handleExportChatHistory = () => {
+    const formattedHistory = chatHistory
+      .map(msg => `${msg.role === 'user' ? 'User' : 'AI'}: ${msg.content}`)
+      .join('\n\n');
+    const blob = new Blob([formattedHistory], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'agripedia-chat-history.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -141,73 +159,91 @@ export default function ChatPage() {
   }
 
   return (
-    <Card className="w-full max-w-2xl mx-auto h-[calc(100vh-150px)] md:h-[calc(100vh-120px)] flex flex-col shadow-2xl rounded-xl overflow-hidden">
-      <CardHeader className="bg-card-foreground/5 border-b border-border">
-        <CardTitle className="flex items-center gap-2 text-foreground">
-          <Bot className="text-primary" />
-          AgriPedia AI Assistant
-        </CardTitle>
+    // Ensure this Card is within a flex container in your layout that gives it space to grow.
+    // For example, the parent div of this Card could be <div className="flex flex-col flex-grow">
+    <Card className="w-full max-w-3xl mx-auto flex flex-col shadow-2xl rounded-2xl overflow-hidden bg-white dark:bg-slate-900 h-full max-h-[calc(100vh-100px)] sm:max-h-[calc(100vh-120px)]">
+      <CardHeader className="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 p-4">
+        <div className="flex items-center justify-between">
+          <CardTitle className="flex items-center gap-3 text-slate-800 dark:text-slate-100">
+            <Bot className="text-teal-600 dark:text-teal-500 h-7 w-7" />
+            <span className="text-xl font-semibold">AgriPedia AI Assistant</span>
+          </CardTitle>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleExportChatHistory}
+            aria-label="Export chat history"
+            className="text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-500"
+          >
+            <Download className="h-5 w-5" />
+          </Button>
+        </div>
       </CardHeader>
-      <CardContent className="flex-1 p-0 overflow-hidden">
-        <ScrollArea className="h-full p-4 sm:p-6" ref={scrollAreaRef}>
-          <div className="space-y-6">
+      {/* Making CardContent flex-grow and ScrollArea h-full */}
+      <CardContent className="flex-1 p-0 overflow-hidden"> 
+        <ScrollArea className="h-full" ref={scrollAreaRef}>
+          <div className="p-4 sm:p-6 space-y-5">
             {chatHistory.map(msg => (
               <div
                 key={msg.id}
-                className={`flex items-start gap-3 ${
+                className={`flex items-end gap-2.5 ${ // changed to items-end for tail alignment
                   msg.role === 'user' ? 'justify-end' : 'justify-start'
                 }`}
               >
                 {msg.role === 'model' && (
-                  <Avatar className="h-8 w-8 border border-primary/50">
-                    <AvatarImage src="https://placehold.co/40x40/1305055/FFFFFF/png?text=AI" alt="AI" data-ai-hint="bot avatar" />
-                    <AvatarFallback className="bg-primary/20 text-primary">AI</AvatarFallback>
+                  <Avatar className="h-9 w-9 border border-slate-300 dark:border-slate-600 flex-shrink-0">
+                    <AvatarImage src="https://placehold.co/40x40/2DD4BF/FFFFFF/png?text=AI" alt="AI" />
+                    <AvatarFallback className="bg-teal-500 text-white">AI</AvatarFallback>
                   </Avatar>
                 )}
                 <div
-                  className={`max-w-[70%] sm:max-w-[65%] p-3 rounded-xl shadow-md break-words ${
+                  className={`max-w-[75%] md:max-w-[70%] p-3.5 text-sm md:text-base shadow-md break-words ${ // increased padding slightly
                     msg.role === 'user'
-                      ? 'bg-primary text-primary-foreground rounded-br-none'
-                      : 'bg-card text-card-foreground rounded-bl-none border border-border'
+                      ? 'bg-teal-600 text-white rounded-t-2xl rounded-bl-2xl' // More rounded, distinct tail
+                      : 'bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100 rounded-t-2xl rounded-br-2xl border border-slate-200 dark:border-slate-600' // More rounded, distinct tail
                   }`}
                 >
                   {msg.content}
                 </div>
                 {msg.role === 'user' && (
-                  <Avatar className="h-8 w-8 border border-muted-foreground/50">
-                     <AvatarImage src="https://placehold.co/40x40/FFFFFF/151921/png?text=U" alt="User" data-ai-hint="user avatar" />
-                    <AvatarFallback className="bg-muted/50 text-muted-foreground">U</AvatarFallback>
+                  <Avatar className="h-9 w-9 border border-slate-300 dark:border-slate-600 flex-shrink-0">
+                     <AvatarImage src="https://placehold.co/40x40/FFFFFF/334155/png?text=U" alt="User" />
+                    <AvatarFallback className="bg-slate-300 text-slate-700 dark:bg-slate-500 dark:text-slate-200">U</AvatarFallback>
                   </Avatar>
                 )}
               </div>
             ))}
             {isLoadingResponse && (
-              <div className="flex items-start gap-3 justify-start">
-                <Avatar className="h-8 w-8 border border-primary/50">
-                    <AvatarImage src="https://placehold.co/40x40/1305055/FFFFFF/png?text=AI" alt="AI" data-ai-hint="bot avatar" />
-                    <AvatarFallback className="bg-primary/20 text-primary">AI</AvatarFallback>
+              <div className="flex items-start gap-2.5 justify-start">
+                <Avatar className="h-9 w-9 border border-slate-300 dark:border-slate-600 flex-shrink-0">
+                    <AvatarImage src="https://placehold.co/40x40/2DD4BF/FFFFFF/png?text=AI" alt="AI" />
+                    <AvatarFallback className="bg-teal-500 text-white">AI</AvatarFallback>
                 </Avatar>
-                <div className="bg-card text-card-foreground p-3 rounded-xl shadow-md border border-border rounded-bl-none">
-                  <Loader2 className="h-5 w-5 animate-spin text-primary" />
+                <div className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 p-3.5 rounded-t-2xl rounded-br-2xl shadow-md border border-slate-200 dark:border-slate-600">
+                  <Loader2 className="h-5 w-5 animate-spin text-teal-600 dark:text-teal-500" />
                 </div>
               </div>
             )}
           </div>
         </ScrollArea>
       </CardContent>
-      <CardFooter className="p-4 sm:p-6 border-t border-border bg-card-foreground/5">
-        <form onSubmit={handleSubmit} className="flex w-full items-center gap-3">
+      <CardFooter className="p-3 sm:p-4 border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
+        <form onSubmit={handleSubmit} className="flex w-full items-center gap-2.5">
           <Input
             type="text"
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
-            placeholder="Ask about fruits or vegetables..."
-            className="flex-1 bg-input border-border focus:border-primary rounded-lg text-base"
+            placeholder="Ask about fruits, vegetables, or farming..."
+            className="flex-1 bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 focus-visible:ring-1 focus-visible:ring-teal-500 focus-visible:ring-offset-0 dark:focus-visible:ring-offset-slate-800 rounded-xl text-base py-3 px-4"
             disabled={isLoadingResponse}
           />
-          <Button type="submit" disabled={isLoadingResponse || !inputValue.trim()} className="rounded-lg">
+          <Button 
+            type="submit" 
+            disabled={isLoadingResponse || !inputValue.trim()} 
+            className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl p-3 aspect-square"
+            aria-label="Send message"
+          >
             <Send className="h-5 w-5" />
-            <span className="sr-only">Send</span>
           </Button>
         </form>
       </CardFooter>
