@@ -109,7 +109,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         videoRef.current.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]);
+  }, [isCameraMode, toast, hasCameraPermission]); // Added hasCameraPermission to dependencies
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -279,6 +279,23 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     setError(null); // Clear any errors
   };
 
+  const handleCloseCamera = () => {
+    triggerHapticFeedback();
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach(track => track.stop());
+      streamRef.current = null;
+    }
+    if (videoRef.current && videoRef.current.srcObject) {
+      videoRef.current.pause();
+      videoRef.current.srcObject = null;
+    }
+    // Reset camera-specific states
+    setHasCameraPermission(null); 
+    // setIsCameraMode(false); // router.back() should lead to a state where this is false or component unmounts
+    setError(null);
+    router.back();
+  };
+
   const handleShutterOrUploadClick = () => {
     triggerHapticFeedback();
     if (isCameraMode) {
@@ -297,7 +314,18 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
-      {/* Top Controls (Flash, Switch Camera) removed */}
+      {/* Close button for File Upload mode */}
+      {!isCameraMode && (
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute top-6 left-6 z-40 bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform"
+          onClick={handleCloseCamera}
+          aria-label="Close uploader"
+        >
+          <X className="h-8 w-8" /> {/* Updated size */}
+        </Button>
+      )}
 
       <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
         {/* This div's padding (pt-16 pb-32 px-4) is removed to allow full screen for camera */}
@@ -308,11 +336,11 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             <Button
               variant="ghost"
               size="icon"
-              className="absolute top-6 left-6 z-40 bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform" // Increased padding
-              onClick={() => router.back()}
+              className="absolute top-6 left-6 z-40 bg-black/50 text-white rounded-full p-3 hover:bg-black/70 active:scale-95 transition-transform"
+              onClick={handleCloseCamera}
               aria-label="Close camera view"
             >
-              <X className="h-7 w-7" /> 
+              <X className="h-8 w-8" /> {/* Updated size for consistency */}
             </Button>
             <video
               ref={videoRef}
