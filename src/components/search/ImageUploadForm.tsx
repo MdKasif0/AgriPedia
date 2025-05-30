@@ -285,13 +285,24 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
   const handleShutterOrUploadClick = () => {
     triggerHapticFeedback();
     if (isCameraMode) {
-      handleCaptureAndProcess(); // Changed from handleCapture to handleCaptureAndProcess
-    } else { // In file upload mode
-      if(preview){ // If there's a preview from a file, switch to camera mode
-        setIsCameraMode(true);
+      if (preview) { // If in camera mode and there's a preview (Clear Preview action)
         setPreview(null);
-        setFile(null);
-      } else { // If no file preview, trigger file input
+        // Ensure camera feed is visible and active
+        if (videoRef.current && streamRef.current) {
+          if (!videoRef.current.srcObject) {
+            videoRef.current.srcObject = streamRef.current;
+          }
+          videoRef.current.play().catch(playError => console.warn('Retry play after clear preview failed:', playError));
+        }
+      } else { // If in camera mode and no preview (Capture Photo action)
+        handleCaptureAndProcess();
+      }
+    } else { // In file upload mode
+      if (preview) { // If there's a preview from a file (Switch to Camera action)
+        setIsCameraMode(true);
+        setPreview(null); // Clear file preview
+        setFile(null);     // Clear file
+      } else { // If no file preview (Upload Image action)
         triggerFileInput();
       }
     }
@@ -404,7 +415,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             variant="outline" // More prominent
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
             onClick={handleShutterOrUploadClick}
-            disabled={isLoading || (isCameraMode && (hasCameraPermission !== true || !videoRef.current?.srcObject || !!preview))} // Disable shutter if preview is shown
+            disabled={isLoading || (isCameraMode && !preview && (hasCameraPermission !== true || !videoRef.current?.srcObject))}
             aria-label={isCameraMode ? (preview ? "Clear Preview" : "Capture Photo") : (preview ? "Switch to Camera" : "Upload Image")}
           >
             {isCameraMode ? 
