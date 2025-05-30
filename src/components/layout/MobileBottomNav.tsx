@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart } from 'lucide-react';
-import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'; // Added DialogTitle
+import { Dialog, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog'; // Added DialogTitle and DialogClose
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
 import { useState } from 'react';
@@ -169,7 +169,11 @@ export default function MobileBottomNav() {
         <DialogContent className="p-0 bg-black text-gray-200 max-w-full w-full h-full sm:max-w-md sm:h-auto sm:max-h-[90vh] sm:rounded-2xl sm:shadow-xl overflow-hidden">
           {/* Visually hidden title for accessibility */}
           <DialogTitle className="sr-only">Scan or Upload Produce Image</DialogTitle>
-          <ImageUploadForm onSuccessfulScan={() => setIsScanDialogOpen(false)} />
+          <ImageUploadForm 
+            onSuccessfulScan={() => setIsScanDialogOpen(false)} 
+            onCloseDialog={() => setIsScanDialogOpen(false)} 
+          />
+          <DialogClose className="hidden" />
         </DialogContent>
       </Dialog>
     </>

@@ -16,9 +16,10 @@ import { Progress } from '@/components/ui/progress';
 
 interface ImageUploadFormProps {
   onSuccessfulScan?: () => void;
+  onCloseDialog?: () => void;
 }
 
-export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormProps) {
+export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: ImageUploadFormProps) {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -270,15 +271,16 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
     fileInputRef.current?.click();
   };
 
-  const handleGalleryClick = () => {
+  const handleActivateCameraMode = () => {
     triggerHapticFeedback();
-    if (isCameraMode) {
-      setIsCameraMode(false); // Switch to file upload mode
-      setPreview(null);
-      setFile(null);
-      // No need to click fileInputRef here, user will interact with the upload UI
-    } else {
-       triggerFileInput(); // If already in file mode, open file picker
+    setIsCameraMode(true);
+    setFile(null);
+    setPreview(null);
+    setError(null);
+    // Ensure camera stream is initialized if permission was previously granted
+    // and not currently active (e.g., if user switched from file upload)
+    if (hasCameraPermission === true && !streamRef.current) {
+        getCameraPermissionInternal(); // This will attempt to re-initialize
     }
   };
 
@@ -298,10 +300,10 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
         handleCaptureAndProcess();
       }
     } else { // In file upload mode
-      if (preview) { // If there's a preview from a file (Switch to Camera action)
-        setIsCameraMode(true);
-        setPreview(null); // Clear file preview
-        setFile(null);     // Clear file
+      if (preview) { // If there's a preview from a file (Clear Selected File action)
+        setPreview(null);
+        setFile(null);
+        setError(null);
       } else { // If no file preview (Upload Image action)
         triggerFileInput();
       }
@@ -311,9 +313,29 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
   return (
     <div className="h-full w-full bg-black text-gray-200 relative flex flex-col p-0">
+      {onCloseDialog && (
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => {
+            triggerHapticFeedback();
+            onCloseDialog();
+          }}
+          className="absolute top-4 left-4 z-50 bg-black/50 text-white hover:bg-black/70 p-2.5 rounded-full"
+          aria-label="Close"
+        >
+          <X size={32} />
+        </Button>
+      )}
       {/* Top Controls (Flash, Switch Camera) removed */}
 
       <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
+        {isLoading && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center space-y-2 p-4 bg-black/60 rounded-lg w-3/4 max-w-xs">
+            <p className="text-sm text-green-400 font-semibold text-center">Scanning... {scanProgressValue}%</p>
+            <Progress value={scanProgressValue} className="w-full h-2.5 bg-gray-700/70 [&>div]:bg-green-500 rounded-full" />
+          </div>
+        )}
         {/* This div's padding (pt-16 pb-32 px-4) is removed to allow full screen for camera */}
         {/* It will still center the file upload UI */}
         {isCameraMode ? (
@@ -344,7 +366,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
                  // Consider adding a small, non-intrusive error display here if toasts are missed.
                  // The main controls overlay will be on top, so this needs to be positioned carefully if re-enabled.
                 <Alert variant="destructive" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm w-[90%] bg-red-900/90 text-white border-red-700 z-30 p-4 rounded-lg">
-                    <AlertTriangle className="h-5 w-5 text-yellow-300 mr-2" />
+                    <AlertTriangle size={24} className="text-yellow-300 mr-2" />
                     <div>
                         <AlertTitle className="font-semibold">Camera Error</AlertTitle>
                         <AlertDescription className="text-sm">{error}</AlertDescription>
@@ -378,7 +400,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
               <Input id="image-upload-input" name="image-upload" type="file" accept="image/*" className="sr-only" onChange={handleFileChange} ref={fileInputRef} />
                {error && !isCameraMode && (
                   <Alert variant="destructive" className="mt-4 w-full bg-red-900/80 text-white border-red-700">
-                      <AlertTriangle className="h-4 w-4 text-yellow-300" />
+                      <AlertTriangle size={24} className="text-yellow-300" />
                       <AlertTitle>Upload Error</AlertTitle>
                       <AlertDescription>{error}</AlertDescription>
                   </Alert>
@@ -390,37 +412,30 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
 
       {/* Controls Overlay - This is now a direct child of the main component div, always present */}
       <div className="fixed bottom-0 left-0 right-0 p-6 z-30 space-y-3 bg-gradient-to-t from-black/70 via-black/50 to-transparent"> {/* Increased z-index and added background */}
-        {isLoading && (
-          <div className="flex flex-col items-center space-y-1 mb-2 text-center">
-            <p className="text-sm text-green-400 font-semibold">Scanning... {scanProgressValue}%</p>
-            <Progress value={scanProgressValue} className="w-full max-w-sm h-2.5 bg-gray-700/50 [&>div]:bg-green-500 rounded-full" />
-          </div>
-        )}
-
         <div className="flex justify-around items-center">
-          {/* Gallery Button */}
+          {/* Switch to Camera Button */}
           <Button 
             variant="ghost" 
             size="lg" // Larger touch target
             className="bg-black/60 hover:bg-black/80 text-white rounded-full p-3.5 active:scale-95 transition-transform" 
-            onClick={handleGalleryClick} 
-            aria-label="Open Gallery"
+            onClick={handleActivateCameraMode} 
+            aria-label="Open Camera"
             disabled={isLoading}
           >
-            <ImageUp size={26} />
+            <Camera size={32} />
           </Button>
 
-          {/* Shutter / Upload / Switch to Camera Button */}
+          {/* Shutter / Upload / Switch to File Upload Button */}
           <Button
             variant="outline" // More prominent
             className="w-18 h-18 p-0 rounded-full bg-white hover:bg-gray-300 text-black shadow-2xl flex items-center justify-center active:scale-95 transition-transform disabled:opacity-70 border-2 border-black/30"
             onClick={handleShutterOrUploadClick}
             disabled={isLoading || (isCameraMode && !preview && (hasCameraPermission !== true || !videoRef.current?.srcObject))}
-            aria-label={isCameraMode ? (preview ? "Clear Preview" : "Capture Photo") : (preview ? "Switch to Camera" : "Upload Image")}
+            aria-label={isCameraMode ? (preview ? "Clear Preview" : "Capture Photo") : (preview ? "Clear Selected File" : "Upload Image")}
           >
             {isCameraMode ? 
-              (preview ? <X size={30} /> : <div className="w-14 h-14 rounded-full bg-white border-[6px] border-neutral-700 group-hover:border-neutral-500 transition-colors"></div>) :
-              (preview ? <Camera size={30} /> : <UploadCloud size={30} />)
+              (preview ? <X size={36} /> : <div className="w-14 h-14 rounded-full bg-white border-[6px] border-neutral-700 group-hover:border-neutral-500 transition-colors"></div>) :
+              (preview ? <X size={36} /> : <UploadCloud size={36} />) 
             }
           </Button>
 
@@ -433,7 +448,7 @@ export default function ImageUploadForm({ onSuccessfulScan }: ImageUploadFormPro
             disabled={!preview || isLoading || isProcessingCapture} // isProcessingCapture might be redundant if isLoading is true
             aria-label="Confirm Identification"
           >
-            <Check size={28} />
+            <Check size={32} />
           </Button>
         </div>
       </div>
