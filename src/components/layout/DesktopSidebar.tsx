@@ -38,6 +38,13 @@ export default function DesktopSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
+          <SidebarMenuItem>
+            <Link href="/" legacyBehavior passHref>
+              <SidebarMenuButton asChild tooltip="Home" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                <a><Home /> <span>Home</span></a>
+              </SidebarMenuButton>
+            </Link>
+          </SidebarMenuItem>
           {/* Removed Home MenuItem */}
           <SidebarMenuItem>
             <Link href="/chat" legacyBehavior passHref>
