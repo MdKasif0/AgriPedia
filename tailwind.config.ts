@@ -41,6 +41,12 @@ export default {
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))'
   			},
+        // New theme accent colors
+        'accent-emerald': 'hsl(var(--accent-emerald))',
+        'accent-amber': 'hsl(var(--accent-amber))',
+        'accent-blue': 'hsl(var(--accent-blue))',
+        // New button color
+        'button-primary': 'hsl(var(--button-primary))',
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
@@ -66,13 +72,13 @@ export default {
   				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
-  		borderRadius: { 
-  			lg: 'var(--radius)', // Using CSS variable for large
-  			xl: 'calc(var(--radius) + 0.25rem)', // For slightly larger rounding
-        '2xl': 'calc(var(--radius) + 0.5rem)', // For even more rounded corners (like in image)
-        '3xl': 'calc(var(--radius) + 1rem)',  // For very rounded corners
-  			md: 'calc(var(--radius) - 0.25rem)', 
-  			sm: 'calc(var(--radius) - 0.5rem)'  
+		borderRadius: {
+			lg: 'var(--radius)', // Will be 1rem after CSS var change
+			md: 'calc(var(--radius) - 0.25rem)', // Will be 0.75rem
+			sm: 'calc(var(--radius) - 0.5rem)', // Will be 0.5rem
+			xl: 'calc(var(--radius) + 0.25rem)', // Will be 1.25rem
+        '2xl': 'calc(var(--radius) + 0.5rem)', // Will be 1.5rem
+        '3xl': 'calc(var(--radius) + 0.75rem)',  // Capped at 1.75rem
   		},
   		keyframes: {
   			'accordion-down': {
@@ -103,6 +109,10 @@ export default {
           '0%': { transform: 'scale(0.8)', opacity: '0.7' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
+        'tap-squish': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(0.95)' },
+        }
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
@@ -110,6 +120,7 @@ export default {
         'pop': 'pop 0.3s ease-out',
         'leaf-sway': 'leaf-sway 3s ease-in-out infinite', // Slightly longer duration
         'sprout': 'sprout 0.4s ease-out forwards',
+        'tap-squish': 'tap-squish 0.2s ease-in-out',
   		}
   	}
   },

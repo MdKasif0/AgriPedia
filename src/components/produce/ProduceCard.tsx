@@ -15,7 +15,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
 
   return (
     <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl">
-      <div className="relative aspect-[16/9] w-full bg-card text-card-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+      <div className="relative aspect-[16/9] w-full bg-card text-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-l-4 border-transparent group-hover:border-accent-emerald">
         <Image 
           src={produce.image} 
           alt={produce.commonName} 
@@ -25,16 +25,16 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
           data-ai-hint={hint} 
           className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-between">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 flex flex-col justify-between">
           {/* Top-left text overlay */}
           <div>
-            <h3 className="text-xl font-bold text-white drop-shadow-md">{produce.commonName}</h3>
-            <p className="text-sm text-gray-200 drop-shadow-md">({produce.scientificName})</p>
+            <h3 className="text-xl font-bold text-white drop-shadow-lg">{produce.commonName}</h3>
+            <p className="text-sm text-gray-200 drop-shadow-lg">({produce.scientificName})</p>
           </div>
 
           {/* Bottom-right "See Details" button overlay */}
           <div className="self-end">
-            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/70 backdrop-blur-sm text-black font-medium rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-black/80 transition-colors">
+            <div className="inline-flex items-center gap-1 px-4 py-2 bg-white/80 backdrop-blur-sm text-neutral-900 font-semibold rounded-full text-sm shadow-md group-hover:bg-white group-hover:text-neutral-950 transition-all duration-200 ease-in-out group-hover:shadow-lg">
               <span>See Details</span>
               <ChevronRight size={16} />
             </div>

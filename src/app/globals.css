@@ -12,37 +12,51 @@ html {
 
 @layer base {
   :root {
-    --background: 120 10% 10%; /* Charcoal */
-    --foreground: 100 15% 85%; /* Light Moss/Off-white */
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 88%; /* #E0E0E0 */
 
-    --card: 120 20% 15%; /* Dark Green */
-    --card-foreground: 100 15% 85%;
+    --card: 0 0% 7%; /* #121212 */
+    --card-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
 
-    --popover: 120 20% 12%; /* Darker Green */
-    --popover-foreground: 100 15% 85%;
+    --popover: 120 20% 12%; /* Unchanged - Darker Green */
+    --popover-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
 
-    --primary: 100 35% 45%; /* Moss Green */
-    --primary-foreground: 100 15% 95%; /* Very Light Moss */
+    --primary: 100 35% 45%; /* Unchanged - Moss Green */
+    --primary-foreground: 100 15% 95%; /* Unchanged - Very Light Moss */
 
-    --secondary: 200 20% 30%; /* Dark Slate Blue */
-    --secondary-foreground: 200 10% 80%; /* Light Blue-Gray */
+    --secondary: 200 20% 30%; /* Unchanged - Dark Slate Blue */
+    --secondary-foreground: 200 10% 80%; /* Unchanged - Light Blue-Gray */
 
-    --muted: 120 15% 25%; /* Dark Muted Green-Gray */
-    --muted-foreground: 100 10% 65%; /* Medium-Light Moss */
+    --muted: 120 15% 25%; /* Unchanged - Dark Muted Green-Gray */
+    --muted-foreground: 0 0% 63%; /* #A0A0A0 */
 
-    --accent: 90 25% 40%; /* Dark Olive/Moss */
-    --accent-foreground: 90 10% 85%; /* Light Olive */
+    --accent: 90 25% 40%; /* Unchanged - Dark Olive/Moss */
+    --accent-foreground: 90 10% 85%; /* Unchanged - Light Olive */
     
-    --destructive: 0 60% 50%; /* Adjusted Red for dark theme */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 60% 50%; /* Unchanged - Adjusted Red for dark theme */
+    --destructive-foreground: 0 0% 98%; /* Unchanged */
 
-    --border: 120 15% 25%;
-    --input: 120 15% 20%;
-    --ring: 100 35% 50%; /* Moss Green for focus rings */
+    --border: 0 0% 16%; /* #2A2A2A */
+    --input: 0 0% 4%; /* #0A0A0A - similar to cards or a bit darker */
+    --ring: 151 100% 38%; /* #00C37A - Emerald for focus rings */
 
-    --radius: 0.5rem; /* Base radius - results in 1rem for 2xl */
+    --radius: 1rem; /* Updated - Base radius for 16px */
+
+    /* New Accent Colors */
+    --accent-emerald: 151 100% 38%; /* #00C37A */
+    --accent-amber: 42 100% 50%; /* #FFB300 */
+    --accent-blue: 197 100% 47%; /* #00B3F0 */
+
+    /* New Button Color */
+    --button-primary: 0 0% 12%; /* #1F1F1F */
 
     /* Sidebar colors - dark theme */
+    /* Assuming these should also use the new palette where appropriate.
+       For now, they still reference old variables like --card, --primary etc.
+       If --card, --primary etc. are meant to be abstract and not theme-specific,
+       this is fine. If they are theme-specific, these might need updates too.
+       The instruction was to modify :root, so focusing on that.
+    */
     --sidebar-background: hsl(var(--card)); 
     --sidebar-foreground: hsl(var(--card-foreground));
     --sidebar-primary: hsl(var(--primary)); 
@@ -53,11 +67,11 @@ html {
     --sidebar-ring: hsl(var(--ring));
 
     /* Chart colors for dark theme */
-    --chart-1: hsl(var(--primary));
-    --chart-2: hsl(var(--secondary));
-    --chart-3: hsl(var(--accent));
-    --chart-4: 100 30% 60%; /* Lighter Moss Green */
-    --chart-5: 200 25% 50%; /* Lighter Slate Blue */
+    --chart-1: hsl(var(--accent-emerald));
+    --chart-2: hsl(var(--accent-blue));
+    --chart-3: hsl(var(--accent-amber));
+    --chart-4: 320 100% 50%; /* Bright Pink/Magenta */
+    --chart-5: 180 100% 50%; /* Bright Cyan */
   }
 
   .light {
