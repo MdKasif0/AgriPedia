@@ -6,7 +6,7 @@
   "description": "A vine species of passion flower native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.",
   "origin": "Southern Brazil, Paraguay, Northern Argentina",
   "localNames": [
-    "Maracuyá (Spanish)",
+    "Maracuy\u00e1 (Spanish)",
     "Fruit de la passion (French)",
     "Granadilla (some varieties)"
   ],
@@ -28,42 +28,46 @@
       {
         "name": "Protein",
         "value": 2.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 23.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 10.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 30,
+        "value": 30.0,
         "unit": "mg",
         "rdi": "50%"
       },
       {
         "name": "Vitamin A",
-        "value": 64,
-        "unit": "µg RAE",
+        "value": 64.0,
+        "unit": "\u00b5g RAE",
         "rdi": "7%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 348,
+        "value": 348.0,
         "unit": "mg",
         "rdi": "10%"
       },

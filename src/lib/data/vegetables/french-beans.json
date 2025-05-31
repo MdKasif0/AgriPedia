@@ -6,9 +6,9 @@
   "description": "Also known as green beans, string beans, or snap beans. They are the unripe, young fruit and protective pods of various cultivars of the common bean.",
   "origin": "Central and South America",
   "localNames": [
-    "Judías verdes (Spanish)",
+    "Jud\u00edas verdes (Spanish)",
     "Haricots verts (French)",
-    "Grüne Bohnen (German)",
+    "Gr\u00fcne Bohnen (German)",
     "Fansi (Hindi)"
   ],
   "regions": [
@@ -28,29 +28,33 @@
       {
         "name": "Protein",
         "value": 1.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 7,
-        "unit": "g"
+        "value": 7.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 14.4,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "18%"
       },
       {
@@ -61,8 +65,8 @@
       },
       {
         "name": "Folate",
-        "value": 33,
-        "unit": "µg",
+        "value": 33.0,
+        "unit": "\u00b5g",
         "rdi": "8%"
       }
     ],
@@ -116,7 +120,7 @@
       ]
     },
     {
-      "name": "Sautéed Green Beans with Garlic and Soy Sauce",
+      "name": "Saut\u00e9ed Green Beans with Garlic and Soy Sauce",
       "description": "A simple and flavorful Asian-inspired side dish.",
       "ingredients": [
         "1 lb fresh green beans, trimmed",

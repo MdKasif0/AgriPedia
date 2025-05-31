@@ -33,7 +33,7 @@
       },
       {
         "name": "Carbohydrates",
-        "value": 17,
+        "value": 17.0,
         "unit": "g"
       },
       {
@@ -58,7 +58,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 171,
+        "value": 171.0,
         "unit": "mg",
         "rdi": "5%"
       },

@@ -9,7 +9,7 @@
     "Malabar Plum (English)",
     "Pomarrosa (Spanish)",
     "Jambu Mawar (Malay/Indonesian)",
-    "Chomphu Namdokmai (ชมพู่น้ำดอกไม้ - Thai)",
+    "Chomphu Namdokmai (\u0e0a\u0e21\u0e1e\u0e39\u0e48\u0e19\u0e49\u0e33\u0e14\u0e2d\u0e01\u0e44\u0e21\u0e49 - Thai)",
     "Gulab Jamun (Hindi - also name of a sweet)",
     "Pannerale (Kannada)"
   ],
@@ -32,22 +32,26 @@
       {
         "name": "Protein",
         "value": 0.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 5.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -60,7 +64,7 @@
       {
         "name": "Vitamin A",
         "value": 17,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "2%"
       },
       {
@@ -87,7 +91,7 @@
         "name": "Potassium",
         "value": 123,
         "unit": "mg",
-        "rdi": "3%" 
+        "rdi": "3%"
       },
       {
         "name": "Calcium",

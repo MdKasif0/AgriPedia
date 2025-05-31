@@ -26,22 +26,26 @@
       {
         "name": "Protein",
         "value": 1.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 32,
-        "unit": "g"
+        "value": 32.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -59,15 +63,15 @@
       },
       {
         "name": "Vitamin A",
-        "value": 56,
-        "unit": "µg RAE",
+        "value": 56.0,
+        "unit": "\u00b5g RAE",
         "rdi": "6%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 499,
+        "value": 499.0,
         "unit": "mg",
         "rdi": "14%"
       }
@@ -112,8 +116,8 @@
       ],
       "steps": [
         "Peel raw bananas and slice them into rounds or semi-circles. Keep them in water mixed with a little buttermilk or turmeric to prevent discoloration.",
-        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
-        "Add asafoetida and curry leaves. Sauté for a few seconds.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Saut\u00e9 until dal turns golden.",
+        "Add asafoetida and curry leaves. Saut\u00e9 for a few seconds.",
         "Drain banana slices and add them to the pan. Add turmeric powder, sambar/chili powder (if using), and salt.",
         "Stir well to coat. Cook on medium heat, stirring occasionally, for 10-15 minutes, or until bananas are tender and slightly crisp. For a crispier version (varuval), add more oil and cook longer until browned.",
         "Serve hot as a side dish."
@@ -128,8 +132,8 @@
       ],
       "steps": [
         "Koftas: Combine mashed raw banana, besan, ginger paste, and salt. Mix well to form a dough. Make small balls and deep fry until golden brown. Set aside.",
-        "Gravy: Heat oil. Sauté onion puree until golden. Add ginger-garlic paste. Add tomato puree and cook until oil separates.",
-        "Add all spice powders (turmeric, coriander, cumin, chili if using) and salt. Sauté for a minute.",
+        "Gravy: Heat oil. Saut\u00e9 onion puree until golden. Add ginger-garlic paste. Add tomato puree and cook until oil separates.",
+        "Add all spice powders (turmeric, coriander, cumin, chili if using) and salt. Saut\u00e9 for a minute.",
         "Add about 1 cup of water and bring to a simmer. Adjust consistency as needed.",
         "Gently add fried koftas to the gravy. Simmer for 5-7 minutes.",
         "Sprinkle with garam masala. Serve hot with roti or rice."

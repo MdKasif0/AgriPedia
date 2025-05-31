@@ -30,29 +30,33 @@
       {
         "name": "Protein",
         "value": 1.83,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 7.34,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.19,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
-        "value": 207,
-        "unit": "µg",
+        "value": 207.0,
+        "unit": "\u00b5g",
         "rdi": "173%"
       },
       {
@@ -63,27 +67,27 @@
       },
       {
         "name": "Folate (B9)",
-        "value": 64,
-        "unit": "µg",
+        "value": 64.0,
+        "unit": "\u00b5g",
         "rdi": "16%"
       },
       {
         "name": "Vitamin A",
-        "value": 50,
-        "unit": "µg RAE",
+        "value": 50.0,
+        "unit": "\u00b5g RAE",
         "rdi": "6%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 276,
+        "value": 276.0,
         "unit": "mg",
         "rdi": "6%"
       },
       {
         "name": "Calcium",
-        "value": 72,
+        "value": 72.0,
         "unit": "mg",
         "rdi": "6%"
       },

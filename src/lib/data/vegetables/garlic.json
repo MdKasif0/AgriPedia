@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 6.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 33.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -69,7 +73,7 @@
       {
         "name": "Selenium",
         "value": 14.2,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "20%"
       }
     ]
@@ -110,7 +114,7 @@
         "Pinch of salt and pepper"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "Slice off the top 1/4 to 1/2 inch of the garlic head(s) to expose the tops of the cloves.",
         "Place garlic head(s) on a piece of aluminum foil. Drizzle with olive oil and sprinkle with salt and pepper.",
         "Wrap the garlic loosely in the foil.",

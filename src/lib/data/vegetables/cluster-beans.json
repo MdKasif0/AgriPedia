@@ -25,42 +25,46 @@
       {
         "name": "Protein",
         "value": 3.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 10.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 5.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 67.5,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "84%"
       },
       {
         "name": "Folate",
-        "value": 177,
-        "unit": "µg",
+        "value": 177.0,
+        "unit": "\u00b5g",
         "rdi": "44%"
       }
     ],
     "minerals": [
       {
         "name": "Calcium",
-        "value": 130,
+        "value": 130.0,
         "unit": "mg",
         "rdi": "13%"
       }
@@ -146,8 +150,8 @@
       ],
       "steps": [
         "Boil or steam chopped cluster beans with a little salt until tender-crisp. Drain and set aside.",
-        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
-        "Add asafoetida and curry leaves. Sauté for a few seconds.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Saut\u00e9 until dal turns golden.",
+        "Add asafoetida and curry leaves. Saut\u00e9 for a few seconds.",
         "Add the cooked cluster beans and turmeric powder. Stir well.",
         "Cook for 2-3 minutes. Add grated coconut and mix gently.",
         "Cook for another minute. Serve hot as a side dish with rice."

@@ -6,7 +6,7 @@
   "description": "A tropical plant with an edible fruit, consisting of coalesced berries. It's known for its tough, spiky exterior and sweet, tangy yellow flesh.",
   "origin": "South America (Brazil, Paraguay)",
   "localNames": [
-    "Piña (Spanish)",
+    "Pi\u00f1a (Spanish)",
     "Ananas (French/German/many other languages)"
   ],
   "regions": [
@@ -26,22 +26,26 @@
       {
         "name": "Protein",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 13,
-        "unit": "g"
+        "value": 13.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -132,7 +136,7 @@
       ]
     },
     {
-      "name": "Classic Piña Colada (Non-alcoholic version option)",
+      "name": "Classic Pi\u00f1a Colada (Non-alcoholic version option)",
       "description": "A sweet and creamy tropical cocktail (or mocktail) featuring pineapple and coconut.",
       "ingredients": [
         "1 1/2 cups pineapple juice",

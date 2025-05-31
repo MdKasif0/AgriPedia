@@ -7,9 +7,9 @@
   "origin": "Island Southeast Asia (likely the Malay Peninsula, Borneo, or Sumatra)",
   "localNames": [
     "Manggis (Malay, Indonesian)",
-    "Măng cụt (Vietnamese)",
-    "Mangkut (มังคุด - Thai)",
-    "Sāntol (Tagalog - sometimes confused, but mangosteen is also directly used)"
+    "M\u0103ng c\u1ee5t (Vietnamese)",
+    "Mangkut (\u0e21\u0e31\u0e07\u0e04\u0e38\u0e14 - Thai)",
+    "S\u0101ntol (Tagalog - sometimes confused, but mangosteen is also directly used)"
   ],
   "regions": [
     "Thailand",
@@ -34,22 +34,26 @@
       {
         "name": "Protein",
         "value": 0.41,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 17.91,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.58,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -61,8 +65,8 @@
       },
       {
         "name": "Folate (B9)",
-        "value": 31,
-        "unit": "µg",
+        "value": 31.0,
+        "unit": "\u00b5g",
         "rdi": "8%"
       },
       {
@@ -105,15 +109,15 @@
       },
       {
         "name": "Magnesium",
-        "value": 13,
+        "value": 13.0,
         "unit": "mg",
         "rdi": "3%"
       },
       {
         "name": "Potassium",
-        "value": 48,
+        "value": 48.0,
         "unit": "mg",
-        "rdi": "1%" 
+        "rdi": "1%"
       },
       {
         "name": "Iron",
@@ -123,13 +127,13 @@
       },
       {
         "name": "Calcium",
-        "value": 12,
+        "value": 12.0,
         "unit": "mg",
         "rdi": "1%"
       },
       {
         "name": "Phosphorus",
-        "value": 8,
+        "value": 8.0,
         "unit": "mg",
         "rdi": "1%"
       },
@@ -153,7 +157,7 @@
       "details": "Individuals with latex allergies may rarely experience cross-reactivity with mangosteen. Symptoms could include itching, hives, or other allergic reactions. Otherwise, mangosteen is generally well-tolerated."
     }
   ],
-  "cultivationProcess": "Mangosteen is an ultra-tropical tree requiring high humidity, consistent rainfall, and warm temperatures (ideally 25–35°C), with no tolerance for temperatures below 4°C. It prefers deep, well-drained, slightly acidic soil rich in organic matter. Propagation is primarily by seeds, which are apomictic (genetically identical to the mother tree), as vegetative propagation is difficult. Trees are slow-growing, especially in the early years, and require partial shade when young. Full sun is tolerated by mature trees.",
+  "cultivationProcess": "Mangosteen is an ultra-tropical tree requiring high humidity, consistent rainfall, and warm temperatures (ideally 25\u201335\u00b0C), with no tolerance for temperatures below 4\u00b0C. It prefers deep, well-drained, slightly acidic soil rich in organic matter. Propagation is primarily by seeds, which are apomictic (genetically identical to the mother tree), as vegetative propagation is difficult. Trees are slow-growing, especially in the early years, and require partial shade when young. Full sun is tolerated by mature trees.",
   "growthDuration": "Mangosteen trees are notoriously slow-growing. They typically take 6 to 12 years from seedling to first fruit production, though some may bear earlier under optimal conditions. The fruit itself takes about 5-6 months to mature after flowering.",
   "sustainabilityTips": [
     "Due to its specific tropical climate needs, mangosteens are often imported. Opt for fruit shipped by sea rather than air-freighted to reduce carbon emissions.",

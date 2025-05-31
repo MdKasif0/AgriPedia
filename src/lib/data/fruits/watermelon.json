@@ -6,8 +6,8 @@
   "description": "A large, sweet fruit originally from southern Africa. It's known for its high water content and refreshing taste, typically with green rind and red, juicy flesh.",
   "origin": "Southern Africa (Kalahari Desert region)",
   "localNames": [
-    "Sandía (Spanish)",
-    "Pastèque (French)",
+    "Sand\u00eda (Spanish)",
+    "Past\u00e8que (French)",
     "Wassermelone (German)"
   ],
   "regions": [
@@ -26,22 +26,26 @@
       {
         "name": "Protein",
         "value": 0.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 7.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -54,21 +58,22 @@
       {
         "name": "Vitamin A (from carotenoids)",
         "value": 28,
-        "unit": "µg RAE",
+        "unit": "\u00b5g RAE",
         "rdi": "3%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 112,
+        "value": 112.0,
         "unit": "mg",
         "rdi": "3%"
       },
       {
         "name": "Lycopene (antioxidant)",
-        "value": 4532,
-        "unit": "µg"
+        "value": 4532.0,
+        "unit": "\u00b5g",
+        "rdi": ""
       }
     ]
   },

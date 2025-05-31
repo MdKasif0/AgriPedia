@@ -26,40 +26,44 @@
       {
         "name": "Protein",
         "value": 2.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
-        "value": 310,
-        "unit": "µg",
+        "value": 310.0,
+        "unit": "\u00b5g",
         "rdi": "388%"
       },
       {
         "name": "Vitamin A",
-        "value": 337,
-        "unit": "µg RAE",
+        "value": 337.0,
+        "unit": "\u00b5g RAE",
         "rdi": "37%"
       },
       {
         "name": "Vitamin C",
-        "value": 27,
+        "value": 27.0,
         "unit": "mg",
         "rdi": "45%"
       }
@@ -129,8 +133,8 @@
       ],
       "steps": [
         "Cook rice according to package directions using water or broth. (Typically, bring liquid to a boil, add rice, cover, reduce heat to low, and simmer for 15-20 minutes or until liquid is absorbed).",
-        "While rice is cooking or once done, heat olive oil/butter in a small skillet if using garlic. Sauté minced garlic for 30 seconds until fragrant. Remove from heat.",
-        "Once rice is cooked, fluff it with a fork. Add chopped cilantro, lime juice, sautéed garlic (if using), and salt to taste.",
+        "While rice is cooking or once done, heat olive oil/butter in a small skillet if using garlic. Saut\u00e9 minced garlic for 30 seconds until fragrant. Remove from heat.",
+        "Once rice is cooked, fluff it with a fork. Add chopped cilantro, lime juice, saut\u00e9ed garlic (if using), and salt to taste.",
         "Stir gently to combine all ingredients thoroughly.",
         "Serve warm as a side dish."
       ]

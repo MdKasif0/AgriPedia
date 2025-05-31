@@ -5,27 +5,97 @@
   "image": "https://images.unsplash.com/photo-1603569598019-03163c15686b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Cowpea is a species of Vigna, an Old World genus of legumes. It is grown for its edible beans, which come in various types, including black-eyed peas, southern peas, and yardlong beans (a subspecies). Cowpeas are heat and drought tolerant, making them an important crop in arid and semi-arid regions.",
   "origin": "Africa (likely West Africa).",
-  "localNames": ["Lobia (Hindi)", "Sasage (Japanese)", "Frijol de carilla (Spanish)", "Niébé (French)"],
-  "regions": ["Nigeria", "Niger", "Brazil", "United States (Southern states)", "India", "Myanmar", "Other parts of Africa and Asia"],
-  "seasons": ["Warm-season crop; planted in late spring or summer and harvested in summer or fall."],
+  "localNames": [
+    "Lobia (Hindi)",
+    "Sasage (Japanese)",
+    "Frijol de carilla (Spanish)",
+    "Ni\u00e9b\u00e9 (French)"
+  ],
+  "regions": [
+    "Nigeria",
+    "Niger",
+    "Brazil",
+    "United States (Southern states)",
+    "India",
+    "Myanmar",
+    "Other parts of Africa and Asia"
+  ],
+  "seasons": [
+    "Warm-season crop; planted in late spring or summer and harvested in summer or fall."
+  ],
   "nutrition": {
     "calories": "116 kcal per 100g (cooked, common cowpeas)",
     "macronutrients": [
-      { "name": "Protein", "value": 7.8, "unit": "g" },
-      { "name": "Carbohydrates", "value": 21.5, "unit": "g" },
-      { "name": "Fat", "value": 0.5, "unit": "g" },
-      { "name": "Fiber", "value": 6.7, "unit": "g" }
+      {
+        "name": "Protein",
+        "value": 7.8,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 21.5,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Fat",
+        "value": 0.5,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Fiber",
+        "value": 6.7,
+        "unit": "g",
+        "rdi": ""
+      }
     ],
     "vitamins": [
-      { "name": "Folate (B9)", "value": 208, "unit": "µg", "rdi": "52%" },
-      { "name": "Thiamin (B1)", "value": 0.23, "unit": "mg", "rdi": "19%" },
-      { "name": "Vitamin A", "value": 25, "unit": "IU", "rdi": "1%" }
+      {
+        "name": "Folate (B9)",
+        "value": 208,
+        "unit": "\u00b5g",
+        "rdi": "52%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.23,
+        "unit": "mg",
+        "rdi": "19%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 25,
+        "unit": "IU",
+        "rdi": "1%"
+      }
     ],
     "minerals": [
-      { "name": "Manganese", "value": 0.44, "unit": "mg", "rdi": "19%" },
-      { "name": "Iron", "value": 2.43, "unit": "mg", "rdi": "14%" },
-      { "name": "Phosphorus", "value": 137, "unit": "mg", "rdi": "20%" },
-      { "name": "Potassium", "value": 354, "unit": "mg", "rdi": "8%" }
+      {
+        "name": "Manganese",
+        "value": 0.44,
+        "unit": "mg",
+        "rdi": "19%"
+      },
+      {
+        "name": "Iron",
+        "value": 2.43,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 137,
+        "unit": "mg",
+        "rdi": "20%"
+      },
+      {
+        "name": "Potassium",
+        "value": 354,
+        "unit": "mg",
+        "rdi": "8%"
+      }
     ]
   },
   "healthBenefits": [
@@ -50,10 +120,15 @@
     "Useful as a cover crop or for intercropping systems in tropical agriculture."
   ],
   "carbonFootprintInfo": "Cowpeas generally have a low carbon footprint due to their nitrogen-fixing ability, drought tolerance, and adaptability to low-input farming systems. They are a sustainable food source, particularly in arid regions.",
-  "uses": ["culinary_fresh_pods_dry_beans_leaves_fodder", "cover_crop", "green_manure", "animal_feed_fodder_seeds"],
+  "uses": [
+    "culinary_fresh_pods_dry_beans_leaves_fodder",
+    "cover_crop",
+    "green_manure",
+    "animal_feed_fodder_seeds"
+  ],
   "originAndDomesticationHistory": "Cowpea (Vigna unguiculata) was domesticated in Africa, likely in West Africa, around 4,000-5,000 years ago from its wild progenitor Vigna unguiculata ssp. dekindtiana. It spread throughout Africa and then to Asia, Europe, and the Americas. Different subspecies and varieties (e.g., yardlong bean, black-eyed pea) were developed.",
   "climaticRequirements": {
-    "temperature": "Warm-season crop, thriving in temperatures between 25-35°C. Very heat-tolerant but sensitive to frost.",
+    "temperature": "Warm-season crop, thriving in temperatures between 25-35\u00b0C. Very heat-tolerant but sensitive to frost.",
     "rainfall": "300-700mm during the growing season. Highly drought-tolerant, making it suitable for arid and semi-arid regions. Can also tolerate some humidity.",
     "altitude": "Primarily grown in lowland tropical and subtropical areas, but can be cultivated up to 1500m."
   },
@@ -62,6 +137,15 @@
   "plantingAndHarvestCycles": "Planted in late spring or summer when soil temperatures are warm. Seeds are sown 2-4 cm deep. Bush types are common, but some are vining. Pods can be harvested at an immature green stage for fresh use or left to mature and dry on the plant for dry beans. Multiple pickings are common for fresh pods.",
   "pestAndDiseaseManagement": "Major pests include aphids, thrips, pod borers, and bruchids (storage pests). Diseases include Fusarium wilt, Cercospora leaf spot, rust, and viral diseases (e.g., cowpea mosaic virus). Integrated pest management involves resistant varieties, crop rotation, intercropping, and judicious use of pesticides.",
   "postHarvestHandling": "For dry beans, harvested plants are dried, and pods are threshed. Seeds are then cleaned and further dried to a moisture content of 10-12% for storage. For fresh pods (e.g., yardlong beans), they are picked, sorted, and marketed quickly. Green leaves are also consumed in some regions and are harvested as needed.",
-  "majorProducingCountriesOrRegions": ["Nigeria (largest producer)", "Niger", "Burkina Faso", "Brazil", "Myanmar", "United States (California, Southern States)", "India", "Other parts of Africa, Asia, and South America"],
+  "majorProducingCountriesOrRegions": [
+    "Nigeria (largest producer)",
+    "Niger",
+    "Burkina Faso",
+    "Brazil",
+    "Myanmar",
+    "United States (California, Southern States)",
+    "India",
+    "Other parts of Africa, Asia, and South America"
+  ],
   "marketValueAndGlobalDemand": "Cowpeas are a vital food security crop in many parts of Africa and Asia. They are important for both subsistence and local markets. International trade is less extensive than for major commodities like soybeans but is significant for certain types like black-eyed peas. Demand is driven by their nutritional value and resilience to harsh climates."
 }

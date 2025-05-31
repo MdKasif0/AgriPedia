@@ -8,7 +8,7 @@
   "localNames": [
     "Nabo (Spanish)",
     "Navet (French)",
-    "Steckrübe/Weiße Rübe (German)",
+    "Steckr\u00fcbe/Wei\u00dfe R\u00fcbe (German)",
     "Shalgam (Hindi)"
   ],
   "regions": [
@@ -27,28 +27,32 @@
       {
         "name": "Protein",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 6.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 21,
+        "value": 21.0,
         "unit": "mg",
         "rdi": "35%"
       }
@@ -56,7 +60,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 191,
+        "value": 191.0,
         "unit": "mg",
         "rdi": "5%"
       }
@@ -78,7 +82,7 @@
   "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring for summer harvest, or late summer for fall/winter harvest.\n2. Soil: Well-drained, loose soil. pH 6.0-7.0.\n3. Spacing: Sow seeds 1/2 inch deep. Thin seedlings to 4-6 inches apart.\n4. Watering: Consistent moisture is important for tender roots.\n5. Harvesting: Harvest roots when they are 2-3 inches in diameter for best flavor and texture. Greens can be harvested when young.",
   "growthDuration": "40-60 days from sowing to harvest for roots.",
   "sustainabilityTips": [
-    "Store turnips (greens removed) in a cool, dark place or refrigerator crisper.",
+    "Store turnips (greens removed) in a cool, dark, place or refrigerator crisper.",
     "Turnip greens can be cooked like spinach or kale.",
     "Young, tender turnips can be eaten raw; older ones are best cooked (boiled, roasted, mashed)."
   ],
@@ -112,7 +116,7 @@
         "Salt and freshly ground black pepper to taste"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "In a large bowl, toss cubed turnips with olive oil, thyme/rosemary, salt, and pepper until evenly coated.",
         "Spread turnips in a single layer on a baking sheet.",
         "Roast for 20-30 minutes, flipping halfway, until tender and golden brown with caramelized edges.",

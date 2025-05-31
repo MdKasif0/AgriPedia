@@ -25,29 +25,33 @@
       {
         "name": "Protein",
         "value": 3.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 14.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 8,
-        "unit": "g"
+        "value": 8.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin A",
-        "value": 203,
-        "unit": "µg RAE",
+        "value": 203.0,
+        "unit": "\u00b5g RAE",
         "rdi": "23%"
       },
       {
@@ -88,7 +92,7 @@
   "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Easy to grow. Can be started from seeds, cuttings, or root divisions. Best to grow in pots as it can be invasive in garden beds.\n2. Soil: Well-drained, moist, fertile soil. pH 6.0-7.0.\n3. Location: Full sun to partial shade.\n4. Watering: Keep soil consistently moist, especially in hot weather.\n5. Harvesting: Pick leaves as needed. Regular harvesting encourages bushier growth. Pinch off flower buds to prolong leaf production.",
   "growthDuration": "Leaves can be harvested continuously throughout the growing season once the plant is established.",
   "sustainabilityTips": [
-    "Store fresh mint sprigs with stems in a glass of water at room temperature or in the refrigerator, covered loosely with a plastic bag.",
+    "Store fresh mint sprigs with stems in a glass of water at room temperature or in the refrigerator, covered loosely with a plastic bag, or wrap in a damp paper towel.",
     "Mint leaves can be dried or frozen for later use.",
     "Propagate new plants easily from cuttings placed in water."
   ],
@@ -107,7 +111,7 @@
         "Gently bruise or tear the mint leaves to help release their oils. Place them in a teapot or directly into mugs.",
         "Pour hot (not boiling) water over the mint leaves.",
         "Let steep for 5-7 minutes, depending on desired strength.",
-        "Strain the tea if desired, or leave the leaves in. Add honey or lemon juice to taste if using.",
+        "Strain the tea if desired, or leave the leaves in. Add honey and/or lemon juice to taste if using.",
         "Serve hot or chilled."
       ]
     },

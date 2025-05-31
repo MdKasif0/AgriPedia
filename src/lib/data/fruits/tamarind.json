@@ -24,22 +24,26 @@
       {
         "name": "Protein",
         "value": 2.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 62.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 5.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -144,8 +148,8 @@
         "Optional: 1 tbsp jaggery (for a hint of sweetness)"
       ],
       "steps": [
-        "Heat oil in a pan. Add mustard seeds; when they splutter, add chana dal, urad dal, and peanuts/cashews. Sauté until dals turn golden and nuts are roasted.",
-        "Add dried red chilies, curry leaves, and asafoetida. Sauté for a few seconds.",
+        "Heat oil in a pan. Add mustard seeds; when they splutter, add chana dal, urad dal, and peanuts/cashews. Saut\u00e9 until dals turn golden and nuts are roasted.",
+        "Add dried red chilies, curry leaves, and asafoetida. Saut\u00e9 for a few seconds.",
         "Add tamarind paste and turmeric powder. Cook for 2-3 minutes, stirring, until the raw smell of tamarind disappears. If it's too thick, add a little water.",
         "Add salt and jaggery (if using). Mix well.",
         "Add the cooked rice to the pan. Gently mix everything together until the rice is well coated with the tamarind mixture.",

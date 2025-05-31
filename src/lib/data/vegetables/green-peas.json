@@ -29,34 +29,38 @@
       {
         "name": "Protein",
         "value": 5.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 14.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 5.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 24.8,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "31%"
       },
       {
         "name": "Vitamin C",
-        "value": 40,
+        "value": 40.0,
         "unit": "mg",
         "rdi": "67%"
       },
@@ -157,10 +161,10 @@
       ],
       "steps": [
         "Optional: Lightly fry paneer cubes in a little oil until golden brown. Set aside. (Or use raw).",
-        "Heat oil/ghee in a pan. Add chopped/pureed onion and sauté until golden brown.",
-        "Add ginger-garlic paste and sauté for a minute.",
+        "Heat oil/ghee in a pan. Add chopped/pureed onion and saut\u00e9 until golden brown.",
+        "Add ginger-garlic paste and saut\u00e9 for a minute.",
         "Add tomato puree and cook until oil starts to separate from the masala.",
-        "Add turmeric powder, coriander powder, chili powder, and salt. Sauté for a minute.",
+        "Add turmeric powder, coriander powder, chili powder, and salt. Saut\u00e9 for a minute.",
         "Add green peas and 1/2 cup of water. Cover and cook until peas are tender.",
         "Add paneer cubes and garam masala. Stir gently. If using cream/cashew paste, add it now.",
         "Simmer for 5-7 minutes, allowing flavors to meld. Adjust consistency with water if needed.",

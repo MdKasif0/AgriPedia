@@ -7,7 +7,7 @@
   "origin": "Ancient Persia (modern Iran)",
   "localNames": [
     "Espinaca (Spanish)",
-    "Épinard (French)",
+    "\u00c9pinard (French)",
     "Spinat (German)",
     "Palak (Hindi)"
   ],
@@ -29,35 +29,39 @@
       {
         "name": "Protein",
         "value": 2.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin A (from carotenoids)",
-        "value": 469,
-        "unit": "µg RAE",
+        "value": 469.0,
+        "unit": "\u00b5g RAE",
         "rdi": "52%"
       },
       {
         "name": "Vitamin K",
-        "value": 483,
-        "unit": "µg",
+        "value": 483.0,
+        "unit": "\u00b5g",
         "rdi": "604%"
       },
       {
@@ -68,8 +72,8 @@
       },
       {
         "name": "Folate",
-        "value": 194,
-        "unit": "µg",
+        "value": 194.0,
+        "unit": "\u00b5g",
         "rdi": "49%"
       }
     ],
@@ -82,7 +86,7 @@
       },
       {
         "name": "Magnesium",
-        "value": 79,
+        "value": 79.0,
         "unit": "mg",
         "rdi": "20%"
       },

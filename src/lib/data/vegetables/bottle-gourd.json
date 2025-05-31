@@ -29,22 +29,26 @@
       {
         "name": "Protein",
         "value": 0.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.02,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -58,13 +62,13 @@
     "minerals": [
       {
         "name": "Calcium",
-        "value": 26,
+        "value": 26.0,
         "unit": "mg",
         "rdi": "3%"
       },
       {
         "name": "Potassium",
-        "value": 150,
+        "value": 150.0,
         "unit": "mg",
         "rdi": "4%"
       }
@@ -112,8 +116,8 @@
       ],
       "steps": [
         "Pressure cook soaked chana dal with 1.5 cups water and a pinch of turmeric and salt for 3-4 whistles, or until soft. Alternatively, cook in a pot until tender.",
-        "Heat oil/ghee in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden.",
-        "Add ginger, garlic, and green chilies. Sauté for a minute.",
+        "Heat oil/ghee in a pan. Add cumin seeds. When they splutter, add chopped onion and saut\u00e9 until golden.",
+        "Add ginger, garlic, and green chilies. Saut\u00e9 for a minute.",
         "Add chopped tomato and cook until softened.",
         "Add turmeric powder, coriander powder, and remaining salt. Mix well.",
         "Add cubed bottle gourd and cooked chana dal (along with its water). Mix. If needed, add more water to achieve desired consistency.",
@@ -130,7 +134,7 @@
       ],
       "steps": [
         "Koftas: Mix grated and squeezed bottle gourd with besan, turmeric, asafoetida, and salt. Add very little water if needed to form a thick batter. Make small balls and deep fry until golden brown. Drain and set aside.",
-        "Gravy: Heat oil, add whole spices. Add onion puree, sauté until golden. Add ginger-garlic paste, sauté. Add tomato puree, cook until oil separates.",
+        "Gravy: Heat oil, add whole spices. Add onion puree, saut\u00e9 until golden. Add ginger-garlic paste, saut\u00e9. Add tomato puree, cook until oil separates.",
         "Add turmeric, coriander powder, chili powder, and salt. Cook for a minute. Whisk yogurt/cream and add to the gravy, stirring continuously. Add water for desired consistency.",
         "Simmer gravy for 5-7 minutes. Gently add fried koftas. Simmer for another 5 minutes.",
         "Garnish with cilantro. Serve hot."

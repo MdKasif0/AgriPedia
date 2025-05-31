@@ -29,22 +29,26 @@
       {
         "name": "Protein",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -57,12 +61,12 @@
       {
         "name": "Vitamin K",
         "value": 7.9,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "10%"
       },
       {
         "name": "Potassium",
-        "value": 237,
+        "value": 237.0,
         "unit": "mg",
         "rdi": "7%"
       }
@@ -70,8 +74,9 @@
     "minerals": [
       {
         "name": "Lycopene (antioxidant)",
-        "value": 2573,
-        "unit": "µg"
+        "value": 2573.0,
+        "unit": "\u00b5g",
+        "rdi": ""
       }
     ]
   },
@@ -106,6 +111,11 @@
     "Consider growing your own tomatoes; they are relatively easy to grow in many climates, even in pots."
   ],
   "carbonFootprintInfo": "Field-grown, local tomatoes have a relatively low footprint (0.3-0.7 kg CO2e/kg). However, greenhouse-grown tomatoes, especially those produced out of season and transported long distances, have a much higher carbon footprint due to energy use for heating and lighting.",
+  "companionPlants": {
+    "good": ["Basil", "Carrots", "Onions", "Parsley", "Marigolds"],
+    "bad": ["Potatoes", "Fennel", "Corn", "Kohlrabi"],
+    "notes": "Tomatoes benefit greatly from basil, which is said to improve growth and flavor, and deter pests."
+  },
   "staticRecipes": [
     {
       "name": "Classic Tomato Soup",

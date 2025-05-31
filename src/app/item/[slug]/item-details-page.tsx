@@ -7,6 +7,7 @@ import { useParams, notFound, useRouter } from 'next/navigation';
 import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
+import { UserModeId, DEFAULT_USER_MODE_ID, USER_MODES } from '@/lib/constants';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
 import dynamic from 'next/dynamic';
 
@@ -18,7 +19,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
-  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle,
+  CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle, Users, Flower2, // Added Users, Flower2
   History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, CalendarCog, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTubeDiagonal, NotebookPen, Newspaper
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -102,6 +103,24 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
   const [locationInfo, setLocationInfo] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState(false);
+  const [currentUserMode, setCurrentUserMode] = useState<UserModeId>(DEFAULT_USER_MODE_ID);
+
+  useEffect(() => {
+    // Set initial user mode
+    setCurrentUserMode(UserDataStore.getCurrentUserMode());
+
+    // Listen for user mode changes
+    const handleUserModeChange = (event: Event) => {
+      const customEvent = event as CustomEvent<{ modeId: UserModeId }>;
+      if (customEvent.detail && customEvent.detail.modeId) {
+        setCurrentUserMode(customEvent.detail.modeId);
+      }
+    };
+    window.addEventListener('userModeChanged', handleUserModeChange);
+    return () => {
+      window.removeEventListener('userModeChanged', handleUserModeChange);
+    };
+  }, []);
 
   useEffect(() => {
     if (!processedSlug) {
@@ -301,7 +320,11 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         />
         <div className="absolute bottom-4 right-4 p-3 bg-background/80 backdrop-blur-md rounded-lg shadow-md text-right">
           <h2 className="text-xl font-bold text-foreground">{produce.commonName}</h2>
-          <p className="text-sm text-muted-foreground italic">{produce.scientificName}</p>
+          {currentUserMode === 'educational' ? (
+            <p className="text-base font-semibold text-blue-600 dark:text-blue-400 italic">{produce.scientificName}</p>
+          ) : (
+            <p className="text-sm text-muted-foreground italic">{produce.scientificName}</p>
+          )}
         </div>
       </div>
 
@@ -317,11 +340,11 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
         <TabsContent value="overview" className="mt-6 space-y-6 px-2 md:px-0">
           <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
-            <p className="text-card-foreground/90">{produce.description}</p>
+            <p className="text-card-foreground/90 leading-relaxed">{produce.description}</p>
           </IconLabel>
           <div className="grid md:grid-cols-2 gap-6">
             <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
-              <p className="text-card-foreground/90">{produce.origin}</p>
+              <p className="text-card-foreground/90 leading-relaxed">{produce.origin}</p>
             </IconLabel>
             <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
               <div className="flex flex-wrap gap-2">
@@ -330,7 +353,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             </IconLabel>
           </div>
           <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg">
-            <ul className="list-disc list-inside text-card-foreground/90">
+            <ul className="list-disc list-inside text-card-foreground/90 space-y-1">
               {produce.regions.map(region => <li key={region}>{region}</li>)}
             </ul>
           </IconLabel>
@@ -375,7 +398,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                       <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3 p-4 pt-0">
-                      <p className="text-sm text-muted-foreground">{recipe.description}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{recipe.description}</p>
                       <div>
                         <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
                         <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
@@ -393,7 +416,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 ))}
               </div>
             ) : (
-              <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
+              <p className="text-center text-muted-foreground leading-relaxed">No recipe ideas available at the moment.</p>
             )}
           </section>
         </TabsContent>
@@ -419,7 +442,14 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
             )}
             </IconLabel>
-            <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-lg shadow-lg">
+            <IconLabel
+              icon={Sprout}
+              label={currentUserMode === 'gardener' ? "Gardener's Guide: Cultivation" : "Cultivation Process & Ideal Conditions"}
+              className="md:col-span-2 bg-card rounded-lg shadow-lg"
+            >
+              {currentUserMode === 'gardener' && (
+                <p className="text-sm italic text-green-600 dark:text-green-400 mb-2">Home Gardening Focus:</p>
+              )}
               <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
             </IconLabel>
             <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
@@ -487,9 +517,11 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
             {produce.climaticRequirements && (
               <IconLabel icon={Thermometer} label="Climatic Requirements" className="bg-card rounded-lg shadow-lg">
-                {produce.climaticRequirements.temperature && <p className="text-card-foreground/90"><strong>Temperature:</strong> {produce.climaticRequirements.temperature}</p>}
-                {produce.climaticRequirements.rainfall && <p className="text-card-foreground/90"><strong>Rainfall:</strong> {produce.climaticRequirements.rainfall}</p>}
-                {produce.climaticRequirements.altitude && <p className="text-card-foreground/90"><strong>Altitude:</strong> {produce.climaticRequirements.altitude}</p>}
+                <div className="flex flex-col space-y-1">
+                  {produce.climaticRequirements.temperature && <p className="text-card-foreground/90"><strong>Temperature:</strong> {produce.climaticRequirements.temperature}</p>}
+                  {produce.climaticRequirements.rainfall && <p className="text-card-foreground/90"><strong>Rainfall:</strong> {produce.climaticRequirements.rainfall}</p>}
+                  {produce.climaticRequirements.altitude && <p className="text-card-foreground/90"><strong>Altitude:</strong> {produce.climaticRequirements.altitude}</p>}
+                </div>
               </IconLabel>
             )}
 
@@ -531,15 +563,435 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
               </IconLabel>
             )}
 
-            {produce.marketValueAndGlobalDemand && (
-              <IconLabel icon={AreaChart} label="Market Value & Global Demand" className="bg-card rounded-lg shadow-lg">
-                <p className="text-card-foreground/90 whitespace-pre-line">{produce.marketValueAndGlobalDemand}</p>
+            {/* Conditional rendering for Farmer Mode reordering will be handled by structuring the elements array */}
+            {/* New Agricultural Information Fields End Here - This comment might be misleading now due to reordering */}
+
+            {/* Placeholder sections - these will be part of the ordered elements array */}
+            {/* Placeholder for Soil Suitability Checker */}
+            {/* Placeholder for Fertilizer & Treatment Guide */}
+            {/* Placeholder for Growth Tracker / Crop Journal */}
+            {/* Placeholder for Agricultural News & Trends */}
+
+            {/* Companion Planting Guide Start */}
+            {currentUserMode === 'gardener' && produce.companionPlants && (
+              <IconLabel icon={Users} label="Companion Planting Guide" className="bg-card rounded-lg shadow-lg">
+                {produce.companionPlants.good && produce.companionPlants.good.length > 0 && (
+                  <div className="mb-2">
+                    <h5 className="text-base font-semibold text-green-600 dark:text-green-400">Good Companions:</h5>
+                    <div className="flex flex-wrap gap-x-2 gap-y-1.5 mt-1.5">
+                      {produce.companionPlants.good.map(plant => <Badge key={plant} variant="secondary">{plant}</Badge>)}
+                    </div>
+                  </div>
+                )}
+                {produce.companionPlants.bad && produce.companionPlants.bad.length > 0 && (
+                  <div className="mb-2">
+                    <h5 className="text-base font-semibold text-red-600 dark:text-red-400">Bad Companions (Avoid Nearby):</h5>
+                    <div className="flex flex-wrap gap-x-2 gap-y-1.5 mt-1.5">
+                      {produce.companionPlants.bad.map(plant => <Badge key={plant} variant="destructive">{plant}</Badge>)}
+                    </div>
+                  </div>
+                )}
+                {produce.companionPlants.notes && (
+                  <div>
+                    <h5 className="text-base font-semibold text-card-foreground/90">Notes:</h5>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{produce.companionPlants.notes}</p>
+                  </div>
+                )}
               </IconLabel>
             )}
+            {/* Companion Planting Guide End */}
 
-            {/* New Agricultural Information Fields End Here */}
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
 
-            <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg">
+  function renderAdditionalContent() {
+    const commonUses = produce.uses && produce.uses.length > 0 && (
+      <IconLabel icon={Leaf} label="Common Uses" className="bg-card rounded-lg shadow-lg" key="commonUses">
+        <div className="flex flex-wrap gap-2">
+          {produce.uses.map(use => <Badge key={use} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{use}</Badge>)}
+        </div>
+      </IconLabel>
+    );
+
+    const originHistory = produce.originAndDomesticationHistory && (
+      <IconLabel icon={History} label="Origin & Domestication History" className="bg-card rounded-lg shadow-lg" key="originHistory">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.originAndDomesticationHistory}</p>
+      </IconLabel>
+    );
+
+    const marketValue = produce.marketValueAndGlobalDemand && (
+      <IconLabel icon={AreaChart} label="Market Value & Global Demand" className="bg-card rounded-lg shadow-lg" key="marketValue">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.marketValueAndGlobalDemand}</p>
+      </IconLabel>
+    );
+
+    const climaticRequirements = produce.climaticRequirements && (
+      <IconLabel icon={Thermometer} label="Climatic Requirements" className="bg-card rounded-lg shadow-lg" key="climaticReq">
+        <div className="flex flex-col space-y-1">
+          {produce.climaticRequirements.temperature && <p className="text-card-foreground/90"><strong>Temperature:</strong> {produce.climaticRequirements.temperature}</p>}
+          {produce.climaticRequirements.rainfall && <p className="text-card-foreground/90"><strong>Rainfall:</strong> {produce.climaticRequirements.rainfall}</p>}
+          {produce.climaticRequirements.altitude && <p className="text-card-foreground/90"><strong>Altitude:</strong> {produce.climaticRequirements.altitude}</p>}
+        </div>
+      </IconLabel>
+    );
+
+    const soilPreferences = produce.soilPreferences && (
+      <IconLabel icon={Layers} label="Soil Preferences" className="bg-card rounded-lg shadow-lg" key="soilPref">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.soilPreferences}</p>
+      </IconLabel>
+    );
+
+    const irrigationNeeds = produce.irrigationAndWaterNeeds && (
+      <IconLabel icon={Waves} label="Irrigation & Water Needs" className="bg-card rounded-lg shadow-lg" key="irrigationNeeds">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.irrigationAndWaterNeeds}</p>
+      </IconLabel>
+    );
+
+    const cropCalendar = (produce.plantingAndHarvestCycles || (produce.seasons && produce.seasons.length > 0)) && (
+      <IconLabel icon={CalendarDays} label="Crop Calendar / Planting & Harvesting" className="bg-card rounded-lg shadow-lg" key="cropCalendar">
+        <CropCalendarDisplay produce={produce} />
+      </IconLabel>
+    );
+
+    const pestManagement = produce.pestAndDiseaseManagement && (
+      <IconLabel icon={Bug} label="Pest & Disease Management" className="bg-card rounded-lg shadow-lg" key="pestManagement">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.pestAndDiseaseManagement}</p>
+      </IconLabel>
+    );
+
+    const postHarvest = produce.postHarvestHandling && (
+      <IconLabel icon={Truck} label="Post-Harvest Handling" className="bg-card rounded-lg shadow-lg" key="postHarvest">
+        <p className="text-card-foreground/90 whitespace-pre-line leading-relaxed">{produce.postHarvestHandling}</p>
+      </IconLabel>
+    );
+
+    const majorRegions = produce.majorProducingCountriesOrRegions && produce.majorProducingCountriesOrRegions.length > 0 && (
+      <IconLabel icon={MapPinned} label="Major Producing Countries/Regions" className="bg-card rounded-lg shadow-lg" key="majorRegions">
+        <div className="flex flex-wrap gap-2">
+          {produce.majorProducingCountriesOrRegions.map(region => <Badge key={region} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{region}</Badge>)}
+        </div>
+      </IconLabel>
+    );
+
+    // Placeholder sections
+    const soilSuitabilityChecker = (
+      <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg" key="soilChecker">
+        {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
+          <p className="text-card-foreground/90 mb-2 leading-relaxed">
+            This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
+          </p>
+        ) : (
+          <p className="text-muted-foreground mb-2 leading-relaxed">
+            General soil preference information is not specified for this plant.
+          </p>
+        )}
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          An advanced AI-powered Soil Suitability Checker is coming soon! This feature will allow you to input your local soil and climate conditions for a detailed suitability analysis for this plant.
+        </p>
+      </IconLabel>
+    );
+
+    const fertilizerGuide = (
+      <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg" key="fertilizerGuide">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          A comprehensive guide on organic and chemical fertilizers and treatments, including safe usage guidelines, is planned for this section. For current recommendations, please consult local agricultural extension services or qualified experts.
+        </p>
+      </IconLabel>
+    );
+
+    const growthTracker = (
+      <IconLabel icon={NotebookPen} label="Growth Tracker / Crop Journal (Coming Soon)" className="bg-card rounded-lg shadow-lg" key="growthTracker">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Track your planting progress! A personal Crop Journal feature is planned, allowing you to log planting dates, growth stages, notes, and even photos. This feature will require a user account to save your personalized data.
+        </p>
+      </IconLabel>
+    );
+
+    const newsTrends = (
+      <IconLabel icon={Newspaper} label="Agricultural News & Trends (Coming Soon)" className="bg-card rounded-lg shadow-lg" key="newsTrends">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Stay updated! This section will feature recent news and trends in the world of agriculture, offering insights and updates relevant to enthusiasts and professionals alike. Integration with a live news source is planned for a future update.
+        </p>
+      </IconLabel>
+    );
+
+    let orderedElements = [
+      commonUses,
+      originHistory, // MarketValue will be inserted after this in farmer mode
+      climaticRequirements,
+      soilPreferences, // Soil Suitability Checker will display this if available, then its own placeholder text
+      irrigationNeeds,
+      cropCalendar,
+      pestManagement,
+      postHarvest,
+      majorRegions,
+      marketValue, // Default position if not farmer mode
+      soilSuitabilityChecker,
+      fertilizerGuide,
+      growthTracker,
+      newsTrends,
+    ].filter(Boolean); // Remove any null/undefined elements if data is missing
+
+    if (currentUserMode === 'farmer') {
+      // Remove marketValue from its default position
+      orderedElements = orderedElements.filter(el => el.key !== 'marketValue');
+      // Find index of originHistory to insert marketValue after it
+      const originHistoryIndex = orderedElements.findIndex(el => el.key === 'originHistory');
+      if (originHistoryIndex !== -1 && marketValue) {
+        orderedElements.splice(originHistoryIndex + 1, 0, marketValue);
+      } else if (marketValue) { // if originHistory is not present for some reason, add marketValue at a sensible place
+        orderedElements.unshift(marketValue);
+      }
+    }
+    return <>{orderedElements}</>;
+  }
+
+  // Main return of ItemDetailsPage component
+  return (
+    <div className="space-y-4 py-4 md:py-6">
+      {/* ... (rest of the component structure like header, image, tabs list) ... */}
+      {isOfflineSource && (
+        <Alert variant="default" className="bg-secondary/80 text-secondary-foreground border-secondary-foreground/30 mx-2 md:mx-0">
+          <WifiOff className="h-5 w-5 text-secondary-foreground" />
+          <AlertTitle>Offline Mode</AlertTitle>
+          <AlertDescription>
+            You are viewing a cached version of this page. Some information might be outdated.
+          </AlertDescription>
+        </Alert>
+      )}
+
+      <header className="flex items-center justify-between mb-4 px-2 md:px-0 sticky top-0 bg-background/95 backdrop-blur-sm z-10 py-3 border-b border-border">
+        <Button variant="ghost" size="icon" onClick={() => router.back()} aria-label="Go back" className="text-foreground hover:bg-accent/10">
+          <ArrowLeft className="h-6 w-6" />
+        </Button>
+        <h1 className="text-lg sm:text-xl font-semibold text-foreground flex-1 text-center truncate px-2">
+          {produce.commonName} Details
+        </h1>
+        <div className="flex items-center gap-0">
+            <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleShare}
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
+                aria-label={`Share ${produce.commonName} details`}
+            >
+                <Share2 className="h-5 w-5 sm:h-6 sm:w-6" />
+            </Button>
+            <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleToggleFavorite}
+                className="text-foreground hover:text-primary active:scale-110 transition-all duration-150 ease-in-out active:brightness-90 hover:bg-accent/10"
+                aria-label={isFavorited ? `Remove ${produce.commonName} from favorites` : `Add ${produce.commonName} to favorites`}
+            >
+                {isFavorited ? (
+                  <Heart className={`text-primary fill-primary ${animateFavorite ? 'animate-pop' : ''} h-5 w-5 sm:h-6 sm:w-6`} />
+                ) : (
+                  <Heart className="h-5 w-5 sm:h-6 sm:w-6" />
+                )}
+            </Button>
+        </div>
+      </header>
+
+      <div className="relative w-full max-w-md mx-auto aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-card mb-6">
+        <Image
+          src={produce.image}
+          alt={produce.commonName}
+          fill
+          sizes="(max-width: 640px) 100vw, 512px"
+          style={{ objectFit: 'cover' }}
+          data-ai-hint={imageHint}
+          priority={true}
+        />
+        <div className="absolute bottom-4 right-4 p-3 bg-background/80 backdrop-blur-md rounded-lg shadow-md text-right">
+          <h2 className="text-xl font-bold text-foreground">{produce.commonName}</h2>
+          {currentUserMode === 'educational' ? (
+            <p className="text-base font-semibold text-blue-600 dark:text-blue-400 italic">{produce.scientificName}</p>
+          ) : (
+            <p className="text-sm text-muted-foreground italic">{produce.scientificName}</p>
+          )}
+        </div>
+      </div>
+
+      <Tabs defaultValue="overview" className="w-full">
+        <div className="overflow-x-auto pb-2 px-2 md:px-0">
+          <TabsList>
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="nutrition">Nutrition</TabsTrigger>
+            <TabsTrigger value="recipe">Recipes</TabsTrigger>
+            <TabsTrigger value="additional">Details</TabsTrigger>
+          </TabsList>
+        </div>
+
+        {/* Overview Tab Content - unchanged */}
+        <TabsContent value="overview" className="mt-6 space-y-6 px-2 md:px-0">
+          <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
+            <p className="text-card-foreground/90 leading-relaxed">{produce.description}</p>
+          </IconLabel>
+          <div className="grid md:grid-cols-2 gap-6">
+            <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
+              <p className="text-card-foreground/90 leading-relaxed">{produce.origin}</p>
+            </IconLabel>
+            <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
+              <div className="flex flex-wrap gap-2">
+                {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
+              </div>
+            </IconLabel>
+          </div>
+          <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg">
+            <ul className="list-disc list-inside text-card-foreground/90">
+              {produce.regions.map(region => <li key={region}>{region}</li>)}
+            </ul>
+          </IconLabel>
+        </TabsContent>
+
+        {/* Nutrition Tab Content - unchanged */}
+        <TabsContent value="nutrition" className="mt-6 space-y-6 px-2 md:px-0">
+          <section className="space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+            <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
+              <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
+            </ClientOnly>
+            {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
+              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
+                <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
+              </ClientOnly>
+            )}
+            {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
+              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
+                <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
+              </ClientOnly>
+            )}
+          </section>
+          <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
+            <ul className="list-disc list-inside space-y-1.5 text-card-foreground/90">
+              {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
+            </ul>
+          </IconLabel>
+        </TabsContent>
+
+        {/* Recipe Tab Content - unchanged */}
+        <TabsContent value="recipe" className="mt-6 space-y-6 px-2 md:px-0">
+          <section className="space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Heart className="text-primary"/>Recipe Ideas</h2>
+            {recipesToDisplay.length > 0 ? (
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+                {recipesToDisplay.map((recipe, index) => (
+                  <Card key={index} className="bg-card rounded-lg shadow-lg">
+                    <CardHeader className="p-4">
+                      <CardTitle className="text-lg sm:text-xl text-primary">{recipe.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 p-4 pt-0">
+                      <p className="text-sm text-muted-foreground">{recipe.description}</p>
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-1">Main Ingredients:</h4>
+                        <ul className="list-disc list-inside text-sm space-y-0.5 text-card-foreground/90">
+                          {recipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-1">Steps:</h4>
+                        <ol className="list-decimal list-inside text-sm space-y-1 text-card-foreground/90">
+                          {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
+                        </ol>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              <p className="text-center text-muted-foreground">No recipe ideas available at the moment.</p>
+            )}
+          </section>
+        </TabsContent>
+
+        {/* Additional Tab Content - Now dynamically rendered */}
+        <TabsContent value="additional" className="mt-6 space-y-6 px-2 md:px-0">
+          {/* Initial static content */}
+          <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
+          {produce.potentialAllergies.length > 0 ? (
+              <ul className="space-y-3">
+              {produce.potentialAllergies.map((allergy, index) => (
+                  <li key={index} className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2">
+                      <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
+                      <span className="font-medium text-card-foreground">{allergy.name}</span>
+                      <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
+                      {allergy.severity}
+                      </Badge>
+                  </div>
+                  {allergy.details && <p className="text-xs text-muted-foreground pl-6 leading-relaxed">{allergy.details}</p>}
+                  </li>
+              ))}
+              </ul>
+          ) : (
+              <p className="text-sm text-muted-foreground leading-relaxed">No common allergies reported for this item.</p>
+          )}
+          </IconLabel>
+          <IconLabel
+            icon={Sprout}
+            label={currentUserMode === 'gardener' ? "Gardener's Guide: Cultivation" : "Cultivation Process & Ideal Conditions"}
+            className="md:col-span-2 bg-card rounded-lg shadow-lg"
+          >
+            {currentUserMode === 'gardener' && (
+              <p className="text-sm italic text-green-600 dark:text-green-400 mb-2">Home Gardening Focus:</p>
+            )}
+            <p className="whitespace-pre-line text-card-foreground/90 leading-relaxed">{produce.cultivationProcess}</p>
+          </IconLabel>
+          <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
+            <p className="text-card-foreground/90 leading-relaxed">{produce.growthDuration}</p>
+          </IconLabel>
+
+          <div className="grid md:grid-cols-2 gap-6">
+              <IconLabel
+              icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2}
+              label="Seasonal Availability"
+              className="bg-card rounded-lg shadow-lg"
+              >
+              {isCurrentlyInSeason === null ? (
+                  <Loader text="Checking seasonality..." size={16} />
+              ) : (
+                  <p className="text-card-foreground/90 leading-relaxed">{currentSeasonMessage}</p>
+              )}
+              <p className="text-xs text-muted-foreground mt-1">Note: Seasonality can vary by specific locale and year.</p>
+              </IconLabel>
+
+              <IconLabel icon={Store} label="Find Locally (Future Feature)" className="bg-card rounded-lg shadow-lg">
+              <Button onClick={handleLocationClick} disabled={isLocating} variant="outline" className="w-full sm:w-auto hover:bg-primary/10 border-primary/50 text-primary">
+                  {isLocating ? <Loader text="Getting location..." size={18} /> : <><LocateFixed className="mr-2 h-4 w-4" /> Use My Location</>}
+              </Button>
+              {locationInfo && (
+                  <Alert variant={locationInfo.startsWith("Location (Lat:") ? "default" : "destructive"} className="mt-4 text-sm rounded-lg">
+                  <AlertTitle>{locationInfo.startsWith("Location (Lat:") ? "Location Acquired" : "Location Notice"}</AlertTitle>
+                  <AlertDescription className="leading-relaxed">{locationInfo}</AlertDescription>
+                  </Alert>
+              )}
+              {!locationInfo && !isLocating && <p className="text-xs text-muted-foreground mt-2 leading-relaxed">Click the button to share your location. This will be used in the future to find nearby markets.</p>}
+              </IconLabel>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+              {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
+              <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-lg shadow-lg">
+                  <ul className="list-disc list-inside space-y-1.5 text-card-foreground/90">
+                  {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
+                  </ul>
+              </IconLabel>
+              )}
+              {produce.carbonFootprintInfo && (
+              <IconLabel icon={Heart} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
+                  <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
+              </IconLabel>
+              )}
+          </div>
+          {/* Dynamically ordered agricultural info and placeholders */}
+          {renderAdditionalContent()}
+        </TabsContent>
+      </Tabs>
+    </div>
               {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
                 <p className="text-card-foreground/90 mb-2">
                   This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
@@ -571,7 +1023,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 Stay updated! This section will feature recent news and trends in the world of agriculture, offering insights and updates relevant to enthusiasts and professionals alike. Integration with a live news source is planned for a future update.
               </p>
             </IconLabel>
-            
+
         </TabsContent>
       </Tabs>
     </div>

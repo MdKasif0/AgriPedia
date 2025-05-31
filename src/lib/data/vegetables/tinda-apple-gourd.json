@@ -24,28 +24,32 @@
       {
         "name": "Protein",
         "value": 1.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 18,
+        "value": 18.0,
         "unit": "mg",
         "rdi": "30%"
       }
@@ -53,7 +57,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 224,
+        "value": 224.0,
         "unit": "mg",
         "rdi": "6%"
       }
@@ -92,7 +96,7 @@
       ],
       "steps": [
         "Wash tindas. Lightly peel or scrape the skin. Cut off the top (stem end) to make a lid and scoop out the seeds and soft pulp from the center, creating a cavity. (Alternatively, make crosswise slits without cutting through).",
-        "Stuffing: Heat 1 tbsp oil. Sauté grated/minced onion until golden. Add ginger-garlic paste, sauté. Add all spice powders and salt. Cook for 2-3 minutes until fragrant. Let cool.",
+        "Stuffing: Heat 1 tbsp oil. Saut\u00e9 grated/minced onion until golden. Add ginger-garlic paste, saut\u00e9. Add all spice powders and salt. Cook for 2-3 minutes until fragrant. Let cool.",
         "Carefully stuff the prepared spice mixture into the tindas. Close with the lid (if made).",
         "Heat 2 tbsp oil in a wide pan or pressure cooker. Arrange stuffed tindas in a single layer.",
         "Add 1/2 cup water. If in a pan, cover and cook on low-medium heat for 15-20 minutes, or until tindas are tender, turning occasionally. If in a pressure cooker, cook for 1-2 whistles. Serve hot."
@@ -115,8 +119,8 @@
         "Fresh cilantro for garnish"
       ],
       "steps": [
-        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden brown.",
-        "Add ginger-garlic paste and sauté for a minute.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and saut\u00e9 until golden brown.",
+        "Add ginger-garlic paste and saut\u00e9 for a minute.",
         "Add chopped/pureed tomatoes and cook until oil starts to separate.",
         "Add turmeric powder, coriander powder, chili powder, and salt. Mix well and cook for a minute.",
         "Add cubed tinda and stir to coat with the masala.",
@@ -139,7 +143,7 @@
       ],
       "steps": [
         "Heat oil in a pan. Add cumin seeds; when they splutter, add asafoetida.",
-        "Add diced potatoes and turmeric powder. Sauté for 3-4 minutes.",
+        "Add diced potatoes and turmeric powder. Saut\u00e9 for 3-4 minutes.",
         "Add diced tinda, coriander powder, and salt. Mix well.",
         "Cover and cook on low heat for 12-15 minutes, or until both vegetables are tender, stirring occasionally. Add a splash of water if it gets too dry.",
         "Uncover and cook for a few more minutes until any excess moisture evaporates. Serve hot."

@@ -8,7 +8,7 @@
   "localNames": [
     "Zanahoria (Spanish)",
     "Carotte (French)",
-    "Möhre (German)",
+    "M\u00f6hre (German)",
     "Gajar (Hindi)"
   ],
   "regions": [
@@ -29,35 +29,39 @@
       {
         "name": "Protein",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 10,
-        "unit": "g"
+        "value": 10.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin A (from Beta-carotene)",
-        "value": 835,
-        "unit": "µg RAE",
+        "value": 835.0,
+        "unit": "\u00b5g RAE",
         "rdi": "93%"
       },
       {
         "name": "Vitamin K",
         "value": 13.2,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "16%"
       },
       {
@@ -70,7 +74,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 320,
+        "value": 320.0,
         "unit": "mg",
         "rdi": "9%"
       }
@@ -98,10 +102,15 @@
   "growthDuration": "Generally 60-80 days from sowing seeds to harvest.",
   "sustainabilityTips": [
     "Store carrots in the crisper drawer of the refrigerator. Remove greens (if attached) to prevent moisture loss from the roots.",
-    "Use carrot tops in pesto, stocks, or salads – they are edible and nutritious.",
+    "Use carrot tops in pesto, stocks, or salads \u2013 they are edible and nutritious.",
     "Choose 'ugly' or misshapen carrots when available to help reduce food waste."
   ],
   "carbonFootprintInfo": "Locally grown carrots have a very low carbon footprint (around 0.2-0.4 kg CO2e/kg). Transport and packaging can increase this.",
+  "companionPlants": {
+    "good": ["Beans", "Lettuce", "Onions", "Peas", "Radishes", "Rosemary", "Marigolds"],
+    "bad": ["Fennel", "Dill"],
+    "notes": "Rosemary and marigolds can deter the carrot rust fly."
+  },
   "staticRecipes": [
     {
       "name": "Honey Glazed Carrots",
@@ -151,7 +160,7 @@
         "Salt and pepper to taste"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "On a large baking sheet, toss carrots with olive oil, thyme, salt, and pepper until evenly coated.",
         "Spread carrots in a single layer to ensure even roasting.",
         "Roast for 20-25 minutes, flipping halfway, until tender and slightly caramelized at the edges.",

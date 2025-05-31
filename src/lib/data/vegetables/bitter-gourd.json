@@ -27,43 +27,47 @@
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 1,
-        "unit": "g"
+        "value": 1.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 84,
+        "value": 84.0,
         "unit": "mg",
         "rdi": "140%"
       },
       {
         "name": "Folate",
-        "value": 72,
-        "unit": "µg",
+        "value": 72.0,
+        "unit": "\u00b5g",
         "rdi": "18%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 296,
+        "value": 296.0,
         "unit": "mg",
         "rdi": "8%"
       }
@@ -102,7 +106,7 @@
       "steps": [
         "Wash and scrape bitter gourds lightly. Slit them lengthwise, keeping one end intact. Scoop out seeds.",
         "Optional: Rub salt inside and outside the gourds, let sit for 30 mins, then squeeze out water and rinse to reduce bitterness.",
-        "Stuffing: Heat 1 tbsp oil. Sauté onions until golden. Add ginger-garlic paste, sauté. Add all spice powders and salt. Cook for 2-3 mins. Let cool.",
+        "Stuffing: Heat 1 tbsp oil. Saut\u00e9 onions until golden. Add ginger-garlic paste, saut\u00e9. Add all spice powders and salt. Cook for 2-3 mins. Let cool.",
         "Stuff the spice mixture tightly into the bitter gourds.",
         "Heat oil in a pan. Carefully place stuffed gourds. Cook on low-medium heat, covered, turning occasionally, until tender and well-cooked (about 20-25 mins). Alternatively, bake at 375°F (190°C)."
       ]
@@ -141,8 +145,8 @@
       ],
       "steps": [
         "Prepare bitter gourd: Wash, slice, remove seeds. Optional: salt and rest to reduce bitterness, then rinse.",
-        "Heat oil in a pan. Add cumin seeds. When they splutter, add sliced onion and sauté until translucent.",
-        "Add diced potatoes and sauté for 5-7 minutes.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add sliced onion and saut\u00e9 until translucent.",
+        "Add diced potatoes and saut\u00e9 for 5-7 minutes.",
         "Add bitter gourd slices, turmeric powder, coriander powder, and salt. Mix well.",
         "Cover and cook on low-medium heat for 15-20 minutes, or until potatoes and bitter gourd are tender, stirring occasionally. Add a splash of water if it gets too dry.",
         "Serve hot with roti or rice."

@@ -28,23 +28,27 @@
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 2,
-        "unit": "g"
+        "value": 2.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 17,
-        "unit": "g"
+        "value": 17.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -64,7 +68,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 421,
+        "value": 421.0,
         "unit": "mg",
         "rdi": "12%"
       }
@@ -99,7 +103,7 @@
   "staticRecipes": [
     {
       "name": "Classic Mashed Potatoes",
-      "description": "Fluffy, creamy mashed potatoes – a comforting and versatile classic side dish.",
+      "description": "Fluffy, creamy mashed potatoes \u2013 a comforting and versatile classic side dish.",
       "ingredients": [
         "2 lbs potatoes (Russet or Yukon Gold recommended), peeled and quartered",
         "1/2 cup milk or cream, warmed",
@@ -129,7 +133,7 @@
         "Optional: pinch of red pepper flakes for heat"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "In a large bowl, toss the potatoes with olive oil, minced garlic, rosemary, thyme, salt, and pepper (and red pepper flakes if using) until evenly coated.",
         "Spread the potatoes in a single layer on a large baking sheet. Do not overcrowd the pan for best crispiness.",
         "Roast for 30-40 minutes, flipping the potatoes halfway through, until they are golden brown, crispy on the outside, and tender on the inside.",

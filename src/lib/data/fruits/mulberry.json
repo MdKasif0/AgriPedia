@@ -3,12 +3,12 @@
   "commonName": "Mulberry",
   "scientificName": "Morus spp.",
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Morus_alba_fruits.jpg/800px-Morus_alba_fruits.jpg",
-  "description": "A fast-growing, small to medium-sized tree native to warm temperate and subtropical regions. The fruit is a multiple fruit, about 2–3 cm long, resembling a blackberry. They can be red, dark purple, or white.",
+  "description": "A fast-growing, small to medium-sized tree native to warm temperate and subtropical regions. The fruit is a multiple fruit, about 2\u20133 cm long, resembling a blackberry. They can be red, dark purple, or white.",
   "origin": "Asia, North America",
   "localNames": [
     "Shahtoot (Hindi/Urdu)",
     "Mora (Spanish)",
-    "Mûre (French - also refers to blackberry)"
+    "M\u00fbre (French - also refers to blackberry)"
   ],
   "regions": [
     "China",
@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 1.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 9.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -55,7 +59,7 @@
       {
         "name": "Vitamin K",
         "value": 7.8,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "10%"
       }
     ],
@@ -68,7 +72,7 @@
       },
       {
         "name": "Potassium",
-        "value": 194,
+        "value": 194.0,
         "unit": "mg",
         "rdi": "6%"
       }
@@ -144,7 +148,7 @@
         "Unbaked 9-inch pie crust"
       ],
       "steps": [
-        "Preheat oven to 375°F (190°C).",
+        "Preheat oven to 375\u00b0F (190\u00b0C).",
         "Prepare pie crust in a 9-inch pie dish.",
         "Filling: In a large bowl, gently toss mulberries with sugar, flour/cornstarch, and lemon juice. Pour into the unbaked pie crust.",
         "Crumble: In another bowl, combine flour and brown sugar. Cut in cold butter until the mixture resembles coarse crumbs. Stir in oats if using.",

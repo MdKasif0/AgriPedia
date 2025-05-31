@@ -5,25 +5,80 @@
   "image": "https://images.unsplash.com/photo-1560793550-013512a88c40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Ryegrass encompasses species of tufted grasses in the genus Lolium, within the Poaceae family. They are native to Europe, Asia, and northern Africa, but are cultivated and naturalized worldwide. Perennial ryegrass (Lolium perenne) and annual/Italian ryegrass (Lolium multiflorum) are key forage and turf grasses, valued for their rapid establishment, high productivity, and nutritional quality for livestock.",
   "origin": "Europe, North Africa, and temperate Asia.",
-  "localNames": ["Ryegrass (English)", "Ivraie (French - often for L. temulentum/darnel, but also general)", "Raigrás (Spanish)", "Weidelgras (German)", "ライ麦草 (Raimugi-kusa - Japanese, though can be confusing with rye cereal)"],
-  "regions": ["Worldwide in temperate climates. Major cultivation in European Union (UK, Ireland, France, Germany, Netherlands)", "New Zealand", "Australia", "United States (Pacific Northwest, Northeast, Midwest)", "South America (Argentina, Chile, Uruguay)"],
-  "seasons": ["Cool-season grass. Perennial ryegrass: active growth in spring and autumn. Annual/Italian ryegrass: rapid growth in spring/early summer (spring-sown) or autumn/winter/spring (autumn-sown in mild climates)."],
+  "localNames": [
+    "Ryegrass (English)",
+    "Ivraie (French - often for L. temulentum/darnel, but also general)",
+    "Raigrás (Spanish)",
+    "Weidelgras (German)",
+    "ライ麦草 (Raimugi-kusa - Japanese, though can be confusing with rye cereal)"
+  ],
+  "regions": [
+    "Worldwide in temperate climates. Major cultivation in European Union (UK, Ireland, France, Germany, Netherlands)",
+    "New Zealand",
+    "Australia",
+    "United States (Pacific Northwest, Northeast, Midwest)",
+    "South America (Argentina, Chile, Uruguay)"
+  ],
+  "seasons": [
+    "Cool-season grass. Perennial ryegrass: active growth in spring and autumn. Annual/Italian ryegrass: rapid growth in spring/early summer (spring-sown) or autumn/winter/spring (autumn-sown in mild climates)."
+  ],
   "nutrition": {
     "calories": "Fresh Ryegrass Forage: ~50-70 kcal per 100g (varies). Hay: ~200-250 kcal per 100g (dry matter).",
     "macronutrients": [
-      { "name": "Protein", "unit": "g", "value": "Forage: ~12-20 (dry matter); highly digestible, varies with growth stage and N fertilization" },
-      { "name": "Carbohydrates", "unit": "g", "value": "Forage: ~40-50 (dry matter, includes sugars/fructans and fiber)" },
-      { "name": "Fat", "unit": "g", "value": "Forage: ~2-4 (dry matter)" },
-      { "name": "Fiber", "unit": "g", "value": "Forage: ~40-50 (NDF), ~20-25 (ADF)" }
+      {
+        "name": "Protein",
+        "unit": "g",
+        "value": 12.0
+      },
+      {
+        "name": "Carbohydrates",
+        "unit": "g",
+        "value": 40.0
+      },
+      {
+        "name": "Fat",
+        "unit": "g",
+        "value": 2.0
+      },
+      {
+        "name": "Fiber",
+        "unit": "g",
+        "value": 40.0
+      }
     ],
     "vitamins": [
-      { "name": "Vitamin A (as beta-carotene)", "unit": "IU", "rdi": "Fresh: High" },
-      { "name": "Vitamin E", "unit": "mg", "rdi": "Fresh: Moderate" }
+      {
+        "name": "Vitamin A (as beta-carotene)",
+        "unit": "IU",
+        "rdi": "",
+        "value": 0.0
+      },
+      {
+        "name": "Vitamin E",
+        "unit": "mg",
+        "rdi": "",
+        "value": 0.0
+      }
     ],
     "minerals": [
-      { "name": "Potassium", "unit": "%", "rdi": "Forage: ~2.0-3.5 (dry matter)" },
-      { "name": "Calcium", "unit": "%", "rdi": "Forage: ~0.3-0.6 (dry matter)" },
-      { "name": "Magnesium", "unit": "%", "rdi": "Forage: ~0.1-0.3 (dry matter)" }
+      {
+        "name": "Potassium",
+        "unit": "%",
+        "rdi": "",
+        "value": 2.0
+      },
+      {
+        "name": "Calcium",
+        "unit": "%",
+        "rdi": "",
+        "value": 0.3
+      },
+      {
+        "name": "Magnesium",
+        "unit": "%",
+        "rdi": "",
+        "value": 0.1
+      }
     ]
   },
   "healthBenefits": [
@@ -58,7 +113,11 @@
     "Selection of appropriate endophyte varieties can prevent animal health issues while maintaining persistence."
   ],
   "carbonFootprintInfo": "The carbon footprint of ryegrass pastures is influenced by nitrogen fertilizer use (a major source of nitrous oxide emissions), livestock methane emissions during grazing, and machinery use. However, well-managed pastures can sequester significant amounts of carbon in the soil.",
-  "uses": ["animal_feed_pasture_grazing_hay_silage_haylage_for_dairy_cattle_beef_cattle_sheep_horses", "turf_grass_lawns_sports_fields_golf_courses_especially_perennial_ryegrass", "cover_crop_erosion_control_soil_improvement_short_term_forage"],
+  "uses": [
+    "animal_feed_pasture_grazing_hay_silage_haylage_for_dairy_cattle_beef_cattle_sheep_horses",
+    "turf_grass_lawns_sports_fields_golf_courses_especially_perennial_ryegrass",
+    "cover_crop_erosion_control_soil_improvement_short_term_forage"
+  ],
   "originAndDomesticationHistory": "Ryegrass species (Lolium spp.) are native to Europe, North Africa, and temperate Asia. They have been important forage grasses for centuries. Perennial ryegrass (Lolium perenne) was one of the first European forage grasses to be cultivated systematically. Selection and breeding have led to numerous improved cultivars for both forage and turf use worldwide.",
   "climaticRequirements": {
     "temperature": "Cool-season grass. Optimal growing temperatures are 15-25°C. Tolerates cool, moist conditions. Growth slows in hot summer weather. Winter hardiness varies by species and cultivar.",
@@ -70,6 +129,15 @@
   "plantingAndHarvestCycles": "Seeds are sown in spring or autumn, often into a prepared seedbed or overseeded into existing pastures. Can be grazed rotationally once established (typically 10-15 cm height). For hay or silage, usually harvested at the pre-bloom or early bloom stage for best quality. Multiple harvests per year are common.",
   "pestAndDiseaseManagement": "Pests include various insects like frit fly, aphids, and billbugs. Diseases include crown rust, stem rust, leaf spot diseases, and snow mold. Management involves resistant cultivars, proper fertilization and grazing management, and fungicides in some cases, especially in seed production or high-value turf.",
   "postHarvestHandling": "For hay, cut ryegrass is field-dried to 15-20% moisture before baling. For silage, it is wilted to 30-50% dry matter, then chopped and fermented anaerobically. Quality is highly dependent on stage of maturity at harvest and proper processing/storage.",
-  "majorProducingCountriesOrRegions": ["New Zealand", "Australia", "European Union (Ireland, UK, Netherlands, Denmark, France, Germany)", "United States (Oregon for seed production; forage use in dairy regions)", "Argentina", "Uruguay", "South Africa", "Widely used in temperate pastoral agriculture globally"],
+  "majorProducingCountriesOrRegions": [
+    "New Zealand",
+    "Australia",
+    "European Union (Ireland, UK, Netherlands, Denmark, France, Germany)",
+    "United States (Oregon for seed production; forage use in dairy regions)",
+    "Argentina",
+    "Uruguay",
+    "South Africa",
+    "Widely used in temperate pastoral agriculture globally"
+  ],
   "marketValueAndGlobalDemand": "Ryegrass is a cornerstone of forage production in many temperate dairy and livestock systems worldwide. Demand for ryegrass seed (various cultivars) is very high for establishing new pastures and overseeding. While the forage itself is not typically traded long distances (except as hay), its value is critical to the economics of livestock farming. Improved varieties with specific traits (e.g., digestibility, disease resistance, novel endophytes) are continuously developed and marketed."
 }

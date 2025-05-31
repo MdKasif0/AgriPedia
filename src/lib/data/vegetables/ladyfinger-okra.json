@@ -28,41 +28,45 @@
       {
         "name": "Protein",
         "value": 1.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 7.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 31.3,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "39%"
       },
       {
         "name": "Vitamin C",
-        "value": 23,
+        "value": 23.0,
         "unit": "mg",
         "rdi": "38%"
       },
       {
         "name": "Folate",
-        "value": 60,
-        "unit": "µg",
+        "value": 60.0,
+        "unit": "\u00b5g",
         "rdi": "15%"
       }
     ],
@@ -114,8 +118,8 @@
       ],
       "steps": [
         "Heat oil in a pan or kadai over medium heat. Add cumin seeds; when they splutter, add sliced onions.",
-        "Sauté onions until light golden brown.",
-        "Add cut okra and sauté for 5-7 minutes, stirring occasionally, until okra is lightly browned and no longer slimy. (Tip: Don't cover the pan initially).",
+        "Saut\u00e9 onions until light golden brown.",
+        "Add cut okra and saut\u00e9 for 5-7 minutes, stirring occasionally, until okra is lightly browned and no longer slimy. (Tip: Don't cover the pan initially).",
         "Add chopped tomatoes, turmeric powder, coriander powder, chili powder, and salt. Mix well.",
         "Cover and cook on low heat for 8-10 minutes, or until okra is tender, stirring occasionally.",
         "Uncover, add amchur powder or lemon juice. Mix and cook for another 2 minutes.",

@@ -6,8 +6,8 @@
   "description": "A deciduous tree native to Northwest China. It bears an edible juicy fruit also called a peach or a nectarine (nectarines are a variety of peach that lack fuzz).",
   "origin": "Northwest China",
   "localNames": [
-    "Melocotón (Spanish)",
-    "Pêche (French)",
+    "Melocot\u00f3n (Spanish)",
+    "P\u00eache (French)",
     "Pfirsich (German)"
   ],
   "regions": [
@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 9.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -54,15 +58,15 @@
       },
       {
         "name": "Vitamin A (from carotenoids)",
-        "value": 16,
-        "unit": "µg RAE",
+        "value": 16.0,
+        "unit": "\u00b5g RAE",
         "rdi": "2%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 190,
+        "value": 190.0,
         "unit": "mg",
         "rdi": "5%"
       }
@@ -108,7 +112,7 @@
         "1 tbsp melted butter for brushing (optional)"
       ],
       "steps": [
-        "Preheat oven to 375°F (190°C).",
+        "Preheat oven to 375\u00b0F (190\u00b0C).",
         "Filling: In a large bowl, gently toss sliced peaches with sugar, lemon juice, and cinnamon. Pour into a 9x9 inch baking dish or similar.",
         "Topping: In another bowl, whisk together flour, sugar, baking powder, and salt. Cut in cold butter until mixture resembles coarse crumbs. Stir in milk until just combined.",
         "Drop spoonfuls of the topping mixture over the peaches.",
@@ -140,13 +144,13 @@
         "2 ripe peaches, peeled, pitted, and diced",
         "1/2 red bell pepper, diced",
         "1/4 red onion, finely chopped",
-        "1 jalapeño, minced (optional, seeds removed for less heat)",
+        "1 jalape\u00f1o, minced (optional, seeds removed for less heat)",
         "1/4 cup chopped fresh cilantro",
         "Juice of 1 lime",
         "Salt and pepper to taste"
       ],
       "steps": [
-        "In a medium bowl, combine diced peaches, red bell pepper, red onion, jalapeño (if using), and cilantro.",
+        "In a medium bowl, combine diced peaches, red bell pepper, red onion, jalape\u00f1o (if using), and cilantro.",
         "Add lime juice and season with salt and pepper to taste.",
         "Stir gently to combine all ingredients.",
         "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld before serving."

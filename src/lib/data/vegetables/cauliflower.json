@@ -29,22 +29,26 @@
       {
         "name": "Protein",
         "value": 1.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 5,
-        "unit": "g"
+        "value": 5.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 2,
-        "unit": "g"
+        "value": 2.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -57,20 +61,20 @@
       {
         "name": "Vitamin K",
         "value": 15.5,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "19%"
       },
       {
         "name": "Folate",
-        "value": 57,
-        "unit": "µg",
+        "value": 57.0,
+        "unit": "\u00b5g",
         "rdi": "14%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 299,
+        "value": 299.0,
         "unit": "mg",
         "rdi": "9%"
       }
@@ -114,7 +118,7 @@
         "Salt and pepper to taste"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "In a large bowl, toss cauliflower florets with olive oil, cumin, turmeric, salt, and pepper until evenly coated.",
         "Spread the cauliflower in a single layer on a baking sheet.",
         "Roast for 20-25 minutes, flipping halfway, until tender and lightly caramelized with crispy edges.",

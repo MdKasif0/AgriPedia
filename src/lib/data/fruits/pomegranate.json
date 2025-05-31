@@ -28,22 +28,26 @@
       {
         "name": "Protein",
         "value": 1.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 19,
-        "unit": "g"
+        "value": 19.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 1.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 4,
-        "unit": "g"
+        "value": 4.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,13 +60,13 @@
       {
         "name": "Vitamin K",
         "value": 16.4,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "21%"
       },
       {
         "name": "Folate",
         "value": 38,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "10%"
       }
     ],
@@ -138,11 +142,11 @@
         "4 chicken breasts or salmon fillets"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C) or prepare grill.",
+        "Preheat oven to 400\u00b0F (200\u00b0C) or prepare grill.",
         "In a small bowl, whisk together all glaze ingredients: pomegranate molasses, olive oil, honey/maple syrup, minced garlic, Dijon mustard, salt, and pepper.",
         "Season chicken or salmon with additional salt and pepper if desired.",
         "Brush the chicken/salmon generously with half of the pomegranate glaze.",
-        "Bake or grill the chicken/salmon until cooked through (internal temperature of 165°F for chicken). Basting with remaining glaze during the last few minutes of cooking.",
+        "Bake or grill the chicken/salmon until cooked through (internal temperature of 165\u00b0F for chicken). Basting with remaining glaze during the last few minutes of cooking.",
         "Let rest for a few minutes before serving. Drizzle with any remaining pan juices or extra glaze."
       ]
     }

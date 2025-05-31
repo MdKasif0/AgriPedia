@@ -5,26 +5,90 @@
   "image": "https://images.unsplash.com/photo-1604137040022-90091705d053?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Tulsi, also known as Holy Basil, is an aromatic perennial plant in the family Lamiaceae. It is native to the Indian subcontinent and widespread as a cultivated plant throughout the Southeast Asian tropics. Tulsi is revered in Hinduism for its medicinal and spiritual properties and is often grown in courtyards and temples.",
   "origin": "Indian subcontinent.",
-  "localNames": ["Tulsi (Hindi/Sanskrit)", "Holy Basil (English)", "Kraphao (Thai)", "Tulshi (Bengali)"],
-  "regions": ["India", "Nepal", "Bangladesh", "Sri Lanka", "Southeast Asian countries", "Cultivated worldwide in tropical and subtropical regions"],
-  "seasons": ["Perennial, but often grown as an annual in temperate climates. Active growth during warm seasons. Leaves can be harvested multiple times."],
+  "localNames": [
+    "Tulsi (Hindi/Sanskrit)",
+    "Holy Basil (English)",
+    "Kraphao (Thai)",
+    "Tulshi (Bengali)"
+  ],
+  "regions": [
+    "India",
+    "Nepal",
+    "Bangladesh",
+    "Sri Lanka",
+    "Southeast Asian countries",
+    "Cultivated worldwide in tropical and subtropical regions"
+  ],
+  "seasons": [
+    "Perennial, but often grown as an annual in temperate climates. Active growth during warm seasons. Leaves can be harvested multiple times."
+  ],
   "nutrition": {
     "calories": "Approx. 23-30 kcal per 100g (fresh leaves)",
     "macronutrients": [
-      { "name": "Protein", "value": "~3.0", "unit": "g" },
-      { "name": "Carbohydrates", "value": "~2.7-4.0", "unit": "g" },
-      { "name": "Fat", "value": "~0.6", "unit": "g" },
-      { "name": "Fiber", "value": "~1.6", "unit": "g" }
+      {
+        "name": "Protein",
+        "value": 3.0,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 2.7,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g",
+        "rdi": ""
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g",
+        "rdi": ""
+      }
     ],
     "vitamins": [
-      { "name": "Vitamin K", "value": "High", "unit": "µg", "rdi": "Significant" },
-      { "name": "Vitamin A (as beta-carotene)", "value": "High", "unit": "µg", "rdi": "Significant" },
-      { "name": "Vitamin C", "value": "Moderate", "unit": "mg", "rdi": "Moderate" }
+      {
+        "name": "Vitamin K",
+        "value": 0.0,
+        "unit": "\u00b5g",
+        "rdi": ""
+      },
+      {
+        "name": "Vitamin A (as beta-carotene)",
+        "value": 0.0,
+        "unit": "\u00b5g",
+        "rdi": ""
+      },
+      {
+        "name": "Vitamin C",
+        "value": 0.0,
+        "unit": "mg",
+        "rdi": ""
+      }
     ],
     "minerals": [
-      { "name": "Calcium", "value": "Moderate", "unit": "mg", "rdi": "Moderate" },
-      { "name": "Iron", "value": "Moderate", "unit": "mg", "rdi": "Moderate" },
-      { "name": "Potassium", "value": "Moderate", "unit": "mg", "rdi": "Moderate" }
+      {
+        "name": "Calcium",
+        "value": 0.0,
+        "unit": "mg",
+        "rdi": ""
+      },
+      {
+        "name": "Iron",
+        "value": 0.0,
+        "unit": "mg",
+        "rdi": ""
+      },
+      {
+        "name": "Potassium",
+        "value": 0.0,
+        "unit": "mg",
+        "rdi": ""
+      }
     ]
   },
   "healthBenefits": [
@@ -50,10 +114,15 @@
     "Can be grown using organic methods."
   ],
   "carbonFootprintInfo": "Locally grown Tulsi has a low carbon footprint. Commercial production for supplements or teas involves energy for processing, drying, and transportation.",
-  "uses": ["traditional_medicine_ayurveda_stress_relief_respiratory_health_immunity_booster", "religious_ceremonies_hinduism", "herbal_tea", "essential_oil_production_eugenol_ursolic_acid"],
+  "uses": [
+    "traditional_medicine_ayurveda_stress_relief_respiratory_health_immunity_booster",
+    "religious_ceremonies_hinduism",
+    "herbal_tea",
+    "essential_oil_production_eugenol_ursolic_acid"
+  ],
   "originAndDomesticationHistory": "Tulsi (Ocimum tenuiflorum) is native to the Indian subcontinent. It has been cultivated for thousands of years and holds immense spiritual and medicinal significance in Hinduism, where it is regarded as a sacred plant, an earthly manifestation of the goddess Tulsi. There are several varieties, such as Rama Tulsi (green leaves) and Krishna Tulsi (purple leaves).",
   "climaticRequirements": {
-    "temperature": "Warm-season herb. Optimal growing temperatures are 20-30°C. Sensitive to frost.",
+    "temperature": "Warm-season herb. Optimal growing temperatures are 20-30\u00b0C. Sensitive to frost.",
     "rainfall": "Requires regular moisture. Prefers well-distributed rainfall or consistent irrigation. Good drainage is essential.",
     "altitude": "Adaptable to various altitudes in tropical and subtropical regions, from plains to foothills."
   },
@@ -62,6 +131,13 @@
   "plantingAndHarvestCycles": "Seeds are sown in spring or early summer. Seedlings are transplanted when they have 4-6 true leaves. Leaves can be harvested as needed once the plant is established. For optimal essential oil and medicinal compound concentration, leaves are often harvested just before or during early flowering.",
   "pestAndDiseaseManagement": "Common pests include aphids, spider mites, and caterpillars. Diseases like damping-off (in seedlings), Fusarium wilt, and leaf spot can occur. Good air circulation, proper watering, and organic pest control methods (like neem oil) are recommended.",
   "postHarvestHandling": "Fresh leaves are used for teas, culinary purposes, or medicinal preparations. For drying, leaves are harvested and dried in shade to preserve color and volatile compounds. Dried leaves are stored in airtight containers. Essential oil is extracted through steam distillation of fresh leaves and flowering tops.",
-  "majorProducingCountriesOrRegions": ["India (widely cultivated across the country)", "Nepal", "Bangladesh", "Southeast Asian countries", "Cultivated in many parts of the world by Indian diaspora and for herbal product industries."],
+  "majorProducingCountriesOrRegions": [
+    "India (widely cultivated across the country)",
+    "Nepal",
+    "Bangladesh",
+    "Sri Lanka",
+    "Southeast Asian countries",
+    "Cultivated in many parts of the world by Indian diaspora and for herbal product industries."
+  ],
   "marketValueAndGlobalDemand": "Tulsi has a significant market, especially in India, for its medicinal and religious uses. Globally, demand for Tulsi tea, supplements, and essential oil is growing due to its recognized health benefits as an adaptogen and immune booster. The market for organic Tulsi products is also expanding."
 }

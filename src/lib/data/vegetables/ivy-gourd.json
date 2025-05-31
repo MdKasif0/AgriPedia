@@ -29,22 +29,26 @@
       {
         "name": "Protein",
         "value": 1.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -62,15 +66,15 @@
       },
       {
         "name": "Vitamin A",
-        "value": 3,
-        "unit": "µg RAE",
+        "value": 3.0,
+        "unit": "\u00b5g RAE",
         "rdi": "0%"
       }
     ],
     "minerals": [
       {
         "name": "Calcium",
-        "value": 40,
+        "value": 40.0,
         "unit": "mg",
         "rdi": "3%"
       },
@@ -82,7 +86,7 @@
       },
       {
         "name": "Potassium",
-        "value": 30,
+        "value": 30.0,
         "unit": "mg",
         "rdi": "1%"
       }
@@ -127,7 +131,7 @@
         "Heat the oil in a medium-sized pan (kadai or skillet) over medium heat.",
         "Once the oil is hot, add the mustard seeds. Wait for them to splutter completely.",
         "If using, add the urad dal and the broken dried red chili. Fry for a few seconds until the urad dal turns light golden brown. Be careful not to burn the dal or chili.",
-        "Add the curry leaves (if using) to the hot oil – they will crisp up quickly and release their aroma.",
+        "Add the curry leaves (if using) to the hot oil \u2013 they will crisp up quickly and release their aroma.",
         "Immediately add the sliced ivy gourd to the pan. Stir well to coat with the oil and spices.",
         "Add the turmeric powder and salt to taste. Mix everything together thoroughly.",
         "Cover the pan and cook on medium-low heat for about 5-7 minutes, stirring occasionally. The ivy gourd should become tender-crisp. If you prefer it softer, cook for a few more minutes.",

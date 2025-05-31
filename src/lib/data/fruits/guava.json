@@ -32,12 +32,12 @@
       },
       {
         "name": "Carbohydrates",
-        "value": 14,
+        "value": 14.0,
         "unit": "g"
       },
       {
         "name": "Fat",
-        "value": 1,
+        "value": 1.0,
         "unit": "g"
       },
       {
@@ -55,13 +55,13 @@
       },
       {
         "name": "Vitamin A (from carotenoids)",
-        "value": 31,
+        "value": 31.0,
         "unit": "µg RAE",
         "rdi": "3%"
       },
       {
         "name": "Folate",
-        "value": 49,
+        "value": 49.0,
         "unit": "µg",
         "rdi": "12%"
       }
@@ -69,7 +69,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 417,
+        "value": 417.0,
         "unit": "mg",
         "rdi": "12%"
       }

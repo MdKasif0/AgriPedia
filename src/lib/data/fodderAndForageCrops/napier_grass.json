@@ -5,24 +5,72 @@
   "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Napier grass, also known as elephant grass or Uganda grass, is a species of perennial tropical grass native to Africa. It is a tall, fast-growing grass widely cultivated as a fodder crop for livestock, particularly dairy cattle, due to its high productivity and good nutritional value when young. It can also be used for biofuel production and erosion control.",
   "origin": "Sub-Saharan Africa.",
-  "localNames": ["Elephant Grass (English)", "Uganda Grass (English)", "Barodo (Filipino)", "Rumput Gajah (Indonesian/Malay)"],
-  "regions": ["Tropical and subtropical regions of Africa (Kenya, Uganda, Ethiopia, Nigeria)", "Asia (India, Thailand, Vietnam, Philippines, Indonesia)", "Americas (Brazil, Colombia, USA - Florida, Hawaii)", "Australia"],
-  "seasons": ["Perennial; grows year-round in tropical climates with sufficient moisture. Harvested multiple times a year (every 6-12 weeks depending on management and growth)."],
+  "localNames": [
+    "Elephant Grass (English)",
+    "Uganda Grass (English)",
+    "Barodo (Filipino)",
+    "Rumput Gajah (Indonesian/Malay)"
+  ],
+  "regions": [
+    "Tropical and subtropical regions of Africa (Kenya, Uganda, Ethiopia, Nigeria)",
+    "Asia (India, Thailand, Vietnam, Philippines, Indonesia)",
+    "Americas (Brazil, Colombia, USA - Florida, Hawaii)",
+    "Australia"
+  ],
+  "seasons": [
+    "Perennial; grows year-round in tropical climates with sufficient moisture. Harvested multiple times a year (every 6-12 weeks depending on management and growth)."
+  ],
   "nutrition": {
     "calories": "Fresh Napier Grass: ~40-60 kcal per 100g (varies with maturity). Silage: Similar or slightly lower.",
     "macronutrients": [
-      { "name": "Protein", "unit": "g", "value": "Fresh (young): ~8-15 (dry matter); decreases with maturity" },
-      { "name": "Carbohydrates", "unit": "g", "value": "Fresh: ~40-50 (dry matter, primarily fiber)" },
-      { "name": "Fat", "unit": "g", "value": "Fresh: ~1-2 (dry matter)" },
-      { "name": "Fiber", "unit": "g", "value": "Fresh: ~30-40 (NDF/ADF significant; increases with maturity)" }
+      {
+        "name": "Protein",
+        "unit": "g",
+        "value": 8.0
+      },
+      {
+        "name": "Carbohydrates",
+        "unit": "g",
+        "value": 40.0
+      },
+      {
+        "name": "Fat",
+        "unit": "g",
+        "value": 1.0
+      },
+      {
+        "name": "Fiber",
+        "unit": "g",
+        "value": 30.0
+      }
     ],
     "vitamins": [
-      { "name": "Vitamin A (as beta-carotene)", "unit": "IU", "rdi": "Fresh: Moderate to High" }
+      {
+        "name": "Vitamin A (as beta-carotene)",
+        "unit": "IU",
+        "rdi": "",
+        "value": 0.0
+      }
     ],
     "minerals": [
-      { "name": "Calcium", "unit": "%", "rdi": "Fresh: ~0.3-0.6 (dry matter)" },
-      { "name": "Phosphorus", "unit": "%", "rdi": "Fresh: ~0.2-0.4 (dry matter)" },
-      { "name": "Potassium", "unit": "%", "rdi": "Fresh: ~1.5-3.0 (dry matter)" }
+      {
+        "name": "Calcium",
+        "unit": "%",
+        "rdi": "",
+        "value": 0.3
+      },
+      {
+        "name": "Phosphorus",
+        "unit": "%",
+        "rdi": "",
+        "value": 0.2
+      },
+      {
+        "name": "Potassium",
+        "unit": "%",
+        "rdi": "",
+        "value": 1.5
+      }
     ]
   },
   "healthBenefits": [
@@ -52,7 +100,11 @@
     "Used in 'push-pull' pest management strategies in maize farming in Africa."
   ],
   "carbonFootprintInfo": "As a perennial grass with high biomass production, Napier grass can contribute to carbon sequestration in soils. Its use as a biofuel feedstock is also being explored, which could impact its lifecycle carbon footprint depending on conversion technologies and land use practices.",
-  "uses": ["animal_feed_fresh_fodder_forage_silage_haylage_cut_and_carry_systems_for_cattle_goats_elephants", "biofuel_production_biomass_for_anaerobic_digestion_bioethanol_briquettes", "erosion_control_windbreaks_phytoremediation_paper_pulp_limited"],
+  "uses": [
+    "animal_feed_fresh_fodder_forage_silage_haylage_cut_and_carry_systems_for_cattle_goats_elephants",
+    "biofuel_production_biomass_for_anaerobic_digestion_bioethanol_briquettes",
+    "erosion_control_windbreaks_phytoremediation_paper_pulp_limited"
+  ],
   "originAndDomesticationHistory": "Napier grass (Cenchrus purpureus) is native to sub-Saharan Africa. It was named after Colonel Napier of Rhodesia (now Zimbabwe) who promoted its use as a fodder crop in the early 20th century. Its high productivity and adaptability led to its introduction and cultivation in many tropical and subtropical regions worldwide for livestock feed.",
   "climaticRequirements": {
     "temperature": "Tropical and subtropical grass. Optimal growing temperatures are 25-35°C. Requires warm, sunny conditions. Growth ceases below 15°C. Sensitive to frost.",
@@ -64,6 +116,16 @@
   "plantingAndHarvestCycles": "Propagated by stem cuttings (2-3 nodes) or rooted slips. Planted during the rainy season or under irrigation. Harvested by cutting stems at a certain height (e.g., 10-15 cm above ground) when plants reach 1-1.5 meters in height for optimal quality and regrowth. Frequent cutting promotes tillering.",
   "pestAndDiseaseManagement": "Pests include stem borers, aphids, and armyworms. Diseases include Napier grass stunt disease (phytoplasma), head smut, and various fungal leaf spots. Management involves using disease-resistant varieties, clean planting material, proper field sanitation, and biological or chemical control when necessary.",
   "postHarvestHandling": "Harvested Napier grass is typically fed fresh to livestock (cut-and-carry system) or chopped and ensiled for later use. If making hay (less common due to thick stems), proper drying is required. For biofuel, it's processed according to the specific conversion technology.",
-  "majorProducingCountriesOrRegions": ["Many countries in Sub-Saharan Africa (Kenya, Uganda, Ethiopia, Nigeria, Tanzania)", "India", "Thailand", "Vietnam", "Philippines", "Indonesia", "Brazil", "Colombia", "United States (Florida, Hawaii for research/niche use)"],
+  "majorProducingCountriesOrRegions": [
+    "Many countries in Sub-Saharan Africa (Kenya, Uganda, Ethiopia, Nigeria, Tanzania)",
+    "India",
+    "Thailand",
+    "Vietnam",
+    "Philippines",
+    "Indonesia",
+    "Brazil",
+    "Colombia",
+    "United States (Florida, Hawaii for research/niche use)"
+  ],
   "marketValueAndGlobalDemand": "Napier grass is primarily used for on-farm livestock feeding or local sale as fodder, rather than being a major internationally traded commodity. Its value lies in its high yield and contribution to livestock production, especially for smallholder dairy farmers in tropical regions. There is growing research interest in its potential as a biofuel feedstock."
 }

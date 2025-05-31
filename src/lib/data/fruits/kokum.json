@@ -43,7 +43,7 @@
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 5,
+        "value": 5.0,
         "unit": "mg",
         "rdi": "8%"
       }
@@ -51,7 +51,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 170,
+        "value": 170.0,
         "unit": "mg",
         "rdi": "5%"
       }

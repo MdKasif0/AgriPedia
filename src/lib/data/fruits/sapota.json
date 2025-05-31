@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 20,
-        "unit": "g"
+        "value": 20.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 1.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 5.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -55,7 +59,7 @@
       {
         "name": "Folate",
         "value": 14,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "4%"
       }
     ],

@@ -6,7 +6,7 @@
   "description": "An edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable.",
   "origin": "Mediterranean region (likely Italy)",
   "localNames": [
-    "Brócoli (Spanish)",
+    "Br\u00f3coli (Spanish)",
     "Brocoli (French)",
     "Brokkoli (German)"
   ],
@@ -28,22 +28,26 @@
       {
         "name": "Protein",
         "value": 2.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 6.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,20 +60,20 @@
       {
         "name": "Vitamin K",
         "value": 101.6,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "127%"
       },
       {
         "name": "Folate",
-        "value": 63,
-        "unit": "µg",
+        "value": 63.0,
+        "unit": "\u00b5g",
         "rdi": "16%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 316,
+        "value": 316.0,
         "unit": "mg",
         "rdi": "9%"
       }
@@ -97,7 +101,7 @@
   "growthDuration": "50-100 days from transplant to harvest, depending on variety and conditions.",
   "sustainabilityTips": [
     "Store unwashed broccoli in an open plastic bag in the refrigerator crisper for up to a week.",
-    "Utilize the stalks as well as the florets – peel the tough outer layer of stalks and slice; they are nutritious and can be cooked.",
+    "Utilize the stalks as well as the florets \u2013 peel the tough outer layer of stalks and slice; they are nutritious and can be cooked.",
     "Blanch and freeze excess broccoli for longer storage to use in soups, stir-fries, or smoothies."
   ],
   "carbonFootprintInfo": "Relatively low footprint when grown locally (0.4-0.7 kg CO2e/kg). Long-distance transport, especially refrigerated, increases this.",
@@ -155,7 +159,7 @@
         "Red pepper flakes (optional, for a kick)"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "On a large baking sheet, toss broccoli florets with olive oil, minced garlic, salt, pepper, and red pepper flakes (if using) until evenly coated.",
         "Spread broccoli in a single layer to ensure even roasting.",
         "Roast for 15-20 minutes, or until tender-crisp and lightly browned at the edges. Florets should be slightly charred.",

@@ -12,7 +12,7 @@
     "Chaulai Saag (Hindi)",
     "Bayam (Malay/Indonesian)",
     "Kulitis (Tagalog)",
-    "Rau dền (Vietnamese)"
+    "Rau d\u1ec1n (Vietnamese)"
   ],
   "regions": [
     "Asia (India, China, Indonesia, Philippines, Vietnam, Malaysia, Sri Lanka)",
@@ -30,29 +30,33 @@
       {
         "name": "Protein",
         "value": 2.05,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.71,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.19,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
-        "value": 1140,
-        "unit": "µg",
+        "value": 1140.0,
+        "unit": "\u00b5g",
         "rdi": "950%"
       },
       {
@@ -63,14 +67,14 @@
       },
       {
         "name": "Vitamin A",
-        "value": 292,
-        "unit": "µg RAE",
+        "value": 292.0,
+        "unit": "\u00b5g RAE",
         "rdi": "32%"
       },
       {
         "name": "Folate (B9)",
-        "value": 85,
-        "unit": "µg",
+        "value": 85.0,
+        "unit": "\u00b5g",
         "rdi": "21%"
       },
       {
@@ -95,19 +99,19 @@
       },
       {
         "name": "Calcium",
-        "value": 215,
+        "value": 215.0,
         "unit": "mg",
         "rdi": "17%"
       },
       {
         "name": "Potassium",
-        "value": 411,
+        "value": 411.0,
         "unit": "mg",
         "rdi": "9%"
       },
       {
         "name": "Magnesium",
-        "value": 55,
+        "value": 55.0,
         "unit": "mg",
         "rdi": "13%"
       },
@@ -119,7 +123,7 @@
       },
       {
         "name": "Phosphorus",
-        "value": 50, 
+        "value": 50.0,
         "unit": "mg",
         "rdi": "4%"
       }

@@ -7,8 +7,8 @@
   "origin": "Eastern Mediterranean and Anatolia, cultivated since at least 2000 BCE.",
   "localNames": [
     "Boerenkool (Dutch - 'farmer's cabbage')",
-    "Grünkohl (German - 'green cabbage')",
-    "Chou frisé (French - 'curly cabbage')",
+    "Gr\u00fcnkohl (German - 'green cabbage')",
+    "Chou fris\u00e9 (French - 'curly cabbage')",
     "Cavolo riccio (Italian - 'curly cabbage')",
     "Leaf Cabbage (English)"
   ],
@@ -27,47 +27,51 @@
       {
         "name": "Protein",
         "value": 4.28,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 8.75,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.93,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 4.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 389.6,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "325%"
       },
       {
         "name": "Vitamin A",
-        "value": 241,
-        "unit": "µg RAE",
+        "value": 241.0,
+        "unit": "\u00b5g RAE",
         "rdi": "27%"
       },
       {
         "name": "Vitamin C",
-        "value": 120,
+        "value": 120.0,
         "unit": "mg",
         "rdi": "133%"
       },
       {
         "name": "Folate (B9)",
-        "value": 141,
-        "unit": "µg",
+        "value": 141.0,
+        "unit": "\u00b5g",
         "rdi": "35%"
       },
       {
@@ -86,19 +90,19 @@
       },
       {
         "name": "Calcium",
-        "value": 254,
+        "value": 254.0,
         "unit": "mg",
         "rdi": "19%"
       },
       {
         "name": "Potassium",
-        "value": 491,
+        "value": 491.0,
         "unit": "mg",
         "rdi": "10%"
       },
       {
         "name": "Magnesium",
-        "value": 47,
+        "value": 47.0,
         "unit": "mg",
         "rdi": "11%"
       },
@@ -110,7 +114,7 @@
       },
       {
         "name": "Phosphorus",
-        "value": 92,
+        "value": 92.0,
         "unit": "mg",
         "rdi": "7%"
       }

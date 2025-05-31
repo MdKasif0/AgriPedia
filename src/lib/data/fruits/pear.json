@@ -28,22 +28,26 @@
       {
         "name": "Protein",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 15,
-        "unit": "g"
+        "value": 15.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,14 +60,14 @@
       {
         "name": "Vitamin K",
         "value": 4.4,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "6%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 116,
+        "value": 116.0,
         "unit": "mg",
         "rdi": "3%"
       }
@@ -140,7 +144,7 @@
         "For topping: 3/4 cup all-purpose flour, 1/2 cup brown sugar, 1/2 tsp cinnamon, 1/4 cup cold butter (cubed), 1/2 cup rolled oats"
       ],
       "steps": [
-        "Preheat oven to 375°F (190°C).",
+        "Preheat oven to 375\u00b0F (190\u00b0C).",
         "Filling: In a bowl, toss sliced pears with sugar, lemon juice, and 1/2 tsp cinnamon. Transfer to a baking dish.",
         "Topping: In another bowl, combine flour, brown sugar, and 1/2 tsp cinnamon. Cut in butter until mixture resembles coarse crumbs. Stir in oats.",
         "Sprinkle topping evenly over the pears.",

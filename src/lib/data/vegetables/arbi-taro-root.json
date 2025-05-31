@@ -29,22 +29,26 @@
       {
         "name": "Protein",
         "value": 1.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 26.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 4.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -64,7 +68,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 591,
+        "value": 591.0,
         "unit": "mg",
         "rdi": "17%"
       },
@@ -137,8 +141,8 @@
       ],
       "steps": [
         "Boil/pressure cook and peel arbi. Lightly press them with your palm or cut into cubes.",
-        "Heat oil in a pan. Add cumin seeds and ajwain. When they splutter, add chopped onion and sauté until golden.",
-        "Add ginger-garlic paste, sauté. Add tomato puree and cook until oil separates.",
+        "Heat oil in a pan. Add cumin seeds and ajwain. When they splutter, add chopped onion and saut\u00e9 until golden.",
+        "Add ginger-garlic paste, saut\u00e9. Add tomato puree and cook until oil separates.",
         "Add turmeric powder, coriander powder, and salt. Mix well.",
         "Add the prepared arbi. Stir gently to coat with masala. Add about 1/2 cup of water.",
         "Cover and simmer for 7-10 minutes, allowing arbi to absorb flavors. Mash a few pieces to thicken gravy if desired.",
@@ -158,8 +162,8 @@
         "Peel taro root carefully (can cause itching for some; use gloves or oil hands).",
         "Using a mandoline slicer or a very sharp knife, slice the taro root as thinly as possible.",
         "Optional: Soak slices in cold water for 30 minutes to remove excess starch, then pat thoroughly dry with paper towels.",
-        "For frying: Heat oil in a deep fryer or heavy pot to 350°F (175°C). Fry taro slices in small batches until golden brown and crispy (2-4 minutes). Drain on paper towels and sprinkle with salt immediately.",
-        "For baking: Preheat oven to 400°F (200°C). Toss taro slices with a little olive oil, salt, and seasonings. Spread in a single layer on a baking sheet. Bake for 10-15 minutes, flipping halfway, until crispy and lightly browned. Watch carefully as they can burn quickly.",
+        "For frying: Heat oil in a deep fryer or heavy pot to 350\u00b0F (175\u00b0C). Fry taro slices in small batches until golden brown and crispy (2-4 minutes). Drain on paper towels and sprinkle with salt immediately.",
+        "For baking: Preheat oven to 400\u00b0F (200\u00b0C). Toss taro slices with a little olive oil, salt, and seasonings. Spread in a single layer on a baking sheet. Bake for 10-15 minutes, flipping halfway, until crispy and lightly browned. Watch carefully as they can burn quickly.",
         "Let cool completely before storing in an airtight container."
       ]
     }

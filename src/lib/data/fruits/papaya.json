@@ -8,7 +8,7 @@
   "localNames": [
     "Lechosa (Spanish in some regions)",
     "Pawpaw (in some regions, can be confusing)",
-    "Fruit à bombes (French Caribbean)"
+    "Fruit \u00e0 bombes (French Caribbean)"
   ],
   "regions": [
     "India",
@@ -26,22 +26,26 @@
       {
         "name": "Protein",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 11,
-        "unit": "g"
+        "value": 11.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -53,21 +57,21 @@
       },
       {
         "name": "Vitamin A (from carotenoids)",
-        "value": 47,
-        "unit": "µg RAE",
+        "value": 47.0,
+        "unit": "\u00b5g RAE",
         "rdi": "5%"
       },
       {
         "name": "Folate",
-        "value": 37,
-        "unit": "µg",
+        "value": 37.0,
+        "unit": "\u00b5g",
         "rdi": "9%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 182,
+        "value": 182.0,
         "unit": "mg",
         "rdi": "5%"
       }
@@ -99,10 +103,16 @@
     "Compost papaya skin."
   ],
   "carbonFootprintInfo": "Moderate carbon footprint, largely dependent on transport from tropical regions (0.6-1.2 kg CO2e/kg).",
-  "uses": ["culinary_fresh_eating", "juice_smoothies", "dessert", "meat_tenderizer_papain_enzyme", "green_papaya_salads_pickles_cooked_vegetable"],
+  "uses": [
+    "culinary_fresh_eating",
+    "juice_smoothies",
+    "dessert",
+    "meat_tenderizer_papain_enzyme",
+    "green_papaya_salads_pickles_cooked_vegetable"
+  ],
   "originAndDomesticationHistory": "Papaya (Carica papaya) originated in southern Mexico and Central America. It was domesticated by indigenous peoples in these regions centuries before the arrival of Europeans. Spanish and Portuguese explorers introduced papaya to other tropical regions of the world, including Asia, Africa, and the Pacific Islands, during the 16th and 17th centuries.",
   "climaticRequirements": {
-    "temperature": "Tropical; optimal 21-33°C. Very sensitive to frost. Requires warm conditions year-round.",
+    "temperature": "Tropical; optimal 21-33\u00b0C. Very sensitive to frost. Requires warm conditions year-round.",
     "rainfall": "Requires regular rainfall or irrigation, 1000-2000mm annually. Good drainage is crucial as it dislikes waterlogged conditions.",
     "altitude": "Typically grown from sea level up to 1000m, but can be found at higher elevations in frost-free tropical zones."
   },
@@ -110,8 +120,16 @@
   "irrigationAndWaterNeeds": "Requires consistent moisture, especially during establishment, flowering, and fruit development. Regular irrigation is necessary in areas with insufficient rainfall. Avoid overwatering to prevent root rot.",
   "plantingAndHarvestCycles": "Propagated from seeds. Seedlings are transplanted when 15-20 cm tall. Plants are fast-growing and can bear fruit within 6-12 months under ideal conditions. Papayas are typically dioecious (male and female plants) or hermaphroditic; hermaphrodite varieties are preferred. Fruits are harvested when they show signs of ripeness (skin color changes from green to yellow/orange) but are still firm. Harvested by hand.",
   "pestAndDiseaseManagement": "Common pests include fruit flies, aphids, mites, and nematodes. Major diseases are Papaya Ring Spot Virus (PRSV - a devastating viral disease), anthracnose, powdery mildew, and root rot. Integrated management involves resistant varieties (including genetically engineered ones for PRSV), field sanitation, control of insect vectors, and fungicide applications when necessary.",
-  "postHarvestHandling": "Papayas are highly perishable and bruise easily. Harvested carefully by hand. Fruits continue to ripen after harvest. For commercial purposes, they are often harvested at mature green to 1/4 yellow stage and can be treated with hot water or fungicides to control post-harvest diseases. Stored and transported at cool temperatures (around 10-13°C) to extend shelf life. Ripened at room temperature before consumption.",
-  "majorProducingCountriesOrRegions": ["India (leading producer)", "Brazil", "Indonesia", "Nigeria", "Mexico", "Dominican Republic", "Philippines"],
+  "postHarvestHandling": "Papayas are highly perishable and bruise easily. Harvested carefully by hand. Fruits continue to ripen after harvest. For commercial purposes, they are often harvested at mature green to 1/4 yellow stage and can be treated with hot water or fungicides to control post-harvest diseases. Stored and transported at cool temperatures (around 10-13\u00b0C) to extend shelf life. Ripened at room temperature before consumption.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading producer)",
+    "Brazil",
+    "Indonesia",
+    "Nigeria",
+    "Mexico",
+    "Dominican Republic",
+    "Philippines"
+  ],
   "marketValueAndGlobalDemand": "Papayas are a popular tropical fruit with significant global demand for both fresh consumption and processed products (juice, puree, dried fruit). They are an important cash crop for many tropical countries. Demand is driven by their sweet flavor, nutritional value, and year-round availability from different producing regions.",
   "staticRecipes": [
     {

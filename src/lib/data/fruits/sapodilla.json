@@ -10,7 +10,7 @@
     "Chico (Philippines)",
     "Naseberry (Caribbean)",
     "Sapote (general term, can be ambiguous)",
-    "Níspero (some Spanish-speaking regions, can be ambiguous)",
+    "N\u00edspero (some Spanish-speaking regions, can be ambiguous)",
     "Sawo (Indonesia, Malaysia)"
   ],
   "regions": [
@@ -36,22 +36,26 @@
       {
         "name": "Protein",
         "value": 0.44,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 19.96,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 1.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 5.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -64,7 +68,7 @@
       {
         "name": "Folate (B9)",
         "value": 14,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "4%"
       },
       {

@@ -7,9 +7,9 @@
   "origin": "Southeast Asia (likely the Malay Archipelago - Indonesia, Malaysia)",
   "localNames": [
     "Rambut (Malay/Indonesian, meaning 'hair')",
-    "Chôm chôm (Vietnamese, meaning 'messy hair')",
-    "Ngoh (เงาะ - Thai)",
-    "Hóngmáodān (红毛丹 - Chinese, 'red-haired pellet')"
+    "Ch\u00f4m ch\u00f4m (Vietnamese, meaning 'messy hair')",
+    "Ngoh (\u0e40\u0e07\u0e32\u0e30 - Thai)",
+    "H\u00f3ngm\u00e1od\u0101n (\u7ea2\u6bdb\u4e39 - Chinese, 'red-haired pellet')"
   ],
   "regions": [
     "Indonesia",
@@ -34,22 +34,26 @@
       {
         "name": "Protein",
         "value": 0.65,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 20.87,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.21,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -68,7 +72,7 @@
       {
         "name": "Folate (B9)",
         "value": 8,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "2%"
       },
       {
@@ -147,7 +151,7 @@
       "details": "Generally well-tolerated. Rare cross-reactivity may occur in individuals with allergies to other fruits in the Sapindaceae family (e.g., lychee, longan) or birch pollen (Oral Allergy Syndrome)."
     }
   ],
-  "cultivationProcess": "Rambutan trees thrive in warm, humid tropical climates (22–30°C) and prefer deep, well-drained clay loam or sandy loam soil rich in organic matter. Commercial propagation is mainly through grafting, air-layering, or budding to ensure true-to-type fruit. Trees require consistent moisture, especially during fruit development, and benefit from regular fertilization. Pollination is primarily carried out by insects, such as bees and flies.",
+  "cultivationProcess": "Rambutan trees thrive in warm, humid tropical climates (22\u201330\u00b0C) and prefer deep, well-drained clay loam or sandy loam soil rich in organic matter. Commercial propagation is mainly through grafting, air-layering, or budding to ensure true-to-type fruit. Trees require consistent moisture, especially during fruit development, and benefit from regular fertilization. Pollination is primarily carried out by insects, such as bees and flies.",
   "growthDuration": "Grafted or budded rambutan trees typically start bearing fruit within 2-3 years, reaching optimal production in 8-10 years. Trees grown from seed may take 5-6 years to begin fruiting. The fruit matures approximately 15-18 weeks after the flowers bloom.",
   "sustainabilityTips": [
     "Opt for locally grown rambutans when available to minimize the carbon footprint associated with long-distance transportation.",

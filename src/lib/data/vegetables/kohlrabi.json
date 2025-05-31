@@ -8,7 +8,7 @@
   "localNames": [
     "German Turnip (English)",
     "Turnip Cabbage (English)",
-    "Kohlrübe (German - older term)",
+    "Kohlr\u00fcbe (German - older term)",
     "Cavolo Rapa (Italian)",
     "Chou-rave (French)"
   ],
@@ -26,28 +26,32 @@
       {
         "name": "Protein",
         "value": 1.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 6.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 62,
+        "value": 62.0,
         "unit": "mg",
         "rdi": "69%"
       },
@@ -59,8 +63,8 @@
       },
       {
         "name": "Folate (B9)",
-        "value": 16,
-        "unit": "µg",
+        "value": 16.0,
+        "unit": "\u00b5g",
         "rdi": "4%"
       },
       {
@@ -78,14 +82,14 @@
       {
         "name": "Vitamin K",
         "value": 0.1,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "0%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 350,
+        "value": 350.0,
         "unit": "mg",
         "rdi": "7%"
       },
@@ -103,19 +107,19 @@
       },
       {
         "name": "Phosphorus",
-        "value": 46,
+        "value": 46.0,
         "unit": "mg",
         "rdi": "4%"
       },
       {
         "name": "Magnesium",
-        "value": 19,
+        "value": 19.0,
         "unit": "mg",
         "rdi": "5%"
       },
       {
         "name": "Calcium",
-        "value": 24,
+        "value": 24.0,
         "unit": "mg",
         "rdi": "2%"
       },

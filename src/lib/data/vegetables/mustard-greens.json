@@ -25,40 +25,44 @@
       {
         "name": "Protein",
         "value": 2.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 4.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 257.5,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "322%"
       },
       {
         "name": "Vitamin A",
-        "value": 187,
-        "unit": "µg RAE",
+        "value": 187.0,
+        "unit": "\u00b5g RAE",
         "rdi": "21%"
       },
       {
         "name": "Vitamin C",
-        "value": 70,
+        "value": 70.0,
         "unit": "mg",
         "rdi": "117%"
       }
@@ -66,7 +70,7 @@
     "minerals": [
       {
         "name": "Calcium",
-        "value": 115,
+        "value": 115.0,
         "unit": "mg",
         "rdi": "12%"
       },
@@ -119,7 +123,7 @@
       "steps": [
         "Wash greens thoroughly. Pressure cook mustard greens, spinach, and bathua with a little water and salt for 4-5 whistles or until very soft. Alternatively, boil until tender.",
         "Let cool slightly, then blend the cooked greens to a coarse or smooth paste.",
-        "In a separate pan, heat some ghee or oil. Add chopped onion, sauté until golden. Add ginger, garlic, and green chilies. Sauté.",
+        "In a separate pan, heat some ghee or oil. Add chopped onion, saut\u00e9 until golden. Add ginger, garlic, and green chilies. Saut\u00e9.",
         "Add the blended greens paste. Stir in cornmeal/besan mixed with a little water. Cook for 10-15 minutes, stirring, until thickened and flavors meld. Add more water if too thick.",
         "Tempering: Heat ghee in a small pan. Add cumin seeds, asafoetida, and dried red chili. Pour over the saag. Serve hot."
       ]
@@ -158,8 +162,8 @@
         "Salt to taste"
       ],
       "steps": [
-        "Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add sliced onion and sauté until translucent.",
-        "Add diced potatoes and turmeric powder. Sauté for 5 minutes.",
+        "Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add sliced onion and saut\u00e9 until translucent.",
+        "Add diced potatoes and turmeric powder. Saut\u00e9 for 5 minutes.",
         "Add chopped mustard greens and salt. Mix well.",
         "Cover and cook on low-medium heat for 10-15 minutes, or until potatoes and greens are tender, stirring occasionally.",
         "Uncover and cook for a few more minutes if there's excess moisture. Serve hot."

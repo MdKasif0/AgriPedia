@@ -56,7 +56,7 @@
     "vitamins": [
       {
         "name": "Vitamin A",
-        "value": 76,
+        "value": 76.0,
         "unit": "µg",
         "rdi": "8%"
       },
@@ -68,13 +68,13 @@
       },
       {
         "name": "Vitamin C",
-        "value": 1,
+        "value": 1.0,
         "unit": "mg",
         "rdi": "1%"
       },
       {
         "name": "Folate (B9)",
-        "value": 14,
+        "value": 14.0,
         "unit": "µg",
         "rdi": "4%"
       }
@@ -82,15 +82,15 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 266,
+        "value": 266.0,
         "unit": "mg",
-        "rdi": "6%" 
+        "rdi": "6%"
       },
       {
         "name": "Manganese",
         "value": 0.148,
         "unit": "mg",
-        "rdi": "7%" 
+        "rdi": "7%"
       },
       {
         "name": "Iron",
@@ -100,19 +100,19 @@
       },
       {
         "name": "Magnesium",
-        "value": 13,
+        "value": 13.0,
         "unit": "mg",
         "rdi": "3%"
       },
       {
         "name": "Phosphorus",
-        "value": 27,
+        "value": 27.0,
         "unit": "mg",
         "rdi": "2%"
       },
       {
         "name": "Calcium",
-        "value": 16,
+        "value": 16.0,
         "unit": "mg",
         "rdi": "1%"
       }

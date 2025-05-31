@@ -27,36 +27,40 @@
       {
         "name": "Protein",
         "value": 0.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
         "value": 16.4,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "20%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 147,
+        "value": 147.0,
         "unit": "mg",
         "rdi": "4%"
       }

@@ -22,43 +22,47 @@
       {
         "name": "Protein",
         "value": 1.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 7,
-        "unit": "g"
+        "value": 7.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 20,
+        "value": 20.0,
         "unit": "mg",
         "rdi": "33%"
       },
       {
         "name": "Vitamin K",
-        "value": 180,
-        "unit": "µg",
+        "value": 180.0,
+        "unit": "\u00b5g",
         "rdi": "225%"
       }
     ],
     "minerals": [
       {
         "name": "Folate",
-        "value": 60,
-        "unit": "µg",
+        "value": 60.0,
+        "unit": "\u00b5g",
         "rdi": "15%"
       }
     ]
@@ -115,8 +119,8 @@
       "steps": [
         "Wash green garlic thoroughly. Trim root ends and any tough outer layers. Chop, keeping white/light green parts separate from darker green tops.",
         "Heat olive oil or melt butter in a skillet over medium heat.",
-        "Add the white and light green parts of the green garlic. Sauté for 2-3 minutes until softened and fragrant.",
-        "Add the chopped dark green tops and sauté for another 1-2 minutes until wilted.",
+        "Add the white and light green parts of the green garlic. Saut\u00e9 for 2-3 minutes until softened and fragrant.",
+        "Add the chopped dark green tops and saut\u00e9 for another 1-2 minutes until wilted.",
         "Season with salt and pepper.",
         "Serve as a side, or use as a topping for eggs, potatoes, or grilled meats."
       ]

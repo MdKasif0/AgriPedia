@@ -27,29 +27,33 @@
       {
         "name": "Protein",
         "value": 1.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 5.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin K",
-        "value": 76,
-        "unit": "µg",
+        "value": 76.0,
+        "unit": "\u00b5g",
         "rdi": "95%"
       },
       {
@@ -62,8 +66,8 @@
     "minerals": [
       {
         "name": "Folate",
-        "value": 43,
-        "unit": "µg",
+        "value": 43.0,
+        "unit": "\u00b5g",
         "rdi": "11%"
       }
     ]
@@ -115,7 +119,7 @@
       ]
     },
     {
-      "name": "Sautéed Cabbage with Bacon",
+      "name": "Saut\u00e9ed Cabbage with Bacon",
       "description": "A flavorful and savory side dish.",
       "ingredients": [
         "4 slices bacon, chopped",

@@ -27,30 +27,34 @@
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 1,
-        "unit": "g"
+        "value": 1.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 6,
-        "unit": "g"
+        "value": 6.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 3,
-        "unit": "g"
+        "value": 3.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Folate",
-        "value": 22,
-        "unit": "µg",
+        "value": 22.0,
+        "unit": "\u00b5g",
         "rdi": "5%"
       }
     ],
@@ -63,7 +67,7 @@
       },
       {
         "name": "Potassium",
-        "value": 229,
+        "value": 229.0,
         "unit": "mg",
         "rdi": "7%"
       }
@@ -116,8 +120,8 @@
       "steps": [
         "Roast the eggplant directly over a gas flame (or under a broiler, or bake at 400°F until very soft), turning occasionally, until the skin is charred and blistered and the flesh is soft. Let cool slightly.",
         "Peel off the charred skin, mash the eggplant pulp. Set aside.",
-        "Heat oil in a pan. Add cumin seeds; when they splutter, add chopped onion and sauté until golden brown.",
-        "Add ginger, garlic, and green chilies. Sauté for a minute.",
+        "Heat oil in a pan. Add cumin seeds; when they splutter, add chopped onion and saut\u00e9 until golden brown.",
+        "Add ginger, garlic, and green chilies. Saut\u00e9 for a minute.",
         "Add chopped tomatoes and cook until softened and oil starts to separate.",
         "Add turmeric powder, coriander powder, and salt. Mix well.",
         "Add the mashed eggplant. Cook, stirring, for 5-7 minutes until well combined and heated through.",

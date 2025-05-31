@@ -26,28 +26,32 @@
       {
         "name": "Protein",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 3,
-        "unit": "g"
+        "value": 3.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 13,
+        "value": 13.0,
         "unit": "mg",
         "rdi": "22%"
       }
@@ -55,7 +59,7 @@
     "minerals": [
       {
         "name": "Calcium",
-        "value": 19,
+        "value": 19.0,
         "unit": "mg",
         "rdi": "2%"
       }

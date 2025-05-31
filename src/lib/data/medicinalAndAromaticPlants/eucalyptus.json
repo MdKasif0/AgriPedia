@@ -5,16 +5,46 @@
   "image": "https://images.unsplash.com/photo-1553001634-76f84082ab93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Eucalyptus is a diverse genus of flowering trees and shrubs (including some mallees) in the myrtle family, Myrtaceae. Members of the genus dominate the tree flora of Australia. Eucalyptus oil, extracted from the leaves, is widely used for its medicinal properties, particularly for respiratory ailments, and its aromatic qualities.",
   "origin": "Australia, Tasmania, and nearby islands.",
-  "localNames": ["Safeda (Hindi)", "Yūkari (Japanese)", "Eucalipto (Spanish/Italian)", "Eucalyptus (French/German)"],
-  "regions": ["Australia (native)", "Cultivated globally in temperate, subtropical, and tropical regions, including China, India, Brazil, South Africa, Spain, Portugal, USA (California)."],
-  "seasons": ["Evergreen trees/shrubs. Leaves for oil distillation are typically harvested year-round or during specific periods to optimize oil yield and composition."],
+  "localNames": [
+    "Safeda (Hindi)",
+    "Y\u016bkari (Japanese)",
+    "Eucalipto (Spanish/Italian)",
+    "Eucalyptus (French/German)"
+  ],
+  "regions": [
+    "Australia (native)",
+    "Cultivated globally in temperate, subtropical, and tropical regions, including China, India, Brazil, South Africa, Spain, Portugal, USA (California)."
+  ],
+  "seasons": [
+    "Evergreen trees/shrubs. Leaves for oil distillation are typically harvested year-round or during specific periods to optimize oil yield and composition."
+  ],
   "nutrition": {
     "calories": "Not consumed as food. Essential oil is for aromatic and medicinal use only, not ingestion in quantity.",
     "macronutrients": [
-      { "name": "Protein", "value": "N/A", "unit": "" },
-      { "name": "Carbohydrates", "value": "N/A", "unit": "" },
-      { "name": "Fat", "value": "N/A", "unit": "" },
-      { "name": "Fiber", "value": "N/A", "unit": "" }
+      {
+        "name": "Protein",
+        "value": 0.0,
+        "unit": "",
+        "rdi": ""
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 0.0,
+        "unit": "",
+        "rdi": ""
+      },
+      {
+        "name": "Fat",
+        "value": 0.0,
+        "unit": "",
+        "rdi": ""
+      },
+      {
+        "name": "Fiber",
+        "value": 0.0,
+        "unit": "",
+        "rdi": ""
+      }
     ],
     "vitamins": [],
     "minerals": []
@@ -41,10 +71,16 @@
     "Choose species appropriate for the local climate to avoid invasive behavior."
   ],
   "carbonFootprintInfo": "Eucalyptus plantations can be efficient at carbon sequestration. However, the overall carbon footprint depends on land management practices, processing of oil or timber, and transportation. Concerns exist about water use and biodiversity impacts of large-scale monoculture plantations.",
-  "uses": ["essential_oil_production_cineole_eucalyptol_medicinal_industrial_perfumery", "traditional_medicine_respiratory_ailments_antiseptic", "timber_pulpwood_biomass_fuelwood", "ornamental_trees_windbreaks", "honey_production_nectar_source_for_bees"],
+  "uses": [
+    "essential_oil_production_cineole_eucalyptol_medicinal_industrial_perfumery",
+    "traditional_medicine_respiratory_ailments_antiseptic",
+    "timber_pulpwood_biomass_fuelwood",
+    "ornamental_trees_windbreaks",
+    "honey_production_nectar_source_for_bees"
+  ],
   "originAndDomesticationHistory": "Eucalyptus is native to Australia, where it forms the dominant component of most forests. Aboriginal Australians have used various parts of eucalyptus trees for medicinal and practical purposes for thousands of years. Commercial exploitation for timber and essential oil began with European colonization. Many species have been introduced globally for forestry and ornamental use since the 18th and 19th centuries.",
   "climaticRequirements": {
-    "temperature": "Highly variable by species. Many are adapted to warm temperate, subtropical, or tropical climates (15-35°C). Some species tolerate frost (e.g., Eucalyptus gunnii), while others are frost-sensitive.",
+    "temperature": "Highly variable by species. Many are adapted to warm temperate, subtropical, or tropical climates (15-35\u00b0C). Some species tolerate frost (e.g., Eucalyptus gunnii), while others are frost-sensitive.",
     "rainfall": "Variable by species. Some are adapted to arid conditions (250mm/year), while others prefer high rainfall (1500mm+/year). Many commercially important species are drought-tolerant once established.",
     "altitude": "Found from sea level to high alpine regions in Australia. Cultivated species have specific altitude preferences based on their origin."
   },
@@ -53,6 +89,16 @@
   "plantingAndHarvestCycles": "Typically propagated from seeds, often requiring pre-treatment. Seedlings are raised in nurseries and then outplanted. For essential oil, leaves are harvested from mature trees or from coppiced regrowth. Harvesting can occur multiple times a year or annually, depending on the species and management system.",
   "pestAndDiseaseManagement": "Susceptible to various pests and diseases, which can vary by region and species. Insect pests include eucalyptus longhorned borers, psyllids, and leaf-eating beetles. Fungal diseases like Mycosphaerella leaf disease and various cankers can be significant. Integrated pest and disease management is crucial in plantations.",
   "postHarvestHandling": "For essential oil, harvested leaves and terminal branchlets are typically steam distilled. The oil is then separated from the water phase, filtered, and stored in airtight containers away from light and heat. For timber, logs are processed according to intended use.",
-  "majorProducingCountriesOrRegions": ["Australia (native diversity, some commercial production)", "China", "India", "Brazil", "South Africa", "Spain", "Portugal", "Chile (mainly for pulp and timber)", "Global cultivation for essential oil in many countries."],
+  "majorProducingCountriesOrRegions": [
+    "Australia (native diversity, some commercial production)",
+    "China",
+    "India",
+    "Brazil",
+    "South Africa",
+    "Spain",
+    "Portugal",
+    "Chile (mainly for pulp and timber)",
+    "Global cultivation for essential oil in many countries."
+  ],
   "marketValueAndGlobalDemand": "Eucalyptus oil is a significant global commodity with high demand for its medicinal uses (especially cineole-rich oils for respiratory products), as a flavoring agent, in fragrances, and as an industrial solvent. Eucalyptus wood for pulp, paper, timber, and biomass is also a major global market. Demand for eucalyptus products is consistently strong."
 }

@@ -28,28 +28,32 @@
       {
         "name": "Protein",
         "value": 2.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 8.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 141,
+        "value": 141.0,
         "unit": "mg",
         "rdi": "235%"
       }
@@ -57,7 +61,7 @@
     "minerals": [
       {
         "name": "Calcium",
-        "value": 30,
+        "value": 30.0,
         "unit": "mg",
         "rdi": "3%"
       },
@@ -107,9 +111,9 @@
       ],
       "steps": [
         "In a pot, cook drumstick pieces with some water, turmeric powder, and salt until tender but not mushy. Set aside.",
-        "Heat oil in a pan for tempering. Add mustard seeds; when they splutter, add fenugreek seeds, dried red chilies, asafoetida, and curry leaves. Sauté.",
-        "Add chopped onion and sauté until translucent. Add chopped tomato and cook until soft.",
-        "Add sambar powder and sauté for a minute. Add tamarind pulp and cook for 2-3 minutes.",
+        "Heat oil in a pan for tempering. Add mustard seeds; when they splutter, add fenugreek seeds, dried red chilies, asafoetida, and curry leaves. Saut\u00e9.",
+        "Add chopped onion and saut\u00e9 until translucent. Add chopped tomato and cook until soft.",
+        "Add sambar powder and saut\u00e9 for a minute. Add tamarind pulp and cook for 2-3 minutes.",
         "Add cooked toor dal, cooked drumstick pieces (with their cooking water), and salt to taste. Mix well. Add more water if needed to reach desired consistency.",
         "Simmer for 10-15 minutes, allowing flavors to blend. Serve hot with rice, idli, or dosa."
       ]
@@ -126,11 +130,11 @@
         "Pinch of asafoetida",
         "1 small onion, finely chopped (optional)",
         "Salt to taste",
-        "2 tbsp grated fresh coconut (optional)"
+        "2-3 tbsp grated fresh coconut (optional)"
       ],
       "steps": [
-        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
-        "Add asafoetida and chopped onion (if using). Sauté until onion is translucent.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Saut\u00e9 until dal turns golden.",
+        "Add asafoetida and chopped onion (if using). Saut\u00e9 until onion is translucent.",
         "Add washed moringa leaves and salt. Stir well.",
         "Cover and cook on low-medium heat for 5-7 minutes, or until leaves are wilted and tender, stirring occasionally.",
         "If using, stir in grated coconut. Cook for another minute.",
@@ -155,11 +159,11 @@
         "1/2 cup water"
       ],
       "steps": [
-        "Heat oil in a pan or pressure cooker. Add onion puree and sauté until golden brown.",
-        "Add ginger-garlic paste and sauté for a minute.",
+        "Heat oil in a pan or pressure cooker. Add onion puree and saut\u00e9 until golden brown.",
+        "Add ginger-garlic paste and saut\u00e9 for a minute.",
         "Add tomato puree and cook until oil starts to separate.",
         "Add turmeric powder, coriander powder, cumin powder, chili powder, and salt. Mix well and cook for a minute.",
-        "Add drumstick pieces and cubed potatoes. Sauté for 2-3 minutes, coating them with the masala.",
+        "Add drumstick pieces and cubed potatoes. Saut\u00e9 for 2-3 minutes, coating them with the masala.",
         "Add 1/2 cup of water. If using a pressure cooker, cook for 1-2 whistles. If in a pan, cover and simmer for 15-20 minutes or until vegetables are tender.",
         "Garnish with fresh cilantro. Serve hot with roti or rice."
       ]

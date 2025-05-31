@@ -7,9 +7,9 @@
   "origin": "Native to a wide region across Asia (from India through Southeast Asia to East Asia) and parts of northern and eastern Australia.",
   "localNames": [
     "Kamal Kakdi (Hindi)",
-    "Renkon (蓮根 - Japanese)",
-    "Yeon-geun (연근 - Korean)",
-    "Lián-ǒu (蓮藕 - Chinese)",
+    "Renkon (\u84ee\u6839 - Japanese)",
+    "Yeon-geun (\uc5f0\uadfc - Korean)",
+    "Li\u00e1n-\u01d2u (\u84ee\u85d5 - Chinese)",
     "Bhasin / Bhein (Punjabi)",
     "Nadru (Kashmiri)"
   ],
@@ -33,22 +33,26 @@
       {
         "name": "Protein",
         "value": 1.58,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 16.02,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.07,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 3.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -72,14 +76,14 @@
       },
       {
         "name": "Folate (B9)",
-        "value": 8,
-        "unit": "µg",
+        "value": 8.0,
+        "unit": "\u00b5g",
         "rdi": "2%"
       },
       {
         "name": "Vitamin K",
         "value": 0.4,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "0%"
       }
     ],
@@ -92,13 +96,13 @@
       },
       {
         "name": "Potassium",
-        "value": 363,
+        "value": 363.0,
         "unit": "mg",
         "rdi": "8%"
       },
       {
         "name": "Phosphorus",
-        "value": 78,
+        "value": 78.0,
         "unit": "mg",
         "rdi": "6%"
       },

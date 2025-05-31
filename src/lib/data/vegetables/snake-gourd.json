@@ -26,23 +26,27 @@
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 2,
-        "unit": "g"
+        "value": 2.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.3,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,7 +60,7 @@
     "minerals": [
       {
         "name": "Calcium",
-        "value": 51,
+        "value": 51.0,
         "unit": "mg",
         "rdi": "5%"
       }
@@ -115,7 +119,7 @@
       ],
       "steps": [
         "Wash and lightly scrape the snake gourd. Cut into 2-3 inch long pieces. Gently scoop out the inner pith and seeds, creating hollow cylinders.",
-        "Stuffing: Heat oil, sauté onions. Add ginger-garlic paste. Add mashed dal and all spice powders. Cook until mixture is dry. Cool.",
+        "Stuffing: Heat oil, saut\u00e9 onions. Add ginger-garlic paste. Add mashed dal and all spice powders. Cook until mixture is dry. Cool.",
         "Stuff the snake gourd pieces with the prepared mixture.",
         "Heat oil in a wide pan. Arrange stuffed snake gourd pieces. Cook on low-medium heat, covered, turning occasionally, until tender and lightly browned (about 15-20 mins). Add a splash of water if needed to prevent sticking."
       ]
@@ -135,7 +139,7 @@
         "2 tbsp grated fresh coconut"
       ],
       "steps": [
-        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and red chilies. Sauté until dal turns golden.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and red chilies. Saut\u00e9 until dal turns golden.",
         "Add asafoetida and chopped snake gourd. Add turmeric powder and salt.",
         "Stir well. Cover and cook on low-medium heat for 7-10 minutes, or until snake gourd is tender, stirring occasionally.",
         "Stir in grated coconut. Cook for another minute. Serve hot with rice and sambar/rasam."

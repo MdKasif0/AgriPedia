@@ -40,7 +40,7 @@
       },
       {
         "name": "Fiber",
-        "value": 3,
+        "value": 3.0,
         "unit": "g"
       }
     ],
@@ -67,7 +67,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 312,
+        "value": 312.0,
         "unit": "mg",
         "rdi": "9%"
       }

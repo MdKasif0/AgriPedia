@@ -228,6 +228,13 @@ export interface Recipe {
   ingredients: string[];
   steps: string[];
 }
+
+interface CompanionPlants {
+  good: string[];
+  bad: string[];
+  notes?: string;
+}
+
 export interface ProduceInfo {
   id: string;
   commonName: string;
@@ -254,6 +261,7 @@ export interface ProduceInfo {
   growthDuration: string;
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
+  companionPlants?: CompanionPlants; // New field
   staticRecipes?: Recipe[];
 }
 

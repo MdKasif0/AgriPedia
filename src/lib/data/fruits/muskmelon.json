@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 0.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 8.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -54,15 +58,15 @@
       },
       {
         "name": "Vitamin A (from Beta-carotene)",
-        "value": 169,
-        "unit": "µg RAE",
+        "value": 169.0,
+        "unit": "\u00b5g RAE",
         "rdi": "19%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 267,
+        "value": 267.0,
         "unit": "mg",
         "rdi": "8%"
       }

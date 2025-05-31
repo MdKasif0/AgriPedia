@@ -63,13 +63,13 @@
       },
       {
         "name": "Magnesium",
-        "value": 15,
+        "value": 15.0,
         "unit": "mg",
         "rdi": "4%"
       },
       {
         "name": "Potassium",
-        "value": 79,
+        "value": 79.0,
         "unit": "mg",
         "rdi": "2%"
       }

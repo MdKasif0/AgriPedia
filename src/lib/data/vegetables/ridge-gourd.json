@@ -27,28 +27,32 @@
       {
         "name": "Protein",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 4.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 2,
-        "unit": "g"
+        "value": 2.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 12,
+        "value": 12.0,
         "unit": "mg",
         "rdi": "20%"
       }
@@ -56,7 +60,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 453,
+        "value": 453.0,
         "unit": "mg",
         "rdi": "13%"
       }
@@ -101,8 +105,8 @@
       ],
       "steps": [
         "Pressure cook soaked chana dal with water until soft. Set aside.",
-        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden.",
-        "Add ginger-garlic paste, sauté for a minute. Add chopped tomato and cook until soft.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and saut\u00e9 until golden.",
+        "Add ginger-garlic paste, saut\u00e9 for a minute. Add chopped tomato and cook until soft.",
         "Add turmeric powder, coriander powder, and salt. Mix.",
         "Add chopped ridge gourd and cooked chana dal (with its water). Mix well.",
         "Cover and simmer for 10-15 minutes, or until ridge gourd is tender. Garnish with cilantro. Serve hot."
@@ -123,7 +127,7 @@
       ],
       "steps": [
         "Heat oil in a pan. Add mustard seeds. When they splutter, add dried red chilies and asafoetida.",
-        "Add sliced ridge gourd and turmeric powder. Sauté for 2-3 minutes.",
+        "Add sliced ridge gourd and turmeric powder. Saut\u00e9 for 2-3 minutes.",
         "Add salt. Cover and cook on low-medium heat for 7-10 minutes, or until tender, stirring occasionally. Do not overcook.",
         "If using, stir in grated coconut before serving. Serve hot with roti or rice."
       ]
@@ -143,9 +147,9 @@
       ],
       "steps": [
         "Wash ridge gourd peels thoroughly. Chop them roughly.",
-        "Heat 1 tbsp oil in a pan. Add chana dal, urad dal, and dried red chilies. Sauté until dals are golden and chilies are crisp. Remove and set aside.",
-        "In the same pan, add chopped ridge gourd peels and sauté for 5-7 minutes until they soften and shrink. Let cool.",
-        "Grind the sautéed peels, roasted dal-chili mixture, tamarind, and salt to a coarse or smooth paste, adding a little water if needed.",
+        "Heat 1 tbsp oil in a pan. Add chana dal, urad dal, and dried red chilies. Saut\u00e9 until dals are golden and chilies are crisp. Remove and set aside.",
+        "In the same pan, add chopped ridge gourd peels and saut\u00e9 for 5-7 minutes until they soften and shrink. Let cool.",
+        "Grind the saut\u00e9ed peels, roasted dal-chili mixture, tamarind, and salt to a coarse or smooth paste, adding a little water if needed.",
         "Tempering: Heat 1/2 tsp oil. Add mustard seeds. When they splutter, add asafoetida. Pour over the chutney. Mix well. Serve with rice or idli/dosa."
       ]
     }

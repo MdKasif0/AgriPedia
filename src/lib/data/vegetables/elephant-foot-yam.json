@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 1.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 27.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,7 +60,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 816,
+        "value": 816.0,
         "unit": "mg",
         "rdi": "23%"
       },
@@ -109,8 +113,8 @@
       "steps": [
         "Precautions: Wear gloves or oil hands while cutting suran to avoid itching. Soak cubed suran in water with lemon juice or tamarind pulp for 30 minutes. Drain.",
         "Boil or pressure cook the soaked suran pieces until tender but firm. Drain and set aside.",
-        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden brown.",
-        "Add ginger-garlic paste and sauté for a minute.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and saut\u00e9 until golden brown.",
+        "Add ginger-garlic paste and saut\u00e9 for a minute.",
         "Add chopped tomatoes and cook until softened and oil separates.",
         "Add turmeric powder, coriander powder, salt. Mix well.",
         "Add cooked suran pieces. Stir gently to coat with masala. Add a little water if needed.",

@@ -8,7 +8,7 @@
   "localNames": [
     "Calabaza (Spanish)",
     "Citrouille (French)",
-    "Kürbis (German)",
+    "K\u00fcrbis (German)",
     "Kaddu (Hindi)"
   ],
   "regions": [
@@ -27,35 +27,39 @@
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 1,
-        "unit": "g"
+        "value": 1.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 6.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin A (from Beta-carotene)",
-        "value": 426,
-        "unit": "µg RAE",
+        "value": 426.0,
+        "unit": "\u00b5g RAE",
         "rdi": "47%"
       },
       {
         "name": "Vitamin C",
-        "value": 9,
+        "value": 9.0,
         "unit": "mg",
         "rdi": "15%"
       }
@@ -63,7 +67,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 340,
+        "value": 340.0,
         "unit": "mg",
         "rdi": "10%"
       }
@@ -107,12 +111,12 @@
         "1 (9-inch) unbaked pie crust"
       ],
       "steps": [
-        "Preheat oven to 425°F (220°C).",
+        "Preheat oven to 425\u00b0F (220\u00b0C).",
         "In a large bowl, whisk together pumpkin puree, sweetened condensed milk, and eggs.",
         "Stir in cinnamon, ginger, nutmeg, cloves, and salt until well combined.",
         "Pour the pumpkin mixture into the unbaked pie crust.",
-        "Bake at 425°F (220°C) for 15 minutes.",
-        "Reduce oven temperature to 350°F (175°C) and continue baking for 35-40 minutes, or until a knife inserted near the center comes out clean.",
+        "Bake at 425\u00b0F (220\u00b0C) for 15 minutes.",
+        "Reduce oven temperature to 350\u00b0F (175\u00b0C) and continue baking for 35-40 minutes, or until a knife inserted near the center comes out clean.",
         "Let cool completely on a wire rack for at least 2 hours before slicing and serving. Serve chilled or at room temperature with whipped cream if desired."
       ]
     },
@@ -126,7 +130,7 @@
         "Optional seasonings: garlic powder, paprika, cayenne pepper"
       ],
       "steps": [
-        "Preheat oven to 300°F (150°C).",
+        "Preheat oven to 300\u00b0F (150\u00b0C).",
         "Rinse pumpkin seeds thoroughly to remove all pulp and strings. Pat them very dry with paper towels (this is important for crispiness).",
         "In a bowl, toss the dry seeds with olive oil/butter and salt. Add optional seasonings if desired.",
         "Spread the seeds in a single layer on a baking sheet.",

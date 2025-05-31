@@ -5,26 +5,91 @@
   "image": "https://images.unsplash.com/photo-1600801037770-75a879df4810?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Flax, also known as common flax or linseed, is a flowering plant in the family Linaceae. It is cultivated as a food and fiber crop in regions of the world with temperate climates. Flax seeds are rich in oil (linseed oil) and lignans. Flax fibers are used to make linen.",
   "origin": "Fertile Crescent (Near East).",
-  "localNames": ["Alsi (Hindi)", "Ama (Japanese - for linen/flax fiber)", "Lino / Linaza (Spanish)", "Lin (French)"],
-  "regions": ["Canada (leading producer)", "Kazakhstan", "China", "Russia", "India", "United States", "European Union"],
-  "seasons": ["Cool-season annual; typically planted in early spring and harvested in late summer."],
+  "localNames": [
+    "Alsi (Hindi)",
+    "Ama (Japanese - for linen/flax fiber)",
+    "Lino / Linaza (Spanish)",
+    "Lin (French)"
+  ],
+  "regions": [
+    "Canada (leading producer)",
+    "Kazakhstan",
+    "China",
+    "Russia",
+    "India",
+    "United States",
+    "European Union"
+  ],
+  "seasons": [
+    "Cool-season annual; typically planted in early spring and harvested in late summer."
+  ],
   "nutrition": {
     "calories": "Flaxseeds: 534 kcal per 100g. Linseed Oil: 884 kcal per 100g.",
     "macronutrients": [
-      { "name": "Protein", "unit": "g", "value": "Seeds: 18.3" },
-      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: 28.9 (Fiber 27.3)" },
-      { "name": "Fat", "unit": "g", "value": "Seeds: 42.2 (Oil: 100)" }
+      {
+        "name": "Protein",
+        "unit": "g",
+        "value": 18.3,
+        "rdi": ""
+      },
+      {
+        "name": "Carbohydrates",
+        "unit": "g",
+        "value": 28.9,
+        "rdi": ""
+      },
+      {
+        "name": "Fat",
+        "unit": "g",
+        "value": 42.2,
+        "rdi": ""
+      }
     ],
     "vitamins": [
-      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: 1.644 (137%)" },
-      { "name": "Vitamin B6", "unit": "mg", "rdi": "Seeds: 0.473 (36%)" },
-      { "name": "Folate (B9)", "unit": "µg", "rdi": "Seeds: 87 (22%)" }
+      {
+        "name": "Thiamin (B1)",
+        "unit": "mg",
+        "rdi": "137%",
+        "value": 1.644
+      },
+      {
+        "name": "Vitamin B6",
+        "unit": "mg",
+        "rdi": "36%",
+        "value": 0.473
+      },
+      {
+        "name": "Folate (B9)",
+        "unit": "\u00b5g",
+        "rdi": "22%",
+        "value": 87.0
+      }
     ],
     "minerals": [
-      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: 392 (93%)" },
-      { "name": "Phosphorus", "unit": "mg", "rdi": "Seeds: 642 (92%)" },
-      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: 2.482 (108%)" },
-      { "name": "Copper", "unit": "mg", "rdi": "Seeds: 1.22 (136%)" }
+      {
+        "name": "Magnesium",
+        "unit": "mg",
+        "rdi": "93%",
+        "value": 392.0
+      },
+      {
+        "name": "Phosphorus",
+        "unit": "mg",
+        "rdi": "92%",
+        "value": 642.0
+      },
+      {
+        "name": "Manganese",
+        "unit": "mg",
+        "rdi": "108%",
+        "value": 2.482
+      },
+      {
+        "name": "Copper",
+        "unit": "mg",
+        "rdi": "136%",
+        "value": 1.22
+      }
     ]
   },
   "healthBenefits": [
@@ -54,10 +119,15 @@
     "Flax straw (from fiber varieties) has various industrial uses, reducing waste."
   ],
   "carbonFootprintInfo": "The carbon footprint of flax products is influenced by farming practices, processing (oil extraction, fiber processing), and transportation. Organic flax has a lower footprint.",
-  "uses": ["oil_production_linseed_oil_for_paints_varnishes_linoleum_edible_oil_supplements", "food_seeds_whole_ground_meal_bakery_cereals_smoothies", "fiber_production_linen_fabric_textiles_paper_insulation", "animal_feed_linseed_meal"],
+  "uses": [
+    "oil_production_linseed_oil_for_paints_varnishes_linoleum_edible_oil_supplements",
+    "food_seeds_whole_ground_meal_bakery_cereals_smoothies",
+    "fiber_production_linen_fabric_textiles_paper_insulation",
+    "animal_feed_linseed_meal"
+  ],
   "originAndDomesticationHistory": "Flax (Linum usitatissimum) is one of the oldest cultivated crops, domesticated in the Fertile Crescent region (Near East) around 7,000-8,000 BCE. It was cultivated by ancient Egyptians (for linen and oil), Greeks, and Romans. Its use for both fiber (linen) and oil (linseed) has a long history.",
   "climaticRequirements": {
-    "temperature": "Cool-season crop. Optimal growing temperatures are 10-20°C. Tolerates light frost during early growth stages. High temperatures during flowering can reduce yield and oil quality.",
+    "temperature": "Cool-season crop. Optimal growing temperatures are 10-20\u00b0C. Tolerates light frost during early growth stages. High temperatures during flowering can reduce yield and oil quality.",
     "rainfall": "Requires moderate rainfall, around 400-750mm during the growing season, well-distributed. Adequate moisture is crucial during germination, flowering, and seed development.",
     "altitude": "Adaptable to various altitudes, primarily grown in temperate regions."
   },
@@ -66,6 +136,14 @@
   "plantingAndHarvestCycles": "Seeds are sown in early spring. Planted shallowly. For oilseed flax, plants are harvested when bolls (seed capsules) are mature and brown, and seeds rattle within. Plants are typically cut and swathed to dry before combining, or direct combined.",
   "pestAndDiseaseManagement": "Pests include flax bollworm, cutworms, and aphids. Diseases include rust, pasmo, and Fusarium wilt. Integrated pest management involves crop rotation, resistant varieties, seed treatments, and chemical controls when necessary.",
   "postHarvestHandling": "Harvested flax seeds are cleaned and dried to a moisture content of around 8-10% for safe storage. Seeds are then processed for oil extraction (linseed oil) or sold as whole/ground flaxseed for food consumption. The remaining meal after oil extraction is used for animal feed.",
-  "majorProducingCountriesOrRegions": ["Canada (leading global producer and exporter)", "Kazakhstan", "China", "Russia", "India", "United States (North Dakota)", "European Union (France, UK, Belgium for fiber flax)"],
+  "majorProducingCountriesOrRegions": [
+    "Canada (leading global producer and exporter)",
+    "Kazakhstan",
+    "China",
+    "Russia",
+    "India",
+    "United States (North Dakota)",
+    "European Union (France, UK, Belgium for fiber flax)"
+  ],
   "marketValueAndGlobalDemand": "Flaxseed has a growing global market, driven by demand for its nutritional benefits (omega-3s, fiber, lignans) in human food products and dietary supplements. Linseed oil is widely used in industrial applications (paints, varnishes, linoleum) and as an edible oil. Flax fiber for linen production also has a stable market."
 }

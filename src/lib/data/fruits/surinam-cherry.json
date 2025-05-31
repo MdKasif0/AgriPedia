@@ -9,8 +9,8 @@
     "Pitanga (Brazil, and widely used)",
     "Brazilian Cherry (English)",
     "Cayenne Cherry (English)",
-    "Ñangapirí (Guarani)",
-    "Cerise Carrée (French Caribbean)"
+    "\u00d1angapir\u00ed (Guarani)",
+    "Cerise Carr\u00e9e (French Caribbean)"
   ],
   "regions": [
     "South America (Brazil, Suriname, French Guiana, Uruguay, Paraguay, Argentina)",
@@ -28,22 +28,26 @@
       {
         "name": "Protein",
         "value": 0.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 7.49,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 0.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -56,7 +60,7 @@
       {
         "name": "Vitamin A",
         "value": 75,
-        "unit": "µg",
+        "unit": "\u00b5g",
         "rdi": "8%"
       },
       {
@@ -83,7 +87,7 @@
         "name": "Potassium",
         "value": 103,
         "unit": "mg",
-        "rdi": "2%" 
+        "rdi": "2%"
       },
       {
         "name": "Calcium",
@@ -146,7 +150,7 @@
         "Add the lemon juice to the fruit and sugar mixture.",
         "Place the saucepan over medium-low heat. Cook, stirring gently and continuously, until the sugar has completely dissolved. Do not allow the mixture to boil before the sugar is dissolved.",
         "Once the sugar is fully dissolved, increase the heat to medium-high and bring the mixture to a rolling boil (a boil that continues even when you stir).",
-        "Continue to boil rapidly, stirring frequently to prevent sticking, for about 15-25 minutes. The cooking time will vary depending on the ripeness of the fruit and desired thickness. To test for setting point, remove the pan from heat, place a small spoonful of jam onto a chilled saucer (kept in the freezer for a few minutes), let it cool for 30 seconds, then push it with your fingertip. If the surface wrinkles, the jam is set. Alternatively, use a jam thermometer – setting point is 105°C (221°F).",
+        "Continue to boil rapidly, stirring frequently to prevent sticking, for about 15-25 minutes. The cooking time will vary depending on the ripeness of the fruit and desired thickness. To test for setting point, remove the pan from heat, place a small spoonful of jam onto a chilled saucer (kept in the freezer for a few minutes), let it cool for 30 seconds, then push it with your fingertip. If the surface wrinkles, the jam is set. Alternatively, use a jam thermometer \u2013 setting point is 105\u00b0C (221\u00b0F).",
         "Once the setting point is reached, remove the jam from the heat. Skim off any foam (scum) from the surface using a slotted spoon, if desired, for a clearer jam.",
         "Carefully ladle the hot jam into warm, sterilized glass jars, leaving about 1/4 inch (0.5 cm) of headspace at the top.",
         "Wipe the jar rims clean with a damp cloth, place the lids on, and tighten the screw bands securely. Allow the jars to cool completely undisturbed. As the jam cools, you should hear the lids 'pop', indicating a good seal. The jam will thicken further as it cools."

@@ -27,22 +27,26 @@
       {
         "name": "Protein",
         "value": 0.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 3.4,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -54,15 +58,15 @@
       },
       {
         "name": "Folate",
-        "value": 25,
-        "unit": "µg",
+        "value": 25.0,
+        "unit": "\u00b5g",
         "rdi": "6%"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 233,
+        "value": 233.0,
         "unit": "mg",
         "rdi": "7%"
       }
@@ -119,7 +123,7 @@
         "Optional: herbs like thyme or rosemary"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "In a bowl, toss radishes with olive oil, salt, pepper, and any optional herbs until well coated.",
         "Spread radishes in a single layer on a baking sheet.",
         "Roast for 15-20 minutes, or until tender and lightly browned, flipping halfway through.",

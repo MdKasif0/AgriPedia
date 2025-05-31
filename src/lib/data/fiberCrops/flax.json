@@ -5,26 +5,88 @@
   "image": "https://images.unsplash.com/photo-1600801037770-75a879df4810?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "description": "Flax (Linum usitatissimum) is a versatile plant cultivated for its strong, bast fibers, which are used to produce linen textiles, and also for its oil-rich seeds (linseed). As a fiber crop, flax is one of the oldest known, valued for producing cool, absorbent, and durable linen fabrics. Specific varieties are grown optimized for fiber production, typically taller and less branched than oilseed varieties.",
   "origin": "Fertile Crescent (Near East).",
-  "localNames": ["Alsi (Hindi)", "Ama (Japanese - for linen/flax fiber)", "Lino / Linaza (Spanish)", "Lin (French)"],
-  "regions": ["Canada (leading producer)", "Kazakhstan", "China", "Russia", "India", "United States", "European Union"],
-  "seasons": ["Cool-season annual; typically planted in early spring and harvested in late summer."],
+  "localNames": [
+    "Alsi (Hindi)",
+    "Ama (Japanese - for linen/flax fiber)",
+    "Lino / Linaza (Spanish)",
+    "Lin (French)"
+  ],
+  "regions": [
+    "Canada (leading producer)",
+    "Kazakhstan",
+    "China",
+    "Russia",
+    "India",
+    "United States",
+    "European Union"
+  ],
+  "seasons": [
+    "Cool-season annual; typically planted in early spring and harvested in late summer."
+  ],
   "nutrition": {
     "calories": "Flaxseeds: 534 kcal per 100g. Linseed Oil: 884 kcal per 100g.",
     "macronutrients": [
-      { "name": "Protein", "unit": "g", "value": "Seeds: 18.3" },
-      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: 28.9 (Fiber 27.3)" },
-      { "name": "Fat", "unit": "g", "value": "Seeds: 42.2 (Oil: 100)" }
+      {
+        "name": "Protein",
+        "unit": "g",
+        "value": 18.3
+      },
+      {
+        "name": "Carbohydrates",
+        "unit": "g",
+        "value": 28.9
+      },
+      {
+        "name": "Fat",
+        "unit": "g",
+        "value": 42.2
+      }
     ],
     "vitamins": [
-      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: 1.644 (137%)" },
-      { "name": "Vitamin B6", "unit": "mg", "rdi": "Seeds: 0.473 (36%)" },
-      { "name": "Folate (B9)", "unit": "µg", "rdi": "Seeds: 87 (22%)" }
+      {
+        "name": "Thiamin (B1)",
+        "unit": "mg",
+        "rdi": "137%",
+        "value": 1.644
+      },
+      {
+        "name": "Vitamin B6",
+        "unit": "mg",
+        "rdi": "36%",
+        "value": 0.473
+      },
+      {
+        "name": "Folate (B9)",
+        "unit": "µg",
+        "rdi": "22%",
+        "value": 87.0
+      }
     ],
     "minerals": [
-      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: 392 (93%)" },
-      { "name": "Phosphorus", "unit": "mg", "rdi": "Seeds: 642 (92%)" },
-      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: 2.482 (108%)" },
-      { "name": "Copper", "unit": "mg", "rdi": "Seeds: 1.22 (136%)" }
+      {
+        "name": "Magnesium",
+        "unit": "mg",
+        "rdi": "93%",
+        "value": 392.0
+      },
+      {
+        "name": "Phosphorus",
+        "unit": "mg",
+        "rdi": "92%",
+        "value": 642.0
+      },
+      {
+        "name": "Manganese",
+        "unit": "mg",
+        "rdi": "108%",
+        "value": 2.482
+      },
+      {
+        "name": "Copper",
+        "unit": "mg",
+        "rdi": "136%",
+        "value": 1.22
+      }
     ]
   },
   "healthBenefits": [
@@ -55,7 +117,13 @@
     "Retting process can be water-intensive; dew retting is a more sustainable alternative to water retting."
   ],
   "carbonFootprintInfo": "The carbon footprint of linen production is influenced by farming practices, retting methods (water vs. dew retting), energy used in fiber processing (scutching, spinning, weaving), and transportation. Organic and locally processed flax have a lower footprint.",
-  "uses": ["fiber_production_linen_fabric_textiles_clothing_bedding_tablecloths_upholstery", "industrial_fiber_ropes_twine_canvas_paper_banknotes_cigarette_paper_insulation_composites", "oil_production_linseed_oil_secondary_use_from_fiber_varieties_or_dual_purpose", "food_seeds_secondary_use_from_fiber_varieties_or_dual_purpose", "animal_feed_linseed_meal_secondary_use"],
+  "uses": [
+    "fiber_production_linen_fabric_textiles_clothing_bedding_tablecloths_upholstery",
+    "industrial_fiber_ropes_twine_canvas_paper_banknotes_cigarette_paper_insulation_composites",
+    "oil_production_linseed_oil_secondary_use_from_fiber_varieties_or_dual_purpose",
+    "food_seeds_secondary_use_from_fiber_varieties_or_dual_purpose",
+    "animal_feed_linseed_meal_secondary_use"
+  ],
   "originAndDomesticationHistory": "Flax (Linum usitatissimum) is one of the oldest cultivated crops, domesticated in the Fertile Crescent region (Near East) around 7,000-8,000 BCE, primarily for its fiber to produce linen. Ancient Egyptians extensively used linen for clothing, sails, and burial shrouds. Its cultivation for fiber spread throughout Europe and Asia. While oilseed flax also has ancient origins, fiber production was historically dominant.",
   "climaticRequirements": {
     "temperature": "Cool-season crop. Optimal growing temperatures are 10-20°C. Tolerates light frost during early growth stages. High temperatures during flowering can reduce yield and oil quality.",
@@ -67,6 +135,14 @@
   "plantingAndHarvestCycles": "Seeds are sown densely in early spring. Plants grow tall and slender. Harvesting for fiber occurs when the lower part of the stem begins to yellow and seeds are immature (about 30-40 days after flowering). Plants are pulled up by the roots or cut close to the ground to maximize fiber length. Stalks are then dried and undergo retting.",
   "pestAndDiseaseManagement": "Pests include flax flea beetles, cutworms, and armyworms. Diseases such as rust, pasmo, and Fusarium wilt can affect flax. Crop rotation, resistant varieties, and good field sanitation are key management practices for fiber flax.",
   "postHarvestHandling": "After harvesting, flax stalks undergo retting (dew, water, or chemical) to loosen the fibers. Then, processes like breaking/scutching (to remove woody core) and hackling (to comb and separate fibers) prepare the long linen fibers for spinning into yarn. Short fibers (tow) are used for coarser products.",
-  "majorProducingCountriesOrRegions": ["Canada (leading global producer and exporter)", "Kazakhstan", "China", "Russia", "India", "United States (North Dakota)", "European Union (France, UK, Belgium for fiber flax)"],
+  "majorProducingCountriesOrRegions": [
+    "Canada (leading global producer and exporter)",
+    "Kazakhstan",
+    "China",
+    "Russia",
+    "India",
+    "United States (North Dakota)",
+    "European Union (France, UK, Belgium for fiber flax)"
+  ],
   "marketValueAndGlobalDemand": "Flaxseed has a growing global market, driven by demand for its nutritional benefits (omega-3s, fiber, lignans) in human food products and dietary supplements. Linseed oil is widely used in industrial applications (paints, varnishes, linoleum) and as an edible oil. Flax fiber for linen production also has a stable market."
 }

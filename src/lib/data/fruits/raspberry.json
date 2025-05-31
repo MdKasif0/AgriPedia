@@ -26,22 +26,26 @@
       {
         "name": "Protein",
         "value": 1.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 11.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 6.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
@@ -94,13 +98,13 @@
       "description": "A simple and elegant dessert highlighting the natural flavor of raspberries.",
       "ingredients": [
         "1 pint fresh raspberries",
-        "1/4 cup heavy cream or crème fraîche",
+        "1/4 cup heavy cream or cr\u00e8me fra\u00eeche",
         "1-2 tsp powdered sugar (optional)"
       ],
       "steps": [
         "Gently rinse raspberries and pat dry.",
         "Divide raspberries among serving bowls.",
-        "If using powdered sugar, lightly sweeten the heavy cream or crème fraîche.",
+        "If using powdered sugar, lightly sweeten the heavy cream or cr\u00e8me fra\u00eeche.",
         "Drizzle the cream over the raspberries.",
         "Serve immediately."
       ]
@@ -132,7 +136,7 @@
         "For filling: 2 cups fresh or frozen raspberries, 1/4 cup granulated sugar, 1 tbsp cornstarch, 1 tbsp lemon juice"
       ],
       "steps": [
-        "Preheat oven to 375°F (190°C). Grease and flour an 8x8 inch baking pan.",
+        "Preheat oven to 375\u00b0F (190\u00b0C). Grease and flour an 8x8 inch baking pan.",
         "Crust/Crumble: In a medium bowl, combine rolled oats, flour, brown sugar, and cinnamon. Cut in cold butter using a pastry blender or your fingers until the mixture resembles coarse crumbs. Reserve about 1 cup of the crumble mixture for the topping. Press the remaining mixture firmly into the bottom of the prepared pan to form the crust.",
         "Bake the crust for 10 minutes.",
         "Filling: While crust is baking, combine raspberries, granulated sugar, cornstarch, and lemon juice in a saucepan. Cook over medium heat, stirring frequently, until the mixture thickens and raspberries start to break down (about 5-7 minutes).",

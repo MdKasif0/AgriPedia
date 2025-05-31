@@ -30,7 +30,7 @@ export default function UserModeSelector() {
     UserDataStore.setCurrentUserMode(newModeId);
     // setCurrentMode is already handled by the event listener,
     // but setting it here provides immediate UI feedback if needed for some reason.
-    // setCurrentMode(newModeId); 
+    // setCurrentMode(newModeId);
   };
 
   return (

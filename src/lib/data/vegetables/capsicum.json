@@ -29,40 +29,46 @@
       {
         "name": "Protein",
         "value": 0.9,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 4.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 1.7,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": "80.4 mg",
-        "rdi": "134% (green); 127.7mg for red"
+        "value": 80.4,
+        "rdi": "134%",
+        "unit": "unit"
       },
       {
         "name": "Vitamin A",
-        "value": "18 µg RAE",
-        "rdi": "2% (green); 157µg for red"
+        "value": 18.0,
+        "rdi": "2%",
+        "unit": "unit"
       }
     ],
     "minerals": [
       {
         "name": "Potassium",
-        "value": 175,
+        "value": 175.0,
         "unit": "mg",
         "rdi": "5%"
       }
@@ -100,7 +106,7 @@
         "1/2 cup shredded cheese (optional)"
       ],
       "steps": [
-        "Preheat oven to 375°F (190°C).",
+        "Preheat oven to 375\u00b0F (190\u00b0C).",
         "Filling: Cook ground meat (if using) until browned; drain fat. Add onion and mushrooms, cook until soft. Stir in rice/quinoa, breadcrumbs, egg, 1/4 cup tomato sauce, Italian seasoning, salt, and pepper. Mix well.",
         "Spoon the filling into the bell pepper halves.",
         "Arrange peppers in a baking dish. Pour remaining 1 cup tomato sauce around (not over) the peppers. Add a little water to the bottom of the dish.",
@@ -144,7 +150,7 @@
         "Optional: 1 tbsp pomegranate molasses"
       ],
       "steps": [
-        "Roast red bell peppers: Char them over an open flame, under a broiler, or bake at 450°F (230°C) until skin is blistered and blackened. Place in a bowl and cover with plastic wrap for 10-15 minutes. Peel off skin, remove stem and seeds.",
+        "Roast red bell peppers: Char them over an open flame, under a broiler, or bake at 450\u00b0F (230\u00b0C) until skin is blistered and blackened. Place in a bowl and cover with plastic wrap for 10-15 minutes. Peel off skin, remove stem and seeds.",
         "In a food processor, combine roasted red peppers, toasted walnuts, garlic, lemon juice, olive oil, cumin, red pepper flakes (if using), and pomegranate molasses (if using).",
         "Process until mostly smooth but can have some texture. Add a little water if too thick.",
         "Season with salt to taste.",

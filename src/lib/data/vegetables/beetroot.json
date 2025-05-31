@@ -27,29 +27,33 @@
       {
         "name": "Protein",
         "value": 1.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 9.6,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.2,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.0,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Folate",
-        "value": 109,
-        "unit": "µg",
+        "value": 109.0,
+        "unit": "\u00b5g",
         "rdi": "27%"
       }
     ],
@@ -62,7 +66,7 @@
       },
       {
         "name": "Potassium",
-        "value": 325,
+        "value": 325.0,
         "unit": "mg",
         "rdi": "9%"
       }
@@ -107,7 +111,7 @@
         "Fresh parsley or mint for garnish"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C).",
+        "Preheat oven to 400\u00b0F (200\u00b0C).",
         "Toss cubed beetroot with olive oil, salt, and pepper on a baking sheet.",
         "Roast for 25-35 minutes, or until tender, stirring halfway through.",
         "Transfer roasted beetroot to a serving bowl. While still warm, toss with crumbled feta cheese and toasted walnuts.",

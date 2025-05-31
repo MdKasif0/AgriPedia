@@ -27,28 +27,32 @@
       {
         "name": "Protein",
         "value": 1.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
         "value": 17.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 0.8,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
-        "value": 2,
-        "unit": "g"
+        "value": 2.0,
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 5,
+        "value": 5.0,
         "unit": "mg",
         "rdi": "8%"
       },
@@ -62,7 +66,7 @@
     "minerals": [
       {
         "name": "Potassium",
-        "value": 415,
+        "value": 415.0,
         "unit": "mg",
         "rdi": "12%"
       },
@@ -144,7 +148,7 @@
       "steps": [
         "Place sliced ginger in a saucepan with enough water to cover. Bring to a boil and simmer for 30-40 minutes, or until ginger is tender. Drain.",
         "In the same saucepan, combine 1 cup sugar, 1 cup water, and the drained ginger slices, and a pinch of salt. Bring to a simmer over medium heat, stirring until sugar dissolves.",
-        "Cook, stirring occasionally, for about 30-45 minutes, or until ginger becomes translucent and the syrup thickens (reaches about 225°F/107°C on a candy thermometer).",
+        "Cook, stirring occasionally, for about 30-45 minutes, or until ginger becomes translucent and the syrup thickens (reaches about 225\u00b0F/107\u00b0C on a candy thermometer).",
         "Remove ginger slices with a slotted spoon and place them on a wire rack set over a baking sheet to dry for several hours or overnight.",
         "Once slightly tacky but not wet, toss the ginger slices in extra granulated sugar to coat.",
         "Store candied ginger in an airtight container at room temperature."

@@ -28,35 +28,39 @@
       {
         "name": "Protein",
         "value": 3.5,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Carbohydrates",
-        "value": 7,
-        "unit": "g"
+        "value": 7.0,
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fat",
         "value": 1.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       },
       {
         "name": "Fiber",
         "value": 2.1,
-        "unit": "g"
+        "unit": "g",
+        "rdi": ""
       }
     ],
     "vitamins": [
       {
         "name": "Vitamin C",
-        "value": 85,
+        "value": 85.0,
         "unit": "mg",
         "rdi": "142%"
       },
       {
         "name": "Vitamin A",
-        "value": 386,
-        "unit": "µg RAE",
+        "value": 386.0,
+        "unit": "\u00b5g RAE",
         "rdi": "43%"
       }
     ],
@@ -108,7 +112,7 @@
         "Salt and freshly ground black pepper to taste"
       ],
       "steps": [
-        "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.",
+        "Preheat oven to 400\u00b0F (200\u00b0C). Line a baking sheet with parchment paper.",
         "Place salmon fillets on the prepared baking sheet. Brush with olive oil.",
         "Season salmon with salt and pepper. Sprinkle generously with chopped fresh dill.",
         "Arrange lemon slices on top of and around the salmon fillets.",
@@ -149,8 +153,8 @@
       ],
       "steps": [
         "Pressure cook rinsed moong dal with 1.5 cups water, turmeric powder, and a little salt for 2-3 whistles or until soft. Mash lightly if preferred.",
-        "In a separate pan for tempering, heat ghee/oil. Add cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Sauté until garlic is lightly golden.",
-        "Add chopped dill leaves to the tempering and sauté for 1-2 minutes until wilted.",
+        "In a separate pan for tempering, heat ghee/oil. Add cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Saut\u00e9 until garlic is lightly golden.",
+        "Add chopped dill leaves to the tempering and saut\u00e9 for 1-2 minutes until wilted.",
         "Pour the cooked dal into the pan with the dill mixture. Add salt to taste (if more is needed). Mix well.",
         "Simmer for 5-7 minutes, allowing flavors to blend. Adjust consistency with water if the dal is too thick.",
         "Serve hot with rice or roti."
