@@ -1,20 +1,25 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Camera } from 'lucide-react'; // Using lucide-react for icons
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
+import { Camera } from 'lucide-react';
 
 export default function PlantGrowthTracker() {
   return (
-    <div className="p-4 border rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-      <div className="flex items-center mb-3">
-        <Camera size={28} className="text-purple-600 mr-3" />
-        <h3 className="text-xl font-semibold text-gray-800">Plant Growth Tracker / Journal</h3>
-      </div>
-      <p className="text-gray-600 mb-4 text-sm">
-        Log photos, notes, and health conditions for your plants. Visualize progress in a timeline or gallery format.
-      </p>
-      <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">
-        Track Progress
-      </Button>
-    </div>
+    <Card className="rounded-2xl h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+      <CardHeader className="flex flex-row items-center gap-3">
+        <Camera size={28} className="text-primary group-hover:animate-sprout origin-bottom transition-transform duration-300" />
+        <CardTitle className="font-serif">Plant Growth Tracker / Journal</CardTitle>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <p className="text-sm text-muted-foreground">
+          Log photos, notes, and health conditions for your plants. Visualize progress in a timeline or gallery format.
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button className="w-full">
+          Track Progress
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }

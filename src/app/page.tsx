@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import MyPlantsOverview from '@/components/homefeatures/MyPlantsOverview';
 import PersonalizedGrowPlanner from '@/components/homefeatures/PersonalizedGrowPlanner';
 import PlantGrowthTracker from '@/components/homefeatures/PlantGrowthTracker';
@@ -14,44 +15,82 @@ import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
 import LearnSection from '@/components/homefeatures/LearnSection';
 // Import other components that might be created in later steps, like QuickActions or InfoBanner, if they are ready.
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.3, // Optional delay before children start animating
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+};
+
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 bg-gray-50">
-      <header className="w-full max-w-4xl mb-8">
-        <h1 className="text-4xl font-bold text-center text-green-700">Welcome to AgriPedia!</h1>
-        <p className="text-lg text-center text-gray-600 mt-2">Your personal guide to successful gardening.</p>
-      </header>
+    <div className="flex flex-col items-center min-h-screen p-4">
+      <motion.header
+        className="w-full max-w-4xl mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
+        <h1 className="text-4xl font-bold text-center text-primary font-serif">Welcome to AgriPedia!</h1>
+        <p className="text-lg text-center text-foreground/80 mt-2">Your personal guide to successful gardening.</p>
+      </motion.header>
 
       <main className="w-full max-w-4xl">
-        <InfoBanner
-          icon={Lightbulb}
-          title="Tip of the Day"
-          description="Remember to check the soil moisture before watering your plants. Overwatering can be as harmful as underwatering!"
-          className="mb-6 bg-blue-500 text-white" // Example custom styling
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <InfoBanner
+            icon={Lightbulb}
+            title="Tip of the Day"
+            description="Remember to check the soil moisture before watering your plants. Overwatering can be as harmful as underwatering!"
+            className="mb-6" // Rely on new theme for banner styling
+          />
+        </motion.div>
 
-        <QuickActions /> {/* Add QuickActions component here */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <QuickActions /> {/* Add QuickActions component here */}
+        </motion.div>
 
         {/* This section can be used for an InfoBanner or QuickActions later */}
         {/* <div className="mb-6"> */}
         {/*   Placeholder for InfoBanner or QuickActions */}
         {/* </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <MyPlantsOverview />
-          <PersonalizedGrowPlanner />
-          <PlantGrowthTracker />
-          <PlantHealthScanner />
-          <SmartCalendarReminders />
-          <StepByStepGuides />
-          <SeedToHarvestTimeline />
-          <CommunityFeatures />
-          <LearnSection />
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={itemVariants}><MyPlantsOverview /></motion.div>
+          <motion.div variants={itemVariants}><PersonalizedGrowPlanner /></motion.div>
+          <motion.div variants={itemVariants}><PlantGrowthTracker /></motion.div>
+          <motion.div variants={itemVariants}><PlantHealthScanner /></motion.div>
+          <motion.div variants={itemVariants}><SmartCalendarReminders /></motion.div>
+          <motion.div variants={itemVariants}><StepByStepGuides /></motion.div>
+          <motion.div variants={itemVariants}><SeedToHarvestTimeline /></motion.div>
+          <motion.div variants={itemVariants}><CommunityFeatures /></motion.div>
+          <motion.div variants={itemVariants}><LearnSection /></motion.div>
           {/* Add more components here as they are developed */}
-        </div>
+        </motion.div>
       </main>
 
-      <footer className="w-full max-w-4xl mt-12 text-center text-gray-500">
+      <footer className="w-full max-w-4xl mt-12 text-center text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} AgriPedia. Grow smarter.</p>
       </footer>
     </div>

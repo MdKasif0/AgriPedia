@@ -14,6 +14,7 @@ import NotificationPreferences from '@/components/NotificationPreferences';
 import { Separator } from '@/components/ui/separator';
 import ApiKeyManager from '@/components/settings/ApiKeyManager';
 import UserModeSelector from '@/components/settings/UserModeSelector';
+import InstallPWAButton from '@/components/pwa/InstallPWAButton';
 
 interface NavItemProps {
   href?: string;
@@ -32,17 +33,17 @@ const NavItemLink: React.FC<Omit<NavItemProps, 'isCentralScan' | 'onClick' | 'is
       <a
         className={cn(
           "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-all duration-200 ease-in-out transform active:scale-90",
-          isActive ? "text-primary font-semibold" : "text-neutral-400 hover:text-neutral-100"
+          isActive ? "text-primary font-semibold" : "text-muted-foreground hover:text-foreground"
         )}
         aria-label={label}
         onClick={() => {
           triggerHapticFeedback();
         }}
       >
-        <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isActive ? "bg-primary/20" : "group-hover:bg-neutral-700/50")}>
-          <Icon size={24} className={cn(isActive ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")} />
+        <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isActive ? "bg-primary/20" : "group-hover:bg-muted/50")}> {/* Updated hover background */}
+          <Icon size={24} className={cn(isActive ? "text-primary" : "text-muted-foreground group-hover:text-foreground")} /> {/* Updated icon colors */}
         </div>
-        <span className={cn("text-xs mt-0.5", isActive ? "text-primary font-semibold" : "text-neutral-400 group-hover:text-neutral-100")}>
+        <span className={cn("text-xs mt-0.5", isActive ? "text-primary font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Updated text colors */}
           {label}
         </span>
       </a>
@@ -75,8 +76,8 @@ export default function MobileBottomNav() {
   return (
     <>
       <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-3
-                      bg-neutral-900/80 backdrop-blur-lg
-                      border border-neutral-700/60
+                      bg-card/80 backdrop-blur-lg
+                      border border-border/60
                       shadow-xl rounded-2xl md:hidden z-50 h-16">
         <div className="flex justify-around items-center h-full px-1">
           {navItemsConfig.map((item) => {
@@ -91,8 +92,8 @@ export default function MobileBottomNav() {
                   className="flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transform active:scale-90 transition-transform"
                   aria-label={item.label}
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full shadow-md group-hover:bg-orange-600 transition-colors">
-                    <item.icon size={26} className="text-white" />
+                  <div className="flex items-center justify-center w-12 h-12 bg-accent rounded-full shadow-md group-hover:bg-accent/90 transition-colors">
+                    <item.icon size={26} className="text-accent-foreground" />
                   </div>
                 </button>
               );
@@ -108,14 +109,14 @@ export default function MobileBottomNav() {
                       }}
                       className={cn(
                         "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-all duration-200 ease-in-out transform active:scale-90",
-                        isSettingsSheetOpen ? "text-primary font-semibold" : "text-neutral-400 hover:text-neutral-100"
+                        isSettingsSheetOpen ? "text-primary font-semibold" : "text-muted-foreground hover:text-foreground"
                       )}
                       aria-label={item.label}
                     >
-                      <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isSettingsSheetOpen ? "bg-primary/20" : "group-hover:bg-neutral-700/50")}>
-                        <item.icon size={24} className={cn(isSettingsSheetOpen ? "text-primary" : "text-neutral-400 group-hover:text-neutral-100")} />
+                      <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isSettingsSheetOpen ? "bg-primary/20" : "group-hover:bg-muted/50")}> {/* Updated hover background */}
+                        <item.icon size={24} className={cn(isSettingsSheetOpen ? "text-primary" : "text-muted-foreground group-hover:text-foreground")} /> {/* Updated icon colors */}
                       </div>
-                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-primary font-semibold" : "text-neutral-400 group-hover:text-neutral-100")}>
+                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-primary font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Updated text colors */}
                         {item.label}
                       </span>
                     </button>
@@ -166,6 +167,11 @@ export default function MobileBottomNav() {
                           </button>
                         </Link>
                       </div>
+                      <Separator className="bg-border/50" />
+                      <div>
+                        <h3 className="mb-2 text-sm font-medium text-muted-foreground">Install AgriPedia</h3>
+                        <InstallPWAButton className="w-full" />
+                      </div>
                     </div>
                   </SheetContent>
                 </Sheet>
@@ -187,9 +193,9 @@ export default function MobileBottomNav() {
         <DialogContent className="p-0 bg-black text-gray-200 max-w-full w-full h-full sm:max-w-md sm:h-auto sm:max-h-[90vh] sm:rounded-2xl sm:shadow-xl overflow-hidden">
           {/* Visually hidden title for accessibility */}
           <DialogTitle className="sr-only">Scan or Upload Produce Image</DialogTitle>
-          <ImageUploadForm 
-            onSuccessfulScan={() => setIsScanDialogOpen(false)} 
-            onCloseDialog={() => setIsScanDialogOpen(false)} 
+          <ImageUploadForm
+            onSuccessfulScan={() => setIsScanDialogOpen(false)}
+            onCloseDialog={() => setIsScanDialogOpen(false)}
           />
           <DialogClose className="hidden" />
         </DialogContent>
