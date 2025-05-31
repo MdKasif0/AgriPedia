@@ -27,15 +27,20 @@ export default function HomePage() {
     <div className="flex flex-col items-center min-h-screen p-4">
       <h1 className="text-3xl font-bold mb-8 text-center">Welcome to AgriPedia!</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+        {/* Row 1: MyPlantsOverview can span more columns on larger screens if desired, or be a full-width section above the grid */}
+        <div className="lg:col-span-3"> {/* Example: Making MyPlantsOverview full width on large screens */}
+          <MyPlantsOverview />
+        </div>
+
+        {/* Subsequent features */}
         <PersonalizedGrowPlanner />
-        <StepByStepGuides />
         <SmartCalendarReminders />
         <PlantGrowthTracker />
-        <PlantHealthScanner />
         <SeedToHarvestTimeline />
-        <CommunityFeatures />
+        <PlantHealthScanner />
         <LearnSection />
-        <MyPlantsOverview />
+        <StepByStepGuides />
+        <CommunityFeatures />
       </div>
     </div>
   );
