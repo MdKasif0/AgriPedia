@@ -3,24 +3,30 @@
   "commonName": "Guava",
   "scientificName": "Psidium guajava",
   "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Guava.JPG",
-  "description": "A tropical fruit, typically round or pear-shaped, with green or yellow skin and pink or white flesh containing many small, hard seeds. Known for its strong, sweet fragrance.",
-  "origin": "Tropical Americas (Mexico to northern South America)",
+  "description": "A tropical fruit, typically round or pear-shaped, with green or yellow skin (sometimes pinkish) and aromatic, sweet-tart pink, white, or yellow flesh containing many small, hard seeds. Known for its strong, characteristic fragrance and high Vitamin C content.",
+  "origin": "Tropical Americas (likely an area from Mexico to northern South America)",
   "localNames": [
     "Guayaba (Spanish)",
     "Goyave (French)",
-    "Amrood (Hindi)"
+    "Amrood (Hindi)",
+    "Pera (Marathi)",
+    "Koyya (Tamil/Telugu)",
+    "Jambu Biji (Indonesian/Malay)"
   ],
   "regions": [
-    "India",
+    "India (leading producer)",
     "China",
     "Thailand",
     "Pakistan",
     "Mexico",
     "Brazil",
-    "Egypt"
+    "Egypt",
+    "Indonesia",
+    "Philippines",
+    "Colombia"
   ],
   "seasons": [
-    "Varies by region, often multiple crops per year; common in late summer/fall"
+    "Varies by region; many tropical areas have two cropping seasons or near year-round availability. Main seasons often align with late summer/fall and sometimes late winter/spring."
   ],
   "nutrition": {
     "calories": "68 kcal per 100g",
@@ -32,12 +38,12 @@
       },
       {
         "name": "Carbohydrates",
-        "value": 14,
+        "value": 14.3,
         "unit": "g"
       },
       {
         "name": "Fat",
-        "value": 1,
+        "value": 0.95,
         "unit": "g"
       },
       {
@@ -51,7 +57,7 @@
         "name": "Vitamin C",
         "value": 228.3,
         "unit": "mg",
-        "rdi": "381%"
+        "rdi": "254-381%"
       },
       {
         "name": "Vitamin A (from carotenoids)",
@@ -60,10 +66,22 @@
         "rdi": "3%"
       },
       {
-        "name": "Folate",
+        "name": "Folate (B9)",
         "value": 49,
         "unit": "µg",
         "rdi": "12%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.084,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.451,
+        "unit": "mg",
+        "rdi": "9%"
       }
     ],
     "minerals": [
@@ -71,31 +89,79 @@
         "name": "Potassium",
         "value": 417,
         "unit": "mg",
-        "rdi": "12%"
+        "rdi": "9-12%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.23,
+        "unit": "mg",
+        "rdi": "26%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.15,
+        "unit": "mg",
+        "rdi": "7%"
       }
     ]
   },
   "healthBenefits": [
-    "Exceptionally high in Vitamin C, a powerful antioxidant that boosts the immune system.",
-    "Rich in dietary fiber, aiding digestion and promoting satiety.",
-    "May help lower blood sugar levels and improve insulin resistance.",
-    "Contains antioxidants that can protect against cell damage."
+    "Exceptionally high in Vitamin C, a powerful antioxidant that significantly boosts the immune system and promotes collagen production for healthy skin.",
+    "Rich in dietary fiber, which aids digestion, prevents constipation, promotes satiety, and can help regulate blood sugar levels.",
+    "May help lower blood sugar levels and improve insulin resistance, beneficial for diabetes management.",
+    "Contains antioxidants like lycopene (in pink varieties) and other carotenoids, which can protect against cell damage and chronic diseases.",
+    "Good source of potassium, which is important for maintaining healthy blood pressure."
   ],
   "potentialAllergies": [
     {
       "name": "Guava Allergy",
       "severity": "Rare",
-      "details": "Allergies to guava are uncommon but can occur."
+      "details": "Allergies to guava are uncommon but can occur, potentially causing oral allergy symptoms or skin reactions in sensitive individuals."
     }
   ],
-  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Guavas are tropical and subtropical plants, sensitive to cold. Prefer full sun.\n2. Soil: Adaptable to various soils but prefer well-drained, fertile loam with pH 5-7.\n3. Propagation: Can be grown from seeds, cuttings, or air layering. Seeds may not grow true to type.\n4. Watering: Young trees need regular watering. Mature trees are drought-tolerant but fruit better with consistent moisture.\n5. Fertilizing: Apply balanced fertilizer regularly, especially during growth and fruiting stages.\n6. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruiting.\n7. Harvesting: Fruits are picked when they change color (usually from dark green to light green or yellow) and emit a strong fragrance. They soften after picking.",
-  "growthDuration": "Seedling trees may fruit in 2-4 years. Fruit ripens 3-5 months after flowering.",
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Guavas are tropical and subtropical plants, sensitive to cold. Prefer full sun.\n2. Soil: Adaptable to various soils but prefer well-drained, fertile loam with pH 5-7.\n3. Propagation: Can be grown from seeds, cuttings, or air layering. Seeds may not grow true to type.\n4. Watering: Young trees need regular watering. Mature trees are drought-tolerant but fruit better with consistent moisture.\n5. Fertilizing: Apply balanced fertilizer regularly, especially during growth and fruiting stages.\n6. Pruning: Prune to maintain shape, remove dead/diseased wood, and encourage fruiting (fruits are borne on new growth).\n7. Harvesting: Fruits are picked when they change color (usually from dark green to light green or yellow) and emit a strong fragrance. They soften after picking.",
+  "growthDuration": "Seedling trees may fruit in 2-4 years, while vegetatively propagated ones can start in 1-2 years. Fruit ripens 3-5 months after flowering (90-150 days).",
   "sustainabilityTips": [
-    "Guava is often eaten fresh, skin and seeds included (for some varieties).",
-    "Ripe guavas are fragile; handle with care and consume quickly or refrigerate.",
-    "Can be used to make juices, jams, and jellies."
+    "Guava is often eaten fresh, skin and seeds included (for some varieties), minimizing waste.",
+    "Ripe guavas are fragile; handle with care and consume quickly or refrigerate for a few days.",
+    "Can be easily processed into juices, jams, and jellies to preserve the harvest.",
+    "Guava trees are relatively hardy and can be grown with minimal pesticide use in suitable climates."
   ],
-  "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.6-1.3 kg CO2e/kg).",
+  "carbonFootprintInfo": "Moderate, similar to other tropical fruits, depending on transport (0.6-1.3 kg CO2e/kg). Locally sourced guavas have a much lower footprint.",
+  "uses": [
+    "fresh_consumption_eaten_raw_skin_and_seeds_often_edible",
+    "beverages_juices_nectars_agua_fresca_smoothies",
+    "processed_products_jams_jellies_marmalades_pastes_goiabada_bocadillo_guava_cheese_fruit_leather_canned_guavas",
+    "desserts_ice_cream_sorbets_pastries_puddings",
+    "medicinal_traditional_leaves_for_tea_diarrhea_dysentery_diabetes_fruit_bark_for_various_ailments",
+    "other_wood_for_smoking_meat_leaves_for_dyeing"
+  ],
+  "originAndDomesticationHistory": "Guava (Psidium guajava) is native to tropical America, with its likely center of origin being an area extending from Mexico to northern South America. It was widely cultivated and distributed by indigenous peoples throughout this region in pre-Columbian times. Following European contact, Spanish and Portuguese explorers were instrumental in spreading guava to other tropical and subtropical parts of the world, including India, Southeast Asia (where it became particularly popular and heavily cultivated), the Pacific islands, and Africa. It has readily naturalized in many of these areas and is now a common fruit tree in tropical landscapes globally. Selection over centuries has led to numerous cultivars with varying fruit sizes, flesh colors (white, yellow, pink, red), seediness, and flavors.",
+  "climaticRequirements": {
+    "temperature": "Guava thrives in tropical and subtropical climates, with optimal temperatures for growth and fruiting ranging from 20-30°C (68-86°F). It is sensitive to frost, especially young trees; mature trees might tolerate very brief periods of light frost (down to -1 to -2°C or 28-30°F) but can suffer significant damage or dieback. Prolonged cool temperatures can inhibit growth and fruit development.",
+    "rainfall": "Prefers a well-distributed annual rainfall of 1000-2000mm. While mature trees can withstand considerable periods of drought, consistent moisture is necessary for good commercial yields and fruit quality, especially during flowering and fruit development. Excessive rainfall or humidity during fruiting can sometimes lead to increased disease incidence.",
+    "altitude": "Commonly cultivated from sea level up to about 1500 meters (approx. 5000 feet) in tropical and subtropical regions."
+  },
+  "soilPreferences": "Guava trees are adaptable to a wide range of soil types, from sandy loams to heavy clays, provided the soil is well-drained. They perform best in fertile, loamy soils that are rich in organic matter. The ideal soil pH range is from 5.0 to 7.0 (slightly acidic to neutral), although they can tolerate slightly more alkaline conditions. Good drainage is crucial, as guava trees are susceptible to root rot in waterlogged soils.",
+  "irrigationAndWaterNeeds": "Young guava trees require regular and adequate watering to ensure proper establishment and vigorous growth. For mature, fruit-bearing trees, consistent soil moisture is important, particularly during flowering, fruit set, and fruit development, to achieve optimal yield and fruit size. While established trees exhibit considerable drought tolerance, irrigation is essential in regions with prolonged dry seasons or insufficient rainfall for commercial production. Drip irrigation or micro-sprinklers are commonly used.",
+  "plantingAndHarvestCycles": "Guava is propagated commonly from seeds, which remain viable for several months and germinate readily. However, seed-grown trees can exhibit considerable variability and may take longer to bear fruit. For commercial cultivation and to ensure true-to-type fruit from desired cultivars, vegetative propagation methods such as budding, grafting (veneer or side grafting), air layering, or root cuttings are preferred. Planting is typically done at the beginning of the rainy season. Seedling trees may start bearing fruit in 2-4 years, while vegetatively propagated trees can begin fruiting earlier, often within 1-2 years. Guavas can flower and fruit throughout the year in many tropical regions, often resulting in two main cropping seasons, though this can vary with climate and cultivar. Fruits generally mature 3-5 months (90-150 days) after flowering. Harvesting is done by hand when the fruits reach full size, the skin color changes (e.g., from dark green to light green, yellowish, or pinkish, depending on the variety), and they develop their characteristic aroma. For fresh market, fruits are often picked when firm-ripe; for processing, they might be allowed to ripen further.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (various species including Anastrepha and Bactrocera) are major pests, laying eggs in the fruit and causing maggot infestation. Mealybugs, scale insects, aphids, whiteflies, guava shoot borers, and nematodes can also cause significant damage to crops. Common Diseases: Guava wilt (caused by fungi like Fusarium spp., Verticillium spp.) is a serious and often fatal disease. Anthracnose (Colletotrichum gloeosporioides) affects fruits, leaves, and twigs, causing lesions and rot. Fruit canker, algal leaf spot (red rust), and various post-harvest fruit rots (e.g., Rhizopus, Aspergillus) are also prevalent. Management Strategies: An integrated pest management (IPM) approach is crucial. This includes good orchard sanitation (such as removing and destroying fallen or infested fruit), bagging of individual fruits to protect against fruit flies, deployment of fruit fly traps and lures, encouraging biological control agents (e.g., parasitoids for fruit flies and mealybugs), proper pruning to ensure good air circulation and light penetration, and the judicious use of appropriate insecticides and fungicides when pest and disease pressure is high. Research into wilt-resistant rootstocks and cultivars is ongoing.",
+  "postHarvestHandling": "Guavas are perishable fruits and bruise easily, requiring careful handling during and after harvest. Fruits are typically picked by hand when firm-ripe or slightly before full ripeness for commercial shipping. They ripen quickly at ambient room temperatures (usually within 2-5 days), becoming soft and aromatic. Shelf life can be extended by refrigeration at temperatures between 8-10°C (46-50°F) and high relative humidity (85-95%), which can keep them for about 1-3 weeks, depending on the variety and maturity at harvest. For transportation, guavas are often packed in single layers in cushioned trays or boxes to minimize bruising. They are also widely processed into purees, juices, and pastes for longer shelf life.",
+  "majorProducingCountriesOrRegions": [
+    "India (world's largest producer)",
+    "China",
+    "Thailand",
+    "Pakistan",
+    "Mexico",
+    "Brazil",
+    "Egypt",
+    "Indonesia",
+    "Philippines",
+    "Colombia",
+    "Bangladesh",
+    "Nigeria"
+  ],
+  "marketValueAndGlobalDemand": "Guava is a highly popular fruit in tropical and subtropical regions across the globe, with substantial local and regional markets. India is the leading producer. There is strong demand for both fresh fruit consumption and processed guava products such as juices, nectars, purees, and pastes (like guava cheese or goiabada). International trade in fresh guavas is increasing as consumers in temperate countries become more acquainted with the fruit, its flavor, and its nutritional benefits, particularly its high Vitamin C content. The processed guava product market is also significant and growing.",
   "staticRecipes": [
     {
       "name": "Guava Juice (Agua de Guayaba)",

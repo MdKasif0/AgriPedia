@@ -1,32 +1,40 @@
 {
   "id": "cabbage",
   "commonName": "Cabbage",
-  "scientificName": "Brassica oleracea var. capitata",
+  "scientificName": "Brassica oleracea var. capitata (includes green, red, and savoy types)",
   "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Cabbage.jpg",
-  "description": "A leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads.",
-  "origin": "Europe (Mediterranean region)",
+  "description": "A leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is a cultivar of Brassica oleracea (wild cabbage) and belongs to the 'cole crops' or brassicas. Cabbage is known for its crisp texture when raw and tender texture when cooked, with a flavor that can range from slightly sweet to peppery depending on the variety and preparation.",
+  "origin": "Coastal southern and western Europe, derived from wild cabbage (Brassica oleracea var. oleracea).",
   "localNames": [
     "Col (Spanish)",
     "Chou (French)",
-    "Kohl (German)",
-    "Patta Gobhi (Hindi)"
+    "Kohl / Kraut (German - Kraut often refers to prepared cabbage like Sauerkraut)",
+    "Cavolo (Italian)",
+    "Patta Gobhi (पत्ता गोभी - Hindi)",
+    "Repollo (Spanish - Latin America)",
+    "Kapusta (Капуста - Russian and other Slavic languages)"
   ],
   "regions": [
-    "China",
-    "India",
+    "China (world's largest producer)",
+    "India (second largest producer)",
     "Russia",
     "South Korea",
-    "Japan"
+    "Japan",
+    "Ukraine",
+    "Germany",
+    "Poland",
+    "United States (New York, California, Wisconsin, Florida, Texas)",
+    "Indonesia"
   ],
   "seasons": [
-    "Year-round (different varieties, stores well)"
+    "Cool-season crop, typically harvested in spring, autumn, and winter in temperate climates. Available year-round in many markets due to different varieties, global sourcing, and excellent storage capabilities."
   ],
   "nutrition": {
-    "calories": "25 kcal per 100g",
+    "calories": "25 kcal per 100g (raw green cabbage)",
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 1.3,
+        "value": 1.28,
         "unit": "g"
       },
       {
@@ -50,50 +58,103 @@
         "name": "Vitamin K",
         "value": 76,
         "unit": "µg",
-        "rdi": "95%"
+        "rdi": "63-95%"
       },
       {
         "name": "Vitamin C",
         "value": 36.6,
         "unit": "mg",
-        "rdi": "61%"
+        "rdi": "41-61%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 43,
+        "unit": "µg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.124,
+        "unit": "mg",
+        "rdi": "7-10%"
       }
     ],
     "minerals": [
       {
-        "name": "Folate",
-        "value": 43,
-        "unit": "µg",
-        "rdi": "11%"
+        "name": "Potassium",
+        "value": 170,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.16,
+        "unit": "mg",
+        "rdi": "7-8%"
       }
     ]
   },
   "healthBenefits": [
-    "Rich in Vitamin K and Vitamin C, supporting bone health and immune function.",
-    "Contains antioxidants and anti-inflammatory compounds.",
-    "Good source of fiber, promoting digestive health.",
-    "May help lower cholesterol levels."
+    "Rich in Vitamin K, which is crucial for blood clotting and bone health.",
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system and promotes collagen production.",
+    "Contains antioxidants and anti-inflammatory compounds, such as glucosinolates (which can be converted to isothiocyanates like sulforaphane) and anthocyanins (in red cabbage), which may help protect against chronic diseases including certain cancers.",
+    "Good source of dietary fiber, promoting digestive health, aiding in bowel regularity, and contributing to satiety.",
+    "May help lower cholesterol levels due to its fiber content."
   ],
   "potentialAllergies": [
     {
-      "name": "Brassica Sensitivity",
-      "severity": "Mild",
-      "details": "Can cause gas and bloating in some individuals due to its fiber and sulfur compounds."
+      "name": "Brassica Sensitivity / FODMAPs",
+      "severity": "Mild (digestive discomfort)",
+      "details": "Cabbage contains raffinose (a complex sugar) and sulfur compounds, which can cause gas, bloating, and digestive discomfort in some individuals, particularly those sensitive to FODMAPs. Cooking can sometimes help make it more digestible."
     },
     {
-      "name": "Goitrogens",
-      "severity": "Mild",
-      "details": "Contains goitrogens, which may affect thyroid function in those with thyroid conditions if consumed raw in very large amounts."
+      "name": "Goitrogens (in raw form)",
+      "severity": "Low (for most individuals)",
+      "details": "Like other brassica vegetables, cabbage contains goitrogens, compounds that may interfere with thyroid hormone production in individuals with pre-existing thyroid conditions, especially iodine deficiency, if consumed raw in very large quantities. Cooking typically reduces goitrogen levels significantly."
     }
   ],
-  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Start seeds indoors or sow directly in early spring or late summer for a fall crop.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.5.\n3. Spacing: Space plants 12-24 inches apart, depending on variety.\n4. Watering: Consistent moisture is important for head development.\n5. Harvesting: Harvest when heads are firm and solid. Cut at the base of the plant.",
-  "growthDuration": "60-100 days from transplanting to harvest.",
+  "cultivationProcess": "Cabbage is a cool-season biennial crop, typically grown as an annual. Seeds are started indoors 4-6 weeks before the last frost for an early crop, or sown directly in mid-summer for a fall/winter crop. It prefers well-drained, fertile soil rich in organic matter and full sun. Consistent moisture is important for head development. Heads are harvested when firm and solid. Details in specific sections.",
+  "growthDuration": "Typically 60 to 100 days from transplanting to harvest, depending on the specific variety (early, mid-season, late) and growing conditions. Some storage varieties may take longer.",
   "sustainabilityTips": [
-    "Store whole cabbage heads in the refrigerator crisper drawer; they can last for several weeks.",
-    "Use outer leaves (if clean) in stocks or stir-fries.",
-    "Ferment cabbage to make sauerkraut or kimchi for longer preservation and added probiotics."
+    "Store whole cabbage heads in the refrigerator crisper drawer; they can last for several weeks, or even months for some late-season storage varieties, if kept cool and moist.",
+    "Use the outer leaves (if clean and not too tough) in stocks, soups, or stir-fries rather than discarding them.",
+    "Cabbage is excellent for fermentation, making sauerkraut or kimchi, which not only preserves it for extended periods but also adds probiotics and enhances digestibility.",
+    "Growing cabbage in home gardens is feasible in many temperate climates."
   ],
-  "carbonFootprintInfo": "Low, around 0.3-0.5 kg CO2e/kg for field-grown cabbage.",
+  "carbonFootprintInfo": "Low, typically around 0.3-0.5 kg CO2e/kg for field-grown cabbage consumed locally or regionally. Its good storage capability means it doesn't always require rapid, high-carbon transport for out-of-season availability compared to more perishable vegetables.",
+  "uses": [
+    "culinary_raw_salads_coleslaw_slaws_tacos_wraps_garnishes",
+    "culinary_cooked_boiled_steamed_stir_fried_sautéed_braised_roasted_stuffed_cabbage_rolls",
+    "culinary_fermented_sauerkraut_kimchi_pickled_cabbage",
+    "culinary_soups_stews_casseroles_side_dishes",
+    "animal_fodder_outer_leaves_and_culled_heads_sometimes_used_for_livestock_feed"
+  ],
+  "originAndDomesticationHistory": "Cabbage (Brassica oleracea var. capitata) originated from wild cabbage (Brassica oleracea var. oleracea), a species native to the coastal regions of southern and western Europe. Wild cabbage was likely consumed by humans for thousands of years. The ancient Greeks and Romans cultivated various forms of Brassica oleracea, though the development of the dense-headed cabbage as we know it today is believed to have occurred in Europe, possibly by the Middle Ages or slightly earlier (around the 1st century AD by some accounts, more prominent by 12th-14th centuries). Different forms of cabbage (e.g., green, red, savoy) were selected and developed over centuries of cultivation in Europe. It became a staple food in many European cuisines due to its hardiness, good storage qualities, and nutritional value. Cabbage was later introduced to other parts of the world, including the Americas, by European settlers.",
+  "climaticRequirements": {
+    "temperature": "Cabbage is a cool-season crop that thrives in moderate temperatures. The optimal temperature range for growth and head development is between 15°C and 20°C (60°F to 68°F). While established plants can tolerate light frosts (some varieties even improve in sweetness after a light frost), severe freezes can damage the heads. Hot weather, especially temperatures consistently above 25°C (77°F), can cause the heads to be loose, split, or may induce premature flowering (bolting).",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, preferring around 600mm to 1000mm of rainfall or equivalent irrigation. Water stress, particularly during head formation, can lead to small or poor-quality heads. Good soil drainage is also essential, as cabbage does not tolerate waterlogged conditions.",
+    "altitude": "Can be successfully cultivated from sea level up to high altitudes (e.g., 2000 meters or more) where cool growing conditions prevail. In tropical regions, cabbage is often grown at higher elevations to achieve the necessary cool temperatures."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 6.0 and 7.5, is best for cabbage cultivation. The soil should have good moisture-retention capacity but also drain well to prevent root diseases. Cabbage is a heavy feeder and benefits from soils amended with compost or well-rotted manure.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during the critical stages of head formation and development. Water stress can lead to small, loose heads, or may cause heads to split if heavy rain or irrigation follows a dry period. Drip irrigation or furrow irrigation is often used to provide regular watering while keeping the foliage dry, which can help reduce the risk of certain diseases. About 25-40mm (1-1.5 inches) of water per week is a general guideline, depending on soil type and weather conditions.",
+  "plantingAndHarvestCycles": "Cabbage is propagated from seeds. In temperate climates, seeds are typically started indoors 4-6 weeks before the last expected frost date for a spring or early summer crop. For an autumn or winter crop, seeds can be sown directly in the field in mid-summer, or transplants can be set out. Seedlings are usually transplanted when they have 4-5 true leaves. Spacing depends on the variety and desired head size but is generally around 12-24 inches apart in rows. The time from transplanting to harvest varies by cultivar (early, mid-season, or late varieties) but typically ranges from 60 to 120 days. Cabbage heads are harvested when they are firm, solid, and have reached the desired size for the variety. The head is cut at the base of the plant using a sharp knife, usually leaving a few outer wrapper leaves to protect it.",
+  "pestAndDiseaseManagement": "Common Pests: Cabbage worms (larvae of several moth species, including the Cabbage White Butterfly, Diamondback Moth, and Cabbage Looper) are major pests, feeding on leaves and burrowing into heads. Aphids (e.g., cabbage aphid) can cause distorted growth and transmit viruses. Flea beetles attack seedlings. Cutworms can sever young plants at soil level. Cabbage root maggots damage roots. Thrips can also be problematic. Common Diseases: Clubroot (caused by Plasmodiophora brassicae) is a serious soilborne fungal disease causing swollen, distorted roots. Black rot (Xanthomonas campestris pv. campestris) is a bacterial disease causing V-shaped lesions on leaves. Downy mildew and powdery mildew can affect foliage. Alternaria leaf spot, Fusarium yellows or wilt, and Sclerotinia rot (white mold) can also cause significant damage. Management Strategies: Implementing crop rotation (avoiding planting cabbage or other brassica crops in the same location for at least 3-4 years) is crucial for managing soilborne diseases like clubroot and Fusarium yellows. Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Employing row covers on young plants to protect against insect pests (remove during periods when pollination might be needed for hybrid seed production, though head cabbage is self-pollinating for fruit/head). Controlling weeds, which can harbor pests and diseases. Ensuring proper plant spacing and good air circulation. Practicing good field sanitation by removing and destroying infected plant debris. Promoting biological control agents. Applying appropriate and approved insecticides or fungicides based on Integrated Pest Management (IPM) principles, only when necessary based on scouting and economic thresholds.",
+  "postHarvestHandling": "Cabbage is known for its excellent storage capabilities, especially late-season or storage varieties. After harvest, heads should be handled carefully to avoid bruising. Remove any loose or damaged outer leaves. Cabbage can be stored for several weeks to months in cool, humid conditions, ideally at or near 0°C (32°F) with high relative humidity (95-98%). This can be achieved in root cellars, commercial cold storage facilities, or even in the crisper drawer of a refrigerator for shorter periods. Proper storage helps to maintain crispness and prevent moisture loss. Some traditional methods involve storing cabbage heads wrapped in paper or placing them on shelves in a cool, moist environment.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "India (second largest producer)",
+    "Russia",
+    "South Korea",
+    "Japan",
+    "Ukraine",
+    "Germany",
+    "Poland",
+    "United States (major production in states like New York, California, Wisconsin, Florida, and Texas)",
+    "Indonesia",
+    "Netherlands",
+    "Belgium"
+  ],
+  "marketValueAndGlobalDemand": "Cabbage is one of the most widely consumed and economically important vegetables globally, valued for its affordability, versatility in cooking, good storage qualities, and nutritional benefits. There is high and consistent global demand for fresh cabbage for direct consumption, as well as for processed products such as sauerkraut (fermented cabbage), kimchi (fermented cabbage with spices, a staple in Korean cuisine), coleslaw mixes, and dehydrated cabbage. China, India, and Russia are the top producers worldwide. There is significant international trade in fresh cabbage, particularly within Europe and North America. The market value for cabbage is generally stable but can fluctuate based on seasonal supply, regional weather conditions affecting crops, and demand for specific types (e.g., green, red, savoy, napa).",
   "staticRecipes": [
     {
       "name": "Simple Coleslaw",
