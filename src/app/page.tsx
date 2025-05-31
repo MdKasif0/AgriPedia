@@ -13,7 +13,12 @@ import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
 import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
 import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
 import LearnSection from '@/components/homefeatures/LearnSection';
-// Import other components that might be created in later steps, like QuickActions or InfoBanner, if they are ready.
+
+// Import the new AI feature components
+import SmartPlantRecommender from '@/components/homefeatures/SmartPlantRecommender';
+import DiseasePrediction from '@/components/homefeatures/DiseasePrediction';
+import AITips from '@/components/homefeatures/AITips';
+import AIGardenDesignAssistantTeaser from '@/components/homefeatures/AIGardenDesignAssistantTeaser';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -66,11 +71,6 @@ export default function HomePage() {
           <QuickActions /> {/* Add QuickActions component here */}
         </motion.div>
 
-        {/* This section can be used for an InfoBanner or QuickActions later */}
-        {/* <div className="mb-6"> */}
-        {/*   Placeholder for InfoBanner or QuickActions */}
-        {/* </div> */}
-
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
@@ -86,6 +86,11 @@ export default function HomePage() {
           <motion.div variants={itemVariants}><SeedToHarvestTimeline /></motion.div>
           <motion.div variants={itemVariants}><CommunityFeatures /></motion.div>
           <motion.div variants={itemVariants}><LearnSection /></motion.div>
+          {/* New AI Feature Components */}
+          <motion.div variants={itemVariants}><SmartPlantRecommender /></motion.div>
+          <motion.div variants={itemVariants}><DiseasePrediction /></motion.div>
+          <motion.div variants={itemVariants}><AITips /></motion.div>
+          <motion.div variants={itemVariants}><AIGardenDesignAssistantTeaser /></motion.div>
           {/* Add more components here as they are developed */}
         </motion.div>
       </main>
