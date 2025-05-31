@@ -67,5 +67,10 @@
   "pestAndDiseaseManagement": "Pests include aphids, spider mites, and mint loopers. Diseases include rust, powdery mildew, and verticillium wilt. Management involves good air circulation, avoiding overhead watering, using disease-resistant cultivars, and organic controls. Crop rotation is important in commercial settings.",
   "postHarvestHandling": "Fresh mint is best used shortly after harvest. It can be stored in the refrigerator with stems in water or wrapped in a damp paper towel. For drying, hang sprigs in a cool, dark, airy place or use a dehydrator. Dried mint should be stored in an airtight container.",
   "majorProducingCountriesOrRegions": ["United States (Washington, Oregon, Idaho for peppermint/spearmint oil)", "India", "China", "Morocco", "Egypt", "Argentina"],
-  "marketValueAndGlobalDemand": "Mint is a globally important herb for culinary use (fresh and dried) and essential oil production (peppermint and spearmint oils are major commodities). The oils are used in flavorings (gum, toothpaste, candy), aromatherapy, and personal care products. Demand is consistently high."
+  "marketValueAndGlobalDemand": "Mint is a globally important herb for culinary use (fresh and dried) and essential oil production (peppermint and spearmint oils are major commodities). The oils are used in flavorings (gum, toothpaste, candy), aromatherapy, and personal care products. Demand is consistently high.",
+  "sunlight": "partial",
+  "skillLevel": "beginner",
+  "plantingMonths": ["March", "April", "May", "June", "July", "August", "September"],
+  "spaceTypes": ["indoor", "balcony", "container", "small_yard", "greenhouse"],
+  "climateZone": "Temperate"
 }

@@ -97,3 +97,52 @@ export function setCurrentUserMode(modeId: UserModeId): void {
   // Dispatch a custom event to notify other components of the change
   window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
 }
+
+// --- Personalized Grow Planner Data ---
+
+export interface StoredPlannerData {
+  userId: string;
+  location: {
+    manualAddress?: string;
+    lat?: number;
+    lon?: number;
+    climateZone?: string;
+  };
+  space: 'indoor' | 'balcony' | 'small_yard' | 'large_garden' | 'greenhouse' | '';
+  spaceDimensions?: { width?: number; length?: number }; // Storing as numbers
+  sunlight: 'low' | 'partial' | 'full' | '';
+  purpose: string[];
+  experience: 'beginner' | 'intermediate' | 'advanced' | '';
+  timeCommitment: number; // Storing the raw value (0-100)
+  createdAt: string; // ISO date string
+}
+
+const PLANNER_DATA_KEY = 'agripedia-planner-data';
+
+export const setPlannerData = (data: StoredPlannerData): void => {
+  if (typeof window === 'undefined') {
+    console.warn("localStorage is not available. Planner data not saved.");
+    return;
+  }
+  try {
+    localStorage.setItem(PLANNER_DATA_KEY, JSON.stringify(data));
+  } catch (error) {
+    console.error("Error saving planner data to localStorage:", error);
+  }
+};
+
+export const getPlannerData = (): StoredPlannerData | null => {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+  try {
+    const dataString = localStorage.getItem(PLANNER_DATA_KEY);
+    if (dataString) {
+      return JSON.parse(dataString) as StoredPlannerData;
+    }
+    return null;
+  } catch (error) {
+    console.error("Error retrieving planner data from localStorage:", error);
+    return null;
+  }
+};

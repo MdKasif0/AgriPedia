@@ -255,6 +255,11 @@ export interface ProduceInfo {
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
   staticRecipes?: Recipe[];
+  sunlight?: 'low' | 'partial' | 'full';
+  skillLevel?: 'beginner' | 'intermediate' | 'advanced';
+  plantingMonths?: string[];
+  spaceTypes?: Array<'indoor' | 'balcony' | 'small_yard' | 'large_garden' | 'greenhouse' | 'container'>;
+  climateZone?: string; // Example: 'Temperate', 'Tropical'. For now, can be manually added.
 }
 
 const fruits: ProduceInfo[] = [
