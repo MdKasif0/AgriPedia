@@ -19,35 +19,31 @@ const parseYYYYMMDDToDate = (dateString: string) => {
   return new Date(year, month - 1, day);
 };
 
-
-interface CalendarEvent {
-  id: string;
-  date: string; // YYYY-MM-DD
-  title: string;
-  description?: string;
-  type: 'watering' | 'pruning' | 'harvesting' | 'planting' | 'custom';
-  plantId?: string;
-}
-
-// Dummy functions for userDataStore interaction - will be properly typed/imported later
-// import { getCalendarEvents, addCalendarEvent, removeCalendarEvent, updateCalendarEvent } from '@/lib/userDataStore';
+// Interface now imported from userDataStore
+import type { CalendarEvent } from '@/lib/userDataStore';
+import { getCalendarEvents, addCalendarEvent, removeCalendarEvent, updateCalendarEvent } from '@/lib/userDataStore';
 
 
 const SmartCalendarReminders: React.FC = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
-  const [events, setEvents] = useState<CalendarEvent[]>([]); // Will be fetched from userDataStore
+  const [events, setEvents] = useState<CalendarEvent[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newEventTitle, setNewEventTitle] = useState('');
   const [newEventDescription, setNewEventDescription] = useState('');
   const [newEventDate, setNewEventDate] = useState(formatDateToYYYYMMDD(new Date()));
 
-  // useEffect(() => {
-  //   setEvents(getCalendarEvents());
-  //   if (selectedDate) {
-  //     setNewEventDate(formatDateToYYYYMMDD(selectedDate));
-  //   }
-  // }, [selectedDate]); // This will cause issues if getCalendarEvents is not stable
+  // Load events on mount
+  useEffect(() => {
+    setEvents(getCalendarEvents());
+  }, []);
+
+  // Update newEventDate when selectedDate changes
+  useEffect(() => {
+    if (selectedDate) {
+      setNewEventDate(formatDateToYYYYMMDD(selectedDate));
+    }
+  }, [selectedDate]);
 
   const year = currentMonth.getFullYear();
   const month = currentMonth.getMonth(); // 0-11
@@ -93,20 +89,26 @@ const SmartCalendarReminders: React.FC = () => {
       description: newEventDescription,
       type: 'custom', // Default type
     };
-    // const addedEvent = addCalendarEvent(newEvent); // This will be from userDataStore
-    // setEvents(prev => [...prev, addedEvent]);
-    setEvents(prev => [...prev, { ...newEvent, id: String(Date.now()) }]); // Dummy add
+    const addedEvent = addCalendarEvent(newEvent);
+    setEvents(prevEvents => [...prevEvents, addedEvent]);
     setIsModalOpen(false);
     setNewEventTitle('');
     setNewEventDescription('');
+    // No need to reset newEventDate here if we want it to stick to the selectedDate
   };
 
   const handleDeleteEvent = (eventId: string) => {
-    // removeCalendarEvent(eventId); // This will be from userDataStore
-    setEvents(prev => prev.filter(e => e.id !== eventId)); // Dummy delete
+    removeCalendarEvent(eventId);
+    setEvents(prevEvents => prevEvents.filter(e => e.id !== eventId));
   };
 
-  const selectedDateEvents = selectedDate ? events.filter(e => e.date === formatDateToYYYYMMDD(selectedDate)) : [];
+  // Memoize selectedDateEvents to avoid re-filtering on every render if events or selectedDate haven't changed.
+  // This is a micro-optimization, but good practice.
+  const selectedDateEvents = React.useMemo(() => {
+    if (!selectedDate) return [];
+    const dateStr = formatDateToYYYYMMDD(selectedDate);
+    return events.filter(e => e.date === dateStr);
+  }, [events, selectedDate]);
 
   return (
     <div className="p-4 md:p-6 bg-card text-card-foreground rounded-lg shadow">

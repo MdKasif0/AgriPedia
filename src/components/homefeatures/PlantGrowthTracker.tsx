@@ -9,23 +9,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card'; // Assuming Card components are available
 import { PlusCircle, Trash2, Image as ImageIcon, XCircle } from 'lucide-react';
 
-// Interface for Journal Entry (will also be in userDataStore.ts)
-export interface JournalEntry {
-  id: string;
-  plantId: string; // For now, user-entered text. Later, could be a selection from "My Plants"
-  date: string; // YYYY-MM-DD
-  notes?: string;
-  photoUrl?: string; // base64 string for local preview, or URL if stored externally
-  healthCondition?: 'Healthy' | 'Pest Detected' | 'Disease Suspected' | 'Nutrient Deficiency' | 'Other';
-}
-
-// Dummy functions for userDataStore interaction - will be properly typed/imported later
-// import { getJournalEntries, addJournalEntry, removeJournalEntry, updateJournalEntry } from '@/lib/userDataStore';
+// Interface now imported from userDataStore
+import type { JournalEntry } from '@/lib/userDataStore';
+import { getJournalEntries, addJournalEntry, removeJournalEntry, updateJournalEntry } from '@/lib/userDataStore';
 
 const formatDateToYYYYMMDD = (date: Date) => date.toISOString().split('T')[0];
 
 const PlantGrowthTracker: React.FC = () => {
-  const [entries, setEntries] = useState<JournalEntry[]>([]); // Will be fetched from userDataStore
+  const [entries, setEntries] = useState<JournalEntry[]>([]);
   const [showEntryForm, setShowEntryForm] = useState(false);
 
   // Form state
@@ -36,9 +27,9 @@ const PlantGrowthTracker: React.FC = () => {
   const [photoFile, setPhotoFile] = useState<File | null>(null); // For actual upload later
   const [healthCondition, setHealthCondition] = useState<JournalEntry['healthCondition']>('Healthy');
 
-  // useEffect(() => {
-  //   setEntries(getJournalEntries()); // Load entries on mount
-  // }, []);
+  useEffect(() => {
+    setEntries(getJournalEntries()); // Load entries on mount
+  }, []);
 
   const handlePhotoChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
@@ -77,17 +68,14 @@ const PlantGrowthTracker: React.FC = () => {
       photoUrl: photoPreview || undefined, // Store base64 preview for now
       healthCondition,
     };
-    // const savedEntry = addJournalEntry(newEntryData); // From userDataStore
-    // setEntries(prev => [savedEntry, ...prev].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
-    // Dummy add:
-    const dummySavedEntry: JournalEntry = { ...newEntryData, id: String(Date.now()) };
-    setEntries(prev => [dummySavedEntry, ...prev].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
+    const savedEntry = addJournalEntry(newEntryData);
+    setEntries(prevEntries => [savedEntry, ...prevEntries].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
     resetForm();
   };
 
   const handleDeleteEntry = (entryId: string) => {
-    // removeJournalEntry(entryId); // From userDataStore
-    setEntries(prev => prev.filter(e => e.id !== entryId)); // Dummy delete
+    removeJournalEntry(entryId);
+    setEntries(prevEntries => prevEntries.filter(e => e.id !== entryId));
   };
 
   return (

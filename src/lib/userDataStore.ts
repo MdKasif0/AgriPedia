@@ -12,7 +12,12 @@ const MAX_RECENT_SEARCHES = 5;
 export function getFavoriteIds(): string[] {
   if (typeof window === 'undefined') return [];
   const storedFavorites = localStorage.getItem(FAVORITES_KEY);
-  return storedFavorites ? JSON.parse(storedFavorites) : [];
+  try {
+    return storedFavorites ? JSON.parse(storedFavorites) : [];
+  } catch (error) {
+    console.error("Error parsing favorites from localStorage", error);
+    return [];
+  }
 }
 
 export function addFavorite(produceId: string): void {
@@ -42,7 +47,12 @@ export function isFavorite(produceId: string): boolean {
 export function getRecentSearches(): string[] {
   if (typeof window === 'undefined') return [];
   const storedSearches = localStorage.getItem(RECENT_SEARCHES_KEY);
-  return storedSearches ? JSON.parse(storedSearches) : [];
+  try {
+    return storedSearches ? JSON.parse(storedSearches) : [];
+  } catch (error) {
+    console.error("Error parsing recent searches from localStorage", error);
+    return [];
+  }
 }
 
 export function addRecentSearch(query: string): void {
@@ -118,7 +128,12 @@ export function setGrowPlannerPreferences(preferences: GrowPlannerPrefs): void {
 export function getGrowPlannerPreferences(): GrowPlannerPrefs | null {
   if (typeof window === 'undefined') return null;
   const storedPrefs = localStorage.getItem(GROW_PLANNER_PREFS_KEY);
-  return storedPrefs ? JSON.parse(storedPrefs) : null;
+  try {
+    return storedPrefs ? JSON.parse(storedPrefs) : null;
+  } catch (error) {
+    console.error("Error parsing grow planner preferences from localStorage", error);
+    return null;
+  }
 }
 
 // --- Smart Calendar Events ---
@@ -137,7 +152,12 @@ export interface CalendarEvent {
 export function getCalendarEvents(): CalendarEvent[] {
   if (typeof window === 'undefined') return [];
   const storedEvents = localStorage.getItem(CALENDAR_EVENTS_KEY);
-  return storedEvents ? JSON.parse(storedEvents) : [];
+  try {
+    return storedEvents ? JSON.parse(storedEvents) : [];
+  } catch (error) {
+    console.error("Error parsing calendar events from localStorage", error);
+    return [];
+  }
 }
 
 export function addCalendarEvent(eventData: Omit<CalendarEvent, 'id'>): CalendarEvent {
@@ -191,11 +211,16 @@ export interface JournalEntry {
 export function getJournalEntries(plantId?: string): JournalEntry[] {
   if (typeof window === 'undefined') return [];
   const storedEntries = localStorage.getItem(JOURNAL_ENTRIES_KEY);
-  let entries: JournalEntry[] = storedEntries ? JSON.parse(storedEntries) : [];
-  if (plantId) {
-    entries = entries.filter(entry => entry.plantId === plantId);
+  try {
+    let entries: JournalEntry[] = storedEntries ? JSON.parse(storedEntries) : [];
+    if (plantId) {
+      entries = entries.filter(entry => entry.plantId === plantId);
+    }
+    return entries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Show newest first
+  } catch (error) {
+    console.error("Error parsing journal entries from localStorage", error);
+    return [];
   }
-  return entries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Show newest first
 }
 
 export function addJournalEntry(entryData: Omit<JournalEntry, 'id'>): JournalEntry {
@@ -242,7 +267,12 @@ export interface UserPlant {
 export function getUserPlants(): UserPlant[] {
   if (typeof window === 'undefined') return [];
   const storedUserPlants = localStorage.getItem(USER_PLANTS_KEY);
-  return storedUserPlants ? JSON.parse(storedUserPlants) : [];
+  try {
+    return storedUserPlants ? JSON.parse(storedUserPlants) : [];
+  } catch (error) {
+    console.error("Error parsing user plants from localStorage", error);
+    return [];
+  }
 }
 
 export function addUserPlant(plant: UserPlant): void {

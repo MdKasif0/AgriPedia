@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { getGrowPlannerPreferences, setGrowPlannerPreferences, type GrowPlannerPrefs } from '@/lib/userDataStore';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -18,12 +19,38 @@ interface PersonalizedGrowPlannerProps {
 }
 
 const PersonalizedGrowPlanner: React.FC<PersonalizedGrowPlannerProps> = () => {
+  // State for each preference
   const [location, setLocation] = useState<string>('');
   const [availableSpace, setAvailableSpace] = useState<string>('');
   const [sunlight, setSunlight] = useState<string>('');
   const [season, setSeason] = useState<string>('');
   const [userGoals, setUserGoals] = useState<string[]>([]);
+
   const [suggestedPlants, setSuggestedPlants] = useState<PlantSuggestion[]>([]);
+
+  // Load preferences on mount
+  useEffect(() => {
+    const loadedPrefs = getGrowPlannerPreferences();
+    if (loadedPrefs) {
+      setLocation(loadedPrefs.location || '');
+      setAvailableSpace(loadedPrefs.space || '');
+      setSunlight(loadedPrefs.sunlight || '');
+      setSeason(loadedPrefs.season || '');
+      setUserGoals(loadedPrefs.goals || []);
+    }
+  }, []);
+
+  // Save preferences whenever they change
+  useEffect(() => {
+    const currentPrefs: GrowPlannerPrefs = {
+      location,
+      space: availableSpace,
+      sunlight,
+      season,
+      goals: userGoals,
+    };
+    setGrowPlannerPreferences(currentPrefs);
+  }, [location, availableSpace, sunlight, season, userGoals]);
 
   const goalsOptions = [
     { id: 'vegetables', label: 'Vegetables' },
