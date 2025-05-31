@@ -8,6 +8,10 @@ import SmartCalendarReminders from '@/components/homefeatures/SmartCalendarRemin
 import QuickActions from '@/components/home/QuickActions'; // Import QuickActions
 import InfoBanner from '@/components/home/InfoBanner'; // Import InfoBanner
 import { Lightbulb } from 'lucide-react'; // Import an icon for the banner
+import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
+import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
+import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
+import LearnSection from '@/components/homefeatures/LearnSection';
 // Import other components that might be created in later steps, like QuickActions or InfoBanner, if they are ready.
 
 export default function HomePage() {
@@ -39,6 +43,10 @@ export default function HomePage() {
           <PlantGrowthTracker />
           <PlantHealthScanner />
           <SmartCalendarReminders />
+          <StepByStepGuides />
+          <SeedToHarvestTimeline />
+          <CommunityFeatures />
+          <LearnSection />
           {/* Add more components here as they are developed */}
         </div>
       </main>
