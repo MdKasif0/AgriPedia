@@ -162,5 +162,16 @@
         "Serve immediately or chill for later."
       ]
     }
-  ]
+  ],
+  "climateZone": ["Temperate", "Continental"],
+  "sunlightRequirement": "full",
+  "waterNeeds": "medium",
+  "soilType": ["loamy", "well-drained"],
+  "spaceType": ["large_tree"],
+  "skillLevel": "intermediate",
+  "plantingMonths": { "north": [3, 4, 5], "south": [9, 10] },
+  "daysToHarvest": { "min": 100, "max": 200 },
+  "shortSummary": "Crisp and juicy fruit, grows on trees, many varieties available.",
+  "isPetSafe": false,
+  "isIndoorFriendly": false
 }

@@ -597,3 +597,47 @@ export function getAllCategoriesWithProduce(): { [categoryName: string]: Produce
     "Tuber & Root Crops": tuberAndRootCrops,
   };
 }
+
+// --- Functions for Grow Planner ---
+import type { PlantData } from '../types/growPlanner';
+import fs from 'fs/promises';
+import path from 'path';
+
+const dataDir = path.join(process.cwd(), 'src', 'lib', 'data');
+
+export async function getAllPlantData(): Promise<PlantData[]> {
+  const allPlants: PlantData[] = [];
+  try {
+    const categories = await fs.readdir(dataDir, { withFileTypes: true });
+
+    for (const category of categories) {
+      if (category.isDirectory() && !category.name.startsWith('.')) { // Avoid hidden directories like .gitkeep
+        const categoryPath = path.join(dataDir, category.name);
+        try {
+          const files = await fs.readdir(categoryPath);
+          for (const file of files) {
+            if (file.endsWith('.json')) {
+              const filePath = path.join(categoryPath, file);
+              try {
+                const fileContent = await fs.readFile(filePath, 'utf-8');
+                const plant = JSON.parse(fileContent) as PlantData;
+                // Add a category field based on the directory name for better filtering later
+                plant.category = category.name;
+                allPlants.push(plant);
+              } catch (parseError) {
+                console.error(`Error parsing JSON from ${filePath}:`, parseError);
+              }
+            }
+          }
+        } catch (readDirError) {
+          console.error(`Error reading directory ${categoryPath}:`, readDirError);
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error reading data directory:', error);
+    // Depending on how critical this is, you might want to throw the error
+    // or return an empty array / partial data. For now, returning what's gathered.
+  }
+  return allPlants;
+}
