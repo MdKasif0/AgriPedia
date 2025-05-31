@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound, Users } from 'lucide-react'; // Added KeyRound, Users
+import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound, Users, Search } from 'lucide-react'; // Added KeyRound, Users, Search
 import {
   Sidebar,
   SidebarHeader,
@@ -38,13 +38,7 @@ export default function DesktopSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
-          <SidebarMenuItem>
-            <Link href="/" legacyBehavior passHref>
-              <SidebarMenuButton asChild tooltip="Home" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
-                <a><Home /> <span>Home</span></a>
-              </SidebarMenuButton>
-            </Link>
-          </SidebarMenuItem>
+          {/* Removed Home MenuItem */}
           <SidebarMenuItem>
             <Link href="/chat" legacyBehavior passHref>
               <SidebarMenuButton asChild tooltip="Chat with AgriAI" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
@@ -60,9 +54,9 @@ export default function DesktopSidebar() {
             </Link>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <Link href="/favorites" legacyBehavior passHref>
-              <SidebarMenuButton asChild tooltip="Favorites" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
-                <a><Heart /> <span>Favorites</span></a>
+            <Link href="/search" legacyBehavior passHref>
+              <SidebarMenuButton asChild tooltip="Search" className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                <a><Search /> <span>Search</span></a>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
@@ -76,12 +70,19 @@ export default function DesktopSidebar() {
           </SidebarGroupLabel>
           
           <div className="flex flex-col gap-2 px-2 py-1">
-             <div className="flex items-center justify-between p-1 rounded-md hover:bg-sidebar-accent/10">
+             <div className="flex items-center justify-between p-1 rounded-md hover:bg-sidebar-accent/10"> {/* Ensure this div structure is consistent */}
                 <span className="text-sm text-sidebar-foreground flex items-center gap-2">
                     <Palette size={16} className="text-sidebar-primary"/> Theme
                 </span>
                 <ThemeToggleButton />
             </div>
+            {/* Added My Favorites link */}
+            <Link href="/settings/favorites" passHref legacyBehavior>
+                 <a className="flex items-center gap-2 p-2 rounded-md text-sm text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground">
+                    <Heart size={16} className="text-sidebar-primary" />
+                    <span>My Favorites</span>
+                </a>
+            </Link>
           </div>
         </SidebarGroup>
 
