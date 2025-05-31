@@ -6,12 +6,18 @@ import { USER_MODES, DEFAULT_USER_MODE_ID } from '@/lib/constants';
 import { ShieldCheck } from 'lucide-react'; // Example Icon
 
 export default function ActiveUserModeDisplay() {
+  const [hasMounted, setHasMounted] = useState(false);
   const [currentModeId, setCurrentModeId] = useState<UserModeId>(DEFAULT_USER_MODE_ID);
 
   useEffect(() => {
-    setCurrentModeId(getCurrentUserMode());
+    setHasMounted(true);
+  }, []);
 
-    const handleUserModeChange = (event: Event) => {
+  useEffect(() => {
+    if (hasMounted) { // Only run localStorage access and event listeners after mount
+      setCurrentModeId(getCurrentUserMode());
+
+      const handleUserModeChange = (event: Event) => {
       const customEvent = event as CustomEvent<{ modeId: UserModeId }>;
       if (customEvent.detail && customEvent.detail.modeId) {
         setCurrentModeId(customEvent.detail.modeId);
@@ -30,11 +36,16 @@ export default function ActiveUserModeDisplay() {
     };
     window.addEventListener('storage', handleStorageChange);
 
-    return () => {
-      window.removeEventListener('userModeChanged', handleUserModeChange);
-      window.removeEventListener('storage', handleStorageChange);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener('userModeChanged', handleUserModeChange);
+        window.removeEventListener('storage', handleStorageChange);
+      };
+    }
+  }, [hasMounted]);
+
+  if (!hasMounted) {
+    return null; // Render nothing until mounted on the client
+  }
 
   if (currentModeId === DEFAULT_USER_MODE_ID) {
     return null; // Don't display anything for the default mode
