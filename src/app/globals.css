@@ -75,52 +75,52 @@ html {
   }
 
   .light {
-    --background: 40 50% 95%; /* Beige */
-    --foreground: 30 20% 25%; /* Dark Clay/Charcoal */
+    --background: 210 17% 98%; /* #F8F9FA */
+    --foreground: 0 0% 7%; /* #111111 */
 
-    --card: 40 40% 90%; /* Off-white/Light Beige */
-    --card-foreground: 30 20% 25%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 7%; /* #111111 */
 
-    --popover: 40 40% 88%; /* Slightly darker Beige */
-    --popover-foreground: 30 20% 25%;
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 7%; /* #111111 */
 
-    --primary: 100 30% 50%; /* Soft Green */
-    --primary-foreground: 100 20% 15%; /* Dark Green for text on primary */
+    --primary: 151 100% 38%; /* hsl(var(--accent-emerald)) */
+    --primary-foreground: 0 0% 100%; /* White for readability on emerald */
 
-    --secondary: 190 50% 60%; /* Sky Blue */
-    --secondary-foreground: 190 30% 20%; /* Dark Blue for text on secondary */
+    --secondary: 0 0% 88%; /* hsl(var(--border)) for outline */
+    --secondary-foreground: 0 0% 7%; /* hsl(var(--foreground)) for text */
 
-    --muted: 40 30% 85%; /* Light Muted Beige-Gray */
-    --muted-foreground: 30 15% 45%; /* Medium Gray-Clay */
+    --muted: 215 14% 67%;
+    --muted-foreground: 215 14% 77%;
 
-    --accent: 30 40% 60%; /* Clay */
-    --accent-foreground: 30 20% 95%; /* Light Clay/Off-white */
+    --accent: 151 100% 38%; /* hsl(var(--accent-emerald)) */
+    --accent-foreground: 0 0% 100%; /* White for readability */
     
-    --destructive: 0 70% 55%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 60% 50%; /* Keeping existing dark theme red, can be adjusted */
+    --destructive-foreground: 0 0% 98%; /* Keeping existing dark theme text color */
 
-    --border: 40 30% 80%; /* Light Beige-Gray Border */
-    --input: 40 30% 88%; /* Very Light Beige Input Background */
-    --ring: 100 30% 55%; /* Soft Green for focus rings */
+    --border: 0 0% 88%; /* #E0E0E0 */
+    --input: 220 16% 95%; /* #F3F4F6 */
+    --ring: 151 100% 38%; /* hsl(var(--accent-emerald)) */
 
     /* --radius is already defined in :root and applies to .light as well */
 
     /* Sidebar colors - light theme */
-    --sidebar-background: 35 40% 92%; /* Slightly off-white from page background, warmer */
-    --sidebar-foreground: hsl(var(--foreground));
-    --sidebar-primary: hsl(var(--primary));
-    --sidebar-primary-foreground: hsl(var(--primary-foreground));
-    --sidebar-accent: hsl(var(--accent));
-    --sidebar-accent-foreground: hsl(var(--accent-foreground));
-    --sidebar-border: hsl(var(--border));
-    --sidebar-ring: hsl(var(--ring));
+    --sidebar-background: 0 0% 100%; /* #FFFFFF */
+    --sidebar-foreground: 0 0% 7%; /* hsl(var(--foreground)) */
+    --sidebar-primary: 151 100% 38%; /* hsl(var(--accent-emerald)) */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 42 100% 50%; /* hsl(var(--accent-amber)) */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 0 0% 88%; /* hsl(var(--border)) */
+    --sidebar-ring: 151 100% 38%; /* hsl(var(--accent-emerald)) */
 
     /* Chart colors for light theme */
-    --chart-1: hsl(var(--primary));
-    --chart-2: hsl(var(--secondary));
-    --chart-3: hsl(var(--accent));
-    --chart-4: 100 25% 65%; /* Lighter/Muted Soft Green */
-    --chart-5: 190 40% 75%; /* Lighter/Muted Sky Blue */
+    --chart-1: 151 100% 38%; /* hsl(var(--accent-emerald)) */
+    --chart-2: 197 100% 47%; /* hsl(var(--accent-blue)) */
+    --chart-3: 42 100% 50%; /* hsl(var(--accent-amber)) */
+    --chart-4: 320 100% 75%; /* Lighter Pink/Magenta */
+    --chart-5: 180 100% 75%; /* Lighter Cyan */
   }
 }
 
@@ -130,6 +130,6 @@ html {
   }
   body {
     font-family: 'Inter', var(--font-sans), Arial, Helvetica, sans-serif; /* Add Inter as primary sans-serif */
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300 ease-in-out;
   }
 }

@@ -82,7 +82,7 @@ export default function MobileBottomNav() {
       <nav className="fixed inset-x-2 bottom-3 sm:inset-x-4 sm:bottom-3
                       bg-card/80 backdrop-blur-lg
                       border border-border/60
-                      shadow-xl rounded-2xl md:hidden z-50 h-16">
+                      shadow-[0_-5px_15px_-5px_theme(colors.primary/20%)] rounded-2xl md:hidden z-50 h-16">
         <div className="flex justify-around items-center h-full px-1">
           {navItemsConfig.map((item) => {
             if (item.isCentralScan) {

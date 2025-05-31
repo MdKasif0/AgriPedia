@@ -25,7 +25,7 @@ export default function DesktopSidebar() {
   const { state } = useSidebar();
 
   return (
-    <Sidebar collapsible="icon" side="left" variant="sidebar" className="bg-neutral-900/80 backdrop-blur-lg text-foreground shadow-lg border-r border-border/30">
+    <Sidebar collapsible="icon" side="left" variant="sidebar" className="bg-card backdrop-blur-lg text-foreground shadow-md border-r border-border">
       <SidebarHeader className="p-4 flex items-center justify-between">
         {state === 'expanded' ? (
             <Link href="/" className="flex items-center gap-2 text-xl font-semibold text-primary hover:text-primary/90 transition-colors duration-200 ease-in-out">
