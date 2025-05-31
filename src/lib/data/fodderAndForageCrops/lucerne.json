@@ -1,0 +1,99 @@
+{
+  "id": "lucerne",
+  "commonName": "Lucerne",
+  "scientificName": "Medicago sativa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Medicago_sativa_MS4014.JPG/800px-Medicago_sativa_MS4014.JPG",
+  "description": "Lucerne, also commonly known as Alfalfa, is a perennial flowering plant in the legume family Fabaceae. It is cultivated as a primary forage crop in many countries around the world, valued for its high protein content and digestibility. It is used for grazing, hay, and silage, and also serves as a green manure and cover crop.",
+  "origin": "Greater Iran and surrounding regions of the Near East and Central Asia.",
+  "localNames": [
+    "Alfalfa (Common alternative)",
+    "Rajka (Hindi)",
+    "Medicago (Italian)",
+    "Alfalfa / Mielga (Spanish)",
+    "Luzerne (German)",
+    "Luzerna (Portuguese)"
+  ],
+  "regions": [
+    "United States",
+    "Argentina",
+    "Canada",
+    "Australia",
+    "Russia",
+    "China",
+    "European Union (Spain, France, Italy)",
+    "Middle East"
+  ],
+  "seasons": [
+    "Perennial; typically planted in spring or late summer. Multiple harvests (cuts) per year in suitable climates, often every 25-40 days during the growing season."
+  ],
+  "nutrition": {
+    "calories": "Lucerne Hay: ~200-250 kcal per 100g (dry matter). Fresh Lucerne: ~30-50 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Hay: ~15-22 (dry matter)" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Hay: ~35-45 (Fiber ~25-30)" },
+      { "name": "Fat", "unit": "g", "value": "Hay: ~2-3" },
+      { "name": "Fiber", "unit": "g", "value": "Hay: ~25-30 (ADF/NDF significant)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Fresh: Very High" },
+      { "name": "Vitamin A (as beta-carotene)", "unit": "IU", "rdi": "Fresh/Hay: High" },
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Fresh/Hay: Moderate" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "unit": "%", "rdi": "Hay: ~1.2-1.8 (dry matter)" },
+      { "name": "Phosphorus", "unit": "%", "rdi": "Hay: ~0.2-0.3 (dry matter)" },
+      { "name": "Potassium", "unit": "%", "rdi": "Hay: ~2-3 (dry matter)" },
+      { "name": "Magnesium", "unit": "%", "rdi": "Hay: ~0.2-0.4 (dry matter)" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of high-quality protein and fiber for livestock, promoting growth and milk production.",
+    "Rich in vitamins (K, A, E) and minerals (calcium, potassium) essential for animal health.",
+    "Improves soil fertility through nitrogen fixation, reducing the need for synthetic fertilizers.",
+    "Lucerne sprouts are consumed by humans and are nutritious, but require careful handling to prevent foodborne illness."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Bloat (in ruminant livestock)",
+      "severity": "Moderate to Severe for animals",
+      "details": "Fresh Lucerne, especially when grazed rapidly or in large quantities, can cause frothy bloat in ruminant animals like cattle and sheep due to its high protein and saponin content. Feeding hay or managing grazing helps prevent this."
+    },
+    {
+      "name": "Lucerne Sprout Contamination (for humans)",
+      "severity": "Varies",
+      "details": "Raw Lucerne sprouts can be contaminated with bacteria like Salmonella or E. coli, leading to foodborne illness. Proper sanitation during sprouting is crucial."
+    },
+    {
+      "name": "Canavanine (in seeds/sprouts)",
+      "severity": "Low risk in forage",
+      "details": "Lucerne seeds and sprouts contain canavanine, an amino acid that can be toxic in large amounts or to individuals with certain autoimmune conditions like lupus. Mature forage has lower levels."
+    }
+  ],
+  "cultivationProcess": "Lucerne is grown from seeds. It requires deep, well-drained soil with a neutral to slightly alkaline pH. It is a perennial crop that can be productive for 3-7 years or more. It is typically harvested multiple times per year by cutting the plants before or at early bloom to maximize nutrient content.",
+  "growthDuration": "Perennial. First harvest is usually possible 60-90 days after spring sowing. Subsequent harvests every 25-40 days during the growing season. Stands can last 3-7 years, sometimes longer depending on management and climate.",
+  "sustainabilityTips": [
+    "As a legume, it fixes atmospheric nitrogen, reducing the need for nitrogen fertilizers and benefiting subsequent crops in rotation.",
+    "Deep root system improves soil structure and water infiltration, and can draw nutrients from deeper soil layers.",
+    "Drought-tolerant varieties are available, making it suitable for water-scarce regions with appropriate management.",
+    "Provides habitat for beneficial insects and pollinators when allowed to bloom."
+  ],
+  "carbonFootprintInfo": "Lucerne cultivation can have a positive impact on soil carbon sequestration. Its footprint is influenced by irrigation needs, machinery use for harvesting and baling, and transportation of hay. Its nitrogen-fixing ability reduces fertilizer-related emissions, contributing to a lower overall carbon footprint compared to non-legume forages.",
+  "uses": ["animal_feed_forage_hay_haylage_silage_pellets_cubes_for_dairy_cattle_beef_cattle_horses_sheep_goats", "cover_crop_green_manure_soil_improvement", "human_consumption_sprouts_leaf_protein_concentrate_herbal_supplements", "pollinator_attractant_honey_production"],
+  "originAndDomesticationHistory": "Lucerne (Medicago sativa), also known as Alfalfa, originated in Greater Iran and surrounding regions of the Near East and Central Asia. It is one of the oldest cultivated forage crops, with evidence of its use dating back to ancient Persia (Iran) around 5000 BCE. It was introduced to Greece around 490 BCE and subsequently spread throughout Europe, North Africa, and eventually to the Americas and Australia, valued for its high yield and nutritional quality for livestock.",
+  "climaticRequirements": {
+    "temperature": "Temperate crop. Optimal growing temperatures are 15-25°C. Tolerates a wide range of temperatures, including heat and cold, depending on the variety. Requires a dormant period in winter in colder climates.",
+    "rainfall": "Requires moderate rainfall, typically 600-1200mm annually, or irrigation. While it has a deep root system and some drought tolerance, yields are significantly reduced by water stress.",
+    "altitude": "Adaptable to various altitudes, from sea level to over 2500m.",
+    "dayLength": "Most varieties are long-day plants, flowering more readily as day length increases."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils with a neutral to slightly alkaline pH (6.5-8.0). Good internal and surface drainage is crucial. Does not tolerate acidic or waterlogged soils.",
+  "irrigationAndWaterNeeds": "High water requirement for optimal production, especially for multiple cuts per season. Irrigation (sprinkler, flood, or pivot) is essential in arid and semi-arid regions and often used to supplement rainfall in other areas to maximize yields.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring or late summer/early autumn. Planted shallowly into a firm seedbed. Typically harvested by cutting (mowing) when plants reach 10% bloom or early bloom stage for optimal balance of yield and nutritional quality. Multiple harvests (3-7 or more, depending on climate and irrigation) are common per year. After cutting, Lucerne is usually wilted in the field, then raked into windrows, and baled as hay, or chopped for silage/haylage.",
+  "pestAndDiseaseManagement": "Major pests include alfalfa weevil (same as Lucerne weevil), aphids, potato leafhopper. Diseases include Phytophthora root rot, Fusarium wilt, Verticillium wilt. Integrated pest management involves resistant varieties, crop rotation, timely harvesting, biological control, and judicious use of pesticides.",
+  "postHarvestHandling": "For hay, cut Lucerne is dried in the field to a moisture content of 15-20% before baling. Hay quality depends on stage of maturity at harvest, drying conditions, and storage. Lucerne can also be processed into pellets, cubes, or meal. For silage or haylage, it is wilted to a higher moisture content and then fermented in anaerobic conditions.",
+  "majorProducingCountriesOrRegions": [
+    "United States", "Argentina", "Canada", "Australia", "Russia", "China", "European Union (Spain, France, Italy)", "Iran", "Sudan", "South Africa"
+  ],
+  "marketValueAndGlobalDemand": "Lucerne (Alfalfa) is a major global forage crop, with high demand for dairy and beef cattle, horses, and other livestock due to its high protein and nutrient content. It is traded internationally as hay, pellets, and cubes. Demand is driven by the livestock industry, particularly the dairy sector.",
+  "staticRecipes": []
+}

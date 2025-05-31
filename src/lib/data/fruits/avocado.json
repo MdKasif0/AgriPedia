@@ -2,7 +2,7 @@
   "id": "avocado",
   "commonName": "Avocado",
   "scientificName": "Persea americana",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DSmAcG4Lit_c4RC5OYnc1VmaeHGqEq2IPVbJLybAwQ&s",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Avocado_Hass_FR.jpg/800px-Avocado_Hass_FR.jpg",
   "description": "A large berry containing a single large seed. It has a creamy texture and rich, buttery flavor. Known for its healthy fats.",
   "origin": "South-central Mexico",
   "localNames": [
@@ -108,7 +108,7 @@
     "Consider water usage in avocado production; choose sources with sustainable water practices if possible."
   ],
   "carbonFootprintInfo": "Can be high due to water requirements and transportation (0.8-2.5 kg CO2e/kg).",
-  "uses": ["culinary_fresh_eating_salads_sandwiches_guacamole", "smoothies", "avocado_oil", "cosmetics_skin_hair_care_limited"],
+  "uses": ["fresh_consumption", "guacamole", "salads", "sandwiches", "smoothies", "avocado_oil_culinary", "avocado_oil_cosmetics", "skin_care_products", "hair_care_products"],
   "originAndDomesticationHistory": "Avocados originated in south-central Mexico, sometime between 7,000 and 5,000 B.C. Archaeological evidence shows they were cultivated by ancient Mesoamerican civilizations like the Maya and Olmec. They were later spread throughout South and Central America. European introduction occurred after Spanish colonization, and cultivation expanded to other suitable climates globally from the 19th century.",
   "climaticRequirements": {
     "temperature": "Subtropical to tropical; optimal 20-25°C. Most varieties are frost-sensitive. Some (e.g., Mexican race) tolerate light frost.",

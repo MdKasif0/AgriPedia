@@ -8,13 +8,16 @@
   "localNames": [
     "Indian Gooseberry",
     "Nellikkai (Tamil)",
-    "Usirikaya (Telugu)"
+    "Usirikaya (Telugu)",
+    "Amalaki (Sanskrit)"
   ],
   "regions": [
     "India",
     "Sri Lanka",
     "Thailand",
-    "Malaysia"
+    "Malaysia",
+    "Nepal",
+    "Pakistan"
   ],
   "seasons": [
     "Autumn",
@@ -71,17 +74,44 @@
     {
       "name": "Amla Allergy",
       "severity": "Rare",
-      "details": "Very rare, but excessive consumption might cause acidity in some."
+      "details": "Very rare, but excessive consumption might cause acidity in some. Individuals with certain bleeding disorders or those on anticoagulant medication should consume with caution due to its potential antiplatelet properties."
     }
   ],
   "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Prefers hot summers and mild winters.\n2. Soil: Adaptable to a wide range of soils but prefers well-drained, loamy to clay-loam soil.\n3. Propagation: Seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Regular watering for young plants. Mature trees are drought-tolerant.\n6. Fertilizing: Organic manure is beneficial. Light fertilization may be required.\n7. Harvesting: Fruits are harvested when they turn from light green to a dull greenish-yellow.",
-  "growthDuration": "Starts fruiting in 3-5 years for grafted plants. Fruits mature in autumn and winter.",
+  "growthDuration": "Starts fruiting in 3-5 years for grafted plants, 6-8 years for seedlings. Fruits mature in autumn and winter.",
   "sustainabilityTips": [
     "Amla is often preserved as pickles, candies (murabba), or juice due to its tartness.",
     "Dried amla powder is a popular supplement.",
     "Store fresh amla in the refrigerator."
   ],
   "carbonFootprintInfo": "Relatively low (0.3-0.6 kg CO2e/kg), particularly when processed and consumed locally.",
+  "uses": [
+    "culinary_pickles_chutneys_jams_murabba_juice_candy_eaten_raw",
+    "medicinal_ayurvedic_traditional_medicine_vitamin_c_source_immunity_booster_hair_care_skin_health_digestive_aid_liver_tonic",
+    "cosmetics_ingredient_in_inks_dyes_shampoos_hair_oils",
+    "timber_wood_for_minor_construction_fuel"
+  ],
+  "originAndDomesticationHistory": "Native to tropical and subtropical regions of Southeast Asia, particularly India. Amla has been revered and utilized in India for millennia, with significant mentions in ancient Ayurvedic texts like the Charaka Samhita and Sushruta Samhita, dating back over 2000 years. It is considered a sacred tree in Hinduism. Domestication likely occurred within India, with selection for desirable fruit characteristics over centuries. Its cultivation and use spread to neighboring countries through traditional medicine systems and cultural exchange.",
+  "climaticRequirements": {
+    "temperature": "Thrives in tropical and subtropical climates. Prefers hot summers (up to 45-48°C or 113-118°F) and mild winters. Can tolerate light frost, but young plants are susceptible. Not suitable for prolonged freezing conditions.",
+    "rainfall": "Prefers annual rainfall of 600-800 mm, well-distributed. Can adapt to semi-arid conditions once established. A dry period during fruit maturation is beneficial.",
+    "altitude": "Grown from sea level up to 1800 meters (approx. 5900 feet)."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, including light sandy soils, loams, and heavy clays, provided they are well-drained. Prefers deep, fertile, loamy to clay-loam soils with a pH range of 6.0 to 8.0 (slightly acidic to moderately alkaline). Avoids waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Young plants require regular watering for establishment, especially during dry periods. Mature trees are quite drought-tolerant due to their deep taproot system. For optimal fruit production, irrigation is beneficial during prolonged dry spells, particularly during flowering and fruit development stages. Drip irrigation is efficient.",
+  "plantingAndHarvestCycles": "Propagation is typically through seeds, budding (shield or patch budding), or grafting (softwood grafting). Seeds are sown in nurseries in spring. Seedlings or grafted plants are transplanted to the main field during the monsoon season. Grafted trees may start bearing fruit from the 3rd year, while seed-propagated trees take 6-8 years. Economic yields are obtained from 8-10 years onwards. Fruits are harvested in autumn/winter (typically October to February in India, varying by region and specific variety) when they change color from light green to a dull greenish-yellow or slightly golden. Harvesting is usually done by hand-picking.",
+  "pestAndDiseaseManagement": "Common Pests: Bark-eating caterpillars (Indarbela spp.), fruit flies, mealybugs, aphids, scale insects. Common Diseases: Rust (Ravenelia emblicae), fruit rot (caused by various fungi like Aspergillus, Penicillium), dieback, anthracnose. Management Strategies: Good orchard sanitation, proper pruning to ensure air circulation, use of resistant varieties if available, biological control methods (e.g., releasing predators for mealybugs), and need-based application of appropriate organic or chemical pesticides and fungicides.",
+  "postHarvestHandling": "Fruits are relatively hardy. After harvesting, they are graded based on size and quality. They can be stored for a short period (1-2 weeks) at room temperature, or longer (3-4 weeks) under refrigeration (around 7-10°C or 45-50°F) with good ventilation. Due to their tartness and for longer shelf life, amla is often processed into various products such as pickles, juice, powder, murabba (sweet preserve), and candies.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading producer)",
+    "Sri Lanka",
+    "Thailand",
+    "Malaysia",
+    "Nepal",
+    "Pakistan",
+    "China"
+  ],
+  "marketValueAndGlobalDemand": "Amla has a high demand in India and other parts of Southeast Asia, both for fresh fruit consumption and for processed products, especially within the Ayurvedic and herbal industries. There is growing international interest due to its significant health benefits, particularly as a natural and potent source of Vitamin C and antioxidants. The market value is generally stable, with some price fluctuations based on seasonality, yield, and quality. The demand for organic and value-added amla products (like juices, powders, and supplements) is steadily increasing globally.",
   "staticRecipes": [
     {
       "name": "Amla Juice",

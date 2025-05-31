@@ -1,32 +1,43 @@
 {
   "id": "elephant-foot-yam",
-  "commonName": "Elephant Foot Yam (Suran)",
+  "commonName": "Elephant Foot Yam (Suran / Jimikand)",
   "scientificName": "Amorphophallus paeoniifolius",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Dba8HyRJhG9WWbiThya-U4aZliF8um42pKhvDyCfLg&s",
-  "description": "A tropical tuber crop grown primarily in Africa, South Asia, Southeast Asia and the tropical Pacific islands. It has a large, starchy corm that can weigh several kilograms and is known for its unique shape resembling an elephant's foot.",
-  "origin": "India, Southeast Asia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Amorphophallus_paeoniifolius_corm_Suran_Jimikand_Oal_Chenai_Kizhangu.jpg/800px-Amorphophallus_paeoniifolius_corm_Suran_Jimikand_Oal_Chenai_Kizhangu.jpg",
+  "description": "A tropical tuber crop grown primarily in Africa, South Asia, Southeast Asia, and the tropical Pacific islands for its large, starchy corm. The corm is roughly spherical or flattened and can weigh several kilograms, with a dark brown, rough skin and a shape that can resemble an elephant's foot. The flesh is typically creamy white or pale yellow and has a starchy texture. It requires proper preparation and thorough cooking to remove acridity caused by calcium oxalate crystals before consumption.",
+  "origin": "Likely native to India, Southeast Asia (e.g., Malaysia, Indonesia, Philippines), or Papua New Guinea. It has a long history of cultivation in these regions.",
   "localNames": [
-    "Suran (Hindi)",
-    "Jimikand",
-    "Oal (Bengali)",
-    "Chenai Kizhangu (Tamil)"
+    "Suran (सूरण - Hindi)",
+    "Jimikand / Zamin Qand (ज़मीकंद - Hindi/Urdu)",
+    "Oal / Ol (ওল - Bengali)",
+    "Chenai Kizhangu (சேனைக்கிழங்கு - Tamil)",
+    "Kanda Gadda (కంద గడ్డ - Telugu)",
+    "Suvarna Gedde (ಸುವರ್ಣ ಗೆಡ್ಡೆ - Kannada)",
+    "Ol Kachu (Assamese)",
+    "Elephant Yam",
+    "Whitespot Giant Arum"
   ],
   "regions": [
-    "India",
+    "India (major producer and consumer, widely cultivated across various states)",
     "Sri Lanka",
     "Philippines",
     "Indonesia",
-    "Africa"
+    "Malaysia",
+    "Thailand",
+    "Vietnam",
+    "Bangladesh",
+    "Tropical Africa (Nigeria, Ghana, Cameroon)",
+    "Pacific Islands (Fiji, Samoa)",
+    "Madagascar"
   ],
   "seasons": [
-    "Harvested mainly in late autumn/winter"
+    "Typically planted at the onset of the rainy season (e.g., May-June in India) and harvested mainly in late autumn or winter (e.g., October-January) after the plant has completed its vegetative cycle and the leaves senesce."
   ],
   "nutrition": {
-    "calories": "118 kcal per 100g",
+    "calories": "118 kcal per 100g (cooked corm)",
     "macronutrients": [
       {
         "name": "Protein",
-        "value": 1.5,
+        "value": 1.53,
         "unit": "g"
       },
       {
@@ -36,7 +47,7 @@
       },
       {
         "name": "Fat",
-        "value": 0.2,
+        "value": 0.17,
         "unit": "g"
       },
       {
@@ -47,10 +58,22 @@
     ],
     "vitamins": [
       {
-        "name": "Vitamin B6",
+        "name": "Vitamin B6 (Pyridoxine)",
         "value": 0.293,
         "unit": "mg",
-        "rdi": "17%"
+        "rdi": "17-23%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.112,
+        "unit": "mg",
+        "rdi": "9-11%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 17.1,
+        "unit": "mg",
+        "rdi": "19-29%"
       }
     ],
     "minerals": [
@@ -58,37 +81,74 @@
         "name": "Potassium",
         "value": 816,
         "unit": "mg",
-        "rdi": "23%"
+        "rdi": "17-23%"
       },
       {
         "name": "Copper",
         "value": 0.179,
         "unit": "mg",
         "rdi": "20%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.383,
+        "unit": "mg",
+        "rdi": "17-19%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 55,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "5-7%"
       }
     ]
   },
   "healthBenefits": [
-    "Good source of carbohydrates for energy.",
-    "Rich in potassium, important for blood pressure regulation.",
-    "Contains dietary fiber, aiding digestion.",
-    "Traditionally used in Ayurvedic medicine for various ailments, including piles and digestive issues."
+    "Good source of carbohydrates, providing sustained energy.",
+    "Rich in potassium, an essential mineral important for maintaining healthy blood pressure, fluid balance, and heart function.",
+    "Contains dietary fiber, which aids in digestion, promotes bowel regularity, and can help manage blood sugar levels.",
+    "Provides important minerals like copper and manganese, involved in various enzymatic functions and antioxidant defense.",
+    "Traditionally used in Ayurvedic and other traditional medicine systems for various ailments, including piles (hemorrhoids), dysentery, indigestion, asthma, and as a liver tonic and blood purifier."
   ],
   "potentialAllergies": [
     {
-      "name": "Calcium Oxalate Irritation",
-      "severity": "Mild",
-      "details": "Raw or improperly cooked yam can cause itching or irritation in the mouth and throat due to calcium oxalate crystals. Soaking in tamarind water or buttermilk, or thorough cooking, helps neutralize this."
+      "name": "Calcium Oxalate Irritation (Acridity)",
+      "severity": "Mild to Moderate (if improperly prepared)",
+      "details": "Raw or improperly cooked elephant foot yam contains calcium oxalate crystals (raphides), which can cause a strong itching, burning, or irritating sensation in the mouth, throat, and skin. It is essential to cook the yam thoroughly to break down these crystals and neutralize the acridity. Common traditional methods to reduce acridity include soaking cut pieces in tamarind water, buttermilk, or water with lime juice before cooking, or boiling with these acidic agents. Wearing gloves or oiling hands while cutting and peeling is often recommended to prevent skin irritation."
     }
   ],
-  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Grown from corm pieces or smaller cormels.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. pH 5.5-7.0.\n3. Climate: Tropical and subtropical, requires warm, humid conditions.\n4. Planting: Plant corm pieces 4-6 inches deep after the weather warms up.\n5. Watering: Requires regular watering, especially during active growth. Reduce water as plant matures.\n6. Harvesting: Harvest corms when leaves begin to yellow and die back, typically 8-10 months after planting.",
-  "growthDuration": "8-10 months from planting to harvest.",
+  "cultivationProcess": "Elephant foot yam is a tropical tuber crop. It is propagated vegetatively from corm pieces or smaller cormels, each containing a bud. It requires warm, humid conditions and well-drained, fertile loamy soil rich in organic matter. Corm pieces are planted after the weather warms up, typically at the beginning of the rainy season. The plant requires regular watering during its active growth phase. The large corm develops underground, and the plant has a single, large, much-divided leaf that emerges from the corm, followed by a distinctive, large, and often foul-smelling inflorescence (flower) in mature plants (though flowering may not occur annually or in all cultivated settings). Corms are harvested when the leaves begin to yellow and die back, indicating maturity.",
+  "growthDuration": "Typically 8 to 10 months from planting to harvest of mature corms. The plant undergoes a period of dormancy after the vegetative growth phase, during which the corm matures fully.",
   "sustainabilityTips": [
-    "Store whole yams in a cool, dark, dry place for several weeks.",
-    "Handle with care when preparing to avoid skin irritation from calcium oxalate; oiling hands or wearing gloves can help.",
-    "Always cook thoroughly. Often boiled, fried, or used in curries and pickles."
+    "Store whole, unblemished yams in a cool, dark, dry, and well-ventilated place for several weeks to months. Avoid refrigeration for long-term storage of whole corms as it can affect texture.",
+    "Always handle with care during preparation to avoid skin irritation from calcium oxalate; oiling hands or wearing gloves is advisable. Ensure thorough cooking (boiling, steaming, frying) to remove acridity before consumption.",
+    "Elephant foot yam is a hardy crop that can be grown in diverse tropical conditions, often with minimal inputs, making it a sustainable food source in many regions."
   ],
-  "carbonFootprintInfo": "Moderate, depending on cultivation practices and transport (0.5-1.0 kg CO2e/kg).",
+  "carbonFootprintInfo": "Moderate, generally similar to other root and tuber crops, with an estimated footprint of 0.5-1.0 kg CO2e/kg when considering cultivation and local transport. Long-distance transportation would increase this. Its good storage life can reduce the need for energy-intensive preservation methods.",
+  "uses": [
+    "culinary_vegetable_corm_cooked_boiled_steamed_fried_baked_mashed_used_in_curries_stews_soups_chips_fritters_pickles_flour",
+    "medicinal_traditional_ayurveda_siddha_unani_used_for_digestive_ailments_piles_hemorrhoids_dysentery_indigestion_expectorant_liver_conditions_anti_inflammatory_blood_purifier",
+    "animal_fodder_leaves_and_corm_peelings_sometimes_used_as_feed_for_livestock_pigs_after_proper_processing_to_reduce_acridity",
+    "ornamental_plant_the_large_unusual_flower_spathe_and_spadix_is_sometimes_grown_as_a_botanical_curiosity_despite_its_strong_odor_in_some_species"
+  ],
+  "originAndDomesticationHistory": "Elephant Foot Yam (Amorphophallus paeoniifolius) is believed to be native to India, Southeast Asia (including Malaysia, Indonesia, Philippines), and possibly northern Australia. It has been cultivated as a food crop in these tropical and subtropical regions for centuries, possibly millennia. It is an ancient crop, particularly important in India and various Southeast Asian countries, where it is valued for its large, starchy corms that can be stored for extended periods and provide a food source during lean times. Different varieties and landraces have been selected over time by local communities for corm size, taste (some are less acrid than others), and texture. Its use is deeply embedded in traditional cuisines and ethnomedicine of these regions.",
+  "climaticRequirements": {
+    "temperature": "Elephant foot yam is a strictly tropical and warm subtropical plant. It thrives in warm, humid climates with optimal temperatures for growth ranging from 25°C to 35°C (77°F to 95°F). It requires a long, warm growing season and is intolerant of frost. Cool temperatures will induce dormancy.",
+    "rainfall": "Prefers high and well-distributed annual rainfall, typically between 1000mm and 2000mm, especially during its vegetative growth period. While it needs ample moisture, good soil drainage is crucial as the corms do not tolerate waterlogging for extended periods, which can lead to rot. A distinct dry period often coincides with the plant's dormancy and corm maturity.",
+    "altitude": "Commonly cultivated in lowland tropical regions, typically from sea level up to about 800 meters (approximately 2600 feet). Higher altitudes with cooler temperatures are generally unsuitable for commercial production."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained, loamy soils that are rich in organic matter. Good soil aeration is important for corm development. While it can adapt to a range of soil types, including lateritic soils, it performs best with a slightly acidic to neutral soil pH, generally between 5.5 and 7.0. Heavy clay soils with poor drainage should be avoided.",
+  "irrigationAndWaterNeeds": "Requires regular and abundant watering during its active growing period, which includes vegetative growth and corm development. The soil should be kept consistently moist but not saturated. Irrigation is essential in areas with insufficient rainfall or during prolonged dry spells within the growing season. Watering frequency should be reduced as the plant begins to enter its dormancy period (indicated by yellowing and dying back of the leaves), as excessive moisture at this stage can cause the corms to rot.",
+  "plantingAndHarvestCycles": "Elephant foot yam is primarily propagated vegetatively using small cormels (daughter corms that develop around the main corm) or by cutting larger corms into pieces, ensuring each piece has at least one bud or growing point. These corm pieces or cormels are typically planted at the beginning of the rainy season or when warm weather arrives. They are planted about 4-6 inches deep in well-prepared soil. The crop has a long growing season, and the corms usually mature in 8 to 10 months after planting. Harvesting is done when the plant's leaves begin to turn yellow and die back, indicating the onset of dormancy and corm maturity. The large corms are dug up carefully by hand or with tools like spades or hoes. A single plant typically produces one large main corm, which can be quite heavy (several kilograms), along with several smaller cormels that can be used for future planting.",
+  "pestAndDiseaseManagement": "Pests: Generally considered quite hardy and not severely affected by many pests. However, root-knot nematodes can sometimes be an issue, affecting corm development. Mealybugs, aphids, and spider mites may occasionally infest the foliage but rarely cause significant economic damage. Wild pigs, porcupines, or rodents can sometimes damage corms in the ground by digging them up. Diseases: Corm rot, caused by various soilborne fungi (such as Sclerotium rolfsii, Pythium spp., Fusarium spp.) or bacteria (like Erwinia spp.), is the most common and serious issue, especially in poorly drained or waterlogged soils, or if corms are damaged during cultivation or harvest. Leaf spot diseases (e.g., caused by Colletotrichum) or mosaic virus can also occur but are generally less problematic. Management Strategies: Using healthy, disease-free planting material (corms/cormels). Ensuring excellent soil drainage is paramount to prevent corm rot. Practicing crop rotation. Avoiding mechanical damage to corms during intercultural operations and harvesting. Proper curing and storage of harvested corms can also reduce post-harvest losses. Chemical control is rarely practiced or needed for most pests and diseases in traditional cultivation systems.",
+  "postHarvestHandling": "After harvesting, elephant foot yam corms should be handled carefully to avoid bruising or mechanical damage. They are often cured for a few days in a warm, dry, and shady place (e.g., at 28-30°C with good ventilation) to allow any surface wounds to heal and the skin to harden slightly; this can improve their storage life. Whole, unblemished corms can be stored for several weeks to several months in a cool, dark, dry, and well-ventilated place (ideal storage temperatures are often around 10-15°C or 50-59°F). They should not be refrigerated for long-term storage of whole corms, as very low temperatures can cause chilling injury. Before consumption, the corm must be peeled, cut, and then cooked thoroughly (e.g., boiling, steaming, frying) to remove its natural acridity, which is caused by calcium oxalate crystals. Soaking the cut pieces in tamarind water, buttermilk, or water with lime juice for some time before cooking is a common traditional practice to help neutralize these irritants.",
+  "marketValueAndGlobalDemand": "Elephant Foot Yam is an important staple food and a popular vegetable in many parts of South Asia (especially India, Sri Lanka, Bangladesh), Southeast Asia (Indonesia, Philippines, Malaysia, Thailand), and some Pacific Islands. It has significant local and regional markets in these areas, valued for its carbohydrate content, long storage life of the corms, and its use in various traditional dishes and Ayurvedic medicine. International trade is less extensive compared to more globally recognized tubers like potatoes or cassava, but it is often available in ethnic markets in North America, Europe, and the Middle East, catering to diaspora communities. There is growing interest in its potential health benefits and as a gluten-free carbohydrate source in wider markets. Its unique appearance and texture also make it a specialty vegetable. The market value can vary based on corm size, quality, and regional demand.",
   "staticRecipes": [
     {
       "name": "Suran ki Sabzi (Elephant Foot Yam Curry)",
@@ -111,7 +171,7 @@
         "Boil or pressure cook the soaked suran pieces until tender but firm. Drain and set aside.",
         "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden brown.",
         "Add ginger-garlic paste and sauté for a minute.",
-        "Add chopped tomatoes and cook until softened and oil separates.",
+        "Add chopped tomatoes and cook until softened and oil starts to separate.",
         "Add turmeric powder, coriander powder, salt. Mix well.",
         "Add cooked suran pieces. Stir gently to coat with masala. Add a little water if needed.",
         "Cover and simmer for 5-7 minutes. Sprinkle with garam masala. Serve hot with roti or rice."
