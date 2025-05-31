@@ -2,6 +2,15 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import PersonalizedGrowPlanner from '@/components/homefeatures/PersonalizedGrowPlanner';
+import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
+import SmartCalendarReminders from '@/components/homefeatures/SmartCalendarReminders';
+import PlantGrowthTracker from '@/components/homefeatures/PlantGrowthTracker';
+import PlantHealthScanner from '@/components/homefeatures/PlantHealthScanner';
+import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
+import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
+import LearnSection from '@/components/homefeatures/LearnSection';
+import MyPlantsOverview from '@/components/homefeatures/MyPlantsOverview';
 
 export default function HomePage() {
   const router = useRouter();
@@ -15,10 +24,19 @@ export default function HomePage() {
   }, [router]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center">
-      {/* You can leave this div empty or add a subtle message if needed */}
-      {/* <h1 className="text-2xl font-semibold text-muted-foreground">Welcome</h1> */}
-      {/* <p className="text-muted-foreground">Content is being organized.</p> */}
+    <div className="flex flex-col items-center min-h-screen p-4">
+      <h1 className="text-3xl font-bold mb-8 text-center">Welcome to AgriPedia!</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+        <PersonalizedGrowPlanner />
+        <StepByStepGuides />
+        <SmartCalendarReminders />
+        <PlantGrowthTracker />
+        <PlantHealthScanner />
+        <SeedToHarvestTimeline />
+        <CommunityFeatures />
+        <LearnSection />
+        <MyPlantsOverview />
+      </div>
     </div>
   );
 }

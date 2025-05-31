@@ -3,9 +3,9 @@ import { type MetadataRoute } from 'next';
 
 export function GET(): Response {
   const manifest: MetadataRoute.Manifest = {
-    name: 'AgriPedia',
-    short_name: 'AgriPedia',
-    description: 'Search and scan fruits and vegetables to learn more about them.',
+    name: 'AgriPedia - Your Personal Plant Growth Guide',
+    short_name: 'AgriPedia Guide',
+    description: 'Your guide for personalized plant plans, health tracking, and sustainable growing methods.',
     start_url: '/',
     display: 'standalone',
     background_color: '#151921', // Updated: Dark theme page background (approx hsl(220, 15%, 10%))

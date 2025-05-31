@@ -155,6 +155,12 @@ self.addEventListener('fetch', (event) => {
 self.addEventListener('push', (event) => {
   console.log('[Service Worker] Push Received.');
   const data = event.data ? event.data.json() : { title: 'AgriPedia', body: 'New update available!' };
+
+  // TODO: Enhance notification logic for AgriPedia features
+  // - Check notification type (e.g., 'watering', 'pruning', 'harvesting')
+  // - Customize title and body based on plant name, task, and due date from payload
+  // - Potentially add actions like 'View Plant' or 'Mark as Complete'
+  // - Example: if (data.type === 'watering_reminder') { title = `Water ${data.plantName}!`; ... }
   
   const title = data.title || 'AgriPedia Notification';
   const options = {
