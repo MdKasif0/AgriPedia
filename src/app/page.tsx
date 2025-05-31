@@ -13,6 +13,10 @@ import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
 import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
 import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
 import LearnSection from '@/components/homefeatures/LearnSection';
+import SmartPlantRecommenderCard from '@/components/homefeatures/SmartPlantRecommenderCard';
+import DiseasePredictionCard from '@/components/homefeatures/DiseasePredictionCard';
+import AITipsCard from '@/components/homefeatures/AITipsCard';
+import FutureFeatureTeaserCard from '@/components/homefeatures/FutureFeatureTeaserCard';
 // Import other components that might be created in later steps, like QuickActions or InfoBanner, if they are ready.
 
 const containerVariants = {
@@ -87,6 +91,10 @@ export default function HomePage() {
           <motion.div variants={itemVariants}><CommunityFeatures /></motion.div>
           <motion.div variants={itemVariants}><LearnSection /></motion.div>
           {/* Add more components here as they are developed */}
+          <motion.div variants={itemVariants}><SmartPlantRecommenderCard /></motion.div>
+          <motion.div variants={itemVariants}><DiseasePredictionCard /></motion.div>
+          <motion.div variants={itemVariants}><AITipsCard /></motion.div>
+          <motion.div variants={itemVariants}><FutureFeatureTeaserCard /></motion.div>
         </motion.div>
       </main>
 

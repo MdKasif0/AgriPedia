@@ -97,3 +97,63 @@ export function setCurrentUserMode(modeId: UserModeId): void {
   // Dispatch a custom event to notify other components of the change
   window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
 }
+
+// --- Gardening Profile ---
+
+export interface GardeningProfile { // Added export here
+  location?: string;
+  goals?: string[];
+  plantLogs?: Array<{
+    plantName: string;
+    status: string; // e.g., "thriving", "struggling", "harvested"
+    notes?: string;
+  }>;
+  preferences?: string[];
+}
+
+const GARDENING_PROFILE_KEY = 'agripedia-gardening-profile';
+
+const DEFAULT_GARDENING_PROFILE: GardeningProfile = {
+  location: '',
+  goals: [],
+  plantLogs: [],
+  preferences: [],
+};
+
+export function getGardeningProfile(): GardeningProfile {
+  if (typeof window === 'undefined') return { ...DEFAULT_GARDENING_PROFILE };
+  const storedProfile = localStorage.getItem(GARDENING_PROFILE_KEY);
+  if (storedProfile) {
+    try {
+      return JSON.parse(storedProfile) as GardeningProfile;
+    } catch (error) {
+      console.error("Error parsing gardening profile from localStorage:", error);
+      return { ...DEFAULT_GARDENING_PROFILE }; // Return default if parsing fails
+    }
+  }
+  return { ...DEFAULT_GARDENING_PROFILE };
+}
+
+export function setGardeningProfile(profile: GardeningProfile): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(GARDENING_PROFILE_KEY, JSON.stringify(profile));
+  } catch (error) {
+    console.error("Error stringifying or setting gardening profile in localStorage:", error);
+  }
+}
+
+export function updateGardeningProfile(updates: Partial<GardeningProfile>): void {
+  if (typeof window === 'undefined') return;
+  const currentProfile = getGardeningProfile();
+  const updatedProfile = { ...currentProfile, ...updates };
+  // Deep merge arrays like goals, plantLogs, preferences if needed,
+  // For now, simple overwrite for arrays is fine as per typical Partial usage.
+  // Example for plantLogs: if updates.plantLogs is provided, it replaces currentProfile.plantLogs
+  setGardeningProfile(updatedProfile);
+}
+
+export function clearGardeningProfile(): void {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem(GARDENING_PROFILE_KEY);
+}
