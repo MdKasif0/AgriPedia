@@ -8,6 +8,7 @@ import PlantHealthScanner from '@/components/homefeatures/PlantHealthScanner';
 import SmartCalendarReminders from '@/components/homefeatures/SmartCalendarReminders';
 import QuickActions from '@/components/home/QuickActions'; // Import QuickActions
 import InfoBanner from '@/components/home/InfoBanner'; // Import InfoBanner
+import OnboardingRecap from '@/components/homefeatures/OnboardingRecap'; // Import OnboardingRecap
 import { Lightbulb } from 'lucide-react'; // Import an icon for the banner
 import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
 import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
@@ -61,6 +62,14 @@ export default function HomePage() {
             description="Remember to check the soil moisture before watering your plants. Overwatering can be as harmful as underwatering!"
             className="mb-6" // Rely on new theme for banner styling
           />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }} // Added delay
+        >
+          <OnboardingRecap />
         </motion.div>
 
         <motion.div

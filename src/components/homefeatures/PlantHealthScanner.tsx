@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // Import Link
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { ScanLine } from 'lucide-react';
@@ -16,9 +17,11 @@ export default function PlantHealthScanner() {
         </p>
       </CardContent>
       <CardFooter>
-        <Button variant="destructive" className="w-full">
-          Scan Plant
-        </Button>
+        <Link href="/search" passHref className="w-full">
+          <Button variant="destructive" className="w-full">
+            Scan Plant
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );
