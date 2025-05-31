@@ -1,12 +1,17 @@
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function StepByStepGuides() {
   return (
-    <div className="p-4 border rounded-lg shadow-md bg-white">
-      <h3 className="text-xl font-semibold mb-2">Step-by-Step Growing Guides</h3>
-      <p className="text-gray-700">
-        Detailed instructions for planting, watering, spacing, fertilizing, and harvesting. Covers indoor, outdoor, hydroponic, and vertical methods.
-      </p>
-    </div>
+    <Card className="rounded-2xl">
+      <CardHeader>
+        <CardTitle className="font-serif">Step-by-Step Growing Guides</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p>
+          Detailed instructions for planting, watering, spacing, fertilizing, and harvesting. Covers indoor, outdoor, hydroponic, and vertical methods.
+        </p>
+      </CardContent>
+    </Card>
   );
 }

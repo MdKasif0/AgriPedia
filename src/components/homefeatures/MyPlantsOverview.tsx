@@ -1,12 +1,20 @@
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function MyPlantsOverview() {
   return (
-    <div className="p-4 border rounded-lg shadow-md bg-white">
-      <h3 className="text-xl font-semibold mb-2">My Plants Overview</h3>
-      <p className="text-gray-700">
-        A quick look at the plants you are currently growing, with basic care information. (Details from your Plant Library)
-      </p>
-    </div>
+    <Card className="rounded-2xl">
+      <CardHeader>
+        <CardTitle className="font-serif flex items-center">
+          <span className="mr-2 animate-leaf-sway">🌿</span>
+          My Plants Overview
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p>
+          A quick look at the plants you are currently growing, with basic care information. (Details from your Plant Library)
+        </p>
+      </CardContent>
+    </Card>
   );
 }
