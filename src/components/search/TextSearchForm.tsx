@@ -60,7 +60,7 @@ export default function TextSearchForm({
             onChange={handleInputChange}
             onFocus={onFocus} 
             placeholder="E.g., Apple, Banana... (Ctrl/Cmd + K)"
-            className="flex-grow pr-10 rounded-lg bg-input text-card-foreground placeholder:text-muted-foreground border-border focus:border-primary"
+            className="flex-grow pr-10 rounded-lg bg-input text-foreground placeholder:text-muted-foreground border-border focus:ring-1 focus:ring-accent-emerald transition-colors duration-200 ease-in-out"
             aria-label="Search for fruits or vegetables"
             autoComplete="off"
             id="main-search-input"
@@ -70,7 +70,7 @@ export default function TextSearchForm({
               type="button"
               variant="ghost"
               size="icon"
-              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 text-muted-foreground hover:text-card-foreground"
+              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors duration-200 ease-in-out"
               onClick={onClearSearch}
               aria-label="Clear search query"
             >
@@ -79,7 +79,7 @@ export default function TextSearchForm({
           )}
         </div>
         {/* ClientOnly wrapper removed as search button is always enabled now */}
-        <Button type="submit" variant="default" className="rounded-lg">
+        <Button type="submit" variant="default" className="rounded-lg bg-accent-emerald text-white hover:bg-accent-emerald/90 transition-colors duration-200 ease-in-out">
           <Search className="mr-2 h-5 w-5" /> Search
         </Button>
       </div>
@@ -87,13 +87,13 @@ export default function TextSearchForm({
       {isSuggestionsVisible && suggestions.length > 0 && (
         <ul
           ref={suggestionsRef}
-          className="absolute z-10 w-full bg-popover border-border rounded-md shadow-lg max-h-60 overflow-y-auto mt-1"
+          className="absolute z-10 w-full bg-card border-border rounded-md shadow-lg max-h-60 overflow-y-auto mt-1"
         >
           {suggestions.map((item) => (
             <li key={item.id}>
               <button
                 type="button"
-                className="w-full text-left px-4 py-2 hover:bg-accent hover:text-accent-foreground text-sm text-popover-foreground"
+                className="w-full text-left px-4 py-2 hover:bg-accent-emerald/10 hover:text-accent-emerald text-sm text-foreground transition-colors duration-200 ease-in-out"
                 onClick={() => onSuggestionClick(item)}
               >
                 {item.commonName}

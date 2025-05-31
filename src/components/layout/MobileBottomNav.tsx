@@ -33,17 +33,21 @@ const NavItemLink: React.FC<Omit<NavItemProps, 'isCentralScan' | 'onClick' | 'is
       <a
         className={cn(
           "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-all duration-200 ease-in-out transform active:scale-90",
-          isActive ? "text-primary font-semibold" : "text-muted-foreground hover:text-foreground"
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md", // Added focus ring, offset uses card bg
+          isActive ? "text-accent-emerald font-semibold" : "text-muted-foreground hover:text-foreground"
         )}
         aria-label={label}
         onClick={() => {
           triggerHapticFeedback();
         }}
       >
-        <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isActive ? "bg-primary/20" : "group-hover:bg-muted/50")}> {/* Updated hover background */}
-          <Icon size={24} className={cn(isActive ? "text-primary" : "text-muted-foreground group-hover:text-foreground")} /> {/* Updated icon colors */}
+        <div className={cn(
+            "p-1.5 rounded-full transition-all duration-200 ease-in-out",
+            isActive ? "bg-accent-emerald/20 shadow-[0_0_15px_5px_rgba(0,195,122,0.2)]" : "group-hover:bg-muted/50" // Added glow to active
+        )}>
+          <Icon size={24} className={cn(isActive ? "text-accent-emerald" : "text-muted-foreground group-hover:text-foreground")} /> {/* Use accent-emerald for active icon */}
         </div>
-        <span className={cn("text-xs mt-0.5", isActive ? "text-primary font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Updated text colors */}
+        <span className={cn("text-xs mt-0.5", isActive ? "text-accent-emerald font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Use accent-emerald for active text */}
           {label}
         </span>
       </a>
@@ -89,10 +93,10 @@ export default function MobileBottomNav() {
                     triggerHapticFeedback();
                     item.onClick?.();
                   }}
-                  className="flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transform active:scale-90 transition-transform"
+                  className="flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transform active:scale-90 transition-transform focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-full"
                   aria-label={item.label}
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-accent rounded-full shadow-md group-hover:bg-accent/90 transition-colors">
+                  <div className="flex items-center justify-center w-12 h-12 bg-accent-emerald text-white rounded-full shadow-md group-hover:bg-accent-emerald/90 transition-colors"> {/* Changed to emerald, added text-white */}
                     <item.icon size={26} className="text-accent-foreground" />
                   </div>
                 </button>
@@ -109,14 +113,18 @@ export default function MobileBottomNav() {
                       }}
                       className={cn(
                         "flex flex-col items-center justify-center p-1 group focus:outline-none flex-1 transition-all duration-200 ease-in-out transform active:scale-90",
-                        isSettingsSheetOpen ? "text-primary font-semibold" : "text-muted-foreground hover:text-foreground"
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md", // Added focus ring
+                        isSettingsSheetOpen ? "text-accent-emerald font-semibold" : "text-muted-foreground hover:text-foreground"
                       )}
                       aria-label={item.label}
                     >
-                      <div className={cn("p-1.5 rounded-full transition-all duration-200 ease-in-out", isSettingsSheetOpen ? "bg-primary/20" : "group-hover:bg-muted/50")}> {/* Updated hover background */}
-                        <item.icon size={24} className={cn(isSettingsSheetOpen ? "text-primary" : "text-muted-foreground group-hover:text-foreground")} /> {/* Updated icon colors */}
+                      <div className={cn(
+                        "p-1.5 rounded-full transition-all duration-200 ease-in-out",
+                        isSettingsSheetOpen ? "bg-accent-emerald/20 shadow-[0_0_15px_5px_rgba(0,195,122,0.2)]" : "group-hover:bg-muted/50"
+                      )}>
+                        <item.icon size={24} className={cn(isSettingsSheetOpen ? "text-accent-emerald" : "text-muted-foreground group-hover:text-foreground")} />
                       </div>
-                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-primary font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Updated text colors */}
+                      <span className={cn("text-xs mt-0.5", isSettingsSheetOpen ? "text-accent-emerald font-semibold" : "text-muted-foreground group-hover:text-foreground")}> {/* Use accent-emerald for active text */}
                         {item.label}
                       </span>
                     </button>
@@ -155,14 +163,14 @@ export default function MobileBottomNav() {
                       <div>
                         <h3 className="mb-2 text-sm font-medium text-muted-foreground">General</h3>
                         <Link href="/settings/favorites" passHref>
-                          <button // Changed from Button to button to avoid potential import issues if Button is not available here
-                            className="w-full flex items-center justify-start px-3 py-2 text-sm text-card-foreground hover:bg-muted rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                          <button
+                            className="w-full flex items-center justify-start px-3 py-2 text-sm text-card-foreground hover:bg-muted rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card" // Added focus ring, offset uses card bg from sheet
                             onClick={() => {
                               triggerHapticFeedback();
                               setIsSettingsSheetOpen(false); // Close sheet on click
                             }}
                           >
-                            <Heart size={18} className="mr-2 text-primary" />
+                            <Heart size={18} className="mr-2 text-accent-emerald" /> {/* Changed to accent-emerald */}
                             My Favorites
                           </button>
                         </Link>
