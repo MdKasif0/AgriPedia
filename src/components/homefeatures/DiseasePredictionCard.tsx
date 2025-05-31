@@ -9,7 +9,7 @@ import { Loader2, ScanLine, AlertTriangle, UploadCloud, Image as ImageIcon, Spar
 import { motion, AnimatePresence } from 'framer-motion';
 import { diseasePredictionFlow } from '@/ai/flows/disease-prediction-flow'; // Path to your flow
 import { runFlow } from 'genkit';
-import { media } from 'genkit/media'; // For constructing the image input for the flow
+// Removed: import { media } from 'genkit/media'; // For constructing the image input for the flow
 
 // Define output schema (matching the flow's output)
 interface DetectedIssue {
@@ -65,10 +65,10 @@ const DiseasePredictionCard: React.FC = () => {
         }
 
         // Construct the image part using genkit.media helper
-        const imagePart = media.fromDataUrl(imageDataUrl);
+        // Removed: const imagePart = media.fromDataUrl(imageDataUrl);
 
         // TODO: Allow user to add context if desired, e.g., "tomato plant leaf"
-        const result = await runFlow(diseasePredictionFlow, { image: imagePart, context: `Image of a plant part. Filename: ${selectedFile.name}` });
+        const result = await runFlow(diseasePredictionFlow, { imageDataUrl: imageDataUrl, context: `Image of a plant part. Filename: ${selectedFile.name}` });
         setPrediction(result || []);
         if (!result || result.length === 0) {
             // setError('No specific issues detected, or the image was unclear. Try a different photo.');

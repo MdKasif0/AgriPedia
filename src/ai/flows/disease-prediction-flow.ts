@@ -1,11 +1,11 @@
 import { defineFlow, runFlow } from 'genkit';
 import { z } from 'zod';
 import { ai } from '@/ai/genkit'; // Assuming genkit setup is in src/ai/genkit.ts
-import { media } from 'genkit/media'; // Required for image input
+// Removed: import { media } from 'genkit/media';
 
 // Define input schema: Image of a plant part
 const PlantImageInputSchema = z.object({
-  image: media.zod.image().describe('Image of a plant leaf or soil, encoded as a data URL or buffer.'),
+  imageDataUrl: z.string().url().describe('Image of a plant leaf or soil, encoded as a data URL.'),
   context: z.string().optional().describe('Optional context, e.g., "tomato plant leaf", "sandy soil sample"'),
 });
 
@@ -25,14 +25,14 @@ export const diseasePredictionFlow = defineFlow(
     outputSchema: z.array(DetectedIssueSchema),
     description: 'Analyzes an image of a plant leaf or soil to detect pests, diseases, or nutrient deficiencies.',
   },
-  async (input) => {
-    const { image, context } = input;
+  async ({ imageDataUrl, context }) => { // Updated signature
+    // const { image, context } = input; // Old destructuring
 
-    if (!image.url) {
+    if (!imageDataUrl) { // Updated check
       // This check is a bit simplistic. Genkit media helper might store it differently.
       // In a real scenario, you'd ensure the image data is accessible to the model.
       // For Gemini, it expects a `url` (data URL or GCS) or `mediaType` and `data`.
-      throw new Error('Image URL is missing or image data is not in the expected format.');
+      throw new Error('Image Data URL is missing or image data is not in the expected format.');
     }
 
     const prompt = [
@@ -46,7 +46,7 @@ export const diseasePredictionFlow = defineFlow(
         Format your response as a JSON array of objects, where each object has "issueType", "name", "description", "confidenceScore", and "recommendedAction".
         Example: [{"issueType": "disease", "name": "Early Blight", "description": "Fungal disease causing dark lesions on leaves.", "confidenceScore": 0.85, "recommendedAction": "Apply fungicide and improve air circulation."}]
       `},
-      { media: image }
+      { media: { url: imageDataUrl } } // Updated media part
     ];
 
     const llmResponse = await ai.generate({
@@ -74,6 +74,6 @@ export const diseasePredictionFlow = defineFlow(
 );
 
 // Example usage (for testing purposes)
-export async function getDiseasePrediction(image: media.ImagePart, context?: string) {
-  return await runFlow(diseasePredictionFlow, { image, context });
+export async function getDiseasePrediction(imageDataUrl: string, context?: string) { // Updated signature
+  return await runFlow(diseasePredictionFlow, { imageDataUrl, context });
 }
