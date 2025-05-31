@@ -161,5 +161,10 @@
         "Serve immediately as a fresh side dish or as a base for a more substantial salad with added protein."
       ]
     }
-  ]
+  ],
+  "sunlight": "partial",
+  "skillLevel": "beginner",
+  "plantingMonths": ["March", "April", "August", "September", "October"],
+  "spaceTypes": ["balcony", "small_yard", "container", "indoor", "greenhouse"],
+  "climateZone": "Temperate"
 }

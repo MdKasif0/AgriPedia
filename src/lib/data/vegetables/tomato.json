@@ -174,5 +174,10 @@
         "Serve immediately at room temperature for the best flavor."
       ]
     }
-  ]
+  ],
+  "sunlight": "full",
+  "skillLevel": "intermediate",
+  "plantingMonths": ["March", "April", "May", "June"],
+  "spaceTypes": ["balcony", "small_yard", "large_garden", "greenhouse", "container"],
+  "climateZone": "Temperate"
 }

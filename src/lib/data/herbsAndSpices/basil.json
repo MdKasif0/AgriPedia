@@ -61,5 +61,10 @@
   "pestAndDiseaseManagement": "Common pests include aphids, spider mites, and slugs. Diseases include downy mildew (a major issue for basil), Fusarium wilt, and fungal leaf spots. Management includes selecting resistant varieties, ensuring good air circulation, avoiding overhead watering, and using organic pest control methods.",
   "postHarvestHandling": "Fresh basil is highly perishable. It can be stored short-term in the refrigerator (wrapped in a damp paper towel or stems in water). For longer storage, it can be dried, frozen (e.g., in ice cube trays with oil or water), or used to make pesto.",
   "majorProducingCountriesOrRegions": ["India", "Egypt", "United States (California)", "Mexico", "Mediterranean countries (Italy, France, Spain)", "Thailand", "Vietnam"],
-  "marketValueAndGlobalDemand": "Basil is one of the most popular culinary herbs globally. Demand is high for both fresh and dried basil, as well as basil essential oil. The market is driven by the food industry, aromatherapy, and traditional medicine sectors. Prices can fluctuate based on seasonal availability and disease pressures like downy mildew."
+  "marketValueAndGlobalDemand": "Basil is one of the most popular culinary herbs globally. Demand is high for both fresh and dried basil, as well as basil essential oil. The market is driven by the food industry, aromatherapy, and traditional medicine sectors. Prices can fluctuate based on seasonal availability and disease pressures like downy mildew.",
+  "sunlight": "full",
+  "skillLevel": "beginner",
+  "plantingMonths": ["April", "May", "June", "July"],
+  "spaceTypes": ["indoor", "balcony", "container", "greenhouse"],
+  "climateZone": "Temperate"
 }
