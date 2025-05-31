@@ -26,10 +26,6 @@ export default function FavoritesPage() {
 
   useEffect(() => {
     loadFavorites();
-    // Add an event listener to update favorites if they change in another tab/window
-    // or if we implement a global state/event bus for favorites.
-    // For simplicity, this example relies on re-mount or manual refresh.
-    // A more robust solution could involve a custom event or context.
     const handleStorageChange = (event: StorageEvent) => {
       if (event.key === 'agripedia-favorites') {
         loadFavorites();
@@ -74,7 +70,7 @@ export default function FavoritesPage() {
           <p className="text-sm text-muted-foreground mb-6">
             Start exploring and add some produce to your favorites list.
           </p>
-          <Link href="/">
+                  <Link href="/search">
             <Button variant="default">Explore Produce</Button>
           </Link>
         </div>

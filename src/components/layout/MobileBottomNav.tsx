@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart } from 'lucide-react';
+import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart, Search } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog'; // Added DialogTitle and DialogClose
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
@@ -57,7 +57,7 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   const navItemsConfig = [
-    { id: "home", href: "/", icon: Leaf, label: "Home" },
+    // { id: "home", href: "/", icon: Leaf, label: "Home" }, // Removed Home
     { id: "chat", href: "/chat", icon: MessagesSquare, label: "Chat AI" },
     {
       id: "scan",
@@ -66,7 +66,8 @@ export default function MobileBottomNav() {
       isCentralScan: true,
       onClick: () => setIsScanDialogOpen(true)
     },
-    { id: "favorites", href: "/favorites", icon: Heart, label: "Favorites" },
+    // Changed favorites to search
+    { id: "search", href: "/search", icon: Search, label: "Search" },
     { id: "settings", icon: SettingsIcon, label: "Settings", onClickSheet: () => setIsSettingsSheetOpen(true) },
   ];
 
@@ -147,6 +148,22 @@ export default function MobileBottomNav() {
                        <div>
                         <h3 className="mb-2 text-sm font-medium text-muted-foreground">User Mode</h3>
                         <UserModeSelector />
+                      </div>
+                      <Separator className="bg-border/50" />
+                      <div>
+                        <h3 className="mb-2 text-sm font-medium text-muted-foreground">General</h3>
+                        <Link href="/settings/favorites" passHref>
+                          <button // Changed from Button to button to avoid potential import issues if Button is not available here
+                            className="w-full flex items-center justify-start px-3 py-2 text-sm text-card-foreground hover:bg-muted rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                            onClick={() => {
+                              triggerHapticFeedback();
+                              setIsSettingsSheetOpen(false); // Close sheet on click
+                            }}
+                          >
+                            <Heart size={18} className="mr-2 text-primary" />
+                            My Favorites
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </SheetContent>
