@@ -1,6 +1,6 @@
 
 import type { Metadata, Viewport } from 'next';
-import { Inter, Roboto_Mono } from 'next/font/google';
+import { Inter, Roboto_Mono, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
@@ -14,12 +14,21 @@ import ActiveUserModeDisplay from '@/components/layout/ActiveUserModeDisplay';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'swap',
 });
 
 const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
   weight: ['400', '700'],
+  display: 'swap',
+});
+
+const dm_serif_display = DM_Serif_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  weight: ['400'], // DM Serif Display typically only has 400 weight
+  display: 'swap',
 });
 
 const siteBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -71,7 +80,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${roboto_mono.variable} ${dm_serif_display.variable} font-sans antialiased`}>
         <Preloader videoSrc="/videos/AgriPedia-preloader-screen.mp4"> {/* Added Preloader wrapper */}
           <ThemeProvider
               attribute="class"
