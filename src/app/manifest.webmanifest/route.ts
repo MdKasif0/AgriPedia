@@ -8,8 +8,8 @@ export function GET(): Response {
     description: 'Your guide for personalized plant plans, health tracking, and sustainable growing methods.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#151921', // Updated: Dark theme page background (approx hsl(220, 15%, 10%))
-    theme_color: '#5CBB7C',     // Updated: Primary leafy green (approx hsl(130, 50%, 55%))
+    background_color: '#1A1C1A', // Charcoal (Dark theme background: hsl(120 10% 10%))
+    theme_color: '#6B8E6B',     // Soft Green (Light theme primary: hsl(100 30% 50%))
     icons: [
       {
         src: 'https://placehold.co/192x192.png',

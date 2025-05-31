@@ -19,6 +19,7 @@ import ThemeToggleButton from '@/components/ThemeToggleButton';
 import NotificationPreferences from '@/components/NotificationPreferences';
 import ApiKeyManager from '@/components/settings/ApiKeyManager';
 import UserModeSelector from '@/components/settings/UserModeSelector';
+import InstallPWAButton from '@/components/pwa/InstallPWAButton';
 
 export default function DesktopSidebar() {
   const { state } = useSidebar();
@@ -28,11 +29,11 @@ export default function DesktopSidebar() {
       <SidebarHeader className="p-4 flex items-center justify-between">
         {state === 'expanded' ? (
             <Link href="/" className="flex items-center gap-2 text-xl font-semibold text-sidebar-primary hover:text-sidebar-primary/90">
-                <Leaf size={28}/> AgriPedia
+                <Leaf size={28} className="animate-leaf-sway"/> AgriPedia
             </Link>
         ) : (
             <Link href="/" aria-label="AgriPedia Home" className="text-sidebar-primary hover:text-sidebar-primary/90">
-                 <Leaf size={28} />
+                 <Leaf size={28} className="animate-leaf-sway" />
             </Link>
         )}
       </SidebarHeader>
@@ -122,6 +123,18 @@ export default function DesktopSidebar() {
             <div className="p-2">
                 <UserModeSelector />
             </div>
+        </SidebarGroup>
+
+        <SidebarSeparator className="my-2 bg-sidebar-border" />
+
+        <SidebarGroup>
+          <SidebarGroupLabel className="flex items-center gap-2 text-sidebar-foreground/70">
+            {/* Optional: Add an icon like PackageCheck or DownloadCloud */}
+            {state === 'expanded' ? 'App' : ''}
+          </SidebarGroupLabel>
+          <div className="flex flex-col gap-2 px-2 py-1">
+            <InstallPWAButton className="w-full justify-start text-sm !bg-transparent !hover:bg-sidebar-accent !text-sidebar-foreground !hover:text-sidebar-accent-foreground" />
+          </div>
         </SidebarGroup>
 
       </SidebarContent>

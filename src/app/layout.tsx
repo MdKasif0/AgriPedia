@@ -8,6 +8,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import DesktopSidebar from '@/components/layout/DesktopSidebar';
 import MobileBottomNav from '@/components/layout/MobileBottomNav';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import { PWAInstallProvider } from '@/context/PWAInstallContext';
 import Preloader from '@/components/layout/Preloader'; // Added Preloader import
 import ActiveUserModeDisplay from '@/components/layout/ActiveUserModeDisplay';
 
@@ -73,27 +74,29 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
         <Preloader videoSrc="/videos/AgriPedia-preloader-screen.mp4"> {/* Added Preloader wrapper */}
-          <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-          >
-            <ServiceWorkerRegistrar />
-            <SidebarProvider defaultOpen={true}>
-              <div className="flex">
-                <DesktopSidebar />
-                <SidebarInset>
-                  <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                    {children}
-                  </main>
-                </SidebarInset>
-              </div>
-              <MobileBottomNav />
-              <ActiveUserModeDisplay /> {/* Display active mode */}
-            </SidebarProvider>
-            <Toaster />
-          </ThemeProvider>
+          <PWAInstallProvider>
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="system"
+                enableSystem
+                disableTransitionOnChange
+            >
+              <ServiceWorkerRegistrar />
+              <SidebarProvider defaultOpen={true}>
+                <div className="flex">
+                  <DesktopSidebar />
+                  <SidebarInset>
+                    <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
+                      {children}
+                    </main>
+                  </SidebarInset>
+                </div>
+                <MobileBottomNav />
+                <ActiveUserModeDisplay /> {/* Display active mode */}
+              </SidebarProvider>
+              <Toaster />
+            </ThemeProvider>
+          </PWAInstallProvider>
         </Preloader>
       </body>
     </html>
