@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tomato_cherry_stages",
+    "plantName": "Cherry Tomato",
+    "totalDurationDays": 90,
+    "stages": [
+      { "name": "Germination", "durationDays": 10 },
+      { "name": "Seedling", "durationDays": 20 },
+      { "name": "Vegetative Growth", "durationDays": 30 },
+      { "name": "Flowering", "durationDays": 15 },
+      { "name": "Fruiting", "durationDays": 15 }
+    ]
+  },
+  {
+    "id": "lettuce_romaine_stages",
+    "plantName": "Romaine Lettuce",
+    "totalDurationDays": 60,
+    "stages": [
+      { "name": "Germination", "durationDays": 7 },
+      { "name": "Seedling", "durationDays": 14 },
+      { "name": "Leaf Growth", "durationDays": 30 },
+      { "name": "Ready to Harvest", "durationDays": 9 }
+    ]
+  },
+  {
+    "id": "basil_sweet_stages",
+    "plantName": "Sweet Basil",
+    "totalDurationDays": 75,
+    "stages": [
+      { "name": "Germination", "durationDays": 10 },
+      { "name": "Seedling", "durationDays": 20 },
+      { "name": "Active Growth", "durationDays": 30 },
+      { "name": "Continuous Harvest", "durationDays": 15 }
+    ]
+  },
+  {
+    "id": "carrot_nantes_stages",
+    "plantName": "Carrot (Nantes)",
+    "totalDurationDays": 70,
+    "stages": [
+      { "name": "Germination", "durationDays": 10 },
+      { "name": "Seedling & Root Development", "durationDays": 30 },
+      { "name": "Root Maturation", "durationDays": 30 }
+    ]
+  },
+  {
+    "id": "radish_cherry_belle_stages",
+    "plantName": "Radish (Cherry Belle)",
+    "totalDurationDays": 30,
+    "stages": [
+      { "name": "Germination", "durationDays": 5 },
+      { "name": "Leaf & Root Development", "durationDays": 15 },
+      { "name": "Ready to Harvest", "durationDays": 10 }
+    ]
+  }
+]

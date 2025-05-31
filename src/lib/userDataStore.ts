@@ -97,3 +97,113 @@ export function setCurrentUserMode(modeId: UserModeId): void {
   // Dispatch a custom event to notify other components of the change
   window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
 }
+
+// --- Reminders ---
+
+export interface Reminder {
+  id: string; // Unique ID, e.g., timestamp or UUID
+  task: string; // e.g., "Water Tomatoes", "Fertilize Basil"
+  date: string; // ISO date string, e.g., "2024-07-28"
+  notes?: string; // Optional notes
+  isComplete: boolean;
+}
+
+const REMINDERS_KEY = 'agripedia-reminders';
+
+export function getReminders(): Reminder[] {
+  if (typeof window === 'undefined') return [];
+  const storedReminders = localStorage.getItem(REMINDERS_KEY);
+  const reminders = storedReminders ? JSON.parse(storedReminders) : [];
+  return reminders.sort((a: Reminder, b: Reminder) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
+export function addReminder(reminderData: Omit<Reminder, 'id' | 'isComplete'>): Reminder {
+  if (typeof window === 'undefined') {
+    // This case should ideally be handled by the caller or UI
+    // For now, returning a dummy reminder to avoid breaking an expected return type
+    // but this won't persist.
+    console.warn("addReminder called in a non-browser environment. Reminder not saved.");
+    return { ...reminderData, id: Date.now().toString(), isComplete: false };
+  }
+  const reminders = getReminders();
+  const newReminder: Reminder = {
+    ...reminderData,
+    id: Date.now().toString(),
+    isComplete: false,
+  };
+  reminders.push(newReminder);
+  localStorage.setItem(REMINDERS_KEY, JSON.stringify(reminders));
+  return newReminder;
+}
+
+export function updateReminder(updatedReminder: Reminder): void {
+  if (typeof window === 'undefined') return;
+  let reminders = getReminders();
+  reminders = reminders.map(r => (r.id === updatedReminder.id ? updatedReminder : r));
+  localStorage.setItem(REMINDERS_KEY, JSON.stringify(reminders));
+}
+
+export function deleteReminder(reminderId: string): void {
+  if (typeof window === 'undefined') return;
+  let reminders = getReminders();
+  reminders = reminders.filter(r => r.id !== reminderId);
+  localStorage.setItem(REMINDERS_KEY, JSON.stringify(reminders));
+}
+
+export function toggleReminderComplete(reminderId: string): void {
+  if (typeof window === 'undefined') return;
+  let reminders = getReminders();
+  reminders = reminders.map(r =>
+    r.id === reminderId ? { ...r, isComplete: !r.isComplete } : r
+  );
+  localStorage.setItem(REMINDERS_KEY, JSON.stringify(reminders));
+}
+
+// --- Journal Entries ---
+
+export interface JournalEntry {
+  id: string; // Unique ID
+  plantName: string; // Name of the plant this entry is for (free text for now)
+  date: string; // ISO date string
+  notes: string;
+  imageUrl?: string; // Optional: for now, this could be a placeholder or external URL
+  isMilestone?: boolean; // Optional: to mark significant events
+}
+
+const JOURNAL_ENTRIES_KEY = 'agripedia-journal-entries';
+
+export function getJournalEntries(): JournalEntry[] {
+  if (typeof window === 'undefined') return [];
+  const storedEntries = localStorage.getItem(JOURNAL_ENTRIES_KEY);
+  const entries = storedEntries ? JSON.parse(storedEntries) : [];
+  return entries.sort((a: JournalEntry, b: JournalEntry) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort descending by date
+}
+
+export function addJournalEntry(entryData: Omit<JournalEntry, 'id'>): JournalEntry {
+  if (typeof window === 'undefined') {
+    console.warn("addJournalEntry called in a non-browser environment. Entry not saved.");
+    return { ...entryData, id: Date.now().toString() };
+  }
+  const entries = getJournalEntries();
+  const newEntry: JournalEntry = {
+    ...entryData,
+    id: Date.now().toString(),
+  };
+  entries.unshift(newEntry); // Add to the beginning for reverse chronological display
+  localStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
+  return newEntry;
+}
+
+export function updateJournalEntry(updatedEntry: JournalEntry): void {
+  if (typeof window === 'undefined') return;
+  let entries = getJournalEntries();
+  entries = entries.map(entry => (entry.id === updatedEntry.id ? updatedEntry : entry));
+  localStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
+}
+
+export function deleteJournalEntry(entryId: string): void {
+  if (typeof window === 'undefined') return;
+  let entries = getJournalEntries();
+  entries = entries.filter(entry => entry.id !== entryId);
+  localStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
+}

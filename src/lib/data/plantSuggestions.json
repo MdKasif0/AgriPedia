@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tomato_cherry",
+    "name": "Cherry Tomato",
+    "suitability": {
+      "location": ["outdoor", "balcony"],
+      "space": ["large_pot", "garden_bed", "vertical_planter"],
+      "sunlight": ["full_sun"],
+      "season": ["spring", "summer"],
+      "goals": ["beginner_friendly", "vegetables", "continuous_yield", "quick_harvest"]
+    },
+    "basicCare": "Needs at least 6-8 hours of direct sun. Water regularly and deeply, especially during fruiting. Provide support (staking or cage). Fertilize every 2-3 weeks."
+  },
+  {
+    "id": "basil_sweet",
+    "name": "Sweet Basil",
+    "suitability": {
+      "location": ["outdoor", "indoor", "balcony"],
+      "space": ["small_pot", "large_pot", "garden_bed", "vertical_planter"],
+      "sunlight": ["full_sun", "partial_shade"],
+      "season": ["spring", "summer", "autumn"],
+      "goals": ["beginner_friendly", "herbs", "quick_harvest", "continuous_yield"]
+    },
+    "basicCare": "Needs 4-6 hours of sun (can tolerate some afternoon shade). Water when top inch of soil is dry. Pinch back tips to encourage bushier growth. Prefers warm conditions."
+  },
+  {
+    "id": "lettuce_leaf",
+    "name": "Leaf Lettuce",
+    "suitability": {
+      "location": ["outdoor", "balcony", "indoor"],
+      "space": ["small_pot", "large_pot", "garden_bed", "vertical_planter"],
+      "sunlight": ["partial_shade", "full_sun"],
+      "season": ["spring", "autumn", "winter"],
+      "goals": ["beginner_friendly", "vegetables", "quick_harvest", "continuous_yield"]
+    },
+    "basicCare": "Prefers cooler weather; provide afternoon shade in hot climates. Keep soil consistently moist. Can be harvested leaf by leaf. Bolt-resistant varieties are good for warmer seasons."
+  },
+  {
+    "id": "carrot_ Nantes",
+    "name": "Carrot (Nantes)",
+    "suitability": {
+      "location": ["outdoor"],
+      "space": ["garden_bed", "large_pot"],
+      "sunlight": ["full_sun", "partial_shade"],
+      "season": ["spring", "autumn"],
+      "goals": ["vegetables"]
+    },
+    "basicCare": "Needs deep, loose soil free of stones. Water regularly to keep soil moist but not waterlogged. Thin seedlings to proper spacing. Full sun is best, but can tolerate light shade."
+  },
+  {
+    "id": "bell_pepper_california_wonder",
+    "name": "Bell Pepper (California Wonder)",
+    "suitability": {
+      "location": ["outdoor", "balcony"],
+      "space": ["large_pot", "garden_bed"],
+      "sunlight": ["full_sun"],
+      "season": ["summer"],
+      "goals": ["vegetables"]
+    },
+    "basicCare": "Requires long, warm growing season. Needs at least 6 hours of sun. Water consistently, especially during flowering and fruiting. May need support when laden with fruit."
+  },
+  {
+    "id": "spinach_ Bloomsdale",
+    "name": "Spinach (Bloomsdale)",
+    "suitability": {
+      "location": ["outdoor", "balcony"],
+      "space": ["small_pot", "large_pot", "garden_bed", "vertical_planter"],
+      "sunlight": ["partial_shade", "full_sun"],
+      "season": ["spring", "autumn", "winter"],
+      "goals": ["vegetables", "quick_harvest", "beginner_friendly"]
+    },
+    "basicCare": "Prefers cool weather and can tolerate light frost. Full sun in cool weather, partial shade in warmer areas. Keep soil moist. Harvest outer leaves to prolong production."
+  },
+  {
+    "id": "radish_cherry_belle",
+    "name": "Radish (Cherry Belle)",
+    "suitability": {
+      "location": ["outdoor", "balcony"],
+      "space": ["small_pot", "garden_bed"],
+      "sunlight": ["full_sun", "partial_shade"],
+      "season": ["spring", "autumn", "winter"],
+      "goals": ["vegetables", "quick_harvest", "beginner_friendly"]
+    },
+    "basicCare": "Grows very quickly, often ready in a month. Prefers cool soil. Water consistently for best texture. Plant in succession for continuous harvest."
+  }
+]

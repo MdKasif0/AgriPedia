@@ -1,0 +1,33 @@
+{
+  "id": "tomato_guide",
+  "plantName": "Tomato",
+  "plantId": "tomato_cherry",
+  "introduction": "Tomatoes are a popular home garden plant, offering delicious fruits. They require sun, water, and support.",
+  "sections": [
+    {
+      "title": "1. Planting",
+      "content": "Start seeds indoors 6-8 weeks before the last frost, or buy seedlings. Transplant to larger pots or garden beds when they have a few true leaves. Space plants 2-3 feet apart."
+    },
+    {
+      "title": "2. Sunlight & Location",
+      "content": "Tomatoes need at least 6-8 hours of direct sunlight per day. Choose a sunny, well-drained spot."
+    },
+    {
+      "title": "3. Watering",
+      "content": "Water deeply and regularly, especially during dry periods. Aim for consistent soil moisture. Avoid wetting the leaves to prevent fungal diseases."
+    },
+    {
+      "title": "4. Soil & Fertilizing",
+      "content": "Use rich, well-draining soil with plenty of organic matter. Fertilize every 2-3 weeks with a balanced fertilizer or one formulated for tomatoes once fruit sets."
+    },
+    {
+      "title": "5. Support & Pruning",
+      "content": "Most tomato varieties need support like stakes, cages, or trellises. Pruning suckers (shoots between the main stem and branches) can improve air circulation and fruit size for indeterminate varieties."
+    },
+    {
+      "title": "6. Harvesting",
+      "content": "Harvest when fruits are fully colored and slightly soft to the touch. Regular harvesting encourages more fruit production."
+    }
+  ],
+  "methodsCovered": ["outdoor", "large_pot", "garden_bed"]
+}

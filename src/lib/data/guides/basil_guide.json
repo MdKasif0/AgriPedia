@@ -1,0 +1,29 @@
+{
+  "id": "basil_guide",
+  "plantName": "Basil",
+  "plantId": "basil_sweet",
+  "introduction": "Basil is a fragrant herb, easy to grow in pots or gardens. It loves warmth and sun.",
+  "sections": [
+    {
+      "title": "1. Planting",
+      "content": "Start seeds indoors or sow directly after the last frost. Basil also propagates easily from cuttings. Space plants about 10-12 inches apart."
+    },
+    {
+      "title": "2. Sunlight & Location",
+      "content": "Basil thrives in full sun (6+ hours). It can tolerate some light shade but flavor may be less intense."
+    },
+    {
+      "title": "3. Watering",
+      "content": "Water regularly to keep the soil consistently moist, but not waterlogged. Water at the base of the plant."
+    },
+    {
+      "title": "4. Soil & Fertilizing",
+      "content": "Use well-draining, rich soil. Basil generally doesn't need heavy fertilization; a light feed of compost or balanced liquid fertilizer once or twice during the growing season is usually enough."
+    },
+    {
+      "title": "5. Pruning & Harvesting",
+      "content": "Pinch off the tips of branches regularly to encourage bushier growth and prevent flowering (which can make leaves bitter). Harvest leaves as needed."
+    }
+  ],
+  "methodsCovered": ["outdoor", "indoor", "small_pot", "large_pot"]
+}

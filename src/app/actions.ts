@@ -3,6 +3,7 @@
 
 import { identifyFruitOrVegetableFromImage, IdentifyFruitOrVegetableFromImageOutput } from '@/ai/flows/identify-fruit-or-vegetable-from-image';
 import { validateImageOfProduce, ValidateImageOfProduceOutput } from '@/ai/flows/validate-image-of-produce';
+import { identifyPlantDiseaseFromImage, type IdentifyPlantDiseaseFromImageInput, type IdentifyPlantDiseaseFromImageOutput } from '@/ai/flows/identify-plant-disease-from-image';
 import { generateRecipes, GenerateRecipesOutput } from '@/ai/flows/generate-recipes-flow';
 import { generateAgriTip } from '@/ai/flows/generate-agri-tip-flow';
 import { chatWithAgriBot, ChatInput, ChatOutput, ChatMessage } from '@/ai/flows/chat-flow'; // Added chat imports
@@ -105,5 +106,22 @@ export async function sendChatMessage(message: string, history?: ChatMessage[]):
   } catch (error) {
     console.error('Error in sendChatMessage action calling chatWithAgriBot:', error);
     return "I'm having trouble connecting right now. Please try again in a moment.";
+  }
+}
+
+export async function processPlantImageForDisease(
+  photoDataUri: string
+): Promise<{ success: boolean; data?: IdentifyPlantDiseaseFromImageOutput; message?: string }> {
+  if (!photoDataUri) {
+    return { success: false, message: 'No photo data provided.' };
+  }
+  try {
+    const input: IdentifyPlantDiseaseFromImageInput = { photoDataUri };
+    const result: IdentifyPlantDiseaseFromImageOutput = await identifyPlantDiseaseFromImage(input);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error('Error processing plant image for disease:', error);
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred during AI processing.';
+    return { success: false, message: errorMessage };
   }
 }
