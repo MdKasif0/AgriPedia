@@ -4,8 +4,29 @@
 const FAVORITES_KEY = 'agripedia-favorites';
 const RECENT_SEARCHES_KEY = 'agripedia-recent-searches';
 const GEMINI_API_KEY_STORAGE_KEY = 'agripedia-gemini-api-key'; // Added
+const AGRIPEDIA_USER_ID_KEY = 'agripedia-user-id';
+const GROW_PLANNER_DATA_KEY = 'agripedia-grow-planner-data';
 
 const MAX_RECENT_SEARCHES = 5;
+
+// --- User ID ---
+function generateSimpleUniqueId(): string {
+  return `${Date.now().toString(36)}-${Math.random().toString(36).substring(2, 9)}`;
+}
+
+export function getUserId(): string {
+  if (typeof window === 'undefined') {
+    // This should ideally not be called server-side if it's for client-specific data.
+    // Returning a placeholder or handling it appropriately if server context is possible.
+    return 'server-user-id-placeholder';
+  }
+  let userId = localStorage.getItem(AGRIPEDIA_USER_ID_KEY);
+  if (!userId) {
+    userId = generateSimpleUniqueId();
+    localStorage.setItem(AGRIPEDIA_USER_ID_KEY, userId);
+  }
+  return userId;
+}
 
 // --- Favorites ---
 
@@ -96,4 +117,74 @@ export function setCurrentUserMode(modeId: UserModeId): void {
   localStorage.setItem(USER_MODE_KEY, modeId);
   // Dispatch a custom event to notify other components of the change
   window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
+}
+
+// --- Grow Planner Data ---
+
+interface GrowPlannerLocation {
+  lat: number | null;
+  lon: number | null;
+  address: string;
+  climateZone: string;
+}
+
+// This interface should mirror the formData structure in PersonalizedGrowPlanner.tsx
+export interface GrowPlannerFormData {
+  location: GrowPlannerLocation;
+  growingSpace: string;
+  spaceDimensions: { // Optional as per form implementation
+    length: string;
+    width: string;
+    unit: string;
+  };
+  sunlight: string;
+  purpose: string[];
+  timeCommitment: string;
+  experience: string;
+}
+
+export interface GrowPlannerData extends GrowPlannerFormData {
+  userId: string;
+  createdAt: string; // ISO string format
+}
+
+export function setGrowPlannerData(data: GrowPlannerFormData): void {
+  if (typeof window === 'undefined') return;
+
+  const userId = getUserId(); // Get or generate user ID
+  const createdAt = new Date().toISOString();
+
+  const fullData: GrowPlannerData = {
+    ...data,
+    userId,
+    createdAt,
+  };
+
+  localStorage.setItem(GROW_PLANNER_DATA_KEY, JSON.stringify(fullData));
+}
+
+export function getGrowPlannerData(): GrowPlannerData | null {
+  if (typeof window === 'undefined') return null;
+
+  const dataString = localStorage.getItem(GROW_PLANNER_DATA_KEY);
+  if (!dataString) {
+    return null;
+  }
+
+  try {
+    const data: GrowPlannerData = JSON.parse(dataString);
+    // Basic validation to ensure it's somewhat like our expected structure
+    if (data && data.location && typeof data.createdAt === 'string') {
+      return data;
+    }
+    return null;
+  } catch (error) {
+    console.error("Error parsing grow planner data from localStorage:", error);
+    return null;
+  }
+}
+
+export function clearGrowPlannerData(): void {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem(GROW_PLANNER_DATA_KEY);
 }
