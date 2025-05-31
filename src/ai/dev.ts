@@ -7,3 +7,5 @@ import '@/ai/flows/validate-image-of-produce.ts';
 import '@/ai/flows/generate-recipes-flow.ts';
 import '@/ai/flows/generate-agri-tip-flow.ts';
 import '@/ai/flows/chat-flow.ts'; // Added new chat flow
+import '@/ai/flows/suggest-plants-flow.ts'; // Added new plant suggestion flow
+import '@/ai/flows/generate-plant-tip-flow.ts'; // Added new plant tip generation flow

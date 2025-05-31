@@ -8,9 +8,14 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'hsl(var(--background))',
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+        serif: ['var(--font-serif)', 'serif'],
+        mono: ['var(--font-mono)', 'monospace'],
+      },
+      colors: {
+        background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -89,12 +94,29 @@ export default {
         'pop': {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.25)' },
+        },
+        'leaf-sway': {
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
+        },
+        'sprout-grow': {
+          '0%': { transform: 'scale(0)', opacity: '0' },
+          '70%': { transform: 'scale(1.2)', opacity: '1' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        'click-pulse': {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(0.95)', opacity: '0.7' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
         }
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
         'pop': 'pop 0.3s ease-out',
+        'leaf-sway': 'leaf-sway 3s ease-in-out infinite',
+        'sprout-grow': 'sprout-grow 0.3s ease-out forwards',
+        'click-pulse': 'click-pulse 0.3s ease-out',
   		}
   	}
   },
