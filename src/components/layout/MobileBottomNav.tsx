@@ -57,7 +57,7 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   const navItemsConfig = [
-    // { id: "home", href: "/", icon: Leaf, label: "Home" }, // Removed Home
+    { id: "home", href: "/", icon: Leaf, label: "Home" },
     { id: "chat", href: "/chat", icon: MessagesSquare, label: "Chat AI" },
     {
       id: "scan",
