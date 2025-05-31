@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart, Search } from 'lucide-react';
+import { Home, Leaf, ScanLine, Settings as SettingsIcon, MessagesSquare, Heart, Search } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog'; // Added DialogTitle and DialogClose
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import ImageUploadForm from '@/components/search/ImageUploadForm';
@@ -57,6 +57,7 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   const navItemsConfig = [
+    { id: "home", href: "/", icon: Home, label: "Home" },
     // { id: "home", href: "/", icon: Leaf, label: "Home" }, // Removed Home
     { id: "chat", href: "/chat", icon: MessagesSquare, label: "Chat AI" },
     {
