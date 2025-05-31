@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+        serif: ['var(--font-dm-serif)', 'serif'],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -89,12 +93,17 @@ export default {
         'pop': {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.25)' },
+        },
+        'leaf-sway': {
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
         }
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
         'pop': 'pop 0.3s ease-out',
+        'leaf-sway': 'leaf-sway 2s ease-in-out infinite',
   		}
   	}
   },

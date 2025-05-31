@@ -1,17 +1,18 @@
 'use client';
 
-// Imports for components are removed as they are no longer used.
+'use client';
+
 // import { useEffect } from 'react'; // Removed as useEffect is no longer used
 // import { useRouter } from 'next/navigation'; // Removed as useRouter is no longer used
-// import PersonalizedGrowPlanner from '@/components/homefeatures/PersonalizedGrowPlanner';
-// import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
-// import SmartCalendarReminders from '@/components/homefeatures/SmartCalendarReminders';
-// import PlantGrowthTracker from '@/components/homefeatures/PlantGrowthTracker';
+import PersonalizedGrowPlanner from '@/components/homefeatures/PersonalizedGrowPlanner';
+import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
+import SmartCalendarReminders from '@/components/homefeatures/SmartCalendarReminders';
+import PlantGrowthTracker from '@/components/homefeatures/PlantGrowthTracker';
 // import PlantHealthScanner from '@/components/homefeatures/PlantHealthScanner';
-// import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
-// import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
-// import LearnSection from '@/components/homefeatures/LearnSection';
-// import MyPlantsOverview from '@/components/homefeatures/MyPlantsOverview';
+import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
+import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
+import LearnSection from '@/components/homefeatures/LearnSection';
+import MyPlantsOverview from '@/components/homefeatures/MyPlantsOverview';
 
 export default function HomePage() {
   // const router = useRouter(); // Removed as useRouter is no longer used
@@ -25,8 +26,15 @@ export default function HomePage() {
   // }, [router]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4">
-      {/* Content removed to make it a blank page */}
+    <div className="flex flex-col p-6 min-h-screen">
+      <MyPlantsOverview />
+      <SmartCalendarReminders />
+      <PersonalizedGrowPlanner />
+      <StepByStepGuides />
+      <PlantGrowthTracker />
+      <SeedToHarvestTimeline />
+      <CommunityFeatures />
+      <LearnSection />
     </div>
   );
 }
