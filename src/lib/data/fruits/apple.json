@@ -162,5 +162,8 @@
         "Serve immediately or chill for later."
       ]
     }
-  ]
+  ],
+  "lightRequirement": "full_sun",
+  "experienceLevel": "intermediate",
+  "spaceSuitability": ["garden"]
 }
