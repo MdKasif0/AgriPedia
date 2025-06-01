@@ -201,3 +201,129 @@ export function setCurrentUserMode(modeId: UserModeId): void {
   localStorage.setItem(USER_MODE_KEY, modeId);
   window.dispatchEvent(new CustomEvent('userModeChanged', { detail: { modeId } }));
 }
+
+// --- Growing Guide Progress ---
+export const GROWING_GUIDE_PROGRESS_KEY = 'agripedia-growing-guide-progress';
+
+export interface PlantGrowProgress {
+  plantId: string; // Unique identifier for the plant instance (e.g., "basil-user123-plot1")
+  produceId: string; // Identifier for the type of produce (e.g., "basil")
+  completedStages: string[]; // Array of stage names that are marked complete
+  currentStageIndex?: number; // Optional: could be derived or explicitly stored
+  stageLogs?: {
+    [stageName: string]: {
+      notes?: string;
+      photoUrl?: string;
+      loggedAt?: string; // ISO date string
+    };
+  };
+  // Timestamps
+  startDate?: string; // ISO date string for when the user started this specific plant guide
+  lastUpdated?: string; // ISO date string
+}
+
+// Helper to get all progress data
+function getAllGrowProgressData(): { [plantId: string]: PlantGrowProgress } {
+  if (typeof window === 'undefined') return {};
+  const jsonData = localStorage.getItem(GROWING_GUIDE_PROGRESS_KEY);
+  return jsonData ? JSON.parse(jsonData) : {};
+}
+
+// Helper to save all progress data
+function saveAllGrowProgressData(allProgress: { [plantId: string]: PlantGrowProgress }): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(GROWING_GUIDE_PROGRESS_KEY, JSON.stringify(allProgress));
+  } catch (error) {
+    console.error('Error saving all grow progress data:', error);
+  }
+}
+
+export function savePlantGrowProgress(plantId: string, progress: PlantGrowProgress): void {
+  if (!plantId) {
+    console.error("Plant ID is required to save progress.");
+    return;
+  }
+  const allProgress = getAllGrowProgressData();
+  allProgress[plantId] = {
+    ...progress,
+    plantId, // Ensure plantId is part of the stored object
+    lastUpdated: new Date().toISOString(),
+  };
+  saveAllGrowProgressData(allProgress);
+}
+
+export function getPlantGrowProgress(plantId: string): PlantGrowProgress | null {
+  if (!plantId) return null;
+  const allProgress = getAllGrowProgressData();
+  return allProgress[plantId] || null;
+}
+
+export function updateStageCompletion(plantId: string, produceId: string, stageName: string, isComplete: boolean): void {
+  if (!plantId || !stageName) {
+    console.error("Plant ID and stage name are required to update completion.");
+    return;
+  }
+  let progress = getPlantGrowProgress(plantId);
+
+  if (!progress) {
+    // Initialize progress if it doesn't exist for this plantId
+    progress = {
+      plantId,
+      produceId, // Store the produceId when creating new progress
+      completedStages: [],
+      lastUpdated: new Date().toISOString(),
+    };
+  }
+
+  const { completedStages = [] } = progress;
+  const stageIndex = completedStages.indexOf(stageName);
+
+  if (isComplete) {
+    if (stageIndex === -1) {
+      completedStages.push(stageName);
+    }
+  } else {
+    if (stageIndex !== -1) {
+      completedStages.splice(stageIndex, 1);
+    }
+  }
+  progress.completedStages = completedStages;
+  // Optionally update currentStageIndex if needed, e.g., based on the last completed stage
+  // progress.currentStageIndex = ...
+
+  savePlantGrowProgress(plantId, progress);
+}
+
+// Example of addPlantLog (optional for now, as per subtask)
+export function addPlantLog(
+  plantId: string,
+  produceId: string,
+  stageName: string,
+  log: { notes: string; photoUrl?: string }
+): void {
+  if (!plantId || !stageName || !log.notes) {
+    console.error("Plant ID, stage name, and notes are required to add a log.");
+    return;
+  }
+  let progress = getPlantGrowProgress(plantId);
+
+  if (!progress) {
+    progress = {
+      plantId,
+      produceId,
+      completedStages: [],
+    };
+  }
+
+  if (!progress.stageLogs) {
+    progress.stageLogs = {};
+  }
+
+  progress.stageLogs[stageName] = {
+    ...log,
+    loggedAt: new Date().toISOString(),
+  };
+
+  savePlantGrowProgress(plantId, progress);
+}

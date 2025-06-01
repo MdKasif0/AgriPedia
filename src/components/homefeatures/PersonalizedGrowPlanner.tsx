@@ -9,9 +9,13 @@ import ProgressBar from '../planner/ProgressBar';
 import ErrorBoundary from '../ErrorBoundary';
 import { Button } from '@/components/ui/button';
 import { savePlannerData, getPlannerData, clearPlannerData } from '@/lib/userDataStore';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, ProduceInfo } from '@/types/planner'; // Assuming ProduceInfo might be in planner types or needs to be imported from elsewhere
+import StepByStepGuides from './StepByStepGuides'; // Import the new component
+import defaultProduceData from '@/lib/data/herbsAndSpices/basil.json'; // Using basil as default for now
+import { calculateStageTimings } from '@/lib/calendarUtils'; // Import the calendar utility
 
-const TOTAL_PLANNER_STEPS = 6; // Location to Experience Level
+const TOTAL_FORM_STEPS = 6; // Number of actual form steps (Location to Experience Level)
+const SUMMARY_STEP_INDEX = TOTAL_FORM_STEPS; // Index for the summary/guide view
 
 // Simple validation function
 const isValidStepData = (data: any): boolean => {
@@ -43,7 +47,7 @@ const isValidStepData = (data: any): boolean => {
 
 const PersonalizedGrowPlanner: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0); // 0-indexed
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState<Partial<PlannerData>>({});
   const [animationClass, setAnimationClass] = useState('animate-fadeIn'); // Initial animation
   const [displayedStep, setDisplayedStep] = useState(currentStep);
   const previousStepRef = useRef<number>(currentStep);
@@ -82,39 +86,41 @@ const PersonalizedGrowPlanner: React.FC = () => {
   }, []); // Empty dependency array ensures this runs only on mount
 
   useEffect(() => {
-    if (currentStep === TOTAL_PLANNER_STEPS && Object.keys(formData).length > 0) {
-      // Ensure all expected fields are present before trying to save.
-      // This is a basic check; individual step data should already be structured correctly.
-      const plannerToSave: Partial<PlannerData> = {
-        ...formData, // Spread the collected form data
-        userId: "defaultUser123", // Placeholder userId
-        createdAt: new Date().toISOString(),
+    // Save data when the last form step is completed and data is available
+    if (currentStep === SUMMARY_STEP_INDEX && Object.keys(formData).length > 0 && formData.experienceLevel) {
+      const plannerToSave: PlannerData = {
+        userId: formData.userId || "defaultUser123", // Use existing userId or default
+        createdAt: formData.createdAt || new Date().toISOString(), // Use existing date or new
+        location: formData.location || "",
+        growingSpace: formData.growingSpace || "",
+        sunlightExposure: formData.sunlightExposure || "",
+        purpose: formData.purpose || [],
+        timeCommitment: formData.timeCommitment || "",
+        experienceLevel: formData.experienceLevel || "",
+        // Ensure all other required fields from PlannerData have default values if not in formData
+        plantSuggestions: formData.plantSuggestions || [],
+        notes: formData.notes || "",
+        // ...formData, // Spreading formData might overwrite defaults if not careful
       };
 
-      // Log the data being saved for debugging
       console.log("Attempting to save planner data:", plannerToSave);
-
-      // Type assertion is used here assuming formData has been correctly populated by the steps
-      // and matches the structure of PlannerData fields.
-      // The isValidPlannerData function within savePlannerData will perform the final validation.
-      savePlannerData(plannerToSave as PlannerData);
+      savePlannerData(plannerToSave); // savePlannerData should handle its own validation
     }
-  }, [currentStep, formData]); // Trigger when currentStep or formData changes
+  }, [currentStep, formData]);
 
 
   const handleNext = (stepData: any) => {
     if (!isValidStepData(stepData)) {
       console.error("Problematic step data received. Not merging:", stepData);
       // Still advance the step, but without merging the problematic data.
-      // This prevents the user from getting stuck but flags the issue.
-      if (currentStep < TOTAL_PLANNER_STEPS) {
+      if (currentStep < SUMMARY_STEP_INDEX) { // Advance up to the summary step
         setCurrentStep(prev => prev + 1);
       }
       return;
     }
 
     setFormData(prev => ({ ...prev, ...stepData }));
-    if (currentStep < TOTAL_PLANNER_STEPS) {
+    if (currentStep < SUMMARY_STEP_INDEX) { // Advance up to the summary step
       setCurrentStep(prev => prev + 1);
     }
   };
@@ -154,62 +160,59 @@ const PersonalizedGrowPlanner: React.FC = () => {
         return <TimeCommitmentStep onNext={handleNext} onBack={handleBack} data={formData} />;
       case 5:
         return <ExperienceLevelStep onNext={handleNext} onBack={handleBack} data={formData} />;
-      default: // Summary screen
-        let summaryContent = "Loading summary...";
-        try {
-          if (typeof formData !== 'object' || formData === null) {
-            throw new Error("Form data is not a valid object.");
-          }
-          if (Object.keys(formData).length === 0 && displayedStep === TOTAL_PLANNER_STEPS) {
-            summaryContent = "No preferences were recorded. Feel free to start over and select some options!";
-          } else {
-            // ** SIMPLIFICATION FOR DEBUGGING **
-            // Comment out the original stringify:
-            // summaryContent = JSON.stringify(formData, null, 2);
-
-            // Replace with a simple message:
-            summaryContent = "Summary display is simplified for debugging. All data collected.";
-
-            // Or, try displaying only one simple, known field if confident:
-            // if (formData.experienceLevel) {
-            //   summaryContent = `Experience Level Selected: ${formData.experienceLevel}`;
-            // } else if (Object.keys(formData).length > 0) {
-            //   summaryContent = "Some data collected, but experience level not found.";
-            // } else {
-            //   summaryContent = "Experience Level not found, and no other data present.";
-            // }
-          }
-        } catch (error: any) {
-          console.error("Error preparing summary content:", error);
-          summaryContent = `Error displaying summary: ${error.message}. Raw data might be incomplete or corrupted.`;
+      case SUMMARY_STEP_INDEX: // Summary and Guide screen
+        // Call calculateStageTimings here
+        if (defaultProduceData.growing_guide) {
+          const plantingDate = new Date(); // Use current date as default planting date
+          const timings = calculateStageTimings(plantingDate, defaultProduceData.growing_guide as ProduceInfo['growing_guide']);
+          console.log("Calculated Stage Timings:", timings);
         }
 
         return (
-          <ErrorBoundary fallbackMessage="There was an issue displaying the summary. Please try starting over.">
-            <div className="text-center p-4">
-              <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-2">Here's a summary of your preferences:</p>
-              <pre className="text-left text-sm bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-x-auto min-h-[100px]">
-                {summaryContent}
-              </pre>
-              <Button onClick={handleStartOver} className="mt-6">
-                Start Over
-              </Button>
+          <ErrorBoundary fallbackMessage="There was an issue displaying the grow plan. Please try starting over.">
+            <div className="p-2">
+              <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4 text-center">Your Personalized Grow Plan</h2>
+
+              {/* Placeholder for selecting from "My Grow Plan" */}
+              <div className="my-6 p-4 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-lg text-center">
+                <p className="text-blue-700 dark:text-blue-300 font-semibold">Future Feature:</p>
+                <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">
+                  Select a plant from "My Grow Plan" to see its detailed guide.
+                </p>
+                <Button variant="outline" disabled>Choose Plant (Coming Soon)</Button>
+              </div>
+
+              {/* Display StepByStepGuides for the default plant (Basil for now) */}
+              <StepByStepGuides
+                produce={defaultProduceData as unknown as ProduceInfo}
+                plannerData={formData}
+                plantInstanceId={`${defaultProduceData.id}_userPlanner_mainPlot`} // Example instance ID
+              />
+
+              <div className="text-center mt-8">
+                <Button onClick={handleStartOver} className="bg-green-600 hover:bg-green-700 text-white">
+                  Start New Plan
+                </Button>
+              </div>
             </div>
           </ErrorBoundary>
         );
+      default:
+        // Should not happen with current logic
+        return <div>Error: Unknown step.</div>;
     }
   };
 
   return (
-    <div className="p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-2xl mx-auto my-8 overflow-hidden">
+    <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-3xl mx-auto my-8 overflow-hidden">
       <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white text-center font-serif">
         Personalized Grow Planner
       </h1>
-      {displayedStep < TOTAL_PLANNER_STEPS && (
-        <ProgressBar currentStep={displayedStep} totalSteps={TOTAL_PLANNER_STEPS} />
+      {/* Progress bar should only show for form steps */}
+      {displayedStep < TOTAL_FORM_STEPS && (
+        <ProgressBar currentStep={displayedStep} totalSteps={TOTAL_FORM_STEPS} />
       )}
-      <div className={`min-h-[420px] ${animationClass}`}>
+      <div className={`min-h-[450px] ${animationClass}`}>
         {renderStep()}
       </div>
     </div>

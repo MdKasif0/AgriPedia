@@ -1,7 +1,8 @@
 
 'use client';
 
-import { useState, useEffect, useRef, FormEvent } from 'react';
+import { useState, useEffect, useRef, FormEvent, Suspense } from 'react'; // Added Suspense
+import { useSearchParams } from 'next/navigation'; // Import useSearchParams
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -24,6 +25,14 @@ export default function ChatPage() {
   const [isLoadingResponse, setIsLoadingResponse] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const searchParams = useSearchParams(); // Get searchParams
+
+  useEffect(() => {
+    const contextMessage = searchParams.get('contextMessage');
+    if (contextMessage) {
+      setInputValue(decodeURIComponent(contextMessage));
+    }
+  }, [searchParams]); // Re-run if searchParams change
 
   useEffect(() => {
     // Auto-scroll to bottom of chat
