@@ -50,6 +50,68 @@
   ],
   "carbonFootprintInfo": "The carbon footprint of maize varies depending on farming practices, particularly nitrogen fertilizer use (which can lead to nitrous oxide emissions). Ethanol production from corn also has associated carbon costs.",
   "uses": ["culinary", "animal_feed", "industrial", "biofuel"],
+  "staticRecipes": [
+    {
+      "name": "Simple Boiled/Steamed Corn on the Cob",
+      "ingredients": [
+        "Fresh corn on the cob, husks and silk removed",
+        "Water",
+        "Butter (optional)",
+        "Salt and pepper to taste (optional)"
+      ],
+      "instructions": [
+        "For Boiling: Bring a large pot of water to a boil. Add the corn cobs. Cook for 5-7 minutes, or until kernels are tender. Drain.",
+        "For Steaming: Place a steamer basket in a pot with about an inch of water. Bring to a boil. Place corn cobs in the basket, cover, and steam for 7-10 minutes, or until tender.",
+        "Serve hot with butter, salt, and pepper if desired."
+      ],
+      "notes": "Do not add salt to the water when boiling corn, as it can toughen the kernels. Cooking time may vary depending on the freshness and type of corn."
+    },
+    {
+      "name": "Basic Skillet Cornbread",
+      "ingredients": [
+        "1 cup yellow cornmeal",
+        "1 cup all-purpose flour",
+        "1/4 cup sugar (or to taste)",
+        "1 tbsp baking powder",
+        "1/2 tsp salt",
+        "1 cup milk",
+        "1/4 cup vegetable oil or melted butter",
+        "1 large egg, beaten"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C). Grease a 9-inch cast-iron skillet or an 8x8 inch baking pan.",
+        "In a large bowl, whisk together cornmeal, flour, sugar, baking powder, and salt.",
+        "In a separate bowl, whisk together milk, oil/butter, and egg.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined (do not overmix).",
+        "Pour batter into the prepared skillet or pan.",
+        "Bake for 20-25 minutes, or until golden brown and a toothpick inserted into the center comes out clean.",
+        "Let cool slightly before slicing and serving. Best served warm."
+      ],
+      "notes": "For a crispier crust, preheat the greased cast-iron skillet in the oven before adding the batter."
+    },
+    {
+      "name": "Fresh Corn Salsa",
+      "ingredients": [
+        "2 cups fresh corn kernels (from about 3-4 ears of corn, can be raw or lightly blanched/grilled)",
+        "1/2 red onion, finely diced",
+        "1 red bell pepper, finely diced",
+        "1 jalapeño, minced (seeds removed for less heat, optional)",
+        "1/2 cup chopped fresh cilantro",
+        "Juice of 1-2 limes",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "If using raw corn, you can use it as is for a crunchy salsa. Alternatively, blanch the corn kernels in boiling water for 2-3 minutes or grill the cobs until lightly charred, then cut off the kernels.",
+        "In a medium bowl, combine corn kernels, diced red onion, diced red bell pepper, minced jalapeño (if using), and chopped cilantro.",
+        "In a small bowl, whisk together lime juice and olive oil.",
+        "Pour the dressing over the corn mixture and toss to combine.",
+        "Season with salt and pepper to taste.",
+        "Let the salsa sit for at least 10-15 minutes before serving to allow the flavors to meld. Serve with tortilla chips or as a topping for grilled chicken or fish."
+      ],
+      "notes": "Feel free to add other ingredients like black beans, diced avocado, or chopped tomatoes. Adjust lime juice and jalapeño to your preference."
+    }
+  ],
   "originAndDomesticationHistory": "Maize was domesticated from a wild grass called teosinte (Zea mays ssp. parviglumis) in southern Mexico between 7,000 and 10,000 years ago. Early cobs were very small. Through selective breeding by indigenous peoples, maize evolved into the diverse forms known today and spread throughout the Americas. It was introduced to Europe by Columbus and subsequently spread globally.",
   "climaticRequirements": {
     "temperature": "Optimal daytime temperature 20-30°C; sensitive to frost.",

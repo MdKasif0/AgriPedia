@@ -54,6 +54,72 @@
   ],
   "carbonFootprintInfo": "Wheat production has a moderate carbon footprint, influenced by factors like fertilizer use (nitrous oxide emissions), tillage practices, and transportation. Sustainable practices can help reduce its impact.",
   "uses": ["culinary", "animal_feed", "industrial"],
+  "staticRecipes": [
+    {
+      "name": "Basic Homemade Bread",
+      "ingredients": [
+        "3 cups all-purpose or bread flour",
+        "1 packet (2.25 tsp) active dry yeast",
+        "1.25 cups warm water (105-115°F)",
+        "2 tbsp sugar",
+        "1 tsp salt",
+        "2 tbsp olive oil or melted butter"
+      ],
+      "instructions": [
+        "In a large bowl, dissolve yeast and sugar in warm water. Let stand for 5-10 minutes until foamy.",
+        "Add salt and oil/butter to the yeast mixture.",
+        "Gradually add flour, mixing until a shaggy dough forms.",
+        "Turn dough out onto a lightly floured surface and knead for 8-10 minutes until smooth and elastic.",
+        "Place dough in a lightly oiled bowl, turning to coat. Cover and let rise in a warm place for 1-1.5 hours, or until doubled in size.",
+        "Punch down the dough. Shape into a loaf and place in a greased 9x5 inch loaf pan.",
+        "Cover and let rise for another 30-45 minutes, or until nearly doubled.",
+        "Preheat oven to 375°F (190°C).",
+        "Bake for 30-35 minutes, or until golden brown and sounds hollow when tapped.",
+        "Let cool on a wire rack before slicing."
+      ],
+      "notes": "For whole wheat bread, you can substitute up to half the all-purpose flour with whole wheat flour."
+    },
+    {
+      "name": "Simple Pasta Aglio e Olio",
+      "ingredients": [
+        "8 oz spaghetti or other long pasta",
+        "1/4 cup olive oil",
+        "4-6 cloves garlic, thinly sliced",
+        "1/4 tsp red pepper flakes (or to taste)",
+        "Salt to taste",
+        "2 tbsp chopped fresh parsley",
+        "Grated Parmesan cheese for serving (optional)"
+      ],
+      "instructions": [
+        "Cook pasta according to package directions until al dente. Reserve about 1/2 cup of pasta water before draining.",
+        "While pasta is cooking, heat olive oil in a large skillet over medium-low heat.",
+        "Add sliced garlic and red pepper flakes. Cook slowly for 5-8 minutes, or until garlic is lightly golden and fragrant. Do not let it burn.",
+        "Drain pasta and add it directly to the skillet with the garlic oil.",
+        "Toss to coat. Add a splash of the reserved pasta water if needed to create a light sauce.",
+        "Stir in fresh parsley and season with salt.",
+        "Serve immediately, topped with Parmesan cheese if desired."
+      ],
+      "notes": "This is a basic recipe. Feel free to add other ingredients like cooked shrimp, cherry tomatoes, or spinach."
+    },
+    {
+      "name": "Cream of Wheat",
+      "ingredients": [
+        "1/4 cup Cream of Wheat (farina or semolina)",
+        "1 cup water or milk (or a mix)",
+        "Pinch of salt",
+        "Sugar, honey, or maple syrup to taste (optional)",
+        "Toppings: berries, nuts, cinnamon, butter (optional)"
+      ],
+      "instructions": [
+        "Bring water/milk and salt to a boil in a small saucepan.",
+        "Gradually whisk in the Cream of Wheat.",
+        "Reduce heat to low and cook, stirring constantly, for 2-3 minutes, or until thickened to your desired consistency.",
+        "Remove from heat. Stir in sweetener if using.",
+        "Pour into a bowl and add your favorite toppings."
+      ],
+      "notes": "For a richer, creamier texture, use milk instead of water. Adjust liquid for desired thickness."
+    }
+  ],
   "originAndDomesticationHistory": "Wheat was one of the first domesticated food crops, originating in the Fertile Crescent around 10,000 BCE. Einkorn and emmer wheat were early forms, with bread wheat (Triticum aestivum) emerging later through hybridization. Its cultivation spread throughout the Middle East, Europe, Asia, and eventually the Americas.",
   "climaticRequirements": {
     "temperature": "Optimal 15-25°C during growing season; can tolerate cooler temperatures, especially winter wheat.",
