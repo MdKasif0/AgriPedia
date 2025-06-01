@@ -160,3 +160,146 @@ html {
 .animate-slideInFromLeft { animation: slideInFromLeft 0.3s ease-out forwards; }
 .animate-slideOutToRight { animation: slideOutToRight 0.3s ease-in forwards; }
 .animate-fadeIn { animation: fadeIn 0.3s ease-in-out forwards; }
+
+@media print {
+  body {
+    font-family: 'Times New Roman', Times, serif; /* Classic print font */
+    color: #000 !important; /* Ensure all text is black */
+    background-color: #fff !important; /* Ensure background is white */
+    margin: 1cm; /* Add some margin for printing */
+  }
+
+  /* Hide elements not relevant for printing */
+  header, footer, nav, aside, .print-hide,
+  .progress-bar-container,
+  .carousel-control, .carousel-dots,
+  .simulate-reminder-button, .ask-ai-button-container,
+  .notification-preferences-container, .mark-complete-container,
+  .stage-header-button > div > svg:last-child /* Hides chevron in stage header */
+  {
+    display: none !important;
+  }
+
+  /* Show all content for printing */
+  .step-by-step-guide-container {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .guide-stages-accordion .stage-accordion-item {
+    page-break-inside: avoid; /* Try to keep stages on one page if possible */
+    border: 1px solid #ccc !important; /* Add a light border to separate stages */
+    margin-bottom: 1rem !important;
+    box-shadow: none !important;
+  }
+
+  .guide-stages-accordion .stage-accordion-item > button {
+    background-color: #f0f0f0 !important; /* Light gray background for stage headers */
+    border-bottom: 1px solid #ccc !important;
+  }
+  .guide-stages-accordion .stage-accordion-item > button span,
+  .guide-stages-accordion .stage-accordion-item > button div {
+    color: #000 !important;
+  }
+
+  .guide-stages-accordion .stage-accordion-item > div,
+  .guide-stages-accordion .stage-accordion-item motion.section {
+    display: block !important; /* Ensure content is visible */
+    height: auto !important; /* Override Framer Motion styles */
+    opacity: 1 !important; /* Override Framer Motion styles */
+    overflow: visible !important;
+  }
+
+  .micro-tips-warnings-container .p-3 { /* Target individual micro-tip boxes */
+    page-break-inside: avoid;
+  }
+
+  /* Ensure collapsible micro-tips are expanded */
+  .micro-tips-warnings-container motion.div {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    margin-top: 8px !important; /* Restore margin if needed */
+  }
+  .micro-tips-warnings-container .cursor-pointer > div:last-child { /* Hide chevron in micro-tips */
+      display: none !important;
+  }
+
+
+  /* Styling for content */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none; /* Optional: remove underline for cleaner print */
+  }
+  a[href^="/"]:after, a[href^="http"]:after {
+    /* content: " (" attr(href) ")"; /* Optional: show URLs for links */
+    /* font-size: 0.8em; */
+    /* color: #555 !important; */
+  }
+
+  img {
+    max-width: 100% !important; /* Ensure images fit */
+    height: auto !important;
+    display: block;
+    margin: 0.5rem 0;
+    page-break-inside: avoid;
+  }
+
+  /* Video placeholder for print */
+  .p-4.border.rounded-lg.bg-slate-50.dark\\:bg-slate-800\\/30.flex.flex-col.items-center.justify-center {
+    border: 1px solid #ddd !important;
+    background-color: #f9f9f9 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+  }
+  .p-4.border.rounded-lg.bg-slate-50.dark\\:bg-slate-800\\/30.flex.flex-col.items-center.justify-center svg {
+    display: none !important; /* Hide play icon, text is enough */
+  }
+   .p-4.border.rounded-lg.bg-slate-50.dark\\:bg-slate-800\\/30.flex.flex-col.items-center.justify-center button {
+    display: none !important; /* Hide "Watch Video" button */
+   }
+
+
+  /* Specific overrides for Tailwind dark mode if necessary */
+  .dark .bg-slate-900, .dark .bg-slate-800, .dark .bg-slate-800\\/50,
+  .dark .bg-slate-700, .dark .bg-slate-700\\/20, .dark .bg-slate-700\\/30,
+  .dark .bg-green-700\\/20, .dark .bg-yellow-700\\/20, .dark .bg-blue-700\\/20,
+  .dark .bg-purple-900\\/30, .dark .bg-sky-900\\/40, .dark .bg-amber-900\\/40
+   {
+    background-color: #fff !important;
+  }
+  .dark .text-slate-100, .dark .text-slate-200, .dark .text-slate-300, .dark .text-slate-400,
+  .dark .text-green-300, .dark .text-yellow-300, .dark .text-blue-300, .dark .text-purple-300, .dark .text-purple-200,
+  .dark .text-sky-300, .dark .text-sky-200, .dark .text-amber-300, .dark .text-amber-200
+   {
+    color: #000 !important;
+  }
+  .dark .border-slate-700\\/60, .dark .border-slate-700, .dark .border-slate-600\\/30,
+  .dark .border-green-600\\/30, .dark .border-yellow-600\\/30, .dark .border-blue-600\\/30,
+  .dark .border-purple-700\\/50, .dark .border-sky-700\\/50, .dark .border-amber-700\\/50
+   {
+    border-color: #ccc !important;
+  }
+
+  /* Ensure prose content is black */
+  .prose, .prose * {
+    color: #000 !important;
+  }
+  .prose ul > li::before { /* Tailwind prose list bullets */
+    background-color: #000 !important;
+  }
+  .dark .prose-invert, .dark .prose-invert * {
+     color: #000 !important;
+  }
+   .dark .prose-invert ul > li::before {
+    background-color: #000 !important;
+  }
+}

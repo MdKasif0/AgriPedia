@@ -1,19 +1,24 @@
 
 // AgriPedia Service Worker
-// Version 1.1 (Enhanced Caching)
+// Version 1.2 (Guide Data Caching)
 
-const CACHE_VERSION = 'agripedia-v1.1';
+const CACHE_VERSION = 'agripedia-v1.2'; // Updated cache version
 const STATIC_CACHE_NAME = `static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE_NAME = `dynamic-${CACHE_VERSION}`;
+const GUIDE_CACHE_NAME = `agripedia-guide-cache-v1`; // New cache for guide data
 
 // Assets to pre-cache on install
 const PRECACHE_ASSETS = [
   '/',                // Homepage
   '/offline',         // Offline fallback page
-  // Add paths to your main CSS and JS bundles if known and stable
-  // e.g., '/_next/static/css/main.css', '/_next/static/chunks/main-app.js'
-  // For Next.js, these filenames can change, so pre-caching them directly can be tricky.
-  // Focus on core pages and let dynamic caching handle assets.
+];
+
+// Plant data JSON files to cache during install
+const GUIDE_ASSETS_TO_CACHE = [
+  '/data/herbsAndSpices/basil.json',
+  '/data/vegetables/tomato.json',
+  '/data/fruits/apple.json',
+  // Add more essential plant JSONs here as needed
 ];
 
 // URLs to cache with a cache-first strategy (images, fonts, etc.)
@@ -26,18 +31,21 @@ const CACHE_FIRST_PATTERNS = [
 self.addEventListener('install', (event) => {
   console.log('[Service Worker] Install event');
   event.waitUntil(
-    caches.open(STATIC_CACHE_NAME)
-      .then((cache) => {
+    Promise.all([
+      caches.open(STATIC_CACHE_NAME).then((cache) => {
         console.log('[Service Worker] Pre-caching core assets:', PRECACHE_ASSETS);
         return cache.addAll(PRECACHE_ASSETS);
+      }),
+      caches.open(GUIDE_CACHE_NAME).then((cache) => {
+        console.log('[Service Worker] Caching guide data assets:', GUIDE_ASSETS_TO_CACHE);
+        return cache.addAll(GUIDE_ASSETS_TO_CACHE);
       })
-      .then(() => {
-        console.log('[Service Worker] Core assets pre-cached successfully.');
-        return self.skipWaiting(); // Activate worker immediately
-      })
-      .catch(error => {
-        console.error('[Service Worker] Pre-caching failed:', error);
-      })
+    ]).then(() => {
+      console.log('[Service Worker] All assets pre-cached successfully.');
+      return self.skipWaiting(); // Activate worker immediately
+    }).catch(error => {
+      console.error('[Service Worker] Pre-caching failed:', error);
+    })
   );
 });
 
@@ -47,7 +55,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames
-          .filter((cacheName) => cacheName !== STATIC_CACHE_NAME && cacheName !== DYNAMIC_CACHE_NAME)
+          .filter((cacheName) => ![STATIC_CACHE_NAME, DYNAMIC_CACHE_NAME, GUIDE_CACHE_NAME].includes(cacheName))
           .map((cacheName) => {
             console.log('[Service Worker] Deleting old cache:', cacheName);
             return caches.delete(cacheName);
@@ -63,6 +71,33 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
+
+  // Strategy for Guide Data JSON files (Cache First, then Network)
+  if (url.pathname.startsWith('/data/') && url.pathname.endsWith('.json')) {
+    event.respondWith(
+      caches.match(request).then((cachedResponse) => {
+        if (cachedResponse) {
+          // console.log('[Service Worker] Serving from guide cache:', request.url);
+          return cachedResponse;
+        }
+        return fetch(request).then((networkResponse) => {
+          if (networkResponse.ok) {
+            return caches.open(GUIDE_CACHE_NAME).then((cache) => {
+              // console.log('[Service Worker] Caching new guide data:', request.url);
+              cache.put(request, networkResponse.clone());
+              return networkResponse;
+            });
+          }
+          return networkResponse; // Return network response even if not ok, to let browser handle error
+        }).catch(error => {
+          console.error('[Service Worker] Fetch failed for guide data:', request.url, error);
+          // Optionally return a generic JSON error response if needed, e.g., for API-like calls
+          // return new Response(JSON.stringify({ error: 'Network error' }), { headers: { 'Content-Type': 'application/json' }});
+        });
+      })
+    );
+    return;
+  }
 
   // For navigation requests (HTML pages)
   if (request.mode === 'navigate') {

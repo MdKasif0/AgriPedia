@@ -8,7 +8,8 @@ import { Button } from '@/components/ui/button';
 import {
   BellRing, Settings2, Info, Star, AlertTriangle, Lightbulb, ChevronDown, ChevronUp,
   PlayCircle, Image as ImageIcon, ChevronLeft, ChevronRight, Circle,
-  Brain // Icon for Ask AI button
+  Brain, // Icon for Ask AI button
+  Printer // Icon for Print button
 } from 'lucide-react';
 
 // Placeholder icons
@@ -161,12 +162,23 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
   const completedCount = completedStageNames.length;
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4 sm:p-6 bg-white dark:bg-slate-900 rounded-xl shadow-2xl">
-      <h2 className="text-3xl font-bold text-center mb-3 text-slate-800 dark:text-slate-100">{produce.commonName} Growing Guide</h2>
+    <div className="step-by-step-guide-container w-full max-w-3xl mx-auto p-4 sm:p-6 bg-white dark:bg-slate-900 rounded-xl shadow-2xl">
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-slate-100 flex-grow">{produce.commonName} Growing Guide</h2>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => window.print()}
+          className="print-hide ml-4 border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700"
+          aria-label="Print Guide"
+        >
+          <Printer className="h-5 w-5 text-slate-600 dark:text-slate-300" />
+        </Button>
+      </div>
       <p className="text-center text-slate-600 dark:text-slate-400 mb-8">Follow these stages to successfully grow your own {produce.commonName.toLowerCase()}.</p>
 
       {/* Progress Tracker */}
-      <div className="mb-8 px-2">
+      <div className="mb-8 px-2 progress-bar-container">
         <div className="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400 mb-1.5">
           <span>Overall Progress</span>
           <span>{completedCount} / {totalStages} Stages</span>
@@ -182,14 +194,14 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
       </div>
 
       {/* Timeline/Accordion */}
-      <div className="space-y-3">
+      <div className="space-y-3 guide-stages-accordion">
         {growing_guide.map((stage, index) => {
           const isStageComplete = completedStageNames.includes(stage.stage);
           return (
-            <div key={stage.stage + index} className="bg-slate-50 dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg focus-within:shadow-lg">
+            <div key={stage.stage + index} className="stage-accordion-item bg-slate-50 dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg focus-within:shadow-lg">
               <button
                 onClick={() => toggleStage(index)}
-                className="w-full flex justify-between items-center p-4 sm:p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 dark:focus-visible:ring-green-400 focus-visible:ring-opacity-75"
+                className="stage-header-button w-full flex justify-between items-center p-4 sm:p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 dark:focus-visible:ring-green-400 focus-visible:ring-opacity-75"
                 aria-expanded={activeIndex === index}
                 aria-controls={`stage-content-${index}`}
               >
@@ -283,7 +295,7 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                                       <Button
                                         variant="outline"
                                         size="icon"
-                                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white border-none h-8 w-8 sm:h-10 sm:w-10"
+                                        className="carousel-control absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white border-none h-8 w-8 sm:h-10 sm:w-10"
                                         onClick={() => setCurrentImageIndices(prev => ({
                                           ...prev,
                                           [stage.stage]: ((prev[stage.stage] || 0) + 1) % stage.media.images!.length
@@ -291,7 +303,7 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                                       >
                                         <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
                                       </Button>
-                                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1.5">
+                                      <div className="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1.5">
                                         {stage.media.images.map((_, k) => (
                                           <button
                                             key={k}
@@ -355,7 +367,7 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                                 variant="outline"
                                 size="xs" // Using a smaller button
                                 onClick={() => handleSimulateReminder(reminder)}
-                                className="text-xs self-start sm:self-center bg-amber-100 dark:bg-amber-800/60 hover:bg-amber-200 dark:hover:bg-amber-700/80 border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-200 px-2 py-1"
+                                className="simulate-reminder-button text-xs self-start sm:self-center bg-amber-100 dark:bg-amber-800/60 hover:bg-amber-200 dark:hover:bg-amber-700/80 border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-200 px-2 py-1"
                               >
                                 Simulate Reminder
                               </Button>
@@ -367,12 +379,10 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
 
                     {/* Micro Tips/Warnings Section */}
                     {stage.micro_tips_warnings && stage.micro_tips_warnings.length > 0 && (
-                      <div className="my-4 space-y-3 pt-3 border-t border-dashed border-slate-300 dark:border-slate-700 ">
+                      <div className="micro-tips-warnings-container my-4 space-y-3 pt-3 border-t border-dashed border-slate-300 dark:border-slate-700 ">
                         <h4 className="text-md font-semibold text-slate-700 dark:text-slate-200 !mt-0 !mb-2">Quick Notes & Alerts:</h4>
                         {stage.micro_tips_warnings.map((item, itemIndex) => {
-                          // Assuming item has 'type', 'content', and optionally 'collapsible'
-                          // This type assertion is a bit loose, ideally item should have a defined type
-                          const microItem = item as { type: string; content: string; collapsible?: boolean };
+                          const microItem = item as { type: string; content: string; collapsible?: boolean }; // Type assertion
                           const uniqueKey = `${stage.stage}-micro-${itemIndex}`;
                           const isOpen = openCollapsibles[uniqueKey];
                           let itemIcon, itemBgColor, itemTextColor, itemBorderColor, itemTitle;
@@ -451,7 +461,7 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                     )}
 
                     {/* Ask AI Button */}
-                    <div className="my-6 text-center">
+                    <div className="my-6 text-center ask-ai-button-container">
                       <Button
                         variant="outline"
                         className="bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-700/30 dark:hover:bg-indigo-700/50 border-indigo-300 dark:border-indigo-600 text-indigo-600 dark:text-indigo-300 group"
@@ -490,8 +500,8 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                   </div>
 
                   {/* Notification Preferences Placeholder */}
-                  {index === activeIndex && ( // Show only for the currently expanded active stage
-                    <div className="mt-8 pt-4 border-t border-dashed border-slate-300 dark:border-slate-700">
+                  {index === activeIndex && (
+                    <div className="mt-8 pt-4 border-t border-dashed border-slate-300 dark:border-slate-700 notification-preferences-container">
                       <h4 className="text-md font-semibold text-slate-700 dark:text-slate-200 mb-3 flex items-center">
                         <Settings2 className="w-5 h-5 mr-2 text-slate-500 dark:text-slate-400" /> Notification Preferences
                       </h4>
@@ -512,7 +522,7 @@ const StepByStepGuides: React.FC<StepByStepGuidesProps> = ({ produce, plantInsta
                     </div>
                   )}
 
-                  <div className="mt-6 mb-2 text-right">
+                  <div className="mt-6 mb-2 text-right mark-complete-container">
                     <label className="inline-flex items-center cursor-pointer group p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors">
                       <input
                         type="checkbox"
