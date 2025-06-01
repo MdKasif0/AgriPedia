@@ -8,6 +8,8 @@ import ExperienceLevelStep from '../planner/ExperienceLevelStep';
 import ProgressBar from '../planner/ProgressBar';
 import ErrorBoundary from '../ErrorBoundary';
 import { Button } from '@/components/ui/button';
+import { savePlannerData, getPlannerData, clearPlannerData } from '@/lib/userDataStore';
+import type { PlannerData } from '@/types/planner';
 
 const TOTAL_PLANNER_STEPS = 6; // Location to Experience Level
 
@@ -67,6 +69,38 @@ const PersonalizedGrowPlanner: React.FC = () => {
     }
   }, [currentStep, displayedStep]);
 
+  // Load existing planner data from local storage on component mount
+  useEffect(() => {
+    const loadedData = getPlannerData();
+    if (loadedData) {
+      console.log("Loaded planner data from local storage:", loadedData);
+      // The loadedData includes userId and createdAt, which are not typically part of the
+      // step-by-step formData accumulation but are fine to include when setting the initial state.
+      // The step components will pick the fields they are responsible for (e.g., data.location, data.space).
+      setFormData(loadedData);
+    }
+  }, []); // Empty dependency array ensures this runs only on mount
+
+  useEffect(() => {
+    if (currentStep === TOTAL_PLANNER_STEPS && Object.keys(formData).length > 0) {
+      // Ensure all expected fields are present before trying to save.
+      // This is a basic check; individual step data should already be structured correctly.
+      const plannerToSave: Partial<PlannerData> = {
+        ...formData, // Spread the collected form data
+        userId: "defaultUser123", // Placeholder userId
+        createdAt: new Date().toISOString(),
+      };
+
+      // Log the data being saved for debugging
+      console.log("Attempting to save planner data:", plannerToSave);
+
+      // Type assertion is used here assuming formData has been correctly populated by the steps
+      // and matches the structure of PlannerData fields.
+      // The isValidPlannerData function within savePlannerData will perform the final validation.
+      savePlannerData(plannerToSave as PlannerData);
+    }
+  }, [currentStep, formData]); // Trigger when currentStep or formData changes
+
 
   const handleNext = (stepData: any) => {
     if (!isValidStepData(stepData)) {
@@ -92,6 +126,7 @@ const PersonalizedGrowPlanner: React.FC = () => {
   };
 
   const handleStartOver = () => {
+    clearPlannerData(); // Clear data from local storage
     setCurrentStep(0);
     setFormData({});
     // Set displayedStep to 0 to ensure UI updates immediately before animation kicks in.
