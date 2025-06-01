@@ -20,7 +20,7 @@ export default function DiseasePrediction() {
 
   return (
     <motion.div variants={itemVariants}>
-      <Card className="h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+      <Card className="h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-primary/10 via-transparent to-transparent">
         <CardHeader>
           <div className="flex items-start gap-3">
             <ScanLine size={24} className="shrink-0 text-primary mt-1 group-hover:animate-pulse transition-transform duration-300" />
