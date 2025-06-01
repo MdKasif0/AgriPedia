@@ -4,9 +4,29 @@ import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { ChevronDown } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn, triggerHapticFeedback } from "@/lib/utils" // Added triggerHapticFeedback
 
-const Accordion = AccordionPrimitive.Root
+// Redefine Accordion to intercept onValueChange
+const Accordion = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>
+>(({ onValueChange, ...props }, ref) => {
+  const handleValueChange = (value: string) => {
+    triggerHapticFeedback();
+    if (onValueChange) {
+      onValueChange(value);
+    }
+  };
+
+  return (
+    <AccordionPrimitive.Root
+      ref={ref}
+      onValueChange={handleValueChange}
+      {...props}
+    />
+  );
+});
+Accordion.displayName = AccordionPrimitive.Root.displayName;
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,

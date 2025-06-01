@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { ProduceInfo } from '@/lib/produceData';
 import { ChevronRight } from 'lucide-react';
+import { motion } from 'framer-motion'; // Added framer-motion
 
 interface ProduceCardProps {
   produce: ProduceInfo;
@@ -15,10 +16,16 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
 
   return (
     <Link href={`/item/${produce.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-2xl">
-      <div className="relative aspect-[16/9] w-full bg-card text-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-l-4 border-transparent group-hover:border-accent-emerald">
-        <Image 
-          src={produce.image} 
-          alt={produce.commonName} 
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="relative aspect-[16/9] w-full bg-card text-foreground rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-l-4 border-transparent group-hover:border-accent-emerald"
+      >
+        <Image
+          src={produce.image}
+          alt={produce.commonName}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           style={{ objectFit: 'cover' }}

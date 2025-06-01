@@ -43,6 +43,7 @@ html {
 
     /* New Accent Colors */
     --accent-emerald: 151 100% 38%; /* #00C37A */
+    --accent-emerald-darker: 151 100% 33%;
     --accent-amber: 42 100% 50%; /* #FFB300 */
     --accent-blue: 197 100% 47%; /* #00B3F0 */
 
@@ -103,6 +104,7 @@ html {
     --ring: hsl(var(--accent-emerald)); /* Use emerald for focus rings */
 
     /* --radius is already defined in :root and applies to .light as well */
+    --accent-emerald-darker: 151 100% 33%; /* Consistent darker shade for gradient */
 
     /* Sidebar colors - light theme */
     --sidebar-background: 35 40% 92%; /* Slightly off-white from page background, warmer */
@@ -130,6 +132,17 @@ html {
   body {
     font-family: 'Inter', var(--font-sans), Arial, Helvetica, sans-serif; /* Add Inter as primary sans-serif */
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-clamp-2xl {
+    font-size: clamp(1.5rem, 3vw, 2.25rem); /* Approx 24px to 36px */
+    line-height: clamp(2rem, 4vw, 2.75rem); /* Adjust line-height accordingly */
+  }
+  .text-clamp-3xl {
+    font-size: clamp(1.875rem, 4vw, 3rem); /* Approx 30px to 48px */
+    line-height: clamp(2.375rem, 5vw, 3.5rem); /* Adjusted line-height */
   }
 }
 

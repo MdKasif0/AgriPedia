@@ -43,6 +43,7 @@ export default {
   			},
         // New theme accent colors
         'accent-emerald': 'hsl(var(--accent-emerald))',
+        'accent-emerald-darker': 'hsl(var(--accent-emerald-darker))', // Updated to use CSS variable
         'accent-amber': 'hsl(var(--accent-amber))',
         'accent-blue': 'hsl(var(--accent-blue))',
         // New button color
@@ -121,7 +122,14 @@ export default {
         'leaf-sway': 'leaf-sway 3s ease-in-out infinite', // Slightly longer duration
         'sprout': 'sprout 0.4s ease-out forwards',
         'tap-squish': 'tap-squish 0.2s ease-in-out',
-  		}
+		},
+      boxShadow: {
+        'card': '0 4px 12px -2px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
+        // New soft shadows
+        'soft-sm': '0 2px 4px -1px rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.06)',
+        'soft-md': '0 4px 8px -2px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.05)',
+        'soft-lg': '0 10px 20px -5px rgba(0,0,0,0.07), 0 4px 8px -4px rgba(0,0,0,0.05)',
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

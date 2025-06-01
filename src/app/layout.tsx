@@ -1,5 +1,6 @@
 
 'use client';
+import { useEffect } from 'react'; // Added useEffect
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import { usePathname } from 'next/navigation';
@@ -74,6 +75,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === '/' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        const searchInput = document.getElementById("main-search-input");
+        if (searchInput) {
+          searchInput.focus();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>

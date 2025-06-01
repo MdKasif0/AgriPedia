@@ -203,7 +203,7 @@ const PersonalizedGrowPlanner: React.FC = () => {
 
   return (
     <div className="p-4 sm:p-6 rounded-xl shadow-2xl max-w-2xl mx-auto my-8 overflow-hidden bg-gradient-to-br from-primary/10 via-transparent to-transparent">
-      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white text-center font-serif">
+      <h1 className="text-clamp-3xl font-bold mb-6 text-gray-900 dark:text-white text-center font-serif">
         Personalized Grow Planner
       </h1>
       {displayedStep < TOTAL_PLANNER_STEPS && (
