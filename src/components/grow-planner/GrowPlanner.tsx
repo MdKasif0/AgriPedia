@@ -14,7 +14,7 @@ const SUMMARY_STEP = DATA_INPUT_MAX_STEPS + 1;
 
 const GrowPlanner: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState<any>({}); // Added type for formData for clarity
 
   const nextStep = () => setCurrentStep((prev) => prev + 1);
   const prevStep = () => setCurrentStep((prev) => prev - 1);
@@ -47,15 +47,15 @@ const GrowPlanner: React.FC = () => {
 
   // Animation variants for framer-motion
   const stepVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: currentStep === 1 ? 0 : -50 }, // No x-shift for initial load
     visible: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: 50 },
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 min-h-[300px] w-full">
-      <div className="w-full max-w-lg p-6 bg-white border border-gray-200 rounded-xl shadow-xl">
-        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Grow Planner</h1>
+    <div className="flex flex-col items-center justify-center p-4 min-h-[400px] w-full bg-background text-foreground">
+      <div className="w-full max-w-xl p-6 sm:p-8 bg-card border border-border rounded-2xl shadow-xl">
+        <h1 className="text-3xl font-bold text-center text-foreground mb-8">Grow Planner</h1>
 
         <motion.div
           key={currentStep} // Important for triggering animation on step change
@@ -72,15 +72,15 @@ const GrowPlanner: React.FC = () => {
           <button
             onClick={prevStep}
             disabled={currentStep === 1}
-            className="px-6 py-2 bg-gray-300 text-gray-700 rounded-lg shadow hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-6 py-2 bg-muted text-muted-foreground rounded-lg shadow hover:bg-muted/80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             Previous
           </button>
           {currentStep < SUMMARY_STEP && (
             <button
               onClick={nextStep}
-              disabled={currentStep > DATA_INPUT_MAX_STEPS}
-              className="px-6 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              // disabled={currentStep > DATA_INPUT_MAX_STEPS} // This logic is fine
+              className="px-6 py-2 bg-primary text-primary-foreground rounded-lg shadow hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               {currentStep === DATA_INPUT_MAX_STEPS ? 'See Summary' : 'Next'}
             </button>
@@ -88,7 +88,7 @@ const GrowPlanner: React.FC = () => {
           {currentStep === SUMMARY_STEP && (
              <button
               onClick={startOver}
-              className="px-6 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition-colors"
+              className="px-6 py-2 bg-secondary text-secondary-foreground rounded-lg shadow hover:bg-secondary/80 transition-colors"
             >
               Start Over
             </button>

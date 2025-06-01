@@ -32,11 +32,11 @@ const Step4Purpose: React.FC<Step4PurposeProps> = ({ formData, setFormData }) =>
   };
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-md">
-      <h2 className="text-xl font-semibold mb-6 text-center text-gray-700">
+    <div className="p-4 border border-border rounded-lg bg-card shadow-md">
+      <h2 className="text-xl font-semibold mb-2 text-center text-foreground">
         Step 4: What do you want to grow?
       </h2>
-      <p className="text-sm text-gray-500 text-center mb-4">(Select all that apply)</p>
+      <p className="text-sm text-muted-foreground text-center mb-6">(Select all that apply)</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {purposeOptions.map((option) => {
           const isSelected = formData.purpose?.includes(option.value);
@@ -46,13 +46,13 @@ const Step4Purpose: React.FC<Step4PurposeProps> = ({ formData, setFormData }) =>
               onClick={() => handleSelectPurpose(option.value)}
               className={`flex flex-col items-center justify-center p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 ease-in-out
                           ${isSelected
-                            ? 'border-purple-500 bg-purple-50 shadow-lg scale-105'
-                            : 'border-gray-300 hover:border-purple-400 hover:shadow-md'}`}
+                            ? 'border-accent-blue bg-accent-blue/10 dark:bg-accent-blue/20 shadow-lg scale-105'
+                            : 'border-border bg-background dark:bg-card hover:border-accent-blue/70 hover:shadow-md'}`}
             >
-              <div className={`mb-2 ${isSelected ? 'text-purple-600' : 'text-gray-600'}`}>
+              <div className={`mb-2 ${isSelected ? 'text-accent-blue' : 'text-muted-foreground'}`}>
                 {option.icon}
               </div>
-              <span className={`text-sm font-medium ${isSelected ? 'text-purple-700' : 'text-gray-700'}`}>
+              <span className={`text-sm font-medium ${isSelected ? 'text-accent-blue' : 'text-foreground'}`}>
                 {option.name}
               </span>
             </button>

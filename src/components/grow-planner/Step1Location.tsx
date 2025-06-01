@@ -18,11 +18,11 @@ const Step1Location: React.FC<Step1LocationProps> = ({ formData, setFormData }) 
   };
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-md">
-      <h2 className="text-xl font-semibold mb-4 text-gray-700">Step 1: Location</h2>
-      <div className="space-y-4">
+    <div className="p-4 border border-border rounded-lg bg-card shadow-md">
+      <h2 className="text-xl font-semibold mb-6 text-center text-foreground">Step 1: Location</h2>
+      <div className="space-y-6">
         <div>
-          <label htmlFor="latitude" className="block text-sm font-medium text-gray-600 mb-1">
+          <label htmlFor="latitude" className="block text-sm font-medium text-muted-foreground mb-1">
             Latitude
           </label>
           <input
@@ -31,12 +31,12 @@ const Step1Location: React.FC<Step1LocationProps> = ({ formData, setFormData }) 
             id="latitude"
             value={formData.latitude || ''}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-input rounded-md shadow-sm focus:outline-none focus:ring-ring focus:border-ring sm:text-sm bg-background text-foreground placeholder:text-muted-foreground"
             placeholder="e.g., 34.0522"
           />
         </div>
         <div>
-          <label htmlFor="longitude" className="block text-sm font-medium text-gray-600 mb-1">
+          <label htmlFor="longitude" className="block text-sm font-medium text-muted-foreground mb-1">
             Longitude
           </label>
           <input
@@ -45,12 +45,12 @@ const Step1Location: React.FC<Step1LocationProps> = ({ formData, setFormData }) 
             id="longitude"
             value={formData.longitude || ''}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-input rounded-md shadow-sm focus:outline-none focus:ring-ring focus:border-ring sm:text-sm bg-background text-foreground placeholder:text-muted-foreground"
             placeholder="e.g., -118.2437"
           />
         </div>
         <div>
-          <label htmlFor="climateZone" className="block text-sm font-medium text-gray-600 mb-1">
+          <label htmlFor="climateZone" className="block text-sm font-medium text-muted-foreground mb-1">
             Climate Zone (Optional)
           </label>
           <input
@@ -59,7 +59,7 @@ const Step1Location: React.FC<Step1LocationProps> = ({ formData, setFormData }) 
             id="climateZone"
             value={formData.climateZone || ''}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-input rounded-md shadow-sm focus:outline-none focus:ring-ring focus:border-ring sm:text-sm bg-background text-foreground placeholder:text-muted-foreground"
             placeholder="e.g., USDA Zone 10a"
           />
         </div>

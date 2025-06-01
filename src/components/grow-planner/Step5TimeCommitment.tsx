@@ -33,11 +33,11 @@ const Step5TimeCommitment: React.FC<Step5TimeCommitmentProps> = ({ formData, set
   }
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-md">
-      <h2 className="text-xl font-semibold mb-4 text-center text-gray-700">
+    <div className="p-4 border border-border rounded-lg bg-card shadow-md">
+      <h2 className="text-xl font-semibold mb-6 text-center text-foreground">
         Step 5: How much time can you commit per week?
       </h2>
-      <div className="my-8 px-2">
+      <div className="my-10 px-2"> {/* Increased vertical margin for slider section */}
         <Slider
           defaultValue={timeValue}
           value={timeValue}
@@ -45,14 +45,14 @@ const Step5TimeCommitment: React.FC<Step5TimeCommitmentProps> = ({ formData, set
           min={1}
           max={10}
           step={1}
-          className="w-3/4 mx-auto"
+          className="w-3/4 sm:w-2/3 mx-auto" // Responsive width
         />
       </div>
-      <div className="text-center mt-4">
-        <p className="text-lg font-medium text-blue-600">
+      <div className="text-center mt-6"> {/* Increased top margin */}
+        <p className="text-lg font-medium text-primary">
           {getCommitmentLabel(formData.timeCommitment)}
         </p>
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm text-muted-foreground mt-1">
           {commitmentDescription(formData.timeCommitment)}
         </p>
       </div>

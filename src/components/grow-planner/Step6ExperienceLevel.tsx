@@ -23,8 +23,8 @@ const Step6ExperienceLevel: React.FC<Step6ExperienceLevelProps> = ({ formData, s
   };
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-md">
-      <h2 className="text-xl font-semibold mb-6 text-center text-gray-700">
+    <div className="p-4 border border-border rounded-lg bg-card shadow-md">
+      <h2 className="text-xl font-semibold mb-6 text-center text-foreground">
         Step 6: What's your gardening experience level?
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -34,16 +34,16 @@ const Step6ExperienceLevel: React.FC<Step6ExperienceLevelProps> = ({ formData, s
             onClick={() => handleSelectExperience(option.value)}
             className={`flex flex-col items-center justify-center p-6 border-2 rounded-lg cursor-pointer transition-all duration-200 ease-in-out h-full
                         ${formData.experienceLevel === option.value
-                          ? 'border-teal-500 bg-teal-50 shadow-lg scale-105'
-                          : 'border-gray-300 hover:border-teal-400 hover:shadow-md'}`}
+                          ? 'border-accent-emerald bg-accent-emerald/10 dark:bg-accent-emerald/20 shadow-lg scale-105'
+                          : 'border-border bg-background dark:bg-card hover:border-accent-emerald/70 hover:shadow-md'}`}
           >
-            <div className={`mb-3 ${formData.experienceLevel === option.value ? 'text-teal-600' : 'text-gray-600'}`}>
+            <div className={`mb-3 ${formData.experienceLevel === option.value ? 'text-accent-emerald' : 'text-muted-foreground'}`}>
               {option.icon}
             </div>
-            <span className={`text-base font-medium mb-1 ${formData.experienceLevel === option.value ? 'text-teal-700' : 'text-gray-700'}`}>
+            <span className={`text-base font-medium mb-1 ${formData.experienceLevel === option.value ? 'text-accent-emerald' : 'text-foreground'}`}>
               {option.name}
             </span>
-            <p className="text-xs text-center text-gray-500 px-1">
+            <p className="text-xs text-center text-muted-foreground px-1">
               {option.description}
             </p>
           </button>

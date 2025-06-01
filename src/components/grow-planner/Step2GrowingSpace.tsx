@@ -25,8 +25,8 @@ const Step2GrowingSpace: React.FC<Step2GrowingSpaceProps> = ({ formData, setForm
   };
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-md">
-      <h2 className="text-xl font-semibold mb-6 text-center text-gray-700">
+    <div className="p-4 border border-border rounded-lg bg-card shadow-md">
+      <h2 className="text-xl font-semibold mb-6 text-center text-foreground">
         Step 2: What type of growing space do you have?
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -36,13 +36,13 @@ const Step2GrowingSpace: React.FC<Step2GrowingSpaceProps> = ({ formData, setForm
             onClick={() => handleSelectSpace(option.value)}
             className={`flex flex-col items-center justify-center p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 ease-in-out
                         ${formData.growingSpace === option.value
-                          ? 'border-green-500 bg-green-50 shadow-lg scale-105'
-                          : 'border-gray-300 hover:border-green-400 hover:shadow-md'}`}
+                          ? 'border-primary bg-primary/10 dark:bg-primary/20 shadow-lg scale-105'
+                          : 'border-border bg-background dark:bg-card hover:border-primary/70 hover:shadow-md'}`}
           >
-            <div className={`mb-2 ${formData.growingSpace === option.value ? 'text-green-600' : 'text-gray-600'}`}>
+            <div className={`mb-2 ${formData.growingSpace === option.value ? 'text-primary' : 'text-muted-foreground'}`}>
               {option.icon}
             </div>
-            <span className={`text-sm font-medium ${formData.growingSpace === option.value ? 'text-green-700' : 'text-gray-700'}`}>
+            <span className={`text-sm font-medium ${formData.growingSpace === option.value ? 'text-primary' : 'text-foreground'}`}>
               {option.name}
             </span>
           </button>
