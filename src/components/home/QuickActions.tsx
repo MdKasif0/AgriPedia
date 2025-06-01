@@ -6,7 +6,7 @@ import { PlusCircle, ScanLine, CalendarCheck } from 'lucide-react'; // Example i
 
 export default function QuickActions() {
   return (
-    <Card className="rounded-2xl h-full flex flex-col mb-6 group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <Card className="rounded-2xl h-full flex flex-col mb-6 group hover:shadow-xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-primary/10 via-transparent to-transparent">
       <CardHeader>
         <CardTitle className="font-serif">Quick Actions</CardTitle>
       </CardHeader>
