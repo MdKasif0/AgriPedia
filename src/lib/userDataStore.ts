@@ -1,5 +1,29 @@
 'use client';
 
+// --- New Data Structures for Grow Plan Progress ---
+export interface StageProgress {
+  completed: boolean;
+  notes?: string; // For optional plant log per stage
+  photoUrl?: string; // For optional plant log per stage
+}
+
+export interface PlantGuideProgress {
+  plantId: string; // e.g., "basil_001"
+  planterId: string; // A unique ID for this specific instance in a user's plan
+  addedDate: string; // ISO date string when added to Grow Plan
+  stageStartDates: Record<string, string>; // Key: stage.name, Value: ISO date string
+  stageEndDates: Record<string, string>; // Key: stage.name, Value: ISO date string
+  currentStage?: string; // Name of the current active stage
+  stages: Record<string, StageProgress>; // Key: stage.name
+  plantCommonName: string;
+  guideStagesSummary: Array<{ stage: string; duration_days: number }>;
+}
+
+// User's overall progress for all plants in their Grow Plan
+export interface GrowPlanProgress {
+  plants: PlantGuideProgress[];
+}
+
 // Import PlannerData and validation function
 import type { PlannerData } from '../types/planner'; // Adjusted path if necessary
 
@@ -185,6 +209,123 @@ export function getGeminiApiKey(): string | null {
 export function removeGeminiApiKey(): void {
   if (typeof window === 'undefined') return;
   localStorage.removeItem(GEMINI_API_KEY_STORAGE_KEY);
+}
+
+// --- Grow Plan Progress ---
+const GROW_PLAN_PROGRESS_KEY = 'agripedia-grow-plan-progress';
+
+export function getGrowPlanProgress(): GrowPlanProgress | null {
+  if (typeof window === 'undefined') return null;
+  const jsonData = localStorage.getItem(GROW_PLAN_PROGRESS_KEY);
+  if (!jsonData) {
+    return { plants: [] }; // Return empty structure if nothing saved yet
+  }
+  try {
+    // TODO: Add validation for this data structure similar to plannerData
+    const data = JSON.parse(jsonData) as GrowPlanProgress;
+    return data;
+  } catch (error) {
+    console.error('Error retrieving grow plan progress:', error);
+    return { plants: [] };
+  }
+}
+
+export function saveGrowPlanProgress(progress: GrowPlanProgress): void {
+  if (typeof window === 'undefined') return;
+  try {
+    // TODO: Add validation before saving
+    const jsonData = JSON.stringify(progress);
+    localStorage.setItem(GROW_PLAN_PROGRESS_KEY, jsonData);
+  } catch (error) {
+    console.error('Error saving grow plan progress:', error);
+  }
+}
+
+export function upsertPlantGuideProgress(plantProgress: PlantGuideProgress): void {
+  if (typeof window === 'undefined') return;
+  const currentProgress = getGrowPlanProgress() || { plants: [] };
+  const plantIndex = currentProgress.plants.findIndex(p => p.planterId === plantProgress.planterId);
+
+  if (plantIndex > -1) {
+    currentProgress.plants[plantIndex] = plantProgress;
+  } else {
+    currentProgress.plants.push(plantProgress);
+  }
+  saveGrowPlanProgress(currentProgress);
+}
+
+export function getPlantGuideProgressByPlanterId(planterId: string): PlantGuideProgress | null {
+    if (typeof window === 'undefined') return null;
+    const currentProgress = getGrowPlanProgress();
+    if (!currentProgress) return null;
+    return currentProgress.plants.find(p => p.planterId === planterId) || null;
+}
+
+// --- Notification Preferences ---
+export interface NotificationPrefs {
+  frequency: 'all' | 'key_stages' | 'minimal' | 'off';
+  tone: 'motivational' | 'minimal_info' | 'scientific';
+  enableInApp: boolean;
+  // enablePush?: boolean; // For future use
+}
+
+export const DEFAULT_NOTIFICATION_PREFS: NotificationPrefs = {
+  frequency: 'all',
+  tone: 'motivational',
+  enableInApp: true,
+};
+
+const NOTIFICATION_PREFS_KEY = 'agripedia-notification-prefs';
+
+export function getNotificationPreferences(): NotificationPrefs {
+  if (typeof window === 'undefined') return DEFAULT_NOTIFICATION_PREFS;
+  const storedPrefs = localStorage.getItem(NOTIFICATION_PREFS_KEY);
+  if (storedPrefs) {
+    try {
+      // TODO: Add validation for this data structure
+      return JSON.parse(storedPrefs) as NotificationPrefs;
+    } catch (e) {
+      console.error("Error parsing notification preferences", e);
+      return DEFAULT_NOTIFICATION_PREFS;
+    }
+  }
+  return DEFAULT_NOTIFICATION_PREFS;
+}
+
+export function saveNotificationPreferences(prefs: NotificationPrefs): void {
+  if (typeof window === 'undefined') return;
+  try {
+    // TODO: Add validation before saving
+    localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
+    window.dispatchEvent(new CustomEvent('notificationPrefsChanged', { detail: prefs }));
+  } catch (error) {
+    console.error('Error saving notification preferences:', error);
+  }
+}
+
+// --- Shown Notifications Tracking ---
+const SHOWN_NOTIFICATIONS_KEY = 'agripedia-shown-notifications';
+
+export function getShownNotifications(): Record<string, boolean> {
+  if (typeof window === 'undefined') return {};
+  const stored = localStorage.getItem(SHOWN_NOTIFICATIONS_KEY);
+  try {
+    return stored ? JSON.parse(stored) : {};
+  } catch (error) {
+    console.error("Error parsing shown notifications", error);
+    return {};
+  }
+}
+
+export function markNotificationAsShown(notificationId: string): void {
+  if (typeof window === 'undefined') return;
+  const shown = getShownNotifications();
+  shown[notificationId] = true;
+  try {
+    localStorage.setItem(SHOWN_NOTIFICATIONS_KEY, JSON.stringify(shown));
+  } catch (error) {
+    console.error('Error saving shown notifications:', error);
+  }
 }
 
 // --- User Mode ---

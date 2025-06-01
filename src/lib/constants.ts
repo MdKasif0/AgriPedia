@@ -1,3 +1,5 @@
+export const PREFILLED_CHAT_PROMPT_KEY = 'agripedia-prefilled-chat-prompt';
+
 export const USER_MODES = [
   { id: 'general', label: 'General Use' }, // Default mode
   { id: 'gardener', label: 'Gardener Mode' },

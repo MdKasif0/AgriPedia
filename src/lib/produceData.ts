@@ -1,3 +1,7 @@
+import fs from 'fs';
+import path from 'path';
+import type { PlannerData } from '@/types/planner'; // Import PlannerData
+
 // Import individual fruit data
 import amlaFruit from './data/fruits/amla.json';
 import appleFruit from './data/fruits/apple.json';
@@ -221,6 +225,51 @@ import taroTuberCrop from './data/tuberAndRootCrops/taro.json';
 import turnipTuberCrop from './data/tuberAndRootCrops/turnip.json';
 import yamTuberCrop from './data/tuberAndRootCrops/yam.json';
 
+// --- Types for Guide Customization ---
+export interface Condition {
+  space?: 'indoors' | 'outdoors_small' | 'outdoors_large' | string;
+  location_climate?: 'arid' | 'temperate' | 'tropical' | 'continental' | 'polar' | 'humid' | string;
+  experience?: 'beginner' | 'intermediate' | 'advanced' | string;
+  // Add more conditions as needed
+}
+
+export interface InstructionModification {
+  index?: number;
+  match_text?: string;
+  new_text: string;
+}
+
+export interface CustomizationRule {
+  condition: Condition;
+  instructions_add?: string[];
+  instructions_modify?: InstructionModification[];
+  tips_add?: string[];
+  warnings_add?: string[];
+  // Add more fields to customize
+}
+
+export interface GrowingStage {
+  stage: string;
+  duration_days: number;
+  instructions: string[];
+  media?: {
+    images?: string[];
+    video?: string;
+  };
+  tools_needed?: string[];
+  tips?: string[];
+  reminders?: string[];
+  warnings?: string[];
+  did_you_know?: string[];
+  customizations?: CustomizationRule[]; // New field
+}
+
+export interface GrowingGuide {
+  plant_id: string;
+  common_name: string;
+  scientific_name: string;
+  growing_guide: GrowingStage[];
+}
 
 export interface Recipe {
   name: string;
@@ -579,6 +628,93 @@ export function getInSeasonProduce(limit?: number): ProduceInfo[] {
     return inSeasonItems.slice(0, limit); // Return up to limit if fewer items than limit
   }
   return inSeasonItems; // Return all if no limit or fewer items than limit
+}
+
+// Helper function for getProduceGuide
+function matchesCondition(condition: Condition, plannerData: PlannerData): boolean {
+  if (!plannerData) return false;
+
+  if (condition.space && plannerData.space !== condition.space) return false;
+  if (condition.experience && plannerData.experience !== condition.experience) return false;
+
+  if (condition.location_climate) {
+    const climateZone = plannerData.location?.climateZone?.toLowerCase() || "";
+    // Check simplifiedClimate first if it exists on plannerData
+    if (plannerData.location?.simplifiedClimate && typeof plannerData.location.simplifiedClimate === 'string') {
+        if(plannerData.location.simplifiedClimate.toLowerCase() !== condition.location_climate.toLowerCase()) return false;
+    } else if (!climateZone.includes(condition.location_climate.toLowerCase())) {
+        // Fallback to checking climateZone if simplifiedClimate is not available or doesn't match
+        return false;
+    }
+  }
+  return true;
+}
+
+export function getProduceGuide(plant_id: string, plannerData?: PlannerData | null): GrowingGuide | null {
+  const guideFileName = `${plant_id}.json`;
+  const filePath = path.join(process.cwd(), 'src', 'lib', 'data', 'guides', guideFileName);
+
+  try {
+    if (!fs.existsSync(filePath)) {
+      console.warn(`Growing guide for plant_id '${plant_id}' not found at ${filePath}`);
+      return null;
+    }
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const baseGuide: GrowingGuide = JSON.parse(fileContent);
+
+    if (!plannerData) {
+      return baseGuide; // Return base guide if no plannerData
+    }
+
+    const customizedGuide: GrowingGuide = JSON.parse(JSON.stringify(baseGuide));
+
+    customizedGuide.growing_guide.forEach(stage => {
+      if (stage.customizations && stage.customizations.length > 0) {
+        // Ensure arrays are new instances for modification
+        const originalInstructions = [...stage.instructions];
+        let currentInstructions = [...stage.instructions];
+        let currentTips = stage.tips ? [...stage.tips] : [];
+        let currentWarnings = stage.warnings ? [...stage.warnings] : [];
+
+        stage.customizations.forEach(rule => {
+          if (matchesCondition(rule.condition, plannerData)) {
+            if (rule.instructions_add) {
+              currentInstructions.push(...rule.instructions_add);
+            }
+            if (rule.tips_add) {
+              currentTips.push(...rule.tips_add);
+            }
+            if (rule.warnings_add) {
+              currentWarnings.push(...rule.warnings_add);
+            }
+            if (rule.instructions_modify) {
+              rule.instructions_modify.forEach(mod => {
+                if (mod.index !== undefined && mod.index < currentInstructions.length) {
+                  currentInstructions[mod.index] = mod.new_text;
+                } else if (mod.match_text) {
+                  const idxToModify = currentInstructions.findIndex(instr => instr.includes(mod.match_text!));
+                  if (idxToModify > -1) {
+                    currentInstructions[idxToModify] = mod.new_text;
+                  }
+                }
+              });
+            }
+          }
+        });
+        stage.instructions = currentInstructions;
+        stage.tips = currentTips;
+        stage.warnings = currentWarnings;
+      }
+      // Optionally remove customizations from the final guide to reduce payload size to client
+      // delete stage.customizations;
+    });
+
+    return customizedGuide;
+
+  } catch (error) {
+    console.error(`Error reading or parsing/customizing guide for '${plant_id}':`, error);
+    return null;
+  }
 }
 
 export function getAllCategoriesWithProduce(): { [categoryName: string]: ProduceInfo[] } {

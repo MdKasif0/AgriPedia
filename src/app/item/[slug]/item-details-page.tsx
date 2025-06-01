@@ -1,10 +1,14 @@
 
 'use client';
 
-import { useEffect, useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
-import { useParams, notFound, useRouter } from 'next/navigation';
-import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
+import { notFound, useRouter, useParams, useSearchParams } from 'next/navigation';
+import type { ProduceInfo, GrowingGuide, Recipe } from '@/lib/produceData';
+import type { PlantGuideProgress } from '@/lib/userDataStore';
+import { getPlannerData } from '@/lib/userDataStore'; // getPlannerData is fine
+import type { PlannerData } from '@/types/planner'; // Corrected import for PlannerData
+import { customizeGuideForClient } from '@/lib/guideUtils';
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -25,8 +29,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
 import ClientOnly from '@/components/ClientOnly';
 import CropCalendarDisplay from '@/components/produce/CropCalendarDisplay';
-
-const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
+import GrowingGuideDisplay from '@/components/produce/GrowingGuide';
   loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
 });
@@ -70,29 +73,22 @@ const getCurrentSeason = (): string => {
 };
 
 interface ItemDetailsPageProps {
-  slugFromParams?: string | string[];
+  slugFromParams: string; // Or decoded slug if preferred
+  initialProduce: ProduceInfo | null;
+  initialGrowingGuide: GrowingGuide | null;
 }
 
-export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: ItemDetailsPageProps) {
+export default function ItemDetailsPage({ slugFromParams, initialProduce, initialGrowingGuide }: ItemDetailsPageProps) {
   const { toast } = useToast();
-  const paramsHook = useParams<{ slug?: string | string[] }>();
   const router = useRouter();
+  const searchParams = useSearchParams(); // For reading URL query params
+  const planterIdFromQuery = searchParams.get('planterId');
 
-  const slugFromParams = slugFromParamsProp || paramsHook.slug;
+  // Use initialProduce directly, no need for processedSlug for fetching this primary data
+  // const processedSlug = useMemo(() => { ... }); // Remove or adapt if needed for other purposes
 
-  const processedSlug = useMemo(() => {
-    if (!slugFromParams) return '';
-    const slugValue = typeof slugFromParams === 'string' ? slugFromParams : Array.isArray(slugFromParams) ? slugFromParams[0] : '';
-    try {
-        return decodeURIComponent(slugValue);
-    } catch (e) {
-        console.error("Failed to decode slug:", slugValue, e);
-        return slugValue;
-    }
-  }, [slugFromParams]);
-
-  const [produce, setProduce] = useState<ProduceInfo | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [produce, setProduce] = useState<ProduceInfo | null>(initialProduce);
+  const [isLoading, setIsLoading] = useState(!initialProduce);
   const [isOfflineSource, setIsOfflineSource] = useState(false);
   const [isFavorited, setIsFavorited] = useState(false);
   const [animateFavorite, setAnimateFavorite] = useState(false);
@@ -103,49 +99,31 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
   const [locationInfo, setLocationInfo] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState(false);
 
+  const [plannerProfile, setPlannerProfile] = useState<PlannerData | null>(null);
+  const [displayGuide, setDisplayGuide] = useState<GrowingGuide | null>(initialGrowingGuide);
+
   useEffect(() => {
-    if (!processedSlug) {
-      setIsLoading(false);
-      setProduce(null);
-      return;
+    // Fetch planner data on client
+    const profile = getPlannerData();
+    setPlannerProfile(profile);
+
+    // Customize guide if profile and base guide exist
+    if (initialGrowingGuide && profile) {
+      const customized = customizeGuideForClient(initialGrowingGuide, profile);
+      setDisplayGuide(customized);
+    } else {
+      setDisplayGuide(initialGrowingGuide); // Use base if no profile or no initial guide
     }
+  }, [initialGrowingGuide]); // Rerun if base guide changes, profile is stable per client session typically
 
-    async function fetchData() {
-      setIsLoading(true);
-      setIsOfflineSource(false);
-      let itemData: ProduceInfo | null = null;
-      const isOnline = typeof window !== 'undefined' && navigator.onLine;
-
-      if (isOnline) {
-        try {
-          const onlineData = getProduceByCommonName(processedSlug);
-          if (onlineData) {
-            itemData = onlineData;
-            saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // Feature removed
-          }
-        } catch (error) {
-          console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
-        }
-      }
-
-      if (!itemData) {
-        const offlineData = getProduceOffline(processedSlug);
-        if (offlineData) {
-          itemData = offlineData;
-          setIsOfflineSource(true);
-        }
-      }
-
-      setProduce(itemData);
-      if (itemData) {
-        setIsFavorited(UserDataStore.isFavorite(itemData.id));
-      }
-      setIsLoading(false);
+  // Handles setting initial favorite state
+  useEffect(() => {
+    setProduce(initialProduce); // Set produce from props
+    setIsLoading(!initialProduce); // Set loading based on prop
+    if (initialProduce) {
+      setIsFavorited(UserDataStore.isFavorite(initialProduce.id));
     }
-
-    fetchData();
-  }, [processedSlug]);
+  }, [initialProduce]);
 
   useEffect(() => {
     if (produce) {
@@ -159,6 +137,47 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         );
     }
   }, [produce]);
+
+  const handleAddToMyPlan = () => {
+    if (typeof window === 'undefined') return;
+
+    if (!initialGrowingGuide || !initialProduce) {
+      toast({ title: "Cannot Add to Plan", description: "Growing guide or produce data is not available.", variant: "destructive" });
+      return;
+    }
+
+    const planterId = `${initialGrowingGuide.plant_id}_${new Date().getTime()}`;
+    const addedDate = new Date();
+    const newPlantProgress: PlantGuideProgress = {
+      plantId: initialGrowingGuide.plant_id,
+      planterId: planterId,
+      addedDate: addedDate.toISOString(),
+      stageStartDates: {},
+      stageEndDates: {},
+      currentStage: initialGrowingGuide.growing_guide[0]?.stage || undefined,
+      stages: {},
+      plantCommonName: initialProduce.commonName, // Add this
+      guideStagesSummary: initialGrowingGuide.growing_guide.map(s => ({ stage: s.stage, duration_days: s.duration_days })), // Add this
+    };
+
+    let currentCalculationDate = new Date(addedDate);
+    initialGrowingGuide.growing_guide.forEach(stage => {
+      newPlantProgress.stageStartDates[stage.stage] = currentCalculationDate.toISOString();
+      const duration = Math.max(1, stage.duration_days);
+      currentCalculationDate.setDate(currentCalculationDate.getDate() + duration);
+      newPlantProgress.stageEndDates[stage.stage] = currentCalculationDate.toISOString();
+      newPlantProgress.stages[stage.stage] = { completed: false };
+    });
+
+    UserDataStore.upsertPlantGuideProgress(newPlantProgress);
+    toast({ title: "Added to Grow Plan!", description: `${initialProduce.commonName} added. You can now track its progress.`});
+
+    // To see the dates and enable tracking for this new instance, we'd ideally navigate
+    // or update state to include planterId. For now, user might need to manually add planterId to URL or visit a planner page.
+    // Example of how to refresh with the new planterId in query (might cause full reload):
+    // router.push(`${window.location.pathname}?planterId=${planterId}`);
+    // A better UX would involve a dedicated planner page or more complex state management.
+  };
 
   const handleLocationClick = () => {
     setIsLocating(true);
@@ -230,15 +249,18 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
     }
   };
 
-  if (isLoading) {
+  // isLoading state is now primarily managed by the initial prop presence.
+  // This loading state might be shown briefly if initialProduce is null and then populates.
+  if (isLoading && !produce) { // Adjusted condition
     return <div className="flex justify-center items-center min-h-[calc(100vh-200px)]"><Loader text="Loading AgriPedia data..." size={48}/></div>;
   }
 
-  if (!produce && !isLoading) {
-    notFound();
+  // If initialProduce was null and remains null after useEffect, then call notFound.
+  // page.tsx should ideally handle notFound before rendering this client component if data is truly missing.
+  if (!produce) {
+    notFound(); // This might be redundant if page.tsx handles it, but good as a fallback.
     return null;
   }
-  if (!produce) return null;
 
   const commonNameWords = produce.commonName.toLowerCase().split(' ');
   const imageHint = commonNameWords.length > 1 ? commonNameWords.slice(0, 2).join(' ') : commonNameWords[0];
@@ -574,6 +596,16 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             
         </TabsContent>
       </Tabs>
+
+      <GrowingGuideDisplay guide={displayGuide} planterId={planterIdFromQuery || undefined} className="mt-12 px-2 md:px-0" />
+
+      {initialProduce && displayGuide && ( // Check displayGuide here as it's what's rendered
+        <div className="mt-8 flex justify-center px-2 md:px-0">
+          <Button onClick={handleAddToMyPlan} size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+            <Sprout className="mr-2 h-5 w-5" /> Add to My Grow Plan
+          </Button>
+        </div>
+      )}
     </div>
   );
 }

@@ -3,9 +3,11 @@
 
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { useNotificationManager } from '@/hooks/useNotificationManager'; // Add this
 
 export default function ServiceWorkerRegistrar() {
   const { toast } = useToast();
+  useNotificationManager(); // Call the hook here
 
   useEffect(() => {
     if ('serviceWorker' in navigator) {
