@@ -10,6 +10,16 @@ import ErrorBoundary from '../ErrorBoundary';
 import { Button } from '@/components/ui/button';
 import { savePlannerData, getPlannerData, clearPlannerData } from '@/lib/userDataStore';
 import type { PlannerData } from '@/types/planner';
+import { runFlow } from '@genkit-ai/flow';
+import { recommendPlantsFlow } from '../../ai/flows/recommend-plants-flow'; // Adjusted path
+
+// Interface for plant recommendations
+interface PlantRecommendation {
+  id: string;
+  commonName: string;
+  reasoning: string;
+  image?: string; // Optional image
+}
 
 const TOTAL_PLANNER_STEPS = 6; // Location to Experience Level
 
@@ -48,6 +58,11 @@ const PersonalizedGrowPlanner: React.FC = () => {
   const [displayedStep, setDisplayedStep] = useState(currentStep);
   const previousStepRef = useRef<number>(currentStep);
 
+  // State for plant recommendations
+  const [plantRecommendations, setPlantRecommendations] = useState<PlantRecommendation[]>([]);
+  const [isRecLoading, setIsRecLoading] = useState<boolean>(false);
+  const [recError, setRecError] = useState<string | null>(null);
+
   useEffect(() => {
     if (previousStepRef.current < currentStep) {
       setAnimationClass('animate-slideOutToLeft');
@@ -82,24 +97,37 @@ const PersonalizedGrowPlanner: React.FC = () => {
   }, []); // Empty dependency array ensures this runs only on mount
 
   useEffect(() => {
-    if (currentStep === TOTAL_PLANNER_STEPS && Object.keys(formData).length > 0) {
-      // Ensure all expected fields are present before trying to save.
-      // This is a basic check; individual step data should already be structured correctly.
-      const plannerToSave: Partial<PlannerData> = {
-        ...formData, // Spread the collected form data
-        userId: "defaultUser123", // Placeholder userId
+    const effectFormData = formData;
+    if (currentStep === TOTAL_PLANNER_STEPS && Object.keys(effectFormData).length > 0) {
+      const plannerToSave: PlannerData = {
+        ...(effectFormData as Omit<PlannerData, 'userId' | 'createdAt'>),
+        userId: "defaultUser123",
         createdAt: new Date().toISOString(),
       };
 
-      // Log the data being saved for debugging
-      console.log("Attempting to save planner data:", plannerToSave);
+      savePlannerData(plannerToSave);
+      console.log("Planner data saved, now fetching recommendations...", plannerToSave);
 
-      // Type assertion is used here assuming formData has been correctly populated by the steps
-      // and matches the structure of PlannerData fields.
-      // The isValidPlannerData function within savePlannerData will perform the final validation.
-      savePlannerData(plannerToSave as PlannerData);
+      setIsRecLoading(true);
+      setRecError(null);
+      setPlantRecommendations([]);
+
+      runFlow(recommendPlantsFlow, plannerToSave) // Pass the well-typed plannerToSave
+        .then(recommendations => {
+          console.log("Fetched plant recommendations:", recommendations);
+          setPlantRecommendations(recommendations || []);
+        })
+        .catch(error => {
+          console.error("Error fetching plant recommendations:", error);
+          setRecError("Sorry, we couldn't fetch plant recommendations at this time.");
+        })
+        .finally(() => {
+          setIsRecLoading(false);
+          // Add this log:
+          console.log('[PersonalizedGrowPlanner] Final recommendations state:', plantRecommendations, 'Error state:', recError);
+        });
     }
-  }, [currentStep, formData]); // Trigger when currentStep or formData changes
+  }, [currentStep, formData]);
 
 
   const handleNext = (stepData: any) => {
@@ -129,6 +157,9 @@ const PersonalizedGrowPlanner: React.FC = () => {
     clearPlannerData(); // Clear data from local storage
     setCurrentStep(0);
     setFormData({});
+    setPlantRecommendations([]);
+    setIsRecLoading(false);
+    setRecError(null);
     // Set displayedStep to 0 to ensure UI updates immediately before animation kicks in.
     // Set previousStepRef to -1 (or any value != 0) to ensure animation effect condition is met.
     setDisplayedStep(0);
@@ -184,6 +215,11 @@ const PersonalizedGrowPlanner: React.FC = () => {
           summaryContent = `Error displaying summary: ${error.message}. Raw data might be incomplete or corrupted.`;
         }
 
+        console.log('[PersonalizedGrowPlanner Summary] Rendering recommendations with:', {
+          isLoading: isRecLoading,
+          error: recError,
+          recommendations: plantRecommendations
+        });
         return (
           <ErrorBoundary fallbackMessage="There was an issue displaying the summary. Please try starting over.">
             <div className="text-center p-4">
@@ -192,6 +228,45 @@ const PersonalizedGrowPlanner: React.FC = () => {
               <pre className="text-left text-sm bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-x-auto min-h-[100px]">
                 {summaryContent}
               </pre>
+
+              {/* Plant Recommendations Section */}
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700 text-left">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 text-center">
+                  AI Plant Recommendations
+                </h3>
+                {isRecLoading && (
+                  <p className="text-gray-600 dark:text-gray-400 text-center">Loading recommendations...</p>
+                )}
+                {recError && (
+                  <div className="p-3 bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 rounded-md">
+                    <p className="text-red-700 dark:text-red-300 text-center font-medium">Could not fetch recommendations:</p>
+                    <p className="text-red-600 dark:text-red-400 text-center text-sm">{recError}</p>
+                  </div>
+                )}
+                {!isRecLoading && !recError && (
+                  <>
+                    {plantRecommendations.length > 0 ? (
+                      <div className="space-y-4">
+                        {plantRecommendations.map((rec) => (
+                          <div key={rec.id} className="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                            <h4 className="font-bold text-lg text-green-700 dark:text-green-400">{rec.commonName}</h4>
+                            <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">{rec.reasoning}</p>
+                            {/*
+                              Optional: Display image if available and image URL is part of PlantRecommendation
+                              rec.image && <img src={rec.image} alt={rec.commonName} className="mt-2 h-32 w-auto rounded object-cover" />
+                            */}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-gray-600 dark:text-gray-400 text-center">
+                        No specific plant recommendations found based on your current selections. You might want to adjust your preferences or explore general gardening guides!
+                      </p>
+                    )}
+                  </>
+                )}
+              </div>
+
               <Button onClick={handleStartOver} className="mt-6">
                 Start Over
               </Button>
