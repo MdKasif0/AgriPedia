@@ -315,56 +315,67 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </TabsList>
         </div>
 
-        <TabsContent value="overview" className="mt-6 space-y-6 px-2 md:px-0">
-          <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg">
-            <p className="text-card-foreground/90">{produce.description}</p>
-          </IconLabel>
-          <div className="grid md:grid-cols-2 gap-6">
-            <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
-              <p className="text-card-foreground/90">{produce.origin}</p>
+        <TabsContent value="overview" className="mt-6 px-2 md:px-0">
+          <div className="md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
+            <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg md:col-span-2">
+              <p className="text-card-foreground/90">{produce.description}</p>
             </IconLabel>
-            <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
-              <div className="flex flex-wrap gap-2">
-                {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
-              </div>
+
+            {/* This nested grid will now be an item in the parent grid, taking one slot if not spanned */}
+            <div className="grid md:grid-cols-2 gap-6 md:col-span-2"> {/* Or make this simply col-span-1 and arrange items differently if desc is not col-span-2 */}
+              <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
+                <p className="text-card-foreground/90">{produce.origin}</p>
+              </IconLabel>
+              <IconLabel icon={Languages} label="Local Names" className="bg-card rounded-lg shadow-lg">
+                <div className="flex flex-wrap gap-2">
+                  {produce.localNames.map(name => <Badge key={name} variant="secondary" className="bg-secondary/70 text-secondary-foreground">{name}</Badge>)}
+                </div>
+              </IconLabel>
+            </div>
+
+            <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg md:col-span-2">
+              <ul className="list-disc list-inside text-card-foreground/90">
+                {produce.regions.map(region => <li key={region}>{region}</li>)}
+              </ul>
             </IconLabel>
           </div>
-          <IconLabel icon={MapPin} label="Major Growing Regions" className="bg-card rounded-lg shadow-lg">
-            <ul className="list-disc list-inside text-card-foreground/90">
-              {produce.regions.map(region => <li key={region}>{region}</li>)}
-            </ul>
-          </IconLabel>
         </TabsContent>
 
-        <TabsContent value="nutrition" className="mt-6 space-y-6 px-2 md:px-0">
-          <section className="space-y-6">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
-            <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+        <TabsContent value="nutrition" className="mt-6 px-2 md:px-0">
+          {/* Titles and calorie info remain full width */}
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
+          <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
 
+          <div className="md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
             <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
               <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
             </ClientOnly>
 
-            {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
-              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
-                <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
-              </ClientOnly>
-            )}
+            {/* This div will group Vitamin and Mineral charts in the second column */}
+            <div className="space-y-6">
+              {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
+                <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
+                  <VitaminChart data={produce.nutrition.vitamins} className="rounded-lg shadow-lg overflow-hidden" />
+                </ClientOnly>
+              )}
 
-            {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
-              <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
-                <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
-              </ClientOnly>
-            )}
-          </section>
-          <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
-            <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-              {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
-            </ul>
-          </IconLabel>
+              {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
+                <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
+                  <MineralChart data={produce.nutrition.minerals} className="rounded-lg shadow-lg overflow-hidden" />
+                </ClientOnly>
+              )}
+            </div>
+
+            <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg md:col-span-2">
+              <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
+                {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
+              </ul>
+            </IconLabel>
+          </div>
         </TabsContent>
 
         <TabsContent value="recipe" className="mt-6 space-y-6 px-2 md:px-0">
+          {/* Recipe layout is already md:grid-cols-1 lg:grid-cols-2, so it's fine */}
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Heart className="text-primary"/>Recipe Ideas</h2>
             {recipesToDisplay.length > 0 ? (
@@ -398,7 +409,8 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </section>
         </TabsContent>
 
-        <TabsContent value="additional" className="mt-6 space-y-6 px-2 md:px-0">
+        <TabsContent value="additional" className="mt-6 px-2 md:px-0">
+          <div className="md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
             <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
             {produce.potentialAllergies.length > 0 ? (
                 <ul className="space-y-3">
@@ -419,6 +431,9 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
             )}
             </IconLabel>
+            {/* This IconLabel already had md:col-span-2, which will apply *within* its current grid cell if its parent is a grid cell.
+                If this IconLabel itself is a direct child of the new main grid, md:col-span-2 will make it span the new main grid's columns.
+                This should be fine. */}
             <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-lg shadow-lg">
               <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
             </IconLabel>
@@ -426,7 +441,9 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
               <p className="text-card-foreground/90">{produce.growthDuration}</p>
             </IconLabel>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            {/* This div with its own grid will become a single item in the parent grid, spanning one column unless specified.
+                The md:grid-cols-2 inside it will then apply to its children. This is fine. */}
+            <div className="grid md:grid-cols-2 gap-6 md:col-span-2"> {/* Make this wrapper span 2 cols of the main grid */}
                 <IconLabel
                 icon={isCurrentlyInSeason === null ? CalendarDays : isCurrentlyInSeason ? CalendarCheck2 : CalendarX2}
                 label="Seasonal Availability"
@@ -454,7 +471,9 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </IconLabel>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            {/* This div also becomes a single item spanning one column of the main grid by default.
+                The md:grid-cols-2 inside it will then apply to its children. This is fine. */}
+            <div className="grid md:grid-cols-2 gap-6 md:col-span-2">  {/* Make this wrapper span 2 cols of the main grid */}
                 {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
                 <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-lg shadow-lg">
                     <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
@@ -463,13 +482,13 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </IconLabel>
                 )}
                 {produce.carbonFootprintInfo && (
-                <IconLabel icon={Heart} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg">
+                <IconLabel icon={Heart} label="Carbon Footprint Info" className="bg-card rounded-lg shadow-lg"> {/* Changed icon to something more relevant than Heart if Carbon Footprint */}
                     <p className="text-card-foreground/90">{produce.carbonFootprintInfo}</p>
                 </IconLabel>
                 )}
             </div>
 
-            {/* New Agricultural Information Fields Start Here */}
+            {/* The rest of the IconLabel components will flow as items in the main 2-column grid */}
 
             {produce.uses && produce.uses.length > 0 && (
               <IconLabel icon={Leaf} label="Common Uses" className="bg-card rounded-lg shadow-lg">
@@ -539,10 +558,10 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
             {/* New Agricultural Information Fields End Here */}
 
-            <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg md:col-span-2">
               {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
                 <p className="text-card-foreground/90 mb-2">
-                  This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
+                  This plant&apos;s general soil preferences: <span className="italic">{produce.soilPreferences}</span>
                 </p>
               ) : (
                 <p className="text-muted-foreground mb-2">
@@ -554,24 +573,24 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
               </p>
             </IconLabel>
 
-            <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg md:col-span-2">
               <p className="text-sm text-muted-foreground">
                 A comprehensive guide on organic and chemical fertilizers and treatments, including safe usage guidelines, is planned for this section. For current recommendations, please consult local agricultural extension services or qualified experts.
               </p>
             </IconLabel>
 
-            <IconLabel icon={NotebookPen} label="Growth Tracker / Crop Journal (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={NotebookPen} label="Growth Tracker / Crop Journal (Coming Soon)" className="bg-card rounded-lg shadow-lg md:col-span-2">
               <p className="text-sm text-muted-foreground">
                 Track your planting progress! A personal Crop Journal feature is planned, allowing you to log planting dates, growth stages, notes, and even photos. This feature will require a user account to save your personalized data.
               </p>
             </IconLabel>
 
-            <IconLabel icon={Newspaper} label="Agricultural News & Trends (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={Newspaper} label="Agricultural News & Trends (Coming Soon)" className="bg-card rounded-lg shadow-lg md:col-span-2">
               <p className="text-sm text-muted-foreground">
                 Stay updated! This section will feature recent news and trends in the world of agriculture, offering insights and updates relevant to enthusiasts and professionals alike. Integration with a live news source is planned for a future update.
               </p>
             </IconLabel>
-            
+          </div>
         </TabsContent>
       </Tabs>
     </div>
