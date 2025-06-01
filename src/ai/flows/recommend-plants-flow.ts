@@ -1,4 +1,4 @@
-import { defineFlow } from '@genkit-ai/flow';
+import { defineFlow } from 'genkit';
 import * as z from 'zod';
 import { PlannerDataSchema } from '@/types/planner.schema';
 import { promises as fs } from 'fs';
