@@ -49,6 +49,78 @@
   ],
   "carbonFootprintInfo": "Barley's carbon footprint is influenced by factors like nitrogen fertilizer use and soil management. Malting barley for beer production adds to its overall footprint.",
   "uses": ["culinary", "animal_feed", "beverages_alcoholic", "malt_production"],
+  "staticRecipes": [
+    {
+      "name": "Hearty Barley and Vegetable Soup",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 carrots, diced",
+        "2 celery stalks, diced",
+        "8 cups vegetable or chicken broth",
+        "3/4 cup pearl barley, rinsed",
+        "1 can (14.5 oz) diced tomatoes, undrained",
+        "1.5 cups chopped green beans (fresh or frozen)",
+        "1 tsp dried thyme",
+        "Salt and pepper to taste",
+        "Fresh parsley, chopped (for garnish)"
+      ],
+      "instructions": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat.",
+        "Add onion, carrots, and celery. Cook, stirring occasionally, for 5-7 minutes until softened.",
+        "Pour in broth and add rinsed barley and diced tomatoes. Stir in thyme.",
+        "Bring to a boil, then reduce heat to low, cover, and simmer for 45-50 minutes, or until barley is tender.",
+        "Add green beans and cook for another 10-15 minutes, or until beans are tender.",
+        "Season with salt and pepper to taste.",
+        "Ladle into bowls and garnish with fresh parsley if desired."
+      ],
+      "notes": "Feel free to add other vegetables like mushrooms, zucchini, or peas. For a richer flavor, add a bay leaf with the thyme and remove before serving."
+    },
+    {
+      "name": "Barley Salad with Roasted Vegetables and Lemon Vinaigrette",
+      "ingredients": [
+        "1 cup pearl barley, rinsed",
+        "3 cups water or vegetable broth",
+        "1 lb mixed vegetables, chopped (e.g., bell peppers, zucchini, red onion, broccoli)",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste",
+        "For the Vinaigrette:",
+        "1/4 cup olive oil",
+        "2 tbsp lemon juice",
+        "1 tsp Dijon mustard",
+        "1 clove garlic, minced",
+        "Salt and pepper to taste",
+        "Optional: Feta cheese, chopped fresh herbs (parsley, mint)"
+      ],
+      "instructions": [
+        "Cook Barley: In a medium saucepan, combine rinsed barley and water/broth. Bring to a boil, then reduce heat, cover, and simmer for 40-50 minutes, or until tender. Drain any excess liquid and let cool.",
+        "Roast Vegetables: Preheat oven to 400°F (200°C). Toss chopped vegetables with 2 tbsp olive oil, salt, and pepper. Spread on a baking sheet and roast for 20-25 minutes, or until tender and slightly caramelized. Let cool.",
+        "Make Vinaigrette: In a small bowl, whisk together 1/4 cup olive oil, lemon juice, Dijon mustard, and minced garlic. Season with salt and pepper.",
+        "Assemble Salad: In a large bowl, combine cooked barley, roasted vegetables. Pour vinaigrette over the salad and toss to coat.",
+        "Stir in feta cheese and fresh herbs if using. Serve chilled or at room temperature."
+      ],
+      "notes": "This salad is great for meal prep. You can use any seasonal vegetables you have on hand."
+    },
+    {
+      "name": "Basic Cooked Barley",
+      "ingredients": [
+        "1 cup pearl barley or hulled barley (hulled will take longer)",
+        "3 cups water or broth (for pearl barley); 4 cups for hulled barley",
+        "1/2 tsp salt (optional)"
+      ],
+      "instructions": [
+        "Rinse the barley thoroughly under cold running water.",
+        "In a medium saucepan, combine the rinsed barley, water or broth, and salt (if using).",
+        "Bring to a boil over medium-high heat.",
+        "Once boiling, reduce the heat to low, cover the saucepan, and simmer.",
+        "For pearl barley: Simmer for 40-50 minutes, or until tender and most of the liquid is absorbed.",
+        "For hulled barley: Simmer for 50-60 minutes, or longer, until tender.",
+        "Once cooked, fluff with a fork. If there's excess liquid, drain it off or let it sit covered off the heat for 10 minutes to absorb.",
+        "Use as a side dish, in soups, stews, or salads."
+      ],
+      "notes": "Cooking times can vary based on the type of barley and desired tenderness. Hulled barley is more nutritious but has a longer cooking time and chewier texture than pearl barley."
+    }
+  ],
   "originAndDomesticationHistory": "Barley (Hordeum vulgare) was domesticated from its wild ancestor Hordeum spontaneum in the Fertile Crescent about 10,000 years ago. It was a staple food for ancient civilizations in Egypt, Rome, and Greece. It spread across Europe and Asia and was brought to the Americas by European colonists.",
   "climaticRequirements": {
     "temperature": "Optimal 12-25°C; tolerant of a wide range of temperatures. Some varieties are very hardy.",

@@ -54,6 +54,72 @@
   ],
   "carbonFootprintInfo": "Oats generally have a lower carbon footprint compared to other cereals due to lower input requirements (fertilizer, pesticides).",
   "uses": ["culinary", "animal_feed", "cover_crop", "cosmetics"],
+  "staticRecipes": [
+    {
+      "name": "Classic Stovetop Oatmeal",
+      "ingredients": [
+        "1/2 cup rolled oats (not instant)",
+        "1 cup water or milk (or a mix)",
+        "Pinch of salt",
+        "Optional toppings: fruits (berries, banana slices), nuts, seeds, maple syrup, honey, cinnamon"
+      ],
+      "instructions": [
+        "In a small saucepan, combine oats, water/milk, and salt.",
+        "Bring to a simmer over medium heat.",
+        "Reduce heat to low and cook, stirring occasionally, for 5-7 minutes, or until the oatmeal reaches your desired consistency.",
+        "Remove from heat and let sit for a minute or two.",
+        "Pour into a bowl and add your favorite toppings."
+      ],
+      "notes": "For creamier oatmeal, use milk or a higher ratio of milk to water. For steel-cut oats, increase liquid to 1.5-2 cups per 1/2 cup oats and cook for 20-30 minutes."
+    },
+    {
+      "name": "Basic Overnight Oats",
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1 cup milk (dairy or non-dairy)",
+        "1 tbsp chia seeds (optional, for thickness)",
+        "1-2 tsp sweetener (maple syrup, honey, or sugar, optional)",
+        "Optional additions: yogurt, fruit puree, vanilla extract, spices (cinnamon, nutmeg)"
+      ],
+      "instructions": [
+        "In a jar or container with a lid, combine rolled oats, milk, chia seeds (if using), and sweetener (if using).",
+        "Stir well to ensure all oats are moistened.",
+        "Add any optional additions like yogurt or vanilla extract and stir again.",
+        "Cover the container and refrigerate for at least 4 hours, or preferably overnight.",
+        "In the morning, stir the oats. If too thick, add a splash more milk. If too thin, you can add more chia seeds and let it sit for a bit longer, or just enjoy as is.",
+        "Top with fresh fruit, nuts, seeds, or other desired toppings before serving."
+      ],
+      "notes": "Overnight oats are highly customizable. Experiment with different milks, fruits, and spices to find your favorite combination."
+    },
+    {
+      "name": "Simple Oatmeal Cookies",
+      "ingredients": [
+        "1.5 cups all-purpose flour",
+        "1 tsp baking soda",
+        "1 tsp ground cinnamon",
+        "1/2 tsp salt",
+        "1 cup (2 sticks) unsalted butter, softened",
+        "1 cup granulated sugar",
+        "1 cup packed light brown sugar",
+        "2 large eggs",
+        "1 tsp vanilla extract",
+        "3 cups old-fashioned rolled oats",
+        "Optional: 1 cup raisins, chocolate chips, or chopped nuts"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.",
+        "In a medium bowl, whisk together flour, baking soda, cinnamon, and salt.",
+        "In a large bowl, beat softened butter, granulated sugar, and brown sugar with an electric mixer until creamy.",
+        "Beat in eggs one at a time, then stir in vanilla extract.",
+        "Gradually add the dry ingredient mixture to the wet ingredients, mixing on low speed until just combined.",
+        "Stir in the rolled oats and any optional add-ins (raisins, chocolate chips, nuts).",
+        "Drop rounded tablespoons of dough onto the prepared baking sheets, about 2 inches apart.",
+        "Bake for 12-15 minutes, or until edges are golden brown and centers are set.",
+        "Let cool on baking sheets for a few minutes before transferring to wire racks to cool completely."
+      ],
+      "notes": "Cookie dough can be chilled for 30 minutes before baking for thicker cookies. Adjust baking time depending on your oven and desired cookie texture."
+    }
+  ],
   "originAndDomesticationHistory": "Oats (Avena sativa) were likely domesticated later than wheat and barley, possibly around 2000-1500 BCE in Europe. They were initially considered a weed in wheat and barley fields. Their value as a food and feed crop was recognized, particularly in cooler, wetter climates where other cereals struggled.",
   "climaticRequirements": {
     "temperature": "Prefers cool, moist climates. Optimal growing temperatures are 15-25°C. More tolerant of rain and less heat-tolerant than other cereals.",

@@ -43,6 +43,72 @@
   ],
   "carbonFootprintInfo": "Rice paddies are a significant source of methane, a potent greenhouse gas. Efforts are underway to reduce this impact through improved farming practices.",
   "uses": ["culinary", "industrial", "animal_feed"],
+  "staticRecipes": [
+    {
+      "name": "Perfect Steamed Rice",
+      "ingredients": [
+        "1 cup rice (e.g., Jasmine or Basmati)",
+        "1.5 to 2 cups water (depending on rice type)",
+        "Pinch of salt (optional)"
+      ],
+      "instructions": [
+        "Rinse the rice under cold water until the water runs clear.",
+        "Combine rice, water, and salt (if using) in a saucepan.",
+        "Bring to a boil, then reduce heat to low, cover, and simmer for 15-20 minutes (or as per package directions) until water is absorbed.",
+        "Remove from heat and let stand, covered, for 5-10 minutes.",
+        "Fluff with a fork before serving."
+      ],
+      "notes": "Adjust water ratio based on rice variety. For softer rice, use slightly more water."
+    },
+    {
+      "name": "Easy Vegetable Fried Rice",
+      "ingredients": [
+        "2 cups cooked and cooled rice (day-old rice works best)",
+        "1 tbsp sesame oil",
+        "1 tbsp vegetable oil",
+        "1 small onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup mixed vegetables (e.g., peas, carrots, corn, bell peppers), fresh or frozen",
+        "2 tbsp soy sauce (or to taste)",
+        "1 tbsp oyster sauce (optional)",
+        "1 egg, lightly beaten (optional)",
+        "Salt and pepper to taste",
+        "Chopped green onions for garnish (optional)"
+      ],
+      "instructions": [
+        "Heat vegetable oil in a large skillet or wok over medium-high heat.",
+        "If using egg, pour it in and scramble until just cooked. Remove from skillet and set aside.",
+        "Add onion and garlic to the skillet, stir-fry for 1-2 minutes until fragrant.",
+        "Add mixed vegetables and stir-fry for 3-5 minutes until tender-crisp.",
+        "Add the cooked rice to the skillet. Break up any clumps and stir-fry for 2-3 minutes until heated through.",
+        "Stir in soy sauce, oyster sauce (if using), and sesame oil. Mix well.",
+        "If using, add the scrambled egg back to the skillet. Stir to combine.",
+        "Season with salt and pepper to taste.",
+        "Garnish with chopped green onions if desired and serve immediately."
+      ],
+      "notes": "Feel free to add other proteins like cooked chicken, shrimp, or tofu. Adjust soy sauce to your preference."
+    },
+    {
+      "name": "Simple Rice Pudding",
+      "ingredients": [
+        "1/2 cup Arborio or other short-grain rice",
+        "4 cups milk (whole milk recommended)",
+        "1/3 cup sugar (or to taste)",
+        "1 tsp vanilla extract",
+        "Pinch of salt",
+        "Cinnamon or nutmeg for garnish (optional)"
+      ],
+      "instructions": [
+        "In a medium saucepan, combine rice, milk, sugar, and salt.",
+        "Bring to a boil over medium heat, stirring occasionally.",
+        "Once boiling, reduce heat to low and simmer, uncovered, for 45-60 minutes, or until the rice is tender and the pudding has thickened. Stir frequently to prevent sticking.",
+        "Remove from heat and stir in the vanilla extract.",
+        "Let cool slightly before serving. The pudding will thicken more as it cools.",
+        "Serve warm or chilled, garnished with cinnamon or nutmeg if desired."
+      ],
+      "notes": "You can add raisins or other dried fruit in the last 10 minutes of cooking. For a creamier pudding, stir in a splash of heavy cream at the end."
+    }
+  ],
   "originAndDomesticationHistory": "Rice (Oryza sativa) was domesticated from wild Oryza rufipogon in the Yangtze River valley of China between 13,500 and 8,200 years ago. Another species, Oryza glaberrima, was independently domesticated in West Africa about 2,000-3,000 years ago. It spread across Asia and later to other continents.",
   "climaticRequirements": {
     "temperature": "20-37°C (optimum 25-32°C)",
