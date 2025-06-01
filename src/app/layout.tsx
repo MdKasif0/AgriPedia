@@ -1,6 +1,9 @@
 
+'use client';
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
+import { usePathname } from 'next/navigation';
+import { AnimatePresence, motion } from 'framer-motion';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import ServiceWorkerRegistrar from '@/components/pwa/ServiceWorkerRegistrar';
@@ -70,6 +73,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable} font-sans antialiased`}>
@@ -86,9 +90,18 @@ export default function RootLayout({
                 <div className="flex">
                   <DesktopSidebar />
                   <SidebarInset>
-                    <main className="container mx-auto p-4 pb-20 md:p-8 md:pb-8">
-                      {children}
-                    </main>
+                    <AnimatePresence mode="wait">
+                      <motion.main
+                        key={pathname}
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -15 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                        className="container mx-auto p-4 pb-20 md:p-8 md:pb-8"
+                      >
+                        {children}
+                      </motion.main>
+                    </AnimatePresence>
                   </SidebarInset>
                 </div>
                 <MobileBottomNav />

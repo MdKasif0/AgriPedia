@@ -11,14 +11,14 @@ html {
 
 @layer base {
   :root {
-    --background: 0 0% 0%; /* #000000 */
+    --background: 0 0% 4%; /* approx #0A0A0A */
     --foreground: 0 0% 88%; /* #E0E0E0 */
 
-    --card: 0 0% 7%; /* #121212 */
-    --card-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+    --card: 0 0% 7%; /* approx #121212 */
+    --card-foreground: 0 0% 88%; /* #E0E0E0 */
 
-    --popover: 120 20% 12%; /* Unchanged - Darker Green */
-    --popover-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+    --popover: 0 0% 7%; /* Same as card */
+    --popover-foreground: 0 0% 88%; /* Same as text */
 
     --primary: 100 35% 45%; /* Unchanged - Moss Green */
     --primary-foreground: 100 15% 95%; /* Unchanged - Very Light Moss */
@@ -26,7 +26,7 @@ html {
     --secondary: 200 20% 30%; /* Unchanged - Dark Slate Blue */
     --secondary-foreground: 200 10% 80%; /* Unchanged - Light Blue-Gray */
 
-    --muted: 120 15% 25%; /* Unchanged - Dark Muted Green-Gray */
+    --muted: 120 15% 25%; /* Unchanged - Dark Muted Green-Gray */ /* This was not in the spec, but seems like it should be updated or removed */
     --muted-foreground: 0 0% 63%; /* #A0A0A0 */
 
     --accent: 90 25% 40%; /* Unchanged - Dark Olive/Moss */
@@ -36,8 +36,8 @@ html {
     --destructive-foreground: 0 0% 98%; /* Unchanged */
 
     --border: 0 0% 16%; /* #2A2A2A */
-    --input: 0 0% 4%; /* #0A0A0A - similar to cards or a bit darker */
-    --ring: 151 100% 38%; /* #00C37A - Emerald for focus rings */
+    --input: 0 0% 7%; /* Similar to card or background */
+    --ring: hsl(var(--accent-emerald)); /* Use emerald for focus rings */
 
     --radius: 1rem; /* Updated - Base radius for 16px */
 
@@ -74,14 +74,14 @@ html {
   }
 
   .light {
-    --background: 40 50% 95%; /* Beige */
-    --foreground: 30 20% 25%; /* Dark Clay/Charcoal */
+    --background: 210 17% 98%; /* approx #F8F9FA */
+    --foreground: 0 0% 7%; /* #111111 */
 
-    --card: 40 40% 90%; /* Off-white/Light Beige */
-    --card-foreground: 30 20% 25%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 7%; /* #111111 */
 
-    --popover: 40 40% 88%; /* Slightly darker Beige */
-    --popover-foreground: 30 20% 25%;
+    --popover: 0 0% 100%; /* Same as card */
+    --popover-foreground: 0 0% 7%; /* Same as text */
 
     --primary: 100 30% 50%; /* Soft Green */
     --primary-foreground: 100 20% 15%; /* Dark Green for text on primary */
@@ -89,8 +89,8 @@ html {
     --secondary: 190 50% 60%; /* Sky Blue */
     --secondary-foreground: 190 30% 20%; /* Dark Blue for text on secondary */
 
-    --muted: 40 30% 85%; /* Light Muted Beige-Gray */
-    --muted-foreground: 30 15% 45%; /* Medium Gray-Clay */
+    --muted: 40 30% 85%; /* Light Muted Beige-Gray */ /* This was not in the spec, but seems like it should be updated or removed */
+    --muted-foreground: 215 14% 47%; /* approx #6B7280 */
 
     --accent: 30 40% 60%; /* Clay */
     --accent-foreground: 30 20% 95%; /* Light Clay/Off-white */
@@ -98,9 +98,9 @@ html {
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 40 30% 80%; /* Light Beige-Gray Border */
-    --input: 40 30% 88%; /* Very Light Beige Input Background */
-    --ring: 100 30% 55%; /* Soft Green for focus rings */
+    --border: 0 0% 88%; /* #E0E0E0 */
+    --input: 0 0% 96%; /* Slightly off-white, distinct from background */
+    --ring: hsl(var(--accent-emerald)); /* Use emerald for focus rings */
 
     /* --radius is already defined in :root and applies to .light as well */
 
