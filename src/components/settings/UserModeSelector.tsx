@@ -53,7 +53,7 @@ export default function UserModeSelector() {
         </SelectContent>
       </Select>
       <p className="text-xs text-muted-foreground px-1">
-        This will tailor the app's content and features. (Effect on content is coming soon).
+        This will tailor the app&apos;s content and features. (Effect on content is coming soon).
       </p>
     </div>
   );

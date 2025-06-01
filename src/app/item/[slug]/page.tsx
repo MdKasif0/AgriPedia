@@ -1,7 +1,8 @@
 
 import type { Metadata } from 'next';
-import { getProduceByCommonName, getProduceGuide } from '@/lib/produceData';
-import ItemDetailsPage from './item-details-page'; // Corrected client component import
+import { getProduceByCommonName } from '@/lib/produceData'; // getProduceGuide removed from here
+import { getProduceGuide } from '@/lib/produceData.server'; // Import from .server file
+import ItemDetailsPage from './item-details-page';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {

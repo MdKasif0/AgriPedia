@@ -22,6 +22,7 @@ const NotificationPreferences: React.FC = () => {
     if (savedPrefs) {
       setPreferences(savedPrefs);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSave = () => {

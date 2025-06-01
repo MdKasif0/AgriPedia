@@ -8,7 +8,7 @@ export default function OfflinePage() {
       <WifiOff size={64} className="text-destructive mb-4" />
       <h1 className="text-3xl font-bold text-primary mb-2">You are offline</h1>
       <p className="text-lg text-muted-foreground mb-6">
-        It seems you're not connected to the internet. Some features may be unavailable.
+        It seems you&apos;re not connected to the internet. Some features may be unavailable.
         Previously visited items might be available.
       </p>
       <Link href="/">

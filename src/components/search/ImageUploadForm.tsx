@@ -38,7 +38,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
   const router = useRouter();
   const { toast } = useToast();
 
-  const getCameraPermissionInternal = async () => {
+  const getCameraPermissionInternal = useCallback(async () => {
     setHasCameraPermission(null); 
     setError(null);
 
@@ -73,16 +73,18 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       setHasCameraPermission(false);
       toast({ variant: 'destructive', title: 'Camera Access Issue', description: message, duration: 5000 });
     }
-  };
+  }, [toast]); // Added toast as a dependency for useCallback as it's used within
 
   useEffect(() => {
     let localStreamRef: MediaStream | null = null;
+    const currentVideoRef = videoRef.current; // Capture for cleanup
+
     if (isCameraMode) {
       if (!streamRef.current && hasCameraPermission !== false) {
         getCameraPermissionInternal();
-      } else if (hasCameraPermission === true && streamRef.current && videoRef.current && !videoRef.current.srcObject) {
-        videoRef.current.srcObject = streamRef.current;
-        videoRef.current.play().catch(e => console.warn("Retry play failed", e));
+      } else if (hasCameraPermission === true && streamRef.current && currentVideoRef && !currentVideoRef.srcObject) {
+        currentVideoRef.srcObject = streamRef.current;
+        currentVideoRef.play().catch(e => console.warn("Retry play failed", e));
       }
       localStreamRef = streamRef.current;
     } else {
@@ -90,11 +92,11 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
       }
-      if (videoRef.current && videoRef.current.srcObject) {
-        videoRef.current.pause();
-        videoRef.current.srcObject = null;
+      if (currentVideoRef && currentVideoRef.srcObject) {
+        currentVideoRef.pause();
+        currentVideoRef.srcObject = null;
       }
-      if(hasCameraPermission !== false) { // Don't reset if definitively denied
+      if(hasCameraPermission !== false) {
         setHasCameraPermission(null);
       }
       setError(null);
@@ -104,12 +106,13 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       if (localStreamRef) {
         localStreamRef.getTracks().forEach(track => track.stop());
       }
-      if (videoRef.current && videoRef.current.srcObject) {
-        videoRef.current.pause();
-        videoRef.current.srcObject = null;
+      // Use the captured ref value in cleanup
+      if (currentVideoRef && currentVideoRef.srcObject) {
+        currentVideoRef.pause();
+        currentVideoRef.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]); // hasCameraPermission is not explicitly listed, but its state is managed internally and drives calls to getCameraPermissionInternal within this effect
+  }, [isCameraMode, toast, hasCameraPermission, getCameraPermissionInternal]);
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {

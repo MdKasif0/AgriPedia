@@ -1,19 +1,22 @@
 
 // AgriPedia Service Worker
-// Version 1.1 (Enhanced Caching)
+// Version 2.0 (Refined Caching and Offline Strategy)
 
-const CACHE_VERSION = 'agripedia-v1.1';
-const STATIC_CACHE_NAME = `static-${CACHE_VERSION}`;
-const DYNAMIC_CACHE_NAME = `dynamic-${CACHE_VERSION}`;
+const CACHE_NAME = 'agripedia-cache-v2'; // Main cache for app shell, pages, dynamic assets
+const GUIDE_CACHE_NAME = 'agripedia-guides-cache-v1'; // Dedicated cache for guide API responses (if implemented)
+// Note: STATIC_CACHE_NAME and DYNAMIC_CACHE_NAME from previous version are consolidated/renamed.
 
-// Assets to pre-cache on install
+// Assets to pre-cache on install (App Shell)
 const PRECACHE_ASSETS = [
-  '/',                // Homepage
-  '/offline',         // Offline fallback page
-  // Add paths to your main CSS and JS bundles if known and stable
-  // e.g., '/_next/static/css/main.css', '/_next/static/chunks/main-app.js'
-  // For Next.js, these filenames can change, so pre-caching them directly can be tricky.
-  // Focus on core pages and let dynamic caching handle assets.
+  '/',
+  '/offline', // Offline fallback page
+  '/manifest.webmanifest', // Assuming this is the correct path for the webmanifest
+  '/chat',
+  '/settings/notifications',
+  // Key icons (ensure these paths are correct in your public folder)
+  '/images/icons/icon-192x192.png',
+  '/images/icons/icon-512x512.png',
+  // Add other critical static assets if any (e.g., a logo used on all pages)
 ];
 
 // URLs to cache with a cache-first strategy (images, fonts, etc.)
@@ -26,14 +29,14 @@ const CACHE_FIRST_PATTERNS = [
 self.addEventListener('install', (event) => {
   console.log('[Service Worker] Install event');
   event.waitUntil(
-    caches.open(STATIC_CACHE_NAME)
+    caches.open(CACHE_NAME) // Use the new main cache name
       .then((cache) => {
         console.log('[Service Worker] Pre-caching core assets:', PRECACHE_ASSETS);
         return cache.addAll(PRECACHE_ASSETS);
       })
       .then(() => {
         console.log('[Service Worker] Core assets pre-cached successfully.');
-        return self.skipWaiting(); // Activate worker immediately
+        return self.skipWaiting();
       })
       .catch(error => {
         console.error('[Service Worker] Pre-caching failed:', error);
@@ -47,7 +50,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames
-          .filter((cacheName) => cacheName !== STATIC_CACHE_NAME && cacheName !== DYNAMIC_CACHE_NAME)
+          .filter((cacheName) => cacheName !== CACHE_NAME && cacheName !== GUIDE_CACHE_NAME) // Check against new names
           .map((cacheName) => {
             console.log('[Service Worker] Deleting old cache:', cacheName);
             return caches.delete(cacheName);
@@ -55,7 +58,7 @@ self.addEventListener('activate', (event) => {
       );
     }).then(() => {
       console.log('[Service Worker] Old caches cleaned up.');
-      return self.clients.claim(); // Take control of all open clients
+      return self.clients.claim();
     })
   );
 });
@@ -64,92 +67,92 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // For navigation requests (HTML pages)
+  // For navigation requests (HTML pages), try network first, then cache, then offline page
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request)
         .then(response => {
-          // If successful, cache and return the response
-          // Optional: Cache navigation responses in DYNAMIC_CACHE if desired
-          return response;
+           // If network successful, cache the page for future offline use
+           if (response.ok) {
+               caches.open(CACHE_NAME).then(cache => { // Use main cache
+                   console.log('[Service Worker] Caching page:', request.url);
+                   cache.put(request, response.clone());
+               });
+           }
+           return response;
         })
         .catch(() => {
-          // If network fails, serve the offline page from pre-cache
-          console.log(`[Service Worker] Network request for ${request.url} failed, serving offline page.`);
-          return caches.match('/offline');
+          console.log(`[Service Worker] Network request for page ${request.url} failed, attempting cache.`);
+          return caches.match(request)
+            .then(response => response || caches.match('/offline').then(offlineResponse => {
+                if (offlineResponse) return offlineResponse;
+                // Fallback if /offline itself is not cached for some reason (should be precached)
+                return new Response("You are offline and the offline page is not available.", {
+                    status: 503,
+                    headers: { 'Content-Type': 'text/plain' }
+                });
+            }));
         })
     );
     return;
   }
 
-  // Cache-first for specific patterns (images, fonts)
-  if (CACHE_FIRST_PATTERNS.some(pattern => pattern.test(url.href))) {
+  // Strategy for API calls to fetch guide data (if an API route like /api/guides/:id is created)
+  // if (url.pathname.startsWith('/api/guides/')) {
+  //   event.respondWith(
+  //     caches.open(GUIDE_CACHE_NAME).then(cache => { // Use dedicated guide cache
+  //       return cache.match(request).then(cachedResponse => {
+  //         const fetchPromise = fetch(request).then(networkResponse => {
+  //           if (networkResponse.ok) {
+  //             cache.put(request, networkResponse.clone());
+  //           }
+  //           return networkResponse;
+  //         });
+  //         return cachedResponse || fetchPromise; // Cache first, then network
+  //       });
+  //     })
+  //   );
+  //   return;
+  // }
+
+  // For other static assets (CSS, JS, images not covered by precache), use cache-first
+  // This simplifies from the previous version's multiple strategies for static assets.
+  // Next.js build artifacts in _next/static are generally versioned, making cache-first safe.
+  if (request.method === 'GET' &&
+      (url.origin === self.location.origin || CACHE_FIRST_PATTERNS.some(pattern => pattern.test(url.href)))) {
     event.respondWith(
-      caches.match(request).then((cachedResponse) => {
-        if (cachedResponse) {
-          // console.log('[Service Worker] Serving from static cache:', request.url);
-          return cachedResponse;
-        }
-        return fetch(request).then((networkResponse) => {
-          return caches.open(STATIC_CACHE_NAME).then((cache) => {
-            // console.log('[Service Worker] Caching new static asset:', request.url);
-            cache.put(request, networkResponse.clone());
-            return networkResponse;
-          });
-        });
-      })
-    );
-    return;
-  }
-  
-  // Default: Stale-while-revalidate for other assets (JS, CSS chunks from _next)
-  // This ensures app loads fast from cache, then updates in background if network available.
-  if (url.origin === self.location.origin && url.pathname.startsWith('/_next/static/')) {
-    event.respondWith(
-      caches.open(DYNAMIC_CACHE_NAME).then(cache => {
+      caches.open(CACHE_NAME).then(cache => { // Use main cache
         return cache.match(request).then(cachedResponse => {
-          const fetchPromise = fetch(request).then(networkResponse => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          return fetch(request).then(networkResponse => {
             if (networkResponse.ok) {
+              // console.log('[Service Worker] Caching new asset:', request.url);
               cache.put(request, networkResponse.clone());
             }
             return networkResponse;
-          }).catch(err => {
-            console.warn(`[Service Worker] Fetch failed for ${request.url}, serving from cache if available. Error: ${err}`);
-            // If fetch fails and it was cached, return the cached version
-            if (cachedResponse) return cachedResponse;
-            // Otherwise, it will propagate the fetch error
-            throw err; 
           });
-
-          // Return cached response immediately if available, then fetch and update cache
-          return cachedResponse || fetchPromise;
         });
+      })
+      .catch(() => {
+        // For images, could return a placeholder offline image
+        if (request.headers.get('accept')?.includes('image')) {
+          // return caches.match('/placeholder-offline.png'); // Ensure placeholder exists and is precached
+        }
+        // Generic fallback for other asset types if needed
+        return new Response("Asset not available offline", { status: 404, headers: { 'Content-Type': 'text/plain'}});
       })
     );
     return;
   }
 
-
-  // For other requests, try network first, then cache (Network falling back to cache)
-  // Good for API calls or content we want to be fresh if possible.
-  // However, for this app, most crucial things are pages or static assets already handled.
-  // So, a simple fetch or cache-first is often enough.
-  event.respondWith(
-    caches.match(request).then((cachedResponse) => {
-      return cachedResponse || fetch(request).then((networkResponse) => {
-        // Optionally cache other successful GET requests
-        if (request.method === 'GET' && networkResponse.ok) {
-          return caches.open(DYNAMIC_CACHE_NAME).then((cache) => {
-            // Be selective about what goes into dynamic cache to avoid bloating it.
-            // cache.put(request, networkResponse.clone());
-            return networkResponse;
-          });
-        }
-        return networkResponse;
-      });
-    })
-  );
+  // Default: Let the browser handle it (e.g., for external APIs not matched above)
+  // console.log('[Service Worker] Bypassing SW for request:', request.url);
+  // event.respondWith(fetch(request)); // This line was removed as the above should cover most GETs.
+                                      // Non-GET requests or unhandled GETs will pass through by default if no event.respondWith.
 });
+
 
 // Basic Push Notification Listener (can be expanded)
 self.addEventListener('push', (event) => {

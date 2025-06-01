@@ -30,6 +30,8 @@ import { useToast } from '@/hooks/use-toast';
 import ClientOnly from '@/components/ClientOnly';
 import CropCalendarDisplay from '@/components/produce/CropCalendarDisplay';
 import GrowingGuideDisplay from '@/components/produce/GrowingGuide';
+
+const NutrientChart = dynamic(() => import('@/components/charts/NutrientChart'), {
   loading: () => <div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>,
   ssr: false
 });
@@ -564,7 +566,7 @@ export default function ItemDetailsPage({ slugFromParams, initialProduce, initia
             <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg">
               {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
                 <p className="text-card-foreground/90 mb-2">
-                  This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
+                  This plant&apos;s general soil preferences: <span className="italic">{produce.soilPreferences}</span>
                 </p>
               ) : (
                 <p className="text-muted-foreground mb-2">

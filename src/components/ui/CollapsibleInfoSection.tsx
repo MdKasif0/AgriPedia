@@ -35,7 +35,7 @@ const CollapsibleInfoSection: React.FC<CollapsibleInfoSectionProps> = ({
   const effectiveItemTextColor = itemTextColor ||
     (textColor.includes('gray')
       ? 'text-gray-700 dark:text-gray-300 opacity-90'
-      : textColor.replace(/(-[^-]+)$/, m => String(parseInt(m.replace('-',''),10) - 100 < 100 ? '-500' : `-${Math.max(100, parseInt(m.replace('-',''),10) - 200)}` ) + ' dark:opacity-80'
+      : (textColor.replace(/(-[^-]+)$/, m => (parseInt(m.replace('-',''),10) - 100 < 100 ? '-500' : `-${Math.max(100, parseInt(m.replace('-',''),10) - 200)}`))) + ' dark:opacity-80'
     );
 
 

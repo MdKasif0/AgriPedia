@@ -2,15 +2,19 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation'; // For client-side navigation
+import { useRouter } from 'next/navigation';
 import type { GrowingGuide, GrowingStage, PlantGuideProgress } from '@/lib/produceData';
 import { getPlantGuideProgressByPlanterId, upsertPlantGuideProgress } from '@/lib/userDataStore';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import CollapsibleInfoSection from '@/components/ui/CollapsibleInfoSection';
 import StageImageCarousel from './StageImageCarousel';
-import { Button } from '@/components/ui/button'; // Import Button
-import { MessageCircleQuestion } from 'lucide-react'; // Import AI icon
-import { PREFILLED_CHAT_PROMPT_KEY } from '@/lib/constants'; // Import constant
+import { Button } from '@/components/ui/button';
+import { MessageCircleQuestion } from 'lucide-react';
+import { PREFILLED_CHAT_PROMPT_KEY } from '@/lib/constants';
+import { Textarea } from '@/components/ui/textarea';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import Image from 'next/image'; // Import next/image for the log photo preview
 import { Lightbulb, AlertTriangle, Info, CheckCircle, Circle, Wrench, ClipboardList, Image as ImageIcon, Video as VideoIcon, CalendarDays } from 'lucide-react';
 
 interface GrowingGuideProps {
@@ -22,8 +26,9 @@ interface GrowingGuideProps {
 const GrowingGuideDisplay: React.FC<GrowingGuideProps> = ({ guide, planterId, className }) => {
   const [completedStages, setCompletedStages] = useState<Record<string, boolean>>({});
   const [stageNotes, setStageNotes] = useState<Record<string, string>>({});
+  const [stagePhotoUrls, setStagePhotoUrls] = useState<Record<string, string>>({}); // New state for photo URLs
   const [plantProgressData, setPlantProgressData] = useState<PlantGuideProgress | null>(null);
-  const router = useRouter(); // Initialize router
+  const router = useRouter();
 
   const handleAskAi = (stageName: string, plantName: string, currentInstructions: string[]) => {
     // Ensure this key is consistent with ChatInput.tsx
@@ -44,35 +49,79 @@ My question is: `;
       if (progress && progress.stages) {
         const initialCompleted: Record<string, boolean> = {};
         const initialNotes: Record<string, string> = {};
-        // Ensure we iterate over stages defined in the guide, falling back to stored progress
+        const initialPhotoUrls: Record<string, string> = {}; // For photo URLs
         guide?.growing_guide.forEach(stageDef => {
-            initialCompleted[stageDef.stage] = progress.stages[stageDef.stage]?.completed || false;
-            if (progress.stages[stageDef.stage]?.notes) {
-                initialNotes[stageDef.stage] = progress.stages[stageDef.stage].notes!;
+            const stageProgress = progress.stages[stageDef.stage];
+            initialCompleted[stageDef.stage] = stageProgress?.completed || false;
+            if (stageProgress?.notes) {
+                initialNotes[stageDef.stage] = stageProgress.notes;
+            }
+            if (stageProgress?.photoUrl) { // Load photo URLs
+                initialPhotoUrls[stageDef.stage] = stageProgress.photoUrl;
             }
         });
         setCompletedStages(initialCompleted);
         setStageNotes(initialNotes);
+        setStagePhotoUrls(initialPhotoUrls); // Set photo URLs state
       } else if (guide) {
-        // No saved progress for this planterId, or planterId not yet fully initialized
-        // Initialize from guide structure (all incomplete)
         const initialCompleted: Record<string, boolean> = {};
+        const initialNotes: Record<string, string> = {}; // Reset notes for new/generic guide
+        const initialPhotoUrls: Record<string, string> = {}; // Reset photo URLs
         guide.growing_guide.forEach(stage => {
           initialCompleted[stage.stage] = false;
+          initialNotes[stage.stage] = ''; // Or undefined, depending on preference
+          initialPhotoUrls[stage.stage] = ''; // Or undefined
         });
         setCompletedStages(initialCompleted);
+        setStageNotes(initialNotes);
+        setStagePhotoUrls(initialPhotoUrls);
       }
     } else if (guide) {
-      // No planterId, means this is a generic view, not tied to a user's specific plan instance
-      // Initialize all as incomplete, no persistence
       const initialCompleted: Record<string, boolean> = {};
+      const initialNotes: Record<string, string> = {};
+      const initialPhotoUrls: Record<string, string> = {};
       guide.growing_guide.forEach(stage => {
         initialCompleted[stage.stage] = false;
       });
       setCompletedStages(initialCompleted);
-      setPlantProgressData(null); // Ensure no old data is shown
+      setStageNotes(initialNotes);
+      setStagePhotoUrls(initialPhotoUrls);
+      setPlantProgressData(null);
     }
   }, [planterId, guide]);
+
+  const handleLogChange = (stageName: string, field: 'notes' | 'photoUrl', value: string) => {
+    if (!planterId || !guide) return;
+
+    let currentPlantProgress = getPlantGuideProgressByPlanterId(planterId);
+    if (!currentPlantProgress) {
+      currentPlantProgress = {
+        plantId: guide.plant_id,
+        planterId: planterId,
+        addedDate: plantProgressData?.addedDate || new Date().toISOString(), // Use existing addedDate or new
+        stageStartDates: plantProgressData?.stageStartDates || {},
+        stageEndDates: plantProgressData?.stageEndDates || {},
+        stages: {},
+        plantCommonName: guide.common_name,
+        guideStagesSummary: guide.growing_guide.map(s => ({ stage: s.stage, duration_days: s.duration_days })),
+      };
+    }
+
+    if (!currentPlantProgress.stages[stageName]) {
+        currentPlantProgress.stages[stageName] = { completed: completedStages[stageName] || false };
+    }
+
+    if (field === 'notes') {
+      setStageNotes(prev => ({ ...prev, [stageName]: value }));
+      currentPlantProgress.stages[stageName].notes = value;
+    } else if (field === 'photoUrl') {
+      setStagePhotoUrls(prev => ({ ...prev, [stageName]: value }));
+      currentPlantProgress.stages[stageName].photoUrl = value;
+    }
+
+    upsertPlantGuideProgress(currentPlantProgress);
+    // setPlantProgressData(currentPlantProgress); // Optional: update full progress data state if needed elsewhere immediately
+  };
 
   const handleToggleStageCompletion = (stageName: string) => {
     const newCompletedStatus = !completedStages[stageName];
@@ -89,19 +138,32 @@ My question is: `;
         currentPlantProgress = {
           plantId: guide.plant_id,
           planterId: planterId,
-          addedDate: new Date().toISOString(), // This might not be the true added date if created here
-          stageStartDates: {}, // Should be populated by 'add to plan'
-          stageEndDates: {},   // Should be populated by 'add to plan'
+          addedDate: plantProgressData?.addedDate || new Date().toISOString(),
+          stageStartDates: plantProgressData?.stageStartDates || {},
+          stageEndDates: plantProgressData?.stageEndDates || {},
           stages: {},
+          plantCommonName: guide.common_name,
+          guideStagesSummary: guide.growing_guide.map(s => ({ stage: s.stage, duration_days: s.duration_days })),
         };
       }
 
-      currentPlantProgress.stages[stageName] = {
-        ...(currentPlantProgress.stages[stageName] || {}), // Keep existing notes/photos if any
-        completed: newCompletedStatus,
-      };
+      // Ensure the specific stage object exists before trying to assign to its properties
+      if (!currentPlantProgress.stages[stageName]) {
+        currentPlantProgress.stages[stageName] = {
+            completed: false, // Default completed status
+            notes: stageNotes[stageName] || undefined,
+            photoUrl: stagePhotoUrls[stageName] || undefined
+        };
+      }
+
+      currentPlantProgress.stages[stageName].completed = newCompletedStatus;
+      // Notes and photoUrl are already preserved/updated by handleLogChange,
+      // but ensure they are part of the object if it was newly created.
+      currentPlantProgress.stages[stageName].notes = stageNotes[stageName] || currentPlantProgress.stages[stageName].notes;
+      currentPlantProgress.stages[stageName].photoUrl = stagePhotoUrls[stageName] || currentPlantProgress.stages[stageName].photoUrl;
+
       upsertPlantGuideProgress(currentPlantProgress);
-      setPlantProgressData(currentPlantProgress); // Update local state to reflect changes (e.g., if dates were part of it)
+      setPlantProgressData(currentPlantProgress);
     }
   };
 
@@ -240,7 +302,52 @@ My question is: `;
                   />
                 )}
 
-                <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                {planterId && (
+                  <div className="mt-6 border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
+                    <h4 className="text-base font-semibold text-gray-800 dark:text-gray-100">My Plant Log for {stage.stage}</h4>
+
+                    <div>
+                      <Label htmlFor={`notes-${stage.stage}`} className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Notes:</Label>
+                      <Textarea
+                        id={`notes-${stage.stage}`}
+                        placeholder="Add your observations, issues, or successes..."
+                        value={stageNotes[stage.stage] || ''}
+                        onChange={(e) => handleLogChange(stage.stage, 'notes', e.target.value)}
+                        className="w-full min-h-[80px] border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 bg-white dark:bg-gray-700/30"
+                        disabled={!planterId}
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor={`photo-${stage.stage}`} className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Photo URL/Reference:</Label>
+                      <Input
+                        type="text"
+                        id={`photo-${stage.stage}`}
+                        placeholder="Enter image URL or reference"
+                        value={stagePhotoUrls[stage.stage] || ''}
+                        onChange={(e) => handleLogChange(stage.stage, 'photoUrl', e.target.value)}
+                        className="w-full border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 bg-white dark:bg-gray-700/30"
+                        disabled={!planterId}
+                      />
+                      {stagePhotoUrls[stage.stage] && (
+                        <div className="mt-2 relative w-full max-w-xs h-48"> {/* Container for next/image */}
+                          <Label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Photo Preview (if valid URL):</Label>
+                          <Image
+                            src={stagePhotoUrls[stage.stage]}
+                            alt={`${stage.stage} log photo`}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-md border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 shadow"
+                            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                            onLoad={(e) => { (e.target as HTMLImageElement).style.display = 'block'; }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <Button
                         variant="outline"
                         onClick={() => handleAskAi(stage.stage, guide.common_name, stage.instructions)}

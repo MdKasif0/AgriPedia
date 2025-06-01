@@ -2,7 +2,8 @@
 
 import React, { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-// import Autoplay from 'embla-carousel-autoplay'; // Only if autoplay is desired and installed
+import Image from 'next/image'; // Import next/image
+// import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 
 interface StageImageCarouselProps {
@@ -32,12 +33,15 @@ const StageImageCarousel: React.FC<StageImageCarouselProps> = ({ images, stageNa
 
   if (images.length === 1) {
      return (
-         <img
-             src={images[0]}
-             alt={`${stageName} media 1`}
-             className="object-cover w-full h-48 md:h-64 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"
-             loading="lazy"
-         />
+        <div className="relative w-full h-48 md:h-64 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden">
+            <Image
+                src={images[0]}
+                alt={`${stageName} media 1`}
+                layout="fill"
+                objectFit="cover"
+                loading="lazy"
+            />
+        </div>
      );
   }
 
@@ -46,11 +50,12 @@ const StageImageCarousel: React.FC<StageImageCarouselProps> = ({ images, stageNa
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container flex">
           {images.map((img, i) => (
-            <div className="embla__slide flex-[0_0_100%] min-w-0" key={i}>
-              <img
+            <div className="embla__slide relative flex-[0_0_100%] min-w-0 h-48 md:h-64" key={i}> {/* Added relative and height here */}
+              <Image
                 src={img}
                 alt={`${stageName} media ${i + 1}`}
-                className="object-cover w-full h-48 md:h-64"
+                layout="fill"
+                objectFit="cover"
                 loading="lazy"
               />
             </div>
