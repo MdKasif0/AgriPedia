@@ -2,7 +2,9 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound, Users, Search } from 'lucide-react'; // Added KeyRound, Users, Search
+import { useState } from 'react'; // Added useState
+import { useRouter } from 'next/navigation'; // Added useRouter
+import { Home, Settings, Bell, Palette, Leaf, MessagesSquare, ScanLine, Heart, KeyRound, Users, Search } from 'lucide-react';
 import {
   Sidebar,
   SidebarHeader,
@@ -13,6 +15,7 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
   SidebarSeparator,
+  SidebarInput, // Added SidebarInput
 } from '@/components/ui/sidebar';
 import { useSidebar } from '@/components/ui/sidebar';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
@@ -23,6 +26,15 @@ import InstallPWAButton from '@/components/pwa/InstallPWAButton';
 
 export default function DesktopSidebar() {
   const { state } = useSidebar();
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchSubmit = (query: string) => {
+    if (query.trim()) {
+      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+      // setSearchQuery(''); // Optionally clear after submission
+    }
+  };
 
   return (
     <Sidebar collapsible="icon" side="left" variant="sidebar" className="bg-neutral-900/80 backdrop-blur-lg text-foreground shadow-lg border-r border-border/30">
@@ -38,6 +50,25 @@ export default function DesktopSidebar() {
         )}
       </SidebarHeader>
       <SidebarContent>
+        {state === 'expanded' && (
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSearchSubmit(searchQuery);
+            }}
+            className="p-2 mt-2 mb-2" // Added some margin for spacing
+          >
+            <SidebarInput
+              placeholder="Search AgriPedia..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search AgriPedia"
+              icon={<Search size={18} className="text-muted-foreground" />} // Added search icon to input
+            />
+            {/* Hidden submit button for form submission on enter */}
+            <button type="submit" className="hidden" />
+          </form>
+        )}
         <SidebarMenu>
           <SidebarMenuItem>
             <Link href="/" legacyBehavior passHref>
