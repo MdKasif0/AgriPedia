@@ -51,6 +51,76 @@
   ],
   "carbonFootprintInfo": "Quinoa's carbon footprint can vary. Traditional, low-input farming in the Andes has a lower footprint. Increased global demand has led to more intensive farming in some areas, potentially increasing its impact. Focus on sustainable sourcing.",
   "uses": ["culinary", "flour_production", "animal_feed_leaves"],
+  "staticRecipes": [
+    {
+      "name": "Perfect Fluffy Quinoa",
+      "ingredients": [
+        "1 cup quinoa (any color), rinsed thoroughly",
+        "2 cups water or broth",
+        "1/2 tsp salt (optional)",
+        "1 tbsp olive oil or butter (optional, for flavor)"
+      ],
+      "instructions": [
+        "Rinse Quinoa: Place quinoa in a fine-mesh sieve and rinse under cold running water for at least 30 seconds to 1 minute. Drain well. This step is crucial to remove any residual saponins, which can make it taste bitter.",
+        "Combine Ingredients: In a medium saucepan, combine the rinsed quinoa, water or broth, salt (if using), and olive oil/butter (if using).",
+        "Bring to a Boil: Bring the mixture to a boil over medium-high heat.",
+        "Simmer: Once boiling, reduce the heat to low, cover the saucepan with a tight-fitting lid, and simmer for 15 minutes, or until all the liquid has been absorbed.",
+        "Rest: Remove the saucepan from the heat and let it stand, covered, for 5 minutes. Do not lift the lid during this time.",
+        "Fluff: After resting, remove the lid and fluff the quinoa gently with a fork.",
+        "Serve: Serve warm as a side dish, base for salads, or in other recipes."
+      ],
+      "notes": "The key to fluffy quinoa is the 2:1 liquid-to-quinoa ratio and the resting period. Rinsing is very important for taste."
+    },
+    {
+      "name": "Mediterranean Quinoa Salad",
+      "ingredients": [
+        "1 cup cooked quinoa, cooled (prepared as per 'Perfect Fluffy Quinoa' recipe)",
+        "1 cucumber, diced",
+        "1 cup cherry tomatoes, halved",
+        "1/2 red onion, thinly sliced or finely diced",
+        "1/2 cup Kalamata olives, halved",
+        "1/2 cup crumbled feta cheese",
+        "1/4 cup chopped fresh parsley",
+        "1/4 cup chopped fresh mint (optional)",
+        "For the Dressing:",
+        "1/4 cup extra virgin olive oil",
+        "2 tbsp lemon juice",
+        "1 clove garlic, minced",
+        "1 tsp dried oregano",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Prepare Dressing: In a small bowl or jar, whisk together olive oil, lemon juice, minced garlic, dried oregano, salt, and pepper.",
+        "Combine Salad Ingredients: In a large bowl, combine the cooled cooked quinoa, diced cucumber, halved cherry tomatoes, sliced red onion, Kalamata olives, crumbled feta cheese, chopped parsley, and chopped mint (if using).",
+        "Dress the Salad: Pour the dressing over the salad ingredients.",
+        "Toss: Gently toss everything together until well combined.",
+        "Chill (Optional): For best flavor, cover and refrigerate for at least 15-30 minutes before serving to allow the flavors to meld.",
+        "Serve: Serve chilled or at room temperature."
+      ],
+      "notes": "Feel free to add other Mediterranean ingredients like bell peppers, chickpeas, or artichoke hearts. Adjust lemon juice and seasonings to your taste."
+    },
+    {
+      "name": "Quinoa Breakfast Porridge",
+      "ingredients": [
+        "1/2 cup quinoa, rinsed",
+        "1 cup milk (dairy or non-dairy)",
+        "1/2 cup water",
+        "1-2 tbsp maple syrup or honey (or to taste)",
+        "1/2 tsp ground cinnamon",
+        "1/4 tsp vanilla extract (optional)",
+        "Pinch of salt",
+        "Toppings: Fresh berries, sliced banana, nuts (almonds, walnuts), seeds (chia, flax, pumpkin), a dollop of yogurt"
+      ],
+      "instructions": [
+        "Combine Ingredients: In a small saucepan, combine the rinsed quinoa, milk, water, sweetener, cinnamon, vanilla extract (if using), and salt.",
+        "Bring to a Simmer: Bring the mixture to a simmer over medium heat, stirring occasionally.",
+        "Cook: Reduce the heat to low, cover, and cook for 15-20 minutes, or until the quinoa is tender and most of the liquid has been absorbed. Stir occasionally to prevent sticking.",
+        "Rest: Remove from heat and let stand, covered, for 5 minutes.",
+        "Serve: Fluff the porridge. If it's too thick, stir in a little more milk. Serve warm in bowls, topped with your favorite fruits, nuts, and seeds."
+      ],
+      "notes": "This is a nutritious and filling alternative to oatmeal. You can prepare a larger batch and reheat portions throughout the week."
+    }
+  ],
   "originAndDomesticationHistory": "Quinoa (Chenopodium quinoa) was domesticated in the Andean region of South America (around Lake Titicaca in Peru and Bolivia) approximately 3,000 to 4,000 years ago, though archaeological evidence suggests use for pastoral foraging 5,200 to 7,000 years ago. It was a staple food for the Inca Empire and other Andean civilizations, known as 'the mother of all grains'.",
   "climaticRequirements": {
     "temperature": "Highly adaptable; grows in temperatures from -4°C to 38°C. Optimal range is 15-20°C. Some varieties are frost-tolerant.",

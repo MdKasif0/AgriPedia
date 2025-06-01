@@ -44,6 +44,79 @@
   ],
   "carbonFootprintInfo": "Millets generally have a low carbon footprint due to their resilience, low input requirements (water, fertilizer, pesticides), and ability to grow in marginal lands.",
   "uses": ["culinary", "animal_feed", "fodder", "beverages_alcoholic_local"],
+  "staticRecipes": [
+    {
+      "name": "Simple Cooked Millet",
+      "ingredients": [
+        "1 cup millet (e.g., foxtail, proso, or little millet), rinsed",
+        "2 cups water or broth",
+        "1/2 tsp salt (optional)"
+      ],
+      "instructions": [
+        "Rinse the millet thoroughly under cold running water until the water runs clear. This removes any bitterness.",
+        "Optional: For a nuttier flavor, toast the rinsed millet in a dry saucepan over medium heat for 2-3 minutes until fragrant, stirring constantly.",
+        "Add water or broth and salt (if using) to the saucepan with the millet.",
+        "Bring to a boil over medium-high heat.",
+        "Once boiling, reduce heat to low, cover the saucepan, and simmer for 15-20 minutes, or until all the liquid is absorbed and the millet is tender.",
+        "Remove from heat and let stand, covered, for 5-10 minutes.",
+        "Fluff with a fork before serving. Use as a side dish, base for salads, or in porridges."
+      ],
+      "notes": "The millet-to-water ratio can be adjusted for desired texture: use less water (1.75 cups) for a fluffier, more separate grain, or more water (2.5 cups) for a softer, creamier texture."
+    },
+    {
+      "name": "Creamy Millet Porridge",
+      "ingredients": [
+        "1/2 cup millet (any type, rinsed)",
+        "2 cups milk (dairy or non-dairy)",
+        "1 cup water",
+        "1-2 tbsp sweetener (maple syrup, honey, sugar, to taste)",
+        "Pinch of salt",
+        "Optional flavorings: vanilla extract, cinnamon, cardamom",
+        "Optional toppings: fresh fruits, nuts, seeds, yogurt"
+      ],
+      "instructions": [
+        "Rinse the millet well.",
+        "In a medium saucepan, combine rinsed millet, milk, water, sweetener, and salt. Add any optional spices like cinnamon or cardamom.",
+        "Bring the mixture to a simmer over medium heat, stirring occasionally.",
+        "Once simmering, reduce heat to low and cook, uncovered, for 25-35 minutes, stirring frequently to prevent sticking, until the millet is soft and the porridge has thickened to your desired consistency.",
+        "If the porridge becomes too thick, add a little more milk or water.",
+        "Stir in vanilla extract if using.",
+        "Serve warm, topped with your favorite fruits, nuts, or seeds."
+      ],
+      "notes": "Cooking time may vary slightly depending on the type of millet used. For a richer porridge, use all milk instead of milk and water."
+    },
+    {
+      "name": "Millet Upma",
+      "ingredients": [
+        "1 cup foxtail millet or little millet, rinsed",
+        "2.5 cups water",
+        "1 tbsp oil",
+        "1 tsp mustard seeds",
+        "1 tsp urad dal (split black lentils)",
+        "1 tsp chana dal (split chickpeas)",
+        "1 dried red chili, broken into pieces",
+        "1 sprig curry leaves",
+        "1 medium onion, finely chopped",
+        "1 inch ginger, grated",
+        "1-2 green chilies, slit (optional, adjust to spice preference)",
+        "1/2 cup mixed vegetables, chopped (e.g., carrots, peas, beans)",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "Juice of 1/2 lemon (optional)",
+        "2 tbsp chopped fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Cook the Millet: Bring 2.5 cups of water to a boil. Add rinsed millet and a pinch of salt. Cook covered on low heat for 10-15 minutes or until soft and water is absorbed. Fluff and set aside. (Alternatively, cook millet as per 'Simple Cooked Millet' recipe using 2 cups water, then fluff).",
+        "Prepare Tempering: Heat oil in a pan or kadai over medium heat. Add mustard seeds. Once they splutter, add urad dal, chana dal, and dried red chili. Sauté until dals turn golden brown.",
+        "Add curry leaves, chopped onion, grated ginger, and green chilies. Sauté until onions turn translucent.",
+        "Add mixed vegetables and turmeric powder. Sauté for 3-4 minutes until vegetables are slightly tender.",
+        "Add the cooked millet and salt to taste. Mix gently to combine everything well. Cook for another 2-3 minutes.",
+        "Turn off the heat. Squeeze lemon juice (if using) and garnish with chopped cilantro.",
+        "Serve hot."
+      ],
+      "notes": "You can pre-roast the millet before cooking for a better texture and flavor. Adjust vegetables and spices according to your preference."
+    }
+  ],
   "originAndDomesticationHistory": "Millets encompass a diverse group domesticated independently in various parts of the world. Pearl millet (Pennisetum glaucum) was domesticated in sub-Sahelian West Africa around 4,500-5,000 years ago. Foxtail millet (Setaria italica) was domesticated in China around 8,000 years ago. Finger millet (Eleusine coracana) originated in the highlands of East Africa (Ethiopia/Uganda) around 5,000 years ago.",
   "climaticRequirements": {
     "temperature": "Warm-season crops, generally requiring 20-30°C. Very heat tolerant.",
