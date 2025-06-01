@@ -2,33 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { MapPin, Search } from 'lucide-react';
+import type { PlannerData } from '@/types/planner'; // Import PlannerData
 
-interface LocationData {
-  lat?: number | null;
-  lon?: number | null;
-  address?: string;
-  climateZone?: string; // Placeholder
+interface StepProps {
+  plannerData: Partial<PlannerData>;
+  onDataChange: (updatedData: Partial<PlannerData>) => void;
 }
 
-interface LocationStepProps {
-  onNext: (data: { location: LocationData }) => void;
-  onBack: () => void;
-  data: { location?: LocationData };
-}
-
-const LocationStep: React.FC<LocationStepProps> = ({ onNext, onBack, data }) => {
-  const [manualAddress, setManualAddress] = useState(data.location?.address || '');
-  const [locationInfo, setLocationInfo] = useState<LocationData>(data.location || { lat: null, lon: null, address: '', climateZone: 'Fetching...' });
+const LocationStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
+  // Initialize internal state from plannerData.location or default
+  const [manualAddress, setManualAddress] = useState(plannerData.location?.address || '');
+  const [locationInfo, setLocationInfo] = useState<PlannerData['location']>(
+    plannerData.location || { lat: null, lon: null, address: '', climateZone: '' }
+  );
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Initialize with passed data
+  // Effect to update local state if plannerData.location changes (e.g., user goes back and forth)
   useEffect(() => {
-    if (data.location) {
-      setLocationInfo(data.location);
-      setManualAddress(data.location.address || '');
+    if (plannerData.location) {
+      setLocationInfo(plannerData.location);
+      setManualAddress(plannerData.location.address || '');
+    } else {
+      // Reset if plannerData.location is cleared
+      setLocationInfo({ lat: null, lon: null, address: '', climateZone: '' });
+      setManualAddress('');
     }
-  }, [data.location]);
+  }, [plannerData.location]);
+
+  const updateParentState = (newLocationData: PlannerData['location']) => {
+    setLocationInfo(newLocationData);
+    onDataChange({ location: newLocationData });
+  };
 
   const handleDetectLocation = () => {
     setIsLoading(true);
@@ -37,16 +42,14 @@ const LocationStep: React.FC<LocationStepProps> = ({ onNext, onBack, data }) => 
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          // Placeholder for reverse geocoding and climate zone
-          // For now, just set lat/lon and a dummy address/climate zone
-          const detectedLocation = {
+          const detectedLocation: PlannerData['location'] = {
             lat: latitude,
             lon: longitude,
             address: `Coordinates: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`,
-            climateZone: 'Temperate (Placeholder)',
+            climateZone: 'Temperate (Placeholder)', // Replace with actual climate zone logic
           };
-          setLocationInfo(detectedLocation);
-          setManualAddress(detectedLocation.address);
+          updateParentState(detectedLocation);
+          setManualAddress(detectedLocation.address || '');
           setIsLoading(false);
         },
         (err) => {
@@ -61,29 +64,26 @@ const LocationStep: React.FC<LocationStepProps> = ({ onNext, onBack, data }) => 
   };
 
   const handleManualSearch = () => {
-    // For now, just use the manual address and clear lat/lon
-    // A real implementation would call a geocoding API
     setIsLoading(true);
     setError(null);
-    const searchedLocation = {
-      lat: null, // Or fetch from geocoding API
-      lon: null, // Or fetch from geocoding API
+    const searchedLocation: PlannerData['location'] = {
+      lat: null,
+      lon: null,
       address: manualAddress,
-      climateZone: 'Varies (Placeholder)',
+      climateZone: 'Varies (Placeholder)', // Replace with actual climate zone logic based on address
     };
-    setLocationInfo(searchedLocation);
+    updateParentState(searchedLocation);
     setIsLoading(false);
   };
 
-  const handleSubmit = () => {
-    onNext({ location: locationInfo });
-  };
+  // No handleSubmit needed here, data is sent via onDataChange.
+  // Navigation (Next/Previous) is handled by the parent PlannerPage.
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+    <div className="space-y-6 py-4"> {/* Added py-4 for consistent spacing with other steps */}
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100"> {/* Changed to h3 for semantic consistency */}
         <MapPin className="inline mr-2 h-5 w-5" /> Where are you planning to grow?
-      </h2>
+      </h3>
 
       <div className="space-y-2">
         <label htmlFor="manualAddress" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -110,24 +110,16 @@ const LocationStep: React.FC<LocationStepProps> = ({ onNext, onBack, data }) => 
 
       {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
 
-      {locationInfo.address && (
-        <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-md text-sm">
-          <p className="text-gray-900 dark:text-white"><strong>Selected Location:</strong> {locationInfo.address}</p>
+      {locationInfo.address && ( // Check if locationInfo itself has an address to display summary
+        <div className="p-3 bg-muted/50 dark:bg-muted/20 rounded-md text-sm border border-border">
+          <p><strong>Selected Location:</strong> {locationInfo.address}</p>
           {locationInfo.lat && locationInfo.lon && (
-            <p className="text-gray-900 dark:text-white"><strong>Coordinates:</strong> Lat: {locationInfo.lat.toFixed(4)}, Lon: {locationInfo.lon.toFixed(4)}</p>
+            <p><strong>Coordinates:</strong> Lat: {locationInfo.lat.toFixed(4)}, Lon: {locationInfo.lon.toFixed(4)}</p>
           )}
-          <p className="text-gray-900 dark:text-white"><strong>Climate Zone:</strong> {locationInfo.climateZone}</p>
+          <p><strong>Climate Zone:</strong> {locationInfo.climateZone}</p>
         </div>
       )}
-
-      <div className="flex justify-between pt-4">
-        <Button onClick={onBack} variant="outline" disabled={isLoading}> {/* onBack might need to be disabled if currentStep is 0, handled in parent */}
-          Back
-        </Button>
-        <Button onClick={handleSubmit} disabled={isLoading || (!locationInfo.address && !manualAddress)}>
-          Next
-        </Button>
-      </div>
+      {/* Navigation buttons are now handled by the parent PlannerPage component */}
     </div>
   );
 };

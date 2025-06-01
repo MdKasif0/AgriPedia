@@ -1,0 +1,66 @@
+{
+  "plant_id": "basil_001",
+  "common_name": "Basil",
+  "scientific_name": "Ocimum basilicum",
+  "growing_guide": [
+    {
+      "stage": "Planting",
+      "duration_days": 7,
+      "instructions": [
+        "Choose a pot with drainage holes.",
+        "Use nutrient-rich soil (pH 6–7.5).",
+        "Sow seeds 0.5 cm deep and water lightly.",
+        "Place in a warm, sunny location (6–8 hrs light)."
+      ],
+      "media": {
+        "images": ["/images/guides/basil/planting1.jpg", "/images/guides/basil/planting2.jpg"],
+        "video": "/videos/guides/basil/how-to-plant-basil.mp4"
+      },
+      "tools_needed": ["Pot", "Soil", "Spray bottle", "Basil seeds"],
+      "warnings": ["Avoid overwatering as seeds can rot.", "Protect from cold drafts."],
+      "did_you_know": ["Basil is native to tropical regions from Central Africa to Southeast Asia.", "The name 'basil' comes from the Greek word 'basileus', meaning 'king'."],
+      "customizations": [
+        {
+          "condition": { "space": "indoors" },
+          "instructions_add": [
+            "Ensure your indoor pot has a saucer to catch water."
+          ],
+          "tips_add": [
+            "Rotate pot weekly for even light exposure if growing near a window."
+          ]
+        },
+        {
+          "condition": { "location_climate": "humid" },
+          "tips_add": [
+            "Ensure good air circulation around indoor basil in humid climates to prevent fungal issues."
+          ],
+          "warnings_add": [
+            "In very humid indoor settings, avoid misting basil leaves directly."
+          ]
+        },
+        {
+           "condition": { "experience": "beginner" },
+           "tips_add": [ "Basil is quite resilient, so don't be afraid to experiment a little!" ]
+        }
+      ]
+    },
+    {
+      "stage": "Germination",
+      "duration_days": 7,
+      "instructions": ["Keep soil moist but not wet.", "Maintain 21–26°C.", "Wait for sprouting."],
+      "tips": ["Cover with a plastic wrap to retain moisture."]
+    },
+    {
+      "stage": "Growing",
+      "duration_days": 30,
+      "instructions": ["Thin to strongest seedlings.", "Water every 2–3 days.", "Provide full sunlight."],
+      "reminders": ["Fertilize weekly with organic feed."]
+    },
+    {
+      "stage": "Harvesting",
+      "duration_days": 5,
+      "instructions": ["Start harvesting leaves when 6–8 inches tall.", "Pick leaves from the top."],
+      "tips": ["Harvest often to encourage growth."]
+    }
+  ]
+}

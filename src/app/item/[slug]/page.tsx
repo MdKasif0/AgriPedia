@@ -1,7 +1,8 @@
 
 import type { Metadata } from 'next';
-import { getProduceByCommonName } from '@/lib/produceData';
-import ItemDetailsPage from './item-details-page'; // Corrected client component import
+import { getProduceByCommonName } from '@/lib/produceData'; // getProduceGuide removed from here
+import { getProduceGuide } from '@/lib/produceData.server'; // Import from .server file
+import ItemDetailsPage from './item-details-page';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -54,10 +55,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default function ItemPageWrapper({ params }: { params: { slug: string } }) {
-  const produce = getProduceByCommonName(decodeURIComponent(params.slug));
+  const decodedSlug = decodeURIComponent(params.slug);
+  const produce = getProduceByCommonName(decodedSlug);
+
   if (!produce) {
     notFound();
   }
-  // Pass the original slug (or the decoded one, depending on ItemDetailsPage needs)
-  return <ItemDetailsPage slugFromParams={params.slug} />;
+
+  // Assuming produce.id can be used to form the plant_id for the guide.
+  // e.g., if produce.id is "basil", plant_id is "basil_001".
+  // This logic needs to be robust. For now, we'll make a simple assumption.
+  // A better way would be to have `plant_guide_id` field in the produce JSON data.
+  // Let's assume a convention: if produce.id is 'basil', guide ID is 'basil_001'.
+  // This is a temporary measure for this step.
+  const plantGuideId = produce.id ? `${produce.id}_001` : null;
+  const growingGuideData = plantGuideId ? getProduceGuide(plantGuideId) : null;
+
+  // Pass both produce and growingGuideData to the client component
+  return <ItemDetailsPage slugFromParams={params.slug} initialProduce={produce} initialGrowingGuide={growingGuideData} />;
 }

@@ -24,6 +24,18 @@ export default function ChatPage() {
   const [isLoadingResponse, setIsLoadingResponse] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null); // Ref for the input field
+
+  // For pre-filled prompt from localStorage
+  useEffect(() => {
+    const PREFILLED_CHAT_PROMPT_KEY = 'agripedia-prefilled-chat-prompt'; // Using the actual key string
+    const prefilledPrompt = localStorage.getItem(PREFILLED_CHAT_PROMPT_KEY);
+    if (prefilledPrompt) {
+      setInputValue(prefilledPrompt);
+      localStorage.removeItem(PREFILLED_CHAT_PROMPT_KEY);
+      inputRef.current?.focus(); // Focus the input field
+    }
+  }, []); // Empty dependency array, runs once on mount
 
   useEffect(() => {
     // Auto-scroll to bottom of chat
@@ -234,6 +246,7 @@ export default function ChatPage() {
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
             placeholder="Ask about fruits, vegetables, or farming..."
+            ref={inputRef} // Assign ref to the input
             className="flex-1 bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-600 focus-visible:ring-1 focus-visible:ring-teal-500 focus-visible:ring-offset-0 dark:focus-visible:ring-offset-slate-800 rounded-xl text-base py-3 px-4"
             disabled={isLoadingResponse}
           />

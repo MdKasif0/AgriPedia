@@ -1,3 +1,5 @@
+// fs, path, and PlannerData import removed as getProduceGuide is moved
+
 // Import individual fruit data
 import amlaFruit from './data/fruits/amla.json';
 import appleFruit from './data/fruits/apple.json';
@@ -221,6 +223,51 @@ import taroTuberCrop from './data/tuberAndRootCrops/taro.json';
 import turnipTuberCrop from './data/tuberAndRootCrops/turnip.json';
 import yamTuberCrop from './data/tuberAndRootCrops/yam.json';
 
+// --- Types for Guide Customization ---
+export interface Condition {
+  space?: 'indoors' | 'outdoors_small' | 'outdoors_large' | string;
+  location_climate?: 'arid' | 'temperate' | 'tropical' | 'continental' | 'polar' | 'humid' | string;
+  experience?: 'beginner' | 'intermediate' | 'advanced' | string;
+  // Add more conditions as needed
+}
+
+export interface InstructionModification {
+  index?: number;
+  match_text?: string;
+  new_text: string;
+}
+
+export interface CustomizationRule {
+  condition: Condition;
+  instructions_add?: string[];
+  instructions_modify?: InstructionModification[];
+  tips_add?: string[];
+  warnings_add?: string[];
+  // Add more fields to customize
+}
+
+export interface GrowingStage {
+  stage: string;
+  duration_days: number;
+  instructions: string[];
+  media?: {
+    images?: string[];
+    video?: string;
+  };
+  tools_needed?: string[];
+  tips?: string[];
+  reminders?: string[];
+  warnings?: string[];
+  did_you_know?: string[];
+  customizations?: CustomizationRule[]; // New field
+}
+
+export interface GrowingGuide {
+  plant_id: string;
+  common_name: string;
+  scientific_name: string;
+  growing_guide: GrowingStage[];
+}
 
 export interface Recipe {
   name: string;
@@ -580,6 +627,8 @@ export function getInSeasonProduce(limit?: number): ProduceInfo[] {
   }
   return inSeasonItems; // Return all if no limit or fewer items than limit
 }
+
+// getProduceGuide and its helper matchesCondition have been moved to produceData.server.ts
 
 export function getAllCategoriesWithProduce(): { [categoryName: string]: ProduceInfo[] } {
   return {
