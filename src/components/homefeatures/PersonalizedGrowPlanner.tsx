@@ -1,25 +1,52 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
-import { MapPin } from 'lucide-react';
+import React, { useState } from 'react';
+import LocationStep from '../planner/LocationStep';
+import GrowingSpaceStep from '../planner/GrowingSpaceStep';
+import SunlightExposureStep from '../planner/SunlightExposureStep';
+import PurposeStep from '../planner/PurposeStep';
+import TimeCommitmentStep from '../planner/TimeCommitmentStep';
+import ExperienceLevelStep from '../planner/ExperienceLevelStep';
 
-export default function PersonalizedGrowPlanner() {
+const PersonalizedGrowPlanner: React.FC = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+  const [formData, setFormData] = useState({});
+
+  const handleNext = (stepData: any) => {
+    setFormData(prev => ({ ...prev, ...stepData }));
+    setCurrentStep(prev => prev + 1);
+  };
+
+  const handleBack = () => {
+    setCurrentStep(prev => prev - 1);
+  };
+
+  const renderStep = () => {
+    switch (currentStep) {
+      case 0:
+        return <LocationStep onNext={handleNext} data={formData} onBack={() => {}} />; // No back on first step
+      case 1:
+        return <GrowingSpaceStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 2:
+        return <SunlightExposureStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 3:
+        return <PurposeStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 4:
+        return <TimeCommitmentStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 5:
+        return <ExperienceLevelStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      default:
+        return <div>Thank you! Planner Complete.</div>; // Or a summary step
+    }
+  };
+
   return (
-    <Card className="rounded-2xl h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-      <CardHeader className="flex flex-row items-center gap-3">
-        <MapPin size={28} className="text-primary group-hover:animate-sprout origin-bottom transition-transform duration-300" />
-        <CardTitle className="font-serif">Personalized Grow Planner</CardTitle>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <p className="text-sm text-muted-foreground">
-          Suggests plants based on your location, space, sunlight, season, and goals. Integrates local weather data to optimize planting times.
-        </p>
-      </CardContent>
-      <CardFooter>
-        <Button className="w-full">
-          Get Recommendations
-        </Button>
-      </CardFooter>
-    </Card>
+    <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+      <h1 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Personalized Grow Planner</h1>
+      {/* Add progress bar here later */}
+      <div className="transition-all duration-500 ease-in-out">
+        {renderStep()}
+      </div>
+    </div>
   );
-}
+};
+
+export default PersonalizedGrowPlanner;
