@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.0",
     "@fontsource/dm-serif-display": "^5.2.5",
     "@fontsource/inter": "^5.2.5",
     "@genkit-ai/flow": "^1.8.0",
