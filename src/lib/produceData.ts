@@ -255,6 +255,18 @@ export interface ProduceInfo {
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
   staticRecipes?: Recipe[];
+  growing_guide?: Array<{
+    stage: string;
+    duration_days: number;
+    instructions: string[];
+    media?: {
+      images?: string[];
+      video?: string;
+    };
+    tools_needed?: string[];
+    tips?: string[];
+    reminders?: string[];
+  }>;
 }
 
 const fruits: ProduceInfo[] = [
