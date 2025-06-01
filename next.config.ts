@@ -1,5 +1,5 @@
+
 import type {NextConfig} from 'next';
-import path from 'path'; // Import path
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -83,36 +83,6 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
-  },
-  webpack: (config, { isServer, nextRuntime }) => {
-    // Add genkit related packages to externals
-    // This helps prevent "Module not found" errors in environments like Netlify
-    // by telling Next.js not to bundle these packages.
-    const genkitPackages = [
-        '@genkit-ai/flow',
-        'genkit',
-        '@genkit-ai/googleai',
-        '@genkit-ai/next'
-    ];
-
-    if (!isServer) {
-        // For client-side, if you were to use these, you might need aliases,
-        // but genkit is primarily for server-side logic.
-        // The Netlify solution implies these are needed as externals broadly.
-    }
-
-    config.externals = [...(config.externals || []), ...genkitPackages];
-
-    // Ensure that server-only packages are not bundled on the client.
-    // This is particularly relevant if using experimental `serverActions` or similar.
-    if (nextRuntime === 'nodejs') {
-        // config.externals.push(...); // if you have server-specific externals
-    }
-    if (nextRuntime === 'edge') {
-        // config.externals.push(...); // if you have edge-specific externals
-    }
-
-    return config;
   },
 };
 
