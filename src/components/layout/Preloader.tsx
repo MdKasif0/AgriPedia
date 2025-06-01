@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ReactNode } from 'react';
+import { useState, useEffect, type ReactNode } from 'react';
 
 interface PreloaderProps {
   children: ReactNode;
@@ -11,8 +11,27 @@ export default function Preloader({ children, videoSrc }: PreloaderProps) {
   const [isPreloading, setIsPreloading] = useState(true);
 
   const handleVideoEnd = () => {
+    // This function might be called by video events or by the timeout.
+    // Setting state is idempotent, so calling it multiple times is okay.
     setIsPreloading(false);
   };
+
+  useEffect(() => {
+    let timerId: NodeJS.Timeout;
+
+    if (isPreloading) {
+      // Set a timeout to hide the preloader if video events don't fire
+      timerId = setTimeout(() => {
+        // console.log('Preloader timeout reached');
+        handleVideoEnd();
+      }, 10000); // 10-second timeout
+    }
+
+    return () => {
+      // Cleanup the timeout if the component unmounts or if isPreloading changes
+      clearTimeout(timerId);
+    };
+  }, [isPreloading]); // Effect runs when isPreloading state changes
 
   if (isPreloading) {
     return (
