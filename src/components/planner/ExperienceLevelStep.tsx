@@ -1,3 +1,4 @@
+ jules_wip_10864388203351861127
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Baby, User, Award } from 'lucide-react';
@@ -66,6 +67,24 @@ const ExperienceLevelStep: React.FC<ExperienceLevelStepProps> = ({ onNext, onBac
           Finish
         </Button>
       </div>
+
+import React from 'react';
+
+interface ExperienceLevelStepProps {
+  onNext: (data: any) => void;
+  onBack: () => void;
+  data: any;
+}
+
+const ExperienceLevelStep: React.FC<ExperienceLevelStepProps> = ({ onNext, onBack, data }) => {
+  // TODO: Implement experience level selection
+  return (
+    <div>
+      <h2>Experience Level</h2>
+      {/* Add form elements for experience level input */}
+      <button onClick={onBack}>Back</button>
+      <button onClick={() => onNext({})}>Next</button>
+ master
     </div>
   );
 };

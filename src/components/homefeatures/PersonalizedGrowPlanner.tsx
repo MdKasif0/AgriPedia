@@ -1,10 +1,15 @@
+ jules_wip_10864388203351861127
 import React, { useState, useEffect, useRef } from 'react';
+
+import React, { useState } from 'react';
+ master
 import LocationStep from '../planner/LocationStep';
 import GrowingSpaceStep from '../planner/GrowingSpaceStep';
 import SunlightExposureStep from '../planner/SunlightExposureStep';
 import PurposeStep from '../planner/PurposeStep';
 import TimeCommitmentStep from '../planner/TimeCommitmentStep';
 import ExperienceLevelStep from '../planner/ExperienceLevelStep';
+ jules_wip_10864388203351861127
 import ProgressBar from '../planner/ProgressBar';
 import ErrorBoundary from '../ErrorBoundary';
 import { Button } from '@/components/ui/button';
@@ -175,6 +180,46 @@ const PersonalizedGrowPlanner: React.FC = () => {
         <ProgressBar currentStep={displayedStep} totalSteps={TOTAL_PLANNER_STEPS} />
       )}
       <div className={`min-h-[420px] ${animationClass}`}>
+
+
+const PersonalizedGrowPlanner: React.FC = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+  const [formData, setFormData] = useState({});
+
+  const handleNext = (stepData: any) => {
+    setFormData(prev => ({ ...prev, ...stepData }));
+    setCurrentStep(prev => prev + 1);
+  };
+
+  const handleBack = () => {
+    setCurrentStep(prev => prev - 1);
+  };
+
+  const renderStep = () => {
+    switch (currentStep) {
+      case 0:
+        return <LocationStep onNext={handleNext} data={formData} onBack={() => {}} />; // No back on first step
+      case 1:
+        return <GrowingSpaceStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 2:
+        return <SunlightExposureStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 3:
+        return <PurposeStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 4:
+        return <TimeCommitmentStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      case 5:
+        return <ExperienceLevelStep onNext={handleNext} onBack={handleBack} data={formData} />;
+      default:
+        return <div>Thank you! Planner Complete.</div>; // Or a summary step
+    }
+  };
+
+  return (
+    <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+      <h1 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Personalized Grow Planner</h1>
+      {/* Add progress bar here later */}
+      <div className="transition-all duration-500 ease-in-out">
+ master
         {renderStep()}
       </div>
     </div>
