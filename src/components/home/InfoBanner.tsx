@@ -18,7 +18,7 @@ interface InfoBannerProps {
 
 export default function InfoBanner({ icon: Icon, title, description, asideText, className, iconProps }: InfoBannerProps) {
   return (
-    <Card className={`rounded-2xl h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out ${className}`}>
+    <Card className={`rounded-2xl h-full flex flex-col group hover:shadow-xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-primary/10 via-transparent to-transparent ${className}`}>
       <CardHeader className="pb-2"> {/* Adjust padding as needed */}
         <div className="flex items-start gap-3">
           {Icon && <Icon size={24} className="shrink-0 text-primary mt-1 group-hover:animate-sprout origin-bottom transition-transform duration-300" {...iconProps} />} {/* Adjusted size and margin */}
