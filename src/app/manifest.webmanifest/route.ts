@@ -15,29 +15,25 @@ export function GET(): Response {
         src: '/icons/icon-192x192.png',
         sizes: '192x192',
         type: 'image/png',
-        purpose: 'any',
-        "data-ai-hint": "logo app icon"
+        purpose: 'any'
       },
       {
         src: '/icons/icon-512x512.png',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'any',
-        "data-ai-hint": "logo app icon"
+        purpose: 'any'
       },
       {
         src: '/icons/icon-192x192.png', // Assuming same icon can be used for maskable
         sizes: '192x192',
         type: 'image/png',
-        purpose: 'maskable',
-        "data-ai-hint": "logo app icon"
+        purpose: 'maskable'
       },
       {
         src: '/icons/icon-512x512.png', // Assuming same icon can be used for maskable
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'maskable',
-        "data-ai-hint": "logo app icon"
+        purpose: 'maskable'
       }
     ],
   };

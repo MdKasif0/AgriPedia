@@ -188,7 +188,7 @@ const PersonalizedGrowPlanner: React.FC = () => {
           <ErrorBoundary fallbackMessage="There was an issue displaying the summary. Please try starting over.">
             <div className="text-center p-4">
               <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-2">Here's a summary of your preferences:</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">Here&apos;s a summary of your preferences:</p>
               <pre className="text-left text-sm bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-x-auto min-h-[100px]">
                 {summaryContent}
               </pre>

@@ -47,7 +47,7 @@ export default function ProduceCard({ produce }: ProduceCardProps) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div> {/* Correctly closing motion.div */}
     </Link>
   );
 }

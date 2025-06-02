@@ -122,7 +122,7 @@ export default {
         'leaf-sway': 'leaf-sway 3s ease-in-out infinite', // Slightly longer duration
         'sprout': 'sprout 0.4s ease-out forwards',
         'tap-squish': 'tap-squish 0.2s ease-in-out',
-		},
+  		},
       boxShadow: {
         'card': '0 4px 12px -2px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
         // New soft shadows

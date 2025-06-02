@@ -109,7 +109,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         videoRef.current.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]); // hasCameraPermission is not explicitly listed, but its state is managed internally and drives calls to getCameraPermissionInternal within this effect
+  }, [isCameraMode, toast, hasCameraPermission, getCameraPermissionInternal, videoRef, streamRef]);
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {

@@ -32,7 +32,7 @@ const ExperienceLevelStep: React.FC<ExperienceLevelStepProps> = ({ onNext, onBac
   return (
     <div className="space-y-6 py-4">
       <h2 className="text-xl font-semibold text-gray-900 dark:text-white px-1">
-        What's your gardening experience level? 🧑‍🌾
+        What&apos;s your gardening experience level? 🧑‍🌾
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-1">

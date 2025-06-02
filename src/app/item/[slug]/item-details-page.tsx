@@ -320,7 +320,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             <IconLabel icon={Info} label="Description" className="bg-card rounded-lg shadow-lg md:col-span-2">
               <p className="text-card-foreground/90">{produce.description}</p>
             </IconLabel>
-
+            
             {/* This nested grid will now be an item in the parent grid, taking one slot if not spanned */}
             <div className="grid md:grid-cols-2 gap-6 md:col-span-2"> {/* Or make this simply col-span-1 and arrange items differently if desc is not col-span-2 */}
               <IconLabel icon={Globe} label="Origin" className="bg-card rounded-lg shadow-lg">
@@ -345,7 +345,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           {/* Titles and calorie info remain full width */}
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
-
+          
           <div className="md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
             <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
               <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
@@ -365,7 +365,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 </ClientOnly>
               )}
             </div>
-
+            
             <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg md:col-span-2">
               <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
                 {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}

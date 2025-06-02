@@ -239,10 +239,10 @@ export interface ProduceInfo {
   regions: string[];
   seasons: string[];
   nutrition: {
-    calories: string;
+    calories: string | number; // Changed to string | number
     macronutrients: Array<{ name: string; value: number; unit: string }>;
-    vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>;
-    minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>;
+    vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>; // Assuming value is number, unit is string
+    minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>; // Assuming value is number, unit is string
   };
   healthBenefits: string[];
   potentialAllergies: Array<{
@@ -255,6 +255,26 @@ export interface ProduceInfo {
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
   staticRecipes?: Recipe[];
+
+  // New optional agricultural properties
+  uses?: string[];
+  originAndDomesticationHistory?: string;
+  climaticRequirements?: {
+    temperature?: string;
+    rainfall?: string;
+    altitude?: string;
+  };
+  soilPreferences?: string;
+  irrigationAndWaterNeeds?: string;
+  plantingAndHarvestCycles?: {
+    planting?: string;
+    harvesting?: string;
+    notes?: string;
+  };
+  pestAndDiseaseManagement?: string;
+  postHarvestHandling?: string;
+  majorProducingCountriesOrRegions?: string[];
+  marketValueAndGlobalDemand?: string;
 }
 
 const fruits: ProduceInfo[] = [

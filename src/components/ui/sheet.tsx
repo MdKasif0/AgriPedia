@@ -83,7 +83,7 @@ const SheetContent = React.forwardRef<
       const closeButton = currentTarget.querySelector(
         'button[aria-label="Close"]'
       ) as HTMLElement | null;
-
+      
       if (closeButton) {
         closeButton.click();
       } else {
@@ -102,7 +102,7 @@ const SheetContent = React.forwardRef<
     }
   };
 
-  const MotionSheetPrimitiveContent = motion(SheetPrimitive.Content);
+  const MotionSheetPrimitiveContent = motion(SheetPrimitive.Content as any); // Added 'as any'
 
   return (
     <SheetPortal>

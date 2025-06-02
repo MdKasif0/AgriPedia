@@ -11,18 +11,26 @@ const Accordion = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>
 >(({ onValueChange, ...props }, ref) => {
-  const handleValueChange = (value: string) => {
+  // handleValueChange is called by AccordionPrimitive.Root, which will pass
+  // string for type="single" and string[] for type="multiple".
+  const handleValueChange = (value: string | string[]) => {
     triggerHapticFeedback();
     if (onValueChange) {
-      onValueChange(value);
+      // The onValueChange prop passed to this wrapped Accordion component
+      // will have a signature like ((value: string) => void) | ((value: string[]) => void).
+      // We use a type assertion here to inform TypeScript that we are handling
+      // the polymorphic nature of the callback correctly. The actual type safety
+      // relies on the user passing an onValueChange handler that matches the
+      // accordion type (single/multiple) they are using.
+      (onValueChange as (value: string | string[]) => void)(value);
     }
   };
 
   return (
     <AccordionPrimitive.Root
       ref={ref}
-      onValueChange={handleValueChange}
-      {...props}
+      onValueChange={handleValueChange} // handleValueChange now correctly typed for what AccordionPrimitive.Root provides
+      {...props} // props includes the 'type' which dictates the actual signature for onValueChange
     />
   );
 });

@@ -51,11 +51,11 @@ export default function DesktopSidebar() {
       </SidebarHeader>
       <SidebarContent>
         {state === 'expanded' && (
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              handleSearchSubmit(searchQuery);
-            }}
+          <form 
+            onSubmit={(e) => { 
+              e.preventDefault(); 
+              handleSearchSubmit(searchQuery); 
+            }} 
             className="p-2 mt-2 mb-2" // Added some margin for spacing
           >
             <SidebarInput
@@ -63,7 +63,7 @@ export default function DesktopSidebar() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               aria-label="Search AgriPedia"
-              icon={<Search size={18} className="text-muted-foreground" />} // Added search icon to input
+              // icon prop removed
             />
             {/* Hidden submit button for form submission on enter */}
             <button type="submit" className="hidden" />

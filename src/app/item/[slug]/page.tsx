@@ -37,7 +37,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
           width: 600, // Adjust if your placeholders have different default sizes
           height: 400, // Adjust
           alt: produce.commonName,
-          'data-ai-hint': imageHint,
         },
       ],
       locale: 'en_US',

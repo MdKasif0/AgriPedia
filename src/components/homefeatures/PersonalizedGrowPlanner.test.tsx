@@ -12,49 +12,77 @@ const mockPurposeStep = jest.fn();
 const mockTimeCommitmentStep = jest.fn();
 const mockExperienceLevelStep = jest.fn();
 
-jest.mock('../planner/LocationStep', () => (props) => {
-  mockLocationStep(props);
-  return (
-    <div>
-      <h2>Location Step Content</h2>
-      <button onClick={() => props.onNext({ location: { address: 'Test Location' } })}>Next Location</button>
-      {/* No Back button for the first step in the mock */}
-    </div>
-  );
+jest.mock('../planner/LocationStep', () => {
+  const MockLocationStep = (props) => {
+    mockLocationStep(props);
+    return (
+      <div>
+        <h2>Location Step Content</h2>
+        <button onClick={() => props.onNext({ location: { address: 'Test Location' } })}>Next Location</button>
+        {/* No Back button for the first step in the mock */}
+      </div>
+    );
+  };
+  MockLocationStep.displayName = 'MockLocationStep';
+  return MockLocationStep;
 });
-jest.mock('../planner/GrowingSpaceStep', () => (props) => {
-  mockGrowingSpaceStep(props);
-  return (
-    <div>
-      <h2>Growing Space Step Content</h2>
-      <button onClick={props.onBack}>Back GrowingSpace</button>
-      <button onClick={() => props.onNext({ growingSpace: 'balcony' })}>Next GrowingSpace</button>
-    </div>
-  );
+jest.mock('../planner/GrowingSpaceStep', () => {
+  const MockGrowingSpaceStep = (props) => {
+    mockGrowingSpaceStep(props);
+    return (
+      <div>
+        <h2>Growing Space Step Content</h2>
+        <button onClick={props.onBack}>Back GrowingSpace</button>
+        <button onClick={() => props.onNext({ growingSpace: 'balcony' })}>Next GrowingSpace</button>
+      </div>
+    );
+  };
+  MockGrowingSpaceStep.displayName = 'MockGrowingSpaceStep';
+  return MockGrowingSpaceStep;
 });
-jest.mock('../planner/SunlightExposureStep', () => (props) => {
-  mockSunlightExposureStep(props);
-  return <div><h2>Sunlight Exposure Step Content</h2><button onClick={props.onBack}>Back Sunlight</button><button onClick={() => props.onNext({ sunlightExposure: 'full' })}>Next Sunlight</button></div>;
+jest.mock('../planner/SunlightExposureStep', () => {
+  const MockSunlightExposureStep = (props) => {
+    mockSunlightExposureStep(props);
+    return <div><h2>Sunlight Exposure Step Content</h2><button onClick={props.onBack}>Back Sunlight</button><button onClick={() => props.onNext({ sunlightExposure: 'full' })}>Next Sunlight</button></div>;
+  };
+  MockSunlightExposureStep.displayName = 'MockSunlightExposureStep';
+  return MockSunlightExposureStep;
 });
-jest.mock('../planner/PurposeStep', () => (props) => {
-  mockPurposeStep(props);
-  return <div><h2>Purpose Step Content</h2><button onClick={props.onBack}>Back Purpose</button><button onClick={() => props.onNext({ purposes: ['vegetables'] })}>Next Purpose</button></div>;
+jest.mock('../planner/PurposeStep', () => {
+  const MockPurposeStep = (props) => {
+    mockPurposeStep(props);
+    return <div><h2>Purpose Step Content</h2><button onClick={props.onBack}>Back Purpose</button><button onClick={() => props.onNext({ purposes: ['vegetables'] })}>Next Purpose</button></div>;
+  };
+  MockPurposeStep.displayName = 'MockPurposeStep';
+  return MockPurposeStep;
 });
-jest.mock('../planner/TimeCommitmentStep', () => (props) => {
-  mockTimeCommitmentStep(props);
-  return <div><h2>Time Commitment Step Content</h2><button onClick={props.onBack}>Back Time</button><button onClick={() => props.onNext({ timeCommitment: 3 })}>Next Time</button></div>;
+jest.mock('../planner/TimeCommitmentStep', () => {
+  const MockTimeCommitmentStep = (props) => {
+    mockTimeCommitmentStep(props);
+    return <div><h2>Time Commitment Step Content</h2><button onClick={props.onBack}>Back Time</button><button onClick={() => props.onNext({ timeCommitment: 3 })}>Next Time</button></div>;
+  };
+  MockTimeCommitmentStep.displayName = 'MockTimeCommitmentStep';
+  return MockTimeCommitmentStep;
 });
-jest.mock('../planner/ExperienceLevelStep', () => (props) => {
-  mockExperienceLevelStep(props);
-  return <div><h2>Experience Level Step Content</h2><button onClick={props.onBack}>Back Experience</button><button onClick={() => props.onNext({ experienceLevel: 'intermediate' })}>Finish</button></div>;
+jest.mock('../planner/ExperienceLevelStep', () => {
+  const MockExperienceLevelStep = (props) => {
+    mockExperienceLevelStep(props);
+    return <div><h2>Experience Level Step Content</h2><button onClick={props.onBack}>Back Experience</button><button onClick={() => props.onNext({ experienceLevel: 'intermediate' })}>Finish</button></div>;
+  };
+  MockExperienceLevelStep.displayName = 'MockExperienceLevelStep';
+  return MockExperienceLevelStep;
 });
 
 // Mock ProgressBar
-jest.mock('../planner/ProgressBar', () => ({ currentStep, totalSteps }) => (
-  <div data-testid="progress-bar">
-    Progress: {currentStep + 1} / {totalSteps}
-  </div>
-));
+jest.mock('../planner/ProgressBar', () => {
+  const MockProgressBar = ({ currentStep, totalSteps }) => (
+    <div data-testid="progress-bar">
+      Progress: {currentStep + 1} / {totalSteps}
+    </div>
+  );
+  MockProgressBar.displayName = 'MockProgressBar';
+  return MockProgressBar;
+});
 
 
 describe('PersonalizedGrowPlanner', () => {

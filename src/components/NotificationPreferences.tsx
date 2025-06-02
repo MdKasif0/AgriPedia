@@ -40,7 +40,7 @@ export default function NotificationPreferences() {
         // Initialize localStorage if no prefs are stored
         localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
     }
-  }, []); // Initial load of prefs
+  }, [prefs]); // Initial load of prefs - Added prefs
 
   useEffect(() => {
     if (mounted) { // Only save to localStorage after initial mount & load
