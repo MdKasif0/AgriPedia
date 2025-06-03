@@ -4,7 +4,7 @@ import { GrowTask, TaskType, CalendarState, ReminderSettings } from '@/types/cal
 import { GrowingGuide } from '@/types/growingGuide';
 import { getGrowSuggestions } from './aiService';
 
-const STORAGE_KEY = 'agripedia_calendar';
+const STORAGE_KEY = 'ecogrow_calendar';
 
 // Default reminder settings
 const defaultSettings: ReminderSettings = {

@@ -1,10 +1,9 @@
-
 import { type MetadataRoute } from 'next';
 
-export function GET(): Response {
+export async function GET(): Response {
   const manifest: MetadataRoute.Manifest = {
-    name: 'AgriPedia - Your Personal Plant Growth Guide',
-    short_name: 'AgriPedia Guide',
+    name: 'EcoGrow - Your Personal Plant Growth Guide',
+    short_name: 'EcoGrow Guide',
     description: 'Your guide for personalized plant plans, health tracking, and sustainable growing methods.',
     start_url: '/',
     display: 'standalone',

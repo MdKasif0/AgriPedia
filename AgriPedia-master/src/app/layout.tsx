@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
@@ -27,33 +26,33 @@ const siteBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 export const metadata: Metadata = {
   title: {
-    default: 'AgriPedia',
-    template: '%s - AgriPedia',
+    default: 'EcoGrow',
+    template: '%s - EcoGrow',
+    description: 'Your Personal Plant Growth Guide',
+    keywords: ['plants', 'gardening', 'growth guide', 'plant care'],
+    authors: [{ name: 'EcoGrow Team' }],
   },
   description: 'Search and scan fruits and vegetables to learn more about them. Identify produce, get nutritional info, recipes, and more.',
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: 'AgriPedia',
-    description: 'Your ultimate guide to fruits and vegetables.',
-    url: siteBaseUrl,
-    siteName: 'AgriPedia',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ecogrow.app',
+    siteName: 'EcoGrow',
     images: [
       {
-        url: `${siteBaseUrl}/og-image.png`, 
+        url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'AgriPedia - Fruits and Vegetables Guide',
-        'data-ai-hint': 'app logo',
+        alt: 'EcoGrow - Fruits and Vegetables Guide',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AgriPedia',
-    description: 'Your ultimate guide to fruits and vegetables.',
-    images: [`${siteBaseUrl}/twitter-image.png`], 
+    title: 'EcoGrow',
+    description: 'Your Personal Plant Growth Guide',
+    images: ['/images/twitter-image.jpg'],
   },
   metadataBase: new URL(siteBaseUrl), 
 };

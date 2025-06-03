@@ -1,39 +1,44 @@
+# EcoGrow 🌿
 
-# AgriPedia 🌿
+EcoGrow is a smart digital encyclopedia for fruits and vegetables. It empowers users to identify produce through image recognition or text search, offering detailed insights including nutritional facts, growing guides, and care tips.
 
-AgriPedia is a smart digital encyclopedia for fruits and vegetables. It empowers users to identify produce through image recognition or text search, offering detailed insights including nutritional facts, cultivation guides, recipes, and much more.
+**➡️ Live Demo: [https://ecogrow.app](https://ecogrow.app)**
 
-**➡️ Live Demo: [https://agripedia.netlify.app/](https://agripedia.netlify.app/)**
+## Features
 
-## ✨ Key Features
+*   **Smart Plant Identification:** Upload images or use your camera to identify plants instantly.
+*   **Detailed Plant Information:** Access comprehensive details about each plant, including growing conditions, care tips, and nutritional information.
+*   **Personalized Growing Guides:** Get customized growing guides based on your location and experience level.
+*   **Plant Health Monitoring:** Track your plants' health and growth progress with our smart monitoring system.
+*   **EcoGrow Tips:** Get daily interesting facts about agriculture.
+*   **Offline Access:** Access your saved plants and guides even without an internet connection.
+*   **PWA Support:** Install the app on your device for quick access.
 
-*   **🔍 Smart Identification:**
-    *   **Image Recognition:** Use your device camera to identify fruits and vegetables.
-    *   **Text Search:** Quickly find produce with autocomplete suggestions.
-*   **📚 Rich Information:**
-    *   **Detailed Profiles:** Scientific name, origin, local names, growing regions, and seasons.
-    *   **Nutritional Charts:** Interactive charts for macronutrients, vitamins, and minerals.
-    *   **Health Insights:** Benefits for health and potential allergy information.
-    *   **Cultivation Guides:** Step-by-step growing information and ideal conditions.
-*   **🍲 Recipe Ideas:** Discover healthy recipes for each produce item.
-*   **📱 User Experience:**
-    *   **Offline Access:** View previously visited produce details offline.
-    *   **Favorites:** Bookmark your favorite items for quick access.
-    *   **AgriPedia Tips:** Get daily interesting facts about agriculture.
-    *   **Responsive Design:** Seamless experience on desktop, tablet, and mobile.
-    *   **PWA Capable:** "Add to Home Screen" for a native app feel, with push notification capabilities.
-*   **🎨 Modern UI:**
-    *   Light and Dark mode support.
-    *   Clean, card-based interface with intuitive navigation.
+## Technology Stack
 
-## 🛠️ Tech Stack
-
-*   **Framework:** Next.js (App Router)
-*   **Language:** TypeScript
-*   **UI Components:** ShadCN UI
+*   **Frontend:** Next.js, React, TypeScript
 *   **Styling:** Tailwind CSS
-*   **AI Integration:** Google Genkit
+*   **AI/ML:** Google Cloud Vision API, Gemini API
+*   **State Management:** React Context API
+*   **Offline Storage:** IndexedDB, LocalStorage
+*   **PWA Features:** Service Workers, Web App Manifest
 
-## 🎯 Goal
+## Getting Started
 
-AgriPedia aims to be a comprehensive, user-friendly, and informative resource for anyone curious about the world of fruits and vegetables, promoting healthier eating and agricultural awareness.
+1.  Clone the repository
+2.  Install dependencies: `npm install`
+3.  Set up environment variables (see `.env.example`)
+4.  Run the development server: `npm run dev`
+5.  Open [http://localhost:3000](http://localhost:3000)
+
+## Contributing
+
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## About
+
+EcoGrow aims to be a comprehensive, user-friendly, and informative resource for anyone curious about the world of fruits and vegetables, promoting healthier eating and agricultural awareness.

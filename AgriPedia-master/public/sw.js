@@ -1,8 +1,7 @@
-
-// AgriPedia Service Worker
+// EcoGrow Service Worker
 // Version 1.1 (Enhanced Caching)
 
-const CACHE_VERSION = 'agripedia-v1.1';
+const CACHE_VERSION = 'ecogrow-v1.1';
 const STATIC_CACHE_NAME = `static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE_NAME = `dynamic-${CACHE_VERSION}`;
 
@@ -154,7 +153,7 @@ self.addEventListener('fetch', (event) => {
 // Basic Push Notification Listener (can be expanded)
 self.addEventListener('push', (event) => {
   console.log('[Service Worker] Push Received.');
-  const data = event.data ? event.data.json() : { title: 'AgriPedia', body: 'New update available!' };
+  const data = event.data ? event.data.json() : { title: 'EcoGrow', body: 'New update available!' };
 
   // TODO: Enhance notification logic for AgriPedia features
   // - Check notification type (e.g., 'watering', 'pruning', 'harvesting')
@@ -162,7 +161,7 @@ self.addEventListener('push', (event) => {
   // - Potentially add actions like 'View Plant' or 'Mark as Complete'
   // - Example: if (data.type === 'watering_reminder') { title = `Water ${data.plantName}!`; ... }
   
-  const title = data.title || 'AgriPedia Notification';
+  const title = data.title || 'EcoGrow Notification';
   const options = {
     body: data.body || 'Something new happened!',
     icon: data.icon || '/icons/icon-192x192.png', // Ensure you have this icon

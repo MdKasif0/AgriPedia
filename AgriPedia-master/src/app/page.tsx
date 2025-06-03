@@ -45,7 +45,7 @@ export default function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        <h1 className="text-4xl font-bold text-center text-primary font-serif">Welcome to AgriPedia!</h1>
+        <h1 className="text-4xl font-bold text-center text-primary font-serif">Welcome to EcoGrow!</h1>
         <p className="text-lg text-center text-foreground/80 mt-2">Your personal guide to successful gardening.</p>
       </motion.header>
 
@@ -96,7 +96,7 @@ export default function HomePage() {
       </main>
 
       <footer className="w-full max-w-4xl mt-12 text-center text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} AgriPedia. Grow smarter.</p>
+        <p>&copy; {new Date().getFullYear()} EcoGrow. Grow smarter.</p>
       </footer>
     </div>
   );
