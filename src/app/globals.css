@@ -11,35 +11,35 @@ html {
 
 @layer base {
   :root {
-    --background: 0 0% 0%; /* #000000 */
-    --foreground: 0 0% 88%; /* #E0E0E0 */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 7%; /* #121212 */
-    --card-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 120 20% 12%; /* Unchanged - Darker Green */
-    --popover-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 100 35% 45%; /* Unchanged - Moss Green */
-    --primary-foreground: 100 15% 95%; /* Unchanged - Very Light Moss */
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 200 20% 30%; /* Unchanged - Dark Slate Blue */
-    --secondary-foreground: 200 10% 80%; /* Unchanged - Light Blue-Gray */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 120 15% 25%; /* Unchanged - Dark Muted Green-Gray */
-    --muted-foreground: 0 0% 63%; /* #A0A0A0 */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 90 25% 40%; /* Unchanged - Dark Olive/Moss */
-    --accent-foreground: 90 10% 85%; /* Unchanged - Light Olive */
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     
-    --destructive: 0 60% 50%; /* Unchanged - Adjusted Red for dark theme */
-    --destructive-foreground: 0 0% 98%; /* Unchanged */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 16%; /* #2A2A2A */
-    --input: 0 0% 4%; /* #0A0A0A - similar to cards or a bit darker */
-    --ring: 151 100% 38%; /* #00C37A - Emerald for focus rings */
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-    --radius: 1rem; /* Updated - Base radius for 16px */
+    --radius: 0.5rem;
 
     /* New Accent Colors */
     --accent-emerald: 151 100% 38%; /* #00C37A */
@@ -71,6 +71,36 @@ html {
     --chart-3: hsl(var(--accent-amber));
     --chart-4: 320 100% 50%; /* Bright Pink/Magenta */
     --chart-5: 180 100% 50%; /* Bright Cyan */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 
   .light {

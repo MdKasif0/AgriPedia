@@ -13,12 +13,8 @@ import StepByStepGuides from '@/components/homefeatures/StepByStepGuides';
 import SeedToHarvestTimeline from '@/components/homefeatures/SeedToHarvestTimeline';
 import CommunityFeatures from '@/components/homefeatures/CommunityFeatures';
 import LearnSection from '@/components/homefeatures/LearnSection';
-
-// Import the new AI feature components
-import SmartPlantRecommender from '@/components/homefeatures/SmartPlantRecommender';
-import DiseasePrediction from '@/components/homefeatures/DiseasePrediction';
-import AITips from '@/components/homefeatures/AITips';
-import AIGardenDesignAssistantTeaser from '@/components/homefeatures/AIGardenDesignAssistantTeaser';
+import { PlantHealthDetector } from '@/components/health-detector/PlantHealthDetector';
+import { Search, LineChart, Calendar, Users } from 'lucide-react';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -35,6 +31,33 @@ const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
 };
+
+const features = [
+  {
+    title: "Plant Identification",
+    description: "Identify plants instantly with our AI-powered image recognition. Get detailed information about any plant you encounter.",
+    icon: <Search className="w-6 h-6" />,
+    link: "/identify"
+  },
+  {
+    title: "Growth Tracker",
+    description: "Track your plant's journey with photos, notes, and growth analytics. Get AI-powered insights and personalized care suggestions.",
+    icon: <LineChart className="w-6 h-6" />,
+    link: "/journal"
+  },
+  {
+    title: "Plant Care Calendar",
+    description: "Never miss a watering or fertilizing schedule. Get personalized care reminders based on your plant's needs.",
+    icon: <Calendar className="w-6 h-6" />,
+    link: "/calendar"
+  },
+  {
+    title: "Community",
+    description: "Connect with fellow plant enthusiasts. Share your plant journey, get advice, and learn from others.",
+    icon: <Users className="w-6 h-6" />,
+    link: "/community"
+  }
+];
 
 export default function HomePage() {
   return (
@@ -86,6 +109,7 @@ export default function HomePage() {
           <motion.div variants={itemVariants}><SeedToHarvestTimeline /></motion.div>
           <motion.div variants={itemVariants}><CommunityFeatures /></motion.div>
           <motion.div variants={itemVariants}><LearnSection /></motion.div>
+          <motion.div variants={itemVariants}><PlantHealthDetector /></motion.div>
           {/* New AI Feature Components */}
           <motion.div variants={itemVariants}><SmartPlantRecommender /></motion.div>
           <motion.div variants={itemVariants}><DiseasePrediction /></motion.div>

@@ -1,39 +1,99 @@
-
 # AgriPedia 🌿
 
-AgriPedia is a smart digital encyclopedia for fruits and vegetables. It empowers users to identify produce through image recognition or text search, offering detailed insights including nutritional facts, cultivation guides, recipes, and much more.
+A modern, platform-adaptive web application for sustainable agriculture knowledge sharing and community building.
 
 **➡️ Live Demo: [https://agripedia.netlify.app/](https://agripedia.netlify.app/)**
 
-## ✨ Key Features
+## Features
 
-*   **🔍 Smart Identification:**
-    *   **Image Recognition:** Use your device camera to identify fruits and vegetables.
-    *   **Text Search:** Quickly find produce with autocomplete suggestions.
-*   **📚 Rich Information:**
-    *   **Detailed Profiles:** Scientific name, origin, local names, growing regions, and seasons.
-    *   **Nutritional Charts:** Interactive charts for macronutrients, vitamins, and minerals.
-    *   **Health Insights:** Benefits for health and potential allergy information.
-    *   **Cultivation Guides:** Step-by-step growing information and ideal conditions.
-*   **🍲 Recipe Ideas:** Discover healthy recipes for each produce item.
-*   **📱 User Experience:**
-    *   **Offline Access:** View previously visited produce details offline.
-    *   **Favorites:** Bookmark your favorite items for quick access.
-    *   **AgriPedia Tips:** Get daily interesting facts about agriculture.
-    *   **Responsive Design:** Seamless experience on desktop, tablet, and mobile.
-    *   **PWA Capable:** "Add to Home Screen" for a native app feel, with push notification capabilities.
-*   **🎨 Modern UI:**
-    *   Light and Dark mode support.
-    *   Clean, card-based interface with intuitive navigation.
+- 🌱 Platform-adaptive UI that feels native on both mobile and desktop
+- 🌓 Light and dark theme support
+- 📱 Mobile-first design with native-like interactions
+- 🖥️ Desktop-optimized layout with keyboard shortcuts
+- 🎨 Modern, clean visual design
+- ⚡ Fast performance with optimized animations
+- 🔍 Advanced search capabilities
+- 👥 Community features and knowledge sharing
+- 📊 Interactive data visualization
+- 📱 PWA support for offline access
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-*   **Framework:** Next.js (App Router)
-*   **Language:** TypeScript
-*   **UI Components:** ShadCN UI
-*   **Styling:** Tailwind CSS
-*   **AI Integration:** Google Genkit
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Shadcn/UI
+- Next Themes
 
-## 🎯 Goal
+## Getting Started
 
-AgriPedia aims to be a comprehensive, user-friendly, and informative resource for anyone curious about the world of fruits and vegetables, promoting healthier eating and agricultural awareness.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/agripedia.git
+cd agripedia
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+├── components/          # React components
+│   ├── ui/             # UI components
+│   └── layout/         # Layout components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── styles/             # Global styles
+```
+
+## Platform-Specific Features
+
+### Mobile
+- Bottom navigation bar
+- Swipe gestures
+- Pull-to-refresh
+- Full-screen modals
+- Touch-optimized inputs
+- Native-like animations
+
+### Desktop
+- Sidebar navigation
+- Keyboard shortcuts
+- Hover effects
+- Multi-column layouts
+- Resizable panels
+- Context menus
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Shadcn/UI](https://ui.shadcn.com/)
+- [Next Themes](https://github.com/pacocoursey/next-themes)

@@ -597,3 +597,82 @@ export function getAllCategoriesWithProduce(): { [categoryName: string]: Produce
     "Tuber & Root Crops": tuberAndRootCrops,
   };
 }
+
+interface NutritionInfo {
+  calories: string;
+  macronutrients: {
+    name: string;
+    value: number;
+    unit: string;
+  }[];
+  vitamins: {
+    name: string;
+    value: number;
+    unit: string;
+  }[];
+  minerals: {
+    name: string;
+    value: number;
+    unit: string;
+  }[];
+}
+
+// Helper function to convert string values to numbers
+function convertNutritionValues(nutrition: any): NutritionInfo {
+  return {
+    ...nutrition,
+    macronutrients: nutrition.macronutrients.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    })),
+    vitamins: nutrition.vitamins.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    })),
+    minerals: nutrition.minerals.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    }))
+  };
+}
+
+// Convert all produce data
+export const produceData = [
+  convertNutritionValues(ryegrassFodderCrop),
+  convertNutritionValues(silageMaizeFodderCrop),
+  convertNutritionValues(sorghumSudanGrassHybridsFodderCrop),
+  convertNutritionValues(cilantroCorianderHerbSpice),
+  convertNutritionValues(aloeVeraMedicinalPlant),
+  convertNutritionValues(arjunaTreeMedicinalPlant),
+  convertNutritionValues(ashwagandhaMedicinalPlant),
+  convertNutritionValues(brahmiMedicinalPlant),
+  convertNutritionValues(calendulaMedicinalPlant),
+  convertNutritionValues(chamomileMedicinalPlant),
+  convertNutritionValues(eucalyptusMedicinalPlant),
+  convertNutritionValues(fenugreekMedicinalPlant),
+  convertNutritionValues(ginsengMedicinalPlant),
+  convertNutritionValues(gotuKolaMedicinalPlant),
+  convertNutritionValues(lavenderMedicinalPlant),
+  convertNutritionValues(moringaMedicinalPlant),
+  convertNutritionValues(neemMedicinalPlant),
+  convertNutritionValues(tulsiMedicinalPlant),
+  convertNutritionValues(canolaOilCrop),
+  convertNutritionValues(castorOilCrop),
+  convertNutritionValues(coconutOilCrop),
+  convertNutritionValues(flaxOilCrop),
+  convertNutritionValues(groundnutOilCrop),
+  convertNutritionValues(jatrophaOilCrop),
+  convertNutritionValues(mustardOilCrop),
+  convertNutritionValues(oilPalmOilCrop),
+  convertNutritionValues(sesameOilCrop),
+  convertNutritionValues(sunflowerOilCrop),
+  convertNutritionValues(arrowrootTuberCrop),
+  convertNutritionValues(beetrootTuberCrop),
+  convertNutritionValues(cassavaTuberCrop),
+  convertNutritionValues(potatoTuberCrop),
+  convertNutritionValues(radishTuberCrop),
+  convertNutritionValues(sweetPotatoTuberCrop),
+  convertNutritionValues(taroTuberCrop),
+  convertNutritionValues(turnipTuberCrop),
+  convertNutritionValues(yamTuberCrop)
+] as ProduceInfo[];
