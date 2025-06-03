@@ -1,20 +1,38 @@
-import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import React, { useState } from 'react';
 import { PlantRecommendation } from '@/types/plant';
 import { motion } from 'framer-motion';
-import { CheckCircle2, AlertCircle } from 'lucide-react';
+import { AlertCircle, Filter } from 'lucide-react';
+import PlantCard from './PlantCard';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuCheckboxItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 interface PlantRecommendationResultsProps {
   recommendations: PlantRecommendation[];
   isLoading?: boolean;
 }
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
 };
 
 export default function PlantRecommendationResults({ recommendations, isLoading }: PlantRecommendationResultsProps) {
+  const [filters, setFilters] = useState({
+    fastGrowing: false,
+    beginnerFriendly: false,
+    indoor: false,
+  });
+
   if (isLoading) {
     return (
       <div className="text-center p-4">
@@ -33,59 +51,78 @@ export default function PlantRecommendationResults({ recommendations, isLoading 
     );
   }
 
+  const filteredRecommendations = recommendations.filter(rec => {
+    if (filters.fastGrowing && rec.plant.harvestTime.min > 60) return false;
+    if (filters.beginnerFriendly && rec.plant.difficultyLevel !== 'beginner') return false;
+    if (filters.indoor && !rec.plant.spaceRequirements.containerFriendly) return false;
+    return true;
+  });
+
+  const handleAddToCalendar = (plant: any) => {
+    // Implement calendar integration
+    console.log('Add to calendar:', plant);
+  };
+
+  const handleLearnMore = (plant: any) => {
+    // Implement learn more functionality
+    console.log('Learn more:', plant);
+  };
+
   return (
-    <div className="space-y-4">
-      <h3 className="text-lg font-semibold">Recommended Plants</h3>
-      <div className="grid gap-4">
-        {recommendations.map((recommendation, index) => (
-          <motion.div
-            key={recommendation.plant.id}
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: index * 0.1 }}
-          >
-            <Card className="overflow-hidden">
-              <div className="flex">
-                <div className="w-24 h-24 bg-muted">
-                  <img
-                    src={recommendation.plant.imageUrl}
-                    alt={recommendation.plant.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1 p-4">
-                  <CardHeader className="p-0">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <CardTitle className="text-lg">{recommendation.plant.name}</CardTitle>
-                        <p className="text-sm text-muted-foreground">{recommendation.plant.scientificName}</p>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <span className="text-sm font-medium">{recommendation.matchScore}%</span>
-                        <CheckCircle2 className="h-4 w-4 text-green-500" />
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-0 mt-2">
-                    <p className="text-sm text-muted-foreground mb-2">{recommendation.plant.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {recommendation.matchReasons.map((reason, i) => (
-                        <span
-                          key={i}
-                          className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-primary/10 text-primary"
-                        >
-                          {reason}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-        ))}
+    <div className="space-y-6">
+      <div className="flex justify-between items-center">
+        <h3 className="text-lg font-semibold">Recommended Plants</h3>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm">
+              <Filter className="w-4 h-4 mr-2" />
+              Filter
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuCheckboxItem
+              checked={filters.fastGrowing}
+              onCheckedChange={(checked) => 
+                setFilters(prev => ({ ...prev, fastGrowing: checked }))
+              }
+            >
+              Fast Growing
+            </DropdownMenuCheckboxItem>
+            <DropdownMenuCheckboxItem
+              checked={filters.beginnerFriendly}
+              onCheckedChange={(checked) => 
+                setFilters(prev => ({ ...prev, beginnerFriendly: checked }))
+              }
+            >
+              Beginner Friendly
+            </DropdownMenuCheckboxItem>
+            <DropdownMenuCheckboxItem
+              checked={filters.indoor}
+              onCheckedChange={(checked) => 
+                setFilters(prev => ({ ...prev, indoor: checked }))
+              }
+            >
+              Indoor Plants
+            </DropdownMenuCheckboxItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
+
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        {filteredRecommendations.map((recommendation) => (
+          <PlantCard
+            key={recommendation.plant.id}
+            plant={recommendation.plant}
+            onAddToCalendar={handleAddToCalendar}
+            onLearnMore={handleLearnMore}
+          />
+        ))}
+      </motion.div>
     </div>
   );
 } 
