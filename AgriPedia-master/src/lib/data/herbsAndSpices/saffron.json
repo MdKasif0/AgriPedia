@@ -1,0 +1,67 @@
+{
+  "id": "saffron",
+  "commonName": "Saffron",
+  "scientificName": "Crocus sativus",
+  "image": "https://images.unsplash.com/photo-1541509401890-869f989ac69a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Saffron is a spice derived from the flower of Crocus sativus, commonly known as the 'saffron crocus'. The vivid crimson stigmas and styles, called threads, are collected and dried for use mainly as a seasoning and colouring agent in food. Saffron is one of the world's most expensive spices by weight.",
+  "origin": "Southwest Asia (likely Greece, Crete, or Persia/Iran).",
+  "localNames": ["Kesar (Hindi)", "Safuran (Japanese)", "Azafrán (Spanish)", "Safran (French)"],
+  "regions": ["Iran (major producer)", "India (Kashmir)", "Spain", "Greece", "Morocco", "Italy", "Azerbaijan"],
+  "seasons": ["Autumn-flowering perennial; corms are planted in summer, flowers are harvested in mid to late autumn."],
+  "nutrition": {
+    "calories": "310 kcal per 100g (dried)",
+    "macronutrients": [
+      { "name": "Protein", "value": 11.4, "unit": "g" },
+      { "name": "Carbohydrates", "value": 65.4, "unit": "g" },
+      { "name": "Fat", "value": 5.9, "unit": "g" },
+      { "name": "Fiber", "value": 3.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 80.8, "unit": "mg", "rdi": "90%" },
+      { "name": "Riboflavin (B2)", "value": 0.267, "unit": "mg", "rdi": "21%" },
+      { "name": "Vitamin B6", "value": 1.01, "unit": "mg", "rdi": "78%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 28.408, "unit": "mg", "rdi": "1235%" },
+      { "name": "Iron", "value": 11.10, "unit": "mg", "rdi": "62%" },
+      { "name": "Potassium", "value": 1724, "unit": "mg", "rdi": "37%" },
+      { "name": "Magnesium", "value": 264, "unit": "mg", "rdi": "63%" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains powerful antioxidants like crocin, crocetin, safranal, and kaempferol.",
+    "May improve mood and treat depressive symptoms (research ongoing).",
+    "May have cancer-fighting properties.",
+    "May reduce PMS symptoms.",
+    "May act as an aphrodisiac."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Saffron Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to saffron is rare but can occur, causing symptoms like skin rashes, asthma, or allergic rhinitis. High doses can also be toxic."
+    }
+  ],
+  "cultivationProcess": "Saffron cultivation is labor-intensive. It involves planting corms (bulb-like structures) in well-drained soil. The flowers are hand-picked in autumn, and then the stigmas (threads) are carefully separated from the flower by hand and dried.",
+  "growthDuration": "Corms are planted in summer. Flowers emerge in autumn (October-November) and are harvested over a few weeks. Each corm produces flowers for several years.",
+  "sustainabilityTips": [
+    "Requires specific climatic conditions, limiting widespread cultivation.",
+    "Traditional, manual harvesting methods have low direct environmental impact but high labor input.",
+    "Water management is crucial as it prefers dry conditions during dormancy."
+  ],
+  "carbonFootprintInfo": "The carbon footprint is mainly associated with land use, water for irrigation in some areas, and transportation due to its high value and specialized production regions. The drying process also consumes energy.",
+  "uses": ["culinary_spice_flavoring_coloring_rice_dishes_desserts_beverages", "traditional_medicine_antidepressant_antioxidant", "dyeing_fabric_historically", "perfumery"],
+  "originAndDomesticationHistory": "Saffron (Crocus sativus) is believed to have originated from a wild progenitor, Crocus cartwrightianus, in Crete or Central Asia. It has been cultivated for over 3,500 years and was highly prized in ancient Minoan, Greek, Roman, and Persian cultures for its color, aroma, and medicinal properties. It spread along trade routes throughout Eurasia.",
+  "climaticRequirements": {
+    "temperature": "Mediterranean climate preferred. Requires cold winters and hot, dry summers. Corms need a period of dormancy in summer. Tolerates frost during dormancy but flowers are sensitive.",
+    "rainfall": "Moderate rainfall (300-400mm) during autumn and spring. Prefers dry conditions during summer dormancy. Good drainage is essential.",
+    "altitude": "Can be grown at altitudes from sea level up to 1500-2000m, with specific microclimates being important."
+  },
+  "soilPreferences": "Prefers well-drained, calcareous, loamy, or sandy-loam soils with a neutral to slightly alkaline pH (6.5-8.0). Rich in organic matter is beneficial. Excellent drainage is critical to prevent corm rot.",
+  "irrigationAndWaterNeeds": "Typically relies on autumn and spring rains. Supplemental irrigation may be needed during dry spells in the growing season (autumn/spring). Corms must be kept dry during their summer dormancy period.",
+  "plantingAndHarvestCycles": "Corms are planted in late summer (July-August). Flowers emerge in mid to late autumn (October-November) and are harvested daily, usually in the early morning when flowers are still closed or just opening to protect the stigmas. Each flower yields only three stigmas. After harvest, plants continue to grow leaves through winter and spring, then go dormant in summer.",
+  "pestAndDiseaseManagement": "Major threats include corm rot (caused by fungi like Fusarium, Rhizoctonia), which is exacerbated by poor drainage. Pests include rodents, rabbits, and certain insects that may feed on corms or flowers. Management involves careful site selection, well-drained soil, corm treatment before planting, and crop rotation.",
+  "postHarvestHandling": "The harvested stigmas (threads) must be carefully dried immediately after picking to preserve their color, flavor, and aroma, and to prevent spoilage. Drying is done by gentle heat (sun-drying, traditional braziers, or modern dehydrators). Properly dried saffron is then stored in airtight containers away from light and moisture.",
+  "majorProducingCountriesOrRegions": ["Iran (produces ~90% of world's saffron)", "India (Kashmir region)", "Spain (La Mancha region)", "Greece (Kozani region)", "Morocco", "Azerbaijan", "Italy"],
+  "marketValueAndGlobalDemand": "Saffron is the world's most expensive spice by weight due to the labor-intensive harvesting process (around 150,000 flowers are needed for 1 kg of saffron). Demand is consistently high for its use in culinary, medicinal, and cosmetic applications. Adulteration can be an issue in the market. Its value is determined by quality grades based on color (crocin content), flavor (picrocrocin), and aroma (safranal)."
+}

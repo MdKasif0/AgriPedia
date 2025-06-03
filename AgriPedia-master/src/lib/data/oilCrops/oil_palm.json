@@ -1,0 +1,59 @@
+{
+  "id": "oil_palm",
+  "commonName": "Oil Palm",
+  "scientificName": "Elaeis guineensis",
+  "image": "https://images.unsplash.com/photo-1530708040252-d3090f0f5c63?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The oil palm is a species of palm commonly called African oil palm or macaw-fat. It is the principal source of palm oil. It is native to west and southwest Africa. The palm fruit is reddish, about the size of a large plum, and grows in large bunches. Palm oil is extracted from the pulp of the fruit (mesocarp) and palm kernel oil from the kernel.",
+  "origin": "West and Southwest Africa (specifically the tropical rainforest belt).",
+  "localNames": ["African Oil Palm (English)", "Palma de aceite (Spanish)", "Palmier à huile (French)", "Abura yashi (Japanese)"],
+  "regions": ["Indonesia (leading producer)", "Malaysia", "Thailand", "Nigeria", "Colombia", "Ecuador", "Papua New Guinea", "Other tropical regions in Africa, Asia, and Latin America"],
+  "seasons": ["Perennial palm; fruits year-round, with peak harvest periods varying by region, generally with continuous harvesting cycles."],
+  "nutrition": {
+    "calories": "Palm Oil: 884 kcal per 100g. Palm Kernel Oil: 862 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Fruit pulp contains some, but primarily oil" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Fruit pulp contains some, but primarily oil" },
+      { "name": "Fat", "unit": "g", "value": "Palm Oil: 100 (approx. 50% saturated, 40% monounsaturated, 10% polyunsaturated). Palm Kernel Oil: 100 (approx. 80% saturated)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E (Tocotrienols and Tocopherols)", "unit": "mg", "rdi": "Palm Oil: 15.94 (106% as alpha-tocopherol equivalent)" },
+      { "name": "Vitamin A (from Carotenoids in crude palm oil)", "unit": "µg", "rdi": "Crude Palm Oil: Significant" }
+    ],
+    "minerals": [],
+    "healthBenefits": [
+      "Palm oil is a rich source of Vitamin E (tocotrienols and tocopherols).",
+      "Crude (red) palm oil is rich in carotenoids (precursors to Vitamin A).",
+      "Provides a very high yield of oil per hectare, making it an efficient oil crop.",
+      "Used in a vast array of food products, cosmetics, and industrial applications."
+    ],
+    "potentialAllergies": [
+      {
+        "name": "Palm Oil Sensitivity",
+        "severity": "Rare",
+        "details": "Allergy to palm oil is very rare. Concerns around palm oil are more often related to its high saturated fat content (for refined palm oil) and environmental issues associated with its cultivation."
+      }
+    ],
+    "cultivationProcess": "Oil palms are grown from seeds, often in large plantations. They require high rainfall, warm temperatures, and abundant sunlight. Fruits are harvested in bunches when ripe.",
+    "growthDuration": "Perennial palm. Begins to bear fruit 3-4 years after planting. Reaches peak production around 10-20 years and can be productive for 25-30 years.",
+    "sustainabilityTips": [
+      "Sustainable palm oil production (e.g., RSPO certification) aims to minimize deforestation, protect biodiversity, and ensure fair labor practices.",
+      "Improving yields on existing plantations can reduce pressure for new land clearing.",
+      "Use of waste products (empty fruit bunches, palm oil mill effluent) for energy or compost."
+    ],
+    "carbonFootprintInfo": "The carbon footprint of palm oil is highly controversial due to its association with deforestation of rainforests and peatlands, which releases large amounts of stored carbon. Sustainably produced palm oil has a significantly lower footprint. Palm oil's high yield per hectare can be an advantage over other oils if grown sustainably.",
+    "uses": ["oil_production_palm_oil_from_mesocarp_for_cooking_margarine_shortening_food_products_cosmetics_biofuel", "oil_production_palm_kernel_oil_from_kernel_for_food_confectionery_cosmetics_soaps_detergents", "animal_feed_palm_kernel_cake", "industrial_various_derivatives_for_surfactants_lubricants"],
+    "originAndDomesticationHistory": "The African oil palm (Elaeis guineensis) originated in the tropical rainforest belt of West and Southwest Africa. It has been used by local populations for thousands of years. Its commercial cultivation expanded dramatically in the 20th century, particularly in Southeast Asia (Malaysia and Indonesia), due to its high oil yield.",
+    "climaticRequirements": {
+      "temperature": "Tropical palm. Optimal growing temperatures are 24-30°C. Requires consistent high temperatures and humidity. Does not tolerate frost.",
+      "rainfall": "Requires high and well-distributed rainfall, ideally 2000-3000mm annually. Cannot tolerate prolonged drought.",
+      "altitude": "Primarily a lowland crop, typically grown from sea level up to 500m."
+    },
+    "soilPreferences": "Prefers deep, well-drained, fertile alluvial or loamy soils rich in organic matter. Slightly acidic to neutral pH (5.0-7.0) is optimal. Tolerates a range of tropical soils but not waterlogged or very sandy/lateritic soils without proper management.",
+    "irrigationAndWaterNeeds": "While it requires high rainfall, mature plantations are often rain-fed in suitable climates. Supplemental irrigation may be used in nursery stages or in areas with distinct dry seasons to maintain yields. Good water management is crucial.",
+    "plantingAndHarvestCycles": "Propagated from selected high-yielding seeds, grown in nurseries for about a year before field planting. Begins bearing fruit 3-4 years after planting. Fruit bunches are harvested year-round, typically every 10-14 days, when fruits are ripe (indicated by color change and some loose fruits). Harvesting is done manually using long poles with sickles.",
+    "pestAndDiseaseManagement": "Major pests include rhinoceros beetle, bagworms, and rats. Major diseases include Ganoderma basal stem rot (a serious fungal disease), Fusarium wilt, and various bud/fruit rots. Integrated pest management involves biological control, good field sanitation, resistant planting material (where available), and sometimes chemical control.",
+    "postHarvestHandling": "Harvested fresh fruit bunches (FFB) must be processed quickly (within 24-48 hours) to prevent enzymatic degradation and buildup of free fatty acids. Processing involves sterilization (steam), threshing (to separate fruits from bunches), digestion (mashing fruit pulp), pressing (to extract crude palm oil from pulp), and clarification. Kernels are separated, dried, and cracked to extract palm kernel oil.",
+    "majorProducingCountriesOrRegions": ["Indonesia (world's largest producer)", "Malaysia (second largest producer)", "Thailand", "Nigeria", "Colombia", "Ecuador", "Papua New Guinea", "Other countries in tropical Africa, Asia, and Latin America"],
+    "marketValueAndGlobalDemand": "Palm oil is the most widely consumed vegetable oil globally due to its high yield, low cost, and versatility. Demand is massive for use in food products (cooking oil, margarine, processed foods), cosmetics, soaps, detergents, and as a feedstock for biodiesel. The industry faces significant scrutiny over sustainability issues (deforestation, biodiversity loss, social impacts)."
+  }
+}

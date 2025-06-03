@@ -1,0 +1,229 @@
+{
+  "id": "brinjal-eggplant",
+  "commonName": "Brinjal (Eggplant / Aubergine)",
+  "scientificName": "Solanum melongena",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Brinjal.jpg",
+  "description": "A species of nightshade grown worldwide for its edible fruit. Most commonly known for its glossy, deep purple skin, the fruit can also be white, green, lavender, or striped. The spongy, absorbent flesh has a unique texture and mild flavor, making it versatile in many cuisines. Botanically classified as a berry, it is typically used as a vegetable in cooking.",
+  "origin": "Indian subcontinent or Southeast Asia (likely ancient Indo-Burma region).",
+  "localNames": [
+    "Eggplant (United States, Australia, Canada)",
+    "Aubergine (United Kingdom, Ireland, France, Germany, Netherlands)",
+    "Berenjena (Spanish)",
+    "Melanzana (Italian)",
+    "Baingan (बैंगन - Hindi)",
+    "Brinjal (South Asia, South Africa)",
+    "Kathirikai (கத்திரிக்காய் - Tamil)",
+    "Vankaya (వంకాయ - Telugu)",
+    "Bademjan (بادمجان - Persian)",
+    "Patlıcan (Turkish)",
+    "Nasu (茄子 - Japanese)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "India (second largest producer)",
+    "Egypt",
+    "Turkey",
+    "Iran",
+    "Indonesia",
+    "Italy",
+    "Spain",
+    "Japan",
+    "Philippines",
+    "United States (Florida, California, Georgia, New Jersey)"
+  ],
+  "seasons": [
+    "Primarily Summer and Early Autumn in temperate climates. Available year-round in many markets due to greenhouse cultivation and global sourcing from tropical/subtropical regions."
+  ],
+  "nutrition": {
+    "calories": "25 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.98,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 5.88,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.18,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Folate (B9)",
+        "value": 22,
+        "unit": "µg",
+        "rdi": "5-6%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 3.5,
+        "unit": "µg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 2.2,
+        "unit": "mg",
+        "rdi": "2-4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.232,
+        "unit": "mg",
+        "rdi": "10-12%"
+      },
+      {
+        "name": "Potassium",
+        "value": 229,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.081,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which aids digestion, promotes bowel regularity, and can help manage blood sugar levels and cholesterol.",
+    "Contains antioxidants, particularly nasunin (an anthocyanin found in the purple skin), which has been studied for its potential to protect brain cell membranes from damage.",
+    "Low in calories and fat, making it a suitable choice for weight management diets.",
+    "Provides some manganese, important for metabolism, bone health, and antioxidant enzyme function.",
+    "May have benefits for heart health due to its fiber and antioxidant content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nightshade Sensitivity / Eggplant Allergy",
+      "severity": "Mild to Moderate (for sensitive individuals)",
+      "details": "Eggplant belongs to the nightshade family (Solanaceae). Some individuals may have sensitivities or allergies to nightshades, experiencing symptoms like itching, hives, digestive upset (nausea, diarrhea), or joint pain. True allergy is rare but can occur. Symptoms might also include oral allergy syndrome."
+    },
+    {
+      "name": "Solanine and other alkaloids",
+      "severity": "Low (in normal culinary amounts)",
+      "details": "Eggplant contains small amounts of solanum alkaloids like solanine, especially if the fruit is overripe, improperly stored, or if leaves/flowers are consumed (which are not typically eaten). Cooking usually reduces these compounds to safe levels. Symptoms of high intake could include gastrointestinal distress or neurological issues, but this is very rare from consuming normally prepared eggplant fruit."
+    }
+  ],
+  "cultivationProcess": "Eggplant is a warm-season crop. Seeds are usually started indoors 8-10 weeks before the last expected frost in temperate climates, or sown directly in warmer regions when soil temperatures are consistently above 21°C (70°F). It requires well-drained, fertile soil rich in organic matter and full sun exposure for optimal growth and fruit production. Plants are transplanted after the danger of frost has passed. Taller varieties may need staking or caging for support as fruits develop. Consistent watering is crucial, especially during flowering and fruiting. Fruits are harvested when they reach full size for the variety, have a glossy skin, and are firm to the touch, but before the seeds inside begin to harden and the flesh becomes spongy or bitter. More details in specific sections.",
+  "growthDuration": "Typically 65 to 80 days from transplanting to the first harvest, depending on the cultivar and growing conditions. Harvesting can continue for several weeks if plants are healthy and conditions remain favorable.",
+  "sustainabilityTips": [
+    "Store eggplants at cool room temperature (around 10-13°C or 50-55°F) for a few days, or in the refrigerator crisper drawer for up to a week. However, they are sensitive to chilling injury if stored too cold for too long, which can cause browning and pitting.",
+    "Salting eggplant slices or cubes before cooking and letting them sit for about 30 minutes can draw out excess moisture and some bitterness for certain varieties or cooking methods (like frying). Pat dry before cooking.",
+    "Eggplant is very versatile: it can be grilled, roasted, fried, baked, steamed, stuffed, or used in stews, curries, dips (like baba ghanoush), and layered dishes (like moussaka or eggplant parmesan)."
+  ],
+  "carbonFootprintInfo": "Moderate, typically around 0.5-0.8 kg CO2e/kg for field-grown eggplant. Greenhouse production, especially out-of-season or in colder climates requiring heating, can significantly increase this footprint due to higher energy consumption. Transportation also adds to the impact for non-local produce.",
+  "uses": [
+    "culinary_vegetable_baked_roasted_grilled_fried_steamed_stuffed_mashed_pureed",
+    "culinary_ingredient_moussaka_ratatouille_baingan_bharta_baba_ghanoush_eggplant_parmesan_caponata_curries_stews_dips_pickles",
+    "ornamental_plant_some_varieties_with_attractive_fruit_or_foliage_are_grown_for_ornamental_purposes"
+  ],
+  "originAndDomesticationHistory": "Eggplant (Solanum melongena) is native to the Indian subcontinent (present-day India, Myanmar region) or possibly Southeast Asia. It has been cultivated in India and China for over 1500 years, with the first known written records from China dating back to the 5th century AD (Qimin Yaoshu agricultural treatise). From its center of origin, it spread eastwards to Japan and westwards to Persia (Iran) and the Middle East through Arab traders. The Moors introduced eggplant into Spain (Andalusia) during the Middle Ages, from where it spread to other parts of Europe, including Italy. Initially, it was met with some suspicion in Europe due to its relation to other nightshade plants known for their toxicity. However, it gradually became more widely accepted and integrated into Mediterranean cuisine from the 16th century onwards. European colonizers later introduced eggplant to the Americas. Numerous cultivars varying in size, shape (oval, elongated, round), and color (purple, white, green, lavender, striped) have been developed worldwide.",
+  "climaticRequirements": {
+    "temperature": "Eggplant is a warm-season crop that thrives in hot weather. Optimal temperatures for its growth and fruit development are between 22°C and 30°C (72°F to 86°F). It requires a long, warm growing season. Eggplant is very sensitive to frost, and growth is severely hindered at temperatures below 15°C (59°F). Consistent warmth is crucial for good fruit set and development.",
+    "rainfall": "Requires moderate and consistent rainfall or irrigation, typically around 600mm to 1000mm, during the growing season. Consistent soil moisture is important, but good drainage is essential to prevent root diseases. High humidity can sometimes increase the risk of certain fungal diseases affecting foliage and fruit.",
+    "altitude": "Typically cultivated in lowlands to moderate altitudes in tropical and subtropical regions where warm temperatures and sufficient sunlight are available."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils that are rich in organic matter (at least 2-3%). Good soil aeration is important for healthy root development. The ideal soil pH range is between 5.5 and 6.8 (slightly acidic). Heavy clay soils or poorly drained soils are not suitable and can lead to root rot. Soils should warm up quickly in the spring.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during flowering and fruit development. Water stress during these critical periods can lead to poor fruit set, reduced fruit size, and bitterness in the fruit. Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping foliage dry, which helps reduce disease risk. About 25-40mm (1-1.5 inches) of water per week is a general guideline, depending on soil type and weather conditions. Avoid waterlogged conditions.",
+  "plantingAndHarvestCycles": "Eggplant is propagated from seeds. In temperate climates, seeds are usually started indoors in trays or pots 8-10 weeks before the last expected frost date, as they require warm soil for germination (ideally 24-32°C or 75-90°F). Seedlings are transplanted to the field or garden once the danger of frost has passed and the weather is consistently warm. In warmer, tropical or subtropical regions, seeds can be sown directly. Plants are typically spaced 18-24 inches apart in rows that are 30-36 inches apart. Full sun exposure (at least 6-8 hours per day) is essential for good fruit production. Eggplants generally mature in 65 to 80 days from transplanting, depending on the specific cultivar. Fruits are harvested by hand when they reach full size for the variety, have a glossy skin, and are firm to the touch. The calyx (the green cap at the top of the fruit) should still look fresh. If the skin appears dull or the fruit feels soft or spongy, it may be overripe, and the seeds inside may have started to harden and the flesh may be bitter. Fruits should be cut from the plant with about an inch of stem attached using a sharp knife or pruning shears. Regular harvesting of mature fruits encourages further fruit production over a period of several weeks or months, until cool weather or frost stops plant growth.",
+  "pestAndDiseaseManagement": "Common Pests: Flea beetles are a major pest, especially of young plants, causing numerous small holes in the leaves. Aphids can transmit viruses and cause feeding damage. Spider mites can be problematic in hot, dry conditions. Whiteflies, Colorado potato beetle (which can also attack eggplant), eggplant lace bug, and various caterpillars and borers (such as the fruit and shoot borer, Leucinodes orbonalis, a particularly destructive pest in Asia) can also cause significant damage. Common Diseases: Verticillium wilt is a common and serious soilborne fungal disease that can cause wilting and death of plants. Fusarium wilt and bacterial wilt can also occur. Phytophthora blight can affect stems and fruit. Anthracnose, powdery mildew, various fruit rots, and tobacco mosaic virus are other potential diseases. Management Strategies: Implementing Integrated Pest Management (IPM) is crucial. This includes crop rotation (avoid planting eggplant or other nightshades like tomatoes, peppers, or potatoes in the same spot for 3-4 years). Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Ensuring proper plant spacing and pruning for good air circulation. Practicing effective weed control. Using row covers on young plants to protect against early flea beetle infestations (remove during flowering for pollination). Controlling insect vectors like aphids and whiteflies to limit virus spread. Removing and destroying infected plant material promptly. Applying appropriate and approved fungicides, bactericides, or insecticides when necessary, based on scouting, pest/disease pressure, and economic thresholds.",
+  "postHarvestHandling": "Eggplants should be handled carefully as they bruise easily. They are sensitive to chilling injury if stored at temperatures that are too low (generally below 10°C or 50°F), which can manifest as surface pitting, browning of the flesh and seeds, and increased susceptibility to decay. The ideal storage conditions for most eggplant varieties are at cool room temperatures, around 10-13°C (50-55°F), with high relative humidity (90-95%). Under these conditions, they can typically be stored for about 1-2 weeks. Do not wash eggplants before storing unless they will be dried thoroughly, as excess moisture can promote fungal growth. If refrigeration is necessary, store in the crisper drawer for a shorter period. Eggplants should not be stored near ethylene-producing fruits like apples or bananas, as ethylene can accelerate their deterioration.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "India (second largest producer)",
+    "Egypt",
+    "Turkey",
+    "Iran",
+    "Indonesia",
+    "Italy",
+    "Spain",
+    "Japan",
+    "Philippines",
+    "United States (major production in states like Florida, California, Georgia, and New Jersey)",
+    "Mexico"
+  ],
+  "marketValueAndGlobalDemand": "Eggplant is a major vegetable crop globally, with particular importance in Asian (Chinese, Indian, Southeast Asian), Middle Eastern, and Mediterranean cuisines. China and India are the dominant producers worldwide. There is significant international trade in fresh eggplants. The demand is high for various types and sizes, including large oval or globe eggplants, long slender Japanese or Chinese eggplants, and small round Indian or Thai eggplants. Eggplant is valued for its versatility in cooking, its unique texture which readily absorbs flavors, and its nutritional contributions. The market value can fluctuate based on variety, quality, size, seasonality, and origin. There is also a market for processed eggplant products, such as frozen, pickled, or pre-prepared meal components.",
+  "staticRecipes": [
+    {
+      "name": "Baingan Bharta (Smoky Mashed Eggplant)",
+      "description": "A popular North Indian dish made by roasting eggplant over an open flame, then mashing and cooking it with spices.",
+      "ingredients": [
+        "1 large eggplant (brinjal)",
+        "1 onion, finely chopped",
+        "2 tomatoes, finely chopped",
+        "1-2 green chilies, minced",
+        "1 inch ginger, grated",
+        "2-3 cloves garlic, minced",
+        "1/2 tsp cumin seeds",
+        "1/4 tsp turmeric powder",
+        "1/2 tsp coriander powder",
+        "Salt to taste",
+        "2 tbsp oil",
+        "Fresh cilantro, chopped, for garnish"
+      ],
+      "steps": [
+        "Roast the eggplant directly over a gas flame (or under a broiler, or bake at 400°F until very soft), turning occasionally, until the skin is charred and blistered and the flesh is soft. Let cool slightly.",
+        "Peel off the charred skin, mash the eggplant pulp. Set aside.",
+        "Heat oil in a pan. Add cumin seeds; when they splutter, add chopped onion and sauté until golden brown.",
+        "Add ginger, garlic, and green chilies. Sauté for a minute.",
+        "Add chopped tomatoes and cook until softened and oil starts to separate.",
+        "Add turmeric powder, coriander powder, and salt. Mix well.",
+        "Add the mashed eggplant. Cook, stirring, for 5-7 minutes until well combined and heated through.",
+        "Garnish with fresh cilantro and serve hot with roti or naan."
+      ]
+    },
+    {
+      "name": "Eggplant Parmesan (Parmigiana di Melanzane)",
+      "description": "A classic Italian baked dish with layers of fried eggplant slices, tomato sauce, mozzarella, and Parmesan cheese.",
+      "ingredients": [
+        "2 medium eggplants, sliced 1/4-inch thick",
+        "Salt",
+        "Olive oil for frying",
+        "1 (28 oz) can crushed tomatoes or marinara sauce",
+        "8 oz fresh mozzarella, sliced",
+        "1/2 cup grated Parmesan cheese",
+        "Fresh basil leaves"
+      ],
+      "steps": [
+        "Optional: Salt eggplant slices, let sit for 30 minutes to draw out moisture, then pat dry with paper towels.",
+        "Heat olive oil in a large skillet. Fry eggplant slices in batches until golden brown on both sides. Drain on paper towels.",
+        "Preheat oven to 375°F (190°C).",
+        "In a baking dish, spread a thin layer of tomato sauce. Arrange a layer of fried eggplant slices, followed by a layer of mozzarella, a sprinkle of Parmesan, and a few basil leaves. Repeat layers, ending with sauce and Parmesan.",
+        "Bake for 30-40 minutes, or until bubbly and cheese is melted and golden.",
+        "Let rest for 10-15 minutes before serving."
+      ]
+    },
+    {
+      "name": "Grilled Eggplant with Balsamic Glaze",
+      "description": "Simple and flavorful grilled eggplant, perfect as a side dish or appetizer.",
+      "ingredients": [
+        "1 large eggplant, sliced into 1/2-inch thick rounds",
+        "3 tbsp olive oil",
+        "Salt and freshly ground black pepper",
+        "2 tbsp balsamic glaze",
+        "Fresh parsley or basil, chopped, for garnish"
+      ],
+      "steps": [
+        "Preheat grill to medium-high.",
+        "Brush eggplant slices on both sides with olive oil. Season with salt and pepper.",
+        "Grill eggplant slices for 4-5 minutes per side, or until tender and well-marked.",
+        "Arrange grilled eggplant on a platter. Drizzle with balsamic glaze.",
+        "Garnish with fresh parsley or basil before serving. Can be served warm or at room temperature."
+      ]
+    }
+  ]
+}

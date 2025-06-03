@@ -1,0 +1,226 @@
+{
+  "id": "bottle-gourd",
+  "commonName": "Bottle Gourd (Lauki / Calabash)",
+  "scientificName": "Lagenaria siceraria",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Lauki.JPG",
+  "description": "A vine grown for its fruit, which can be harvested young and used as a vegetable, or harvested mature, dried, and used as a bottle, utensil, pipe, or musical instrument. The fresh, young fruit has a light green smooth skin and a white, spongy inner flesh with a mild flavor that absorbs other spices well. It is one of the earliest cultivated plants.",
+  "origin": "Dual origin debated: Wild forms found in Africa (likely Zimbabwe/South Africa) are considered ancestral. Archaeological evidence also shows its presence and likely independent domestication in Asia (China, Japan, Thailand) and the Americas (Peru, Mexico) dating back thousands of years.",
+  "localNames": [
+    "Lauki (लौकी - Hindi)",
+    "Calabash (English - often for mature, dried gourd)",
+    "Doodhi / Dudhi (दूधी - Marathi, Gujarati)",
+    "Ghia (घिया - Hindi)",
+    "Opo Squash (English - some varieties)",
+    "Sorakaya (సొరకాయ - Telugu)",
+    "Churakka (ചുരക്ക - Malayalam)",
+    "Húlu (葫芦 - Chinese)",
+    "Yugao (夕顔 - Japanese)"
+  ],
+  "regions": [
+    "India (major producer and consumer)",
+    "China",
+    "Southeast Asia (Thailand, Vietnam, Indonesia, Philippines, Malaysia)",
+    "Africa (Nigeria, Egypt, across the continent)",
+    "Tropical Americas (Mexico, Brazil, Peru, Caribbean)",
+    "Pakistan",
+    "Bangladesh",
+    "Japan"
+  ],
+  "seasons": [
+    "Primarily Summer and Rainy season in tropical and subtropical areas. Can be grown year-round in some tropical climates with multiple cropping cycles."
+  ],
+  "nutrition": {
+    "calories": "14 kcal per 100g (raw, edible portion)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.62,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.39,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.02,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 10.1,
+        "unit": "mg",
+        "rdi": "11-17%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 6,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Choline",
+        "value": "Significant amounts",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 150,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Calcium",
+        "value": 26,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.7,
+        "unit": "mg",
+        "rdi": "6-9%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Very high in water content (around 92-96%), making it extremely hydrating, cooling, and very low in calories, which is beneficial for weight management.",
+    "Aids in digestion and can help relieve constipation due to its fiber and water content.",
+    "Traditionally used in Ayurveda for its calming effect on the nervous system, diuretic properties (helps flush out toxins), and to treat conditions like acidity, indigestion, and liver ailments.",
+    "Good source of choline, important for brain health and nerve function.",
+    "May help in reducing fatigue and promoting sleep when consumed as juice."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Bitterness Caution (Cucurbitacin Toxicity)",
+      "severity": "High (if extremely bitter fruit consumed)",
+      "details": "Occasionally, bottle gourds can produce high levels of cucurbitacins, making them extremely bitter. Ingesting such bitter fruit can lead to severe stomach pain, vomiting, diarrhea, and in rare cases, can be life-threatening. If a bottle gourd tastes unusually bitter, it should be discarded immediately and not consumed. This bitterness is more common in wild or stressed plants."
+    }
+  ],
+  "cultivationProcess": "Bottle gourd is a warm-season vine. Seeds are typically sown directly in the field after the last frost when soil temperatures are warm, or started indoors in cooler climates for later transplanting. It prefers well-drained, fertile soil rich in organic matter and requires full sun. The vigorous vines need strong trellising or support to climb, or can be allowed to ramble on the ground if ample space is available (though trellising improves fruit quality and ease of harvest). Regular and ample watering is crucial, especially during fruit development. Young, tender fruits are harvested when their skin is smooth and pale green; size varies by variety. Overmature fruits become hard and are typically used for making containers or instruments rather than for consumption as a vegetable.",
+  "growthDuration": "Typically 50 to 90 days from sowing to the first harvest of young, edible fruit, depending on the specific cultivar and growing conditions. Mature gourds for drying take much longer, often 120-180 days or until the vine senesces.",
+  "sustainabilityTips": [
+    "Store young bottle gourd in the refrigerator crisper drawer for up to a week. Handle with care as the skin is tender and bruises easily.",
+    "Peel before cooking. The flesh is spongy and cooks quickly, readily absorbing flavors from spices and other ingredients.",
+    "Bottle gourd is widely used in Indian cuisine for curries (e.g., Lauki Kofta, Lauki Chana Dal), soups, raita, and even desserts like Lauki Halwa. Its ability to grow vigorously and produce abundantly makes it a sustainable food source in suitable climates.",
+    "Mature, dried gourds are a sustainable alternative to plastic or ceramic for containers and utensils."
+  ],
+  "carbonFootprintInfo": "Low to moderate (estimated 0.3-0.7 kg CO2e/kg) when grown and consumed locally or transported by land. Its ability to be stored (especially mature gourds) can reduce the need for rapid, high-carbon transport for out-of-season availability to some extent.",
+  "uses": [
+    "culinary_vegetable_young_fruit_cooked_in_curries_stews_soups_lauki_kofta_lauki_chana_dal_stir_fries_raita_desserts_lauki_halwa",
+    "culinary_mature_dried_fruit_shells_used_as_containers_bottles_bowls_utensils_smoking_pipes_musical_instruments_kora_sitar_resonators_decorative_crafts",
+    "medicinal_traditional_ayurveda_fruit_pulp_juice_seeds_used_for_digestive_issues_liver_conditions_diuretic_cooling_agent_hypertension_anti_inflammatory",
+    "other_seeds_sometimes_eaten_or_pressed_for_oil_young_leaves_and_tendrils_edible_for_some_varieties_cooked_as_greens"
+  ],
+  "originAndDomesticationHistory": "Bottle gourd (Lagenaria siceraria) is one of the earliest cultivated plants, with a complex origin story. Wild forms are found in Africa (likely Zimbabwe or South Africa), which is considered a primary center of origin. However, archaeological evidence from Asia (China, Japan, Thailand) and the Americas (Peru, Mexico) shows its presence and cultivation dating back thousands of years (e.g., 7,000-12,000 BP in the Americas, and similar antiquity in Asia). This wide and ancient distribution suggests it may have spread very early, possibly by floating across oceans (as seeds can remain viable after saltwater immersion) or through early human migrations. It is likely that Lagenaria siceraria was domesticated independently in both Africa and Asia from different subspecies (L. s. subsp. siceraria for the cultivated form, and L. s. subsp. asiatica or L. s. subsp. africana for respective wild forms). It has been valued for millennia for both its edible young fruit and its durable, waterproof mature shell, which was crucial for making containers and utensils before the invention of pottery.",
+  "climaticRequirements": {
+    "temperature": "Bottle gourd is a warm-season crop that thrives in hot and humid climates. Optimal temperatures for its growth and fruit development generally range from 25°C to 35°C (77°F to 95°F). It is highly sensitive to frost, and cool temperatures can significantly hinder its growth and fruit set.",
+    "rainfall": "Requires moderate to high annual rainfall, typically between 800mm and 1500mm, or consistent irrigation, especially during the vine growth and fruit development stages. While it needs ample moisture, good soil drainage is also important to prevent root diseases.",
+    "altitude": "Typically cultivated in lowland tropical and subtropical regions, from sea level up to about 1500 meters (approximately 4900 feet)."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. Good soil aeration is important for healthy root development. The ideal soil pH range is between 6.0 and 7.5 (slightly acidic to neutral). While it can adapt to various soil types, very heavy clay soils or poorly drained soils are not suitable.",
+  "irrigationAndWaterNeeds": "Requires regular and ample watering throughout its growing cycle, particularly during seed germination, vine establishment, flowering, and fruit development. Water stress during these critical periods can lead to poor fruit set, reduced fruit size, and lower overall yield. Drip irrigation or furrow irrigation methods are commonly used in commercial cultivation. It's important to ensure the soil remains consistently moist but not waterlogged.",
+  "plantingAndHarvestCycles": "Bottle gourd is propagated from seeds. Seeds are often soaked in water for 12-24 hours before sowing to improve germination. They can be sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed sufficiently (above 20°C or 68°F). In regions with shorter growing seasons, seeds may be started indoors 2-4 weeks prior to transplanting. Plants are typically grown in hills or rows, with adequate spacing to allow for the vigorous spread of the vines. A strong trellis, fence, or other support structure is highly recommended for the vines to climb; this improves air circulation, fruit quality (keeping fruits off the ground), and ease of harvest. Young, edible fruits are ready for harvest when they are tender and the skin is smooth and pale green; this is typically 50 to 90 days after sowing, depending on the specific variety and growing conditions. Harvesting should be done regularly by cutting the fruit stem with a sharp knife, as this encourages further fruit production. Mature fruits intended for use as containers or instruments are left on the vine until the shell hardens and the vine begins to die back, which can take 120-180 days or longer.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (various species) can lay eggs in developing fruits, leading to maggot infestation. Cucumber beetles (striped and spotted) and pumpkin beetles may feed on leaves, flowers, and young fruit. Aphids can transmit viruses and cause feeding damage. Squash vine borer can attack stems. Whiteflies can also be problematic. Common Diseases: Powdery mildew and downy mildew are common fungal diseases affecting foliage, especially in humid conditions. Gummy stem blight (black rot) and anthracnose can cause lesions on leaves, stems, and fruit. Mosaic viruses (e.g., Cucumber Mosaic Virus, Watermelon Mosaic Virus) can stunt growth and reduce yield. Root rot can occur in poorly drained soils. Management Strategies: Implementing crop rotation. Selecting disease-resistant varieties where available. Ensuring proper plant spacing and trellising to promote good air circulation. Practicing effective weed control. Removing and destroying infected plant material promptly. Using row covers on young plants to protect against early insect infestations (remove during flowering for pollination). Applying appropriate and approved insecticides or fungicides when necessary, based on scouting, pest/disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Young, edible bottle gourds are relatively perishable and should be handled with care to avoid bruising their tender skin. They can be stored for about 1-2 weeks at cool temperatures, ideally around 10-13°C (50-55°F), with moderate humidity. Storing in the refrigerator crisper drawer is suitable for home use. Cut portions should be wrapped in plastic film and used within a few days. Mature, dried gourds intended for use as containers or instruments must be properly cured by drying them slowly and thoroughly over several months in a dry, well-ventilated area until the shell is hard and the seeds rattle inside. The outer skin may be scraped or sanded during the curing process.",
+  "majorProducingCountriesOrRegions": [
+    "India (a leading global producer and consumer)",
+    "China (extensive cultivation)",
+    "Pakistan",
+    "Bangladesh",
+    "Sri Lanka",
+    "Thailand",
+    "Vietnam",
+    "Indonesia",
+    "Philippines",
+    "Malaysia",
+    "Various countries in tropical Africa",
+    "Mexico and other parts of Latin America",
+    "Caribbean islands"
+  ],
+  "marketValueAndGlobalDemand": "Bottle gourd is a widely consumed vegetable in South Asia, Southeast Asia, China, and parts of Africa, holding significant importance in local and regional markets. It is valued for its culinary versatility (especially its ability to absorb flavors), high water content, and traditional medicinal uses. While international trade in fresh bottle gourd is less extensive compared to some other major vegetables, there is consistent demand in ethnic markets in North America, Europe, and the Middle East, catering to diaspora communities. The demand for specific shapes and sizes also exists for artisanal uses of dried gourds (e.g., for crafts, musical instruments, containers). Its ease of cultivation in warm climates and good productivity contribute to its availability and affordability in its primary consumption regions.",
+  "staticRecipes": [
+    {
+      "name": "Lauki Chana Dal (Bottle Gourd with Split Chickpeas)",
+      "description": "A nutritious and comforting North Indian lentil and vegetable curry.",
+      "ingredients": [
+        "1 medium bottle gourd (lauki), peeled, seeded, and cubed",
+        "1/2 cup chana dal (split chickpeas), soaked for at least 1 hour",
+        "1 onion, finely chopped",
+        "1 tomato, finely chopped",
+        "1 inch ginger, grated",
+        "2 cloves garlic, minced",
+        "1-2 green chilies, slit",
+        "1 tsp cumin seeds",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "Salt to taste",
+        "1 tbsp oil or ghee",
+        "Fresh cilantro for garnish"
+      ],
+      "steps": [
+        "Pressure cook soaked chana dal with 1.5 cups water and a pinch of turmeric and salt for 3-4 whistles, or until soft. Alternatively, cook in a pot until tender.",
+        "Heat oil/ghee in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden.",
+        "Add ginger, garlic, and green chilies. Sauté for a minute.",
+        "Add chopped tomato and cook until softened.",
+        "Add turmeric powder, coriander powder, and remaining salt. Mix well.",
+        "Add cubed bottle gourd and cooked chana dal (along with its water). Mix. If needed, add more water to achieve desired consistency.",
+        "Cover and simmer for 15-20 minutes, or until bottle gourd is tender and flavors have melded.",
+        "Garnish with fresh cilantro and serve hot with roti or rice."
+      ]
+    },
+    {
+      "name": "Lauki Kofta (Bottle Gourd Dumplings in Gravy)",
+      "description": "Soft bottle gourd dumplings simmered in a creamy tomato-onion gravy.",
+      "ingredients": [
+        "For Koftas: 1 medium bottle gourd (grated and squeezed), 1/2 cup gram flour (besan), 1/4 tsp turmeric, pinch of asafoetida, salt, oil for frying",
+        "For Gravy: 2 onions (pureed), 2 tomatoes (pureed), 1 tbsp ginger-garlic paste, 1/2 tsp turmeric, 1 tsp coriander powder, 1/2 tsp red chili powder, 1/4 cup yogurt or cream, 1 tbsp oil, whole spices (bay leaf, cinnamon), salt"
+      ],
+      "steps": [
+        "Koftas: Mix grated and squeezed bottle gourd with besan, turmeric, asafoetida, and salt. Add very little water if needed to form a thick batter. Make small balls and deep fry until golden brown. Drain and set aside.",
+        "Gravy: Heat oil, add whole spices. Add onion puree, sauté until golden. Add ginger-garlic paste, sauté. Add tomato puree, cook until oil separates.",
+        "Add turmeric, coriander powder, chili powder, and salt. Cook for a minute. Whisk yogurt/cream and add to the gravy, stirring continuously. Add water for desired consistency.",
+        "Simmer gravy for 5-7 minutes. Gently add fried koftas. Simmer for another 5 minutes.",
+        "Garnish with cilantro. Serve hot."
+      ]
+    },
+    {
+      "name": "Simple Lauki Sabzi (Stir-fried Bottle Gourd)",
+      "description": "A light and healthy stir-fried bottle gourd dish with minimal spices.",
+      "ingredients": [
+        "1 medium bottle gourd, peeled, seeded, and diced",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp cumin seeds",
+        "Pinch of asafoetida (hing)",
+        "1-2 dried red chilies, broken",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "1 tbsp chopped cilantro"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add asafoetida and dried red chilies.",
+        "Add diced bottle gourd and turmeric powder. Mix well.",
+        "Cover and cook on low to medium heat for 10-15 minutes, or until bottle gourd is tender, stirring occasionally. Add a splash of water if it seems too dry.",
+        "Add salt and mix.",
+        "Garnish with chopped cilantro. Serve hot with roti or rice."
+      ]
+    }
+  ]
+}

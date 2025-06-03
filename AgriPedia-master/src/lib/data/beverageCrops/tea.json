@@ -1,0 +1,71 @@
+{
+  "id": "tea",
+  "commonName": "Tea (Beverage Crop)",
+  "scientificName": "Camellia sinensis",
+  "image": "https://images.unsplash.com/photo-1556745753-00ada69b5b6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to East Asia. After water, it is the most widely consumed drink in the world. There are many different types of tea; some, like Chinese green tea, black tea, oolong tea, and white tea, have a cooling, slightly bitter, and astringent flavour, while others have vastly different profiles that include sweet, nutty, floral, or grassy notes.",
+  "origin": "East Asia (likely southwestern China, northern Myanmar, and northeastern India).",
+  "localNames": ["Chai (Hindi)", "Ocha (Japanese)", "Té (Spanish)", "Thé (French)"],
+  "regions": ["China (leading producer)", "India", "Kenya", "Sri Lanka", "Vietnam", "Turkey", "Indonesia", "Japan", "Argentina", "Iran"],
+  "seasons": ["Perennial evergreen shrub; leaves are harvested multiple times a year ('flushes') in tropical and subtropical climates. Quality and type of tea vary with the season of harvest."],
+  "nutrition": {
+    "calories": "Brewed tea (unsweetened): ~1-2 kcal per 240ml (1 cup). Dried leaves have more, but are not consumed directly in quantity.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Fat", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Fiber", "unit": "g", "value": "Brewed: Trace" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Brewed: Small amounts" },
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Brewed: Small amounts" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Brewed: Significant, up to 0.5mg (20-25%) per cup depending on type and brew strength" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Brewed: Moderate, ~20-80mg (1-2%) per cup" },
+      { "name": "Fluoride", "unit": "mg", "rdi": "Tea plants accumulate fluoride; content varies" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, particularly catechins (in green tea) and theaflavins/thearubigins (in black tea).",
+    "May improve brain function and alertness due to caffeine and L-theanine.",
+    "Associated with a lower risk of heart disease and stroke.",
+    "May help with weight management by boosting metabolism (green tea).",
+    "Has potential anti-cancer properties (research ongoing)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Caffeine Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Tea contains caffeine, which can cause insomnia, nervousness, or rapid heartbeat in sensitive individuals or with high intake."
+    },
+    {
+      "name": "Tannin Effects",
+      "severity": "Mild",
+      "details": "Tannins in tea can interfere with the absorption of non-heme iron (from plant sources). May cause mild stomach upset in some people if consumed on an empty stomach."
+    }
+  ],
+  "cultivationProcess": "Tea plants are grown from seeds or cuttings in nurseries and then transplanted. They require acidic, well-drained soil and thrive in cool, moist climates with ample rainfall. Leaves (typically the top two leaves and a bud) are plucked by hand or mechanically.",
+  "growthDuration": "Perennial shrub. Plants become productive for plucking about 3-5 years after planting and can remain productive for 50-100 years or more with good management and regular pruning.",
+  "sustainabilityTips": [
+    "Contour planting and terracing on slopes to prevent soil erosion.",
+    "Integrated pest management and organic cultivation methods are increasingly adopted.",
+    "Shade trees can be used in some tea gardens to improve quality and biodiversity.",
+    "Fair trade and other sustainability certifications address social and environmental aspects."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of tea is influenced by land use change, fertilizer use (tea is a nitrogen-demanding crop), energy for processing (withering, rolling, oxidation, drying), packaging, and transportation. Deforestation for new tea estates has been a concern in some regions.",
+  "uses": ["beverage_production_leaves_for_various_types_of_tea_black_green_oolong_white_pu_erh", "traditional_medicine", "cosmetics_tea_extracts_in_skin_care", "dyeing_limited_use"],
+  "originAndDomesticationHistory": "Tea (Camellia sinensis) originated in the region encompassing southwestern China, northeastern India, northern Myanmar, and Tibet, where it was used for medicinal purposes by local populations. It was first cultivated and popularized as a beverage in China (legend attributes its discovery to Emperor Shennong around 2737 BCE). It spread to Japan in the 9th century and to Europe in the 17th century, becoming a major global commodity.",
+  "climaticRequirements": {
+    "temperature": "Subtropical and tropical highland crop. Optimal growing temperatures are 18-25°C. Requires a cool, moist climate. Some varieties can tolerate light frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1200-2500mm annually, or even more. High humidity is beneficial.",
+    "altitude": "Often grown at higher altitudes (600-2500m) which contributes to slower growth and better flavor development (especially for high-quality teas). Can also be grown at lower altitudes."
+  },
+  "soilPreferences": "Prefers deep, well-drained, acidic loamy soils (pH 4.5-5.5) rich in organic matter. Cannot tolerate waterlogged or alkaline soils.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture. Irrigation is essential in areas with insufficient or uneven rainfall, especially for young plants and during dry periods, to maintain productivity and leaf quality.",
+  "plantingAndHarvestCycles": "Propagated from seeds or, more commonly, vegetative cuttings from selected mother bushes. Plants are pruned regularly to maintain a 'plucking table' height and stimulate new shoot growth. Leaves (typically the youngest two leaves and a bud) are harvested by hand (for high-quality teas) or mechanically. Harvesting occurs in 'flushes' (periods of active shoot growth) multiple times a year.",
+  "pestAndDiseaseManagement": "Pests include tea mosquito bug, thrips, aphids, mites, and various caterpillars. Diseases include blister blight, grey blight, root rot, and various fungal leaf spots. Integrated pest management involves resistant cultivars, biological control, cultural practices, and judicious use of pesticides/fungicides. Climate change is increasing pest/disease pressure in some regions.",
+  "postHarvestHandling": "Harvested tea leaves undergo specific processing steps depending on the type of tea being produced: Withering (reducing moisture), Rolling/Maceration (breaking leaf cells), Oxidation/Fermentation (for oolong and black teas), Firing/Drying (to halt oxidation and reduce moisture for storage). The degree of oxidation determines the type of tea. Leaves are then sorted, graded, and packed.",
+  "majorProducingCountriesOrRegions": ["China (world's largest producer, wide variety of teas)", "India (Assam, Darjeeling, Nilgiri regions)", "Kenya (primarily black CTC tea)", "Sri Lanka (Ceylon tea)", "Vietnam", "Turkey", "Indonesia", "Japan (mainly green tea)", "Argentina", "Iran"],
+  "marketValueAndGlobalDemand": "Tea is the second most consumed beverage in the world after water, with massive global demand. It is a major agricultural commodity and export earner for many producing countries. The market includes bulk commodity tea and higher-value specialty teas (single-origin, artisanal). Prices are influenced by global supply, quality, auction systems, and consumer trends (e.g., growing interest in green tea, specialty teas, and herbal infusions marketed as 'tea')."
+}

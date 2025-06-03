@@ -1,0 +1,71 @@
+{
+  "id": "lupins",
+  "commonName": "Lupins (Lupin Beans)",
+  "scientificName": "Lupinus spp. (e.g., Lupinus albus, Lupinus mutabilis, Lupinus angustifolius)",
+  "image": "https://images.unsplash.com/photo-1600801037770-75a879df4810?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlibrb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Lupins are leguminous plants cultivated for their seeds (lupin beans). Some species are grown for ornamental purposes due to their colorful flowers. Lupin beans are high in protein and fiber. 'Sweet' varieties have been bred for human consumption, as traditional varieties can be bitter and contain toxic alkaloids.",
+  "origin": "Mediterranean region (Old World species) and the Americas (New World species).",
+  "localNames": ["Turmus (Arabic/Hebrew)", "Lupini (Italian)", "Altramuz (Spanish)", "Lupin (French/German)"],
+  "regions": ["Australia (largest producer of L. angustifolius)", "Europe (Germany, Poland, Iberian Peninsula)", "Andean region (L. mutabilis)", "Mediterranean countries"],
+  "seasons": ["Cool-season crop; typically planted in autumn or early spring, depending on the species and climate. Harvested in spring or summer."],
+  "nutrition": {
+    "calories": "119 kcal per 100g (cooked, sweet lupins)",
+    "macronutrients": [
+      { "name": "Protein", "value": 15.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 9.9, "unit": "g" },
+      { "name": "Fat", "value": 2.9, "unit": "g" },
+      { "name": "Fiber", "value": 2.8, "unit": "g (note: some sources report much higher fiber, up to 19g for whole beans)" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 40, "unit": "µg", "rdi": "10%" },
+      { "name": "Thiamin (B1)", "value": 0.05, "unit": "mg", "rdi": "4%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.12, "unit": "mg", "rdi": "49%" },
+      { "name": "Copper", "value": 0.21, "unit": "mg", "rdi": "23%" },
+      { "name": "Magnesium", "value": 54, "unit": "mg", "rdi": "13%" },
+      { "name": "Phosphorus", "value": 128, "unit": "mg", "rdi": "18%" }
+    ]
+  },
+  "healthBenefits": [
+    "Very high in protein and dietary fiber.",
+    "Gluten-free.",
+    "May help improve blood sugar control and insulin sensitivity.",
+    "Can contribute to lowering blood pressure and cholesterol levels.",
+    "Promotes satiety, potentially aiding in weight management."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lupin Allergy",
+      "severity": "Can be severe",
+      "details": "Lupin allergy is a growing concern, especially in individuals with peanut allergies, as there can be cross-reactivity. Reactions can range from mild to severe anaphylaxis. Lupin flour is increasingly used in processed foods."
+    },
+    {
+      "name": "Alkaloid Toxicity (Bitter Varieties)",
+      "severity": "Moderate to Severe",
+      "details": "Traditional 'bitter' lupin varieties contain high levels of toxic quinolizidine alkaloids. These must be removed by prolonged soaking and boiling in water before consumption. 'Sweet' varieties have very low alkaloid levels and are safe for direct consumption."
+    }
+  ],
+  "cultivationProcess": "Lupin cultivation involves preparing a well-drained seedbed, inoculating seeds with appropriate Bradyrhizobium strains, sowing seeds, managing weeds, and harvesting when pods are mature and dry. Sweet varieties are preferred for food.",
+  "growthDuration": "Varies by species and climate; typically 100-180 days.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing crop, improving soil fertility and reducing the need for nitrogen fertilizers.",
+    "Some species are adapted to poor, sandy, or acidic soils.",
+    "Can be used in crop rotation to break disease cycles and improve soil structure."
+  ],
+  "carbonFootprintInfo": "Lupins generally have a favorable carbon footprint due to nitrogen fixation and their ability to grow in less fertile soils. Local consumption of sweet varieties reduces processing needs (de-bittering).",
+  "uses": ["food_production_beans_flour_protein_isolates", "animal_feed_seeds_fodder", "green_manure", "ornamental_flowers"],
+  "originAndDomesticationHistory": "Lupins have two main centers of origin. Old World species like Lupinus albus (White Lupin) were domesticated in the Mediterranean region around 2000-3000 BCE. New World species like Lupinus mutabilis (Tarwi or Andean Lupin) were domesticated in the Andes of South America around 1500 BCE. Breeding efforts in the 20th century led to the development of 'sweet' (low-alkaloid) varieties suitable for wider food and feed use.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal temperatures vary by species, generally 15-25°C. Some species (e.g., L. angustifolius) are relatively frost-tolerant.",
+    "rainfall": "400-1000mm annually. Drought tolerance varies; some species like Australian sweet lupin (L. angustifolius) are adapted to Mediterranean climates with dry summers.",
+    "altitude": "Varies by species. Andean lupin (L. mutabilis) is grown at high altitudes (2000-4000m). Mediterranean species are typically lowland crops."
+  },
+  "soilPreferences": "Prefers well-drained, light to medium-textured soils (sandy loams, loams). Many species are adapted to acidic soils (pH 4.5-6.5) and low fertility. Good drainage is essential.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed. Irrigation may be needed in drier regions or for specific species to ensure good yields, especially during flowering and seed development.",
+  "plantingAndHarvestCycles": "Planting times vary by species and climate (autumn or spring). Seeds are sown 2-5 cm deep. Harvested when pods are mature and dry, and seeds are hard. Combine harvesters are used for large-scale production.",
+  "pestAndDiseaseManagement": "Pests include aphids (which can transmit viruses like CMV), thrips, and pod borers. Diseases include anthracnose, Pleiochaeta root rot, brown spot, and various viral diseases. Integrated management involves resistant varieties, crop rotation, seed treatments, and appropriate chemical controls if necessary.",
+  "postHarvestHandling": "Involves threshing to separate seeds from pods, cleaning, and drying to a moisture content of 10-12% for storage. For bitter varieties, extensive de-bittering (soaking and boiling) is required if intended for human consumption. Sweet varieties do not require this.",
+  "majorProducingCountriesOrRegions": ["Australia (world's largest producer, mainly L. angustifolius)", "Europe (Germany, Poland, France, Spain, Portugal, Italy for L. albus and L. luteus)", "Andean countries (Peru, Bolivia, Ecuador for L. mutabilis)", "Russia", "South Africa"],
+  "marketValueAndGlobalDemand": "Demand for lupins is growing, driven by their high protein content for animal feed (especially aquaculture and livestock) and increasing use in human foods (gluten-free products, plant-based protein). Sweet lupin varieties are key to expanding food use. Australia dominates the international trade."
+}

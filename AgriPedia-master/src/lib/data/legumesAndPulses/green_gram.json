@@ -1,0 +1,67 @@
+{
+  "id": "green_gram",
+  "commonName": "Green Gram (Mung Bean)",
+  "scientificName": "Vigna radiata",
+  "image": "https://images.unsplash.com/photo-1591373717282-633153894095?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Green gram, also known as mung bean, is a small, green legume in the Fabaceae family. It is cultivated for its edible seeds and sprouts, and is a traditional ingredient in many Asian cuisines. It is known for being easily digestible and nutritious.",
+  "origin": "India or the Persia region.",
+  "localNames": ["Moong Dal (Hindi)", "Ryokutou (Japanese)", "Frijol Chino (Spanish - though often refers to sprouts)", "Haricot mungo (French)"],
+  "regions": ["India", "China", "Myanmar", "Thailand", "Indonesia", "Philippines", "Pakistan", "Australia"],
+  "seasons": ["Warm-season crop; typically planted in summer (Kharif season in India) or as a short-duration catch crop between main cereal harvests."],
+  "nutrition": {
+    "calories": "105 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 7.0, "unit": "g" },
+      { "name": "Carbohydrates", "value": 19.2, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 7.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 159, "unit": "µg", "rdi": "40%" },
+      { "name": "Thiamin (B1)", "value": 0.164, "unit": "mg", "rdi": "14%" },
+      { "name": "Pantothenic acid (B5)", "value": 0.908, "unit": "mg", "rdi": "18%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 0.474, "unit": "mg", "rdi": "21%" },
+      { "name": "Phosphorus", "value": 99, "unit": "mg", "rdi": "14%" },
+      { "name": "Magnesium", "value": 48, "unit": "mg", "rdi": "11%" },
+      { "name": "Iron", "value": 1.4, "unit": "mg", "rdi": "8%" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of plant-based protein and dietary fiber.",
+    "Easily digestible compared to some other legumes.",
+    "Rich in folate, manganese, and magnesium.",
+    "May help regulate blood sugar levels.",
+    "Contains antioxidants that can help protect against chronic diseases."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies (Mild to Moderate)",
+      "details": "Allergy to mung beans is relatively uncommon but can occur, potentially causing oral allergy syndrome or other allergic reactions in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Green gram cultivation involves preparing a well-drained seedbed, sowing seeds, minimal fertilization (as it's a nitrogen-fixer), weed management, and harvesting when pods turn brown or black. It's a short-duration crop.",
+  "growthDuration": "Approximately 60-90 days, making it suitable as a catch crop or for intercropping.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing capabilities improve soil fertility.",
+    "Short life cycle allows it to fit well into crop rotations and utilize short rainfall periods.",
+    "Requires relatively low inputs."
+  ],
+  "carbonFootprintInfo": "Green gram generally has a low carbon footprint due to its nitrogen-fixing ability, short duration, and low input requirements. It's a sustainable protein source.",
+  "uses": ["culinary_dal_soups_sprouts_desserts", "cover_crop", "green_manure"],
+  "originAndDomesticationHistory": "Green gram (Vigna radiata) was domesticated in India from its wild progenitor Vigna radiata var. sublobata. Archaeological evidence dates its cultivation back to around 4,500 years ago in the Indian subcontinent. It spread from India to other parts of Asia, Africa, and Australia.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop, preferring temperatures between 25-35°C. Sensitive to frost. High humidity can promote diseases.",
+    "rainfall": "300-500mm during the growing season. Drought-tolerant but performs best with consistent moisture, especially during flowering and pod formation. Tolerates short periods of waterlogging.",
+    "altitude": "Typically grown in lowland areas, but can be cultivated up to 2000m in tropical and subtropical regions."
+  },
+  "soilPreferences": "Prefers well-drained loamy or sandy loam soils with a pH of 6.0-7.5. Can tolerate a range of soil types but not saline or highly alkaline conditions. Good aeration is beneficial.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed, especially during monsoon seasons. If irrigation is available, it's applied during critical stages like flowering and pod filling, particularly in drier conditions or for off-season cultivation.",
+  "plantingAndHarvestCycles": "Usually sown at the onset of the rainy season or as a summer crop. Seeds are sown 2-4 cm deep. Pods mature unevenly, so multiple pickings might be done for fresh consumption, or plants are harvested when 70-80% of pods are mature (brown/black) for dry grain.",
+  "pestAndDiseaseManagement": "Common pests include pod borers, aphids, thrips, and whiteflies (which can transmit yellow mosaic virus). Diseases include Mungbean Yellow Mosaic Virus (MYMV), Cercospora leaf spot, and powdery mildew. Integrated management involves resistant varieties, clean seeds, crop rotation, and need-based insecticide/fungicide application.",
+  "postHarvestHandling": "Harvested plants are dried, then threshed to extract the seeds. Seeds are further cleaned and dried to a moisture content of 10-12% for storage. Stored in cool, dry places to prevent weevil infestation and mold.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "China", "Myanmar", "Thailand", "Indonesia", "Philippines", "Pakistan", "Bangladesh", "Australia", "East African countries"],
+  "marketValueAndGlobalDemand": "Green gram is a major pulse crop in Asia, with high demand for both whole beans and split form (dal). It's valued for its nutritional content, easy digestibility, and quick cooking time. International trade exists but is less extensive than for some other pulses. Demand for sprouts is also significant globally."
+}

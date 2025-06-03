@@ -1,0 +1,153 @@
+{
+  "id": "ridge-gourd",
+  "commonName": "Ridge Gourd (Turai)",
+  "scientificName": "Luffa acutangula",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Wild_Ridge_Gourd_%285003690075%29.jpg",
+  "description": "A dark green, ridged and tapering fruit. The flesh is white, spongy, and contains numerous seeds. It has a mild, slightly sweet flavor and is popular in Asian and African cuisines.",
+  "origin": "India",
+  "localNames": [
+    "Turai (Hindi)",
+    "Beerakaya (Telugu)",
+    "Chinese Okra",
+    "Patola (Philippines)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Southeast Asia",
+    "Africa"
+  ],
+  "seasons": [
+    "Rainy season",
+    "Summer"
+  ],
+  "nutrition": {
+    "calories": "20 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 4.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "20%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 453,
+        "unit": "mg",
+        "rdi": "13%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and high in dietary fiber, aiding digestion and weight management.",
+    "Good source of Vitamin C, supporting immune function.",
+    "Contains potassium, important for maintaining healthy blood pressure.",
+    "Traditionally used for its cooling properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Luffa Allergy",
+      "severity": "Rare",
+      "details": "Allergies are uncommon."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season vine. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0. Full sun.\n3. Support: Requires a strong trellis or support for the vines to climb.\n4. Watering: Needs regular and consistent watering, especially during flowering and fruiting.\n5. Harvesting: Harvest young, tender fruits (6-10 inches long typically). Overmature fruits become fibrous. Mature dried fruits can be used as Luffa sponges.",
+  "growthDuration": "60-75 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store ridge gourd in the refrigerator for a few days.",
+    "Peel the sharp ridges before cooking. The entire fruit (except ridges) is edible when young.",
+    "Let some fruits mature on the vine to harvest natural Luffa sponges."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.3-0.7 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Turai Chana Dal (Ridge Gourd with Split Chickpeas)",
+      "description": "A nutritious and flavorful Indian curry.",
+      "ingredients": [
+        "1 lb ridge gourd (turai), peeled (ridges removed), and chopped",
+        "1/2 cup chana dal, soaked for 1 hour",
+        "1 onion, chopped",
+        "1 tomato, chopped",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "Salt to taste",
+        "1 tbsp oil",
+        "1/2 tsp cumin seeds"
+      ],
+      "steps": [
+        "Pressure cook soaked chana dal with water until soft. Set aside.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add chopped onion and sauté until golden.",
+        "Add ginger-garlic paste, sauté for a minute. Add chopped tomato and cook until soft.",
+        "Add turmeric powder, coriander powder, and salt. Mix.",
+        "Add chopped ridge gourd and cooked chana dal (with its water). Mix well.",
+        "Cover and simmer for 10-15 minutes, or until ridge gourd is tender. Garnish with cilantro. Serve hot."
+      ]
+    },
+    {
+      "name": "Simple Ridge Gourd Stir-fry (Turai Sabzi)",
+      "description": "A quick and easy stir-fry showcasing the mild flavor of ridge gourd.",
+      "ingredients": [
+        "1 lb ridge gourd, peeled (ridges removed), and sliced",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1-2 dried red chilies",
+        "Pinch of asafoetida (hing)",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "1 tbsp grated coconut (optional)"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add dried red chilies and asafoetida.",
+        "Add sliced ridge gourd and turmeric powder. Sauté for 2-3 minutes.",
+        "Add salt. Cover and cook on low-medium heat for 7-10 minutes, or until tender, stirring occasionally. Do not overcook.",
+        "If using, stir in grated coconut before serving. Serve hot with roti or rice."
+      ]
+    },
+    {
+      "name": "Ridge Gourd Peel Chutney (Beerakaya Thokku Pachadi)",
+      "description": "A traditional South Indian chutney made from the peels of ridge gourd.",
+      "ingredients": [
+        "Peels of 2 medium ridge gourds (tender part, not the hard ridges)",
+        "1 tbsp oil",
+        "1 tsp chana dal",
+        "1 tsp urad dal",
+        "2-3 dried red chilies",
+        "Small piece of tamarind",
+        "Salt to taste",
+        "For tempering: 1/2 tsp oil, 1/4 tsp mustard seeds, pinch of asafoetida"
+      ],
+      "steps": [
+        "Wash ridge gourd peels thoroughly. Chop them roughly.",
+        "Heat 1 tbsp oil in a pan. Add chana dal, urad dal, and dried red chilies. Sauté until dals are golden and chilies are crisp. Remove and set aside.",
+        "In the same pan, add chopped ridge gourd peels and sauté for 5-7 minutes until they soften and shrink. Let cool.",
+        "Grind the sautéed peels, roasted dal-chili mixture, tamarind, and salt to a coarse or smooth paste, adding a little water if needed.",
+        "Tempering: Heat 1/2 tsp oil. Add mustard seeds. When they splutter, add asafoetida. Pour over the chutney. Mix well. Serve with rice or idli/dosa."
+      ]
+    }
+  ]
+}

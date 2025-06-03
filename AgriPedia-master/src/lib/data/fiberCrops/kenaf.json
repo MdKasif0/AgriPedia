@@ -1,0 +1,63 @@
+{
+  "id": "kenaf",
+  "commonName": "Kenaf",
+  "scientificName": "Hibiscus cannabinus",
+  "image": "https://images.unsplash.com/photo-1627616239022-542f97a8dd9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Kenaf is a species of Hibiscus, probably native to southern Asia, though its exact origin is unknown. It is cultivated for its bast fibers, which are used to make rope, twine, paper, and textiles. Kenaf is a fast-growing annual plant and is considered a promising source of cellulose fiber for various industrial applications.",
+  "origin": "Southern Asia (though exact origin uncertain, possibly Africa or Asia).",
+  "localNames": ["Patsan (Hindi)", "Ambadi (Marathi)", "Deccan Hemp (English)", "Bimbalipatam Jute (English)"],
+  "regions": ["India", "China", "Thailand", "Bangladesh", "United States", "Parts of Africa and Southeast Asia"],
+  "seasons": ["Warm-season annual; typically planted in spring and harvested in late summer or fall before heavy frost."],
+  "nutrition": {
+    "calories": "Primarily a fiber crop; seeds contain oil (~20%) and protein (~30%) but are not widely consumed by humans. Young leaves are edible.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Leaves: ~3-4" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Leaves: ~5-7" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~20 (oil)" },
+      { "name": "Fiber", "unit": "g", "value": "Stems: High in cellulose and lignin" }
+    ],
+    "vitamins": [
+       { "name": "Vitamin C", "unit": "mg", "rdi": "Young leaves: Moderate" }
+    ],
+    "minerals": [
+       { "name": "Calcium", "unit": "mg", "rdi": "Young leaves: Moderate" }
+    ]
+  },
+  "healthBenefits": [
+    "Kenaf fiber is biodegradable and can be a sustainable alternative to synthetic fibers.",
+    "Kenaf seed oil has potential for use in food, cosmetics, and biofuels (after research on safety and processing).",
+    "The plant is highly absorbent and can be used for bioremediation (cleaning up oil spills).",
+    "Young leaves are edible and nutritious in some cultures."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Hibiscus/Malvaceae Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to kenaf is rare. Individuals sensitive to other Malvaceae family plants (like cotton, okra, hibiscus flowers) might theoretically have cross-reactivity. Dust from processing fibers can cause respiratory irritation."
+    }
+  ],
+  "cultivationProcess": "Kenaf is grown from seeds. It is a fast-growing annual that requires warm weather and adequate moisture. For fiber production, plants are sown densely to promote tall, unbranched stems. Stems are harvested and then undergo retting to extract the bast fibers.",
+  "growthDuration": "Approximately 100-150 days from planting to fiber harvest.",
+  "sustainabilityTips": [
+    "Fast-growing and high-yielding, making it an efficient biomass producer.",
+    "Requires less water and pesticides than cotton in many environments.",
+    "Can be grown on marginal lands.",
+    "Improves soil structure and can be used in crop rotation.",
+    "Biodegradable fibers."
+  ],
+  "carbonFootprintInfo": "Kenaf is considered a carbon-negative crop as it sequesters more CO2 during its rapid growth than is emitted during its cultivation and processing. Its use in paper production can also be more environmentally friendly than wood pulp in some aspects.",
+  "uses": ["fiber_production_paper_pulp_newsprint_cardboard_textiles_rope_twine_burlap_like_sacks_building_materials_composites_insulation_animal_bedding_erosion_control_mats_bioremediation_absorbent_material", "oil_production_seed_oil_for_industrial_uses_potential_biofuel_food_use_research_ongoing", "animal_feed_leaves_seed_cake_limited_use", "culinary_young_leaves_in_some_cuisines"],
+  "originAndDomesticationHistory": "Kenaf (Hibiscus cannabinus) is thought to be native to ancient Africa or Asia. It has been cultivated for thousands of years in parts of Africa and Asia for its fiber and edible leaves. Its modern commercial cultivation expanded in the 20th century as a potential alternative to jute and for paper pulp production.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 15-27°C during the day. Requires a frost-free period of 4-5 months. Tolerates high temperatures if moisture is adequate.",
+    "rainfall": "Requires moderate rainfall, around 500-1000mm during the growing season. Can tolerate some dry spells but yields better with consistent moisture, especially during early growth.",
+    "altitude": "Adaptable to various altitudes, from sea level up to 1500m in tropical and subtropical regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types but prefers well-drained, fertile loamy soils with a neutral pH (6.0-7.5). Can tolerate slightly acidic or alkaline conditions.",
+  "irrigationAndWaterNeeds": "While somewhat drought-tolerant, kenaf responds well to irrigation, especially in drier regions or sandy soils. Consistent moisture during the vegetative growth phase is important for maximizing fiber yield.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring after the last frost. Planted densely for fiber production. Harvesting for fiber occurs when plants reach maturity, typically after flowering but before seeds fully set, to obtain high-quality fiber. Stalks are cut near the ground manually or mechanically.",
+  "pestAndDiseaseManagement": "Nematodes are a major pest concern for kenaf. Other pests include various caterpillars and beetles. Diseases like anthracnose and stem rot can occur, particularly in humid conditions or poorly drained soils. Crop rotation and selection of resistant varieties are important management strategies.",
+  "postHarvestHandling": "Harvested kenaf stalks undergo retting (water or dew retting) to separate the bast fibers from the woody core (hurds). Mechanical decortication can also be used. The fibers are then washed, dried, and processed according to their intended use (e.g., baled for paper pulp, further refined for textiles). The woody core can be used for particleboard or animal bedding.",
+  "majorProducingCountriesOrRegions": ["India", "China", "Thailand", "Bangladesh", "United States (primarily for research and niche markets)", "Malaysia", "Indonesia", "Parts of Africa"],
+  "marketValueAndGlobalDemand": "Kenaf has a growing market, driven by demand for sustainable and renewable raw materials for paper pulp, building materials, biocomposites, and textiles. It is seen as an eco-friendly alternative to wood pulp and synthetic fibers. The market is still developing compared to major fibers like cotton or jute, but interest is increasing due to its versatility and environmental benefits."
+}

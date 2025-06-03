@@ -1,0 +1,67 @@
+{
+  "id": "turmeric",
+  "commonName": "Turmeric",
+  "scientificName": "Curcuma longa",
+  "image": "https://images.unsplash.com/photo-1590005023065-175311ff5d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Turmeric is a flowering plant of the ginger family, Zingiberaceae, the rhizomes of which are used in cooking. The plant is a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia. The rhizomes are boiled, dried, and ground into a deep orange-yellow powder commonly used as a spice in curries and other South Asian and Middle Eastern cuisine, for dyeing, and to impart color to mustard condiments.",
+  "origin": "Indian subcontinent and Southeast Asia.",
+  "localNames": ["Haldi (Hindi)", "Ukon (Japanese)", "Cúrcuma (Spanish)", "Curcuma (French)"],
+  "regions": ["India", "Bangladesh", "Pakistan", "Sri Lanka", "Southeast Asian countries", "China"],
+  "seasons": ["Tropical perennial; planted at the onset of the monsoon and harvested 7-10 months later when plants mature and leaves dry."],
+  "nutrition": {
+    "calories": "354 kcal per 100g (ground turmeric powder)",
+    "macronutrients": [
+      { "name": "Protein", "value": 7.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 64.9, "unit": "g" },
+      { "name": "Fat", "value": 9.9, "unit": "g" },
+      { "name": "Fiber", "value": 21.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 5.14, "unit": "mg", "rdi": "34%" },
+      { "name": "Vitamin C", "value": 25.9, "unit": "mg", "rdi": "31%" },
+      { "name": "Vitamin B6", "value": 1.80, "unit": "mg", "rdi": "138%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 7.83, "unit": "mg", "rdi": "340%" },
+      { "name": "Iron", "value": 41.42, "unit": "mg", "rdi": "230%" },
+      { "name": "Potassium", "value": 2525, "unit": "mg", "rdi": "54%" },
+      { "name": "Copper", "value": 0.603, "unit": "mg", "rdi": "67%" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains curcumin, a compound with potent anti-inflammatory and antioxidant properties.",
+    "May improve brain function and lower the risk of brain diseases.",
+    "Can help prevent and perhaps even treat cancer (research ongoing).",
+    "May help reduce the risk of heart disease.",
+    "Traditionally used in Ayurvedic medicine for various ailments."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Turmeric Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to turmeric is rare but can cause skin rashes (contact dermatitis) or digestive issues in sensitive individuals. High doses might cause nausea or diarrhea."
+    }
+  ],
+  "cultivationProcess": "Turmeric is propagated from rhizome cuttings (mother rhizomes or fingers). It requires well-drained, fertile soil and warm, humid conditions with plenty of rainfall or irrigation.",
+  "growthDuration": "Approximately 7-10 months from planting to harvest, when the lower leaves turn yellow.",
+  "sustainabilityTips": [
+    "Can be grown as an intercrop with other taller plants.",
+    "Organic cultivation is common and promotes soil health.",
+    "Mulching helps conserve moisture and control weeds."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of turmeric is influenced by cultivation practices, processing (boiling, drying, grinding), and transportation. Locally sourced turmeric has a lower footprint.",
+  "uses": ["culinary_spice_fresh_dried_powder", "food_coloring_E100", "traditional_medicine_ayurveda_chinese_medicine", "dyeing_fabric", "cosmetics"],
+  "originAndDomesticationHistory": "Turmeric (Curcuma longa) originated in the Indian subcontinent or Southeast Asia. It has been cultivated for over 4,000 years and holds significant cultural and religious importance in India. It was used as a spice, dye, and medicinal herb in ancient times and spread along trade routes to China, East Africa, and eventually Europe.",
+  "climaticRequirements": {
+    "temperature": "Tropical crop. Prefers warm, humid conditions with temperatures between 20-35°C. Cannot tolerate frost.",
+    "rainfall": "Requires high rainfall, around 1500-2500mm annually, or consistent irrigation. Well-distributed rainfall is ideal.",
+    "altitude": "Can be grown from sea level up to 1500m in tropical regions."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or alluvial soils rich in organic matter. Slightly acidic to neutral pH (5.5-7.0) is optimal. Good drainage is crucial to prevent rhizome rot.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture throughout the growing period. Irrigation is essential in areas with insufficient or uneven rainfall, especially during the vegetative growth phase. Waterlogging should be avoided.",
+  "plantingAndHarvestCycles": "Planted by sowing rhizome pieces (setts) at the beginning of the monsoon season or under irrigation. Harvested when the leaves and stem turn yellow and dry out, typically 7-10 months after planting. Rhizomes are carefully dug up.",
+  "pestAndDiseaseManagement": "Major pests include shoot borers, rhizome scale, and nematodes. Diseases include rhizome rot (Pythium, Fusarium), leaf spot, and leaf blotch. Management strategies include using healthy seed rhizomes, crop rotation, soil solarization, biological control, and need-based chemical applications.",
+  "postHarvestHandling": "Harvested rhizomes are cleaned to remove soil and roots. They are then typically boiled or steamed (cured) to gelatinize the starch, facilitate uniform drying, and distribute the color. After curing, rhizomes are dried (sun-drying or mechanical driers) until brittle, then polished to remove the outer skin and improve appearance. Finally, they are sold as whole fingers or ground into powder.",
+  "majorProducingCountriesOrRegions": ["India (largest producer, exporter, and consumer)", "Bangladesh", "Pakistan", "Sri Lanka", "Myanmar", "China", "Nigeria", "Other Southeast Asian and Latin American countries"],
+  "marketValueAndGlobalDemand": "Turmeric is a globally important spice with high demand for its culinary uses, as a natural food colorant (curcumin), and for its health benefits in traditional and modern medicine. India dominates the global market. Demand for organic and sustainably sourced turmeric is increasing."
+}

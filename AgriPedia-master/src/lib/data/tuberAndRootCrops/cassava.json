@@ -1,0 +1,72 @@
+{
+  "id": "cassava",
+  "commonName": "Cassava (Manioc, Yuca, Tapioca Plant)",
+  "scientificName": "Manihot esculenta",
+  "image": "https://images.unsplash.com/photo-1546554008-95a7a2b45c09?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Cassava, also known as manioc, yuca, or tapioca plant, is a woody shrub native to South America of the spurge family, Euphorbiaceae. It is extensively cultivated as an annual crop in tropical and subtropical regions for its edible starchy tuberous root, a major source of carbohydrates. Cassava is drought-tolerant and a staple food for millions. Raw cassava contains cyanogenic glucosides, so proper processing (peeling, grating, soaking, boiling, fermenting) is essential to make it safe for consumption.",
+  "origin": "South America (likely Brazil and Paraguay).",
+  "localNames": ["Tapioca (refers to starch/pearls, but also plant in some regions)", "Yuca (Spanish)", "Mandioca (Portuguese/Spanish)", "Manioc (French)", "Mogo (Swahili)"],
+  "regions": ["Nigeria (leading producer)", "Democratic Republic of Congo", "Thailand", "Ghana", "Indonesia", "Brazil", "Angola", "Mozambique", "Vietnam", "India"],
+  "seasons": ["Perennial shrub, typically cultivated as an annual. Planted during the rainy season and harvested 7-18 months later, depending on variety and conditions. Can be harvested year-round in some tropical areas."],
+  "nutrition": {
+    "calories": "Cooked cassava root: ~160 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~1.4" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~38.1 (Starch and Fiber)" },
+      { "name": "Fat", "unit": "g", "value": "~0.3" },
+      { "name": "Fiber", "unit": "g", "value": "~1.8" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~20.6 (23%)" },
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "~0.087 (7%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "~27 (7%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~271 (6%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.383 (17%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~21 (5%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Major source of carbohydrates, providing energy.",
+    "Resistant starch content can benefit gut health.",
+    "Gluten-free, suitable for individuals with celiac disease.",
+    "Contains some Vitamin C and manganese.",
+    "Leaves are edible (if cooked properly) and rich in protein and vitamins."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cyanide Poisoning (Improper Processing)",
+      "severity": "Severe/Fatal",
+      "details": "Cassava contains cyanogenic glucosides (linamarin and lotaustralin), which can release hydrogen cyanide if not properly processed (peeling, soaking, grating, boiling, fermenting, drying). 'Sweet' varieties have lower levels than 'bitter' varieties, but all require processing. Chronic, low-level cyanide exposure can cause neurological problems (konzo)."
+    },
+    {
+      "name": "Cassava Allergy",
+      "severity": "Rare",
+      "details": "True allergy to cassava is rare but can occur, potentially cross-reacting with latex in some cases."
+    }
+  ],
+  "cultivationProcess": "Cassava is propagated from stem cuttings. It is highly drought-tolerant and can grow in poor soils. It requires minimal inputs but responds well to fertilization. Roots are harvested when they reach a suitable size.",
+  "growthDuration": "Typically 7-18 months from planting to harvest, depending on the variety (early or late maturing) and environmental conditions.",
+  "sustainabilityTips": [
+    "Highly drought-tolerant and can grow on marginal lands where other crops fail, contributing to food security in arid regions.",
+    "Efficient carbohydrate producer.",
+    "Intercropping with legumes can improve soil fertility.",
+    "Research into varieties with lower cyanogenic potential and improved nutritional content."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of cassava is influenced by land use change (if any for new cultivation), farming practices, processing methods (which can be water and energy-intensive for starch/flour), and transportation. Its ability to grow on marginal lands with low inputs can be a positive factor.",
+  "uses": ["food_staple_boiled_fried_baked_mashed_roots_flour_tapioca_starch_gari_fufu_cassava_bread_chips", "animal_feed_roots_leaves_processed_residues", "industrial_starch_production_for_food_textile_paper_pharmaceutical_industries_biofuel_ethanol_production", "beverages_traditional_fermented_drinks"],
+  "originAndDomesticationHistory": "Cassava (Manihot esculenta) was domesticated in South America, likely in the southern Amazon basin (Brazil/Bolivia/Paraguay region) or Central America, at least 8,000-10,000 years ago. It was a staple food for many indigenous peoples. Portuguese traders introduced it to Africa in the 16th century, and it later spread to Asia. Its ability to grow in poor soils and resist drought made it a vital famine reserve crop.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical crop. Optimal growing temperatures are 25-29°C. Requires warm, sunny conditions. Sensitive to frost.",
+    "rainfall": "Drought-tolerant but performs best with 1000-1500mm of well-distributed rainfall annually. Can survive with as little as 500mm but yields will be low.",
+    "altitude": "Adaptable to various altitudes, typically grown from sea level up to 2000m in tropical regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types but prefers well-drained, light-textured sandy loams or loamy soils with a slightly acidic to neutral pH (5.5-7.5). Tolerates poor and acidic soils better than many other crops but not waterlogged conditions.",
+  "irrigationAndWaterNeeds": "While very drought-tolerant, cassava responds well to irrigation, especially during establishment and early vegetative growth, which can significantly increase yields. However, it's often grown rain-fed in many regions.",
+  "plantingAndHarvestCycles": "Propagated by planting stem cuttings (stakes) 20-30 cm long. Planted during the rainy season or with irrigation. Roots can be harvested from 7 months (for some early varieties) up to 18-24 months. Harvesting is done manually by uprooting the plant or mechanically in large plantations. Roots are highly perishable after harvest.",
+  "pestAndDiseaseManagement": "Major pests include cassava mealybug, green mite, whiteflies (vector for Cassava Mosaic Disease), and termites. Major diseases are Cassava Mosaic Disease (CMD - viral, devastating in Africa and Asia), Cassava Brown Streak Disease (CBSD - viral, Africa), and bacterial blight. Integrated pest management involves resistant/tolerant varieties, clean planting material, biological control, and cultural practices.",
+  "postHarvestHandling": "Cassava roots deteriorate rapidly after harvest (within 24-48 hours) due to physiological and microbial spoilage. They must be processed quickly. Processing involves peeling, grating, soaking, fermenting, boiling, drying, or milling into flour, starch (tapioca), chips, or other products to remove cyanogenic compounds and improve shelf life. Waxing of fresh roots can extend shelf life for market.",
+  "majorProducingCountriesOrRegions": ["Nigeria (world's largest producer)", "Democratic Republic of Congo", "Thailand (major exporter of starch and chips)", "Ghana", "Indonesia", "Brazil", "Angola", "Mozambique", "Vietnam", "India", "Other countries in tropical Africa, Asia, and Latin America"],
+  "marketValueAndGlobalDemand": "Cassava is a vital staple food for hundreds of millions of people, especially in sub-Saharan Africa, and a major source of carbohydrates. It has significant global demand for animal feed, starch production (for food, textile, paper, and other industries), and increasingly for biofuel (ethanol). International trade is mainly in the form of dried chips, pellets, and starch."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lentils",
+  "commonName": "Lentils",
+  "scientificName": "Lens culinaris",
+  "image": "https://images.unsplash.com/photo-1580909147068-03880341aecf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Lentils are edible legumes. They are lens-shaped seeds that grow in pods, typically with two seeds per pod. Lentils are known for their high protein and fiber content and are a staple food in many parts of the world. Common types include red, green, brown, and black lentils.",
+  "origin": "Near East (Fertile Crescent).",
+  "localNames": ["Masoor (Hindi - for red/pink lentils)", "Dal (Hindi - general term for split pulses including lentils)", "Renzu mame (Japanese)", "Lenteja (Spanish)", "Lentille (French)"],
+  "regions": ["Canada", "India", "Turkey", "Australia", "United States", "Nepal", "Bangladesh"],
+  "seasons": ["Cool-season crop; planted in early spring for summer harvest in temperate climates, or in fall for winter/spring harvest in warmer regions."],
+  "nutrition": {
+    "calories": "116 kcal per 100g (cooked)",
+    "macronutrients": [
+      { "name": "Protein", "value": 9.0, "unit": "g" },
+      { "name": "Carbohydrates", "value": 20.1, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 7.9, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 181, "unit": "µg", "rdi": "45%" },
+      { "name": "Thiamin (B1)", "value": 0.17, "unit": "mg", "rdi": "14%" },
+      { "name": "Pantothenic acid (B5)", "value": 0.64, "unit": "mg", "rdi": "13%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 3.3, "unit": "mg", "rdi": "18%" },
+      { "name": "Manganese", "value": 0.49, "unit": "mg", "rdi": "22%" },
+      { "name": "Phosphorus", "value": 180, "unit": "mg", "rdi": "26%" },
+      { "name": "Copper", "value": 0.25, "unit": "mg", "rdi": "28%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of plant-based protein and dietary fiber.",
+    "Rich in folate, iron, and manganese.",
+    "Helps lower cholesterol levels due to soluble fiber content.",
+    "Can aid in blood sugar management.",
+    "Promotes digestive health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Lentil allergy is possible, though less common than some other legume allergies. Symptoms can range from mild to severe and may include cross-reactivity with other legumes like chickpeas or peas."
+    }
+  ],
+  "cultivationProcess": "Lentil cultivation involves preparing a firm seedbed, inoculating seeds with Rhizobium, sowing seeds shallowly, managing weeds, and harvesting when pods are mature and yellow-brown. They are often grown in rotation with cereal crops.",
+  "growthDuration": "Approximately 80-110 days, depending on variety and growing conditions.",
+  "sustainabilityTips": [
+    "Nitrogen-fixing crop, improving soil fertility and reducing need for synthetic fertilizers.",
+    "Drought-tolerant varieties are available.",
+    "Good rotation crop to break pest and disease cycles of cereals."
+  ],
+  "carbonFootprintInfo": "Lentils generally have a low carbon footprint, primarily due to their nitrogen-fixing capabilities and low input requirements. They are considered a climate-friendly protein source.",
+  "uses": ["culinary_soups_stews_salads_dal", "animal_feed_plant_residue", "cover_crop"],
+  "originAndDomesticationHistory": "Lentils (Lens culinaris) are one of the oldest domesticated crops, with origins in the Near East (Fertile Crescent) around 7,000-8,000 BCE. Wild progenitor is believed to be Lens orientalis. They were a staple food in ancient Egypt, Greece, and Rome, and spread throughout Europe, Asia, and North Africa.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal temperatures for growth are 18-24°C. Tolerates light frost but sensitive to high temperatures during flowering.",
+    "rainfall": "300-500mm annually. Relatively drought-tolerant once established, but require adequate moisture during germination and flowering.",
+    "altitude": "Can be grown from sea level up to 3500m in some regions."
+  },
+  "soilPreferences": "Prefers well-drained loamy or sandy loam soils with a pH of 6.0-8.0. Tolerates a range of soil types but not heavy clay or waterlogged conditions. Good drainage is crucial.",
+  "irrigationAndWaterNeeds": "Often grown as a rain-fed crop. Supplemental irrigation may be beneficial in dry areas, particularly during flowering and early pod development, to maximize yield.",
+  "plantingAndHarvestCycles": "Planted in early spring in temperate regions or in fall/winter in warmer climates. Seeds are sown 2-4 cm deep. Plants are harvested when lower pods are brown and seeds rattle within. Plants are often cut and swathed to dry before threshing, or directly combined.",
+  "pestAndDiseaseManagement": "Common pests include aphids, Lygus bugs, and pea leaf weevils. Diseases include Ascochyta blight, anthracnose, Botrytis grey mold, and rust. Integrated pest management involves resistant varieties, crop rotation, seed treatments, and fungicides if necessary.",
+  "postHarvestHandling": "Involves threshing to separate seeds from pods, cleaning to remove debris, and drying to a moisture content of 12-13% for safe storage. Stored in cool, dry, and well-ventilated conditions.",
+  "majorProducingCountriesOrRegions": ["Canada (largest producer and exporter)", "India", "Turkey", "Australia", "United States", "Nepal", "Bangladesh", "Syria"],
+  "marketValueAndGlobalDemand": "Lentils are a globally traded pulse with significant demand, especially in South Asia, the Middle East, and North Africa. They are valued for their nutritional content, affordability, and versatility in cooking. Demand is also growing in Western countries with rising interest in plant-based diets."
+}

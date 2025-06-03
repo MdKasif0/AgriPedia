@@ -1,0 +1,145 @@
+{
+  "id": "turnip",
+  "commonName": "Turnip",
+  "scientificName": "Brassica rapa subsp. rapa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Turnips.jpg",
+  "description": "A root vegetable commonly grown in temperate climates worldwide for its white, fleshy taproot. The top part of the root is often purple, red, or greenish where it has been exposed to sunlight.",
+  "origin": "Europe or Western Asia",
+  "localNames": [
+    "Nabo (Spanish)",
+    "Navet (French)",
+    "Steckrübe/Weiße Rübe (German)",
+    "Shalgam (Hindi)"
+  ],
+  "regions": [
+    "Europe",
+    "North America",
+    "Asia"
+  ],
+  "seasons": [
+    "Autumn",
+    "Winter",
+    "Early Spring"
+  ],
+  "nutrition": {
+    "calories": "28 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "35%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 191,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, supporting immune function.",
+    "Contains dietary fiber, aiding digestion.",
+    "Low in calories, making it suitable for weight management diets.",
+    "Turnip greens are also edible and rich in vitamins and minerals."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassica Sensitivity",
+      "severity": "Mild",
+      "details": "Can cause gas in some individuals. Contains goitrogens, which may affect thyroid function if consumed raw in very large amounts by those with thyroid issues."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring for summer harvest, or late summer for fall/winter harvest.\n2. Soil: Well-drained, loose soil. pH 6.0-7.0.\n3. Spacing: Sow seeds 1/2 inch deep. Thin seedlings to 4-6 inches apart.\n4. Watering: Consistent moisture is important for tender roots.\n5. Harvesting: Harvest roots when they are 2-3 inches in diameter for best flavor and texture. Greens can be harvested when young.",
+  "growthDuration": "40-60 days from sowing to harvest for roots.",
+  "sustainabilityTips": [
+    "Store turnips (greens removed) in a cool, dark place or refrigerator crisper.",
+    "Turnip greens can be cooked like spinach or kale.",
+    "Young, tender turnips can be eaten raw; older ones are best cooked (boiled, roasted, mashed)."
+  ],
+  "carbonFootprintInfo": "Low, around 0.3-0.5 kg CO2e/kg for field-grown turnips.",
+  "staticRecipes": [
+    {
+      "name": "Mashed Turnips",
+      "description": "A simple and flavorful alternative to mashed potatoes.",
+      "ingredients": [
+        "2 lbs turnips, peeled and cubed",
+        "2 tbsp butter",
+        "1/4 cup milk or cream (optional)",
+        "Salt and freshly ground black pepper to taste",
+        "Pinch of nutmeg (optional)"
+      ],
+      "steps": [
+        "Place cubed turnips in a pot and cover with salted water. Bring to a boil, then reduce heat and simmer for 15-20 minutes, or until very tender.",
+        "Drain turnips well.",
+        "Return turnips to the pot. Mash with a potato masher or fork.",
+        "Stir in butter, milk/cream (if using), salt, pepper, and nutmeg (if using) until smooth and creamy.",
+        "Serve hot as a side dish."
+      ]
+    },
+    {
+      "name": "Roasted Turnips with Herbs",
+      "description": "Roasting brings out the sweetness of turnips.",
+      "ingredients": [
+        "1.5 lbs turnips, peeled and cut into 1-inch cubes",
+        "2 tbsp olive oil",
+        "1 tsp dried thyme or rosemary",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a large bowl, toss cubed turnips with olive oil, thyme/rosemary, salt, and pepper until evenly coated.",
+        "Spread turnips in a single layer on a baking sheet.",
+        "Roast for 20-30 minutes, flipping halfway, until tender and golden brown with caramelized edges.",
+        "Serve hot."
+      ]
+    },
+    {
+      "name": "Creamy Turnip Soup",
+      "description": "A smooth and comforting soup made with turnips.",
+      "ingredients": [
+        "1 tbsp butter or olive oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1.5 lbs turnips, peeled and diced",
+        "4 cups vegetable or chicken broth",
+        "1/2 cup heavy cream or coconut milk",
+        "Salt and pepper to taste",
+        "Fresh parsley or chives for garnish"
+      ],
+      "steps": [
+        "Melt butter/oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and cook for 1 minute more.",
+        "Add diced turnips and broth. Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until turnips are very tender.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, blend in batches in a regular blender.",
+        "Stir in heavy cream/coconut milk. Season with salt and pepper.",
+        "Reheat gently. Serve hot, garnished with parsley or chives."
+      ]
+    }
+  ]
+}

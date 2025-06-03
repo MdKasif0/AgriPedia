@@ -1,0 +1,145 @@
+{
+  "id": "snake-gourd",
+  "commonName": "Snake Gourd",
+  "scientificName": "Trichosanthes cucumerina",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Trichosanthes_Cucumerina_aka_Snake_Gourd.jpeg",
+  "description": "A tropical or subtropical vine grown for its strikingly long fruit, which can reach up to 1.5 meters. The fruit is slender, often twisted or curled, with a waxy green skin that may have lighter green or white stripes.",
+  "origin": "India or Southeast Asia",
+  "localNames": [
+    "Chichinda (Hindi)",
+    "Padwal (Marathi)",
+    "Potlakaya (Telugu)",
+    "Serpent Gourd"
+  ],
+  "regions": [
+    "India",
+    "Sri Lanka",
+    "Southeast Asia",
+    "Parts of Africa"
+  ],
+  "seasons": [
+    "Rainy season",
+    "Summer"
+  ],
+  "nutrition": {
+    "calories": "18 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 32.5,
+        "unit": "mg",
+        "rdi": "54%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 51,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and a good source of dietary fiber.",
+    "Provides Vitamin C, supporting the immune system.",
+    "Contains minerals like calcium and phosphorus.",
+    "Traditionally used in Ayurvedic medicine for various ailments."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Snake Gourd Allergy",
+      "severity": "Rare",
+      "details": "Allergies are uncommon."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season vine. Sow seeds directly after last frost.\n2. Soil: Well-drained, fertile loamy soil rich in organic matter. pH 6.0-7.0. Full sun.\n3. Support: Requires a very strong and tall trellis or arbor for the long fruits to hang and grow straight.\n4. Watering: Needs regular and deep watering, especially during fruit development.\n5. Harvesting: Harvest fruits when they are young and tender, typically 12-18 inches long (though some varieties grow much longer). Overmature fruits become hard and bitter.",
+  "growthDuration": "60-80 days from sowing to first harvest.",
+  "sustainabilityTips": [
+    "Store snake gourd in the refrigerator for 3-5 days.",
+    "Lightly scrape or peel the skin. Remove soft pith and seeds if mature.",
+    "Commonly used in curries, stir-fries, and stews in South Asian cuisine."
+  ],
+  "carbonFootprintInfo": "Low to moderate (0.4-0.8 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Snake Gourd Kootu (South Indian Stew)",
+      "description": "A flavorful South Indian stew made with snake gourd, lentils, and coconut.",
+      "ingredients": [
+        "1 medium snake gourd, scraped, seeded, and chopped",
+        "1/4 cup moong dal or toor dal, cooked",
+        "1/4 cup grated coconut",
+        "1 tsp cumin seeds",
+        "2 green chilies",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1 dried red chili, few curry leaves"
+      ],
+      "steps": [
+        "Cook chopped snake gourd with a little water and turmeric powder until tender. Drain excess water.",
+        "Grind coconut, cumin seeds, and green chilies to a smooth paste with a little water.",
+        "Add cooked dal and ground coconut paste to the cooked snake gourd. Add salt. Mix well.",
+        "Simmer for 5-7 minutes, stirring occasionally, until flavors blend and kootu thickens slightly.",
+        "Tempering: Heat oil. Add mustard seeds; when they splutter, add dried red chili and curry leaves. Pour over the kootu. Mix and serve hot with rice."
+      ]
+    },
+    {
+      "name": "Stuffed Snake Gourd (Bharwa Chichinda)",
+      "description": "Snake gourd pieces stuffed with a spiced lentil or vegetable mixture and cooked.",
+      "ingredients": [
+        "1 long snake gourd",
+        "For stuffing: 1/2 cup cooked chana dal (mashed), 1 onion (finely chopped), 1 tsp ginger-garlic paste, 1/2 tsp turmeric, 1 tsp coriander powder, salt, oil",
+        "Oil for shallow frying"
+      ],
+      "steps": [
+        "Wash and lightly scrape the snake gourd. Cut into 2-3 inch long pieces. Gently scoop out the inner pith and seeds, creating hollow cylinders.",
+        "Stuffing: Heat oil, sauté onions. Add ginger-garlic paste. Add mashed dal and all spice powders. Cook until mixture is dry. Cool.",
+        "Stuff the snake gourd pieces with the prepared mixture.",
+        "Heat oil in a wide pan. Arrange stuffed snake gourd pieces. Cook on low-medium heat, covered, turning occasionally, until tender and lightly browned (about 15-20 mins). Add a splash of water if needed to prevent sticking."
+      ]
+    },
+    {
+      "name": "Snake Gourd Poriyal (Stir-fry)",
+      "description": "A simple South Indian stir-fry with snake gourd and minimal spices.",
+      "ingredients": [
+        "1 medium snake gourd, scraped, seeded, and finely chopped",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp urad dal",
+        "1-2 dried red chilies, broken",
+        "Pinch of asafoetida",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "2 tbsp grated fresh coconut"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and red chilies. Sauté until dal turns golden.",
+        "Add asafoetida and chopped snake gourd. Add turmeric powder and salt.",
+        "Stir well. Cover and cook on low-medium heat for 7-10 minutes, or until snake gourd is tender, stirring occasionally.",
+        "Stir in grated coconut. Cook for another minute. Serve hot with rice and sambar/rasam."
+      ]
+    }
+  ]
+}

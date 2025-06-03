@@ -1,0 +1,67 @@
+{
+  "id": "beetroot",
+  "commonName": "Beetroot (Beet)",
+  "scientificName": "Beta vulgaris subsp. vulgaris Conditiva Group",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Beetroot, also known simply as beet, is the taproot portion of the beet plant. It is a popular root vegetable known for its deep purple color, earthy flavor, and nutritional value. Besides the root, beet greens are also edible and nutritious. Sugar beet is a different cultivar group of the same species, used for sugar production.",
+  "origin": "Mediterranean region.",
+  "localNames": ["Chukandar (Hindi)", "Bītsu (Japanese)", "Remolacha / Betabel (Spanish)", "Betterave (French)"],
+  "regions": ["Europe (Russia, France, Germany, Poland, UK)", "United States", "Egypt", "China", "India", "Turkey"],
+  "seasons": ["Cool-season crop; typically sown in spring for summer harvest, or late summer for autumn/winter harvest in milder climates. Can be stored for winter use."],
+  "nutrition": {
+    "calories": "Cooked beetroot: ~44 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~1.7" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~9.9 (Sugars ~7.9, Fiber ~2.0)" },
+      { "name": "Fat", "unit": "g", "value": "~0.2" },
+      { "name": "Fiber", "unit": "g", "value": "~2.0" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "~80 (20%)" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~3.6 (4%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.329 (14%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~305 (6%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~23 (5%)" },
+      { "name": "Iron", "unit": "mg", "rdi": "~0.79 (4%)" },
+      { "name": "Nitrates (dietary)", "unit": "mg", "rdi": "Variable, significant amounts" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in folate, manganese, and dietary nitrates.",
+    "Dietary nitrates can convert to nitric oxide in the body, which may help lower blood pressure and improve blood flow.",
+    "Contains betalains (e.g., betanin), pigments with antioxidant and anti-inflammatory properties.",
+    "Good source of fiber, aiding digestion.",
+    "May enhance exercise performance due to nitrate content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Beetroot Sensitivity/Beeturia",
+      "severity": "Mild",
+      "details": "Allergy is rare. Some individuals may experience beeturia (red or pink urine and stools) after consuming beetroot, which is harmless. High oxalate content might be a concern for individuals prone to calcium oxalate kidney stones if consumed in very large quantities."
+    }
+  ],
+  "cultivationProcess": "Beetroot is grown from seeds. It prefers cool weather and well-drained, fertile soil. Seeds are often multigerm, meaning one seed can produce multiple seedlings that may require thinning.",
+  "growthDuration": "Approximately 50-70 days from sowing to harvest for mature roots, depending on the variety and conditions. Baby beets can be harvested earlier.",
+  "sustainabilityTips": [
+    "Can be grown in home gardens, reducing food miles.",
+    "Crop rotation helps manage soilborne pests and diseases.",
+    "Both root and leaves (beet greens) are edible, minimizing waste."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of beetroot is generally low to moderate, influenced by farming practices, storage (if any), and transportation. Local and seasonal consumption is more sustainable.",
+  "uses": ["culinary_vegetable_root_boiled_roasted_pickled_raw_in_salads_soups_juices", "culinary_vegetable_leaves_beet_greens_cooked_like_spinach", "food_coloring_betanin_E162", "traditional_medicine_liver_support_blood_purifier", "animal_feed_leaves_root_residues"],
+  "originAndDomesticationHistory": "Beetroot (Beta vulgaris) is derived from the wild sea beet, native to the coasts of Europe, North Africa, and the Near East. Leaf beets (like chard) were cultivated first by ancient Greeks and Romans. Root beets with swollen taproots were developed later, likely in the Roman era or Middle Ages in Europe. Sugar beet, a distinct cultivar for sugar production, was developed in the 18th century.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 15-20°C. Tolerates light frost. Quality can be affected by hot weather (leading to zoning/color loss).",
+    "rainfall": "Requires consistent moisture, around 400-600mm during the growing season. Water stress can lead to tough, woody roots.",
+    "altitude": "Adaptable to various altitudes in temperate regions."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy or sandy loam soils rich in organic matter. Slightly acidic to neutral pH (6.0-7.5) is optimal. Avoid stony or compacted soils, which can cause misshapen roots.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering to maintain soil moisture, especially during root development. About 1 inch of water per week is a general guideline. Drip irrigation or soaker hoses are effective.",
+  "plantingAndHarvestCycles": "Seeds are sown directly in the garden in early spring as soon as soil can be worked, or in late summer for an autumn crop. 'Seeds' are actually clusters of seeds, so thinning is often required. Roots are harvested when they reach desired size (typically 5-8 cm diameter). Can be harvested over a period.",
+  "pestAndDiseaseManagement": "Pests include flea beetles, aphids, and leaf miners. Diseases include Cercospora leaf spot, downy mildew, and root rot (in wet soils). Crop rotation, proper spacing for air circulation, and timely harvesting can help prevent issues. Resistant varieties are available for some diseases.",
+  "postHarvestHandling": "Harvested beetroots are topped (leaves removed, leaving about 2-3 cm of stem to prevent bleeding). They can be stored for several months in cool, moist conditions (near 0°C and 95% humidity), often in root cellars or refrigerators. Beet greens are perishable and should be used quickly.",
+  "majorProducingCountriesOrRegions": ["Russia", "France", "Germany", "United States", "Poland", "Turkey", "Egypt", "United Kingdom", "China", "India"],
+  "marketValueAndGlobalDemand": "Beetroot is a popular vegetable in many parts of the world, with steady demand for fresh market and processing (canning, pickling, juice). It's valued for its flavor, color, and nutritional benefits. The market for beet juice and beetroot powder as a health supplement is also growing."
+}

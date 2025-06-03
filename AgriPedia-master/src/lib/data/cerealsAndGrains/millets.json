@@ -1,0 +1,60 @@
+{
+  "id": "millets",
+  "commonName": "Millets",
+  "scientificName": "Various species (e.g., Pennisetum glaucum, Eleusine coracana, Setaria italica)",
+  "image": "https://images.unsplash.com/photo-1507668077129-56e328422ceb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Millets are a group of highly variable small-seeded grasses, widely grown around the world as cereal crops or grains for fodder and human food. They are important crops in the semiarid tropics of Asia and Africa. Key types include Pearl Millet (Bajra), Finger Millet (Ragi), and Foxtail Millet (Kangni). Pearl millet is the most widely grown type. Finger millet is rich in calcium. Foxtail millet is one of the oldest cultivated millets.",
+  "origin": "Various, depending on the type. Pearl millet originated in Africa. Foxtail millet in China. Finger millet in East Africa (Ethiopian highlands).",
+  "localNames": ["Bajra (Pearl Millet, Hindi)", "Ragi (Finger Millet, Hindi)", "Kangni (Foxtail Millet, Hindi)", "Kibi (Japanese, general for millet)"],
+  "regions": ["India", "Nigeria", "Niger", "China", "Mali", "Sudan", "Ethiopia"],
+  "seasons": ["Typically warm-season crops, planted in summer (Kharif season in India) and harvested in fall."],
+  "nutrition": {
+    "calories": "Approx. 300-380 kcal per 100g (raw, varies by type)",
+    "macronutrients": [
+      { "name": "Protein", "value": "6-12", "unit": "g (varies; e.g., Finger millet ~7g, Foxtail ~12g, Pearl ~11g)" },
+      { "name": "Carbohydrates", "value": "60-75", "unit": "g" },
+      { "name": "Fat", "value": "1.5-5", "unit": "g (Foxtail ~4g, Pearl ~5g)" },
+      { "name": "Fiber", "value": "2-15", "unit": "g (Finger millet high in fiber ~11g, Pearl ~2-3g)" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": "Varies", "unit": "mg", "rdi": "Varies" },
+      { "name": "Thiamin (B1)", "value": "Varies", "unit": "mg", "rdi": "Varies" },
+      { "name": "Vitamin B6", "value": "Varies", "unit": "mg", "rdi": "Varies" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": "Varies (Finger millet ~3.9mg, Pearl ~8mg)", "unit": "mg", "rdi": "Varies" },
+      { "name": "Calcium", "value": "Varies (Finger millet very high ~344mg, Pearl ~42mg)", "unit": "mg", "rdi": "Varies" },
+      { "name": "Magnesium", "value": "Varies", "unit": "mg", "rdi": "Varies" }
+    ]
+  },
+  "healthBenefits": [
+    "Gluten-free, suitable for individuals with celiac disease.",
+    "High in fiber, aiding digestion and blood sugar control.",
+    "Rich in various micronutrients depending on the type (e.g., Finger millet in calcium, Pearl millet in iron).",
+    "Low glycemic index, beneficial for diabetics.",
+    "Contain antioxidants."
+  ],
+  "potentialAllergies": [],
+  "cultivationProcess": "Millet cultivation involves preparing a seedbed, sowing seeds (often directly), managing weeds, and harvesting when grains are mature. They are adapted to dry, infertile soils.",
+  "growthDuration": "Generally 60-120 days, depending on the type and climate. Pearl millet can be as short as 60-75 days.",
+  "sustainabilityTips": [
+    "Highly drought-tolerant, requiring minimal water, making them suitable for arid and semi-arid regions.",
+    "Can grow in poor soil conditions with fewer inputs.",
+    "Promote biodiversity and crop diversification."
+  ],
+  "carbonFootprintInfo": "Millets generally have a low carbon footprint due to their resilience, low input requirements (water, fertilizer, pesticides), and ability to grow in marginal lands.",
+  "uses": ["culinary", "animal_feed", "fodder", "beverages_alcoholic_local"],
+  "originAndDomesticationHistory": "Millets encompass a diverse group domesticated independently in various parts of the world. Pearl millet (Pennisetum glaucum) was domesticated in sub-Sahelian West Africa around 4,500-5,000 years ago. Foxtail millet (Setaria italica) was domesticated in China around 8,000 years ago. Finger millet (Eleusine coracana) originated in the highlands of East Africa (Ethiopia/Uganda) around 5,000 years ago.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crops, generally requiring 20-30°C. Very heat tolerant.",
+    "rainfall": "Highly drought-tolerant. Can thrive with 200-600mm of rainfall. Specific needs vary; e.g., Pearl millet is extremely drought-resistant.",
+    "altitude": "Can be grown from sea level up to 2000m or higher, depending on the type."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, including sandy and infertile soils. Generally prefer well-drained soils. Tolerant of low pH and poor soil fertility.",
+  "irrigationAndWaterNeeds": "Primarily grown as rain-fed crops due to their excellent drought tolerance. Irrigation is usually not required unless in extremely prolonged dry spells.",
+  "plantingAndHarvestCycles": "Typically sown at the onset of the rainy season. Seeds are small and sown shallowly. Harvested when grains are hard and dry. Multiple harvests may be possible for some types or if used for fodder.",
+  "pestAndDiseaseManagement": "Relatively resistant to pests and diseases compared to other major cereals. Common issues include shoot fly, stem borers, and grain mold (especially in humid conditions). Integrated pest management and traditional practices are common.",
+  "postHarvestHandling": "Involves threshing to separate grains, winnowing, and drying to about 12% moisture content for storage. Grains are small and need careful handling to prevent loss. Stored in traditional granaries or modern silos.",
+  "majorProducingCountriesOrRegions": ["India (largest producer, especially Rajasthan, Maharashtra, Gujarat for Pearl Millet; Karnataka for Finger Millet)", "African Sahel region (Nigeria, Niger, Mali, Burkina Faso for Pearl Millet)", "China (Foxtail Millet)", "Other parts of Africa and Asia"],
+  "marketValueAndGlobalDemand": "Millets are crucial for food security in many developing countries. Global demand is increasing due to their nutritional benefits (gluten-free, high fiber) and climate resilience. They are being promoted as 'smart foods' or 'nutri-cereals'."
+}

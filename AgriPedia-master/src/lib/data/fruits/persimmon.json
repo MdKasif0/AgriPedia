@@ -1,0 +1,242 @@
+{
+  "id": "persimmon",
+  "commonName": "Persimmon (Kaki)",
+  "scientificName": "Diospyros kaki (Oriental Persimmon)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Persimmon_fruit_on_market_in_Poznan.JPG/800px-Persimmon_fruit_on_market_in_Poznan.JPG",
+  "description": "The Oriental persimmon (Diospyros kaki) is a deciduous tree in the ebony family (Ebenaceae), that produces sweet, edible fruit, typically orange to reddish-orange when ripe. Fruits are broadly classified as astringent (e.g., 'Hachiya', which must be fully soft and jelly-like before eating to lose tartness due to tannins) or non-astringent (e.g., 'Fuyu', which can be eaten firm like an apple). The flesh ranges from soft and custard-like to crisp, depending on variety and ripeness.",
+  "origin": "Native to China, with cultivation dating back over 2000 years.",
+  "localNames": [
+    "Kaki (柿 - Japanese, and often used internationally)",
+    "Shì (柿 - Chinese)",
+    "Gam (감 - Korean)",
+    "Sharon Fruit (Israel - specific 'Triumph' cultivar, often artificially ripened to remove astringency)",
+    "Caqui (Spanish, Portuguese)",
+    "Plaquemine (French - from an Algonquian name for American persimmon, sometimes misapplied)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "South Korea",
+    "Japan",
+    "Brazil",
+    "Azerbaijan",
+    "Spain (Valencian region, Andalusia)",
+    "Italy (Sicily, Campania)",
+    "Israel",
+    "Uzbekistan",
+    "United States (California, Florida, Texas - limited scale)",
+    "Australia",
+    "New Zealand"
+  ],
+  "seasons": [
+    "Autumn to early Winter (typically September to December/January in the Northern Hemisphere, depending on cultivar and climate)"
+  ],
+  "nutrition": {
+    "calories": "70 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.59,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (from carotenoids like beta-cryptoxanthin, beta-carotene)",
+        "value": 81,
+        "unit": "µg RAE",
+        "rdi": "9-11%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 7.5,
+        "unit": "mg",
+        "rdi": "8-10%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 2.6,
+        "unit": "µg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 8,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 0.73,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.355,
+        "unit": "mg",
+        "rdi": "15-18%"
+      },
+      {
+        "name": "Potassium",
+        "value": 161,
+        "unit": "mg",
+        "rdi": "3-5%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.04,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 17,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.15,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin A (from various carotenoids like beta-cryptoxanthin and beta-carotene), which is crucial for good vision, immune function, and skin health.",
+    "Good source of dietary fiber, aiding digestion, promoting bowel regularity, and helping to manage blood sugar levels.",
+    "Contains various antioxidants, including Vitamin C, manganese, and phytonutrients like flavonoids and tannins (especially when astringent), which help protect the body against oxidative stress.",
+    "May contribute to heart health due to fiber and potassium content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Tannin Astringency (in unripe or astringent varieties)",
+      "severity": "Mild to Moderate (mouthfeel, not true allergy)",
+      "details": "Astringent persimmon varieties (e.g., 'Hachiya') are high in soluble tannins when unripe or firm, causing a dry, puckering sensation in the mouth. These should only be eaten when fully soft and jelly-like, at which point the tannins become insoluble and astringency disappears. Non-astringent varieties (e.g., 'Fuyu') lack this issue and can be eaten firm. In rare cases, consumption of large quantities of unripe astringent persimmons (especially the peel) on an empty stomach has been linked to the formation of bezoars (indigestible masses) in the stomach."
+    },
+    {
+      "name": "Persimmon Allergy (rare)",
+      "severity": "Rare, Mild",
+      "details": "True allergy to persimmon fruit is uncommon but can occur, potentially causing oral allergy symptoms or skin reactions in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Persimmon trees (Diospyros kaki) are deciduous and can grow up to 10 meters tall. They prefer temperate and subtropical climates with distinct seasons. Most varieties require a period of winter chill. Trees are often dioecious (separate male and female trees), but many commercial cultivars are parthenocarpic (set fruit without pollination) or self-fruitful. They thrive in deep, well-drained loamy soil and require full sun for optimal fruit production. Pruning is done to maintain tree structure and fruit quality. Details in specific sections.",
+  "growthDuration": "Persimmon trees typically begin to bear fruit 3 to 6 years after planting from grafted stock. The fruit ripens in the autumn, often after the leaves have started to change color or fall, making it a late-season fruit.",
+  "sustainabilityTips": [
+    "Choose locally grown persimmons during their autumn season to reduce the carbon footprint from long-distance transportation and cold storage.",
+    "Persimmon trees can be relatively low-maintenance in suitable climates, sometimes requiring less water and pest control than other fruit trees once established.",
+    "Learn to distinguish between astringent and non-astringent varieties to ensure proper ripening and avoid food waste due to astringency."
+  ],
+  "carbonFootprintInfo": "Locally grown persimmons consumed in season generally have a moderate carbon footprint. However, persimmons imported from distant countries, especially if requiring prolonged refrigeration and significant transport logistics, will have a higher environmental impact.",
+  "uses": [
+    "fresh_consumption_non_astringent_types_eaten_firm_or_soft_astringent_types_eaten_fully_soft_jelly_like",
+    "processed_products_dried_persimmons_hoshigaki_shibing_jams_jellies_preserves_syrups_purees",
+    "culinary_desserts_puddings_custards_ice_cream_cookies_cakes_bread_fruit_salads",
+    "beverages_persimmon_wine_vinegar_leaf_tea_kaki_no_hacha",
+    "medicinal_traditional_chinese_japanese_korean_medicine_for_coughs_hiccups_regulating_qi",
+    "timber_wood_related_to_ebony_hard_used_for_furniture_decorative_items_though_not_primary_source"
+  ],
+  "originAndDomesticationHistory": "The Oriental persimmon (Diospyros kaki) is native to China, where it has been cultivated for over 2000 years and is deeply embedded in the culture and traditional medicine. From China, its cultivation spread to Japan (where many distinct cultivars, including 'Fuyu' and 'Hachiya', were developed) and Korea at an early date. It was introduced to California in the United States and Southern Europe (such as Spain and Italy) in the mid-19th century. The American persimmon (Diospyros virginiana) is a different, smaller-fruited species native to the Eastern United States, known to Native Americans long before European settlement. The 'Sharon Fruit' is a trade name for a specific Israeli-grown cultivar ('Triumph') of D. kaki that is artificially treated to remove astringency while still firm.",
+  "climaticRequirements": {
+    "temperature": "Persimmons are suited to temperate and some subtropical climates. Most varieties of Diospyros kaki require a period of winter chill (typically 100-400 hours below 7°C or 45°F, though some need less) to break dormancy and ensure proper flowering. They are generally tolerant of a wide range of temperatures once established but can be damaged by severe winter cold (below -12°C to -15°C or 5-10°F for extended periods). Young trees and spring growth are susceptible to late spring frosts. Optimal growing temperatures during the summer are around 16-26°C (60-80°F) for good fruit development.",
+    "rainfall": "Prefers moderate annual rainfall, typically between 1000mm and 1500mm, well-distributed. While mature trees can be relatively drought-tolerant, consistent moisture is beneficial for good fruit production and quality, especially during fruit set and development. Irrigation is common in commercial orchards, particularly in drier regions.",
+    "altitude": "Can be successfully cultivated from sea level up to about 1500-2000 meters (approx. 4900-6500 feet) in suitable temperate or subtropical latitudes, provided other climatic requirements are met."
+  },
+  "soilPreferences": "Persimmon trees are adaptable to a wide range of soil types but perform best in deep, well-drained, fertile loamy soils. Good soil drainage is crucial, as they do not tolerate waterlogged conditions. They can grow in soils with a pH ranging from slightly acidic to neutral (typically 6.0 to 7.5). While tolerant of various soil textures, very sandy or very heavy clay soils might require amendment.",
+  "irrigationAndWaterNeeds": "Young persimmon trees require regular and consistent watering to ensure proper establishment. Mature trees are relatively drought-tolerant but benefit significantly from supplemental irrigation, especially during prolonged dry spells and during the critical periods of flowering, fruit set, and fruit development. Adequate soil moisture during these times is important for achieving good yield and fruit size. Overwatering or poor drainage should be avoided to prevent root diseases.",
+  "plantingAndHarvestCycles": "Persimmon trees are commonly propagated by grafting or budding desired cultivars onto seedling rootstock, often using Diospyros kaki, D. virginiana (American persimmon, for colder areas or specific soil conditions), or D. lotus (date-plum, for drought tolerance). Planting is usually done in late winter or early spring while the trees are dormant. Full sun exposure is preferred for optimal fruit production and quality. Grafted trees typically begin bearing fruit within 3-6 years of planting. Many commercial cultivars are parthenocarpic (set fruit without pollination) or are self-fruitful; however, some may benefit from cross-pollination. Flowers typically appear in late spring. The fruits ripen in the autumn, from September to December in the Northern Hemisphere, depending on the cultivar and local climate. Persimmons are harvested by hand when they have reached their full color (orange to reddish-orange) but are often still firm, especially for non-astringent types like 'Fuyu'. Astringent varieties like 'Hachiya' are usually harvested firm and allowed to ripen off the tree until completely soft and jelly-like to remove astringency, or they can be left on the tree to soften if protected from pests and frost.",
+  "pestAndDiseaseManagement": "Common Pests: Persimmons are generally quite hardy but can be affected by pests such as fruit flies (which can lay eggs in ripening fruit), scale insects, mealybugs, persimmon borer, and persimmon psylla. Birds, squirrels, and other wildlife can also cause significant damage to ripe fruit. Common Diseases: Crown gall (Agrobacterium tumefaciens), anthracnose (Colletotrichum spp.), and various leaf spot diseases (e.g., Cercospora) can occur. Fruit drop before maturity can also be an issue, sometimes related to physiological stress or pollination issues. Root rot can occur in poorly drained soils. Management Strategies: Maintaining good orchard sanitation, including the removal of fallen fruit and diseased plant parts. Pruning to ensure good air circulation, which can help reduce fungal disease pressure. Using traps or lures for fruit flies. Netting trees to protect fruit from birds. Controlling specific pests with targeted insecticides if they become problematic and economic thresholds are reached. Ensuring proper soil drainage to prevent root diseases.",
+  "postHarvestHandling": "Handling of persimmons depends on the type (astringent or non-astringent). Non-astringent varieties like 'Fuyu' can be eaten when firm like an apple or allowed to soften slightly; they have a reasonable shelf life and can be stored for several weeks if refrigerated at cool temperatures (around 0-5°C or 32-41°F). Astringent varieties such as 'Hachiya' must be fully soft and jelly-like before they are palatable; this ripening process can be done at room temperature. Artificial ripening methods can be used to remove astringency from firm astringent persimmons, such as exposure to ethylene gas, carbon dioxide treatment, or enclosing them with alcohol-releasing materials (e.g., in a closed container with a small amount of ethanol or by treating with sake/brandy fumes, a traditional Japanese method). Dried persimmons ('Hoshigaki' in Japan, 'Shibing' in China) are a major processed product, involving peeling, hanging, and sometimes massaging the fruit during the drying process, which also removes astringency.",
+  "majorProducingCountriesOrRegions": [
+    "China (by far the world's largest producer)",
+    "South Korea",
+    "Japan",
+    "Brazil",
+    "Azerbaijan",
+    "Spain (particularly the Valencian region, known for 'Rojo Brillante' variety)",
+    "Italy (Sicily, Campania)",
+    "Israel (known for 'Sharon Fruit' - Triumph variety)",
+    "Uzbekistan",
+    "United States (primarily California and Florida, smaller scale)",
+    "Australia",
+    "New Zealand",
+    "Taiwan"
+  ],
+  "marketValueAndGlobalDemand": "Persimmons are a popular fruit in East Asia (China, Japan, South Korea), where they have a long history of cultivation and consumption. Global demand for persimmons has been steadily increasing, particularly for non-astringent varieties like 'Fuyu' which are easier for consumers to handle and eat. China dominates world production. Significant international trade exists for fresh persimmons, with countries like Spain, Israel, Azerbaijan, and Brazil being notable exporters to markets in Europe, North America, and other regions. Dried persimmons also have a substantial market, especially in East Asia and as a gourmet product elsewhere. The market value can vary based on variety (astringent vs. non-astringent, specific cultivars), size, quality, and origin.",
+  "staticRecipes": [
+    {
+      "name": "Simple Persimmon & Yogurt Parfait",
+      "description": "A quick and healthy breakfast or dessert layering sweet, ripe persimmons with creamy yogurt and crunchy granola. Best made with non-astringent Fuyu persimmons.",
+      "ingredients": [
+        "2 ripe Fuyu persimmons (or other non-astringent type), peeled (optional) and diced",
+        "1 cup Greek yogurt (or plain yogurt of choice)",
+        "1/2 cup granola",
+        "1 tablespoon honey or maple syrup (optional)",
+        "Pinch of ground cinnamon or nutmeg (optional)"
+      ],
+      "steps": [
+        "Prepare the persimmons: Wash the persimmons thoroughly. Peel if desired (the skin of Fuyu persimmons is edible), then dice into bite-sized pieces. Ensure the persimmons are ripe and sweet.",
+        "Choose two serving glasses or small bowls.",
+        "Create the first layer by placing half of the diced persimmons at the bottom of each glass.",
+        "Add a layer of Greek yogurt (about 1/2 cup per glass) over the persimmons.",
+        "Sprinkle a layer of granola (about 1/4 cup per glass) over the yogurt.",
+        "If using, drizzle the top layer of granola with honey or maple syrup.",
+        "Add a final pinch of cinnamon or nutmeg on top if desired.",
+        "Serve immediately to enjoy the contrast of crunchy granola and soft fruit. Alternatively, it can be chilled for a short period, but the granola may soften over time."
+      ]
+    }
+  ]
+}

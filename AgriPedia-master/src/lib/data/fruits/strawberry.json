@@ -1,0 +1,197 @@
+{
+  "id": "strawberry",
+  "commonName": "Strawberry",
+  "scientificName": "Fragaria × ananassa (Garden Strawberry)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/800px-PerfectStrawberry.jpg",
+  "description": "A widely grown hybrid species of the genus Fragaria, cultivated worldwide for its bright red, juicy, and sweet fruit. The fruit is technically an aggregate accessory fruit, meaning the fleshy part is derived not from the plant's ovaries but from the receptacle that holds the ovaries. The numerous 'seeds' on the outside are achenes, each one an actual fruit containing a tiny seed.",
+  "origin": "The modern garden strawberry (Fragaria × ananassa) originated in Brittany, France, in the 1750s as an accidental hybrid of Fragaria virginiana from eastern North America and Fragaria chiloensis from Chile.",
+  "localNames": [
+    "Fresa (Spanish)",
+    "Fraise (French)",
+    "Erdbeere (German - 'earth berry')",
+    "Fragola (Italian)",
+    "Morango (Portuguese)"
+  ],
+  "regions": [
+    "China (leading global producer)",
+    "United States (California, Florida, Oregon)",
+    "Mexico (major exporter)",
+    "Turkey",
+    "Spain",
+    "Egypt",
+    "South Korea",
+    "Poland",
+    "Germany",
+    "Japan"
+  ],
+  "seasons": [
+    "Primarily Spring and Summer (May to August in Northern Hemisphere for June-bearers; everbearers can extend into autumn). Availability can be year-round due to global sourcing, greenhouse cultivation, and different varieties."
+  ],
+  "nutrition": {
+    "calories": "32 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.67,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.68,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 58.8,
+        "unit": "mg",
+        "rdi": "65-98%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.386,
+        "unit": "mg",
+        "rdi": "17-19%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 24,
+        "unit": "µg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 2.2,
+        "unit": "µg",
+        "rdi": "2-3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 153,
+        "unit": "mg",
+        "rdi": "3-4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, promotes skin health, and aids in iron absorption.",
+    "Rich in antioxidants, including anthocyanins (which give strawberries their red color) and ellagic acid, which help protect against oxidative stress and inflammation.",
+    "May improve heart health by helping to lower blood pressure, reduce LDL (bad) cholesterol, and improve blood vessel function.",
+    "Can help regulate blood sugar levels due to their relatively low glycemic index and high fiber content.",
+    "Good source of manganese, important for bone health and metabolic processes."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Strawberry Allergy / Oral Allergy Syndrome (OAS)",
+      "severity": "Mild to Moderate",
+      "details": "Strawberry allergy can occur, though it's not among the most common food allergies. Symptoms can range from mild oral allergy syndrome (itching or tingling in the mouth, lips, or throat), often linked to birch pollen allergy, to skin reactions like hives (urticaria) or eczema. In rare cases, more severe systemic reactions can occur. Strawberries contain a protein (Fra a1) similar to one found in birch pollen."
+    }
+  ],
+  "cultivationProcess": "Strawberries are low-growing herbaceous plants. They prefer well-drained, slightly acidic soil (pH 5.5-6.5) and full sun for optimal fruit production. Often grown from runners (stolons) that produce daughter plants, or from bare-root plants or plugs. Mulching with straw or plastic helps retain soil moisture, suppress weeds, and keep the fruit clean. Two main types exist: June-bearing (large crop in late spring/early summer) and everbearing/day-neutral (fruit throughout summer and into autumn). Detailed cultivation aspects are covered in specific sections.",
+  "growthDuration": "Plants can produce some fruit in their first year of planting, with peak production typically in the second and third years. The main harvest for June-bearing varieties is concentrated over a few weeks in late spring or early summer. Everbearing varieties have a longer, more spread-out harvest period.",
+  "sustainabilityTips": [
+    "Store unwashed strawberries in the refrigerator, preferably in a single layer in a breathable container (e.g., original clamshell partly open, or a container lined with paper towels); consume within 2-5 days for best quality.",
+    "Wash gently just before eating to avoid waterlogging, which can accelerate spoilage.",
+    "Freeze excess strawberries for later use in smoothies, desserts, or jams. Hull them and freeze in a single layer on a baking sheet before transferring to a freezer bag or container.",
+    "Choose locally grown strawberries during their peak season to enjoy the best flavor and reduce food miles. Consider pick-your-own farms."
+  ],
+  "carbonFootprintInfo": "Highly variable. Locally grown, field-grown strawberries consumed in season have a relatively lower carbon footprint (estimated 0.5-1.5 kg CO2e/kg). However, out-of-season strawberries that are air-freighted from distant regions or grown in heated greenhouses can have a much higher footprint, potentially exceeding 5-10 kg CO2e/kg.",
+  "uses": [
+    "fresh_consumption_eaten_raw_with_cream_sugar_in_fruit_salads_cereals_yogurt",
+    "processed_products_jams_jellies_preserves_syrups_sauces_purees_fruit_spreads",
+    "culinary_desserts_pies_tarts_cakes_strawberry_shortcake_ice_cream_sorbets_mousses_cheesecakes",
+    "beverages_juices_smoothies_milkshakes_daiquiris_flavoring_for_teas_lemonades_infused_water",
+    "flavoring_agent_for_candies_chocolates_confectionery_dairy_products",
+    "dried_fruit_dried_strawberry_slices_for_snacks_cereals_trail_mixes",
+    "frozen_fruit_iqf_individually_quick_frozen_for_year_round_use_in_baking_smoothies"
+  ],
+  "originAndDomesticationHistory": "The modern garden strawberry (Fragaria × ananassa) is a hybrid that was accidentally created in Brittany, France, in the mid-1750s. It resulted from the cross-pollination of two American species: Fragaria virginiana, native to eastern North America (valued for its flavor and aroma), and Fragaria chiloensis, native to the Pacific coast of North and South America, particularly Chile (valued for its large fruit size). Wild strawberry species (like Fragaria vesca, the woodland or alpine strawberry) have been known and consumed by humans for millennia in Europe, Asia, and the Americas, but they are much smaller than the modern cultivated strawberry. The development of Fragaria × ananassa revolutionized strawberry cultivation due to its significantly larger fruit and good flavor, leading to its worldwide adoption.",
+  "climaticRequirements": {
+    "temperature": "Strawberries thrive in temperate climates. Most common varieties (June-bearers and everbearers) require a period of winter chilling (typically 200-500 hours with temperatures between 0-7°C or 32-45°F) for good flower bud development and vigorous growth in the spring. Optimal growing temperatures during the season are generally between 15°C and 25°C (60°F to 77°F). Flowers are very susceptible to damage from spring frosts. High summer temperatures (above 30°C or 86°F) can stress plants and reduce fruit quality.",
+    "rainfall": "Requires moderate and consistent rainfall or irrigation, typically around 600-900mm annually, especially during establishment, flowering, and fruit development. Good soil drainage is crucial, as strawberries are susceptible to root rot in waterlogged conditions. High humidity during fruiting can increase the risk of fruit rot diseases like grey mold.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes where chilling requirements and suitable temperature conditions are met. In warmer climates, higher altitudes might provide the necessary chilling."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils that are rich in organic matter (at least 2-3%). A slightly acidic soil pH, ideally between 5.5 and 6.5, is best for strawberry cultivation. Good soil structure and aeration are important for healthy root development. Avoid heavy clay soils or soils with poor drainage. Growing strawberries in raised beds or rows can help improve drainage.",
+  "irrigationAndWaterNeeds": "Strawberries have a relatively shallow root system, making them susceptible to drought. They require consistent and adequate soil moisture throughout the growing season, particularly during plant establishment, flowering, fruit development, and runner production. Typically, 25-40mm (1-1.5 inches) of water per week is needed, depending on soil type and weather conditions. Drip irrigation or soaker hoses are preferred methods as they deliver water directly to the root zone and keep foliage and fruit dry, which helps to reduce the risk of fungal diseases.",
+  "plantingAndHarvestCycles": "Strawberries are primarily propagated vegetatively from runners (stolons) that produce daughter plants. They can also be grown from seeds (mainly for breeding purposes) or from tissue-cultured plugs for commercial production. Planting is typically done in early spring or late summer/early autumn, depending on the climate and cropping system. There are two main types based on fruiting habit: June-bearing varieties produce one large crop in late spring or early summer over a period of 2-4 weeks. Everbearing or day-neutral varieties produce fruit throughout the summer and into the autumn, often with an initial peak in early summer and then smaller, successive flushes of fruit until the first hard frost. Plants can produce some fruit in their first year, but yields are often better in subsequent years. Strawberry plantings are typically productive for 2-4 years before needing renovation or replanting due to declining vigor and fruit size. Fruits are harvested by hand when they are fully colored (typically bright to deep red, depending on the cultivar) and have a slight give to the touch, indicating ripeness. They do not ripen significantly in sugar content after being picked, so they should be harvested at their peak flavor.",
+  "pestAndDiseaseManagement": "Common Pests: Slugs and snails are major pests, feeding on ripe fruit. Aphids can transmit viruses and cause direct damage. Spider mites can be problematic in hot, dry conditions. Tarnished plant bug can cause deformed fruit. Strawberry bud weevil (clipper) can damage flower buds. Root weevils can damage roots and crowns. Birds are also attracted to ripe fruit. Spotted Wing Drosophila (SWD) is a significant invasive pest that infests ripening soft fruits, including strawberries. Common Diseases: Grey mold (Botrytis fruit rot) is a very common and destructive fungal disease, especially in humid conditions. Powdery mildew can affect leaves and fruit. Leaf spot and leaf scorch are common fungal leaf diseases. Red stele root rot (Phytophthora fragariae) and Verticillium wilt are serious soilborne fungal diseases. Anthracnose fruit rot and crown rot can also cause significant losses. Viral diseases, often spread by aphids, can reduce plant vigor and yield. Management Strategies: Using certified virus-free planting stock is crucial. Selecting disease-resistant varieties. Practicing crop rotation (avoid planting strawberries in the same spot for several years). Ensuring good sanitation, such as removing old leaves after harvest and promptly removing any diseased fruit or plants. Using mulch (e.g., straw) to keep fruit clean, suppress weeds, and reduce fruit contact with soil. Providing proper plant spacing to promote good air circulation. Managing irrigation to avoid overly wet conditions. Controlling slugs and snails with traps or baits. Monitoring for pests like SWD and using traps and timely insecticide applications if necessary. Applying appropriate fungicides for diseases like grey mold and powdery mildew, following IPM principles.",
+  "postHarvestHandling": "Strawberries are extremely perishable and fragile, requiring careful handling during and after harvest. They should be picked preferably during the cooler parts of the day (e.g., early morning) and placed directly into shallow containers or punnets to minimize handling and prevent crushing. Rapid pre-cooling (e.g., using forced-air cooling) to remove field heat immediately after harvest is essential to slow down respiration, reduce water loss, and extend shelf life. Strawberries are typically stored at cool temperatures, around 0-2°C (32-36°F), with high relative humidity (90-95%). Under these optimal conditions, they can be stored for about 2-5 days, although some modern cultivars with better firmness may last longer. They are highly susceptible to Botrytis fruit rot (grey mold) even during cold storage. For longer-term preservation, strawberries are commonly frozen (Individually Quick Frozen - IQF is common for commercial purposes), or processed into jams, jellies, purees, or juices.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "United States (primarily California and Florida; also Oregon, Washington, North Carolina)",
+    "Mexico (major exporter, especially to North America)",
+    "Turkey",
+    "Spain (major European producer and exporter)",
+    "Egypt",
+    "South Korea",
+    "Poland",
+    "Germany",
+    "Japan",
+    "Russia",
+    "Italy"
+  ],
+  "marketValueAndGlobalDemand": "Strawberries are one of the most popular and economically important berry fruits globally, with very high consumer demand for both fresh consumption and processed products. There is significant international trade in fresh strawberries, often relying on refrigerated transport (including air freight for out-of-season or highly perishable premium berries) to supply markets year-round. Major exporting countries include Mexico, Spain, the United States, and the Netherlands. The market value for fresh strawberries is generally high, particularly for high-quality, blemish-free fruit, and during off-peak seasons. The demand for processed strawberries (frozen, purees, concentrates, dried) is also substantial, driven by the food manufacturing industry for use in yogurts, ice creams, baked goods, beverages, and confectionery. The development of new cultivars with improved firmness, shelf life, and year-round production capabilities (e.g., day-neutral varieties, greenhouse cultivation) has further boosted global supply and demand.",
+  "staticRecipes": [
+    {
+      "name": "Classic Strawberry Shortcake",
+      "description": "A beloved dessert featuring fresh strawberries, sweet biscuits, and whipped cream.",
+      "ingredients": [
+        "For biscuits: 2 cups all-purpose flour, 2 tbsp sugar, 1 tbsp baking powder, 1/2 tsp salt, 1/2 cup cold butter (cubed), 3/4 cup milk",
+        "For filling: 1 quart fresh strawberries (hulled and sliced), 1/4 cup sugar",
+        "Whipped cream for topping"
+      ],
+      "steps": [
+        "Preheat oven to 425°F (220°C). Line a baking sheet with parchment paper.",
+        "Biscuits: In a large bowl, whisk together flour, sugar, baking powder, and salt. Cut in butter until mixture resembles coarse crumbs. Stir in milk until just combined. Drop by spoonfuls onto baking sheet.",
+        "Bake biscuits for 12-15 minutes, or until golden brown.",
+        "Filling: In a medium bowl, gently toss sliced strawberries with sugar. Let sit for 15-20 minutes to release juices.",
+        "To assemble: Split warm biscuits in half. Spoon strawberries and their juice over the bottom half. Top with whipped cream and the other biscuit half."
+      ]
+    },
+    {
+      "name": "Easy Strawberry Jam",
+      "description": "Homemade strawberry jam with just a few ingredients.",
+      "ingredients": [
+        "2 pounds fresh strawberries, hulled and crushed",
+        "4 cups granulated sugar",
+        "1/4 cup lemon juice"
+      ],
+      "steps": [
+        "Combine strawberries, sugar, and lemon juice in a large, heavy-bottomed pot.",
+        "Bring to a rolling boil over high heat, stirring constantly.",
+        "Continue to boil, stirring frequently, until mixture reaches 220°F (105°C) on a candy thermometer, or until a small amount dropped onto a chilled plate gels. This usually takes 10-20 minutes.",
+        "Skim off any foam. Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath if desired for longer storage, or store in refrigerator."
+      ]
+    },
+    {
+      "name": "Strawberry Spinach Salad",
+      "description": "A vibrant and healthy salad with sweet strawberries, tender spinach, and a tangy poppy seed dressing.",
+      "ingredients": [
+        "6 cups fresh spinach",
+        "1 pint fresh strawberries, sliced",
+        "1/4 cup sliced almonds, toasted",
+        "1/4 red onion, thinly sliced (optional)",
+        "For dressing: 1/4 cup olive oil, 2 tbsp balsamic vinegar, 1 tbsp honey, 1 tsp poppy seeds, salt and pepper to taste"
+      ],
+      "steps": [
+        "In a large salad bowl, combine spinach, sliced strawberries, toasted almonds, and red onion (if using).",
+        "In a small bowl or jar, whisk or shake together olive oil, balsamic vinegar, honey, poppy seeds, salt, and pepper.",
+        "Pour dressing over salad and toss gently to combine.",
+        "Serve immediately."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "coriander-leaves",
+  "commonName": "Coriander Leaves (Cilantro / Dhania)",
+  "scientificName": "Coriandrum sativum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Coriander_leaves.JPG/800px-Coriander_leaves.JPG",
+  "description": "An annual herb in the family Apiaceae (parsley family). All parts of the plant are edible, but the fresh leaves (commonly known as cilantro in North America) and the dried seeds (called coriander spice) are the parts most traditionally used in cooking. Coriander leaves have a distinctive, bright, citrusy, and sometimes slightly pungent flavor that is polarizing (some perceive it as soapy due to genetic factors).",
+  "origin": "Southern Europe, Northern Africa, and Southwestern Asia. It has been cultivated for thousands of years.",
+  "localNames": [
+    "Cilantro (Spanish - referring to leaves, widely adopted in North America)",
+    "Dhania / Dhaniya (धनिया - Hindi, for both leaves and seeds)",
+    "Kothimbir (कोथिंबीर - Marathi, for leaves)",
+    "Chinese Parsley (English)",
+    "Persil chinois (French)",
+    "Koriander (German, Dutch, Scandinavian - for both leaves and seeds)",
+    "Pak Chee (ผักชี - Thai)",
+    "Rau Mùi (Vietnamese)"
+  ],
+  "regions": [
+    "India (major producer of coriander seeds and fresh leaves)",
+    "Mexico (essential for cuisine)",
+    "China",
+    "Thailand",
+    "Vietnam",
+    "Mediterranean countries (Spain, Italy, Greece, Morocco)",
+    "Middle Eastern countries",
+    "Russia (for seeds)",
+    "United States (California, Pacific Northwest for fresh cilantro)"
+  ],
+  "seasons": [
+    "Cool-season herb for leaf production, best in Spring and Autumn in temperate climates. Prone to bolting in hot summer weather. Can be grown year-round in milder climates or with succession planting. Seeds harvested in summer."
+  ],
+  "nutrition": {
+    "calories": "23 kcal per 100g (fresh leaves)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.13,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.67,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.52,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 310,
+        "unit": "µg",
+        "rdi": "258-388%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids like beta-carotene)",
+        "value": 337,
+        "unit": "µg RAE",
+        "rdi": "37-42%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 27,
+        "unit": "mg",
+        "rdi": "30-45%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 62,
+        "unit": "µg",
+        "rdi": "16%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.426,
+        "unit": "mg",
+        "rdi": "19-21%"
+      },
+      {
+        "name": "Potassium",
+        "value": 521,
+        "unit": "mg",
+        "rdi": "11-15%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.77,
+        "unit": "mg",
+        "rdi": "10-22%"
+      },
+      {
+        "name": "Calcium",
+        "value": 67,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 26,
+        "unit": "mg",
+        "rdi": "6-7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin K, which is crucial for blood clotting and bone health.",
+    "Rich in Vitamin A (from carotenoids), important for good vision, immune function, and skin integrity.",
+    "Good source of Vitamin C, a powerful antioxidant that supports the immune system.",
+    "Contains various antioxidants, including polyphenols and flavonoids, which may help protect against oxidative stress and inflammation.",
+    "Traditionally used in herbal medicine to aid digestion, relieve gas, and as an appetite stimulant."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cilantro Taste Aversion (Genetic)",
+      "severity": "N/A (preference, not allergy)",
+      "details": "A significant portion of the population (estimates vary, around 4-14%) perceives the taste of fresh cilantro leaves as soapy or unpleasant. This is largely attributed to genetic factors related to olfactory receptor genes (specifically OR6A2), which affect how certain aldehydes in cilantro are perceived. This is a taste perception issue, not a true food allergy."
+    },
+    {
+      "name": "Coriander/Cilantro Allergy (rare)",
+      "severity": "Rare, Mild",
+      "details": "True allergies to coriander leaves or seeds are uncommon but can occur, potentially causing oral allergy syndrome, skin rashes, or digestive upset in highly sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Coriander (for leaves/cilantro) is a cool-season annual herb, though it can tolerate some warmth. It is prone to bolting (prematurely flowering and setting seed) in hot weather, which reduces leaf production and quality. Seeds are sown directly in well-drained, fertile soil in spring or fall. It prefers full sun but can benefit from partial shade in very hot climates. Consistent moisture is needed, especially during germination and active growth. Leaves are harvested when plants are 4-6 inches tall. For coriander seed production, plants are allowed to flower and mature fully.",
+  "growthDuration": "For fresh leaves (cilantro): Ready for first harvest approximately 4-6 weeks (30-45 days) from sowing. Successive sowings every 2-3 weeks can ensure a continuous supply. For coriander seeds: Approximately 90-120 days from sowing until seed heads are mature and ready for harvest.",
+  "sustainabilityTips": [
+    "Store fresh coriander leaves (cilantro) with stems placed in a jar of water in the refrigerator, covered loosely with a plastic bag, to prolong freshness for up to a week or two. Alternatively, wrap in a damp paper towel and place in a resealable plastic bag.",
+    "Both the leaves and tender stems of cilantro are edible and flavorful.",
+    "Cilantro can be chopped and frozen in ice cube trays with a little water or oil for longer-term storage, though the texture will change (best for cooked dishes).",
+    "Growing coriander/cilantro in home gardens or pots is easy and provides a fresh supply while reducing food miles."
+  ],
+  "carbonFootprintInfo": "Very low, especially when home-grown or sourced locally (estimated 0.1-0.3 kg CO2e/kg for fresh leaves). Dried coriander seeds also have a low footprint due to their long shelf life and light weight for transport. Long-distance transport of fresh cilantro, especially by air, would increase its impact.",
+  "uses": [
+    "culinary_fresh_leaves_cilantro_herb_garnish_salsas_chutneys_curries_soups_stews_salads_tacos_spring_rolls_pho_guacamole",
+    "culinary_dried_seeds_coriander_spice_whole_or_ground_spice_blends_garam_masala_curry_powder_sausages_pickling_rubs_baking",
+    "culinary_roots_more_intense_flavor_used_in_some_asian_cuisines_thai_curry_pastes",
+    "medicinal_traditional_digestive_aid_appetite_stimulant_anti_inflammatory_antioxidant_detoxification_carminative",
+    "beverages_flavoring_for_some_beers_liqueurs_herbal_teas_coriander_water"
+  ],
+  "originAndDomesticationHistory": "Coriander (Coriandrum sativum) is native to a broad region spanning Southern Europe, Northern Africa, and Southwestern Asia. It is one of the oldest known spices and herbs, with a history of cultivation and use dating back thousands of years. Archaeological evidence includes coriander seeds found in ancient Egyptian tombs (including that of Tutankhamun, dating to over 3000 years ago) and Bronze Age sites in Greece. It was mentioned in ancient Sanskrit texts and the Old Testament. The ancient Greeks and Romans used both its leaves and seeds for culinary and medicinal purposes. Coriander spread throughout Europe, Asia, and Africa via trade routes and was later introduced to the Americas by European colonizers. It has been cultivated globally for both its fresh leaves (cilantro) and its dried seeds (coriander spice).",
+  "climaticRequirements": {
+    "temperature": "Coriander grown for leaves (cilantro) is a cool-season herb that performs best at temperatures between 15°C and 25°C (60°F to 77°F). It is prone to bolting (prematurely flowering and setting seed) in hot weather, typically when temperatures consistently exceed 27°C (80°F), which reduces leaf quality and yield. For coriander seed production, warmer and drier conditions are preferred during the seed maturation and drying phase. Some varieties are more heat-tolerant than others.",
+    "rainfall": "Requires moderate and consistent moisture throughout its vegetative growth stage for good leaf production, preferring around 400mm to 600mm of rainfall or equivalent irrigation during this period. The soil should be kept consistently moist but not waterlogged. For seed production, drier conditions are favorable during seed ripening and harvesting.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes (e.g., up to 2000 meters or more) where suitable temperature and moisture conditions exist."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or sandy loam soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 6.0 and 7.5, is best for coriander cultivation. Good soil aeration is important. While it can tolerate a range of soil types, heavy clay soils with poor drainage should be avoided.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture, especially during seed germination (which can be slow, taking 7-20 days) and during active vegetative growth for leaf (cilantro) production. The soil should be kept evenly moist but not saturated. Water stress can lead to premature bolting and reduced leaf yield. Drip irrigation or light overhead watering (preferably in the morning to allow foliage to dry) is suitable. For seed production, irrigation is usually reduced or stopped as the seeds begin to mature and dry.",
+  "plantingAndHarvestCycles": "Coriander is propagated from seeds (which are technically small, dry fruits called schizocarps, each containing two seeds). Seeds can be sown directly in the garden bed in early spring (as soon as the soil can be worked, typically 2-4 weeks before the last expected frost) or in early autumn for a fall or winter crop in milder climates. Successive sowings every 2-3 weeks can ensure a continuous supply of fresh cilantro leaves. For cilantro (leaf) production, plants can be ready for their first harvest approximately 4-6 weeks (30-45 days) after sowing, when they are about 4-6 inches tall. Outer leaves can be harvested first using the 'cut-and-come-again' method, allowing the inner leaves to continue growing for subsequent harvests. Alternatively, the entire plant can be harvested at once. If grown for coriander seeds, the plants are allowed to flower (bolt) and form seed heads. The seed heads are typically harvested when they turn brown and dry, but before the seeds begin to shatter from the plant, which is usually about 90-120 days after sowing. The harvested seed heads are then further dried and threshed to separate the seeds.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids can be a problem, especially on young plants, and can transmit viruses. Armyworms and other leaf-eating caterpillars may occasionally feed on foliage. Leafhoppers can also occur. Common Diseases: Bacterial leaf spot (Pseudomonas syringae pv. coriandricola) can cause spots on leaves. Soft rot can occur in overly wet conditions. Powdery mildew may affect plants, particularly in humid weather with poor air circulation. Damping-off can affect seedlings if the soil is too cool and wet. Fusarium wilt has also been reported. Management Strategies: Practicing crop rotation. Ensuring good soil drainage and proper plant spacing to promote air circulation. Avoiding overwatering and keeping foliage as dry as possible. Controlling weeds, which can harbor pests and diseases. Using insecticidal soaps or neem oil for aphid control if infestations become severe. Removing and destroying infected plant material promptly. For seed production, ensuring seeds are harvested from healthy plants and properly dried can reduce disease carryover.",
+  "postHarvestHandling": "Fresh Leaves (Cilantro): Cilantro is highly perishable and wilts quickly. After harvest, it should be handled gently. For short-term storage (up to 1-2 weeks), place the stems in a jar with about an inch of water, cover the leaves loosely with a plastic bag, and store in the refrigerator. Alternatively, wrap the unwashed cilantro in a damp paper towel and place it inside a resealable plastic bag in the crisper drawer of the refrigerator. For longer-term storage, cilantro can be chopped and frozen in ice cube trays with a small amount of water or oil, or it can be dried (though drying significantly alters its flavor, making it less suitable for uses where fresh flavor is desired). Dried Seeds (Coriander Spice): After harvesting, seed heads should be thoroughly dried (e.g., by hanging them upside down in paper bags in a warm, dry, airy place). Once fully dry, the seeds are threshed (separated from the seed heads) and cleaned of any chaff. Dried coriander seeds should be stored in an airtight container in a cool, dark, dry place to preserve their flavor and aroma, where they can last for several months to a year or more.",
+  "majorProducingCountriesOrRegions": [
+    "India (a leading global producer and exporter of both coriander seeds and fresh cilantro/dhania)",
+    "Mexico (major producer and consumer of fresh cilantro)",
+    "China (significant production of both seeds and leaves)",
+    "Russia (primarily for coriander seeds)",
+    "Ukraine (for seeds)",
+    "Morocco (exporter of seeds)",
+    "Canada (exporter of seeds)",
+    "United States (California and Pacific Northwest for fresh cilantro; some seed production)",
+    "Thailand, Vietnam, and other Southeast Asian countries (extensive use of fresh leaves)",
+    "Mediterranean and Middle Eastern countries (long history of use)"
+  ],
+  "marketValueAndGlobalDemand": "Coriander, in its dual forms of fresh leaves (cilantro) and dried seeds (coriander spice), has a very high global demand and significant economic importance. Fresh Cilantro Leaves: Essential in many ethnic cuisines (Latin American, Indian, Southeast Asian, Middle Eastern), leading to strong and consistent demand in both local and international markets. It is widely available in supermarkets and ethnic food stores. Coriander Seeds (Spice): One of the most widely used spices globally, a key ingredient in numerous spice blends (e.g., garam masala, curry powder) and used extensively in sausages, pickling, baking, and brewing. India is a dominant force in the global coriander seed market, both as a producer and exporter. The market value for both fresh cilantro and coriander seeds is generally stable, with some fluctuations based on seasonality, regional supply, and crop quality. There is also a market for coriander essential oil, extracted from the seeds.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Coriander (Cilantro) Chutney",
+      "description": "A vibrant and flavorful Indian green chutney, perfect as a dip or accompaniment.",
+      "ingredients": [
+        "2 cups fresh coriander leaves (cilantro), packed",
+        "1/2 cup fresh mint leaves (optional)",
+        "1-2 green chilies, chopped (adjust to spice preference)",
+        "1 inch ginger, roughly chopped",
+        "Juice of 1/2 lemon",
+        "1/4 tsp salt (or to taste)",
+        "2-3 tbsp water (as needed for blending)"
+      ],
+      "steps": [
+        "Wash coriander and mint leaves thoroughly.",
+        "Combine all ingredients (coriander, mint, green chilies, ginger, lemon juice, salt, and a little water) in a blender.",
+        "Blend until smooth, adding more water tablespoon by tablespoon if needed to achieve desired consistency. Be careful not to make it too runny.",
+        "Taste and adjust salt or lemon juice if necessary.",
+        "Store in an airtight container in the refrigerator for up to a week. Serve with snacks, sandwiches, or Indian meals."
+      ]
+    },
+    {
+      "name": "Cilantro-Lime Rice",
+      "description": "A fragrant and zesty rice dish, a popular side for Mexican or Southwestern meals.",
+      "ingredients": [
+        "1 cup long-grain white rice, rinsed",
+        "2 cups water or chicken broth",
+        "1 tbsp olive oil or butter",
+        "2 cloves garlic, minced (optional)",
+        "1/2 cup chopped fresh coriander (cilantro)",
+        "Juice of 1-2 limes (to taste)",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Cook rice according to package directions using water or broth. (Typically, bring liquid to a boil, add rice, cover, reduce heat to low, and simmer for 15-20 minutes or until liquid is absorbed).",
+        "While rice is cooking or once done, heat olive oil/butter in a small skillet if using garlic. Sauté minced garlic for 30 seconds until fragrant. Remove from heat.",
+        "Once rice is cooked, fluff it with a fork. Add chopped cilantro, lime juice, sautéed garlic (if using), and salt to taste.",
+        "Stir gently to combine all ingredients thoroughly.",
+        "Serve warm as a side dish."
+      ]
+    },
+    {
+      "name": "Garnish with Fresh Coriander",
+      "description": "Using fresh coriander leaves as a vibrant garnish for various dishes.",
+      "ingredients": [
+        "Fresh coriander leaves (cilantro), chopped or whole"
+      ],
+      "steps": [
+        "Wash fresh coriander leaves thoroughly and pat dry.",
+        "For a fine garnish, chop the leaves. For a more rustic look, use whole leaves or sprigs.",
+        "Sprinkle generously over curries, dals, soups, salads, tacos, stir-fries, or any dish just before serving.",
+        "Coriander adds a fresh, bright flavor and visual appeal."
+      ]
+    }
+  ]
+}

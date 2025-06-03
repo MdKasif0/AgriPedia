@@ -1,0 +1,219 @@
+{
+  "id": "french-beans",
+  "commonName": "French Beans (Green Beans / String Beans)",
+  "scientificName": "Phaseolus vulgaris (tender pod varieties)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Green_beans_169clue.jpg",
+  "description": "French beans, also commonly known as green beans, string beans, snap beans, or haricots verts (French for 'green beans'), are the unripe, young fruit (pods) of various cultivars of the common bean (Phaseolus vulgaris). They are eaten as a vegetable, valued for their crisp texture and mild, fresh flavor. Pods can be round or flat, green, yellow (wax beans), or purple.",
+  "origin": "Mesoamerica (Mexico, Guatemala) and the Andean regions of South America (Peru, Ecuador, Colombia).",
+  "localNames": [
+    "Green Beans (English - common term)",
+    "String Beans (English - older varieties had a fibrous string)",
+    "Snap Beans (English - due to the sound when broken)",
+    "Haricots verts (French - specifically for slender varieties)",
+    "Judías verdes (Spanish)",
+    "Fagiolini (Italian)",
+    "Grüne Bohnen (German)",
+    "Fansi (फ़न्सी - Hindi)",
+    "Baguio Beans (Philippines)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "Indonesia",
+    "India",
+    "Turkey",
+    "United States (Florida, Wisconsin, New York, Oregon, Michigan)",
+    "Mexico",
+    "Spain",
+    "Egypt",
+    "France",
+    "Italy",
+    "Kenya (major exporter to Europe)"
+  ],
+  "seasons": [
+    "Primarily Summer and Early Autumn in temperate climates for field-grown beans. Available year-round due to greenhouse cultivation and global sourcing from different hemispheres."
+  ],
+  "nutrition": {
+    "calories": "31 kcal per 100g (cooked, boiled, drained)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.83,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.97,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.22,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 14.4,
+        "unit": "µg",
+        "rdi": "12-18%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 12.2,
+        "unit": "mg",
+        "rdi": "14-20%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 33,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 35,
+        "unit": "µg RAE",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.216,
+        "unit": "mg",
+        "rdi": "9-11%"
+      },
+      {
+        "name": "Potassium",
+        "value": 211,
+        "unit": "mg",
+        "rdi": "4-6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which aids digestion, promotes bowel regularity, and can help manage blood sugar and cholesterol levels.",
+    "Provides Vitamin K, important for bone health and proper blood clotting.",
+    "Contains Vitamin C, a powerful antioxidant that supports the immune system and collagen production.",
+    "Source of folate (Vitamin B9), essential for cell growth, DNA synthesis, and particularly important during pregnancy.",
+    "Contains antioxidants like carotenoids (lutein, beta-carotene) and flavonoids, which help protect against cell damage."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy / Phaseolin Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "True allergy to green beans is rare. However, as a legume, they contain phaseolin, which can cause reactions in a very small number of individuals sensitive to this protein. Some people may experience gas or bloating due to their fiber and oligosaccharide content."
+    },
+    {
+      "name": "Lectins (in raw beans)",
+      "severity": "Moderate (if eaten raw in quantity)",
+      "details": "Raw green beans contain lectins (like phytohaemagglutinin) which can cause nausea, vomiting, and diarrhea if consumed in significant amounts. Cooking thoroughly destroys these lectins, making the beans safe to eat. It is generally advised to cook green beans before consumption."
+    }
+  ],
+  "cultivationProcess": "French beans are a warm-season crop. Seeds are sown directly after the last frost. They prefer well-drained, fertile soil rich in organic matter and full sun. Two main types exist: bush beans, which are compact and do not require support, and pole beans, which are vigorous climbers and need a trellis, poles, or other support structures. Consistent moisture is crucial, especially during flowering and pod development. Pods are harvested when young, tender, and snap easily. Regular picking encourages continuous production. Details in specific sections.",
+  "growthDuration": "Typically 50 to 65 days from sowing to the first harvest for bush beans; pole beans may take slightly longer to start but often have a more extended harvest period.",
+  "sustainabilityTips": [
+    "Store fresh, unwashed green beans in a perforated plastic bag in the refrigerator crisper drawer for up to a week.",
+    "Trim only the ends before cooking; the entire pod is edible.",
+    "Green beans can be easily blanched and frozen for longer-term storage, preserving their color and nutrients for use in cooked dishes.",
+    "Growing beans, as legumes, can contribute to soil health by fixing atmospheric nitrogen (though this is more significant for beans grown for their dried seeds rather than just young pods)."
+  ],
+  "carbonFootprintInfo": "Low to moderate (estimated 0.4-0.8 kg CO2e/kg for field-grown beans). Greenhouse production or long-distance air freight for out-of-season fresh beans significantly increases this footprint. Canned or frozen beans have additional footprints from processing and packaging, but may reduce waste and allow for more efficient transport.",
+  "uses": [
+    "culinary_vegetable_eaten_cooked_steamed_boiled_stir_fried_sautéed_roasted_grilled_battered_and_fried",
+    "culinary_ingredient_side_dishes_green_beans_almondine_salads_salade_niçoise_three_bean_salad_casseroles_green_bean_casserole_soups_stews_curries_pasta_dishes",
+    "processed_products_canned_green_beans_frozen_green_beans_pickled_green_beans_dilly_beans",
+    "culinary_raw_some_tender_varieties_eaten_raw_in_salads_or_as_crudités_though_cooking_is_generally_recommended_to_degrade_lectins"
+  ],
+  "originAndDomesticationHistory": "The common bean (Phaseolus vulgaris), which includes French beans (green beans), originated in Mesoamerica (from Mexico to Guatemala) and the Andean regions of South America (Peru, Ecuador, Colombia). These are considered two distinct primary centers of domestication. Archaeological evidence indicates that beans were domesticated thousands of years ago, with some of the earliest finds in Mexico dating back around 7,000 years Before Present (BP). Beans were a staple crop for many indigenous civilizations in the Americas. Following Christopher Columbus's voyages in the late 15th century, beans were introduced to Europe by Spanish and Portuguese explorers. From Europe, their cultivation spread rapidly to other parts of the world, including Africa and Asia, due to their adaptability and nutritional value. French beans, specifically referring to finer, more tender varieties harvested for their young pods, became particularly popular in European cuisine. Over centuries, numerous cultivars have been developed, varying in growth habit (bush vs. pole), pod shape, size, color (green, yellow wax, purple), and string content (modern varieties are mostly stringless).",
+  "climaticRequirements": {
+    "temperature": "French beans are a warm-season crop. Optimal soil temperatures for seed germination are between 18°C and 29°C (65°F to 85°F). The ideal air temperatures for growth and fruit development range from 18°C to 25°C (65°F to 77°F). They are sensitive to frost, and temperatures below 10°C (50°F) can significantly hinder growth. Temperatures consistently above 30°C (86°F) can cause blossom drop and poor pod set.",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, preferring around 400mm to 600mm of rainfall or equivalent irrigation. Even soil moisture is crucial, especially during flowering and pod development, to ensure good yield and quality. However, good soil drainage is also important, as beans do not tolerate waterlogged conditions.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes (e.g., up to 2000 meters or approximately 6500 feet) where temperatures are suitable and the growing season is long enough."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 6.0 and 7.0, is best for French bean cultivation. Good soil structure and aeration are important for healthy root development. While they can grow in a range of soil types, heavy clay soils or very sandy soils may require amendment with organic matter to improve drainage or moisture retention, respectively.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, particularly during seed germination, flowering, and pod development. Water stress during these critical periods can significantly reduce yield, pod quality (leading to tougher, stringier pods), and may cause blossom drop. Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping the foliage dry, which helps reduce the risk of fungal diseases. Typically, 25-40mm (1-1.5 inches) of water per week is needed, depending on soil type, weather conditions, and plant size. Avoid overwatering, which can lead to root rot.",
+  "plantingAndHarvestCycles": "French beans are propagated from seeds. Seeds are typically sown directly in the garden bed or field after the last danger of frost has passed and when soil temperatures have warmed sufficiently (above 15°C or 60°F). Bush bean varieties are compact and do not require support. Pole bean varieties are vigorous climbers and need a trellis, poles, fence, or other support structures to climb on. Planting in full sun is essential for good yields. The time from sowing to the first harvest varies by cultivar but generally ranges from 50 to 65 days for bush beans; pole beans may take slightly longer to start producing but often have a more extended harvest period. Pods are harvested by hand when they are young, tender, and have reached the desired size for their specific variety (typically before the seeds inside fully develop and cause the pod to bulge). They should snap easily when bent. Regular harvesting (every few days) is crucial as it encourages the plant to continue producing more pods over several weeks.",
+  "pestAndDiseaseManagement": "Common Pests: Mexican bean beetle larvae and adults feed on leaves, flowers, and pods. Aphids can transmit viruses and cause direct feeding damage. Spider mites can be problematic in hot, dry conditions. Leafhoppers, bean weevils (primarily a pest of dried beans but can originate in the field), cutworms (damage seedlings), and slugs/snails can also cause issues. Common Diseases: Bean Common Mosaic Virus (BCMV) and other viral diseases are significant. Anthracnose (Colletotrichum lindemuthianum) causes lesions on pods, leaves, and stems. Bacterial blights (such as halo blight - Pseudomonas savastanoi pv. phaseolicola, and common blight - Xanthomonas campestris pv. phaseoli) can be destructive. Root rot diseases (e.g., caused by Fusarium, Pythium, Rhizoctonia) occur in overly wet or poorly drained soils. Rust (Uromyces appendiculatus) and white mold (Sclerotinia sclerotiorum) can also affect plants. Management Strategies: Implementing crop rotation (avoid planting beans or related legumes in the same spot for 2-3 years). Selecting disease-resistant varieties is a key strategy. Using certified disease-free seeds. Ensuring proper plant spacing and trellising (for pole beans) to promote good air circulation. Practicing effective weed control. Removing and destroying infected plant material promptly. Using row covers on young plants to protect against some early insect pests. Controlling insect vectors like aphids. Applying appropriate and approved insecticides or fungicides when necessary, based on scouting, pest/disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Fresh green beans (French beans) are perishable and should be handled with care to avoid bruising. They are best consumed soon after harvest for optimal quality and flavor. After picking, beans should be cooled promptly if they are not to be used immediately. They can be stored unwashed in a perforated plastic bag or a container in the crisper drawer of the refrigerator for up to a week. Before storage, ensure the beans are dry to prevent mold growth. For longer-term preservation, green beans can be blanched (briefly boiled then plunged into ice water) and then frozen, canned, or pickled (e.g., as dilly beans).",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer of green beans)",
+    "Indonesia",
+    "India",
+    "Turkey",
+    "United States (major production in states like Florida, Wisconsin, New York, Oregon, and Michigan)",
+    "Mexico",
+    "Egypt",
+    "Spain",
+    "Italy",
+    "France (known for 'haricots verts' type)",
+    "Belgium",
+    "Netherlands",
+    "Kenya (major exporter to European markets)"
+  ],
+  "marketValueAndGlobalDemand": "Green beans (French beans) are one of the most popular and widely consumed vegetables globally, with high and consistent demand in both fresh and processed forms (canned and frozen). There is significant international trade in fresh green beans, particularly to supply markets during their off-seasons, with countries like Kenya, Mexico, and Guatemala being notable exporters. The market value can vary based on factors such as type (bush vs. pole, specific cultivars like haricots verts which often command a premium), quality (tenderness, straightness, absence of blemishes), seasonality, and origin (local vs. imported, field-grown vs. greenhouse). The demand for pre-packaged, ready-to-cook fresh green beans is also strong in many retail markets. Processed green beans (canned and frozen) represent a large segment of the market, valued for their convenience and longer shelf life.",
+  "staticRecipes": [
+    {
+      "name": "Green Beans Almondine",
+      "description": "A classic French side dish featuring tender green beans with toasted almonds and butter.",
+      "ingredients": [
+        "1 lb fresh green beans, trimmed",
+        "2 tbsp butter",
+        "1/4 cup slivered almonds",
+        "1 tbsp lemon juice (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Cook green beans until tender-crisp: steam for 4-6 minutes, or boil in salted water for 3-5 minutes. Drain well and set aside. (Alternatively, blanch in boiling water for 2-3 minutes, then plunge into ice water to stop cooking and retain color).",
+        "Melt butter in a large skillet over medium heat. Add slivered almonds and cook, stirring frequently, until almonds are golden brown and fragrant (about 2-3 minutes). Be careful not to burn them.",
+        "Add the cooked green beans to the skillet with the almonds and butter. Toss to coat and heat through, about 1-2 minutes.",
+        "If using, stir in lemon juice. Season with salt and pepper to taste.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Sautéed Green Beans with Garlic and Soy Sauce",
+      "description": "A simple and flavorful Asian-inspired side dish.",
+      "ingredients": [
+        "1 lb fresh green beans, trimmed",
+        "1 tbsp sesame oil or vegetable oil",
+        "2-3 cloves garlic, minced",
+        "1 tbsp soy sauce",
+        "1/2 tsp sugar (optional)",
+        "Toasted sesame seeds for garnish (optional)"
+      ],
+      "steps": [
+        "Heat oil in a large skillet or wok over medium-high heat.",
+        "Add minced garlic and cook for about 30 seconds until fragrant.",
+        "Add green beans to the skillet. Stir-fry for 5-7 minutes, or until beans are tender-crisp and slightly blistered.",
+        "In a small bowl, mix soy sauce and sugar (if using).",
+        "Pour the soy sauce mixture over the green beans. Toss well to coat and cook for another 1-2 minutes.",
+        "Garnish with toasted sesame seeds if desired. Serve hot."
+      ]
+    },
+    {
+      "name": "Three Bean Salad (using Green Beans)",
+      "description": "A classic potluck salad that's tangy, sweet, and refreshing. Green beans are a key component.",
+      "ingredients": [
+        "1 (15 oz) can green beans, drained and rinsed (or 1.5 cups cooked fresh green beans)",
+        "1 (15 oz) can kidney beans, drained and rinsed",
+        "1 (15 oz) can chickpeas or cannellini beans, drained and rinsed",
+        "1/2 red onion, thinly sliced",
+        "For dressing: 1/2 cup apple cider vinegar, 1/4 cup sugar, 1/4 cup olive oil, 1/2 tsp salt, 1/4 tsp black pepper"
+      ],
+      "steps": [
+        "In a large bowl, combine drained and rinsed green beans, kidney beans, chickpeas/cannellini beans, and thinly sliced red onion.",
+        "Dressing: In a small bowl or jar, whisk or shake together apple cider vinegar, sugar, olive oil, salt, and pepper until sugar is dissolved.",
+        "Pour the dressing over the bean mixture. Toss gently to combine.",
+        "Cover and refrigerate for at least 1-2 hours (or preferably overnight) to allow flavors to meld. Toss again before serving.",
+        "Can be served chilled or at room temperature."
+      ]
+    }
+  ]
+}

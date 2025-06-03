@@ -1,0 +1,165 @@
+{
+  "id": "lettuce",
+  "commonName": "Lettuce",
+  "scientificName": "Lactuca sativa",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLnWN5UR9pBweYAncGq8ojrONKhncAzpPJzmqceCQI4w&s",
+  "description": "Lettuce (Lactuca sativa) is an annual plant of the daisy family, Asteraceae, primarily grown as a leaf vegetable. It is most often used raw in salads, sandwiches, and wraps, but can also be cooked in soups or grilled. Varieties range from crisp iceberg heads to tender butterheads and colorful loose-leaf types.",
+  "origin": "Ancient Egypt (first cultivated by Egyptians, who developed it from a wild plant used for oilseed into a leaf crop).",
+  "localNames": [
+    "Laitue (French)",
+    "Lechuga (Spanish)",
+    "Kopfsalat (German - for head lettuce types)",
+    "Salata (Hindi, and many other languages for salad/lettuce)"
+  ],
+  "regions": [
+    "Worldwide",
+    "China (largest producer)",
+    "United States (California, Arizona)",
+    "India",
+    "Spain",
+    "Italy"
+  ],
+  "seasons": [
+    "Available year-round due to global cultivation, greenhouse production, and varied regional climates. Peak season for outdoor cultivation in temperate zones is spring and autumn."
+  ],
+  "nutrition": {
+    "calories": "14 kcal per 100g (Iceberg, raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 2.97,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.14,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 24.1,
+        "unit": "µg",
+        "rdi": "20%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 25,
+        "unit": "µg RAE",
+        "rdi": "3%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 29,
+        "unit": "µg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 2.8,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.042,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 141,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.41,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 18,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 7,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "High water content (about 95-96%) makes it hydrating and low in calories.",
+    "Good source of Vitamin K, crucial for blood clotting and bone health.",
+    "Darker green varieties are a good source of Vitamin A (as beta-carotene), important for vision and immune function."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lettuce Allergy (rare)",
+      "severity": "Mild to Moderate",
+      "details": "True lettuce allergy is uncommon but can cause symptoms like itching, hives, or digestive upset. Oral Allergy Syndrome may occur in individuals with pollen allergies (e.g., ragweed, mugwort)."
+    },
+    {
+      "name": "Foodborne Illness Risk",
+      "severity": "Varies",
+      "details": "Like other raw vegetables, lettuce can be a source of foodborne illnesses if contaminated (e.g., E. coli, Salmonella). Thorough washing is recommended."
+    }
+  ],
+  "cultivationProcess": "Lettuce is a cool-season annual crop. It grows best in full sun in loose, nitrogen-rich, well-drained soils with a pH of 6.0-6.8. Seeds can be sown directly or started indoors and transplanted. Consistent moisture is important. High temperatures can cause bolting (premature flowering and bitterness). Different types (leaf, romaine, iceberg, butterhead) have varied growth habits.",
+  "growthDuration": "Generally 45-80 days from sowing to harvest for leaf lettuce, and 65-130 days for head lettuce varieties, depending on the type and growing conditions.",
+  "sustainabilityTips": [
+    "Grow lettuce at home in gardens or containers; it's relatively easy and reduces packaging and transportation.",
+    "Store lettuce properly (e.g., wrapped loosely in a damp paper towel in the refrigerator's crisper drawer) to maximize freshness and minimize food waste."
+  ],
+  "carbonFootprintInfo": "Locally grown, field-harvested lettuce consumed in season has a relatively low carbon footprint. However, lettuce grown in heated greenhouses, or transported long distances under refrigeration (especially pre-packaged salads), has a significantly higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Green Salad with Vinaigrette",
+      "description": "A classic and versatile green salad featuring crisp lettuce and a tangy homemade vinaigrette dressing. Easily customizable with other fresh vegetables.",
+      "ingredients": [
+        "1 medium head of lettuce (e.g., Romaine, Green Leaf, or Butter lettuce), washed and torn",
+        "1/2 cucumber, thinly sliced (optional)",
+        "1 cup cherry tomatoes, halved (optional)",
+        "1/4 red onion, thinly sliced (optional)",
+        "For the Vinaigrette:",
+        "3 tablespoons extra virgin olive oil",
+        "1 tablespoon red wine vinegar (or apple cider vinegar/lemon juice)",
+        "1 teaspoon Dijon mustard",
+        "1/2 teaspoon honey or maple syrup (optional, for balance)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Prepare the lettuce and vegetables: Wash all lettuce leaves thoroughly and dry them completely using a salad spinner or by patting gently with clean kitchen towels. Tear or chop the lettuce into bite-sized pieces and place them in a large salad bowl.",
+        "If using, add the sliced cucumber, halved cherry tomatoes, and thinly sliced red onion to the bowl with the lettuce.",
+        "Make the vinaigrette: In a small bowl or a jar with a tight-fitting lid, combine the extra virgin olive oil, red wine vinegar, Dijon mustard, and optional honey or maple syrup.",
+        "Season the vinaigrette with salt and freshly ground black pepper according to your preference.",
+        "Whisk vigorously or shake the jar until the dressing is well combined and slightly emulsified.",
+        "Dress the salad: Just before serving, pour about half of the vinaigrette over the salad greens. Toss gently to coat all the leaves lightly. Add more dressing as needed to your liking, being careful not to overdress and make the salad soggy.",
+        "Serve immediately as a fresh side dish or as a base for a more substantial salad with added protein."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "cotton",
+  "commonName": "Cotton (Fiber Crop)",
+  "scientificName": "Gossypium spp. (mainly Gossypium hirsutum and Gossypium barbadense)",
+  "image": "https://images.unsplash.com/photo-1594024448060-9119f998703e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Cotton is a soft, fluffy staple fiber that grows in a boll around the seeds of cotton plants (Gossypium spp.). As a fiber crop, it is globally crucial for the textile industry, with its almost pure cellulose fiber being spun into yarn to make a vast array of fabrics for clothing, home furnishings, and industrial products. While cottonseed yields oil and meal as co-products, the primary economic driver for cotton cultivation is its valuable fiber.",
+  "origin": "Multiple centers of origin: Old World (Asia, Africa) for G. arboreum and G. herbaceum; New World (Americas) for G. hirsutum and G. barbadense.",
+  "localNames": ["Kapas (Hindi)", "Wata (Japanese)", "Algodón (Spanish)", "Coton (French)"],
+  "regions": ["India", "China", "United States (leading exporter)", "Brazil", "Pakistan", "Uzbekistan", "Turkey", "Australia", "West African countries"],
+  "seasons": ["Warm-season annual shrub; planted in spring and harvested in fall."],
+  "nutrition": {
+    "calories": "Cottonseed Oil: 884 kcal per 100g. Cottonseed Meal (for feed): ~300-350 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: ~20-25, Meal: ~40-50" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: ~20-25 (Fiber ~10-15)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~18-22 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Cottonseed Oil: Significant" }
+    ],
+    "minerals": [
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Seed meal: Significant" }
+    ]
+  },
+  "healthBenefits": [
+    "Cotton fiber is hypoallergenic and breathable, making it suitable for clothing and textiles.",
+    "Cottonseed oil (refined) is used for cooking and contains Vitamin E. However, it also contains gossypol (a toxin removed during refining) and has a specific fatty acid profile.",
+    "Cottonseed meal is a protein-rich animal feed after gossypol removal."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cotton Dust/Pollen Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Inhalation of cotton dust (during processing) can cause respiratory issues (byssinosis). Cotton pollen can cause hay fever in sensitive individuals."
+    },
+    {
+      "name": "Gossypol Toxicity (Raw Cottonseed)",
+      "severity": "Moderate to Severe",
+      "details": "Raw cottonseed contains gossypol, a toxic compound that can cause infertility and liver damage. It must be removed or inactivated for food/feed use."
+    }
+  ],
+  "cultivationProcess": "Cotton is grown from seeds. It requires a long, warm growing season with ample sunshine and moderate rainfall or irrigation. The fiber develops in bolls, which are harvested when mature. Pest management is a significant aspect of cotton cultivation.",
+  "growthDuration": "Approximately 150-180 days from planting to harvest.",
+  "sustainabilityTips": [
+    "Integrated pest management (IPM) and use of pest-resistant varieties (e.g., Bt cotton) can reduce pesticide use.",
+    "Water-efficient irrigation methods (drip, furrow dikes) are crucial due to high water demand in some regions.",
+    "Organic cotton production avoids synthetic pesticides and fertilizers, promoting soil health.",
+    "Conservation tillage can reduce soil erosion."
+  ],
+  "carbonFootprintInfo": "Cotton cultivation can have a significant environmental footprint due to high water use, pesticide and fertilizer application, and energy for ginning (separating fiber from seed) and textile processing. Organic and sustainably grown cotton aim to reduce this impact, focusing on the fiber's lifecycle.",
+  "uses": ["fiber_production_textiles_clothing_yarn_fabric_home_furnishings_industrial_canvas_tarps", "currency_paper_linters", "medical_supplies_bandages_cotton_balls", "oil_production_cottonseed_oil_secondary_use", "animal_feed_cottonseed_meal_cake_hulls_secondary_use"],
+  "originAndDomesticationHistory": "Cotton has multiple independent centers of domestication. Gossypium herbaceum and G. arboreum were domesticated in the Old World (South Asia and Africa) around 5000-7000 years ago, primarily for their fiber. Gossypium hirsutum (upland cotton, ~90% of world production) and G. barbadense (Pima/Egyptian cotton) were domesticated in the Americas (Mexico and Peru) around 4,000-5,000 years ago, also for fiber. Cotton fiber production was a major driver of the industrial revolution and global trade.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 21-35°C. Requires a long frost-free period (150-180 days). High temperatures and sunshine are needed for boll development and maturation.",
+    "rainfall": "Requires moderate rainfall, 500-1200mm, well-distributed during the growing season. A dry period is essential during boll opening and harvest.",
+    "altitude": "Primarily grown in lowland and mid-altitude regions, up to 1000m."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils with good moisture retention and a pH between 5.5 and 7.5. Can tolerate a range of soil types but not waterlogged or highly saline/alkaline conditions.",
+  "irrigationAndWaterNeeds": "High water requirement. Irrigation is essential in arid and semi-arid regions, and often used to supplement rainfall in other areas to ensure optimal yields. Critical water periods are flowering and boll development. Furrow, sprinkler, or drip irrigation is used.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring after soil temperatures have warmed sufficiently. Plants grow into shrubs. Bolls mature and split open, exposing the fluffy cotton fiber. Harvesting is done mechanically (spindle pickers or strippers) in large-scale farming, or manually in many developing countries. Multiple pickings may be done.",
+  "pestAndDiseaseManagement": "Cotton is susceptible to numerous pests (e.g., bollworms, aphids, whiteflies, lygus bugs, spider mites) and diseases (e.g., Fusarium wilt, Verticillium wilt, bacterial blight, cotton leaf curl virus). Pest management is a major challenge and cost, often relying on insecticides or genetically modified Bt cotton. IPM strategies are crucial.",
+  "postHarvestHandling": "Harvested seed cotton (lint + seed) is transported to a gin. Ginning separates the lint (fiber) from the seeds. The lint is pressed into bales for textile mills. Seeds are further processed for oil extraction, and the remaining meal is used for animal feed. Linters (short fibers still attached to seeds after ginning) are used for paper and other cellulose products.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "China", "United States (leading exporter)", "Brazil", "Pakistan", "Uzbekistan", "Turkey", "Australia", "West African CFA franc zone countries"],
+  "marketValueAndGlobalDemand": "Cotton is a major global agricultural commodity. The fiber (lint) is the primary product, with high demand from the textile and apparel industries. Cottonseed oil and meal are significant co-products. Global cotton prices are influenced by supply, demand, weather, government policies in major producing countries, and competition from synthetic fibers."
+}

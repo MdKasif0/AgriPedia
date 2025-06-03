@@ -1,0 +1,65 @@
+{
+  "id": "barley",
+  "commonName": "Barley",
+  "scientificName": "Hordeum vulgare",
+  "image": "https://images.unsplash.com/photo-1597066400404-823a59db08c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Barley is a versatile cereal grain with a rich, nutlike flavor and a chewy consistency. It is a member of the grass family and is a major cereal grain grown in temperate climates globally. It was one of the first cultivated grains, particularly in Eurasia.",
+  "origin": "Fertile Crescent (Western Asia and Northeast Africa).",
+  "localNames": ["Jau (Hindi)", "Omugi (Japanese)", "Cebada (Spanish)", "Orge (French)"],
+  "regions": ["Russia", "Germany", "France", "Canada", "Australia", "Ukraine", "United Kingdom"],
+  "seasons": ["Spring barley (planted in spring, harvested in late summer)", "Winter barley (planted in fall, harvested in spring/early summer)"],
+  "nutrition": {
+    "calories": "123 kcal per 100g (cooked, pearled)",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 28.2, "unit": "g" },
+      { "name": "Fat", "value": 0.4, "unit": "g" },
+      { "name": "Fiber", "value": 3.8, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 3.1, "unit": "mg", "rdi": "16%" },
+      { "name": "Thiamin (B1)", "value": 0.129, "unit": "mg", "rdi": "9%" },
+      { "name": "Vitamin B6", "value": 0.12, "unit": "mg", "rdi": "6%" }
+    ],
+    "minerals": [
+      { "name": "Selenium", "value": 37.7, "unit": "µg", "rdi": "54%" },
+      { "name": "Manganese", "value": 0.26, "unit": "mg", "rdi": "13%" },
+      { "name": "Phosphorus", "value": 94, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in fiber, particularly beta-glucan, which helps lower cholesterol.",
+    "Promotes digestive health and can help prevent constipation.",
+    "Helps stabilize blood sugar levels.",
+    "Contains antioxidants and essential minerals."
+  ],
+  "potentialAllergies": [
+     {
+      "name": "Gluten Intolerance/Celiac Disease",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Barley contains gluten, which can cause adverse reactions in individuals with celiac disease or non-celiac gluten sensitivity."
+    }
+  ],
+  "cultivationProcess": "Barley cultivation involves seedbed preparation, sowing (drilling or broadcasting), fertilization, weed and pest control, and harvesting when the grain is mature and dry.",
+  "growthDuration": "Approximately 90-120 days, depending on the variety and conditions.",
+  "sustainabilityTips": [
+    "Crop rotation to improve soil health and reduce disease.",
+    "No-till or minimum tillage practices.",
+    "Efficient use of fertilizers based on soil testing."
+  ],
+  "carbonFootprintInfo": "Barley's carbon footprint is influenced by factors like nitrogen fertilizer use and soil management. Malting barley for beer production adds to its overall footprint.",
+  "uses": ["culinary", "animal_feed", "beverages_alcoholic", "malt_production"],
+  "originAndDomesticationHistory": "Barley (Hordeum vulgare) was domesticated from its wild ancestor Hordeum spontaneum in the Fertile Crescent about 10,000 years ago. It was a staple food for ancient civilizations in Egypt, Rome, and Greece. It spread across Europe and Asia and was brought to the Americas by European colonists.",
+  "climaticRequirements": {
+    "temperature": "Optimal 12-25°C; tolerant of a wide range of temperatures. Some varieties are very hardy.",
+    "rainfall": "300-1000mm annually. It's more drought-tolerant than wheat.",
+    "altitude": "Can be grown from sea level up to 4500m in the Himalayas, making it one of the highest altitude crops."
+  },
+  "soilPreferences": "Adaptable to various soil types but prefers well-drained loam or clay-loam soils with a pH of 6.0-8.5. Tolerant of saline soils better than many other cereals.",
+  "irrigationAndWaterNeeds": "Often grown as a rain-fed crop. Supplemental irrigation may be needed in arid or semi-arid regions, especially during tillering and grain filling stages.",
+  "plantingAndHarvestCycles": "Spring barley is sown in early spring and harvested in late summer. Winter barley is sown in autumn, overwinters, and is harvested in late spring or early summer. Harvested when grains are hard and moisture content is low (around 12-14%).",
+  "pestAndDiseaseManagement": "Common pests include aphids and barley yellow dwarf virus (transmitted by aphids). Diseases include powdery mildew, scald, net blotch, and rusts. Management includes resistant varieties, seed treatments, crop rotation, and fungicides when necessary.",
+  "postHarvestHandling": "Involves threshing, cleaning, and drying the grain. For malting barley, specific drying and storage conditions are crucial to maintain germination capacity. Food and feed barley is stored in cool, dry conditions.",
+  "majorProducingCountriesOrRegions": ["Russia", "European Union (Germany, France, Spain, UK)", "Australia", "Canada", "Ukraine", "Turkey", "Argentina"],
+  "marketValueAndGlobalDemand": "Barley is a significant global commodity, primarily used for animal feed and malt production for alcoholic beverages (beer). Food use is less extensive but growing due to its health benefits. Demand is influenced by livestock and brewing industries."
+}

@@ -1,0 +1,168 @@
+{
+  "id": "kale",
+  "commonName": "Kale",
+  "scientificName": "Brassica oleracea Acephala Group",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5UKr-Hy4R9rY9pe7rLQcPD-8vc-BmpY5HZkUW7I3dmA&s",
+  "description": "Kale is a nutrient-dense leafy green vegetable, a cultivar of Brassica oleracea. It is characterized by its green or purple leaves, which can be curly, smooth, or bumpy depending on the variety. Unlike cabbage, the central leaves do not form a compact head.",
+  "origin": "Eastern Mediterranean and Anatolia, cultivated since at least 2000 BCE.",
+  "localNames": [
+    "Boerenkool (Dutch - 'farmer's cabbage')",
+    "Grünkohl (German - 'green cabbage')",
+    "Chou frisé (French - 'curly cabbage')",
+    "Cavolo riccio (Italian - 'curly cabbage')",
+    "Leaf Cabbage (English)"
+  ],
+  "regions": [
+    "Europe (Germany, Netherlands, Scotland, Italy, Portugal)",
+    "North America (United States, Canada)",
+    "Asia (China, Japan)",
+    "Widely cultivated in many temperate and some subtropical regions globally."
+  ],
+  "seasons": [
+    "Primarily a cool-season crop, best harvested in Autumn, Winter, and early Spring. Some varieties are more heat tolerant, allowing for summer harvests in cooler areas. Frost can improve its flavor."
+  ],
+  "nutrition": {
+    "calories": "49 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 4.28,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 8.75,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.93,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 389.6,
+        "unit": "µg",
+        "rdi": "325%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 241,
+        "unit": "µg RAE",
+        "rdi": "27%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 120,
+        "unit": "mg",
+        "rdi": "133%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 141,
+        "unit": "µg",
+        "rdi": "35%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.271,
+        "unit": "mg",
+        "rdi": "16%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.659,
+        "unit": "mg",
+        "rdi": "29%"
+      },
+      {
+        "name": "Calcium",
+        "value": 254,
+        "unit": "mg",
+        "rdi": "19%"
+      },
+      {
+        "name": "Potassium",
+        "value": 491,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 47,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.47,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 92,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Exceptionally rich in Vitamin K, crucial for blood clotting and bone health.",
+    "Excellent source of Vitamin A (from carotenoids like lutein and zeaxanthin) and Vitamin C, both powerful antioxidants that support immune function and protect against cellular damage.",
+    "High in dietary fiber and contains various beneficial phytochemicals, including glucosinolates, which have been studied for their health-promoting properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Goitrogens",
+      "severity": "Low (for most individuals)",
+      "details": "Contains goitrogens, which may interfere with thyroid function in individuals with pre-existing thyroid conditions, especially if consumed raw in very large quantities. Cooking typically reduces goitrogen levels."
+    },
+    {
+      "name": "Vitamin K interaction",
+      "severity": "Low to Moderate (for individuals on blood thinners)",
+      "details": "Due to its very high Vitamin K content, individuals taking blood-thinning medications (e.g., warfarin) should maintain a consistent intake of kale and consult their doctor to avoid interference with medication."
+    }
+  ],
+  "cultivationProcess": "Kale is a hardy biennial often grown as an annual. It thrives in cool weather and can tolerate frosts, which can enhance its sweetness. It prefers well-drained, fertile soil rich in organic matter and can grow in full sun to partial shade. Seeds can be sown directly in the garden or started indoors and transplanted. Kale requires consistent watering, especially during dry periods. Different varieties (curly, Lacinato/dinosaur, Red Russian) have slightly different growth habits.",
+  "growthDuration": "Typically 55-75 days from sowing to first harvest for baby leaves, and 70-95 days for mature leaves, depending on the variety and growing conditions. Many varieties allow for continuous harvesting of outer leaves.",
+  "sustainabilityTips": [
+    "Kale is a robust crop that can be grown in diverse climates, often with fewer inputs than more delicate greens, making it suitable for home gardening and local food systems.",
+    "Employ the 'cut-and-come-again' harvesting method by picking outer leaves first; this allows the plant to continue producing for an extended period, maximizing yield from a single plant."
+  ],
+  "carbonFootprintInfo": "Locally grown kale, particularly when in season and grown outdoors, has a relatively low carbon footprint. Kale that is transported long distances, grown in energy-intensive greenhouses, or heavily packaged (e.g., pre-washed and bagged) will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Sautéed Kale with Garlic",
+      "description": "A quick, easy, and nutritious way to prepare kale. Sautéing with garlic enhances its flavor while retaining many of its beneficial nutrients.",
+      "ingredients": [
+        "1 large bunch of kale (approx. 250-300g), tough stems removed, leaves washed and roughly chopped",
+        "1-2 tablespoons olive oil",
+        "2-3 cloves garlic, thinly sliced or minced",
+        "A pinch of red pepper flakes (optional)",
+        "Salt to taste",
+        "Freshly ground black pepper to taste",
+        "A squeeze of fresh lemon juice (optional, for finishing)"
+      ],
+      "steps": [
+        "Prepare the kale: Wash the kale leaves thoroughly under cold running water. Remove the tough central stems by either cutting them out with a knife or by holding the stem with one hand and pulling the leafy part off with the other. Roughly chop or tear the leaves into bite-sized pieces.",
+        "Heat the olive oil in a large skillet, pan, or Dutch oven over medium heat.",
+        "Add the sliced or minced garlic and the optional red pepper flakes to the skillet. Cook for about 30 seconds to 1 minute, stirring constantly, until the garlic is fragrant. Be careful not to let the garlic brown or burn, as this can make it taste bitter.",
+        "Add the chopped kale to the skillet. The pan might seem very full, but the kale will wilt down significantly as it cooks. If necessary, add the kale in batches, waiting for the first batch to wilt slightly before adding more.",
+        "Sauté the kale, stirring or tossing frequently with tongs or a spatula, for about 5 to 8 minutes. The kale should become tender and turn a vibrant green. If the pan becomes too dry, you can add a tablespoon or two of water or vegetable broth to help steam the kale and prevent sticking.",
+        "Season the sautéed kale with salt and freshly ground black pepper to your taste.",
+        "Once the kale is tender to your liking, remove the skillet from the heat. If desired, squeeze a bit of fresh lemon juice over the kale for a touch of brightness. Toss to combine.",
+        "Serve immediately as a healthy side dish."
+      ]
+    }
+  ]
+}

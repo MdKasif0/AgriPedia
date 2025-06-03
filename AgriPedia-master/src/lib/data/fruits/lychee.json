@@ -1,0 +1,211 @@
+{
+  "id": "lychee",
+  "commonName": "Lychee (Litchi)",
+  "scientificName": "Litchi chinensis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lychee_fruits_and_seed.jpg",
+  "description": "A tropical tree native to the Guangdong and Fujian provinces of southeastern China, belonging to the soapberry family (Sapindaceae). The fruit is a drupe, characterized by a rough, bumpy, red rind (pericarp) and a sweet, fragrant, translucent white fleshy aril that surrounds a single, glossy dark brown seed.",
+  "origin": "Southeastern China (Guangdong and Fujian provinces)",
+  "localNames": [
+    "Lichi (Spanish)",
+    "Litchi (French)",
+    "Litschi (German)",
+    "Lìzhī (荔枝 - Mandarin Chinese)",
+    "Linjee ( vải - Vietnamese)",
+    "Linchi (Thai)"
+  ],
+  "regions": [
+    "China (leading global producer)",
+    "India (Bihar, West Bengal)",
+    "Thailand",
+    "Vietnam",
+    "Taiwan",
+    "Madagascar",
+    "South Africa",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii - limited scale)",
+    "Mexico",
+    "Réunion"
+  ],
+  "seasons": [
+    "Early to Mid Summer (typically May to July in the Northern Hemisphere, November to February in Southern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "66 kcal per 100g (fresh aril)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.83,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 16.53,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.44,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 71.5,
+        "unit": "mg",
+        "rdi": "80-119%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.603,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.065,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 171,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.148,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 31,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, promotes healthy skin, and aids in iron absorption.",
+    "Contains oligonol, a polyphenol that research suggests may have antioxidant and anti-influenza virus activities, and may help improve blood flow.",
+    "Good source of copper, which is essential for maintaining healthy bones, nerves, and red blood cell formation.",
+    "Provides B-complex vitamins like riboflavin and niacin, which are important for energy metabolism."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lychee Allergy / Oral Allergy Syndrome (OAS)",
+      "severity": "Rare, Mild to Moderate",
+      "details": "Allergies to lychee are uncommon but can occur, sometimes cross-reacting with mugwort pollen or other fruits in the Sapindaceae family (like longan or rambutan). Symptoms can range from mild oral allergy syndrome (itching or swelling of the mouth, lips, tongue) to more severe systemic reactions in highly sensitive individuals."
+    },
+    {
+      "name": "Hypoglycin A concerns (unripe fruit/seeds, rare context)",
+      "severity": "High (if specific conditions met)",
+      "details": "While rare in typical consumption of ripe fruit, unripe lychee fruit and seeds contain toxins like hypoglycin A and MCPG, which can cause hypoglycemia, especially in undernourished children if consumed in large quantities on an empty stomach. This has been linked to outbreaks of encephalopathy in some regions. Ripe, properly consumed fruit is safe."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical to tropical, requiring warm, humid summers and cool, dry, frost-free winters for good fruit set.\n2. Soil: Prefers well-drained, slightly acidic (pH 5.5-6.5) soil rich in organic matter.\n3. Propagation: Usually by air layering (marcotting) for true-to-type fruit. Seeds can be grown but are unreliable for fruit quality and take longer to mature.\n4. Planting: Plant in full sun with protection from strong winds.\n5. Watering: Requires regular and abundant watering, especially during flowering and fruit development. Do not let soil dry out completely.\n6. Fertilizing: Feed with a balanced fertilizer suitable for fruit trees, especially during active growth phases.\n7. Pruning: Prune after harvest to shape the tree, remove dead/diseased wood, and encourage new growth for the next season's fruit.\n8. Harvesting: Fruits are harvested in bunches when the skin turns bright red and the fruit is plump and fragrant. They do not ripen further after picking.",
+  "growthDuration": "Air-layered trees can start bearing fruit in 3-5 years. Fruit matures approximately 60-100 days after flowering, depending on the cultivar and climate.",
+  "sustainabilityTips": [
+    "Store lychees in the refrigerator in a plastic bag to maintain freshness; they lose quality quickly at room temperature.",
+    "The leathery skin is not edible and should be composted.",
+    "Enjoy fresh lychees during their relatively short season; canned lychees are a common alternative available year-round."
+  ],
+  "carbonFootprintInfo": "Can be high if air-freighted due to their perishability and short season (estimated 1.0-3.0 kg CO2e/kg or more for air-freighted fresh fruit). Locally sourced or sea-freighted (often with SO2 treatment) fruit has a comparatively lower footprint. Canned lychees also have a footprint associated with processing and packaging.",
+  "uses": [
+    "fresh_consumption_eaten_raw_aril",
+    "processed_products_canned_in_syrup_very_common_dried_lychee_nuts_lychee_juice",
+    "desserts_ice_cream_sorbets_jellies_puddings_cakes_fruit_salads",
+    "beverages_lychee_liqueur_lychee_wine_flavoring_for_teas_cocktails_mocktails",
+    "culinary_flavoring_in_some_sweet_and_sour_dishes_though_less_common_than_fresh_or_dessert_use"
+  ],
+  "originAndDomesticationHistory": "Lychee (Litchi chinensis) is native to southeastern China, specifically the provinces of Guangdong and Fujian, with possible origins extending into northern Vietnam. Cultivation in China dates back over 2000 years, with records from the Han Dynasty (206 BCE – 220 CE). It was considered a highly prized fruit in the Chinese imperial court and was often given as tribute. From China, its cultivation spread to neighboring regions in Southeast Asia, including Vietnam and Thailand, and later to India. It was introduced to the Western world in the 18th century. Today, it is cultivated in many subtropical and tropical regions worldwide, valued for its unique flavor and delicate flesh.",
+  "climaticRequirements": {
+    "temperature": "Lychee trees are best suited to subtropical climates. They require warm, humid summers for optimal fruit development and a cool, dry, but frost-free winter period (typically 100-200 hours below 10-13°C or 50-55°F, but above freezing) to induce flowering. Mature trees can tolerate very light, brief frosts (-1 to -2°C or 28-30°F), but young trees, new growth, and flowers are highly susceptible to frost damage. Ideal growing temperatures range from 20-30°C (68-86°F) during the summer.",
+    "rainfall": "Prefers moderate to high annual rainfall, typically between 1200mm and 1800mm, well-distributed throughout the year, especially during vegetative growth and fruit development. However, a relatively dry period is often beneficial before and during flowering. Good soil drainage is essential as lychee trees do not tolerate waterlogged conditions.",
+    "altitude": "Lychee trees generally grow well from near sea level up to about 600 meters (approx. 2000 feet). Successful cultivation at higher altitudes depends on the specific microclimate and whether the temperature and chilling requirements are met."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained loamy soils that are rich in organic matter. A slightly acidic soil pH, typically between 5.5 and 6.5, is ideal. Lychee trees are intolerant of waterlogged conditions and saline soils. Good soil aeration is crucial for healthy root development.",
+  "irrigationAndWaterNeeds": "Requires regular and abundant watering, especially for young, establishing trees and during critical periods such as flowering, fruit set, and fruit development. The soil should not be allowed to dry out completely during these stages, as water stress can lead to flower and fruit drop, and reduced fruit size. Drip irrigation or micro-sprinklers are commonly used to provide consistent moisture. However, waterlogging must be avoided.",
+  "plantingAndHarvestCycles": "Commercially, lychee is most commonly propagated by air layering (also known as marcotting), as this method ensures that the resulting trees are true to type and bear fruit earlier than seed-propagated trees. Seed propagation is possible, but seedlings have a long juvenile period (often 7-10 years or more to fruiting) and exhibit considerable genetic variability. Grafting is also practiced for certain cultivars. Air-layered trees can start bearing fruit within 3-5 years of planting. Planting is typically done at the beginning of the rainy season or in spring. Lychee trees flower in late winter or spring, and the fruits mature in early to mid-summer (generally May to July in the Northern Hemisphere, depending on the cultivar and location), approximately 60-100 days after flowering. Fruits are borne in clusters and are harvested by hand, often by cutting the entire fruit cluster to avoid damaging the fruit. Lychees do not ripen further after being picked, so they must be harvested when fully ripe, indicated by skin color (typically bright red for most varieties), plumpness, and fragrance.",
+  "pestAndDiseaseManagement": "Common Pests: Lychee fruit borer (Conopomorpha sinensis), lychee stink bug (Tessaratoma papillosa), scale insects, mealybugs, aphids, fruit-piercing moths, spider mites, and erinose mite (Aceria litchii), which causes felt-like galls on leaves and can affect fruit. Bats and birds are also significant pests of ripe fruit. Common Diseases: Anthracnose (Colletotrichum gloeosporioides) is a major disease affecting flowers, young fruit, and leaves, especially in humid conditions. Downy mildew (Peronophythora litchii) can also cause significant damage. Root rot (e.g., Phytophthora) can occur in poorly drained soils. Post-harvest fruit rots caused by various fungi are also a concern. Management Strategies: Implementing integrated pest management (IPM) practices is essential. This includes good orchard sanitation (removing fallen fruit and diseased plant parts), pruning to improve air circulation, bagging of fruit clusters (to protect against some pests and birds), biological control for certain pests, and the targeted and judicious application of appropriate pesticides or fungicides based on pest and disease monitoring and economic thresholds.",
+  "postHarvestHandling": "Lychees are highly perishable and have a short shelf life at ambient temperatures, with the skin browning rapidly after harvest. To maintain quality and extend shelf life, fruits should be cooled promptly after picking. Commercial operations often treat lychees with sulfur dioxide (SO2) fumigation or acid dips (e.g., dilute HCl) to preserve the red skin color and prevent decay, particularly for fruits intended for export; however, SO2 treatment is controversial in some markets due to concerns about sulfite residues. Lychees can be stored for about 2-4 weeks at cool temperatures (around 2-5°C or 36-41°F) with high relative humidity (90-95%), often in modified atmosphere packaging (MAP). For longer-term preservation, lychees are commonly canned in syrup or dried (becoming 'lychee nuts').",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer)",
+    "India (primarily Bihar, West Bengal, Punjab)",
+    "Thailand",
+    "Vietnam",
+    "Taiwan",
+    "Madagascar (major exporter to Europe)",
+    "South Africa",
+    "Australia (Queensland, New South Wales)",
+    "United States (Florida, Hawaii - limited commercial scale)",
+    "Mexico",
+    "Réunion",
+    "Mauritius"
+  ],
+  "marketValueAndGlobalDemand": "Lychee is a highly prized fruit with strong demand in East and Southeast Asia, where it has a long history of consumption. There is also significant international trade for fresh lychees, particularly from major producing countries like China, Thailand, Vietnam, Madagascar, and South Africa, to markets in North America, Europe, and other parts of Asia. Canned lychees are also widely exported and consumed globally. The market value for good quality fresh lychees is generally high, especially for sought-after cultivars and during peak season. Its unique flavor, fragrant aroma, and attractive appearance contribute to its popularity as a premium fruit.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Lychees",
+      "description": "The best way to enjoy the delicate flavor of lychees is fresh and chilled.",
+      "ingredients": [
+        "1 lb fresh lychees"
+      ],
+      "steps": [
+        "Wash lychees gently under cold water.",
+        "To eat, gently peel away the rough red skin with your fingers or a small knife. The skin should come off easily if the fruit is ripe.",
+        "The translucent white flesh is edible. There is a single, dark brown seed in the center which is not edible and should be discarded.",
+        "Serve chilled for best flavor."
+      ]
+    },
+    {
+      "name": "Lychee Martini (or Mocktail)",
+      "description": "An elegant and fragrant cocktail showcasing the sweet taste of lychee.",
+      "ingredients": [
+        "For Martini: 2 oz vodka or gin, 1 oz lychee liqueur or lychee syrup (from canned lychees), 1/2 oz dry vermouth (optional), 1-2 fresh or canned lychees for garnish",
+        "For Mocktail: 3 oz lychee juice or puree, 1 oz lime juice, sparkling water or club soda to top, 1-2 lychees for garnish"
+      ],
+      "steps": [
+        "For Martini: Chill a martini glass. Combine vodka/gin, lychee liqueur/syrup, and vermouth (if using) in a shaker with ice. Shake well until chilled. Strain into the chilled martini glass. Garnish with a lychee.",
+        "For Mocktail: Fill a glass with ice. Add lychee juice/puree and lime juice. Stir. Top with sparkling water or club soda. Garnish with a lychee."
+      ]
+    },
+    {
+      "name": "Lychee and Coconut Panna Cotta",
+      "description": "A creamy Italian dessert with a tropical twist of lychee and coconut.",
+      "ingredients": [
+        "1 can (13.5 oz) full-fat coconut milk",
+        "1/2 cup heavy cream",
+        "1/4 cup sugar",
+        "1 tsp agar-agar powder (or 1 tbsp gelatin bloomed in 2 tbsp water)",
+        "1 cup lychee pulp (fresh or canned, drained and pureed)",
+        "1 tsp vanilla extract",
+        "Fresh lychees and mint for garnish"
+      ],
+      "steps": [
+        "In a saucepan, combine coconut milk, heavy cream, and sugar. Whisk in agar-agar powder (if using gelatin, bloom it first and add later).",
+        "Bring the mixture to a gentle simmer over medium heat, whisking constantly until sugar and agar-agar are dissolved. Simmer for 2 minutes.",
+        "Remove from heat. If using gelatin, stir it in now until dissolved.",
+        "Stir in lychee pulp and vanilla extract.",
+        "Pour the mixture into individual ramekins or a serving dish.",
+        "Chill in the refrigerator for at least 4 hours, or until set.",
+        "To serve, garnish with fresh lychee halves and mint leaves."
+      ]
+    }
+  ]
+}

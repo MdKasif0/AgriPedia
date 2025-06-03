@@ -1,0 +1,197 @@
+{
+  "id": "longan",
+  "commonName": "Longan",
+  "scientificName": "Dimocarpus longan",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Longan_fruits.jpg/800px-Longan_fruits.jpg",
+  "description": "Dimocarpus longan, commonly known as the longan or dragon's eye, is a tropical tree species that produces edible fruit. It belongs to the soapberry family Sapindaceae, which also includes lychee and rambutan. The fruit is characterized by a thin, brittle, tan-brown shell (pericarp), enclosing a sweet, translucent, white, fleshy aril that surrounds a single, glossy black seed. The appearance of the seed through the flesh resembles an eyeball.",
+  "origin": "Southeast Asia, likely the region between Myanmar (Burma) and Southern China (Yunnan province).",
+  "localNames": [
+    "Lóngyǎn (龙眼 - Mandarin Chinese, 'dragon eye')",
+    "Lùhng-ngáahn (龍眼 - Cantonese Chinese, 'dragon eye')",
+    "Nhãn (Vietnamese)",
+    "Lamyai (ลำไย - Thai)",
+    "Mata Kucing (Malay/Indonesian, 'cat's eye')",
+    "Kelengkeng (Indonesian)"
+  ],
+  "regions": [
+    "China (Guangdong, Fujian, Guangxi, Yunnan - leading producer)",
+    "Thailand (major producer and exporter)",
+    "Vietnam (major producer and exporter)",
+    "Indonesia",
+    "Taiwan",
+    "Malaysia",
+    "India (Bengal, parts of South India)",
+    "Sri Lanka",
+    "Philippines",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii, California - limited scale)"
+  ],
+  "seasons": [
+    "Late Summer to Autumn (typically July to October in the Northern Hemisphere, varying by region and cultivar)"
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g (fresh aril)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.31,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15.14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 84,
+        "unit": "mg",
+        "rdi": "93%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.14,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.031,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 266,
+        "unit": "mg",
+        "rdi": "6-9%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 10,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.052,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.13,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.169,
+        "unit": "mg",
+        "rdi": "19%"
+      },
+      {
+        "name": "Calcium",
+        "value": 1,
+        "unit": "mg",
+        "rdi": "0%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "0%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, promotes skin health, and aids in iron absorption.",
+    "Provides dietary fiber, which can aid digestion and promote gut health.",
+    "Contains minerals like potassium, important for maintaining healthy blood pressure levels, and copper, essential for iron metabolism and enzyme function.",
+    "In Traditional Chinese Medicine (TCM), dried longan pulp is used as a blood tonic, to nourish the heart, and to calm the spirit (e.g., for insomnia, anxiety, palpitations)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Rare, but individuals with allergies to other fruits in the Sapindaceae family (such as lychee or rambutan) or certain pollens (like birch or mugwort) might experience OAS. Symptoms are usually mild and localized to the mouth and throat, including itching or slight swelling."
+    }
+  ],
+  "cultivationProcess": "Longan trees are subtropical and thrive in warm, humid climates with well-drained, slightly acidic sandy soils. They are typically propagated by air layering (marcotting) for commercial cultivation, as seed propagation takes longer to bear fruit and may not retain parent characteristics. Trees require regular watering, especially during dry periods and fruit development, and benefit from balanced fertilization. Pruning is done to shape the tree, improve air circulation, and encourage fruiting. Some varieties may require a cool winter period to induce flowering.",
+  "growthDuration": "Grafted or air-layered trees typically begin to bear fruit within 2-4 years of planting, with significant yields achieved by 4-5 years. Trees grown from seed may take 6-8 years or longer to start fruiting. Fruit matures in the summer to early autumn months.",
+  "sustainabilityTips": [
+    "Choose locally grown longans when in season to reduce carbon emissions from transportation and support local farmers.",
+    "Compost fruit peels and seeds to reduce organic waste and enrich garden soil.",
+    "Dried longans offer a longer shelf life, reducing potential fresh fruit spoilage."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of longans is lowest when sourced locally and consumed in season. Long-distance transportation, especially by air freight for fresh fruit due to its moderate perishability, significantly increases its environmental impact. Dried longans have a longer shelf life and are lighter, potentially reducing waste and transportation impact compared to fresh fruit shipped long distances.",
+  "uses": [
+    "fresh_consumption_eaten_raw_aril",
+    "processed_products_dried_longan_pulp_guiyuan_rou_canned_in_syrup_longan_juice",
+    "desserts_sweet_soups_tong_sui_puddings_ice_cream_sorbets_jellies",
+    "culinary_flavoring_in_some_savory_dishes_snacks",
+    "medicinal_traditional_chinese_medicine_blood_tonic_heart_health_insomnia_anxiety_relief_dried_fruit",
+    "beverages_infused_teas_liqueurs"
+  ],
+  "originAndDomesticationHistory": "Longan (Dimocarpus longan) is native to Southeast Asia, with its likely center of origin in the region spanning from Myanmar (Burma) to Southern China (particularly Yunnan province). The fruit has been cultivated for many centuries in China, with historical records mentioning it as far back as the Han Dynasty (206 BCE – 220 CE). From China, its cultivation spread to other parts of Southeast Asia, including Thailand, Vietnam, Malaysia, and Indonesia, where it became a popular and economically important fruit. It was valued for its sweet, juicy fruit and its perceived medicinal properties in Traditional Chinese Medicine. Longan was introduced to other subtropical and tropical regions of the world more recently, including India, Sri Lanka, Australia, and parts of the Americas.",
+  "climaticRequirements": {
+    "temperature": "Longan trees are best suited to subtropical and tropical climates. They thrive in warm, humid conditions with optimal growing temperatures ranging from 20-30°C (68-86°F). While mature trees can tolerate brief periods of light frost (down to -1 to -2°C or 28-30°F), young trees are more susceptible to cold damage. Some varieties require a distinct, cool (but non-freezing) winter period to induce flowering and ensure good fruit set.",
+    "rainfall": "Requires moderate to high annual rainfall, typically between 1200mm and 2000mm, well-distributed throughout the year, especially during vegetative growth and fruit development. While established trees can withstand some drought, prolonged dry spells can adversely affect yield and fruit quality. Good drainage is essential as they do not tolerate waterlogged conditions.",
+    "altitude": "Longan trees are generally cultivated from sea level up to about 600 meters (approx. 2000 feet). They can be grown at slightly higher elevations in truly tropical regions where temperatures remain warm."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, typically between 5.5 and 7.0, is ideal. Longan trees are intolerant of waterlogged or saline soils. Good soil aeration is important for healthy root development.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering, especially for young, establishing trees and during critical periods such as flowering, fruit set, and fruit development. While mature trees can tolerate some drought, irrigation is often necessary in areas with insufficient rainfall or during prolonged dry spells to ensure optimal yields and fruit quality. Drip irrigation or micro-sprinklers are commonly used to provide efficient watering.",
+  "plantingAndHarvestCycles": "Commercially, longan is most commonly propagated by air layering (marcotting), which ensures that the resulting trees are true to type and bear fruit earlier than seed-propagated trees. Grafting is also used for select cultivars. Seed propagation is possible but leads to a longer juvenile period (6-8 years or more to fruiting) and variability in fruit quality. Air-layered trees can start bearing fruit within 2-4 years. Planting is usually done at the beginning of the rainy season. Longan trees typically flower in the spring, and the fruits mature in late summer to early autumn (generally July to October in the Northern Hemisphere, though this varies by region and cultivar). Fruits are borne in drooping clusters (panicles) and are harvested by hand when they reach full size, the skin turns a characteristic tan-brown color, and the flavor has fully developed. The entire cluster is usually cut from the tree.",
+  "pestAndDiseaseManagement": "Common Pests: Lychee stink bug (Tessaratoma papillosa) can be a significant pest, feeding on young shoots and fruits. Longan fruit borer (Conopomorpha sinensis) larvae tunnel into the fruit. Other pests include scale insects, mealybugs, aphids, fruit-piercing moths, spider mites. Bats and birds can also cause considerable damage to ripe fruit. Common Diseases: Witches' broom, caused by a phytoplasma, is a major and destructive disease in some longan-growing regions, leading to abnormal shoot proliferation and reduced fruit production. Leaf spot diseases (caused by various fungi), anthracnose, and root rot (in poorly drained soils) can also occur. Management Strategies: Implementing integrated pest management (IPM) practices is crucial. This includes regular orchard sanitation, pruning to improve air circulation and light penetration, bagging of fruit clusters (to protect against some pests and birds), biological control for certain pests (e.g., parasitic wasps for stink bugs), and the targeted application of pesticides or fungicides when pest or disease pressure is high and warrants chemical intervention. Control of alternate host plants for some diseases and vectors is also important, especially for witches' broom.",
+  "postHarvestHandling": "Longan fruits are perishable and have a relatively short shelf life at ambient temperatures, typically lasting only a few days. After harvest, fruits should be handled carefully to minimize bruising. Shelf life can be extended to about 2-4 weeks by refrigeration at cool temperatures (around 5-7°C or 41-45°F) with high relative humidity (90-95%). In commercial operations, particularly in major exporting countries like Thailand and China, longan fruits are often treated with sulfur dioxide (SO2) fumigation before storage or export. This treatment helps to preserve the light tan color of the skin, prevent browning and decay, and extend shelf life, but its use is controversial in some markets due to potential sulfite residues and health concerns. Longans can also be dried (often with the shell on, becoming dark brown to black) or canned in syrup for long-term preservation.",
+  "marketValueAndGlobalDemand": "Longan is a highly popular fruit in East and Southeast Asia, where it is widely consumed both fresh and in its dried form (known as 'guiyuan rou' in Chinese, used in TCM and sweet soups). China, Thailand, and Vietnam are major producers and consumers. There is significant international demand for fresh longan, particularly in markets in North America, Europe, and Australia, which are largely supplied by these Asian countries, as well as increasingly by producers in Australia and the USA. Dried longans are a staple ingredient in traditional Chinese cuisine and medicine and are widely traded internationally. The market value of fresh longan can fluctuate based on seasonality, cultivar, quality, and origin.",
+  "staticRecipes": [
+    {
+      "name": "Sweet Longan and Lotus Seed Dessert Soup (Tong Sui)",
+      "description": "A popular and refreshing Chinese dessert soup (tong sui) featuring the sweet flavors of longan and the soft texture of lotus seeds. Often enjoyed warm or chilled.",
+      "ingredients": [
+        "1/2 cup dried longan pulp",
+        "1/4 cup dried lotus seeds (skinless and cored)",
+        "4-6 cups water",
+        "Rock sugar to taste (e.g., 1/4 to 1/2 cup, or use granulated sugar)"
+      ],
+      "steps": [
+        "Rinse the dried longan pulp and dried lotus seeds thoroughly under cold water.",
+        "If your lotus seeds are not pre-cored, slice each seed in half and remove the bitter green germ (core) from the center.",
+        "Soak the dried lotus seeds in warm water for at least 1 hour, or until they are somewhat softened. Some prefer to soak them for longer (2-3 hours or overnight) for a softer texture.",
+        "In a medium-sized pot, combine the rinsed longan pulp, soaked and cored lotus seeds, and the 4-6 cups of water.",
+        "Bring the mixture to a boil over high heat.",
+        "Once boiling, reduce the heat to low, cover the pot, and let it simmer for 30-45 minutes, or until the lotus seeds are tender and can be easily pierced with a fork.",
+        "Add rock sugar (or granulated sugar) to the pot according to your preference for sweetness. Start with a smaller amount, stir until it dissolves completely, then taste and add more if needed.",
+        "Continue to simmer for another 5-10 minutes to allow the sugar to fully incorporate and the flavors to meld.",
+        "Serve the dessert soup warm in bowls. It can also be chilled in the refrigerator and served cold, which is particularly refreshing in warmer weather."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "yerba_mate",
+  "commonName": "Yerba Mate (Mate)",
+  "scientificName": "Ilex paraguariensis",
+  "image": "https://images.unsplash.com/photo-1599740407005-3914f5910331?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Yerba mate is a species of holly (family Aquifoliaceae) native to subtropical South America. It is cultivated for its leaves, which are dried, chopped, and ground into a powder called yerba. This is then steeped in hot water to produce a caffeinated beverage known as mate, traditionally consumed from a gourd through a metal straw called a bombilla. It is known for its stimulant effects and cultural significance.",
+  "origin": "Subtropical South America (Paraguay, Argentina, Brazil, Uruguay).",
+  "localNames": ["Yerba Mate / Mate (Spanish)", "Erva-mate / Chimarrão / Tereré (Portuguese)", "Ka'a (Guaraní)"],
+  "regions": ["Argentina (leading producer)", "Brazil", "Paraguay", "Uruguay", "Parts of Chile and Bolivia"],
+  "seasons": ["Perennial evergreen tree/shrub; leaves are typically harvested once every 1-2 years, often during the cooler months (autumn/winter) to allow for regrowth before summer heat."],
+  "nutrition": {
+    "calories": "Brewed Yerba Mate (unsweetened): ~5-10 kcal per 240ml (1 cup). Dried leaves have more, but typical infusion is low calorie.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Brewed: ~1-2" },
+      { "name": "Fat", "unit": "g", "value": "Brewed: Trace" },
+      { "name": "Fiber", "unit": "g", "value": "Brewed: Trace" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Brewed: Small amounts" },
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Brewed: Small amounts" },
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Brewed: Small amounts" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Brewed: Moderate, ~70-150mg (2-4%) per cup" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Brewed: Moderate, ~10-30mg (2-7%) per cup" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Brewed: Significant, can be high" }
+    ]
+  },
+  "healthBenefits": [
+    "Provides a smooth stimulant effect from caffeine, theobromine, and theophylline, enhancing alertness and concentration.",
+    "Rich in antioxidants, including polyphenols like chlorogenic acids and saponins.",
+    "May aid digestion and have diuretic properties.",
+    "Some studies suggest it can boost metabolism and aid in weight management.",
+    "Traditionally used to combat fatigue and improve mood."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Caffeine Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Contains caffeine, which can cause similar side effects to coffee or tea in sensitive individuals (insomnia, nervousness, palpitations)."
+    },
+    {
+      "name": "PAH Concerns (Smoked Varieties)",
+      "severity": "Varies (Chronic high intake)",
+      "details": "Traditionally dried/smoked yerba mate may contain polycyclic aromatic hydrocarbons (PAHs), which are carcinogenic. Unsmoked varieties are available and may pose less risk. Very hot consumption temperature is also a debated risk factor for esophageal cancer in traditional settings."
+    }
+  ],
+  "cultivationProcess": "Yerba mate trees are grown from seeds, typically in nurseries for about a year before transplanting. They prefer acidic, well-drained soils and subtropical climates with good rainfall. Often grown under shade or in agroforestry systems. Leaves and young stems are harvested.",
+  "growthDuration": "Perennial tree/shrub. First harvest usually 4-6 years after planting. Can remain productive for many decades.",
+  "sustainabilityTips": [
+    "Shade-grown and agroforestry systems for yerba mate can promote biodiversity and soil health.",
+    "Organic cultivation is becoming more common.",
+    "Sustainable harvesting practices are important for the long-term health of the plants and ecosystem."
+  ],
+  "carbonFootprintInfo": "The carbon footprint is influenced by cultivation methods (shade-grown vs. monoculture), energy for drying (traditional smoking vs. air/mechanical drying), processing, and transportation. Sustainably managed systems have a lower footprint.",
+  "uses": ["beverage_production_dried_leaves_and_stems_for_mate_infusion_chimarrao_terere_tea_bags_bottled_drinks", "flavoring_agent_in_some_foods_and_energy_drinks", "traditional_social_and_ceremonial_beverage"],
+  "originAndDomesticationHistory": "Yerba mate (Ilex paraguariensis) is native to the subtropical rainforests of South America around the Parana, Paraguay, and Uruguay river basins. It was traditionally consumed by the indigenous Guaraní people long before European colonization. Jesuit missionaries in the 17th century were among the first Europeans to cultivate it systematically. It remains a culturally significant beverage in Argentina, Uruguay, Paraguay, and southern Brazil.",
+  "climaticRequirements": {
+    "temperature": "Subtropical plant. Optimal growing temperatures are 15-28°C. Tolerates light frost once established, but young plants are sensitive.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1300-2000mm annually. High humidity is beneficial.",
+    "altitude": "Typically grown at altitudes between 150-800m, but can be found at higher elevations in some regions."
+  },
+  "soilPreferences": "Prefers deep, well-drained, acidic loamy or clayey soils (pH 4.5-6.5) rich in organic matter and minerals like iron and aluminum.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture. Irrigation is beneficial in areas with insufficient or erratic rainfall, especially for young plants and to ensure consistent yields for commercial production.",
+  "plantingAndHarvestCycles": "Propagated from seeds, which can be slow and difficult to germinate, or sometimes cuttings. Seedlings are grown in nurseries. Harvesting involves pruning branches with leaves, typically done every 1-2 years. The timing and method of harvest (e.g., extent of pruning) influence yield and plant health.",
+  "pestAndDiseaseManagement": "Pests include various insects like a specific type of psyllid ('pulgão da erva-mate') and stem borers. Fungal diseases can affect leaves and roots, especially in overly humid or poorly drained conditions. Integrated pest management and good agronomic practices are used.",
+  "postHarvestHandling": "Harvested leaves and stems undergo a series of processing steps: (1) Sapeco (a quick, high-heat flash drying to halt enzymatic oxidation and reduce moisture), (2) Drying (further drying, which can be done with hot air or traditionally over wood fires - contributing to smoky flavor), (3) Milling/Grinding (canchado - coarse milling, then finer milling), and (4) Aging/Maturation (storage for several months to over a year to develop characteristic flavor and aroma). The final product is then graded and packed.",
+  "majorProducingCountriesOrRegions": ["Argentina (largest producer and exporter)", "Brazil (especially southern states)", "Paraguay", "Uruguay (major consumer, imports significantly)"],
+  "marketValueAndGlobalDemand": "Yerba mate is a major beverage in South America with deep cultural roots and high domestic consumption. The international market is growing, driven by interest in its stimulant properties, health benefits, and as an alternative to coffee and tea. Germany, USA, and Middle Eastern countries are notable export markets. Specialty and organic yerba mate products are gaining popularity."
+}

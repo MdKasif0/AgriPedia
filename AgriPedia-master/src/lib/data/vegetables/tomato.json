@@ -1,0 +1,178 @@
+{
+  "id": "tomato",
+  "commonName": "Tomato",
+  "scientificName": "Solanum lycopersicum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Vegetable_tomatoes.jpg/800px-Vegetable_tomatoes.jpg",
+  "description": "A fleshy berry, botanically a fruit, but widely considered a culinary vegetable. It belongs to the nightshade family Solanaceae and originated in western South America and Central America.",
+  "origin": "Western South America and Central America",
+  "localNames": [
+    "Tomate (Spanish/German/French)",
+    "Pomodoro (Italian)",
+    "Tamatar (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "United States",
+    "Turkey",
+    "Egypt",
+    "Italy",
+    "Spain"
+  ],
+  "seasons": [
+    "Summer",
+    "Early Autumn (field-grown in temperate climates); Year-round (greenhouse)"
+  ],
+  "nutrition": {
+    "calories": "18 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.9,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13.7,
+        "unit": "mg",
+        "rdi": "23%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 7.9,
+        "unit": "µg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Potassium",
+        "value": 237,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Lycopene (antioxidant)",
+        "value": 2573,
+        "unit": "µg"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of lycopene, a powerful antioxidant linked to reduced risk of heart disease and certain types of cancer (especially prostate cancer).",
+    "Good source of Vitamin C, Vitamin K, and potassium, supporting immune function, bone health, and blood pressure regulation.",
+    "May support skin health due to its antioxidant content.",
+    "Contributes to hydration due to high water content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can occur in individuals with grass pollen allergies, causing itching or tingling in the mouth."
+    },
+    {
+      "name": "Nightshade Sensitivity",
+      "severity": "Mild",
+      "details": "Some individuals report joint pain or inflammation from nightshades, though this is not a typical allergy and evidence is limited."
+    },
+    {
+      "name": "Acidity",
+      "severity": "Mild",
+      "details": "The acidity of tomatoes can sometimes trigger heartburn or acid reflux in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Tomatoes are warm-season plants, typically grown as annuals. They require full sun (at least 6-8 hours), well-drained, fertile soil rich in organic matter. Started from seeds indoors or purchased as transplants. Many varieties (indeterminate) need staking, caging, or trellising for support. Regular watering, especially during fruit set, and fertilization are important for good yield. Common issues include blossom-end rot (calcium deficiency) and various fungal diseases.",
+  "growthDuration": "Approximately 50-90 days from transplanting to the first ripe fruit, depending on the variety (determinate vs. indeterminate, cherry vs. beefsteak) and growing conditions.",
+  "sustainabilityTips": [
+    "Store ripe tomatoes at room temperature, not in the refrigerator, for best flavor and texture. Refrigeration can make them mealy.",
+    "Use overripe tomatoes for making sauces, soups, or stews.",
+    "Consider growing your own tomatoes; they are relatively easy to grow in many climates, even in pots."
+  ],
+  "carbonFootprintInfo": "Field-grown, local tomatoes have a relatively low footprint (0.3-0.7 kg CO2e/kg). However, greenhouse-grown tomatoes, especially those produced out of season and transported long distances, have a much higher carbon footprint due to energy use for heating and lighting.",
+  "staticRecipes": [
+    {
+      "name": "Classic Tomato Soup",
+      "description": "A simple, comforting, and flavorful homemade tomato soup, perfect with grilled cheese.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 medium onion, chopped",
+        "2 cloves garlic, minced",
+        "1 (28 oz) can crushed tomatoes (or 2 lbs fresh ripe tomatoes, blanched, peeled, and chopped)",
+        "2 cups vegetable or chicken broth",
+        "1 tsp sugar (optional, to balance acidity)",
+        "1/2 cup heavy cream or milk (optional, for creaminess)",
+        "Salt and freshly ground black pepper to taste",
+        "Fresh basil or parsley, chopped, for garnish (optional)"
+      ],
+      "steps": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat.",
+        "Add chopped onion and cook until softened, about 5-7 minutes.",
+        "Add minced garlic and cook for 1 minute more until fragrant (do not brown).",
+        "Stir in crushed (or fresh chopped) tomatoes, broth, and sugar (if using). Bring the mixture to a simmer.",
+        "Reduce heat to low, cover, and cook for 15-20 minutes to allow flavors to meld, stirring occasionally.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer the soup in batches to a regular blender and blend until smooth, then return to the pot.",
+        "If using, stir in heavy cream or milk. Season generously with salt and pepper to taste.",
+        "Reheat gently if needed, but do not boil after adding cream. Garnish with fresh basil or parsley before serving."
+      ]
+    },
+    {
+      "name": "Simple Bruschetta with Fresh Tomatoes",
+      "description": "A classic Italian appetizer featuring fresh, ripe tomatoes, garlic, basil, and olive oil on toasted bread.",
+      "ingredients": [
+        "4-5 ripe Roma tomatoes (or other flavorful tomatoes), diced",
+        "2-3 cloves garlic, minced (or 1 clove cut in half to rub on bread)",
+        "1/4 cup fresh basil leaves, chopped or torn",
+        "2-3 tbsp extra virgin olive oil",
+        "1 tbsp balsamic vinegar (optional, for added tang)",
+        "Salt and freshly ground black pepper to taste",
+        "1 baguette or rustic bread, sliced into 1/2-inch thick rounds or pieces",
+        "Olive oil for brushing bread"
+      ],
+      "steps": [
+        "Preheat broiler or grill to medium-high.",
+        "In a medium bowl, combine diced tomatoes, minced garlic (if not rubbing on bread), chopped basil, 2-3 tbsp olive oil, and balsamic vinegar (if using). Season with salt and pepper. Toss gently and let the mixture sit for at least 10-15 minutes to allow flavors to meld.",
+        "Brush one side of each bread slice lightly with olive oil. Toast the bread slices under the broiler or on the grill for 1-2 minutes per side, until golden brown and crisp. Watch carefully to prevent burning.",
+        "If desired, rub the toasted side of each bread slice with the cut side of a garlic clove for extra flavor.",
+        "Spoon the tomato mixture generously onto the toasted bread slices.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Caprese Salad",
+      "description": "A simple and elegant Italian salad, made of sliced fresh mozzarella, ripe tomatoes, and sweet basil, seasoned with salt, pepper, and olive oil.",
+      "ingredients": [
+        "2-3 large ripe tomatoes (such as Beefsteak or Heirloom), sliced about 1/4-inch thick",
+        "8 oz fresh mozzarella cheese (preferably buffalo mozzarella), sliced about 1/4-inch thick",
+        "A generous handful of fresh basil leaves",
+        "Good quality extra virgin olive oil",
+        "Balsamic glaze (optional, for drizzling)",
+        "Flaky sea salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "On a platter or individual plates, arrange alternating slices of tomato and fresh mozzarella in an overlapping pattern.",
+        "Tuck fresh basil leaves between the slices or scatter them attractively over the top.",
+        "Drizzle generously with extra virgin olive oil.",
+        "If using, drizzle lightly with balsamic glaze (a little goes a long way).",
+        "Season with flaky sea salt and freshly ground black pepper to taste just before serving.",
+        "Serve immediately at room temperature for the best flavor."
+      ]
+    }
+  ]
+}

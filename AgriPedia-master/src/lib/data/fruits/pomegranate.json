@@ -1,0 +1,216 @@
+{
+  "id": "pomegranate",
+  "commonName": "Pomegranate",
+  "scientificName": "Punica granatum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Pomegranate_fruit_-_whole_and_piece_with_arils.jpg",
+  "description": "A fruit-bearing deciduous shrub or small tree in the family Lythraceae. The fruit is renowned for its tough, leathery reddish rind (pericarp) and its interior filled with hundreds of edible seeds called arils. Each aril consists of a seed surrounded by a sweet, juicy, gem-like pulp (sarcotesta), ranging in color from white to deep red or purple.",
+  "origin": "Region from modern-day Iran to northern India (Himalayas).",
+  "localNames": [
+    "Granada (Spanish)",
+    "Grenade (French)",
+    "Melograno (Italian)",
+    "Granatapfel (German - 'grained apple')",
+    "Anar (अनार - Hindi, Urdu, Persian)",
+    "Dalim (दाड़िम - Bengali)",
+    "Madulai (மாதுளை - Tamil)",
+    "Danima (దానిమ్మ - Telugu)"
+  ],
+  "regions": [
+    "India (leading global producer)",
+    "China",
+    "Iran (significant historical and current production)",
+    "Turkey",
+    "United States (primarily California and Arizona)",
+    "Spain",
+    "Egypt",
+    "Afghanistan",
+    "Israel",
+    "Peru",
+    "Chile"
+  ],
+  "seasons": [
+    "Autumn to Early Winter (typically September to January/February in the Northern Hemisphere, depending on cultivar and climate)"
+  ],
+  "nutrition": {
+    "calories": "83 kcal per 100g (edible arils)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.67,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.17,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 10.2,
+        "unit": "mg",
+        "rdi": "11-17%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 16.4,
+        "unit": "µg",
+        "rdi": "14-21%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 38,
+        "unit": "µg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.075,
+        "unit": "mg",
+        "rdi": "4-6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 236,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.158,
+        "unit": "mg",
+        "rdi": "18%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 36,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in powerful antioxidants, particularly punicalagins (found in the juice and peel) and punicic acid (a type of conjugated linolenic acid in the aril seed oil), which help combat oxidative stress and inflammation.",
+    "May have significant anti-inflammatory effects, beneficial for conditions like arthritis.",
+    "Can contribute to heart health by improving cholesterol profiles (lowering LDL, raising HDL), reducing blood pressure, and slowing down plaque formation in arteries.",
+    "Some research suggests potential benefits for memory, brain health, and possible neuroprotective effects.",
+    "May have anti-cancer properties, particularly against prostate and breast cancer, based on preliminary studies.",
+    "Supports urinary health and may help prevent kidney stones."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Pomegranate Allergy",
+      "severity": "Rare, Mild to Moderate",
+      "details": "Allergies to pomegranate are uncommon but can occur. Symptoms may include itching, hives, swelling, or difficulty breathing in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Pomegranates prefer climates with hot, dry summers and cool (but not severely cold) winters. They are relatively drought-tolerant once established but need some winter chill for good fruiting.\n2. Soil: Adaptable to various soils but thrive in deep, well-drained loamy soil. Tolerates slightly alkaline conditions (pH 5.5-7.5).\n3. Propagation: Can be grown from seeds, hardwood cuttings, suckers, or by air layering. Cuttings are common for commercial varieties.\n4. Planting: Plant in full sun for best fruit production.\n5. Watering: Water deeply but infrequently. Allow the soil to dry out somewhat between waterings, especially when mature. Overwatering can lead to fruit splitting.\n6. Fertilizing: Light fertilization in early spring. Avoid over-fertilizing with nitrogen, which can promote vegetative growth at the expense of fruit yield.\n7. Pruning: Prune to shape into a multi-stemmed shrub or a small tree. Remove suckers from the base and dead or crossing branches. Thin out dense growth to improve air circulation and light penetration.\n8. Harvesting: Fruits are ready when they develop full color (typically deep red for many varieties) and make a metallic sound when tapped. They do not ripen further in sugar content after picking but will soften.",
+  "growthDuration": "Trees grown from cuttings or as nursery stock may start bearing fruit in 2-3 years, with good production achieved by 5-6 years. Fruits mature about 5-7 months after flowering.",
+  "sustainabilityTips": [
+    "Store whole pomegranates at room temperature for a few days or in the refrigerator for several weeks (up to 2-3 months under optimal conditions).",
+    "Learn efficient ways to de-seed a pomegranate (e.g., the water method or tapping method) to avoid waste and mess.",
+    "Pomegranate juice and arils can be frozen for later use. The rind can be dried and powdered for traditional medicinal uses or for dyeing textiles.",
+    "Pomegranate trees are relatively drought-tolerant, making them suitable for water-wise landscaping in appropriate climates."
+  ],
+  "carbonFootprintInfo": "Moderate, largely depending on origin and transportation methods (estimated 0.5-1.0 kg CO2e/kg for transported fruit). Locally grown pomegranates consumed in season have a lower footprint.",
+  "uses": [
+    "fresh_consumption_arils_eaten_raw_seeds_can_be_eaten_or_discarded",
+    "beverages_fresh_juice_bottled_juice_syrups_grenadine_pomegranate_molasses_wine_cocktails",
+    "culinary_ingredient_salads_fattoush_gavurdagi_yogurt_toppings_desserts_ice_cream_sorbet_cakes",
+    "culinary_garnish_for_savory_and_sweet_dishes",
+    "medicinal_traditional_fruit_rind_bark_leaves_flowers_used_for_digestive_issues_dysentery_astringent_anti_parasitic",
+    "dyes_rind_and_flowers_produce_natural_dyes_for_textiles",
+    "ornamental_plant_grown_for_its_attractive_flowers_and_fruit_dwarf_varieties_for_containers"
+  ],
+  "originAndDomesticationHistory": "The pomegranate (Punica granatum) is native to the region spanning from modern-day Iran to northern India (Himalayas). It has been cultivated since ancient times throughout the Mediterranean region, the Middle East, and the Indian subcontinent. Archaeological evidence suggests its cultivation dates back to at least 3500-3000 BCE in the Middle East. The pomegranate held significant cultural, religious, and symbolic importance in many ancient civilizations, including the Egyptians (found in tombs), Greeks (associated with Hera and Persephone), Romans, and in Judaism, Christianity, and Islam. It was spread along ancient trade routes, including the Silk Road, reaching China, and was later introduced to the Americas by Spanish settlers in the 16th century. Many cultivars have been developed over millennia, varying in fruit size, rind color, aril color, hardness of seeds, and flavor.",
+  "climaticRequirements": {
+    "temperature": "Pomegranates thrive in subtropical to mild temperate climates characterized by hot, dry summers and cool winters. They require some winter chilling for good fruit production (typically 100-200 hours below 7°C or 45°F for some varieties, though needs vary). Mature trees are relatively cold-hardy and can tolerate temperatures down to about -10°C to -12°C (10-14°F) for short periods when dormant. However, flowers and young fruit can be damaged by late spring frosts. High summer heat is beneficial for fruit development and sugar accumulation.",
+    "rainfall": "Pomegranate trees are notably drought-tolerant once established but perform best and yield more with moderate annual rainfall, typically between 500mm and 800mm, or with supplemental irrigation. Good drainage is essential, as they do not tolerate waterlogged conditions. Dry weather is preferred during the fruit ripening period to prevent fruit splitting and disease.",
+    "altitude": "Can be successfully cultivated from sea level up to about 1800 meters (approximately 6000 feet) in suitable latitudes, provided other climatic conditions are met."
+  },
+  "soilPreferences": "Pomegranate trees are adaptable to a wide range of soil types, from sandy loams to clays, but they prefer deep, well-drained, fertile loamy soils. They are known for their ability to grow in relatively poor soils as well. Good soil drainage is critical to prevent root rot. They can tolerate slightly alkaline and calcareous soils, with an optimal pH range generally between 5.5 and 7.5.",
+  "irrigationAndWaterNeeds": "Young pomegranate trees require regular watering to ensure proper establishment. Mature trees are remarkably drought-tolerant but produce significantly better quality and quantity of fruit with consistent moisture, especially during the critical periods of flowering, fruit set, and fruit development. Irrigation (such as drip irrigation or micro-sprinklers) is common in commercial orchards, particularly in arid or semi-arid regions. It's important to allow the soil to dry out somewhat between waterings for mature trees to avoid conditions favorable for root diseases.",
+  "plantingAndHarvestCycles": "Pomegranates are commonly propagated from hardwood cuttings taken during the dormant season, or from suckers that arise from the base of the tree. They can also be grown from seeds, but seedlings may not be true to type and typically have a longer juvenile period before fruiting. Air layering is another propagation method. Trees are usually planted in late winter or early spring while dormant. Full sun exposure is essential for good fruit production and color development. Trees grown from cuttings or as nursery stock may start bearing fruit within 2-3 years of planting, with significant yields achieved by 5-6 years. Pomegranates typically flower in the spring to early summer. The fruits mature in the late summer to autumn or early winter (generally September to January/February in the Northern Hemisphere), approximately 5-7 months after flowering. Fruits are harvested by hand when they have reached their full color (which can range from pink to deep red or even yellowish, depending on the cultivar) and make a characteristic metallic sound when tapped. The calyx (crown-like structure at the blossom end) should be well-developed. Pomegranates do not ripen significantly in sugar content after being picked but will soften and become juicier.",
+  "pestAndDiseaseManagement": "Common Pests: The pomegranate butterfly (Virachola isocrates or Deudorix isocrates), whose larvae bore into the developing fruit, is a major pest in many regions. Aphids, scale insects, mealybugs, thrips, and whiteflies can also infest pomegranate trees. Fruit-sucking moths and mites can cause damage as well. Common Diseases: Bacterial blight (Xanthomonas axonopodis pv. punicae) can cause significant damage to leaves, stems, and fruit. Alternaria fruit rot (heart rot) can cause internal decay of the arils while the rind appears healthy. Cercospora leaf spot and anthracnose (Colletotrichum gloeosporioides) can also affect the foliage and fruit. Root rot can occur in poorly drained soils. Management Strategies: Implementing good orchard sanitation, such as removing and destroying fallen fruit and diseased plant parts. Bagging of individual fruits on the tree can provide effective protection against the pomegranate butterfly. Pruning to ensure good air circulation within the canopy can help reduce fungal disease pressure. Biological control methods for some pests. Applying need-based and timely sprays of appropriate insecticides and fungicides, following local agricultural recommendations.",
+  "postHarvestHandling": "Pomegranates have a relatively long shelf life if handled properly due to their tough, leathery rind. They should be harvested carefully to avoid bruising. After harvest, fruits can be stored for several weeks at cool room temperatures (if not too hot) or for 2-3 months (and sometimes longer for certain varieties) under refrigeration at temperatures between 5°C and 7°C (41°F to 45°F) with moderate humidity (80-85%). Storing at temperatures below 5°C can cause chilling injury to some varieties. The quality of arils (sweetness, acidity, juiciness) is best maintained under cool storage. For commercial purposes, pomegranates are often graded by size and appearance. Extracted arils are also sold in packaged form, requiring refrigeration and having a shorter shelf life than whole fruit.",
+  "majorProducingCountriesOrRegions": [
+    "India (one of the world's largest producers)",
+    "China",
+    "Iran (a center of origin and major producer)",
+    "Turkey",
+    "United States (primarily California and Arizona)",
+    "Spain",
+    "Egypt",
+    "Afghanistan",
+    "Israel",
+    "Peru",
+    "Chile",
+    "Azerbaijan",
+    "Uzbekistan"
+  ],
+  "marketValueAndGlobalDemand": "Pomegranates have high global demand, which has significantly increased in recent decades due to growing awareness of their unique flavor, attractive appearance (especially the gem-like arils), and substantial health benefits attributed to their high antioxidant content. They are consumed fresh, as juice, and as ingredients in various food products. Pomegranate juice, arils (sold in ready-to-eat packs), and pomegranate molasses are particularly popular processed products. Major producers like India, Iran, Turkey, the USA, and Spain are also significant exporters. The 'Wonderful' cultivar is one of the most widely grown and traded varieties globally. The market value for high-quality fresh pomegranates and their products is generally strong, especially in North American, European, and East Asian markets.",
+  "staticRecipes": [
+    {
+      "name": "How to De-seed a Pomegranate",
+      "description": "A simple guide to easily remove the arils (seeds) from a pomegranate.",
+      "ingredients": [
+        "1 ripe pomegranate"
+      ],
+      "steps": [
+        "Cut off the crown (flower end) of the pomegranate.",
+        "Lightly score the rind vertically from top to bottom in 4-6 sections, without cutting too deep into the fruit.",
+        "Submerge the pomegranate in a large bowl of water. Gently break apart the sections under water. The arils will sink to the bottom, and the white membrane will float.",
+        "Scoop out the floating membrane and discard. Drain the water and collect the arils.",
+        "Alternatively, hold a section over a bowl, cut-side down, and firmly tap the rind with a wooden spoon. The arils should fall out easily."
+      ]
+    },
+    {
+      "name": "Pomegranate and Walnut Salad (e.g., Gavurdagi Salatasi variation)",
+      "description": "A refreshing and crunchy salad featuring pomegranate seeds and walnuts.",
+      "ingredients": [
+        "1 cup pomegranate arils",
+        "1/2 cup chopped walnuts, toasted",
+        "1 cucumber, diced",
+        "2 ripe tomatoes, diced",
+        "1/2 small red onion, thinly sliced or finely chopped",
+        "1/4 cup chopped fresh parsley",
+        "Dressing: 2 tbsp olive oil, 1 tbsp lemon juice, 1 tsp pomegranate molasses (optional), salt and pepper to taste"
+      ],
+      "steps": [
+        "In a large bowl, combine pomegranate arils, toasted walnuts, diced cucumber, diced tomatoes, red onion, and chopped parsley.",
+        "In a small bowl, whisk together olive oil, lemon juice, pomegranate molasses (if using), salt, and pepper.",
+        "Pour the dressing over the salad and toss gently to combine.",
+        "Serve immediately or chill for 30 minutes to allow flavors to meld."
+      ]
+    },
+    {
+      "name": "Pomegranate Molasses Glazed Chicken or Salmon",
+      "description": "A tangy and slightly sweet glaze perfect for chicken or fish.",
+      "ingredients": [
+        "For the glaze: 1/4 cup pomegranate molasses, 1 tbsp olive oil, 1 tbsp honey or maple syrup, 1 clove garlic (minced), 1/2 tsp Dijon mustard, pinch of salt and pepper",
+        "4 chicken breasts or salmon fillets"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C) or prepare grill.",
+        "In a small bowl, whisk together all glaze ingredients: pomegranate molasses, olive oil, honey/maple syrup, minced garlic, Dijon mustard, salt, and pepper.",
+        "Season chicken or salmon with additional salt and pepper if desired.",
+        "Brush the chicken/salmon generously with half of the pomegranate glaze.",
+        "Bake or grill the chicken/salmon until cooked through (internal temperature of 165°F for chicken). Basting with remaining glaze during the last few minutes of cooking.",
+        "Let rest for a few minutes before serving. Drizzle with any remaining pan juices or extra glaze."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "amla",
+  "commonName": "Amla (Indian Gooseberry)",
+  "scientificName": "Phyllanthus emblica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Indian_gooseberry_Amla_IMG_3122.jpg",
+  "description": "A deciduous tree of the family Phyllanthaceae. It is known for its edible fruit of the same name. The fruit is nearly spherical, light greenish-yellow, quite smooth and hard on appearance, with six vertical stripes or furrows.",
+  "origin": "India and Southeast Asia",
+  "localNames": [
+    "Indian Gooseberry",
+    "Nellikkai (Tamil)",
+    "Usirikaya (Telugu)",
+    "Amalaki (Sanskrit)"
+  ],
+  "regions": [
+    "India",
+    "Sri Lanka",
+    "Thailand",
+    "Malaysia",
+    "Nepal",
+    "Pakistan"
+  ],
+  "seasons": [
+    "Autumn",
+    "Winter"
+  ],
+  "nutrition": {
+    "calories": "44 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 10.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 27.7,
+        "unit": "mg",
+        "rdi": "46%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.144,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely rich in Vitamin C, a potent antioxidant.",
+    "Traditionally used in Ayurveda for boosting immunity, improving hair and skin health, and aiding digestion.",
+    "May help regulate blood sugar levels.",
+    "Anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Amla Allergy",
+      "severity": "Rare",
+      "details": "Very rare, but excessive consumption might cause acidity in some. Individuals with certain bleeding disorders or those on anticoagulant medication should consume with caution due to its potential antiplatelet properties."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Prefers hot summers and mild winters.\n2. Soil: Adaptable to a wide range of soils but prefers well-drained, loamy to clay-loam soil.\n3. Propagation: Seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Regular watering for young plants. Mature trees are drought-tolerant.\n6. Fertilizing: Organic manure is beneficial. Light fertilization may be required.\n7. Harvesting: Fruits are harvested when they turn from light green to a dull greenish-yellow.",
+  "growthDuration": "Starts fruiting in 3-5 years for grafted plants, 6-8 years for seedlings. Fruits mature in autumn and winter.",
+  "sustainabilityTips": [
+    "Amla is often preserved as pickles, candies (murabba), or juice due to its tartness.",
+    "Dried amla powder is a popular supplement.",
+    "Store fresh amla in the refrigerator."
+  ],
+  "carbonFootprintInfo": "Relatively low (0.3-0.6 kg CO2e/kg), particularly when processed and consumed locally.",
+  "uses": [
+    "culinary_pickles_chutneys_jams_murabba_juice_candy_eaten_raw",
+    "medicinal_ayurvedic_traditional_medicine_vitamin_c_source_immunity_booster_hair_care_skin_health_digestive_aid_liver_tonic",
+    "cosmetics_ingredient_in_inks_dyes_shampoos_hair_oils",
+    "timber_wood_for_minor_construction_fuel"
+  ],
+  "originAndDomesticationHistory": "Native to tropical and subtropical regions of Southeast Asia, particularly India. Amla has been revered and utilized in India for millennia, with significant mentions in ancient Ayurvedic texts like the Charaka Samhita and Sushruta Samhita, dating back over 2000 years. It is considered a sacred tree in Hinduism. Domestication likely occurred within India, with selection for desirable fruit characteristics over centuries. Its cultivation and use spread to neighboring countries through traditional medicine systems and cultural exchange.",
+  "climaticRequirements": {
+    "temperature": "Thrives in tropical and subtropical climates. Prefers hot summers (up to 45-48°C or 113-118°F) and mild winters. Can tolerate light frost, but young plants are susceptible. Not suitable for prolonged freezing conditions.",
+    "rainfall": "Prefers annual rainfall of 600-800 mm, well-distributed. Can adapt to semi-arid conditions once established. A dry period during fruit maturation is beneficial.",
+    "altitude": "Grown from sea level up to 1800 meters (approx. 5900 feet)."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, including light sandy soils, loams, and heavy clays, provided they are well-drained. Prefers deep, fertile, loamy to clay-loam soils with a pH range of 6.0 to 8.0 (slightly acidic to moderately alkaline). Avoids waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Young plants require regular watering for establishment, especially during dry periods. Mature trees are quite drought-tolerant due to their deep taproot system. For optimal fruit production, irrigation is beneficial during prolonged dry spells, particularly during flowering and fruit development stages. Drip irrigation is efficient.",
+  "plantingAndHarvestCycles": "Propagation is typically through seeds, budding (shield or patch budding), or grafting (softwood grafting). Seeds are sown in nurseries in spring. Seedlings or grafted plants are transplanted to the main field during the monsoon season. Grafted trees may start bearing fruit from the 3rd year, while seed-propagated trees take 6-8 years. Economic yields are obtained from 8-10 years onwards. Fruits are harvested in autumn/winter (typically October to February in India, varying by region and specific variety) when they change color from light green to a dull greenish-yellow or slightly golden. Harvesting is usually done by hand-picking.",
+  "pestAndDiseaseManagement": "Common Pests: Bark-eating caterpillars (Indarbela spp.), fruit flies, mealybugs, aphids, scale insects. Common Diseases: Rust (Ravenelia emblicae), fruit rot (caused by various fungi like Aspergillus, Penicillium), dieback, anthracnose. Management Strategies: Good orchard sanitation, proper pruning to ensure air circulation, use of resistant varieties if available, biological control methods (e.g., releasing predators for mealybugs), and need-based application of appropriate organic or chemical pesticides and fungicides.",
+  "postHarvestHandling": "Fruits are relatively hardy. After harvesting, they are graded based on size and quality. They can be stored for a short period (1-2 weeks) at room temperature, or longer (3-4 weeks) under refrigeration (around 7-10°C or 45-50°F) with good ventilation. Due to their tartness and for longer shelf life, amla is often processed into various products such as pickles, juice, powder, murabba (sweet preserve), and candies.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading producer)",
+    "Sri Lanka",
+    "Thailand",
+    "Malaysia",
+    "Nepal",
+    "Pakistan",
+    "China"
+  ],
+  "marketValueAndGlobalDemand": "Amla has a high demand in India and other parts of Southeast Asia, both for fresh fruit consumption and for processed products, especially within the Ayurvedic and herbal industries. There is growing international interest due to its significant health benefits, particularly as a natural and potent source of Vitamin C and antioxidants. The market value is generally stable, with some price fluctuations based on seasonality, yield, and quality. The demand for organic and value-added amla products (like juices, powders, and supplements) is steadily increasing globally.",
+  "staticRecipes": [
+    {
+      "name": "Amla Juice",
+      "description": "A tangy and highly nutritious juice known for its health benefits.",
+      "ingredients": [
+        "5-6 fresh Amla (Indian Gooseberries)",
+        "1 cup water",
+        "Pinch of black salt (optional)",
+        "1 tsp honey or jaggery (optional, to taste)"
+      ],
+      "steps": [
+        "Wash amla thoroughly. Cut them into pieces and remove the seeds.",
+        "Combine amla pieces and water in a blender.",
+        "Blend until smooth. You might need to add a little more water for easier blending.",
+        "Strain the mixture through a fine-mesh sieve or cheesecloth, pressing to extract all the juice.",
+        "Stir in black salt and honey/jaggery if using.",
+        "Serve immediately. Can be diluted further if too strong."
+      ]
+    },
+    {
+      "name": "Amla Murabba (Sweet Amla Preserve)",
+      "description": "A traditional Indian sweet preserve made from amla, often eaten for its health benefits.",
+      "ingredients": [
+        "1 lb Amla (Indian Gooseberries)",
+        "1.5 cups sugar",
+        "1 cup water",
+        "1/2 tsp cardamom powder",
+        "Few strands of saffron (optional)"
+      ],
+      "steps": [
+        "Wash amla and prick them all over with a fork. This helps them absorb the syrup.",
+        "Blanch the amla in boiling water for 2-3 minutes, or until they soften slightly. Drain.",
+        "In a separate saucepan, make a sugar syrup by dissolving sugar in 1 cup of water. Bring to a boil and cook until the syrup reaches a one-string consistency (a drop of syrup between thumb and forefinger forms a single thread when pulled apart).",
+        "Add the blanched amla to the sugar syrup. Cook on low heat for 20-25 minutes, or until amla pieces become translucent and tender, and the syrup thickens further.",
+        "Stir in cardamom powder and saffron (if using).",
+        "Let it cool completely. Store in a sterilized airtight glass jar. The murabba tastes better after a few days as the amla absorbs the syrup."
+      ]
+    },
+    {
+      "name": "Salted Amla (Sun-dried)",
+      "description": "A simple way to preserve amla and enjoy its tangy taste.",
+      "ingredients": [
+        "1 lb Amla (Indian Gooseberries)",
+        "2-3 tbsp salt",
+        "1 tsp turmeric powder (optional)"
+      ],
+      "steps": [
+        "Wash amla thoroughly. You can either keep them whole or cut them into segments and deseed.",
+        "If keeping whole, prick them with a fork. If segmenting, remove seeds.",
+        "In a bowl, toss the amla pieces with salt and turmeric powder (if using) until well coated.",
+        "Spread the salted amla on a clean tray or cloth.",
+        "Sun-dry for 4-7 days, or until they are completely dry and shriveled. Bring them indoors at night.",
+        "Once fully dried, store in an airtight container. They can be eaten as a tangy snack."
+      ]
+    }
+  ]
+}

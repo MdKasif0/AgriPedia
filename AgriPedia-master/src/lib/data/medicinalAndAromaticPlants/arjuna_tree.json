@@ -1,0 +1,62 @@
+{
+  "id": "arjuna_tree",
+  "commonName": "Arjuna Tree (Arjun Tree)",
+  "scientificName": "Terminalia arjuna",
+  "image": "https://images.unsplash.com/photo-1553001634-76f84082ab93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Terminalia arjuna, commonly known as arjuna or arjun tree, is a large deciduous tree native to the Indian subcontinent. It is highly valued in Ayurvedic medicine, primarily for its bark, which is used to treat heart-related conditions. The tree typically grows on river banks or near dry river beds.",
+  "origin": "Indian subcontinent (India, Sri Lanka, Bangladesh, Nepal, Myanmar).",
+  "localNames": ["Arjun (Hindi/Sanskrit)", "Marudha Maram (Tamil)", "Tella Maddi (Telugu)", "Arjuna Saaja (Marathi)"],
+  "regions": ["Throughout India (especially central and southern states)", "Sri Lanka", "Bangladesh", "Nepal", "Myanmar"],
+  "seasons": ["Perennial tree; flowers in spring/summer (April-July), fruits mature in winter/spring (February-May). Bark is typically harvested in spring or post-monsoon."],
+  "nutrition": {
+    "calories": "Bark is primarily medicinal, not consumed for caloric value. Contains tannins, saponins, flavonoids, and minerals.",
+    "macronutrients": [
+      { "name": "Protein", "value": "N/A for typical use", "unit": "" },
+      { "name": "Carbohydrates", "value": "N/A for typical use (bark contains complex polysaccharides)", "unit": "" },
+      { "name": "Fat", "value": "N/A for typical use", "unit": "" },
+      { "name": "Fiber", "value": "Bark is fibrous", "unit": "" }
+    ],
+    "vitamins": [],
+    "minerals": [
+      { "name": "Calcium", "value": "High in bark", "unit": "mg", "rdi": "" },
+      { "name": "Magnesium", "value": "Present in bark", "unit": "mg", "rdi": "" },
+      { "name": "Zinc", "value": "Present in bark", "unit": "mg", "rdi": "" }
+    ]
+  },
+  "healthBenefits": [
+    "Cardioprotective properties; traditionally used to strengthen heart muscles and improve cardiovascular health.",
+    "May help lower blood pressure and cholesterol levels.",
+    "Possesses antioxidant and anti-inflammatory effects.",
+    "Astringent properties, used for wound healing and to stop bleeding.",
+    "May improve endothelial function and reduce angina."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Arjuna Bark Sensitivity",
+      "severity": "Mild",
+      "details": "Generally considered safe when used appropriately. High doses may cause constipation or mild digestive upset. Should be used with caution in individuals with liver disease or during pregnancy/lactation, under medical supervision."
+    }
+  ],
+  "cultivationProcess": "Arjuna trees are typically grown from seeds. They prefer moist, fertile soil and are often found along riverbanks. The tree is large and requires ample space.",
+  "growthDuration": "Slow to medium-growing perennial tree. Bark is usually harvested from mature trees (15-20 years old) to ensure sustainability and potency.",
+  "sustainabilityTips": [
+    "Sustainable harvesting practices for bark are crucial to prevent damage to trees and ensure long-term availability.",
+    "Often grows naturally along water bodies, contributing to riparian ecosystems.",
+    "Planting Arjuna trees can help in soil conservation and providing shade."
+  ],
+  "carbonFootprintInfo": "As a large tree, Arjuna contributes to carbon sequestration. The footprint of its medicinal products depends on harvesting methods, processing, and transportation.",
+  "uses": ["traditional_medicine_ayurveda_cardiac_tonic_heart_health_hypertension_bark_decoction_powder", "timber_limited_use_construction_furniture_though_primarily_valued_for_bark", "sericulture_host_plant_for_tussar_silk_worms", "tannin_production_bark"],
+  "originAndDomesticationHistory": "Terminalia arjuna is native to the Indian subcontinent and has been a prominent herb in Ayurvedic medicine for centuries, specifically mentioned in ancient texts for heart ailments. It is revered for its cardiotonic properties and is often associated with the mythological hero Arjuna from the Mahabharata, known for his strength and valor.",
+  "climaticRequirements": {
+    "temperature": "Subtropical to tropical tree. Prefers temperatures between 20-35°C. Can tolerate a wider range once established but sensitive to severe frost when young.",
+    "rainfall": "Requires moderate to high rainfall, typically 750-2000mm annually. Often found in areas with access to groundwater near rivers.",
+    "altitude": "Can be grown from sea level up to 1500m."
+  },
+  "soilPreferences": "Prefers deep, fertile, alluvial loamy or clayey-loam soils with good moisture retention. Often found along riverbanks and watercourses. Slightly acidic to neutral pH (6.0-7.5) is suitable.",
+  "irrigationAndWaterNeeds": "Young trees require regular watering until established. Mature trees are relatively drought-tolerant but thrive with access to soil moisture, especially during dry seasons. Irrigation may be needed in drier cultivation areas.",
+  "plantingAndHarvestCycles": "Propagated from seeds, which are sown in nurseries and transplanted. Bark is harvested from mature trees, typically in the dry season (spring) when it is easier to peel and has higher alkaloid content. Only portions of bark are removed from a tree at a time to allow for regeneration and prevent killing the tree. Harvesting is often done on a rotational basis.",
+  "pestAndDiseaseManagement": "Generally a hardy tree. May be susceptible to some wood borers or defoliating insects. Fungal diseases are rare in well-managed trees with good air circulation. Sustainable harvesting is more of a concern than pests/diseases for its medicinal use.",
+  "postHarvestHandling": "Harvested bark is cleaned, cut into pieces, and dried in shade to preserve its medicinal properties. Dried bark is then stored in cool, dry places and can be powdered or used to make decoctions and extracts.",
+  "majorProducingCountriesOrRegions": ["India (throughout various states)", "Sri Lanka", "Bangladesh", "Nepal"],
+  "marketValueAndGlobalDemand": "Arjuna bark is a significant commodity in the Ayurvedic and herbal medicine market, particularly in India. Demand is increasing globally as interest in traditional remedies for heart health grows. Sustainable sourcing and quality control are important aspects of its market."
+}

@@ -1,0 +1,221 @@
+{
+  "id": "wood-apple",
+  "commonName": "Wood Apple (Bael Fruit)",
+  "scientificName": "Aegle marmelos",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Wood-apple_dec2007.jpg/800px-Wood-apple_dec2007.jpg",
+  "description": "Aegle marmelos, commonly known as Bael or Wood Apple, is a species of tree native to the Indian subcontinent and Southeast Asia. It is prized for its fruit, which has an extremely hard, woody shell (about 2-5mm thick) that needs to be cracked open. Inside, it contains an aromatic, sticky, sweet, and tangy pulp with numerous small, hairy seeds embedded within a mucilaginous slime. The fruit holds significant religious and medicinal importance in Hindu traditions and Ayurveda.",
+  "origin": "Indian subcontinent and Southeast Asia",
+  "localNames": [
+    "Bael (बेल - Hindi, Nepali)",
+    "Stone Apple (English)",
+    "Bengal Quince (English)",
+    "Bilva (बिल्व - Sanskrit, and in Hindu religious contexts)",
+    "Vilvam (வில்வம் - Tamil)",
+    "Maredu (మారేడు - Telugu)",
+    "Kuvane (ಕೋವಳೆ - Kannada)",
+    "Bel (বেল - Bengali, Assamese, Marathi, Gujarati)",
+    "Matum (มะตูม - Thai)"
+  ],
+  "regions": [
+    "India (widely cultivated and found wild across most states)",
+    "Sri Lanka",
+    "Bangladesh",
+    "Nepal",
+    "Pakistan",
+    "Thailand",
+    "Myanmar",
+    "Laos",
+    "Cambodia",
+    "Vietnam",
+    "Malaysia",
+    "Indonesia",
+    "Philippines (limited)"
+  ],
+  "seasons": [
+    "Fruits typically ripen in the hot summer months (April to June/July in India and surrounding regions). Flowers appear earlier, from April-May."
+  ],
+  "nutrition": {
+    "calories": "137 kcal per 100g (fresh pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 31.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Riboflavin (B2)",
+        "value": 1.19,
+        "unit": "mg",
+        "rdi": "92-108%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "9-13%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.1,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.13,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Beta-carotene (precursor to Vitamin A)",
+        "value": "Significant amounts",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 85,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 50,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Potassium",
+        "value": 600,
+        "unit": "mg",
+        "rdi": "13-17%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.7,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used extensively in Ayurveda for a wide range of digestive disorders, including constipation (ripe fruit pulp as laxative) and diarrhea/dysentery (unripe or dried fruit pulp due to astringent properties).",
+    "Rich in tannins, which contribute to its astringent properties and may possess anti-inflammatory effects.",
+    "Contains antioxidants like marmelosin (a furanocoumarin), carotenoids, and phenolic compounds that help combat oxidative stress.",
+    "The pulp is considered cooling and is often consumed as a sherbet (summer drink) to relieve heat and quench thirst.",
+    "May have hypoglycemic effects, potentially aiding in the management of blood sugar levels, though more research is needed."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Wood Apple Allergy",
+      "severity": "Rare",
+      "details": "Allergies to Bael fruit are very uncommon. However, as with any food, individual sensitivities can exist."
+    },
+    {
+      "name": "Photosensitivity (from furanocoumarins)",
+      "severity": "Low (from fruit consumption)",
+      "details": "The fruit contains furanocoumarins which can cause photosensitivity in some individuals, though this is more commonly associated with handling certain plants than consuming the fruit in normal amounts."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Thrives in tropical and subtropical climates with a distinct dry season for optimal fruiting. Very hardy.\n2. Soil: Highly adaptable to various soils, including poor, rocky, sandy, or alkaline soils, but prefers well-drained sandy loam.\n3. Propagation: Usually by seeds, which germinate readily. Budding (shield or patch) and grafting are also practiced for superior varieties or to ensure specific characteristics.\n4. Planting: Plant in full sun. Trees can grow quite large and are long-lived.\n5. Watering: Young plants need regular watering for establishment. Mature trees are extremely drought-tolerant due to their deep taproot system and often require no irrigation in areas with seasonal rainfall.\n6. Fertilizing: Generally does not require much fertilizer, especially when grown in reasonably fertile soil. Organic manure application can be beneficial.\n7. Harvesting: Fruits are harvested when they change color from greenish-gray to a yellowish or pale orange hue. The hard shell needs to be cracked open with a heavy knife or by striking it against a hard surface.",
+  "growthDuration": "Seedling trees may take 6-8 years (sometimes up to 10-12 years) to bear significant fruit, while vegetatively propagated trees can start fruiting in 4-5 years. Fruits mature in the summer months, about 10-12 months after flowering.",
+  "sustainabilityTips": [
+    "The hard shell of the wood apple makes it naturally resistant to damage during transport and storage, contributing to reduced spoilage if handled correctly post-harvest.",
+    "The pulp is often mixed with water and sugar/jaggery to make a refreshing and nutritious sherbet, a traditional summer cooler.",
+    "Unripe bael fruit is also valued for its medicinal properties and can be dried or processed. The tree itself is very hardy and requires minimal inputs, making it a sustainable crop for arid and semi-arid regions."
+  ],
+  "carbonFootprintInfo": "Relatively low, especially when consumed locally or in regions where it is traditionally grown (estimated 0.4-0.7 kg CO2e/kg). Its hardiness reduces the need for intensive farming practices. Transportation of the heavy, hard-shelled fruit would be the main contributor to its carbon footprint in export markets.",
+  "uses": [
+    "culinary_pulp_eaten_fresh_often_mixed_with_sugar_jaggery_milk_or_water_to_make_sherbet_drinks",
+    "processed_products_jams_jellies_murabba_preserve_candies_toffees_nectar_squash_powder_from_dried_pulp",
+    "medicinal_ayurvedic_traditional_ripe_unripe_fruit_leaves_roots_bark_used_for_digestive_disorders_constipation_diarrhea_dysentery_peptic_ulcers_respiratory_issues_diabetes_management_cooling_agent",
+    "religious_sacred_tree_in_hinduism_leaves_and_fruit_offered_to_lord_shiva_bilva_patra",
+    "other_gum_from_tree_as_adhesive_or_varnish_rind_for_carving_small_containers_snuff_boxes_wood_for_small_implements_fuel_essential_oil_from_leaves"
+  ],
+  "originAndDomesticationHistory": "Bael (Aegle marmelos), also known as Wood Apple or Stone Apple, is native to the Indian subcontinent (India, Bangladesh, Nepal, Sri Lanka) and parts of Southeast Asia (including Myanmar, Thailand, Laos, Cambodia, Vietnam, Malaysia, and Indonesia). It has been cultivated and highly revered in India for thousands of years, with mentions in ancient Hindu scriptures such as the Vedas and Puranas, dating back to 800 BCE or even earlier. The tree and its fruit hold immense religious significance in Hinduism, where its leaves ('bilva patra') and fruit are traditionally offered to Lord Shiva. It is valued as much for its potent medicinal properties in Ayurveda and other traditional systems of medicine as it is for its fruit. From India, its cultivation and use spread to other parts of Southeast Asia. While it has been introduced to other tropical regions, its primary cultural and economic importance remains centered in South and Southeast Asia.",
+  "climaticRequirements": {
+    "temperature": "Bael trees thrive in tropical and subtropical climates that feature hot, dry summers and mild winters. Mature trees are remarkably hardy and can tolerate a wide temperature range, from as low as -7°C (19°F) when dormant for short periods, up to 48°C (118°F). A distinct dry season is generally considered beneficial for fruit quality and ripening.",
+    "rainfall": "The tree is highly drought-tolerant once established, owing to its deep taproot system. It prefers an annual rainfall ranging from 500mm to 2000mm but can survive in much drier conditions if it has access to groundwater. It does not tolerate prolonged waterlogged conditions.",
+    "altitude": "Grows well from sea level up to about 1200 meters (approximately 4000 feet) in suitable tropical or subtropical latitudes."
+  },
+  "soilPreferences": "Bael trees are highly adaptable and can grow in a wide variety of soil types, including poor, sandy, clayey, rocky, lateritic, and even alkaline or saline soils where other fruit trees might fail. However, they perform best in well-drained, sandy loam soils. Good soil drainage is essential to prevent root diseases. They can tolerate a soil pH range from about 5.0 to 8.0 or even higher.",
+  "irrigationAndWaterNeeds": "Young bael trees require regular watering to ensure proper establishment. Once mature, trees are extremely drought-tolerant and generally do not require irrigation in areas with adequate seasonal rainfall. In very arid regions or for enhancing commercial fruit production, occasional deep irrigation during prolonged dry spells, particularly during the fruit development period, can be beneficial. Overwatering should be strictly avoided.",
+  "plantingAndHarvestCycles": "Bael is commonly propagated from seeds, which germinate readily. Seedlings, however, can show considerable variation in fruit characteristics and typically have a long juvenile period, taking 6-8 years (sometimes up to 10-12 years) to start bearing significant fruit. For cultivating specific varieties with desirable traits (like thin shell, high pulp content, fewer seeds) or for achieving earlier fruiting (within 4-5 years), vegetative propagation methods such as root suckers, budding (shield or patch budding), or grafting are employed. Planting is usually done at the beginning of the rainy season. Bael trees flower typically from April to May in the Indian subcontinent. The fruit takes a notably long time to mature, approximately 10-12 months after flowering. Fruits are generally harvested when they change color from greenish-gray to a yellowish or pale orange hue, which usually occurs in the following summer (April to June or July in India). The hard shell of the fruit requires it to be cracked open, often with a heavy knife or by striking it against a hard surface, to access the pulp. Fruits are usually picked individually from the tree when mature.",
+  "pestAndDiseaseManagement": "Bael trees are generally very hardy and are not severely affected by many pests or diseases, making them a relatively low-maintenance crop. Potential Pests: Occasionally, fruit flies may attempt to lay eggs on the fruit, but the hard shell often protects the pulp. Mealybugs or scale insects can sometimes infest young shoots or leaves but rarely cause significant economic damage. Termites can be an issue for young trees in some areas. Potential Diseases: Fungal leaf spots or fruit rot (especially if the fruit is damaged or left on the ground after falling) can occur, particularly in very humid or waterlogged conditions, but these are usually not major problems for mature, healthy trees. Root rot can be an issue if the soil is poorly drained. Management Strategies: Due to its natural resilience, Bael typically requires minimal to no specific pest or disease control measures. Maintaining good orchard sanitation and ensuring proper soil drainage are beneficial. If specific pests become problematic, local agricultural advice should be sought, but chemical interventions are rarely needed.",
+  "postHarvestHandling": "The most remarkable post-harvest characteristic of Bael fruit is its exceptionally long shelf life, owing to its hard, woody shell which provides excellent protection to the pulp inside. Whole, mature fruits can be stored for several weeks (2-4 weeks or even longer) at ambient room temperature without significant spoilage. Under cool, dry storage conditions (e.g., around 9°C or 48°F with low humidity), their storage life can be extended for several months (reportedly up to 4-6 months). Once the fruit is cracked open, the aromatic, sticky pulp is exposed. This pulp can be eaten fresh (often mixed with sugar, jaggery, milk, or water) or processed into various products like sherbet, jam, jelly, murabba (preserve), candy, or toffee. The pulp can also be dried and powdered for later use in beverages or traditional medicines.",
+  "marketValueAndGlobalDemand": "Bael fruit is highly valued in India and other parts of South and Southeast Asia, primarily for its significant medicinal properties recognized in Ayurveda and other traditional systems of medicine, as well as for its use as a food ingredient, especially in making refreshing summer drinks (sherbet). It is widely consumed locally and regionally, with strong seasonal markets for fresh fruit. While international trade in fresh Bael fruit is limited due to its hard shell (making it heavy for transport relative to pulp yield) and its specific culinary and medicinal uses not being widely known outside of Asian cultures, there is a growing global interest in Ayurvedic products and 'superfruits.' This has led to an increasing demand for Bael fruit powder, extracts, dried pulp, and processed items like jams and teas in health food markets and among diaspora communities worldwide. The tree's hardiness and ability to grow on marginal lands also make it a crop of interest for sustainable agriculture.",
+  "staticRecipes": [
+    {
+      "name": "Bael Sherbet (Wood Apple Drink)",
+      "description": "A traditional Indian summer cooler made from wood apple pulp.",
+      "ingredients": [
+        "1 medium ripe Wood Apple (Bael)",
+        "2 cups cold water",
+        "4-5 tbsp sugar or jaggery (or to taste)",
+        "1/2 tsp black salt (optional)",
+        "Juice of 1/2 lime (optional)",
+        "Roasted cumin powder (optional, a pinch)"
+      ],
+      "steps": [
+        "Wash the bael fruit. Crack open the hard shell using a hammer or a heavy pestle.",
+        "Scoop out the fibrous, aromatic pulp into a bowl. Discard the shell and seeds.",
+        "Add about 1 cup of water to the pulp and let it soak for 20-30 minutes. This helps soften the pulp.",
+        "Using your hands, mash the pulp well in the water to extract its flavor and essence. Squeeze out as much liquid as possible.",
+        "Strain the mixture through a sieve into a pitcher, pressing the pulp to get all the juice. Discard the fibrous residue.",
+        "Add the remaining 1 cup of cold water, sugar/jaggery, black salt (if using), lime juice (if using), and roasted cumin powder (if using) to the pitcher. Stir well until the sugar/jaggery is dissolved.",
+        "Taste and adjust sweetness or tanginess. Serve chilled or with ice cubes."
+      ]
+    },
+    {
+      "name": "Bael Murabba (Wood Apple Preserve)",
+      "description": "A sweet preserve made from wood apple, similar to amla murabba.",
+      "ingredients": [
+        "1 large ripe Wood Apple (Bael) pulp",
+        "1.5 cups sugar",
+        "1 cup water",
+        "1/2 tsp cardamom powder"
+      ],
+      "steps": [
+        "Extract the pulp from the bael fruit and remove seeds.",
+        "In a saucepan, combine sugar and water. Heat until sugar dissolves and forms a syrup of one-string consistency.",
+        "Add the bael pulp to the sugar syrup. Cook on low heat, stirring continuously, until the mixture thickens and the bael pulp becomes translucent (about 20-30 minutes).",
+        "Stir in cardamom powder.",
+        "Let it cool completely. Store in a sterilized airtight glass jar."
+      ]
+    },
+    {
+      "name": "Dried Bael Slices for Tea/Infusion",
+      "description": "Dried bael fruit slices can be used to make a healthy infusion.",
+      "ingredients": [
+        "Ripe Bael fruit"
+      ],
+      "steps": [
+        "Wash and crack open the bael fruit. Scoop out the pulp.",
+        "Separate the pulp from the seeds and fibers as much as possible.",
+        "Slice the pulp into thin pieces or small chunks.",
+        "Sun-dry these slices on a clean tray for several days until they are completely dry and hard.",
+        "Alternatively, you can dry them in a dehydrator or a very low oven.",
+        "Store the dried bael slices in an airtight container.",
+        "To make an infusion, steep a few dried slices in hot water for 5-10 minutes. Sweeten if desired."
+      ]
+    }
+  ]
+}

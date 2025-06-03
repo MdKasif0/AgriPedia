@@ -1,0 +1,69 @@
+{
+  "id": "sesame",
+  "commonName": "Sesame",
+  "scientificName": "Sesamum indicum",
+  "image": "https://images.unsplash.com/photo-1596199006201-f2fsbebe657e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Sesame is a flowering plant in the genus Sesamum, also called benne. It is widely naturalized in tropical regions around the world and is cultivated for its edible seeds, which grow in pods. Sesame seed is one of the oldest oilseed crops known, domesticated well over 3000 years ago.",
+  "origin": "Africa (likely Ethiopia or Sudan) and India.",
+  "localNames": ["Til (Hindi)", "Goma (Japanese)", "Sésamo / Ajonjolí (Spanish)", "Sésame (French)"],
+  "regions": ["Myanmar", "India", "China", "Sudan", "Tanzania", "Nigeria", "Ethiopia", "Uganda"],
+  "seasons": ["Warm-season annual; typically planted in late spring or early summer and harvested in late summer or fall."],
+  "nutrition": {
+    "calories": "Sesame Seeds (dried): 573 kcal per 100g. Sesame Oil: 884 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: 17.7" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: 23.4 (Fiber 11.8)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: 49.7 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Seeds: 0.791 (66%)" },
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Seeds: 4.515 (30%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "Seeds: 0.790 (61%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Seeds: 97 (24%)" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "unit": "mg", "rdi": "Seeds: 975 (98%)" },
+      { "name": "Iron", "unit": "mg", "rdi": "Seeds: 14.55 (81%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: 351 (84%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "Seeds: 4.082 (454%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: 2.460 (107%)" },
+      { "name": "Selenium", "unit": "µg", "rdi": "Seeds: 34.4 (63%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of copper, manganese, calcium, magnesium, iron, and selenium.",
+    "Rich in healthy fats, protein, and fiber.",
+    "Contains lignans (sesamin and sesamolin) and phytosterols, which may help lower cholesterol.",
+    "Good source of antioxidants.",
+    "Sesame oil has a high smoke point and is rich in unsaturated fats."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Sesame Allergy",
+      "severity": "Can be Severe",
+      "details": "Sesame is a common allergen and can cause severe reactions, including anaphylaxis. It is a mandatory declared allergen in many countries. Cross-contamination is a concern."
+    }
+  ],
+  "cultivationProcess": "Sesame is grown from seeds. It is a drought-tolerant crop that thrives in hot, dry climates. It requires well-drained soil. Pods shatter upon maturity, so harvesting time is critical.",
+  "growthDuration": "Approximately 90-130 days from planting to harvest.",
+  "sustainabilityTips": [
+    "Drought-tolerant, making it suitable for arid and semi-arid regions with low water availability.",
+    "Can be grown with fewer inputs than some other oilseed crops.",
+    "Improves soil structure with its root system."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of sesame is influenced by cultivation practices, processing (dehulling, oil extraction), and transportation. Its drought tolerance can be a positive factor in regions with water scarcity.",
+  "uses": ["oil_production_seeds_for_cooking_oil_flavoring_oil", "food_seeds_whole_tahini_paste_halva_bakery_confectionery_garnish", "animal_feed_seed_meal", "traditional_medicine", "cosmetics_sesame_oil_in_skin_hair_products"],
+  "originAndDomesticationHistory": "Sesame (Sesamum indicum) is one of the oldest cultivated oilseed crops. While its exact wild ancestor is debated, it was likely domesticated independently in both Africa (possibly Ethiopia) and India over 3,000-5,000 years ago. It was highly valued in ancient civilizations like Babylon and Assyria and spread early throughout Asia, the Middle East, and Africa.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Requires hot conditions during growth, with optimal temperatures between 25-35°C. Sensitive to frost.",
+    "rainfall": "Drought-tolerant. Can grow with 300-600mm of rainfall, but performs best with 500-700mm, especially during early growth and flowering. Does not tolerate waterlogging.",
+    "altitude": "Typically grown in lowland tropical and subtropical areas, up to 1250m."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, medium-textured loamy or sandy loam soils with a neutral pH (6.0-7.5). Can tolerate poorer soils but not heavy clay or saline soils.",
+  "irrigationAndWaterNeeds": "While drought-tolerant, yields are improved with irrigation, especially during seedling establishment, flowering, and capsule development, particularly in arid regions. Avoid excessive moisture.",
+  "plantingAndHarvestCycles": "Seeds are sown shallowly in late spring or early summer when soil temperatures are warm. Plants are harvested when leaves, stems, and capsules begin to turn yellow and lower leaves start to fall. Harvesting is done before capsules fully dry and shatter. Plants are often cut, bundled, and dried further before threshing to extract seeds.",
+  "pestAndDiseaseManagement": "Pests include aphids, jassids, shoot and capsule borers, and gall flies. Diseases include Phytophthora blight, Cercospora leaf spot, powdery mildew, and charcoal rot. Integrated pest management involves resistant varieties, crop rotation, timely sowing, and chemical controls when necessary.",
+  "postHarvestHandling": "Harvested plants are dried, then threshed to separate seeds from capsules. Seeds are cleaned, winnowed, and further dried to a moisture content of around 6% for safe storage. Seeds may be dehulled for certain uses (e.g., tahini).",
+  "majorProducingCountriesOrRegions": ["Myanmar", "India", "Sudan", "China", "Tanzania", "Nigeria", "Ethiopia", "Uganda", "South Sudan", "Mozambique"],
+  "marketValueAndGlobalDemand": "Sesame seeds and sesame oil have significant global demand. Sesame seeds are widely used in baking, confectionery, and as a topping. Tahini (sesame paste) is a key ingredient in Middle Eastern cuisine. Sesame oil is valued for its flavor and stability. Demand is driven by food industries and growing interest in its nutritional benefits. Japan is a major importer of sesame seeds."
+}

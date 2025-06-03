@@ -1,0 +1,189 @@
+{
+  "id": "rose-apple",
+  "commonName": "Rose Apple (Malabar Plum)",
+  "scientificName": "Syzygium jambos",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Syzygium_jambos_fruit_closeup.jpg/800px-Syzygium_jambos_fruit_closeup.jpg",
+  "description": "Syzygium jambos, commonly known as the Rose Apple or Malabar Plum, is a tropical evergreen tree in the Myrtaceae family. It produces bell-shaped to ovoid fruits, about 2-5 cm in diameter. The fruit is prized for its crisp, somewhat dry yet juicy flesh, a distinctive rose-like aroma (hence the name), and a subtly sweet, sometimes slightly tart flavor. The thin, waxy skin is typically pale yellow or whitish, often with a pink blush when ripe. The hollow central cavity usually contains 1-4 loose, brown seeds.",
+  "origin": "Southeast Asia (likely Malaysia or the Greater Sunda Islands)",
+  "localNames": [
+    "Malabar Plum (English)",
+    "Pomarrosa (Spanish - 'rose apple')",
+    "Jambu Mawar (Malay/Indonesian - 'rose guava/apple')",
+    "Chomphu Namdokmai (ชมพู่น้ำดอกไม้ - Thai - 'rosewater chomphu')",
+    "Gulab Jamun (Hindi, Bengali - also the name of a popular sweet, but refers to this fruit as well due to aroma)",
+    "Pannerale (Kannada - 'rose-water fruit')",
+    "Jambosier (French)"
+  ],
+  "regions": [
+    "Southeast Asia (Malaysia, Indonesia, Thailand, Vietnam, Philippines, Myanmar)",
+    "India (especially southern and northeastern states)",
+    "Sri Lanka",
+    "Caribbean Islands (Puerto Rico, Jamaica, Cuba, Hispaniola, Trinidad)",
+    "Central America (Panama, Costa Rica, Guatemala)",
+    "South America (Brazil, Venezuela, Suriname, Colombia)",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii, Southern California - limited, mostly as ornamental or garden tree)",
+    "Various Pacific Islands",
+    "Parts of tropical Africa"
+  ],
+  "seasons": [
+    "Flowering and fruiting can occur at various times depending on the tropical/subtropical climate, often with one or two main seasons. Commonly fruits in late spring through summer (e.g., May-July in India), but can have other flushes."
+  ],
+  "nutrition": {
+    "calories": "25 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 5.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 22.3,
+        "unit": "mg",
+        "rdi": "25-37%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 17,
+        "unit": "µg RAE",
+        "rdi": "2%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 123,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 29,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.07,
+        "unit": "mg",
+        "rdi": "0.4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 5,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.029,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that supports immune function and contributes to healthy skin.",
+    "Provides some dietary fiber, which can aid in digestion and promote gut health.",
+    "The fruit is hydrating due to its high water content (around 90%).",
+    "Traditionally, various parts of the plant (leaves, bark, seeds, fruit) have been used in folk medicine for treating ailments like fever, diabetes, and digestive issues, though clinical evidence is limited."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Seed Ingestion (Caution)",
+      "severity": "Low to Moderate",
+      "details": "The seeds are generally considered inedible and may contain small amounts of cyanogenic glycosides or other potentially mildly toxic compounds. It is advisable to avoid consuming the seeds. The fruit flesh itself is widely consumed and well-tolerated by most people."
+    }
+  ],
+  "cultivationProcess": "Rose Apple trees (Syzygium jambos) are adaptable evergreens that thrive in tropical and warm subtropical climates. They prefer moist, well-drained soil and can grow in full sun to partial shade. Propagation is often done by seeds (which have short viability and should be planted fresh), air layering, or budding. Trees are relatively low-maintenance once established but benefit from regular watering, especially during dry periods and fruit development. Pruning can help manage tree size, shape, and encourage airflow, which can reduce disease risk.",
+  "growthDuration": "Rose Apple trees typically start bearing fruit within 3 to 5 years from planting seedlings, potentially earlier for vegetatively propagated trees. They are medium-sized trees that can reach heights of 7-15 meters. Fruiting may occur multiple times a year in favorable tropical climates, with fruits maturing about 3-4 months after flowering.",
+  "sustainabilityTips": [
+    "Rose apple trees are often grown in home gardens and as ornamental or shade trees, contributing to local food availability and urban/suburban green spaces.",
+    "Their adaptability to various soil types and relatively low maintenance needs can make them a resilient fruit tree choice in suitable tropical and subtropical climates, potentially requiring fewer inputs than more demanding fruit species.",
+    "Consume or process the fruit quickly after harvest due to its perishable nature to avoid spoilage."
+  ],
+  "carbonFootprintInfo": "Locally grown and consumed rose apples have a minimal carbon footprint. Due to their delicate nature and relatively short shelf life once ripe (highly perishable), long-distance transportation for fresh consumption, especially by air freight, would significantly increase their environmental impact. They are not typically a major internationally traded fresh fruit.",
+  "uses": [
+    "fresh_consumption_eaten_raw_valued_for_crispness_and_rose_aroma",
+    "processed_products_candied_fruit_jellies_jams_syrups_rose_water_distilled_from_fruit_or_flowers",
+    "culinary_ingredient_fruit_salads_desserts_sometimes_stewed",
+    "ornamental_tree_grown_for_attractive_foliage_showy_flowers_and_fragrant_fruit",
+    "medicinal_traditional_various_parts_leaves_bark_seeds_fruit_used_for_fever_diabetes_digestive_issues_headaches",
+    "other_flowers_source_of_nectar_for_bees_wood_for_fuel_or_light_construction_locally"
+  ],
+  "originAndDomesticationHistory": "The Rose Apple (Syzygium jambos) is native to Southeast Asia, with its likely center of origin in Malaysia or the Greater Sunda Islands (Indonesia). It has been cultivated in these regions for centuries and spread at an early date to India, Sri Lanka, and other parts of tropical Asia. European explorers and traders later introduced it to tropical and subtropical regions worldwide, including Africa, the Americas (Caribbean islands, Central and South America), and Australia. It has become naturalized in many of these areas and is often found in home gardens and along waterways. While not a major commercial fruit globally, it is cherished locally for its unique aroma and ornamental value.",
+  "climaticRequirements": {
+    "temperature": "Rose Apple trees are best suited for tropical and warm subtropical climates, with optimal temperatures ranging from 20°C to 30°C (68°F to 86°F). While mature trees might tolerate very brief periods of light frost (down to -1°C or 30°F), they generally prefer frost-free conditions. Young trees are very sensitive to cold and can be easily damaged or killed by frost.",
+    "rainfall": "Prefers high and well-distributed annual rainfall, typically between 1500mm and 2500mm, along with high atmospheric humidity. While established trees can tolerate some dry periods, consistent moisture is necessary for good fruit production. They are often found growing near water sources in their natural habitat.",
+    "altitude": "Commonly grown in lowland tropical regions, typically from sea level up to about 1200 meters (approximately 4000 feet). Higher altitudes with cooler temperatures are generally unsuitable."
+  },
+  "soilPreferences": "Rose Apple trees are adaptable to a wide range of soil types but perform best in deep, fertile, moist, and well-drained loamy soils that are rich in organic matter. They can tolerate sandy soils or heavier clay soils provided there is adequate drainage. The ideal soil pH is slightly acidic to neutral, generally between 5.5 and 7.0.",
+  "irrigationAndWaterNeeds": "Young trees require regular and consistent watering to ensure proper establishment. Mature trees benefit from consistent soil moisture, especially during flowering and fruit development, to achieve good yield and fruit quality. Irrigation is necessary in regions with prolonged dry seasons or insufficient rainfall. However, they do not tolerate waterlogged conditions, so good drainage is essential.",
+  "plantingAndHarvestCycles": "Rose Apple is commonly propagated from seeds, which have a short viability period and should be planted fresh. Seeds are often polyembryonic, meaning multiple seedlings can emerge from a single seed. Vegetative propagation methods such as air layering or grafting onto seedling rootstock can also be used for select types, although seed propagation is most common for this species. Planting is usually done at the beginning of the rainy season. Seedling trees typically start bearing fruit within 3 to 5 years of planting. The trees flower primarily in the spring or early summer, and the fruits mature approximately 3 to 4 months later, leading to a main harvest season in late spring through summer in many regions. Fruiting can sometimes occur at other times of the year in very favorable tropical climates. Fruits are borne in clusters and are harvested by hand when they reach their full size, develop their characteristic pale yellow or whitish color (sometimes with a pink blush), become slightly soft to the touch, and emit their distinctive rose fragrance. They detach easily from the stem when ripe.",
+  "pestAndDiseaseManagement": "Rose Apple trees are generally quite hardy and are not severely affected by many pests or diseases, especially when grown in suitable environments. Potential Pests: Fruit flies may infest ripe fruit in some areas. Scale insects, aphids, and mealybugs can occasionally occur but rarely cause significant damage. Potential Diseases: Anthracnose or other fungal leaf spot diseases may appear, particularly during periods of high humidity or excessive rainfall, but are usually not serious. Root rot can be an issue if the soil is poorly drained or chronically waterlogged. Management Strategies: Generally, minimal pest and disease control measures are required. Maintaining good orchard sanitation, such as removing fallen fruit, and ensuring proper pruning to promote good air circulation within the canopy can help prevent most issues. Chemical controls are rarely necessary.",
+  "postHarvestHandling": "Rose apples are very delicate, highly perishable, and bruise easily. They have a very short shelf life, typically lasting only 1 to 3 days at ambient room temperature. Their storage life can be extended by a few more days if they are carefully handled and stored under refrigeration (around 10-12°C or 50-54°F) with high humidity, but they may lose some of their characteristic aroma. They are best consumed fresh, shortly after harvest. Due to their fragile nature, they are not well-suited for long-distance transportation or extensive commercial handling, which limits their availability outside of local growing regions.",
+  "marketValueAndGlobalDemand": "Rose apples are primarily consumed locally in the regions where they are cultivated and are often found in home gardens or sold in local markets during their season. There is limited commercial cultivation on a large scale due to the fruit's extreme perishability and delicate nature, which make transportation and marketing challenging. Consequently, they are not widely traded internationally as fresh fruit. The tree is also valued for its ornamental qualities (attractive foliage and showy, fragrant flowers). There is some niche market interest in processed products like rose apple syrup, candied rose apples, or rose water distilled from the fruit or flowers, but these are not major commercial items globally. Its demand is largely driven by local preferences and its unique aromatic qualities.",
+  "staticRecipes": [
+    {
+      "name": "Rose Apple & Toasted Coconut Salad",
+      "description": "A light and refreshing salad that highlights the crisp texture and delicate rose-like aroma of fresh rose apples, complemented by the nuttiness of toasted coconut.",
+      "ingredients": [
+        "4-5 fresh rose apples",
+        "2 tablespoons toasted shredded coconut (unsweetened)",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon honey or agave nectar (optional, to taste)",
+        "A few fresh mint leaves, chopped (for garnish)"
+      ],
+      "steps": [
+        "Wash the rose apples thoroughly. They can be eaten whole after removing the stem end, or sliced. The core usually contains 1-2 loose, inedible seeds which should be discarded.",
+        "Slice the rose apples into bite-sized pieces or thin wedges. The skin is edible and typically left on.",
+        "In a medium bowl, gently toss the sliced rose apples with the fresh lime juice. If using, drizzle with honey or agave nectar and toss again.",
+        "Sprinkle the toasted shredded coconut over the rose apple mixture.",
+        "Garnish with freshly chopped mint leaves.",
+        "Serve immediately to enjoy the crisp texture and fragrant aroma. This salad is best made just before serving."
+      ]
+    }
+  ]
+}

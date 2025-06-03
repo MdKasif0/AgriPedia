@@ -1,0 +1,61 @@
+{
+  "id": "teff",
+  "commonName": "Teff",
+  "scientificName": "Eragrostis tef",
+  "image": "https://images.unsplash.com/photo-1601121505170-810030195093?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Teff is a fine grain, about the size of a poppy seed, that comes in a variety of colors, from white and red to dark brown. It is an ancient grain from Ethiopia and Eritrea, and remains a staple in that region, where it's used to make injera, a traditional sourdough flatbread. Teff is known for its nutritional qualities and resilience.",
+  "origin": "Horn of Africa (Ethiopia and Eritrea).",
+  "localNames": ["Teff (Amharic/Tigrinya)", "Taf (Oromo)"],
+  "regions": ["Ethiopia", "Eritrea", "United States", "Australia", "India", "South Africa"],
+  "seasons": ["Planted during the main rainy season (Meher) and sometimes during the short rainy season (Belg) in Ethiopia."],
+  "nutrition": {
+    "calories": "367 kcal per 100g (raw)",
+    "macronutrients": [
+      { "name": "Protein", "value": 13.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 73.1, "unit": "g" },
+      { "name": "Fat", "value": 2.4, "unit": "g" },
+      { "name": "Fiber", "value": 8.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Thiamin (B1)", "value": 0.39, "unit": "mg", "rdi": "33%" },
+      { "name": "Niacin (B3)", "value": 3.36, "unit": "mg", "rdi": "21%" },
+      { "name": "Vitamin B6", "value": 0.482, "unit": "mg", "rdi": "37%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 9.24, "unit": "mg", "rdi": "402%" },
+      { "name": "Iron", "value": 7.63, "unit": "mg", "rdi": "42%" },
+      { "name": "Magnesium", "value": 184, "unit": "mg", "rdi": "44%" },
+      { "name": "Calcium", "value": 180, "unit": "mg", "rdi": "18%" }
+    ]
+  },
+  "healthBenefits": [
+    "Naturally gluten-free.",
+    "High in dietary fiber, aiding digestion and blood sugar management.",
+    "Excellent source of resistant starch, which benefits gut health.",
+    "Rich in minerals, especially iron, calcium, and manganese.",
+    "Provides a good balance of amino acids."
+  ],
+  "potentialAllergies": [],
+  "cultivationProcess": "Teff cultivation involves minimal soil preparation, broadcasting the tiny seeds onto a prepared seedbed, and sometimes light tamping. It is often grown in rotation with other crops.",
+  "growthDuration": "Relatively short, ranging from 45 to 120 days, depending on the variety and altitude.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can grow in waterlogged conditions where other cereals fail.",
+    "Adapted to a wide range of soil types and altitudes.",
+    "Requires minimal inputs, making it a sustainable option for smallholder farmers."
+  ],
+  "carbonFootprintInfo": "Teff is considered to have a relatively low carbon footprint due to its resilience and low input requirements. Traditional farming practices further contribute to its sustainability.",
+  "uses": ["culinary_injera", "animal_feed_fodder", "beverages_alcoholic_local"],
+  "originAndDomesticationHistory": "Teff (Eragrostis tef) was domesticated in the Horn of Africa (present-day Ethiopia and Eritrea) between 4000 and 1000 BCE. It is one of the earliest domesticated plants in this region. Its genetic diversity is highest in Ethiopia, indicating its center of origin. For centuries, it has been a cornerstone of Ethiopian and Eritrean cuisine and culture.",
+  "climaticRequirements": {
+    "temperature": "Adaptable to a wide range of temperatures, from 10°C to 27°C. Grows best in moderate temperatures.",
+    "rainfall": "Can grow with 250-1000mm of rainfall. Tolerant of both drought and waterlogged soils, depending on the variety.",
+    "altitude": "Cultivated from near sea level up to 3000m, making it one of the most altitude-versatile crops."
+  },
+  "soilPreferences": "Grows on a variety of soils, from sandy loams to heavy clays. Prefers slightly acidic to neutral pH (5.0-7.5). Tolerant of poor soil fertility and vertisols (heavy clay soils that shrink and swell).",
+  "irrigationAndWaterNeeds": "Predominantly rain-fed. Its ability to withstand both drought and waterlogging (for short periods) makes it unique. Irrigation is rare.",
+  "plantingAndHarvestCycles": "Seeds are very small and are typically broadcast onto a prepared seedbed. Planting time varies by region and rainfall patterns. Harvested by hand or using combines when the grains are mature and the plant has dried. Due to its small seed size, harvesting and threshing require care.",
+  "pestAndDiseaseManagement": "Relatively few major pests and diseases compared to other cereals. Shoot fly can be an issue in some areas. Weeding can be labor-intensive due to the small size of teff seedlings. Traditional methods and resistant varieties are common.",
+  "postHarvestHandling": "Involves careful threshing (often by animal trampling or hand), winnowing to separate the tiny grains from chaff, and drying. Storage is typically in bags or traditional granaries. Due to its small size, it stores well and is resistant to many storage pests.",
+  "majorProducingCountriesOrRegions": ["Ethiopia (primary producer and consumer)", "Eritrea", "Growing interest and small-scale cultivation in USA, Australia, India, Canada, Netherlands, Spain, South Africa"],
+  "marketValueAndGlobalDemand": "Teff is a staple food and culturally significant crop in Ethiopia and Eritrea, with high local demand. International demand has been growing rapidly due to its gluten-free status and nutritional benefits. Ethiopia has periodically restricted exports to ensure local food security, affecting global prices and availability."
+}
