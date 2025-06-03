@@ -3,7 +3,7 @@
 
 import { useState, useRef, type ChangeEvent, type FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { UploadCloud, Image as ImageIcon, Camera, AlertTriangle, X, Zap, RefreshCcw, ImageUp, Check } from 'lucide-react';
+import { UploadCloud, Image as ImageIcon, Camera, AlertTriangle, X, Zap, RefreshCcw, Check } from 'lucide-react'; // Removed ImageUp
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -38,8 +38,8 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
   const router = useRouter();
   const { toast } = useToast();
 
-  const getCameraPermissionInternal = async () => {
-    setHasCameraPermission(null); 
+  const getCameraPermissionInternal = React.useCallback(async () => {
+    setHasCameraPermission(null);
     setError(null);
 
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -73,16 +73,17 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       setHasCameraPermission(false);
       toast({ variant: 'destructive', title: 'Camera Access Issue', description: message, duration: 5000 });
     }
-  };
+  }, [toast]); // Added toast as a dependency for useCallback
 
   useEffect(() => {
+    const currentVideoRef = videoRef.current; // For cleanup antd-eslint-warning for videoRef.current
     let localStreamRef: MediaStream | null = null;
     if (isCameraMode) {
       if (!streamRef.current && hasCameraPermission !== false) {
         getCameraPermissionInternal();
-      } else if (hasCameraPermission === true && streamRef.current && videoRef.current && !videoRef.current.srcObject) {
-        videoRef.current.srcObject = streamRef.current;
-        videoRef.current.play().catch(e => console.warn("Retry play failed", e));
+      } else if (hasCameraPermission === true && streamRef.current && currentVideoRef && !currentVideoRef.srcObject) {
+        currentVideoRef.srcObject = streamRef.current;
+        currentVideoRef.play().catch(e => console.warn("Retry play failed", e));
       }
       localStreamRef = streamRef.current;
     } else {
@@ -90,9 +91,9 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
         streamRef.current.getTracks().forEach(track => track.stop());
         streamRef.current = null;
       }
-      if (videoRef.current && videoRef.current.srcObject) {
-        videoRef.current.pause();
-        videoRef.current.srcObject = null;
+      if (currentVideoRef && currentVideoRef.srcObject) {
+        currentVideoRef.pause();
+        currentVideoRef.srcObject = null;
       }
       if(hasCameraPermission !== false) { // Don't reset if definitively denied
         setHasCameraPermission(null);
@@ -104,12 +105,12 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
       if (localStreamRef) {
         localStreamRef.getTracks().forEach(track => track.stop());
       }
-      if (videoRef.current && videoRef.current.srcObject) {
-        videoRef.current.pause();
-        videoRef.current.srcObject = null;
+      if (currentVideoRef && currentVideoRef.srcObject) { // Use currentVideoRef in cleanup
+        currentVideoRef.pause();
+        currentVideoRef.srcObject = null;
       }
     };
-  }, [isCameraMode, toast]); // hasCameraPermission is not explicitly listed, but its state is managed internally and drives calls to getCameraPermissionInternal within this effect
+  }, [isCameraMode, toast, getCameraPermissionInternal, hasCameraPermission]); // Added getCameraPermissionInternal and hasCameraPermission
 
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -399,7 +400,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
             aria-label={isCameraMode ? "Switch to File Upload" : "Switch to Camera"}
             disabled={isLoading}
           >
-            {isCameraMode ? <ImageUp size={32} /> : <Camera size={32} />}
+            {isCameraMode ? <UploadCloud size={32} /> : <Camera size={32} />}
           </Button>
 
           {/* Shutter / Upload / Clear Button */}

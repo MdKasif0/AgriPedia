@@ -54,12 +54,16 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("h-4 w-4", className)} {...props} />
-        ),
-        IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("h-4 w-4", className)} {...props} />
-        ),
+        // @ts-ignore TODO: Fix this when date-fns version issue is resolved
+        ChevronLeft: (props) => {
+          const { className, ...rest } = props;
+          return <ChevronLeft className={cn("h-4 w-4", className)} {...rest} />;
+        },
+        // @ts-ignore TODO: Fix this when date-fns version issue is resolved
+        ChevronRight: (props) => {
+          const { className, ...rest } = props;
+          return <ChevronRight className={cn("h-4 w-4", className)} {...rest} />;
+        },
       }}
       {...props}
     />

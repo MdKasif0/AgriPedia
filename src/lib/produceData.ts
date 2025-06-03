@@ -228,6 +228,9 @@ export interface Recipe {
   ingredients: string[];
   steps: string[];
 }
+
+export type AllergySeverity = 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies' | 'Harmless' | 'Low' | 'Low to Moderate' | 'Moderate to High' | 'Very Low';
+
 export interface ProduceInfo {
   id: string;
   commonName: string;
@@ -240,21 +243,38 @@ export interface ProduceInfo {
   seasons: string[];
   nutrition: {
     calories: string;
-    macronutrients: Array<{ name: string; value: number; unit: string }>;
-    vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>;
-    minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>;
+    macronutrients: Array<{ name: string; value?: number | string; unit: string }>; // value optional
+    vitamins: Array<{ name: string; value?: number | string; unit?: string; rdi?: string }>; // value optional
+    minerals: Array<{ name: string; value?: number | string; unit?: string; rdi?: string }>; // value optional
   };
-  healthBenefits: string[];
-  potentialAllergies: Array<{
+  healthBenefits?: string[]; // Made optional
+  potentialAllergies?: Array<{ // Made optional
     name: string;
-    severity: 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies' | 'Harmless' | 'Low' | 'Low to Moderate' | 'Moderate to High' | 'Very Low';
+    severity: AllergySeverity;
     details?: string;
   }>;
-  cultivationProcess: string;
-  growthDuration: string;
+  cultivationProcess?: string; // Made optional
+  growthDuration?: string; // Made optional
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
   staticRecipes?: Recipe[];
+  uses?: string[]; // Add uses as an optional field
+  originAndDomesticationHistory?: string; // Add originAndDomesticationHistory as an optional field
+  climaticRequirements?: {
+    temperature?: string;
+    rainfall?: string;
+    humidity?: string;
+    soilType?: string;
+    sunlight?: string;
+    altitude?: string;
+  };
+  soilPreferences?: string;
+  irrigationAndWaterNeeds?: string;
+  plantingAndHarvestCycles?: string;
+  pestAndDiseaseManagement?: string;
+  postHarvestHandling?: string;
+  majorProducingCountriesOrRegions?: string[];
+  marketValueAndGlobalDemand?: string;
 }
 
 const fruits: ProduceInfo[] = [

@@ -43,7 +43,6 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'AgriPedia - Fruits and Vegetables Guide',
-        'data-ai-hint': 'app logo',
       },
     ],
     locale: 'en_US',
