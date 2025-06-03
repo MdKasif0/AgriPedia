@@ -1,4 +1,3 @@
-
 // AgriPedia Service Worker
 // Version 1.1 (Enhanced Caching)
 
@@ -152,43 +151,30 @@ self.addEventListener('fetch', (event) => {
 });
 
 // Basic Push Notification Listener (can be expanded)
-self.addEventListener('push', (event) => {
-  console.log('[Service Worker] Push Received.');
-  const data = event.data ? event.data.json() : { title: 'AgriPedia', body: 'New update available!' };
+self.addEventListener('push', function(event) {
+  if (event.data) {
+    const data = event.data.json();
+    const options = {
+      body: data.message,
+      icon: data.icon || '/icons/plant.png',
+      badge: '/icons/badge.png',
+      data: {
+        url: data.url
+      }
+    };
 
-  // TODO: Enhance notification logic for AgriPedia features
-  // - Check notification type (e.g., 'watering', 'pruning', 'harvesting')
-  // - Customize title and body based on plant name, task, and due date from payload
-  // - Potentially add actions like 'View Plant' or 'Mark as Complete'
-  // - Example: if (data.type === 'watering_reminder') { title = `Water ${data.plantName}!`; ... }
-  
-  const title = data.title || 'AgriPedia Notification';
-  const options = {
-    body: data.body || 'Something new happened!',
-    icon: data.icon || '/icons/icon-192x192.png', // Ensure you have this icon
-    badge: data.badge || '/icons/badge-72x72.png', // Ensure you have this icon
-    // Other options: image, actions, data, etc.
-  };
-
-  event.waitUntil(self.registration.showNotification(title, options));
+    event.waitUntil(
+      self.registration.showNotification(data.title, options)
+    );
+  }
 });
 
-self.addEventListener('notificationclick', (event) => {
-  console.log('[Service Worker] Notification click Received.');
+self.addEventListener('notificationclick', function(event) {
   event.notification.close();
-  // Example: Open a specific URL or focus an existing window
-  event.waitUntil(
-    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
-      // If a window matching the app is already open, focus it.
-      for (const client of clientList) {
-        if (client.url === '/' && 'focus' in client) { // Adjust URL if needed
-          return client.focus();
-        }
-      }
-      // If no window is open, open a new one.
-      if (clients.openWindow) {
-        return clients.openWindow('/'); // Adjust URL if needed
-      }
-    })
-  );
+
+  if (event.notification.data && event.notification.data.url) {
+    event.waitUntil(
+      clients.openWindow(event.notification.data.url)
+    );
+  }
 });

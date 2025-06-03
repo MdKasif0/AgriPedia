@@ -1,49 +1,43 @@
-# AgriPedia 🌿
+# AgriPedia 2.0
 
-A modern, platform-adaptive web application for sustainable agriculture knowledge sharing and community building.
-
-**➡️ Live Demo: [https://agripedia.netlify.app/](https://agripedia.netlify.app/)**
+A modern web application for plant enthusiasts to track, learn, and grow their plants with AI-powered assistance.
 
 ## Features
 
-- 🌱 Platform-adaptive UI that feels native on both mobile and desktop
-- 🌓 Light and dark theme support
-- 📱 Mobile-first design with native-like interactions
-- 🖥️ Desktop-optimized layout with keyboard shortcuts
-- 🎨 Modern, clean visual design
-- ⚡ Fast performance with optimized animations
-- 🔍 Advanced search capabilities
-- 👥 Community features and knowledge sharing
-- 📊 Interactive data visualization
-- 📱 PWA support for offline access
+- 🌱 **Plant Health Scanner**: Use your camera to scan plants and get instant health analysis
+- 📱 **My Garden**: Track and manage your plants with detailed care information
+- 📅 **Care Calendar**: Schedule and track watering, fertilizing, and other care tasks
+- 👥 **Community**: Connect with other plant enthusiasts and share your gardening journey
+- 📚 **Learning Center**: Access educational content about plant care and gardening
+- 🌙 **Dark Mode**: Beautiful dark and light themes for comfortable viewing
 
 ## Tech Stack
 
-- Next.js 14
-- React 18
+- Next.js 14 with App Router
 - TypeScript
 - Tailwind CSS
-- Framer Motion
-- Shadcn/UI
-- Next Themes
+- Shadcn UI
+- Zustand for state management
+- React Hook Form with Zod validation
+- Lucide Icons
 
 ## Getting Started
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/agripedia.git
-cd agripedia
-```
+   ```bash
+   git clone https://github.com/MdKasif0/AgriPedia.git
+   cd AgriPedia
+   ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Run the development server:
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -51,32 +45,18 @@ npm run dev
 
 ```
 src/
-├── app/                 # Next.js app directory
+├── app/                 # App router pages
 ├── components/          # React components
 │   ├── ui/             # UI components
-│   └── layout/         # Layout components
-├── hooks/              # Custom React hooks
-├── lib/                # Utility functions
-└── styles/             # Global styles
+│   ├── auth/           # Authentication components
+│   ├── garden/         # Garden management components
+│   ├── scanner/        # Plant scanner components
+│   ├── calendar/       # Care calendar components
+│   ├── community/      # Community components
+│   └── learn/          # Learning center components
+├── store/              # Zustand store
+└── lib/                # Utility functions
 ```
-
-## Platform-Specific Features
-
-### Mobile
-- Bottom navigation bar
-- Swipe gestures
-- Pull-to-refresh
-- Full-screen modals
-- Touch-optimized inputs
-- Native-like animations
-
-### Desktop
-- Sidebar navigation
-- Keyboard shortcuts
-- Hover effects
-- Multi-column layouts
-- Resizable panels
-- Context menus
 
 ## Contributing
 
@@ -92,8 +72,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Shadcn/UI](https://ui.shadcn.com/)
-- [Next Themes](https://github.com/pacocoursey/next-themes)
+- [Shadcn UI](https://ui.shadcn.com/) for the beautiful UI components
+- [Lucide Icons](https://lucide.dev/) for the icons
+- [Unsplash](https://unsplash.com/) for the images
+
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+NEXT_PUBLIC_OPENWEATHER_API_KEY=your_openweather_api_key
+NEXT_PUBLIC_VAPID_PUBLIC_KEY=your_vapid_public_key

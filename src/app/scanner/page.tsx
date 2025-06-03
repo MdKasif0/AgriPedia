@@ -1,14 +1,17 @@
-'use client';
+import React from 'react';
+import { Metadata } from 'next';
+import { ScannerView } from '@/components/scanner/ScannerView';
 
-import { PlantHealthDetector } from '@/components/health-detector/PlantHealthDetector';
+export const metadata: Metadata = {
+  title: 'Plant Scanner - AgriPedia',
+  description: 'Scan your plants for health issues and get care recommendations',
+};
 
 export default function ScannerPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-8">Plant Health Scanner</h1>
-        <PlantHealthDetector />
-      </div>
+      <h1 className="text-4xl font-serif font-bold mb-8">Plant Health Scanner</h1>
+      <ScannerView />
     </div>
   );
 } 
