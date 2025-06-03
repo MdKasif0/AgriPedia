@@ -238,258 +238,312 @@ export interface ProduceInfo {
   localNames: string[];
   regions: string[];
   seasons: string[];
-  nutrition: {
+  nutrition?: { // Made optional as per processProduceItem logic
     calories: string;
     macronutrients: Array<{ name: string; value: number; unit: string }>;
     vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>;
     minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>;
   };
-  healthBenefits: string[];
-  potentialAllergies: Array<{
+  healthBenefits?: string[];
+  potentialAllergies?: Array<{
     name: string;
     severity: 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies' | 'Harmless' | 'Low' | 'Low to Moderate' | 'Moderate to High' | 'Very Low';
     details?: string;
   }>;
-  cultivationProcess: string;
-  growthDuration: string;
+  cultivationProcess?: string;
+  growthDuration?: string;
   sustainabilityTips?: string[];
   carbonFootprintInfo?: string;
   staticRecipes?: Recipe[];
+  uses?: string[];
+  originAndDomesticationHistory?: string;
+  climaticRequirements?: { temperature: string; rainfall: string; altitude: string; };
+  soilPreferences?: string;
+  irrigationAndWaterNeeds?: string;
+  plantingAndHarvestCycles?: string;
+  pestAndDiseaseManagement?: string;
+  postHarvestHandling?: string;
+  majorProducingCountriesOrRegions?: string[];
+  marketValueAndGlobalDemand?: string;
+}
+
+interface NutritionInfoRaw {
+  calories: string;
+  macronutrients: Array<{ name: string; value: string; unit: string }>;
+  vitamins: Array<{ name: string; value: string; unit: string; rdi?: string }>;
+  minerals: Array<{ name: string; value: string; unit: string; rdi?: string }>;
+}
+
+interface NutritionInfoProcessed {
+  calories: string;
+  macronutrients: Array<{ name: string; value: number; unit: string }>;
+  vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>;
+  minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>;
+}
+
+// Helper function to convert string values to numbers
+function convertNutritionValues(nutrition: NutritionInfoRaw | undefined): NutritionInfoProcessed | undefined {
+  if (!nutrition) {
+    return undefined;
+  }
+  return {
+    ...nutrition,
+    macronutrients: nutrition.macronutrients.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    })),
+    vitamins: nutrition.vitamins.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    })),
+    minerals: nutrition.minerals.map((item: any) => ({
+      ...item,
+      value: parseFloat(item.value) || 0
+    }))
+  };
+}
+
+function processProduceItem(rawItem: any): ProduceInfo {
+  const processedNutrition = rawItem.nutrition ? convertNutritionValues(rawItem.nutrition as NutritionInfoRaw) : undefined;
+  return {
+    ...rawItem,
+    nutrition: processedNutrition,
+  } as ProduceInfo;
 }
 
 const fruits: ProduceInfo[] = [
-  amlaFruit as ProduceInfo,
-  appleFruit as ProduceInfo,
-  avocadoFruit as ProduceInfo,
-  bananaFruit as ProduceInfo,
-  berFruit as ProduceInfo,
-  blackcurrantFruit as ProduceInfo,
-  blueberryFruit as ProduceInfo,
-  cherryFruit as ProduceInfo,
-  custardAppleFruit as ProduceInfo,
-  dragonFruitFruit as ProduceInfo,
-  figFruit as ProduceInfo,
-  gooseberryFruit as ProduceInfo,
-  grapesFruit as ProduceInfo,
-  guavaFruit as ProduceInfo,
-  jackfruitFruit as ProduceInfo,
-  jamunFruit as ProduceInfo,
-  karondaFruit as ProduceInfo,
-  kiwiFruit as ProduceInfo,
-  kokumFruit as ProduceInfo,
-  langsatFruit as ProduceInfo,
-  lemonFruit as ProduceInfo,
-  longanFruit as ProduceInfo,
-  loquatFruit as ProduceInfo,
-  lycheeFruit as ProduceInfo,
-  mangoFruit as ProduceInfo,
-  mangosteenFruit as ProduceInfo,
-  mulberryFruit as ProduceInfo,
-  muskmelonFruit as ProduceInfo,
-  noniFruit as ProduceInfo,
-  orangeFruit as ProduceInfo,
-  papayaFruit as ProduceInfo,
-  passionFruitFruit as ProduceInfo,
-  peachFruit as ProduceInfo,
-  pearFruit as ProduceInfo,
-  persimmonFruit as ProduceInfo,
-  pineappleFruit as ProduceInfo,
-  plumFruit as ProduceInfo,
-  pomegranateFruit as ProduceInfo,
-  rambutanFruit as ProduceInfo,
-  raspberryFruit as ProduceInfo,
-  roseAppleFruit as ProduceInfo,
-  sapotaFruit as ProduceInfo,
-  starfruitFruit as ProduceInfo,
-  strawberryFruit as ProduceInfo,
-  surinamCherryFruit as ProduceInfo,
-  sweetLimeFruit as ProduceInfo,
-  tamarindFruit as ProduceInfo,
-  watermelonFruit as ProduceInfo,
-  woodAppleFruit as ProduceInfo,
+  processProduceItem(amlaFruit),
+  processProduceItem(appleFruit),
+  processProduceItem(avocadoFruit),
+  processProduceItem(bananaFruit),
+  processProduceItem(berFruit),
+  processProduceItem(blackcurrantFruit),
+  processProduceItem(blueberryFruit),
+  processProduceItem(cherryFruit),
+  processProduceItem(custardAppleFruit),
+  processProduceItem(dragonFruitFruit),
+  processProduceItem(figFruit),
+  processProduceItem(gooseberryFruit),
+  processProduceItem(grapesFruit),
+  processProduceItem(guavaFruit),
+  processProduceItem(jackfruitFruit),
+  processProduceItem(jamunFruit),
+  processProduceItem(karondaFruit),
+  processProduceItem(kiwiFruit),
+  processProduceItem(kokumFruit),
+  processProduceItem(langsatFruit),
+  processProduceItem(lemonFruit),
+  processProduceItem(longanFruit),
+  processProduceItem(loquatFruit),
+  processProduceItem(lycheeFruit),
+  processProduceItem(mangoFruit),
+  processProduceItem(mangosteenFruit),
+  processProduceItem(mulberryFruit),
+  processProduceItem(muskmelonFruit),
+  processProduceItem(noniFruit),
+  processProduceItem(orangeFruit),
+  processProduceItem(papayaFruit),
+  processProduceItem(passionFruitFruit),
+  processProduceItem(peachFruit),
+  processProduceItem(pearFruit),
+  processProduceItem(persimmonFruit),
+  processProduceItem(pineappleFruit),
+  processProduceItem(plumFruit),
+  processProduceItem(pomegranateFruit),
+  processProduceItem(rambutanFruit),
+  processProduceItem(raspberryFruit),
+  processProduceItem(roseAppleFruit),
+  processProduceItem(sapotaFruit),
+  processProduceItem(starfruitFruit),
+  processProduceItem(strawberryFruit),
+  processProduceItem(surinamCherryFruit),
+  processProduceItem(sweetLimeFruit),
+  processProduceItem(tamarindFruit),
+  processProduceItem(watermelonFruit),
+  processProduceItem(woodAppleFruit),
 ];
 
 const vegetables: ProduceInfo[] = [
-  amaranthLeavesVegetable as ProduceInfo,
-  arbiTaroRootVegetable as ProduceInfo,
-  ashGourdVegetable as ProduceInfo,
-  beetrootVegetable as ProduceInfo,
-  bitterGourdVegetable as ProduceInfo,
-  bottleGourdVegetable as ProduceInfo,
-  brinjalEggplantVegetable as ProduceInfo,
-  broccoliVegetable as ProduceInfo,
-  cabbageVegetable as ProduceInfo,
-  capsicumVegetable as ProduceInfo,
-  carrotVegetable as ProduceInfo,
-  cauliflowerVegetable as ProduceInfo,
-  chilliesVegetable as ProduceInfo,
-  clusterBeansVegetable as ProduceInfo,
-  corianderLeavesVegetable as ProduceInfo,
-  cornVegetable as ProduceInfo,
-  cucumberVegetable as ProduceInfo,
-  curryLeavesVegetable as ProduceInfo,
-  dillLeavesVegetable as ProduceInfo,
-  drumstickMoringaVegetable as ProduceInfo,
-  elephantFootYamVegetable as ProduceInfo,
-  fenugreekLeavesVegetable as ProduceInfo,
-  frenchBeansVegetable as ProduceInfo,
-  garlicVegetable as ProduceInfo,
-  gingerVegetable as ProduceInfo,
-  greenGarlicVegetable as ProduceInfo,
-  greenPeasVegetable as ProduceInfo,
-  ivyGourdVegetable as ProduceInfo,
-  youngJackfruitVegetable as ProduceInfo,
-  kaleVegetable as ProduceInfo,
-  kohlrabiVegetable as ProduceInfo,
-  ladyfingerOkraVegetable as ProduceInfo,
-  lettuceVegetable as ProduceInfo,
-  lotusStemVegetable as ProduceInfo,
-  mintLeavesVegetable as ProduceInfo,
-  mustardGreensVegetable as ProduceInfo,
-  onionVegetable as ProduceInfo,
-  potatoVegetable as ProduceInfo,
-  pumpkinVegetable as ProduceInfo,
-  radishVegetable as ProduceInfo,
-  rawBananaVegetable as ProduceInfo,
-  rawMangoVegetable as ProduceInfo,
-  ridgeGourdVegetable as ProduceInfo,
-  snakeGourdVegetable as ProduceInfo,
-  spinachVegetable as ProduceInfo,
-  springOnionVegetable as ProduceInfo,
-  tindaAppleGourdVegetable as ProduceInfo,
-  tomatoVegetable as ProduceInfo,
-  turnipVegetable as ProduceInfo,
-  zucchiniVegetable as ProduceInfo,
+  processProduceItem(amaranthLeavesVegetable),
+  processProduceItem(arbiTaroRootVegetable),
+  processProduceItem(ashGourdVegetable),
+  processProduceItem(beetrootVegetable),
+  processProduceItem(bitterGourdVegetable),
+  processProduceItem(bottleGourdVegetable),
+  processProduceItem(brinjalEggplantVegetable),
+  processProduceItem(broccoliVegetable),
+  processProduceItem(cabbageVegetable),
+  processProduceItem(capsicumVegetable),
+  processProduceItem(carrotVegetable),
+  processProduceItem(cauliflowerVegetable),
+  processProduceItem(chilliesVegetable),
+  processProduceItem(clusterBeansVegetable),
+  processProduceItem(corianderLeavesVegetable),
+  processProduceItem(cornVegetable),
+  processProduceItem(cucumberVegetable),
+  processProduceItem(curryLeavesVegetable),
+  processProduceItem(dillLeavesVegetable),
+  processProduceItem(drumstickMoringaVegetable),
+  processProduceItem(elephantFootYamVegetable),
+  processProduceItem(fenugreekLeavesVegetable),
+  processProduceItem(frenchBeansVegetable),
+  processProduceItem(garlicVegetable),
+  processProduceItem(gingerVegetable),
+  processProduceItem(greenGarlicVegetable),
+  processProduceItem(greenPeasVegetable),
+  processProduceItem(ivyGourdVegetable),
+  processProduceItem(youngJackfruitVegetable),
+  processProduceItem(kaleVegetable),
+  processProduceItem(kohlrabiVegetable),
+  processProduceItem(ladyfingerOkraVegetable),
+  processProduceItem(lettuceVegetable),
+  processProduceItem(lotusStemVegetable),
+  processProduceItem(mintLeavesVegetable),
+  processProduceItem(mustardGreensVegetable),
+  processProduceItem(onionVegetable),
+  processProduceItem(potatoVegetable),
+  processProduceItem(pumpkinVegetable),
+  processProduceItem(radishVegetable),
+  processProduceItem(rawBananaVegetable),
+  processProduceItem(rawMangoVegetable),
+  processProduceItem(ridgeGourdVegetable),
+  processProduceItem(snakeGourdVegetable),
+  processProduceItem(spinachVegetable),
+  processProduceItem(springOnionVegetable),
+  processProduceItem(tindaAppleGourdVegetable),
+  processProduceItem(tomatoVegetable),
+  processProduceItem(turnipVegetable),
+  processProduceItem(zucchiniVegetable),
 ];
 
 const beverageCrops: ProduceInfo[] = [
-  barleyBeverageCrop as ProduceInfo,
-  cocoaBeverageCrop as ProduceInfo,
-  coffeeBeverageCrop as ProduceInfo,
-  hopsBeverageCrop as ProduceInfo,
-  sugarcaneBeverageCrop as ProduceInfo,
-  teaBeverageCrop as ProduceInfo,
-  yerbaMateBeverageCrop as ProduceInfo,
+  processProduceItem(barleyBeverageCrop),
+  processProduceItem(cocoaBeverageCrop),
+  processProduceItem(coffeeBeverageCrop),
+  processProduceItem(hopsBeverageCrop),
+  processProduceItem(sugarcaneBeverageCrop),
+  processProduceItem(teaBeverageCrop),
+  processProduceItem(yerbaMateBeverageCrop),
 ];
 
 const cashCrops: ProduceInfo[] = [
-  cocoaCashCrop as ProduceInfo,
-  coffeeCashCrop as ProduceInfo,
-  cottonCashCrop as ProduceInfo,
-  indigoCashCrop as ProduceInfo,
-  rubberCashCrop as ProduceInfo,
-  sugarcaneCashCrop as ProduceInfo,
-  teaCashCrop as ProduceInfo,
-  tobaccoCashCrop as ProduceInfo,
-  vanillaCashCrop as ProduceInfo,
+  processProduceItem(cocoaCashCrop),
+  processProduceItem(coffeeCashCrop),
+  processProduceItem(cottonCashCrop),
+  processProduceItem(indigoCashCrop),
+  processProduceItem(rubberCashCrop),
+  processProduceItem(sugarcaneCashCrop),
+  processProduceItem(teaCashCrop),
+  processProduceItem(tobaccoCashCrop),
+  processProduceItem(vanillaCashCrop),
 ];
 
 const cerealsAndGrains: ProduceInfo[] = [
-  barleyCereal as ProduceInfo,
-  buckwheatCereal as ProduceInfo,
-  maizeCereal as ProduceInfo,
-  milletsCereal as ProduceInfo,
-  oatsCereal as ProduceInfo,
-  quinoaCereal as ProduceInfo,
-  riceCereal as ProduceInfo,
-  ryeCereal as ProduceInfo,
-  sorghumCereal as ProduceInfo,
-  teffCereal as ProduceInfo,
-  wheatCereal as ProduceInfo,
+  processProduceItem(barleyCereal),
+  processProduceItem(buckwheatCereal),
+  processProduceItem(maizeCereal),
+  processProduceItem(milletsCereal),
+  processProduceItem(oatsCereal),
+  processProduceItem(quinoaCereal),
+  processProduceItem(riceCereal),
+  processProduceItem(ryeCereal),
+  processProduceItem(sorghumCereal),
+  processProduceItem(teffCereal),
+  processProduceItem(wheatCereal),
 ];
 
 const fiberCrops: ProduceInfo[] = [
-  coirFiberCrop as ProduceInfo,
-  cottonFiberCrop as ProduceInfo,
-  flaxFiberCrop as ProduceInfo,
-  hempFiberCrop as ProduceInfo,
-  juteFiberCrop as ProduceInfo,
-  kenafFiberCrop as ProduceInfo,
-  ramieFiberCrop as ProduceInfo,
-  sisalFiberCrop as ProduceInfo,
+  processProduceItem(coirFiberCrop),
+  processProduceItem(cottonFiberCrop),
+  processProduceItem(flaxFiberCrop),
+  processProduceItem(hempFiberCrop),
+  processProduceItem(juteFiberCrop),
+  processProduceItem(kenafFiberCrop),
+  processProduceItem(ramieFiberCrop),
+  processProduceItem(sisalFiberCrop),
 ];
 
 const fodderAndForageCrops: ProduceInfo[] = [
-  alfalfaFodderCrop as ProduceInfo,
-  cloverFodderCrop as ProduceInfo,
-  napierGrassFodderCrop as ProduceInfo,
-  ryegrassFodderCrop as ProduceInfo,
-  silageMaizeFodderCrop as ProduceInfo,
-  sorghumSudanGrassHybridsFodderCrop as ProduceInfo,
+  processProduceItem(alfalfaFodderCrop),
+  processProduceItem(cloverFodderCrop),
+  processProduceItem(napierGrassFodderCrop),
+  processProduceItem(ryegrassFodderCrop),
+  processProduceItem(silageMaizeFodderCrop),
+  processProduceItem(sorghumSudanGrassHybridsFodderCrop),
 ];
 
 const herbsAndSpices: ProduceInfo[] = [
-  basilHerbSpice as ProduceInfo,
-  bayLeafHerbSpice as ProduceInfo,
-  blackPepperHerbSpice as ProduceInfo,
-  cardamomHerbSpice as ProduceInfo,
-  cilantroCorianderHerbSpice as ProduceInfo,
-  cinnamonHerbSpice as ProduceInfo,
-  gingerHerbSpice as ProduceInfo,
-  lemongrassHerbSpice as ProduceInfo,
-  mintHerbSpice as ProduceInfo,
-  oreganoHerbSpice as ProduceInfo,
-  parsleyHerbSpice as ProduceInfo,
-  rosemaryHerbSpice as ProduceInfo,
-  saffronHerbSpice as ProduceInfo,
-  thymeHerbSpice as ProduceInfo,
-  turmericHerbSpice as ProduceInfo,
+  processProduceItem(basilHerbSpice),
+  processProduceItem(bayLeafHerbSpice),
+  processProduceItem(blackPepperHerbSpice),
+  processProduceItem(cardamomHerbSpice),
+  processProduceItem(cilantroCorianderHerbSpice),
+  processProduceItem(cinnamonHerbSpice),
+  processProduceItem(gingerHerbSpice),
+  processProduceItem(lemongrassHerbSpice),
+  processProduceItem(mintHerbSpice),
+  processProduceItem(oreganoHerbSpice),
+  processProduceItem(parsleyHerbSpice),
+  processProduceItem(rosemaryHerbSpice),
+  processProduceItem(saffronHerbSpice),
+  processProduceItem(thymeHerbSpice),
+  processProduceItem(turmericHerbSpice),
 ];
 
 const legumesAndPulses: ProduceInfo[] = [
-  blackGramLegume as ProduceInfo,
-  chickpeasLegume as ProduceInfo,
-  cowpeasLegume as ProduceInfo,
-  favaBeansLegume as ProduceInfo,
-  greenGramLegume as ProduceInfo,
-  kidneyBeansLegume as ProduceInfo,
-  lentilsLegume as ProduceInfo,
-  lupinsLegume as ProduceInfo,
-  pigeonPeasLegume as ProduceInfo,
-  soybeansLegume as ProduceInfo,
+  processProduceItem(blackGramLegume),
+  processProduceItem(chickpeasLegume),
+  processProduceItem(cowpeasLegume),
+  processProduceItem(favaBeansLegume),
+  processProduceItem(greenGramLegume),
+  processProduceItem(kidneyBeansLegume),
+  processProduceItem(lentilsLegume),
+  processProduceItem(lupinsLegume),
+  processProduceItem(pigeonPeasLegume),
+  processProduceItem(soybeansLegume),
 ];
 
 const medicinalAndAromaticPlants: ProduceInfo[] = [
-  aloeVeraMedicinalPlant as ProduceInfo,
-  arjunaTreeMedicinalPlant as ProduceInfo,
-  ashwagandhaMedicinalPlant as ProduceInfo,
-  brahmiMedicinalPlant as ProduceInfo,
-  calendulaMedicinalPlant as ProduceInfo,
-  chamomileMedicinalPlant as ProduceInfo,
-  eucalyptusMedicinalPlant as ProduceInfo,
-  fenugreekMedicinalPlant as ProduceInfo,
-  ginsengMedicinalPlant as ProduceInfo,
-  gotuKolaMedicinalPlant as ProduceInfo,
-  lavenderMedicinalPlant as ProduceInfo,
-  moringaMedicinalPlant as ProduceInfo,
-  neemMedicinalPlant as ProduceInfo,
-  tulsiMedicinalPlant as ProduceInfo,
+  processProduceItem(aloeVeraMedicinalPlant),
+  processProduceItem(arjunaTreeMedicinalPlant),
+  processProduceItem(ashwagandhaMedicinalPlant),
+  processProduceItem(brahmiMedicinalPlant),
+  processProduceItem(calendulaMedicinalPlant),
+  processProduceItem(chamomileMedicinalPlant),
+  processProduceItem(eucalyptusMedicinalPlant),
+  processProduceItem(fenugreekMedicinalPlant),
+  processProduceItem(ginsengMedicinalPlant),
+  processProduceItem(gotuKolaMedicinalPlant),
+  processProduceItem(lavenderMedicinalPlant),
+  processProduceItem(moringaMedicinalPlant),
+  processProduceItem(neemMedicinalPlant),
+  processProduceItem(tulsiMedicinalPlant),
 ];
 
 const oilCrops: ProduceInfo[] = [
-  canolaOilCrop as ProduceInfo,
-  castorOilCrop as ProduceInfo,
-  coconutOilCrop as ProduceInfo,
-  flaxOilCrop as ProduceInfo,
-  groundnutOilCrop as ProduceInfo,
-  jatrophaOilCrop as ProduceInfo,
-  mustardOilCrop as ProduceInfo,
-  oilPalmOilCrop as ProduceInfo,
-  sesameOilCrop as ProduceInfo,
-  soybeansOilCrop as ProduceInfo,
-  sunflowerOilCrop as ProduceInfo,
+  processProduceItem(canolaOilCrop),
+  processProduceItem(castorOilCrop),
+  processProduceItem(coconutOilCrop),
+  processProduceItem(flaxOilCrop),
+  processProduceItem(groundnutOilCrop),
+  processProduceItem(jatrophaOilCrop),
+  processProduceItem(mustardOilCrop),
+  processProduceItem(oilPalmOilCrop),
+  processProduceItem(sesameOilCrop),
+  processProduceItem(soybeansOilCrop),
+  processProduceItem(sunflowerOilCrop),
 ];
 
 const tuberAndRootCrops: ProduceInfo[] = [
-  arrowrootTuberCrop as ProduceInfo,
-  beetrootTuberCrop as ProduceInfo,
-  cassavaTuberCrop as ProduceInfo,
-  potatoTuberCrop as ProduceInfo,
-  radishTuberCrop as ProduceInfo,
-  sweetPotatoTuberCrop as ProduceInfo,
-  taroTuberCrop as ProduceInfo,
-  turnipTuberCrop as ProduceInfo,
-  yamTuberCrop as ProduceInfo,
+  processProduceItem(arrowrootTuberCrop),
+  processProduceItem(beetrootTuberCrop),
+  processProduceItem(cassavaTuberCrop),
+  processProduceItem(potatoTuberCrop),
+  processProduceItem(radishTuberCrop),
+  processProduceItem(sweetPotatoTuberCrop),
+  processProduceItem(taroTuberCrop),
+  processProduceItem(turnipTuberCrop),
+  processProduceItem(yamTuberCrop),
 ];
 
 const allProduceData: ProduceInfo[] = [
@@ -523,7 +577,7 @@ export function searchProduce(
     results = results.filter(p =>
       p.commonName.toLowerCase().includes(searchTerm) ||
       p.scientificName.toLowerCase().includes(searchTerm) ||
-      p.localNames.some(ln => ln.toLowerCase().includes(searchTerm)) ||
+      (p.localNames && p.localNames.some(ln => ln.toLowerCase().includes(searchTerm))) ||
       p.description.toLowerCase().includes(searchTerm)
     );
   }
@@ -544,12 +598,12 @@ export function getAllProduce(): ProduceInfo[] {
 }
 
 export function getUniqueRegions(): string[] {
-  const allRegions = allProduceData.flatMap(p => p.regions);
+  const allRegions = allProduceData.flatMap(p => p.regions || []);
   return Array.from(new Set(allRegions)).sort();
 }
 
 export function getUniqueSeasons(): string[] {
-  const allSeasons = allProduceData.flatMap(p => p.seasons);
+  const allSeasons = allProduceData.flatMap(p => p.seasons || []);
   return Array.from(new Set(allSeasons)).sort();
 }
 
@@ -564,7 +618,7 @@ function getCurrentSeasonName(): string {
 export function getInSeasonProduce(limit?: number): ProduceInfo[] {
   const currentSeason = getCurrentSeasonName();
   const inSeasonItems = allProduceData.filter(produce =>
-    produce.seasons.includes(currentSeason)
+    produce.seasons && produce.seasons.includes(currentSeason)
   );
 
   if (limit && inSeasonItems.length > limit) {
@@ -598,81 +652,6 @@ export function getAllCategoriesWithProduce(): { [categoryName: string]: Produce
   };
 }
 
-interface NutritionInfo {
-  calories: string;
-  macronutrients: {
-    name: string;
-    value: number;
-    unit: string;
-  }[];
-  vitamins: {
-    name: string;
-    value: number;
-    unit: string;
-  }[];
-  minerals: {
-    name: string;
-    value: number;
-    unit: string;
-  }[];
-}
-
-// Helper function to convert string values to numbers
-function convertNutritionValues(nutrition: any): NutritionInfo {
-  return {
-    ...nutrition,
-    macronutrients: nutrition.macronutrients.map((item: any) => ({
-      ...item,
-      value: parseFloat(item.value) || 0
-    })),
-    vitamins: nutrition.vitamins.map((item: any) => ({
-      ...item,
-      value: parseFloat(item.value) || 0
-    })),
-    minerals: nutrition.minerals.map((item: any) => ({
-      ...item,
-      value: parseFloat(item.value) || 0
-    }))
-  };
-}
-
-// Convert all produce data
-export const produceData = [
-  convertNutritionValues(ryegrassFodderCrop),
-  convertNutritionValues(silageMaizeFodderCrop),
-  convertNutritionValues(sorghumSudanGrassHybridsFodderCrop),
-  convertNutritionValues(cilantroCorianderHerbSpice),
-  convertNutritionValues(aloeVeraMedicinalPlant),
-  convertNutritionValues(arjunaTreeMedicinalPlant),
-  convertNutritionValues(ashwagandhaMedicinalPlant),
-  convertNutritionValues(brahmiMedicinalPlant),
-  convertNutritionValues(calendulaMedicinalPlant),
-  convertNutritionValues(chamomileMedicinalPlant),
-  convertNutritionValues(eucalyptusMedicinalPlant),
-  convertNutritionValues(fenugreekMedicinalPlant),
-  convertNutritionValues(ginsengMedicinalPlant),
-  convertNutritionValues(gotuKolaMedicinalPlant),
-  convertNutritionValues(lavenderMedicinalPlant),
-  convertNutritionValues(moringaMedicinalPlant),
-  convertNutritionValues(neemMedicinalPlant),
-  convertNutritionValues(tulsiMedicinalPlant),
-  convertNutritionValues(canolaOilCrop),
-  convertNutritionValues(castorOilCrop),
-  convertNutritionValues(coconutOilCrop),
-  convertNutritionValues(flaxOilCrop),
-  convertNutritionValues(groundnutOilCrop),
-  convertNutritionValues(jatrophaOilCrop),
-  convertNutritionValues(mustardOilCrop),
-  convertNutritionValues(oilPalmOilCrop),
-  convertNutritionValues(sesameOilCrop),
-  convertNutritionValues(sunflowerOilCrop),
-  convertNutritionValues(arrowrootTuberCrop),
-  convertNutritionValues(beetrootTuberCrop),
-  convertNutritionValues(cassavaTuberCrop),
-  convertNutritionValues(potatoTuberCrop),
-  convertNutritionValues(radishTuberCrop),
-  convertNutritionValues(sweetPotatoTuberCrop),
-  convertNutritionValues(taroTuberCrop),
-  convertNutritionValues(turnipTuberCrop),
-  convertNutritionValues(yamTuberCrop)
-] as ProduceInfo[];
+// The final export of 'produceData' is removed as allProduceData is now the primary source.
+// The old 'produceData' only contained a subset and was inconsistently processed.
+// If a specifically processed subset is needed elsewhere, it should be created from 'allProduceData'.
