@@ -1,0 +1,162 @@
+@import '@fontsource/dm-serif-display/index.css';
+@import '@fontsource/inter/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 88%; /* #E0E0E0 */
+
+    --card: 0 0% 7%; /* #121212 */
+    --card-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+
+    --popover: 120 20% 12%; /* Unchanged - Darker Green */
+    --popover-foreground: 100 15% 85%; /* Unchanged - Light Moss/Off-white */
+
+    --primary: 100 35% 45%; /* Unchanged - Moss Green */
+    --primary-foreground: 100 15% 95%; /* Unchanged - Very Light Moss */
+
+    --secondary: 200 20% 30%; /* Unchanged - Dark Slate Blue */
+    --secondary-foreground: 200 10% 80%; /* Unchanged - Light Blue-Gray */
+
+    --muted: 120 15% 25%; /* Unchanged - Dark Muted Green-Gray */
+    --muted-foreground: 0 0% 63%; /* #A0A0A0 */
+
+    --accent: 90 25% 40%; /* Unchanged - Dark Olive/Moss */
+    --accent-foreground: 90 10% 85%; /* Unchanged - Light Olive */
+    
+    --destructive: 0 60% 50%; /* Unchanged - Adjusted Red for dark theme */
+    --destructive-foreground: 0 0% 98%; /* Unchanged */
+
+    --border: 0 0% 16%; /* #2A2A2A */
+    --input: 0 0% 4%; /* #0A0A0A - similar to cards or a bit darker */
+    --ring: 151 100% 38%; /* #00C37A - Emerald for focus rings */
+
+    --radius: 1rem; /* Updated - Base radius for 16px */
+
+    /* New Accent Colors */
+    --accent-emerald: 151 100% 38%; /* #00C37A */
+    --accent-amber: 42 100% 50%; /* #FFB300 */
+    --accent-blue: 197 100% 47%; /* #00B3F0 */
+
+    /* New Button Color */
+    --button-primary: 0 0% 12%; /* #1F1F1F */
+
+    /* Sidebar colors - dark theme */
+    /* Assuming these should also use the new palette where appropriate.
+       For now, they still reference old variables like --card, --primary etc.
+       If --card, --primary etc. are meant to be abstract and not theme-specific,
+       this is fine. If they are theme-specific, these might need updates too.
+       The instruction was to modify :root, so focusing on that.
+    */
+    --sidebar-background: hsl(var(--card)); 
+    --sidebar-foreground: hsl(var(--card-foreground));
+    --sidebar-primary: hsl(var(--primary)); 
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--accent));
+    --sidebar-accent-foreground: hsl(var(--accent-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
+
+    /* Chart colors for dark theme */
+    --chart-1: hsl(var(--accent-emerald));
+    --chart-2: hsl(var(--accent-blue));
+    --chart-3: hsl(var(--accent-amber));
+    --chart-4: 320 100% 50%; /* Bright Pink/Magenta */
+    --chart-5: 180 100% 50%; /* Bright Cyan */
+  }
+
+  .light {
+    --background: 40 50% 95%; /* Beige */
+    --foreground: 30 20% 25%; /* Dark Clay/Charcoal */
+
+    --card: 40 40% 90%; /* Off-white/Light Beige */
+    --card-foreground: 30 20% 25%;
+
+    --popover: 40 40% 88%; /* Slightly darker Beige */
+    --popover-foreground: 30 20% 25%;
+
+    --primary: 100 30% 50%; /* Soft Green */
+    --primary-foreground: 100 20% 15%; /* Dark Green for text on primary */
+
+    --secondary: 190 50% 60%; /* Sky Blue */
+    --secondary-foreground: 190 30% 20%; /* Dark Blue for text on secondary */
+
+    --muted: 40 30% 85%; /* Light Muted Beige-Gray */
+    --muted-foreground: 30 15% 45%; /* Medium Gray-Clay */
+
+    --accent: 30 40% 60%; /* Clay */
+    --accent-foreground: 30 20% 95%; /* Light Clay/Off-white */
+    
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 30% 80%; /* Light Beige-Gray Border */
+    --input: 40 30% 88%; /* Very Light Beige Input Background */
+    --ring: 100 30% 55%; /* Soft Green for focus rings */
+
+    /* --radius is already defined in :root and applies to .light as well */
+
+    /* Sidebar colors - light theme */
+    --sidebar-background: 35 40% 92%; /* Slightly off-white from page background, warmer */
+    --sidebar-foreground: hsl(var(--foreground));
+    --sidebar-primary: hsl(var(--primary));
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--accent));
+    --sidebar-accent-foreground: hsl(var(--accent-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
+
+    /* Chart colors for light theme */
+    --chart-1: hsl(var(--primary));
+    --chart-2: hsl(var(--secondary));
+    --chart-3: hsl(var(--accent));
+    --chart-4: 100 25% 65%; /* Lighter/Muted Soft Green */
+    --chart-5: 190 40% 75%; /* Lighter/Muted Sky Blue */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    font-family: 'Inter', var(--font-sans), Arial, Helvetica, sans-serif; /* Add Inter as primary sans-serif */
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Animations for Grow Planner */
+@keyframes slideInFromRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutToLeft {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutToRight {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-slideInFromRight { animation: slideInFromRight 0.3s ease-out forwards; }
+.animate-slideOutToLeft { animation: slideOutToLeft 0.3s ease-in forwards; }
+.animate-slideInFromLeft { animation: slideInFromLeft 0.3s ease-out forwards; }
+.animate-slideOutToRight { animation: slideOutToRight 0.3s ease-in forwards; }
+.animate-fadeIn { animation: fadeIn 0.3s ease-in-out forwards; }

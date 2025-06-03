@@ -1,0 +1,64 @@
+{
+  "id": "jute",
+  "commonName": "Jute",
+  "scientificName": "Corchorus spp. (mainly Corchorus capsularis and Corchorus olitorius)",
+  "image": "https://images.unsplash.com/photo-1542088083-a391977c2069?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Jute is a long, soft, shiny bast fiber that can be spun into coarse, strong threads. It is produced primarily from plants in the genus Corchorus. Jute is one of the most affordable natural fibers and is second only to cotton in amount produced and variety of uses. Jute fibers are composed primarily of the plant materials cellulose and lignin.",
+  "origin": "Indian subcontinent and Southeast Asia.",
+  "localNames": ["Pat / Paat (Hindi/Bengali)", "Kōma (Japanese - often refers to bast fibers generally)", "Yute (Spanish)", "Jute (French/German)"],
+  "regions": ["India (West Bengal, Bihar, Assam)", "Bangladesh (major producer)", "China", "Thailand", "Myanmar", "Nepal"],
+  "seasons": ["Warm-season annual; typically sown during the early rainy season (March-May) and harvested after 3-4 months during the rainy season (June-September)."],
+  "nutrition": {
+    "calories": "Jute leaves (Molokhia - C. olitorius) are consumed as a vegetable in some cultures and are nutritious. Fiber itself is not consumed.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Leaves: ~4-5" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Leaves: ~6-8 (Fiber ~2-3)" },
+      { "name": "Fat", "unit": "g", "value": "Leaves: ~0.3" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Leaves: Significant" },
+      { "name": "Vitamin A (as carotenoids)", "unit": "µg", "rdi": "Leaves: Significant" },
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Leaves: Significant" }
+    ],
+    "minerals": [
+      { "name": "Iron", "unit": "mg", "rdi": "Leaves: Significant" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Leaves: Significant" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Leaves: Significant" }
+    ]
+  },
+  "healthBenefits": [
+    "Jute fiber is biodegradable and environmentally friendly.",
+    "Jute leaves (Molokhia/Mallow-leaves from C. olitorius) are nutritious, rich in vitamins and minerals, and have antioxidant properties.",
+    "Traditionally, jute leaves have been used in some cultures for medicinal purposes (e.g., as a demulcent or diuretic)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Jute Dust/Fiber Allergy",
+      "severity": "Mild",
+      "details": "Inhalation of jute dust during processing can cause respiratory irritation or 'jute mill fever' in some workers. Allergic reactions to the fiber itself are uncommon."
+    }
+  ],
+  "cultivationProcess": "Jute is grown from seeds. It thrives in warm, humid climates with ample rainfall and alluvial soil. Plants are harvested for their stalks when they are at or past the flowering stage but before seeds fully mature. The fibers are extracted by retting.",
+  "growthDuration": "Approximately 100-150 days from sowing to harvest.",
+  "sustainabilityTips": [
+    "Biodegradable and renewable natural fiber.",
+    "Requires less pesticide and fertilizer than cotton in many cases.",
+    "Improves soil fertility as leaf fall adds organic matter.",
+    "Retting process requires significant water; improved retting techniques can reduce water pollution."
+  ],
+  "carbonFootprintInfo": "Jute has a relatively low carbon footprint compared to synthetic fibers. It is biodegradable. However, the retting process can release methane and other pollutants if not managed properly. Transportation also adds to its footprint.",
+  "uses": ["fiber_production_burlap_hessian_sacks_bags_twine_rope_carpet_backing_geotextiles_paper_pulp", "culinary_leaves_of_corchorus_olitorius_molokhia_as_a_vegetable_in_some_cuisines", "industrial_composites_construction_materials_limited"],
+  "originAndDomesticationHistory": "Jute (Corchorus capsularis and C. olitorius) has been cultivated in the Indian subcontinent for centuries. C. olitorius originated in Africa and spread to Asia, while C. capsularis is native to South Asia. Jute fiber was traditionally used for making ropes, twines, and coarse fabrics. Its large-scale commercial cultivation began in the 19th century with the establishment of jute mills in British India (Bengal region), primarily for producing sacking material.",
+  "climaticRequirements": {
+    "temperature": "Warm, humid tropical and subtropical crop. Optimal growing temperatures are 24-37°C. High humidity (70-90%) is beneficial.",
+    "rainfall": "Requires high rainfall, typically 1000-2000mm annually, with most of it during the growing season. Can tolerate temporary waterlogging.",
+    "altitude": "Primarily a lowland crop, grown in river basins and delta regions."
+  },
+  "soilPreferences": "Prefers deep, fertile, alluvial loamy soils with good moisture retention. Slightly acidic to neutral pH (5.0-7.5) is optimal. Often grown in floodplains.",
+  "irrigationAndWaterNeeds": "Mainly rain-fed, grown during the monsoon season. Requires abundant water. Supplemental irrigation may be needed if rainfall is erratic or insufficient, especially during early growth stages.",
+  "plantingAndHarvestCycles": "Seeds are sown by broadcasting or line sowing at the beginning of the rainy season (March-May). Plants are harvested when they are in the small-pod stage or late flowering stage (3-4 months after sowing). Stalks are cut close to the ground.",
+  "pestAndDiseaseManagement": "Pests include jute hairy caterpillar, jute semilooper, and stem weevil. Diseases include stem rot, anthracnose, and seedling blight. Integrated pest management involves resistant varieties, crop rotation, proper field sanitation, and chemical control when necessary.",
+  "postHarvestHandling": "Harvested jute stalks are bundled and subjected to retting (soaking in water, typically slow-moving streams or ponds, for 10-30 days) to separate the bast fibers from the woody stem by microbial action. After retting, fibers are stripped from the stalks by hand, washed, dried in the sun, and then graded and baled for transport to mills for spinning and weaving.",
+  "majorProducingCountriesOrRegions": ["India (West Bengal, Bihar, Assam - largest producer)", "Bangladesh (second largest producer, major exporter of raw jute and jute goods)", "China", "Thailand", "Myanmar", "Nepal", "Uzbekistan"],
+  "marketValueAndGlobalDemand": "Jute is a major global fiber crop, known as the 'golden fiber'. Demand is driven by its use in packaging (sacks, bags), textiles (hessian cloth, carpet backing), geotextiles for erosion control, and increasingly for diversified products like paper, composites, and home furnishings. It faces competition from synthetic fibers, but its biodegradable nature is increasing its appeal. Prices are influenced by production in India and Bangladesh and demand from packaging and industrial sectors."
+}

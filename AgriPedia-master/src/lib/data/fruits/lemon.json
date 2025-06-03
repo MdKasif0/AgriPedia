@@ -1,0 +1,209 @@
+{
+  "id": "lemon",
+  "commonName": "Lemon",
+  "scientificName": "Citrus limon",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg",
+  "description": "A species of small evergreen trees in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China. The tree's ellipsoidal yellow fruit is renowned for its acidic juice and fragrant rind, widely used for culinary, cleaning, and traditional medicinal purposes throughout the world.",
+  "origin": "Northeast India, Northern Myanmar, or China (believed to be a hybrid)",
+  "localNames": [
+    "Limón (Spanish)",
+    "Citron (French - note: 'citron' also refers to Citrus medica)",
+    "Zitrone (German)",
+    "Limone (Italian)",
+    "Nimbu (Hindi)"
+  ],
+  "regions": [
+    "India (leading producer)",
+    "Mexico",
+    "China",
+    "Argentina",
+    "Brazil",
+    "Spain",
+    "Turkey",
+    "United States (California, Arizona)",
+    "Italy",
+    "Egypt"
+  ],
+  "seasons": [
+    "Year-round production in many regions due to different varieties and climatic conditions, with peak harvest seasons varying (often late autumn through late spring in Northern Hemisphere)."
+  ],
+  "nutrition": {
+    "calories": "29 kcal per 100g (raw fruit without peel)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.32,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 53,
+        "unit": "mg",
+        "rdi": "59-88%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 138,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Calcium",
+        "value": 26,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that supports the immune system, promotes skin health by aiding collagen production, and improves iron absorption.",
+    "May aid in digestion and relieve indigestion due to its acidity stimulating gastric juices.",
+    "Citric acid content may help prevent the formation of calcium oxalate kidney stones by increasing urine volume and citrate levels.",
+    "Antioxidants in lemons, such as flavonoids (e.g., hesperidin, eriocitrin), can help protect against cell damage from free radicals.",
+    "May contribute to weight management when used as a low-calorie flavoring in water and foods."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Citrus Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Can cause skin irritation (contact dermatitis) or oral allergy syndrome (itching or swelling of mouth, lips, tongue) in sensitive individuals, often due to limonene or other compounds. True allergy is rare but can be more severe."
+    },
+    {
+      "name": "Tooth Enamel Erosion",
+      "severity": "Varies",
+      "details": "The high acidity of lemon juice can erode tooth enamel over time if consumed frequently in undiluted forms or large amounts. Rinsing the mouth with plain water after consumption can help mitigate this."
+    },
+    {
+      "name": "Photosensitivity (from peel oil)",
+      "severity": "Mild",
+      "details": "Lemon peel oil contains furanocoumarins which can cause photosensitivity (increased sun sensitivity) if applied to the skin and exposed to UV light."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, thrives in warm climates but can tolerate cooler temperatures better than other citrus. Needs full sun.\n2. Soil: Well-drained, slightly acidic (pH 6.0-7.0) loamy soil. Good drainage is crucial.\n3. Propagation: Usually by grafting or budding onto rootstock. Can be grown from seed, but may not be true to type and takes longer to fruit.\n4. Planting: Plant in a sunny, sheltered location. Can be grown in containers.\n5. Watering: Regular, deep watering, especially during dry periods and fruit development. Allow soil to dry slightly between waterings.\n6. Fertilizing: Feed regularly with a balanced citrus fertilizer, especially during active growth and fruiting seasons.\n7. Pruning: Prune to shape, remove dead or crossing branches, and improve air circulation.\n8. Harvesting: Lemons can be harvested at various stages of ripeness, often when they reach full size and have a good yellow color (some varieties are picked green). They can often be left on the tree for extended periods.",
+  "growthDuration": "Grafted trees can start bearing fruit in 2-3 years. Lemons often fruit year-round in suitable climates, with peak harvest seasons varying by region and cultivar.",
+  "sustainabilityTips": [
+    "Store lemons at room temperature for about a week, or in the refrigerator (crisper drawer) for several weeks to prolong freshness.",
+    "Use the entire lemon: zest for flavoring in sweet and savory dishes, juice for drinks and cooking. Lemon peels can be candied, used to make oleo-saccharum, or infused in cleaning solutions.",
+    "Freeze lemon juice in ice cube trays for convenient later use in recipes or beverages."
+  ],
+  "carbonFootprintInfo": "Generally moderate (0.4-0.8 kg CO2e/kg), but this depends heavily on origin, transportation methods (sea vs. air freight), and whether they are greenhouse-grown in colder climates.",
+  "uses": [
+    "culinary_juice_flavoring_beverages_lemonade_tea_cocktails_soft_drinks",
+    "culinary_zest_flavoring_baking_desserts_savory_dishes",
+    "culinary_ingredient_dressings_marinades_sauces_hollandaise_curds_pies_cakes_sorbets",
+    "food_preservation_prevents_browning_of_fruits_vegetables_pickling",
+    "garnish_for_dishes_and_drinks",
+    "non_culinary_cleaning_agent_deodorizer_stain_remover",
+    "aromatherapy_essential_oil_for_fragrance_and_mood_enhancement",
+    "traditional_medicine_sore_throat_remedy_digestive_aid",
+    "industrial_source_of_citric_acid_pectin_lemon_oil"
+  ],
+  "originAndDomesticationHistory": "Lemons (Citrus limon) are believed to have originated in Northeast India (Assam region), northern Myanmar, or China. Genetic studies suggest they are a hybrid, likely between bitter orange (Citrus aurantium) and citron (Citrus medica). Lemons were introduced to Europe near southern Italy no later than the second century AD during the Roman era, though they were not widely cultivated then. Their cultivation became more substantial in Persia, Iraq, and Egypt around 700 AD. The first significant cultivation in Europe began in Genoa (Italy) in the mid-15th century. Christopher Columbus introduced lemon seeds to the Americas on his voyages, starting in 1493. Lemons subsequently spread to various parts of the world with suitable climates.",
+  "climaticRequirements": {
+    "temperature": "Lemons thrive in subtropical climates. Ideal growing temperatures range from 20-30°C (68-86°F). While more cold-hardy than limes, they are sensitive to frost, with temperatures below -2°C (28°F) potentially causing damage to fruit and trees, especially young ones. They require full sun for optimal growth and fruit production.",
+    "rainfall": "Prefers moderate annual rainfall, around 750-1250mm, or consistent supplemental irrigation. Good drainage is crucial as lemon trees do not tolerate waterlogged conditions. Periods of drought can affect fruit development and yield.",
+    "altitude": "Typically cultivated from sea level up to about 1200 meters (approx. 4000 feet) in regions with suitable climatic conditions."
+  },
+  "soilPreferences": "Lemon trees prefer well-drained, slightly acidic loamy or sandy loam soils with a pH between 6.0 and 7.0. Good soil aeration is important for root health. They are intolerant of waterlogged or highly saline soils. Soils rich in organic matter are beneficial for growth and productivity.",
+  "irrigationAndWaterNeeds": "Requires regular and deep watering, especially during establishment, dry periods, flowering, and fruit development stages. The soil should be allowed to dry slightly between waterings to prevent root diseases. Drip irrigation or micro-sprinklers are efficient methods for providing consistent moisture. Water stress can lead to fruit drop, reduced fruit size, and lower juice quality.",
+  "plantingAndHarvestCycles": "Lemons are commonly propagated by grafting or budding desired cultivars (such as 'Eureka', 'Lisbon', 'Meyer') onto suitable citrus rootstocks (e.g., rough lemon, Volkamer lemon, citrange), which can influence tree size, disease resistance, and soil adaptability. While they can be grown from seed, the resulting trees may not be true to type and typically take longer to bear fruit. Planting is usually done in the spring after the danger of frost has passed. Grafted trees can begin bearing fruit within 2-3 years of planting. Lemon trees often have multiple fruiting cycles per year in suitable climates, leading to near year-round availability, although there are usually peak harvest seasons (e.g., winter, spring, summer depending on variety and location). Fruits are typically picked by hand when they reach an appropriate size, have a good yellow color (though some varieties like 'Meyer' may be more orange-yellow when ripe), and possess a certain juice content. They can often be left on the tree for some time after ripening, but quality may eventually decline.",
+  "pestAndDiseaseManagement": "Common Pests: Citrus leafminer, aphids, various scale insects (e.g., California red scale, cottony cushion scale), mealybugs, citrus rust mite, spider mites, citrus thrips, and nematodes. Common Diseases: Citrus canker (Xanthomonas citri), citrus greening (Huanglongbing/HLB - a devastating bacterial disease spread by psyllids), Phytophthora root rot and gummosis (foot rot), greasy spot, sooty mold (often associated with sucking pests), Alternaria brown spot, and various viral diseases. Management Strategies: Integrated Pest Management (IPM) is crucial. This includes using certified disease-free nursery stock, selecting resistant rootstocks where applicable (e.g., for Phytophthora), promoting biological control agents, using horticultural oils or insecticidal soaps for soft-bodied pests, proper pruning for good air circulation (which can reduce fungal disease pressure), managing ant populations (as they often protect aphids, mealybugs, and scales), and applying pesticides or fungicides judiciously based on pest/disease monitoring and economic thresholds. Vigilant scouting for HLB is critical in affected regions.",
+  "postHarvestHandling": "After harvesting, lemons are typically washed, sometimes treated with a fungicide, and often waxed to reduce moisture loss and enhance appearance. They are then graded by size, color, and quality. Lemons can be stored for several weeks to a few months under optimal conditions, which usually involve cool temperatures (around 10-13°C or 50-55°F) and high relative humidity (85-90%). Curing, a process of holding lemons at moderate temperatures and high humidity for a period after harvest, can improve peel quality, reduce water loss, and extend shelf life. For long-distance transport, refrigerated containers are used.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading global producer)",
+    "Mexico",
+    "China",
+    "Argentina",
+    "Brazil",
+    "Spain",
+    "Turkey",
+    "United States (primarily California and Arizona)",
+    "Italy",
+    "Egypt",
+    "South Africa"
+  ],
+  "marketValueAndGlobalDemand": "Lemons have a consistently high global demand due to their wide range of culinary, beverage, and household uses. They are a major commodity in international fruit trade. Leading producers include India, Mexico, China, and Argentina. The market value can fluctuate based on seasonal production in different key growing regions, weather events affecting crops, and overall supply and demand dynamics. Lemons are used extensively by the food and beverage industries (for juice, flavorings, pectin, citric acid) and are a staple fresh fruit in households worldwide. Demand for fresh lemons and processed lemon products (like juice and essential oils) remains strong globally.",
+  "staticRecipes": [
+    {
+      "name": "Classic Lemonade",
+      "description": "A refreshing and tangy homemade drink, perfect for a hot day.",
+      "ingredients": [
+        "1 cup freshly squeezed lemon juice (about 4-6 lemons)",
+        "1 cup granulated sugar (or to taste)",
+        "4-5 cups cold water",
+        "Ice cubes",
+        "Lemon slices and mint sprigs for garnish (optional)"
+      ],
+      "steps": [
+        "In a small saucepan, combine sugar and 1 cup of water. Heat over medium heat, stirring, until the sugar is completely dissolved. This is your simple syrup. Let it cool.",
+        "In a large pitcher, combine lemon juice, cooled simple syrup, and the remaining 3-4 cups of cold water. Stir well.",
+        "Taste and adjust sweetness or tartness by adding more sugar/syrup or lemon juice/water as needed.",
+        "Serve over ice, garnished with lemon slices and mint sprigs if desired."
+      ]
+    },
+    {
+      "name": "Lemon Herb Roasted Chicken",
+      "description": "A flavorful and juicy roasted chicken infused with lemon and herbs.",
+      "ingredients": [
+        "1 whole chicken (3-4 lbs)",
+        "1-2 lemons, halved or quartered",
+        "4-5 sprigs fresh rosemary or thyme (or 1-2 tsp dried)",
+        "3-4 cloves garlic, smashed",
+        "2 tbsp olive oil",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "Rinse the chicken inside and out, and pat dry with paper towels.",
+        "Stuff the chicken cavity with half of the lemon pieces, garlic cloves, and herb sprigs.",
+        "Place the chicken in a roasting pan. Rub the outside of the chicken with olive oil. Squeeze the juice of the remaining lemon over the chicken and place the squeezed lemon pieces around/under the chicken.",
+        "Season generously with salt and pepper. Scatter remaining herbs over the chicken.",
+        "Roast for 1 hour to 1 hour 30 minutes, or until the internal temperature reaches 165°F (74°C) in the thickest part of the thigh and juices run clear. Baste occasionally with pan juices.",
+        "Let the chicken rest for 10-15 minutes before carving and serving."
+      ]
+    },
+    {
+      "name": "Simple Lemon Vinaigrette",
+      "description": "A bright and versatile salad dressing.",
+      "ingredients": [
+        "1/4 cup extra virgin olive oil",
+        "2 tbsp freshly squeezed lemon juice",
+        "1 tsp Dijon mustard",
+        "1/2 tsp honey or maple syrup (optional, for sweetness)",
+        "1 small clove garlic, minced (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "In a small bowl or jar, combine olive oil, lemon juice, Dijon mustard, honey/maple syrup (if using), and minced garlic (if using).",
+        "Whisk well or shake the jar vigorously until the dressing is emulsified (thickened and well-combined).",
+        "Season with salt and pepper to taste.",
+        "Use immediately on salads or store in an airtight container in the refrigerator for up to a week."
+      ]
+    }
+  ]
+}

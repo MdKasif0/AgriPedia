@@ -1,0 +1,72 @@
+{
+  "id": "groundnut",
+  "commonName": "Groundnut (Peanut)",
+  "scientificName": "Arachis hypogaea",
+  "image": "https://images.unsplash.com/photo-1572070712002-66f10999afd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The peanut, also known as the groundnut, goober, pindar or monkey nut, is a legume crop grown mainly for its edible seeds. It is widely grown in the tropics and subtropics, being important to both small and large commercial producers. It is classified as both a grain legume and, due to its high oil content, an oil crop.",
+  "origin": "South America (likely Bolivia or bordering regions of Paraguay and Argentina).",
+  "localNames": ["Mungfali (Hindi)", "Rakkasei (Japanese)", "Cacahuete / Maní (Spanish)", "Arachide (French/Italian)"],
+  "regions": ["China", "India", "Nigeria", "United States", "Sudan", "Indonesia", "Argentina", "Myanmar"],
+  "seasons": ["Warm-season annual; typically planted in spring and harvested in late summer or fall."],
+  "nutrition": {
+    "calories": "Raw peanuts: 567 kcal per 100g. Peanut oil: 884 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Peanuts: 25.8" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Peanuts: 16.1 (Fiber 8.5)" },
+      { "name": "Fat", "unit": "g", "value": "Peanuts: 49.2 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "unit": "mg", "rdi": "Peanuts: 12.07 (80%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Peanuts: 240 (60%)" },
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Peanuts: 8.33 (56%)" },
+      { "name": "Thiamin (B1)", "unit": "mg", "rdi": "Peanuts: 0.64 (53%)" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Peanuts: 1.934 (84%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Peanuts: 168 (40%)" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Peanuts: 376 (54%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "Peanuts: 1.144 (127%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich source of protein, healthy fats (monounsaturated and polyunsaturated), and fiber.",
+    "Good source of niacin, folate, vitamin E, and manganese.",
+    "May help lower bad cholesterol levels and reduce the risk of heart disease.",
+    "Contains resveratrol, an antioxidant also found in red wine.",
+    "Peanut oil is a stable cooking oil."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Peanut Allergy",
+      "severity": "Can be Severe",
+      "details": "Peanut allergy is one of the most common and severe food allergies, potentially causing life-threatening anaphylaxis. Strict avoidance is necessary for allergic individuals. Cross-contamination is a significant concern."
+    },
+    {
+      "name": "Aflatoxin Contamination",
+      "severity": "Varies (Chronic exposure is harmful)",
+      "details": "Peanuts can be contaminated by Aspergillus flavus, a mold that produces aflatoxins, which are carcinogenic. Proper drying and storage are crucial to prevent mold growth."
+    }
+  ],
+  "cultivationProcess": "Groundnuts are grown from seeds (shelled peanuts). The plant flowers above ground, but the pods develop underground (geocarpy). It requires well-drained soil and a long, warm growing season.",
+  "growthDuration": "Approximately 120-160 days from planting to harvest, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "As a legume, it fixes atmospheric nitrogen, reducing the need for nitrogen fertilizers and improving soil fertility.",
+    "Can be used in crop rotation systems.",
+    "Drought-tolerant varieties are available, but yields are better with adequate moisture."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of peanuts is influenced by farming practices, processing (shelling, roasting, oil extraction), and transportation. Its nitrogen-fixing ability can reduce fertilizer-related emissions compared to non-legume crops.",
+  "uses": ["oil_production_seeds_for_cooking_oil_margarine", "food_seeds_roasted_boiled_peanut_butter_snacks_confectionery", "animal_feed_hay_seed_meal_shells", "industrial_uses_cosmetics_soap_lubricants"],
+  "originAndDomesticationHistory": "The cultivated peanut (Arachis hypogaea) originated in South America, with archaeological evidence suggesting domestication in Peru or Bolivia at least 7,500 years ago. It was spread by indigenous peoples throughout South and Central America and later introduced to Europe by Spanish explorers, and then to Africa and Asia.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 25-30°C. Requires a frost-free period of at least 120 days. Soil temperature should be above 18°C for good germination.",
+    "rainfall": "Requires moderate rainfall, around 500-1000mm during the growing season, well-distributed. Sensitive to drought during flowering and pod formation.",
+    "altitude": "Typically grown in lowland and mid-altitude regions, from sea level up to 1500m."
+  },
+  "soilPreferences": "Prefers well-drained, light-textured sandy loam or loamy soils with good aeration and a slightly acidic to neutral pH (5.5-7.0). Requires adequate calcium for proper pod filling.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during flowering, pegging (when the flower stalk elongates and enters the soil), and pod development. Irrigation is often necessary for optimal yields, particularly in sandy soils or during dry spells.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring when soil temperatures are favorable. Plants flower, and then pegs (gynophores) grow downwards into the soil where pods develop. Harvesting involves digging up the entire plant, inverting it to allow pods to dry in the sun for a few days, and then threshing to separate pods from the plant.",
+  "pestAndDiseaseManagement": "Pests include aphids, thrips, leafminers, termites, and various soil pests like nematodes and wireworms. Diseases include early and late leaf spot, rust, Sclerotium rot (southern blight), and Aspergillus crown rot (which can lead to aflatoxin contamination). Integrated pest management involves resistant varieties, crop rotation, proper field sanitation, and chemical controls when necessary.",
+  "postHarvestHandling": "Harvested pods are dried to a moisture content of 8-10% for safe storage. They are then typically shelled for various uses (oil extraction, food products). Proper drying and storage are crucial to prevent mold growth and aflatoxin contamination.",
+  "majorProducingCountriesOrRegions": ["China (largest producer)", "India", "Nigeria", "United States (Georgia, Alabama, Florida, Texas)", "Sudan", "Indonesia", "Argentina", "Myanmar", "Senegal"],
+  "marketValueAndGlobalDemand": "Peanuts and peanut oil are major agricultural commodities with high global demand. Peanuts are consumed worldwide as snacks, in confectionery, and as peanut butter. Peanut oil is a popular cooking oil. The meal remaining after oil extraction is a valuable animal feed. Demand is driven by food, feed, and oil industries."
+}

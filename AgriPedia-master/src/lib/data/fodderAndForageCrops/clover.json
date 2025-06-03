@@ -1,0 +1,77 @@
+{
+  "id": "clover",
+  "commonName": "Clover",
+  "scientificName": "Trifolium spp. (e.g., Trifolium pratense - Red Clover, Trifolium repens - White Clover)",
+  "image": "https://images.unsplash.com/photo-1558310029-a49a0c6e0393?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Clover or trefoil are common names for plants of the genus Trifolium (Latin, tres 'three' + folium 'leaf'), consisting of about 300 species of flowering plants in the legume or pea family Fabaceae. They are widely cultivated as fodder plants for livestock, for their ability to fix nitrogen and improve soil fertility, and as ornamental plants. White clover and red clover are the most common cultivated species for forage.",
+  "origin": "Europe, North Africa, and West Asia. Many species are now naturalized worldwide.",
+  "localNames": ["Tipatiya Ghas (Hindi)", "Kuroba / Tsumekusa (Japanese)", "Trébol (Spanish)", "Trèfle (French)"],
+  "regions": ["Worldwide in temperate and subtropical regions. Major cultivation in United States, Canada, Europe (UK, France, Germany, Ireland), New Zealand, Australia, Argentina, Chile."],
+  "seasons": ["Perennial or annual, depending on species and climate. Typically planted in spring or late summer. Harvested or grazed multiple times during the growing season."],
+  "nutrition": {
+    "calories": "Fresh Clover: ~40-70 kcal per 100g (varies by species and stage). Hay: ~200-250 kcal per 100g (dry matter).",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Fresh: ~15-25 (dry matter); highly digestible" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Fresh: ~40-50 (dry matter, includes sugars and fiber)" },
+      { "name": "Fat", "unit": "g", "value": "Fresh: ~2-4 (dry matter)" },
+      { "name": "Fiber", "unit": "g", "value": "Fresh: ~20-30 (NDF/ADF significant)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A (as beta-carotene)", "unit": "IU", "rdi": "Fresh: High" },
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Fresh: Moderate" },
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Fresh: High" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "unit": "%", "rdi": "Fresh: ~1.0-1.5 (dry matter)" },
+      { "name": "Phosphorus", "unit": "%", "rdi": "Fresh: ~0.2-0.4 (dry matter)" },
+      { "name": "Potassium", "unit": "%", "rdi": "Fresh: ~2.0-3.5 (dry matter)" },
+      { "name": "Magnesium", "unit": "%", "rdi": "Fresh: ~0.2-0.4 (dry matter)" }
+    ]
+  },
+  "healthBenefits": [
+    "High-quality forage for livestock, rich in protein, vitamins, and minerals.",
+    "Improves soil fertility through nitrogen fixation, benefiting pasture systems and reducing fertilizer needs.",
+    "Enhances pasture biodiversity and palatability for grazing animals.",
+    "Red clover contains isoflavones (phytoestrogens), which have been studied for potential human health benefits (e.g., menopause symptoms), though this is separate from its forage use."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Bloat (in ruminant livestock)",
+      "severity": "Moderate to Severe for animals",
+      "details": "Grazing pure stands of lush clover, especially white clover, can cause frothy bloat in ruminants. Often sown in mixtures with grasses to reduce this risk."
+    },
+    {
+      "name": "Phytoestrogens (in some clovers like Red Clover)",
+      "severity": "Low to Moderate for animals",
+      "details": "High intake of certain clovers rich in phytoestrogens (e.g., formononetin in red clover) can sometimes affect fertility in breeding livestock, particularly sheep. Specific cultivars with lower estrogen content are available."
+    },
+    {
+      "name": "Photosensitization (rare, specific conditions)",
+      "severity": "Mild to Moderate for animals",
+      "details": "Under certain conditions (e.g., fungal infection on alsike clover), photosensitization can occur in livestock."
+    }
+  ],
+  "cultivationProcess": "Clover is typically grown from seeds, often sown as part of a grass-legume pasture mix. It prefers well-drained soil and adequate moisture. It can be grazed directly by livestock or harvested for hay or silage.",
+  "growthDuration": "Perennial or annual. Establishes in the first year. Can be productive for 2-5 years (perennials like white and red clover) or longer, depending on species, management, and climate.",
+  "sustainabilityTips": [
+    "Key component of sustainable pastoral farming due to nitrogen fixation, reducing need for synthetic N fertilizers.",
+    "Improves soil structure and organic matter content.",
+    "Supports pollinators (bees are attracted to clover flowers) and beneficial insects.",
+    "Reduces soil erosion when used as a cover crop or in pasture mixes."
+  ],
+  "carbonFootprintInfo": "Clover cultivation has a generally positive environmental profile due to nitrogen fixation (reducing N fertilizer emissions) and potential for soil carbon sequestration in well-managed pastures. Its role in sustainable livestock systems can lower the overall footprint of animal agriculture.",
+  "uses": ["animal_feed_pasture_grazing_hay_silage_haylage_for_cattle_sheep_goats_horses", "cover_crop_green_manure_soil_improvement_nitrogen_fixation", "pollinator_forage_honey_production", "lawn_alternative_microclover_in_grass_seed_mixes", "traditional_medicine_red_clover_flowers_for_various_ailments"],
+  "originAndDomesticationHistory": "Clover species are native to temperate and subtropical regions of the Northern Hemisphere and South America. White clover (Trifolium repens) and red clover (Trifolium pratense) originated in Europe, North Africa, and West Asia. They have been recognized and utilized for their soil-improving properties and as valuable forage for livestock for centuries, spreading globally with European agriculture.",
+  "climaticRequirements": {
+    "temperature": "Temperate and cool-season legumes. Optimal growing temperatures are 15-25°C. Different species have varying tolerance to heat and cold. White clover is generally more tolerant of grazing and cooler conditions; red clover prefers slightly warmer conditions.",
+    "rainfall": "Requires moderate and consistent rainfall, typically 700-1200mm annually, or irrigation. Good soil moisture is essential for establishment and productivity. Some species have moderate drought tolerance.",
+    "altitude": "Adaptable to various altitudes, from sea level to mountainous regions, depending on the species."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy soils with good organic matter content. Optimal pH varies by species (e.g., white clover 6.0-7.0, red clover 5.5-7.0). Requires adequate levels of phosphorus, potassium, and sulfur.",
+  "irrigationAndWaterNeeds": "Irrigation is beneficial in drier regions or during periods of drought to maintain productivity, especially for hay and silage production. Pastures often rely on natural rainfall.",
+  "plantingAndHarvestCycles": "Seeds are sown in spring or late summer/early autumn, often mixed with grasses. Can be grazed multiple times during the growing season. For hay or silage, typically harvested at early to mid-bloom stage for optimal quality and yield. Multiple cuts per year are common for red clover; white clover is more suited to grazing.",
+  "pestAndDiseaseManagement": "Pests include clover root weevil, aphids, slugs, and nematodes. Diseases include Sclerotinia crown and stem rot, powdery mildew, rust, and various viral and fungal leaf spots. Management involves resistant varieties, crop rotation, proper grazing management, and sometimes pesticides/fungicides in severe outbreaks.",
+  "postHarvestHandling": "For hay, cut clover is wilted and dried in the field to appropriate moisture content before baling. Care is needed as clover leaves can shatter easily when dry. For silage, it's wilted to a higher moisture content and then chopped and fermented in anaerobic conditions. Often mixed with grasses for better ensiling.",
+  "majorProducingCountriesOrRegions": ["United States", "Canada", "European Union (France, Germany, UK, Ireland, Denmark)", "New Zealand", "Australia", "Argentina", "Chile", "Russia", "Widely grown in temperate pastoral regions globally"],
+  "marketValueAndGlobalDemand": "Clover is a foundational forage legume in temperate livestock systems worldwide. Demand for clover seed is consistently high for pasture establishment and renovation. While not traded as a bulk commodity like grain, its value is implicit in livestock products (milk, meat) derived from clover-based forage. There is also a market for certified seed of improved varieties and for red clover extracts for supplements."
+}

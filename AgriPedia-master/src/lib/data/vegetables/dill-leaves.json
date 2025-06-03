@@ -1,0 +1,216 @@
+{
+  "id": "dill-leaves",
+  "commonName": "Dill Leaves (Dill Weed / Suva)",
+  "scientificName": "Anethum graveolens",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Anethum_graveolens_close-up.jpg/800px-Anethum_graveolens_close-up.jpg",
+  "description": "An annual herb in the celery family Apiaceae, and the sole species in the genus Anethum. Dill is grown widely in Eurasia and North America, where its feathery leaves (dill weed) and small, flat, oval seeds (dill seed) are used as a herb or spice for flavoring food. Dill leaves have a distinct, delicate, slightly sweet, and tangy flavor reminiscent of anise and parsley.",
+  "origin": "Southwest Asia or Southeast Europe (Mediterranean region, Southern Russia).",
+  "localNames": [
+    "Dill Weed (English - referring to leaves)",
+    "Suva Bhaji (सोआ भाजी / सुवा भाजी - Hindi)",
+    "Sowa / Shepu (शेपू - Marathi)",
+    "Sathakuppai (சதகுப்பி - Tamil)",
+    "Eneldo (Spanish)",
+    "Aneth (French)",
+    "Dill / Gurkenkraut (German - 'cucumber herb')",
+    "Aneta (Italian)"
+  ],
+  "regions": [
+    "India (significant cultivation for leaves and seeds)",
+    "Europe (Scandinavia, Germany, Poland, Eastern Europe)",
+    "Russia",
+    "United States (California, Pacific Northwest)",
+    "Canada",
+    "Egypt",
+    "Iran and other Middle Eastern countries",
+    "China"
+  ],
+  "seasons": [
+    "Primarily a cool-season herb, best grown in Spring and early Summer, or in Autumn in warmer climates. Prone to bolting in hot summer weather. Seeds mature in summer."
+  ],
+  "nutrition": {
+    "calories": "43 kcal per 100g (fresh leaves)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 3.46,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.02,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.12,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 85,
+        "unit": "mg",
+        "rdi": "94-142%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids like beta-carotene and lutein+zeaxanthin)",
+        "value": 386,
+        "unit": "µg RAE",
+        "rdi": "43-55%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 150,
+        "unit": "µg",
+        "rdi": "38%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 1.264,
+        "unit": "mg",
+        "rdi": "55-63%"
+      },
+      {
+        "name": "Iron",
+        "value": 6.59,
+        "unit": "mg",
+        "rdi": "37-82%"
+      },
+      {
+        "name": "Calcium",
+        "value": 208,
+        "unit": "mg",
+        "rdi": "16-21%"
+      },
+      {
+        "name": "Potassium",
+        "value": 738,
+        "unit": "mg",
+        "rdi": "16-21%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that supports the immune system.",
+    "Rich in Vitamin A (from carotenoids), crucial for good vision, skin health, and immune function.",
+    "Very good source of manganese, an essential mineral involved in enzyme function, bone health, and antioxidant defense.",
+    "Provides significant amounts of iron, important for oxygen transport and preventing anemia.",
+    "Contains antioxidants like monoterpenes (e.g., carvone, limonene) and flavonoids (e.g., quercetin, kaempferol), which may have anti-inflammatory and other health-protective effects.",
+    "Traditionally used as a carminative to aid digestion, relieve flatulence, soothe colic in babies (as dill water made from seeds), and freshen breath."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Dill Allergy / Apiaceae Family Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "Allergies to dill are uncommon but can occur, particularly in individuals who are sensitive to other plants in the Apiaceae (parsley/carrot) family, such as celery, carrot, fennel, or caraway. Symptoms can include oral allergy syndrome, skin rashes, or digestive upset."
+    }
+  ],
+  "cultivationProcess": "Dill is a cool-season annual herb, though it can tolerate some warmth before bolting. It is best grown from seeds sown directly in well-drained, fertile soil in spring or fall. Dill has a long taproot and does not transplant well. It prefers full sun but can tolerate light shade in very hot climates. Consistent moisture is needed, especially during germination and active growth. Leaves (dill weed) are harvested when plants are established. For dill seed (spice), plants are allowed to flower and form seed heads, which are harvested when brown and dry. Details in specific sections.",
+  "growthDuration": "Fresh leaves (dill weed) are typically ready for first harvest approximately 6-8 weeks (40-60 days) from sowing. Dill seeds mature about 90-120 days after sowing, when the flower heads have turned brown and the seeds are beginning to dry.",
+  "sustainabilityTips": [
+    "Store fresh dill sprigs with their stems placed in a glass of water in the refrigerator, loosely covered with a plastic bag; they can last for 1-2 weeks this way. Alternatively, wrap in a damp paper towel and place in a resealable plastic bag in the crisper drawer.",
+    "Dill leaves can be finely chopped and frozen in ice cube trays with a small amount of water or olive oil for longer-term storage, preserving much of their flavor for cooked dishes.",
+    "Dried dill weed loses some of its delicate flavor but is still useful as a herb. Dill seeds have a stronger, more pungent flavor profile and store well when dried.",
+    "Dill readily self-seeds in the garden if some flower heads are left to mature, providing a continuous supply in subsequent seasons."
+  ],
+  "carbonFootprintInfo": "Very low, especially when home-grown or sourced locally (estimated 0.1-0.3 kg CO2e/kg for fresh leaves). Dried dill seeds also have a low footprint due to their long shelf life and light weight for transport. Long-distance transport of fresh dill, especially by air, would increase its impact.",
+  "uses": [
+    "culinary_fresh_leaves_dill_weed_flavoring_fish_salmon_herring_seafood_sauces_dill_sauce_tartar_sauce_dressings_ranch_vinaigrettes_salads_potato_salad_cucumber_salad_soups_borscht_stews_egg_dishes_vegetables_potatoes_carrots_beans_pickles_dill_pickles_garnish",
+    "culinary_dried_seeds_dill_seed_spice_whole_or_ground_flavoring_pickling_brines_breads_stews_sauerkraut_spice_blends_vinegars",
+    "culinary_flowers_edible_flowers_used_as_garnish_or_in_pickling_for_flavor_and_appearance",
+    "medicinal_traditional_carminative_to_relieve_gas_digestive_aid_colic_in_babies_dill_water_bad_breath_mild_sedative",
+    "essential_oil_extracted_from_seeds_or_leaves_and_stems_used_in_food_flavoring_soaps_perfumery_aromatherapy"
+  ],
+  "originAndDomesticationHistory": "Dill (Anethum graveolens) is native to a region spanning from Southwest Asia to Southeast Europe, possibly including the Mediterranean area and Southern Russia. It has been cultivated and used by humans for thousands of years. Evidence of its use dates back to ancient Egypt (mentioned in medical texts like the Ebers Papyrus around 1550 BCE), where it was used for medicinal purposes and as a flavoring. The ancient Greeks and Romans also valued dill for its culinary and medicinal properties; it was considered a symbol of wealth by some. Dill spread throughout Europe during the Middle Ages, where it was used in cooking and traditional medicine, and was later introduced to North America by European settlers. Both its leaves (dill weed) and seeds (dill seed) have distinct culinary applications.",
+  "climaticRequirements": {
+    "temperature": "Dill is primarily a cool-season annual herb, but it can tolerate some warmth. Optimal temperatures for growth are generally between 16°C and 24°C (60°F to 75°F). It is prone to bolting (prematurely flowering and setting seed) in very hot summer weather, especially when temperatures consistently exceed 27-30°C (80-86°F), which reduces leaf production. While it can withstand light frosts, hard freezes will kill the plant.",
+    "rainfall": "Requires moderate and consistent moisture throughout its growing season, preferring around 600mm to 800mm of rainfall or equivalent irrigation. The soil should be kept consistently moist, but not waterlogged, especially during seed germination and active vegetative growth for leaf production. For seed production, somewhat drier conditions are preferred during seed maturation and drying.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes where suitable temperature and moisture conditions are met."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 5.5 and 7.0, is best for dill cultivation. Good soil aeration is important. While it can tolerate a range of soil types, very heavy clay soils with poor drainage should be avoided.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent soil moisture, especially during seed germination (which can be slow, taking 10-21 days) and during periods of active vegetative growth for leaf (dill weed) production. The soil should be kept evenly moist but not saturated. Water stress can lead to reduced leaf yield and may encourage premature bolting. Drip irrigation or light overhead watering (preferably in the morning to allow foliage to dry) is suitable. For dill seed production, irrigation is typically reduced or stopped as the seeds begin to mature and dry on the plant.",
+  "plantingAndHarvestCycles": "Dill is propagated from seeds. Since dill has a long taproot and does not transplant well, direct sowing in the garden bed is generally recommended. Seeds can be sown in early spring as soon as the soil can be worked (after the last danger of heavy frost) or in early autumn for a fall or winter crop in milder climates. Successive sowings every 2-3 weeks can ensure a continuous supply of fresh leaves. For dill weed (leaf) production, harvesting can begin when the plants are about 6-8 inches tall, typically 6-8 weeks (40-60 days) after sowing. Outer leaves can be snipped off as needed, or entire young stalks can be cut. Regular harvesting of leaves encourages bushier growth and can delay bolting. If grown for dill seeds, the plants are allowed to flower and form seed heads. The seed heads are typically harvested when they turn brown and the seeds are mature but before they begin to shatter from the plant; this is usually about 90-120 days after sowing. The harvested seed heads are then further dried and threshed to separate the seeds.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids can sometimes infest dill plants, particularly young growth, and can transmit viruses. Parsley caterpillars (larvae of the black swallowtail butterfly) may feed on dill foliage, but are often not numerous enough to cause significant damage and are prized by butterfly gardeners. Spider mites can be an issue in hot, dry conditions. Common Diseases: Dill is generally quite hardy and not prone to many serious diseases. Damping-off can affect seedlings if the soil is too cool and wet. Leaf spot diseases or powdery mildew may occasionally occur, especially in humid conditions with poor air circulation, but are usually not severe. Management Strategies: Attracting beneficial insects (such as ladybugs and lacewings, which prey on aphids) can help manage pest populations. Hand-picking caterpillars if necessary (or leaving them for butterflies). Ensuring good soil drainage and proper plant spacing to promote air circulation can help prevent fungal diseases. Avoiding overwatering is also important. Chemical controls are rarely needed for dill grown in home gardens.",
+  "postHarvestHandling": "Fresh Leaves (Dill Weed): Dill weed is highly perishable and wilts quickly after harvest. For short-term storage (up to 1-2 weeks), place the fresh sprigs with their stems in a jar containing about an inch of water, cover loosely with a plastic bag, and store in the refrigerator. Alternatively, wrap the unwashed dill in a damp paper towel and then place it inside a resealable plastic bag in the crisper drawer of the refrigerator. For longer-term storage, dill leaves can be finely chopped and frozen in ice cube trays with a small amount of water or olive oil; once frozen, the cubes can be transferred to freezer bags. Dill can also be air-dried or dried in a dehydrator, although drying results in a significant loss of its characteristic fresh flavor and aroma; dried dill weed is best used in cooked dishes where its flavor can rehydrate and infuse. Dried Dill Seeds: After harvesting, seed heads should be thoroughly dried (e.g., by hanging them upside down in paper bags in a warm, dry, airy place until seeds fall off). Once fully dry, the seeds should be cleaned of any chaff and stored in an airtight container in a cool, dark, dry place to preserve their flavor and viability, where they can last for a year or more.",
+  "majorProducingCountriesOrRegions": [
+    "India (a major producer of dill seeds and fresh dill weed)",
+    "Egypt (significant producer of dill seeds)",
+    "Russia and other Eastern European countries (e.g., Poland, Hungary - dill is widely used in cuisine)",
+    "Germany and Scandinavian countries (dill is a key herb)",
+    "United States (California, Pacific Northwest - for fresh market and seed production)",
+    "Canada (for seeds)",
+    "Iran and other Middle Eastern countries",
+    "China"
+  ],
+  "marketValueAndGlobalDemand": "Fresh dill weed (leaves) is a popular herb in many cuisines worldwide, with steady demand in supermarkets, farmers' markets, and for the food service industry. Dried dill weed is also commonly available but is generally considered to have a less intense and different flavor profile compared to fresh dill. Dill seeds are a widely traded spice, essential for pickling (especially dill pickles), bread making, and as an ingredient in various spice blends. India and Egypt are among the leading exporters of dill seeds. The market value for both fresh dill weed and dill seeds is generally moderate and stable, influenced by seasonal availability for fresh produce and global spice market dynamics for seeds. There is also a market for dill essential oil, used in food flavoring and aromatherapy.",
+  "staticRecipes": [
+    {
+      "name": "Dill and Lemon Baked Salmon",
+      "description": "A simple and elegant dish where salmon is baked with fresh dill and lemon.",
+      "ingredients": [
+        "2 salmon fillets (about 6 oz each)",
+        "1 tbsp olive oil",
+        "1/4 cup chopped fresh dill",
+        "1 lemon, thinly sliced",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.",
+        "Place salmon fillets on the prepared baking sheet. Brush with olive oil.",
+        "Season salmon with salt and pepper. Sprinkle generously with chopped fresh dill.",
+        "Arrange lemon slices on top of and around the salmon fillets.",
+        "Bake for 12-15 minutes, or until salmon is cooked through and flakes easily with a fork.",
+        "Serve immediately, garnished with extra fresh dill if desired."
+      ]
+    },
+    {
+      "name": "Creamy Dill Potato Salad",
+      "description": "A classic potato salad with a creamy dressing flavored with fresh dill.",
+      "ingredients": [
+        "2 lbs potatoes (e.g., Yukon Gold or red potatoes), peeled and cubed",
+        "1/2 cup mayonnaise",
+        "1/4 cup sour cream or Greek yogurt",
+        "2 tbsp chopped fresh dill",
+        "1 tbsp Dijon mustard",
+        "1 tbsp white wine vinegar or lemon juice",
+        "1/4 cup finely chopped red onion or celery (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Place cubed potatoes in a large pot and cover with cold, salted water. Bring to a boil, then reduce heat and simmer for 10-15 minutes, or until tender but not mushy. Drain well and let cool slightly.",
+        "In a large bowl, whisk together mayonnaise, sour cream/yogurt, chopped dill, Dijon mustard, and vinegar/lemon juice.",
+        "Add the cooled potatoes and chopped red onion/celery (if using) to the dressing. Gently toss to coat.",
+        "Season with salt and pepper to taste.",
+        "Cover and refrigerate for at least 30 minutes to allow flavors to meld. Serve chilled or at room temperature."
+      ]
+    },
+    {
+      "name": "Suva Moong Dal (Dill Leaves with Yellow Lentils)",
+      "description": "A light and aromatic Indian lentil dish flavored with fresh dill leaves.",
+      "ingredients": [
+        "1/2 cup moong dal (split yellow lentils), rinsed",
+        "1 cup chopped fresh dill leaves (suva bhaji)",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp ghee or oil, 1/2 tsp cumin seeds, 1-2 dried red chilies, broken, pinch of asafoetida (hing), 1-2 cloves garlic (chopped, optional)"
+      ],
+      "steps": [
+        "Pressure cook rinsed moong dal with 1.5 cups water, turmeric powder, and a little salt for 2-3 whistles or until soft. Mash lightly if preferred.",
+        "In a separate pan for tempering, heat ghee/oil. Add cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Sauté until garlic is lightly golden.",
+        "Add chopped dill leaves to the tempering and sauté for 1-2 minutes until wilted.",
+        "Pour the cooked dal into the pan with the dill mixture. Add salt to taste (if more is needed). Mix well.",
+        "Simmer for 5-7 minutes, allowing flavors to blend. Adjust consistency with water if the dal is too thick.",
+        "Serve hot with rice or roti."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "tamarind",
+  "commonName": "Tamarind",
+  "scientificName": "Tamarindus indica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tamarind.jpg/800px-Tamarind.jpg",
+  "description": "A leguminous tree in the family Fabaceae, indigenous to tropical Africa. It bears edible pod-like fruit which contains a sweet, tangy, and acidic pulp. This pulp is a widely used ingredient in cuisines around the world, particularly in tropical and subtropical regions.",
+  "origin": "Tropical Africa (likely originating in Sudan or Madagascar)",
+  "localNames": [
+    "Imli (इमली - Hindi, Urdu)",
+    "Tamarindo (Spanish, Portuguese, Filipino)",
+    "Tamarin (French)",
+    "Asam Jawa (Malay, Indonesian - 'Javanese sour fruit')",
+    "Ma-kham (มะขาม - Thai)",
+    "Me Chua (Vietnamese)",
+    "Puli (புளி - Tamil)",
+    "Chintapandu (చింతపండు - Telugu)"
+  ],
+  "regions": [
+    "India (world's largest producer)",
+    "Thailand (major producer and exporter)",
+    "Mexico (widely cultivated and consumed)",
+    "Costa Rica",
+    "Other tropical regions worldwide including Southeast Asia, Africa, Caribbean, Central and South America."
+  ],
+  "seasons": [
+    "Pods typically mature in late winter to spring (e.g., January to April in India). Dried pulp/paste available year-round."
+  ],
+  "nutrition": {
+    "calories": "239 kcal per 100g (raw pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 62.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.428,
+        "unit": "mg",
+        "rdi": "36-43%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.938,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.152,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 3.5,
+        "unit": "mg",
+        "rdi": "4-6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 628,
+        "unit": "mg",
+        "rdi": "13-18%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 92,
+        "unit": "mg",
+        "rdi": "22-31%"
+      },
+      {
+        "name": "Iron",
+        "value": 2.8,
+        "unit": "mg",
+        "rdi": "16-35%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 113,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Calcium",
+        "value": 74,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in tartaric acid, a potent natural antioxidant that helps protect the body from free radical damage.",
+    "Traditionally used as a natural laxative due to its dietary fiber content, aiding digestion and relieving constipation.",
+    "Contains essential minerals like iron (important for preventing anemia), magnesium (for muscle and nerve function), and potassium (for blood pressure regulation).",
+    "May help lower cholesterol levels and improve heart health due to its fiber and polyphenol content.",
+    "The pulp has been used in traditional medicine for its cooling properties, and to treat fevers, sore throats, and inflammation."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Tamarind Allergy",
+      "severity": "Rare, Mild",
+      "details": "Allergies to tamarind are uncommon but can occur in sensitive individuals, potentially causing skin rashes or itching. Due to its acidity, excessive consumption might aggravate acid reflux in some people."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in areas with hot, dry weather, especially during fruit development. Drought-resistant once established.\n2. Soil: Grows in a wide variety of soils but prefers deep, well-drained loamy soil. Tolerates slightly acidic to alkaline conditions.\n3. Propagation: Primarily by seeds, which remain viable for months if kept dry. Seedlings are relatively true to type. Grafting or air layering can be used for superior types or earlier fruiting.\n4. Planting: Plant in full sun. Trees can grow very large and live for many decades, so provide ample space.\n5. Watering: Young trees need regular watering for establishment. Mature trees are highly drought-tolerant and often require little to no irrigation in areas with adequate seasonal rainfall.\n6. Harvesting: Pods are harvested when they turn brown and brittle. The pulp is then extracted from the pods by shelling and removing fibrous strands.",
+  "growthDuration": "Seedling trees may take 6-12 years to bear significant fruit, while vegetatively propagated trees can start in 3-4 years. Fruits (pods) ripen in late winter to spring, about 8-12 months after flowering.",
+  "sustainabilityTips": [
+    "Tamarind pulp is often sold as a compressed paste or block, which has a very long shelf life, reducing spoilage and food waste.",
+    "It is a key souring agent in many cuisines, offering a natural alternative to vinegar or lemon juice.",
+    "Tamarind trees are hardy, long-lived, and can thrive in arid conditions with minimal inputs, making them a sustainable crop for certain environments. They also provide good shade."
+  ],
+  "carbonFootprintInfo": "Moderate, as it's often transported in processed forms (paste, block) which are dense and have a long shelf life, allowing for sea freight. Estimated 0.5-1.0 kg CO2e/kg for processed pulp. Locally sourced tamarind has a lower footprint.",
+  "uses": [
+    "culinary_souring_agent_pulp_paste_in_curries_dals_soups_stews_rasam_sambar_sauces_worcestershire_sauce_hp_sauce_chutneys_pad_thai",
+    "beverages_tamarind_juice_agua_de_tamarindo_tamarind_coolers_flavoring_for_soft_drinks_lassi",
+    "snacks_candies_tamarind_candy_sweet_sour_spicy_tamarind_balls_fruit_leather",
+    "seeds_roasted_or_boiled_eaten_ground_into_flour_tamarind_seed_powder_thickener_stabilizer_textile_sizing_seed_oil",
+    "leaves_flowers_young_leaves_and_flowers_edible_used_in_salads_curries_soups_in_some_cuisines",
+    "medicinal_traditional_pulp_leaves_bark_for_digestive_aid_laxative_fever_sore_throat_anti_inflammatory_antiseptic",
+    "timber_wood_is_hard_durable_dense_used_for_furniture_tool_handles_turnery_fuelwood_charcoal",
+    "other_metal_polish_pulp_for_brass_copper_fodder_leaves_for_livestock_host_for_lac_insect_in_some_areas"
+  ],
+  "originAndDomesticationHistory": "Tamarind (Tamarindus indica) is native to tropical Africa, with its likely center of origin in Sudan or Madagascar. It was introduced to India thousands of years ago, where it became thoroughly naturalized and a cornerstone ingredient in its cuisine and traditional medicine. From India, its cultivation and use spread to Persia (modern-day Iran), Arabia, and subsequently to Southeast Asian countries like Thailand, Malaysia, and Indonesia. Spanish and Portuguese explorers introduced tamarind to the Americas (Mexico, Caribbean islands, and parts of South America) in the 16th century, where it also became widely cultivated and has naturalized in many areas. It has a long history of human use and is valued for its versatile pulp, timber, and medicinal properties.",
+  "climaticRequirements": {
+    "temperature": "Tamarind trees thrive in tropical and subtropical climates characterized by hot, dry weather, especially during the period of fruit development and ripening. Optimal temperatures for growth generally range from 20°C to 35°C (68°F to 95°F). Mature trees can tolerate very high temperatures (up to 45-48°C or 113-118°F) and are also capable of withstanding brief periods of light frost, but young trees are frost-sensitive.",
+    "rainfall": "Tamarind is highly drought-tolerant once established, making it well-suited to arid and semi-arid regions. It prefers an annual rainfall of 500mm to 1500mm but can survive in areas with lower rainfall if it has access to groundwater. A well-defined dry season is generally beneficial for optimal fruiting.",
+    "altitude": "Commonly cultivated in lowland tropical and subtropical regions, typically from sea level up to about 1000-1500 meters (approximately 3300-4900 feet)."
+  },
+  "soilPreferences": "Tamarind trees are adaptable to a wide range of soil types, including poor or infertile soils, lateritic soils, sandy loams, and even heavy clays, provided they are well-drained. They prefer deep, loamy soils with good moisture retention but excellent drainage. The tree can tolerate slightly acidic to alkaline soil conditions, with an optimal pH range generally between 5.5 and 8.5.",
+  "irrigationAndWaterNeeds": "Young tamarind trees require regular watering to ensure proper establishment, especially during the first few years. Once mature, trees are highly drought-tolerant due to their extensive and deep root system and generally do not require irrigation in areas with adequate seasonal rainfall. However, in very arid regions or for enhancing commercial fruit production, supplemental irrigation during the fruit development stage can be beneficial for improving pod size and pulp content.",
+  "plantingAndHarvestCycles": "Tamarind is commonly propagated from seeds, which remain viable for several months if kept dry. Seedlings are relatively true to type, although there can be some variation. For cultivating specific varieties with superior pod or pulp characteristics and for earlier fruit bearing, vegetative propagation methods such as grafting (e.g., approach grafting), budding, or air layering are used. Planting is usually done at the beginning of the rainy season. Tamarind trees are slow-growing but very long-lived. Seedling trees may take 6-12 years to start bearing significant fruit, while vegetatively propagated trees can begin fruiting within 3-4 years. The trees typically flower in the spring or early summer, with the specific timing varying by region. The fruit pods take a long time to mature, generally about 8-12 months after flowering. Pods are ready for harvest when they turn a dull brown color and the shell becomes brittle, usually in the late winter to spring months (e.g., January to April in India). Harvesting is done by hand-picking the mature pods directly from the tree or by shaking the branches and collecting the pods that fall onto sheets spread beneath the tree.",
+  "pestAndDiseaseManagement": "Tamarind trees are generally quite hardy and relatively resistant to major pests and diseases, especially when mature. Potential Pests: Tamarind seed borer (Sitophilus linearis or Caryedon serratus) can infest stored seeds and sometimes developing pods. Scale insects, mealybugs, fruit borers, and termites can occasionally cause issues. Storage pests can be a problem for dried tamarind pulp if not stored correctly. Potential Diseases: Leaf spot, powdery mildew, sooty mold (often associated with sucking pests), stem canker, and root rot (in poorly drained or waterlogged soils) may occur but are usually not severe. Management Strategies: Due to its hardiness, tamarind often requires minimal specific pest or disease control measures. Maintaining good orchard sanitation, including removal of fallen debris, can help. Proper pruning to ensure good air circulation can reduce the incidence of fungal diseases. Ensuring adequate soil drainage is crucial to prevent root rot. For stored products, proper drying and storage in airtight containers are important to prevent insect infestation and mold.",
+  "postHarvestHandling": "After harvesting the mature pods, the brittle outer shell is cracked open to extract the pulp, which surrounds the seeds and is held together by fibrous strands. This pulp is then typically separated from the seeds and fibers (a process called 'deseeding' and 'defibering'). The resulting sticky, dark brown pulp is often compressed into blocks or processed into a more refined paste or concentrate by mixing with a small amount of water, heating, and straining. Dried tamarind pulp, either in block form or as a paste, has a very long shelf life if stored properly in a cool, dry place, away from moisture and pests. The seeds can also be separated, washed, roasted, or boiled, and then processed into tamarind seed powder or used for oil extraction.",
+  "majorProducingCountriesOrRegions": [
+    "India (world's largest producer and consumer)",
+    "Thailand (major producer and exporter of processed tamarind products)",
+    "Mexico (widely cultivated and a key ingredient in its cuisine and beverages)",
+    "Costa Rica",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Vietnam",
+    "Myanmar",
+    "Various other tropical countries in Asia, Africa, and Latin America."
+  ],
+  "marketValueAndGlobalDemand": "Tamarind is a major commercial commodity, primarily valued for its versatile pulp, which is extensively used as a souring agent and flavor enhancer in cuisines across South and Southeast Asia, Latin America, the Caribbean, and parts of Africa. India and Thailand are leading global producers and exporters of tamarind and its products. There is high and consistent demand for tamarind pulp, paste, and concentrate in international markets, particularly for use in ethnic foods, sauces (like Worcestershire sauce and some BBQ sauces), beverages, and confectionery. Tamarind seed powder, which contains pectin, is also gaining importance as a natural thickener, stabilizer, and gelling agent in the food industry, as well as for sizing in the textile industry. The market value for tamarind products is generally stable, driven by its widespread culinary and industrial applications.",
+  "staticRecipes": [
+    {
+      "name": "Tamarind Paste/Pulp from Block",
+      "description": "How to make tamarind paste from a block of tamarind pulp for use in cooking.",
+      "ingredients": [
+        "1 block of tamarind pulp (about 200g)",
+        "1.5 - 2 cups hot water"
+      ],
+      "steps": [
+        "Break the tamarind block into smaller pieces and place it in a heatproof bowl.",
+        "Pour hot (not boiling) water over the tamarind pieces, just enough to cover them. Let it soak for 20-30 minutes, or until the pulp softens.",
+        "Once softened, use your fingers (clean hands!) or a sturdy spoon to mash the pulp thoroughly in the water. Squeeze the pulp to release its essence into the water. The water will turn brown and thick.",
+        "Strain the mixture through a fine-mesh sieve into another bowl. Press down firmly on the solids in the sieve with the back of a spoon to extract as much thick pulp as possible.",
+        "Discard the seeds and fibrous material left in the sieve.",
+        "The resulting thick liquid is tamarind paste/pulp. It can be stored in an airtight container in the refrigerator for a few weeks or frozen for longer storage."
+      ]
+    },
+    {
+      "name": "Tamarind Chutney (Imli Chutney)",
+      "description": "A sweet and tangy Indian chutney, perfect with snacks like samosas or chaat.",
+      "ingredients": [
+        "1/2 cup tamarind paste (see recipe above, or store-bought)",
+        "1 cup water",
+        "1/2 cup jaggery or brown sugar, grated or powdered",
+        "1/2 tsp roasted cumin powder",
+        "1/4 tsp red chili powder (optional)",
+        "1/4 tsp ginger powder (saunth)",
+        "Black salt (kala namak) to taste",
+        "Pinch of asafoetida (hing, optional)"
+      ],
+      "steps": [
+        "In a saucepan, combine tamarind paste and 1 cup of water. Bring to a simmer and cook for 5-7 minutes, stirring occasionally.",
+        "Add jaggery/brown sugar and continue to cook, stirring, until it dissolves completely.",
+        "Stir in roasted cumin powder, red chili powder (if using), ginger powder, and black salt.",
+        "If using asafoetida, you can temper it in a tiny bit of hot oil and add to the chutney for extra flavor (optional).",
+        "Simmer the chutney for another 5-10 minutes, or until it thickens to your desired consistency. It will thicken more as it cools.",
+        "Let the chutney cool completely. Store in an airtight container in the refrigerator. It lasts for several weeks."
+      ]
+    },
+    {
+      "name": "Tamarind Rice (Pulihora/Puliyogare - Simplified)",
+      "description": "A tangy and flavorful South Indian rice dish.",
+      "ingredients": [
+        "1 cup cooked rice, cooled",
+        "2-3 tbsp tamarind paste",
+        "For tempering: 1 tbsp oil, 1 tsp mustard seeds, 1 tsp chana dal (split chickpeas), 1 tsp urad dal (split black lentils), 2-3 dried red chilies (broken), a few curry leaves, 1/4 tsp asafoetida (hing)",
+        "2 tbsp peanuts or cashews",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "Optional: 1 tbsp jaggery (for a hint of sweetness)"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds; when they splutter, add chana dal, urad dal, and peanuts/cashews. Sauté until dals turn golden and nuts are roasted.",
+        "Add dried red chilies, curry leaves, and asafoetida. Sauté for a few seconds.",
+        "Add tamarind paste and turmeric powder. Cook for 2-3 minutes, stirring, until the raw smell of tamarind disappears. If it's too thick, add a little water.",
+        "Add salt and jaggery (if using). Mix well.",
+        "Add the cooked rice to the pan. Gently mix everything together until the rice is well coated with the tamarind mixture.",
+        "Cook for another 2-3 minutes, stirring gently. Serve warm or at room temperature."
+      ]
+    }
+  ]
+}

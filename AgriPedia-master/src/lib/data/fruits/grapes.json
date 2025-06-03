@@ -1,0 +1,162 @@
+{
+  "id": "grapes",
+  "commonName": "Grapes",
+  "scientificName": "Vitis vinifera",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wine_grapes03.jpg",
+  "description": "A fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis.",
+  "origin": "Near East",
+  "localNames": [
+    "Uva (Spanish)",
+    "Raisin (French - refers to grape, not dried)",
+    "Traube (German)"
+  ],
+  "regions": [
+    "China",
+    "Italy",
+    "United States",
+    "Spain",
+    "France"
+  ],
+  "seasons": [
+    "Summer",
+    "Autumn"
+  ],
+  "nutrition": {
+    "calories": "69 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 14.6,
+        "unit": "µg",
+        "rdi": "18%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 3.2,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 191,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contain antioxidants, including resveratrol (especially in red grapes).",
+    "May support heart health.",
+    "Can benefit eye health.",
+    "May help regulate blood sugar levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Grape Allergy",
+      "severity": "Rare",
+      "details": "Uncommon, but can occur."
+    }
+  ],
+  "cultivationProcess": "Grapes grow on vines, typically trained on trellises. They require full sun, well-drained soil, and pruning to manage growth and fruit production. Different varieties have different climate needs.",
+  "growthDuration": "Vines take 2-4 years to produce a good crop. Fruit ripens in late summer to autumn.",
+  "sustainabilityTips": [
+    "Store unwashed in the refrigerator.",
+    "Choose organic grapes to avoid pesticide residues, as they are often on the 'Dirty Dozen' list.",
+    "Freeze grapes for a cool snack."
+  ],
+  "carbonFootprintInfo": "Footprint depends on origin and transport (0.6-1.2 kg CO2e/kg). Locally grown grapes in season are more sustainable.",
+  "uses": ["culinary_fresh_eating_table_grapes", "wine_production", "juice_production", "dried_raisins_currants_sultanas", "jams_jellies_preserves", "grape_seed_oil_extract"],
+  "originAndDomesticationHistory": "Grapes (Vitis vinifera) originated in the Near East, specifically in the region between the Black Sea and Iran (Caucasus region, Anatolia, Mesopotamia). Domestication began around 6,000-8,000 years ago, primarily for winemaking. Ancient civilizations like the Egyptians, Greeks, and Romans extensively cultivated grapes and refined winemaking techniques. Grapes spread throughout Europe and later to other parts of the world with European exploration and colonization.",
+  "climaticRequirements": {
+    "temperature": "Temperate climates; optimal 15-25°C during growing season. Requires sufficient chilling hours for bud break. Frost sensitive during spring growth.",
+    "rainfall": "Requires 600-800mm annually, or irrigation. Dry weather during ripening is preferred for quality. Good air circulation is important.",
+    "altitude": "Can be grown from sea level to over 1000m, depending on variety and microclimate."
+  },
+  "soilPreferences": "Well-drained, deep loamy or gravelly soils. Tolerates a range of soil types, including calcareous soils. Prefers slightly acidic to neutral pH (6.0-7.5).",
+  "irrigationAndWaterNeeds": "Irrigation is crucial in many regions, especially in drier climates or sandy soils. Water needs are highest during vine growth and early fruit development. Regulated deficit irrigation is sometimes used to improve fruit quality for wine grapes.",
+  "plantingAndHarvestCycles": "Propagated from cuttings, grafting, or layering. Planted in late winter or early spring. Vines are trained on trellises or other support systems. Pruning is essential for managing growth and fruit production. Vines typically start bearing a significant crop in 2-4 years. Grapes are harvested in late summer to autumn, depending on variety and ripeness (sugar levels, acidity). Hand-picked for table grapes and high-quality wine; mechanical harvesting for some wine grapes and raisins.",
+  "pestAndDiseaseManagement": "Common pests include grape phylloxera (root louse), grape berry moth, leafhoppers, and spider mites. Major diseases are downy mildew, powdery mildew, Botrytis bunch rot (grey mold), and various trunk diseases. Integrated Pest Management (IPM) involves resistant rootstocks (for phylloxera), canopy management, biological controls, and targeted fungicide/insecticide applications.",
+  "postHarvestHandling": "Table grapes require careful handling to prevent bruising and decay. Often field-packed and cooled rapidly (pre-cooling). Stored at low temperatures (around 0°C) and high humidity. Wine grapes are transported to the winery quickly after harvest for crushing and fermentation. Grapes for raisins are typically sun-dried or mechanically dried.",
+  "majorProducingCountriesOrRegions": ["China", "Italy", "United States (California)", "Spain", "France", "Turkey", "India", "Chile", "Argentina", "South Africa"],
+  "marketValueAndGlobalDemand": "Grapes are a major global fruit crop with high economic importance. Demand is strong for fresh table grapes, wine (a multi-billion dollar industry), raisins, and grape juice. International trade is extensive for all grape products. Quality, variety, and origin significantly influence market value.",
+  "staticRecipes": [
+    {
+      "name": "Chicken Salad with Grapes",
+      "description": "A classic creamy chicken salad with the sweet burst of fresh grapes.",
+      "ingredients": [
+        "2 cups cooked chicken, shredded or diced",
+        "1/2 cup halved seedless grapes (red or green)",
+        "1/4 cup chopped celery",
+        "1/4 cup chopped pecans or walnuts (optional)",
+        "1/2 cup mayonnaise",
+        "1 tbsp lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "In a medium bowl, combine shredded chicken, grapes, celery, and nuts (if using).",
+        "In a small bowl, mix together mayonnaise, lemon juice, salt, and pepper.",
+        "Add the mayonnaise mixture to the chicken mixture and stir until well combined.",
+        "Serve on lettuce leaves, in sandwiches, or with crackers."
+      ]
+    },
+    {
+      "name": "Roasted Grapes with Rosemary",
+      "description": "A simple yet elegant side dish or appetizer, bringing out the sweetness of grapes.",
+      "ingredients": [
+        "2 cups seedless grapes (red or black recommended)",
+        "1 tbsp olive oil",
+        "1 sprig fresh rosemary, chopped (or 1/2 tsp dried)",
+        "Pinch of salt",
+        "Pinch of black pepper"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a bowl, toss grapes with olive oil, chopped rosemary, salt, and pepper.",
+        "Spread grapes in a single layer on a baking sheet.",
+        "Roast for 15-20 minutes, or until grapes are slightly softened and beginning to caramelize.",
+        "Serve warm as a side, with cheese, or on crostini."
+      ]
+    },
+    {
+      "name": "Grape and Feta Salad",
+      "description": "A refreshing salad combining sweet grapes, salty feta, and crisp greens.",
+      "ingredients": [
+        "4 cups mixed greens (spinach, arugula, etc.)",
+        "1 cup halved seedless grapes",
+        "1/2 cup crumbled feta cheese",
+        "1/4 cup toasted slivered almonds",
+        "For dressing: 3 tbsp olive oil, 1 tbsp red wine vinegar, 1 tsp Dijon mustard, salt and pepper to taste"
+      ],
+      "steps": [
+        "In a large salad bowl, combine mixed greens, grapes, feta cheese, and toasted almonds.",
+        "In a small bowl, whisk together olive oil, red wine vinegar, Dijon mustard, salt, and pepper.",
+        "Drizzle dressing over the salad and toss gently to combine.",
+        "Serve immediately."
+      ]
+    }
+  ]
+}

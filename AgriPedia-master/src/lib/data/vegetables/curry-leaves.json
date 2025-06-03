@@ -1,0 +1,193 @@
+{
+  "id": "curry-leaves",
+  "commonName": "Curry Leaves (Kadi Patta)",
+  "scientificName": "Bergera koenigii (syn. Murraya koenigii)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Curry_leaves_on_display.jpg/800px-Curry_leaves_on_display.jpg",
+  "description": "Curry leaves are the highly aromatic leaves of the curry tree (Bergera koenigii), a tropical to subtropical tree in the family Rutaceae (citrus family). They are a staple herb in South Indian, Sri Lankan, and various Southeast Asian cuisines, prized for their unique, pungent, slightly bitter, and citrusy flavor and aroma, especially when fresh. They are typically used at the beginning of cooking, often fried in hot oil (tempering/tadka) to release their characteristic essence into a dish.",
+  "origin": "Indian subcontinent (India, Sri Lanka, Bangladesh, Nepal) and possibly parts of Southeast Asia.",
+  "localNames": [
+    "Kadi Patta / Kari Patta (करी पत्ता / कड़ी पत्ता - Hindi)",
+    "Karuveppilai (கறிவேப்பிலை - Tamil)",
+    "Karivepaku (కరివేపాకు - Telugu)",
+    "Limda / Meetho Limdo (Gujarati)",
+    "Karapincha (කරපිංචා - Sinhalese)",
+    "Daun Kari (Malay/Indonesian)",
+    "Sweet Neem Leaves (English - misnomer, not related to neem)"
+  ],
+  "regions": [
+    "India (widely cultivated and used across all states, especially Southern and Western regions)",
+    "Sri Lanka",
+    "Malaysia",
+    "Singapore",
+    "Thailand",
+    "Bangladesh",
+    "Myanmar",
+    "Pakistan",
+    "Nepal",
+    "Widely cultivated in tropical and subtropical regions worldwide by diaspora communities and for culinary export, including parts of Australia, Africa, the Caribbean, and the Americas (Florida, California, Texas)."
+  ],
+  "seasons": [
+    "Available year-round from trees in tropical and subtropical climates. Leaves can be harvested as needed once the plant is well-established. Peak availability often coincides with warmer, wetter months promoting lush growth."
+  ],
+  "nutrition": {
+    "calories": "Approximately 108 kcal per 100g (fresh leaves - note: typically used in small quantities as a flavoring)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 6.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 6.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (as carotenoids, esp. beta-carotene)",
+        "value": 600,
+        "unit": "µg RAE (Retinol Activity Equivalents)",
+        "rdi": "67-75%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 4,
+        "unit": "mg",
+        "rdi": "4-7%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": "Significant amounts",
+        "unit": ""
+      },
+      {
+        "name": "Vitamin B complex (Thiamin, Riboflavin, Niacin, B6)",
+        "value": "Present in moderate amounts",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 830,
+        "unit": "mg",
+        "rdi": "64-83%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 57,
+        "unit": "mg",
+        "rdi": "5-8%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.93,
+        "unit": "mg",
+        "rdi": "5-12%"
+      },
+      {
+        "name": "Magnesium",
+        "value": "Significant amounts",
+        "unit": ""
+      },
+      {
+        "name": "Copper",
+        "value": "Present",
+        "unit": ""
+      },
+      {
+        "name": "Zinc",
+        "value": "Present",
+        "unit": ""
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich source of Vitamin A (from carotenoids), essential for good vision, immune function, and skin health.",
+    "Excellent source of calcium, crucial for bone health, muscle function, and various physiological processes.",
+    "Traditionally used in Ayurvedic medicine to aid digestion, manage diabetes (believed to have hypoglycemic properties), improve liver function, and for their antioxidant and anti-inflammatory effects due to various bioactive compounds like carbazole alkaloids (e.g., mahanimbine), flavonoids, and tannins.",
+    "May help in reducing nausea and morning sickness.",
+    "Used as a hair tonic in traditional practices, believed to promote hair growth and prevent premature graying."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Contact Dermatitis (rare)",
+      "severity": "Rare, Mild",
+      "details": "Handling the plant or its sap may cause skin irritation or contact dermatitis in highly sensitive individuals. Allergic reactions to consuming cooked curry leaves are very rare, as they are typically used in small quantities as a flavoring."
+    }
+  ],
+  "cultivationProcess": "Curry leaf trees are tropical to subtropical small trees or shrubs. They can be propagated from seeds (though germination can be slow and somewhat erratic), root suckers (which arise freely from the base of established plants), or semi-hardwood stem cuttings. They thrive in well-drained soil, prefer full sun to partial shade (more sun for better leaf production), and require regular watering, especially when young and during dry periods. Once established, they are relatively hardy and can tolerate some drought. Leaves can be harvested as needed throughout the year by picking fresh sprigs or individual leaves. Regular light harvesting encourages bushier growth.",
+  "growthDuration": "Plants grown from seeds may take 1-2 years to become well-established enough for regular harvesting. Vegetatively propagated plants (from suckers or cuttings) can lead to faster establishment. Mature plants provide a continuous supply of fresh leaves throughout the year in suitable climates.",
+  "sustainabilityTips": [
+    "Growing a curry leaf plant in a pot (can be brought indoors in winter in cooler climates) or in the garden (in suitable climates) is highly sustainable, providing a constant supply of fresh leaves and eliminating the need for packaged or transported herbs.",
+    "Fresh curry leaves offer the best and most intense flavor; they can also be air-dried (though they lose some of their characteristic aroma and color) or frozen (which retains flavor better than drying) for longer storage, thus reducing waste.",
+    "The plant is relatively pest-resistant and often grown with minimal chemical inputs."
+  ],
+  "carbonFootprintInfo": "Fresh curry leaves picked from a home garden or sourced locally have a negligible carbon footprint. Commercially packaged curry leaves, especially those transported long distances (sometimes internationally from India or Southeast Asia to Western markets) or requiring refrigeration, will have a higher environmental impact. Dried leaves are lighter and more stable for transport, potentially having a lower footprint per unit of flavoring power if shipped by sea.",
+  "uses": [
+    "culinary_herb_fresh_leaves_essential_flavoring_in_tempering_tadka_chaunk_for_curries_dals_sambar_rasam_soups_stews_rice_dishes_lemon_rice_upma_poha_snacks_chutneys_pickles",
+    "medicinal_traditional_ayurveda_siddha_leaves_bark_roots_used_for_digestive_ailments_indigestion_diarrhea_dysentery_diabetes_management_skin_diseases_anti_inflammatory_antioxidant_hair_tonic_anemia",
+    "essential_oil_extracted_from_leaves_used_in_aromatherapy_perfumery_soap_making_traditional_medicine",
+    "ornamental_plant_grown_as_a_garden_shrub_or_small_tree_for_its_aromatic_leaves_and_attractive_appearance",
+    "religious_cultural_used_in_some_religious_ceremonies_and_offerings_in_hinduism"
+  ],
+  "originAndDomesticationHistory": "The curry leaf tree (Bergera koenigii, syn. Murraya koenigii) is native to the Indian subcontinent, including India, Sri Lanka, Bangladesh, and Nepal, and possibly extends to parts of Southeast Asia. It has been cultivated and used in India for thousands of years, both for its distinctive culinary flavor and for its wide range of medicinal properties, which are well-documented in ancient Tamil literature and Ayurvedic texts. The use of curry leaves spread with Indian culinary traditions and diaspora communities to other tropical and subtropical regions worldwide, including Southeast Asia (Malaysia, Thailand, Singapore), parts of Africa, the Caribbean, and more recently to Australia and the Americas. It is a common fixture in home gardens throughout South India and Sri Lanka.",
+  "climaticRequirements": {
+    "temperature": "Curry leaf trees are best suited for tropical and subtropical climates. They thrive in warm, humid conditions with optimal temperatures ranging from 20°C to 30°C (68°F to 86°F). While established trees can tolerate very mild and brief cold spells, they are generally sensitive to frost, which can damage or kill young plants. Consistent warmth promotes lush leaf growth.",
+    "rainfall": "Prefers moderate to high annual rainfall, typically between 1000mm and 2000mm, ideally well-distributed. However, established plants can exhibit considerable drought tolerance. For optimal leaf production, consistent moisture is beneficial, especially during periods of active growth.",
+    "altitude": "Commonly cultivated in lowland tropical and subtropical regions, typically from sea level up to about 1500 meters (approximately 4900 feet)."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, generally between 6.0 and 7.0, is ideal. However, curry leaf trees are adaptable and can tolerate a range of soil types, including sandy or slightly alkaline soils, provided there is good drainage. They do not thrive in heavy clay soils or waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Young curry leaf plants require regular and consistent watering to ensure proper establishment. Mature, established trees are relatively drought-tolerant but will benefit from supplemental irrigation during prolonged dry spells or periods of active growth to maintain lush foliage and continuous leaf production. Overwatering or constantly saturated soil should be avoided, as this can lead to root rot.",
+  "plantingAndHarvestCycles": "Curry leaf is commonly propagated from seeds, which should ideally be sown fresh as their viability can decrease over time (germination can be slow and erratic, taking several weeks to months). It can also be propagated vegetatively from root suckers (which arise freely from the base of established plants) or semi-hardwood stem cuttings, which often results in faster establishment. Planting is usually done at the beginning of the rainy season. Once the plant is well-established (typically from the second year onwards for seedlings, or earlier for vegetatively propagated plants), leaves can be harvested as needed throughout the year. For a more substantial harvest, sprigs or branches can be cut. Regular light harvesting or pruning encourages bushier growth and more leaf production. Major harvesting for commercial purposes may be done 2-3 times a year. The plant also produces small, black, edible (though not widely consumed) berries after flowering.",
+  "pestAndDiseaseManagement": "Pests: Curry leaf plants are generally quite hardy and not severely affected by many pests. However, they can occasionally be infested by scale insects, mealybugs, aphids, and psyllids (which can cause leaf curling or galls). Citrus butterfly larvae (Papilio demoleus) may sometimes feed on the leaves. Diseases: Fungal leaf spot diseases (e.g., caused by Cercospora or Colletotrichum) can occur, particularly during periods of high humidity or if there is poor air circulation. Root rot can be an issue if the soil is poorly drained or overwatered. Management Strategies: Generally, minimal pest control is required. Ensuring good air circulation through proper pruning can help prevent fungal diseases. Controlling ant populations, as they often protect scale insects and mealybugs from natural predators. For severe infestations, insecticidal soaps or neem oil can be used. Diseased leaves or branches should be pruned and removed.",
+  "postHarvestHandling": "Fresh curry leaves are highly aromatic and offer the best flavor. After harvesting (usually by picking sprigs or individual leaves), they can be stored in the refrigerator for about 1-2 weeks. To prolong freshness, they can be placed with their stems in a jar of water (like fresh herbs), loosely covered with a plastic bag, or wrapped in a damp paper towel and then placed in a sealed plastic bag in the crisper drawer. For longer-term storage, curry leaves can be air-dried (though they lose a significant portion of their characteristic aroma and color upon drying) or frozen. Freezing, either on the sprig or as individual leaves in freezer bags, retains the flavor much better than drying and is a preferred method for preservation if fresh leaves are not regularly available. Dried leaves are often sold commercially but are considered inferior in flavor to fresh or frozen ones.",
+  "majorProducingCountriesOrRegions": [
+    "India (largest producer and consumer, grown extensively in home gardens and commercially)",
+    "Sri Lanka",
+    "Malaysia",
+    "Singapore",
+    "Thailand",
+    "Bangladesh",
+    "Myanmar",
+    "Pakistan",
+    "Nepal",
+    "Also cultivated by diaspora communities and in specialty farms in Australia, parts of Africa, the Caribbean, and the United States (Florida, California, Texas, Hawaii) for local markets and personal use."
+  ],
+  "marketValueAndGlobalDemand": "Curry leaves are an essential and highly valued ingredient in South Indian and Sri Lankan cuisines, with very strong and consistent demand in these regions and among their diaspora communities worldwide. They are primarily sold fresh in bunches in local markets, grocery stores, and ethnic food stores. Dried curry leaves are also available but are generally considered to have a much milder and less complex flavor compared to fresh leaves. Due to the increasing popularity of authentic South Asian cuisine globally, the demand for fresh curry leaves is growing in international markets, leading to increased cultivation in various tropical and subtropical countries outside of their native range to supply this demand. The market value for fresh leaves can vary based on seasonality (though often available year-round from tree sources) and import logistics.",
+  "staticRecipes": [
+    {
+      "name": "Basic South Indian Tempering (Tadka/Thaalithal)",
+      "description": "A fundamental flavoring technique in South Indian cooking where spices, including fresh curry leaves, are briefly fried in oil or ghee to release their aromas before being added to a dish like dal, sambar, chutney, or vegetable stir-fries.",
+      "ingredients": [
+        "1 tablespoon cooking oil (e.g., coconut oil, sesame oil, or vegetable oil) or ghee",
+        "1/2 teaspoon black mustard seeds (rai)",
+        "1/2 teaspoon urad dal (split black gram lentils, optional)",
+        "1-2 dried red chilies, broken into pieces (optional, for heat)",
+        "1 sprig (about 10-15) fresh curry leaves",
+        "A pinch of asafoetida (hing) (optional)"
+      ],
+      "steps": [
+        "Ensure all ingredients are prepped and within reach, as tempering is a quick process.",
+        "Heat the oil or ghee in a small pan (often a special tadka pan) over medium-high heat until it's hot but not smoking.",
+        "Add the black mustard seeds to the hot oil. Wait for them to splutter and pop, which usually takes a few seconds. Be cautious as they can jump out of the pan.",
+        "If using, add the urad dal and dried red chilies next. Fry for a few seconds, stirring, until the dal turns a light golden brown. Do not let it burn.",
+        "Carefully add the fresh curry leaves to the pan (they may spatter if there's any moisture on them). Add the asafoetida if using.",
+        "Stir and fry for another 5-10 seconds until the curry leaves become crisp and very aromatic.",
+        "Immediately pour the entire tempering mixture (the oil along with all the spices) over your prepared dish (e.g., dal, sambar, chutney, upma, poha, or a vegetable sabzi).",
+        "Often, the dish is then covered for a minute to allow the flavors to infuse before stirring it in or serving."
+      ]
+    }
+  ]
+}

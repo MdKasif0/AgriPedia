@@ -1,0 +1,65 @@
+{
+  "id": "silage_maize",
+  "commonName": "Silage Maize (Corn Silage)",
+  "scientificName": "Zea mays",
+  "image": "https://images.unsplash.com/photo-1551754477-B93e69995673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Silage maize, also known as corn silage, is produced from the entire maize plant (stalks, leaves, ears, and grain) which is harvested while still green and then fermented. This process, called ensiling, preserves the maize as a high-moisture, high-energy forage for livestock, particularly dairy and beef cattle. It is a crucial component of animal feed in many agricultural systems due to its high yield and nutritional value.",
+  "origin": "Mesoamerica (specifically modern-day Mexico).",
+  "localNames": ["Makka (Hindi)", "Tomorokoshi (Japanese)", "Maíz (Spanish)", "Maïs (French)"],
+  "regions": ["United States", "China", "Brazil", "Argentina", "India"],
+  "seasons": ["Typically planted in spring and harvested in late summer or fall, depending on the climate and variety."],
+  "nutrition": {
+    "calories": "Maize Silage: ~200-250 kcal per kg of dry matter (varies with grain content and fermentation quality). Energy density is a key parameter.",
+    "macronutrients": [
+      { "name": "Protein", "value": "~7-9 (dry matter %)", "unit": "g" },
+      { "name": "Carbohydrates", "value": "~60-70 (dry matter %, primarily starch and fiber)", "unit": "g" },
+      { "name": "Fat", "value": "~2-3 (dry matter %)", "unit": "g" },
+      { "name": "Fiber", "value": "~35-45 (NDF, dry matter %)", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A (as beta-carotene)", "value": "Moderate, preserved by ensiling", "unit": "IU", "rdi": "" },
+      { "name": "Vitamin E", "value": "Moderate, some loss during ensiling", "unit": "mg", "rdi": "" }
+    ],
+    "minerals": [
+      { "name": "Phosphorus", "value": "~0.2-0.3 (dry matter %)", "unit": "g" },
+      { "name": "Calcium", "value": "~0.2-0.4 (dry matter %)", "unit": "g" },
+      { "name": "Potassium", "value": "~1.0-1.5 (dry matter %)", "unit": "g" }
+    ]
+  },
+  "healthBenefits": [
+    "Provides high-energy forage for ruminant livestock, supporting milk production and growth.",
+    "Good source of digestible fiber, promoting rumen health.",
+    "Ensiling process can improve digestibility of some components.",
+    "Allows for preservation of a large quantity of forage for year-round feeding."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Corn Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "An allergic reaction to proteins in corn. Symptoms can range from skin rashes and digestive issues to anaphylaxis in rare cases. Corn derivatives are common in processed foods, which can make avoidance challenging for allergic individuals."
+    }
+  ],
+  "cultivationProcess": "Silage maize cultivation involves selecting specific hybrids known for high biomass yield and digestibility. Planting density is often higher than for grain corn. Adequate nitrogen fertilization is crucial. The entire plant is harvested at the optimal stage of maturity for ensiling.",
+  "growthDuration": "Typically 90-120 days from planting to harvest for silage, depending on the hybrid and growing conditions. Harvested when kernels are at the milk line to early dent stage (whole plant moisture content ~60-70%).",
+  "sustainabilityTips": [
+    "Conservation tillage or no-till farming can reduce soil erosion.",
+    "Cover cropping after silage harvest helps protect soil and reduce nutrient runoff.",
+    "Efficient nitrogen management and manure application can optimize nutrient use.",
+    "Proper ensiling techniques minimize spoilage and nutrient loss."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of maize silage is influenced by nitrogen fertilizer use, machinery operations for planting, harvesting, and chopping, and methane emissions during ensiling if not properly managed. However, it's a highly efficient way to produce digestible energy per hectare for livestock.",
+  "uses": ["animal_feed_silage_for_dairy_cattle_beef_cattle_other_ruminants", "biofuel_feedstock_for_anaerobic_digestion_biogas_production"],
+  "originAndDomesticationHistory": "Maize (Zea mays) was domesticated in Mesoamerica. The practice of ensiling entire cereal plants, including maize, for animal feed developed in Europe in the 19th century and became widespread with the advent of silo technology. Specific maize hybrids have been developed for optimal silage yield and quality.",
+  "climaticRequirements": {
+    "temperature": "Optimal daytime temperature 20-30°C; sensitive to frost.",
+    "rainfall": "500-1000mm during the growing season, or irrigation. Requires good moisture during tasseling and silking.",
+    "altitude": "Can be grown from sea level to over 3000m, but most commercial production is in lowland and mid-altitude regions."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils with good organic matter content. Optimal pH range is 5.8-7.0. Requires high nutrient availability, especially nitrogen.",
+  "irrigationAndWaterNeeds": "Water needs are critical during germination, tasseling, silking, and early grain fill stages. While it can be rain-fed, supplemental irrigation is common in many regions to ensure optimal yields, especially in drier climates.",
+  "plantingAndHarvestCycles": "Planted in spring when soil temperatures are suitable. Seeds are sown 4-5 cm deep. The entire plant is harvested for silage when kernels reach the milk line to early dent stage (typically R3-R5 stage), ensuring optimal moisture content (60-70%) and nutrient quality. Forage harvesters are used to chop the plants into small pieces.",
+  "pestAndDiseaseManagement": "Pests and diseases are similar to grain corn (e.g., corn borers, rootworms, leaf blights, stalk rots). Resistant hybrids and IPM strategies are important. Mycotoxin contamination (e.g., from Fusarium) can be a concern in silage if plants are stressed or damaged.",
+  "postHarvestHandling": "Chopped maize plants are tightly packed into silos (tower, bunker, bag, or pile) to exclude air. This anaerobic environment allows lactic acid bacteria to ferment sugars into lactic acid, which preserves the forage and lowers pH. Proper packing and sealing are crucial for good quality silage and minimizing spoilage. Silage is typically ready to feed after several weeks of fermentation.",
+  "majorProducingCountriesOrRegions": ["United States (major silage producer for dairy/beef)", "European Union (Germany, France, Netherlands)", "Canada", "Brazil", "Argentina", "Australia", "New Zealand", "China", "Widely grown in dairy and beef producing regions globally"],
+  "marketValueAndGlobalDemand": "Maize silage is a cornerstone of forage production for the dairy and beef industries in many parts of the world due to its high energy content and digestibility. While not traded internationally like grain, its on-farm value and contribution to livestock production are immense. Demand is driven by the livestock sector's need for high-quality, cost-effective forage."
+}

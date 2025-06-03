@@ -1,0 +1,63 @@
+{
+  "id": "chamomile",
+  "commonName": "Chamomile",
+  "scientificName": "Matricaria chamomilla (German Chamomile) / Chamaemelum nobile (Roman Chamomile)",
+  "image": "https://images.unsplash.com/photo-1590005023065-175311ff5d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Chamomile is the common name for several daisy-like plants of the family Asteraceae. Two of the species, Matricaria chamomilla (German chamomile) and Chamaemelum nobile (Roman chamomile), are commonly used to make herbal infusions for traditional medicine. It is popular for its calming properties and is often consumed as a tea.",
+  "origin": "Europe and Asia (German Chamomile); Western Europe and North Africa (Roman Chamomile).",
+  "localNames": ["Babuna (Hindi)", "Kamitsure (Japanese)", "Manzanilla (Spanish)", "Camomille (French)"],
+  "regions": ["Egypt", "Germany", "Hungary", "Poland", "Argentina", "United States", "United Kingdom", "France"],
+  "seasons": ["Annual (German Chamomile); Perennial (Roman Chamomile). Flowers typically bloom in late spring and summer and are harvested then."],
+  "nutrition": {
+    "calories": "Primarily consumed as tea; dried flowers have approx. 1-2 kcal per 2g serving for tea.",
+    "macronutrients": [
+      { "name": "Protein", "value": "Trace in tea", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Trace in tea", "unit": "g" },
+      { "name": "Fat", "value": "Trace in tea", "unit": "g" },
+      { "name": "Fiber", "value": "Trace in tea", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A", "value": "Small amounts in flowers", "unit": "IU", "rdi": "" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": "Small amounts in flowers", "unit": "mg", "rdi": "" },
+      { "name": "Potassium", "value": "Small amounts in flowers", "unit": "mg", "rdi": "" }
+    ]
+  },
+  "healthBenefits": [
+    "Known for its calming and relaxing properties, often used to promote sleep and reduce anxiety.",
+    "May aid digestion and soothe stomach upset.",
+    "Has anti-inflammatory and antioxidant properties, primarily from compounds like apigenin.",
+    "Used topically to soothe skin irritation and promote wound healing.",
+    "May help relieve cold symptoms when inhaled as steam."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Asteraceae/Compositae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to plants in the Asteraceae family (e.g., ragweed, daisies, chrysanthemums, marigolds) may experience allergic reactions to chamomile. Symptoms can include skin rash, allergic rhinitis, or (rarely) anaphylaxis."
+    }
+  ],
+  "cultivationProcess": "Chamomile is grown from seeds. German chamomile is an annual that self-seeds readily. Roman chamomile is a perennial often used as a ground cover. Both prefer well-drained soil and full sun to light shade. Flowers are harvested when fully open.",
+  "growthDuration": "German Chamomile: approx. 60-90 days from seed to flower harvest. Roman Chamomile: perennial, flowers in its first year and subsequent years.",
+  "sustainabilityTips": [
+    "Attracts beneficial insects like hoverflies and predatory wasps.",
+    "Can be grown with minimal inputs in suitable climates.",
+    "Self-seeding varieties (like German chamomile) can be easy to maintain."
+  ],
+  "carbonFootprintInfo": "Locally grown chamomile for personal use has a low carbon footprint. Commercial production for dried flowers or essential oil involves energy for cultivation, drying, processing, and transportation.",
+  "uses": ["herbal_tea_calming_sleep_aid_digestive_aid", "essential_oil_production_aromatherapy_cosmetics", "traditional_medicine_anti_inflammatory_skin_soothing", "cosmetics_skin_care_hair_care", "ornamental_plant_groundcover_roman_chamomile"],
+  "originAndDomesticationHistory": "Chamomile has been used for medicinal purposes for thousands of years, dating back to ancient Egypt, Greece, and Rome. German chamomile (Matricaria chamomilla) is native to Europe and temperate Asia. Roman chamomile (Chamaemelum nobile) is native to Western Europe and North Africa. Both have long been valued for their gentle therapeutic properties.",
+  "climaticRequirements": {
+    "temperature": "Prefers cool to warm temperate climates. Optimal growing temperatures are 15-25°C. German chamomile is more adaptable than Roman chamomile.",
+    "rainfall": "Requires moderate and consistent moisture, especially during germination and early growth. Around 400-800mm equivalent. Good drainage is important.",
+    "altitude": "Adaptable to various altitudes, typically grown in lowland and foothill regions."
+  },
+  "soilPreferences": "Prefers well-drained, sandy loam or loamy soils. German chamomile tolerates poorer soils better than Roman chamomile. Slightly acidic to neutral pH (5.5-7.5) is suitable.",
+  "irrigationAndWaterNeeds": "Requires regular watering to keep the soil evenly moist, especially during dry periods. Avoid waterlogging. Drip irrigation or soaker hoses are good options.",
+  "plantingAndHarvestCycles": "German chamomile is usually direct-seeded in spring after the last frost or in late summer/early fall for overwintering in mild climates. Roman chamomile can be started from seeds or division. Flowers are harvested when fully open, typically by hand-picking or using chamomile rakes. Multiple harvests are possible throughout the flowering season.",
+  "pestAndDiseaseManagement": "Generally quite hardy. Aphids and thrips can occasionally be pests. Damping-off can affect seedlings in overly wet conditions. Powdery mildew may occur in humid weather with poor air circulation. Good field hygiene and proper spacing are important.",
+  "postHarvestHandling": "Fresh chamomile flowers can be used immediately for tea. For drying, flowers are spread in a thin layer in a warm, dark, airy place, or a dehydrator on low heat can be used. Dried flowers should be stored in an airtight container away from light to preserve their aroma and medicinal properties.",
+  "majorProducingCountriesOrRegions": ["Egypt (major exporter)", "Argentina", "Hungary", "Poland", "Germany", "Czech Republic", "Mexico", "United States"],
+  "marketValueAndGlobalDemand": "Chamomile is one of the most popular herbal teas worldwide, with high and stable demand. It's also used extensively in cosmetics, personal care products, and aromatherapy for its essential oil (containing chamazulene and bisabolol). The market for organic and sustainably sourced chamomile is growing."
+}

@@ -1,0 +1,165 @@
+{
+  "id": "papaya",
+  "commonName": "Papaya",
+  "scientificName": "Carica papaya",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Papaya%21_%282220229766%29.jpg",
+  "description": "A tropical fruit with a sweet, musky flavor and soft, butter-like consistency. The flesh is typically orange or pinkish, with numerous small black seeds in the central cavity.",
+  "origin": "Southern Mexico and Central America",
+  "localNames": [
+    "Lechosa (Spanish in some regions)",
+    "Pawpaw (in some regions, can be confusing)",
+    "Fruit à bombes (French Caribbean)"
+  ],
+  "regions": [
+    "India",
+    "Brazil",
+    "Indonesia",
+    "Nigeria",
+    "Mexico"
+  ],
+  "seasons": [
+    "Year-round in tropical climates, peak in early summer/fall"
+  ],
+  "nutrition": {
+    "calories": "43 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 60.9,
+        "unit": "mg",
+        "rdi": "102%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 47,
+        "unit": "µg RAE",
+        "rdi": "5%"
+      },
+      {
+        "name": "Folate",
+        "value": 37,
+        "unit": "µg",
+        "rdi": "9%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 182,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, boosting the immune system.",
+    "Contains papain, an enzyme that aids in protein digestion.",
+    "Good source of antioxidants like carotenoids and flavonoids.",
+    "May improve heart health and reduce inflammation."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-Fruit Syndrome",
+      "severity": "Mild",
+      "details": "Individuals with latex allergies may react to papaya."
+    },
+    {
+      "name": "Papain Sensitivity",
+      "severity": "Rare",
+      "details": "Some people may be sensitive to the papain enzyme, causing oral irritation."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Papayas are tropical plants needing warm weather, full sun, and protection from frost.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.5.\n3. Propagation: Grown from seeds. Plant seeds in pots or directly in the ground.\n4. Watering: Requires regular watering, especially during dry periods, but dislikes waterlogged soil.\n5. Fertilizing: Feed regularly with a balanced fertilizer.\n6. Sexing Plants: Papaya plants can be male, female, or hermaphrodite. Hermaphrodite plants are preferred for fruit production. Usually, multiple seedlings are planted and thinned later.\n7. Harvesting: Fruits are harvested when they start showing yellow/orange color and yield slightly to pressure.",
+  "growthDuration": "Can bear fruit within 6-12 months from seed under ideal conditions.",
+  "sustainabilityTips": [
+    "Store unripe papayas at room temperature; ripe papayas in the refrigerator.",
+    "Papaya seeds are edible and have a peppery taste; can be dried and ground.",
+    "Compost papaya skin."
+  ],
+  "carbonFootprintInfo": "Moderate carbon footprint, largely dependent on transport from tropical regions (0.6-1.2 kg CO2e/kg).",
+  "uses": ["culinary_fresh_eating", "juice_smoothies", "dessert", "meat_tenderizer_papain_enzyme", "green_papaya_salads_pickles_cooked_vegetable"],
+  "originAndDomesticationHistory": "Papaya (Carica papaya) originated in southern Mexico and Central America. It was domesticated by indigenous peoples in these regions centuries before the arrival of Europeans. Spanish and Portuguese explorers introduced papaya to other tropical regions of the world, including Asia, Africa, and the Pacific Islands, during the 16th and 17th centuries.",
+  "climaticRequirements": {
+    "temperature": "Tropical; optimal 21-33°C. Very sensitive to frost. Requires warm conditions year-round.",
+    "rainfall": "Requires regular rainfall or irrigation, 1000-2000mm annually. Good drainage is crucial as it dislikes waterlogged conditions.",
+    "altitude": "Typically grown from sea level up to 1000m, but can be found at higher elevations in frost-free tropical zones."
+  },
+  "soilPreferences": "Well-drained, fertile, loamy soils rich in organic matter. Prefers a slightly acidic to neutral pH (6.0-7.0). Cannot tolerate waterlogged or saline soils.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during establishment, flowering, and fruit development. Regular irrigation is necessary in areas with insufficient rainfall. Avoid overwatering to prevent root rot.",
+  "plantingAndHarvestCycles": "Propagated from seeds. Seedlings are transplanted when 15-20 cm tall. Plants are fast-growing and can bear fruit within 6-12 months under ideal conditions. Papayas are typically dioecious (male and female plants) or hermaphroditic; hermaphrodite varieties are preferred. Fruits are harvested when they show signs of ripeness (skin color changes from green to yellow/orange) but are still firm. Harvested by hand.",
+  "pestAndDiseaseManagement": "Common pests include fruit flies, aphids, mites, and nematodes. Major diseases are Papaya Ring Spot Virus (PRSV - a devastating viral disease), anthracnose, powdery mildew, and root rot. Integrated management involves resistant varieties (including genetically engineered ones for PRSV), field sanitation, control of insect vectors, and fungicide applications when necessary.",
+  "postHarvestHandling": "Papayas are highly perishable and bruise easily. Harvested carefully by hand. Fruits continue to ripen after harvest. For commercial purposes, they are often harvested at mature green to 1/4 yellow stage and can be treated with hot water or fungicides to control post-harvest diseases. Stored and transported at cool temperatures (around 10-13°C) to extend shelf life. Ripened at room temperature before consumption.",
+  "majorProducingCountriesOrRegions": ["India (leading producer)", "Brazil", "Indonesia", "Nigeria", "Mexico", "Dominican Republic", "Philippines"],
+  "marketValueAndGlobalDemand": "Papayas are a popular tropical fruit with significant global demand for both fresh consumption and processed products (juice, puree, dried fruit). They are an important cash crop for many tropical countries. Demand is driven by their sweet flavor, nutritional value, and year-round availability from different producing regions.",
+  "staticRecipes": [
+    {
+      "name": "Simple Papaya Boat",
+      "description": "A refreshing and easy way to enjoy papaya, often served with lime.",
+      "ingredients": [
+        "1 ripe papaya",
+        "1 lime, cut into wedges"
+      ],
+      "steps": [
+        "Cut the papaya in half lengthwise.",
+        "Scoop out the black seeds from the center cavity of each half.",
+        "Squeeze fresh lime juice over the papaya flesh.",
+        "Serve immediately with a spoon to scoop out the flesh."
+      ]
+    },
+    {
+      "name": "Papaya Smoothie",
+      "description": "A tropical and nutritious smoothie.",
+      "ingredients": [
+        "1 cup ripe papaya chunks, frozen or fresh",
+        "1/2 banana (optional, for creaminess)",
+        "1/2 cup coconut water or milk",
+        "1 tbsp lime juice",
+        "Honey or agave to taste (optional)"
+      ],
+      "steps": [
+        "Combine papaya chunks, banana (if using), coconut water/milk, and lime juice in a blender.",
+        "Blend until smooth and creamy.",
+        "Taste and add honey or agave if a sweeter smoothie is desired. Blend again briefly.",
+        "Pour into a glass and serve immediately."
+      ]
+    },
+    {
+      "name": "Green Papaya Salad (Som Tum Style)",
+      "description": "A zesty and spicy salad made with unripe papaya, common in Southeast Asian cuisine (simplified version).",
+      "ingredients": [
+        "1 small green (unripe) papaya, peeled, seeded, and shredded or julienned",
+        "2-3 cherry tomatoes, halved",
+        "1-2 tbsp crushed roasted peanuts",
+        "For the dressing: 1 tbsp lime juice, 1 tbsp fish sauce (or soy sauce for vegetarian), 1 tsp sugar, 1 small chili, minced (optional)"
+      ],
+      "steps": [
+        "Prepare the dressing: In a small bowl, whisk together lime juice, fish sauce (or soy sauce), sugar, and minced chili (if using) until sugar is dissolved.",
+        "In a larger bowl (or traditionally a mortar and pestle), combine the shredded green papaya and cherry tomatoes.",
+        "Pour the dressing over the papaya mixture. Toss well to combine. If using a mortar, gently pound to bruise the ingredients and help them absorb the dressing.",
+        "Transfer to a serving plate and garnish with crushed roasted peanuts. Serve immediately for best texture."
+      ]
+    }
+  ]
+}

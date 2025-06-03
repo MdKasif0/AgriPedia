@@ -1,0 +1,205 @@
+{
+  "id": "starfruit",
+  "commonName": "Starfruit (Carambola)",
+  "scientificName": "Averrhoa carambola",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Carambola_Starfruit.jpg",
+  "description": "A tropical fruit-bearing tree in the family Oxalidaceae, known for its distinctive star shape when sliced crosswise. The fruit has a thin, waxy skin, typically yellow or greenish-yellow when ripe, and can range in flavor from very tart to mildly sweet, depending on the cultivar. The flesh is juicy and crisp.",
+  "origin": "Southeast Asia (likely Sri Lanka, Moluccas in Indonesia, or Malaysia)",
+  "localNames": [
+    "Carambola (Spanish, Portuguese, English, German, Italian)",
+    "Kamrakh (Hindi)",
+    "Karmaranga (Bengali)",
+    "Ma Fueang (มะเฟือง - Thai)",
+    "Belimbing (Malay, Indonesian)",
+    "Balimbing (Tagalog - Philippines)",
+    "Yang Tao (杨桃 - Chinese, can also refer to kiwifruit)"
+  ],
+  "regions": [
+    "Malaysia (major producer and exporter)",
+    "Indonesia",
+    "Philippines",
+    "India",
+    "Thailand",
+    "Taiwan (major exporter)",
+    "Vietnam",
+    "China (Southern regions)",
+    "Brazil",
+    "Colombia",
+    "Guyana",
+    "Suriname",
+    "United States (Florida, Hawaii - limited scale)",
+    "Australia (Queensland)"
+  ],
+  "seasons": [
+    "Varies by region and cultivar; can fruit multiple times a year in tropical climates, often with main harvest peaks in late summer/fall and sometimes another in winter/spring."
+  ],
+  "nutrition": {
+    "calories": "31 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.04,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.73,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.33,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 34.4,
+        "unit": "mg",
+        "rdi": "38-57%"
+      },
+      {
+        "name": "Vitamin B5 (Pantothenic acid)",
+        "value": 0.391,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 12,
+        "unit": "µg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 133,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.137,
+        "unit": "mg",
+        "rdi": "15%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, a powerful antioxidant that supports the immune system and aids in collagen production.",
+    "Contains dietary fiber, which promotes digestive health, helps prevent constipation, and can contribute to satiety.",
+    "Low in calories and sugar, making it a healthy snack option for weight management.",
+    "Provides various phytonutrients and antioxidants, including flavonoids like quercetin and epicatechin, which help combat free radicals."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oxalic Acid Content / Nephrotoxicity Risk",
+      "severity": "High (for individuals with kidney disease)",
+      "details": "Starfruit contains high levels of oxalic acid and a neurotoxin called caramboxin. Individuals with kidney problems (including kidney stones, chronic kidney disease, or those on dialysis) should strictly avoid starfruit and its juice. Consumption can lead to nephrotoxicity (kidney damage) and neurotoxicity (affecting the brain and nerves), a condition known as 'starfruit poisoning', which can manifest as hiccups, vomiting, confusion, seizures, and in severe cases, can be fatal. Healthy individuals with normal kidney function can typically consume starfruit in moderation without issues."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and warm subtropical, needs warm, humid conditions. Sensitive to frost and strong winds.\n2. Soil: Prefers well-drained, fertile, loamy soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: Can be grown from seeds (variable fruit, longer to bear), but grafting (veneer or cleft grafting) or budding onto seedling rootstock is common for commercial cultivation of superior varieties.\n4. Planting: Plant in full sun to partial shade (more sun generally leads to better fruiting). Ensure good drainage and protect from strong winds.\n5. Watering: Requires regular and consistent watering, especially during dry periods and fruit development. Do not allow the soil to become waterlogged.\n6. Fertilizing: Apply balanced fertilizer suitable for fruit trees during active growth periods (e.g., 3-4 times a year).\n7. Pruning: Light pruning is usually sufficient to shape the tree, remove dead or crowded branches, and improve air circulation and light penetration.\n8. Harvesting: Fruits are harvested when they are fully grown, and the skin color changes from green to predominantly yellow or yellowish-orange (depending on the cultivar). They are typically picked by hand when slightly underripe for shipping or fully ripe for local markets.",
+  "growthDuration": "Grafted or budded trees may start bearing fruit in 2-4 years, while seedling trees can take 4-6 years or longer. Fruits generally mature 60-75 days after flowering.",
+  "sustainabilityTips": [
+    "Store starfruit at room temperature until it reaches desired ripeness (it will become more yellow and fragrant), then it can be refrigerated for a few days to extend its freshness.",
+    "The entire fruit is edible, including the thin waxy skin, after washing and trimming the edges of the ribs if they are discolored or tough.",
+    "Can be juiced, added to salads, used as an attractive garnish, or made into preserves. Due to the oxalic acid content, it's best consumed in moderation by healthy individuals."
+  ],
+  "carbonFootprintInfo": "Moderate, primarily depending on transportation distance from tropical growing regions to consumer markets (estimated 0.7-1.5 kg CO2e/kg for transported fruit). Locally grown starfruit consumed in season has a much lower footprint.",
+  "uses": [
+    "fresh_consumption_sliced_showcasing_star_shape_eaten_raw_skin_often_consumed",
+    "beverages_juices_smoothies_cocktails_garnish_for_drinks",
+    "culinary_ingredient_fruit_salads_green_salads_salsas_chutneys_relishes_pickles",
+    "processed_products_jams_jellies_preserves_candied_fruit_dried_slices",
+    "garnish_for_dishes_and_desserts_due_to_its_unique_shape",
+    "other_traditional_uses_polishing_metal_due_to_oxalic_acid_flowers_sometimes_added_to_salads"
+  ],
+  "originAndDomesticationHistory": "Starfruit (Averrhoa carambola) is native to Southeast Asia, with its likely centers of origin being Sri Lanka or the Moluccas (Spice Islands) in Indonesia, or possibly Malaysia. It has been cultivated in these regions for centuries and subsequently spread throughout tropical and subtropical Asia, including India, Southern China, Taiwan, and the Philippines. European traders and explorers later introduced it to other tropical and subtropical parts of the world, including the Americas (Caribbean, Florida) and Australia. There are generally two main types: smaller, tarter varieties and larger, sweeter varieties, with numerous cultivars developed over time.",
+  "climaticRequirements": {
+    "temperature": "Starfruit trees are best suited for tropical and warm subtropical climates. Optimal growing temperatures range from 20°C to 30°C (68°F to 86°F). They are sensitive to frost; young trees can be killed by temperatures below 0°C (32°F), while mature trees may tolerate very brief periods of light frost but will suffer damage to leaves and young shoots. Prolonged exposure to cold temperatures can be detrimental.",
+    "rainfall": "Prefers high and well-distributed annual rainfall, typically between 1500mm and 2500mm, along with high atmospheric humidity. While established trees can tolerate short dry spells, consistent moisture is necessary for good fruit production. Irrigation is often required in areas with distinct dry seasons.",
+    "altitude": "Commonly cultivated in lowland tropical regions, typically from sea level up to about 1200 meters (approximately 4000 feet)."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic soil pH, generally between 5.5 and 6.5, is ideal. While adaptable to a range of soil types, including sandy or clayey soils if well-managed, starfruit trees do not tolerate waterlogged or highly alkaline conditions. Good soil aeration is important.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent moisture, especially for young, establishing trees and during the critical periods of flowering and fruit development. Water stress during these times can lead to flower and fruit drop, as well as reduced fruit size and quality. Drip irrigation or micro-sprinklers are effective methods for providing supplemental water. It's important to avoid overwatering and ensure good soil drainage to prevent root diseases.",
+  "plantingAndHarvestCycles": "Starfruit is commonly propagated from seeds, although seedlings can exhibit considerable variation in fruit quality and may have a longer juvenile period before bearing fruit. For commercial cultivation and to ensure desirable characteristics of specific cultivars, vegetative propagation methods such as grafting (e.g., veneer grafting or cleft grafting), budding, or air layering onto seedling rootstock are preferred. These methods can lead to earlier fruiting, typically within 2-4 years for grafted trees, whereas seedling trees may take 4-6 years or longer. Planting is usually done at the beginning of the rainy season. Starfruit trees can flower and fruit multiple times a year in suitable tropical climates, often resulting in two or more main cropping seasons, though a primary season is often observed (e.g., fall and winter in some regions). Fruits mature approximately 60-75 days after flowering. They are harvested by hand when they reach full size and the skin color changes from green to predominantly yellow or yellowish-orange, depending on the cultivar. For shipping to distant markets, fruits may be picked when slightly underripe but with some color development. For local markets, they can be allowed to ripen more fully on the tree.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (such as Oriental fruit fly, Mediterranean fruit fly, and carambola fruit fly - Bactrocera carambolae) are major pests, as their larvae infest the fruit, rendering it unmarketable. Scale insects, mealybugs, aphids, and fruit-spotting bugs can also cause damage to leaves, stems, and fruit. Common Diseases: Anthracnose (Colletotrichum gloeosporioides) can affect leaves, flowers, and fruit, causing lesions and rot, especially in humid conditions. Leaf spot diseases (e.g., Cercospora, Phyllosticta), fruit rot (particularly if the fruit is damaged or overripe), and sooty mold (associated with sucking pests) can also occur. Management Strategies: Implementing good orchard sanitation, such as removing and destroying fallen or infested fruit. Using fruit fly traps and protein bait sprays. Bagging of individual fruits or fruit clusters on the tree can provide effective protection against fruit flies and some other pests. Pruning to ensure good air circulation within the canopy can help reduce fungal disease pressure. Applying appropriate biological controls or need-based chemical sprays (insecticides and fungicides) according to local recommendations and IPM principles.",
+  "postHarvestHandling": "Starfruit should be handled carefully as they bruise easily. Fruits harvested slightly underripe can be stored at room temperature (around 20°C or 68°F) to allow them to ripen further (become juicier and slightly sweeter, though major sugar increase does not occur). Ripe starfruit has a relatively short shelf life, typically lasting about 2-4 days at room temperature. Shelf life can be extended to about 2-3 weeks if the fruit is stored under refrigeration at cool temperatures (around 5-10°C or 41-50°F) with high relative humidity (90-95%). Fruits are often wrapped individually in paper or packed in protective trays for commercial transport to minimize damage. Due to the risk to individuals with kidney disease, some regions may require labeling regarding oxalic acid content.",
+  "majorProducingCountriesOrRegions": [
+    "Malaysia (a leading producer and exporter)",
+    "Taiwan (significant exporter, known for sweet varieties)",
+    "Indonesia",
+    "Philippines",
+    "India",
+    "Thailand",
+    "Vietnam",
+    "China (Southern provinces)",
+    "Brazil",
+    "Colombia",
+    "Guyana",
+    "Suriname",
+    "United States (Florida, Hawaii - primarily for local markets and specialty sales)",
+    "Australia (Queensland)"
+  ],
+  "marketValueAndGlobalDemand": "Starfruit is a popular fruit in Southeast Asia and other tropical regions where it is cultivated. There is growing international demand for the fruit, particularly in North American, European, and East Asian markets, driven by its unique star shape (making it visually appealing as a garnish and in fruit platters), refreshing taste, and nutritional properties. It is often marketed as a specialty or exotic fruit. Major exporters include Malaysia, Taiwan, Thailand, and Brazil. The demand is for both fresh consumption and, to a lesser extent, for processed products such as juice, preserves, and dried slices. The two main types, tart and sweet, cater to different consumer preferences and culinary uses. Concerns about oxalic acid content have led to advisories for individuals with kidney issues, which may temper demand in some health-conscious segments if not properly communicated.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Starfruit Slices",
+      "description": "The easiest way to enjoy starfruit is by slicing it to reveal its star shape.",
+      "ingredients": [
+        "1-2 ripe starfruits"
+      ],
+      "steps": [
+        "Wash the starfruit thoroughly under running water.",
+        "Trim off the greenish or brownish edges of the five ridges if they are tough or discolored.",
+        "Slice the fruit crosswise into 1/4 to 1/2 inch thick slices. Each slice will look like a star.",
+        "Remove any visible seeds if desired (though small seeds are often edible).",
+        "Serve fresh. They can be eaten as is, added to fruit salads, or used as a garnish."
+      ]
+    },
+    {
+      "name": "Starfruit Juice",
+      "description": "A refreshing and slightly tangy juice.",
+      "ingredients": [
+        "2-3 ripe starfruits, washed and roughly chopped (ends trimmed)",
+        "1/2 cup water",
+        "1-2 tbsp sugar or honey (to taste, optional)",
+        "Pinch of salt (optional)"
+      ],
+      "steps": [
+        "Combine chopped starfruit and water in a blender.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve or cheesecloth to remove pulp and any seeds.",
+        "Stir in sugar/honey and salt if using. Taste and adjust sweetness.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "name": "Starfruit and Ginger Relish",
+      "description": "A zesty relish that can be served with grilled meats or fish.",
+      "ingredients": [
+        "2 ripe starfruits, finely diced",
+        "1 tbsp finely grated fresh ginger",
+        "1 small red chili, minced (optional)",
+        "1/4 cup chopped fresh cilantro",
+        "2 tbsp lime juice",
+        "1 tbsp rice vinegar",
+        "1 tsp sugar",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "In a medium bowl, combine diced starfruit, grated ginger, minced chili (if using), and chopped cilantro.",
+        "In a small bowl, whisk together lime juice, rice vinegar, sugar, and salt until the sugar is dissolved.",
+        "Pour the dressing over the starfruit mixture and toss gently to combine.",
+        "Let the relish sit for at least 15-20 minutes at room temperature to allow flavors to meld before serving."
+      ]
+    }
+  ]
+}

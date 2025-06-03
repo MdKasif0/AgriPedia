@@ -1,0 +1,155 @@
+{
+  "id": "noni-fruit",
+  "commonName": "Noni Fruit",
+  "scientificName": "Morinda citrifolia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Noni_fruit_on_tree.JPG/800px-Noni_fruit_on_tree.JPG",
+  "description": "Noni (Morinda citrifolia) is a tropical fruit-bearing tree or shrub in the coffee family (Rubiaceae). It's known for its distinctive lumpy, oval-shaped fruit (a syncarp) that has a bumpy, greenish-yellow to white skin when ripe. The ripe fruit is infamous for its strong, pungent odor, often likened to rotten cheese, and its bitter taste. It has a long history of use as a traditional medicine and famine food in various Pacific and Southeast Asian cultures.",
+  "origin": "Southeast Asia (e.g., Indonesia, Malaysia) and Australasia (e.g., Australia, Pacific Islands)",
+  "localNames": [
+    "Indian Mulberry (English)",
+    "Beach Mulberry (English)",
+    "Great Morinda (English)",
+    "Vomit Fruit (English - due to odor)",
+    "Rotten Cheese Fruit (English - due to odor)",
+    "Noni (Hawaiian, and now widely used internationally)",
+    "Nonu (Samoan, Tongan)",
+    "Nono (Tahitian, Cook Islands Maori)",
+    "Mengkudu (Malay, Indonesian)",
+    "Apatot (Philippines)",
+    "Kumudu (Sri Lanka)"
+  ],
+  "regions": [
+    "Pacific Islands (Polynesia, Micronesia, Melanesia - Hawaii, Tahiti, Fiji, Samoa, Cook Islands, etc.)",
+    "Southeast Asia (Indonesia, Malaysia, Philippines, Vietnam, Thailand, Cambodia)",
+    "Australasia (Australia - particularly Queensland)",
+    "India (coastal regions, Andaman & Nicobar Islands)",
+    "Caribbean (introduced)",
+    "South and Central America (introduced, limited cultivation)",
+    "Africa (introduced, coastal East Africa)"
+  ],
+  "seasons": [
+    "Year-round in many tropical climates; trees can simultaneously bear flowers, immature fruit, and mature fruit, leading to continuous or overlapping harvest periods."
+  ],
+  "nutrition": {
+    "calories": "Approximately 47 kcal per 100g (fresh fruit, varies)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.43,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 33,
+        "unit": "mg",
+        "rdi": "37%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.048,
+        "unit": "mg",
+        "rdi": "0.3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 140,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used in Polynesian and other indigenous cultures for a wide range of ailments and as a general health tonic, though many claims lack robust clinical evidence.",
+    "Source of Vitamin C, which contributes to immune function and acts as an antioxidant.",
+    "Contains various phytochemicals, including flavonoids, lignans, iridoids (like damnacanthal), and polysaccharides, which are being researched for their antioxidant, immune-modulating, and other potential health effects.",
+    "Some studies suggest potential anti-inflammatory and analgesic (pain-relieving) properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "High Potassium Content",
+      "severity": "Moderate to High (for susceptible individuals)",
+      "details": "Noni products, especially concentrated juices, can be high in potassium. Individuals with kidney disease, hyperkalemia, or those on potassium-restricted diets should consult a healthcare provider before consuming noni, as excessive potassium intake can be dangerous."
+    },
+    {
+      "name": "Liver Toxicity Reports (rare, associated with supplements)",
+      "severity": "Moderate to High (for susceptible individuals)",
+      "details": "There have been isolated case reports in medical literature linking consumption of noni products (particularly concentrated supplements or large quantities of juice) to liver damage (hepatotoxicity) in some susceptible individuals. It is advisable to use noni products with caution, adhere to recommended dosages, and consult a healthcare provider, especially if there are pre-existing liver conditions or if taking other medications."
+    },
+    {
+      "name": "Strong Flavor/Odor",
+      "severity": "N/A (preference issue)",
+      "details": "The strong, cheese-like odor and bitter taste of ripe noni fruit can be off-putting to many, though this is not an allergic reaction."
+    }
+  ],
+  "cultivationProcess": "Morinda citrifolia is a hardy tree or shrub that grows well in a variety of tropical and subtropical environments, including shady forests and open sandy or rocky shores. It tolerates saline soils, drought conditions, and secondary soils. Propagation can be done by seeds (which germinate readily), stem cuttings, or root suckers/air layering. The plant is resilient and often requires minimal care once established in a suitable climate, often growing wild or in semi-cultivated states.",
+  "growthDuration": "Noni trees typically mature and begin fruiting within 12-18 months after planting. A notable characteristic is their ability to produce fruit year-round, with flowers, immature fruit, and mature fruit often present on the same tree simultaneously, allowing for continuous harvesting in optimal climates.",
+  "sustainabilityTips": [
+    "Noni is a highly resilient plant that can be grown with minimal agricultural inputs (pesticides, fertilizers) in its native and adapted regions, often contributing to local traditional ecosystems and agroforestry.",
+    "When choosing commercial noni products, consider those sourced from sustainable, organic farming practices that support local communities and biodiversity.",
+    "Utilizing the entire plant (fruit, leaves, bark, roots) as done in traditional medicine can be seen as a form of holistic resource use."
+  ],
+  "carbonFootprintInfo": "Fresh noni fruit consumed locally in its growing regions has a relatively low carbon footprint due to its hardiness and minimal input requirements. However, processed noni products (juices, powders, supplements) that are packaged and transported internationally will have a significantly higher carbon footprint, influenced by manufacturing processes, packaging materials, and long-distance shipping (often from remote islands).",
+  "uses": [
+    "traditional_medicine_juice_leaves_bark_roots_for_various_ailments_immune_support_pain_relief_anti_inflammatory",
+    "dietary_supplement_juice_powder_capsules_marketed_for_health_benefits",
+    "famine_food_fruit_consumed_in_times_of_scarcity_despite_odor_taste",
+    "dyes_bark_produces_reddish_purple_dye_roots_produce_yellow_dye",
+    "topical_applications_poultices_from_leaves_or_fruit_for_skin_conditions_wounds"
+  ],
+  "originAndDomesticationHistory": "Noni (Morinda citrifolia) is native to Southeast Asia (likely Indonesia, Malaysia) and Australasia (including Australia and the Pacific Islands). It's an ancient plant that was widely dispersed throughout the Pacific Islands by Polynesian voyagers, who valued it for its resilience and its extensive use as both a food source (especially in times of famine) and a versatile medicinal plant. While it has been utilized and managed by indigenous cultures for millennia, it hasn't undergone formal domestication involving selective breeding for specific agricultural traits in the same way as major food crops. It often grows wild or is cultivated in traditional home gardens and small-scale farms across its range. Its prominence in global markets is relatively recent, primarily driven by the marketing of noni juice as a health supplement since the late 20th century.",
+  "climaticRequirements": {
+    "temperature": "Noni is strictly a tropical and subtropical plant. It thrives in warm, humid conditions with optimal temperatures generally ranging from 20°C to 35°C (68°F to 95°F). It is intolerant of frost and cannot survive prolonged exposure to cold temperatures.",
+    "rainfall": "Prefers high annual rainfall, typically between 1500mm and 4000mm, and high humidity. However, it is remarkably drought-tolerant once established, capable of surviving in areas with distinct dry seasons, though fruit production may be reduced under severe drought stress.",
+    "altitude": "Commonly found in coastal regions and lowlands, typically growing from sea level up to about 500 meters (approximately 1600 feet)."
+  },
+  "soilPreferences": "Noni is highly adaptable and can grow in a wide variety of soil types, including sandy soils, volcanic soils, calcareous soils, and even marginal or poor soils. It is notably tolerant of saline conditions, making it well-suited for coastal environments. While it can survive in less fertile soils, it performs best in well-drained soils with good aeration. It does not tolerate waterlogged conditions for extended periods.",
+  "irrigationAndWaterNeeds": "While very drought-tolerant once established, young noni plants may require regular watering until their root systems are well-developed. In regions with very long or severe dry seasons, or for more consistent fruit production in cultivated settings, supplemental irrigation can be beneficial but is often not practiced due to the plant's inherent hardiness.",
+  "plantingAndHarvestCycles": "Noni is easily propagated by seeds, which germinate readily within a few weeks to months. It can also be propagated from stem cuttings or root suckers. Trees typically begin to bear fruit within 12 to 18 months after planting. A distinctive feature of Morinda citrifolia is its ability to produce fruit year-round in suitable tropical climates, with flowers, immature fruits, and mature fruits often present on the same tree simultaneously. This allows for continuous harvesting. Fruits are harvested when they turn from green to a yellowish-white color and become soft and translucent. They develop a strong, pungent odor when fully ripe.",
+  "pestAndDiseaseManagement": "Noni trees are generally very hardy and remarkably resistant to most pests and diseases, especially in their native environments. This resilience is one of the reasons for their successful naturalization across many tropical regions. Occasionally, minor issues with aphids, scale insects, or fruit flies may occur, but they rarely cause significant economic damage. Root rot can be a problem in poorly drained or waterlogged soils. Due to its natural robustness, noni cultivation typically requires minimal to no chemical pest or disease control measures.",
+  "postHarvestHandling": "Ripe noni fruit is very soft, highly perishable, and bruises easily. It has a short shelf life, typically only a few days at ambient temperatures. The strong, pungent odor of the ripe fruit also makes handling and transport for fresh consumption challenging. For commercial purposes, particularly for juice production (which is the most common use for supplements), fruits are often allowed to ripen fully and are then processed relatively quickly. This processing may involve fermentation (a traditional method), pressing, pasteurization, and packaging. Noni fruit can also be dried and powdered for use in supplements or traditional remedies.",
+  "marketValueAndGlobalDemand": "The market for noni fruit is primarily driven by its use in the dietary supplement industry, where it is marketed as a juice, powder, or capsule for a variety of purported health benefits. This demand saw a significant surge in the late 1990s and early 2000s. While some of the initial marketing hype has subsided, there remains a consistent global market for noni products, particularly in North America, Europe, and East Asia. The fresh fruit market is very limited outside of local growing regions due to its strong odor, acquired taste, and high perishability. The price of processed noni products, such as juice, can be relatively high compared to other fruit juices, often reflecting the marketing and processing costs involved. Consumer perception of its health benefits largely influences demand.",
+  "staticRecipes": [
+    {
+      "name": "Traditional Fermented Noni Juice",
+      "description": "A traditional method of preparing noni juice, involving natural fermentation. This process is believed to mellow the fruit's strong flavor and potentially enhance the bioavailability of its compounds. It is often consumed in small amounts for wellness purposes.",
+      "ingredients": [
+        "Ripe noni fruits (soft, translucent white/yellow)",
+        "Clean glass jar with a non-airtight lid or cheesecloth cover"
+      ],
+      "steps": [
+        "Wash ripe noni fruits thoroughly with clean water. Ensure they are free of dirt or debris.",
+        "Place the whole, ripe noni fruits into the clean glass jar. Do not add any water, sugar, or other ingredients.",
+        "Cover the jar. If using a lid, do not seal it completely airtight to allow fermentation gases to escape. Alternatively, cover the mouth of the jar with a piece of cheesecloth secured with a rubber band or string.",
+        "Place the jar in a warm, dark place (like a cupboard) or, as some traditions prefer, in direct sunlight. The fermentation time can vary widely, from a few days to several weeks (e.g., 3 days to 8 weeks), depending on ambient temperature and desired potency/flavor.",
+        "The fruit will gradually break down and release its juice. Natural fermentation will occur, evidenced by bubbling or changes in aroma.",
+        "Once the desired fermentation period is complete, strain the juice from the fruit pulp using a clean cheesecloth or a fine-mesh sieve into another clean jar or bottle.",
+        "Store the strained noni juice in the refrigerator. It is typically consumed in small quantities, such as 1-2 tablespoons (15-30ml) per day, often diluted with water or other juices due to its strong taste."
+      ]
+    }
+  ]
+}

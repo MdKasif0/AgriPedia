@@ -1,0 +1,67 @@
+{
+  "id": "chickpeas",
+  "commonName": "Chickpeas (Garbanzo Beans)",
+  "scientificName": "Cicer arietinum",
+  "image": "https://images.unsplash.com/photo-1605990094280-9f5d26dd516c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Chickpeas are a type of legume, a plant in the Fabaceae family. They are cultivated for their nutritious seeds, which are high in protein. There are two main types: Kabuli (larger, lighter colored) and Desi (smaller, darker, more irregular).",
+  "origin": "Southeastern Turkey (ancient Mesopotamia).",
+  "localNames": ["Chana (Hindi)", "Garbanzo (Spanish)", "Pois chiche (French)", "Himemasu (Japanese)"],
+  "regions": ["India", "Australia", "Turkey", "Russia", "United States", "Pakistan", "Myanmar"],
+  "seasons": ["Cool-season crop; planted in spring for summer harvest in temperate regions, or fall/winter for spring harvest in subtropical regions."],
+  "nutrition": {
+    "calories": "164 kcal per 100g (cooked, without salt)",
+    "macronutrients": [
+      { "name": "Protein", "value": 8.9, "unit": "g" },
+      { "name": "Carbohydrates", "value": 27.4, "unit": "g" },
+      { "name": "Fat", "value": 2.6, "unit": "g" },
+      { "name": "Fiber", "value": 7.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "value": 172, "unit": "µg", "rdi": "43%" },
+      { "name": "Thiamin (B1)", "value": 0.116, "unit": "mg", "rdi": "10%" },
+      { "name": "Vitamin B6", "value": 0.139, "unit": "mg", "rdi": "11%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.03, "unit": "mg", "rdi": "45%" },
+      { "name": "Iron", "value": 2.89, "unit": "mg", "rdi": "16%" },
+      { "name": "Phosphorus", "value": 168, "unit": "mg", "rdi": "24%" },
+      { "name": "Copper", "value": 0.35, "unit": "mg", "rdi": "39%" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of plant-based protein and dietary fiber.",
+    "Helps improve digestion and promote gut health.",
+    "Can aid in blood sugar regulation due to low glycemic index and high fiber.",
+    "May help lower LDL (bad) cholesterol levels.",
+    "Good source of iron, folate, and manganese."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Legume Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Chickpea allergy is uncommon but can occur, especially in individuals with allergies to other legumes like lentils or peanuts. Symptoms can range from mild oral allergy syndrome to severe systemic reactions."
+    }
+  ],
+  "cultivationProcess": "Chickpea cultivation involves preparing a well-drained seedbed, inoculating seeds with Rhizobium bacteria (if not previously grown in the soil), sowing seeds, managing weeds, and harvesting when pods are mature and dry.",
+  "growthDuration": "Approximately 90-120 days from planting to harvest, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "As a legume, chickpeas fix atmospheric nitrogen, reducing the need for nitrogen fertilizers.",
+    "Often grown as a rotation crop to improve soil fertility.",
+    "Drought-tolerant varieties are available, making them suitable for water-scarce regions."
+  ],
+  "carbonFootprintInfo": "Chickpeas generally have a low carbon footprint due to their nitrogen-fixing ability and relatively low input requirements. Processing and transportation contribute to the overall footprint.",
+  "uses": ["culinary_hummus_curries_salads", "flour_production_besan", "animal_feed_plant_residue"],
+  "originAndDomesticationHistory": "Chickpeas (Cicer arietinum) were domesticated in the Fertile Crescent, specifically in southeastern Turkey, around 7,500 years ago. Archaeological evidence suggests wild Cicer reticulatum as the progenitor. They spread to the Mediterranean basin, India, and Ethiopia in ancient times. Two main types evolved: the larger-seeded Kabuli type (Mediterranean and Middle East) and the smaller-seeded Desi type (Indian subcontinent and Ethiopia).",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal temperature for growth is 18-26°C. Tolerates some heat during pod fill but sensitive to frost, especially during flowering.",
+    "rainfall": "300-600mm annually. Drought-tolerant, particularly Desi types. Excessive rain during flowering or maturity can cause disease and lodging.",
+    "altitude": "Can be grown from sea level up to 2500m in tropical and subtropical regions."
+  },
+  "soilPreferences": "Prefers well-drained sandy loam to clay loam soils with a pH of 6.0-7.5. Does not tolerate waterlogged conditions or highly acidic soils. Good soil aeration is important.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed. Supplemental irrigation may be necessary in dry regions, especially during flowering and pod development, to ensure good yields. Over-irrigation can lead to fungal diseases.",
+  "plantingAndHarvestCycles": "Planted in spring in temperate regions or in autumn/winter in subtropical regions. Seeds are sown 3-5 cm deep. Plants are typically harvested when pods are yellow-brown and seeds are hard. Plants can be cut and threshed, or directly combined.",
+  "pestAndDiseaseManagement": "Major pests include pod borers (Helicoverpa armigera), aphids, and bruchids (storage pests). Common diseases are Ascochyta blight, Fusarium wilt, and Botrytis grey mold. Integrated pest management includes resistant varieties, crop rotation, seed treatment, and judicious use of pesticides.",
+  "postHarvestHandling": "Involves threshing the pods to extract seeds, cleaning the seeds, and drying them to a moisture content of 10-12% for safe storage. Stored in cool, dry conditions to prevent mold and insect infestation.",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Australia", "Turkey", "Russia", "Myanmar", "Ethiopia", "Pakistan", "United States", "Canada", "Mexico"],
+  "marketValueAndGlobalDemand": "Chickpeas are a globally important pulse crop with high demand for human consumption, particularly in South Asia, the Middle East, and Mediterranean countries. Growing demand in Western countries due to interest in plant-based diets and products like hummus. Prices fluctuate based on global production and weather conditions."
+}

@@ -1,0 +1,201 @@
+{
+  "id": "blueberry",
+  "commonName": "Blueberry",
+  "scientificName": "Vaccinium sect. Cyanococcus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Blueberries.jpg",
+  "description": "A small, round, blue to purple berry, known for its sweet and slightly tart flavor. They are native to North America and are prized for their health benefits and culinary versatility.",
+  "origin": "North America",
+  "localNames": [
+    "Arándano (Spanish)",
+    "Myrtille (French - often refers to bilberry, but also blueberry)",
+    "Blaubeere/Heidelbeere (German)",
+    "Mirtillo gigante americano (Italian)"
+  ],
+  "regions": [
+    "United States (leading producer)",
+    "Canada",
+    "Peru",
+    "Chile",
+    "Mexico",
+    "Poland",
+    "Germany",
+    "Spain"
+  ],
+  "seasons": [
+    "Summer (typically May to August in the Northern Hemisphere, varies by region and cultivar)"
+  ],
+  "nutrition": {
+    "calories": "57 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 9.7,
+        "unit": "mg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 19.3,
+        "unit": "µg",
+        "rdi": "24%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 0.57,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.336,
+        "unit": "mg",
+        "rdi": "17%"
+      }
+    ],
+    "potentialAllergies": [
+      {
+        "name": "Blueberry Allergy",
+        "severity": "Rare",
+        "details": "Uncommon, but can occur, potentially causing oral allergy syndrome in individuals sensitive to salicylates or birch pollen."
+      }
+    ],
+    "healthBenefits": [
+      "Very high in antioxidants, particularly anthocyanins (which give them their blue color), protecting cells from damage by free radicals.",
+      "May improve brain health, memory, and cognitive function, especially in older adults.",
+      "Can help reduce DNA damage, a key factor in aging and cancer development.",
+      "Beneficial for heart health by potentially lowering blood pressure, improving cholesterol levels, and preventing plaque buildup.",
+      "Supports urinary tract health by preventing bacteria from adhering to bladder walls."
+    ]
+  },
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate. Require winter chill. Different types (highbush, lowbush, rabbiteye) have different needs.\n2. Soil: Very acidic (pH 4.0-5.5), well-drained, sandy soil rich in organic matter. Amend soil with peat moss or sulfur.\n3. Propagation: From cuttings or nursery plants.\n4. Planting: Plant in early spring in full sun.\n5. Watering: Consistent moisture is crucial, especially during establishment and fruit development. Use rainwater if possible due to acidity preference.\n6. Fertilizing: Use fertilizers formulated for acid-loving plants (e.g., azalea/rhododendron fertilizer).\n7. Mulching: Mulch with pine needles, wood chips, or sawdust to retain moisture, suppress weeds, and maintain soil acidity.\n8. Harvesting: Berries ripen over several weeks. Harvest when they are fully blue, plump, and detach easily.",
+  "growthDuration": "Plants typically start producing a significant crop 2-3 years after planting, reaching full maturity in 5-6 years. Harvest season is in the summer, varying by cultivar and climate.",
+  "sustainabilityTips": [
+    "Store unwashed blueberries in the refrigerator; consume within a week or two.",
+    "Wash just before eating to preserve their natural protective bloom.",
+    "Excellent for freezing: spread on a baking sheet to freeze individually, then transfer to a freezer bag for long-term storage.",
+    "Choose locally grown blueberries during their peak season to reduce food miles."
+  ],
+  "carbonFootprintInfo": "Moderate, depending on origin, cultivation practices (especially water and fertilizer use), and transport (0.7-1.5 kg CO2e/kg). Air-freighted fresh blueberries out of season will have a significantly higher footprint.",
+  "uses": [
+    "fresh_consumption_snack_fruit_salads",
+    "baking_muffins_pies_cakes_scones_pancakes_waffles",
+    "processed_jams_jellies_preserves_syrups_sauces_compotes",
+    "beverages_smoothies_juices_infused_water_wine",
+    "dairy_products_topping_for_yogurt_cereals_oatmeal_ice_cream",
+    "dried_blueberries_snack_trail_mixes_baking",
+    "frozen_blueberries_for_year_round_use",
+    "dietary_supplements_extracts"
+  ],
+  "originAndDomesticationHistory": "Blueberries are native to North America, where wild varieties have been foraged by Indigenous peoples for thousands of years for food, medicinal purposes, and as a dye. The systematic cultivation and domestication of highbush blueberries began in the early 20th century, largely driven by the research of Elizabeth Coleman White and Dr. Frederick V. Coville in New Jersey. They identified superior wild plants and developed methods for their propagation and cultivation, transforming blueberries from a wild-harvested berry into a significant commercial agricultural crop worldwide.",
+  "climaticRequirements": {
+    "temperature": "Temperate climates are ideal. Require a specific winter chilling period (hours below 7°C or 45°F) for proper bud break and fruit set; this varies by type: highbush blueberries need 650-1200 hours, lowbush types over 1000 hours, and rabbiteye types 150-600 hours. Flowers are susceptible to spring frosts. Optimal summer growing temperatures are between 20-30°C (68-86°F).",
+    "rainfall": "Moderate and consistent moisture is needed, typically around 1000-1500mm (40-60 inches) annually, well-distributed throughout the growing season. Supplemental irrigation is crucial in many areas as they have shallow root systems. Excellent drainage is essential to prevent root rot.",
+    "altitude": "Varies by species and cultivar. Highbush blueberries can be grown from near sea level to moderate mountain altitudes, provided chilling requirements and acidic soil conditions are met. Lowbush blueberries are often found at higher elevations or northern latitudes."
+  },
+  "soilPreferences": "Requires highly acidic soil with a pH between 4.0 and 5.5 (ideally 4.5-4.8). The soil must be well-drained, loose, and rich in organic matter. Sandy loams or loamy sands are preferred. It's often necessary to amend soil with peat moss, sulfur, or pine bark to achieve and maintain the required acidity and structure. Poorly drained or heavy clay soils are unsuitable and can lead to root rot diseases.",
+  "irrigationAndWaterNeeds": "Blueberries have a shallow, fibrous root system and are very sensitive to drought. Consistent and adequate soil moisture is crucial throughout the growing season, especially during establishment, flowering, fruit development, and maturation. Typically, 25-50mm (1-2 inches) of water per week is needed. Drip irrigation or micro-sprinklers are commonly used to provide water efficiently. If the water source is alkaline, it may need to be acidified to maintain the low soil pH required by blueberry plants.",
+  "plantingAndHarvestCycles": "Propagation is typically done using dormant hardwood or softwood cuttings, or through tissue culture for commercial varieties to ensure genetic uniformity. Planting is best done in early spring or late fall (in milder climates) while plants are dormant. Plants start bearing a small crop 1-2 years after planting, with more significant yields from the 3rd or 4th year, reaching full production around 6-8 years. The harvest season is primarily in the summer (June to August in the Northern Hemisphere), although this varies by cultivar and local climate. Berries ripen over several weeks, necessitating multiple pickings. For the fresh market, berries are hand-picked when they are fully blue, plump, and detach easily from the stem. Mechanical harvesting is used for berries intended for processing.",
+  "pestAndDiseaseManagement": "Common Pests: Birds (can cause significant crop loss), spotted wing drosophila (SWD), blueberry maggot, aphids, scale insects, cranberry fruitworm, Japanese beetles, stem borers. Common Diseases: Mummy berry (Monilinia vaccinii-corymbosi) is a major fungal disease. Others include Phomopsis twig blight, Botrytis blossom and fruit rot, root rot (Phytophthora cinnamomi), anthracnose, and various viral diseases like blueberry scorch and shock viruses. Management Strategies: Employing integrated pest management (IPM) is crucial. This includes using netting to protect from birds, selecting disease-resistant cultivars, ensuring good air circulation through proper pruning, maintaining correct soil drainage and pH, regular monitoring for pests and diseases, removing and destroying infected plant material, and using appropriate biological controls, fungicides, or insecticides when necessary and economically justified.",
+  "postHarvestHandling": "Blueberries are highly perishable and should be handled gently to avoid bruising. Rapid cooling (e.g., forced air cooling) to remove field heat immediately after harvest is essential to maximize shelf life. They should be stored at low temperatures, typically 0-2°C (32-36°F), with high relative humidity (90-95%). Under optimal conditions, fresh blueberries can be stored for 1-2 weeks. For longer-term storage, freezing (often Individually Quick Frozen - IQF for commercial purposes) is a common method. Modified Atmosphere Packaging (MAP) can also be used to extend the shelf life of fresh blueberries during transport and retail.",
+  "majorProducingCountriesOrRegions": [
+    "United States (states like Michigan, Oregon, Washington, Georgia, New Jersey)",
+    "Canada (British Columbia, Quebec)",
+    "Peru",
+    "Chile",
+    "Mexico",
+    "Poland",
+    "Germany",
+    "Spain",
+    "China"
+  ],
+  "marketValueAndGlobalDemand": "Blueberries have experienced a significant surge in global demand over the past few decades, largely driven by their reputation as a 'superfood' due to high antioxidant content and numerous health benefits. They command a strong market value, particularly for fresh, high-quality berries. International trade is substantial, with major production regions in North and South America supplying markets worldwide. The demand for both fresh and processed blueberries (frozen, dried, juices, and ingredients) continues to grow in North America, Europe, and increasingly in Asian markets.",
+  "staticRecipes": [
+    {
+      "name": "Classic Blueberry Muffins",
+      "description": "Moist and fluffy muffins packed with fresh blueberries.",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "3/4 cup granulated sugar",
+        "1/2 tsp salt",
+        "2 tsp baking powder",
+        "1/3 cup vegetable oil",
+        "1 egg, lightly beaten",
+        "1/3 cup milk",
+        "1 cup fresh or frozen blueberries (if frozen, do not thaw)"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C). Grease or line a 12-cup muffin tin.",
+        "In a large bowl, combine flour, sugar, salt, and baking powder.",
+        "In a separate small bowl, combine vegetable oil, egg, and milk.",
+        "Pour the wet ingredients into the dry ingredients and mix until just moistened (do not overmix).",
+        "Gently fold in the blueberries.",
+        "Divide batter evenly among the prepared muffin cups.",
+        "Bake for 20-25 minutes, or until a toothpick inserted into the center comes out clean. Let cool in pan for a few minutes before transferring to a wire rack."
+      ]
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "description": "Fluffy pancakes dotted with juicy blueberries.",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 1/4 cups milk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "1 cup fresh or frozen blueberries"
+      ],
+      "steps": [
+        "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+        "In a separate bowl, whisk together milk, egg, and melted butter.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined (a few lumps are okay).",
+        "Gently fold in the blueberries.",
+        "Heat a lightly oiled griddle or frying pan over medium heat.",
+        "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle. Cook for 2-3 minutes per side, or until golden brown and cooked through.",
+        "Serve warm with maple syrup and extra blueberries if desired."
+      ]
+    },
+    {
+      "name": "Simple Blueberry Sauce (Compote)",
+      "description": "A versatile sauce perfect for topping pancakes, yogurt, ice cream, or cheesecake.",
+      "ingredients": [
+        "2 cups fresh or frozen blueberries",
+        "1/4 cup sugar (or to taste)",
+        "1 tbsp lemon juice",
+        "2 tbsp water"
+      ],
+      "steps": [
+        "Combine blueberries, sugar, lemon juice, and water in a medium saucepan.",
+        "Bring to a simmer over medium heat, stirring occasionally.",
+        "Reduce heat to low and cook for 10-15 minutes, or until the blueberries have burst and the sauce has thickened slightly. Mash some of the berries against the side of the pan if you prefer a smoother sauce.",
+        "Remove from heat and let cool. The sauce will thicken more as it cools.",
+        "Serve warm or chilled. Store in an airtight container in the refrigerator."
+      ]
+    }
+  ]
+}

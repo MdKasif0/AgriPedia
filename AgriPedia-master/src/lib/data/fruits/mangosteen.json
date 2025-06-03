@@ -1,0 +1,231 @@
+{
+  "id": "mangosteen",
+  "commonName": "Mangosteen",
+  "scientificName": "Garcinia mangostana",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MangosteenFruit.jpg/800px-MangosteenFruit.jpg",
+  "description": "Mangosteen (Garcinia mangostana), often hailed as the 'Queen of Fruits', is a tropical evergreen tree that yields an exquisite fruit. It features a distinctive deep purple, leathery rind (pericarp) and sweet, tangy, juicy, snow-white flesh (aril) divided into segments. The fruit is renowned for its unique flavor, often described as a delicate balance of sweet and sour, and its soft, melting texture.",
+  "origin": "Island Southeast Asia (likely the Malay Peninsula, Borneo, Sumatra, or the Sunda Islands of Indonesia)",
+  "localNames": [
+    "Manggis (Malay, Indonesian)",
+    "Măng cụt (Vietnamese)",
+    "Mangkut (มังคุด - Thai)",
+    "Mongkhut (Lao)",
+    "Mangkhut (Khmer)"
+  ],
+  "regions": [
+    "Thailand (leading producer and exporter)",
+    "Indonesia (major producer)",
+    "Malaysia (major producer)",
+    "Philippines",
+    "Vietnam",
+    "Myanmar",
+    "Sri Lanka",
+    "India (Kerala, Tamil Nadu, Karnataka - limited humid tropical areas)",
+    "Colombia (limited)",
+    "Puerto Rico (limited)",
+    "Australia (Queensland - very limited)",
+    "United States (Florida, Hawaii - very limited, experimental)"
+  ],
+  "seasons": [
+    "Varies by region, generally during the main rainy season. Main harvest often May to October in many Southeast Asian countries, but can have minor seasons too."
+  ],
+  "nutrition": {
+    "calories": "73 kcal per 100g (edible flesh)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.41,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 17.91,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 2.9,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 31,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.054,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.054,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.286,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.032,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.018,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.102,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Potassium",
+        "value": 48,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.069,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 8,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.21,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "The fruit's pericarp (rind) is exceptionally rich in polyphenolic compounds, particularly xanthones such as alpha-mangostin and gamma-mangostin. These compounds are studied for their potent antioxidant, anti-inflammatory, anti-allergic, and potential anti-cancer properties (though the rind itself is bitter and not typically consumed fresh, it's used in extracts and traditional medicine).",
+    "The edible white flesh (aril) provides dietary fiber, which supports digestive health and promotes satiety.",
+    "Contains various vitamins and minerals in modest amounts, contributing to overall nutrition.",
+    "Traditionally used in Southeast Asian medicine for treating skin infections, wounds, dysentery, and urinary tract infections."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-fruit syndrome (potential, rare)",
+      "severity": "Mild to Moderate",
+      "details": "Individuals with latex allergies may rarely experience cross-reactivity with mangosteen. Symptoms could include itching, hives, or other allergic reactions. Otherwise, mangosteen is generally very well-tolerated and not considered a common allergen."
+    },
+    {
+      "name": "Interaction with blood thinners (theoretical)",
+      "severity": "Mild",
+      "details": "Xanthones in mangosteen may have mild blood-thinning effects. Individuals on anticoagulant medication should consume mangosteen products (especially concentrated extracts) cautiously and consult their doctor."
+    }
+  ],
+  "cultivationProcess": "Mangosteen is an ultra-tropical tree requiring high humidity, consistent rainfall, and warm temperatures (ideally 25–35°C), with no tolerance for temperatures below 4°C. It prefers deep, well-drained, slightly acidic soil rich in organic matter. Propagation is primarily by seeds, which are apomictic (genetically identical to the mother tree), as vegetative propagation is difficult. Trees are slow-growing, especially in the early years (often taking 6-12 years to fruit), and require partial shade when young. Full sun is tolerated by mature, well-established trees.",
+  "growthDuration": "Mangosteen trees are notoriously slow-growing. They typically take 6 to 12 years from seedling to first fruit production, though some may bear earlier (5-7 years) under optimal conditions with good management. The fruit itself takes about 5-6 months to mature on the tree after flowering.",
+  "sustainabilityTips": [
+    "Due to its specific ultra-tropical climate needs, mangosteens are often imported to non-native regions. Opt for fruit shipped by sea rather than air-freighted whenever possible to reduce carbon emissions.",
+    "Support fair-trade certified mangosteens if available, as they are often grown by smallholder farmers in developing countries.",
+    "The rind, while bitter, contains beneficial compounds and is sometimes used in traditional preparations or extracts, minimizing waste if processed."
+  ],
+  "carbonFootprintInfo": "Fresh mangosteens imported to non-tropical countries generally have a high carbon footprint due to the necessity of air freight to maintain freshness given their short shelf life and delicate nature. Locally consumed mangosteens in their native Southeast Asian regions have a much lower environmental impact. Processed forms (such as canned or frozen mangosteen) may vary depending on the energy intensity of processing and transportation methods.",
+  "uses": [
+    "fresh_consumption_highly_prized_edible_arils",
+    "processed_products_canned_in_syrup_sorbets_ice_creams_juices_jams_jellies_though_fresh_flavor_is_delicate_and_hard_to_preserve",
+    "medicinal_traditional_pericarp_rind_used_for_dysentery_skin_infections_wound_healing_anti_inflammatory_extracts_supplements",
+    "natural_dyes_rind_produces_a_black_dye",
+    "cosmetics_extracts_from_rind_used_in_skincare_products_due_to_antioxidant_properties"
+  ],
+  "originAndDomesticationHistory": "Mangosteen (Garcinia mangostana) is native to Island Southeast Asia, with its most likely center of origin in the Malay Peninsula, Borneo, Sumatra, or the Sunda Islands of Indonesia. It is an ancient fruit in these humid tropical regions and has been cultivated for centuries. It is often referred to as the \"Queen of Fruits\" due to a legend that Queen Victoria offered a reward to anyone who could bring her fresh mangosteen, highlighting its esteemed status and rarity outside its native habitat. Due to its very specific climatic requirements (ultra-tropical) and slow growth, its spread and cultivation outside its native range have been limited and challenging. Attempts to establish it in other tropical areas have met with varying degrees of success.",
+  "climaticRequirements": {
+    "temperature": "Strictly ultra-tropical. Mangosteen requires consistently warm temperatures, ideally ranging from 25°C to 35°C (77°F to 95°F). It is intolerant of temperatures below 4°C (40°F) and above 38°C (100°F). The tree does not tolerate frost at any stage of its growth.",
+    "rainfall": "High and well-distributed annual rainfall, typically between 1500mm and 2500mm or even more, is essential for mangosteen cultivation. High atmospheric humidity (above 80%) is crucial for its growth and fruit development. It cannot withstand prolonged periods of drought.",
+    "altitude": "Typically grown in lowland tropical regions, from sea level up to about 500-600 meters (approximately 1600-2000 feet). Higher altitudes are generally unsuitable due to cooler temperatures."
+  },
+  "soilPreferences": "Prefers deep, rich, well-drained, porous, slightly acidic soils (pH 5.0-6.5) that are high in organic matter. Lateritic soils, common in its native habitat, are often suitable if well-managed. The tree cannot tolerate waterlogged conditions, which can lead to root rot, nor can it thrive in saline or highly alkaline soils.",
+  "irrigationAndWaterNeeds": "Requires consistent and abundant soil moisture throughout the year due to its preference for humid tropical climates. Irrigation is essential in areas with distinct dry seasons or insufficient rainfall to maintain high humidity and soil moisture levels. However, good drainage must accompany high water availability to prevent root diseases and ensure healthy growth.",
+  "plantingAndHarvestCycles": "Mangosteen is primarily propagated by seeds, which are apomictic (nucellar seedlings), meaning they produce plants genetically identical or very similar to the parent tree. Seeds have very short viability and must be planted fresh (within 1-5 days of removal from the fruit). Vegetative propagation methods like grafting are very difficult and not commonly successful for commercial purposes. Seedlings are delicate and are typically grown in shaded nurseries for at least 2 years before being transplanted to their final location, often with partial shade provided during their early years in the field. Trees are notoriously slow-growing and may take 6 to 12 years (sometimes even longer) from seed to the first fruit production. The main fruiting season varies by region but generally occurs during the rainy season. Fruits mature approximately 5-6 months after flowering. They are harvested by hand when the rind (pericarp) has developed its characteristic deep reddish-purple color and yields slightly to gentle pressure. Fruits are carefully clipped from the tree to avoid damage.",
+  "pestAndDiseaseManagement": "Pests: Mangosteen trees are relatively free from serious pest attacks compared to other tropical fruits. Occasionally, minor damage may be caused by caterpillars, mites, thrips, or scale insects. Fruit bats or monkeys can be pests in some areas, feeding on ripe fruit. Diseases: More prone to physiological disorders rather than infectious diseases. Gamboge, a condition where yellow latex exudates onto the fruit surface or into the flesh, can occur due to inconsistent water supply or physical damage. Root rot (caused by fungi like Phytophthora or Pythium) can be an issue in poorly drained soils. Thread blight and leaf spot diseases may also occur under very humid conditions. Management: The key to minimizing problems is maintaining optimal growing conditions, particularly consistent humidity, adequate water supply with excellent drainage, and proper nutrition. Good orchard sanitation and careful handling of fruits are also important.",
+  "postHarvestHandling": "Mangosteens are delicate fruits with a relatively short shelf life. After harvest, they should be handled with care to prevent bruising of the rind, which can lead to hardening and affect flesh quality. At ambient tropical temperatures, they typically last for about 1-2 weeks. Shelf life can be extended to 3-5 weeks by storing them under refrigeration at temperatures between 10°C and 13°C (50°F to 55°F) with high relative humidity (around 90%). Storing below 10°C can cause chilling injury, leading to hardening of the rind and a bitter taste in the flesh. Fruits are usually sold fresh. For export, careful packing in protective materials is necessary.",
+  "majorProducingCountriesOrRegions": [
+    "Thailand (leading global producer and exporter)",
+    "Indonesia (major producer)",
+    "Malaysia (major producer)",
+    "Vietnam",
+    "Philippines",
+    "Myanmar",
+    "Sri Lanka",
+    "India (limited to specific humid tropical regions like Kerala and Tamil Nadu)",
+    "Colombia (limited production)",
+    "Puerto Rico (limited production)"
+  ],
+  "marketValueAndGlobalDemand": "Mangosteen is highly prized as a gourmet tropical fruit, often referred to as the \"Queen of Fruits,\" due to its exquisite flavor, delicate texture, and attractive appearance. It commands high prices in both local and international markets, particularly in non-tropical countries where it is imported. Major producers and exporters include Thailand, Malaysia, Indonesia, and Vietnam. The demand for fresh mangosteen often outstrips supply, especially in Western markets, due to its strict cultivation requirements, slow-growing nature, and relatively short shelf life. There is also a growing market for mangosteen-based products, including juices, purees, and dietary supplements (often focusing on the xanthones from the pericarp).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Mangosteen Salad",
+      "description": "A simple and refreshing salad that highlights the unique sweet-tart flavor of fresh mangosteens, often paired with other tropical fruits.",
+      "ingredients": [
+        "8-10 fresh mangosteens",
+        "1 cup diced ripe mango",
+        "1 cup diced fresh pineapple",
+        "1 tablespoon fresh lime juice (optional)",
+        "1 teaspoon honey or agave nectar (optional, if fruits are not very sweet)",
+        "A few fresh mint leaves, chiffonade (optional, for garnish)"
+      ],
+      "steps": [
+        "Prepare the mangosteens: Using a sharp knife, carefully score the rind around the middle of each mangosteen, being cautious not to cut through to the flesh.",
+        "Gently twist the scored rind to separate the two halves. Remove the top half of the rind.",
+        "Carefully scoop out the white, fleshy segments from the rind. The larger segments may contain a seed; these can be removed if desired, though smaller seeds are often soft enough to be eaten.",
+        "In a medium bowl, combine the fresh mangosteen segments, diced mango, and diced pineapple.",
+        "If using, drizzle the lime juice and honey (or agave nectar) over the fruit mixture. Toss gently to combine.",
+        "Serve immediately, or chill for about 15-30 minutes to enhance the refreshing quality.",
+        "Garnish with fresh mint leaves before serving, if desired."
+      ]
+    }
+  ]
+}

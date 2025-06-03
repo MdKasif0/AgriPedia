@@ -1,0 +1,155 @@
+{
+  "id": "raw-mango",
+  "commonName": "Raw Mango",
+  "scientificName": "Mangifera indica (unripe fruit)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtRZ0C8dig-gXWKIHwbOIQL1u2OGyUi-J4enHacBfMQ&s",
+  "description": "The unripe fruit of the mango tree. It is typically green, firm, and very tart or sour, in contrast to the sweet, soft flesh of ripe mangoes. Raw mango is widely used in culinary applications, especially in pickles, chutneys, and souring agents.",
+  "origin": "South Asia (India, Myanmar)",
+  "localNames": [
+    "Kairi (Hindi/Marathi)",
+    "Aam (Hindi - also for ripe)",
+    "Mangaai (Tamil)",
+    "Pacha Manga (Malayalam)"
+  ],
+  "regions": [
+    "India",
+    "Southeast Asia",
+    "Latin America",
+    "Caribbean"
+  ],
+  "seasons": [
+    "Late Spring to Early Summer (before ripe mango season)"
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g (approximate, varies by ripeness stage)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 36.4,
+        "unit": "mg",
+        "rdi": "61%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 54,
+        "unit": "µg RAE",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 168,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, which boosts immunity and acts as an antioxidant.",
+    "Aids digestion due to its acidity and fiber content.",
+    "Traditionally used to prevent heat stroke and dehydration in summer (as a drink).",
+    "Contains pectin, a type of soluble fiber."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-Fruit Syndrome / Skin Irritation",
+      "severity": "Mild",
+      "details": "The sap/latex from mango skin (especially near the stem of raw mangoes) can cause skin irritation or contact dermatitis in sensitive individuals. Handle carefully or peel under water."
+    }
+  ],
+  "cultivationProcess": "Same as ripe mangoes, but fruits are harvested at an early, immature stage when they are still green, hard, and sour.",
+  "growthDuration": "Harvested when green and firm, typically a few months after fruit set.",
+  "sustainabilityTips": [
+    "Store raw mangoes at room temperature for a few days or in the refrigerator for longer.",
+    "Used extensively for making pickles (achar), chutneys, relishes, souring curries, and refreshing drinks like Aam Panna.",
+    "Grated raw mango can be added to salads for a tangy crunch."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to ripe mangoes, depending on transport (0.5-1.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Aam Panna (Raw Mango Drink)",
+      "description": "A refreshing and cooling Indian summer drink made from boiled raw mango pulp, sugar, and spices.",
+      "ingredients": [
+        "2 medium raw green mangoes",
+        "1/2 cup sugar (or to taste)",
+        "1/2 tsp roasted cumin powder",
+        "1/4 tsp black salt (kala namak)",
+        "Pinch of cardamom powder (optional)",
+        "4 cups cold water",
+        "Fresh mint leaves for garnish"
+      ],
+      "steps": [
+        "Boil or pressure cook raw mangoes until they are soft and the pulp can be easily extracted (about 2-3 whistles in pressure cooker). Let cool.",
+        "Once cooled, peel the mangoes and squeeze out all the pulp from the skin and seed into a bowl.",
+        "Combine the mango pulp, sugar, roasted cumin powder, black salt, and cardamom powder (if using) in a blender. Add a little water and blend to a smooth paste.",
+        "Transfer this concentrated paste to a pitcher. Add the 4 cups of cold water and stir well until everything is dissolved.",
+        "Taste and adjust sugar or salt if needed. Strain if you prefer a very smooth drink.",
+        "Serve chilled, garnished with fresh mint leaves. Can be stored in the refrigerator for a few days."
+      ]
+    },
+    {
+      "name": "Raw Mango Chutney (Kairi Chutney)",
+      "description": "A tangy and spicy chutney, perfect as an accompaniment to Indian meals or snacks.",
+      "ingredients": [
+        "1 medium raw mango, peeled and grated or finely chopped",
+        "1/4 cup fresh mint leaves (optional)",
+        "1/4 cup fresh coriander leaves (optional)",
+        "1-2 green chilies, chopped",
+        "1/2 inch ginger, chopped",
+        "1/4 tsp salt (or to taste)",
+        "1-2 tbsp water for grinding"
+      ],
+      "steps": [
+        "Combine grated/chopped raw mango, mint leaves (if using), coriander leaves (if using), green chilies, ginger, and salt in a blender.",
+        "Add 1-2 tablespoons of water.",
+        "Grind to a smooth or slightly coarse paste, depending on your preference. Add a little more water if needed to help with grinding, but keep the chutney thick.",
+        "Taste and adjust salt or chili if necessary.",
+        "Serve as a condiment. Store in an airtight container in the refrigerator for up to a week."
+      ]
+    },
+    {
+      "name": "Raw Mango Pickle (Instant Kairi Achar - South Indian Style)",
+      "description": "A quick and easy spicy raw mango pickle that can be made and eaten within a few hours.",
+      "ingredients": [
+        "1 large raw mango, finely chopped into small cubes (about 1.5 cups)",
+        "2-3 tbsp red chili powder (adjust to spice level)",
+        "1 tsp mustard powder (ground from raw mustard seeds)",
+        "1/4 tsp fenugreek powder (methi powder)",
+        "1/4 tsp turmeric powder",
+        "Salt to taste (about 1-1.5 tbsp)",
+        "For tempering: 3 tbsp sesame oil (gingelly oil), 1 tsp mustard seeds, 1/2 tsp asafoetida (hing)"
+      ],
+      "steps": [
+        "Wash and wipe the raw mango dry. Chop into small 1/2-inch cubes. Ensure there is no moisture on the mango pieces.",
+        "In a dry bowl, combine chopped mango, red chili powder, mustard powder, fenugreek powder, turmeric powder, and salt. Mix very well until all mango pieces are coated with spices.",
+        "Tempering: Heat sesame oil in a small pan until it's hot but not smoking. Add mustard seeds. Once they splutter, add asafoetida. Turn off the heat and let the oil cool down completely.",
+        "Pour the completely cooled tempered oil over the spiced mango mixture. Mix thoroughly.",
+        "Transfer the pickle to a clean, dry glass jar. Cover and let it sit at room temperature for at least 4-6 hours, or preferably overnight, for the flavors to meld and mango pieces to soften slightly.",
+        "This pickle can be stored in the refrigerator for a few weeks. Always use a dry spoon."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "id": "garlic",
+  "commonName": "Garlic",
+  "scientificName": "Allium sativum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/800px-Garlic.jpg",
+  "description": "A species in the onion genus, Allium, closely related to onions, shallots, leeks, and chives. It is native to Central Asia and northeastern Iran and has long been a common seasoning worldwide, with a history of several thousand years of human consumption and use for both culinary and medicinal purposes. The edible part is the bulb, which consists of multiple fleshy sections called cloves, enclosed in a papery skin.",
+  "origin": "Central Asia (regions like Kazakhstan, Uzbekistan, Kyrgyzstan, western China) and northeastern Iran.",
+  "localNames": [
+    "Ajo (Spanish)",
+    "Ail (French)",
+    "Knoblauch (German - 'clove-leek')",
+    "Aglio (Italian)",
+    "Lahsun (लहसुन - Hindi)",
+    "Lasun (लसूण - Marathi)",
+    "Vellulli (వెల్లుల్లి - Telugu)",
+    "Poondu (பூண்டு - Tamil)",
+    "Ninniku (ニンニク - Japanese)",
+    "Suan (蒜 - Chinese)"
+  ],
+  "regions": [
+    "China (world's largest producer by a vast margin)",
+    "India (second largest producer)",
+    "Bangladesh",
+    "Egypt",
+    "South Korea",
+    "Russia",
+    "Myanmar",
+    "Ukraine",
+    "Spain",
+    "United States (California)",
+    "Argentina"
+  ],
+  "seasons": [
+    "Typically planted in autumn or early spring and harvested in summer. Properly cured garlic stores well, making it available year-round."
+  ],
+  "nutrition": {
+    "calories": "149 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 6.36,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 33.06,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 1.235,
+        "unit": "mg",
+        "rdi": "73-95%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 31.2,
+        "unit": "mg",
+        "rdi": "35-52%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.2,
+        "unit": "mg",
+        "rdi": "17-20%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 1.672,
+        "unit": "mg",
+        "rdi": "73-84%"
+      },
+      {
+        "name": "Selenium",
+        "value": 14.2,
+        "unit": "µg",
+        "rdi": "20-26%"
+      },
+      {
+        "name": "Calcium",
+        "value": 181,
+        "unit": "mg",
+        "rdi": "14-18%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 153,
+        "unit": "mg",
+        "rdi": "22%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.299,
+        "unit": "mg",
+        "rdi": "33%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains allicin and other sulfur compounds, which are believed to be responsible for many of its medicinal properties, including potent immune-boosting effects.",
+    "May help lower blood pressure and improve cholesterol levels (reducing LDL and total cholesterol), thus supporting cardiovascular health.",
+    "Has demonstrated antioxidant and anti-inflammatory properties.",
+    "Traditionally used for its antibacterial, antiviral, and antifungal effects; often consumed to help fight colds and infections.",
+    "Some research suggests potential anti-cancer properties of garlic compounds."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Garlic Intolerance / Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Can cause digestive issues such as heartburn, gas, bloating, or diarrhea in some individuals, especially when consumed raw or in large amounts. True garlic allergy is rare but can cause skin reactions (contact dermatitis from handling, or hives from ingestion), respiratory symptoms, or, in very rare cases, anaphylaxis."
+    },
+    {
+      "name": "Blood Thinning Effect / Medication Interaction",
+      "severity": "Moderate (with high intake or supplements)",
+      "details": "Garlic can have natural blood-thinning (antiplatelet) properties. Individuals on anticoagulant or antiplatelet medication (e.g., warfarin, aspirin) should consult their doctor before consuming large amounts of garlic or garlic supplements, as it may increase the risk of bleeding."
+    },
+    {
+      "name": "Garlic Breath and Body Odor",
+      "severity": "N/A (social/cosmetic)",
+      "details": "Consumption of garlic can lead to a characteristic odor on the breath and from the skin due to volatile sulfur compounds."
+    }
+  ],
+  "cultivationProcess": "Garlic is typically planted in autumn or early spring by sowing individual cloves. It requires well-drained, fertile soil rich in organic matter and a sunny location. Consistent watering is needed during bulb development, but this is reduced as harvest approaches. Bulbs are harvested when the lower leaves turn yellow/brown and begin to dry. After harvest, garlic must be cured (dried) in a shady, airy spot for several weeks to improve storage life. Details in specific sections.",
+  "growthDuration": "Approximately 8-9 months if planted in the autumn for overwintering and summer harvest. For spring planting (less common for many varieties, often results in smaller bulbs), the duration is shorter, around 3-4 months, but this depends heavily on the garlic type (hardneck vs. softneck) and cultivar.",
+  "sustainabilityTips": [
+    "Store whole garlic bulbs in a cool, dark, dry place with good air circulation (e.g., a mesh bag or basket in a pantry, not in the refrigerator for uncured garlic). Properly cured garlic can last for many months.",
+    "Once a clove is broken from the bulb, the remaining cloves should be used within a week or two for best quality.",
+    "Garlic scapes (the flower stalks produced by hardneck garlic varieties) are edible and delicious when harvested young; using them prevents energy from going into flower production and diverts it to the bulb.",
+    "Growing garlic at home is relatively easy and can provide a sustainable supply."
+  ],
+  "carbonFootprintInfo": "Generally low, typically around 0.4-0.6 kg CO2e/kg for field-grown garlic consumed within its production region or transported by land. Its good storability reduces the need for energy-intensive rapid transport for out-of-season availability.",
+  "uses": [
+    "culinary_spice_flavoring_base_raw_minced_crushed_sliced_roasted_sautéed_powdered_granulated_infused_oil_for_countless_dishes_globally",
+    "culinary_ingredient_sauces_marinades_rubs_dressings_vinaigrettes_soups_stews_curries_stir_fries_breads_garlic_bread_spice_blends_sausages",
+    "medicinal_traditional_modern_immune_support_cardiovascular_health_blood_pressure_cholesterol_antibacterial_antiviral_antifungal_colds_infections_supplements",
+    "pickling_pickled_garlic_cloves",
+    "vegetable_garlic_scapes_flower_stalks_of_hardneck_varieties_eaten_as_a_vegetable_stir_fried_pesto"
+  ],
+  "originAndDomesticationHistory": "Garlic (Allium sativum) is native to Central Asia, specifically the regions corresponding to modern-day Kazakhstan, Uzbekistan, Kyrgyzstan, and western China. It has a long and rich history of cultivation, dating back over 5,000 to 7,000 years. Garlic was highly valued by ancient civilizations, including the Egyptians (workers building the pyramids were reportedly fed garlic for strength), Greeks, Romans, and Chinese, who used it extensively for both culinary and medicinal purposes. There is evidence of garlic found in Egyptian pyramids and ancient Greek temples. From Central Asia, garlic spread along ancient trade routes to the Mediterranean basin, India, China, and eventually throughout the world. It has been an integral part of global cuisines and traditional medicine systems for millennia. Two main subspecies or types are recognized: hardneck (Allium sativum var. ophioscorodon) and softneck (Allium sativum var. sativum), with numerous cultivars within each.",
+  "climaticRequirements": {
+    "temperature": "Garlic is typically planted in the cool season (autumn or early spring) for vegetative growth, and requires warmer temperatures for bulb development. Many varieties, especially hardneck types, benefit from a period of cold exposure (vernalization) during winter (e.g., several weeks at 0-10°C or 32-50°F) for proper bulb formation. Optimal temperatures for bulbing are generally between 18°C and 24°C (65°F to 75°F). Garlic can be damaged by severe winter freezes if not adequately protected by mulch or snow cover.",
+    "rainfall": "Requires moderate and consistent moisture during its vegetative growth phase and early bulb development. Prefers drier conditions as the bulbs mature and approach harvest, as excessive moisture at this stage can lead to diseases or poor curing. Total water needs are around 400-600mm during the growing season, often supplemented by irrigation.",
+    "altitude": "Can be successfully cultivated from sea level up to high altitudes (e.g., up to 3000 meters or more in some regions like the Andes or Himalayas), provided that suitable temperature, day length (photoperiod sensitive for some types), and soil conditions exist."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or sandy loam soils that are rich in organic matter. Good soil aeration is crucial for bulb development. The ideal soil pH range is between 6.0 and 7.5 (slightly acidic to neutral). Garlic does not perform well in heavy clay soils or waterlogged conditions, which can lead to bulb rot. Raised beds can improve drainage in heavier soils.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture, particularly during root development, leaf growth, and the initial stages of bulb formation. Water stress during these periods can lead to reduced bulb size and overall yield. Irrigation is usually stopped about 2-4 weeks before the intended harvest time, as the bulbs mature and the leaves begin to dry down. This dry period helps with curing and improves the storage quality of the bulbs.",
+  "plantingAndHarvestCycles": "Garlic is propagated vegetatively by planting individual cloves, which are separated from a mature bulb. Larger, healthy cloves generally produce larger bulbs. Planting time depends on the climate and garlic type. In temperate regions, garlic is typically planted in the autumn (September to November in the Northern Hemisphere) for overwintering, which allows for root establishment before winter and promotes good bulb development for a summer harvest (June to August). In milder climates or for certain varieties, garlic can also be planted in early spring, though this may result in smaller bulbs. Cloves are planted pointy end up, about 1-2 inches deep and 4-6 inches apart. The crop has a long growing season, typically around 8-9 months if fall-planted. Harvesting occurs when the lower 1/3 to 1/2 of the leaves have turned yellow or brown and begin to dry, but while several upper leaves are still green (these green leaves help with curing and storage). Bulbs are gently dug up from the soil, taking care not to bruise them, rather than being pulled by the tops.",
+  "pestAndDiseaseManagement": "Common Pests: Onion thrips can cause significant damage to leaves. Onion maggots (larvae of the onion fly) can tunnel into bulbs. Nematodes, particularly the stem and bulb nematode (Ditylenchus dipsaci), can cause distorted growth and bulb rot. Mites can also infest bulbs, especially during storage. Common Diseases: White rot (Sclerotium cepivorum) is a very destructive soilborne fungal disease that can persist in the soil for many years. Basal rot (caused by Fusarium species) affects the base of the bulb. Downy mildew and purple blotch can damage leaves. Various viral diseases can also affect garlic, often spread by aphids or other vectors. Management Strategies: Strict crop rotation (avoid planting garlic or other Allium crops in the same location for at least 4-5 years) is crucial for managing soilborne diseases like white rot and nematodes. Using certified disease-free planting stock (cloves) is essential. Ensuring good soil drainage and proper plant spacing for air circulation. Controlling weeds, which can harbor pests and diseases. Removing and destroying any infected plants promptly. For some pests like thrips, insecticidal soaps or specific insecticides may be used if infestations are severe, following IPM guidelines.",
+  "postHarvestHandling": "Curing: After harvesting, garlic bulbs must be properly cured to ensure good storage life. This involves drying the bulbs in a warm, dry, shady, and well-ventilated place for several weeks (typically 2-4 weeks, but can be longer depending on humidity and temperature). Garlic can be hung in bunches, spread on racks, or laid out in single layers. During curing, the outer skins become papery, the neck constricts, and excess moisture is removed. Storage: Once fully cured, garlic can be stored for several months (up to 6-8 months or even longer for some varieties, especially softneck types). Store in a cool (ideally around 0-10°C or 32-50°F for commercial storage, though some sources suggest around 15-18°C or 60-65°F for home storage to prevent sprouting), dark, dry place with good air circulation. Avoid high humidity during storage, which can promote mold growth or sprouting. Garlic can be braided (especially softneck varieties) or stored in mesh bags or open baskets. Do not store fresh, uncured garlic (or peeled cloves) in the refrigerator for long periods in oil at room temperature due to the risk of botulism; however, properly prepared garlic-in-oil mixtures can be refrigerated for short periods or frozen.",
+  "majorProducingCountriesOrRegions": [
+    "China (by far the world's largest producer, accounting for about 80% of global production)",
+    "India (second largest producer)",
+    "Bangladesh",
+    "Egypt",
+    "South Korea",
+    "Russia",
+    "Myanmar",
+    "Ukraine",
+    "Spain (a major European producer)",
+    "United States (primarily California)",
+    "Argentina",
+    "Uzbekistan"
+  ],
+  "marketValueAndGlobalDemand": "Garlic is one of the most essential and widely used culinary ingredients globally, with consistently high demand. China dominates global production and export. There is significant international trade in fresh garlic, as well as processed garlic products such as garlic powder, granulated garlic, garlic salt, garlic flakes, garlic oil, and pickled garlic. The market value for garlic is influenced by factors such as variety (e.g., hardneck vs. softneck, specific cultivars like 'Artichoke', 'Silverskin', 'Rocambole', 'Porcelain'), bulb size and quality, origin, and whether it is conventional or organic. Demand is strong across all sectors: retail for home consumption, food service, and industrial food manufacturing. There is also a substantial market for garlic supplements due to its perceived health benefits.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Garlic",
+      "description": "Roasting garlic transforms it into a sweet, creamy, and spreadable delight.",
+      "ingredients": [
+        "1-2 whole heads of garlic",
+        "1-2 tsp olive oil",
+        "Pinch of salt and pepper"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "Slice off the top 1/4 to 1/2 inch of the garlic head(s) to expose the tops of the cloves.",
+        "Place garlic head(s) on a piece of aluminum foil. Drizzle with olive oil and sprinkle with salt and pepper.",
+        "Wrap the garlic loosely in the foil.",
+        "Roast for 30-45 minutes, or until the cloves are very soft and light golden brown.",
+        "Let cool slightly. Squeeze the roasted garlic cloves out of their skins. Use as a spread, in dips, or add to dishes."
+      ]
+    },
+    {
+      "name": "Garlic Butter Shrimp Scampi",
+      "description": "A quick and flavorful pasta dish or appetizer featuring shrimp cooked in garlic butter sauce.",
+      "ingredients": [
+        "1 lb large shrimp, peeled and deveined",
+        "8 tbsp (1 stick) butter",
+        "4-6 cloves garlic, minced",
+        "1/4 cup dry white wine or chicken broth",
+        "2 tbsp lemon juice",
+        "1/4 cup chopped fresh parsley",
+        "Red pepper flakes to taste (optional)",
+        "Cooked pasta (e.g., linguine) or crusty bread for serving"
+      ],
+      "steps": [
+        "Melt butter in a large skillet over medium heat. Add minced garlic and red pepper flakes (if using); cook for 1-2 minutes until fragrant (do not brown garlic).",
+        "Add shrimp to the skillet in a single layer. Cook for 1-2 minutes per side, until pink and opaque.",
+        "Pour in white wine or broth and lemon juice. Bring to a simmer and cook for 1-2 minutes more, until sauce slightly reduces.",
+        "Remove from heat. Stir in chopped parsley.",
+        "Serve immediately over cooked pasta or with crusty bread for dipping."
+      ]
+    },
+    {
+      "name": "Aglio e Olio (Garlic and Oil Pasta)",
+      "description": "A simple yet classic Italian pasta dish where garlic and olive oil are the stars.",
+      "ingredients": [
+        "1 lb spaghetti or linguine",
+        "1/2 cup good quality extra virgin olive oil",
+        "6-8 cloves garlic, thinly sliced",
+        "1/2 tsp red pepper flakes (or to taste)",
+        "1/4 cup chopped fresh parsley",
+        "Salt to taste",
+        "Grated Parmesan cheese for serving (optional)"
+      ],
+      "steps": [
+        "Cook pasta according to package directions until al dente. Reserve about 1 cup of pasta water before draining.",
+        "While pasta is cooking, heat olive oil in a large skillet over medium-low heat. Add sliced garlic and red pepper flakes.",
+        "Cook slowly, stirring frequently, until garlic is lightly golden and fragrant (about 3-5 minutes). Be careful not to burn the garlic, as it will become bitter.",
+        "Add cooked and drained pasta to the skillet with the garlic and oil. Add a few tablespoons of the reserved pasta water to help create a light sauce.",
+        "Toss well to coat the pasta. Stir in chopped parsley and season with salt.",
+        "Serve immediately, topped with grated Parmesan cheese if desired."
+      ]
+    }
+  ]
+}

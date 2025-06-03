@@ -1,0 +1,72 @@
+{
+  "id": "parsley",
+  "commonName": "Parsley",
+  "scientificName": "Petroselinum crispum",
+  "image": "https://images.unsplash.com/photo-1590005023065-175311ff5d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Parsley is a species of flowering plant in the family Apiaceae, native to the central and eastern Mediterranean region. It is widely cultivated as an herb, and a vegetable. There are two main types: curly leaf parsley and flat-leaf (Italian) parsley, with flat-leaf generally having a stronger flavor.",
+  "origin": "Central and Eastern Mediterranean region (possibly Sardinia).",
+  "localNames": ["Ajmood (Hindi - though often refers to celery/lovage, parsley is less common)", "Paseri (Japanese)", "Perejil (Spanish)", "Persil (French)"],
+  "regions": ["Worldwide cultivation; major producers include United States (California), Mexico, European countries (Italy, Germany, France, UK)."],
+  "seasons": ["Biennial, but typically grown as an annual. Best growth in spring and fall; can be grown year-round in mild climates or indoors."],
+  "nutrition": {
+    "calories": "36 kcal per 100g (fresh)",
+    "macronutrients": [
+      { "name": "Protein", "value": 3.0, "unit": "g" },
+      { "name": "Carbohydrates", "value": 6.3, "unit": "g" },
+      { "name": "Fat", "value": 0.8, "unit": "g" },
+      { "name": "Fiber", "value": 3.3, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 1640, "unit": "µg", "rdi": "1367%" },
+      { "name": "Vitamin C", "value": 133, "unit": "mg", "rdi": "148%" },
+      { "name": "Vitamin A", "value": 421, "unit": "µg", "rdi": "53%" },
+      { "name": "Folate (B9)", "value": 152, "unit": "µg", "rdi": "38%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 6.2, "unit": "mg", "rdi": "34%" },
+      { "name": "Potassium", "value": 554, "unit": "mg", "rdi": "12%" },
+      { "name": "Calcium", "value": 138, "unit": "mg", "rdi": "14%" }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely rich in Vitamin K, crucial for blood clotting and bone health.",
+    "Excellent source of Vitamin C, an important antioxidant.",
+    "Good source of Vitamin A, supporting vision and immune function.",
+    "Contains antioxidants like apiol and myristicin (in essential oil).",
+    "May act as a natural diuretic and help reduce bloating."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Apiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to parsley can occur, especially in individuals sensitive to other plants in the Apiaceae family (e.g., carrots, celery, fennel). Symptoms may include oral allergy syndrome or contact dermatitis."
+    },
+    {
+      "name": "Photosensitivity (high intake of psoralens)",
+      "severity": "Mild",
+      "details": "Parsley contains psoralens, which can increase skin sensitivity to sunlight in some individuals if consumed in very large quantities or if essential oil is applied topically."
+    }
+  ],
+  "cultivationProcess": "Parsley is grown from seeds. It prefers rich, moist, well-drained soil and can be grown in full sun to partial shade. Germination can be slow. Regular watering and occasional feeding are beneficial.",
+  "growthDuration": "Seeds germinate in 2-5 weeks. Leaves can be harvested about 70-90 days after sowing. It's a biennial but often grown as an annual as leaves become coarser in the second year.",
+  "sustainabilityTips": [
+    "Can be easily grown in home gardens or containers, reducing food miles.",
+    "Attracts beneficial insects like swallowtail butterfly caterpillars (parsley worms).",
+    "Can be intercropped with other vegetables."
+  ],
+  "carbonFootprintInfo": "Locally grown parsley has a low carbon footprint. Greenhouse-grown or imported parsley will have a higher footprint due to energy use for heating/lighting and transportation.",
+  "uses": ["culinary_herb_fresh_dried_garnish_flavoring_salads_soups_sauces", "essential_oil_production", "traditional_medicine_diuretic_breath_freshener"],
+  "originAndDomesticationHistory": "Parsley (Petroselinum crispum) is native to the central and eastern Mediterranean region. It was used by ancient Greeks and Romans for medicinal and ceremonial purposes before being widely adopted as a culinary herb. It has been cultivated for over 2,000 years.",
+  "climaticRequirements": {
+    "temperature": "Cool-season herb. Optimal growing temperatures are 15-22°C. Tolerates light frost. Can bolt (go to seed) in very hot weather.",
+    "rainfall": "Requires consistent moisture. Prefers well-distributed rainfall or regular irrigation, around 600-800mm equivalent.",
+    "altitude": "Adaptable to various altitudes, commonly grown in temperate regions."
+  },
+  "soilPreferences": "Prefers deep, rich, moist, well-drained loamy soil with a pH of 6.0-7.0. Good organic matter content is important for vigorous growth.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering to keep the soil moist, especially during dry periods. Avoid waterlogging. Mulching can help retain soil moisture.",
+  "plantingAndHarvestCycles": "Seeds are notoriously slow to germinate (soaking overnight can help). Sow seeds directly in the garden in early spring or late summer/early fall for overwintering in mild climates. Harvest outer leaves and stems as needed once plants are established. This encourages further growth from the center.",
+  "pestAndDiseaseManagement": "Pests include aphids, spider mites, and parsley worms (larvae of swallowtail butterflies, often handpicked). Diseases include leaf spot, blight, and damping-off in seedlings. Good air circulation, proper watering, and crop rotation can help prevent diseases. Avoid planting in soil where other Apiaceae crops were recently grown.",
+  "postHarvestHandling": "Fresh parsley is perishable. Store with stems in water in the refrigerator or wrapped in a damp paper towel for up to a week. Can be chopped and frozen (e.g., in ice cube trays with water or oil) or dried, although drying results in significant flavor loss compared to fresh.",
+  "majorProducingCountriesOrRegions": ["United States (California)", "Mexico", "Italy", "Germany", "Spain", "France", "United Kingdom", "Egypt", "China"],
+  "marketValueAndGlobalDemand": "Parsley is one of the most widely used culinary herbs globally, with high demand for both fresh and dried forms. It's a staple garnish and flavoring ingredient in many cuisines. Demand is consistent in retail and food service sectors."
+}

@@ -1,0 +1,203 @@
+{
+  "id": "dragon-fruit",
+  "commonName": "Dragon Fruit (Pitaya)",
+  "scientificName": "Hylocereus undatus (most common), Selenicereus spp. (e.g., S. megalanthus for yellow pitaya)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/588px-Pitaya_cross_section_ed2.jpg",
+  "description": "A fruit from several different cactus species, notable for its vibrant pink, red, or yellow skin with characteristic green scales (bracts). The flesh, typically white or red (sometimes yellow), is dotted with tiny, edible black seeds and has a mildly sweet flavor, often compared to kiwi or pear.",
+  "origin": "Mexico, Central and South America",
+  "localNames": [
+    "Pitaya (Spanish - used for several cactus fruits)",
+    "Pitahaya (Spanish)",
+    "Thang Loy (Thai)",
+    "Buah Naga (Indonesian/Malay)",
+    "Thanh Long (Vietnamese)",
+    "Strawberry Pear"
+  ],
+  "regions": [
+    "Vietnam (leading global producer and exporter)",
+    "Thailand",
+    "China",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Mexico",
+    "Nicaragua",
+    "Ecuador",
+    "Colombia",
+    "Israel",
+    "Australia (Northern Territory, Queensland)",
+    "United States (Florida, California, Hawaii - limited scale)"
+  ],
+  "seasons": [
+    "Typically Summer to early Autumn (June to October in Northern Hemisphere), but can be year-round in some tropical regions or with staggered planting."
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 13,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 2.5,
+        "unit": "mg",
+        "rdi": "3-4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 0.74,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 18,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Calcium",
+        "value": 8.8,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting satiety.",
+    "Contains antioxidants, including betacyanins (in red-fleshed varieties) and hydroxycinnamates, which help combat oxidative stress.",
+    "May boost the immune system due to its Vitamin C and carotenoid content, though Vitamin C levels are modest compared to other fruits.",
+    "Rich in prebiotics, which nourish beneficial gut bacteria, contributing to overall gut health.",
+    "Contains small amounts of iron and magnesium, important for various bodily functions."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Dragon Fruit Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon. However, as with any food, isolated allergic reactions are possible."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical or subtropical, thrives in warm, humid environments. Needs support for climbing (cactus vine).\n2. Soil: Well-draining soil, sandy loam is ideal. Tolerates poor soils but benefits from organic matter.\n3. Propagation: Easily grown from seeds or stem cuttings.\n4. Planting: Plant cuttings or seedlings near a sturdy trellis, post, or wall for support.\n5. Watering: Water regularly, but allow soil to dry out slightly between waterings. Drought-tolerant once established.\n6. Fertilizing: Apply balanced fertilizer or organic compost during the growing season.\n7. Pollination: Flowers are nocturnal and often require hand pollination or specific pollinators (moths, bats) for good fruit set, especially for some varieties.\n8. Harvesting: Fruit is ready when the skin color is vibrant (pink or yellow) and the 'wings' or scales start to wither slightly. It should detach easily.",
+  "growthDuration": "Can start bearing fruit in 1-3 years from cuttings. Fruits mature 30-50 days after successful pollination of the flower.",
+  "sustainabilityTips": [
+    "Store at room temperature for a few days or refrigerate for longer life (up to two weeks if uncut).",
+    "Eat fresh by scooping out the flesh. The tiny black seeds are edible and nutritious.",
+    "Compost the skin. The plant itself is relatively drought-tolerant, making it a good choice for some arid regions."
+  ],
+  "carbonFootprintInfo": "Moderate to high if transported long distances, especially by air (estimated 0.8-2.0 kg CO2e/kg). Locally sourced dragon fruit has a much lower footprint.",
+  "uses": [
+    "fresh_consumption_eaten_raw_scooped_out",
+    "fruit_salads",
+    "beverages_smoothies_juices_cocktails_mocktails",
+    "desserts_sorbets_ice_cream_jellies_pastries_puddings",
+    "garnishes_for_dishes_and_drinks",
+    "natural_food_coloring_red_fleshed_varieties",
+    "ornamental_plant_cactus_vine_large_night_blooming_flowers",
+    "culinary_flower_buds_sometimes_cooked_as_vegetable"
+  ],
+  "originAndDomesticationHistory": "Dragon fruit, also known as pitaya or pitahaya, encompasses several cactus species, primarily from the genera Hylocereus and Selenicereus. These cacti are native to Mexico, Central America, and northern South America. Indigenous peoples in these regions have consumed the wild fruits for centuries. While not domesticated in the same way as ancient staple crops, cultivation and selection for desirable traits likely occurred over time within its native range. Commercial-scale cultivation is relatively recent, beginning in the late 20th and early 21st centuries. The French introduced dragon fruit to Southeast Asia (notably Vietnam) in the late 19th or early 20th century. Vietnam has since become the world's leading producer and exporter. Its exotic appearance, mild flavor, and nutritional properties have driven its global popularity.",
+  "climaticRequirements": {
+    "temperature": "Prefers tropical or subtropical climates with optimal temperatures between 20-30°C (68-86°F). It is generally intolerant of frost, although some mature plants might withstand very brief periods near freezing. Growth significantly slows below 10°C (50°F).",
+    "rainfall": "Requires moderate rainfall, typically between 600mm and 1300mm annually. While it's a cactus and can tolerate some drought, consistent moisture is needed for good fruit production, especially during flowering and fruiting. Good drainage is essential to prevent root rot.",
+    "altitude": "Commonly grown from sea level up to about 800 meters (approx. 2600 feet). Some species can be found at higher elevations in their native tropical habitats, but commercial cultivation is usually at lower altitudes."
+  },
+  "soilPreferences": "Well-draining soil is paramount. Dragon fruit thrives in sandy loams or loamy soils that are rich in organic matter. While it can tolerate poor soils, yields and fruit quality are much better with fertile conditions. A slightly acidic to neutral pH (around 5.5-7.0) is generally preferred. Heavy clay soils or waterlogged conditions must be avoided.",
+  "irrigationAndWaterNeeds": "Although a cactus, dragon fruit is not as drought-tolerant as desert cacti, especially during active growth and fruit production. Regular irrigation is necessary in most commercial settings, particularly during dry periods or when rainfall is insufficient. The soil should be allowed to dry out slightly between waterings to prevent root diseases. Drip irrigation is often used to deliver water efficiently.",
+  "plantingAndHarvestCycles": "Dragon fruit is easily propagated from seeds or, more commonly for commercial purposes, from stem cuttings. Cuttings root readily and can begin producing fruit within 1-3 years, significantly faster than seed-grown plants. As climbing cacti, they require a sturdy support structure like a trellis, post, or wall. Flowers are large, white, fragrant, and nocturnal, blooming for only one night. Pollination is primarily carried out by moths and bats in their native environment. For some self-sterile varieties or in areas lacking natural pollinators, hand pollination is often necessary to ensure good fruit set and size. Fruits mature approximately 30-50 days after successful pollination. Harvesting is done when the skin color becomes vibrant (pink, red, or yellow, depending on the variety) and the small leaf-like scales (bracts) on the fruit start to wither slightly. The fruit should detach from the stem with a gentle twist.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids, mealybugs, scale insects, ants (which often farm aphids and mealybugs), thrips, mites, slugs, and snails can affect the plants. Fruit flies may target the fruit in some regions. Birds, bats, or rodents can also cause damage to ripe fruit. Common Diseases: Stem rot and fruit rot are common issues, often caused by various fungi (e.g., Bipolaris, Colletotrichum, Fusarium) and bacteria (e.g., Erwinia), particularly in overly humid conditions, poorly drained soils, or when plants are overwatered. Anthracnose and Dragon Fruit Cactus Virus (DFCV) can also occur. Management Strategies: Ensuring excellent drainage, providing good air circulation through proper pruning, avoiding overwatering, removing and destroying diseased plant parts promptly, and using copper-based fungicides preventatively or curatively for certain fungal diseases. Biological controls can be effective for some pests.",
+  "postHarvestHandling": "Dragon fruit is typically harvested when it reaches full color. Its shelf life is relatively short, around 5-7 days at ambient room temperature. This can be extended to about 2-3 weeks if the fruit is stored at cool temperatures, around 7-10°C (45-50°F), with high relative humidity. Dragon fruit is susceptible to chilling injury if stored below 5°C (41°F). The fruit should be handled carefully during harvesting, packing, and transportation to avoid bruising and damage to the skin. Fruits are often packed in single layers with protective material.",
+  "majorProducingCountriesOrRegions": [
+    "Vietnam (world's largest producer and exporter)",
+    "Thailand",
+    "China (Southern regions)",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Taiwan",
+    "Mexico",
+    "Nicaragua",
+    "Ecuador",
+    "Colombia",
+    "Israel",
+    "Australia (Northern Territory, Queensland)",
+    "United States (Florida, California, Hawaii - smaller scale)"
+  ],
+  "marketValueAndGlobalDemand": "The global demand for dragon fruit has seen a significant increase over the past two decades, driven by its exotic appearance, unique texture, mild flavor, and recognized nutritional benefits (often marketed as a 'superfruit'). Vietnam dominates the export market. Major import markets include Asia (especially China), Europe, and North America. Prices can vary considerably based on factors such as variety (red-fleshed and yellow-skinned varieties often command higher prices), size, quality, origin, and seasonality. The market continues to expand as more consumers become familiar with the fruit.",
+  "staticRecipes": [
+    {
+      "name": "Dragon Fruit Smoothie Bowl",
+      "description": "A vibrant and healthy smoothie bowl topped with fresh fruits and nuts.",
+      "ingredients": [
+        "1 frozen dragon fruit (pink or white flesh), chopped",
+        "1/2 frozen banana",
+        "1/2 cup coconut water or almond milk",
+        "Toppings: Sliced fresh dragon fruit, berries, granola, chia seeds, coconut flakes"
+      ],
+      "steps": [
+        "Combine frozen dragon fruit, frozen banana, and coconut water/milk in a high-speed blender.",
+        "Blend until thick and smooth, like soft-serve ice cream. Add a little more liquid if needed, but keep it thick.",
+        "Pour the smoothie into a bowl.",
+        "Arrange toppings decoratively over the smoothie bowl.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Dragon Fruit Salad",
+      "description": "A refreshing and visually stunning fruit salad.",
+      "ingredients": [
+        "1 dragon fruit, peeled and cubed",
+        "1 cup mixed berries (strawberries, blueberries)",
+        "1 kiwi, peeled and sliced",
+        "1/2 mango, peeled and cubed (optional)",
+        "Juice of 1/2 lime",
+        "1 tbsp honey or agave (optional)",
+        "Fresh mint leaves for garnish"
+      ],
+      "steps": [
+        "In a large bowl, gently combine cubed dragon fruit, mixed berries, sliced kiwi, and mango (if using).",
+        "In a small bowl, whisk together lime juice and honey/agave (if using).",
+        "Drizzle the dressing over the fruit salad.",
+        "Garnish with fresh mint leaves. Toss gently and serve chilled."
+      ]
+    },
+    {
+      "name": "Dragon Fruit Lemonade",
+      "description": "A colorful and exotic twist on classic lemonade.",
+      "ingredients": [
+        "1/4 cup dragon fruit puree (blend flesh of 1/2 dragon fruit)",
+        "1 cup fresh lemon juice",
+        "1/2 cup sugar (or to taste)",
+        "4 cups cold water",
+        "Ice cubes",
+        "Dragon fruit slices and lemon slices for garnish"
+      ],
+      "steps": [
+        "In a small saucepan, make simple syrup by combining sugar and 1 cup of water. Heat until sugar dissolves, then let cool.",
+        "In a large pitcher, combine lemon juice, cooled simple syrup, dragon fruit puree, and the remaining 3 cups of cold water.",
+        "Stir well to combine. Taste and adjust sweetness if needed.",
+        "Serve over ice, garnished with dragon fruit slices and lemon slices."
+      ]
+    }
+  ]
+}

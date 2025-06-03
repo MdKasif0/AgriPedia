@@ -1,0 +1,171 @@
+{
+  "id": "kokum",
+  "commonName": "Kokum",
+  "scientificName": "Garcinia indica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Kokumfruitsdried.jpg",
+  "description": "A fruit-bearing tree in the mangosteen family (Clusiaceae), native to the Western Ghats of India. The fruit is small, round, and turns from red to dark purple when ripe. The outer cover (rind) is dried and used as a distinctive souring agent in cuisines, while the seeds yield an edible fat known as kokum butter.",
+  "origin": "Western Ghats region of India",
+  "localNames": [
+    "Amsol (Marathi/Konkani - referring to dried rind)",
+    "Brinda (Konkani)",
+    "Murugala Hannu (Kannada)",
+    "Biranj (Gujarati)",
+    "Ratamba (Marathi - fresh fruit)"
+  ],
+  "regions": [
+    "India (primarily Western Ghats states: Maharashtra, Goa, Karnataka, Kerala, parts of Gujarat and Tamil Nadu)"
+  ],
+  "seasons": [
+    "Fresh fruit: Summer (April-May, sometimes extending to June)",
+    "Dried kokum rind: Available year-round"
+  ],
+  "nutrition": {
+    "calories": "Approximately 60 kcal per 100g (fresh fruit, estimated as detailed data is scarce; dried rind is different)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 5,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Folic Acid",
+        "value": "Trace",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 170,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Magnesium",
+        "value": "Present",
+        "unit": ""
+      },
+      {
+        "name": "Manganese",
+        "value": "Present",
+        "unit": ""
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used in Ayurveda as an antacid, to improve digestion, and to combat flatulence and diarrhea.",
+    "Rich in antioxidants, particularly garcinol (found in the rind) and anthocyanins, which help protect against cell damage.",
+    "May possess anti-inflammatory, anti-allergic, and anti-carcinogenic properties based on preliminary research.",
+    "Kokum butter, derived from the seeds, is an excellent emollient used in cosmetics and skincare for moisturizing and healing chapped skin.",
+    "Kokum sherbet is valued as a cooling and refreshing drink, especially during hot weather, and can help prevent dehydration and heatstroke."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Kokum Allergy",
+      "severity": "Rare",
+      "details": "Allergies to kokum are very uncommon. It is generally well-tolerated by most people."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical, prefers warm and humid conditions with well-distributed rainfall.\n2. Soil: Grows well in lateritic, alluvial, or sandy loam soils with good drainage and acidic pH.\n3. Propagation: Seeds (sown fresh) or grafting for select varieties.\n4. Planting: Plant in partial shade when young, transitioning to full sun as it matures. Spacing depends on whether grown as a tree or managed orchard.\n5. Watering: Regular watering for young plants. Mature trees are somewhat drought-tolerant but benefit from irrigation during prolonged dry spells for better yield.\n6. Fertilizing: Responds well to organic manure. Generally low input requirement.\n7. Harvesting: Fruits are harvested when they turn deep purple. The rind is then typically separated from the pulp/seeds and dried for culinary use.",
+  "growthDuration": "Seedling trees typically start bearing fruit in 7-10 years, while grafted plants may begin in 4-5 years. Fruits ripen in the summer months (April-May, sometimes extending to June).",
+  "sustainabilityTips": [
+    "Dried kokum rind (amsol) is a highly sustainable product with a long shelf life, reducing food waste and a staple souring agent in coastal Indian cuisine.",
+    "Kokum sherbet is a popular cooling drink, often made from the dried rind or fresh fruit.",
+    "Kokum butter is a sustainable and natural alternative to cocoa butter in cosmetics and food preparations. The tree is hardy and often grown with minimal inputs."
+  ],
+  "carbonFootprintInfo": "Low, especially when consumed locally or as a dried product (which is light to transport). Estimated 0.2-0.5 kg CO2e/kg for dried product. It's often grown in traditional agroecosystems.",
+  "uses": [
+    "culinary_souring_agent_dried_rind_amsol_in_curries_dals_fish_dishes_sol_kadi",
+    "beverages_kokum_sherbet_agni_digestive_drink_kokum_syrup_concentrate",
+    "kokum_butter_from_seeds_edible_fat_confectionery_chocolates_cosmetics_pharmaceuticals_emollient_lip_balms_lotions_soaps",
+    "medicinal_traditional_ayurvedic_antacid_digestive_aid_anti_inflammatory_antioxidant_cooling_agent",
+    "fresh_fruit_eaten_limitedly_due_to_tartness"
+  ],
+  "originAndDomesticationHistory": "Kokum (Garcinia indica) is native to the Western Ghats of India, a global biodiversity hotspot. It has been an integral part of the traditional food and medicine systems in this region for centuries, particularly in the coastal areas of Maharashtra, Goa, Karnataka, and Kerala. While it hasn't undergone the extensive formal domestication process seen in major global fruit crops, local communities have long utilized and managed wild or semi-wild stands. Selection by these communities has likely favored trees with better fruit yield and quality. Its cultivation largely remains confined to its native areas and similar tropical climates, making it a significant element of local ethnobotany and culinary heritage rather than a widely traded international commodity in its fresh form.",
+  "climaticRequirements": {
+    "temperature": "Kokum is a tropical tree that thrives in warm and humid conditions. The optimal temperature range for its growth is generally between 20°C and 30°C (68°F to 86°F). It is sensitive to frost, especially when young. Mature trees can tolerate slightly cooler temperatures but not prolonged cold spells.",
+    "rainfall": "Requires a well-distributed annual rainfall, typically between 1500mm and 3000mm. It can withstand heavy monsoon rainfall provided the soil has good drainage. A period of relative dryness can be beneficial before flowering.",
+    "altitude": "Grows well in coastal regions and at lower elevations, typically from sea level up to about 800 meters (approx. 2600 feet) in the Western Ghats and similar environments."
+  },
+  "soilPreferences": "Prefers well-drained, acidic, lateritic soils, which are common in its native Western Ghats habitat. It can also grow in sandy loams or alluvial soils, provided they are rich in organic matter and have good drainage. The tree does not tolerate waterlogged conditions or highly alkaline soils.",
+  "irrigationAndWaterNeeds": "Young kokum plants require regular watering for proper establishment, especially during dry periods. Mature trees are somewhat drought-tolerant but benefit from supplemental irrigation during prolonged dry spells, particularly during the flowering and fruit development stages, to ensure good yields and fruit quality. However, over-irrigation should be avoided.",
+  "plantingAndHarvestCycles": "Kokum is commonly propagated from seeds, which should be sown fresh as they have a short viability period. For cultivating specific types or ensuring earlier bearing, vegetative propagation methods like softwood grafting or air layering are sometimes used. Planting is usually done at the beginning of the rainy season. Seedling trees may take about 7-10 years to start bearing fruit, while grafted plants can begin fruiting in 4-5 years. The trees typically flower from November to February. Fruits ripen in the summer months, from April to May, sometimes extending into June. Fruits are harvested when they turn a deep purple color and are slightly soft to the touch. They are generally hand-picked from the tree or collected after they have naturally fallen (though this can lead to fruit damage). After harvest, the rind is separated from the pulp and seeds and is then sun-dried or dried using mechanical driers to produce the culinary 'amsol' or kokum.",
+  "pestAndDiseaseManagement": "Kokum trees are generally known for their hardiness and are not severely affected by many pests or diseases, especially when grown in their native environment under traditional, low-input systems. Occasionally, minor issues with scale insects or mealybugs might occur. Fruit rot can be a problem during periods of very high humidity or if fruits are damaged and left on the ground. Good orchard sanitation and ensuring proper air circulation through pruning are generally sufficient to manage these issues. Due to its resilience, it typically requires minimal or no chemical pest control.",
+  "postHarvestHandling": "The fresh kokum fruit is perishable and has a relatively short shelf life. For culinary use, the primary product is the dried rind (often called 'amsol' or simply 'kokum'). To prepare this, the ripe fruits are cut open, the pulp and seeds are scooped out (seeds are reserved for kokum butter extraction), and the rinds are then thoroughly dried, either by sun-drying (which can take several days) or by using mechanical driers. Properly dried kokum rinds become dark purple-black, leathery, and can be stored for several months to a year in airtight containers, away from moisture. Kokum butter is extracted from the seeds by crushing and boiling them to separate the fat.",
+  "marketValueAndGlobalDemand": "Dried kokum rind is a staple and highly valued souring agent in the cuisines of western and southern India, particularly in Goan, Maharashtrian, Konkan, and some Gujarati and Karnataka dishes. There is a strong and consistent local and regional demand for dried kokum. Kokum sherbet concentrate and ready-to-drink kokum beverages also have a popular seasonal market. Kokum butter is gaining increasing recognition and demand in the natural cosmetics and food industries as a specialty fat and a sustainable alternative to other emollients like cocoa butter. While fresh kokum fruit has limited trade outside its growing regions due to its perishability, the demand for its value-added products (dried rind, butter, juice concentrate) is growing, including some niche international interest driven by its unique flavor profile, culinary uses, and health benefits, particularly the antioxidant properties of garcinol.",
+  "staticRecipes": [
+    {
+      "name": "Kokum Sherbet (Sol Kadi Base)",
+      "description": "A refreshing and tangy drink made from dried kokum, often used as a base for Sol Kadi.",
+      "ingredients": [
+        "1/2 cup dried Kokum rinds (Amsol)",
+        "2 cups warm water",
+        "1/4 cup sugar or jaggery (or to taste)",
+        "1/2 tsp roasted cumin powder",
+        "Pinch of black salt"
+      ],
+      "steps": [
+        "Soak dried kokum rinds in 2 cups of warm water for about 1-2 hours. This helps soften them and extract the color and flavor.",
+        "After soaking, squeeze the kokum rinds well in the water to release all their essence. The water will turn deep pink/purple.",
+        "Strain the liquid through a fine-mesh sieve into a pitcher, pressing the rinds to extract maximum juice. Discard the rinds.",
+        "Add sugar or jaggery to the kokum extract and stir until completely dissolved.",
+        "Stir in roasted cumin powder and black salt.",
+        "Chill thoroughly. Serve as a refreshing drink or use as a base for Sol Kadi (by adding coconut milk and spices)."
+      ]
+    },
+    {
+      "name": "Using Dried Kokum (Amsol) in Curries",
+      "description": "Dried kokum is used as a souring agent in many coastal Indian curries and dals.",
+      "ingredients": [
+        "3-4 pieces of dried Kokum rind (Amsol)",
+        "Your curry or dal preparation"
+      ],
+      "steps": [
+        "Rinse the dried kokum pieces briefly.",
+        "Add the kokum pieces to your curry or dal while it's simmering. They will release their tartness and a beautiful pinkish hue to the dish.",
+        "The amount to use depends on the desired level of sourness and the quantity of the dish. Start with a few pieces and add more if needed.",
+        "Remove the kokum pieces before serving, or leave them in if preferred (they are edible but mainly used for flavor)."
+      ]
+    },
+    {
+      "name": "Kokum Infused Water",
+      "description": "A simple digestive aid and cooling drink.",
+      "ingredients": [
+        "4-5 pieces of dried Kokum rind (Amsol)",
+        "1 liter water",
+        "Optional: pinch of black salt, a few mint leaves"
+      ],
+      "steps": [
+        "Rinse the dried kokum pieces.",
+        "Add them to a bottle or jar with 1 liter of water.",
+        "Let it infuse for at least 2-3 hours at room temperature, or overnight in the refrigerator.",
+        "The water will turn a light pink and acquire a tangy flavor.",
+        "Strain if desired. Add black salt or mint leaves for extra flavor.",
+        "Drink throughout the day as a cooling and digestive beverage."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "id": "drumstick-moringa",
+  "commonName": "Drumstick (Moringa)",
+  "scientificName": "Moringa oleifera",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Drumstick_Tree_%28Moringa_oleifera%29_4.jpg",
+  "description": "A fast-growing, drought-resistant tree of the family Moringaceae, native to the Indian subcontinent. It is widely cultivated for its multiple uses. The long, slender, triangular seed pods (often called 'drumsticks') are used as a vegetable when young and tender. The leaves and flowers are also edible and highly nutritious. Often referred to as the 'Miracle Tree' or 'Tree of Life' due to its high nutritional content and traditional medicinal uses of various plant parts.",
+  "origin": "Indian subcontinent (specifically the sub-Himalayan tracts of Northwestern India - Punjab, Uttar Pradesh).",
+  "localNames": [
+    "Moringa (widely used internationally)",
+    "Drumstick Tree (English)",
+    "Horseradish Tree (English - due to root taste)",
+    "Ben Oil Tree / Benzolive Tree (English - from oil extracted from seeds)",
+    "Sanjana / Sahjan (सहजन - Hindi)",
+    "Murungai / Murungakkai (முருங்கைக்காய் - Tamil, for pod)",
+    "Munagakaya (మునగకాయ - Telugu, for pod)",
+    "Shevga (शेवगा - Marathi)",
+    "Malunggay (Tagalog - Philippines)"
+  ],
+  "regions": [
+    "India (largest producer, widely cultivated across states)",
+    "Southeast Asia (Philippines, Indonesia, Thailand, Vietnam, Malaysia)",
+    "Africa (Nigeria, Ethiopia, Kenya, Ghana, throughout sub-Saharan Africa)",
+    "Central and South America (Mexico, Nicaragua, Brazil, Peru)",
+    "Caribbean Islands (Haiti, Dominican Republic)",
+    "Pakistan",
+    "Sri Lanka",
+    "Florida (USA - limited but increasing)"
+  ],
+  "seasons": [
+    "Pods are typically available in spring and summer in many regions. Leaves and flowers can be available year-round in consistently warm tropical climates, often with flushes of growth after rains."
+  ],
+  "nutrition": {
+    "calories": "Pods (cooked): 37 kcal per 100g; Leaves (raw): 64 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": "Pods: 2.1g; Leaves: 9.4g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": "Pods: 8.5g; Leaves: 8.3g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Fat",
+        "value": "Pods: 0.2g; Leaves: 1.4g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Fiber",
+        "value": "Pods: 3.2g; Leaves: 2.0g",
+        "unit": "per 100g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": "Pods: 141mg (235% RDI); Leaves: 51.7mg (57-86% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": "Pods: 4µg RAE (0.5% RDI); Leaves: 378µg RAE (42-54% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": "Leaves: 1.2mg (70% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": "Leaves: 0.66mg (51% RDI)",
+        "unit": "per 100g"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": "Pods: 0.36mg (2% RDI); Leaves: 4.0mg (22-50% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Calcium",
+        "value": "Pods: 30mg (3% RDI); Leaves: 185mg (14-19% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Potassium",
+        "value": "Pods: Significant; Leaves: 337mg (7-10% RDI)",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Magnesium",
+        "value": "Leaves: 147mg (35-49% RDI)",
+        "unit": "per 100g"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Drumstick pods are notably rich in Vitamin C, contributing to immune defense and collagen synthesis.",
+    "Moringa leaves are exceptionally nutritious, considered a superfood, packed with Vitamin A (from beta-carotene), Vitamin C, Vitamin B6, Riboflavin, Iron, Calcium, Magnesium, and high-quality protein with all essential amino acids.",
+    "Contains powerful antioxidants (such as quercetin, kaempferol, chlorogenic acid) and anti-inflammatory compounds (like isothiocyanates) that protect against cell damage and may reduce inflammation.",
+    "Traditionally used in Ayurvedic and folk medicine to treat a wide range of ailments including malnutrition, infections, diabetes (may help regulate blood sugar), joint pain, and digestive issues. Also used to boost energy levels and improve overall health.",
+    "Moringa seed oil (Ben oil) is rich in oleic acid and antioxidants, beneficial for skin and hair."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Moringa Root Bark Consumption",
+      "severity": "High (Toxic)",
+      "details": "The root and root bark of the Moringa tree contain potentially toxic alkaloids (e.g., spirochin, pterygospermin) which can cause paralysis or be fatal if ingested. Consumption of these parts should be strictly avoided. The edible parts are generally considered safe: young pods (drumsticks), leaves, flowers, and seeds (in moderation)."
+    },
+    {
+      "name": "Digestive Upset (from high intake)",
+      "severity": "Mild",
+      "details": "Consuming very large quantities of moringa leaves or powder, especially by those unaccustomed to it, may cause digestive upset or a laxative effect due to its high fiber and nutrient density."
+    }
+  ],
+  "cultivationProcess": "Moringa is a fast-growing, drought-resistant tree. It can be propagated from seeds, which germinate readily, or from large stem cuttings (1-2 meters long), which establish faster and bear earlier. It thrives in well-drained sandy or loamy soil and prefers full sun. Young plants require regular watering for good establishment, but mature trees are highly drought-tolerant. Pruning is often done regularly (coppicing or pollarding) to encourage branching, maintain the tree at a manageable height for easy harvesting of leaves and pods, and to promote continuous production. Details in specific sections.",
+  "growthDuration": "Moringa trees can start producing pods within 6-12 months of planting in ideal conditions, especially when grown from cuttings. Leaf harvesting can begin when plants are just a few months old and well-established. It is a very fast-growing tree.",
+  "sustainabilityTips": [
+    "All parts of the moringa tree (leaves, pods, flowers, seeds, and even roots/bark for some traditional uses though caution is advised for roots) are utilized in some way, making it a highly efficient and sustainable resource.",
+    "Moringa leaves can be easily dried (shade-drying is preferred to retain nutrients) and powdered for long-term storage and use as a highly concentrated nutritional supplement.",
+    "It's an extremely resilient and fast-growing tree, excellent for agroforestry systems, combating malnutrition in developing countries, and can be grown with minimal inputs in arid and semi-arid regions.",
+    "The seeds can be used for water purification in some traditional methods."
+  ],
+  "carbonFootprintInfo": "Very low, particularly when grown and consumed locally (estimated 0.2-0.5 kg CO2e/kg for fresh produce). Its hardiness, fast growth, and minimal input requirements contribute to its sustainability. Processed products like leaf powder or oil will have additional footprint from processing and transport.",
+  "uses": [
+    "culinary_vegetable_young_tender_seed_pods_drumsticks_cooked_in_curries_sambar_soups_stews_stir_fries",
+    "culinary_leafy_vegetable_leaves_eaten_fresh_in_salads_young_leaves_cooked_like_spinach_in_dals_soups_stir_fries_omelets_added_to_smoothies",
+    "culinary_flowers_edible_cooked_in_stir_fries_fritters_salads_or_used_as_garnish",
+    "culinary_seeds_mature_seeds_can_be_roasted_or_fried_and_eaten_like_nuts_taste_varies_from_sweet_to_bitter",
+    "medicinal_traditional_ayurveda_siddha_almost_all_parts_leaves_pods_seeds_flowers_roots_bark_used_for_malnutrition_inflammation_infections_diabetes_digestive_issues_anemia_arthritis_etc_caution_with_root_bark",
+    "dietary_supplement_dried_leaf_powder_capsules_tablets_teas_marketed_as_a_superfood",
+    "oil_extraction_ben_oil_from_seeds_edible_used_for_cooking_cosmetics_perfume_fixative_lubricant_for_fine_machinery",
+    "water_purification_crushed_seeds_contain_flocculating_agents_used_to_clarify_and_purify_turbid_water_in_traditional_methods",
+    "animal_fodder_leaves_branches_and_seed_cake_byproduct_of_oil_extraction_are_nutritious_feed_for_livestock_cattle_goats_sheep_poultry",
+    "agroforestry_fast_growing_drought_resistant_tree_used_for_alley_cropping_windbreaks_soil_conservation_live_fencing_biomass_production"
+  ],
+  "originAndDomesticationHistory": "Moringa oleifera is native to the sub-Himalayan tracts of Northwestern India (regions of Punjab and Uttar Pradesh). It has been cultivated and highly valued in India for thousands of years for its exceptional nutritional content and extensive medicinal properties, with mentions in ancient Ayurvedic texts. From its Indian origin, the tree spread to other parts of tropical and subtropical Asia, then to Africa, the Middle East, Southeast Asia, the Pacific Islands, and the Americas (introduced by traders and settlers). It is often referred to as the 'Miracle Tree' or 'Tree of Life' because of its numerous uses and its ability to thrive in arid conditions where other food sources may be scarce. While it has been utilized for millennia, formal breeding programs for specific traits are more recent.",
+  "climaticRequirements": {
+    "temperature": "Moringa is a tropical and subtropical tree that thrives in warm to hot climates. The optimal temperature range for its growth is between 25°C and 35°C (77°F to 95°F). While mature trees can tolerate very high temperatures (up to 48°C or 118°F) and light, brief frosts (down to -1 to -3°C or 26-30°F), young plants are very sensitive to frost and can be killed by freezing temperatures. It requires full sun exposure for best growth and production.",
+    "rainfall": "Moringa is highly drought-resistant once its deep taproot system is established. It prefers an annual rainfall ranging from 250mm to 1500mm but can survive in very arid conditions with access to groundwater. It can also tolerate periods of heavy rainfall provided the soil has excellent drainage, as it does not withstand waterlogged conditions.",
+    "altitude": "Grows well from sea level up to about 1000 meters (approximately 3300 feet). It can be found at higher elevations (up to 2000m) in suitable tropical conditions, but growth and productivity may be reduced at cooler, higher altitudes."
+  },
+  "soilPreferences": "Moringa trees are adaptable to a wide range of soil types but perform best in well-drained, sandy loam or loamy soils. They can tolerate poor soils, including infertile sandy or clayey soils, and a wide pH range, ideally between 6.0 and 7.5 (slightly acidic to neutral). Good soil drainage is absolutely essential, as the trees are highly susceptible to root rot in waterlogged or overly wet conditions.",
+  "irrigationAndWaterNeeds": "Young moringa trees require regular watering to ensure proper establishment and vigorous early growth. Once mature, trees are highly drought-tolerant due to their tuberous taproot, which stores water. In areas with sufficient rainfall, mature trees often require little to no irrigation. However, for optimal leaf and pod production, especially in commercial cultivation or during prolonged dry spells, occasional deep watering is beneficial. Overwatering should be strictly avoided to prevent root rot.",
+  "plantingAndHarvestCycles": "Moringa can be easily propagated from seeds, which germinate readily within 1-2 weeks, or from large stem cuttings (1-2 meters long and several centimeters thick), which root quickly and can lead to faster establishment and earlier fruiting. Planting is typically done directly in the field or in large containers. Trees are very fast-growing. Harvesting of Leaves: Leaves can be harvested as soon as the plant is well-established, often within a few months (60-90 days) of planting. Regular, light harvesting of young leaves and tender shoot tips encourages bushier growth and continuous production. Harvesting of Pods (Drumsticks): Trees grown from cuttings can start producing pods within 6-12 months of planting under ideal conditions. Seed-grown trees may take longer, typically 1-2 years. Pods are harvested when they are young, tender, and about pencil-thickness (usually 30-45 cm long or 1-1.5 feet), before they become woody and fibrous. This is generally about 2-3 months after flowering. Regular harvesting of pods also encourages further flowering and fruiting. Harvesting of Flowers: Edible flowers are picked when they are in full bloom and used fresh.",
+  "pestAndDiseaseManagement": "Pests: Moringa trees are generally quite hardy and resistant to many pests. However, they can sometimes be affected by the Moringa hairy caterpillar (Eupterote mollifera), which can cause defoliation. Aphids, spider mites, fruit flies (on pods), and termites (which can damage roots or the stem base in some areas) may also occur. Common Diseases: Root rot, caused by various fungi (e.g., Diplodia spp., Phytophthora), is the most serious issue, particularly in poorly drained or overwatered soils. Twig canker and stem rot can also occur. Leaf spots are generally minor. Management Strategies: Ensuring excellent soil drainage is paramount to prevent root rot. Pruning to maintain an open canopy and good air circulation can help reduce disease incidence. For caterpillars, manual removal or biological controls (like Bt - Bacillus thuringiensis) can be effective if infestations are severe. Generally, moringa requires minimal pest control, especially when grown in suitable conditions and managed well.",
+  "postHarvestHandling": "Leaves: Fresh moringa leaves are highly perishable and should be used as soon as possible after harvest. They can be stored in the refrigerator for a few days, typically wrapped in plastic or a damp cloth to maintain humidity. For longer-term storage, leaves are often air-dried or shade-dried (to preserve nutrients better than sun-drying) and then crushed or powdered. Dried leaf powder should be stored in airtight containers in a cool, dark place. Pods (Drumsticks): Young, tender drumstick pods can be stored in the refrigerator for about a week. They can also be blanched and frozen for longer preservation. Flowers: Moringa flowers are very delicate and should be used fresh on the day of harvest if possible.",
+  "majorProducingCountriesOrRegions": [
+    "India (world's largest producer of moringa, extensive cultivation for leaves, pods, and powder)",
+    "Philippines (widely cultivated as 'Malunggay')",
+    "Indonesia",
+    "Nigeria",
+    "Ethiopia",
+    "Kenya",
+    "Ghana",
+    "Other countries in South Asia, Southeast Asia, tropical Africa, and Latin America.",
+    "Increasing cultivation in parts of the United States (Florida, California, Hawaii) and Australia."
+  ],
+  "marketValueAndGlobalDemand": "Drumstick pods are a popular vegetable in South Asian (especially Indian and Sri Lankan), Southeast Asian, and some African cuisines, with strong local and regional markets. Moringa leaves (both fresh and particularly as dried powder) and other moringa-based products (such as teas, oils, capsules, and supplements) have experienced a significant surge in global demand in recent years. This is largely driven by moringa's recognition as a 'superfood' due to its exceptionally high nutritional content and numerous purported health benefits. India is a major producer and exporter of moringa products. The demand is particularly high in health food markets in North America, Europe, and East Asia. The market value for moringa leaf powder and supplements can be quite high compared to the fresh vegetable form.",
+  "staticRecipes": [
+    {
+      "name": "Drumstick Sambar (South Indian Lentil Stew)",
+      "description": "A popular South Indian stew where drumstick pieces are cooked with lentils, tamarind, and a special spice blend (sambar powder).",
+      "ingredients": [
+        "4-5 drumsticks, cut into 2-3 inch pieces",
+        "1/2 cup toor dal (split pigeon peas), cooked",
+        "1 small onion, chopped",
+        "1 tomato, chopped",
+        "Small lemon-sized ball of tamarind, soaked in warm water and pulp extracted",
+        "2 tbsp sambar powder",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1/4 tsp fenugreek seeds, 1-2 dried red chilies, few curry leaves, pinch of asafoetida"
+      ],
+      "steps": [
+        "In a pot, cook drumstick pieces with some water, turmeric powder, and salt until tender but not mushy. Set aside.",
+        "Heat oil in a pan for tempering. Add mustard seeds; when they splutter, add fenugreek seeds, dried red chilies, asafoetida, and curry leaves. Sauté.",
+        "Add chopped onion and sauté until translucent. Add chopped tomato and cook until soft.",
+        "Add sambar powder and sauté for a minute. Add tamarind pulp and cook for 2-3 minutes.",
+        "Add cooked toor dal, cooked drumstick pieces (with their cooking water), and salt to taste. Mix well. Add more water if needed to reach desired consistency.",
+        "Simmer for 10-15 minutes, allowing flavors to blend. Serve hot with rice, idli, or dosa."
+      ]
+    },
+    {
+      "name": "Moringa Leaf Stir-fry (Murungai Keerai Poriyal)",
+      "description": "A simple and nutritious South Indian stir-fry made with moringa leaves.",
+      "ingredients": [
+        "2 cups fresh moringa leaves, picked from stems and washed",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp urad dal (split black lentils)",
+        "1-2 dried red chilies, broken",
+        "Pinch of asafoetida",
+        "1 small onion, finely chopped (optional)",
+        "Salt to taste",
+        "2 tbsp grated fresh coconut (optional)"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
+        "Add asafoetida and chopped onion (if using). Sauté until onion is translucent.",
+        "Add washed moringa leaves and salt. Stir well.",
+        "Cover and cook on low-medium heat for 5-7 minutes, or until leaves are wilted and tender, stirring occasionally.",
+        "If using, stir in grated coconut. Cook for another minute.",
+        "Serve hot as a side dish with rice."
+      ]
+    },
+    {
+      "name": "Drumstick and Potato Curry",
+      "description": "A flavorful North Indian style curry with drumsticks and potatoes.",
+      "ingredients": [
+        "2-3 drumsticks, cut into 2-inch pieces",
+        "2 medium potatoes, peeled and cubed",
+        "1 large onion, pureed",
+        "1 tbsp ginger-garlic paste",
+        "2 tomatoes, pureed",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "1/2 tsp cumin powder",
+        "1/2 tsp red chili powder (or to taste)",
+        "Salt to taste",
+        "2 tbsp oil",
+        "1/2 cup water"
+      ],
+      "steps": [
+        "Heat oil in a pan or pressure cooker. Add onion puree and sauté until golden brown.",
+        "Add ginger-garlic paste and sauté for a minute.",
+        "Add tomato puree and cook until oil starts to separate.",
+        "Add turmeric powder, coriander powder, cumin powder, chili powder, and salt. Mix well and cook for a minute.",
+        "Add drumstick pieces and cubed potatoes. Sauté for 2-3 minutes, coating them with the masala.",
+        "Add 1/2 cup of water. If using a pressure cooker, cook for 1-2 whistles. If in a pan, cover and simmer for 15-20 minutes or until vegetables are tender.",
+        "Garnish with fresh cilantro. Serve hot with roti or rice."
+      ]
+    }
+  ]
+}

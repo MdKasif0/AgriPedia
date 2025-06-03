@@ -1,0 +1,162 @@
+{
+  "id": "pumpkin",
+  "commonName": "Pumpkin",
+  "scientificName": "Cucurbita pepo, Cucurbita maxima, Cucurbita moschata",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Pumpkins_1.JPG",
+  "description": "A cultivar of winter squash that is round with smooth, slightly ribbed skin, and is most often deep yellow to orange in coloration. The thick shell contains the seeds and pulp.",
+  "origin": "North America (northeastern Mexico and southern United States)",
+  "localNames": [
+    "Calabaza (Spanish)",
+    "Citrouille (French)",
+    "Kürbis (German)",
+    "Kaddu (Hindi)"
+  ],
+  "regions": [
+    "China",
+    "India",
+    "United States",
+    "Ukraine",
+    "Mexico"
+  ],
+  "seasons": [
+    "Autumn",
+    "Winter"
+  ],
+  "nutrition": {
+    "calories": "26 kcal per 100g (cooked)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.5,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (from Beta-carotene)",
+        "value": 426,
+        "unit": "µg RAE",
+        "rdi": "47%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "15%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 340,
+        "unit": "mg",
+        "rdi": "10%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of beta-carotene (Vitamin A), crucial for vision and immune health.",
+    "Rich in antioxidants that protect against chronic diseases.",
+    "Good source of fiber, aiding digestion and promoting fullness.",
+    "Contains potassium, which can help regulate blood pressure."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cucurbit Allergy",
+      "severity": "Rare",
+      "details": "Allergies to pumpkin are uncommon, but cross-reactivity can occur in individuals allergic to other gourds."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Warm-season crop. Sow seeds directly after last frost or start indoors.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-6.8. Full sun.\n3. Spacing: Vines need ample space to spread. Plant in hills or rows.\n4. Watering: Requires consistent and deep watering, especially during fruit development.\n5. Harvesting: Harvest when pumpkins are fully colored, rind is hard, and stem begins to dry. Cut from vine leaving a few inches of stem attached for better storage.",
+  "growthDuration": "90-120 days from sowing to harvest.",
+  "sustainabilityTips": [
+    "Store whole pumpkins in a cool, dry place for several months.",
+    "Cooked pumpkin puree can be frozen for later use in pies, soups, or breads.",
+    "Roast pumpkin seeds for a nutritious snack.",
+    "Use pumpkin flesh in both sweet (pies, muffins) and savory (soups, curries) dishes."
+  ],
+  "carbonFootprintInfo": "Generally low to moderate (0.3-0.7 kg CO2e/kg), especially if field-grown and consumed locally.",
+  "staticRecipes": [
+    {
+      "name": "Classic Pumpkin Pie",
+      "description": "A traditional autumn dessert with a spiced pumpkin custard filling in a flaky pie crust.",
+      "ingredients": [
+        "1 (15 oz) can pumpkin puree",
+        "1 (14 oz) can sweetened condensed milk",
+        "2 large eggs",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground ginger",
+        "1/4 tsp ground nutmeg",
+        "1/4 tsp ground cloves",
+        "1/2 tsp salt",
+        "1 (9-inch) unbaked pie crust"
+      ],
+      "steps": [
+        "Preheat oven to 425°F (220°C).",
+        "In a large bowl, whisk together pumpkin puree, sweetened condensed milk, and eggs.",
+        "Stir in cinnamon, ginger, nutmeg, cloves, and salt until well combined.",
+        "Pour the pumpkin mixture into the unbaked pie crust.",
+        "Bake at 425°F (220°C) for 15 minutes.",
+        "Reduce oven temperature to 350°F (175°C) and continue baking for 35-40 minutes, or until a knife inserted near the center comes out clean.",
+        "Let cool completely on a wire rack for at least 2 hours before slicing and serving. Serve chilled or at room temperature with whipped cream if desired."
+      ]
+    },
+    {
+      "name": "Roasted Pumpkin Seeds",
+      "description": "A crunchy and nutritious snack made from fresh pumpkin seeds.",
+      "ingredients": [
+        "Seeds from 1 medium pumpkin",
+        "1 tbsp olive oil or melted butter",
+        "Salt to taste",
+        "Optional seasonings: garlic powder, paprika, cayenne pepper"
+      ],
+      "steps": [
+        "Preheat oven to 300°F (150°C).",
+        "Rinse pumpkin seeds thoroughly to remove all pulp and strings. Pat them very dry with paper towels (this is important for crispiness).",
+        "In a bowl, toss the dry seeds with olive oil/butter and salt. Add optional seasonings if desired.",
+        "Spread the seeds in a single layer on a baking sheet.",
+        "Roast for 20-30 minutes, stirring occasionally, until golden brown and crispy. Be careful not to burn them.",
+        "Let cool completely before eating. Store in an airtight container."
+      ]
+    },
+    {
+      "name": "Creamy Pumpkin Soup",
+      "description": "A smooth, savory, and warming soup perfect for fall.",
+      "ingredients": [
+        "1 tbsp olive oil or butter",
+        "1 medium onion, chopped",
+        "2 cloves garlic, minced",
+        "1 (15 oz) can pumpkin puree (or 2 cups fresh cooked pumpkin)",
+        "4 cups vegetable or chicken broth",
+        "1/2 cup heavy cream or coconut milk",
+        "1/2 tsp ground cinnamon or pumpkin pie spice",
+        "Salt and freshly ground black pepper to taste",
+        "Toasted pumpkin seeds or croutons for garnish (optional)"
+      ],
+      "steps": [
+        "Heat olive oil or butter in a large pot or Dutch oven over medium heat. Add chopped onion and cook until softened, about 5-7 minutes.",
+        "Add minced garlic and cook for 1 minute more until fragrant.",
+        "Stir in pumpkin puree, broth, and cinnamon/pumpkin pie spice. Bring to a simmer.",
+        "Reduce heat and cook for 10-15 minutes to allow flavors to meld.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.",
+        "Stir in heavy cream or coconut milk. Season with salt and pepper to taste.",
+        "Reheat gently if needed. Serve hot, garnished with toasted pumpkin seeds or croutons if desired."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "thyme",
+  "commonName": "Thyme",
+  "scientificName": "Thymus vulgaris",
+  "image": "https://images.unsplash.com/photo-1518000405000-d3693817871a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Thyme is an aromatic perennial evergreen herb in the mint family Lamiaceae. It is native to the Mediterranean region and is cultivated worldwide for its culinary, medicinal, and ornamental uses. Thyme has a pungent, slightly minty, and earthy flavor.",
+  "origin": "Mediterranean region (Southern Europe, North Africa, Western Asia).",
+  "localNames": ["Ajwain ke phool (Hindi - often confused, true thyme is less common)", "Taimu (Japanese)", "Tomillo (Spanish)", "Thym (French)"],
+  "regions": ["Mediterranean countries (Spain, France, Italy, Greece, Turkey)", "North Africa", "United States", "Worldwide cultivation"],
+  "seasons": ["Perennial; actively grows in spring and summer. Can be harvested year-round in mild climates."],
+  "nutrition": {
+    "calories": "101 kcal per 100g (fresh)",
+    "macronutrients": [
+      { "name": "Protein", "value": 5.6, "unit": "g" },
+      { "name": "Carbohydrates", "value": 24.5, "unit": "g" },
+      { "name": "Fat", "value": 1.7, "unit": "g" },
+      { "name": "Fiber", "value": 14.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 160.1, "unit": "mg", "rdi": "178%" },
+      { "name": "Vitamin A", "value": 238, "unit": "µg", "rdi": "30%" },
+      { "name": "Riboflavin (B2)", "value": 0.471, "unit": "mg", "rdi": "36%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 17.45, "unit": "mg", "rdi": "97%" },
+      { "name": "Manganese", "value": 1.719, "unit": "mg", "rdi": "75%" },
+      { "name": "Calcium", "value": 405, "unit": "mg", "rdi": "41%" },
+      { "name": "Magnesium", "value": 160, "unit": "mg", "rdi": "38%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, including thymol, which has antiseptic and antimicrobial properties.",
+    "Good source of Vitamin C and Vitamin A.",
+    "Traditionally used to support respiratory health (e.g., for coughs and bronchitis).",
+    "May aid digestion and relieve gas.",
+    "Contains compounds that may have anti-inflammatory effects."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lamiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to other mint family plants (e.g., oregano, mint, basil) may also be sensitive to thyme. Symptoms can include skin irritation or oral allergy syndrome."
+    }
+  ],
+  "cultivationProcess": "Thyme is grown from seeds, cuttings, or root division. It thrives in well-drained soil and full sun. It is a drought-tolerant perennial once established and requires minimal maintenance.",
+  "growthDuration": "Perennial. Can be harvested lightly in its first year. Establishes well in the second year. Harvest just before flowering for best flavor.",
+  "sustainabilityTips": [
+    "Drought-tolerant, making it suitable for xeriscaping and water-wise gardens.",
+    "Attracts bees and other beneficial insects, promoting biodiversity.",
+    "Generally pest-resistant, reducing the need for pesticides."
+  ],
+  "carbonFootprintInfo": "Locally grown thyme has a very low carbon footprint. Commercial production, especially for dried thyme or essential oil, involves energy for processing, drying, and transport, increasing its footprint.",
+  "uses": ["culinary_herb_fresh_dried_soups_stews_meats", "essential_oil_production_thymol", "traditional_medicine_antiseptic_cough_remedy", "ornamental_groundcover"],
+  "originAndDomesticationHistory": "Thyme (Thymus vulgaris) is native to the western Mediterranean region. It has been used for culinary and medicinal purposes since ancient times by Egyptians (for embalming), Greeks (for incense and bathing), and Romans (as a flavoring and antiseptic). It spread throughout Europe during the Middle Ages.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm, sunny conditions. Optimal temperatures are 20-30°C during the growing season. Hardy and can tolerate frost and cold winters, especially if well-drained.",
+    "rainfall": "Drought-tolerant. Requires about 300-600mm equivalent. Prefers dry to moderate humidity.",
+    "altitude": "Adaptable to various altitudes, commonly found in Mediterranean hillsides and coastal regions."
+  },
+  "soilPreferences": "Requires light, very well-drained soil. Sandy or gravelly soils are ideal. Prefers a neutral to slightly alkaline pH (6.5-8.0). Does not tolerate wet or heavy soils.",
+  "irrigationAndWaterNeeds": "Water young plants regularly until established. Once established, thyme is very drought-tolerant and should be watered sparingly, allowing the soil to dry out completely between waterings. Overwatering is a common cause of problems.",
+  "plantingAndHarvestCycles": "Can be started from seed (slow germination), cuttings (more common), or by dividing established plants in spring. Plant in full sun. Harvest sprigs as needed throughout the growing season. For drying, harvest stems just before the plant flowers. Prune plants back after flowering or in early spring to encourage bushy growth and prevent woodiness.",
+  "pestAndDiseaseManagement": "Generally pest and disease-free. Spider mites can be an issue in hot, dry conditions. Root rot and fungal diseases can occur in poorly drained or overly wet soils. Good air circulation and proper watering are key preventive measures.",
+  "postHarvestHandling": "Fresh thyme sprigs can be stored in the refrigerator for a week or two, wrapped in a damp paper towel or with stems in water. To dry, hang small bunches in a warm, dark, airy place. Once dry, strip leaves from stems and store in an airtight container. Dried thyme retains its flavor well.",
+  "majorProducingCountriesOrRegions": ["Spain", "France", "Morocco", "Poland", "Germany", "United States", "Other Mediterranean and European countries"],
+  "marketValueAndGlobalDemand": "Thyme is a widely used culinary herb with consistent demand for both fresh and dried forms. It's a staple in many European, Mediterranean, and Middle Eastern cuisines. Thyme oil (containing thymol) is also valued for its antiseptic properties in pharmaceuticals and personal care products."
+}

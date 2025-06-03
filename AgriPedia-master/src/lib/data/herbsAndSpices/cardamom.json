@@ -1,0 +1,67 @@
+{
+  "id": "cardamom",
+  "commonName": "Cardamom",
+  "scientificName": "Elettaria cardamomum (Green Cardamom) / Amomum subulatum (Black Cardamom)",
+  "image": "https://images.unsplash.com/photo-1559447106-9f9c9d0296e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Cardamom is a spice made from the seeds of several plants in the genera Elettaria and Amomum in the ginger family (Zingiberaceae). Both genera are native to the Indian subcontinent and Indonesia. Green cardamom (Elettaria cardamomum) has a strong, unique taste, with an intensely aromatic, resinous fragrance. Black cardamom (Amomum subulatum) has a smokier, camphor-like flavor.",
+  "origin": "Indian subcontinent (Western Ghats for Green Cardamom) and Southeast Asia.",
+  "localNames": ["Elaichi (Hindi)", "Karudamon (Japanese)", "Cardamomo (Spanish/Italian)", "Cardamome (French)"],
+  "regions": ["India (Kerala, Karnataka, Tamil Nadu)", "Guatemala (largest producer of green cardamom)", "Nepal", "Sri Lanka", "Indonesia", "Tanzania", "Bhutan (for black cardamom)"],
+  "seasons": ["Perennial; typically harvested from the third year after planting. Main harvest season varies by region, often post-monsoon (e.g., September-February in India)."],
+  "nutrition": {
+    "calories": "311 kcal per 100g (ground cardamom)",
+    "macronutrients": [
+      { "name": "Protein", "value": 10.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 68.5, "unit": "g" },
+      { "name": "Fat", "value": 6.7, "unit": "g" },
+      { "name": "Fiber", "value": 28.0, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 1.102, "unit": "mg", "rdi": "7%" },
+      { "name": "Vitamin C", "value": 21.0, "unit": "mg", "rdi": "23%" },
+      { "name": "Riboflavin (B2)", "value": 0.182, "unit": "mg", "rdi": "14%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 28.0, "unit": "mg", "rdi": "1217%" },
+      { "name": "Iron", "value": 13.97, "unit": "mg", "rdi": "78%" },
+      { "name": "Magnesium", "value": 229, "unit": "mg", "rdi": "55%" },
+      { "name": "Potassium", "value": 1119, "unit": "mg", "rdi": "24%" }
+    ]
+  },
+  "healthBenefits": [
+    "May aid digestion and prevent issues like bloating and gas.",
+    "Contains antioxidants that can protect against chronic diseases.",
+    "May have antimicrobial properties.",
+    "Traditionally used as a breath freshener.",
+    "Some studies suggest it may help lower blood pressure (research ongoing)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cardamom Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to cardamom is rare but can occur, potentially causing skin rashes or mild digestive upset in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Cardamom is propagated from seeds or rhizome cuttings. It is a shade-loving plant that requires high humidity and well-drained, rich soil. Plants begin to bear fruit (capsules) from the third year onwards.",
+  "growthDuration": "Perennial. First harvest typically 2-3 years after planting. Capsules are harvested by hand when they are nearly ripe but still firm and green (for green cardamom).",
+  "sustainabilityTips": [
+    "Traditionally grown in agroforestry systems under the shade of forest trees, promoting biodiversity.",
+    "Organic cultivation practices are increasingly adopted.",
+    "Soil and water conservation measures are important due to its habitat requirements."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of cardamom is influenced by land use (often grown in forested areas), processing (drying), and transportation. Traditional shade-grown systems can be more sustainable.",
+  "uses": ["culinary_spice_whole_pods_ground_seeds_sweet_savory_dishes_beverages_chai", "traditional_medicine_digestive_aid_breath_freshener", "essential_oil_production_perfumery_flavoring"],
+  "originAndDomesticationHistory": "Green cardamom (Elettaria cardamomum) is native to the evergreen forests of the Western Ghats in Southern India. It has been cultivated and used in India for thousands of years. Black cardamom (Amomum subulatum) is native to the eastern Himalayas. Cardamom was an important item in ancient spice trade routes.",
+  "climaticRequirements": {
+    "temperature": "Tropical crop. Prefers warm, humid conditions with temperatures between 18-35°C. Requires shade (50-70% for green cardamom).",
+    "rainfall": "High and well-distributed rainfall, 1500-4000mm annually. Cannot tolerate prolonged dry spells. High humidity is crucial.",
+    "altitude": "Typically grown at altitudes between 600-1500m in its native regions."
+  },
+  "soilPreferences": "Prefers rich, loamy soils with good organic matter content and excellent drainage. Slightly acidic pH (5.5-6.5) is optimal. Forest soils are ideal.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture. In areas with insufficient rainfall, regular irrigation is necessary, especially during drier months. Sprinkler or drip irrigation can be used. Good drainage is vital to prevent waterlogging and rhizome rot.",
+  "plantingAndHarvestCycles": "Propagated from suckers (rhizome divisions) or seedlings. Planted at the beginning of the monsoon. Flowering usually starts 18-24 months after planting. Harvesting is done by hand, picking mature capsules before they fully ripen and split. Harvesting season can be long (several months), with multiple pickings.",
+  "pestAndDiseaseManagement": "Pests include thrips (major pest causing capsule damage), shoot/capsule borers, and nematodes. Diseases include 'Katte' disease (mosaic virus), rhizome rot, and capsule rot. Integrated pest management involves biological control (e.g., for thrips), phytosanitation, resistant varieties (where available), and judicious use of pesticides.",
+  "postHarvestHandling": "Harvested cardamom capsules are dried to reduce moisture content (from ~80% to 10-12%). Drying can be done by sun-drying (traditional, quality can vary) or by using mechanical driers (kilns, electric driers for better quality control). Dried capsules are then cleaned, graded by size and color, and packed for market. Green cardamom retains its color best with controlled drying.",
+  "majorProducingCountriesOrRegions": ["Guatemala (leading global producer and exporter of green cardamom)", "India (major producer, especially of traditional varieties, and large domestic consumer)", "Nepal (primarily black cardamom)", "Indonesia", "Tanzania", "Sri Lanka", "Bhutan"],
+  "marketValueAndGlobalDemand": "Cardamom is one of the most expensive spices by weight, after saffron and vanilla. Demand is high globally for its unique flavor and aroma, used in culinary applications, beverages (like Arabic coffee and Indian chai), and traditional medicine. Guatemala and India are key players in the international market."
+}

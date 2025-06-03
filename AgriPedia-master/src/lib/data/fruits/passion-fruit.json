@@ -1,0 +1,223 @@
+{
+  "id": "passion-fruit",
+  "commonName": "Passion Fruit",
+  "scientificName": "Passiflora edulis (purple passion fruit); Passiflora edulis f. flavicarpa (yellow passion fruit)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Purple_passionfruit.jpg",
+  "description": "A vine species of passion flower (Passiflora) native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its aromatic, sweet-tart, seedy fruit. The fruit is a type of berry, round to oval, with a tough outer rind (purple, yellow, or other colors depending on variety) and a cavity filled with membranous sacs of orange-colored, pulpy juice and numerous small, edible, crunchy black seeds.",
+  "origin": "Southern Brazil, Paraguay, Northern Argentina",
+  "localNames": [
+    "Maracuyá (Spanish - often for yellow variety)",
+    "Parchita (Venezuela - for yellow variety)",
+    "Chinola (Dominican Republic - for yellow variety)",
+    "Fruit de la passion (French)",
+    "Passionsfrucht (German)",
+    "Granadilla (name used for some Passiflora species, sometimes causing confusion; true Granadilla is P. ligularis)",
+    "Lilikoʻi (Hawaiian - for yellow variety)"
+  ],
+  "regions": [
+    "Brazil (leading global producer)",
+    "Colombia",
+    "Ecuador",
+    "Peru",
+    "Australia",
+    "New Zealand",
+    "Kenya",
+    "South Africa",
+    "India",
+    "Sri Lanka",
+    "Vietnam",
+    "Hawaii (USA)"
+  ],
+  "seasons": [
+    "Varies greatly by region and cultivar; many varieties can fruit year-round in suitable tropical climates, often with one or two peak seasons. In subtropical areas, fruiting is typically from summer through autumn or winter."
+  ],
+  "nutrition": {
+    "calories": "97 kcal per 100g (edible pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 23.38,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 10.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 30,
+        "unit": "mg",
+        "rdi": "33-50%"
+      },
+      {
+        "name": "Vitamin A (as beta-carotene & other carotenoids)",
+        "value": 64,
+        "unit": "µg RAE",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.13,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.5,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 348,
+        "unit": "mg",
+        "rdi": "7-10%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.6,
+        "unit": "mg",
+        "rdi": "9-20%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 68,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 29,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in dietary fiber, which promotes digestive health, helps prevent constipation, and can contribute to feelings of fullness.",
+    "Good source of Vitamin C, a powerful antioxidant that supports the immune system and collagen formation.",
+    "Provides Vitamin A (from carotenoids), important for good vision, skin health, and immune function.",
+    "Contains antioxidants, including polyphenols and flavonoids, that help combat oxidative stress and may reduce inflammation.",
+    "May have calming effects and potentially aid in sleep due to the presence of certain alkaloids like harman (though amounts in fruit pulp are generally low)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Passion Fruit Allergy",
+      "severity": "Rare, Mild to Moderate",
+      "details": "Allergies to passion fruit are uncommon but can occur. Symptoms may include oral allergy syndrome (itching or swelling of the mouth, lips, tongue), skin rashes (hives), or in rare cases, more severe systemic reactions. Cross-reactivity with latex (latex-fruit syndrome) is possible."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Some varieties tolerate cooler conditions.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.0.\n3. Propagation: Seeds or cuttings. Grafting for specific rootstock benefits.\n4. Planting: Plant in full sun against a sturdy trellis, fence, or arbor for support as it's a vigorous vine.\n5. Watering: Requires regular watering, especially during flowering and fruiting. Good drainage is essential.\n6. Fertilizing: Feed regularly with a balanced fertilizer during the growing season, with adequate potassium for fruit development.\n7. Pollination: Some varieties (e.g., purple) are self-pollinating; others (e.g., yellow) may require cross-pollination or hand pollination, often by carpenter bees.\n8. Harvesting: Fruits drop from the vine when ripe or can be picked when they change color (purple, yellow, or reddish depending on variety) and become slightly wrinkled. They develop best flavor when fully ripe.",
+  "growthDuration": "Vines can start fruiting within 6-12 months from planting cuttings or grafted plants, or 1-2 years from seedlings. Fruits mature approximately 70-80 days after successful pollination.",
+  "sustainabilityTips": [
+    "Store passion fruit at room temperature until the skin becomes wrinkled (indicating ripeness), then refrigerate to prolong freshness for about a week.",
+    "The pulp, including the seeds, can be scooped out and eaten fresh, added to drinks, or used in desserts. Seeds provide a crunchy texture.",
+    "Passion fruit vines can be grown in home gardens with appropriate support, providing fresh fruit with minimal transportation impact."
+  ],
+  "carbonFootprintInfo": "Moderate to high if air-freighted from distant tropical or subtropical regions (estimated 0.8-2.5 kg CO2e/kg). Locally grown or sea-freighted fruit has a lower footprint. Processing into juice or pulp also adds to the footprint.",
+  "uses": [
+    "fresh_consumption_pulp_and_seeds_eaten_directly",
+    "beverages_juices_smoothies_cocktails_mocktails_cordials_syrups",
+    "desserts_cakes_mousses_ice_cream_sorbets_yogurt_toppings_pavlova_cheesecakes_curds_sauces",
+    "flavoring_agent_for_confectionery_dairy_products_and_other_foods",
+    "jams_jellies_preserves_marmalades",
+    "salads_fruit_salads_savory_salads_with_vinaigrettes",
+    "ornamental_plant_some_passiflora_species_grown_for_their_exotic_flowers"
+  ],
+  "originAndDomesticationHistory": "Passion fruit (Passiflora edulis) is native to southern Brazil, Paraguay, and northern Argentina. It was cultivated by indigenous peoples in these regions before European colonization. Spanish and Portuguese explorers encountered the fruit and its unique flowers (which Christian missionaries interpreted as symbolic of the passion of Christ, hence the name) and were instrumental in its introduction to other tropical and subtropical parts of the world, starting from the 17th and 18th centuries. It became particularly popular in Australia, New Zealand, Hawaii, and various parts of Africa and Asia. There are two main forms: the purple passion fruit (P. edulis f. edulis), which is more common in subtropical areas, and the yellow passion fruit (P. edulis f. flavicarpa), which is more suited to tropical lowland conditions and is often larger and more acidic.",
+  "climaticRequirements": {
+    "temperature": "Passion fruit thrives in tropical and subtropical climates. The purple passion fruit (P. edulis f. edulis) is more tolerant of cooler subtropical conditions and can withstand very light, brief frosts once mature. The yellow passion fruit (P. edulis f. flavicarpa) prefers warmer tropical climates and is less cold-tolerant. Ideal growing temperatures generally range from 18°C to 28°C (65°F to 82°F). Most varieties are sensitive to prolonged frost.",
+    "rainfall": "Requires regular and well-distributed rainfall, typically around 900mm to 2000mm annually. Consistent moisture is crucial, especially during flowering and fruit development. Supplemental irrigation is often necessary in areas with distinct dry seasons or insufficient rainfall.",
+    "altitude": "Can be cultivated from sea level up to about 2000 meters (approximately 6500 feet), depending on the specific variety and local latitude. Yellow passion fruit generally prefers lower altitudes, while some purple varieties can tolerate higher elevations."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, typically between 6.0 and 7.0, is ideal. Passion fruit vines are intolerant of waterlogged or poorly aerated soil conditions, which can lead to root rot. Good soil structure is important for healthy root development.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, particularly during flowering, fruit set, and fruit development. Water stress during these critical periods can lead to flower drop, reduced fruit size, and poor fruit quality. Drip irrigation or micro-sprinklers are effective methods for providing regular watering. However, good drainage is essential to prevent root diseases.",
+  "plantingAndHarvestCycles": "Passion fruit is commonly propagated from seeds, although seedlings can show variability in fruit characteristics. For commercial cultivation and to ensure consistent quality from select cultivars, vegetative propagation methods such as cuttings (semi-hardwood) or grafting onto suitable rootstock (especially for disease resistance or tolerance to specific soil conditions) are often used. Vines are vigorous climbers and require sturdy support structures like trellises, fences, or arbors. Planting is usually done in full sun. Vines typically start bearing fruit within 6-12 months of planting (for those grown from cuttings or grafts) or 1-2 years (for seedlings). Passion fruit flowers are often self-compatible in many purple varieties, but yellow varieties may require cross-pollination, often facilitated by carpenter bees or through hand pollination, to ensure good fruit set and size. Fruits mature approximately 70-80 days after successful pollination. They are harvested when they reach full size, develop their characteristic color (purple, yellow, reddish, or other shades depending on the variety), and become slightly wrinkled. Ripe fruits often drop naturally from the vine, which is a common method of harvesting for some types.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids, thrips, mites (e.g., spider mites), scale insects, passion vine hopper, and various caterpillars can attack foliage and young fruit. Fruit flies can infest ripening fruit. Nematodes can be a significant problem for the root system in some soils. Common Diseases: Fusarium wilt is a serious soilborne fungal disease. Phytophthora root rot and collar rot can occur, especially in overly wet or poorly drained conditions. Passion fruit woodiness virus (PWV), transmitted by aphids, can cause hardening of the fruit and stunted growth. Fungal diseases like Alternaria spot, Septoria spot, and brown spot can affect leaves and fruit. Management Strategies: Using disease-resistant varieties or rootstocks where available. Practicing good orchard sanitation, including removal of diseased plant parts. Ensuring proper pruning to promote good air circulation, which can reduce fungal disease pressure. Controlling insect vectors like aphids to limit virus spread. Ensuring excellent soil drainage to prevent root rots. Fungicides may be necessary for managing certain fungal diseases, applied according to local recommendations and IPM principles.",
+  "postHarvestHandling": "Passion fruits are typically harvested when they are ripe, which is often indicated by them falling from the vine or when they are easily detached. The skin may become more wrinkled during storage as the fruit ripens further and moisture is lost, but the pulp inside remains good and can even become sweeter. At room temperature, ripe passion fruit has a shelf life of about 1-2 weeks. This can be extended to several weeks if the fruit is refrigerated at cool temperatures (around 5-10°C or 41-50°F) with moderate humidity. The pulp can also be scooped out and frozen for long-term storage, either with or without seeds, for later use in juices, desserts, or sauces.",
+  "majorProducingCountriesOrRegions": [
+    "Brazil (world's largest producer)",
+    "Colombia",
+    "Ecuador",
+    "Peru",
+    "Australia",
+    "New Zealand",
+    "Kenya",
+    "South Africa",
+    "India",
+    "Sri Lanka",
+    "Vietnam",
+    "Indonesia",
+    "Malaysia",
+    "Hawaii (USA)"
+  ],
+  "marketValueAndGlobalDemand": "Passion fruit is a popular fruit globally, highly valued for its intense, aromatic flavor and versatility in both fresh and processed forms. There is significant international demand, particularly for juice concentrate and pulp, which are widely used in the beverage, dairy (yogurt, ice cream), and confectionery industries. Major producers and exporters include countries in South America (Brazil, Colombia, Ecuador, Peru), Oceania (Australia, New Zealand), and Africa (Kenya, South Africa). The demand for fresh passion fruit is also growing in markets across Europe, North America, and Asia. The unique flavor profile makes it a sought-after ingredient for exotic food and beverage products.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Passion Fruit Pulp",
+      "description": "The simplest way to enjoy the intense, aromatic flavor of passion fruit.",
+      "ingredients": [
+        "1-2 ripe Passion Fruits"
+      ],
+      "steps": [
+        "Wash the passion fruit.",
+        "Cut the fruit in half crosswise.",
+        "Use a spoon to scoop out the aromatic, jelly-like pulp along with the edible black seeds.",
+        "The pulp can be eaten directly, seeds and all. It's tangy, sweet, and highly flavorful. Often used as a topping for yogurt, ice cream, or desserts."
+      ]
+    },
+    {
+      "name": "Passion Fruit Juice/Cooler",
+      "description": "A refreshing tropical drink bursting with flavor.",
+      "ingredients": [
+        "Pulp of 4-5 ripe Passion Fruits",
+        "1 cup cold water (or sparkling water)",
+        "2-4 tbsp sugar or simple syrup (to taste)",
+        "Ice cubes",
+        "Mint sprig for garnish (optional)"
+      ],
+      "steps": [
+        "Scoop the pulp from the passion fruits into a blender or a bowl.",
+        "If using a blender, add a little water and pulse a few times briefly just to loosen the pulp from the seeds (don't over-blend or you'll crush the seeds too much). If not using a blender, mash the pulp with a fork in a bowl with a little water.",
+        "Strain the mixture through a fine-mesh sieve into a pitcher, pressing down on the pulp to extract as much juice as possible. Discard the seeds and membrane caught in the sieve.",
+        "Add the remaining cold/sparkling water and sugar/simple syrup to the pitcher. Stir well until the sweetener is dissolved.",
+        "Taste and adjust sweetness. Serve chilled over ice, garnished with a mint sprig if desired."
+      ]
+    },
+    {
+      "name": "Passion Fruit Mousse",
+      "description": "A light and airy dessert with the exotic taste of passion fruit.",
+      "ingredients": [
+        "1/2 cup passion fruit pulp (seeds strained if preferred)",
+        "1 cup heavy whipping cream",
+        "1/4 cup powdered sugar (or to taste)",
+        "1 tsp gelatin dissolved in 2 tbsp hot water (or agar-agar for vegetarian)",
+        "Optional: extra passion fruit pulp for topping"
+      ],
+      "steps": [
+        "If using gelatin, dissolve it in hot water and let it cool slightly. If using agar-agar, prepare according to package instructions with a little liquid and heat.",
+        "In a chilled bowl, whip the heavy cream with powdered sugar until soft peaks form.",
+        "Gently fold the passion fruit pulp into the whipped cream.",
+        "If using gelatin/agar-agar, gently fold the cooled (but still liquid) mixture into the cream and passion fruit mixture until just combined.",
+        "Spoon the mousse into individual serving glasses or a larger bowl.",
+        "Chill in the refrigerator for at least 2-3 hours, or until set.",
+        "Serve chilled, optionally topped with a drizzle of fresh passion fruit pulp."
+      ]
+    }
+  ]
+}

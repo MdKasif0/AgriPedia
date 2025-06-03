@@ -1,0 +1,22 @@
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/medicinalAndAromaticPlants/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/oilCrops/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/cashCrops/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/fiberCrops/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/beverageCrops/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/tuberAndRootCrops/.gitkeep
+# This file ensures the directory is tracked by Git.
+create_file_with_block
+src/lib/data/fodderAndForageCrops/.gitkeep
+# This file ensures the directory is tracked by Git.

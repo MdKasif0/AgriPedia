@@ -1,0 +1,166 @@
+{
+  "id": "apple",
+  "commonName": "Apple",
+  "scientificName": "Malus domestica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/800px-Red_Apple.jpg",
+  "description": "A sweet, edible fruit produced by an apple tree. Apples are cultivated worldwide and are the most widely grown species in the genus Malus.",
+  "origin": "Central Asia",
+  "localNames": [
+    "Manzana (Spanish)",
+    "Pomme (French)",
+    "Apfel (German)"
+  ],
+  "regions": [
+    "China",
+    "United States",
+    "Turkey",
+    "Poland",
+    "India"
+  ],
+  "seasons": [
+    "Autumn",
+    "Winter"
+  ],
+  "nutrition": {
+    "calories": "52 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 4.6,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 2.2,
+        "unit": "µg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 107,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in fiber, aiding digestion and promoting satiety, which can be beneficial for weight management.",
+    "Contains antioxidants like quercetin, which may protect brain cells from oxidative stress.",
+    "Soluble fiber (pectin) can help lower LDL (bad) cholesterol levels, supporting heart health.",
+    "May help regulate blood sugar levels, potentially reducing the risk of type 2 diabetes."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Often linked to birch pollen allergy. Symptoms include itching or swelling of the mouth, lips, tongue, and throat."
+    },
+    {
+      "name": "Pesticide Residues",
+      "severity": "Varies",
+      "details": "Conventionally grown apples can have pesticide residues. Opting for organic or thorough washing is recommended."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Plant bare-root trees in early spring or container-grown trees anytime soil is workable. Choose a sunny location with good air circulation.\n2. Soil: Apples prefer well-drained, loamy soil with a slightly acidic to neutral pH (6.0-7.0). Amend soil with compost before planting.\n3. Watering: Water young trees regularly, especially during dry periods (1-2 inches per week). Mature trees are more drought-tolerant but benefit from deep watering during prolonged drought.\n4. Fertilizing: Apply a balanced fertilizer in early spring before new growth begins. Avoid over-fertilizing.\n5. Pruning: Prune annually during dormancy (late winter/early spring) to maintain shape and encourage fruit production.\n6. Pollination: Most apple varieties require cross-pollination. Ensure a suitable pollinator is nearby.",
+  "growthDuration": "Typically 3-5 years for a young tree to bear its first significant fruit crop. Fruits mature in 100-200 days from bloom.",
+  "sustainabilityTips": [
+    "Store in the fridge to prolong freshness, not in a fruit bowl.",
+    "Compost apple cores or use them to make apple cider vinegar.",
+    "Buy local apples in season to reduce food miles."
+  ],
+  "carbonFootprintInfo": "Apples generally have a low carbon footprint (around 0.3-0.5 kg CO2e/kg), especially when sourced locally and in season.",
+  "uses": ["culinary_fresh_eating", "baking_pies_crumbles_cakes", "applesauce", "juice_cider_vinegar", "dessert", "salad_ingredient"],
+  "originAndDomesticationHistory": "Apples are thought to have originated in Central Asia, in the region of modern-day Kazakhstan, where their wild ancestor, Malus sieversii, is still found. They were domesticated thousands of years ago and spread along the Silk Road to Europe. The Romans and Greeks cultivated apples, and many varieties were developed. European colonists brought apples to the Americas.",
+  "climaticRequirements": {
+    "temperature": "Prefers temperate climates with chilling period (0-7°C) for bud break; optimal growing temperatures 18-24°C.",
+    "rainfall": "600-1000mm annually, well-distributed, or supplemental irrigation.",
+    "altitude": "Can be grown from sea level to over 2000m, depending on variety and latitude."
+  },
+  "soilPreferences": "Well-drained, deep loamy soil with good organic matter content. Prefers a slightly acidic to neutral pH (6.0-7.0).",
+  "irrigationAndWaterNeeds": "Young trees require regular watering. Mature trees need consistent moisture, especially during fruit development. Deep watering is preferred. Drought stress can affect fruit size and quality.",
+  "plantingAndHarvestCycles": "Planted as grafted saplings, typically in late winter or early spring. Trees start bearing fruit in 2-5 years. Flowers bloom in spring, and fruits mature from late summer to late autumn depending on the variety (100-200 days after bloom). Harvested by hand when firm and fully colored.",
+  "pestAndDiseaseManagement": "Common pests include codling moth, aphids, and apple maggots. Common diseases are apple scab, powdery mildew, and fire blight. Integrated Pest Management (IPM) strategies include resistant varieties, orchard sanitation, biological controls, and targeted chemical applications.",
+  "postHarvestHandling": "Apples are hand-picked to avoid bruising. They can be stored for long periods (months) in controlled atmosphere (CA) storage (low oxygen, high carbon dioxide, low temperature, high humidity). Grading is done by size, color, and quality. Requires careful handling during packing and transport.",
+  "majorProducingCountriesOrRegions": ["China", "United States", "Turkey", "European Union (Poland, Italy, France)", "India"],
+  "marketValueAndGlobalDemand": "Apples are one of the most widely cultivated and consumed fruits globally, with significant international trade. They have high market value both for fresh consumption and for processed products like juice, cider, and applesauce. Demand is consistently strong worldwide.",
+  "staticRecipes": [
+    {
+      "name": "Classic Apple Crumble",
+      "description": "A warm and comforting dessert with a sweet apple filling and a crunchy oat topping.",
+      "ingredients": [
+        "6 medium apples, peeled, cored and sliced",
+        "1/2 cup granulated sugar",
+        "1 tsp cinnamon",
+        "1 cup all-purpose flour",
+        "1/2 cup brown sugar",
+        "1/2 cup cold butter, cubed",
+        "1/2 cup rolled oats"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "In a large bowl, toss sliced apples with granulated sugar and cinnamon. Transfer to a baking dish.",
+        "In another bowl, combine flour and brown sugar. Cut in butter until mixture resembles coarse crumbs. Stir in oats.",
+        "Sprinkle topping evenly over apples.",
+        "Bake for 30-40 minutes, or until topping is golden brown and apples are tender."
+      ]
+    },
+    {
+      "name": "Homemade Applesauce",
+      "description": "Simple and delicious applesauce, perfect as a side or a healthy snack.",
+      "ingredients": [
+        "4 large apples, peeled, cored, and quartered",
+        "1/4 cup water",
+        "1-2 tbsp sugar (optional)",
+        "1/2 tsp cinnamon (optional)"
+      ],
+      "steps": [
+        "Combine apples and water in a saucepan.",
+        "Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until apples are very tender.",
+        "Remove from heat. Mash with a potato masher or fork for chunky applesauce, or process in a blender for smooth applesauce.",
+        "Stir in sugar and cinnamon if desired. Serve warm or chilled."
+      ]
+    },
+    {
+      "name": "Apple Walnut Salad",
+      "description": "A refreshing salad with crisp apples, crunchy walnuts, and a light vinaigrette.",
+      "ingredients": [
+        "2 crisp apples, cored and diced",
+        "1/2 cup chopped walnuts, toasted",
+        "2 celery stalks, thinly sliced",
+        "1/4 cup dried cranberries",
+        "For dressing: 3 tbsp olive oil, 1 tbsp apple cider vinegar, 1 tsp honey, salt and pepper to taste"
+      ],
+      "steps": [
+        "In a large bowl, combine diced apples, toasted walnuts, celery, and dried cranberries.",
+        "In a small bowl, whisk together olive oil, apple cider vinegar, honey, salt, and pepper.",
+        "Pour dressing over the salad and toss gently to coat.",
+        "Serve immediately or chill for later."
+      ]
+    }
+  ]
+}

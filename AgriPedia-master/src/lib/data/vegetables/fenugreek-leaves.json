@@ -1,0 +1,246 @@
+{
+  "id": "fenugreek-leaves",
+  "commonName": "Fenugreek Leaves (Methi / Kasuri Methi)",
+  "scientificName": "Trigonella foenum-graecum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Methi_Fenugreek_Indian_Food.jpg",
+  "description": "An annual plant in the family Fabaceae (legume family), with leaves consisting of three small obovate to oblong leaflets. It is cultivated worldwide as a semiarid crop. Its fresh leaves (methi) and dried leaves (kasuri methi) are used as a herb/leafy vegetable, while its seeds (methi dana) are used as a spice. Fenugreek has a characteristic strong, slightly bitter, and aromatic flavor.",
+  "origin": "Mediterranean region and Western Asia (Near East). Cultivated since ancient times.",
+  "localNames": [
+    "Methi (मेथी - Hindi, Marathi, Gujarati, Punjabi - for fresh leaves and seeds)",
+    "Kasuri Methi (कसूरी मेथी - Hindi, for dried leaves, named after Kasur region in Pakistan)",
+    "Alholva (Spanish - primarily for seeds), Fenogreco (Spanish - for the plant)",
+    "Fenugrec (French)",
+    "Bockshornklee (German - 'buck's horn clover')",
+    "Shambalileh (شنبلیله - Persian)",
+    "Hulba (حلبه - Arabic)",
+    "Menthya Soppu (ಮೆಂತ್ಯ ಸೊಪ್ಪು - Kannada, for leaves)",
+    "Vendhaya Keerai (வெந்தயக் கீரை - Tamil, for leaves)"
+  ],
+  "regions": [
+    "India (world's largest producer of fenugreek seeds and a major consumer of leaves)",
+    "Pakistan",
+    "Nepal",
+    "Bangladesh",
+    "Egypt",
+    "Iran",
+    "Turkey",
+    "Other Middle Eastern and North African countries",
+    "Argentina",
+    "Spain",
+    "France",
+    "China"
+  ],
+  "seasons": [
+    "Primarily a cool-season crop. Fresh leaves are typically available in Winter and Early Spring in India and similar climates. Seeds harvested in late spring/early summer."
+  ],
+  "nutrition": {
+    "calories": "Fresh leaves: ~49 kcal per 100g; Seeds: ~323 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": "Leaves: 4.4g; Seeds: 23g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": "Leaves: 6g; Seeds: 58.4g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Fat",
+        "value": "Leaves: 0.9g; Seeds: 6.4g",
+        "unit": "per 100g"
+      },
+      {
+        "name": "Fiber",
+        "value": "Leaves: 1.1g; Seeds: 24.6g",
+        "unit": "per 100g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C (leaves)",
+        "value": "Significant, ~40-220mg depending on freshness",
+        "rdi": "44-367%"
+      },
+      {
+        "name": "Vitamin A (leaves, from carotenoids)",
+        "value": "~395 µg RAE",
+        "rdi": "44%"
+      },
+      {
+        "name": "Thiamin (B1) (seeds)",
+        "value": "0.322 mg",
+        "rdi": "27%"
+      },
+      {
+        "name": "Vitamin B6 (seeds)",
+        "value": "0.6 mg",
+        "rdi": "35%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": "Leaves: ~16.5mg; Seeds: 33.5mg",
+        "rdi": "Leaves: ~92%; Seeds: ~186%"
+      },
+      {
+        "name": "Calcium (leaves)",
+        "value": "~440 mg",
+        "rdi": "34-44%"
+      },
+      {
+        "name": "Manganese (seeds)",
+        "value": "1.228 mg",
+        "rdi": "53%"
+      },
+      {
+        "name": "Magnesium (seeds)",
+        "value": "191 mg",
+        "rdi": "45%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Fenugreek seeds are well-known for their potential to help lower blood sugar levels in individuals with diabetes due to their fiber content and compounds like 4-hydroxyisoleucine.",
+    "Both leaves and seeds are rich in iron, beneficial for preventing and treating anemia.",
+    "Traditionally used to aid digestion, relieve constipation (seeds are high in soluble fiber), and as a galactagogue to improve milk production in lactating mothers.",
+    "May help lower cholesterol and triglyceride levels.",
+    "Fresh leaves are a good source of Vitamin C and Vitamin A (as carotenoids), contributing to immune function and vision health.",
+    "Contains antioxidants and has anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Fenugreek Allergy / Legume Cross-Reactivity",
+      "severity": "Mild to Moderate",
+      "details": "Fenugreek belongs to the Fabaceae (legume) family. Individuals with allergies to other legumes (such as peanuts, chickpeas, soybeans, or lentils) may experience cross-reactive allergic reactions to fenugreek. Symptoms can range from mild skin reactions (hives, itching) or digestive upset to more severe respiratory symptoms (asthma) or anaphylaxis in highly sensitive individuals."
+    },
+    {
+      "name": "Uterine Contractions (high doses of seeds)",
+      "severity": "Caution in pregnancy",
+      "details": "Fenugreek seeds, particularly in concentrated forms or high doses, have been traditionally believed to stimulate uterine contractions. Pregnant women are often advised to avoid large quantities or medicinal doses of fenugreek, although culinary use of leaves is generally considered safe."
+    },
+    {
+      "name": "Maple Syrup Odor",
+      "severity": "Harmless (cosmetic)",
+      "details": "Consumption of fenugreek (especially seeds) can cause a maple syrup-like odor in sweat and urine due to the compound sotolon. This is harmless."
+    }
+  ],
+  "cultivationProcess": "Fenugreek is a cool-season annual legume. Seeds are sown directly in late summer/early fall for a winter/spring harvest of leaves and seeds, or in early spring for a late spring/early summer harvest. It prefers well-drained soil and tolerates poor soil but performs best in moderately fertile conditions with a pH of 6.0-7.0. Full sun to light shade is suitable. Regular watering is needed, keeping the soil consistently moist but not waterlogged. Young leaves and tender stems are harvested when plants are 6-8 inches tall, often multiple times using the 'cut-and-come-again' method. For seeds, plants are allowed to mature, flower, and develop pods, which are harvested when they turn yellowish-brown and dry.",
+  "growthDuration": "Fresh leaves (methi) are typically ready for the first harvest about 20-30 days after sowing. Harvesting can continue for several weeks if cut properly. For seeds (methi dana), it takes approximately 90 to 140 days from sowing for the pods to mature and be ready for harvest.",
+  "sustainabilityTips": [
+    "Store fresh fenugreek leaves wrapped in a damp paper towel or in a perforated plastic bag in the refrigerator crisper drawer for a few days (up to a week).",
+    "Fenugreek leaves can be dried (this form is known as Kasuri Methi) for longer storage; dried leaves have a more intense, concentrated aroma and are used as a finishing herb.",
+    "Fenugreek seeds should be stored in an airtight container in a cool, dark, dry place.",
+    "As a legume, fenugreek fixes atmospheric nitrogen, which can benefit soil health and reduce the need for nitrogen fertilizers in crop rotations."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally or in home gardens (estimated 0.2-0.5 kg CO2e/kg for fresh leaves). Dried seeds are lightweight and have a long shelf life, making their transport relatively efficient. Its nitrogen-fixing ability also contributes to a lower overall agricultural footprint when part of a crop rotation.",
+  "uses": [
+    "culinary_fresh_leaves_methi_leafy_vegetable_in_curries_aloo_methi_methi_dal_stir_fries_flatbreads_methi_thepla_methi_paratha_pakoras_omelets",
+    "culinary_dried_leaves_kasuri_methi_flavoring_herb_crushed_and_sprinkled_over_north_indian_pakistani_curries_sauces_breads_for_aroma",
+    "culinary_seeds_methi_dana_spice_whole_or_ground_in_pickles_spice_blends_panch_phoron_sambhar_powder_tempering_tadka_sprouted_seeds_eaten_in_salads_or_curries",
+    "medicinal_traditional_ayurveda_unani_seeds_and_leaves_used_for_digestive_issues_appetite_stimulant_galactagogue_to_increase_milk_production_blood_sugar_management_diabetes_cholesterol_reduction_anti_inflammatory_skin_hair_conditions_poultices",
+    "animal_fodder_plant_used_as_nutritious_fodder_for_livestock",
+    "soil_improvement_green_manure_crop_nitrogen_fixation_legume",
+    "flavoring_extracts_fenugreek_extract_used_as_flavoring_in_imitation_maple_syrup_foods_beverages"
+  ],
+  "originAndDomesticationHistory": "Fenugreek (Trigonella foenum-graecum) is native to the Mediterranean region and Western Asia (Near East), including areas from Southern Europe and North Africa to the Indian subcontinent. It is one of the oldest cultivated medicinal plants, with a history of use dating back to ancient Egypt (seeds found in tombs, including Tutankhamun's, and mentioned in medical papyri around 1500 BCE), Greece, and Rome. The Romans used it for culinary, medicinal, and fodder purposes. Fenugreek spread eastwards to India and China, where it became an integral part of traditional medicine systems (Ayurveda, TCM) and cuisines. India is now a major global producer and consumer of fenugreek, both for its leaves (methi) and seeds (methi dana). The name 'foenum-graecum' means 'Greek hay', reflecting its historical use as animal fodder in the region.",
+  "climaticRequirements": {
+    "temperature": "Fenugreek is primarily a cool-season crop. Optimal temperatures for its growth range from 10°C to 25°C (50°F to 77°F). It can tolerate light frosts, especially when young. While it requires sunny conditions, very hot weather (above 30-32°C or 86-90°F) can lead to premature flowering (bolting) and reduce the yield and quality of leaves. For seed production, a dry, sunny period is beneficial during maturation.",
+    "rainfall": "Requires moderate annual rainfall, typically between 400mm and 800mm. It can be grown as a rainfed crop in areas with sufficient winter or spring rainfall, or with supplemental irrigation. Good soil drainage is important, as it does not tolerate waterlogged conditions.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes (e.g., up to 1500-2000 meters) where suitable temperature and moisture conditions exist."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. However, it is adaptable and can tolerate a range of soil types, including clayey loams and sandy soils, provided they have adequate drainage. The ideal soil pH range is between 5.5 and 8.0 (slightly acidic to alkaline).",
+  "irrigationAndWaterNeeds": "Requires regular and consistent soil moisture, especially during seed germination and the active vegetative growth phase for leaf production. The soil should be kept evenly moist but not waterlogged. Water stress can reduce leaf yield and quality. For seed production, irrigation may be reduced or stopped as the pods begin to mature and dry. Drip irrigation or light furrow irrigation can be used.",
+  "plantingAndHarvestCycles": "Fenugreek is propagated from seeds. Seeds are typically sown directly in the field. For leaf production (methi), planting can occur in late summer or early autumn for a winter or early spring harvest in milder climates, or in early spring for a late spring or early summer harvest in cooler areas. Successive sowings every 2-3 weeks can ensure a continuous supply. Young leaves and tender stems can be harvested starting about 20-30 days after sowing, when the plants are approximately 6-8 inches tall. The 'cut-and-come-again' method (cutting the plant a few inches above the ground) allows for multiple harvests (typically 2-3) before the plant begins to flower. For seed production (methi dana), the plants are allowed to mature fully, flower, and develop seed pods. The pods are harvested when they turn yellowish-brown and become dry, which is usually about 90 to 140 days after sowing. The entire plants are often uprooted or cut, dried further, and then threshed to separate the seeds.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids are common pests that can infest young shoots and leaves, potentially transmitting viruses. Leaf miners and thrips may also cause some damage. Pod borers can affect the seed crop in some regions. Common Diseases: Powdery mildew (Erysiphe polygoni) can be a significant issue, especially in humid conditions or with dense planting. Downy mildew and Cercospora leaf spot can also affect foliage. Root rot (e.g., caused by Rhizoctonia or Fusarium) can occur in poorly drained or overwatered soils. Damping-off can affect seedlings. Management Strategies: Practicing crop rotation. Selecting disease-resistant varieties if available. Ensuring proper plant spacing to promote good air circulation. Avoiding overwatering and ensuring good soil drainage. Controlling insect vectors like aphids. Applying appropriate fungicides (e.g., sulfur for powdery mildew) or insecticides based on Integrated Pest Management (IPM) principles if infestations become severe.",
+  "postHarvestHandling": "Fresh Leaves (Methi): Fresh fenugreek leaves are highly perishable and should be used within a few days of harvest. They can be stored by wrapping them in a damp paper towel and placing them in a perforated plastic bag in the refrigerator crisper drawer, where they may last for 3-5 days, sometimes up to a week. Before storage, ensure leaves are dry to touch to prevent rapid decay. Dried Leaves (Kasuri Methi): For longer storage, fresh leaves are often dried (typically shade-dried to retain color and aroma). Dried Kasuri Methi has a strong, concentrated aroma and should be stored in an airtight container in a cool, dark, dry place, where it can last for several months. Seeds (Methi Dana): After harvesting and threshing, fenugreek seeds must be thoroughly dried to a low moisture content (below 10%) to prevent mold growth and insect infestation during storage. Dried seeds should be stored in airtight containers in a cool, dark, dry place, where they can retain their quality for several years.",
+  "majorProducingCountriesOrRegions": [
+    "India (world's largest producer, consumer, and exporter of fenugreek seeds; also major producer of fresh methi leaves for domestic consumption)",
+    "Pakistan",
+    "Bangladesh",
+    "Nepal",
+    "Egypt",
+    "Iran",
+    "Turkey",
+    "Morocco",
+    "Argentina (significant seed exporter)",
+    "Spain",
+    "France",
+    "China"
+  ],
+  "marketValueAndGlobalDemand": "Fenugreek, in its various forms (fresh leaves, dried leaves, seeds), has significant market value and global demand. Fresh fenugreek leaves (methi) are highly popular in South Asian cuisines and have strong demand in local and ethnic markets worldwide. Dried fenugreek leaves (Kasuri Methi) are widely used as a flavoring herb and have a stable market. Fenugreek seeds are a major global spice, with India being the dominant producer and exporter. The seeds are not only used as a culinary spice but also for their medicinal properties in traditional medicine and as a source of compounds for the pharmaceutical and nutraceutical industries (e.g., diosgenin, galactomannan). The demand for fenugreek seeds is driven by the food industry, traditional medicine sector, and increasingly by the health supplement market due to growing awareness of its benefits for blood sugar management, lactation support, and cholesterol reduction. The market value for seeds can fluctuate based on crop yields and international demand.",
+  "staticRecipes": [
+    {
+      "name": "Aloo Methi (Potato and Fenugreek Leaves Stir-fry)",
+      "description": "A popular and simple North Indian dish combining potatoes with the slightly bitter and aromatic fenugreek leaves.",
+      "ingredients": [
+        "2 cups chopped fresh fenugreek leaves (methi)",
+        "2 medium potatoes, peeled and diced",
+        "1 tbsp oil",
+        "1/2 tsp cumin seeds",
+        "Pinch of asafoetida (hing)",
+        "1-2 cloves garlic, minced",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "Optional: 1/2 tsp red chili powder"
+      ],
+      "steps": [
+        "Wash fenugreek leaves thoroughly in several changes of water to remove grit. Chop them roughly.",
+        "Heat oil in a pan. Add cumin seeds; when they splutter, add asafoetida and minced garlic. Sauté for a few seconds.",
+        "Add diced potatoes and turmeric powder. Sauté for 2-3 minutes.",
+        "Add chopped fenugreek leaves and salt (and chili powder if using). Mix well.",
+        "Cover and cook on low-medium heat for 10-15 minutes, or until potatoes are tender and fenugreek leaves are cooked, stirring occasionally. Add a splash of water if it becomes too dry.",
+        "Serve hot with roti or paratha."
+      ]
+    },
+    {
+      "name": "Methi Thepla (Fenugreek Flatbread)",
+      "description": "A soft and flavorful Gujarati flatbread made with whole wheat flour and fresh fenugreek leaves.",
+      "ingredients": [
+        "1 cup whole wheat flour (atta)",
+        "1/2 cup chopped fresh fenugreek leaves (methi)",
+        "1/4 cup gram flour (besan, optional)",
+        "2 tbsp plain yogurt",
+        "1 tsp ginger-green chili paste",
+        "1/2 tsp turmeric powder",
+        "1/2 tsp red chili powder (optional)",
+        "Salt to taste",
+        "Water to knead",
+        "Oil or ghee for cooking"
+      ],
+      "steps": [
+        "In a mixing bowl, combine whole wheat flour, fenugreek leaves, gram flour (if using), yogurt, ginger-chili paste, turmeric powder, chili powder, and salt.",
+        "Gradually add water and knead into a soft, pliable dough. Add a teaspoon of oil and knead again.",
+        "Cover and let the dough rest for 20-30 minutes.",
+        "Divide the dough into small balls. Roll each ball into a thin circle (about 6-7 inches) using a little flour for dusting.",
+        "Heat a tawa (griddle) over medium heat. Cook the thepla for about 30 seconds on one side. Flip and cook for another 30 seconds.",
+        "Apply a little oil or ghee on both sides and cook, pressing gently with a spatula, until golden brown spots appear on both sides.",
+        "Serve hot with yogurt, pickle, or tea."
+      ]
+    },
+    {
+      "name": "Methi Dal (Fenugreek Leaves with Lentils)",
+      "description": "A nutritious lentil dish flavored with fresh fenugreek leaves.",
+      "ingredients": [
+        "1/2 cup toor dal (split pigeon peas) or moong dal (split yellow lentils), rinsed",
+        "1 cup chopped fresh fenugreek leaves (methi)",
+        "1 small onion, chopped",
+        "1 small tomato, chopped",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp ghee or oil, 1/2 tsp mustard seeds, 1/2 tsp cumin seeds, 1-2 dried red chilies, pinch of asafoetida, 2 cloves garlic (chopped, optional)"
+      ],
+      "steps": [
+        "Pressure cook rinsed dal with 1.5 cups water, turmeric powder, and a little salt for 3-4 whistles or until soft. Mash lightly.",
+        "In a separate pan, heat ghee/oil for tempering. Add mustard seeds and cumin seeds. When they splutter, add dried red chilies, asafoetida, and chopped garlic (if using). Sauté until garlic is lightly golden.",
+        "Add chopped onion to the tempering and sauté until translucent.",
+        "Add chopped tomato and cook until softened.",
+        "Add chopped fenugreek leaves and sauté for 2-3 minutes until wilted.",
+        "Pour the cooked dal into the pan with the fenugreek mixture. Add salt to taste (if more is needed). Mix well.",
+        "Simmer for 5-7 minutes, allowing flavors to blend. Add more water if dal is too thick. Serve hot with rice or roti."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "id": "sapota",
+  "commonName": "Sapota (Chikoo)",
+  "scientificName": "Manilkara zapota",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Manilkara_zapota_fruits.jpg/800px-Manilkara_zapota_fruits.jpg",
+  "description": "Sapota, also widely known as Chikoo or Sapodilla (Manilkara zapota), is a long-lived, evergreen tropical tree in the Sapotaceae family. It produces a sweet, malty-flavored fruit, typically round to oval, about 5-10 cm in diameter, with a dull brown, somewhat rough or scruffy skin. The flesh, when ripe, is pale yellow to an earthy brown, soft, juicy, and can be smooth or slightly granular, with a texture similar to a ripe pear. It usually contains 2-5 hard, black, glossy, flattened seeds in the center.",
+  "origin": "Native to southern Mexico (Yucatán Peninsula), Belize, and northeastern Guatemala in Central America.",
+  "localNames": [
+    "Chikoo (India, Pakistan - most common name in these regions)",
+    "Sapodilla (International common name)",
+    "Chico (Philippines)",
+    "Naseberry (Caribbean, especially Jamaica)",
+    "Níspero (some Spanish-speaking regions - also ambiguous as it refers to loquat too)",
+    "Sawo (Indonesia, Malaysia)",
+    "Zapote (Spanish)"
+  ],
+  "regions": [
+    "India (leading global producer)",
+    "Mexico (center of origin, significant production)",
+    "Central America (Belize, Guatemala, Costa Rica)",
+    "Caribbean Islands (Jamaica, Bahamas, Puerto Rico)",
+    "Pakistan",
+    "Thailand",
+    "Malaysia",
+    "Indonesia",
+    "Vietnam",
+    "Bangladesh",
+    "Philippines",
+    "Sri Lanka",
+    "United States (Florida, Hawaii - limited scale)",
+    "Tropical Africa (limited)"
+  ],
+  "seasons": [
+    "Can fruit twice a year or almost year-round in many tropical regions, with main seasons varying by location (e.g., typically February to June and September to December in some parts of India and Southeast Asia; spring and fall in Florida)."
+  ],
+  "nutrition": {
+    "calories": "83 kcal per 100g (ripe flesh)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.44,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 19.96,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 14.7,
+        "unit": "mg",
+        "rdi": "16-25%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 14,
+        "unit": "µg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.252,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.037,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.2,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 3,
+        "unit": "µg RAE",
+        "rdi": "0.3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 193,
+        "unit": "mg",
+        "rdi": "4-6%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "4-10%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.086,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Calcium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "1-2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of dietary fiber, which aids in digestion, helps prevent constipation, promotes satiety, and can contribute to healthy cholesterol levels.",
+    "Good source of Vitamin C, an antioxidant that supports the immune system, aids in collagen production, and helps protect against free radical damage.",
+    "Contains tannins (especially when slightly unripe or in certain parts like bark), which have traditionally been thought to possess anti-inflammatory, antiviral, antibacterial, and anti-parasitic properties.",
+    "Provides various minerals like potassium (for blood pressure regulation) and iron (for oxygen transport)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex and Saponins in Unripe Fruit",
+      "severity": "Mild (mouth irritation)",
+      "details": "Unripe sapota fruit contains a high amount of white, gummy latex and saponins, which are astringent and can cause an unpleasant dry or irritating sensation in the mouth and throat. Fruits must be fully ripe (soft) to be palatable. The seeds are hard, black, have a small hook at one end, and should not be swallowed as they can cause discomfort or lodge in the throat."
+    }
+  ],
+  "cultivationProcess": "Sapota trees are long-lived, wind-resistant evergreens that thrive in warm, tropical, and subtropical climates. They prefer well-drained soil and full sun. Propagation is commonly done by seeds (though trees take longer to mature and fruit quality can vary), or more reliably by grafting, budding, or air layering to ensure desired fruit quality and earlier bearing. The tree's bark is rich in a white, gummy latex called chicle, which was famously the original main ingredient for chewing gum. Trees are relatively low-maintenance once established and can tolerate various stresses.",
+  "growthDuration": "Sapota trees grown from seed may take 5 to 8 years (or even longer) to bear fruit, while grafted or air-layered trees can start fruiting in 2 to 4 years. The trees are known for their slow growth but can be productive for many decades. Depending on the climate, they may yield fruit twice a year or have one extended season.",
+  "sustainabilityTips": [
+    "Sapota trees are hardy, long-lived, and can be grown with relatively few inputs (pesticides, fertilizers) in suitable tropical climates, making them a sustainable choice for local fruit production.",
+    "The traditional use of its latex (chicle) for natural chewing gum represents a sustainable, non-timber forest product when harvested responsibly (though less common now with synthetic gum bases).",
+    "Choose locally grown sapotas to minimize transportation impact."
+  ],
+  "carbonFootprintInfo": "Locally grown sapota has a relatively low carbon footprint due to its hardiness and often minimal input requirements. However, due to its preference for tropical climates, sapota imported to temperate regions often involves long-distance transportation, which increases its environmental impact, especially if air-freighted to maintain freshness for the limited shelf life of ripe fruit.",
+  "uses": [
+    "fresh_consumption_eaten_raw_when_fully_ripe_flesh_is_sweet_and_malty",
+    "processed_products_milkshakes_chikoo_shake_smoothies_ice_creams_sorbets_jams_syrups_fruit_bars",
+    "beverages_fermented_into_wine_or_vinegar_in_some_cultures",
+    "chicle_latex_from_bark_historically_the_primary_ingredient_in_chewing_gum",
+    "timber_wood_is_durable_strong_and_resistant_to_insects_used_for_furniture_cabinetry_railway_sleepers_heavy_construction",
+    "medicinal_traditional_various_parts_fruit_bark_leaves_seeds_used_for_diarrhea_colds_coughs_fever_as_an_astringent_and_tonic"
+  ],
+  "originAndDomesticationHistory": "Sapota (Manilkara zapota), also known as Sapodilla or Chikoo, is native to the tropical rainforests of southern Mexico (specifically the Yucatán Peninsula), Belize, and northeastern Guatemala in Central America. It was a significant tree for ancient Mesoamerican civilizations like the Maya and Aztecs, who valued it for its sweet fruit and particularly for its latex, known as chicle, which they chewed. Following Spanish colonization, the sapota tree was introduced to the Philippines by the Spanish in the 16th century. From the Philippines, its cultivation spread rapidly to other parts of tropical Asia, including India (where it's widely known as Chikoo and is a major commercial crop), Malaysia, Indonesia, Thailand, and Sri Lanka, where it became widely cultivated and often naturalized. It is now grown in tropical and warm subtropical regions worldwide.",
+  "climaticRequirements": {
+    "temperature": "Sapota is strictly a tropical and warm subtropical tree. Optimal temperatures for growth and fruit production range from 22°C to 34°C (72°F to 93°F). It is intolerant of frost; young trees can be killed by freezing temperatures, and mature trees will suffer significant damage from temperatures below -2 to -3°C (26-28°F).",
+    "rainfall": "Prefers a well-distributed annual rainfall of 1250mm to 2500mm. While mature trees can tolerate some periods of drought, consistent moisture is necessary for good fruit production. High humidity is generally preferred, but good drainage is crucial to prevent waterlogging.",
+    "altitude": "Typically cultivated in lowland tropical regions, from sea level up to about 1200 meters (approximately 4000 feet). Growth and fruiting may be reduced at higher, cooler elevations."
+  },
+  "soilPreferences": "Sapota trees are adaptable to a wide range of soil types but thrive best in deep, fertile, well-drained sandy loam or lateritic soils. They can tolerate calcareous and slightly saline soils better than many other fruit trees. Good soil drainage is essential, as they do not withstand waterlogged conditions. The ideal pH range is typically between 6.0 and 8.0.",
+  "irrigationAndWaterNeeds": "Young sapota trees require regular and consistent watering to ensure proper establishment. Mature trees are relatively drought-tolerant but benefit significantly from supplemental irrigation during prolonged dry periods, especially during the flowering and fruit development stages, to ensure good yield, fruit size, and quality. Overwatering or poor drainage should be avoided.",
+  "plantingAndHarvestCycles": "Sapota is commonly propagated from seeds, although seedlings can take a long time (5-8 years or more) to bear fruit, and fruit quality can be variable. For commercial cultivation and to ensure desirable characteristics of specific cultivars, vegetative propagation methods such as grafting (e.g., inarching, side grafting), budding, or air layering are preferred, which can lead to earlier bearing (within 2-4 years). Planting is usually done at the beginning of the rainy season. Sapota trees can flower and fruit throughout the year in many tropical regions, though there are often one or two main harvest seasons. Fruits typically mature 4-6 months after flowering. They are harvested by hand when they reach full size and the skin color changes from slightly fuzzy and greenish-brown to a smoother, dull brown or coppery color. A slight softening at the apex of the fruit or easy detachment (abscission) from the stem can also indicate maturity. It's crucial to harvest fruits at the correct mature stage, as immature fruits will not ripen properly and will be astringent due to high latex content. Ripe sapotas soften off the tree.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (various species can infest ripening fruit). Scale insects, mealybugs, leaf webbers, caterpillars (e.g., anar butterfly larvae in some regions), and fruit-spotting bugs can also cause damage. Birds and bats may feed on ripe fruit. Common Diseases: Leaf spot (caused by various fungi), anthracnose, sooty mold (often associated with sucking pests), and root rot (in poorly drained soils) can occur. Generally, sapota trees are quite hardy and less prone to severe pest and disease outbreaks compared to some other tropical fruits. Management Strategies: Maintaining good orchard sanitation, including removal of fallen fruit. Pruning to improve air circulation. Using fruit bagging techniques to protect against fruit flies and birds. Biological control for certain pests. Applying appropriate and timely insecticides or fungicides only when pest or disease pressure becomes significant and warrants intervention, following local agricultural guidelines.",
+  "postHarvestHandling": "Sapota fruits are harvested when physiologically mature but still firm. They continue to ripen at room temperature (around 20-25°C or 68-77°F) over a period of 5-10 days, during which they become soft, sweet, and the flesh color deepens. Unripe fruit is highly astringent due to its latex and saponin content and is unpalatable. Ripe sapotas are quite perishable and bruise easily, so they should be handled with care. Once ripe, they can be stored for about 1-2 weeks under refrigeration (around 15°C or 59°F is often recommended, as very low temperatures can cause chilling injury to some varieties). For commercial purposes, fruits are often packed in single layers with protective cushioning. The fruit is typically consumed fresh when ripe.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading global producer, where it's known as Chikoo)",
+    "Mexico (a center of origin, significant production)",
+    "Central American countries (Belize, Guatemala, Costa Rica)",
+    "Caribbean Islands (Jamaica, Bahamas, Puerto Rico)",
+    "Pakistan",
+    "Thailand",
+    "Malaysia",
+    "Indonesia",
+    "Vietnam",
+    "Bangladesh",
+    "Philippines",
+    "Sri Lanka",
+    "United States (Florida, Hawaii - limited commercial scale)",
+    "Various other tropical countries in Asia, Africa, and the Americas."
+  ],
+  "marketValueAndGlobalDemand": "Sapota (Chikoo/Sapodilla) is a popular fruit in India, Southeast Asia, Mexico, Central America, and the Caribbean, with significant local and regional markets. International trade is less extensive than for some other major tropical fruits, primarily due to its moderate perishability and the specific ripening requirements which can make long-distance shipping challenging. However, it is exported to ethnic markets in North America, Europe, and the Middle East. India is one of the largest producers globally. The fruit is valued for its unique sweet, malty flavor and characteristic granular texture. There is also some demand for chicle (latex) for traditional uses, although it has largely been replaced by synthetic bases in commercial chewing gum.",
+  "staticRecipes": [
+    {
+      "name": "Sapota (Chikoo) Milkshake",
+      "description": "A creamy and sweet milkshake, popular in South Asia.",
+      "ingredients": [
+        "2 ripe sapotas (chikoo), peeled, seeded, and chopped",
+        "1 cup chilled milk",
+        "1-2 tbsp sugar (or to taste)",
+        "1/4 tsp cardamom powder (optional)",
+        "Few ice cubes"
+      ],
+      "steps": [
+        "Combine chopped sapota, milk, sugar, and cardamom powder (if using) in a blender.",
+        "Blend until smooth and creamy.",
+        "Add ice cubes and blend again briefly.",
+        "Pour into glasses and serve immediately."
+      ]
+    },
+    {
+      "name": "Fresh Sapota Slices",
+      "description": "The simplest way to enjoy the unique flavor of sapota.",
+      "ingredients": [
+        "2-3 ripe sapotas (chikoo)"
+      ],
+      "steps": [
+        "Wash the sapotas.",
+        "Peel the fruit. The skin is typically not eaten.",
+        "Slice the fruit in half and remove the black, shiny seeds from the center.",
+        "Cut the flesh into slices or wedges.",
+        "Serve immediately. Some enjoy a sprinkle of chaat masala for a tangy twist."
+      ]
+    },
+    {
+      "name": "Sapota Kheer (Pudding)",
+      "description": "A sweet Indian dessert made with sapota pulp, milk, and nuts.",
+      "ingredients": [
+        "1 cup sapota pulp (from 3-4 ripe sapotas, peeled and seeded)",
+        "2 cups full-fat milk",
+        "1/4 cup sugar (adjust to taste)",
+        "2 tbsp chopped mixed nuts (almonds, cashews, pistachios)",
+        "A few strands of saffron (optional)",
+        "1/4 tsp cardamom powder"
+      ],
+      "steps": [
+        "In a heavy-bottomed pan, bring the milk to a boil. Reduce heat and simmer, stirring occasionally, until the milk thickens slightly (about 15-20 minutes).",
+        "Add sugar and saffron (if using) to the milk. Stir until sugar dissolves.",
+        "Add the sapota pulp and cardamom powder. Mix well and cook for another 5-7 minutes, stirring continuously, until the kheer thickens to desired consistency.",
+        "Remove from heat and let it cool slightly. Garnish with chopped nuts.",
+        "Serve warm or chilled."
+      ]
+    }
+  ]
+}

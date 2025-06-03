@@ -1,0 +1,61 @@
+{
+  "id": "vanilla",
+  "commonName": "Vanilla",
+  "scientificName": "Vanilla planifolia (and other spp. like Vanilla tahitensis)",
+  "image": "https://images.unsplash.com/photo-1518839600786-188deb6a6590?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Vanilla is a spice derived from orchids of the genus Vanilla, primarily from the flat-leaved vanilla planifolia. The distinctive flavor and fragrance of vanilla come from the compound vanillin. It is the second-most expensive spice after saffron because growing the vanilla seed pods is labor-intensive, requiring hand-pollination.",
+  "origin": "Mesoamerica (southeastern Mexico and Guatemala).",
+  "localNames": ["Vanilla (English/Spanish/French)", "Banira (Japanese)", "Vanila (Hindi)"],
+  "regions": ["Madagascar (leading producer)", "Indonesia", "Mexico", "Papua New Guinea", "Comoros", "Uganda", "Tahiti (for V. tahitensis)", "India", "Réunion"],
+  "seasons": ["Perennial vine; flowering occurs once a year over several months. Pods (beans) take 8-9 months to mature after pollination. Harvest season varies by region."],
+  "nutrition": {
+    "calories": "Vanilla Extract: ~288 kcal per 100g (mostly from alcohol/sugar if present). Vanilla Bean (whole): Nutritional impact is minimal as very little is consumed.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Bean: Trace" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Bean: Small amounts of sugars, polysaccharides" },
+      { "name": "Fat", "unit": "g", "value": "Bean: Trace" },
+      { "name": "Fiber", "unit": "g", "value": "Bean: Small amounts" }
+    ],
+    "vitamins": [],
+    "minerals": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Bean: Small amounts" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Bean: Small amounts" }
+    ]
+  },
+  "healthBenefits": [
+    "Vanillin, the main flavor compound, has antioxidant properties.",
+    "Aroma may have calming and mood-lifting effects (aromatherapy).",
+    "Historically used as an aphrodisiac and to relieve fever (folk medicine).",
+    "Primarily used for flavor and fragrance rather than significant direct health benefits from consumption."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Vanilla Allergy/Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "True allergy to natural vanilla is rare. Contact dermatitis can occur from handling beans or extracts in some sensitive individuals. Some people may be sensitive to synthetic vanillin."
+    }
+  ],
+  "cultivationProcess": "Vanilla is a climbing orchid vine that requires a support structure (trees or trellises) and a warm, humid, tropical climate with partial shade. Flowers must be hand-pollinated (outside its native range where specific Melipona bees are absent) within a few hours of opening. Pods are harvested when mature but before they split.",
+  "growthDuration": "Perennial vine. Takes 3-4 years to first flowering. Pods mature 8-9 months after hand-pollination. Vines can be productive for 10-12 years or more.",
+  "sustainabilityTips": [
+    "Shade-grown vanilla in agroforestry systems can promote biodiversity.",
+    "Relies on manual labor, so fair labor practices and fair trade certifications are important.",
+    "Organic cultivation avoids synthetic pesticides and fertilizers.",
+    "Proper curing methods are essential for quality and reduce post-harvest losses."
+  ],
+  "carbonFootprintInfo": "The carbon footprint is influenced by land use, transportation (it's a high-value, low-volume spice often air-freighted), and energy-intensive curing processes in some cases. Shade-grown systems can be more sustainable.",
+  "uses": ["flavoring_agent_beans_extract_paste_powder_for_ice_cream_baked_goods_beverages_desserts_savory_dishes", "fragrance_perfumery_cosmetics_aromatherapy", "traditional_medicine_limited"],
+  "originAndDomesticationHistory": "Vanilla planifolia originated in Mesoamerica, where it was cultivated by the Totonac people of eastern Mexico, and later by the Aztecs. It was introduced to Europe by Hernán Cortés in the 16th century. For centuries, Mexico was the main producer because the specific Melipona bee required for natural pollination was only found there. Hand-pollination techniques were developed in the 19th century (notably by Edmond Albius in Réunion), allowing cultivation in other tropical regions like Madagascar and Indonesia.",
+  "climaticRequirements": {
+    "temperature": "Tropical orchid. Optimal temperatures are 21-32°C. Requires high humidity (70-90%). Cannot tolerate frost or temperatures below 10°C.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-3000mm annually, with a short dry season to stimulate flowering.",
+    "altitude": "Typically grown from sea level up to 600m, but can be found up to 1500m in some areas."
+  },
+  "soilPreferences": "Prefers light, very well-drained, humus-rich, loamy soils with a slightly acidic pH (5.5-7.0). Good aeration and ability to climb are essential.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture and high humidity. Regular irrigation is necessary in areas with insufficient rainfall or distinct dry seasons. Misting can help maintain humidity. Good drainage is crucial to prevent root rot.",
+  "plantingAndHarvestCycles": "Propagated by stem cuttings. Planted near support trees or trellises in partial shade. Hand-pollination of each flower is done daily during the flowering season. Pods (beans) are harvested individually when they are mature (greenish-yellow at the tip) but before they split, about 8-9 months after pollination.",
+  "pestAndDiseaseManagement": "Susceptible to fungal diseases like root rot (Fusarium, Phytophthora) and various stem and leaf blights, especially in overly wet or poorly ventilated conditions. Pests include some caterpillars, snails, and slugs. Good agronomic practices, proper site selection, and phytosanitation are key. Chemical controls are used sparingly in high-quality production.",
+  "postHarvestHandling": "Harvested green vanilla beans undergo a complex and lengthy curing process to develop their characteristic aroma and flavor. This involves several steps: (1) Killing (scalding in hot water or sun exposure to stop vegetative growth), (2) Sweating (wrapping in blankets and storing in boxes to raise temperature and humidity), (3) Drying (slow drying in sun and shade for several weeks), and (4) Conditioning (storing in closed boxes for several months to further develop flavor). The entire process can take 3-6 months. Cured beans are then graded by length and appearance.",
+  "majorProducingCountriesOrRegions": ["Madagascar (world's largest producer, especially of Bourbon vanilla)", "Indonesia", "Papua New Guinea", "Mexico", "Comoros", "Uganda", "Tahiti (produces Vanilla tahitensis, a distinct species/hybrid)", "India", "Réunion", "Tonga"],
+  "marketValueAndGlobalDemand": "Vanilla is one of the most expensive spices globally due to the labor-intensive hand-pollination and curing processes. Demand is consistently high from the food (especially ice cream, bakery, beverages), fragrance, and pharmaceutical industries. Prices can be highly volatile, influenced by weather events (cyclones in Madagascar), crop yields, quality, and speculation. Synthetic vanillin is a cheaper alternative but lacks the complexity of natural vanilla extract."
+}

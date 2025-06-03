@@ -1,0 +1,218 @@
+{
+  "id": "mulberry",
+  "commonName": "Mulberry",
+  "scientificName": "Morus spp. (e.g., Morus alba - White, Morus rubra - Red, Morus nigra - Black)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Morus_alba_fruits.jpg/800px-Morus_alba_fruits.jpg",
+  "description": "A fast-growing, small to medium-sized deciduous tree native to warm temperate and subtropical regions of Asia, Africa, and the Americas. The fruit is a multiple fruit (syncarp), about 2–3 cm long, resembling a blackberry or loganberry. Depending on the species and cultivar, fruits can be white, lavender, red, deep purple, or black when ripe, with flavors ranging from very sweet to sweet-tart.",
+  "origin": "Varies by species: White Mulberry (Morus alba) from China; Red Mulberry (Morus rubra) from Eastern North America; Black Mulberry (Morus nigra) from Southwestern Asia.",
+  "localNames": [
+    "Shahtoot (Hindi/Urdu - often refers to long mulberries)",
+    "Mora (Spanish)",
+    "Mûre (French - also refers to blackberry, so 'mûre de mûrier' for mulberry)",
+    "Maulbeere (German)",
+    "Gelso (Italian)",
+    "Tuta (Kannada/Telugu)"
+  ],
+  "regions": [
+    "China (extensive cultivation, especially for sericulture)",
+    "India",
+    "Turkey",
+    "Iran",
+    "Central Asian countries (Uzbekistan, Tajikistan)",
+    "United States (various regions for different species)",
+    "Southern Europe (especially for Morus nigra)",
+    "Japan"
+  ],
+  "seasons": [
+    "Late Spring to Summer (typically May to August in the Northern Hemisphere, depending on species and climate)"
+  ],
+  "nutrition": {
+    "calories": "43 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.44,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.39,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 36.4,
+        "unit": "mg",
+        "rdi": "40-61%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 7.8,
+        "unit": "µg",
+        "rdi": "7-10%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 0.87,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 1.85,
+        "unit": "mg",
+        "rdi": "10-23%"
+      },
+      {
+        "name": "Potassium",
+        "value": 194,
+        "unit": "mg",
+        "rdi": "4-6%"
+      },
+      {
+        "name": "Calcium",
+        "value": 39,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 18,
+        "unit": "mg",
+        "rdi": "4-5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, an antioxidant that boosts the immune system and promotes skin health.",
+    "Good source of iron, which is important for preventing anemia and supporting energy levels.",
+    "Contain antioxidants like anthocyanins (especially in dark-colored varieties) and resveratrol, which help combat oxidative stress.",
+    "May help lower cholesterol levels and improve blood sugar control, according to some studies.",
+    "Traditionally used in Chinese medicine to improve eyesight, nourish the blood, and treat conditions like dizziness and tinnitus."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Mulberry Pollen Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Pollen from mulberry trees (especially Morus alba) is a significant aeroallergen in many regions, causing hay fever symptoms in sensitive individuals during the flowering season."
+    },
+    {
+      "name": "Fruit Allergy (rare)",
+      "severity": "Rare, Mild",
+      "details": "True allergy to mulberry fruit is uncommon but can occur, potentially causing oral allergy syndrome or skin rashes in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Adaptable to a wide range of temperate and subtropical climates. Some varieties are drought-tolerant.\n2. Soil: Prefers well-drained, fertile loamy soil but tolerates various soil types including sandy and clayey soils with a pH from 5.5 to 7.5.\n3. Propagation: Easily grown from seeds (though fruit may vary), hardwood or softwood cuttings, or grafting for specific cultivars.\n4. Planting: Plant in full sun for best fruit production. Trees can grow quite large and spread, so allow ample space.\n5. Watering: Water young trees regularly to establish roots. Established trees are relatively drought-tolerant, but consistent watering during fruit development improves yield.\n6. Fertilizing: Generally do not require heavy fertilization. An annual application of organic compost or balanced fertilizer in spring can be beneficial.\n7. Pruning: Prune during dormancy to maintain shape and size, remove dead or diseased wood, and improve air circulation. Some species fruit on new wood, others on old, influencing pruning strategy.\n8. Harvesting: Fruits are harvested when they are fully colored (red, purple, black, or white depending on variety) and detach easily from the stem. They are very soft and perishable.",
+  "growthDuration": "Can start bearing fruit in 2-3 years from cuttings or grafted trees, longer from seedlings (5+ years). Fruits ripen in late spring to summer over several weeks.",
+  "sustainabilityTips": [
+    "Mulberries are highly perishable; consume or process them quickly (within a day or two) after picking, or freeze them.",
+    "They stain hands and clothing easily, so be careful when harvesting and eating.",
+    "Excellent for making jams, jellies, pies, wine, or for drying. Dried mulberries have a good shelf life.",
+    "Mulberry trees are hardy and can be grown with minimal pesticide use."
+  ],
+  "carbonFootprintInfo": "Very low, especially if foraged or grown locally in home gardens (estimated 0.2-0.5 kg CO2e/kg). Commercial fresh fruit has a higher footprint if transported long distances due to perishability.",
+  "uses": [
+    "fresh_consumption_eaten_raw",
+    "processed_products_jams_jellies_syrups_fruit_preserves_pies_tarts_wine_juice_fruit_leather",
+    "dried_fruit_snack_similar_to_raisins",
+    "sericulture_leaves_of_morus_alba_primary_food_for_silkworms",
+    "fodder_leaves_for_livestock_cattle_goats",
+    "medicinal_traditional_chinese_medicine_fruit_leaves_bark_for_various_ailments_blood_tonic_anti_inflammatory",
+    "timber_wood_for_small_crafts_sports_equipment_in_some_regions",
+    "ornamental_tree_shade_tree_some_weeping_or_fruitless_varieties_for_landscaping"
+  ],
+  "originAndDomesticationHistory": "The origin of mulberries varies by species. White Mulberry (Morus alba) is native to China and has been cultivated there for thousands of years, primarily for its leaves to feed silkworms in sericulture; it spread along the Silk Road and to other parts of the world. Red Mulberry (Morus rubra) is native to eastern North America and was used by Native Americans for its fruit and medicinal properties. Black Mulberry (Morus nigra) is native to southwestern Asia (e.g., Iran, Turkey) and has been cultivated since ancient times by the Greeks and Romans for its flavorful fruit. Mulberry trees have a long history of human use for food, medicine, and industry (silk).",
+  "climaticRequirements": {
+    "temperature": "Mulberries are adaptable to a wide range of climates. White Mulberry (Morus alba) is very hardy and can tolerate winter temperatures down to -25°C (-13°F) or lower. Black Mulberry (Morus nigra) prefers warmer temperate climates and is less cold-hardy, tolerating temperatures down to about -10°C (14°F). Red Mulberry (Morus rubra) is intermediate in hardiness. Generally, they thrive in warm temperate to subtropical regions with full sun exposure.",
+    "rainfall": "Prefers moderate annual rainfall, typically between 600mm and 1500mm. Established trees are quite drought-tolerant, especially White Mulberry. However, for optimal fruit production and quality, consistent moisture is beneficial, particularly during dry periods and when fruits are developing. They do not tolerate waterlogged conditions.",
+    "altitude": "Can be grown successfully from sea level up to 2000 meters (approx. 6500 feet) or even higher, depending on the species and local climatic conditions."
+  },
+  "soilPreferences": "Mulberry trees prefer well-drained, fertile, loamy soil but are highly adaptable and can tolerate a wide variety of soil types, including sandy, clayey, and slightly alkaline soils (pH 5.5 to 7.5). Good soil drainage is important to prevent root diseases. They are relatively tolerant of poor soils compared to many other fruit trees.",
+  "irrigationAndWaterNeeds": "Young mulberry trees require regular watering to ensure proper establishment. Once established, mature trees are relatively drought-tolerant, particularly Morus alba. However, for optimal fruit production and quality, consistent moisture is beneficial, especially during dry periods and during fruit development. Overwatering or waterlogged conditions should be avoided.",
+  "plantingAndHarvestCycles": "Propagation is easily done from seeds (though fruit quality may be variable and juvenile period longer), hardwood or softwood cuttings, or by grafting for specific fruit cultivars or ornamental forms (like weeping mulberries). Planting is typically done in late winter or early spring while trees are dormant. Trees should be planted in full sun for best fruit production and given ample space, as they can grow quite large and spread widely. Mulberry trees can start bearing fruit within 2-3 years when grown from cuttings or grafts, while seedling trees may take 5 years or longer. Fruits ripen in late spring to summer, over a period of several weeks, depending on the species, cultivar, and climate. Mulberries are very soft and perishable when ripe. They are typically harvested by hand-picking when fully colored (white, lavender, red, deep purple, or black, depending on the variety) and detach easily from the stem. For large-scale harvesting, sheets are sometimes spread under the tree, and branches are shaken to collect the ripe fruit.",
+  "pestAndDiseaseManagement": "Mulberry trees are generally quite hardy and relatively pest and disease-resistant compared to many other fruit trees. Potential Pests: Birds are often the primary 'pest' as they are very fond of the ripe fruit. Scale insects, mealybugs, spider mites, and borers (like the mulberry borer) can occasionally be problematic in some areas. Potential Diseases: 'Popcorn disease' (caused by the fungus Ciboria carunculoides) can affect the fruit in some regions, causing them to become swollen, dry, and inedible. Bacterial blight (Pseudomonas syringae pv. mori), various cankers, and root rot (in poorly drained soils) can also occur. Leaf spot diseases are usually minor. Management Strategies: Often, minimal pest control is required. Netting trees can protect fruit from birds. Maintaining tree health through proper watering and fertilization, and ensuring good air circulation through pruning, can help prevent many diseases. Diseased or infested branches should be pruned out and destroyed. For specific issues, consulting local agricultural extension services for advice on appropriate control measures is recommended.",
+  "postHarvestHandling": "Mulberries are extremely perishable and bruise very easily due to their soft texture. They should be handled with utmost care during and after harvest. If kept at room temperature, they should ideally be consumed or processed within a few hours of picking. Refrigeration can extend their shelf life to 2-3 days, but they should be stored in shallow containers, not piled deeply, to prevent crushing. For longer preservation, mulberries are commonly frozen (often spread on a tray to freeze individually before being bagged), or processed into jams, jellies, syrups, pies, or wine. They can also be dried, similar to raisins, which significantly extends their usability.",
+  "majorProducingCountriesOrRegions": [
+    "China (extensive cultivation, both for fruit and sericulture)",
+    "India (significant for sericulture and fruit)",
+    "Turkey (especially known for dried mulberries)",
+    "Iran and other Central Asian countries (Uzbekistan, Tajikistan, Afghanistan - long tradition of cultivation)",
+    "United States (various regions for different species, often small-scale or for local markets)",
+    "Southern European countries (particularly for Morus nigra)",
+    "Japan (for fruit and sericulture)"
+  ],
+  "marketValueAndGlobalDemand": "Fresh mulberries have a very limited commercial market outside of local sales (such as farmers' markets or pick-your-own farms) due to their extreme perishability and the difficulty in transporting them without damage. However, where available, fresh mulberries are often highly sought after for their unique flavor. Dried mulberries have a growing niche market globally, especially in health food sectors, as they are nutritious and retain much of their sweetness. Mulberry juice, jams, jellies, and mulberry leaf tea also have increasing consumer interest. The primary global economic importance of mulberry, particularly Morus alba, remains linked to sericulture (silk production) through the use of its leaves as the sole food source for silkworms. There's also a market for mulberry wood in some regions for crafts and specialty items.",
+  "staticRecipes": [
+    {
+      "name": "Mulberry Jam",
+      "description": "A sweet and slightly tart jam made from fresh mulberries.",
+      "ingredients": [
+        "4 cups fresh mulberries, rinsed",
+        "2 cups granulated sugar",
+        "2 tbsp lemon juice"
+      ],
+      "steps": [
+        "Combine mulberries, sugar, and lemon juice in a large, heavy-bottomed pot.",
+        "Mash the mulberries slightly with a potato masher or fork.",
+        "Bring the mixture to a boil over medium-high heat, stirring constantly.",
+        "Reduce heat to medium-low and continue to simmer, stirring frequently, until the jam thickens. This can take 20-30 minutes. To test for doneness, place a small amount of jam on a chilled plate; if it wrinkles when pushed, it's ready.",
+        "Skim off any foam from the surface.",
+        "Ladle hot jam into sterilized jars, leaving 1/4-inch headspace. Seal and process in a boiling water bath for 10 minutes for longer storage, or store in the refrigerator for up to a few weeks."
+      ]
+    },
+    {
+      "name": "Fresh Mulberry Parfait",
+      "description": "A simple and healthy dessert or breakfast layering mulberries, yogurt, and granola.",
+      "ingredients": [
+        "1 cup fresh mulberries",
+        "1 cup plain or vanilla yogurt",
+        "1/2 cup granola",
+        "Honey or maple syrup for drizzling (optional)"
+      ],
+      "steps": [
+        "In a glass or small bowl, layer ingredients: start with a layer of yogurt, followed by a layer of mulberries, then a layer of granola.",
+        "Repeat the layers if desired.",
+        "Drizzle with honey or maple syrup if using.",
+        "Serve immediately for best texture."
+      ]
+    },
+    {
+      "name": "Mulberry Crumble Pie",
+      "description": "A comforting pie with a sweet mulberry filling and a buttery crumble topping.",
+      "ingredients": [
+        "For filling: 4 cups fresh mulberries",
+        "1/2 cup sugar",
+        "2 tbsp all-purpose flour or cornstarch",
+        "1 tbsp lemon juice",
+        "For crumble: 1 cup all-purpose flour",
+        "1/2 cup brown sugar",
+        "1/2 cup cold butter, cubed",
+        "1/2 cup rolled oats (optional)",
+        "Unbaked 9-inch pie crust"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Prepare pie crust in a 9-inch pie dish.",
+        "Filling: In a large bowl, gently toss mulberries with sugar, flour/cornstarch, and lemon juice. Pour into the unbaked pie crust.",
+        "Crumble: In another bowl, combine flour and brown sugar. Cut in cold butter until the mixture resembles coarse crumbs. Stir in oats if using.",
+        "Sprinkle the crumble topping evenly over the mulberry filling.",
+        "Bake for 40-50 minutes, or until the crust is golden brown and the filling is bubbly. Cover edges of crust with foil if they start to brown too quickly.",
+        "Let cool for at least 30 minutes before slicing and serving."
+      ]
+    }
+  ]
+}

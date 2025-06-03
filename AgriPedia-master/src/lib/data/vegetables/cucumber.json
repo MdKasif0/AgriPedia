@@ -1,0 +1,201 @@
+{
+  "id": "cucumber",
+  "commonName": "Cucumber",
+  "scientificName": "Cucumis sativus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Cucumber.jpg",
+  "description": "A widely cultivated creeping vine plant in the gourd family, Cucurbitaceae. It produces an edible fruit, also called a cucumber, which is botanically a type of berry (a pepo). Cucumbers are typically cylindrical, elongated with tapered ends, and have a smooth or slightly ridged/bumpy green skin. The flesh is crisp, cool, and high in water content, with a mild, refreshing flavor. Varieties differ in size, shape, skin texture (slicing, pickling, burpless), and seed content.",
+  "origin": "Indian subcontinent (India and surrounding regions). Cultivated for at least 3,000 years.",
+  "localNames": [
+    "Pepino (Spanish)",
+    "Concombre (French)",
+    "Gurke (German)",
+    "Cetriolo (Italian)",
+    "Kheera / Kakdi (खीरा / ककड़ी - Hindi)",
+    "แตงกวา (Taengkwa - Thai)",
+    "Kyuri (キュウリ - Japanese)",
+    "Timun (Indonesian/Malay)"
+  ],
+  "regions": [
+    "China (world's largest producer by a significant margin)",
+    "Turkey",
+    "Russia",
+    "Iran",
+    "United States (Florida, Georgia, California, Michigan, North Carolina)",
+    "Mexico",
+    "Spain",
+    "Ukraine",
+    "Egypt",
+    "Japan",
+    "India",
+    "Netherlands (major greenhouse producer)"
+  ],
+  "seasons": [
+    "Primarily Summer for field-grown varieties in temperate climates. Available year-round in most markets due to greenhouse cultivation and global sourcing from different hemispheres."
+  ],
+  "nutrition": {
+    "calories": "15 kcal per 100g (raw, with peel)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.65,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.63,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.11,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 16.4,
+        "unit": "µg",
+        "rdi": "14-20%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 2.8,
+        "unit": "mg",
+        "rdi": "3-5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 147,
+        "unit": "mg",
+        "rdi": "3-4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent for hydration due to its very high water content (around 95-96%).",
+    "Low in calories, making it a good choice for weight management and light, refreshing snacks.",
+    "Contains antioxidants, including flavonoids and tannins, which help protect against cell damage.",
+    "May help freshen breath due to its high water content and ability to stimulate saliva production, which washes away bacteria.",
+    "Slices are often used topically to soothe skin, reduce puffiness (especially around the eyes), and alleviate sunburn due to their cooling effect."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cucurbitacin Sensitivity / Bitterness",
+      "severity": "Mild (digestive discomfort)",
+      "details": "Some cucumbers, particularly those grown under stress or wilder varieties, can contain higher levels of cucurbitacins, which impart a bitter taste and can potentially cause digestive upset (e.g., indigestion, burping) in sensitive individuals. Commercially grown cucumbers are usually bred for low or no bitterness. Peeling the cucumber can sometimes reduce bitterness as cucurbitacins are often concentrated near the skin and stem end."
+    },
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Rare, Mild",
+      "details": "Rarely, individuals with ragweed pollen allergy may experience Oral Allergy Syndrome (OAS) after consuming cucumbers, leading to itching or tingling in the mouth or throat."
+    }
+  ],
+  "cultivationProcess": "Cucumbers are warm-season crops. Seeds are sown directly after the last frost when soil is warm, or started indoors. They prefer well-drained, fertile soil rich in organic matter and full sun. Vining varieties require a trellis or support; bush varieties are more compact. Consistent and adequate watering is crucial, especially during flowering and fruiting. Fruits are harvested when firm, smooth, and have reached desired size, before seeds harden or skin yellows. Frequent harvesting encourages more production. Details in specific sections.",
+  "growthDuration": "Typically 50 to 70 days from sowing to the first harvest, depending on the specific variety (slicing, pickling, burpless) and growing conditions.",
+  "sustainabilityTips": [
+    "Store cucumbers in the refrigerator crisper drawer; they can last for about a week. Avoid storing them near ethylene-producing fruits like apples or bananas, as this can accelerate yellowing.",
+    "The skin of many cucumber varieties (especially slicing types) is edible and contains fiber and nutrients; wash thoroughly if consuming the skin. Some pickling varieties or those with thick, waxy skins are often peeled.",
+    "Cucumbers are versatile for use in salads, sandwiches, pickles, infused water, or as a cooling ingredient in dips like tzatziki or raita.",
+    "Growing cucumbers in home gardens on trellises can maximize space and yield."
+  ],
+  "carbonFootprintInfo": "Generally low (estimated 0.3-0.6 kg CO2e/kg) for field-grown cucumbers consumed locally or transported by land. Greenhouse production, especially out-of-season or in colder climates requiring heating, and long-distance air freight can significantly increase this footprint.",
+  "uses": [
+    "culinary_raw_salads_sandwiches_wraps_crudites_sushi_rolls_gazpacho_tzatziki_raita",
+    "culinary_pickling_gherkins_kirby_cucumbers_for_dill_pickles_sweet_pickles_relish",
+    "beverages_infused_water_juices_smoothies_cocktails_pimm_s_cup_cucumber_lemonade",
+    "cosmetics_skincare_slices_used_topically_to_soothe_skin_reduce_eye_puffiness_extracts_in_lotions_creams_face_masks",
+    "garnish_for_dishes_and_drinks"
+  ],
+  "originAndDomesticationHistory": "Cucumber (Cucumis sativus) is native to the Indian subcontinent, with its likely center of origin in India, where it has been cultivated for at least 3,000 years. From India, it spread to ancient Greece and Rome; Pliny the Elder mentions its cultivation. It was later introduced to China (around 2nd century BCE - 1st century AD) and spread throughout Europe. Christopher Columbus is credited with bringing cucumbers to the Americas (Haiti) in 1494. Over centuries of cultivation, various types and cultivars have been developed, broadly categorized into slicing cucumbers (for fresh consumption), pickling cucumbers (gherkins, Kirby types, generally smaller and wartier), and burpless varieties (often with thinner skin and less bitterness).",
+  "climaticRequirements": {
+    "temperature": "Cucumbers are a warm-season crop that thrives in sunny and warm conditions. Optimal temperatures for growth and fruit development range from 18°C to 30°C (65°F to 86°F). They are very sensitive to frost, and temperatures below 10°C (50°F) can significantly hinder growth and development. High temperatures combined with high humidity can favor some diseases.",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, preferring around 600mm to 900mm of rainfall or equivalent irrigation. Water stress, especially during flowering and fruit set, can lead to poor yield and misshapen or bitter fruit. However, good soil drainage is crucial to prevent root diseases.",
+    "altitude": "Typically cultivated in lowlands to moderate altitudes where warm temperatures and sufficient sunlight are available. Greenhouse cultivation allows for production in a wider range of altitudes and latitudes."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter (at least 2-3%). A slightly acidic to neutral soil pH, ideally between 6.0 and 7.0, is best for cucumber cultivation. Good soil aeration is important for healthy root development. Heavy clay soils or poorly drained soils should be amended or avoided.",
+  "irrigationAndWaterNeeds": "Cucumbers have a high water requirement due to their shallow root system and rapid growth, especially during periods of active vine growth, flowering, and fruit development. Consistent and adequate soil moisture is crucial; water stress can lead to bitter fruit, poor fruit set, and reduced yields. Drip irrigation or soaker hoses are preferred methods as they deliver water directly to the root zone and help keep foliage dry, which can reduce the risk of fungal diseases. Typically, 25-50mm (1-2 inches) of water per week is needed, depending on soil type, weather conditions, and plant size.",
+  "plantingAndHarvestCycles": "Cucumbers are propagated from seeds. Seeds can be sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed to at least 15°C (60°F). In regions with shorter growing seasons, seeds may be started indoors 2-4 weeks prior to transplanting, though cucumbers can be sensitive to transplant shock. Vining varieties, which are most common, require a trellis, fence, or other support structure for the vines to climb; this improves air circulation, fruit quality (keeping fruits off the ground), and ease of harvest. Bush varieties are more compact and may not require extensive support. The time from sowing to the first harvest varies by cultivar but generally ranges from 50 to 70 days. Fruits are harvested by hand when they reach the desired size for their specific type (slicing, pickling), are firm, smooth, and have a uniform green color (before they start to turn yellow, which indicates overripeness and hardening of seeds). Harvesting should be done frequently, often every 1-2 days during peak production, as this encourages the plant to continue producing more fruit.",
+  "pestAndDiseaseManagement": "Common Pests: Cucumber beetles (striped and spotted) are significant pests as they feed on plants and can transmit bacterial wilt. Aphids can transmit viruses and cause direct feeding damage. Spider mites can be problematic in hot, dry conditions. Whiteflies, squash bugs, and pickleworms can also infest cucumbers. Common Diseases: Powdery mildew and downy mildew are common fungal diseases affecting foliage. Angular leaf spot (bacterial) and bacterial wilt (transmitted by cucumber beetles) can be destructive. Cucumber Mosaic Virus (CMV), Watermelon Mosaic Virus (WMV), and Zucchini Yellow Mosaic Virus (ZYMV) are common viral diseases. Anthracnose, gummy stem blight (black rot), and scab can also occur. Root rot can be an issue in poorly drained soils. Management Strategies: Implementing crop rotation (avoiding planting cucumbers or related cucurbits in the same location for 2-3 years). Selecting disease-resistant varieties. Ensuring proper plant spacing and trellising to promote good air circulation. Practicing effective weed control. Using row covers on young plants to protect against early insect infestations (remove during flowering for pollination). Controlling insect vectors like aphids and cucumber beetles. Applying appropriate and approved fungicides or bactericides when necessary, based on scouting, disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Cucumbers should be harvested carefully by cutting the stem, not pulling, to avoid damaging the vine. They are best picked in the cool of the morning. After harvest, cucumbers should be cooled promptly if possible, especially if they are to be stored or shipped. Ideal storage conditions are cool temperatures, typically between 10°C and 13°C (50°F to 55°F), with high relative humidity (90-95%). Storing cucumbers below 10°C (50°F) for extended periods can cause chilling injury, leading to pitting, water-soaked spots, and accelerated decay. Shelf life under optimal conditions is generally 1-2 weeks. For commercial sale, cucumbers are often waxed to reduce moisture loss, improve appearance, and extend shelf life. They should not be stored near ethylene-producing fruits like apples, bananas, or tomatoes, as ethylene can cause cucumbers to yellow and decay more rapidly.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a very significant margin)",
+    "Turkey",
+    "Russia",
+    "Iran",
+    "United States (major production in states like Florida, Georgia, Michigan, California, North Carolina)",
+    "Mexico (major exporter to the USA)",
+    "Spain (significant European producer, including greenhouse production)",
+    "Ukraine",
+    "Egypt",
+    "Japan",
+    "Netherlands (major greenhouse producer and exporter)",
+    "India"
+  ],
+  "marketValueAndGlobalDemand": "Cucumbers are one of the most widely cultivated and consumed vegetables globally, with high and consistent demand year-round. China dominates world production. There is substantial international trade in fresh cucumbers, driven by demand for both slicing varieties (for fresh consumption in salads, sandwiches, etc.) and pickling varieties (gherkins, Kirby types for processing into pickles). Greenhouse production in countries like the Netherlands, Spain, and Canada plays a crucial role in supplying markets during off-seasons. The market value for cucumbers is influenced by factors such as type (slicing, pickling, specialty like English or Persian cucumbers), quality, size, seasonality, and origin (field-grown vs. greenhouse). Demand for fresh, high-quality cucumbers is strong in retail, food service, and for processing into pickles and relishes.",
+  "staticRecipes": [
+    {
+      "name": "Refreshing Cucumber Salad",
+      "description": "A simple and crisp salad, perfect for summer.",
+      "ingredients": [
+        "2 medium cucumbers, thinly sliced",
+        "1/4 red onion, thinly sliced (optional)",
+        "2 tbsp rice vinegar or white wine vinegar",
+        "1 tbsp sugar (optional)",
+        "1 tbsp chopped fresh dill or parsley",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "In a medium bowl, combine sliced cucumbers and red onion (if using).",
+        "In a small bowl, whisk together vinegar, sugar (if using), dill/parsley, salt, and pepper.",
+        "Pour the dressing over the cucumbers and toss gently to coat.",
+        "Cover and refrigerate for at least 15-30 minutes to allow flavors to meld. Serve chilled."
+      ]
+    },
+    {
+      "name": "Cucumber Raita (Yogurt Dip)",
+      "description": "A cooling Indian yogurt dip with grated cucumber and spices.",
+      "ingredients": [
+        "1 cup plain yogurt",
+        "1/2 medium cucumber, peeled and grated",
+        "1/4 tsp roasted cumin powder",
+        "Pinch of black salt (kala namak) or regular salt",
+        "1 tbsp chopped fresh cilantro or mint",
+        "Optional: a pinch of red chili powder for garnish"
+      ],
+      "steps": [
+        "Squeeze out excess water from the grated cucumber.",
+        "In a bowl, whisk yogurt until smooth.",
+        "Add grated cucumber, roasted cumin powder, salt, and chopped cilantro/mint to the yogurt. Mix well.",
+        "Chill for at least 30 minutes before serving.",
+        "Garnish with a sprinkle of red chili powder or a mint sprig if desired. Serve as a side with Indian meals."
+      ]
+    },
+    {
+      "name": "Quick Cucumber Pickles (Refrigerator Pickles)",
+      "description": "Crisp and tangy pickles that are easy to make and don't require canning.",
+      "ingredients": [
+        "2-3 pickling cucumbers (e.g., Kirby), thinly sliced",
+        "1 cup white vinegar",
+        "1 cup water",
+        "1/4 cup sugar",
+        "1 tbsp salt",
+        "Optional: 1-2 cloves garlic (smashed), 1/2 tsp dill seeds or fresh dill sprigs, 1/4 tsp mustard seeds, pinch of red pepper flakes"
+      ],
+      "steps": [
+        "Pack sliced cucumbers tightly into a clean glass jar (or jars). Add garlic and other optional spices if using.",
+        "In a saucepan, combine vinegar, water, sugar, and salt. Bring to a boil over medium heat, stirring until sugar and salt dissolve completely.",
+        "Pour the hot brine over the cucumbers in the jar, ensuring they are fully submerged. Leave about 1/2 inch headspace.",
+        "Let cool to room temperature, then seal the jar and refrigerate. The pickles will be ready to eat in a few hours but are best after 24 hours.",
+        "Store in the refrigerator and consume within 2-3 weeks."
+      ]
+    }
+  ]
+}

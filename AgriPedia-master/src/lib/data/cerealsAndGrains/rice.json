@@ -1,0 +1,59 @@
+{
+  "id": "rice",
+  "commonName": "Rice",
+  "scientificName": "Oryza sativa",
+  "image": "https://images.unsplash.com/photo-1586201375822-52c6709T9T9T?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Rice is a staple food for over half of the world's population, especially in Asia. It is a cereal grain, the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice).",
+  "origin": "Asia, specifically the Yangtze River basin in China.",
+  "localNames": ["Chawal (Hindi)", "Kome (Japanese)", "Arroz (Spanish)", "Riz (French)"],
+  "regions": ["China", "India", "Indonesia", "Bangladesh", "Vietnam"],
+  "seasons": ["Varies by region and type (e.g., Kharif/Rabi in India)", "Typically wet/monsoon season for traditional varieties"],
+  "nutrition": {
+    "calories": "130 kcal per 100g (cooked, white, medium-grain)",
+    "macronutrients": [
+      { "name": "Protein", "value": 2.7, "unit": "g" },
+      { "name": "Carbohydrates", "value": 28, "unit": "g" },
+      { "name": "Fat", "value": 0.3, "unit": "g" },
+      { "name": "Fiber", "value": 0.4, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Thiamin (B1)", "value": 0.07, "unit": "mg", "rdi": "6%" },
+      { "name": "Niacin (B3)", "value": 1.6, "unit": "mg", "rdi": "8%" },
+      { "name": "Pantothenic acid (B5)", "value": 1.014, "unit": "mg", "rdi": "20%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 1.088, "unit": "mg", "rdi": "43%" },
+      { "name": "Selenium", "value": 9.7, "unit": "µg", "rdi": "14%" },
+      { "name": "Iron", "value": 0.80, "unit": "mg", "rdi": "4%" }
+    ]
+  },
+  "healthBenefits": [
+    "Provides energy due to high carbohydrate content.",
+    "Brown rice is a good source of fiber, aiding digestion.",
+    "Contains antioxidants.",
+    "Naturally gluten-free."
+  ],
+  "potentialAllergies": [],
+  "cultivationProcess": "Rice cultivation involves preparing the land (puddling), planting seedlings (transplanting) or direct sowing, managing water levels (irrigation), fertilizing, and controlling pests and weeds until harvest.",
+  "growthDuration": "Typically 3-6 months, depending on the variety and environmental conditions.",
+  "sustainabilityTips": [
+    "System of Rice Intensification (SRI) can reduce water usage.",
+    "Alternate Wetting and Drying (AWD) irrigation technique.",
+    "Integrated pest management to reduce chemical use."
+  ],
+  "carbonFootprintInfo": "Rice paddies are a significant source of methane, a potent greenhouse gas. Efforts are underway to reduce this impact through improved farming practices.",
+  "uses": ["culinary", "industrial", "animal_feed"],
+  "originAndDomesticationHistory": "Rice (Oryza sativa) was domesticated from wild Oryza rufipogon in the Yangtze River valley of China between 13,500 and 8,200 years ago. Another species, Oryza glaberrima, was independently domesticated in West Africa about 2,000-3,000 years ago. It spread across Asia and later to other continents.",
+  "climaticRequirements": {
+    "temperature": "20-37°C (optimum 25-32°C)",
+    "rainfall": "1500-2000mm annually, or consistent irrigation",
+    "altitude": "Sea level to 3000m, but most commonly grown in lowland areas."
+  },
+  "soilPreferences": "Fertile, clayey loam soils with good water retention capacity. Prefers acidic to neutral pH (5.0-7.0). Can tolerate slightly alkaline soils.",
+  "irrigationAndWaterNeeds": "Requires significant water, especially for lowland rice which is grown in flooded paddies. Upland rice requires less water but still needs consistent moisture.",
+  "plantingAndHarvestCycles": "Planting usually occurs at the beginning of the rainy season or with irrigation. Seedlings are often grown in nurseries and then transplanted. Harvest is typically 3-6 months after planting, when grains turn golden yellow.",
+  "pestAndDiseaseManagement": "Common pests include stem borers, leafhoppers, and planthoppers. Diseases include rice blast, bacterial blight, and sheath blight. Management involves resistant varieties, biological control, and judicious use of pesticides.",
+  "postHarvestHandling": "Involves reaping, threshing, cleaning, drying (to 12-14% moisture content), milling (to remove husk and bran), and storage in cool, dry conditions.",
+  "majorProducingCountriesOrRegions": ["China", "India", "Indonesia", "Bangladesh", "Vietnam", "Thailand", "Myanmar", "Philippines", "Brazil", "Pakistan"],
+  "marketValueAndGlobalDemand": "Rice is a primary staple for more than half the world's population, with consistently high global demand. It plays a critical role in food security and the economies of many producing nations."
+}

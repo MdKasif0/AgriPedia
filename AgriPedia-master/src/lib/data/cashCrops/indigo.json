@@ -1,0 +1,56 @@
+{
+  "id": "indigo",
+  "commonName": "Indigo (True Indigo)",
+  "scientificName": "Indigofera tinctoria",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Indigo is a plant in the bean family Fabaceae, native to the tropics and subtropics. It is cultivated for the deep blue dye derived from its leaves, also called indigo. The dye is extracted by fermenting the leaves. Historically, indigo was a highly prized commodity for dyeing textiles.",
+  "origin": "Indian subcontinent and Southeast Asia.",
+  "localNames": ["Neel (Hindi)", "Ai (Japanese - for indigo dye)", "Añil / Índigo (Spanish)", "Indigo (French)"],
+  "regions": ["India", "China", "Indonesia", "Bangladesh", "El Salvador", "Peru", "Parts of Africa and Southeast Asia"],
+  "seasons": ["Tropical perennial, often grown as an annual or biennial. Multiple harvests of leaves possible per year in suitable climates."],
+  "nutrition": {
+    "calories": "Not consumed for nutritional caloric value. Plant matter contains indigotin precursors.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "N/A for dye product" },
+      { "name": "Carbohydrates", "unit": "g", "value": "N/A for dye product" },
+      { "name": "Fat", "unit": "g", "value": "N/A for dye product" },
+      { "name": "Fiber", "unit": "g", "value": "Leaves are fibrous" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Primarily known for its use as a natural dye.",
+    "In traditional medicine, some Indigofera species have been used for anti-inflammatory, antiseptic, and astringent properties (use requires expertise due to potential toxicity of some compounds).",
+    "Modern research explores potential medicinal applications of compounds derived from Indigofera species."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Indigo Dye Sensitivity",
+      "severity": "Mild",
+      "details": "Contact dermatitis or skin irritation can occur in some individuals sensitive to indigo dye or the chemicals used in the dyeing process. Natural indigo is generally less allergenic than synthetic indigo or other synthetic dyes."
+    }
+  ],
+  "cultivationProcess": "Indigo is grown from seeds. It is a leguminous plant that can improve soil fertility. Leaves are harvested, then soaked in water to extract indican, which is then oxidized to form the blue indigo dye pigment.",
+  "growthDuration": "Can be harvested for leaves multiple times, starting about 3-4 months after sowing. Often grown as an annual, but can be perennial in tropical climates.",
+  "sustainabilityTips": [
+    "As a legume, it fixes atmospheric nitrogen, potentially reducing fertilizer needs for subsequent crops.",
+    "Natural indigo dyeing processes can be more environmentally friendly than synthetic dye processes if managed well (e.g., water use, disposal of residues).",
+    "Supports traditional crafts and artisan livelihoods."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of natural indigo dye is influenced by cultivation practices, the energy-intensive extraction and dyeing processes, and transportation. Compared to some synthetic dyes derived from petrochemicals, it can offer a more sustainable alternative if produced efficiently.",
+  "uses": ["dye_production_natural_blue_dye_for_textiles_denim_arts_crafts", "traditional_medicine_limited_use_of_some_parts_for_specific_ailments", "green_manure_cover_crop_soil_improvement"],
+  "originAndDomesticationHistory": "Indigofera tinctoria is likely native to the Indian subcontinent or Southeast Asia and has been cultivated for thousands of years as a source of blue dye. Ancient civilizations in India, Egypt, Mesopotamia, and Peru used indigo. It became a highly valuable trade commodity, often called 'blue gold', especially from the 16th century onwards when European powers established indigo plantations in their colonies (India, Americas, Caribbean). Synthetic indigo production, developed in the late 19th century, largely replaced natural indigo but there's a resurgence in interest for natural dyes.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical plant. Prefers warm, humid conditions with temperatures between 22-35°C. Sensitive to frost.",
+    "rainfall": "Requires moderate to high rainfall, typically 1000-1500mm annually, or irrigation. Good drainage is important, but it tolerates humidity well.",
+    "altitude": "Typically grown in lowland tropical and subtropical areas, up to 1000m."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy soils with good organic matter content. Slightly acidic to neutral pH (6.0-7.5) is optimal.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during active growth. Irrigation is necessary in areas with insufficient or uneven rainfall to ensure good leaf yield.",
+  "plantingAndHarvestCycles": "Propagated from seeds, usually sown at the beginning of the rainy season. Leaves are harvested 2-3 times a year, starting when plants are about 3-4 months old. The plant is cut a few inches above the ground, and new shoots regrow. Harvesting is done before flowering for maximum dye content.",
+  "pestAndDiseaseManagement": "Pests include indigo caterpillars, aphids, and termites. Diseases like wilt and leaf spot can occur. Integrated pest management strategies are employed, including crop rotation and use of botanical pesticides. Being a legume, it's generally robust.",
+  "postHarvestHandling": "Harvested leaves are soaked in water for several hours (steeping) to extract the indican glucoside. The liquid is then aerated (oxidized), often by beating or agitation, which converts indican to the insoluble blue indigo pigment (indigotin). The pigment precipitates, is collected, pressed into cakes, and dried. The dried cakes are then ground into powder for use as a dye.",
+  "majorProducingCountriesOrRegions": ["India (historically and currently a significant producer of natural indigo)", "El Salvador", "Peru", "Bangladesh", "Thailand", "Vietnam", "Parts of Africa", "Small-scale production in many other countries with renewed interest"],
+  "marketValueAndGlobalDemand": "Natural indigo dye has a niche but growing market, driven by demand for sustainable and natural textiles, artisan crafts, and high-end fashion. It is significantly more expensive than synthetic indigo. The market is much smaller than it was historically before the advent of synthetic dyes but is experiencing a revival. Quality and consistency of the dye are key market factors."
+}

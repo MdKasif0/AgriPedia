@@ -1,0 +1,56 @@
+{
+  "id": "jatropha",
+  "commonName": "Jatropha (Physic Nut)",
+  "scientificName": "Jatropha curcas",
+  "image": "https://images.unsplash.com/photo-1604537449031-3e2d53babe2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Jatropha curcas is a species of flowering plant in the spurge family, Euphorbiaceae, that is native to the American tropics, most likely Mexico and Central America. It is cultivated in tropical and subtropical regions around the world, becoming naturalized in some areas. The seeds contain a non-edible oil that can be processed to produce biodiesel. All parts of the plant, especially seeds, are toxic to humans and animals if ingested.",
+  "origin": "Tropical Americas (likely Mexico and Central America).",
+  "localNames": ["Ratanjyot (Hindi)", "Physic Nut (English)", "Purging Nut (English)", "Saboo-dam (Thai)", "Piñón botija (Spanish)"],
+  "regions": ["India", "China", "Africa (various countries)", "Southeast Asia", "Central and South America"],
+  "seasons": ["Perennial shrub or small tree; flowering and fruiting can occur year-round in favorable tropical climates, often with peaks tied to rainfall patterns."],
+  "nutrition": {
+    "calories": "Seeds are highly toxic and NOT for consumption. Jatropha oil is non-edible and used for biofuel/industrial purposes.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds contain ~18-25%" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds contain ~15-20%" },
+      { "name": "Fat", "unit": "g", "value": "Seeds contain ~30-40% oil (Jatropha oil)" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "Primarily grown for its seed oil, which is a potential feedstock for biodiesel.",
+    "Traditionally, parts of the plant (latex, leaves) have been used in folk medicine for treating wounds, skin diseases, and as a purgative (use is dangerous due to toxicity).",
+    "The oil has applications in soap making, lubricants, and lighting."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Jatropha Toxicity",
+      "severity": "Extremely Severe/Fatal",
+      "details": "All parts of the Jatropha plant, especially the seeds, are highly toxic to humans and animals due to the presence of curcin (a toxalbumin similar to ricin) and phorbol esters. Ingestion can cause severe vomiting, diarrhea, dehydration, and can be fatal. Handling plant parts can also cause contact dermatitis in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Jatropha is propagated from seeds or cuttings. It is a drought-resistant plant that can grow in poor or marginal soils. It begins to yield seeds from the second or third year after planting.",
+  "growthDuration": "Perennial shrub or small tree. Starts yielding seeds in 2-3 years and can remain productive for up to 30-40 years.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can grow on marginal, degraded, or arid lands not suitable for food crops, reducing competition for arable land.",
+    "Potential as a biofuel crop can reduce reliance on fossil fuels.",
+    "The seed cake (after oil extraction and detoxification) can be used as organic fertilizer or for biogas production.",
+    "However, large-scale monoculture plantations have raised concerns about land use change, biodiversity, and food security if not managed carefully."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of jatropha-based biodiesel depends on land-use change (if any for plantations), cultivation inputs (though often low), oil extraction efficiency, and processing. If grown on genuinely marginal land without displacing food crops or forests, it can offer carbon benefits compared to fossil fuels.",
+  "uses": ["biofuel_production_seed_oil_for_biodiesel", "industrial_oil_soap_making_lubricants_lighting", "traditional_medicine_latex_leaves_roots_used_cautiously_due_to_toxicity", "erosion_control_live_fencing_land_reclamation"],
+  "originAndDomesticationHistory": "Jatropha curcas is native to the tropical Americas. It was spread by Portuguese traders to Africa and Asia. Its use as a medicinal plant and for soap making has been known for centuries. In the early 2000s, there was a major global surge in interest in Jatropha as a biofuel crop due to its perceived ability to grow on marginal lands and its non-edible oil, but widespread commercial success has been limited by variable yields and other agronomic challenges.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical plant. Prefers warm climates with temperatures between 20-35°C. Tolerates high temperatures but is sensitive to frost.",
+    "rainfall": "Drought-resistant. Can grow in areas with annual rainfall from 250mm to over 1200mm. Performs best with moderate rainfall (600-1000mm) but can survive long dry periods.",
+    "altitude": "Adaptable to various altitudes, typically grown from sea level up to 1500m."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, including poor, sandy, gravelly, or saline soils. Prefers well-drained soils with a pH from 5.5 to 8.0. Cannot tolerate waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Highly drought-tolerant once established. Irrigation is generally not required for survival in semi-arid areas but can significantly improve seed yields, especially during establishment and flowering/fruiting stages in commercial plantations.",
+  "plantingAndHarvestCycles": "Propagated from seeds or stem cuttings. Planted during the rainy season or with irrigation. Starts flowering and fruiting in the first or second year, but economic yields are typically from the third year. Fruits (capsules) are harvested when they turn yellow or brown and begin to dry. Seeds are then extracted from the capsules.",
+  "pestAndDiseaseManagement": "Relatively hardy but can be affected by pests like scale insects, mealybugs, fruit borers, and flower gall midges. Diseases include collar rot, root rot (in poorly drained soils), and leaf spot. Integrated pest management strategies are evolving as cultivation becomes more widespread.",
+  "postHarvestHandling": "Harvested capsules are dried in the sun until they split open, releasing the seeds. Seeds are then further dried to a low moisture content (6-8%) for storage. For oil extraction, seeds are typically dehulled and then pressed (mechanical expellers) or solvent extracted. The oil is non-edible and requires further processing for biodiesel production. Seed cake needs detoxification if considered for any feed use.",
+  "majorProducingCountriesOrRegions": ["India", "China", "Indonesia", "Brazil", "Various countries in Africa (e.g., Mozambique, Tanzania, Mali)", "Southeast Asia", "Limited cultivation in many other tropical/subtropical countries due to past biofuel interest"],
+  "marketValueAndGlobalDemand": "The market for Jatropha oil is primarily driven by the biofuel industry (biodiesel). Demand has been fluctuating and has not met earlier optimistic projections due to challenges in achieving consistent high yields and competition from other biofuel feedstocks. Research continues on improving varieties and agronomic practices. The oil also has niche markets for soap and other industrial uses. Seeds are traded for planting material."
+}

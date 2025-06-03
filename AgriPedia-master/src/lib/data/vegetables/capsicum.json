@@ -1,0 +1,202 @@
+{
+  "id": "capsicum",
+  "commonName": "Capsicum (Bell Pepper / Sweet Pepper)",
+  "scientificName": "Capsicum annuum Grossum Group",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bell_peppers_Assorted_colors.jpg/1024px-Bell_peppers_Assorted_colors.jpg",
+  "description": "A cultivar group of the species Capsicum annuum, belonging to the nightshade family (Solanaceae). Cultivars of the plant produce fruits in different colors, including green (unripe), red, yellow, orange, white, purple, and even brown. Bell peppers are characterized by their blocky, bell-like shape and thick, fleshy walls. Unlike chili peppers, they are non-pungent (not spicy) due to a recessive gene that eliminates capsaicin production, and are thus often referred to as 'sweet peppers'.",
+  "origin": "Mexico, Central America, and northern South America. Domesticated from wild Capsicum annuum.",
+  "localNames": [
+    "Bell Pepper (North America, Australia, New Zealand)",
+    "Sweet Pepper (UK, Ireland)",
+    "Pepper (UK, Ireland - when referring to bell peppers)",
+    "Pimiento (Spanish - also refers to other peppers like pimento)",
+    "Pimentão (Portuguese)",
+    "Poivron (French)",
+    "Paprika (German, Dutch, Hungarian, Slavic languages - often refers to the bell pepper fruit itself, not just the spice)",
+    "Shimla Mirch (शिमला मिर्च - Hindi, 'capsicum from Shimla')",
+    "Kuda Milagai (குடைமிளகாய் - Tamil)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "Mexico (major producer and exporter)",
+    "Turkey",
+    "Indonesia",
+    "Spain (major European producer, especially greenhouse)",
+    "United States (California, Florida, Georgia)",
+    "Netherlands (major greenhouse producer and exporter)",
+    "Israel",
+    "Canada (greenhouse production)"
+  ],
+  "seasons": [
+    "Primarily Summer and early Autumn for field-grown varieties in temperate climates. Available year-round in most markets due to greenhouse cultivation and global sourcing from different hemispheres."
+  ],
+  "nutrition": {
+    "calories": "20-31 kcal per 100g (green lowest, red typically highest due to ripening and sugar development)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.86,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 4.64,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.17,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": "80.4 mg (green); 127.7 mg (red)",
+        "rdi": "90-142% (green); 142-213% (red)"
+      },
+      {
+        "name": "Vitamin A (as carotenoids, esp. beta-carotene in red/orange)",
+        "value": "18 µg RAE (green); 157 µg RAE (red)",
+        "rdi": "2% (green); 17-20% (red)"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": "0.224 mg (green); 0.291 mg (red)",
+        "rdi": "13-17% (green); 17-22% (red)"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": "10 µg (green); 26 µg (red)",
+        "rdi": "3% (green); 7% (red)"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": "175 mg (green); 211 mg (red)",
+        "rdi": "4-6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, supports collagen production, and aids in iron absorption (red and yellow varieties are particularly rich).",
+    "Red, orange, and yellow bell peppers are rich in Vitamin A (from carotenoids like beta-carotene, capsanthin, and capsorubin), crucial for vision health, immune function, and skin integrity.",
+    "Contain various antioxidants, including flavonoids (like quercetin and luteolin) and carotenoids, which help protect against cell damage caused by free radicals.",
+    "Low in calories and a good source of dietary fiber, aiding digestion, promoting satiety, and potentially helping with weight management.",
+    "Provide Vitamin B6, important for brain development and function, and for converting food into energy."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nightshade Sensitivity / Pepper Allergy",
+      "severity": "Mild to Moderate (for sensitive individuals)",
+      "details": "Bell peppers belong to the nightshade family (Solanaceae). Some individuals may have sensitivities or allergies to nightshades, experiencing symptoms like skin rashes, digestive issues (heartburn, bloating), joint pain, or oral allergy syndrome. True allergy is less common but can occur."
+    }
+  ],
+  "cultivationProcess": "Bell peppers are warm-season crops. Seeds are usually started indoors 8-10 weeks before the last expected frost in temperate climates, or sown directly in warmer regions. They require well-drained, fertile soil rich in organic matter and full sun exposure. Transplant seedlings when weather is warm and settled. Consistent watering is crucial, especially during flowering and fruit development. Taller varieties or those with heavy fruit loads may need staking or caging for support. Fruits can be harvested at their green (immature) stage, or allowed to ripen on the plant to yellow, orange, red, or other colors, which usually results in a sweeter flavor. Details in specific sections.",
+  "growthDuration": "Typically 60-90 days from transplanting to the first harvest of green peppers. Allowing peppers to ripen to their full color (red, yellow, orange) will extend the time to harvest by another 2-4 weeks.",
+  "sustainabilityTips": [
+    "Store bell peppers unwashed in the refrigerator crisper drawer; they can last for about 1-2 weeks depending on color and freshness.",
+    "The core and seeds are usually removed before eating, but can be added to vegetable stocks for flavor or composted.",
+    "Bell peppers are versatile for raw use in salads and crudités, or cooked in a wide variety of dishes like stir-fries, fajitas, stuffed peppers, roasted vegetable medleys, and sauces.",
+    "Growing bell peppers in home gardens is popular in suitable climates."
+  ],
+  "carbonFootprintInfo": "Moderate, but can become high if greenhouse-grown out of season or transported long distances by air (estimated 0.6-1.5 kg CO2e/kg for field-grown and land-transported). Greenhouse production, especially in colder climates requiring heating, significantly increases the carbon footprint.",
+  "uses": [
+    "culinary_vegetable_raw_salads_crudites_sandwiches_wraps_dips_garnish",
+    "culinary_vegetable_cooked_stir_fries_fajitas_stuffed_peppers_roasted_grilled_sautéed_soups_stews_casseroles_pizza_toppings_omelets_quiches",
+    "spice_paprika_made_from_dried_and_ground_red_bell_peppers_and_other_less_pungent_capsicum_annuum_varieties",
+    "processed_products_roasted_peppers_in_jars_frozen_pepper_strips_pickled_peppers_relishes"
+  ],
+  "originAndDomesticationHistory": "Bell peppers, like all Capsicum species, originated in Mexico, Central America, and northern South America. Wild Capsicum annuum, the ancestor of bell peppers, was domesticated thousands of years ago in these regions, with archaeological evidence of cultivation dating back as far as 7500 BCE in Mexico. Christopher Columbus encountered various types of peppers (including pungent chili peppers) on his voyages to the Americas and introduced them to Europe in the late 15th century. From Europe, peppers spread rapidly to Africa, Asia, and other parts of the world via trade routes. Bell peppers, which are specific cultivars of Capsicum annuum belonging to the Grossum Group, were selected over time for their large, blocky shape and mild, non-pungent flavor (due to a recessive gene that eliminates capsaicin production).",
+  "climaticRequirements": {
+    "temperature": "Bell peppers are warm-season crops that thrive in sunny and warm conditions. Optimal temperatures for growth and fruit development range from 21°C to 29°C (70°F to 84°F). They are very sensitive to frost, and temperatures below 15°C (59°F) or above 32°C (90°F) can adversely affect pollination, fruit set, and overall plant growth.",
+    "rainfall": "Requires moderate and consistent rainfall or irrigation, typically around 500mm to 800mm, during the growing season. Consistent soil moisture is crucial, but good drainage is essential to prevent root diseases. High humidity can sometimes increase the risk of fungal and bacterial diseases.",
+    "altitude": "Typically cultivated in lowlands to moderate altitudes in warm climates. Greenhouse cultivation allows for production in a wider range of altitudes and latitudes."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or sandy loam soils that are rich in organic matter. Good soil aeration is important for healthy root development. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). Heavy clay soils or poorly drained soils should be avoided or amended.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during flowering and fruit development. Water stress can lead to blossom drop, reduced fruit size, poor fruit quality, and increased susceptibility to blossom-end rot (a physiological disorder related to calcium deficiency and inconsistent watering). Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping foliage dry. Avoid waterlogging the soil.",
+  "plantingAndHarvestCycles": "Bell peppers are propagated from seeds. In temperate climates, seeds are usually started indoors in trays or pots 8-10 weeks before the last expected frost date, as they require warm soil for germination (ideally 21-27°C or 70-80°F). Seedlings are transplanted to the field or garden once the danger of frost has passed and the weather is consistently warm. In warmer regions, seeds can be sown directly. Plants are typically spaced 18-24 inches apart. Full sun exposure (at least 6-8 hours per day) is essential for good fruit production. Bell peppers are ready for harvest approximately 60-90 days from transplanting for green peppers, with an additional 2-4 weeks (or longer, depending on variety and conditions) for fruits to ripen to their mature color (red, yellow, orange, etc.). Fruits are typically harvested by hand by cutting the stem with a sharp knife or pruning shears, leaving a short piece of stem attached to the fruit. Regular harvesting of mature fruits encourages further fruit production.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids (can transmit viruses and cause direct feeding damage), thrips (can cause fruit scarring and transmit viruses like Tomato Spotted Wilt Virus), spider mites (especially in hot, dry conditions), whiteflies, pepper weevil, European corn borer, and cutworms (damage young seedlings). Common Diseases: Bacterial spot (Xanthomonas campestris pv. vesicatoria), Phytophthora blight (root, stem, and fruit rot), anthracnose, powdery mildew, various viral diseases (e.g., Tobacco Mosaic Virus - TMV, Cucumber Mosaic Virus - CMV, Pepper Mottle Virus - PepMoV), Verticillium wilt, Fusarium wilt, and blossom-end rot (a physiological disorder primarily caused by calcium deficiency and inconsistent watering). Management Strategies: Implementing Integrated Pest Management (IPM) is crucial. This includes crop rotation (avoid planting peppers or other nightshades in the same spot for 3-4 years). Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Mulching to conserve moisture and suppress weeds. Providing proper plant spacing and pruning for good air circulation. Controlling insect vectors like aphids and thrips. Ensuring consistent watering and adequate calcium levels in the soil to prevent blossom-end rot. Applying appropriate and approved fungicides, bactericides, or insecticides when necessary, based on scouting, pest/disease pressure, and economic thresholds.",
+  "postHarvestHandling": "Bell peppers should be harvested carefully by cutting the stem, not pulling, to avoid damaging the plant or fruit. They are typically harvested at their mature green stage or when they have reached their full characteristic color (red, yellow, orange, etc.). After harvest, peppers should be cooled promptly to remove field heat if they are to be stored or shipped. Ideal storage conditions are cool temperatures, typically between 7°C and 13°C (45°F to 55°F), with high relative humidity (90-95%). Green bell peppers generally have a longer storage life than fully colored ones. Under optimal conditions, they can be stored for 1-3 weeks. Storing below 7°C (45°F) can cause chilling injury, leading to pitting, discoloration, and increased susceptibility to decay. Bell peppers are sensitive to ethylene gas, so they should not be stored with ethylene-producing fruits like apples or tomatoes.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "Mexico (major producer and exporter, especially to the USA)",
+    "Turkey",
+    "Indonesia",
+    "Spain (leading European producer, significant greenhouse production for export)",
+    "United States (major production in states like California, Florida, and Georgia)",
+    "Netherlands (a major global exporter, primarily from advanced greenhouse systems)",
+    "Israel (exporter, known for high-quality greenhouse peppers)",
+    "Canada (significant greenhouse production for North American market)"
+  ],
+  "marketValueAndGlobalDemand": "Bell peppers (capsicums) are a very popular and economically important vegetable globally, with high consumer demand for their various colors, mild sweet flavor, and culinary versatility. There is substantial international trade in fresh bell peppers, driven by year-round demand in markets across North America, Europe, and Asia. China is the largest producer, but Mexico, Spain, and the Netherlands are major exporters. The market value can fluctuate based on color (red, yellow, and orange peppers often command higher prices than green ones), quality, size, seasonality, and origin (field-grown vs. greenhouse-grown). Bell peppers are used extensively in fresh consumption (salads, crudités), food service, and, to a lesser extent, in processed food products (e.g., roasted peppers, frozen pepper strips, sauces).",
+  "staticRecipes": [
+    {
+      "name": "Stuffed Bell Peppers",
+      "description": "Bell peppers hollowed out and filled with a savory mixture of ground meat or grains, vegetables, and spices, then baked.",
+      "ingredients": [
+        "4 large bell peppers (any color), halved lengthwise and seeded",
+        "Filling: 1 lb ground beef/turkey or 1.5 cups cooked rice/quinoa, 1 onion (chopped), 1 cup chopped mushrooms, 1/2 cup breadcrumbs, 1 egg (beaten), 1/4 cup tomato sauce, 1 tsp Italian seasoning, salt and pepper",
+        "1 cup tomato sauce or marinara for topping",
+        "1/2 cup shredded cheese (optional)"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Filling: Cook ground meat (if using) until browned; drain fat. Add onion and mushrooms, cook until soft. Stir in rice/quinoa, breadcrumbs, egg, 1/4 cup tomato sauce, Italian seasoning, salt, and pepper. Mix well.",
+        "Spoon the filling into the bell pepper halves.",
+        "Arrange peppers in a baking dish. Pour remaining 1 cup tomato sauce around (not over) the peppers. Add a little water to the bottom of the dish.",
+        "Bake for 40-50 minutes, or until peppers are tender and filling is cooked through. If using cheese, sprinkle on top during the last 10 minutes of baking.",
+        "Let rest for a few minutes before serving."
+      ]
+    },
+    {
+      "name": "Bell Pepper and Onion Stir-fry",
+      "description": "A quick and colorful stir-fry, perfect as a side or part of a larger Asian-inspired meal.",
+      "ingredients": [
+        "2-3 bell peppers (assorted colors), sliced",
+        "1 large onion, sliced",
+        "2 cloves garlic, minced",
+        "1 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tbsp vegetable oil",
+        "Optional: ginger, other vegetables like broccoli or carrots"
+      ],
+      "steps": [
+        "Heat vegetable oil in a large skillet or wok over medium-high heat.",
+        "Add sliced onions and stir-fry for 2-3 minutes until slightly softened.",
+        "Add sliced bell peppers and stir-fry for another 4-5 minutes, until tender-crisp.",
+        "Add minced garlic and cook for 30 seconds more until fragrant.",
+        "Stir in soy sauce and sesame oil. Toss to coat.",
+        "Serve immediately with rice or noodles."
+      ]
+    },
+    {
+      "name": "Roasted Red Pepper Dip (Muhammara style - simplified)",
+      "description": "A flavorful dip made from roasted red peppers, walnuts, and spices.",
+      "ingredients": [
+        "2-3 red bell peppers",
+        "1/2 cup walnuts, toasted",
+        "1 clove garlic",
+        "1 tbsp lemon juice",
+        "1 tbsp olive oil",
+        "1/2 tsp cumin",
+        "Pinch of red pepper flakes (optional)",
+        "Salt to taste",
+        "Optional: 1 tbsp pomegranate molasses"
+      ],
+      "steps": [
+        "Roast red bell peppers: Char them over an open flame, under a broiler, or bake at 450°F (230°C) until skin is blistered and blackened. Place in a bowl and cover with plastic wrap for 10-15 minutes. Peel off skin, remove stem and seeds.",
+        "In a food processor, combine roasted red peppers, toasted walnuts, garlic, lemon juice, olive oil, cumin, red pepper flakes (if using), and pomegranate molasses (if using).",
+        "Process until mostly smooth but can have some texture. Add a little water if too thick.",
+        "Season with salt to taste.",
+        "Serve with pita bread, crackers, or vegetables for dipping."
+      ]
+    }
+  ]
+}

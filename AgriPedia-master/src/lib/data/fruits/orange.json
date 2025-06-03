@@ -1,0 +1,161 @@
+{
+  "id": "orange",
+  "commonName": "Orange",
+  "scientificName": "Citrus × sinensis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Oranges_-_whole-halved-segment.jpg",
+  "description": "A round citrus fruit with a tough bright reddish-yellow rind and pulpy, edible flesh.",
+  "origin": "Southeast Asia",
+  "localNames": [
+    "Naranja (Spanish)",
+    "Orange (French/German)"
+  ],
+  "regions": [
+    "Brazil",
+    "United States",
+    "China",
+    "India",
+    "Mexico"
+  ],
+  "seasons": [
+    "Winter",
+    "Spring"
+  ],
+  "nutrition": {
+    "calories": "47 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 12,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 53.2,
+        "unit": "mg",
+        "rdi": "89%"
+      },
+      {
+        "name": "Folate",
+        "value": 30,
+        "unit": "µg",
+        "rdi": "8%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 181,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Calcium",
+        "value": 40,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, boosting the immune system.",
+    "Contains flavonoids, which have antioxidant and anti-inflammatory properties.",
+    "May help lower blood pressure and cholesterol.",
+    "Good source of fiber, promoting digestive health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Citrus Allergy",
+      "severity": "Mild",
+      "details": "Can cause skin irritation or oral allergy symptoms in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Oranges grow on trees in warm climates. They require sunny conditions, well-drained soil, and regular watering. Trees are often grafted and pruned to improve fruit yield and quality.",
+  "growthDuration": "3-5 years for trees to start bearing fruit, with fruit maturing over several months.",
+  "sustainabilityTips": [
+    "Store oranges at room temperature for a week or in the refrigerator for longer.",
+    "Use the zest in cooking and baking before juicing.",
+    "Compost peels."
+  ],
+  "carbonFootprintInfo": "Can vary significantly based on origin and transport (0.4-0.9 kg CO2e/kg). Local and seasonal oranges are best.",
+  "uses": ["culinary_fresh_eating", "juice_production", "flavoring_zest_oil_for_baking_cooking", "marmalade_preserves", "candied_peel", "essential_oil_perfumery_aromatherapy"],
+  "originAndDomesticationHistory": "Oranges originated in Southeast Asia, in a region encompassing Northeastern India, Myanmar, and southwestern China. They are a hybrid, likely between pomelo (Citrus maxima) and mandarin (Citrus reticulata). Oranges have been cultivated for thousands of years, spreading through Asia and then to the Middle East and Europe via trade routes. Christopher Columbus is credited with bringing orange seeds to the Americas on his second voyage in 1493.",
+  "climaticRequirements": {
+    "temperature": "Subtropical to tropical; optimal 15-29°C. Sensitive to frost; temperatures below -4°C can damage trees and fruit.",
+    "rainfall": "Requires 900-1200mm annually, well-distributed, or supplemental irrigation. High humidity can increase disease risk.",
+    "altitude": "Typically grown from sea level up to 800m, though some varieties can tolerate higher elevations."
+  },
+  "soilPreferences": "Well-drained, deep, fertile loamy or sandy loam soils. Prefers a slightly acidic to neutral pH (6.0-7.0). Sensitive to saline and waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Requires regular watering, especially during dry periods and critical growth stages like flowering, fruit set, and fruit development. Irrigation (drip, micro-sprinkler, or furrow) is common in most commercial orchards to ensure good yield and fruit quality.",
+  "plantingAndHarvestCycles": "Propagated by grafting desired cultivars onto suitable rootstocks. Planted in full sun. Trees usually start bearing fruit 3-5 years after planting. Flowers bloom in spring, and fruits mature from late autumn through winter into spring, depending on the variety and climate (typically 7-12 months after flowering). Oranges are hand-picked when ripe, as they do not ripen further after harvest.",
+  "pestAndDiseaseManagement": "Common pests include citrus psyllid (vector for citrus greening), aphids, scale insects, spider mites, and fruit flies. Major diseases are citrus greening (HLB - Huanglongbing), citrus canker, Phytophthora root rot, and greasy spot. Integrated Pest Management (IPM) involves resistant rootstocks/varieties (where available), biological control, orchard sanitation, and targeted pesticide/fungicide applications.",
+  "postHarvestHandling": "Oranges are harvested when mature and ripe (as they don't ripen post-harvest). Handled carefully to avoid bruising. Often washed, waxed, and graded by size and quality. Stored at cool temperatures (5-10°C) with high humidity. Transported under refrigeration for long distances.",
+  "majorProducingCountriesOrRegions": ["Brazil (leading producer, mainly for juice)", "China", "India", "United States (Florida, California)", "Mexico", "Spain", "Egypt"],
+  "marketValueAndGlobalDemand": "Oranges are one of the most popular and widely cultivated fruits globally. They have immense economic importance, with strong demand for fresh fruit and processed products, especially orange juice. Brazil, USA, and China are major players in production and trade. The orange juice market is particularly large.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Squeezed Orange Juice",
+      "description": "The purest way to enjoy oranges - refreshing and full of Vitamin C.",
+      "ingredients": [
+        "3-4 large oranges"
+      ],
+      "steps": [
+        "Wash oranges thoroughly.",
+        "Cut oranges in half.",
+        "Use a citrus juicer (manual or electric) to extract the juice.",
+        "Strain if desired for a smoother juice. Serve immediately."
+      ]
+    },
+    {
+      "name": "Orange Glazed Salmon",
+      "description": "A flavorful and healthy main course featuring a sweet and tangy orange glaze.",
+      "ingredients": [
+        "2 salmon fillets",
+        "For glaze: 1/4 cup orange juice, 1 tbsp soy sauce, 1 tbsp honey, 1 clove garlic (minced), 1/2 tsp ginger (grated)",
+        "Salt and pepper to taste",
+        "1 tbsp olive oil"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a small bowl, whisk together orange juice, soy sauce, honey, minced garlic, and grated ginger for the glaze.",
+        "Season salmon fillets with salt and pepper.",
+        "Heat olive oil in an oven-safe skillet over medium-high heat. Sear salmon for 2-3 minutes per side.",
+        "Pour glaze over salmon. Transfer skillet to the oven and bake for 8-12 minutes, or until salmon is cooked through.",
+        "Spoon extra glaze over salmon before serving."
+      ]
+    },
+    {
+      "name": "Simple Orange Salad",
+      "description": "A light and refreshing salad that highlights the sweetness of oranges.",
+      "ingredients": [
+        "2 large oranges, peeled and sliced into rounds",
+        "1/4 red onion, thinly sliced (optional)",
+        "Handful of fresh mint leaves, chopped",
+        "1 tbsp olive oil",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "Arrange orange slices on a plate.",
+        "If using, scatter red onion slices over the oranges.",
+        "Drizzle with olive oil and sprinkle with chopped mint and a pinch of salt.",
+        "Serve immediately."
+      ]
+    }
+  ]
+}

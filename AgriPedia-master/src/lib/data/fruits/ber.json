@@ -1,0 +1,204 @@
+{
+  "id": "ber",
+  "commonName": "Ber (Indian Jujube)",
+  "scientificName": "Ziziphus mauritiana",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Indian_jujube_%28fruit%29.jpg/640px-Indian_jujube_%28fruit%29.jpg",
+  "description": "A tropical fruit tree species belonging to the family Rhamnaceae. The fruit is a drupe, varying in shape from round to oblong, and in size from a cherry to a plum. The flesh is white and crisp when fresh.",
+  "origin": "Indo-Malaysian region of South-East Asia",
+  "localNames": [
+    "Indian Plum",
+    "Chinee Apple",
+    "Jujube",
+    "Bor (Bengali)",
+    "Badri (Sanskrit)",
+    "Regi pandu (Telugu)",
+    "Elanthappazham (Malayalam)"
+  ],
+  "regions": [
+    "India",
+    "Pakistan",
+    "Bangladesh",
+    "Sri Lanka",
+    "Parts of Africa (Sahel region)",
+    "Middle East",
+    "China (Southern)"
+  ],
+  "seasons": [
+    "Late Autumn",
+    "Winter",
+    "Early Spring"
+  ],
+  "nutrition": {
+    "calories": "79 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 20.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 69,
+        "unit": "mg",
+        "rdi": "115%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 40,
+        "unit": "IU",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 250,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 23,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, boosting immunity and skin health.",
+    "Contains antioxidants that help fight free radicals and reduce oxidative stress.",
+    "Traditionally used for digestive issues, to improve sleep, and for its soothing properties.",
+    "Good source of energy due to natural sugars; also provides some dietary fiber."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ber Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon. However, overconsumption might lead to mild digestive discomfort in some individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Thrives in tropical and subtropical climates; drought-resistant.\n2. Soil: Adaptable to a wide range of soils, including poor, alkaline, or saline soils, but prefers well-drained sandy loam.\n3. Propagation: Usually by seeds, budding, or grafting.\n4. Planting: Plant in full sun.\n5. Watering: Young plants need regular watering. Mature trees are very drought-tolerant.\n6. Fertilizing: Responds well to organic manure. Light fertilization may be needed.\n7. Pruning: Prune annually to encourage new growth, as fruits are borne on new shoots.\n8. Harvesting: Fruits are harvested when they turn yellowish-green to reddish-brown, depending on variety.",
+  "growthDuration": "Starts bearing fruit in 2-3 years for budded/grafted plants, longer for seedlings. Fruits mature in winter to early spring.",
+  "sustainabilityTips": [
+    "Ber can be eaten fresh, dried, or pickled, minimizing waste.",
+    "Store fresh ber at room temperature for a few days or refrigerate for longer shelf life.",
+    "Dried ber has a long shelf life and is a good travel snack."
+  ],
+  "carbonFootprintInfo": "Relatively low, especially if grown locally and consumed without extensive processing or long-distance transport (estimated 0.3-0.7 kg CO2e/kg).",
+  "uses": [
+    "fresh_consumption",
+    "dried_fruit_snack_like_dates",
+    "candied_fruit",
+    "pickles_chutneys",
+    "juice_syrup_wine_preserves",
+    "medicinal_traditional_ayurvedic_uses_digestive_aid_sedative_anti_inflammatory",
+    "fodder_leaves_for_livestock_sheep_goats_cattle",
+    "fuelwood_charcoal",
+    "host_plant_for_lac_insect",
+    "fencing_thorny_branches"
+  ],
+  "originAndDomesticationHistory": "Ber (Ziziphus mauritiana) originated in the Indo-Malaysian region of Southeast Asia. It has been cultivated for thousands of years, with significant evidence of its presence and use in India dating back to prehistoric times; it's also mentioned in ancient Indian scriptures like the Vedas and Puranas. The species spread widely through South Asia, parts of Africa (especially the Sahel region), the Middle East, and eventually to other tropical and subtropical areas. It was valued for its adaptability to arid and semi-arid conditions, its nutritious fruit, and multiple uses of the plant. Different varieties have been selected over centuries for fruit size, taste, and yield.",
+  "climaticRequirements": {
+    "temperature": "Thrives in hot and dry tropical and subtropical climates. Can withstand extreme temperatures, typically ranging from 7°C to 48°C (45°F to 118°F). Requires hot summers for optimal fruit ripening and development.",
+    "rainfall": "Highly drought-tolerant. Can grow in areas with annual rainfall from as low as 150mm up to 900mm. It can survive on minimal rainfall but yields better with adequate moisture, especially during fruit development. Does not tolerate high humidity well during flowering and fruiting.",
+    "altitude": "Grows well from sea level up to 1000-1500 meters (approx. 3300-4900 feet)."
+  },
+  "soilPreferences": "Highly adaptable to a wide range of soil types, including poor quality soils such as sandy, gravelly, lateritic, alkaline, and saline soils. However, it prefers well-drained sandy loam or loamy soils with a pH range of 6.0 to 8.5. It can tolerate slight waterlogging but not prolonged poor drainage.",
+  "irrigationAndWaterNeeds": "Young plants require regular watering for proper establishment. Mature trees are extremely drought-resistant due to their deep and extensive taproot system. In arid and semi-arid regions, supplemental irrigation, especially during the fruit set and development period (typically post-monsoon), can significantly improve fruit size, quality, and yield. Drip irrigation is suitable.",
+  "plantingAndHarvestCycles": "Propagation is commonly through seeds, though budding (T-budding or shield budding) or grafting onto seedling rootstock is preferred for cultivating superior varieties. Planting is usually done at the beginning of the rainy season. Seedling trees may start bearing fruit in 2-3 years, while budded or grafted plants can bear even earlier. Fruits primarily ripen in the winter and early spring months (from October to April in India, depending on the region and specific variety). Fruits are harvested by hand-picking when they change color from green to yellowish-green or reddish-brown, depending on the cultivar. Multiple pickings (3-4) are often necessary as fruits do not ripen all at once.",
+  "pestAndDiseaseManagement": "Major Pests: Fruit fly (Carpomyia vesuviana) is the most significant pest, laying eggs in young developing fruits, leading to maggot-infested fruits. Other pests include ber butterfly (Tarucus theophrastus), leaf-eating caterpillars, scale insects, and mealybugs. Major Diseases: Powdery mildew (Oidium spp.) affects leaves and fruits, sooty mold, fruit rot (various fungal pathogens), and leaf spot diseases. Management Strategies: Good orchard sanitation (including collection and destruction of fallen and infested fruits), use of resistant varieties if available, timely and appropriate pruning to improve air circulation, biological control (e.g., use of parasitoids for fruit fly), and need-based application of approved insecticides and fungicides. Bagging of fruits can provide effective protection against fruit flies.",
+  "postHarvestHandling": "Ber fruits have a relatively short shelf life at ambient room temperature, typically lasting 3-7 days. Shelf life can be extended up to 2-4 weeks by refrigeration (around 7-10°C or 45-50°F) with adequate ventilation. After harvesting, fruits are graded based on size, color, and overall appearance. For long-term storage, ber fruits are often sun-dried, which concentrates their sugars and changes their texture, making them similar to dates. Dried ber can be stored for several months in airtight containers.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading producer)",
+    "Pakistan",
+    "Bangladesh",
+    "Thailand",
+    "China (Southern regions)",
+    "Sudan",
+    "Niger",
+    "Other Sahelian African countries",
+    "Oman",
+    "Yemen"
+  ],
+  "marketValueAndGlobalDemand": "Ber is an important fruit in local markets across South Asia, parts of Africa, and the Middle East, particularly valued for its nutritional content, drought hardiness, and relatively low cost of cultivation. Processed products such as dried ber, candies, and pickles also have significant local and regional demand. While international trade for fresh ber fruit is limited compared to mainstream fruits, there is a growing niche interest in its health benefits (as a 'superfruit') and unique taste in international markets. Its adaptability to arid environments also makes it a crop of interest for food security in marginal areas.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Ber (Indian Jujube)",
+      "description": "Enjoyed fresh, often with a sprinkle of salt and chili powder.",
+      "ingredients": [
+        "1 cup fresh Ber (Indian Jujube)",
+        "Pinch of salt (optional)",
+        "Pinch of red chili powder (optional)"
+      ],
+      "steps": [
+        "Wash the ber fruits thoroughly.",
+        "They can be eaten whole, like a small apple. The skin is edible, and the flesh is crisp around a central stone.",
+        "If desired, sprinkle with a little salt and/or red chili powder for a tangy and spicy flavor.",
+        "Discard the stone."
+      ]
+    },
+    {
+      "name": "Dried Ber (Sukha Ber)",
+      "description": "Ber fruits are often sun-dried for preservation and eaten as a snack.",
+      "ingredients": [
+        "Fresh Ber fruits"
+      ],
+      "steps": [
+        "Wash fresh ber fruits thoroughly.",
+        "Spread them on a clean cloth or tray in direct sunlight.",
+        "Allow them to dry completely, which may take several days depending on the sun's intensity. Turn them occasionally for even drying.",
+        "Once fully dried, they will be shriveled and hard. Store in an airtight container.",
+        "Dried ber can be eaten as is or used in traditional preparations."
+      ]
+    },
+    {
+      "name": "Ber Pickle (Achar)",
+      "description": "A tangy and spicy pickle made from fresh Ber fruits.",
+      "ingredients": [
+        "1 lb fresh Ber, washed and slit",
+        "1/4 cup mustard oil",
+        "2 tbsp fennel seeds (saunf)",
+        "1 tbsp mustard seeds (rai)",
+        "1 tsp fenugreek seeds (methi dana)",
+        "1/2 tsp asafoetida (hing)",
+        "1 tbsp turmeric powder",
+        "2 tbsp red chili powder (or to taste)",
+        "Salt to taste",
+        "2 tbsp vinegar (optional, for longer shelf life)"
+      ],
+      "steps": [
+        "Sun-dry the slit ber fruits for a day or two to remove some moisture.",
+        "Dry roast fennel seeds, mustard seeds, and fenugreek seeds separately. Coarsely grind them.",
+        "Heat mustard oil in a pan until it smokes lightly, then let it cool completely.",
+        "In a large mixing bowl, combine the sun-dried ber, ground spice mixture, turmeric powder, red chili powder, asafoetida, and salt.",
+        "Pour the cooled mustard oil over the mixture and mix well.",
+        "If using, add vinegar and mix again.",
+        "Transfer the pickle to a sterilized, dry glass jar. Cover and keep in the sun for 4-5 days, shaking the jar daily.",
+        "The pickle is ready to eat once the ber softens and absorbs the flavors. Store in a cool, dry place."
+      ]
+    }
+  ]
+}

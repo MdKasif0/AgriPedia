@@ -1,0 +1,222 @@
+{
+  "id": "amaranth-leaves",
+  "commonName": "Amaranth Leaves (Leafy Amaranth)",
+  "scientificName": "Amaranthus spp. (esp. A. tricolor, A. viridis, A. cruentus, A. dubius, A. blitum)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Red_Amaranth_Leaves.jpg/800px-Red_Amaranth_Leaves.jpg",
+  "description": "Amaranth leaves are the edible foliage of various species within the Amaranthus genus. These highly nutritious leafy greens are popular in many global cuisines, known for their mild, slightly sweet or earthy flavor (similar to spinach) and tender texture when cooked. Leaf colors range from light green to dark green, deep red, purple, and variegated patterns.",
+  "origin": "Cosmopolitan, with different Amaranthus species native to the Americas (Central/South America for grain species, also some leafy types), Asia (India, China for leafy types), and Africa. Cultivation for leaves is ancient in many tropical and subtropical regions worldwide.",
+  "localNames": [
+    "Chinese Spinach (English common name)",
+    "Callaloo (Caribbean - can also refer to taro leaves)",
+    "Tampala (India - various regions)",
+    "Chaulai Saag (चौलाई साग - Hindi)",
+    "Bayam (Malay, Indonesian)",
+    "Kulitis (Tagalog - Philippines)",
+    "Rau dền (Vietnamese)",
+    "Cheera (ചീര - Malayalam, India)",
+    "Thotakura (తోటకూర - Telugu, India)",
+    "Harive Soppu (ಹರಿವೆ ಸೊಪ್ಪು - Kannada, India)"
+  ],
+  "regions": [
+    "Asia (India, China, Indonesia, Philippines, Vietnam, Malaysia, Sri Lanka, Nepal, Bangladesh)",
+    "Africa (Nigeria, Uganda, Kenya, Botswana, Benin, Togo, Sierra Leone)",
+    "Caribbean Islands (Jamaica, Trinidad and Tobago, Barbados)",
+    "South America (Brazil, Peru, Suriname, Guyana)",
+    "Europe (Greece, Southern Italy - limited, often as a specialty green)",
+    "North America (grown by home gardeners and in some ethnic markets)"
+  ],
+  "seasons": [
+    "Primarily warm seasons (Spring, Summer, early Autumn) in most temperate and subtropical regions. Many species are very hardy and can have extended growing seasons or be grown year-round in tropical climates."
+  ],
+  "nutrition": {
+    "calories": "21-23 kcal per 100g (cooked, boiled, drained leaves)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.05,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.71,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 1140,
+        "unit": "µg",
+        "rdi": "950-1425%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids, esp. beta-carotene)",
+        "value": 292,
+        "unit": "µg RAE",
+        "rdi": "32-37%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 43.3,
+        "unit": "mg",
+        "rdi": "48-72%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 85,
+        "unit": "µg",
+        "rdi": "21%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.158,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.116,
+        "unit": "mg",
+        "rdi": "7-9%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.851,
+        "unit": "mg",
+        "rdi": "37-43%"
+      },
+      {
+        "name": "Calcium",
+        "value": 215,
+        "unit": "mg",
+        "rdi": "17-22%"
+      },
+      {
+        "name": "Potassium",
+        "value": 411,
+        "unit": "mg",
+        "rdi": "9-12%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 55,
+        "unit": "mg",
+        "rdi": "13-18%"
+      },
+      {
+        "name": "Iron",
+        "value": 2.1,
+        "unit": "mg",
+        "rdi": "12-26%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 50,
+        "unit": "mg",
+        "rdi": "4-7%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.163,
+        "unit": "mg",
+        "rdi": "18%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Exceptionally rich in Vitamin K, which is crucial for proper blood clotting and bone metabolism.",
+    "Excellent source of Vitamin A (from carotenoids like beta-carotene) and Vitamin C, both potent antioxidants that support immune function, vision health, and skin integrity.",
+    "Provides significant amounts of essential minerals including calcium for bone and teeth health, manganese for metabolic function and antioxidant defense, iron for oxygen transport, and potassium for blood pressure regulation.",
+    "Good source of folate (Vitamin B9), important for cell division and DNA synthesis.",
+    "Contains dietary fiber, aiding digestion and promoting gut health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oxalates",
+      "severity": "Low to Moderate (for susceptible individuals)",
+      "details": "Amaranth leaves contain moderate levels of oxalates, which may contribute to kidney stone formation in susceptible individuals if consumed in very large quantities regularly. Cooking methods like boiling can help reduce oxalate levels."
+    },
+    {
+      "name": "Nitrates",
+      "severity": "Low (with normal consumption)",
+      "details": "Like many leafy greens, amaranth can accumulate nitrates from the soil, depending on growing conditions and fertilizer use. While nitrates are generally not an issue for most healthy adults in typical dietary amounts, very high intake by infants or certain individuals with specific health conditions could be a concern. Proper cooking can also reduce nitrate content."
+    }
+  ],
+  "cultivationProcess": "Amaranth grown for its leaves is typically a fast-growing annual plant. It is adaptable to various soil types but thrives in well-drained, fertile soil with full sun exposure. Seeds can be sown directly into the ground or started indoors for transplanting. Amaranth is known for its heat tolerance and can often be harvested multiple times using the 'cut-and-come-again' method, where outer leaves are taken, or the plant is cut a few inches above ground, allowing inner leaves and side shoots to continue growing. Some species are managed as short-duration crops.",
+  "growthDuration": "Ready for first harvest of young leaves typically within 3-6 weeks (20-40 days) from sowing, depending on the species and growing conditions. Mature leaves can be harvested over an extended period, often up to 2-3 months if using successional harvesting methods. For whole plant harvest, it's usually done before flowering for best leaf quality.",
+  "sustainabilityTips": [
+    "Amaranth is a highly resilient and fast-growing crop, often tolerant of drought and poor soil conditions, making it a sustainable leafy green choice for diverse agricultural systems, especially in warmer climates.",
+    "It's well-suited for home gardening and small-scale farming, promoting local food security and reducing reliance on transported greens. Its ability to regrow after cutting (in some harvesting methods) enhances its productivity.",
+    "Saving seeds from open-pollinated varieties is easy for future planting."
+  ],
+  "carbonFootprintInfo": "Locally grown amaranth leaves, especially when cultivated organically or with minimal inputs (it often requires less fertilizer and pest control than other greens), have a very low carbon footprint. Commercially grown leaves that require significant transportation, extensive packaging, or out-of-season greenhouse production will have a higher environmental impact.",
+  "uses": [
+    "culinary_leafy_vegetable_cooked_like_spinach_saag_stir_fries_soups_stews_curries_side_dishes_callaloo",
+    "culinary_young_leaves_in_salads_limited_use_as_some_can_be_slightly_astringent_raw",
+    "grain_seeds_of_some_amaranthus_species_are_pseudocereals_used_as_grain_not_typically_leafy_varieties_though_some_dual_purpose",
+    "fodder_for_livestock_animal_feed",
+    "ornamental_plant_some_varieties_grown_for_their_colorful_foliage_or_flower_plumes"
+  ],
+  "originAndDomesticationHistory": "Amaranthus species are native to various parts of the world, exhibiting a cosmopolitan distribution. Different species were domesticated independently in different regions. Leafy amaranths (like A. tricolor, A. viridis, A. dubius) are believed to have originated and been domesticated primarily in Asia (India, China, Southeast Asia) and Africa, where they have been cultivated and foraged for their nutritious leaves for thousands of years. Grain amaranths (such as A. cruentus, A. hypochondriacus, A. caudatus) were staple foods for ancient civilizations like the Aztecs and Incas in Central and South America. The use of amaranth as a leafy vegetable is deeply rooted in traditional cuisines of many tropical and subtropical cultures.",
+  "climaticRequirements": {
+    "temperature": "Amaranth is a warm-season plant group, with many species thriving in hot and humid weather. Optimal temperatures for most leafy varieties range from 22°C to 30°C (72°F to 86°F). Some species are exceptionally heat tolerant, continuing to produce well even when other greens bolt or suffer. While some can tolerate cooler weather, growth generally slows significantly, and they are typically not frost-tolerant.",
+    "rainfall": "Prefers moderate annual rainfall, typically between 600mm and 1500mm. Many amaranth species are notably drought-tolerant once established, making them valuable in arid and semi-arid regions. However, for optimal leafy vegetable production, consistent moisture through rainfall or irrigation is beneficial. Good drainage is important to prevent root diseases.",
+    "altitude": "Amaranth species can be found growing from sea level up to 2000 meters (approximately 6500 feet) or even higher in tropical and subtropical regions, depending on the specific species and local adaptation."
+  },
+  "soilPreferences": "Amaranth is adaptable to a wide range of soil types but performs best in well-drained, fertile, loamy soils that are rich in organic matter. It can tolerate slightly acidic to slightly alkaline soil conditions, with an optimal pH range generally between 6.0 and 7.5. While it can grow in poor soils, amending with compost or manure will significantly improve yield and leaf quality.",
+  "irrigationAndWaterNeeds": "While many amaranth species exhibit good drought tolerance once their root systems are established, consistent watering is necessary for optimal leafy growth, especially for vegetable production. Young plants require regular watering until they are well-established. During dry periods, providing about 25mm (1 inch) of water per week through rainfall or irrigation is generally recommended. Overwatering or waterlogged conditions should be avoided, as this can promote root rot.",
+  "plantingAndHarvestCycles": "Amaranth is propagated from seeds, which are typically very small. Seeds can be sown directly in the field or garden bed after the last danger of frost has passed and when the soil has warmed up sufficiently. Alternatively, seeds can be started in seedbeds or trays and transplanted when seedlings are a few inches tall. Planting can be done by broadcasting seeds or by sowing in rows. Leafy amaranth is known for its rapid growth. The first harvest of young, tender leaves can often begin as early as 3-6 weeks (20-40 days) after sowing, depending on the species and growing conditions. Harvesting can be done using the 'cut-and-come-again' method, where individual outer leaves are picked, or the entire plant is cut a few inches above the ground, allowing it to regrow for subsequent harvests. This can often be repeated multiple times over a period of 2-3 months, or until the plants start to flower (bolting), at which point leaf quality may decline. For some uses, whole young plants are uprooted.",
+  "pestAndDiseaseManagement": "Common Pests: Amaranth is relatively resistant to many pests compared to other leafy greens. However, it can sometimes be affected by aphids, leaf-eating caterpillars (such as amaranth webworms or loopers), flea beetles, and spider mites, especially under stress. Common Diseases: Damping-off can affect seedlings if the soil is too wet and cool. Fungal leaf spot diseases (e.g., caused by Cercospora or Alternaria) and wet rot can occur, particularly in humid conditions or with dense planting. Management Strategies: Practicing crop rotation. Ensuring good soil drainage and proper plant spacing to promote air circulation. Controlling weeds, which can harbor pests. Hand-picking caterpillars if infestations are light. Using insecticidal soaps or neem oil for aphids or spider mites if necessary. Generally, amaranth requires less intensive pest control than many other vegetable crops. Selecting locally adapted varieties can also improve resilience.",
+  "postHarvestHandling": "Amaranth leaves are highly perishable and should be handled with care to minimize bruising and moisture loss. They are best harvested during the cooler parts of the day, such as early morning. After harvest, if not consumed immediately, the leaves should be cooled quickly if possible. They can be stored by placing them in plastic bags or containers under refrigeration (typically at 2-5°C or 36-41°F) with high humidity. Under these conditions, amaranth leaves can usually be stored for about 2-5 days, although some sources suggest longer periods are possible with optimal handling. They tend to wilt quickly at room temperature, especially in dry air. For market, they are often sold in bunches.",
+  "majorProducingCountriesOrRegions": [
+    "India (widely cultivated and consumed across various states)",
+    "China",
+    "Indonesia",
+    "Philippines",
+    "Vietnam",
+    "Malaysia",
+    "Sri Lanka",
+    "Nigeria (a key leafy vegetable)",
+    "Uganda",
+    "Kenya",
+    "Botswana",
+    "Various Caribbean islands (as Callaloo)",
+    "Mexico and other parts of Latin America (leafy types are traditional, though grain amaranths are more prominent historically in some areas)"
+  ],
+  "marketValueAndGlobalDemand": "Amaranth leaves are a very popular and important leafy vegetable in many local and regional markets across Asia, Africa, and the Caribbean, where they are valued for their high nutritional content, fast growth, and adaptability to warm climates. They are often an affordable source of vitamins and minerals. In Western countries, amaranth leaves are gaining recognition and demand as a 'superfood' or specialty green, available in farmers' markets, ethnic food stores, and increasingly in mainstream supermarkets (often packaged). The demand for organically grown amaranth leaves is also on the rise. While it's not a major internationally traded commodity in its fresh form due to high perishability, there is a growing market for amaranth seeds (grain amaranth) and processed amaranth products globally. The demand for diverse, nutritious leafy greens is generally increasing worldwide.",
+  "staticRecipes": [
+    {
+      "name": "Simple Stir-fried Amaranth Leaves with Garlic",
+      "description": "A quick, nutritious, and flavorful way to prepare amaranth leaves, highlighting their tender texture and mild, slightly earthy taste. A staple in many Asian cuisines.",
+      "ingredients": [
+        "1 large bunch amaranth leaves (about 300-400g), tough stems trimmed or removed",
+        "1-2 tablespoons cooking oil (e.g., vegetable oil, sesame oil, or peanut oil)",
+        "2-4 cloves garlic, minced or thinly sliced",
+        "1/2 teaspoon salt (or to taste)",
+        "Optional: Pinch of sugar, a dash of soy sauce or fish sauce, a sprinkle of white pepper"
+      ],
+      "steps": [
+        "Prepare the amaranth leaves: Wash the leaves thoroughly in several changes of cold water to remove any dirt, sand, or grit. If the stems are particularly thick or fibrous, you can remove them or chop them finely to cook for a bit longer before adding the leaves. Younger, tender stems can be cooked along with the leaves. Shake off excess water.",
+        "Heat the cooking oil in a large skillet, wok, or wide pan over medium-high heat until the oil shimmers.",
+        "Add the minced or sliced garlic to the hot oil. Stir-fry for about 20-30 seconds until the garlic becomes fragrant and lightly golden. Be careful not to burn the garlic, as it can turn bitter.",
+        "Immediately add all the washed amaranth leaves to the skillet. The volume will seem large at first, but the leaves will wilt down significantly.",
+        "Stir-fry continuously, tossing the leaves with the garlic and oil, for about 2-4 minutes. The leaves should wilt quickly and turn a vibrant green. If the pan seems too dry, you can add a tablespoon of water to help steam the leaves and prevent them from scorching.",
+        "Season with salt. If using, add the optional pinch of sugar (to balance flavors) and a dash of soy sauce or fish sauce for umami. Stir well to distribute the seasonings.",
+        "Continue to cook for another 1-2 minutes, or until the leaves are tender to your preference but still retain their bright color. Avoid overcooking, which can make them mushy.",
+        "Remove from heat and transfer to a serving dish. Serve immediately as a nutritious side dish with rice, noodles, or other main courses."
+      ]
+    }
+  ]
+}

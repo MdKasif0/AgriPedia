@@ -1,0 +1,262 @@
+{
+  "id": "corn",
+  "commonName": "Sweet Corn",
+  "scientificName": "Zea mays convar. saccharata var. rugosa (includes su, se, sh2 types)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Corn_cobs.jpg/800px-Corn_cobs.jpg",
+  "description": "Sweet corn is a popular variety of maize (Zea mays) cherished for its high sugar content in the kernels when harvested at an immature stage (milk stage). Unlike field corn, which is harvested mature and dry for grain, sweet corn is consumed as a vegetable. Kernels are tender, juicy, and sweet, and can be yellow, white, bicolor, or even other colors.",
+  "origin": "Mesoamerica (likely southern Mexico), where maize (Zea mays) was domesticated from teosinte grass around 9,000 years ago. Specific sweet corn varieties with higher sugar content were developed much later by Native American tribes and further cultivated and refined in North America and worldwide from the 18th-19th centuries.",
+  "localNames": [
+    "Maíz Dulce (Spanish)",
+    "Maïs Sucré (French)",
+    "Zuckermais (German - 'sugar maize')",
+    "Elote (Mexican Spanish - specifically for corn on the cob, often grilled/boiled)",
+    "Jagung Manis (Indonesian/Malay)",
+    "Bhutta (भुट्टा - Hindi, for corn on the cob)",
+    "Sweetcorn (UK, Ireland, Australia, New Zealand)"
+  ],
+  "regions": [
+    "United States (world's largest producer - major states include Iowa, Illinois, Nebraska, Minnesota, Florida, California, Washington)",
+    "China (significant production)",
+    "Brazil",
+    "Mexico (center of maize diversity)",
+    "European Union (France, Hungary, Romania, Italy, Spain)",
+    "Canada (Ontario, Quebec)",
+    "Argentina",
+    "South Africa",
+    "Thailand",
+    "India",
+    "Indonesia"
+  ],
+  "seasons": [
+    "Primarily Summer to early Autumn in temperate climates (typically June to October in the Northern Hemisphere). Available year-round in some markets due to imports from different hemispheres and greenhouse cultivation."
+  ],
+  "nutrition": {
+    "calories": "86 kcal per 100g (cooked, yellow sweet corn)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 3.27,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 18.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 1.35,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.155,
+        "unit": "mg",
+        "rdi": "13-16%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.77,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 42,
+        "unit": "µg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 6.8,
+        "unit": "mg",
+        "rdi": "8-11%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.717,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.093,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids like lutein and zeaxanthin)",
+        "value": 10,
+        "unit": "µg RAE",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 270,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 37,
+        "unit": "mg",
+        "rdi": "9-12%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 89,
+        "unit": "mg",
+        "rdi": "7-13%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.52,
+        "unit": "mg",
+        "rdi": "3-6%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.46,
+        "unit": "mg",
+        "rdi": "4-6%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.163,
+        "unit": "mg",
+        "rdi": "7-8%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which promotes digestive health, aids in bowel regularity, and can help regulate blood sugar levels.",
+    "Provides essential B vitamins, including Thiamin (B1), Niacin (B3), Folate (B9), Pantothenic acid (B5) and Vitamin B6, which are important for energy metabolism, nervous system function, and cell health.",
+    "Contains antioxidants such as Vitamin C, ferulic acid (a phenolic compound whose antioxidant activity increases upon cooking corn), and carotenoids like lutein and zeaxanthin (beneficial for eye health).",
+    "Provides minerals like potassium (for blood pressure regulation), magnesium (for muscle and nerve function), and phosphorus (for bone health)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Corn Allergy",
+      "severity": "Varies (Mild to Severe)",
+      "details": "While not as common as some other major food allergies (like peanuts or shellfish), corn allergy can occur in susceptible individuals. Symptoms can range from mild reactions like hives, digestive issues (stomach pain, vomiting, diarrhea), or asthma-like symptoms, to severe anaphylaxis in highly sensitive cases. Corn proteins (like lipid transfer protein - LTP) can be allergens. Corn is also a common ingredient in many processed foods, which can make avoidance challenging for allergic individuals."
+    },
+    {
+      "name": "FODMAP Sensitivity (for some)",
+      "severity": "Mild (digestive discomfort)",
+      "details": "Sweet corn contains moderate amounts of certain FODMAPs (Fermentable Oligo-, Di-, Mono-saccharides And Polyols), specifically sorbitol and fructose in some varieties, which can cause gas, bloating, or other digestive symptoms in individuals with Irritable Bowel Syndrome (IBS) or FODMAP sensitivities, especially when consumed in larger quantities."
+    }
+  ],
+  "cultivationProcess": "Sweet corn is an annual crop grown from seeds planted in warm soil after the danger of frost has passed. It requires full sun, fertile well-drained soil, and consistent moisture, especially during pollination (silking stage) and kernel development. Corn is wind-pollinated, so it's often planted in blocks of several short rows rather than single long rows to ensure good pollination and ear fill. Different types of sweet corn (standard sugary (su), sugary enhanced (se), and shrunken-2 (sh2)/supersweet) have different genetic makeups affecting sweetness and kernel texture, and may require isolation from each other and from field corn or popcorn to prevent cross-pollination that can negatively impact the quality of the sweet corn kernels.",
+  "growthDuration": "Typically 60 to 100 days from planting to harvest, depending on the specific cultivar (early, mid, or late season), type (su, se, sh2), and local growing conditions (temperature, sunlight). Sweet corn is harvested at the immature 'milk stage,' when kernels are plump, sweet, and exude a milky liquid when pierced with a thumbnail; this is usually about 18-24 days after the silks first appear.",
+  "sustainabilityTips": [
+    "Practice crop rotation with legumes (like beans or peas) to improve soil fertility naturally by adding nitrogen, reducing the need for synthetic nitrogen fertilizers for subsequent corn crops.",
+    "Choose open-pollinated or heirloom sweet corn varieties for seed saving (if not planting hybrids) and to support agricultural biodiversity. Hybrid varieties often offer higher yields and disease resistance but their seeds may not grow true to type if saved.",
+    "Sweet corn is best consumed as fresh as possible, as its sugars start converting to starch soon after picking, reducing sweetness. Store unhusked ears in the refrigerator if not using immediately."
+  ],
+  "carbonFootprintInfo": "Fresh sweet corn grown locally and consumed in season generally has a relatively low carbon footprint. However, processed corn (canned, frozen) and corn transported long distances (especially out of season from different hemispheres) will have a higher footprint due to energy used in processing, packaging, refrigeration, and transportation. Field corn grown for grain (animal feed, ethanol, sweeteners) has a different and often more intensive environmental impact profile.",
+  "uses": [
+    "culinary_vegetable_eaten_on_the_cob_boiled_steamed_grilled_roasted_microwaved",
+    "culinary_vegetable_kernels_used_in_salads_soups_corn_chowder_stews_casseroles_succotash_fritters_salsas_relishes_side_dishes",
+    "processed_products_canned_corn_whole_kernel_creamed_frozen_corn_on_the_cob_kernels",
+    "snack_popcorn_is_a_different_variety_of_zea_mays_zea_mays_everta",
+    "not_typically_used_for_cornmeal_corn_flour_corn_oil_livestock_feed_or_ethanol_these_use_field_corn_dent_corn_varieties"
+  ],
+  "originAndDomesticationHistory": "Maize (Zea mays), the species to which sweet corn belongs, was domesticated from a wild grass called teosinte in Mesoamerica, most likely in the Balsas River valley of southern Mexico, around 9,000 years ago. This domestication process involved significant genetic changes from its wild ancestor. Sweet corn, characterized by its higher sugar content in the kernels due to mutations in genes that control the conversion of sugar to starch, appeared much later in the history of maize cultivation. Early forms of sweet corn were cultivated by various Native American tribes, including the Iroquois in northeastern North America, long before European contact. European settlers in North America adopted sweet corn from these indigenous peoples. Further selection and deliberate breeding, particularly from the 18th and 19th centuries onwards in North America, led to the development of the diverse range of sweet corn varieties known today, including standard sugary (su), sugary enhanced (se), and shrunken-2 (sh2 or supersweet) types, each with different levels of sweetness and kernel texture.",
+  "climaticRequirements": {
+    "temperature": "Sweet corn is a warm-season crop that requires warm soil for germination (ideally above 15-18°C or 60-65°F) and warm air temperatures for optimal growth (typically between 20°C and 30°C or 68°F to 86°F). It is very sensitive to frost at all stages of development. A frost-free growing period of at least 60-100 days (depending on the variety) is essential.",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, especially during the critical stages of tasseling (male flowering), silking (female flowering and pollination), and kernel development. Total water needs are generally around 450mm to 600mm per season. Irrigation is critical in drier areas or during periods of drought to ensure good yield and ear quality.",
+    "altitude": "Typically cultivated in lowlands to moderate altitudes where sufficient warmth and an adequate length of growing season are available. High altitude cultivation is limited by cooler temperatures and shorter frost-free periods."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils that are rich in organic matter. Good soil aeration and moisture retention capacity are important. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). Sweet corn is a heavy feeder, particularly of nitrogen, and benefits from soils amended with compost or well-rotted manure.",
+  "irrigationAndWaterNeeds": "Sweet corn has a high water requirement, especially during the critical growth stages of tasseling, silking (pollination), and kernel fill (the period when kernels are developing and accumulating sugars). Water stress during these periods can severely reduce yield, ear size, and the number of well-filled kernels. Consistent soil moisture is key. Drip irrigation or furrow irrigation methods are commonly used in commercial production to provide targeted watering. The soil should be kept consistently moist, but not waterlogged.",
+  "plantingAndHarvestCycles": "Sweet corn is propagated from seeds. Seeds are typically sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed to at least 15-18°C (60-65°F). To ensure good pollination (as corn is wind-pollinated), it is best to plant sweet corn in blocks of several short rows rather than in single long rows. Different types of sweet corn (standard sugary - su, sugary enhanced - se, and shrunken-2/supersweet - sh2) have specific genetic mutations affecting their sugar content and kernel texture. These types may require isolation from each other, and especially from field corn or popcorn, to prevent cross-pollination which can result in starchy, less sweet kernels in the sweet corn ears. Sweet corn is harvested at the immature 'milk stage,' when the kernels are plump, sweet, and exude a milky liquid when pierced with a thumbnail. This stage is typically reached about 18-24 days after the silks (the female flower parts) first emerge from the tip of the ear. Other indicators of ripeness include the drying and browning of the silks, the ear feeling full and firm to the touch, and the kernels being well-filled to the tip. Harvesting is done by hand, by snapping the ear downwards and twisting it from the stalk. The time from planting to harvest varies by cultivar but generally ranges from 60 to 100 days.",
+  "pestAndDiseaseManagement": "Common Pests: Corn earworm (Helicoverpa zea) is a major pest, with larvae feeding on kernels at the tip of the ear. European corn borer (Ostrinia nubilalis) larvae can tunnel into stalks and ears. Fall armyworm (Spodoptera frugiperda) can damage leaves and ears. Aphids, flea beetles (especially on seedlings), cutworms (damage young plants), corn rootworms (larvae feed on roots), and Japanese beetles can also be problematic. Birds (like crows and blackbirds) and raccoons can cause significant damage to maturing ears. Common Diseases: Stewart's wilt (a bacterial disease transmitted by corn flea beetles) can be severe on susceptible varieties. Common rust (Puccinia sorghi) and common smut (Ustilago maydis - though some cultures consume the galls as huitlacoche) are fungal diseases. Northern corn leaf blight (Exserohilum turcicum) and Southern corn leaf blight (Bipolaris maydis) can affect foliage. Various stalk rots (e.g., Gibberella, Fusarium) can weaken plants. Management Strategies: Selecting resistant or tolerant varieties is a key strategy. Practicing crop rotation. Timely planting to avoid peak pest seasons. Controlling weeds, which can harbor pests. Monitoring for pests and applying appropriate insecticides (such as Bacillus thuringiensis - Bt for caterpillars, or mineral oil applied to silks for earworms) or fungicides based on Integrated Pest Management (IPM) principles. Early control of flea beetles is important for managing Stewart's wilt in susceptible areas. Trapping or deterrents for vertebrate pests.",
+  "postHarvestHandling": "Sweet corn is highly perishable because its sugars begin to convert to starch rapidly after harvest, especially at warm temperatures, leading to a loss of sweetness and flavor. Therefore, it should be cooled immediately after picking (e.g., by hydro-cooling or forced-air cooling) to below 5°C (41°F) to slow down this process. Sweet corn should be stored at cool temperatures, ideally around 0-2°C (32-36°F), with high relative humidity (95% or more). Under these conditions, the shelf life is still limited: standard sugary (su) varieties may last only a few days, while sugary enhanced (se) and shrunken-2 (sh2/supersweet) varieties, which have higher initial sugar content and slower conversion rates, can last for a week or slightly longer. Sweet corn is often sold fresh in-husk or husked and packaged on trays. It is also widely processed by canning or freezing, which preserves its quality for longer periods.",
+  "majorProducingCountriesOrRegions": [
+    "United States (world's largest producer, with major production in states like Iowa, Illinois, Nebraska, Minnesota for field corn, and Florida, California, Washington, New York, Georgia for sweet corn)",
+    "China (second largest global producer of maize, including sweet corn)",
+    "Brazil",
+    "Mexico (center of maize origin and diversity)",
+    "European Union (major producers include France, Hungary, Romania, Italy, Spain)",
+    "Canada (significant production in Ontario and Quebec)",
+    "Argentina",
+    "South Africa",
+    "Thailand",
+    "India",
+    "Indonesia",
+    "Nigeria"
+  ],
+  "marketValueAndGlobalDemand": "Sweet corn is a major vegetable crop globally, particularly popular in North America, Europe, and parts of Asia. There is high consumer demand for fresh sweet corn during the summer months, as well as for processed sweet corn (canned and frozen) which is available year-round. The United States is a leading producer and consumer of sweet corn. Different varieties (yellow, white, bicolor) and types (standard sugary, sugary enhanced, supersweet) have specific market preferences. The market value can fluctuate based on seasonality, regional supply, quality (sweetness, tenderness, kernel fill), and whether it is sold fresh or processed. Sweet corn is a staple for barbecues, picnics, and as a side dish in many cuisines.",
+  "staticRecipes": [
+    {
+      "name": "Classic Grilled Corn on the Cob",
+      "description": "A quintessential summer side dish where fresh sweet corn is grilled to perfection, enhancing its natural sweetness with a delightful smoky char.",
+      "ingredients": [
+        "4 ears of fresh sweet corn",
+        "2 tablespoons butter, melted (optional)",
+        "Salt to taste",
+        "Black pepper to taste (optional)",
+        "Optional flavorings: chili powder, lime wedges, crumbled cotija cheese, chopped cilantro"
+      ],
+      "steps": [
+        "Preheat your grill to medium-high heat (around 375-450°F or 190-230°C).",
+        "Prepare the corn: You can either remove the husks and silk completely for direct grilling, or carefully pull back the husks, remove all the silk, then reposition the husks over the corn to help steam it (soaking these husked ears in water for 10-15 minutes beforehand can prevent the husks from burning too quickly).",
+        "Grill the corn: Place the prepared corn directly on the hot grill grates.",
+        "Cook for 10-15 minutes, turning the ears every few minutes, until the kernels are tender and nicely charred in spots. If grilling with husks on, the husks will char significantly – this is normal.",
+        "Rest briefly: If you grilled with the husks on, allow the corn to cool for a few minutes before carefully removing the charred husks and any remaining silk.",
+        "Season: If using, brush the hot grilled corn cobs with melted butter. Season generously with salt and black pepper.",
+        "Serve: Serve immediately while warm. Offer optional flavorings on the side like chili powder, fresh lime wedges for squeezing, crumbled cotija cheese, or chopped cilantro."
+      ]
+    },
+    {
+      "name": "Creamy Corn Chowder",
+      "description": "A rich and comforting soup made with sweet corn, potatoes, and often bacon.",
+      "ingredients": [
+        "4 ears fresh corn (kernels removed, cobs reserved) or 2 cups frozen corn",
+        "4 slices bacon, chopped",
+        "1 onion, chopped",
+        "2 potatoes, peeled and diced",
+        "4 cups chicken or vegetable broth",
+        "1 cup heavy cream or milk",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "If using fresh corn, cut kernels from cobs. Set kernels aside. Break cobs in half.",
+        "In a large pot, cook bacon until crispy. Remove bacon, leave fat in pot.",
+        "Add onion to pot, cook until soft. Add diced potatoes. Cook for 5 minutes.",
+        "Add corn kernels (if fresh), broth, and reserved corn cobs. Bring to a boil, then simmer until potatoes are tender (15-20 mins).",
+        "Remove corn cobs. If using frozen corn, add it now. Simmer for 5 more minutes.",
+        "Stir in cream/milk. Season with salt and pepper. Heat through but do not boil.",
+        "Serve topped with crispy bacon. Can partially blend for a creamier texture."
+      ]
+    },
+    {
+      "name": "Elote (Mexican Street Corn)",
+      "description": "Grilled corn on the cob slathered in a creamy, cheesy, spicy mixture.",
+      "ingredients": [
+        "4 ears corn, grilled or boiled",
+        "1/4 cup mayonnaise",
+        "1/4 cup crumbled cotija cheese (or feta)",
+        "1/2 tsp chili powder (or to taste)",
+        "Juice of 1/2 lime",
+        "Chopped cilantro for garnish"
+      ],
+      "steps": [
+        "Cook corn until tender (grill or boil).",
+        "In a small bowl, mix mayonnaise, cotija cheese, chili powder, and lime juice.",
+        "Brush the cooked corn cobs generously with the mayonnaise mixture.",
+        "Sprinkle with extra cotija cheese and chopped cilantro if desired.",
+        "Serve immediately."
+      ]
+    }
+  ]
+}

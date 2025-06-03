@@ -1,0 +1,217 @@
+{
+  "id": "bitter-gourd",
+  "commonName": "Bitter Gourd (Karela / Bitter Melon)",
+  "scientificName": "Momordica charantia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Bitter_Gourd.JPG",
+  "description": "A tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit. The fruit has a distinctively bitter taste, which is a hallmark of its culinary use. It features a warty, oblong exterior and is typically green, though it ripens to yellow or orange. The interior contains seeds surrounded by a pith that turns bright red and sweet in very ripe fruit.",
+  "origin": "Indian subcontinent (likely Eastern India or Myanmar region).",
+  "localNames": [
+    "Karela (करेला - Hindi, Urdu, Nepali)",
+    "Ampalaya (Tagalog - Philippines)",
+    "Bitter Melon (English)",
+    "Pavakkai (பாகற்காய் - Tamil)",
+    "Kakarakaya (కాకరకాయ - Telugu)",
+    "Goya (ゴーヤ - Japanese, Okinawan)",
+    "Mara (มะระ - Thai)",
+    "Peria (Malay, Indonesian)"
+  ],
+  "regions": [
+    "India (major producer and consumer)",
+    "China (widely cultivated)",
+    "Southeast Asia (Thailand, Vietnam, Indonesia, Philippines, Malaysia)",
+    "Japan (especially Okinawa)",
+    "Sri Lanka",
+    "Pakistan",
+    "Bangladesh",
+    "Tropical Africa (Nigeria, Ghana)",
+    "Caribbean Islands (Jamaica, Trinidad and Tobago)",
+    "South America (Brazil, Guyana, Suriname)"
+  ],
+  "seasons": [
+    "Typically grown during warm seasons; summer and rainy season in tropical and subtropical areas. Available year-round in some tropical climates with multiple cropping cycles."
+  ],
+  "nutrition": {
+    "calories": "17-19 kcal per 100g (raw fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.17,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 84,
+        "unit": "mg",
+        "rdi": "93-140%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 72,
+        "unit": "µg",
+        "rdi": "18%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 21,
+        "unit": "µg RAE",
+        "rdi": "2-3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 296,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "7-10%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.43,
+        "unit": "mg",
+        "rdi": "2-5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used and researched for its potential to help regulate blood sugar levels, making it beneficial for individuals with diabetes (contains compounds like charantin, vicine, and polypeptide-p).",
+    "Rich in Vitamin C, a powerful antioxidant that boosts the immune system and aids in collagen production.",
+    "Good source of folate, important for cell division and DNA synthesis.",
+    "May aid in digestion, stimulate liver function, and is believed to have blood purifying properties in traditional medicine.",
+    "Contains various antioxidants and phytonutrients that may protect against cell damage and chronic diseases."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Excessive Consumption / Hypoglycemia Risk",
+      "severity": "Mild to Moderate (especially for diabetics on medication)",
+      "details": "Due to its blood sugar lowering effects, excessive consumption, especially in combination with diabetes medication, can potentially lead to hypoglycemia (low blood sugar). It can also cause abdominal pain or diarrhea in some individuals if consumed in very large quantities. Pregnant women should avoid excessive intake or consult a doctor, as it has been traditionally linked to inducing uterine contractions."
+    },
+    {
+      "name": "Favism (G6PD deficiency)",
+      "severity": "Moderate to High (for susceptible individuals)",
+      "details": "Seeds contain vicine, which can induce hemolytic anemia (favism) in individuals with Glucose-6-Phosphate Dehydrogenase (G6PD) deficiency. Seeds are generally removed before consumption of the fruit flesh."
+    }
+  ],
+  "cultivationProcess": "Bitter gourd is a warm-season tropical and subtropical vine. Seeds are often soaked or nicked to improve germination and sown directly after the last frost, or started indoors. It prefers well-drained, fertile soil rich in organic matter and full sun. The vigorous vines require a strong trellis or support structure to climb. Regular watering is crucial, especially during flowering and fruiting. Fruits are harvested when young, tender, and green (or light green depending on variety), as overripe fruits turn yellow/orange, split open, and become excessively bitter or unpalatable for many culinary uses (though the red aril around seeds of very ripe fruit can be sweet).",
+  "growthDuration": "Typically 50 to 70 days from sowing to the first harvest, depending on the cultivar and growing conditions. Regular harvesting encourages further fruit production over several weeks.",
+  "sustainabilityTips": [
+    "Store bitter gourd in the refrigerator, in a vegetable crisper or a perforated plastic bag, for up to a week.",
+    "To reduce bitterness before cooking (a common practice in many cuisines): scrape the rough warty skin lightly, slit the fruit lengthwise, scoop out the seeds and pith, then rub the flesh with salt. Let it sit for about 30 minutes, then squeeze out the bitter juices that are released and rinse the pieces thoroughly under water before cooking.",
+    "Bitter gourd is often used in stir-fries, curries, soups, or stuffed. Its unique bitterness is prized in many culinary traditions."
+  ],
+  "carbonFootprintInfo": "Low to moderate (estimated 0.4-0.8 kg CO2e/kg) when grown and consumed locally or transported by land. Long-distance air freight for fresh produce would increase this footprint.",
+  "uses": [
+    "culinary_vegetable_cooked_in_stir_fries_curries_soups_stews_stuffed_dishes_often_prepared_to_reduce_bitterness",
+    "beverages_juice_often_consumed_for_medicinal_purposes_especially_blood_sugar_management",
+    "medicinal_traditional_ayurveda_tcm_widely_used_for_diabetes_digestive_issues_skin_diseases_blood_purifier_antiviral_properties",
+    "herbal_tea_leaves_and_fruit_sometimes_used_to_make_herbal_teas_for_health_benefits"
+  ],
+  "originAndDomesticationHistory": "Bitter gourd (Momordica charantia) is believed to have originated in the Indian subcontinent, likely in the eastern regions of India or Myanmar. It has been cultivated in India and China for centuries, valued for both its culinary uses (despite its characteristic bitterness) and its extensive medicinal properties in traditional systems like Ayurveda and Traditional Chinese Medicine (TCM). From its center of origin, it spread throughout Southeast Asia, and was later introduced to Africa, the Caribbean, and other tropical and subtropical regions of the world. Over time, different varieties have been developed in various regions, leading to variations in fruit size, shape, color, and intensity of bitterness (e.g., Indian types are typically smaller, more warty, and very bitter, while Chinese types are often longer, smoother, and milder).",
+  "climaticRequirements": {
+    "temperature": "Bitter gourd is a warm-season crop that thrives in tropical and subtropical climates. Optimal temperatures for its growth and fruit development range from 25°C to 30°C (77°F to 86°F). It requires hot and humid conditions for best performance and is highly sensitive to frost. Growth is significantly retarded at temperatures below 18°C (65°F).",
+    "rainfall": "Prefers moderate to high annual rainfall, typically between 1000mm and 2000mm, or consistent irrigation. While it needs ample moisture, especially during vegetative growth, flowering, and fruit set, good soil drainage is essential to prevent waterlogging and root diseases. High humidity is generally favorable.",
+    "altitude": "Typically cultivated in lowland tropical and subtropical regions, from sea level up to about 1000 meters (approximately 3300 feet). Higher altitudes with cooler temperatures are generally unsuitable."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. Good soil aeration is important for healthy root development. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). While it can adapt to a range of soil types, very heavy clay soils or sandy soils with poor moisture retention may require amendment.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering throughout its growing cycle, particularly during seed germination, vine establishment, flowering, and fruit development. Water stress during these critical periods can lead to poor fruit set, reduced fruit size, and lower overall yield. Drip irrigation or furrow irrigation methods are commonly used to provide adequate moisture while minimizing water on foliage, which can reduce disease risk. Ensure good drainage as bitter gourd does not tolerate waterlogged conditions.",
+  "plantingAndHarvestCycles": "Bitter gourd is propagated from seeds. Seeds are often soaked in water for 12-24 hours or slightly nicked at the hilum to improve and hasten germination. They can be sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed sufficiently (above 20°C or 68°F). In regions with shorter growing seasons, seeds may be started indoors 2-3 weeks prior to transplanting. Plants are typically grown in hills or rows with adequate spacing. Being a vigorous vine, bitter gourd requires a strong trellis, fence, or other support structure for the vines to climb, which improves air circulation, fruit quality, and ease of harvest. Bitter gourd is relatively fast-growing, and fruits are typically ready for harvest 50 to 70 days after sowing, depending on the cultivar and growing conditions. Fruits are harvested by hand when they are young, tender, and green (or light green, depending on the variety). Harvesting should be done regularly (e.g., every 2-3 days) to encourage continued fruit production over several weeks. Overripe fruits turn yellow or orange, split open, expose red arils around the seeds, and become excessively bitter or unpalatable for most culinary uses.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (particularly the melon fly, Bactrocera cucurbitae) are major pests, laying eggs in young fruits, leading to maggot infestation. Aphids, cucumber beetles (striped and spotted), spider mites, leaf miners, and various caterpillars can also cause damage to foliage and fruit. Common Diseases: Powdery mildew and downy mildew are common fungal diseases affecting leaves, especially in humid conditions. Fusarium wilt can cause wilting and death of plants. Anthracnose can cause lesions on leaves and fruit. Mosaic viruses, transmitted by aphids, can also be problematic. Management Strategies: Implementing crop rotation. Selecting disease-resistant varieties where available. Ensuring proper plant spacing and trellising to promote good air circulation. Practicing effective weed control. Removing and destroying infected plant material promptly. Using fruit fly traps, protein bait sprays, or bagging of individual fruits to protect against melon fly infestation. Applying appropriate and approved insecticides or fungicides when necessary, based on scouting, pest/disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Harvested bitter gourd fruits are relatively perishable and should be handled with care to avoid bruising. They can typically be stored for 1-2 weeks at cool temperatures, ideally around 10-13°C (50-55°F), with moderate to high humidity (85-95%). Storing at temperatures below 10°C can cause chilling injury. Fruits are often sold loose or packed in perforated plastic bags or trays to maintain freshness. For home use, they can be stored in the vegetable crisper of a refrigerator.",
+  "majorProducingCountriesOrRegions": [
+    "India (a leading global producer and consumer)",
+    "China (extensive cultivation and diverse culinary uses)",
+    "Pakistan",
+    "Bangladesh",
+    "Sri Lanka",
+    "Thailand",
+    "Vietnam",
+    "Indonesia",
+    "Philippines",
+    "Malaysia",
+    "Japan (especially Okinawa, where 'goya' is a staple)",
+    "Various Caribbean islands",
+    "Parts of tropical Africa and Latin America."
+  ],
+  "marketValueAndGlobalDemand": "Bitter gourd is a widely consumed vegetable in many Asian countries, parts of Africa, and the Caribbean, where it holds significant cultural and culinary importance. It is valued for its unique bitter flavor, which is considered desirable in many cuisines, as well as for its extensive traditional medicinal properties, particularly in relation to blood sugar management. There are substantial local and regional markets for fresh bitter gourd. International trade is also increasing, primarily to supply ethnic markets in North America, Europe, and the Middle East, catering to diaspora communities from Asia and the Caribbean. The demand for bitter gourd extracts and dietary supplements is also growing globally due to increasing awareness of its potential health benefits. Different varieties (e.g., Indian, Chinese, Thai types) have specific market preferences.",
+  "staticRecipes": [
+    {
+      "name": "Stuffed Karela (Bharwa Karela)",
+      "description": "Bitter gourds stuffed with a spicy onion and spice mixture, then pan-fried or baked.",
+      "ingredients": [
+        "4-5 medium bitter gourds (karela)",
+        "For stuffing: 2 large onions (finely chopped), 1 tbsp ginger-garlic paste, 1 tsp fennel powder, 1 tsp coriander powder, 1/2 tsp turmeric powder, 1/2 tsp amchur (dry mango powder), salt to taste, 1 tbsp oil",
+        "Oil for frying"
+      ],
+      "steps": [
+        "Wash and scrape bitter gourds lightly. Slit them lengthwise, keeping one end intact. Scoop out seeds.",
+        "Optional: Rub salt inside and outside the gourds, let sit for 30 mins, then squeeze out water and rinse to reduce bitterness.",
+        "Stuffing: Heat 1 tbsp oil. Sauté onions until golden. Add ginger-garlic paste, sauté. Add all spice powders and salt. Cook for 2-3 mins. Let cool.",
+        "Stuff the spice mixture tightly into the bitter gourds.",
+        "Heat oil in a pan. Carefully place stuffed gourds. Cook on low-medium heat, covered, turning occasionally, until tender and well-cooked (about 20-25 mins). Alternatively, bake at 375°F (190°C)."
+      ]
+    },
+    {
+      "name": "Karela Chips (Crispy Bitter Gourd)",
+      "description": "Thinly sliced bitter gourd, spiced and deep-fried or air-fried until crispy.",
+      "ingredients": [
+        "2 medium bitter gourds",
+        "1/2 cup rice flour or cornstarch",
+        "1 tsp red chili powder",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "Oil for deep frying or air frying"
+      ],
+      "steps": [
+        "Wash bitter gourds, trim ends. Slice them into thin rounds. Remove seeds if large.",
+        "Optional: Sprinkle salt on slices, let sit for 20-30 mins, squeeze out excess water. Pat dry.",
+        "In a bowl, toss bitter gourd slices with rice flour/cornstarch, chili powder, turmeric, and salt until well coated.",
+        "Deep fry in hot oil in batches until golden brown and crispy. Drain on paper towels.",
+        "Alternatively, air fry at 375°F (190°C) for 10-15 minutes, shaking halfway, until crispy."
+      ]
+    },
+    {
+      "name": "Bitter Gourd and Potato Stir-fry (Karela Aloo Sabzi)",
+      "description": "A simple stir-fry combining the bitterness of karela with the earthiness of potatoes.",
+      "ingredients": [
+        "2 medium bitter gourds, sliced",
+        "2 medium potatoes, peeled and diced",
+        "1 onion, sliced",
+        "1 tsp cumin seeds",
+        "1/2 tsp turmeric powder",
+        "1 tsp coriander powder",
+        "Salt to taste",
+        "2 tbsp oil"
+      ],
+      "steps": [
+        "Prepare bitter gourd: Wash, slice, remove seeds. Optional: salt and rest to reduce bitterness, then rinse.",
+        "Heat oil in a pan. Add cumin seeds. When they splutter, add sliced onion and sauté until translucent.",
+        "Add diced potatoes and sauté for 5-7 minutes.",
+        "Add bitter gourd slices, turmeric powder, coriander powder, and salt. Mix well.",
+        "Cover and cook on low-medium heat for 15-20 minutes, or until potatoes and bitter gourd are tender, stirring occasionally. Add a splash of water if it gets too dry.",
+        "Serve hot with roti or rice."
+      ]
+    }
+  ]
+}
