@@ -122,7 +122,6 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           if (onlineData) {
             itemData = onlineData;
             saveProduceOffline(onlineData);
-            // UserDataStore.addRecentView(onlineData.id); // Feature removed
           }
         } catch (error) {
           console.warn('Online fetch failed, trying offline cache for:', processedSlug, error);
@@ -359,7 +358,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </section>
           <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
             <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-              {produce.healthBenefits && produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
+              {produce.healthBenefits?.map(benefit => <li key={benefit}>{benefit}</li>)}
             </ul>
           </IconLabel>
         </TabsContent>
@@ -458,7 +457,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 {produce.sustainabilityTips && produce.sustainabilityTips.length > 0 && (
                 <IconLabel icon={Recycle} label="Sustainability Tips" className="bg-card rounded-lg shadow-lg">
                     <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-                    {produce.sustainabilityTips.map((tip, index) => <li key={index}>{tip}</li>)}
+                    {produce.sustainabilityTips?.map((tip, index) => <li key={index}>{tip}</li>)}
                     </ul>
                 </IconLabel>
                 )}
@@ -474,7 +473,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             {produce.uses && produce.uses.length > 0 && (
               <IconLabel icon={Leaf} label="Common Uses" className="bg-card rounded-lg shadow-lg">
                 <div className="flex flex-wrap gap-2">
-                  {produce.uses.map(use => <Badge key={use} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{use}</Badge>)}
+                  {produce.uses?.map(use => <Badge key={use} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{use}</Badge>)}
                 </div>
               </IconLabel>
             )}
@@ -526,7 +525,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             {produce.majorProducingCountriesOrRegions && produce.majorProducingCountriesOrRegions.length > 0 && (
               <IconLabel icon={MapPinned} label="Major Producing Countries/Regions" className="bg-card rounded-lg shadow-lg">
                 <div className="flex flex-wrap gap-2">
-                  {produce.majorProducingCountriesOrRegions.map(region => <Badge key={region} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{region}</Badge>)}
+                  {produce.majorProducingCountriesOrRegions?.map(region => <Badge key={region} variant="outline" className="bg-muted hover:bg-muted/80 text-muted-foreground">{region}</Badge>)}
                 </div>
               </IconLabel>
             )}

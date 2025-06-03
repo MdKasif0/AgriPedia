@@ -430,9 +430,7 @@ export default function ImageUploadForm({ onSuccessfulScan, onCloseDialog }: Ima
           </Button>
         </div>
       </div>
-      <style jsx global>{`
-        /* Removed dash-animate as it's not clear if it's still used. */
-      `}</style>
+      <style jsx global>{``}</style>
     </div>
   );
 }
