@@ -1,4 +1,3 @@
-
 'use server';
 /**
  * @fileOverview Generates recipes based on a given produce name.
@@ -8,8 +7,8 @@
  * - GenerateRecipesOutput - The return type for the generateRecipes function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'zod';
 
 const GenerateRecipesInputSchema = z.object({
   produceName: z.string().describe('The name of the fruit or vegetable to generate recipes for.'),
@@ -33,22 +32,15 @@ export async function generateRecipes(input: GenerateRecipesInput): Promise<Gene
 }
 
 const prompt = ai.definePrompt({
-  name: 'generateRecipesPrompt',
-  input: {schema: GenerateRecipesInputSchema},
-  output: {schema: GenerateRecipesOutputSchema},
   prompt: `You are a helpful culinary assistant. Your goal is to provide 2-3 simple, healthy, and distinct recipe ideas for a given fruit or vegetable.
-
-Produce Name: {{{produceName}}}
 
 For each recipe, please provide:
 1.  A creative and appealing "name".
 2.  A brief "description" (1-2 sentences).
-3.  A list of key "ingredients" (e.g., "1 cup {{produceName}}, chopped", "1 tbsp olive oil", "Pinch of salt").
+3.  A list of key "ingredients" (e.g., "1 cup [produce], chopped", "1 tbsp olive oil", "Pinch of salt").
 4.  A few concise "steps" for preparation.
 
-Focus on recipes that highlight the {{{produceName}}} and are generally considered healthy. Aim for variety in the types of recipes (e.g., a salad, a cooked dish, a beverage if appropriate).
-Respond with a JSON object.
-  `,
+Focus on recipes that highlight the produce and are generally considered healthy. Aim for variety in the types of recipes (e.g., a salad, a cooked dish, a beverage if appropriate).`,
 });
 
 const generateRecipesFlow = ai.defineFlow(
@@ -58,8 +50,15 @@ const generateRecipesFlow = ai.defineFlow(
     outputSchema: GenerateRecipesOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    // Ensure we always return an object with a recipes array, even if empty or if output is nullish
-    return output || { recipes: [] };
+    try {
+      const { output } = await prompt.generate(input);
+      if (output && output.recipes) {
+        return output;
+      }
+      return { recipes: [] };
+    } catch (error) {
+      console.error("Error in generateRecipesFlow:", error);
+      return { recipes: [] };
+    }
   }
 );

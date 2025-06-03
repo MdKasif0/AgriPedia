@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Camera, Upload, Flash, RotateCcw, CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
+import { Camera, Upload, Zap, RotateCcw, CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -104,7 +104,7 @@ export function PlantHealthDetector() {
               flash: !prev.flash
             }))}
           >
-            <Flash className="w-4 h-4 mr-2" />
+            <Zap className="w-4 h-4 mr-2" />
             {cameraSettings.flash ? 'Flash On' : 'Flash Off'}
           </Button>
           <Button

@@ -8,8 +8,8 @@
  * - ValidateImageOfProduceOutput - The return type for the validateImageOfProduce function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'zod';
 
 const ValidateImageOfProduceInputSchema = z.object({
   photoDataUri: z
@@ -31,15 +31,10 @@ export async function validateImageOfProduce(input: ValidateImageOfProduceInput)
 }
 
 const prompt = ai.definePrompt({
-  name: 'validateImageOfProducePrompt',
-  input: {schema: ValidateImageOfProduceInputSchema},
-  output: {schema: ValidateImageOfProduceOutputSchema},
   prompt: `You are an AI image analysis expert with a specific task: to validate whether an image primarily features a recognizable fruit or vegetable. Your reasoning should be based on visual evidence.
 Critically assess the provided image.
 - If the image clearly shows a fruit or vegetable, set 'isValid' to true.
-- If the image does NOT clearly show a fruit or vegetable (e.g., it's a picture of a car, an animal, a landscape, or an abstract pattern), set 'isValid' to false and provide a concise 'reason' explaining why it's not a valid image of produce.
-Respond with a JSON object.
-Here is the image: {{media url=photoDataUri}}`,
+- If the image does NOT clearly show a fruit or vegetable (e.g., it's a picture of a car, an animal, a landscape, or an abstract pattern), set 'isValid' to false and provide a concise 'reason' explaining why it's not a valid image of produce.`,
 });
 
 const validateImageOfProduceFlow = ai.defineFlow(
@@ -49,8 +44,22 @@ const validateImageOfProduceFlow = ai.defineFlow(
     outputSchema: ValidateImageOfProduceOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    return output!;
+    try {
+      const { output } = await prompt.generate(input);
+      if (output && typeof output.isValid === 'boolean') {
+        return output;
+      }
+      return {
+        isValid: false,
+        reason: "Unable to validate the image"
+      };
+    } catch (error) {
+      console.error("Error in validateImageOfProduceFlow:", error);
+      return {
+        isValid: false,
+        reason: "Error processing the image"
+      };
+    }
   }
 );
 

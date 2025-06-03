@@ -8,8 +8,8 @@ export async function identifyPlant(imageData: string) {
     const model = genAI.getGenerativeModel({ model: 'gemini-pro-vision' });
     
     // Convert base64 to blob
-    const response = await fetch(imageData);
-    const blob = await response.blob();
+    const imageResponse = await fetch(imageData);
+    const blob = await imageResponse.blob();
     
     // Create image part
     const imagePart = {
@@ -36,8 +36,8 @@ export async function identifyPlant(imageData: string) {
     }`;
 
     const result = await model.generateContent([prompt, imagePart]);
-    const response = await result.response;
-    const text = response.text();
+    const aiResponse = await result.response;
+    const text = aiResponse.text();
     
     // Parse the JSON response
     const analysis = JSON.parse(text);
@@ -68,8 +68,8 @@ export async function analyzePlantHealth(imageData: string) {
     }`;
 
     const result = await model.generateContent([prompt, imagePart]);
-    const response = await result.response;
-    const text = response.text();
+    const aiResponse = await result.response;
+    const text = aiResponse.text();
     
     // Parse the JSON response
     const analysis = JSON.parse(text);
@@ -99,8 +99,8 @@ export async function getPlantCareAdvice(plantSpecies: string, weatherData: any)
     }`;
 
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    const aiResponse = await result.response;
+    const text = aiResponse.text();
     
     // Parse the JSON response
     const advice = JSON.parse(text);

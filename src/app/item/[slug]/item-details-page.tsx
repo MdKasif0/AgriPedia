@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useEffect, useState, useMemo } from 'react';
@@ -19,7 +18,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
   CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle,
-  History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, CalendarCog, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTubeDiagonal, NotebookPen, Newspaper
+  History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, CalendarCog, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTube, NotebookPen, Newspaper
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -554,7 +553,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
               </p>
             </IconLabel>
 
-            <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={TestTube} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
               <p className="text-sm text-muted-foreground">
                 A comprehensive guide on organic and chemical fertilizers and treatments, including safe usage guidelines, is planned for this section. For current recommendations, please consult local agricultural extension services or qualified experts.
               </p>

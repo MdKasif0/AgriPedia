@@ -10,8 +10,8 @@
  * - IdentifyFruitOrVegetableFromImageOutput - The output type for the identifyFruitOrVegetableFromImage function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'zod';
 
 const IdentifyFruitOrVegetableFromImageInputSchema = z.object({
   photoDataUri: z
@@ -36,7 +36,7 @@ const IdentifyFruitOrVegetableFromImageOutputSchema = z.object({
     .describe('The scientific name of the identified fruit or vegetable.'),
   confidence: z
     .number()
-    .min(0).max(1) // Ensure confidence is between 0 and 1
+    .min(0).max(1)
     .describe(
       'A number, between 0 and 1 inclusive, indicating the confidence in the identification.'
     ),
@@ -52,17 +52,11 @@ export async function identifyFruitOrVegetableFromImage(
 }
 
 const prompt = ai.definePrompt({
-  name: 'identifyFruitOrVegetableFromImagePrompt',
-  input: {schema: IdentifyFruitOrVegetableFromImageInputSchema},
-  output: {schema: IdentifyFruitOrVegetableFromImageOutputSchema},
   prompt: `You are an expert in identifying fruits and vegetables from images.
-  Analyze the image provided.
-  Determine if the image primarily contains a fruit or vegetable.
-  If it is, provide its common name, scientific name, and a confidence score between 0.0 and 1.0 for your identification.
-  If it is not a fruit or vegetable, or if you cannot identify it with reasonable confidence, set 'isFruitOrVegetable' to false and commonName/scientificName to empty strings or "Unknown".
-  Respond with a JSON object matching the defined output schema.
-  Here is the image: {{media url=photoDataUri}}
-  `,
+Analyze the image provided.
+Determine if the image primarily contains a fruit or vegetable.
+If it is, provide its common name, scientific name, and a confidence score between 0.0 and 1.0 for your identification.
+If it is not a fruit or vegetable, or if you cannot identify it with reasonable confidence, set 'isFruitOrVegetable' to false and commonName/scientificName to empty strings or "Unknown".`,
 });
 
 const identifyFruitOrVegetableFromImageFlow = ai.defineFlow(
@@ -72,9 +66,19 @@ const identifyFruitOrVegetableFromImageFlow = ai.defineFlow(
     outputSchema: IdentifyFruitOrVegetableFromImageOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    // Ensure fallback for nullish output to prevent runtime errors
-    if (!output) {
+    try {
+      const { output } = await prompt.generate(input);
+      if (output && typeof output.isFruitOrVegetable === 'boolean') {
+        return output;
+      }
+      return {
+        isFruitOrVegetable: false,
+        commonName: "Unknown",
+        scientificName: "Unknown",
+        confidence: 0
+      };
+    } catch (error) {
+      console.error("Error in identifyFruitOrVegetableFromImageFlow:", error);
       return {
         isFruitOrVegetable: false,
         commonName: "Unknown",
@@ -82,6 +86,5 @@ const identifyFruitOrVegetableFromImageFlow = ai.defineFlow(
         confidence: 0
       };
     }
-    return output;
   }
 );
