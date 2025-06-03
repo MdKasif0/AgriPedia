@@ -5,11 +5,14 @@ import SunlightExposureStep from '../planner/SunlightExposureStep';
 import PurposeStep from '../planner/PurposeStep';
 import TimeCommitmentStep from '../planner/TimeCommitmentStep';
 import ExperienceLevelStep from '../planner/ExperienceLevelStep';
+import PlantRecommendationResults from '../planner/PlantRecommendationResults';
 import ProgressBar from '../planner/ProgressBar';
 import ErrorBoundary from '../ErrorBoundary';
 import { Button } from '@/components/ui/button';
 import { savePlannerData, getPlannerData, clearPlannerData } from '@/lib/userDataStore';
+import { getPlantRecommendations, getCurrentGrowingContext } from '@/lib/plantRecommendationService';
 import type { PlannerData } from '@/types/planner';
+import type { PlantRecommendation } from '@/types/plant';
 
 const TOTAL_PLANNER_STEPS = 6; // Location to Experience Level
 
@@ -46,6 +49,8 @@ const PersonalizedGrowPlanner: React.FC = () => {
   const [formData, setFormData] = useState({});
   const [animationClass, setAnimationClass] = useState('animate-fadeIn'); // Initial animation
   const [displayedStep, setDisplayedStep] = useState(currentStep);
+  const [recommendations, setRecommendations] = useState<PlantRecommendation[]>([]);
+  const [isLoadingRecommendations, setIsLoadingRecommendations] = useState(false);
   const previousStepRef = useRef<number>(currentStep);
 
   useEffect(() => {
@@ -101,6 +106,36 @@ const PersonalizedGrowPlanner: React.FC = () => {
     }
   }, [currentStep, formData]); // Trigger when currentStep or formData changes
 
+  // Generate recommendations when planner is complete
+  useEffect(() => {
+    if (currentStep === TOTAL_PLANNER_STEPS && Object.keys(formData).length > 0) {
+      const generateRecommendations = async () => {
+        setIsLoadingRecommendations(true);
+        try {
+          const { month, hemisphere } = getCurrentGrowingContext();
+          const recommendations = await getPlantRecommendations({
+            climateZone: formData.location?.climateZone || '',
+            lightRequirements: formData.sunlight || '',
+            experienceLevel: formData.experience || '',
+            currentMonth: month,
+            hemisphere,
+            spaceConstraints: {
+              containerOnly: formData.space === 'container',
+              maxHeight: formData.space === 'balcony' ? 100 : undefined,
+              maxWidth: formData.space === 'balcony' ? 50 : undefined,
+            },
+          });
+          setRecommendations(recommendations);
+        } catch (error) {
+          console.error('Error generating recommendations:', error);
+        } finally {
+          setIsLoadingRecommendations(false);
+        }
+      };
+
+      generateRecommendations();
+    }
+  }, [currentStep, formData]);
 
   const handleNext = (stepData: any) => {
     if (!isValidStepData(stepData)) {
@@ -154,47 +189,30 @@ const PersonalizedGrowPlanner: React.FC = () => {
         return <TimeCommitmentStep onNext={handleNext} onBack={handleBack} data={formData} />;
       case 5:
         return <ExperienceLevelStep onNext={handleNext} onBack={handleBack} data={formData} />;
-      default: // Summary screen
-        let summaryContent = "Loading summary...";
-        try {
-          if (typeof formData !== 'object' || formData === null) {
-            throw new Error("Form data is not a valid object.");
-          }
-          if (Object.keys(formData).length === 0 && displayedStep === TOTAL_PLANNER_STEPS) {
-            summaryContent = "No preferences were recorded. Feel free to start over and select some options!";
-          } else {
-            // ** SIMPLIFICATION FOR DEBUGGING **
-            // Comment out the original stringify:
-            // summaryContent = JSON.stringify(formData, null, 2);
-
-            // Replace with a simple message:
-            summaryContent = "Summary display is simplified for debugging. All data collected.";
-
-            // Or, try displaying only one simple, known field if confident:
-            // if (formData.experienceLevel) {
-            //   summaryContent = `Experience Level Selected: ${formData.experienceLevel}`;
-            // } else if (Object.keys(formData).length > 0) {
-            //   summaryContent = "Some data collected, but experience level not found.";
-            // } else {
-            //   summaryContent = "Experience Level not found, and no other data present.";
-            // }
-          }
-        } catch (error: any) {
-          console.error("Error preparing summary content:", error);
-          summaryContent = `Error displaying summary: ${error.message}. Raw data might be incomplete or corrupted.`;
-        }
-
+      default: // Summary screen with recommendations
         return (
-          <ErrorBoundary fallbackMessage="There was an issue displaying the summary. Please try starting over.">
-            <div className="text-center p-4">
-              <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-2">Here's a summary of your preferences:</p>
-              <pre className="text-left text-sm bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-x-auto min-h-[100px]">
-                {summaryContent}
-              </pre>
-              <Button onClick={handleStartOver} className="mt-6">
-                Start Over
-              </Button>
+          <ErrorBoundary fallbackMessage="There was an issue displaying the recommendations. Please try starting over.">
+            <div className="space-y-6">
+              <div className="text-center">
+                <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Based on your preferences, here are some plants that would be perfect for your garden:
+                </p>
+              </div>
+              
+              <PlantRecommendationResults
+                recommendations={recommendations}
+                isLoading={isLoadingRecommendations}
+              />
+
+              <div className="flex justify-center gap-4 mt-6">
+                <Button onClick={handleStartOver} variant="outline">
+                  Start Over
+                </Button>
+                <Button onClick={() => window.print()}>
+                  Save Recommendations
+                </Button>
+              </div>
             </div>
           </ErrorBoundary>
         );
