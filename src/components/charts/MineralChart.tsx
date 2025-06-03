@@ -7,7 +7,7 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { cn } from "@/lib/utils";
 
 interface MineralChartProps {
-  data: ProduceInfo['nutrition']['minerals'];
+  data?: NonNullable<ProduceInfo['nutrition']>['minerals'];
   className?: string;
 }
 

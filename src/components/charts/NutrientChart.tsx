@@ -7,7 +7,7 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { cn } from "@/lib/utils";
 
 interface NutrientChartProps {
-  data: ProduceInfo['nutrition']['macronutrients'];
+  data?: NonNullable<ProduceInfo['nutrition']>['macronutrients'];
   className?: string;
 }
 

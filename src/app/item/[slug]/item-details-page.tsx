@@ -38,7 +38,9 @@ const MineralChart = dynamic(() => import('@/components/charts/MineralChart'), {
   ssr: false
 });
 
-const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0]['severity']): "default" | "secondary" | "destructive" | "outline" => {
+type AllergySeverity = NonNullable<ProduceInfo['potentialAllergies']>[number]['severity'];
+
+const getSeverityBadgeVariant = (severity: AllergySeverity): "default" | "secondary" | "destructive" | "outline" => {
   switch (severity) {
     case 'Severe':
       return 'destructive';
@@ -338,29 +340,33 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
         <TabsContent value="nutrition" className="mt-6 space-y-6 px-2 md:px-0">
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2 justify-center text-foreground"><Activity className="text-primary"/>Nutritional Information</h2>
-            <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition.calories}</p>
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 text-center">Calories per 100g: {produce.nutrition?.calories || 'N/A'}</p>
 
+            {produce.nutrition?.macronutrients && (
             <ClientOnly fallback={<div className="h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
               <NutrientChart data={produce.nutrition.macronutrients} className="rounded-lg shadow-lg overflow-hidden" />
             </ClientOnly>
+            )}
 
-            {(produce.nutrition.vitamins && produce.nutrition.vitamins.length > 0) && (
+            {(produce.nutrition?.vitamins && produce.nutrition.vitamins.length > 0) && (
               <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
                 <VitaminChart data={produce.nutrition.vitamins} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
 
-            {(produce.nutrition.minerals && produce.nutrition.minerals.length > 0) && (
+            {(produce.nutrition?.minerals && produce.nutrition.minerals.length > 0) && (
               <ClientOnly fallback={<div className="mt-6 h-[250px] sm:h-[300px] bg-muted rounded-lg animate-pulse"></div>}>
                 <MineralChart data={produce.nutrition.minerals} className="mt-6 rounded-lg shadow-lg overflow-hidden" />
               </ClientOnly>
             )}
           </section>
-          <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
-            <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-              {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
-            </ul>
-          </IconLabel>
+          {produce.healthBenefits && produce.healthBenefits.length > 0 && (
+            <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
+              <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
+                {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
+              </ul>
+            </IconLabel>
+          )}
         </TabsContent>
 
         <TabsContent value="recipe" className="mt-6 space-y-6 px-2 md:px-0">
@@ -399,16 +405,18 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
         <TabsContent value="additional" className="mt-6 space-y-6 px-2 md:px-0">
             <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
-            {produce.potentialAllergies.length > 0 ? (
+            {produce.potentialAllergies && produce.potentialAllergies.length > 0 ? (
                 <ul className="space-y-3">
                 {produce.potentialAllergies.map((allergy, index) => (
                     <li key={index} className="flex flex-col gap-1">
                     <div className="flex items-center gap-2">
                         <MessageCircleWarning className="h-4 w-4 text-destructive shrink-0" />
                         <span className="font-medium text-card-foreground">{allergy.name}</span>
-                        <Badge variant={getSeverityBadgeVariant(allergy.severity)} className="ml-auto capitalize">
-                        {allergy.severity}
-                        </Badge>
+                        {allergy.severity && ( // Ensure severity exists before rendering Badge
+                          <Badge variant={getSeverityBadgeVariant(allergy.severity!)} className="ml-auto capitalize">
+                            {allergy.severity}
+                          </Badge>
+                        )}
                     </div>
                     {allergy.details && <p className="text-xs text-muted-foreground pl-6">{allergy.details}</p>}
                     </li>
@@ -418,12 +426,16 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
                 <p className="text-sm text-muted-foreground">No common allergies reported for this item.</p>
             )}
             </IconLabel>
+            {produce.cultivationProcess && (
             <IconLabel icon={Sprout} label="Cultivation Process & Ideal Conditions" className="md:col-span-2 bg-card rounded-lg shadow-lg">
               <p className="whitespace-pre-line text-card-foreground/90">{produce.cultivationProcess}</p>
             </IconLabel>
+            )}
+            {produce.growthDuration && (
             <IconLabel icon={CalendarDays} label="Growth Duration" className="bg-card rounded-lg shadow-lg">
               <p className="text-card-foreground/90">{produce.growthDuration}</p>
             </IconLabel>
+            )}
 
             <div className="grid md:grid-cols-2 gap-6">
                 <IconLabel

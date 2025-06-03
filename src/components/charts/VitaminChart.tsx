@@ -7,7 +7,7 @@ import type { ProduceInfo } from '@/lib/produceData';
 import { cn } from "@/lib/utils";
 
 interface VitaminChartProps {
-  data: ProduceInfo['nutrition']['vitamins'];
+  data?: NonNullable<ProduceInfo['nutrition']>['vitamins'];
   className?: string;
 }
 
