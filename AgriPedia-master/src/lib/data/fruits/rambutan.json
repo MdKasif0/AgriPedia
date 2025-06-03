@@ -1,0 +1,229 @@
+{
+  "id": "rambutan",
+  "commonName": "Rambutan",
+  "scientificName": "Nephelium lappaceum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Rambutan_fruits.JPG/800px-Rambutan_fruits.JPG",
+  "description": "Rambutan (Nephelium lappaceum) is a tropical fruit tree in the soapberry family (Sapindaceae), closely related to lychee, longan, and pulasan. It is native to Southeast Asia and known for its distinctive appearance: a leathery, reddish (or sometimes yellow or orange) skin covered in fleshy, pliable spines or 'hairs' (rambut means 'hair' in Malay/Indonesian). The translucent, white or pale pink flesh (aril) is sweet, juicy, and typically mildly acidic, surrounding a single, usually bitter, seed.",
+  "origin": "Southeast Asia (likely the Malay Archipelago - Indonesia, Malaysia)",
+  "localNames": [
+    "Rambut (Malay/Indonesian, meaning 'hair')",
+    "Chôm chôm (Vietnamese, meaning 'messy hair')",
+    "Ngoh (เงาะ - Thai)",
+    "Hóngmáodān (红毛丹 - Chinese, 'red-haired pellet')",
+    "Usan (Philippines - Visayan languages)"
+  ],
+  "regions": [
+    "Thailand (leading global producer and exporter)",
+    "Indonesia (major producer)",
+    "Malaysia (major producer)",
+    "Vietnam",
+    "Philippines",
+    "Sri Lanka",
+    "India (Southern states, limited)",
+    "Australia (Queensland)",
+    "Central America (Costa Rica, Honduras, Panama, Guatemala)",
+    "South America (Ecuador, Colombia, Suriname, Brazil - limited)",
+    "Africa (Zanzibar, Pemba, parts of East Africa - limited)",
+    "Caribbean islands (Puerto Rico, Trinidad, Cuba - limited)"
+  ],
+  "seasons": [
+    "Varies by region and cultivar; typically fruits during the rainy season. Many areas have two main harvest seasons, often one from late spring to early summer and another from late fall to early winter. For example, in Southeast Asia, peaks can be around June-August and December-February."
+  ],
+  "nutrition": {
+    "calories": "82 kcal per 100g (edible aril)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.65,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 20.87,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.21,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 4.9,
+        "unit": "mg",
+        "rdi": "5-8%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 1.352,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 8,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.022,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.013,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.343,
+        "unit": "mg",
+        "rdi": "15-17%"
+      },
+      {
+        "name": "Potassium",
+        "value": 42,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Calcium",
+        "value": 22,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.35,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 7,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.066,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Provides a good source of manganese, an essential mineral involved in enzyme function, bone health, metabolism, and antioxidant defense.",
+    "Contains Vitamin C, which supports the immune system and acts as an antioxidant, though in moderate amounts compared to some other fruits.",
+    "Offers dietary fiber, which can aid in digestion and promote gut health.",
+    "Source of various B vitamins, contributing to energy metabolism and overall cellular function."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cross-reactivity (rare)",
+      "severity": "Mild",
+      "details": "Rambutan is generally well-tolerated. Rare cross-reactivity may occur in individuals with known allergies to other fruits in the Sapindaceae family (such as lychee or longan) or those with birch pollen allergy (Oral Allergy Syndrome), potentially causing itching or mild swelling in the mouth or throat."
+    },
+    {
+      "name": "Seed consumption",
+      "severity": "Caution advised",
+      "details": "The seed is generally considered bitter and inedible. Some sources suggest it may contain saponins or other compounds that could be mildly toxic if consumed in quantity, although roasting is sometimes practiced. It's best to avoid eating the seed."
+    }
+  ],
+  "cultivationProcess": "Rambutan trees thrive in warm, humid tropical climates (ideally 22–30°C) and prefer deep, well-drained clay loam or sandy loam soil rich in organic matter. Commercial propagation is mainly through vegetative methods like grafting (e.g., cleft grafting), budding (patch budding is common), or air-layering to ensure true-to-type fruit and earlier bearing. Trees require consistent moisture, especially during fruit development, and benefit from regular fertilization. Pollination is primarily carried out by insects, such as bees and flies; some cultivars may benefit from cross-pollination for better fruit set.",
+  "growthDuration": "Grafted or budded rambutan trees typically start bearing fruit within 2-3 years of planting, reaching optimal production in 8-10 years. Trees grown from seed may take 5-6 years or longer to begin fruiting. The fruit matures approximately 15-18 weeks after the flowers bloom.",
+  "sustainabilityTips": [
+    "Opt for locally grown rambutans when available to minimize the carbon footprint associated with long-distance transportation of this perishable fruit.",
+    "Compost the inedible spiny peel and seed to reduce organic waste and create nutrient-rich soil amendment for gardens.",
+    "Support sustainable agroforestry practices where rambutans are often intercropped."
+  ],
+  "carbonFootprintInfo": "Rambutans cultivated and consumed locally in tropical regions generally have a relatively low carbon footprint. However, when imported to non-tropical countries, they often require air freight due to their short shelf life and delicate nature, which significantly increases their environmental impact. Choosing sea-freighted (if available and properly handled) or processed (canned, dried) options can be more sustainable alternatives if fresh local fruit isn't available.",
+  "uses": [
+    "fresh_consumption_eaten_raw_aril",
+    "processed_products_canned_in_syrup_often_stuffed_with_pineapple_jams_jellies_sorbets_ice_cream_fruit_salads",
+    "beverages_rambutan_juice_though_less_common_than_lychee_or_longan_juice",
+    "medicinal_traditional_various_parts_roots_bark_leaves_fruit_rind_used_for_fever_dysentery_headaches_hair_care",
+    "other_young_shoots_sometimes_eaten_as_vegetable_wood_for_minor_construction_rind_for_dyeing"
+  ],
+  "originAndDomesticationHistory": "Rambutan (Nephelium lappaceum) is native to the Malay Archipelago region of Southeast Asia, with its likely centers of origin being Indonesia and Malaysia. It has been cultivated in these regions for centuries and is a well-known and popular fruit. From its native range, rambutan cultivation spread throughout Southeast Asia, including Thailand (now a leading commercial producer), Vietnam, the Philippines, and Myanmar. It was later introduced to other tropical areas in Asia (like Sri Lanka and India), Africa, Central and South America, and Australia. It is closely related to other tropical fruits in the Sapindaceae family, such as lychee, longan, and pulasan. Numerous cultivars have been selected over time for fruit size, flesh recovery, sweetness, and ease of aril separation from the seed.",
+  "climaticRequirements": {
+    "temperature": "Rambutan is strictly a tropical fruit tree and thrives in warm, humid climates. The optimal temperature range for growth and fruit production is between 22°C and 30°C (72°F to 86°F). It is intolerant of frost and prolonged cold conditions (temperatures below 10°C or 50°F can cause damage or inhibit growth).",
+    "rainfall": "Requires high and well-distributed annual rainfall, typically between 1500mm and 3000mm, along with high atmospheric humidity (around 75-80%). While it needs consistent moisture, it cannot withstand prolonged waterlogging and requires good soil drainage. A short dry spell may sometimes help to induce flowering.",
+    "altitude": "Best grown in lowland tropical areas, typically from sea level up to about 500-600 meters (approximately 1600-2000 feet). Higher altitudes are generally unsuitable due to cooler temperatures."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained loamy or clay-loam soils that are rich in organic matter. A slightly acidic to neutral soil pH, generally between 5.5 and 6.5, is ideal. Rambutan trees are intolerant of waterlogged or saline soil conditions. Good soil aeration is important for healthy root development.",
+  "irrigationAndWaterNeeds": "Requires consistent and abundant soil moisture throughout the year, especially during the critical periods of flowering, fruit set, and fruit development. Irrigation is essential in areas with distinct dry seasons or insufficient rainfall to prevent water stress, which can lead to flower and fruit drop and reduced fruit quality. However, good soil drainage must accompany irrigation to avoid root diseases.",
+  "plantingAndHarvestCycles": "Commercially, rambutan is primarily propagated by vegetative methods such as budding (patch budding is common) or grafting onto seedling rootstock. Air layering (marcotting) is also practiced. These methods ensure that the resulting trees are true to type and bear fruit earlier than seed-propagated trees (which can take 5-6 years or more and yield variable fruit). Budded or grafted trees can start bearing fruit within 2-3 years of planting. Planting is usually done at the beginning of the rainy season. Rambutan trees typically flower after a period of vegetative growth, often stimulated by changes in moisture or temperature. The fruits are borne in clusters (panicles) and mature approximately 15-18 weeks after flowering. The main harvest season varies by region but often occurs during the rainy season or shortly thereafter; some areas may have two smaller cropping seasons per year. Fruits are harvested by hand when the skin turns a vibrant red or yellow (depending on the cultivar) and the spines (soft hairs) are well-developed. They are typically harvested in clusters by cutting the branchlet to avoid damaging the fruit. Rambutans do not ripen further after being picked.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (e.g., Bactrocera spp.) can infest ripening fruit. Mealybugs, scale insects, aphids, and stem borers may also attack the trees. Fruit-piercing moths can damage fruit. Birds, bats, and squirrels are often significant pests of ripe fruit. Common Diseases: Powdery mildew can affect leaves, flowers, and young fruit, especially during dry periods with high humidity. Anthracnose (Colletotrichum gloeosporioides) can cause lesions on leaves, stems, and fruit. Leaf spot diseases and root rot (in poorly drained soils) can also occur. Management Strategies: Implementing good orchard sanitation, including the removal of fallen fruit and diseased plant parts. Pruning to improve air circulation and light penetration within the canopy. Bagging of fruit clusters can provide protection against fruit flies, birds, and bats. Biological control methods for some pests. Targeted and judicious application of appropriate pesticides or fungicides based on pest and disease monitoring and economic thresholds.",
+  "postHarvestHandling": "Rambutans are perishable and have a relatively short shelf life, typically lasting 3-7 days at ambient tropical temperatures. The skin tends to turn brown and dry out quickly, although the flesh may remain edible for a while longer. Shelf life can be extended to about 1-2 weeks if the fruits are refrigerated at cool temperatures (around 10-12°C or 50-54°F) with high relative humidity (90-95%). They are often packed in moisture-retentive packaging, such as plastic bags or containers with perforations. Fruits should be handled carefully during and after harvest to avoid bruising the spiny exterior, which can lead to rapid deterioration. For export, pre-cooling and careful packing are essential.",
+  "majorProducingCountriesOrRegions": [
+    "Thailand (leading global producer and exporter)",
+    "Indonesia (major producer)",
+    "Malaysia (major producer)",
+    "Vietnam",
+    "Philippines",
+    "Sri Lanka",
+    "India (limited, mainly in southern states)",
+    "Australia (Queensland)",
+    "Central American countries (e.g., Costa Rica, Honduras, Panama, Guatemala)",
+    "Ecuador",
+    "Colombia",
+    "Suriname",
+    "Various Caribbean islands (e.g., Puerto Rico, Trinidad)",
+    "Parts of Africa (e.g., Zanzibar, Pemba)"
+  ],
+  "marketValueAndGlobalDemand": "Rambutan is a highly popular and economically important fruit in Southeast Asian countries, where it is widely consumed fresh during its season. There is significant local and regional trade. International demand for fresh rambutans has been growing steadily in markets in North America, Europe, and East Asia, primarily supplied by Thailand, Malaysia, Indonesia, Vietnam, and increasingly by Central American countries. The fruit's exotic appearance and sweet, juicy flesh contribute to its appeal. Canned rambutans, often stuffed with a piece of pineapple, are also a common export product and are widely available in international markets. The market value for high-quality fresh fruit can be good, especially for choice cultivars.",
+  "staticRecipes": [
+    {
+      "name": "Refreshing Rambutan & Pineapple Cooler",
+      "description": "A simple and thirst-quenching tropical drink that beautifully combines the sweet, unique flavor of rambutan with the tartness of pineapple.",
+      "ingredients": [
+        "10-12 fresh rambutans",
+        "1 cup fresh pineapple chunks",
+        "1 cup cold water or coconut water",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon sugar or honey (optional, adjust to taste)",
+        "Ice cubes"
+      ],
+      "steps": [
+        "Peel the rambutans: Use a small knife to carefully cut through the skin around the middle of the fruit, or use your fingernails to tear it open. Remove the translucent flesh from the seed. Discard the skin and seed.",
+        "In a blender, combine the peeled rambutan flesh, fresh pineapple chunks, cold water (or coconut water for extra tropical flavor), and fresh lime juice.",
+        "Add sugar or honey if desired, depending on the sweetness of your fruits.",
+        "Blend the mixture until smooth.",
+        "For an extra smooth drink, you can strain the blended mixture through a fine-mesh sieve to remove any pulp, though this is optional.",
+        "Fill glasses with ice cubes and pour the rambutan and pineapple cooler over the ice.",
+        "Garnish with a slice of lime, a pineapple wedge, or a whole rambutan on the rim of the glass if desired. Serve immediately."
+      ]
+    }
+  ]
+}

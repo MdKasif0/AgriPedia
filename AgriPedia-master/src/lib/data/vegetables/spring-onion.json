@@ -1,0 +1,138 @@
+{
+  "id": "spring-onion",
+  "commonName": "Spring Onion",
+  "scientificName": "Allium spp. (commonly Allium cepa or Allium fistulosum)",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoTJnJnQTqj4faR3TxRxJvtNQS4ZrV33qkvGUhYIeMw&s",
+  "description": "Spring onions, also known as scallions or green onions, are young onions harvested before the bulb has fully developed. They feature long, hollow green stalks and a small white base, both of which are edible and offer a milder, fresher onion flavor than mature onions. They are widely used raw as a garnish or cooked in various dishes.",
+  "origin": "Various Allium species native to Asia; modern cultivated forms developed globally. The term 'scallion' historically refers to onions from Ashkelon (ancient Palestine).",
+  "localNames": [
+    "Scallion (USA)",
+    "Green Onion (USA, Canada)",
+    "Salad Onion (UK)",
+    "Cebollita / Cebolla de Verdeo (Spanish)",
+    "Oignon vert / Ciboule (French)"
+  ],
+  "regions": [
+    "Worldwide",
+    "China (major producer of Allium species)",
+    "Mexico",
+    "United States",
+    "Japan",
+    "South Korea",
+    "Many parts of Europe and Asia"
+  ],
+  "seasons": [
+    "Available year-round due to varied cultivation methods (field and greenhouse) and global sourcing. Peak season for outdoor cultivation in temperate climates is typically spring and summer."
+  ],
+  "nutrition": {
+    "calories": "32 kcal per 100g (raw, tops and bulb)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.83,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.34,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 207,
+        "unit": "µg",
+        "rdi": "173%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 18.8,
+        "unit": "mg",
+        "rdi": "21%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 64,
+        "unit": "µg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 50,
+        "unit": "µg RAE",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 276,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Calcium",
+        "value": 72,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.48,
+        "unit": "mg",
+        "rdi": "8%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin K, vital for blood clotting and bone health.",
+    "Good source of Vitamin C, an antioxidant that supports the immune system and collagen production.",
+    "Contains dietary fiber and various phytonutrients (like flavonoids and sulfur compounds common in Alliums) which may contribute to heart health and have anti-inflammatory properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Allium Allergy (rare)",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to other Allium species (like garlic, onions, leeks) may experience cross-reactivity. Symptoms can include skin irritation, digestive upset, or (rarely) more severe reactions."
+    }
+  ],
+  "cultivationProcess": "Spring onions are grown from seeds or sets (small bulbs). They prefer well-drained soil with plenty of organic matter and full sun. They are planted closely together as they don't form large bulbs. Regular watering is needed. They are harvested when the stalks are green and tender, typically before the bulb (if an A. cepa variety) significantly swells. Allium fistulosum varieties (Welsh onions) do not form bulbs and are always harvested for their stalks.",
+  "growthDuration": "Typically 60-90 days from seed to harvest, though some can be harvested earlier as microgreens (20-30 days) or later depending on desired size. They can often be harvested progressively.",
+  "sustainabilityTips": [
+    "Spring onions are easy to regrow from their root ends. Place the white root base (about an inch) in a shallow glass of water, and green shoots will resprout. Change water regularly and transplant to soil for continued growth.",
+    "Grow spring onions in home gardens or pots; they require little space and are relatively low-maintenance, providing fresh greens and reducing food miles."
+  ],
+  "carbonFootprintInfo": "Locally grown spring onions, especially when in season or from home gardens, have a very low carbon footprint. Those transported long distances, particularly if requiring refrigeration or air freight, will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Spring Onion Garnish & Stir-fry Base",
+      "description": "Spring onions are a versatile ingredient, widely used as a fresh, pungent garnish or as an aromatic base in stir-fries and many other cooked dishes worldwide.",
+      "ingredients": [
+        "1 bunch of fresh spring onions (scallions)"
+      ],
+      "steps": [
+        "For Garnish:",
+        "1. Rinse the spring onions thoroughly under cold water.",
+        "2. Trim off the root ends (usually the bottom 1/4 inch). Remove any wilted or damaged outer layers or tips of the green tops.",
+        "3. Thinly slice the green tops crosswise into small rings or diagonally for a more decorative cut. The white and light green parts can also be thinly sliced and used as a garnish, offering a slightly stronger flavor.",
+        "4. Sprinkle the sliced spring onions over dishes like soups (e.g., ramen, pho, miso soup), salads, omelets, noodle dishes, rice bowls, tacos, baked potatoes, or savory pancakes just before serving. This adds a fresh, mild oniony crunch and visual appeal.",
+        "For Stir-fry Base / Cooking:",
+        "1. Wash and prepare the spring onions as described above (trimming roots and any wilted parts).",
+        "2. Separate the white and light green lower parts from the darker green tops. These parts have different textures and cooking times.",
+        "3. Slice the white and light green parts into 1-2 inch lengths, or chop them finely. These are typically added early in stir-frying along with other aromatics like garlic and ginger to build a flavor base.",
+        "4. Slice the dark green tops similarly (rings or longer sections). These are often added towards the very end of the stir-fry cooking process to preserve their delicate flavor and bright color, or they can be mixed in raw after cooking."
+      ]
+    }
+  ]
+}

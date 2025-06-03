@@ -1,0 +1,146 @@
+{
+  "id": "radish",
+  "commonName": "Radish",
+  "scientificName": "Raphanus sativus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Colourful_radishes.jpg",
+  "description": "An edible root vegetable of the family Brassicaceae that was domesticated in Asia prior to Roman times. Radishes are grown and consumed throughout the world, being mostly eaten raw as a crunchy salad vegetable with a pungent, peppery flavor.",
+  "origin": "Southeast Asia or Central Asia",
+  "localNames": [
+    "Rábano (Spanish)",
+    "Radis (French)",
+    "Rettich (German - larger varieties), Radieschen (German - small round)",
+    "Mooli (Hindi - for Daikon types)"
+  ],
+  "regions": [
+    "China",
+    "Japan",
+    "United States",
+    "Europe"
+  ],
+  "seasons": [
+    "Spring",
+    "Autumn (cool-season crop)"
+  ],
+  "nutrition": {
+    "calories": "16 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 14.8,
+        "unit": "mg",
+        "rdi": "25%"
+      },
+      {
+        "name": "Folate",
+        "value": 25,
+        "unit": "µg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 233,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that supports the immune system.",
+    "Contains compounds that may aid digestion and detoxification.",
+    "Low in calories and a source of fiber.",
+    "Radish leaves are also edible and nutritious, rich in vitamins and minerals."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Radish Sensitivity",
+      "severity": "Mild",
+      "details": "Can cause gas or digestive discomfort in some individuals if eaten in large quantities, especially raw."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring as soon as soil can be worked, or in late summer/early fall for a fall crop.\n2. Soil: Loose, well-drained soil rich in organic matter. pH 6.0-7.0.\n3. Spacing: Sow seeds 1/2 inch deep, 1 inch apart, in rows 12 inches apart. Thin seedlings to 2-3 inches apart for small varieties, more for larger Daikon types.\n4. Watering: Consistent moisture is crucial for rapid growth and to prevent roots from becoming woody or overly pungent.\n5. Harvesting: Harvest small round radishes when roots are about 1 inch in diameter (typically 3-5 weeks after sowing). Daikon types take longer. Pull gently from the soil.",
+  "growthDuration": "3-5 weeks for small round varieties; 6-10 weeks for larger winter radishes (like Daikon).",
+  "sustainabilityTips": [
+    "Store radishes (greens removed) in a plastic bag in the refrigerator crisper for 1-2 weeks.",
+    "Radish greens are edible and can be used in salads, stir-fries, or pesto.",
+    "Thinly sliced radishes add a peppery crunch to salads, tacos, and sandwiches."
+  ],
+  "carbonFootprintInfo": "Very low, especially when grown locally (0.2-0.4 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Simple Radish Salad with Lemon Vinaigrette",
+      "description": "A crisp and refreshing salad highlighting the peppery bite of radishes.",
+      "ingredients": [
+        "1 bunch radishes, thinly sliced",
+        "2 tbsp olive oil",
+        "1 tbsp lemon juice",
+        "1/4 tsp Dijon mustard (optional)",
+        "Salt and freshly ground black pepper to taste",
+        "Fresh parsley or chives, chopped (optional)"
+      ],
+      "steps": [
+        "In a medium bowl, combine thinly sliced radishes.",
+        "In a small bowl, whisk together olive oil, lemon juice, Dijon mustard (if using), salt, and pepper.",
+        "Pour the dressing over the radishes and toss to coat.",
+        "Garnish with fresh parsley or chives if desired.",
+        "Serve immediately or chill for a short period. Radishes can lose some crispness if dressed too far in advance."
+      ]
+    },
+    {
+      "name": "Roasted Radishes",
+      "description": "Roasting mellows the peppery flavor of radishes and makes them tender.",
+      "ingredients": [
+        "1.5 lbs radishes, trimmed and halved (or quartered if large)",
+        "1-2 tbsp olive oil",
+        "Salt and freshly ground black pepper to taste",
+        "Optional: herbs like thyme or rosemary"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a bowl, toss radishes with olive oil, salt, pepper, and any optional herbs until well coated.",
+        "Spread radishes in a single layer on a baking sheet.",
+        "Roast for 15-20 minutes, or until tender and lightly browned, flipping halfway through.",
+        "Serve hot as a side dish."
+      ]
+    },
+    {
+      "name": "Radish and Butter Sandwich (French Style)",
+      "description": "A classic and simple French snack or light meal.",
+      "ingredients": [
+        "Good quality baguette or rustic bread, sliced",
+        "Unsalted butter, softened",
+        "Fresh radishes, thinly sliced",
+        "Flaky sea salt"
+      ],
+      "steps": [
+        "Spread a generous layer of softened butter on each slice of bread.",
+        "Arrange thinly sliced radishes over the butter.",
+        "Sprinkle lightly with flaky sea salt.",
+        "Serve immediately. Often enjoyed open-faced."
+      ]
+    }
+  ]
+}

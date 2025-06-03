@@ -1,0 +1,202 @@
+{
+  "id": "raspberry",
+  "commonName": "Raspberry",
+  "scientificName": "Rubus idaeus (Red Raspberry), Rubus occidentalis (Black Raspberry), and other Rubus spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/800px-Raspberries_%28Rubus_idaeus%29.jpg",
+  "description": "An edible fruit of a multitude of plant species in the genus Rubus of the rose family (Rosaceae). Most cultivated raspberries are within the subgenus Idaeobatus. The fruit is a delicate aggregate fruit, formed from many individual drupelets arranged around a central core (receptacle). They are typically red, but also black, purple, or golden/yellow depending on the species and cultivar, and known for their sweet-tart flavor and aroma.",
+  "origin": "Red Raspberry (Rubus idaeus): Native to Europe and Northern Asia. Black Raspberry (Rubus occidentalis): Native to eastern North America.",
+  "localNames": [
+    "Frambuesa (Spanish)",
+    "Framboise (French)",
+    "Himbeere (German)",
+    "Lampone (Italian)",
+    "Malina (Малина - Russian and other Slavic languages)"
+  ],
+  "regions": [
+    "Russia (leading global producer)",
+    "Mexico (major exporter)",
+    "Poland",
+    "United States (Pacific Northwest, California)",
+    "Serbia",
+    "Chile",
+    "Spain",
+    "United Kingdom"
+  ],
+  "seasons": [
+    "Summer to early Autumn (June to October in the Northern Hemisphere, varies by type - summer-bearing vs. everbearing - and cultivar)"
+  ],
+  "nutrition": {
+    "calories": "52 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11.94,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.65,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 6.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 26.2,
+        "unit": "mg",
+        "rdi": "29-44%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.67,
+        "unit": "mg",
+        "rdi": "29-34%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 7.8,
+        "unit": "µg",
+        "rdi": "7-10%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 21,
+        "unit": "µg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 151,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 22,
+        "unit": "mg",
+        "rdi": "5-6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "High in dietary fiber, which promotes digestive health, aids in bowel regularity, and can help manage blood sugar levels.",
+    "Rich in Vitamin C and antioxidants, particularly anthocyanins (responsible for their color) and ellagic acid, which help combat oxidative stress and inflammation.",
+    "May have anti-inflammatory properties, potentially benefiting conditions like arthritis.",
+    "Can contribute to brain health and may help protect against age-related cognitive decline due to their antioxidant content.",
+    "Good source of manganese, an essential mineral involved in bone health and metabolism."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Raspberry Allergy / Oral Allergy Syndrome (OAS)",
+      "severity": "Rare, Mild",
+      "details": "Allergies to raspberries are uncommon but can occur. Some individuals, particularly those with birch pollen allergies, may experience Oral Allergy Syndrome (OAS), with symptoms like itching or tingling in the mouth, lips, or throat after consuming fresh raspberries."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Many varieties require winter chill for bud break.\n2. Soil: Well-drained, fertile soil rich in organic matter. Slightly acidic pH (5.5-6.5).\n3. Propagation: From suckers (new canes from roots) or cane cuttings. Tissue culture for commercial stock.\n4. Planting: Plant dormant canes in early spring. Provide support like a trellis, wires, or stakes for most varieties.\n5. Watering: Consistent moisture is important, especially during fruit development. Avoid waterlogged soil. Drip irrigation is ideal.\n6. Fertilizing: Apply balanced fertilizer or compost in spring.\n7. Pruning: Pruning methods vary depending on whether they are summer-bearing (floricane-fruiting - remove fruited canes after harvest) or everbearing/fall-bearing (primocane-fruiting - can be mown down after fall harvest or selectively pruned).\n8. Harvesting: Berries are harvested when they are fully colored and detach easily from the receptacle (core). They are very delicate and must be picked by hand.",
+  "growthDuration": "Summer-bearing varieties typically produce fruit on second-year canes (floricanes). Everbearing (primocane-fruiting) varieties can produce fruit on first-year canes in late summer/autumn, and sometimes a smaller crop on the same canes the following summer. Harvest season is generally summer to early autumn.",
+  "sustainabilityTips": [
+    "Store unwashed raspberries in the refrigerator in a shallow, breathable container; consume within 1-2 days for best quality due to their high perishability.",
+    "Wash gently just before eating to avoid waterlogging and premature spoilage.",
+    "Freeze excess raspberries by spreading them in a single layer on a baking sheet until frozen solid, then transfer to a freezer bag or container for long-term storage.",
+    "Choose locally grown raspberries during their peak season to reduce food miles and support local agriculture."
+  ],
+  "carbonFootprintInfo": "Moderate, but can be high if air-freighted due to their extreme perishability and short shelf life (estimated 0.8-2.0 kg CO2e/kg or more for air-freighted fresh raspberries). Locally grown and seasonal raspberries have a significantly lower footprint. Processed forms like frozen raspberries or jams also have different footprint profiles.",
+  "uses": [
+    "fresh_consumption_eaten_raw_with_cream_yogurt_cereals",
+    "processed_products_jams_jellies_preserves_sauces_syrups_fruit_spreads_purees",
+    "culinary_baking_pies_tarts_cakes_muffins_scones_fruit_bars_desserts_ice_cream_sorbets",
+    "beverages_juices_smoothies_wine_liqueurs_chambord_vinegar_flavoring_for_teas_infused_water",
+    "frozen_fruit_iqf_individually_quick_frozen_for_year_round_use",
+    "medicinal_traditional_raspberry_leaf_tea_for_womens_health_colds_flu"
+  ],
+  "originAndDomesticationHistory": "The red raspberry (Rubus idaeus) is native to Europe and northern Asia, while the black raspberry (Rubus occidentalis) is native to eastern North America. Wild raspberries have been gathered by humans since prehistoric times. Cultivation of raspberries likely began in monastery gardens in Europe during the Middle Ages, with records indicating the Romans were also aware of them. Systematic breeding and selection of improved cultivars became more common in the 17th and 18th centuries. Many modern raspberry cultivars are hybrids, developed for characteristics such as fruit size, flavor, color, yield, and growth habit (summer-bearing vs. everbearing).",
+  "climaticRequirements": {
+    "temperature": "Raspberries thrive in temperate climates. Most varieties require a significant period of winter chilling (typically 800-1600 hours with temperatures below 7°C or 45°F) to break dormancy and ensure good fruit production. Canes can be damaged by severe winter cold (generally below -20°C or -4°F for many common varieties), and flowers are susceptible to late spring frosts. Optimal summer temperatures for growth and fruit development are between 18°C and 25°C (65°F to 77°F).",
+    "rainfall": "Requires moderate annual rainfall, typically between 750mm and 1000mm, well-distributed throughout the growing season. Consistent moisture is crucial, but good soil drainage is essential to prevent root diseases. Supplemental irrigation is often needed, especially during fruit development.",
+    "altitude": "Can be successfully cultivated from lowlands up to moderate altitudes where chilling requirements are met and summer temperatures are not excessively high."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils that are rich in organic matter. A slightly acidic soil pH, ideally between 5.5 and 6.5, is best for raspberry cultivation. Good soil structure and aeration are important for healthy root growth. Raspberries are intolerant of waterlogged or heavy clay soils, which can lead to root rot.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, particularly during flowering, fruit set, and fruit development. Water stress during these critical periods can significantly reduce yield, berry size, and quality. Drip irrigation or soaker hoses are effective methods for providing water directly to the root zone while keeping foliage dry, which helps reduce the risk of fungal diseases. Avoid overhead watering.",
+  "plantingAndHarvestCycles": "Raspberries are commonly propagated from suckers (new canes that arise from the roots of established plants) or by tip layering (especially for black and purple raspberries). Tissue culture is used for commercial production of certified virus-free planting stock. Dormant canes are typically planted in early spring. Most raspberry varieties require some form of support, such as a trellis, wires, or stakes, to keep the canes upright and facilitate harvesting. There are two main types based on fruiting habit: summer-bearing (floricane-fruiting) varieties bear fruit on second-year canes (floricanes) in early to mid-summer. Everbearing or fall-bearing (primocane-fruiting) varieties bear fruit on the tips of first-year canes (primocanes) in late summer or autumn, and can sometimes produce a smaller crop on the lower part of these same canes the following summer if not pruned back. Canes often start producing a significant crop in their second year after planting. The harvest season is typically from summer to early autumn, depending on the type and cultivar. Berries are harvested by hand when they are fully colored (red, black, purple, or golden, depending on the variety) and detach easily from the central receptacle (core). They are very delicate and must be handled with care.",
+  "pestAndDiseaseManagement": "Common Pests: Raspberry beetle (Byturus tomentosus) larvae feed on developing fruit. Aphids can transmit viral diseases. Spider mites can be problematic in hot, dry conditions. Japanese beetles can damage foliage. Spotted Wing Drosophila (SWD) is a major invasive pest of soft fruits, laying eggs in ripening berries. Common Diseases: Cane blight (Leptosphaeria coniothyrium), spur blight (Didymella applanata), and anthracnose (Elsinoë veneta) are common fungal diseases affecting canes. Grey mold (Botrytis cinerea) causes fruit rot, especially in humid conditions. Raspberry rust and various root rot diseases (e.g., Phytophthora) in poorly drained soils can also occur. Viral diseases, such as raspberry mosaic virus complex, can significantly reduce vigor and yield. Management Strategies: Planting certified virus-free stock is crucial. Selecting disease-resistant varieties. Practicing good sanitation, including removing and destroying old fruited canes (for summer-bearers) and any diseased plant material. Proper pruning to ensure good air circulation within the canopy. Using trellising systems to keep canes off the ground and improve air flow. Controlling weeds, which can harbor pests and diseases. Implementing trapping and monitoring for pests like SWD. Applying appropriate insecticides or fungicides when necessary, based on pest/disease pressure and IPM principles.",
+  "postHarvestHandling": "Raspberries are extremely perishable and fragile, with a very short shelf life. They should be harvested with great care, preferably during the cooler parts of the day, directly into shallow containers to avoid crushing. Pre-cooling (e.g., using forced-air cooling) immediately after harvest is essential to remove field heat and slow down respiration and deterioration. Raspberries can typically be stored for only 1-3 days under refrigeration at cool temperatures (around 0-2°C or 32-36°F) with high relative humidity (90-95%). They are highly susceptible to grey mold (Botrytis fruit rot) post-harvest. For longer-term storage, raspberries are often frozen (Individually Quick Frozen - IQF is common for commercial purposes) or processed into jams, jellies, purees, or juices.",
+  "majorProducingCountriesOrRegions": [
+    "Russia (often the world's largest producer)",
+    "Mexico (major exporter, especially to North America)",
+    "Poland (significant producer for fresh and processed markets)",
+    "United States (Pacific Northwest states like Oregon and Washington; also California)",
+    "Serbia (major producer, particularly for frozen raspberries)",
+    "Chile (exporter to Northern Hemisphere during its off-season)",
+    "Spain",
+    "United Kingdom",
+    "Canada"
+  ],
+  "marketValueAndGlobalDemand": "Raspberries are a high-value fruit with strong consumer demand in North America, Europe, and other developed countries, driven by their appealing flavor, versatility, and recognized health benefits (rich in antioxidants and fiber). There is significant production for both the fresh market and for processing (primarily IQF for use in yogurts, desserts, smoothies, and as ingredients). International trade in fresh raspberries is substantial, often relying on air freight due to their extreme perishability, which contributes to their higher cost. Mexico and Chile are major exporters to the US market, while Spain and Poland supply much of Europe. The demand for organic raspberries is also growing. The development of everbearing varieties has helped to extend the fresh market season in many regions.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Raspberries with Cream",
+      "description": "A simple and elegant dessert highlighting the natural flavor of raspberries.",
+      "ingredients": [
+        "1 pint fresh raspberries",
+        "1/4 cup heavy cream or crème fraîche",
+        "1-2 tsp powdered sugar (optional)"
+      ],
+      "steps": [
+        "Gently rinse raspberries and pat dry.",
+        "Divide raspberries among serving bowls.",
+        "If using powdered sugar, lightly sweeten the heavy cream or crème fraîche.",
+        "Drizzle the cream over the raspberries.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Raspberry Vinaigrette",
+      "description": "A vibrant and flavorful dressing for salads.",
+      "ingredients": [
+        "1/2 cup fresh or frozen raspberries",
+        "1/4 cup olive oil",
+        "2 tbsp red wine vinegar or apple cider vinegar",
+        "1 tbsp honey or maple syrup",
+        "1 tsp Dijon mustard",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "If using frozen raspberries, thaw them slightly.",
+        "Combine raspberries, olive oil, vinegar, honey/maple syrup, and Dijon mustard in a blender or food processor.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve to remove seeds, if desired.",
+        "Season with salt and pepper to taste. Store in an airtight container in the refrigerator."
+      ]
+    },
+    {
+      "name": "Raspberry Oatmeal Crumble Bars",
+      "description": "Delicious and relatively healthy bars with a raspberry filling and an oat crumble topping.",
+      "ingredients": [
+        "For crust/crumble: 1 1/2 cups rolled oats, 1 cup all-purpose flour, 3/4 cup brown sugar, 1/2 tsp cinnamon, 1/2 cup cold butter (cubed)",
+        "For filling: 2 cups fresh or frozen raspberries, 1/4 cup granulated sugar, 1 tbsp cornstarch, 1 tbsp lemon juice"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C). Grease and flour an 8x8 inch baking pan.",
+        "Crust/Crumble: In a medium bowl, combine rolled oats, flour, brown sugar, and cinnamon. Cut in cold butter using a pastry blender or your fingers until the mixture resembles coarse crumbs. Reserve about 1 cup of the crumble mixture for the topping. Press the remaining mixture firmly into the bottom of the prepared pan to form the crust.",
+        "Bake the crust for 10 minutes.",
+        "Filling: While crust is baking, combine raspberries, granulated sugar, cornstarch, and lemon juice in a saucepan. Cook over medium heat, stirring frequently, until the mixture thickens and raspberries start to break down (about 5-7 minutes).",
+        "Pour the raspberry filling evenly over the partially baked crust.",
+        "Sprinkle the reserved crumble mixture over the filling.",
+        "Bake for another 20-25 minutes, or until the topping is golden brown and the filling is bubbly.",
+        "Let cool completely in the pan before cutting into bars."
+      ]
+    }
+  ]
+}

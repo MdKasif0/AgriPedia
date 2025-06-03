@@ -1,0 +1,72 @@
+{
+  "id": "mustard",
+  "commonName": "Mustard",
+  "scientificName": "Brassica spp. (e.g., Brassica juncea - Indian Mustard, Brassica hirta - White/Yellow Mustard, Brassica nigra - Black Mustard)",
+  "image": "https://images.unsplash.com/photo-1595566398829-b8889f1d0f74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Mustard plants are species in the genera Brassica and Sinapis in the family Brassicaceae. Mustard seed is used as a spice. Grinding and mixing the seeds with water, vinegar, or other liquids creates the yellow condiment known as prepared mustard. The seeds are also pressed to make mustard oil, and the young leaves can be eaten as mustard greens.",
+  "origin": "Mediterranean region, Europe, and temperate regions of Asia, depending on the species.",
+  "localNames": ["Sarson (Hindi - for B. juncea/B. campestris oilseed types)", "Karashi (Japanese - condiment)", "Mostaza (Spanish)", "Moutarde (French)"],
+  "regions": ["Canada (largest exporter of mustard seed)", "Nepal", "India", "Russia", "Ukraine", "United States", "Myanmar", "China"],
+  "seasons": ["Cool-season annual; typically planted in spring for summer harvest, or in fall/winter in milder climates."],
+  "nutrition": {
+    "calories": "Mustard Seeds: ~508 kcal per 100g. Mustard Oil: ~884 kcal per 100g. Mustard Greens: ~27 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seeds: ~26" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seeds: ~28 (Fiber ~12)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~36 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Selenium", "unit": "µg", "rdi": "Seeds: Significant" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Greens: 70 (78%)" },
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Greens: 257.5 (215%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Greens: 187 (47%)" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "unit": "mg", "rdi": "Seeds: Significant" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Seeds: Significant" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Seeds: Significant" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Greens: 115 (12%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Mustard seeds are rich in selenium and magnesium, which have anti-inflammatory properties.",
+    "Contain glucosinolates, compounds that may have anti-cancer effects (research ongoing).",
+    "Mustard oil (used topically) can stimulate circulation and relieve muscle soreness.",
+    "Mustard greens are highly nutritious, packed with vitamins and minerals.",
+    "Some types of mustard oil (low erucic acid) are used for cooking."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Mustard Allergy",
+      "severity": "Can be Severe",
+      "details": "Mustard is a known allergen and can cause severe reactions, including anaphylaxis, in sensitive individuals. It is a mandatory declared allergen in some countries (e.g., Canada, EU)."
+    },
+    {
+      "name": "Erucic Acid (in some mustard oils)",
+      "severity": "Varies (Chronic high intake)",
+      "details": "Traditional mustard oil can be high in erucic acid, which has been linked to heart issues in animal studies. Low-erucic acid varieties (like canola, which is related) are preferred for edible oil in many regions."
+    }
+  ],
+  "cultivationProcess": "Mustard is grown from seeds. It is a cool-season crop that requires well-prepared soil. It is relatively fast-growing. Seeds are harvested when pods are mature and dry.",
+  "growthDuration": "Approximately 80-120 days from sowing to seed harvest, depending on the species and climate. Greens can be harvested earlier.",
+  "sustainabilityTips": [
+    "Can be used as a cover crop to improve soil health, suppress weeds, and reduce soilborne diseases (biofumigation).",
+    "Attracts beneficial insects.",
+    "Some varieties are drought-tolerant."
+  ],
+  "carbonFootprintInfo": "The carbon footprint is influenced by farming practices (fertilizer use for non-legumes), processing (oil extraction, condiment production), and transportation. Use as a cover crop can have positive environmental benefits.",
+  "uses": ["oil_production_seeds_for_cooking_oil_industrial_oil_biodiesel", "culinary_spice_seeds_whole_ground_prepared_mustard_condiment", "culinary_vegetable_mustard_greens_leaves", "cover_crop_green_manure_biofumigant", "traditional_medicine_poultice_stimulant"],
+  "originAndDomesticationHistory": "Mustard species have diverse origins. White mustard (Brassica hirta) originated in the Mediterranean. Black mustard (Brassica nigra) in the Near East/Asia Minor. Brown/Indian mustard (Brassica juncea) in Central Asia/Himalayas. Mustard has been cultivated for thousands of years, used by ancient Egyptians, Greeks, and Romans as a spice and medicine.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 10-24°C. Tolerates light frost. High temperatures during flowering can reduce seed yield and oil quality.",
+    "rainfall": "Requires moderate rainfall, around 350-500mm during the growing season. Adequate soil moisture is crucial during germination, seedling stage, and flowering.",
+    "altitude": "Adaptable to various altitudes, from sea level to over 2000m in temperate and subtropical regions."
+  },
+  "soilPreferences": "Prefers well-drained, loamy soils with a neutral pH (6.0-7.5). Can tolerate a range of soil types but not waterlogged conditions or highly acidic soils. Good organic matter content is beneficial.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed in areas with sufficient cool-season rainfall. Supplemental irrigation may be necessary during dry spells, especially at critical growth stages like flowering and pod filling, to ensure good yields.",
+  "plantingAndHarvestCycles": "Seeds are sown in early spring or late summer/autumn for a winter/spring crop in milder climates. Planted shallowly. Greens can be harvested young. For seeds, plants are harvested when pods turn yellowish-brown and seeds are mature but before pods shatter. Plants are often cut and swathed to dry before threshing, or directly combined.",
+  "pestAndDiseaseManagement": "Pests include aphids, flea beetles, diamondback moths, and cabbage worms. Diseases include Sclerotinia stem rot (white mold), Alternaria black spot, downy mildew, and clubroot. Integrated pest management involves crop rotation (avoiding other Brassicas), resistant varieties, timely planting, and chemical controls when necessary.",
+  "postHarvestHandling": "Harvested seeds are cleaned and dried to a moisture content of 8-10% for safe storage. Seeds are then processed for oil extraction, condiment production, or sold as whole/ground spice.",
+  "majorProducingCountriesOrRegions": ["Canada (leading global producer and exporter, mainly B. juncea and B. hirta)", "Nepal", "Russia", "Ukraine", "Myanmar", "India (large producer of B. juncea for oil and spice)", "United States (North Dakota, Montana)", "China"],
+  "marketValueAndGlobalDemand": "Mustard seed is a major globally traded spice and oilseed. Demand is high for condiment mustard, mustard oil (especially in South Asia), and as a spice ingredient. Canada dominates the export market. Prices are influenced by global production and demand from food industries."
+}

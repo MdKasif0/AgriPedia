@@ -1,0 +1,175 @@
+{
+  "id": "kohlrabi",
+  "commonName": "Kohlrabi",
+  "scientificName": "Brassica oleracea Gongylodes Group",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDvuWVbhLXA9EKQ5ciGgATizWR-vUhDJFno-chruQ7w&s",
+  "description": "Kohlrabi, also known as German turnip, is a stout, biennial cultivar of wild cabbage. Its swollen, globe-shaped stem is the primary edible part, offering a taste and texture similar to a broccoli stem or cabbage heart but milder, sweeter, and often crisper. It can be eaten raw or cooked.",
+  "origin": "Europe (first recorded in Italy in the mid-16th century, spreading to Northern Europe thereafter).",
+  "localNames": [
+    "German Turnip (English)",
+    "Turnip Cabbage (English)",
+    "Kohlrübe (German - older term)",
+    "Cavolo Rapa (Italian)",
+    "Chou-rave (French)"
+  ],
+  "regions": [
+    "Europe (Germany, Austria, Switzerland, Italy, Poland, Netherlands)",
+    "North America (United States, Canada)",
+    "Asia (India - especially Kashmir, Vietnam, China)"
+  ],
+  "seasons": [
+    "Primarily a cool-season crop, with main harvests in Spring and Autumn in temperate climates. Some varieties are adapted for summer or overwintering in milder regions."
+  ],
+  "nutrition": {
+    "calories": "27 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 62,
+        "unit": "mg",
+        "rdi": "69%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.15,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 16,
+        "unit": "µg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.02,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 0.1,
+        "unit": "µg",
+        "rdi": "0%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 350,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.139,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.129,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 46,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Calcium",
+        "value": 24,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.4,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system and supports collagen synthesis.",
+    "Good source of dietary fiber, promoting digestive health, regularity, and satiety.",
+    "Contains glucosinolates and other phytonutrients common to Brassica vegetables, which are studied for their potential anti-cancer properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Goitrogens",
+      "severity": "Low (for most individuals)",
+      "details": "Like other Brassica vegetables, kohlrabi contains goitrogens, compounds that may interfere with thyroid function in individuals with pre-existing thyroid conditions, particularly if consumed raw in very large amounts. Cooking typically reduces these compounds."
+    }
+  ],
+  "cultivationProcess": "Kohlrabi is a cool-season biennial typically grown as an annual. It's cultivated for its swollen, bulb-like stem that grows above ground. It prefers well-drained soil rich in organic matter and consistent moisture. Seeds can be sown directly in early spring for a summer crop or in mid-to-late summer for an autumn or winter crop. Plants should be thinned to allow bulbs to develop properly. Both green and purple varieties exist.",
+  "growthDuration": "Kohlrabi matures relatively quickly, typically within 55-60 days after sowing, depending on the variety and growing conditions. It should be harvested when the stem is about 5-8 cm (2-3 inches) in diameter for best texture and flavor.",
+  "sustainabilityTips": [
+    "Kohlrabi is a fast-growing crop that can be easily incorporated into home gardens and crop rotation plans.",
+    "Both the swollen stem and the leaves of kohlrabi are edible, allowing for full use of the harvested plant and reducing food waste."
+  ],
+  "carbonFootprintInfo": "Locally grown kohlrabi, especially when in season, has a low carbon footprint. As with most vegetables, kohlrabi transported long distances or grown out of season using energy-intensive methods (like heated greenhouses) will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Crisp Kohlrabi Slaw",
+      "description": "A refreshing and crunchy slaw made with raw kohlrabi, offering a mild, slightly sweet, and peppery flavor. A great alternative to traditional cabbage slaw.",
+      "ingredients": [
+        "1 medium kohlrabi (about 300-400g), peeled and trimmed",
+        "1 large carrot, peeled (optional)",
+        "1/4 cup mayonnaise (or Greek yogurt for a lighter dressing)",
+        "2 tablespoons apple cider vinegar",
+        "1 teaspoon Dijon mustard",
+        "1/2 teaspoon sugar or honey (optional, or to taste)",
+        "Salt to taste",
+        "Freshly ground black pepper to taste",
+        "1-2 tablespoons fresh parsley or chives, finely chopped (for garnish)"
+      ],
+      "steps": [
+        "Prepare the kohlrabi: Peel the tough outer skin from the kohlrabi bulb using a sharp vegetable peeler or knife. Also, trim off the woody base.",
+        "Grate or julienne the kohlrabi: You can either grate the kohlrabi using the large holes of a box grater or cut it into thin matchsticks (julienne). If using a carrot, grate or julienne it as well. Place the prepared kohlrabi (and carrot) in a medium-sized bowl.",
+        "Make the dressing: In a separate small bowl, whisk together the mayonnaise (or Greek yogurt), apple cider vinegar, Dijon mustard, and optional sugar or honey until smooth.",
+        "Season the dressing with salt and freshly ground black pepper to your liking.",
+        "Combine the slaw: Pour the dressing over the kohlrabi mixture. Toss everything together until the kohlrabi is evenly coated with the dressing.",
+        "Chill (recommended): For the best flavor, cover the bowl and refrigerate the kohlrabi slaw for at least 15-30 minutes before serving. This allows the flavors to meld together.",
+        "Serve: Just before serving, give the slaw a final toss. Garnish with fresh chopped parsley or chives if desired. This slaw is excellent as a side dish with grilled meats, sandwiches, or burgers."
+      ]
+    }
+  ]
+}

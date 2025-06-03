@@ -1,0 +1,68 @@
+{
+  "id": "moringa",
+  "commonName": "Moringa (Drumstick Tree, Miracle Tree)",
+  "scientificName": "Moringa oleifera",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Moringa oleifera is a fast-growing, drought-resistant tree of the family Moringaceae, native to the Indian subcontinent. It is widely cultivated for its young seed pods and leaves, used as vegetables and for traditional herbal medicine. It is often called the 'miracle tree' due to its high nutritional content and various health benefits.",
+  "origin": "Foothills of the Himalayas in northwestern India.",
+  "localNames": ["Sahjan (Hindi)", "Munagakaya (Telugu)", "Murungai (Tamil)", "Drumstick Tree (English)"],
+  "regions": ["India", "Pakistan", "Bangladesh", "Afghanistan", "Southeast Asia", "Africa", "Central and South America", "Caribbean islands"],
+  "seasons": ["Perennial tree; leaves and pods can be harvested year-round in tropical climates, with peak pod production often tied to rainfall patterns."],
+  "nutrition": {
+    "calories": "Leaves (fresh): 64 kcal per 100g. Pods (raw): 37 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Leaves: 9.4, Pods: 2.1" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Leaves: 8.3 (Fiber 2.0), Pods: 8.5 (Fiber 3.2)" },
+      { "name": "Fat", "unit": "g", "value": "Leaves: 1.4, Pods: 0.2" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "Leaves: 51.7 (57%), Pods: 141 (157%)" },
+      { "name": "Vitamin A (as beta-carotene)", "unit": "µg", "rdi": "Leaves: 378 (47%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "Leaves: 0.120 (9%)" },
+      { "name": "Riboflavin (B2)", "unit": "mg", "rdi": "Leaves: 0.660 (55%)" }
+    ],
+    "minerals": [
+      { "name": "Iron", "unit": "mg", "rdi": "Leaves: 4.00 (22%)" },
+      { "name": "Calcium", "unit": "mg", "rdi": "Leaves: 185 (19%)" },
+      { "name": "Potassium", "unit": "mg", "rdi": "Leaves: 337 (7%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "Leaves: 147 (35%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely nutritious, rich in vitamins, minerals, and antioxidants (quercetin, chlorogenic acid).",
+    "May help lower blood sugar and cholesterol levels.",
+    "Has anti-inflammatory properties.",
+    "Can protect against arsenic toxicity (studies on animals).",
+    "All parts of the tree (leaves, pods, seeds, flowers, roots, bark) have medicinal value in traditional systems."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Moringa Sensitivity",
+      "severity": "Mild",
+      "details": "Generally safe when consumed as food. High doses of root extract may contain potentially toxic substances (spirochin). May have laxative effects or cause digestive upset in some individuals if consumed in large quantities. Caution advised during pregnancy for root/bark consumption."
+    }
+  ],
+  "cultivationProcess": "Moringa is grown from seeds or cuttings. It is a fast-growing tree that tolerates a wide range of soil types but prefers well-drained sandy loam. It is highly drought-resistant but responds well to irrigation for higher yields.",
+  "growthDuration": "Fast-growing perennial. Can be harvested for leaves within a few months of planting. Pods typically appear within 6-12 months. Trees can live and produce for many years.",
+  "sustainabilityTips": [
+    "Highly drought-tolerant, making it an excellent crop for arid and semi-arid regions.",
+    "Fast-growing and can be used for afforestation and soil erosion control.",
+    "All parts of the tree are usable, minimizing waste.",
+    "Can be grown with minimal inputs."
+  ],
+  "carbonFootprintInfo": "Moringa trees contribute to carbon sequestration. As a low-input crop, its cultivation generally has a lower carbon footprint compared to more intensive agricultural products. Processing and transportation add to the overall footprint for commercial products.",
+  "uses": ["culinary_vegetable_leaves_pods_flowers_seeds_for_oil_ben_oil", "traditional_medicine_all_parts_used_for_various_ailments", "water_purification_crushed_seeds", "animal_feed_leaves_seed_cake", "biofuel_seed_oil", "natural_fertilizer_leaf_mulch"],
+  "originAndDomesticationHistory": "Moringa oleifera is native to the sub-Himalayan tracts of northwestern India. It has been cultivated and used in India and Africa for thousands of years. Ancient Egyptians, Greeks, and Romans also valued it. Its drought resistance and high nutritional value have led to its promotion and cultivation in many tropical and subtropical regions worldwide.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical tree. Prefers warm temperatures, 25-35°C. Tolerates high temperatures up to 48°C. Sensitive to frost, especially when young.",
+    "rainfall": "Drought-tolerant. Can grow in areas with annual rainfall from 250mm to over 1500mm. For optimal growth and yield, regular moisture or irrigation is beneficial, especially during establishment and flowering/fruiting.",
+    "altitude": "Can be grown from sea level up to 1800m in tropical regions."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, but prefers well-drained sandy loam or loamy soils with a slightly acidic to slightly alkaline pH (5.0-9.0). Tolerates poor soils but not prolonged waterlogging.",
+  "irrigationAndWaterNeeds": "While drought-resistant, regular irrigation (e.g., weekly or bi-weekly depending on soil and climate) significantly improves growth and yield, especially for leaf production. Drip irrigation is efficient.",
+  "plantingAndHarvestCycles": "Propagated from seeds (sown directly or in nurseries) or hard-stem cuttings. Planted at the beginning of the rainy season or under irrigation. Leaves can be harvested as soon as plants are about 1-1.5m tall (a few months). Pods are harvested when young and tender (for vegetable use) or when mature and dry (for seeds/oil). Flowers are also edible and harvested as needed.",
+  "pestAndDiseaseManagement": "Relatively resistant to major pests and diseases. Common pests include fruit flies, caterpillars, and aphids. Root rot can occur in waterlogged soils. Diplodia root rot can be an issue. Good drainage and field sanitation are important. Neem-based pesticides can be effective for insect control.",
+  "postHarvestHandling": "Fresh leaves, pods, and flowers are perishable and should be used quickly or refrigerated. Leaves can be dried (shade drying is preferred to retain nutrients) and powdered for use as a supplement or food ingredient. Pods are used fresh or blanched and frozen. Seeds from mature pods are extracted and can be pressed for oil (Ben oil).",
+  "majorProducingCountriesOrRegions": ["India (largest producer)", "Philippines", "Indonesia", "Pakistan", "Nigeria", "Kenya", "Ethiopia", "Many countries in Africa, Southeast Asia, and Latin America"],
+  "marketValueAndGlobalDemand": "Moringa has a rapidly growing global market, driven by its high nutritional value and perceived health benefits ('superfood'). Demand is strong for fresh leaves and pods in local markets, and for dried leaf powder, tea, seeds, and oil in international markets, particularly in the health food and supplement industries."
+}

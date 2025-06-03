@@ -1,0 +1,149 @@
+{
+  "id": "zucchini",
+  "commonName": "Zucchini",
+  "scientificName": "Cucurbita pepo",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-vKoLXATNTuoQsAh1sbYwB1XUd7iORBtslTfqUtqLQ&s",
+  "description": "Zucchini, a variety of summer squash (Cucurbita pepo), is a long, typically green fruit harvested when immature. It has a mild flavor, tender skin, and soft, edible seeds. It's highly versatile in cooking and often treated as a vegetable.",
+  "origin": "Ancestors native to Mesoamerica; modern zucchini varieties were developed in Italy in the late 19th century.",
+  "localNames": [
+    "Courgette (French, British English)",
+    "Baby Marrow (South African English)",
+    "Italian Squash (common term)"
+  ],
+  "regions": [
+    "Worldwide; major producers include China, India, United States, Spain, Turkey, Mexico, Italy, Egypt."
+  ],
+  "seasons": [
+    "Primarily Summer in temperate climates when field-grown. Available year-round in many places due to greenhouse cultivation and imports from regions with different growing seasons."
+  ],
+  "nutrition": {
+    "calories": "15 kcal per 100g (cooked, boiled, drained)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.14,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 2.69,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.36,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 12.9,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 56,
+        "unit": "µg RAE",
+        "rdi": "6%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 28,
+        "unit": "µg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 4.2,
+        "unit": "µg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 264,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.173,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 37,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Low in calories and high in water content, making it hydrating and suitable for weight management.",
+    "Good source of Vitamin C and Vitamin A (as carotenoids), which support immune function and vision.",
+    "Provides minerals like potassium and manganese, important for various bodily functions."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cucurbitacin sensitivity (rare)",
+      "severity": "Mild to Moderate",
+      "details": "Zucchini can occasionally contain higher levels of cucurbitacins, especially if stressed during growth or cross-pollinated with ornamental gourds, leading to a bitter taste and potential digestive upset. Cultivated varieties are bred for low cucurbitacin levels."
+    },
+    {
+      "name": "Oral Allergy Syndrome (rare)",
+      "severity": "Mild",
+      "details": "Individuals with ragweed pollen allergies may rarely experience OAS symptoms (itching in mouth/throat) from raw zucchini."
+    }
+  ],
+  "cultivationProcess": "Zucchini is a warm-season annual crop, typically grown from seed planted directly into well-drained soil after the last frost. It prefers full sun and rich soil with consistent moisture. Plants are vining or bushy, and flowers require pollination by bees to set fruit. Fruits are harvested while immature, before the skin and seeds harden. Regular harvesting encourages continued fruit production.",
+  "growthDuration": "Typically 40-60 days from sowing to first harvest. Plants can continue producing for several weeks if regularly picked. Overmature fruits (marrows) are much larger and have tougher skin and seeds.",
+  "sustainabilityTips": [
+    "Zucchini plants are often highly productive in home gardens, making them an excellent choice for local food sourcing and reducing food miles.",
+    "The flowers are also edible ('squash blossoms') and can be harvested, utilizing more of the plant and potentially controlling overproduction of fruit."
+  ],
+  "carbonFootprintInfo": "Locally grown zucchini, especially during its peak summer season, has a relatively low carbon footprint. However, out-of-season zucchini that is transported long distances or grown in heated greenhouses will have a significantly higher environmental impact due to energy consumption for transport and climate control.",
+  "staticRecipes": [
+    {
+      "name": "Simple Grilled Zucchini",
+      "description": "A quick and easy way to prepare zucchini that brings out its natural mild sweetness with a delightful smoky char from the grill. A perfect summer side dish.",
+      "ingredients": [
+        "2 medium zucchinis (about 500g or 1 lb total)",
+        "1-2 tablespoons olive oil",
+        "Salt to taste",
+        "Freshly ground black pepper to taste",
+        "Optional: 1/2 teaspoon dried Italian herbs or garlic powder"
+      ],
+      "steps": [
+        "Prepare the zucchini: Wash the zucchinis thoroughly and trim off both ends. Slice them either lengthwise into planks about 1/4 to 1/2 inch (0.5 to 1 cm) thick, or crosswise into thick rounds of similar thickness.",
+        "Preheat your grill (outdoor or indoor grill pan) to medium-high heat.",
+        "Season the zucchini: In a medium bowl, toss the zucchini slices gently with the olive oil. Season with salt, freshly ground black pepper, and any optional dried herbs or garlic powder until they are evenly coated.",
+        "Grill the zucchini: Place the seasoned zucchini slices directly onto the hot grill grates in a single layer. Be careful not to overcrowd the grill; cook in batches if necessary.",
+        "Grill for about 3-5 minutes per side. The cooking time will vary depending on the thickness of your slices and the heat of your grill. Look for tender zucchini with characteristic grill marks and a slight char.",
+        "Avoid overcooking, as zucchini can become mushy if grilled for too long.",
+        "Remove the grilled zucchini from the grill and arrange on a serving platter.",
+        "Serve immediately while warm. You can garnish with fresh chopped parsley or a squeeze of fresh lemon juice if desired."
+      ]
+    }
+  ]
+}

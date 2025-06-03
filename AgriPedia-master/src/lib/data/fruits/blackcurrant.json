@@ -1,0 +1,242 @@
+{
+  "id": "blackcurrant",
+  "commonName": "Blackcurrant",
+  "scientificName": "Ribes nigrum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blackcurrants.jpg/800px-Blackcurrants.jpg",
+  "description": "The blackcurrant (Ribes nigrum), also known as black currant or cassis, is a deciduous shrub in the family Grossulariaceae grown for its edible berries. It is native to temperate parts of central and northern Europe and northern Asia, where it prefers damp fertile soils and is widely cultivated for its intensely flavored, dark purple to black berries.",
+  "origin": "Northern Europe and Northern Asia",
+  "localNames": [
+    "Cassis (French)",
+    "Schwarze Johannisbeere (German)",
+    "Чёрная смородина (Chyornaya smorodina - Russian)",
+    "Grosella negra (Spanish)",
+    "Ribs (Norwegian/Danish)",
+    "Mustaherukka (Finnish)"
+  ],
+  "regions": [
+    "Poland (leading global producer)",
+    "Russia",
+    "Germany",
+    "United Kingdom",
+    "France",
+    "Ukraine",
+    "New Zealand",
+    "Scandinavia"
+  ],
+  "seasons": [
+    "Summer (typically June to August in the Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "63 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 181,
+        "unit": "mg",
+        "rdi": "201%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 1.0,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 12,
+        "unit": "µg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 0.3,
+        "unit": "µg",
+        "rdi": "0%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.398,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.066,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 322,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.256,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.54,
+        "unit": "mg",
+        "rdi": "9%"
+      },
+      {
+        "name": "Calcium",
+        "value": 55,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 24,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 59,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.089,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.27,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Extremely rich in Vitamin C, significantly boosting the immune system and acting as a powerful antioxidant.",
+    "Contains high levels of anthocyanins and other polyphenols, which have antioxidant and anti-inflammatory effects, protecting against chronic diseases.",
+    "Good source of dietary fiber, which aids digestion, promotes gut health, and can help regulate blood sugar levels.",
+    "May support eye health and improve vision due to anthocyanin content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Rare, but individuals with birch pollen allergies might experience OAS. Symptoms are usually mild and include itching or swelling of the mouth, lips, tongue, and throat after consuming raw blackcurrants."
+    },
+    {
+      "name": "Interaction with Anticoagulants",
+      "severity": "Mild to Moderate",
+      "details": "Blackcurrants may have mild blood-thinning effects; individuals on anticoagulant medication should consume in moderation and consult their doctor."
+    }
+  ],
+  "cultivationProcess": "Blackcurrants are hardy deciduous shrubs that prefer cool, moist climates and well-drained, fertile soil with a slightly acidic to neutral pH. They are typically propagated from cuttings or purchased as young bushes. Planting is best done in autumn or winter. Bushes require regular pruning to remove old, unproductive wood and encourage new growth, as fruit is primarily borne on one-year-old shoots. They need consistent watering, especially during fruit development, and benefit from mulching and appropriate fertilization.",
+  "growthDuration": "Bushes usually start producing a small crop 1-2 years after planting, with significant yields typically from year 3 or 4. Fruits ripen in mid-summer, about 90-110 days after flowering, depending on the cultivar and climate.",
+  "sustainabilityTips": [
+    "Choose locally grown blackcurrants when in season to minimize food miles and support local agriculture.",
+    "Preserve excess blackcurrants by freezing, canning, or making jams/jellies to reduce food waste and enjoy them year-round.",
+    "Blackcurrant bushes can be productive for 10-15 years with good care."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of fresh blackcurrants is relatively low when sourced locally and in season. However, processing (e.g., for juices, concentrates) and long-distance transportation (especially air freight for fresh berries out of season) can significantly increase their environmental impact.",
+  "uses": [
+    "culinary_jams_jellies_preserves",
+    "beverages_juices_cordials_syrups_Ribena",
+    "desserts_pies_tarts_crumbles_ice_cream_yogurt_flavoring",
+    "alcoholic_beverages_creme_de_cassis_liqueur_wine",
+    "herbal_tea_leaves",
+    "dietary_supplements_seed_oil_GLA_extracts_for_vitamin_c_anthocyanins",
+    "food_flavoring_sauces_for_savory_dishes_game_meat"
+  ],
+  "originAndDomesticationHistory": "Blackcurrant (Ribes nigrum) is native to temperate regions of northern Europe and northern Asia. While wild forms were likely gathered earlier, its cultivation is documented from the 16th and 17th centuries in Europe, initially more for its perceived medicinal properties than for culinary use. Records from Russian monastery gardens mention it as early as the 11th century. Its popularity surged in Britain during World War II when citrus fruits (a primary Vitamin C source) were scarce, leading to the promotion of blackcurrant cultivation and the development of products like Ribena. Over centuries, selection has focused on larger fruit size, higher yields, disease resistance, and consistent ripening.",
+  "climaticRequirements": {
+    "temperature": "A temperate climate crop. Requires a period of winter chill (800-1600 hours below 7°C or 45°F) for good bud break. Plants are very hardy when dormant (can withstand -20°C or lower), but flowers are susceptible to spring frosts. Optimal growing temperatures range from 15-25°C (59-77°F).",
+    "rainfall": "Prefers consistent moisture throughout the growing season, with annual rainfall around 750-1000mm, well-distributed. Supplemental irrigation is often necessary, especially during dry periods or on lighter soils.",
+    "altitude": "Can be grown from lowlands up to moderate altitudes (e.g., up to 1500 meters or 4900 feet) where chilling requirements and suitable summer temperatures are met."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral pH (around 6.0-7.0) is ideal. While they can tolerate heavier clay soils if drainage is adequate, they dislike very sandy, dry, or waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture, particularly during the critical periods of flowering, fruit set, and fruit development. Water stress during these times can lead to reduced berry size, premature fruit drop, and lower overall yield. Drip irrigation or micro-sprinklers are efficient methods for providing supplemental water.",
+  "plantingAndHarvestCycles": "Propagation is commonly achieved through hardwood cuttings taken in autumn or winter. Planting is best done in autumn or early spring while the plants are dormant. Bushes should be spaced about 1.5-2 meters apart. They typically begin to bear fruit 1-2 years after planting, with full commercial production reached in 3-4 years. Fruits ripen in mid-summer (generally July to August in the Northern Hemisphere). Berries are harvested in clusters (strigs) when they are uniformly black, firm, and easily detach from the stem. Harvesting can be done by hand for fresh markets or mechanically for commercial processing.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids, blackcurrant gall mite (Cecidophyopsis ribis), which causes 'big bud' and can transmit reversion virus, spider mites, and currant borers. Common Diseases: Powdery mildew (Sphaerotheca mors-uvae), leaf spot (Septoria ribis, Gloeosporidiella ribis), white pine blister rust (Cronartium ribicola - an alternate host, restricting cultivation in some parts of North America where white pines are prevalent), and reversion virus (a serious disease reducing yield and quality). Management Strategies: Planting certified virus-free stock, selecting resistant varieties, maintaining good orchard sanitation, ensuring proper pruning for air circulation, implementing biological controls where feasible, and applying appropriate fungicides and pesticides when pest or disease pressure exceeds economic thresholds.",
+  "postHarvestHandling": "Blackcurrants are delicate and should be handled carefully to avoid crushing and damage. For fresh market, they are usually picked in punnets. They have a relatively short shelf life and should be cooled promptly after harvest. Fresh berries can be stored for a few days under refrigeration (0-4°C or 32-39°F) with high humidity. For longer-term storage and processing, blackcurrants are often frozen (Individually Quick Frozen - IQF for commercial use), or processed into juices, purees, concentrates, or jams shortly after harvest.",
+  "majorProducingCountriesOrRegions": [
+    "Poland (often the world's largest producer)",
+    "Russia",
+    "Germany",
+    "United Kingdom",
+    "France",
+    "Ukraine",
+    "New Zealand",
+    "Lithuania",
+    "Other Scandinavian and Baltic countries"
+  ],
+  "marketValueAndGlobalDemand": "Blackcurrants have strong demand in Europe, particularly for processed products such as juices, cordials (like Ribena), jams, and as ingredients in the food and beverage industry. Poland is a major global supplier. There's growing international awareness of their health benefits (often marketed as a 'superfood' due to high Vitamin C and anthocyanin content), which is helping to increase demand in other regions, including North America and Asia, though fresh fruit availability can be limited outside of Europe and New Zealand. The market for blackcurrant extracts and supplements is also expanding.",
+  "staticRecipes": [
+    {
+      "name": "Simple Blackcurrant Jam",
+      "description": "A classic, easy-to-make jam that captures the deliciously tart and intense flavor of fresh blackcurrants. Perfect on toast, scones, or with yogurt.",
+      "ingredients": [
+        "500g fresh blackcurrants, rinsed and stems removed",
+        "500g granulated sugar",
+        "Juice of 1/2 lemon (optional, aids setting and brightens flavor)",
+        "25ml water (if not using lemon juice)"
+      ],
+      "steps": [
+        "Combine the blackcurrants and water (or lemon juice) in a large, heavy-bottomed saucepan.",
+        "Simmer gently over medium-low heat for 15-20 minutes, or until the blackcurrant skins are very soft and have started to burst. Stir occasionally.",
+        "Add the sugar to the saucepan. Stir continuously over low heat until the sugar has completely dissolved. Do not let the mixture boil at this stage.",
+        "Once the sugar is dissolved, increase the heat to high and bring the mixture to a rolling boil (a boil that continues even when you stir it).",
+        "Boil rapidly for 10-15 minutes. Stir frequently to prevent the jam from sticking to the bottom of the pan.",
+        "Test for setting point: Place a small spoonful of jam onto a chilled saucer, let it cool for 30 seconds, then push it with your finger. If it wrinkles, it's set. Alternatively, use a jam thermometer – setting point is 105°C (221°F).",
+        "Once setting point is reached, remove the saucepan from the heat. Skim off any foam/scum from the surface using a slotted spoon.",
+        "Let the jam sit for about 10-15 minutes to cool slightly; this helps prevent the fruit from floating in the jars.",
+        "Carefully pour the hot jam into warm, sterilized jars, leaving about 1cm headspace. Seal the jars tightly while hot.",
+        "Allow the jars to cool completely. Label and store in a cool, dark, dry place. Refrigerate after opening."
+      ]
+    }
+  ]
+}

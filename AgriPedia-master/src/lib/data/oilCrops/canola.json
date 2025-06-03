@@ -1,0 +1,62 @@
+{
+  "id": "canola",
+  "commonName": "Canola (Rapeseed)",
+  "scientificName": "Brassica napus (Canola varieties)",
+  "image": "https://images.unsplash.com/photo-1566038015579-503906157a6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Canola is a cultivar of rapeseed (Brassica napus) bred to have low levels of erucic acid and glucosinolates, making its oil more suitable for human consumption and its meal better for animal feed. It is a bright yellow flowering member of the family Brassicaceae (mustard or cabbage family). Canola oil is a major global edible oil.",
+  "origin": "Rapeseed originated in the Mediterranean and Northern Europe. Canola was developed in Canada in the 1970s.",
+  "localNames": ["Canola (English)", "Natane Abura (Japanese - for rapeseed oil)", "Colza (Spanish/French - for rapeseed)"],
+  "regions": ["Canada (leading producer)", "China", "India", "European Union (Germany, France, Poland, UK)", "Australia"],
+  "seasons": ["Cool-season annual; typically planted in early spring for summer harvest, or in autumn for winter/spring harvest in milder climates."],
+  "nutrition": {
+    "calories": "Canola Oil: 884 kcal per 100g. Rapeseed Meal (for feed): ~330-380 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Seed meal: ~35-40" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Seed meal: ~30-35 (Fiber ~12)" },
+      { "name": "Fat", "unit": "g", "value": "Seeds: ~40-45 (Oil: 100)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin E", "unit": "mg", "rdi": "Oil: 17.46 (116%)" },
+      { "name": "Vitamin K", "unit": "µg", "rdi": "Oil: 71.3 (59%)" }
+    ],
+    "minerals": [
+      { "name": "Selenium", "unit": "µg", "rdi": "Seed meal: Moderate" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Seed meal: Moderate" }
+    ]
+  },
+  "healthBenefits": [
+    "Canola oil is low in saturated fat and high in monounsaturated fats (oleic acid).",
+    "Good source of omega-3 fatty acid (alpha-linolenic acid - ALA) and omega-6 fatty acid (linoleic acid).",
+    "May help reduce LDL (bad) cholesterol and risk of heart disease.",
+    "Contains Vitamin E, an antioxidant."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Rapeseed/Canola Allergy",
+      "severity": "Rare",
+      "details": "Allergy to canola oil or rapeseed is rare. Pollen from rapeseed plants can cause hay fever in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Canola is grown from seeds. It requires well-prepared soil and is sensitive to heat during flowering. Seeds are harvested when pods are mature and turn brownish-yellow.",
+  "growthDuration": "Approximately 90-150 days from planting to harvest, depending on the variety and climate (spring or winter types).",
+  "sustainabilityTips": [
+    "Crop rotation with canola can help improve soil structure and break pest cycles for cereals.",
+    "Reduced tillage practices can be employed.",
+    "Breeding efforts focus on disease resistance and drought tolerance."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of canola oil is influenced by nitrogen fertilizer use (a major contributor), farming practices, processing (oil extraction), and transportation. Biodiesel production from canola oil also impacts its lifecycle assessment.",
+  "uses": ["oil_production_edible_cooking_oil_margarine_salad_dressings", "animal_feed_rapeseed_meal_canola_meal", "industrial_biofuel_biodiesel_lubricants_hydraulic_fluids"],
+  "originAndDomesticationHistory": "Rapeseed (Brassica napus) is believed to be an ancient hybrid of turnip rape (Brassica rapa) and wild cabbage/kale (Brassica oleracea), likely originating in the Mediterranean region or Northern Europe thousands of years ago. Canola (Canadian Oil, Low Acid) was specifically bred in Canada in the early 1970s from rapeseed varieties to have low levels of erucic acid in the oil and low levels of glucosinolates in the meal, making it more palatable and safer for human and animal consumption.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 12-20°C. Tolerates light frost, especially winter varieties. High temperatures (>30°C) during flowering can reduce seed set and oil yield.",
+    "rainfall": "Requires moderate rainfall, around 350-700mm during the growing season. Consistent moisture is important, especially during seedling establishment, flowering, and pod filling.",
+    "altitude": "Adaptable to various altitudes, typically grown in temperate regions from sea level up to moderate elevations."
+  },
+  "soilPreferences": "Prefers well-drained, medium-textured loamy soils with good organic matter content and a pH between 5.5 and 7.5. Does not tolerate waterlogged or highly acidic/saline soils.",
+  "irrigationAndWaterNeeds": "Often grown rain-fed in regions with adequate cool-season rainfall. Supplemental irrigation is beneficial in drier areas or during prolonged dry spells, especially during flowering and pod development, to maximize yield and oil content.",
+  "plantingAndHarvestCycles": "Spring canola is sown in early spring. Winter canola is sown in late summer or early autumn. Seeds are planted shallowly. Harvesting occurs when pods are mature and seeds have turned dark brown or black. Plants are often swathed (cut and laid in windrows to dry) before combining, or direct combined.",
+  "pestAndDiseaseManagement": "Pests include flea beetles, diamondback moths, cabbage seedpod weevils, and aphids. Diseases include blackleg (major disease), Sclerotinia stem rot, clubroot, and Alternaria black spot. Integrated pest management involves resistant varieties, crop rotation (avoiding other Brassicas), seed treatments, and fungicides/insecticides when necessary.",
+  "postHarvestHandling": "Harvested seeds are cleaned and dried to a moisture content of around 8-9% for safe storage. Seeds are then crushed to extract oil, and the remaining meal is processed for animal feed. Canola oil is refined for edible use.",
+  "majorProducingCountriesOrRegions": ["Canada (leading producer and exporter of canola)", "European Union (Germany, France, Poland, UK - primarily rapeseed)", "China (rapeseed)", "India (rapeseed/mustard)", "Australia (canola)"],
+  "marketValueAndGlobalDemand": "Canola/rapeseed oil is one of the world's most consumed vegetable oils. Demand is high for food use, animal feed (meal), and as a feedstock for biodiesel. Canada is the largest exporter of canola seed and oil. Global market prices are influenced by production in major regions, demand for vegetable oils, and biodiesel mandates."
+}

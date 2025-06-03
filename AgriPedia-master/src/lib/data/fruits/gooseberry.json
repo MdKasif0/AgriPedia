@@ -1,0 +1,219 @@
+
+{
+  "id": "gooseberry",
+  "commonName": "Gooseberry",
+  "scientificName": "Ribes uva-crispa (syn. Ribes grossularia)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Gooseberry.jpg",
+  "description": "Gooseberries are tart to sweet-tart berries, typically green, red, yellow, or pink, belonging to the Ribes genus. They are known for their distinct flavor, which intensifies when cooked, and are used in desserts, jams, and sauces. The berries can be smooth or hairy depending on the variety.",
+  "origin": "Native to Europe, northwestern Africa, and western, southern, and southeastern Asia.",
+  "localNames": [
+    "Fea-berry (Old English)",
+    "Groseille à maquereau (French - 'mackerel berry', as traditionally served with mackerel)",
+    "Stachelbeere (German - 'prickle berry')",
+    "Krusbär (Swedish - 'curly berry')",
+    "Stekbes (Dutch)"
+  ],
+  "regions": [
+    "Europe (United Kingdom, Germany, France, Poland, Scandinavia, Russia)",
+    "North America (USA - northern states, Canada - cultivation limited in some areas due to white pine blister rust concerns)",
+    "Asia (parts of temperate Asia, Himalayas)"
+  ],
+  "seasons": [
+    "Late spring to mid-summer (typically May to August in the Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "44 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.88,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 10.18,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.58,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 4.3,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 27.7,
+        "unit": "mg",
+        "rdi": "31%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 12,
+        "unit": "µg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 10,
+        "unit": "µg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.026,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 6,
+        "unit": "µg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 198,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.144,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.068,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 27,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 25,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.31,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 10,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a potent antioxidant supporting immune function and collagen production.",
+    "Good source of dietary fiber, promoting digestive health, aiding in bowel regularity, and helping to regulate blood sugar levels.",
+    "Contain various phytonutrients, flavonoids (like quercetin and rutin), and organic acids, which may contribute to overall health through their antioxidant and anti-inflammatory properties.",
+    "May support eye health due to Vitamin A and carotenoid content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Salicylate sensitivity (rare)",
+      "severity": "Mild",
+      "details": "Individuals sensitive to salicylates might experience reactions. The tiny hairs on some varieties can be a skin irritant for some people during handling or if consumed without washing."
+    }
+  ],
+  "cultivationProcess": "Gooseberry plants are hardy, deciduous shrubs. Key aspects of their cultivation are detailed in specific sections like climaticRequirements, soilPreferences, irrigationAndWaterNeeds, plantingAndHarvestCycles, and pestAndDiseaseManagement. General success relies on cool, moist temperate climates, well-drained loamy soil, and good air circulation. Propagation is often via cuttings, and pruning is vital for fruit production and disease prevention.",
+  "growthDuration": "Gooseberry bushes typically start bearing fruit 1-2 years after planting from cuttings, reaching full productivity within 3-5 years. Fruits ripen in early to mid-summer. More details in plantingAndHarvestCycles.",
+  "sustainabilityTips": [
+    "Plant disease-resistant cultivars (especially for American gooseberry mildew) to minimize the need for chemical sprays.",
+    "Mulch around the base of bushes to conserve soil moisture, suppress weeds, and regulate soil temperature.",
+    "Encourage beneficial insects for natural pest control."
+  ],
+  "carbonFootprintInfo": "Locally grown gooseberries picked in season have a relatively low carbon footprint. Gooseberries imported from distant regions, especially if air-freighted when out of season, will have a significantly higher environmental impact due to transportation and potential refrigeration.",
+  "uses": [
+    "culinary_desserts_pies_tarts_crumbles_fools_cheesecakes",
+    "preserves_jams_jellies_chutneys_sauces",
+    "beverages_wine_cordials_syrups_infused_gin",
+    "savory_dishes_sauce_for_fatty_meats_mackerel_goose_pork",
+    "fresh_consumption_sweeter_varieties_when_fully_ripe"
+  ],
+  "originAndDomesticationHistory": "The gooseberry (Ribes uva-crispa) is native to Europe, northwestern Africa, and parts of Western, Southern, and Southeastern Asia. Wild gooseberries have been foraged for centuries. While evidence of early cultivation is sparse, it is believed to have begun in Europe, possibly as early as the 13th century, with more widespread cultivation documented from the 16th century onwards, particularly in Britain, France, and Germany. A significant period of development occurred in the 19th century, especially in Britain, where numerous cultivars were bred, and 'gooseberry shows' with competitions for the largest berries became popular. Gooseberries were introduced to North America by early settlers, but their cultivation faced challenges due to susceptibility to American gooseberry mildew and restrictions related to white pine blister rust.",
+  "climaticRequirements": {
+    "temperature": "Prefers cool, temperate climates. Gooseberry bushes are hardy and require a period of winter chilling to break dormancy and ensure good fruit set (typically 800-1000 hours below 7°C or 45°F). They can tolerate cold temperatures when dormant (down to -20°C or -30°C for some varieties). However, flowers are susceptible to damage from late spring frosts. They prefer cool, moist summers and can suffer in conditions of extreme heat or drought.",
+    "rainfall": "Prefers consistent moisture throughout the growing season, with an ideal annual rainfall of around 800-1000mm. Supplemental irrigation is beneficial during dry periods, especially during fruit development.",
+    "altitude": "Can be successfully grown from lowlands up to moderate altitudes where temperate conditions prevail."
+  },
+  "soilPreferences": "Gooseberries thrive in well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral pH (around 6.0-7.0) is generally considered best. They dislike waterlogged or very heavy clay soils, as well as very light, sandy soils unless they are well-amended with organic matter to improve moisture retention and fertility. Good air circulation around the bushes is also important.",
+  "irrigationAndWaterNeeds": "Requires consistent soil moisture, particularly during the establishment phase, flowering, and fruit development. Water stress during these critical periods can lead to smaller fruit size and reduced overall yields. Mulching around the base of the plants helps to conserve soil moisture and suppress weeds. Drip irrigation or soaker hoses can provide efficient watering.",
+  "plantingAndHarvestCycles": "Propagation is commonly achieved by hardwood cuttings taken in autumn or winter, or by softwood or greenwood cuttings in summer. Layering is also a viable method. Planting is best done in autumn or early spring when the plants are dormant. Bushes should be spaced about 1.2-1.5 meters (4-5 feet) apart. They usually start bearing fruit 1-2 years after planting, reaching full productivity within 3-5 years. Fruit ripens in early to mid-summer (typically June to August in the Northern Hemisphere, depending on the variety and local climate). Berries can be picked slightly underripe and tart for cooking and preserving (e.g., for jams or pies that require good setting qualities) or left to ripen fully on the bush for a sweeter flavor suitable for fresh eating. Harvesting is done by hand.",
+  "pestAndDiseaseManagement": "Common Pests: Gooseberry sawfly (Nematus ribesii) larvae can rapidly defoliate bushes. Aphids can infest young shoots. Spider mites may appear in hot, dry conditions. Currant fruit fly (Epochra canadensis) can also be a pest. Common Diseases: American gooseberry mildew (Sphaerotheca mors-uvae) is a major fungal disease affecting shoots, leaves, and fruit, often covering them with a white, powdery coating. Leaf spot (Pseudopeziza ribis) can cause premature defoliation. Botrytis (grey mould) can affect berries, especially in damp conditions. White pine blister rust (Cronartium ribicola) is a serious concern in North America, as gooseberries are an alternate host; cultivation is restricted in some areas near white pine forests. Management Strategies: Planting disease-resistant varieties (particularly against mildew) is highly recommended. Good pruning practices to ensure an open bush structure and good air circulation can reduce disease incidence. Regular inspection for pests like sawfly larvae (which can be picked off by hand or treated with an appropriate insecticide if infestations are heavy). Controlling aphids with insecticidal soap or encouraging natural predators. Removing and destroying any infected plant parts promptly. In areas prone to white pine blister rust, avoid planting near susceptible pine species or choose immune/resistant varieties if available.",
+  "postHarvestHandling": "Gooseberries should be handled carefully, especially if intended for fresh consumption. They can be stored fresh in the refrigerator for several days up to a week, depending on their ripeness at harvest. For longer-term storage, gooseberries freeze very well; they can be frozen individually on trays before being packed into freezer bags or containers. They are also commonly preserved by canning (as whole berries or pie filling) or by processing into jams, jellies, sauces, and chutneys.",
+  "marketValueAndGlobalDemand": "Gooseberries are primarily a locally or regionally important fruit, especially popular in parts of Europe for traditional culinary uses such as jams, pies, fools, and sauces. Commercial production is not as extensive as for other berries like strawberries or blueberries, and they are not as widely traded internationally in their fresh form due to a relatively short shelf life and specific consumer demand. There is a steady niche market for fresh gooseberries during their season and for processed products. Cultivation has seen some decline in the past due to disease pressures, but there is renewed interest in heritage and disease-resistant varieties, particularly among home gardeners and for artisanal food products.",
+  "staticRecipes": [
+    {
+      "name": "Classic Gooseberry Fool",
+      "description": "A simple and traditional English dessert that beautifully balances the tartness of cooked gooseberries with the sweetness and creaminess of custard or whipped cream.",
+      "ingredients": [
+        "500g fresh gooseberries, topped and tailed (ends removed)",
+        "100g granulated sugar (or more, to taste)",
+        "2 tablespoons water",
+        "300ml double cream (heavy cream) or thick vanilla custard (store-bought or homemade)"
+      ],
+      "steps": [
+        "Place the prepared gooseberries, sugar, and water into a medium saucepan.",
+        "Cook over low to medium heat, stirring occasionally, until the sugar has dissolved and the gooseberries have softened and started to burst, becoming pulpy. This usually takes about 10-15 minutes.",
+        "Remove from heat and taste the gooseberry compote. Add more sugar if it's too tart for your liking. Allow the mixture to cool completely.",
+        "If using double cream, pour it into a chilled bowl and whip it using an electric mixer or whisk until it forms soft, billowy peaks. Be careful not to overwhip.",
+        "Once the gooseberry compote is completely cool, gently fold it into the whipped cream or thick custard. Aim for a marbled effect, with streaks of fruit and cream/custard, rather than mixing it uniformly.",
+        "Spoon the gooseberry fool into individual serving glasses or a larger serving bowl.",
+        "Chill in the refrigerator for at least 1 hour before serving to allow the flavors to meld and the dessert to set further. Serve cold."
+      ]
+    },
+    {
+      "name": "Gooseberry Crumble",
+      "description": "A tart and sweet crumble, perfect with custard or ice cream.",
+      "ingredients": [
+        "500g gooseberries",
+        "150g sugar",
+        "For crumble: 150g plain flour, 75g butter (cold, cubed), 75g demerara sugar"
+      ],
+      "steps": [
+        "Preheat oven to 180°C (350°F).",
+        "Place gooseberries and sugar in an ovenproof dish.",
+        "Rub flour and butter together until it resembles breadcrumbs. Stir in demerara sugar.",
+        "Sprinkle crumble topping over the fruit.",
+        "Bake for 30-40 minutes, or until golden and fruit is bubbling."
+      ]
+    },
+    {
+      "name": "Gooseberry Sauce for Meats",
+      "description": "A tangy sauce that pairs well with fatty meats like pork or duck.",
+      "ingredients": [
+        "250g gooseberries",
+        "50g sugar",
+        "50ml water",
+        "Pinch of ginger (optional)"
+      ],
+      "steps": [
+        "Combine gooseberries, sugar, and water in a saucepan.",
+        "Simmer gently for 10-15 minutes until berries burst and sauce thickens.",
+        "Stir in ginger if using. Serve warm."
+      ]
+    }
+  ]
+}
+
+    

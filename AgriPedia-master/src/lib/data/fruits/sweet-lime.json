@@ -1,0 +1,199 @@
+{
+  "id": "sweet-lime",
+  "commonName": "Sweet Lime (Mosambi)",
+  "scientificName": "Citrus limetta (also sometimes classified as Citrus sinensis group or Citrus aurantiifolia group)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%28Citrus_limetta%29_Mosambi_at_a_market_in_Seethammadhara.jpg",
+  "description": "A citrus fruit, typically round to oval, with a greenish-yellow rind when ripe and a sweet, mild, low-acid pulp. It's prized for its refreshing juice, which is less tart than that of a lemon or common lime, often with a subtle floral aroma.",
+  "origin": "Southeast Asia (likely northeastern India, northern Myanmar, or Malaysia; exact origin uncertain, possibly a hybrid).",
+  "localNames": [
+    "Mosambi (मौसंबी - Hindi, Marathi, Gujarati)",
+    "Mausambi / Musambi (Urdu, Punjabi)",
+    "Limu Shirin (لیمو شیرین - Persian, 'sweet lemon/lime')",
+    "Sathukudi (சாத்துக்குடி - Tamil)",
+    "Battayi (బత్తాయి - Telugu)",
+    "Palestine Sweet Lime",
+    "Indian Sweet Lime"
+  ],
+  "regions": [
+    "India (major producer and consumer)",
+    "Pakistan",
+    "Bangladesh",
+    "Egypt",
+    "Vietnam",
+    "Mediterranean basin (e.g., Palestine, Egypt, parts of Southern Europe - limited)",
+    "Parts of Central and South America (limited)"
+  ],
+  "seasons": [
+    "Primarily Summer and Monsoon season (e.g., June to September in India), though availability can extend with different varieties and regions, often having two main cropping seasons."
+  ],
+  "nutrition": {
+    "calories": "43 kcal per 100g (fresh juice/pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.32,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 50,
+        "unit": "mg",
+        "rdi": "56-83%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 10,
+        "unit": "µg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 490,
+        "unit": "mg",
+        "rdi": "10-14%"
+      },
+      {
+        "name": "Calcium",
+        "value": 40,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 30,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.7,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, aids in iron absorption, and promotes healthy skin.",
+    "High in potassium, an essential mineral that helps manage blood pressure and maintain fluid balance.",
+    "Aids in hydration due to its high water content and refreshing juice.",
+    "May improve digestion and relieve constipation due to its mild acidity and the presence of flavonoids which stimulate digestive juices.",
+    "Traditionally used in some cultures to alleviate symptoms of colds, flu, and nausea."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Citrus Allergy",
+      "severity": "Mild",
+      "details": "While less common than with more acidic citrus fruits like lemons, sweet lime can still cause oral allergy symptoms (itching or tingling in the mouth) or skin irritation (contact dermatitis) in individuals sensitive to citrus compounds like limonene."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Subtropical, prefers warm climates with distinct summers and mild winters, but is sensitive to frost. Needs full sun.\n2. Soil: Well-drained, loamy or sandy loam soil is ideal. Prefers a pH between 6.0 and 7.5.\n3. Propagation: Usually by budding (T-budding or shield budding) or grafting onto suitable citrus rootstocks (e.g., rough lemon, Rangpur lime) to ensure varietal characteristics and disease resistance. Can be grown from seeds, but fruit quality may vary and trees take longer to mature.\n4. Planting: Plant in full sun with good air circulation to minimize fungal diseases.\n5. Watering: Regular and adequate watering is crucial, especially during dry periods and fruit development. Avoid waterlogging by ensuring good soil drainage.\n6. Fertilizing: Requires regular fertilization with a balanced citrus fertilizer, often 3-4 times a year, particularly during active growth and fruiting seasons.\n7. Pruning: Prune to shape the tree, remove dead, diseased, or crossing branches, and improve light penetration and air circulation within the canopy.\n8. Harvesting: Fruits are picked when they reach full size and the skin turns from green to light greenish-yellow or pale yellow. They should feel slightly soft to the touch but still firm. Unlike some citrus, they do not improve much in sweetness after picking.",
+  "growthDuration": "Grafted or budded trees may start bearing fruit in 3-4 years after planting. Fruit typically matures in 6-9 months after flowering, depending on the climate and cultivar.",
+  "sustainabilityTips": [
+    "Store sweet limes at room temperature for a few days (up to a week) or in the refrigerator for longer storage (2-4 weeks).",
+    "Sweet lime juice is best consumed fresh, as it can develop a bitter taste if stored for too long (due to enzymatic action on limonin precursors), especially if it includes extracts from the rag or peel.",
+    "Compost the peels and any unused parts of the fruit."
+  ],
+  "carbonFootprintInfo": "Moderate, similar to other citrus fruits. The footprint depends significantly on the region of origin, transportation methods (sea vs. air freight), and cultivation practices (e.g., irrigation energy use). Estimated 0.4-0.9 kg CO2e/kg for conventionally transported fruit.",
+  "uses": [
+    "beverages_primarily_consumed_as_fresh_juice_mosambi_juice_often_with_salt_or_sugar",
+    "culinary_fresh_eating_though_less_common_than_juicing_due_to_its_mild_flavor",
+    "flavoring_agent_rind_can_be_zested_for_flavoring_though_less_aromatic_than_lemons_or_other_limes",
+    "culinary_ingredient_salads_marinades_sorbets_though_less_intense_flavor_than_other_citrus",
+    "medicinal_traditional_juice_used_for_hydration_digestive_aid_for_fevers_colds_jaundice_liver_ailments"
+  ],
+  "originAndDomesticationHistory": "Sweet lime (Citrus limetta) is believed to have originated in Southeast Asia, with likely centers of origin in the northeastern regions of India, northern Myanmar, or Malaysia. It is thought to be a hybrid, possibly involving citron (Citrus medica) and another citrus species like a lemon or mandarin. Sweet limes have been cultivated in India and Pakistan for centuries and are a very popular citrus fruit in these regions, particularly for their juice. From South Asia, their cultivation spread to other parts of the world, including the Middle East (where it's known as Limu Shirin in Persia/Iran), the Mediterranean basin, and eventually to parts of the Americas. However, its cultivation and popularity remain most prominent in South Asia and certain Middle Eastern countries.",
+  "climaticRequirements": {
+    "temperature": "Sweet lime trees thrive in subtropical to tropical climates with warm summers and mild winters. They are sensitive to frost; temperatures below freezing can damage or kill the trees, especially young ones. Optimal growing temperatures generally range from 20°C to 35°C (68°F to 95°F).",
+    "rainfall": "Prefers moderate annual rainfall, typically between 900mm and 1200mm, or consistent supplemental irrigation. Good soil drainage is essential, as the trees do not tolerate waterlogged conditions. High humidity can sometimes increase the risk of certain fungal diseases.",
+    "altitude": "Typically cultivated from sea level up to about 1000 meters (approximately 3300 feet) in suitable climatic zones."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or sandy loam soils. Good soil aeration is important for healthy root development. The ideal soil pH is slightly acidic to neutral, generally between 6.0 and 7.5. Sweet lime trees can tolerate a range of soil types but will not perform well in heavy clay soils with poor drainage or highly saline soils.",
+  "irrigationAndWaterNeeds": "Requires regular and adequate watering, especially during the establishment phase of young trees, during prolonged dry periods, and throughout the flowering and fruit development stages. Water stress during these critical periods can lead to fruit drop and reduced juice content. Drip irrigation or basin irrigation methods are commonly used in commercial cultivation to provide consistent moisture. Overwatering and waterlogged conditions must be avoided.",
+  "plantingAndHarvestCycles": "Sweet lime is commonly propagated by budding (such as T-budding or shield budding) or grafting desired cultivars onto suitable citrus rootstocks (e.g., rough lemon, Rangpur lime, or specific disease-resistant rootstocks) to ensure true-to-type fruit, early bearing, and adaptation to local soil conditions. While trees can be grown from seeds, the resulting fruit quality may be variable, and trees typically take longer to mature and bear fruit. Planting is usually done at the beginning of the rainy season or in the spring. Full sun exposure is essential for good growth and fruit production. Grafted or budded trees may start bearing fruit within 3-4 years of planting. Sweet lime trees often have two main fruiting seasons per year in tropical and subtropical climates (e.g., a spring crop and a late summer/monsoon crop in India). Fruits are harvested by hand when they reach full size, the skin color changes from green to a light greenish-yellow or pale yellow, and they feel slightly soft to the touch but still firm. They should detach from the stem with a gentle twist. Unlike some other citrus fruits, sweet limes do not improve significantly in sweetness after being picked.",
+  "pestAndDiseaseManagement": "Common Pests: Citrus leafminer, aphids, scale insects (e.g., citrus snow scale, purple scale), mealybugs, citrus psylla, fruit flies, and spider mites can affect sweet lime trees. Common Diseases: Citrus canker (Xanthomonas citri), citrus tristeza virus (CTV), citrus greening (Huanglongbing/HLB - a devastating bacterial disease spread by psyllids), Phytophthora root rot and gummosis (foot rot), greasy spot, and sooty mold (often associated with sucking pests) are significant concerns. Management Strategies: Integrated Pest Management (IPM) practices are crucial for healthy cultivation. This includes using certified disease-free nursery stock, selecting resistant rootstocks where available, promoting biological control agents, using horticultural oils or insecticidal soaps for soft-bodied pests, ensuring proper pruning for good air circulation (which can reduce fungal disease pressure), managing ant populations (as they often protect aphids, mealybugs, and scales), and applying appropriate pesticides or fungicides judiciously based on pest/disease monitoring and economic thresholds. Vigilant monitoring for symptoms of citrus greening and canker is essential in affected regions.",
+  "postHarvestHandling": "Sweet limes are relatively hardy compared to some other citrus fruits due to their somewhat thicker rind. After harvest, they can be stored at room temperature for about 1-2 weeks. Shelf life can be extended to 4-8 weeks if the fruits are refrigerated at cool temperatures (around 8-10°C or 46-50°F) with good ventilation. The juice of sweet lime is best consumed fresh, as it can develop a bitter taste over time (limonin bitterness) if stored for too long, particularly if it includes extracts from the albedo (the white pith) or peel, or if exposed to air for extended periods. For commercial purposes, fruits may be washed and sometimes waxed before packing.",
+  "majorProducingCountriesOrRegions": [
+    "India (largest producer and consumer, where Mosambi juice is very popular)",
+    "Pakistan",
+    "Bangladesh",
+    "Egypt",
+    "Vietnam",
+    "Iran (as Limu Shirin)",
+    "Mediterranean basin (Palestine, Egypt, parts of Southern Europe - generally smaller scale production)",
+    "Parts of Central and South America (limited cultivation)"
+  ],
+  "marketValueAndGlobalDemand": "Sweet lime, particularly known as Mosambi in South Asia, holds significant market value and high demand in these regions, primarily for fresh juice consumption. It is a staple fruit for street juice vendors and households. While it is a major commercial crop in countries like India, its international trade as fresh fruit is less extensive compared to other major citrus fruits like oranges, lemons, or mandarins. This is partly due to its relatively milder flavor profile which is highly appreciated in certain cultures but less known in others, and also because its juice can turn bitter upon prolonged storage. However, there is some demand in ethnic markets in North America, Europe, and the Middle East. Processed sweet lime juice also has a market presence, though it often requires specific processing techniques to manage potential bitterness.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Mosambi (Sweet Lime) Juice",
+      "description": "A popular and refreshing juice, especially in India.",
+      "ingredients": [
+        "3-4 ripe sweet limes (mosambi)",
+        "Pinch of black salt (kala namak) or regular salt (optional)",
+        "1/2 tsp sugar (optional, if limes are not very sweet)"
+      ],
+      "steps": [
+        "Wash the sweet limes.",
+        "Cut them in half.",
+        "Extract the juice using a citrus juicer (manual or electric). Avoid pressing too hard on the peel to prevent bitterness.",
+        "Strain the juice if desired.",
+        "Add salt and sugar (if using) to taste. Stir well.",
+        "Serve immediately, chilled or with ice."
+      ]
+    },
+    {
+      "name": "Sweet Lime and Mint Cooler",
+      "description": "A refreshing drink with sweet lime and fresh mint.",
+      "ingredients": [
+        "1 cup fresh sweet lime juice",
+        "1/4 cup fresh mint leaves",
+        "1 tbsp sugar or honey (optional)",
+        "1/2 cup sparkling water or club soda",
+        "Ice cubes"
+      ],
+      "steps": [
+        "Gently muddle mint leaves with sugar/honey (if using) in a sturdy glass or shaker.",
+        "Add sweet lime juice and ice cubes. Stir or shake well.",
+        "Strain into a serving glass filled with fresh ice.",
+        "Top with sparkling water or club soda.",
+        "Garnish with a mint sprig and a slice of sweet lime."
+      ]
+    },
+    {
+      "name": "Sweet Lime Salad with Chaat Masala",
+      "description": "A simple fruit salad highlighting the flavor of sweet lime with a tangy twist.",
+      "ingredients": [
+        "2 ripe sweet limes, peeled and segmented (membranes removed if desired)",
+        "1/2 apple, diced (optional)",
+        "1/2 cucumber, diced (optional)",
+        "1/4 tsp chaat masala",
+        "Pinch of black salt (optional)"
+      ],
+      "steps": [
+        "Gently combine sweet lime segments, diced apple (if using), and diced cucumber (if using) in a bowl.",
+        "Sprinkle chaat masala and black salt (if using) over the fruits.",
+        "Toss gently to coat.",
+        "Serve immediately or chilled."
+      ]
+    }
+  ]
+}

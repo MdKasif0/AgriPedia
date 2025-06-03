@@ -1,0 +1,208 @@
+{
+  "id": "pear",
+  "commonName": "Pear",
+  "scientificName": "Pyrus communis (European Pear), Pyrus pyrifolia (Asian Pear/Nashi)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Pears.jpg",
+  "description": "A sweet, bell-shaped pomaceous fruit that has been enjoyed since ancient times. European pears are typically eaten when the flesh is soft and juicy, while Asian pears are often eaten crisp. Pears have a distinctive flavor and aroma, with skin color ranging from green to yellow, red, or brown depending on the variety.",
+  "origin": "European Pear (Pyrus communis): Central Asia and Eastern Europe (Caucasus region). Asian Pear (Pyrus pyrifolia): East Asia (China, Japan, Korea).",
+  "localNames": [
+    "Pera (Spanish/Italian/Portuguese)",
+    "Poire (French)",
+    "Birne (German)",
+    "Nashi (梨 - Japanese, for Asian Pear)",
+    "Bae (배 - Korean, for Asian Pear)"
+  ],
+  "regions": [
+    "China (world's largest producer of all pears)",
+    "United States (Washington, Oregon, California for European pears; Asian pears also grown)",
+    "Argentina",
+    "Italy",
+    "Turkey",
+    "Spain",
+    "South Africa",
+    "Belgium",
+    "Netherlands",
+    "Japan (for Asian Pears)",
+    "South Korea (for Asian Pears)"
+  ],
+  "seasons": [
+    "Late Summer, Autumn, Winter (depending on variety and storage; typically August to February in Northern Hemisphere)"
+  ],
+  "nutrition": {
+    "calories": "57 kcal per 100g (European Pear, fresh)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.36,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15.23,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.14,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 4.3,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 4.4,
+        "unit": "µg",
+        "rdi": "4-6%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 7,
+        "unit": "µg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 116,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.082,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, promoting digestive health, aiding in bowel regularity, and contributing to satiety.",
+    "Contains antioxidants, including flavonoids (like quercetin and catechins) and Vitamin C, which help combat oxidative stress.",
+    "May help reduce inflammation and the risk of chronic diseases such as heart disease and type 2 diabetes.",
+    "Considered a hypoallergenic fruit, making it a good choice for individuals with food sensitivities and as one of the first fruits for weaning babies."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can occur in individuals allergic to birch pollen (Pollen Food Allergy Syndrome). Symptoms typically include itching or swelling of the mouth, lips, and throat after consuming fresh pears."
+    },
+    {
+      "name": "FODMAP sensitivity (for some)",
+      "severity": "Mild",
+      "details": "Pears contain sorbitol and fructose, which can cause digestive discomfort (bloating, gas) in individuals sensitive to FODMAPs, especially if consumed in large quantities."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Require chilling hours for bud development.\n2. Soil: Deep, well-drained loamy soil. pH 6.0-7.5.\n3. Propagation: Usually by grafting specific varieties onto rootstock (e.g., quince for dwarfing, Pyrus communis seedlings for standard trees).\n4. Planting: Plant in full sun. Provide support for young trees, especially dwarf varieties.\n5. Watering: Regular watering, especially during dry spells and fruit development.\n6. Fertilizing: Apply balanced fertilizer in spring. Avoid over-fertilizing with nitrogen.\n7. Pruning: Prune annually during dormancy to maintain shape (e.g., central leader or modified leader), remove dead/diseased wood, and encourage development of fruiting spurs.\n8. Thinning: Thin young fruit to improve size and quality of remaining pears and to prevent biennial bearing.",
+  "growthDuration": "Grafted trees typically start bearing fruit in 3-5 years. Fruit matures in late summer to autumn, depending on the variety and climate. European pears are usually harvested mature but firm and ripened off the tree.",
+  "sustainabilityTips": [
+    "Store most European pears at room temperature to ripen; once ripe, they can be refrigerated to slow further ripening for a few days. Check for ripeness by gently pressing near the stem end – it should yield to gentle pressure.",
+    "Asian pears are typically ripe when harvested and should be refrigerated.",
+    "Compost pear cores and any spoiled fruit. Pear wood can be used for smoking foods."
+  ],
+  "carbonFootprintInfo": "Moderate (estimated 0.4-0.8 kg CO2e/kg for conventionally grown and transported pears). Locally grown and seasonal pears have a lower footprint. Long-term cold storage and international shipping increase the impact.",
+  "uses": [
+    "fresh_consumption_eaten_raw_european_pears_when_soft_asian_pears_when_crisp",
+    "culinary_baking_pies_tarts_crumbles_cakes_poached_pears_roasted_pears",
+    "processed_products_canned_pears_in_syrup_jams_jellies_preserves_pear_butter_chutneys_dried_pears",
+    "beverages_pear_juice_perry_pear_cider_brandy_poire_williams",
+    "salads_often_paired_with_cheese_nuts_and_greens",
+    "baby_food_pureed_pears"
+  ],
+  "originAndDomesticationHistory": "The European Pear (Pyrus communis) is likely native to the foothills of the Caucasus Mountains in Central Asia and Eastern Europe. Pears have been cultivated since prehistoric times, with archaeological evidence of their use dating back to the Bronze Age in Switzerland and Italy. Ancient Greeks and Romans cultivated and documented several pear varieties. Theophrastus and Pliny the Elder wrote about pear cultivation and grafting. Many of the modern European cultivars were developed in Europe, particularly in France and Belgium, during the 17th to 19th centuries. Asian pears (including Pyrus pyrifolia - Nashi, and Pyrus ussuriensis - Ussurian pear) have a separate origin and history of domestication in East Asia (China, Japan, Korea), where they have also been cultivated for thousands of years.",
+  "climaticRequirements": {
+    "temperature": "Pears thrive in temperate climates. They require a significant period of winter chilling (typically 600-1000 hours with temperatures between 0-7°C or 32-45°F, depending on the variety) to break dormancy and ensure proper flowering. Flowers are susceptible to damage from late spring frosts. Optimal summer temperatures for growth and fruit development range from 18°C to 25°C (65°F to 77°F).",
+    "rainfall": "Requires moderate annual rainfall, typically between 750mm and 1000mm, well-distributed throughout the growing season. Supplemental irrigation is often necessary, especially during dry periods and critical stages of fruit development. Good air circulation is important to reduce the risk of fungal diseases; high humidity can exacerbate some issues like fire blight.",
+    "altitude": "Can be grown successfully from lowlands up to moderate altitudes (e.g., up to 1500 meters or higher in some temperate regions), provided that chilling requirements are met and the site is protected from severe frosts during vulnerable stages."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained loamy soils. Good soil aeration is crucial for healthy root development. While adaptable to a range of soil types, pears generally do best in soils with a slightly acidic to neutral pH (around 6.0 to 7.5). They do not tolerate heavy clay soils with poor drainage or very shallow soils.",
+  "irrigationAndWaterNeeds": "Young pear trees require regular and consistent watering to ensure proper establishment. For mature, fruit-bearing trees, adequate soil moisture is important, especially during dry spells and critical growth periods such as flowering, fruit set, and fruit development (particularly the final swell). Water stress can significantly impact fruit size, quality, and overall yield. Drip irrigation or micro-sprinklers are commonly used in commercial orchards.",
+  "plantingAndHarvestCycles": "Pear trees are commonly propagated by grafting or budding desired cultivars onto compatible rootstocks. Quince rootstocks (Cydonia oblonga) are often used for dwarfing European pear varieties, while Pyrus communis seedling rootstocks are used for standard-sized trees. Asian pears are typically grafted onto Pyrus betulifolia or P. calleryana rootstocks. Planting is usually done in late winter or early spring while trees are dormant. Full sun exposure is essential for good fruit quality and yield. Grafted trees typically start bearing fruit within 3-5 years of planting. Pears primarily bear fruit on long-lived spurs (short, modified branches). Pruning is essential to develop a strong framework, maintain tree size, ensure good light penetration, and encourage regular fruit production. Most European pear varieties are unique in that they achieve their best flavor and texture when ripened off the tree. They are harvested when physiologically mature but still firm (the 'mature-green' stage). Ripeness indicators include a slight change in skin ground color (e.g., from dark green to lighter green or yellowish), lenticels becoming more corky, and ease of separation from the spur when twisted upwards. The harvest season for pears is generally in late summer through autumn (August to October/November in the Northern Hemisphere). Fruits are hand-picked carefully to avoid bruising. Asian pears, in contrast, are typically harvested when ripe on the tree and are crisp when eaten.",
+  "pestAndDiseaseManagement": "Common Pests: Codling moth (Cydia pomonella) larvae bore into fruit. Pear psylla (Cacopsylla pyricola) can cause significant damage by feeding on sap and producing honeydew, leading to sooty mold. Aphids, scale insects, spider mites, and pear slug (sawfly larvae) are also common. Common Diseases: Fire blight (Erwinia amylovora) is a very destructive bacterial disease affecting blossoms, shoots, and branches. Pear scab (Venturia pirina) causes lesions on leaves and fruit. Fabraea leaf spot, powdery mildew, various canker diseases, and root rot (in poorly drained soils) can also occur. Management Strategies: Integrated Pest Management (IPM) is crucial. This includes selecting disease-resistant varieties and rootstocks where available, practicing dormant sprays (e.g., copper compounds for fire blight and scab), maintaining good orchard sanitation (removing pruned material and fallen fruit), proper pruning to improve air circulation, monitoring pest and disease populations, using biological controls, and applying appropriate pesticides and fungicides in a timely manner based on pest/disease pressure and economic thresholds. Controlling pear psylla is often a key focus in commercial orchards.",
+  "postHarvestHandling": "European pears are typically harvested when mature but firm and are then ripened off the tree. After harvest, they are often pre-cooled to remove field heat. For long-term storage, pears can be kept for several weeks to several months at cool temperatures, ideally around -1 to 0°C (30-32°F), with high relative humidity (90-95%). Controlled atmosphere (CA) storage can further extend their storage life. Pears are ripened at room temperature (around 18-21°C or 65-70°F). Ripeness can be checked by gently pressing the flesh near the stem end; it should yield to gentle pressure when ripe. Asian pears are harvested ripe and are best stored refrigerated, maintaining their crisp texture. All pears should be handled carefully to prevent bruising.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer of all types of pears)",
+    "United States (primarily Washington, Oregon, and California for European pears; Asian pears also cultivated)",
+    "Argentina (major Southern Hemisphere exporter)",
+    "Italy",
+    "Turkey",
+    "Spain",
+    "South Africa",
+    "Belgium",
+    "Netherlands",
+    "Chile",
+    "Japan (significant producer of Asian Pears)",
+    "South Korea (significant producer of Asian Pears)"
+  ],
+  "marketValueAndGlobalDemand": "Pears are a major temperate fruit with significant global production and international trade. China dominates world production. There is high demand for fresh consumption, as well as for processed pear products such as canned pears (often in syrup), pear juice, purees (for baby food and other products), and dried pears. Popular European pear varieties include Bartlett (Williams), Anjou, Bosc, and Comice, each with distinct characteristics and market preferences. Asian pears (Nashi) have a strong market in East Asia and are gaining popularity elsewhere for their crisp texture and juicy sweetness. The market value of pears depends on factors like variety, quality, size, seasonality, and origin.",
+  "staticRecipes": [
+    {
+      "name": "Poached Pears in Spiced Syrup",
+      "description": "Elegant and flavorful poached pears, perfect as a dessert.",
+      "ingredients": [
+        "4 firm ripe pears (e.g., Bosc or Anjou), peeled, halved, and cored",
+        "3 cups water or red/white wine",
+        "1 cup sugar",
+        "1 cinnamon stick",
+        "2-3 cloves",
+        "1 star anise",
+        "Peel of 1 lemon"
+      ],
+      "steps": [
+        "In a saucepan large enough to hold pears in a single layer, combine water/wine, sugar, cinnamon stick, cloves, star anise, and lemon peel.",
+        "Bring to a simmer over medium heat, stirring until sugar dissolves.",
+        "Add pear halves to the simmering syrup. Ensure they are mostly submerged (add more water if needed).",
+        "Reduce heat to low, cover, and simmer gently for 15-25 minutes, or until pears are tender when pierced with a knife. Cooking time varies with pear ripeness and variety.",
+        "Carefully remove pears from syrup. If desired, boil the syrup for another 10-15 minutes to reduce and thicken it slightly.",
+        "Serve pears warm or chilled, drizzled with the syrup. Great with yogurt or ice cream."
+      ]
+    },
+    {
+      "name": "Pear and Blue Cheese Salad",
+      "description": "A sophisticated salad balancing sweet pears, tangy blue cheese, and crunchy nuts.",
+      "ingredients": [
+        "5 oz mixed greens (arugula, spinach)",
+        "2 ripe pears, cored and thinly sliced",
+        "1/2 cup crumbled blue cheese (Gorgonzola, Roquefort)",
+        "1/4 cup toasted walnuts or pecans, chopped",
+        "For dressing: 3 tbsp olive oil, 1 tbsp balsamic vinegar, 1 tsp Dijon mustard, 1 tsp honey, salt and pepper to taste"
+      ],
+      "steps": [
+        "In a large salad bowl, combine mixed greens, sliced pears, crumbled blue cheese, and toasted nuts.",
+        "In a small bowl, whisk together olive oil, balsamic vinegar, Dijon mustard, honey, salt, and pepper.",
+        "Drizzle dressing over the salad and toss gently to combine.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Simple Pear Crisp",
+      "description": "A warm and comforting dessert with a sweet pear filling and a crispy oat topping.",
+      "ingredients": [
+        "For filling: 5-6 ripe pears, peeled, cored, and sliced",
+        "1/4 cup sugar",
+        "1 tbsp lemon juice",
+        "1/2 tsp cinnamon",
+        "For topping: 3/4 cup all-purpose flour, 1/2 cup brown sugar, 1/2 tsp cinnamon, 1/4 cup cold butter (cubed), 1/2 cup rolled oats"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Filling: In a bowl, toss sliced pears with sugar, lemon juice, and 1/2 tsp cinnamon. Transfer to a baking dish.",
+        "Topping: In another bowl, combine flour, brown sugar, and 1/2 tsp cinnamon. Cut in butter until mixture resembles coarse crumbs. Stir in oats.",
+        "Sprinkle topping evenly over the pears.",
+        "Bake for 30-35 minutes, or until topping is golden and filling is bubbly. Let cool slightly before serving."
+      ]
+    }
+  ]
+}

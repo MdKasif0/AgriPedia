@@ -1,0 +1,62 @@
+{
+  "id": "arrowroot",
+  "commonName": "Arrowroot",
+  "scientificName": "Maranta arundinacea",
+  "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Arrowroot is a tropical tuberous plant cultivated for its starchy rhizomes. The starch extracted from arrowroot, also called arrowroot flour or powder, is a fine, white, easily digestible starch used as a thickener in food preparations, and is valued for being gluten-free. The plant is a perennial herb with large, ovate leaves.",
+  "origin": "Tropical Americas (Amazon rainforest region - Brazil, Guyana, Peru).",
+  "localNames": ["Araruta (Spanish/Portuguese)", "Kuzu-ukon (Japanese - often refers to Kudzu starch but sometimes arrowroot)", "West Indian Arrowroot (English)"],
+  "regions": ["St. Vincent and the Grenadines (major producer)", "Brazil", "India", "Thailand", "Philippines", "Indonesia", "Caribbean islands", "Central America"],
+  "seasons": ["Perennial tropical plant; rhizomes are typically harvested 7-12 months after planting, often during the dry season when starch content is highest."],
+  "nutrition": {
+    "calories": "Arrowroot Starch/Flour: ~357 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "Starch: ~0.3" },
+      { "name": "Carbohydrates", "unit": "g", "value": "Starch: ~88.2 (primarily starch)" },
+      { "name": "Fat", "unit": "g", "value": "Starch: ~0.1" },
+      { "name": "Fiber", "unit": "g", "value": "Starch: ~0.4" }
+    ],
+    "vitamins": [
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "Starch: Small amounts" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "Starch: Moderate" },
+      { "name": "Phosphorus", "unit": "mg", "rdi": "Starch: Small amounts" }
+    ]
+  },
+  "healthBenefits": [
+    "Arrowroot starch is easily digestible and often used for infants, and individuals with digestive sensitivities or during convalescence.",
+    "Gluten-free, making it suitable for people with celiac disease or gluten intolerance.",
+    "May help soothe an upset stomach and treat diarrhea due to its demulcent properties.",
+    "Used as a thickening agent in foods, providing a clear, glossy finish without imparting much flavor."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Arrowroot Allergy/Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "Allergy to arrowroot is very uncommon. It is generally considered hypoallergenic."
+    }
+  ],
+  "cultivationProcess": "Arrowroot is propagated from rhizome cuttings or suckers. It requires warm, humid conditions, partial shade, and well-drained, fertile soil. Rhizomes are harvested when mature.",
+  "growthDuration": "Approximately 7-12 months from planting to rhizome harvest.",
+  "sustainabilityTips": [
+    "Can be grown in agroforestry systems under the shade of taller trees.",
+    "Traditional cultivation methods often involve minimal inputs.",
+    "Processing of rhizomes into starch requires significant water; efficient water use is important."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of arrowroot starch is influenced by cultivation practices, energy used for processing (washing, grinding, drying), and transportation. Small-scale, traditional production generally has a lower footprint.",
+  "uses": ["food_thickener_starch_flour_for_sauces_soups_desserts_baked_goods_baby_food_gluten_free_cooking", "traditional_medicine_digestive_aid_treatment_for_diarrhea_poultice_for_wounds", "industrial_paper_making_cosmetics_glues_limited"],
+  "originAndDomesticationHistory": "Arrowroot (Maranta arundinacea) is native to the tropical rainforests of South America. Indigenous peoples have used it for food and medicine for centuries. Its name is thought to derive from its traditional use as a poultice for arrow wounds (to draw out toxins) by Arawak people. It was introduced to other tropical regions for cultivation, notably St. Vincent in the Caribbean, which became a major producer.",
+  "climaticRequirements": {
+    "temperature": "Tropical plant. Optimal growing temperatures are 20-30°C. Requires high humidity and is sensitive to frost.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-2000mm annually, or consistent irrigation. Prefers shady conditions.",
+    "altitude": "Typically grown in lowland tropical regions, up to 1000m."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils rich in organic matter. Slightly acidic to neutral pH (5.5-7.0) is optimal. Good moisture retention is beneficial.",
+  "irrigationAndWaterNeeds": "Requires consistent and abundant moisture throughout the growing season. Irrigation is essential in areas with insufficient rainfall or during dry spells. Prefers humid, shaded environments.",
+  "plantingAndHarvestCycles": "Propagated by planting small rhizome pieces (setts) with buds. Planted during the rainy season. Rhizomes are harvested when the plant's leaves begin to wilt and die down, indicating maturity, typically 7-12 months after planting. Harvesting is done manually by digging up the rhizomes.",
+  "pestAndDiseaseManagement": "Pests include spider mites and various root/rhizome borers. Diseases like root rot can occur in poorly drained or overly wet soils. Generally considered quite hardy with fewer pest/disease problems compared to some other tubers.",
+  "postHarvestHandling": "Harvested rhizomes must be processed relatively quickly to extract the starch. This involves washing the rhizomes thoroughly, peeling or scraping off the outer skin, grating or crushing them into a pulp, mixing the pulp with water, and then sieving/straining to separate the starch from the fibrous material. The starch settles at the bottom, is washed multiple times, and then dried (sun-drying or artificial driers) to produce the fine arrowroot powder. Proper drying is crucial for quality and storage.",
+  "majorProducingCountriesOrRegions": ["St. Vincent and the Grenadines (historically a major producer and exporter)", "Brazil", "India (Kerala, Odisha)", "Thailand", "Philippines", "Indonesia", "Other tropical countries in Asia, Africa, and Latin America"],
+  "marketValueAndGlobalDemand": "Arrowroot starch has a niche market, valued for its specific properties as a easily digestible, gluten-free thickener. Demand comes from the food industry (especially for baby foods, gluten-free products, and fine sauces/desserts) and for traditional medicinal uses. It often commands a higher price than cornstarch or other common starches. Supply can be limited compared to other starches."
+}

@@ -1,0 +1,176 @@
+{
+  "id": "langsat",
+  "commonName": "Langsat (Lanzones)",
+  "scientificName": "Lansium domesticum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lansium_domesticum_fruits.jpg/800px-Lansium_domesticum_fruits.jpg",
+  "description": "Lansium domesticum, commonly known as langsat or lanzones, is a tropical fruit tree in the Mahogany family (Meliaceae). It bears small, ovoid to round fruits in grape-like clusters (racemes). The fruit has a thin, leathery, pale yellow to brownish skin, which often exudes a sticky latex when peeled (depending on variety). The translucent, juicy, sweet-tart flesh is divided into segments, some of which may contain a bitter, green seed.",
+  "origin": "Western Southeast Asia (specifically Peninsular Thailand, Malaysia, Sumatra, Borneo)",
+  "localNames": [
+    "Lanzones (Philippines)",
+    "Langsat (Malaysia, Indonesia)",
+    "Longkong (Thailand - a popular cultivar, often sweeter and with less latex)",
+    "Duku (Indonesia, Malaysia - a cultivar group, typically larger, rounder, with thicker skin and less latex)",
+    "Lòn bon (Vietnamese)",
+    "Dukong (hybrid between Duku and Longkong)"
+  ],
+  "regions": [
+    "Philippines (major producer)",
+    "Indonesia (major producer)",
+    "Malaysia (major producer)",
+    "Thailand (major producer, especially Longkong)",
+    "Vietnam",
+    "India (Southern states, limited)",
+    "Sri Lanka (limited)",
+    "Hawaii (USA - very limited)",
+    "Costa Rica (limited)",
+    "Suriname (limited)"
+  ],
+  "seasons": [
+    "Varies by region and specific cultivar, typically fruiting during the rainy season. Often available from late spring to autumn in many Southeast Asian countries (e.g., Philippines: August-November; Thailand: June-October)."
+  ],
+  "nutrition": {
+    "calories": "57 kcal per 100g (edible portion)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 4.5,
+        "unit": "µg RAE",
+        "rdi": "1%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.05,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.5,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 230,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Provides Vitamin C, an antioxidant that supports immune function and skin health.",
+    "Contains B-vitamins such as Thiamine, Riboflavin, and Niacin, which are important for energy metabolism and nervous system function.",
+    "Source of dietary fiber, which aids in digestion and promotes gut health.",
+    "Contains various phytonutrients with potential antioxidant properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex in skin (some varieties)",
+      "severity": "Mild",
+      "details": "The skin of some langsat varieties (particularly the 'Langsat' type as opposed to 'Duku' or 'Longkong') exudes a sticky latex when peeled. This is generally harmless but can be messy and an irritant to very sensitive skin. The seeds are bitter and typically not consumed."
+    }
+  ],
+  "cultivationProcess": "Langsat trees are typically grown in humid, tropical climates and prefer well-drained, slightly acidic soil rich in organic matter. They thrive in partial shade, especially when young, and are often cultivated in mixed agroforestry systems. Propagation can be by seeds (which have a long juvenile period, 12-25 years) or more commonly by air layering or grafting onto seedling rootstock for earlier fruiting (2-6 years) and consistent cultivar quality. Trees require consistent moisture, especially during fruit development. Pruning is done to shape the tree and remove dead or diseased branches.",
+  "growthDuration": "Seedling trees may take 12-25 years to bear fruit. Grafted or air-layered trees can start fruiting in 2-6 years, with full production varying by cultivar and conditions. Fruit typically ripens about 4-5 months after flowering.",
+  "sustainabilityTips": [
+    "Supporting agroforestry systems where langsat is traditionally grown helps conserve biodiversity and soil health.",
+    "Choose locally grown langsat fruits when available to reduce the carbon footprint associated with transportation of this perishable fruit.",
+    "The tree's preference for partial shade makes it suitable for intercropping with other taller trees."
+  ],
+  "carbonFootprintInfo": "Langsat grown and consumed within its native Southeast Asian regions generally has a low carbon footprint. When exported, particularly fresh fruit requiring air freight due to its moderate shelf life and delicate nature, the carbon footprint increases significantly. Processed forms (e.g., canned in syrup) also add to the footprint through manufacturing, packaging, and transportation.",
+  "uses": [
+    "fresh_consumption_eaten_raw_translucent_arils",
+    "processed_products_canned_in_syrup_candied_fruit_jellies_wine_limited_scale",
+    "medicinal_traditional_bark_leaves_seeds_for_dysentery_fever_intestinal_parasites",
+    "other_skin_burned_as_mosquito_repellent_wood_for_light_construction_tool_handles_locally"
+  ],
+  "originAndDomesticationHistory": "Langsat (Lansium domesticum) is native to Western Southeast Asia, with its center of origin believed to be Peninsular Malaysia, Sumatra (Indonesia), and Borneo. It has been cultivated in these regions for centuries and subsequently spread throughout Southeast Asia, including the Philippines, Thailand, Vietnam, and other parts of Indonesia. There are two main cultivar groups: 'Langsat', which typically has thinner skin, exudes more latex, and can be tarter, and 'Duku', which generally has thicker skin, less or no latex, is rounder, larger, and often sweeter. 'Longkong' is a particularly popular cultivar from Thailand, known for its sweetness and often being seedless or having very small, undeveloped seeds. The fruit has long been a part of the local ethnobotany and traditional food systems in its native range.",
+  "climaticRequirements": {
+    "temperature": "Strictly tropical, langsat thrives in warm, humid, equatorial climates. The optimal temperature range is between 22°C and 30°C (72°F to 86°F). It is intolerant of frost and prolonged cold conditions, which can severely damage or kill the tree.",
+    "rainfall": "Requires high and well-distributed rainfall, typically between 1500mm and 3000mm annually. Consistent moisture and high humidity are crucial for its growth and fruit development. A short, relatively dry spell can sometimes help to induce flowering, but prolonged drought is detrimental.",
+    "altitude": "Best grown in lowland tropical areas, typically from sea level up to about 600-800 meters (approx. 2000-2600 feet). It is not well-suited to higher elevations where temperatures might drop significantly."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH (around 5.5 to 6.5) is ideal. While it can tolerate a range of soil types, it cannot withstand waterlogged or saline conditions. Langsat trees often thrive in partial shade, especially when young, and are traditionally grown in mixed agroforestry systems under the canopy of larger trees.",
+  "irrigationAndWaterNeeds": "Requires consistent and abundant moisture throughout the year, reflecting its preference for humid tropical climates. Irrigation is essential during any dry periods to prevent water stress, which can adversely affect fruit development and overall yield. However, good soil drainage must accompany high water availability to prevent root diseases.",
+  "plantingAndHarvestCycles": "Traditionally propagated from seeds, which results in a long juvenile period (trees may take 12-25 years to bear fruit) and considerable variation in fruit quality. For commercial cultivation and to ensure desirable characteristics of select cultivars (like 'Longkong' or 'Duku'), vegetative propagation methods such as grafting (cleft grafting or approach grafting), budding, or air layering onto seedling rootstock are preferred. These methods can lead to earlier fruiting, typically within 2-6 years for grafted trees. Planting is usually done at the beginning of the rainy season. The main fruiting season varies by region but often coincides with the rainy season or follows shortly after, typically from late spring to autumn in many Southeast Asian countries. Fruits are borne in clusters (racemes) directly on the trunk and larger branches (cauliflorous). They are harvested by hand when they reach full size, the skin color changes from green to pale yellow or brownish-yellow (depending on the cultivar), and the fruit yields slightly to gentle pressure. Entire clusters are usually harvested with care to avoid bruising the delicate fruit.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies can infest ripe fruits. Mealybugs, scale insects, and twig borers may also attack the tree. Bats, birds, and squirrels can cause significant damage to ripening fruit clusters. Common Diseases: Anthracnose (Colletotrichum spp.) can affect fruits and leaves. Leaf spot diseases may also occur. Root rot can be a problem in poorly drained soils or overwatered conditions. Management Strategies: Maintaining good orchard sanitation, including removal of fallen fruits and diseased plant parts. Bagging of fruit clusters can provide protection against fruit flies, birds, and bats. Proper pruning to improve air circulation can help reduce fungal disease incidence. Biological control methods for some pests. Limited and judicious use of pesticides may be necessary in cases of severe infestation, following local recommendations.",
+  "postHarvestHandling": "Langsat fruits are quite perishable and have a relatively short shelf life, typically lasting only a few days (3-7 days) at ambient tropical temperatures. The thin skin bruises easily, requiring careful handling during and after harvest. Shelf life can be extended to about 2-3 weeks if the fruits are refrigerated at cool temperatures (around 12-15°C or 54-59°F) with high relative humidity. Fruits are often sold in their clusters to minimize handling damage to individual berries. For export or distant markets, careful packing and rapid transport are essential.",
+  "marketValueAndGlobalDemand": "Langsat is a highly popular and cherished fruit within Southeast Asian countries (such as the Philippines, Indonesia, Malaysia, and Thailand), where it is widely consumed fresh during its seasonal availability. It holds significant importance in local and regional trade. However, due to its high perishability and lack of widespread familiarity outside of Asia and specific ethnic markets, international export of fresh langsat is limited. Processed forms, such as langsat canned in syrup, have some presence in export markets. Specific cultivars like 'Longkong' from Thailand and various 'Duku' types are particularly prized for their superior taste and texture, often commanding higher prices.",
+  "staticRecipes": [
+    {
+      "name": "Langsat & Coconut Tropical Salad",
+      "description": "A refreshing and simple salad that highlights the sweet-tart flavor of langsat (lanzones), beautifully complemented by toasted coconut and fresh mint.",
+      "ingredients": [
+        "2 cups fresh langsat (lanzones), peeled",
+        "1/2 cup fresh pineapple, diced (optional)",
+        "1/4 cup toasted shredded coconut (unsweetened)",
+        "1 tablespoon fresh lime juice",
+        "1 teaspoon honey or palm sugar syrup (optional, to taste)",
+        "A few fresh mint leaves, thinly sliced (chiffonade)"
+      ],
+      "steps": [
+        "Peel the langsat fruits. This is usually done by gently squeezing or pinching the skin until it splits, then removing it. The flesh is divided into segments.",
+        "If the langsat segments contain large, green, bitter seeds, you may choose to remove them, especially from the larger segments. Smaller, undeveloped seeds are often edible or absent.",
+        "In a medium bowl, combine the peeled langsat segments and diced pineapple (if using).",
+        "In a small separate bowl, whisk together the fresh lime juice and honey or palm sugar syrup (if you are using it for added sweetness).",
+        "Pour the lime juice dressing over the fruits and toss gently to ensure they are evenly coated.",
+        "Sprinkle the toasted shredded coconut and thinly sliced fresh mint leaves over the salad.",
+        "Serve immediately for the best taste and texture, or chill for about 15-30 minutes for a more refreshing experience."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "ash-gourd",
+  "commonName": "Ash Gourd (Winter Melon)",
+  "scientificName": "Benincasa hispida",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/India_Ash_Gourd.jpg",
+  "description": "A large fruit, botanically a type of melon, grown on a vine. It is also known as winter melon, wax gourd, white pumpkin, or white gourd. The fruit is typically round or oblong, with a smooth, waxy skin that is pale green when young and turns to a powdery, ash-colored coating when mature (hence the name 'ash gourd'). The flesh is thick, white, crisp, and has a very mild, almost neutral flavor, absorbing the flavors of other ingredients it's cooked with.",
+  "origin": "Southeast Asia (likely Java in Indonesia, or Japan, with wild forms also found in China and Indochina).",
+  "localNames": [
+    "Petha (पेठा - Hindi, for the fruit and the candy made from it)",
+    "Winter Melon (English)",
+    "Wax Gourd (English)",
+    "White Gourd (English)",
+    "Dong Gua (冬瓜 - Chinese, 'winter melon')",
+    "Bù Mỡ (Vietnamese)",
+    "Fak Kiao (ฟักเขียว - Thai)",
+    "Kundol (Tagalog - Philippines)",
+    "Kumbalanga (കുമ്പളങ്ങ - Malayalam, India)",
+    "Boodagumbala (ಬೂದುಗುಂಬಳ - Kannada, India)"
+  ],
+  "regions": [
+    "India (major producer and consumer)",
+    "China (major producer and consumer)",
+    "Southeast Asian countries (Thailand, Vietnam, Indonesia, Malaysia, Philippines)",
+    "Japan",
+    "Bangladesh",
+    "Sri Lanka",
+    "Pakistan",
+    "Other tropical and subtropical regions globally."
+  ],
+  "seasons": [
+    "Typically harvested in late summer and autumn in temperate zones, but can be grown year-round in tropical climates. Due to its excellent storage capabilities, it is often available for many months after harvest."
+  ],
+  "nutrition": {
+    "calories": "13 kcal per 100g (raw flesh)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "14-22%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.11,
+        "unit": "mg",
+        "rdi": "8%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Zinc",
+        "value": 0.61,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Potassium",
+        "value": 111,
+        "unit": "mg",
+        "rdi": "2-3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Very high in water content (about 96%), making it extremely hydrating, cooling, and low in calories, which is beneficial for weight management.",
+    "Aids in digestion and has a mild laxative effect due to its fiber and water content, helping to prevent constipation.",
+    "Traditionally used in Ayurvedic and Chinese medicine for its diuretic properties (helps flush out toxins), and to treat conditions like peptic ulcers, acidity, urinary tract infections, and general debility.",
+    "Believed to have a calming effect on nerves and may help reduce anxiety."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ash Gourd Allergy",
+      "severity": "Rare",
+      "details": "Allergies to ash gourd are very uncommon. It is generally considered hypoallergenic and easily digestible when cooked."
+    }
+  ],
+  "cultivationProcess": "Ash gourd is a warm-season vine. Seeds are typically sown directly in the field after the last frost when soil temperatures are warm, or started indoors in cooler climates for later transplanting. It prefers well-drained, fertile loamy soil rich in organic matter and requires full sun. The vigorous vines need strong trellising or support, or can be allowed to ramble on the ground if ample space is available. Regular watering is crucial, especially during fruit development. The fruit is harvested when mature, indicated by the development of a waxy, ash-like coating on the skin, and a drying of the stem connecting it to the vine.",
+  "growthDuration": "Typically 80 to 120 days from sowing to harvest, depending on the specific cultivar and growing conditions. The fruit can become very large if left to mature fully.",
+  "sustainabilityTips": [
+    "Whole, mature ash gourd has an excellent shelf life and can be stored for several months (even up to a year) in a cool, dry, and dark place without refrigeration, making it a valuable food source for lean periods.",
+    "Once cut, portions should be wrapped and refrigerated, and used within a few days.",
+    "Ash gourd is often used in soups, stews, curries, and famously to make the translucent sweet candy 'Petha' in India. Its mild flavor allows it to absorb spices and other flavors well.",
+    "The plant is relatively easy to grow in suitable climates and can be productive."
+  ],
+  "carbonFootprintInfo": "Low to moderate (estimated 0.3-0.6 kg CO2e/kg), especially when consumed locally or within its primary growing regions. Its excellent storage capability reduces the need for energy-intensive preservation or rapid, high-carbon transport for out-of-season availability.",
+  "uses": [
+    "culinary_vegetable_cooked_in_curries_stews_soups_winter_melon_soup_stir_fries_dal_sambar_kootu",
+    "culinary_confectionery_candied_ash_gourd_petha_a_famous_sweet_from_agra_india",
+    "beverages_juice_considered_cooling_and_detoxifying_in_traditional_medicine",
+    "medicinal_traditional_ayurveda_tcm_used_for_digestive_issues_urinary_tract_infections_diuretic_cooling_agent_peptic_ulcers_general_debility_anti_inflammatory",
+    "religious_offerings_in_some_hindu_ceremonies_and_festivals",
+    "animal_feed_leaves_and_vines_sometimes_used_as_fodder"
+  ],
+  "originAndDomesticationHistory": "Ash gourd (Benincasa hispida) is native to Southeast Asia, with its likely centers of origin considered to be Java in Indonesia, or possibly Japan, with wild forms also reported in China and Indochina. It has been cultivated in Asia, particularly in India, China, and Southeast Asian countries, for thousands of years. There is evidence of its use in China dating back to at least 500 AD. The fruit spread widely throughout Asia and was later introduced to other tropical and subtropical regions of the world. It is valued for its culinary versatility (both as a vegetable and a sweet), its long storage life, and its various uses in traditional medicine systems like Ayurveda and Traditional Chinese Medicine (TCM).",
+  "climaticRequirements": {
+    "temperature": "Ash gourd is a warm-season crop that thrives in hot and humid climates. Optimal temperatures for its growth and fruit development generally range from 25°C to 30°C (77°F to 86°F). It is sensitive to frost, and cool temperatures can hinder its growth.",
+    "rainfall": "Requires moderate to high annual rainfall, typically between 1000mm and 1500mm, or consistent irrigation, especially during the vine growth and fruit development stages. While it needs ample moisture, good soil drainage is also important to prevent root diseases.",
+    "altitude": "Typically cultivated in lowland tropical and subtropical regions, from sea level up to about 1000 meters (approximately 3300 feet)."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. Good soil aeration is important for healthy root development. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). While it can adapt to various soil types, very heavy clay soils or poorly drained soils are not suitable.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering, especially during seed germination, vine establishment, flowering, and particularly during fruit development. Water stress during these critical periods can lead to poor fruit set, reduced fruit size, and lower overall yield. Drip irrigation or furrow irrigation methods are commonly used in commercial cultivation to provide adequate moisture. However, overwatering or waterlogged conditions should be avoided.",
+  "plantingAndHarvestCycles": "Ash gourd is propagated from seeds. Seeds are typically sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed sufficiently. In some cases, seeds may be started indoors 2-4 weeks prior to transplanting in regions with shorter growing seasons. Plants are usually grown in hills or rows, with ample spacing provided for the vigorous vines to spread; trellising or support is often beneficial, especially for larger-fruited varieties, to keep fruits off the ground and improve air circulation. The time from sowing to harvest varies by cultivar but generally ranges from 80 to 120 days. Fruits are harvested when they reach mature size and the skin develops a characteristic waxy, ash-like coating. The connection between the vine and the fruit stem usually begins to dry out at maturity. Fruits are cut from the vine with a portion of the stem attached to aid in storage.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies can lay eggs in developing fruits. Cucumber beetles (striped and spotted) and pumpkin beetles may feed on leaves and flowers. Aphids can transmit viruses and cause feeding damage. Squash vine borer can attack stems. Common Diseases: Powdery mildew and downy mildew are common fungal diseases affecting foliage, especially in humid conditions. Fusarium wilt can cause wilting and death of plants. Anthracnose and mosaic viruses can also occur. Management Strategies: Implementing crop rotation. Selecting disease-resistant varieties if available. Ensuring proper plant spacing and trellising to promote good air circulation. Practicing effective weed control. Removing and destroying infected plant material promptly. Using row covers on young plants to protect against early insect infestations (remove during flowering for pollination). Applying appropriate and approved insecticides or fungicides when necessary, based on scouting, pest/disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Mature ash gourds are renowned for their excellent shelf life, primarily due to the protective waxy coating that develops on their skin. If harvested carefully with a portion of the stem attached and without bruising, whole fruits can be stored for several months (often 3-6 months, and sometimes up to a year or longer under optimal conditions) in a cool, dry, and well-ventilated place, without the need for refrigeration. They should be kept off direct contact with floors or damp surfaces. Once an ash gourd is cut, the exposed flesh is perishable; cut portions should be wrapped in plastic film or stored in an airtight container and refrigerated, and should be used within a few days for best quality.",
+  "majorProducingCountriesOrRegions": [
+    "India (a leading producer, widely cultivated across various states)",
+    "China (extensive cultivation and consumption)",
+    "Bangladesh",
+    "Sri Lanka",
+    "Thailand",
+    "Vietnam",
+    "Indonesia",
+    "Malaysia",
+    "Philippines",
+    "Japan",
+    "Taiwan",
+    "Other countries in South Asia, Southeast Asia, and East Asia. Also grown in parts of the Caribbean and Latin America where introduced."
+  ],
+  "marketValueAndGlobalDemand": "Ash gourd is a widely consumed vegetable in many Asian countries, particularly in India, China, and Southeast Asia, where it holds significant importance in local and regional markets. It is valued for its culinary versatility (used in savory dishes, soups, and famously for making 'Petha' candy in India), its long storage life, and its traditional medicinal properties. While international trade in fresh ash gourd is less extensive compared to some other major vegetables, there is a consistent demand in ethnic markets in North America, Europe, and the Middle East, catering to diaspora communities. Processed products like Petha candy and some Ayurvedic preparations containing ash gourd also have a market presence. The demand is generally stable within its traditional consumption regions, with growing interest in its health benefits (low calorie, high water content, cooling properties) in other parts of the world.",
+  "staticRecipes": [
+    {
+      "name": "Ash Gourd Kootu (South Indian Stew)",
+      "description": "A mild and nutritious South Indian stew with ash gourd and lentils.",
+      "ingredients": [
+        "1 cup ash gourd, peeled, seeded, and cubed",
+        "1/4 cup moong dal or toor dal, cooked",
+        "1/4 cup grated coconut",
+        "1 tsp cumin seeds",
+        "1-2 green chilies",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For tempering: 1 tbsp oil, 1/2 tsp mustard seeds, 1 dried red chili, few curry leaves, pinch of asafoetida"
+      ],
+      "steps": [
+        "Cook cubed ash gourd with a little water and turmeric powder until tender. Drain any excess water.",
+        "Grind coconut, cumin seeds, and green chilies to a smooth paste with a little water.",
+        "Add cooked dal and ground coconut paste to the cooked ash gourd. Add salt. Mix well.",
+        "Simmer for 5-7 minutes, stirring occasionally, until flavors blend and the kootu thickens slightly.",
+        "Tempering: Heat oil. Add mustard seeds; when they splutter, add dried red chili, asafoetida and curry leaves. Pour over the kootu. Mix and serve hot with rice."
+      ]
+    },
+    {
+      "name": "Petha (Agra Petha - Simplified Homemade)",
+      "description": "A translucent soft candy from North India made from ash gourd.",
+      "ingredients": [
+        "2 cups ash gourd, peeled, seeded, and cubed (firm pieces)",
+        "1 cup sugar",
+        "1 cup water",
+        "1/4 tsp alum powder (phitkari) - optional, for firmness",
+        "Few drops of rose water or kewra essence (optional)"
+      ],
+      "steps": [
+        "If using alum, dissolve it in water and soak ash gourd cubes for 1-2 hours. Rinse thoroughly. (This step makes petha firmer).",
+        "Prick the ash gourd pieces all over with a fork.",
+        "In a saucepan, combine sugar and water. Bring to a boil to make a sugar syrup. Cook until it reaches a one-string consistency.",
+        "Add the ash gourd pieces to the sugar syrup. Cook on low heat, stirring gently, until the pieces become translucent and the syrup thickens further (about 30-45 minutes).",
+        "Remove from heat. Add rose water or kewra essence if using.",
+        "Let it cool completely. The petha pieces can be separated and air-dried slightly on a rack if desired for a less sticky finish. Store in an airtight container."
+      ]
+    },
+    {
+      "name": "Ash Gourd Juice",
+      "description": "A cooling and detoxifying juice.",
+      "ingredients": [
+        "1 cup ash gourd, peeled, seeded, and chopped",
+        "1/2 cup water",
+        "Pinch of black salt (optional)",
+        "1 tsp lime juice (optional)",
+        "Few mint leaves (optional)"
+      ],
+      "steps": [
+        "Combine chopped ash gourd and water in a blender.",
+        "Blend until smooth.",
+        "Strain the juice through a fine-mesh sieve or cheesecloth.",
+        "Stir in black salt, lime juice, and mint leaves if using.",
+        "Serve immediately, chilled for best results."
+      ]
+    }
+  ]
+}

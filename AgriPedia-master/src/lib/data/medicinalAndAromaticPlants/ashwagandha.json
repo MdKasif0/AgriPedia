@@ -1,0 +1,64 @@
+{
+  "id": "ashwagandha",
+  "commonName": "Ashwagandha (Indian Ginseng, Winter Cherry)",
+  "scientificName": "Withania somnifera",
+  "image": "https://images.unsplash.com/photo-1600306840429-4019188e8908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Ashwagandha is an evergreen shrub in the Solanaceae or nightshade family. It is native to India, the Middle East, and parts of Africa. The plant, particularly its root powder, has been used for centuries in Ayurvedic medicine as an adaptogen, believed to help the body resist physiological and psychological stress.",
+  "origin": "India, Middle East, and parts of Africa.",
+  "localNames": ["Ashwagandha (Hindi/Sanskrit)", "Indian Ginseng (English)", "Winter Cherry (English)", "Amukkuram (Tamil)"],
+  "regions": ["India (especially Madhya Pradesh, Rajasthan, Punjab)", "Nepal", "Pakistan", "Yemen", "Parts of Africa"],
+  "seasons": ["Drought-tolerant perennial shrub, often grown as an annual or biennial. Planted after the start of the monsoon (June-July) and roots harvested in winter (January-March)."],
+  "nutrition": {
+    "calories": "Approx. 245-280 kcal per 100g (root powder)",
+    "macronutrients": [
+      { "name": "Protein", "value": "~3-5", "unit": "g" },
+      { "name": "Carbohydrates", "value": "~45-50 (largely fiber and starch)", "unit": "g" },
+      { "name": "Fat", "value": "~0.3-0.5", "unit": "g" },
+      { "name": "Fiber", "value": "~30-35", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": "Trace amounts", "unit": "mg", "rdi": "Varies" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": "Significant, ~3-4", "unit": "mg", "rdi": "~15-20%" },
+      { "name": "Calcium", "value": "Moderate", "unit": "mg", "rdi": "Varies" }
+    ]
+  },
+  "healthBenefits": [
+    "Adaptogenic properties, helping the body manage stress and anxiety.",
+    "May improve brain function, including memory and concentration.",
+    "Can boost testosterone levels and increase fertility in men.",
+    "May increase muscle mass and strength.",
+    "May reduce inflammation and boost immunity.",
+    "Can help lower cortisol levels."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Nightshade Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "As a member of the nightshade family, individuals sensitive to nightshades (e.g., tomatoes, potatoes, eggplants) might experience adverse reactions. Large doses can cause digestive upset, diarrhea, nausea, and vomiting. Caution advised during pregnancy and for individuals with autoimmune diseases or thyroid disorders."
+    }
+  ],
+  "cultivationProcess": "Ashwagandha is typically grown from seeds. It is a hardy plant that prefers dry conditions and well-drained soil. The roots are the primary part harvested for medicinal use.",
+  "growthDuration": "Approximately 150-180 days (5-6 months) from sowing to root harvest.",
+  "sustainabilityTips": [
+    "Drought-tolerant and can be grown in marginal lands with low inputs.",
+    "Suitable for dryland farming systems.",
+    "Organic cultivation is preferred for medicinal use."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of ashwagandha is influenced by cultivation practices (often low-input) and processing (drying, powdering), and transportation. Sustainable and local sourcing can minimize impact.",
+  "uses": ["traditional_medicine_ayurveda_adaptogen_stress_relief_vitality_tonic_root_powder_extracts", "dietary_supplement"],
+  "originAndDomesticationHistory": "Ashwagandha (Withania somnifera) has a long history of use in traditional Ayurvedic medicine in India, dating back thousands of years. Its name in Sanskrit translates to 'smell of a horse', referring to its root's distinct odor and the belief that it imparts the strength and virility of a horse. It has been a cornerstone herb in Ayurveda for its wide-ranging health benefits.",
+  "climaticRequirements": {
+    "temperature": "Prefers relatively dry and subtropical to temperate climates. Optimal temperatures are 20-35°C. Can tolerate higher temperatures but sensitive to frost.",
+    "rainfall": "Drought-tolerant. Grows well in areas with 500-750mm of rainfall. Late winter rains are beneficial for root development.",
+    "altitude": "Can be cultivated from sea level up to 1500m."
+  },
+  "soilPreferences": "Prefers well-drained sandy loam or light red soils with a pH of 7.5-8.0 (slightly alkaline). Good drainage is crucial. Cannot tolerate waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Primarily grown as a rain-fed crop in areas with sufficient rainfall. If irrigation is provided, it's usually minimal and applied during critical growth stages if there's a prolonged dry spell. Withholds irrigation before harvest.",
+  "plantingAndHarvestCycles": "Seeds are sown directly or seedlings are transplanted at the onset of the monsoon (June-July). Plants are thinned to maintain proper spacing. Roots are harvested in winter (January-March) when the plant is about 150-180 days old, and berries have ripened and leaves start to dry.",
+  "pestAndDiseaseManagement": "Generally a hardy crop with few major pests or diseases. Aphids, mites, and shoot borers can occasionally occur. Leaf spot and seedling blight can be issues in humid conditions. Good field sanitation and organic control methods are usually sufficient.",
+  "postHarvestHandling": "Roots are carefully dug up without damaging them. They are then washed, cut into smaller pieces (7-10 cm), and sun-dried or shade-dried until they reach about 10% moisture content. Dried roots are then graded and stored in airtight containers before being powdered or used for extracts.",
+  "majorProducingCountriesOrRegions": ["India (Rajasthan, Madhya Pradesh, Punjab, Gujarat, Uttar Pradesh are major states)", "Nepal", "Pakistan", "Limited cultivation in some African countries and USA"],
+  "marketValueAndGlobalDemand": "Ashwagandha has a rapidly growing global market, driven by increasing consumer interest in adaptogens, natural stress relievers, and herbal supplements. Demand for high-quality root powder and standardized extracts is high in North America, Europe, and Asia. India is the primary producer and exporter."
+}

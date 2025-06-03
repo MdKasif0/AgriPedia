@@ -1,0 +1,217 @@
+{
+  "id": "cluster-beans",
+  "commonName": "Cluster Beans (Guar / Gawar)",
+  "scientificName": "Cyamopsis tetragonoloba",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cluster_bean_cluster.jpg/799px-Cluster_bean_cluster.jpg",
+  "description": "An annual legume, also known as guar, cultivated for its young, tender pods which are eaten as a vegetable. The pods are typically flat, 5-10 cm long, and grow in clusters, hence the name. They have a slightly bitter taste and a distinct flavor. The plant is also the primary source of guar gum, a widely used food thickener and industrial hydrocolloid extracted from its seeds.",
+  "origin": "Indian subcontinent (likely domesticated in India or Pakistan from wild African or South Asian ancestors like Cyamopsis senegalensis or C. serrata).",
+  "localNames": [
+    "Guar / Gawar / Guvar (ग्वार - Hindi, Marathi, Gujarati)",
+    "Guar Phalli (ग्वार फल्ली - Hindi)",
+    "Kothavarangai (கொத்தவரங்காய் - Tamil)",
+    "Goruchikkudu Kaya (గోరుచిక్కుడు కాయ - Telugu)",
+    "Guwar (Punjabi)"
+  ],
+  "regions": [
+    "India (world's largest producer, especially Rajasthan, Gujarat, Haryana for both vegetable and guar gum)",
+    "Pakistan (significant producer)",
+    "United States (primarily Texas and Oklahoma for guar gum production)",
+    "Australia (limited cultivation)",
+    "South Africa (limited cultivation)",
+    "Other parts of South Asia and some African countries for local consumption."
+  ],
+  "seasons": [
+    "Primarily grown during the warm seasons: Summer and Rainy season (Kharif crop in India, typically sown June-July and harvested August-October for vegetable pods)."
+  ],
+  "nutrition": {
+    "calories": "15-16 kcal per 100g (cooked vegetable pods)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 3.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 10.8,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 5.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 67.5,
+        "unit": "µg",
+        "rdi": "56-84%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 177,
+        "unit": "µg",
+        "rdi": "44%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 15,
+        "unit": "mg",
+        "rdi": "17-25%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": "Significant amounts",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 130,
+        "unit": "mg",
+        "rdi": "10-13%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 57,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.08,
+        "unit": "mg",
+        "rdi": "6-14%"
+      },
+      {
+        "name": "Potassium",
+        "value": "Present",
+        "unit": ""
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of dietary fiber, which aids in digestion, helps prevent constipation, can regulate blood sugar levels, and may contribute to lowering cholesterol.",
+    "Rich in Vitamin K, essential for blood clotting and bone health.",
+    "Good source of folate (Vitamin B9), crucial for cell division, DNA synthesis, and particularly important during pregnancy.",
+    "Contains calcium and phosphorus, important minerals for bone and teeth strength.",
+    "Guar gum extracted from its seeds has been shown to have cholesterol-lowering and blood sugar-stabilizing effects."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cluster Bean Allergy",
+      "severity": "Rare",
+      "details": "Allergies to cluster beans (vegetable pods) are uncommon. However, occupational exposure to guar gum dust (in industrial settings) can sometimes lead to respiratory sensitization or asthma in susceptible individuals."
+    }
+  ],
+  "cultivationProcess": "Cluster beans are warm-season annual legumes. Seeds are sown directly after the last frost. The plant is drought-tolerant and thrives in well-drained sandy loam soil. It requires moderate watering. Young, tender pods are harvested for vegetable use. For guar gum, pods are left to mature and dry, then seeds are extracted. Details in specific sections.",
+  "growthDuration": "For vegetable pods: Approximately 45 to 60 days from sowing to the first harvest. Pods develop quickly and require frequent picking. For seeds (guar gum): Approximately 90 to 120 days for pods to mature and dry.",
+  "sustainabilityTips": [
+    "Store fresh cluster beans in the refrigerator, wrapped in a paper towel or in a perforated plastic bag, for about 3-5 days.",
+    "Trim the ends and remove any tough strings along the edges (if present in mature pods) before cooking.",
+    "Cluster beans are commonly used in Indian curries, stir-fries (sabzi), and sometimes pickled or sun-dried (vathal). They are often boiled or steamed before being added to dishes to ensure tenderness.",
+    "As a legume, it fixes atmospheric nitrogen, improving soil fertility and reducing the need for nitrogen fertilizers, making it a sustainable crop in rotation systems."
+  ],
+  "carbonFootprintInfo": "Low, similar to other legumes, typically around 0.3-0.6 kg CO2e/kg when grown for local consumption. Its drought tolerance also contributes to a lower water footprint in suitable regions. The industrial processing of guar gum from seeds would have a separate, more energy-intensive footprint.",
+  "uses": [
+    "culinary_vegetable_young_tender_pods_cooked_in_curries_stir_fries_sabzi_stews_kothavarangai_poriyal_guar_phalli_ki_sabzi",
+    "industrial_guar_gum_extracted_from_seeds_used_as_thickener_stabilizer_emulsifier_in_food_products_ice_cream_sauces_processed_foods_cosmetics_pharmaceuticals_paper_industry_textile_sizing_hydraulic_fracturing_fracking_oil_and_gas_industry",
+    "animal_fodder_plant_leaves_stems_pods_used_as_nutritious_green_fodder_for_livestock_cattle_guar_meal_byproduct_of_gum_extraction_is_a_protein_rich_animal_feed",
+    "green_manure_crop_grown_to_improve_soil_fertility_due_to_its_nitrogen_fixing_ability_legume"
+  ],
+  "originAndDomesticationHistory": "Cluster bean (Cyamopsis tetragonoloba), also known as guar, is believed to have originated in the Indian subcontinent. It was likely domesticated in India or Pakistan from its wild ancestor, possibly Cyamopsis senegalensis or Cyamopsis serrata, which are found in parts of Africa and South Asia. Guar has been cultivated in India for centuries, primarily for use as a vegetable (young pods), as fodder for livestock, and for traditional medicinal purposes. Its large-scale commercial cultivation for the extraction of guar gum from its seeds began much more recently, primarily in the mid-20th century. This was driven by the discovery of guar gum's unique properties as a thickener, stabilizer, and emulsifier, leading to its widespread use in various industries, including food processing, cosmetics, pharmaceuticals, and notably, the oil and gas industry for hydraulic fracturing.",
+  "climaticRequirements": {
+    "temperature": "Cluster bean is a warm-season, drought-tolerant crop. It thrives in hot climates with optimal temperatures for growth ranging from 25°C to 35°C (77°F to 95°F). It requires plenty of sunshine and can tolerate high temperatures. While it can grow in a range of conditions, it is sensitive to frost.",
+    "rainfall": "Adapted to arid and semi-arid conditions. It prefers an annual rainfall of 300mm to 800mm. It can be successfully grown as a rainfed crop in regions with this amount of rainfall, or with supplemental irrigation in drier areas. Good drainage is important, as it does not tolerate waterlogging.",
+    "altitude": "Typically cultivated in lowland to moderate altitudes where warm growing conditions prevail."
+  },
+  "soilPreferences": "Prefers well-drained, sandy loam or loamy soils. It is known for its ability to grow in relatively poor soils and can tolerate moderately saline and alkaline conditions, with an optimal pH range of 7.0 to 8.5. Good soil drainage is crucial to prevent root diseases.",
+  "irrigationAndWaterNeeds": "Cluster bean is highly drought-tolerant once established, primarily due to its deep taproot system which can access moisture from lower soil layers. However, for optimal yield, especially for vegetable pod production or consistent seed yield for guar gum, about 2 to 4 irrigations may be necessary during critical growth stages such as flowering and pod development, particularly if rainfall is insufficient or erratic. Overwatering should be avoided as it can be detrimental and may lead to diseases like root rot.",
+  "plantingAndHarvestCycles": "Cluster bean is propagated from seeds. Seeds are typically sown directly in the field during the rainy season (e.g., June-July in India for the Kharif crop) or in spring/summer in other suitable regions, once soil temperatures are consistently warm. For vegetable purposes, young, tender pods are harvested starting about 45 to 60 days after sowing. Harvesting needs to be done frequently (every few days) by picking the pods before they become mature and fibrous; this also encourages continued production over several weeks. For guar gum production, the pods are allowed to mature fully and dry on the plant, which typically takes about 90 to 120 days after sowing. The plants are then harvested, threshed to separate the seeds, and the seeds are further processed to extract the gum.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids, jassids (leafhoppers), whiteflies, and pod borers can affect cluster bean crops. Termites can also be an issue in some soils. Common Diseases: Bacterial blight (caused by Xanthomonas axonopodis pv. cyamopsidis) is a major disease. Alternaria leaf spot, powdery mildew, and root rot (in poorly drained soils) can also occur. Management Strategies: Using disease-resistant varieties is recommended. Treating seeds with appropriate fungicides or bio-agents before sowing. Practicing crop rotation to reduce the buildup of soilborne pathogens. Ensuring proper plant spacing for good air circulation. Controlling insect vectors like aphids and whiteflies to limit the spread of viral diseases. Applying appropriate and approved insecticides or fungicides if pest or disease infestations become severe and exceed economic thresholds, following IPM guidelines.",
+  "postHarvestHandling": "Fresh Vegetable Pods: Young, tender cluster bean pods are perishable and should be handled with care to avoid bruising. They are best consumed within a few days of harvest. They can be stored in the refrigerator, typically in a perforated plastic bag or a container lined with a paper towel, for about 3-5 days to maintain freshness. Before cooking, the ends are usually trimmed, and any tough strings along the edges (if present in more mature pods) are removed. Seeds for Guar Gum: After harvesting mature, dried plants, the pods are threshed to extract the seeds. These seeds are then further dried to a safe moisture content (around 10-12%) for storage. The dried seeds are stored in cool, dry conditions in bags or bins before being sent for processing into guar gum. Proper storage is essential to prevent mold growth and insect infestation.",
+  "majorProducingCountriesOrRegions": [
+    "India (accounts for about 80% of global guar production, primarily for guar gum in states like Rajasthan, Gujarat, and Haryana; also for vegetable use)",
+    "Pakistan (significant producer of guar, both for gum and local consumption)",
+    "United States (primarily Texas and Oklahoma, mainly for guar gum production for the oil and gas industry)",
+    "Australia (limited cultivation, exploring potential)",
+    "South Africa (limited cultivation)",
+    "Various other countries in South Asia and some African nations cultivate cluster beans for local vegetable consumption and fodder."
+  ],
+  "marketValueAndGlobalDemand": "Vegetable Pods: Cluster beans are a popular vegetable in South Asian cuisines (especially Indian) and are consumed locally and regionally. The market value for fresh pods is moderate and subject to seasonal fluctuations. Guar Gum: Guar gum is a major industrial commodity with significant global demand. Its price can be quite volatile, heavily influenced by demand from the food processing industry (where it's used as a thickener, stabilizer, and emulsifier in products like ice cream, sauces, and processed foods) and, crucially, by the oil and gas industry (where it's a key component in hydraulic fracturing or 'fracking' fluids). India is the dominant global supplier of guar gum. The demand from these sectors dictates the cultivation area and market prices for guar seeds.",
+  "staticRecipes": [
+    {
+      "name": "Guar Phalli ki Sabzi (Cluster Beans Stir-fry)",
+      "description": "A simple and common North Indian dry curry made with cluster beans.",
+      "ingredients": [
+        "1/2 lb cluster beans (guar phalli), trimmed and cut into 1-inch pieces",
+        "1 tbsp oil",
+        "1/2 tsp cumin seeds",
+        "1/2 tsp mustard seeds (optional)",
+        "Pinch of asafoetida (hing)",
+        "1/4 tsp turmeric powder",
+        "1/2 tsp coriander powder",
+        "1/4 tsp red chili powder (or to taste)",
+        "Salt to taste",
+        "1 tbsp water (optional)"
+      ],
+      "steps": [
+        "Wash cluster beans, trim the ends, and cut them into 1-inch pieces. If beans are mature, you might need to remove the strings along the edges.",
+        "Heat oil in a pan or kadai over medium heat. Add cumin seeds and mustard seeds (if using). When they splutter, add asafoetida.",
+        "Add the cut cluster beans, turmeric powder, coriander powder, chili powder, and salt. Stir well to coat the beans with spices.",
+        "If the beans seem very dry, sprinkle 1 tbsp of water. Cover the pan and cook on low heat for 10-15 minutes, or until the beans are tender, stirring occasionally.",
+        "Uncover and cook for another 2-3 minutes until any excess moisture evaporates. Serve hot with roti or paratha."
+      ]
+    },
+    {
+      "name": "Kothavarangai Vathal (Sun-dried Cluster Beans)",
+      "description": "A traditional South Indian method of preserving cluster beans by sun-drying, which are then fried and served as a side.",
+      "ingredients": [
+        "1 lb cluster beans (kothavarangai)",
+        "1/2 cup plain yogurt or buttermilk",
+        "1 tsp salt",
+        "1/4 tsp turmeric powder"
+      ],
+      "steps": [
+        "Wash cluster beans, trim ends, and string them if necessary. Cut into 1-inch pieces.",
+        "In a bowl, mix yogurt/buttermilk, salt, and turmeric powder.",
+        "Add the cut cluster beans to the yogurt mixture and mix well to coat evenly.",
+        "Spread the coated beans in a single layer on a large tray or clean cloth.",
+        "Sun-dry for 3-5 days, or until the beans are completely dry and crisp. Bring them indoors at night or if there's moisture.",
+        "Once fully dried, store the vathal in an airtight container. To serve, deep fry small batches in hot oil until crisp and lightly browned. Drain and serve as a crunchy side dish with rice and sambar/rasam."
+      ]
+    },
+    {
+      "name": "Cluster Beans with Coconut (Kothavarangai Poriyal)",
+      "description": "A South Indian stir-fry with cluster beans, tempered spices, and fresh coconut.",
+      "ingredients": [
+        "1/2 lb cluster beans, trimmed and chopped",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp urad dal (split black lentils)",
+        "1-2 dried red chilies, broken",
+        "Pinch of asafoetida (hing)",
+        "Few curry leaves",
+        "1/4 tsp turmeric powder",
+        "Salt to taste",
+        "2-3 tbsp grated fresh coconut"
+      ],
+      "steps": [
+        "Boil or steam chopped cluster beans with a little salt until tender-crisp. Drain and set aside.",
+        "Heat oil in a pan. Add mustard seeds. When they splutter, add urad dal and dried red chilies. Sauté until dal turns golden.",
+        "Add asafoetida and curry leaves. Sauté for a few seconds.",
+        "Add the cooked cluster beans and turmeric powder. Stir well.",
+        "Cook for 2-3 minutes. Add grated coconut and mix gently.",
+        "Cook for another minute. Serve hot as a side dish with rice."
+      ]
+    }
+  ]
+}

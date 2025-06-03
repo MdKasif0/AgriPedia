@@ -1,0 +1,201 @@
+{
+  "id": "loquat",
+  "commonName": "Loquat",
+  "scientificName": "Eriobotrya japonica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Loquats_on_tree_in_Alsace.jpg/800px-Loquats_on_tree_in_Alsace.jpg",
+  "description": "The loquat (Eriobotrya japonica) is a large evergreen shrub or small tree in the rose family (Rosaceae), known for its clusters of small, oval or pear-shaped orange-yellow fruits. The fruit has a tangy, sweet to subacid flavor, often compared to a mix of peach, citrus, and mild mango. The succulent flesh can be white, yellow, or orange, and contains several large brown seeds.",
+  "origin": "Native to the cooler hill regions of south-central China (specifically the Dadu River valley in Sichuan province).",
+  "localNames": [
+    "Pípá (枇杷 - Chinese)",
+    "Biwa (ビワ - Japanese)",
+    "Níspero Japonés (Spanish - 'Japanese Medlar')",
+    "Nèfle du Japon (French - 'Medlar of Japan')",
+    "Japanische Mispel (German - 'Japanese Medlar')",
+    "Japanese Plum (English - somewhat a misnomer)",
+    "Lokat (Hindi)"
+  ],
+  "regions": [
+    "China (major world producer)",
+    "Japan (significant cultivation and consumption)",
+    "Spain (major producer in Europe, especially in the Mediterranean region)",
+    "Turkey",
+    "Pakistan",
+    "India (hill regions)",
+    "Mediterranean countries (Italy, Greece, Israel, Lebanon, Cyprus, Malta)",
+    "United States (California, Florida, Hawaii - mostly home gardens or small scale)",
+    "Brazil",
+    "Chile",
+    "Australia"
+  ],
+  "seasons": [
+    "Late winter to early summer (unique fruiting season: flowers in autumn/early winter, fruits ripen in spring/early summer, e.g., February to June in Northern Hemisphere, depending on climate and cultivar)"
+  ],
+  "nutrition": {
+    "calories": "47 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.43,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 12.14,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.7,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (as beta-carotene)",
+        "value": 76,
+        "unit": "µg RAE (Retinol Activity Equivalents)",
+        "rdi": "8-10%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 1,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 14,
+        "unit": "µg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 266,
+        "unit": "mg",
+        "rdi": "6-8%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.148,
+        "unit": "mg",
+        "rdi": "6-7%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.28,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 13,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 27,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 16,
+        "unit": "mg",
+        "rdi": "1-2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin A (as carotenoids), which is essential for good vision, immune function, and skin health.",
+    "Contains dietary fiber, aiding digestion, promoting satiety, and helping to regulate blood sugar levels.",
+    "Provides potassium, an important mineral for maintaining healthy blood pressure and heart function.",
+    "Loquat leaf extract is traditionally used in Chinese and Japanese medicine (as 'biwa cha' or loquat tea) for coughs, respiratory ailments, and as an anti-inflammatory agent."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cyanogenic glycosides in seeds and young leaves",
+      "severity": "Low to Moderate (if seeds/young leaves ingested in quantity)",
+      "details": "Loquat seeds (pips) and very young, tender leaves contain small amounts of cyanogenic glycosides like amygdalin, which can release cyanide if chewed and ingested in significant quantities. The bitter taste of seeds usually prevents consumption of enough to cause harm. The fruit flesh is safe and does not contain these compounds. Cooked loquat leaf tea is also generally considered safe."
+    }
+  ],
+  "cultivationProcess": "Loquat trees are evergreen and adapt to subtropical to mild temperate climates. They are unique in that they flower in autumn or early winter and produce fruit in early spring to early summer. Loquats prefer well-drained soil and full sun for best fruit production. Propagation is often by grafting or budding to maintain cultivar characteristics, though they can be grown from seed. Pruning helps to manage tree size and shape, and to improve fruit quality by thinning. More details in specific sections.",
+  "growthDuration": "Grafted loquat trees can begin to bear fruit within 2-3 years, while seedling trees may take 5-8 years. Trees can grow 5-10 meters tall but are often kept smaller in cultivation. The fruit typically ripens about 90 days after full flower bloom, making it one of the earliest fruits of the spring season.",
+  "sustainabilityTips": [
+    "Loquats are relatively drought-tolerant once established, making them a good choice for water-wise gardens in suitable climates.",
+    "Support local growers or grow your own, as loquats have a short shelf life and are best consumed fresh, reducing the need for long-distance transport and extensive preservation methods.",
+    "Utilize fallen leaves for compost or traditional tea (after proper research)."
+  ],
+  "carbonFootprintInfo": "Loquats grown and consumed locally, especially from home gardens or small orchards with minimal inputs, have a low carbon footprint. Fruit imported from distant regions, particularly if air-freighted due to its perishability, will have a considerably higher environmental impact.",
+  "uses": [
+    "fresh_consumption_eaten_raw_skin_can_be_peeled_or_eaten",
+    "processed_products_jams_jellies_preserves_chutneys_fruit_syrup_poached_loquats",
+    "culinary_desserts_pies_tarts_fruit_salads_sauces",
+    "beverages_loquat_wine_liqueur_nespola_liqueur",
+    "medicinal_traditional_leaves_for_tea_biwa_cha_for_coughs_respiratory_ailments_fruit_for_throat_soothing",
+    "ornamental_tree_attractive_evergreen_foliage_fragrant_flowers"
+  ],
+  "originAndDomesticationHistory": "The loquat (Eriobotrya japonica) is native to the cooler, hilly regions of south-central China, specifically believed to have originated in the Dadu River valley in Sichuan province. It has been cultivated in China for over two thousand years. The fruit was introduced to Japan at a very early period, possibly during the Tang Dynasty (618-907 AD), where it has also been cultivated for centuries, and numerous cultivars have been developed ('Biwa' is the Japanese name). From Japan, it spread to India and later to the Mediterranean region (likely in the late 18th or early 19th century). It is now cultivated in many subtropical and mild temperate parts of the world for its fruit and as an ornamental tree.",
+  "climaticRequirements": {
+    "temperature": "Loquats are suited to subtropical and mild temperate climates. Mature trees are fairly hardy and can tolerate winter temperatures down to about -10°C to -12°C (10-14°F). However, the flowers, which appear in autumn or early winter, and young developing fruit are sensitive to frost and can be damaged by temperatures below -2°C to -5°C (23-28°F). This frost sensitivity during flowering/fruiting is a major limiting factor for its cultivation. They prefer warm summers for optimal fruit ripening but can suffer in extreme, prolonged heat.",
+    "rainfall": "Requires moderate annual rainfall, typically between 750mm and 1500mm. While established trees are relatively drought-tolerant, consistent moisture is beneficial for good fruit production and quality, especially during fruit development. Good drainage is essential.",
+    "altitude": "Can be grown successfully from sea level up to elevations of about 2000 meters (approx. 6500 feet) in suitable latitudes where temperature conditions are met."
+  },
+  "soilPreferences": "Loquat trees are adaptable to a wide range of soil types but perform best in deep, fertile, well-drained loamy soils. Good drainage is essential, as they do not tolerate waterlogged conditions. They can grow in soils with a pH ranging from slightly acidic to slightly alkaline (typically 6.0 to 7.5).",
+  "irrigationAndWaterNeeds": "Young loquat trees require regular watering to ensure proper establishment. Mature trees are fairly drought-tolerant but benefit significantly from supplemental irrigation, particularly during prolonged dry spells and the critical periods of flowering, fruit set, and fruit development. Consistent moisture during these times helps ensure good yields and fruit size. Overwatering or poor drainage should be avoided.",
+  "plantingAndHarvestCycles": "Loquats are commonly propagated by seeds, although fruit quality from seedlings can be variable, and the juvenile period may be longer (5-8 years to fruiting). For specific cultivars, preferred methods include grafting (onto seedling loquat rootstock or sometimes quince for dwarfing) or budding. Air layering can also be successful. Trees are typically planted in a sunny, sheltered location to protect them from strong winds and severe frost. Grafted trees may start bearing fruit within 2-3 years. A unique characteristic of loquats is their flowering season, which occurs in autumn or early winter. The fruit develops slowly through the winter and ripens in early spring to early summer (e.g., February to June in the Northern Hemisphere), making it one of הthe earliest fresh fruits of the season. Fruits are borne in clusters and are harvested by hand when they are fully colored (yellow to orange, depending on the cultivar), slightly soft to the touch, and have developed their characteristic aroma. They should be handled carefully as they bruise easily. Loquats do not ripen significantly after being picked.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (such as Mediterranean fruit fly and Oriental fruit fly) are major pests, as their larvae infest the ripening fruit. Aphids can attack new growth, and scale insects may appear on stems and leaves. Codling moth can be a problem in some apple and pear growing regions where loquats are also present. Birds and squirrels are often attracted to the ripe fruit. Common Diseases: Fire blight (Erwinia amylovora) is a serious bacterial disease that can affect loquats, causing dieback of branches. Scab (Venturia inaequalis or Fusicladium eriobotryae) can cause lesions on leaves and fruit. Leaf spot diseases (caused by various fungi) and fruit rots (e.g., Botrytis) can also occur, especially in humid conditions. Management Strategies: Implementing good orchard sanitation, such as removing and destroying fallen fruit and diseased plant parts. Using fruit fly traps and lures, or bagging fruit clusters for protection. Pruning to ensure good air circulation, which can help reduce fungal disease incidence. Applying copper-based sprays or other appropriate bactericides/fungicides for fire blight and fungal diseases, following local recommendations. Netting trees to protect fruit from birds.",
+  "postHarvestHandling": "Loquats are delicate and highly perishable, with a relatively short shelf life. They should be harvested with care to avoid bruising. After picking, they can be stored at room temperature for only a few days. Shelf life can be extended to about 1-3 weeks if the fruit is refrigerated at cool temperatures (around 5-10°C or 41-50°F) with moderate humidity. They are often sold in small punnets or shallow trays to minimize damage. Due to their perishability, long-distance commercial shipping of fresh loquats can be challenging, which is why they are often consumed locally or regionally.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer)",
+    "Spain (leading producer in Europe)",
+    "Japan",
+    "Turkey",
+    "Italy",
+    "Greece",
+    "Pakistan",
+    "India",
+    "Israel",
+    "Lebanon",
+    "Brazil",
+    "United States (California, Florida - smaller scale)"
+  ],
+  "marketValueAndGlobalDemand": "Loquats are a popular seasonal fruit in the regions where they are cultivated, particularly in China, Japan, Spain, and other Mediterranean countries. They are primarily sold in local and regional fresh markets. Due to their perishability and delicate nature, international trade in fresh loquats is relatively limited compared to more robust fruits, though there is some export from countries like Spain. Processed loquat products, such as canned loquats in syrup, jams, jellies, and loquat leaf tea (Biwa Cha), also have a market presence, especially in East Asia. There is growing interest in the fruit's unique flavor and early spring availability, as well as its ornamental value as an evergreen tree with fragrant winter blossoms.",
+  "staticRecipes": [
+    {
+      "name": "Simple Loquat Jam",
+      "description": "A delightful homemade jam that captures the unique sweet-tart flavor of fresh loquats. It's excellent on toast, scones, or as a glaze.",
+      "ingredients": [
+        "1 kg ripe loquats, washed, halved, and seeds removed",
+        "500g granulated sugar (adjust based on sweetness of fruit and preference)",
+        "Juice of 1 large lemon (about 2-3 tablespoons)",
+        "1/4 cup water (optional, use if loquats are not very juicy)"
+      ],
+      "steps": [
+        "Prepare the loquats: After washing, halve the loquats and remove all seeds and the tough inner membrane. You can choose to peel the skin or leave it on (skin contains pectin which aids setting). Roughly chop if desired.",
+        "Combine the prepared loquats, granulated sugar, lemon juice, and optional water in a large, heavy-bottomed stainless steel or enamel saucepan.",
+        "Stir the mixture well and let it sit for about 30-60 minutes. This process, called maceration, helps the sugar to draw juice out of the fruit.",
+        "Place the saucepan over medium-low heat. Cook, stirring gently and frequently, until the sugar has completely dissolved. Do not allow the mixture to boil at this stage.",
+        "Once the sugar is dissolved, increase the heat to medium-high and bring the mixture to a rolling boil (a boil that continues bubbling even when you stir it).",
+        "Continue to boil rapidly, stirring often to prevent the jam from sticking to the bottom of the pan. Cook for approximately 20-30 minutes, or until the jam reaches its setting point.",
+        "To test for setting point: Remove the saucepan from the heat. Place a small spoonful of jam onto a chilled saucer (kept in the freezer). Allow it to cool for about 30 seconds, then gently push the jam with your fingertip. If the surface wrinkles, the jam is set. Alternatively, use a jam thermometer; the setting point is 105°C (221°F).",
+        "Once the setting point is reached, remove the saucepan from the heat. Skim off any foam (scum) from the surface using a slotted spoon, if desired.",
+        "Carefully ladle the hot jam into warm, sterilized glass jars, leaving about 1/4 inch (0.5 cm) of headspace at the top.",
+        "Wipe the jar rims clean, place the lids on, and tighten the screw bands. Allow the jars to cool completely undisturbed. As the jam cools, you should hear the lids pop, indicating a good seal. The jam will thicken further as it cools."
+      ]
+    }
+  ]
+}

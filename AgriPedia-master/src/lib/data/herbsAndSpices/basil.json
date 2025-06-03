@@ -1,0 +1,65 @@
+{
+  "id": "basil",
+  "commonName": "Basil",
+  "scientificName": "Ocimum basilicum",
+  "image": "https://images.unsplash.com/photo-1579169025446-68e20f950843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Basil is a culinary herb of the family Lamiaceae (mints). It is a tender plant, and is used in cuisines worldwide. There are many varieties of basil, including sweet basil (most common for Italian food), Thai basil, lemon basil, and holy basil (Tulsi).",
+  "origin": "Central Africa and Southeast Asia.",
+  "localNames": ["Tulsi (Hindi - for Holy Basil)", "Babui tulsi (Bengali)", "Basilic (French)", "Albahaca (Spanish)", "Bajiriko (Japanese)"],
+  "regions": ["India", "Italy", "Thailand", "Vietnam", "Mediterranean region", "Worldwide cultivation"],
+  "seasons": ["Warm season annual; typically grown in summer."],
+  "nutrition": {
+    "calories": "23 kcal per 100g (fresh)",
+    "macronutrients": [
+      { "name": "Protein", "value": 3.2, "unit": "g" },
+      { "name": "Carbohydrates", "value": 2.7, "unit": "g" },
+      { "name": "Fat", "value": 0.6, "unit": "g" },
+      { "name": "Fiber", "value": 1.6, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 414.8, "unit": "µg", "rdi": "346%" },
+      { "name": "Vitamin A", "value": 264, "unit": "µg", "rdi": "33%" },
+      { "name": "Manganese", "value": 1.148, "unit": "mg", "rdi": "50%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 3.17, "unit": "mg", "rdi": "18%" },
+      { "name": "Calcium", "value": 177, "unit": "mg", "rdi": "18%" },
+      { "name": "Potassium", "value": 295, "unit": "mg", "rdi": "6%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants like eugenol, which may have anti-inflammatory properties.",
+    "Good source of Vitamin K, important for blood clotting and bone health.",
+    "Contains essential oils that may have antimicrobial properties.",
+    "Traditionally used to aid digestion and reduce stress (especially Holy Basil)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lamiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to basil is uncommon but can occur, especially in individuals allergic to other mint family plants. Symptoms can include oral allergy syndrome or skin irritation."
+    }
+  ],
+  "cultivationProcess": "Basil cultivation involves sowing seeds or planting cuttings in well-drained soil in a sunny location. It requires regular watering and pinching back the tips to encourage bushy growth. It is sensitive to cold.",
+  "growthDuration": "Typically 60-90 days from seed to first harvest. Can be harvested continuously throughout the growing season.",
+  "sustainabilityTips": [
+    "Can be easily grown in home gardens or pots, reducing food miles.",
+    "Companion planting with basil can deter some pests from other plants.",
+    "Organic cultivation methods are widely used."
+  ],
+  "carbonFootprintInfo": "Fresh basil grown locally has a low carbon footprint. Greenhouse-grown or imported basil will have a higher footprint due to energy use and transportation.",
+  "uses": ["culinary_herb_fresh_dried", "essential_oil_production", "traditional_medicine", "insect_repellent"],
+  "originAndDomesticationHistory": "Basil (Ocimum basilicum) is native to tropical regions from central Africa to Southeast Asia. It has been cultivated for over 5,000 years. It spread to the Middle East, then to ancient Greece and Rome, and throughout Europe. Holy Basil (Ocimum tenuiflorum or Tulsi) has a distinct origin and long history of use in India.",
+  "climaticRequirements": {
+    "temperature": "Warm-season herb. Optimal growing temperatures are 20-30°C. Very sensitive to frost.",
+    "rainfall": "Requires consistent moisture, but well-drained soil. Around 600-800mm equivalent during its growing period if not irrigated.",
+    "altitude": "Typically grown in lowland areas, but can be cultivated at moderate altitudes in warm climates."
+  },
+  "soilPreferences": "Prefers rich, moist, well-drained loamy soils with a pH of 6.0-7.5. Good organic matter content is beneficial.",
+  "irrigationAndWaterNeeds": "Requires regular watering to keep the soil consistently moist, especially during dry periods. Avoid waterlogging. Drip irrigation or soaker hoses are efficient.",
+  "plantingAndHarvestCycles": "Seeds are sown indoors a few weeks before the last frost or directly outdoors after all danger of frost has passed. Seedlings are thinned or transplanted. Leaves can be harvested once plants are established (about 6-8 weeks) by pinching off individual leaves or sprigs. Regular harvesting encourages more growth.",
+  "pestAndDiseaseManagement": "Common pests include aphids, spider mites, and slugs. Diseases include downy mildew (a major issue for basil), Fusarium wilt, and fungal leaf spots. Management includes selecting resistant varieties, ensuring good air circulation, avoiding overhead watering, and using organic pest control methods.",
+  "postHarvestHandling": "Fresh basil is highly perishable. It can be stored short-term in the refrigerator (wrapped in a damp paper towel or stems in water). For longer storage, it can be dried, frozen (e.g., in ice cube trays with oil or water), or used to make pesto.",
+  "majorProducingCountriesOrRegions": ["India", "Egypt", "United States (California)", "Mexico", "Mediterranean countries (Italy, France, Spain)", "Thailand", "Vietnam"],
+  "marketValueAndGlobalDemand": "Basil is one of the most popular culinary herbs globally. Demand is high for both fresh and dried basil, as well as basil essential oil. The market is driven by the food industry, aromatherapy, and traditional medicine sectors. Prices can fluctuate based on seasonal availability and disease pressures like downy mildew."
+}

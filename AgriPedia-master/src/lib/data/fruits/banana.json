@@ -1,0 +1,170 @@
+{
+  "id": "banana",
+  "commonName": "Banana",
+  "scientificName": "Musa spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/800px-Bananas_white_background_DS.jpg",
+  "description": "An elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+  "origin": "Southeast Asia and Australia",
+  "localNames": [
+    "Plátano (Spanish)",
+    "Banane (French/German)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Indonesia",
+    "Brazil",
+    "Ecuador"
+  ],
+  "seasons": [
+    "Year-round"
+  ],
+  "nutrition": {
+    "calories": "89 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.1,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 23,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 8.7,
+        "unit": "mg",
+        "rdi": "15%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.4,
+        "unit": "mg",
+        "rdi": "20%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 358,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 27,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "High potassium content supports healthy blood pressure levels and cardiovascular function.",
+    "Provides readily available carbohydrates, making it a great natural energy booster for athletes.",
+    "Contains pectin and resistant starch, which may moderate blood sugar levels and improve digestive health.",
+    "Good source of Vitamin B6, important for brain development and function."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex-Fruit Syndrome",
+      "severity": "Moderate",
+      "details": "Individuals allergic to latex may also react to bananas. Symptoms can range from mild oral reactions to anaphylaxis in severe cases."
+    },
+    {
+      "name": "Tyramine Content",
+      "severity": "Mild",
+      "details": "Can trigger migraines in sensitive individuals, especially when overripe."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Bananas are typically grown from \"pups\" or suckers.\n2. Site Selection: Choose a location with full sun, protection from strong winds, and excellent drainage.\n3. Soil: Bananas thrive in rich, fertile, well-drained soil, high in organic matter. Ideal pH is 5.5-6.5.\n4. Planting: Plant pups ensuring the corm is well-covered.\n5. Watering: Bananas are heavy feeders and require consistent moisture.\n6. Fertilizing: Apply a balanced fertilizer rich in potassium regularly.\n7. De-suckering: Remove excess suckers, leaving only one or two strong ones.\n8. Harvesting: Fruit bunch is harvested when bananas are plump but still green.",
+  "growthDuration": "Approximately 9-12 months from planting a pup to harvesting the first bunch of bananas.",
+  "sustainabilityTips": [
+    "Store at room temperature. Separate from other fruits if you want to slow their ripening.",
+    "Freeze overripe bananas (peeled) for smoothies or banana bread.",
+    "Compost banana peels."
+  ],
+  "carbonFootprintInfo": "Bananas often have a higher carbon footprint (around 0.5-0.8 kg CO2e/kg) due to long-distance refrigerated transport.",
+  "uses": ["culinary_fresh_eating", "dessert_baking_breads_cakes", "smoothies", "cooking_plantains_savory_dishes", "dried_banana_chips", "baby_food"],
+  "originAndDomesticationHistory": "Bananas originated in Southeast Asia, in the region covering Malaysia, Indonesia, or the Philippines, where wild species like Musa acuminata and Musa balbisiana grew. They were domesticated thousands of years ago, with evidence of cultivation in Papua New Guinea dating back to at least 5000-8000 BCE. Bananas spread through Austronesian expansion to the Pacific Islands and Indian Ocean. They reached Africa, and later the Americas via European explorers and traders.",
+  "climaticRequirements": {
+    "temperature": "Tropical conditions, optimal 26-30°C. Sensitive to frost and temperatures below 14°C.",
+    "rainfall": "Requires high and well-distributed rainfall, 1200-2500mm annually, or regular irrigation. High humidity is preferred.",
+    "altitude": "Typically grown from sea level up to 1500m, though some varieties can grow higher."
+  },
+  "soilPreferences": "Well-drained, deep, fertile loamy soils rich in organic matter. Prefers slightly acidic to neutral pH (5.5-7.0). Requires good aeration and moisture retention.",
+  "irrigationAndWaterNeeds": "High water requirement due to large leaves and rapid growth. Regular irrigation is essential in areas with insufficient rainfall, especially during dry seasons and fruit development. Drip irrigation or micro-sprinklers are efficient.",
+  "plantingAndHarvestCycles": "Propagated from suckers (pups) or corms. Planted year-round in tropical climates. Plants typically fruit 9-12 months after planting. The main stalk produces one bunch of bananas and then dies; new suckers take over. Harvesting is done when fruits are mature green (for export) or partially ripe for local markets. Harvested by cutting the entire bunch.",
+  "pestAndDiseaseManagement": "Common pests include banana weevils, nematodes, and thrips. Major diseases are Panama disease (Fusarium wilt), Black Sigatoka, and Banana Bunchy Top Virus (BBTV). Integrated management involves resistant varieties (e.g., Cavendish for Panama disease TR1, ongoing research for TR4), tissue culture plantlets, field sanitation, and nematicides/fungicides when necessary.",
+  "postHarvestHandling": "Bananas are harvested green and transported under refrigeration (around 13-14°C) to slow ripening. Ripening is often artificially induced using ethylene gas at destination markets. Careful handling is crucial to prevent bruising. Stored at cool room temperatures for home consumption.",
+  "majorProducingCountriesOrRegions": ["India", "China", "Indonesia", "Brazil", "Ecuador (leading exporter)"],
+  "marketValueAndGlobalDemand": "Bananas are one of the most widely consumed fruits globally and a vital staple food in many tropical countries. They are a major export commodity, with significant international trade. Demand is consistently high due to their affordability, nutritional value, and convenience. The global banana industry is very large.",
+  "staticRecipes": [
+    {
+      "name": "Classic Banana Bread",
+      "description": "A moist and delicious banana bread, perfect for using up ripe bananas.",
+      "ingredients": [
+        "3 ripe bananas, mashed",
+        "1/3 cup melted butter",
+        "1/2 cup sugar",
+        "1 egg, beaten",
+        "1 tsp vanilla extract",
+        "1 tsp baking soda",
+        "Pinch of salt",
+        "1 1/2 cups all-purpose flour"
+      ],
+      "steps": [
+        "Preheat oven to 350°F (175°C). Grease a loaf pan.",
+        "In a mixing bowl, combine mashed bananas and melted butter. Stir in sugar, egg, and vanilla extract.",
+        "Sprinkle baking soda and salt over the mixture and stir in. Add flour and mix until just combined.",
+        "Pour batter into prepared loaf pan.",
+        "Bake for 50-60 minutes, or until a toothpick inserted into the center comes out clean."
+      ]
+    },
+    {
+      "name": "Simple Banana Smoothie",
+      "description": "A quick and healthy smoothie, great for breakfast or a snack.",
+      "ingredients": [
+        "1 ripe banana, sliced",
+        "1/2 cup milk (dairy or non-dairy)",
+        "1/4 cup yogurt (optional)",
+        "1 tsp honey or maple syrup (optional)",
+        "Few ice cubes"
+      ],
+      "steps": [
+        "Combine banana, milk, yogurt (if using), honey (if using), and ice cubes in a blender.",
+        "Blend until smooth and creamy.",
+        "Pour into a glass and serve immediately."
+      ]
+    },
+    {
+      "name": "Pan-Fried Cinnamon Bananas",
+      "description": "A sweet and simple dessert or topping for pancakes or ice cream.",
+      "ingredients": [
+        "2 ripe but firm bananas, sliced",
+        "1 tbsp butter",
+        "1 tbsp brown sugar",
+        "1/4 tsp cinnamon"
+      ],
+      "steps": [
+        "Melt butter in a skillet over medium heat.",
+        "Add banana slices and cook for 1-2 minutes per side, until lightly golden.",
+        "Sprinkle with brown sugar and cinnamon. Cook for another minute, stirring gently, until sugar is melted and bananas are coated.",
+        "Serve warm."
+      ]
+    }
+  ]
+}

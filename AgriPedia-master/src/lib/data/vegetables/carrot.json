@@ -1,0 +1,216 @@
+{
+  "id": "carrot",
+  "commonName": "Carrot",
+  "scientificName": "Daucus carota subsp. sativus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Carrots.jpg",
+  "description": "A root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars also exist. It is a cultivated subspecies of the wild carrot, Daucus carota. Carrots are known for their crisp texture when raw and tender, sweet flavor when cooked.",
+  "origin": "Persia (modern-day Iran and Afghanistan) and surrounding regions of Central Asia. Orange carrots were developed in the Netherlands in the 16th-17th centuries.",
+  "localNames": [
+    "Zanahoria (Spanish)",
+    "Carotte (French)",
+    "Möhre / Karotte (German)",
+    "Carota (Italian)",
+    "Gajar (गाजर - Hindi)",
+    "Ninjin (人参 - Japanese)",
+    "Danggeun (당근 - Korean)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "Uzbekistan",
+    "Russia",
+    "United States (California, Washington, Wisconsin, Texas, Michigan)",
+    "Ukraine",
+    "Germany",
+    "Poland",
+    "United Kingdom",
+    "India",
+    "Netherlands"
+  ],
+  "seasons": [
+    "Cool-season crop. Typically planted in early spring for summer harvest, or late summer for autumn/winter harvest in temperate climates. Available year-round due to global sourcing and storage."
+  ],
+  "nutrition": {
+    "calories": "41 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.93,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.58,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.24,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A (from Beta-carotene and other carotenoids)",
+        "value": 835,
+        "unit": "µg RAE",
+        "rdi": "93-111%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 13.2,
+        "unit": "µg",
+        "rdi": "11-16%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.138,
+        "unit": "mg",
+        "rdi": "8-11%"
+      },
+      {
+        "name": "Biotin (B7)",
+        "value": "Significant amounts",
+        "unit": ""
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 320,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Molybdenum",
+        "value": "Significant amounts",
+        "unit": ""
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of beta-carotene, which the body converts to Vitamin A, essential for good vision (especially night vision), immune function, cell growth, and skin health.",
+    "Rich in antioxidants, including carotenoids (alpha-carotene, lutein), polyacetylenes (like falcarinol), and phenolic compounds, which help protect the body from free radical damage and may reduce the risk of chronic diseases like cancer and heart disease.",
+    "Good source of dietary fiber, which aids in digestive health, promotes bowel regularity, helps manage blood sugar levels, and can contribute to healthy cholesterol levels.",
+    "Linked to lower cholesterol levels and improved heart health due to fiber and antioxidant content.",
+    "Provides Vitamin K, important for blood clotting and bone health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Individuals with allergies to certain pollens (e.g., birch, mugwort, celery) may experience Oral Allergy Syndrome after consuming raw carrots. Symptoms are usually mild and localized to the mouth and throat, such as itching or tingling. Cooked carrots are less likely to cause these reactions."
+    },
+    {
+      "name": "Carotenemia (Harmless)",
+      "severity": "Harmless (cosmetic)",
+      "details": "Excessive consumption of carrots (or other foods very high in beta-carotene) over a prolonged period can lead to a harmless condition called carotenemia, where the skin (particularly palms, soles, and nasolabial folds) takes on a yellowish or orange hue. This condition is reversible once carotene intake is reduced."
+    }
+  ],
+  "cultivationProcess": "Carrots are cool-season root vegetables. They require loose, well-drained, sandy loam or loamy soil, free of stones, to allow for straight root development. Seeds are sown directly into the garden bed in early spring or late summer. Consistent moisture is crucial during germination (which can be slow) and root development. Seedlings need to be thinned to allow proper root growth. Carrots are harvested when roots reach desired size and color. More details in specific sections.",
+  "growthDuration": "Generally 60 to 80 days from sowing seeds to harvest, depending on the specific variety (e.g., Nantes, Chantenay, Danvers, Imperator types) and growing conditions.",
+  "sustainabilityTips": [
+    "Store carrots with their green tops removed (as tops draw moisture from the roots) in the crisper drawer of the refrigerator; they can last for several weeks to months if stored properly.",
+    "Carrot tops (greens) are edible and nutritious; they can be used to make pesto, added to stocks, or used as a garnish (ensure they are from unsprayed plants if consuming).",
+    "Choose 'ugly' or misshapen carrots when available at farmers' markets or stores to help reduce food waste, as they are just as nutritious.",
+    "Carrots are well-suited for home gardening in many temperate climates."
+  ],
+  "carbonFootprintInfo": "Locally grown carrots have a very low carbon footprint, typically around 0.2-0.4 kg CO2e/kg. Transportation over long distances and extensive packaging (e.g., for baby carrots) can increase this footprint. Their good storage capability allows for consumption over extended periods without energy-intensive preservation for the whole root.",
+  "uses": [
+    "culinary_raw_eaten_as_snack_baby_carrots_carrot_sticks_grated_shredded_in_salads_coleslaw_juiced",
+    "culinary_cooked_boiled_steamed_roasted_stir_fried_sautéed_glazed_grilled_pureed_mashed",
+    "culinary_ingredient_soups_stews_casseroles_pot_roasts_broths_stocks_mirepoix",
+    "culinary_baking_carrot_cake_muffins_breads_puddings",
+    "animal_fodder_carrots_and_carrot_tops_used_as_feed_for_livestock_horses_rabbits",
+    "food_coloring_carotenoids_extracted_for_natural_yellow_orange_food_coloring",
+    "traditional_medicine_various_uses_for_vision_and_digestive_health"
+  ],
+  "originAndDomesticationHistory": "The wild carrot (Daucus carota) is native to Persia (modern-day Iran and Afghanistan) and surrounding regions of Central Asia. Early forms of carrots were likely purple or yellow. Domestication is believed to have begun in this region around the 10th century AD or possibly earlier, initially for their aromatic leaves and seeds rather than for their roots. The familiar orange-colored carrot, rich in beta-carotene, is thought to have been developed through selective breeding in the Netherlands during the 16th and 17th centuries from yellow-rooted varieties. This orange type gained immense popularity and subsequently became the most common type cultivated and consumed globally. From Europe, carrots spread to other parts of the world with European exploration and colonization.",
+  "climaticRequirements": {
+    "temperature": "Carrots are a cool-season crop. Optimal soil temperatures for seed germination are between 7°C and 30°C (45°F to 85°F), with faster germination at warmer temperatures within this range. The best root growth and quality occur at air temperatures between 16°C and 21°C (60°F to 70°F). While established plants can tolerate light frosts (which can even improve sweetness), severe freezes will damage the roots. Hot weather, especially temperatures consistently above 25-30°C (77-86°F), can result in pale-colored, short, and poorly flavored roots.",
+    "rainfall": "Requires consistent and adequate moisture throughout the growing season, preferring around 400mm to 600mm of rainfall or equivalent irrigation. Even soil moisture is crucial, especially during seed germination (which can be slow and erratic if soil dries out) and during active root development. Water stress can lead to small, woody, or cracked roots.",
+    "altitude": "Can be grown successfully from sea level up to high altitudes (e.g., up to 2500 meters or even higher in some mountainous regions), provided that suitable temperatures and soil conditions exist. In warmer climates, higher altitudes might offer cooler conditions more favorable for carrot cultivation."
+  },
+  "soilPreferences": "Prefers deep, loose, well-drained, sandy loam or loamy soils that are free of stones, clods, and other debris, as these can cause roots to fork or become misshapen. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). Heavy clay soils or compacted soils are unsuitable as they impede straight root development and can lead to forked or stunted carrots. Soils rich in organic matter are beneficial for good texture and fertility.",
+  "irrigationAndWaterNeeds": "Requires consistent and even soil moisture throughout the growing season. Seed germination can be slow (1-3 weeks) and requires the soil surface to remain constantly moist. During active root development, carrots need about 25mm (1 inch) of water per week, either from rainfall or irrigation. Water stress can lead to small, woody, or cracked roots and reduced overall yield. Drip irrigation or overhead sprinklers can be used, although drip irrigation is often preferred to minimize foliage diseases. It's important to avoid overwatering, which can promote certain diseases or lead to pale roots in some conditions.",
+  "plantingAndHarvestCycles": "Carrots are propagated from seeds. Seeds are typically sown directly into the garden bed or field, as carrots do not transplant well if their taproot is disturbed. Planting can occur in early spring (as soon as the soil can be worked, often 2-4 weeks before the last expected frost) for a summer harvest, or in late summer or early autumn for a fall or winter harvest in milder climates. Successive sowings every 2-3 weeks can provide a continuous harvest. Seeds should be sown shallowly (about 1/4 to 1/2 inch deep). Once seedlings are a few inches tall, they should be thinned to about 2-3 inches apart to allow adequate space for proper root development. Carrots are typically ready for harvest 60 to 80 days from sowing, depending on the specific variety and growing conditions. They are usually harvested when the roots have reached their desired size and color for the particular cultivar (typically 1/2 to 1.5 inches in diameter at the shoulder). Carrots can often be left in the ground for some time in cool weather (some varieties even improve in sweetness after a few light frosts) but should generally be harvested before the ground freezes solid or before very hot weather returns, which can affect quality. Harvesting is done by carefully pulling or digging the roots from the soil, often after loosening the soil gently with a garden fork to avoid breaking the roots.",
+  "pestAndDiseaseManagement": "Common Pests: Carrot rust fly (Psila rosae) is a major pest whose larvae tunnel into the roots, causing significant damage. Aphids can transmit viruses and cause direct feeding damage. Leafhoppers can transmit aster yellows disease, which causes hairy, misshapen roots. Wireworms and nematodes (especially root-knot nematodes) can also damage roots. Common Diseases: Alternaria leaf blight (Alternaria dauci) and Cercospora leaf blight (Cercospora carotae) are common fungal diseases causing spots on foliage, which can reduce vigor and yield if severe. Bacterial leaf blight (Xanthomonas campestris pv. carotae) can also occur. Cavity spot is a physiological disorder often linked to calcium deficiency or fungal activity, causing sunken lesions on roots. Root rot diseases can occur in poorly drained or overly wet soils. Aster yellows is a phytoplasma disease that causes yellowing of foliage and hairy, misshapen roots. Management Strategies: Practicing crop rotation (avoid planting carrots or related umbelliferous crops like celery, parsnip, or parsley in the same location for 3-5 years) is crucial. Using floating row covers from sowing until after the main egg-laying periods of the carrot rust fly can provide effective protection. Ensuring proper soil preparation to avoid compaction and improving drainage. Thinning seedlings to ensure good air circulation. Controlling weeds, which can harbor pests and diseases. Planting resistant varieties where available. Avoiding excessive nitrogen fertilization, which can lead to lush foliage more susceptible to some diseases. Harvesting carrots promptly when mature.",
+  "postHarvestHandling": "After harvesting, carrot tops (leaves) should be removed immediately by twisting or cutting them off about 1 inch above the root crown. This prevents moisture loss from the roots and helps to prolong storage life. Carrots should not be washed before storage if they are intended to be kept for an extended period, as residual moisture can promote rot; a light brushing to remove excess soil is usually sufficient. They store best under cool, humid conditions, ideally at temperatures just above freezing (0-4°C or 32-40°F) with high relative humidity (95-98%). Under these conditions, carrots can be stored for several months, for example, in a root cellar packed in damp sand or sawdust, or in perforated plastic bags in the crisper drawer of a refrigerator. Properly stored carrots can maintain good quality for 4-6 months or even longer.",
+  "majorProducingCountriesOrRegions": [
+    "China (by far the world's largest producer)",
+    "Uzbekistan",
+    "Russia",
+    "United States (primarily California, Washington, Wisconsin, Texas, and Michigan)",
+    "Ukraine",
+    "Germany",
+    "Poland",
+    "United Kingdom",
+    "Turkey",
+    "India",
+    "France",
+    "Netherlands",
+    "Japan"
+  ],
+  "marketValueAndGlobalDemand": "Carrots are one of the most popular and widely consumed root vegetables globally, with high and stable demand year-round. China dominates global production. There is significant international trade in fresh carrots, as well as processed carrot products (e.g., frozen, canned, juiced, dehydrated, baby carrots). The market value for carrots is generally stable, influenced by factors such as quality (size, shape, color, absence of defects), whether they are sold bunched with tops or topped, and if they are conventional or organic. The demand for convenience products like baby carrots (which are often cut and shaped from larger carrots) and pre-cut carrot sticks is also very high in many markets. Carrots are a staple ingredient in many cuisines and are valued for their versatility, nutritional benefits, and good storage qualities.",
+  "staticRecipes": [
+    {
+      "name": "Honey Glazed Carrots",
+      "description": "Sweet and tender carrots, a perfect side dish for any meal.",
+      "ingredients": [
+        "1 lb carrots, peeled and sliced",
+        "2 tbsp butter",
+        "2 tbsp honey",
+        "1 tbsp fresh parsley, chopped (optional)",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Steam or boil carrots until tender-crisp (about 5-7 minutes). Drain well.",
+        "In a skillet, melt butter over medium heat. Add honey and stir.",
+        "Add cooked carrots to the skillet. Cook, stirring gently, for 2-3 minutes until carrots are coated and glaze has slightly thickened.",
+        "Season with salt and pepper. Garnish with fresh parsley if desired."
+      ]
+    },
+    {
+      "name": "Creamy Carrot Ginger Soup",
+      "description": "A warming and flavorful soup with a hint of ginger.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 inch ginger, grated",
+        "1 lb carrots, peeled and chopped",
+        "4 cups vegetable broth",
+        "1/2 cup coconut milk or heavy cream",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and ginger, cook for 1 minute more until fragrant.",
+        "Add chopped carrots and vegetable broth. Bring to a boil, then reduce heat and simmer for 15-20 minutes, or until carrots are very tender.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer to a regular blender and blend in batches.",
+        "Stir in coconut milk or cream. Season with salt and pepper to taste. Reheat gently if needed."
+      ]
+    },
+    {
+      "name": "Simple Roasted Carrots",
+      "description": "Carrots roasted to bring out their natural sweetness.",
+      "ingredients": [
+        "1 lb carrots, peeled and cut into sticks or chunks",
+        "2 tbsp olive oil",
+        "1/2 tsp dried thyme (or other herbs like rosemary)",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "On a large baking sheet, toss carrots with olive oil, thyme, salt, and pepper until evenly coated.",
+        "Spread carrots in a single layer to ensure even roasting.",
+        "Roast for 20-25 minutes, flipping halfway, until tender and slightly caramelized at the edges.",
+        "Serve immediately."
+      ]
+    }
+  ]
+}

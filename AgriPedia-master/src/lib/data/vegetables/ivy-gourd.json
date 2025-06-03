@@ -1,0 +1,140 @@
+{
+  "id": "ivy-gourd",
+  "commonName": "Ivy Gourd",
+  "scientificName": "Coccinia grandis",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyNwwMa7-tarj4nHCXTm_x5ui4f5KvlFbASPXqyj7-g&s",
+  "description": "Ivy Gourd (Coccinia grandis), also known as scarlet gourd, tindora, or kovakkai, is a tropical vine that produces small, elongated green fruits which turn red when ripe. The young green fruits are commonly used as a vegetable in many Asian and African cuisines, valued for their crisp texture and mild, slightly tangy taste when cooked.",
+  "origin": "Native range extends from Africa to Asia, including India, Philippines, Cambodia, China, Indonesia, Malaysia, Myanmar, Thailand, Vietnam, and parts of Australia.",
+  "localNames": [
+    "Tindora / Kundru (Hindi)",
+    "Kovakkai (Tamil)",
+    "Tendli / Tondli (Marathi, Konkani)",
+    "Dondakaya (Telugu)",
+    "Kowai (Bengali)",
+    "Manoli (Tulu)"
+  ],
+  "regions": [
+    "India (widely cultivated and consumed)",
+    "Southeast Asia (Thailand, Indonesia, Malaysia, Philippines, Vietnam)",
+    "Africa (parts of)",
+    "Caribbean (introduced)",
+    "United States (Hawaii, Florida - introduced, sometimes considered invasive)"
+  ],
+  "seasons": [
+    "Available year-round in tropical climates where it grows perennially. Peak fruiting may coincide with rainy seasons or warmer months in different regions."
+  ],
+  "nutrition": {
+    "calories": "18 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 3.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.1,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 1.4,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.075,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 3,
+        "unit": "µg RAE",
+        "rdi": "0%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 40,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.4,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Potassium",
+        "value": 30,
+        "unit": "mg",
+        "rdi": "1%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains dietary fiber, which aids in digestion and can help maintain healthy blood sugar levels.",
+    "Provides some essential micronutrients, including Vitamin C and Calcium.",
+    "Traditionally used in some Ayurvedic and folk medicine practices for various ailments, including diabetes management (though more clinical research is needed)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "None widely reported",
+      "severity": "Very Low",
+      "details": "Ivy gourd is generally well-tolerated. Allergic reactions are very rare. As with any food, individual sensitivities can occur but are not common."
+    }
+  ],
+  "cultivationProcess": "Ivy gourd is a tropical perennial vine that climbs with tendrils. It's typically propagated by stem cuttings, which root easily. It thrives in warm, humid climates with well-drained soil and ample sunlight but can tolerate partial shade. The vine is a vigorous grower and requires support like a trellis or fence. Regular watering is beneficial, especially during dry periods. Fruits are harvested when young and green for vegetable purposes.",
+  "growthDuration": "Plants grown from cuttings can start producing fruit within 2-4 months. As a perennial vine, it can continue to produce fruit for several years with proper care. Young green fruits are harvested when they reach a suitable size, typically 2-3 inches long.",
+  "sustainabilityTips": [
+    "Ivy gourd is a prolific and hardy perennial vine that can be easily grown in home gardens in tropical and subtropical climates, providing a continuous supply of vegetables.",
+    "Its ability to grow on fences and trellises makes it suitable for vertical gardening, maximizing space in small gardens."
+  ],
+  "carbonFootprintInfo": "Locally grown ivy gourd, especially from home gardens or local farms, has a low carbon footprint due to minimal transportation and processing. Ivy gourd that is transported long distances to non-native regions will have a higher environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Ivy Gourd Stir-Fry (Tindora Fry/Kovakkai Poriyal)",
+      "description": "A quick and easy South Indian style stir-fry showcasing the crisp texture of ivy gourd, lightly spiced and often garnished with coconut.",
+      "ingredients": [
+        "250g ivy gourd (tindora/kovakkai), washed and ends trimmed",
+        "1 tablespoon cooking oil (e.g., coconut oil or vegetable oil)",
+        "1/2 teaspoon black mustard seeds",
+        "1/2 teaspoon urad dal (split black gram lentils - optional)",
+        "1 dried red chili, broken into 1-2 pieces (adjust to heat preference)",
+        "1 sprig fresh curry leaves (about 10-12 leaves, optional but recommended)",
+        "1/4 teaspoon turmeric powder",
+        "Salt to taste",
+        "1-2 tablespoons grated fresh or desiccated coconut (optional, for garnish)"
+      ],
+      "steps": [
+        "Prepare the ivy gourd: Wash the ivy gourd thoroughly. Trim off both ends. Slice the ivy gourd thinly into rounds (about 2-3mm thick) or lengthwise into quarters.",
+        "Heat the oil in a medium-sized pan (kadai or skillet) over medium heat.",
+        "Once the oil is hot, add the mustard seeds. Wait for them to splutter completely.",
+        "If using, add the urad dal and the broken dried red chili. Fry for a few seconds until the urad dal turns light golden brown. Be careful not to burn the dal or chili.",
+        "Add the curry leaves (if using) to the hot oil – they will crisp up quickly and release their aroma.",
+        "Immediately add the sliced ivy gourd to the pan. Stir well to coat with the oil and spices.",
+        "Add the turmeric powder and salt to taste. Mix everything together thoroughly.",
+        "Cover the pan and cook on medium-low heat for about 5-7 minutes, stirring occasionally. The ivy gourd should become tender-crisp. If you prefer it softer, cook for a few more minutes.",
+        "Once the ivy gourd is cooked to your liking, uncover the pan and continue to cook for another 2-3 minutes, stirring, to allow any excess moisture to evaporate and to lightly roast the vegetable.",
+        "If using, stir in the grated fresh or desiccated coconut and mix well. Cook for another minute.",
+        "Serve the ivy gourd stir-fry hot as a side dish with rice and sambar/dal, or with roti/chapati."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "id": "kiwi",
+  "commonName": "Kiwi (Kiwifruit)",
+  "scientificName": "Actinidia deliciosa (most common green kiwi), Actinidia chinensis (gold kiwi)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg",
+  "description": "An edible berry of several species of woody vines in the genus Actinidia. The most common cultivar group of kiwifruit ('Hayward') is oval, about the size of a large hen's egg. It has a fibrous, dull greenish-brown skin and bright green flesh with rows of tiny, black, edible seeds. Golden kiwifruit varieties have smoother, bronze skin and sweet, yellow flesh.",
+  "origin": "Eastern China (Yangtze River valley)",
+  "localNames": [
+    "Chinese Gooseberry (older name)",
+    "Yang Tao (Chinese)",
+    "Mihou Tao (Chinese - macaque peach)"
+  ],
+  "regions": [
+    "China (leading producer, including for domestic consumption)",
+    "New Zealand (major exporter)",
+    "Italy",
+    "Chile",
+    "Greece",
+    "France",
+    "Iran",
+    "United States (California)"
+  ],
+  "seasons": [
+    "Varies by producing hemisphere; typically late autumn to spring (e.g., NZ kiwifruit available May-December, Northern Hemisphere production Oct-May)"
+  ],
+  "nutrition": {
+    "calories": "61 kcal per 100g (green kiwi)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.14,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.66,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.52,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 92.7,
+        "unit": "mg",
+        "rdi": "103-155%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 40.3,
+        "unit": "µg",
+        "rdi": "34-50%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 1.46,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 25,
+        "unit": "µg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 312,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.13,
+        "unit": "mg",
+        "rdi": "14%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin C, a powerful antioxidant that boosts the immune system, supports skin health, and aids in iron absorption.",
+    "Rich in Vitamin K, which is crucial for blood clotting and bone health.",
+    "Good source of dietary fiber, promoting digestive health, preventing constipation, and helping to regulate blood sugar levels.",
+    "Contains antioxidants like Vitamin E and various phytonutrients, which protect against cell damage.",
+    "May improve sleep quality due to its serotonin and antioxidant content.",
+    "Contains actinidin, an enzyme that can aid in protein digestion."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Kiwi Allergy / Oral Allergy Syndrome (OAS)",
+      "severity": "Mild to Moderate",
+      "details": "Can occur, often linked to birch pollen or latex allergies (latex-fruit syndrome). Symptoms typically include itching or swelling of the mouth, lips, tongue, and throat. Contains actinidin, a cysteine protease enzyme that can be an allergen for some individuals. More severe systemic reactions are rare but possible."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill. Requires a long growing season.\n2. Soil: Well-drained, fertile, slightly acidic soil (pH 5.5-6.5) rich in organic matter.\n3. Propagation: Seeds, cuttings, or grafting. Most commercial kiwis are dioecious (separate male and female plants), requiring both for fruit production.\n4. Planting: Plant in full sun on a sturdy trellis or pergola for the vigorous vines.\n5. Watering: Requires consistent moisture, especially during the growing season and fruit development.\n6. Fertilizing: Apply balanced fertilizer regularly during the growing season.\n7. Pruning: Extensive pruning is necessary during dormancy and summer to manage growth and encourage fruiting.\n8. Harvesting: Fruits are harvested when firm and mature. They ripen off the vine.",
+  "growthDuration": "Vines typically start bearing fruit in 3-5 years after planting. Fruit matures in late autumn, about 220-240 days after flowering.",
+  "sustainabilityTips": [
+    "Store kiwis at room temperature to ripen, then refrigerate for longer storage (can last several weeks).",
+    "Kiwis can be eaten by cutting in half and scooping out the flesh, or by peeling and slicing.",
+    "The skin of green kiwifruit is edible if the fuzz is removed (or choose fuzz-free gold varieties); it contains additional fiber and nutrients."
+  ],
+  "carbonFootprintInfo": "Moderate to high if transported long distances, especially by air for out-of-season fruit (estimated 0.7-1.8 kg CO2e/kg). Sea freight for New Zealand kiwis to Europe has a lower footprint per unit than many other fruits due to efficient logistics.",
+  "uses": [
+    "fresh_consumption_eaten_raw_scooped_peeled_sliced",
+    "fruit_salads_desserts_pavlova_tarts_cakes",
+    "beverages_smoothies_juices_infused_water",
+    "toppings_for_yogurt_cereals_ice_cream",
+    "marinades_meat_tenderizer_due_to_actinidin_enzyme",
+    "processed_products_dried_kiwi_slices_jams_jellies_wine_liqueurs",
+    "dietary_supplements_kiwi_extracts"
+  ],
+  "originAndDomesticationHistory": "Kiwifruit (primarily Actinidia deliciosa - green, and A. chinensis - gold) is native to the Yangtze River valley of eastern China, where it was known as Mihou Tao (macaque peach) or Yang Tao and was primarily a foraged wild fruit. In the early 20th century (around 1904), schoolteacher Isabel Fraser brought kiwifruit seeds from China to New Zealand. Horticulturists in New Zealand, notably Alexander Allison and Hayward Wright, began to recognize its potential and started selecting and cultivating improved varieties. The 'Hayward' cultivar, developed by Hayward Wright in the 1920s, became the cornerstone of the global green kiwifruit industry due to its excellent keeping qualities and flavor. The fruit was initially marketed as \"Chinese Gooseberry\" but was renamed \"kiwifruit\" in the 1950s by New Zealand exporters for better market appeal, associating it with New Zealand's iconic kiwi bird. Commercial cultivation expanded significantly from the mid-20th century onwards.",
+  "climaticRequirements": {
+    "temperature": "Kiwifruit vines thrive in temperate climates that provide warm summers for fruit growth and cool winters with sufficient chilling. They typically require a chilling period of 200-800 hours below 7°C (45°F), depending on the variety, to break dormancy and ensure uniform bud break and flowering. Young shoots and flowers are very susceptible to spring frosts. Ideal summer growing temperatures range from 20-25°C (68-77°F). High temperatures above 35°C (95°F) can cause stress.",
+    "rainfall": "Requires ample and consistent moisture throughout the growing season, with an ideal annual rainfall of about 1500mm, well-distributed. Supplemental irrigation is essential in most commercial growing regions. Vines are vigorous and transpire a lot of water. Strong winds can damage vines and fruit, so sheltered locations or windbreaks are preferred.",
+    "altitude": "Can be grown successfully from lowlands up to moderate altitudes (e.g., up to 800-1000 meters or 2600-3300 feet) where chilling requirements and suitable growing season temperatures are met."
+  },
+  "soilPreferences": "Prefers deep, well-drained, fertile loamy soils that are rich in organic matter. A slightly acidic soil pH, typically between 5.5 and 6.5, is ideal. Kiwifruit vines are intolerant of waterlogged conditions (which can lead to root rot) and also dislike overly compacted or very dry soils. Good soil structure and aeration are important for healthy root development.",
+  "irrigationAndWaterNeeds": "Kiwifruit vines have high water requirements, especially during the main growing season, flowering, and fruit development stages. Consistent and plentiful soil moisture is crucial for achieving good fruit size, quality, and yield. Water stress can lead to small fruit and reduced vine vigor. Drip irrigation or micro-sprinklers are commonly used in commercial orchards to provide targeted and efficient watering. The specific amount of irrigation depends on factors like soil type, weather conditions, and vine age.",
+  "plantingAndHarvestCycles": "Kiwifruit is commercially propagated by grafting desired cultivars (like 'Hayward' for green or 'Zespri SunGold' for gold varieties) onto seedling rootstocks. Vines are typically dioecious, meaning male and female flowers are borne on separate plants. Therefore, interplanting of male vines (e.g., in a ratio of 1 male to 6-8 female vines) is essential for effective wind or bee pollination. Planting is usually done in early spring. Vines are vigorous climbers and require sturdy support structures, such as T-bar trellises or pergolas. Extensive pruning, both during dormancy (winter) and in summer, is critical to manage vine growth, ensure good light penetration, and encourage fruit production on one-year-old canes. Vines usually begin bearing a commercial crop 3-5 years after planting. Fruits are harvested in late autumn (typically October to November in the Northern Hemisphere, April to May in the Southern Hemisphere) when they reach physiological maturity, which is determined by factors like soluble solids content (Brix), firmness, and dry matter. They are picked by hand when firm, as they will continue to ripen off the vine.",
+  "pestAndDiseaseManagement": "Common Pests: Scale insects (e.g., greedy scale, latania scale), leafrollers, passion vine hopper (in New Zealand), thrips, and spider mites can infest kiwifruit vines. Root-knot nematodes can also be problematic in some soils. Common Diseases: Pseudomonas syringae pv. actinidiae (Psa) is a devastating bacterial canker disease that has significantly impacted kiwifruit industries worldwide. Botrytis fruit rot (grey mold) can affect ripening fruit, especially in humid conditions or post-harvest. Armillaria root rot, Phytophthora root rot, and crown gall can occur, particularly in poorly drained soils or stressed vines. Management Strategies: Implementing strict orchard hygiene and biosecurity measures is crucial, especially against Psa. Selecting Psa-tolerant or resistant varieties where available. Using copper-based sprays and other bactericides/fungicides as part of an integrated disease management program. Proper pruning to ensure good air circulation. Careful water management to avoid creating conditions favorable for root rots. Biological controls and targeted insecticides for pest management based on monitoring.",
+  "postHarvestHandling": "Kiwifruit are harvested when physiologically mature but still firm. They are highly valued for their long storage potential. After harvest, fruits are typically pre-cooled to remove field heat and then stored under controlled atmosphere (CA) conditions, which involve low temperatures (around 0°C or 32°F), high relative humidity (90-95%), and controlled levels of oxygen and carbon dioxide. Under optimal CA storage, green 'Hayward' kiwifruit can be stored for 4-6 months or even longer. Ripening can be initiated or accelerated by exposing the fruit to ethylene gas at controlled temperatures (e.g., room temperature). For home ripening, kiwifruit can be placed at room temperature, possibly in a paper bag with an apple or banana (which release ethylene) to speed up the process. Once ripe, they should be refrigerated if not consumed within a few days.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer, significant portion for domestic market)",
+    "New Zealand (major global exporter, known for Zespri brand)",
+    "Italy",
+    "Chile (major Southern Hemisphere exporter)",
+    "Greece",
+    "France",
+    "Iran",
+    "United States (primarily California)",
+    "Portugal",
+    "Spain"
+  ],
+  "marketValueAndGlobalDemand": "Kiwifruit enjoys significant global demand due to its unique tangy-sweet flavor, attractive appearance (especially the vibrant green or gold flesh), and high nutritional value, particularly its exceptional Vitamin C content. It is a major export crop for countries like New Zealand, Italy, and Chile. The 'Hayward' (green) variety has long dominated the market, but newer gold-fleshed varieties (like 'Zespri SunGold') have gained immense popularity and often command premium prices. The market value is generally good, influenced by factors such as fruit quality, size, variety, origin, and seasonality. Demand is strong in Europe, North America, East Asia, and other regions, with ongoing market development efforts.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Kiwi Slices",
+      "description": "The simplest way to enjoy the refreshing taste and vibrant color of kiwi.",
+      "ingredients": [
+        "1-2 ripe Kiwis"
+      ],
+      "steps": [
+        "Wash the kiwi.",
+        "You can either cut the kiwi in half crosswise and scoop out the flesh with a spoon, or peel the kiwi with a knife or vegetable peeler and then slice it into rounds.",
+        "The small black seeds are edible.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Kiwi and Strawberry Smoothie",
+      "description": "A vibrant and vitamin-packed smoothie.",
+      "ingredients": [
+        "2 ripe kiwis, peeled and chopped",
+        "1 cup fresh or frozen strawberries",
+        "1/2 banana (optional, for creaminess)",
+        "1/2 cup yogurt (plain or vanilla)",
+        "1/4 cup milk or orange juice",
+        "Honey or maple syrup to taste (optional)"
+      ],
+      "steps": [
+        "Combine chopped kiwi, strawberries, banana (if using), yogurt, and milk/orange juice in a blender.",
+        "Blend until smooth and creamy.",
+        "Taste and add honey or maple syrup if a sweeter smoothie is desired. Blend again briefly.",
+        "Pour into a glass and serve immediately."
+      ]
+    },
+    {
+      "name": "Kiwi Fruit Salad with Mint and Lime",
+      "description": "A refreshing fruit salad where kiwi takes center stage.",
+      "ingredients": [
+        "3 ripe kiwis, peeled and diced or sliced",
+        "1 cup other fruits (e.g., pineapple chunks, grapes, melon balls)",
+        "Juice of 1/2 lime",
+        "1 tbsp honey (optional)",
+        "A few fresh mint leaves, chopped"
+      ],
+      "steps": [
+        "In a medium bowl, gently combine diced/sliced kiwi and other chosen fruits.",
+        "In a small bowl, whisk together lime juice and honey (if using).",
+        "Drizzle the lime-honey mixture over the fruit salad.",
+        "Sprinkle with fresh chopped mint.",
+        "Toss gently to combine. Serve chilled or at room temperature."
+      ]
+    }
+  ]
+}

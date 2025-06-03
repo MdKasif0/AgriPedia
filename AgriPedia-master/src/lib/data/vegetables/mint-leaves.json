@@ -1,0 +1,157 @@
+{
+  "id": "mint-leaves",
+  "commonName": "Mint Leaves",
+  "scientificName": "Mentha spp.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ThRzaY0AugU7MqsPbSd7GLzuRnm_AaOrpBvpqs0TSDbAKTHjS56FwjU&s=10",
+  "description": "A genus of plants in the family Lamiaceae (mint family). The species are not clearly distinct and estimates of the number of species vary. Mint leaves are known for their refreshing aroma and cooling sensation.",
+  "origin": "Mediterranean region, Asia",
+  "localNames": [
+    "Menta (Spanish)",
+    "Menthe (French)",
+    "Minze (German)",
+    "Pudina (Hindi)"
+  ],
+  "regions": [
+    "Widely cultivated globally"
+  ],
+  "seasons": [
+    "Spring",
+    "Summer",
+    "Autumn (can be grown year-round indoors)"
+  ],
+  "nutrition": {
+    "calories": "70 kcal per 100g (fresh spearmint)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 3.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 14.9,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.9,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin A",
+        "value": 203,
+        "unit": "µg RAE",
+        "rdi": "23%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 31.8,
+        "unit": "mg",
+        "rdi": "53%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 5.08,
+        "unit": "mg",
+        "rdi": "28%"
+      },
+      {
+        "name": "Manganese",
+        "value": 1.176,
+        "unit": "mg",
+        "rdi": "59%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used to aid digestion, soothe upset stomachs, and relieve bloating.",
+    "Contains menthol, which has a cooling effect and can help freshen breath.",
+    "Rich in antioxidants.",
+    "May help relieve symptoms of Irritable Bowel Syndrome (IBS)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Mint Allergy",
+      "severity": "Rare",
+      "details": "Allergies are uncommon, but some individuals might experience skin irritation from contact with mint oils."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Easy to grow. Can be started from seeds, cuttings, or root divisions. Best to grow in pots as it can be invasive in garden beds.\n2. Soil: Well-drained, moist, fertile soil. pH 6.0-7.0.\n3. Location: Full sun to partial shade.\n4. Watering: Keep soil consistently moist, especially in hot weather.\n5. Harvesting: Pick leaves as needed. Regular harvesting encourages bushier growth. Pinch off flower buds to prolong leaf production.",
+  "growthDuration": "Leaves can be harvested continuously throughout the growing season once the plant is established.",
+  "sustainabilityTips": [
+    "Store fresh mint sprigs with stems in a glass of water at room temperature or in the refrigerator, covered loosely with a plastic bag.",
+    "Mint leaves can be dried or frozen for later use.",
+    "Propagate new plants easily from cuttings placed in water."
+  ],
+  "carbonFootprintInfo": "Very low, especially if home-grown or locally sourced (0.1-0.3 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Fresh Mint Tea",
+      "description": "A simple, refreshing, and soothing herbal tea.",
+      "ingredients": [
+        "A handful of fresh mint leaves (about 10-15 leaves)",
+        "2 cups hot water",
+        "Honey or lemon to taste (optional)"
+      ],
+      "steps": [
+        "Rinse mint leaves thoroughly.",
+        "Gently bruise or tear the mint leaves to help release their oils. Place them in a teapot or directly into mugs.",
+        "Pour hot (not boiling) water over the mint leaves.",
+        "Let steep for 5-7 minutes, depending on desired strength.",
+        "Strain the tea if desired, or leave the leaves in. Add honey or lemon juice to taste if using.",
+        "Serve hot or chilled."
+      ]
+    },
+    {
+      "name": "Mint Chutney (Pudina Chutney)",
+      "description": "A vibrant Indian green chutney, often served with snacks or as an accompaniment to meals.",
+      "ingredients": [
+        "2 cups fresh mint leaves (pudina), packed",
+        "1 cup fresh coriander leaves (cilantro), packed (optional, but common)",
+        "1-2 green chilies, chopped (adjust to spice preference)",
+        "1 inch ginger, roughly chopped",
+        "Juice of 1/2 to 1 lemon",
+        "1/4 tsp salt (or to taste)",
+        "1/4 tsp roasted cumin powder (optional)",
+        "2-4 tbsp water (as needed for blending)"
+      ],
+      "steps": [
+        "Wash mint and coriander leaves thoroughly.",
+        "Combine all ingredients (mint, coriander, green chilies, ginger, lemon juice, salt, cumin powder, and a little water) in a blender.",
+        "Blend until smooth, adding more water tablespoon by tablespoon if needed to achieve desired consistency. Be careful not to make it too runny.",
+        "Taste and adjust salt, lemon juice, or chili if necessary.",
+        "Store in an airtight container in the refrigerator for up to 3-4 days. Serve with samosas, pakoras, kebabs, or as a side with Indian meals."
+      ]
+    },
+    {
+      "name": "Mojito (Classic Cocktail/Mocktail)",
+      "description": "A refreshing Cuban highball, perfect for warm weather. Can be made with or without alcohol.",
+      "ingredients": [
+        "10-12 fresh mint leaves",
+        "2 tsp granulated sugar (or 1 oz simple syrup)",
+        "Juice of 1 lime (about 1 oz)",
+        "2 oz white rum (for alcoholic version)",
+        "2-4 oz club soda or sparkling water",
+        "Ice cubes",
+        "Mint sprig and lime wedge for garnish"
+      ],
+      "steps": [
+        "In a sturdy highball glass, gently muddle the mint leaves with sugar (or simple syrup) and lime juice. Do not over-muddle or shred the mint too much.",
+        "Fill the glass with ice cubes.",
+        "If making an alcoholic version, add white rum.",
+        "Top with club soda or sparkling water.",
+        "Gently stir to combine the ingredients.",
+        "Garnish with a mint sprig and a lime wedge. Serve immediately."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sweet_potato",
+  "commonName": "Sweet Potato",
+  "scientificName": "Ipomoea batatas",
+  "image": "https://images.unsplash.com/photo-1580910369009-505208e62a3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "The sweet potato is a dicotyledonous plant that belongs to the bindweed or morning glory family, Convolvulaceae. Its large, starchy, sweet-tasting tuberous roots are a root vegetable. The young leaves and shoots are sometimes eaten as greens. Sweet potatoes are not closely related to common potatoes.",
+  "origin": "Tropical Americas (Central or South America).",
+  "localNames": ["Shakarkandi (Hindi)", "Satsumaimo (Japanese)", "Batata / Camote / Boniato (Spanish)", "Patate douce (French)"],
+  "regions": ["China (leading producer)", "Nigeria", "Tanzania", "Indonesia", "Vietnam", "United States (North Carolina, California, Louisiana)", "Uganda", "Ethiopia", "India"],
+  "seasons": ["Warm-season crop; planted in spring after the last frost and harvested in late summer or fall before the first frost in temperate zones. Grown year-round in tropical climates."],
+  "nutrition": {
+    "calories": "Cooked sweet potato (baked in skin): ~90 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~2.0" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~20.7 (Starch, Sugars, Fiber)" },
+      { "name": "Fat", "unit": "g", "value": "~0.2" },
+      { "name": "Fiber", "unit": "g", "value": "~3.3 (with skin)" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin A (as beta-carotene)", "unit": "µg", "rdi": "~961 (107% - especially orange-fleshed varieties)" },
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~19.6 (22%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.497 (22%)" },
+      { "name": "Vitamin B6", "unit": "mg", "rdi": "~0.229 (18%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~475 (10%)" },
+      { "name": "Copper", "unit": "mg", "rdi": "~0.161 (18%)" },
+      { "name": "Magnesium", "unit": "mg", "rdi": "~27 (6%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of beta-carotene (Vitamin A precursor), vital for vision, immune function, and skin health (especially orange-fleshed types).",
+    "Good source of Vitamin C and manganese.",
+    "High in dietary fiber, aiding digestion and blood sugar regulation.",
+    "Contains antioxidants that protect against chronic diseases.",
+    "Purple sweet potatoes are rich in anthocyanins, which have strong antioxidant and anti-inflammatory effects."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Sweet Potato Allergy/Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "Allergy to sweet potatoes is uncommon. Some individuals may experience mild digestive upset if they consume very large quantities due to high fiber content. Contains oxalates, which might be a concern for individuals prone to kidney stones if consumed in extremely high amounts regularly."
+    }
+  ],
+  "cultivationProcess": "Sweet potatoes are typically grown from vegetative slips (sprouts from mature tubers) or vine cuttings. They require warm weather, ample sunshine, and well-drained soil. They are relatively drought-tolerant but yield better with consistent moisture.",
+  "growthDuration": "Approximately 90-150 days from planting slips to harvest, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "Can be grown with fewer inputs (fertilizers, pesticides) than many other staple crops.",
+    "Drought-tolerant varieties are available, suitable for water-scarce areas.",
+    "Provides good ground cover, helping to reduce soil erosion.",
+    "The entire plant (roots and leaves) is edible in many varieties."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of sweet potatoes is generally moderate. It's influenced by farming practices, irrigation needs, storage (curing and temperature control), and transportation. Local and seasonal consumption can reduce the footprint.",
+  "uses": ["food_staple_baked_boiled_steamed_fried_roasted_mashed_pureed_desserts_flour", "animal_feed_vines_roots_peels", "industrial_starch_production_biofuel_natural_food_coloring_beta_carotene_anthocyanins", "ornamental_vines_some_varieties"],
+  "originAndDomesticationHistory": "Sweet potato (Ipomoea batatas) was domesticated in Central or South America at least 5,000 years ago, with archaeological evidence from Peru dating back 8,000-10,000 years. It spread throughout the Americas and was later introduced to Polynesia by pre-Columbian voyagers. Columbus brought it to Europe, and from there it spread to Africa, Asia, and other parts of the world.",
+  "climaticRequirements": {
+    "temperature": "Warm-season crop. Optimal growing temperatures are 24-29°C. Requires a frost-free period of at least 4-5 months. Sensitive to cold soil and air temperatures.",
+    "rainfall": "Requires moderate rainfall, around 750-1000mm during the growing season, well-distributed. Tolerates some drought but yields are significantly reduced by water stress, especially during root development.",
+    "altitude": "Adaptable to various altitudes, from sea level up to 2500m in tropical and subtropical regions."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, sandy loam or loamy soils with good aeration and a slightly acidic to neutral pH (5.5-6.8). Can tolerate poorer soils but yields will be lower. Heavy clay soils can impede root development.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during the first few weeks after planting slips and during the root development phase. Irrigation is often necessary for commercial production to ensure high yields and good quality roots.",
+  "plantingAndHarvestCycles": "Propagated from slips (sprouts grown from stored roots) or vine cuttings. Planted in spring after the soil has warmed. Roots are typically harvested in late summer or fall, before the first heavy frost, when they have reached a desirable size. Harvesting is done carefully to avoid bruising the roots.",
+  "pestAndDiseaseManagement": "Major pests include sweet potato weevil (a devastating pest), wireworms, nematodes, and various foliage feeders. Diseases include Fusarium wilt, black rot, scurf, and various viral diseases. Integrated pest management involves using certified disease-free slips, crop rotation, resistant varieties, biological control, and chemical controls when necessary.",
+  "postHarvestHandling": "Sweet potato roots are perishable and easily bruised. After harvest, they are typically cured (stored at high temperature 29-32°C and high humidity 85-90% for 4-10 days) to heal injuries, develop a protective suberin layer, and convert starches to sugars (enhancing sweetness). After curing, they are stored in cool, moist conditions (13-16°C) for long-term storage.",
+  "majorProducingCountriesOrRegions": ["China (world's largest producer by far)", "Nigeria", "Tanzania", "Indonesia", "Vietnam", "Uganda", "Ethiopia", "United States (North Carolina, California, Mississippi, Louisiana)", "India", "Brazil"],
+  "marketValueAndGlobalDemand": "Sweet potatoes are an important food crop globally, valued for their nutritional content, versatility, and adaptability to diverse growing conditions. Demand is high for both fresh consumption and processed products (fries, purees, flour, starch). There is growing interest in sweet potatoes as a functional food and for their use in combating Vitamin A deficiency (orange-fleshed varieties)."
+}

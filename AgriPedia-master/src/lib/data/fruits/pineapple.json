@@ -1,0 +1,218 @@
+{
+  "id": "pineapple",
+  "commonName": "Pineapple",
+  "scientificName": "Ananas comosus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
+  "description": "A tropical plant with an edible fruit, which is technically a multiple fruit consisting of coalesced berries. It's known for its tough, spiky, waxy exterior rind, a fibrous, sweet, and tangy yellow flesh, and a distinctive crown of leaves. Pineapple is prized for its unique flavor and aroma.",
+  "origin": "South America (specifically the region between southern Brazil and Paraguay)",
+  "localNames": [
+    "Piña (Spanish)",
+    "Ananas (French, German, Dutch, Italian, and many other languages)",
+    "Nanas (Malay, Indonesian)",
+    "Sapparot (สับปะรด - Thai)"
+  ],
+  "regions": [
+    "Costa Rica (leading global exporter)",
+    "Philippines (major producer and exporter)",
+    "Indonesia (major producer)",
+    "Thailand (major producer, especially for processing)",
+    "India",
+    "Brazil (significant producer)",
+    "Nigeria",
+    "China",
+    "Mexico"
+  ],
+  "seasons": [
+    "Year-round availability in global markets due to different growing regions and induced flowering techniques; peak harvest seasons vary by country (e.g., often summer months)."
+  ],
+  "nutrition": {
+    "calories": "50 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.54,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 13.12,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.12,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 47.8,
+        "unit": "mg",
+        "rdi": "53-80%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.927,
+        "unit": "mg",
+        "rdi": "40-46%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.112,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.079,
+        "unit": "mg",
+        "rdi": "7%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 109,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.11,
+        "unit": "mg",
+        "rdi": "12%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that boosts the immune system, promotes collagen production, and aids in iron absorption.",
+    "Contains bromelain, a complex mixture of enzymes that aids in protein digestion and possesses anti-inflammatory properties, potentially helping to reduce swelling and pain.",
+    "Good source of manganese, an essential mineral important for bone health, metabolism, and antioxidant enzyme function.",
+    "Provides dietary fiber, which supports digestive health and can help regulate blood sugar levels.",
+    "May help reduce inflammation and support recovery from surgery or strenuous exercise due to bromelain."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS) / Bromelain Sensitivity",
+      "severity": "Mild",
+      "details": "Can cause itching, tingling, or irritation in the mouth, lips, and tongue in sensitive individuals, primarily due to the enzyme bromelain, especially with very ripe or raw pineapple. Cooking pineapple usually denatures bromelain and reduces this effect."
+    },
+    {
+      "name": "Contact Dermatitis (from handling)",
+      "severity": "Mild",
+      "details": "Handling fresh pineapple (especially the skin or crown) can cause skin irritation or dermatitis in some individuals due to bromelain and microscopic calcium oxalate crystals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Propagation: Commonly grown from the crown (leafy top) of a mature pineapple fruit, or from slips (small plantlets growing at the base of the fruit) or suckers (shoots arising from leaf axils or underground).\n2. Climate: Tropical plant, needs warm temperatures (20-30°C), high humidity, and full sun.\n3. Soil: Well-drained, acidic (pH 4.5-6.5), sandy loam soil rich in organic matter.\n4. Planting: Plant the crown after allowing the cut base to dry and callus for a few days. Can be grown in pots or directly in the ground.\n5. Watering: Requires regular watering but dislikes waterlogged conditions. Good drainage is critical.\n6. Fertilizing: Feed with a balanced liquid fertilizer, potentially with added iron and magnesium, every few months during the growing season.\n7. Fruiting: Takes a long time to fruit, often 12-24 months or more from planting a crown to the first fruit. Commercial plantations often use ethylene to induce uniform flowering.\n8. Harvesting: Fruit is ready when it develops a golden-yellow color at the base, the 'eyes' (fruitlets) flatten, and it has a strong sweet fragrance. Pineapples do not ripen significantly in sugar content after harvest.",
+  "growthDuration": "Typically 12-24 months from planting a crown or slip to first fruit harvest. Each plant usually produces one fruit at a time, though ratoon crops (from suckers) can follow.",
+  "sustainabilityTips": [
+    "You can easily grow a new pineapple plant from the leafy top (crown) of a store-bought pineapple, promoting a cycle of use.",
+    "Use the pineapple core, which is tougher but still flavorful, in smoothies, juices, or to infuse water.",
+    "Compost pineapple skin and leaves. Piña fiber from leaves can be used for textiles in some cultures.",
+    "Choose pineapples with sustainable certifications if available, which may indicate better water management and labor practices."
+  ],
+  "carbonFootprintInfo": "Can be high if transported long distances by air due to its weight and perishability (can range from 1.5-5 kg CO2e/kg for air-freighted fresh pineapple). Canned pineapple generally has a lower carbon footprint per unit of edible fruit compared to air-freighted fresh pineapple, due to longer shelf life and efficient sea transport. Locally grown pineapples have the lowest footprint.",
+  "uses": [
+    "fresh_consumption_sliced_chunks_rings_in_fruit_salads",
+    "processed_products_canned_pineapple_rings_chunks_crushed_in_syrup_or_juice_pineapple_juice_concentrate_dried_pineapple_crystallized_pineapple",
+    "culinary_ingredient_desserts_cakes_pies_tarts_upside_down_cake_sorbets_ice_cream",
+    "culinary_savory_dishes_topping_for_pizzas_hawaiian_pizza_stir_fries_salsas_marinades_sweet_and_sour_dishes_grilled_pineapple",
+    "beverages_piña_colada_smoothies_fruit_punches_fermented_drinks_tepache",
+    "industrial_bromelain_enzyme_extraction_meat_tenderizer_digestive_aids_anti_inflammatory_supplements",
+    "textiles_piña_fiber_from_leaves_for_traditional_fabrics_barong_tagalog"
+  ],
+  "originAndDomesticationHistory": "Pineapple (Ananas comosus) is native to South America, with its likely center of origin in the region between southern Brazil and Paraguay, where wild relatives are still found. It was domesticated and cultivated by indigenous peoples, particularly the Tupi-Guarani, for centuries before European contact. These indigenous groups spread the pineapple throughout much of South and Central America and the Caribbean islands. Christopher Columbus encountered the fruit in Guadeloupe in 1493 during his second voyage and brought it back to Europe, where it became a symbol of luxury and hospitality due to its rarity and exotic appearance. Spanish and Portuguese explorers were instrumental in introducing pineapple cultivation to their colonies in Asia (e.g., Philippines, India), Africa, and the Pacific islands during the 16th and 17th centuries. Large-scale commercial cultivation began in Hawaii in the late 19th and early 20th centuries, led by figures like James Dole, which significantly popularized the fruit globally, especially in its canned form.",
+  "climaticRequirements": {
+    "temperature": "Pineapple is a tropical plant that thrives in warm temperatures, with optimal growth occurring between 20°C and 30°C (68°F to 86°F). It is intolerant of frost, and temperatures below freezing can kill the plant. Growth slows significantly at temperatures below 15°C (59°F) and above 32°C (90°F). Consistent warmth and high light intensity are crucial for fruit development and sugar accumulation.",
+    "rainfall": "Requires moderate annual rainfall, typically between 1000mm and 1500mm, that is well-distributed throughout the year. While it can tolerate some dry periods due to its CAM photosynthesis (allowing it to conserve water), supplemental irrigation is necessary for commercial production in most areas to ensure consistent yields and fruit quality. Good soil drainage is essential, as pineapples do not tolerate waterlogged conditions.",
+    "altitude": "Typically grown in lowland tropical and warm subtropical regions, from sea level up to about 800 meters (approximately 2600 feet). Higher altitudes are generally unsuitable due to cooler temperatures."
+  },
+  "soilPreferences": "Prefers well-drained, acidic soils with a pH range of 4.5 to 6.5. Sandy loam soils that are rich in organic matter and have good aeration are ideal. Pineapples are sensitive to waterlogged conditions, which can lead to root rot. They can tolerate relatively infertile soils but respond well to fertilization.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent moisture, particularly during the establishment phase of new plantings and during fruit development. However, pineapple plants are relatively drought-tolerant compared to some other tropical fruits once established, due to their ability to store water in their leaves and utilize CAM photosynthesis. Overwatering or poorly drained soils can lead to root rot diseases. In commercial cultivation, drip irrigation or overhead sprinklers are often used to provide supplemental water, especially during dry seasons.",
+  "plantingAndHarvestCycles": "Pineapples are commercially propagated vegetatively using crowns (the leafy top of the fruit), slips (small plantlets that grow at the base of the fruit), or suckers (shoots that arise from the leaf axils or underground portions of the stem). Crowns typically take the longest to produce fruit (around 18-24 months or more), while slips and suckers can fruit more quickly (around 12-18 months). Planting is usually done in raised beds or rows to ensure good drainage. In commercial plantations, flowering can be induced (forced) using ethylene gas or other chemical growth regulators (like ethephon or calcium carbide which releases acetylene) to ensure uniform fruit development and a concentrated harvest period. A single pineapple plant typically produces one main fruit, although sometimes a smaller second fruit (ratoon crop from a sucker) may develop. Fruits are harvested by hand when they reach the desired stage of maturity, which is indicated by skin color changes (from green to yellowish-orange at the base, progressing upwards), flattening of the individual 'eyes' (fruitlets) on the skin, and the development of a characteristic sweet aroma. Pineapples do not ripen significantly in terms of sugar content after harvest, but they will continue to soften and become juicier.",
+  "pestAndDiseaseManagement": "Common Pests: Mealybugs (Dysmicoccus brevipes, a major pest that can transmit mealybug wilt associated virus - MWaV), scale insects, nematodes (root-knot nematodes), symphylids (which damage roots), mites, and thrips. Rodents and other mammals can also damage ripening fruit in the field. Common Diseases: Mealybug wilt associated virus (MWaV) is a significant viral disease complex. Phytophthora root and heart rot (caused by Phytophthora cinnamomi and P. nicotianae) are major fungal diseases, especially in poorly drained soils. Black rot or butt rot (Ceratocystis paradoxa) can affect the fruit and planting material. Fusarium wilt and various fruitlet core rots can also occur. Management Strategies: Using clean, disease-free planting material is crucial. Maintaining good sanitation practices in the field and controlling weed populations. Ensuring proper soil drainage to minimize root rot risk. Controlling ant populations, as they often protect mealybugs and scale insects from natural enemies. Integrated pest management (IPM) strategies, including biological control for mealybugs and timely application of appropriate insecticides, nematicides, or fungicides when necessary, based on monitoring and economic thresholds.",
+  "postHarvestHandling": "Pineapples are harvested when they are physiologically mature, as they do not increase in sugar content after picking, although they will soften and become juicier. They should be handled carefully to avoid bruising and mechanical damage. For commercial markets, fruits are often treated with fungicides post-harvest to control diseases like black rot. They are typically graded by size, weight, and quality. Pineapples are susceptible to chilling injury if stored at temperatures that are too low; optimal storage temperatures are generally between 7°C and 13°C (45°F to 55°F) with high relative humidity (85-95%), which can provide a shelf life of several weeks. For export, pineapples are often shipped by sea in refrigerated containers. Fresh-cut pineapple products require strict temperature control and hygiene.",
+  "majorProducingCountriesOrRegions": [
+    "Costa Rica (world's largest producer and exporter of fresh pineapple)",
+    "Philippines (major producer for both fresh export and processing)",
+    "Indonesia (major producer)",
+    "Thailand (historically a major producer, especially for canning)",
+    "India",
+    "Brazil (significant producer, large domestic market)",
+    "Nigeria",
+    "China",
+    "Mexico",
+    "Colombia",
+    "Vietnam"
+  ],
+  "marketValueAndGlobalDemand": "Pineapple is one of the most important and popular tropical fruits globally, with high demand for both fresh consumption and processed products such as canned pineapple (slices, chunks, crushed), pineapple juice, and dried pineapple. The fresh fruit market has grown significantly with the popularity of sweet, low-acid varieties like MD-2 ('Golden Ripe', 'Extra Sweet'). Costa Rica dominates the global fresh pineapple export market. The market value is influenced by factors such as variety, fruit quality (sweetness, acidity, appearance), size, seasonality, and origin. There is continuous demand from the food processing industry for pineapple as an ingredient in various products, including beverages, desserts, yogurts, and savory dishes.",
+  "staticRecipes": [
+    {
+      "name": "Grilled Pineapple Slices",
+      "description": "Grilling pineapple caramelizes its sugars and enhances its sweetness, perfect as a side or dessert.",
+      "ingredients": [
+        "1 ripe pineapple, peeled, cored, and sliced into rings or wedges",
+        "1-2 tbsp melted butter or coconut oil (optional)",
+        "1-2 tsp brown sugar (optional)",
+        "Pinch of cinnamon or chili powder (optional)"
+      ],
+      "steps": [
+        "Preheat grill to medium-high heat.",
+        "If using, brush pineapple slices lightly with melted butter or coconut oil. If desired, sprinkle with brown sugar and cinnamon/chili powder.",
+        "Place pineapple slices directly on the grill grates.",
+        "Grill for 3-5 minutes per side, or until pineapple is heated through and has nice grill marks.",
+        "Serve warm, on its own, with ice cream, or as a side for grilled meats."
+      ]
+    },
+    {
+      "name": "Pineapple Fried Rice",
+      "description": "A flavorful and visually appealing fried rice dish, often served in a pineapple shell.",
+      "ingredients": [
+        "1 tbsp cooking oil",
+        "2 cloves garlic, minced",
+        "1/2 cup diced chicken, shrimp, or tofu (optional)",
+        "2 cups cooked and chilled rice (day-old rice works best)",
+        "1/2 cup diced fresh pineapple",
+        "1/4 cup peas",
+        "1/4 cup diced carrots",
+        "2 tbsp soy sauce",
+        "1 tbsp fish sauce (optional)",
+        "1 egg, lightly beaten",
+        "Chopped green onions and cashews for garnish"
+      ],
+      "steps": [
+        "Heat oil in a large skillet or wok over medium-high heat. Add garlic and cook until fragrant (about 30 seconds).",
+        "If using protein, add chicken/shrimp/tofu and cook until done. Remove and set aside.",
+        "Push rice to one side of the wok. Pour beaten egg onto the empty side and scramble until cooked. Mix with the rice.",
+        "Add cooked protein (if used), diced pineapple, peas, and carrots to the wok. Stir-fry for 2-3 minutes.",
+        "Add soy sauce and fish sauce (if using). Stir well to combine all ingredients.",
+        "Serve hot, garnished with chopped green onions and cashews. For a fancier presentation, serve in a hollowed-out pineapple half."
+      ]
+    },
+    {
+      "name": "Classic Piña Colada (Non-alcoholic version option)",
+      "description": "A sweet and creamy tropical cocktail (or mocktail) featuring pineapple and coconut.",
+      "ingredients": [
+        "1 1/2 cups pineapple juice",
+        "1 cup coconut cream or full-fat coconut milk",
+        "1 cup crushed ice",
+        "1/2 cup fresh or frozen pineapple chunks",
+        "(Optional for alcoholic version: 3-4 oz white rum)",
+        "Pineapple wedges and maraschino cherries for garnish"
+      ],
+      "steps": [
+        "Combine pineapple juice, coconut cream/milk, crushed ice, and pineapple chunks in a blender.",
+        "If making an alcoholic version, add the rum.",
+        "Blend until smooth and frothy.",
+        "Pour into chilled glasses.",
+        "Garnish with a pineapple wedge and a maraschino cherry. Serve immediately."
+      ]
+    }
+  ]
+}

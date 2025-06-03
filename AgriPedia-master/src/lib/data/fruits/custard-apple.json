@@ -1,0 +1,218 @@
+{
+  "id": "custard-apple",
+  "commonName": "Custard Apple",
+  "scientificName": "Annona squamosa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Custard_Apple.JPG",
+  "description": "A tropical fruit with a knobby, greenish skin (sometimes with a powdery bloom) and sweet, creamy white flesh segmented around numerous black seeds. It has a distinctive custard-like texture and flavor, often with hints of vanilla or pineapple.",
+  "origin": "Tropical Americas and West Indies",
+  "localNames": [
+    "Sitaphal (Hindi)",
+    "Sugar Apple",
+    "Sweetsop",
+    "Anón (Spanish)",
+    "Ata (Bengali)",
+    "Sharifa (Urdu)"
+  ],
+  "regions": [
+    "India (major producer)",
+    "Thailand",
+    "Philippines",
+    "Indonesia",
+    "China (Southern)",
+    "Vietnam",
+    "Brazil",
+    "Mexico",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii)"
+  ],
+  "seasons": [
+    "Late Summer to Early Winter (typically August to November in Northern Hemisphere tropics)"
+  ],
+  "nutrition": {
+    "calories": "101 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 25.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.6,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 19.2,
+        "unit": "mg",
+        "rdi": "21-32%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.221,
+        "unit": "mg",
+        "rdi": "13-17%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.08,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.1,
+        "unit": "mg",
+        "rdi": "8%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 382,
+        "unit": "mg",
+        "rdi": "8-11%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "5-6%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 32,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that boosts the immune system and promotes skin health.",
+    "Contains Vitamin B6 (pyridoxine), important for brain development and function, and may help regulate mood.",
+    "Rich in potassium, which helps maintain healthy blood pressure levels.",
+    "Provides dietary fiber, aiding in digestion and promoting gut health.",
+    "Contains antioxidants like flavonoids and carotenoids, which help combat oxidative stress."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Seed Toxicity",
+      "severity": "Moderate to High",
+      "details": "Custard apple seeds contain annonacin and other neurotoxic alkaloids. Ingestion of seeds can be harmful and should be strictly avoided. Always remove and discard seeds before consuming the pulp or using it in preparations."
+    },
+    {
+      "name": "Contact Dermatitis (rare)",
+      "severity": "Mild",
+      "details": "Handling the plant or unripe fruit might cause skin irritation in very sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, requires warm temperatures and is sensitive to frost.\n2. Soil: Well-drained, fertile soil with good organic matter. Tolerates a range of soil types but prefers pH 6.0-7.5.\n3. Propagation: Primarily by seeds, which germinate readily. Grafting is used for superior varieties.\n4. Planting: Plant in full sun. Trees can grow quite large.\n5. Watering: Regular watering is needed, especially for young trees and during dry periods. Avoid waterlogging.\n6. Fertilizing: Apply balanced fertilizer during growth periods.\n7. Pollination: May require hand pollination in some areas for good fruit set due to dichogamy (male and female parts mature at different times).\n8. Harvesting: Fruits are harvested when they are mature (skin turns lighter green, segments slightly separate) but still firm. They ripen quickly off the tree.",
+  "growthDuration": "Seedling trees may bear fruit in 3-5 years. Fruit ripens 3-4 months after flowering (typically 100-120 days).",
+  "sustainabilityTips": [
+    "Store unripe custard apples at room temperature until they yield to gentle pressure. Ripe fruit can be refrigerated for 1-2 days.",
+    "The fruit is typically broken open, and the fleshy segments are eaten, spitting out the seeds.",
+    "Compost the skin and discarded seeds (ensure seeds are not accessible to pets if toxicity is a concern for them, though primary risk is human ingestion)."
+  ],
+  "carbonFootprintInfo": "Moderate, typical for tropical fruits needing specific climates and transport (0.8-1.5 kg CO2e/kg). Local consumption significantly reduces this.",
+  "uses": [
+    "fresh_consumption_eaten_out_of_hand",
+    "desserts_ice_cream_sorbet_kulfi_rabri_basundi",
+    "beverages_milkshakes_smoothies_juices_blended_pulp",
+    "traditional_medicine_leaves_bark_unripe_fruit_used_for_various_ailments_lice_dysentery_insecticide_seeds_are_toxic",
+    "insecticidal_properties_oil_from_seeds"
+  ],
+  "originAndDomesticationHistory": "The custard apple (Annona squamosa) is native to the tropical regions of the Americas, likely originating in the Andes of Peru and Ecuador or the Caribbean islands. It has been cultivated in these areas since ancient times. Following European exploration, particularly by the Spanish and Portuguese, it was disseminated to other tropical parts of the world. It reached Asia (India, Philippines, Southern China) by the 16th or 17th century and also spread to tropical Africa and Australia. It has naturalized in many of these regions and is valued for its sweet, aromatic fruit. Selection over time has led to various cultivars with differing fruit characteristics.",
+  "climaticRequirements": {
+    "temperature": "Strictly tropical and near-tropical climates. Optimal growing temperatures range from 20-30°C (68-86°F). It is highly sensitive to frost, and temperatures below freezing can severely damage or kill the trees. Warm summers are essential for fruit development and ripening.",
+    "rainfall": "Prefers moderate annual rainfall, typically between 700mm and 1500mm, ideally well-distributed. However, it can tolerate some drought, especially once established. Good soil drainage is critical, as it does not withstand waterlogging. High humidity during flowering can sometimes negatively affect pollination and fruit set.",
+    "altitude": "Typically grown from sea level up to about 1000 meters (approx. 3300 feet). It can be found at higher elevations in equatorial regions where temperatures remain suitable."
+  },
+  "soilPreferences": "Adaptable to a wide range of soil types, including sandy loams, clay loams, and lateritic soils, provided they are well-drained. It thrives in fertile soils rich in organic matter. The ideal soil pH is between 6.0 and 7.5 (slightly acidic to neutral). The tree cannot tolerate waterlogged or poorly aerated soil conditions.",
+  "irrigationAndWaterNeeds": "Young trees require regular and consistent watering to ensure proper establishment and growth. Mature trees benefit from adequate moisture, especially during flowering, fruit set, and fruit development stages, to ensure good yield and fruit size. Irrigation is necessary in regions with prolonged dry seasons or insufficient rainfall. While somewhat drought-tolerant once established, prolonged water stress can lead to fruit drop and reduced quality.",
+  "plantingAndHarvestCycles": "Propagation is commonly done using seeds, which germinate readily within 20-30 days. However, for commercial cultivation and to ensure true-to-type fruit from superior varieties, vegetative propagation methods like grafting (e.g., cleft or veneer grafting) or budding onto seedling rootstock (or related Annona species like A. reticulata or A. glabra) are preferred. Planting is usually done at the beginning of the rainy season. Seedling trees typically start bearing fruit in 3-5 years, while grafted trees may begin earlier, within 2-3 years. Fruits mature approximately 3-4 months after flowering. The main harvest season is generally in the late summer to early winter (e.g., August to November in India). Fruits are harvested by hand when they reach mature size, the skin color lightens (from dark green to a lighter green or yellowish-green), and the segments of the fruit begin to show slight separation, indicating ripeness. They are picked when still firm, as they ripen quickly off the tree and become very soft.",
+  "pestAndDiseaseManagement": "Common Pests: Mealybugs (Planococcus spp., Ferrisia virgata) can be a major issue, infesting fruits, young shoots, and flowers. Fruit boring caterpillars (e.g., Annona seed borer - Cerconota anonella) damage the fruit pulp and seeds. Scale insects, aphids, and fruit flies can also cause problems. Common Diseases: Anthracnose (Colletotrichum gloeosporioides) affects fruits, leaves, and twigs, causing dark lesions and fruit rot. Leaf spot diseases, black canker, and Diplodia rot can also occur. Management Strategies: Maintaining good orchard sanitation, including removal of fallen fruits and diseased plant parts. Pruning to improve air circulation within the canopy. Biological control methods, such as encouraging natural predators for mealybugs (e.g., ladybugs, lacewings). Judicious use of appropriate insecticides or fungicides when pest or disease incidence is high. Bagging of individual fruits can provide protection against fruit borers and flies.",
+  "postHarvestHandling": "Custard apples are highly perishable and have a delicate skin that bruises easily. They are typically harvested when mature but still firm. Ripening occurs rapidly at room temperature (usually within 2-5 days), during which the fruit becomes very soft and aromatic. Ripe fruit has a very short shelf life, lasting only 1-2 days even when refrigerated (at around 15-20°C; too cold can cause chilling injury). For commercial transport, fruits are often packed in single layers with protective cushioning material to minimize damage. Due to their short shelf life, long-distance shipping is challenging.",
+  "majorProducingCountriesOrRegions": [
+    "India (leading producer)",
+    "Thailand",
+    "China (Southern provinces like Guangdong, Guangxi, Hainan)",
+    "Philippines",
+    "Indonesia",
+    "Vietnam",
+    "Brazil",
+    "Mexico",
+    "Colombia",
+    "Peru",
+    "Australia (Queensland)",
+    "United States (Florida, Hawaii - limited scale)"
+  ],
+  "marketValueAndGlobalDemand": "Custard apples are highly popular in local and regional markets within tropical Asia (especially India, Thailand, Indonesia, and the Philippines), the tropical Americas, and parts of Australia. Due to their short shelf life and delicate nature, they are less common in international trade compared to more durable tropical fruits like mangoes or bananas. The demand is primarily for fresh consumption. There is also a niche market for processed products such as pulp, ice cream, and milkshakes, particularly in countries where the fruit is widely grown. The market value can fluctuate significantly based on seasonality and availability.",
+  "staticRecipes": [
+    {
+      "name": "Eating Fresh Custard Apple",
+      "description": "The most common way to enjoy this fruit is by eating its creamy flesh directly.",
+      "ingredients": [
+        "1 ripe custard apple"
+      ],
+      "steps": [
+        "Select a custard apple that yields slightly to gentle pressure.",
+        "Wash the fruit.",
+        "Gently break or cut the fruit open. The segments of creamy white flesh will be visible, each surrounding a black seed.",
+        "Scoop out the fleshy segments with a spoon or your fingers. Eat the flesh and discard the black seeds (do not eat the seeds).",
+        "The skin is not typically eaten."
+      ]
+    },
+    {
+      "name": "Custard Apple (Sitaphal) Milkshake",
+      "description": "A delicious and creamy milkshake made from the pulp of custard apple.",
+      "ingredients": [
+        "Pulp of 1-2 ripe custard apples (seeds removed)",
+        "1 cup chilled milk",
+        "1-2 tbsp sugar (or to taste, custard apples are quite sweet)",
+        "A few ice cubes",
+        "Pinch of cardamom powder (optional)"
+      ],
+      "steps": [
+        "Carefully scoop out the flesh from the ripe custard apple and remove all black seeds. This might take some patience.",
+        "Combine the deseeded custard apple pulp, chilled milk, sugar, and cardamom powder (if using) in a blender.",
+        "Blend until smooth and creamy.",
+        "Add ice cubes and blend again briefly.",
+        "Pour into glasses and serve immediately."
+      ]
+    },
+    {
+      "name": "Custard Apple Rabri (Sitaphal Rabri)",
+      "description": "A rich Indian dessert where custard apple pulp is added to thickened, sweetened milk.",
+      "ingredients": [
+        "4 cups full-fat milk",
+        "1/2 cup sugar (adjust to taste)",
+        "Pulp of 2 ripe custard apples (seeds removed)",
+        "1/4 tsp cardamom powder",
+        "2 tbsp chopped mixed nuts (almonds, pistachios) for garnish",
+        "A few strands of saffron (optional)"
+      ],
+      "steps": [
+        "In a heavy, wide pan, bring the milk to a boil. Reduce heat to medium-low.",
+        "Simmer the milk, stirring frequently to prevent scorching and a skin from forming on top. Scrape the sides of the pan regularly and add the collected cream back into the milk. Continue to simmer until the milk reduces to about half its original volume and thickens (this can take 30-45 minutes).",
+        "Add sugar and saffron (if using). Stir until the sugar dissolves completely.",
+        "Stir in the cardamom powder.",
+        "Remove from heat and let the thickened milk (rabri) cool down completely.",
+        "Once cooled, gently fold in the deseeded custard apple pulp.",
+        "Chill in the refrigerator for at least 2-3 hours.",
+        "Serve chilled, garnished with chopped nuts."
+      ]
+    }
+  ]
+}

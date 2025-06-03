@@ -1,0 +1,218 @@
+{
+  "id": "chillies",
+  "commonName": "Chillies (Chili Peppers)",
+  "scientificName": "Capsicum annuum, Capsicum frutescens, Capsicum chinense, Capsicum baccatum, Capsicum pubescens, et al.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Chilli_peppers_2008_G1.jpg/800px-Chilli_peppers_2008_G1.jpg",
+  "description": "The fruit of plants from the genus Capsicum, members of the nightshade family (Solanaceae). Chillies are widely used as a spice to add pungent 'heat' (due to capsaicinoids, primarily capsaicin) and flavor to dishes. Colors range dramatically from green (unripe) to red, yellow, orange, purple, brown, or black when ripe, with a vast array of shapes, sizes, and heat levels (measured in Scoville Heat Units - SHU).",
+  "origin": "Americas (Mexico, Central America, and South America). Different species domesticated in different regions.",
+  "localNames": [
+    "Chiles / Ají (Spanish - Ají often used in South America and Caribbean)",
+    "Piments (French)",
+    "Chili / Peperoni / Pfefferschote (German)",
+    "Peperoncino (Italian)",
+    "Mirch (मिर्च - Hindi/Urdu)",
+    "Lada (Malay/Indonesian)",
+    "Siling (Tagalog - Philippines)",
+    "Prik (พริก - Thai)"
+  ],
+  "regions": [
+    "India (world's largest producer, consumer, and exporter of dried chillies)",
+    "China (major producer and consumer)",
+    "Thailand (integral to cuisine)",
+    "Mexico (center of origin, vast culinary use)",
+    "Peru (center of origin for C. baccatum, C. chinense)",
+    "Ethiopia",
+    "Spain (especially for paprika and milder peppers)",
+    "Turkey",
+    "Indonesia",
+    "United States (New Mexico, California, Arizona)"
+  ],
+  "seasons": [
+    "Primarily Summer and Autumn for field-grown varieties in temperate climates. Available year-round due to greenhouse cultivation, global sourcing from tropical/subtropical regions, and dried forms."
+  ],
+  "nutrition": {
+    "calories": "40 kcal per 100g (generic fresh red chili)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.87,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 8.81,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.44,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 143.7,
+        "unit": "mg",
+        "rdi": "159-240%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.506,
+        "unit": "mg",
+        "rdi": "29-39%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids like beta-carotene, capsanthin in red chillies)",
+        "value": 48,
+        "unit": "µg RAE",
+        "rdi": "5-6% (can be much higher in red varieties)"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 14,
+        "unit": "µg",
+        "rdi": "12-18%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 322,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Iron",
+        "value": 1.03,
+        "unit": "mg",
+        "rdi": "6-13%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.187,
+        "unit": "mg",
+        "rdi": "8-10%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that boosts the immune system and aids in collagen production (especially high in fresh red and green chillies).",
+    "Contain capsaicin, the compound responsible for their pungency, which has been studied for its anti-inflammatory properties, potential to boost metabolism, and role in pain relief (used topically).",
+    "Can help clear nasal congestion and stimulate circulation.",
+    "Good source of Vitamin B6, important for nerve function and metabolism.",
+    "Red chillies are often rich in Vitamin A (from carotenoids), beneficial for vision and immune health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Capsaicin Sensitivity / Irritation",
+      "severity": "Mild to Moderate",
+      "details": "Capsaicin can cause a burning sensation in the mouth, throat, and stomach, and may lead to digestive upset (heartburn, diarrhea) in sensitive individuals or if consumed in large quantities. Handling fresh or dried hot chillies can cause skin irritation ('chili burn'); wearing gloves is advisable. Eye contact can be very painful."
+    },
+    {
+      "name": "Nightshade Sensitivity / Chili Allergy (rare)",
+      "severity": "Mild to Moderate (for sensitive individuals)",
+      "details": "Chillies belong to the nightshade family (Solanaceae). Some individuals may have sensitivities or allergies to nightshades, though true chili allergy is rare. Symptoms can include skin rashes, digestive issues, or respiratory symptoms."
+    }
+  ],
+  "cultivationProcess": "Chillies are warm-season crops. Seeds are usually started indoors 8-10 weeks before the last expected frost in temperate climates, or sown directly in warmer regions. They require well-drained, fertile soil rich in organic matter and full sun exposure. Transplant seedlings when weather is warm and settled. Consistent watering is crucial, especially during flowering and fruit development. Taller or heavily fruiting varieties may need staking or support. Fruits can be harvested at their green (immature) stage or allowed to ripen to their mature color (red, yellow, orange, etc.) on the plant, which often increases their heat level and sweetness. Details in specific sections.",
+  "growthDuration": "Typically 60 to 100+ days from transplanting to the first harvest, depending on the specific variety (e.g., jalapeño, cayenne, habanero, bell pepper types have different maturation times) and whether harvesting green or fully ripe.",
+  "sustainabilityTips": [
+    "Store fresh chillies in the refrigerator crisper drawer, often in a paper bag or perforated plastic bag, for 1-2 weeks or longer depending on type.",
+    "Wear gloves when handling very hot chillies (especially when cutting or deseeding) to avoid skin irritation from capsaicin, and avoid touching your eyes.",
+    "Chillies can be easily dried (sun-dried, air-dried, or in a dehydrator), pickled, frozen (whole or chopped), or made into sauces and pastes for long-term preservation.",
+    "Growing chillies in home gardens or pots is popular and can provide a fresh supply."
+  ],
+  "carbonFootprintInfo": "Generally low for fresh chillies consumed locally or transported by land (estimated 0.4-0.8 kg CO2e/kg). Dried chillies have a very low footprint per unit of flavor/heat due to reduced weight. Greenhouse cultivation or long-distance air freight for fresh specialty chillies can significantly increase this footprint.",
+  "uses": [
+    "culinary_spice_fresh_dried_powdered_flakes_adds_pungency_heat_and_flavor_to_dishes_worldwide",
+    "culinary_ingredient_curries_stews_soups_stir_fries_sauces_salsas_marinades_rubs_adobos_moles",
+    "condiments_hot_sauces_chili_oils_chili_pastes_harissa_sambal_gochujang",
+    "pickling_pickled_chillies_often_eaten_as_a_condiment_or_side",
+    "medicinal_traditional_topical_pain_relief_capsaicin_creams_digestive_aid_circulatory_stimulant",
+    "defense_deterrent_capsaicin_extracts_used_in_pepper_sprays_for_self_defense_or_animal_deterrent",
+    "ornamental_plant_some_varieties_with_colorful_fruits_and_compact_growth_are_grown_as_ornamental_plants"
+  ],
+  "originAndDomesticationHistory": "Chillies (Capsicum spp.) originated in the Americas, with primary centers of origin and domestication in Mexico, Central America, and South America. Archaeological evidence indicates that chillies were one of the earliest domesticated crops in the Americas, with cultivation dating back over 6,000-7,000 years (some findings suggest as early as 7500 BCE in Mexico). Different species of Capsicum (including C. annuum, C. frutescens, C. chinense, C. baccatum, and C. pubescens) were domesticated independently in various parts of this vast region by indigenous peoples. When Christopher Columbus encountered chillies in the Caribbean during his voyages in the late 15th century, he mistakenly called them 'peppers' due to their pungent similarity to black pepper (Piper nigrum), which was a valuable spice from Asia. Portuguese and Spanish traders were instrumental in rapidly spreading chillies throughout the world, particularly to their colonies and trading posts in Africa, Asia (India, China, Southeast Asia), and the Middle East during the 16th and 17th centuries. Chillies were quickly adopted and integrated into local cuisines globally, becoming an indispensable ingredient in many cultures.",
+  "climaticRequirements": {
+    "temperature": "Chillies are warm-season crops that thrive in warm to hot climates. Optimal temperatures for growth and fruit development generally range from 20°C to 30°C (68°F to 86°F). They are very sensitive to frost, and temperatures below 15°C (59°F) can significantly hinder growth and fruit set. Some species, like Capsicum pubescens (Rocoto peppers), are adapted to cooler, higher-altitude Andean conditions but still do not tolerate frost well.",
+    "rainfall": "Requires moderate and consistent rainfall or irrigation, typically around 600mm to 1200mm, during the growing season. While adequate moisture is crucial, especially during flowering and fruit set, good soil drainage is essential as chillies do not tolerate waterlogged conditions. High humidity can sometimes increase the risk of fungal diseases, particularly for foliage and fruit.",
+    "altitude": "Cultivation varies greatly by species and cultivar. Capsicum annuum and C. frutescens are typically grown from lowlands up to moderate altitudes (e.g., up to 1500-2000 meters). Capsicum pubescens varieties are adapted to higher altitudes in the Andean regions (1500-2800 meters or more)."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy or sandy loam soils that are rich in organic matter. Good soil aeration is important for healthy root development. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). Heavy clay soils or poorly drained soils should be amended to improve drainage and texture.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, particularly during flowering, fruit set, and fruit development. Water stress during these critical periods can lead to flower and fruit drop, reduced fruit size, and lower overall yield. Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping foliage dry, which helps reduce disease risk. The frequency and amount of irrigation depend on soil type, weather conditions, and plant size, but ensuring the root zone remains moist (but not saturated) is key.",
+  "plantingAndHarvestCycles": "Chillies are propagated from seeds. In temperate climates, seeds are usually started indoors in trays or pots 8-10 weeks before the last expected frost date, as they require warm soil for germination (ideally 21-29°C or 70-85°F). Seedlings are transplanted to the field or garden once the danger of frost has passed and the weather is consistently warm. In warmer, tropical or subtropical regions, seeds can be sown directly. Plants are typically spaced 12-24 inches apart, depending on the mature size of the variety. Full sun exposure (at least 6-8 hours per day) is essential for good fruit production. The time from transplanting to the first harvest varies greatly by species and cultivar, ranging from 60 days for some early varieties to 100-150 days or more for hotter, longer-season types like habaneros or ghost peppers. Fruits can generally be harvested at their green (immature) stage or allowed to ripen fully on the plant to their mature color (red, yellow, orange, purple, brown, etc.). The heat level (capsaicin content) often increases as the fruit ripens. Harvesting is done by hand, by carefully cutting or snapping the fruit stem. Regular harvesting of mature fruits encourages further fruit production over a period of several weeks or months, until cool weather or frost stops plant growth.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids are common and can transmit viruses. Thrips can cause fruit scarring and transmit Tomato Spotted Wilt Virus (TSWV). Spider mites thrive in hot, dry conditions. Whiteflies can also be problematic. Pepper weevil larvae feed inside fruit. European corn borer and various armyworms or fruitworms can damage fruit. Cutworms can sever young seedlings. Common Diseases: Bacterial spot (Xanthomonas spp.) affects leaves and fruit. Phytophthora blight (root, crown, and fruit rot) is common in wet conditions. Anthracnose causes fruit rot. Powdery mildew can affect leaves. Various viral diseases (e.g., Tobacco Mosaic Virus - TMV, Cucumber Mosaic Virus - CMV, Pepper Mottle Virus - PepMoV, Tomato Spotted Wilt Virus - TSWV) can cause significant damage and are often spread by insect vectors. Verticillium wilt and Fusarium wilt are soilborne fungal diseases. Blossom-end rot is a physiological disorder primarily caused by calcium deficiency and inconsistent watering. Management Strategies: Implementing Integrated Pest Management (IPM) is crucial. This includes crop rotation (avoid planting chillies or other nightshades like tomatoes, eggplants, or potatoes in the same spot for 3-4 years). Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Mulching to conserve moisture, suppress weeds, and reduce soil splash. Providing proper plant spacing and pruning for good air circulation. Controlling insect vectors like aphids and thrips. Ensuring consistent watering and adequate calcium levels in the soil to prevent blossom-end rot. Applying appropriate and approved fungicides, bactericides, or insecticides when necessary, based on scouting, pest/disease pressure, and economic thresholds.",
+  "postHarvestHandling": "Fresh chillies should be harvested carefully by cutting the stem, leaving a small piece attached to the fruit. They can be stored in the refrigerator crisper drawer, often in a paper bag or a perforated plastic bag, for 1-3 weeks, depending on the variety and ripeness. Thinner-walled varieties may start to shrivel sooner. For long-term preservation, chillies are commonly dried (sun-dried, air-dried, or using a dehydrator), which concentrates their flavor and heat, and allows them to be stored for months to years in airtight containers in a cool, dark, dry place. Dried chillies can then be used whole, or ground into flakes or powder. Chillies can also be frozen (whole or chopped) or pickled in vinegar or brine.",
+  "majorProducingCountriesOrRegions": [
+    "India (world's largest producer, consumer, and exporter of dried chillies; diverse varieties grown)",
+    "China (a major global producer of both fresh and dried chillies)",
+    "Thailand (essential to its cuisine, significant production)",
+    "Mexico (center of origin, vast array of cultivars, key to its cuisine)",
+    "Peru (center of origin for C. baccatum and C. chinense, unique varieties like Aji Amarillo)",
+    "Ethiopia (significant production, especially for local consumption and export of some types)",
+    "Spain (known for paprika production and milder Padrón peppers)",
+    "Turkey (produces various types for fresh use and drying)",
+    "Indonesia",
+    "United States (New Mexico for Hatch chiles, California, Arizona, Louisiana for Tabasco peppers)",
+    "Nigeria",
+    "Ghana"
+  ],
+  "marketValueAndGlobalDemand": "Chillies are one of the most widely used spices and vegetables globally, with extremely high and diverse global demand. The market encompasses a vast range of products, from fresh chillies of varying heat levels and varieties, to dried whole chillies, chili powders, chili flakes, hot sauces, chili pastes, and oleoresin capsicum (used in food and pharmaceuticals). India, China, Thailand, Mexico, and Turkey are among the largest producers and play significant roles in international trade. The market value varies dramatically depending on the type of chili (e.g., common jalapeños versus rare, super-hot varieties like Carolina Reaper or Ghost Pepper), its form (fresh, dried, processed), quality, heat level (Scoville rating), and origin. There is a continuously growing global interest in specialty and artisanal hot sauces, unique chili varieties, and the culinary exploration of different heat levels and flavor profiles offered by chillies. The demand for capsaicin extracts for medicinal and defense purposes also contributes to the market.",
+  "staticRecipes": [
+    {
+      "name": "Simple Chili Garlic Sauce",
+      "description": "A versatile and spicy sauce, great as a condiment or cooking ingredient.",
+      "ingredients": [
+        "10-15 fresh red chilies (e.g., Thai chilies or similar), stemmed",
+        "4-6 cloves garlic",
+        "1 tbsp rice vinegar",
+        "1 tsp sugar",
+        "1/2 tsp salt",
+        "2 tbsp water (or more for desired consistency)"
+      ],
+      "steps": [
+        "Roughly chop chilies and garlic.",
+        "Combine all ingredients (chilies, garlic, vinegar, sugar, salt, water) in a blender or food processor.",
+        "Blend until mostly smooth, or to desired texture (some prefer it slightly chunky). Add more water if too thick.",
+        "Taste and adjust seasoning (sugar, salt, vinegar) if needed.",
+        "Transfer to a clean jar and store in the refrigerator. It will keep for several weeks."
+      ]
+    },
+    {
+      "name": "Stuffed Green Chilies (Mirchi Bajji/Pakora style filling)",
+      "description": "Large green chilies stuffed with a savory filling, often battered and fried (filling recipe only).",
+      "ingredients": [
+        "6-8 large, mildly hot green chilies (e.g., Anaheim, Poblano, or Indian Bajji Mirchi)",
+        "For stuffing: 1/2 cup gram flour (besan), 1/4 tsp turmeric powder, 1/2 tsp cumin powder, 1/2 tsp coriander powder, 1/4 tsp amchur (dry mango powder), pinch of asafoetida (hing), salt to taste, 2-3 tbsp water to make a thick paste"
+      ],
+      "steps": [
+        "Wash chilies. Make a lengthwise slit on one side of each chili, keeping the stem intact. Carefully remove seeds if you want to reduce heat.",
+        "Stuffing: In a bowl, mix gram flour, turmeric powder, cumin powder, coriander powder, amchur, asafoetida, and salt. Add water gradually to form a very thick, spreadable paste.",
+        "Carefully stuff this paste into each slit chili.",
+        "These stuffed chilies can then be shallow fried, baked, or dipped in a separate pakora batter and deep-fried according to various recipes for Mirchi Bajji or Stuffed Peppers."
+      ]
+    },
+    {
+      "name": "Homemade Red Chili Flakes",
+      "description": "Make your own dried red chili flakes for a fresh, potent spice.",
+      "ingredients": [
+        "A handful of dried red chilies (e.g., Cayenne, Arbol, or any hot variety)"
+      ],
+      "steps": [
+        "Ensure chilies are completely dry and brittle.",
+        "Remove stems. If you want milder flakes, you can slit the chilies and shake out some or all of the seeds.",
+        "Wear gloves if handling very hot chilies.",
+        "Break the dried chilies into smaller pieces by hand or roughly chop them.",
+        "Place the chili pieces in a spice grinder, coffee grinder (dedicated to spices), or a mortar and pestle.",
+        "Pulse or grind briefly until they are crushed into flakes of desired size. Be careful not to over-grind into a fine powder unless intended.",
+        "Store in an airtight container in a cool, dark place. Use to add heat to pizzas, pastas, stir-fries, etc."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "jamun",
+  "commonName": "Jamun (Java Plum)",
+  "scientificName": "Syzygium cumini",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Jamun_Java_plum.jpg",
+  "description": "An evergreen tropical tree in the flowering plant family Myrtaceae, native to the Indian subcontinent and Southeast Asia. The fruit is oblong or ovoid, starting green and turning from pink to a shining crimson black as it matures. It has a unique flavor profile that is typically a combination of sweet, mildly sour, and astringent.",
+  "origin": "Indian subcontinent and adjoining regions of Southeast Asia",
+  "localNames": [
+    "Java Plum",
+    "Black Plum",
+    "Jambolan",
+    "Jambul",
+    "Kala Jamun (Hindi)",
+    "Naval Pazham (Tamil)",
+    "Neredu Pandu (Telugu)",
+    "Duhat (Filipino)"
+  ],
+  "regions": [
+    "India (major producer)",
+    "Pakistan",
+    "Bangladesh",
+    "Nepal",
+    "Sri Lanka",
+    "Indonesia",
+    "Philippines",
+    "Thailand",
+    "Myanmar",
+    "Brazil",
+    "Suriname",
+    "Florida (USA - limited)"
+  ],
+  "seasons": [
+    "Summer (typically May to July in the Indian subcontinent)"
+  ],
+  "nutrition": {
+    "calories": "60 kcal per 100g",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.72,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 15.56,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.23,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 14.3,
+        "unit": "mg",
+        "rdi": "16-24%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.260,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 0.19,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 15,
+        "unit": "mg",
+        "rdi": "4%"
+      },
+      {
+        "name": "Potassium",
+        "value": 79,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Calcium",
+        "value": 19,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 17,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Traditionally used in Ayurvedic and Unani medicine for managing diabetes, as compounds in the fruit and seeds may help lower blood sugar levels.",
+    "Rich in antioxidants, particularly anthocyanins (which give the fruit its dark color), helping to combat oxidative stress.",
+    "Good source of Vitamin C, supporting immune function.",
+    "Contains iron, which is important for hemoglobin formation.",
+    "May aid in digestion and improve liver function; traditionally used for dysentery and diarrhea."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Jamun Allergy",
+      "severity": "Rare",
+      "details": "Allergies are very uncommon. Consuming large quantities on an empty stomach is sometimes advised against in traditional systems."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical. Tolerates a range of conditions but prefers distinct dry and wet seasons.\n2. Soil: Grows well in a variety of soils, from sandy loam to clayey soils, but prefers deep, well-drained loamy soil.\n3. Propagation: Commonly grown from seeds. Grafting or budding can be used for superior varieties.\n4. Planting: Plant in full sun.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during fruit development.\n6. Fertilizing: Generally does not require heavy fertilization. Organic manure can be beneficial.\n7. Harvesting: Fruits are harvested when they turn deep purple or black and detach easily from the tree.",
+  "growthDuration": "Seedling trees may take 8-10 years to fruit optimally. Grafted trees start earlier (4-5 years). Fruits mature in summer (typically May-July in India).",
+  "sustainabilityTips": [
+    "Jamun stains easily; handle with care to avoid staining clothes or surfaces.",
+    "The fruit is perishable; consume fresh within a few days or process into juice, vinegar, or wine for longer preservation.",
+    "Seeds can be dried and powdered for medicinal uses (always consult an Ayurvedic practitioner or healthcare expert before using for medicinal purposes)."
+  ],
+  "carbonFootprintInfo": "Relatively low to moderate (0.4-0.8 kg CO2e/kg), especially if consumed locally during its season. Transportation for export would increase this.",
+  "uses": [
+    "fresh_consumption_eaten_raw_often_with_salt",
+    "beverages_juices_syrups_wine_vinegar_sorbets",
+    "processed_products_jams_jellies_candies",
+    "medicinal_traditional_ayurvedic_unani_fruit_pulp_seeds_bark_leaves_for_diabetes_dysentery_liver_ailments",
+    "timber_wood_durable_water_resistant_for_construction_railway_sleepers_agricultural_implements",
+    "other_fodder_leaves_for_livestock_flowers_source_of_honey_cultural_religious_ceremonies"
+  ],
+  "originAndDomesticationHistory": "Jamun (Syzygium cumini) is native to the Indian subcontinent, including India, Pakistan, Bangladesh, Nepal, and Sri Lanka, as well as adjoining regions of Southeast Asia like Myanmar, Indonesia, and the Philippines. It has been cultivated in these regions for thousands of years and holds significant cultural, religious (associated with Lord Krishna in Hinduism), and medicinal importance. Ancient Ayurvedic and Unani texts extensively document its uses. The tree and its fruit spread to other tropical and subtropical parts of the world through Indian emigrants, traders, and colonial introductions. It has naturalized in many regions, including parts of Africa, the Americas (Florida, Brazil, Caribbean), and Australia.",
+  "climaticRequirements": {
+    "temperature": "Thrives in tropical and subtropical climates. It can tolerate a wide temperature range, from near freezing conditions for very short periods when mature, up to 48°C (118°F). Optimal growth occurs at temperatures between 20-30°C (68-86°F). Young plants are more susceptible to frost.",
+    "rainfall": "Prefers an annual rainfall ranging from 600mm to 1500mm, but can adapt to higher rainfall areas provided the soil is well-drained. A distinct dry period before flowering is considered beneficial for good fruit set and development.",
+    "altitude": "Grows well from sea level up to about 1800 meters (approx. 6000 feet) in suitable tropical or subtropical latitudes."
+  },
+  "soilPreferences": "Jamun trees are highly adaptable and can grow in a wide variety of soil types, including sandy loams, heavy clays, calcareous soils, and lateritic soils. However, they perform best in deep, well-drained, loamy soils that are rich in organic matter. They can tolerate some degree of waterlogging for short periods, which is unusual for many fruit trees. The optimal soil pH range is generally between 5.5 and 7.5 (slightly acidic to neutral).",
+  "irrigationAndWaterNeeds": "Young jamun trees require regular watering for proper establishment and vigorous growth. Mature trees are relatively drought-tolerant, especially those with deep root systems. However, for optimal fruit production and quality, supplemental irrigation is beneficial during prolonged dry spells, particularly during the flowering and fruit development stages. Over-irrigation should be avoided, especially in heavy soils.",
+  "plantingAndHarvestCycles": "Jamun is commonly propagated from seeds, which germinate readily within 2-4 weeks if sown fresh (seeds are recalcitrant and do not store well). For cultivating superior or specific varieties, vegetative propagation methods such as budding (shield or patch budding), grafting (approach grafting), or air layering are used. Planting is typically done at the onset of the monsoon season. Seedling trees may take 8-10 years to come into optimal bearing, while grafted or budded trees can start producing fruit within 4-5 years. Jamun trees generally flower from March to May in the Indian subcontinent. The fruits mature in the summer months, typically from May to July, depending on the geographical location and prevailing weather conditions. Fruits change color from green to pink and finally to a deep purple or shining crimson-black when fully ripe. Harvesting is done by hand-picking individual fruits or by shaking the branches and collecting the fallen fruit on sheets spread underneath the tree.",
+  "pestAndDiseaseManagement": "Common Pests: Fruit flies (Dacus spp., Bactrocera spp.) are significant pests, as their larvae infest ripe fruits. Leaf-eating caterpillars, aphids, scale insects, and mealybugs may also occasionally cause problems. Whiteflies can sometimes be an issue, leading to sooty mold development. Common Diseases: Anthracnose (Colletotrichum gloeosporioides) can affect leaves, flowers, and fruits, causing lesions and rot. Leaf spot diseases, caused by various fungal pathogens, can also occur. Sooty mold often develops as a secondary infection on honeydew excreted by sucking pests. Management Strategies: Maintaining good orchard sanitation, such as removing and destroying fallen or infested fruit, is important. Using fruit fly traps or lures can help manage fruit fly populations. Pruning trees to ensure good air circulation can reduce the incidence of fungal diseases. Biological control methods can be employed for certain pests. If necessary, need-based application of appropriate organic or chemical pesticides and fungicides should be considered, following local recommendations.",
+  "postHarvestHandling": "Jamun fruits are highly perishable and have a short shelf life, typically lasting only 2-3 days at ambient room temperature. Their shelf life can be extended to about 1-2 weeks if they are refrigerated at cool temperatures (around 7-10°C or 45-50°F) with high relative humidity. The fruits should be handled carefully during and after harvest to avoid bruising, as this accelerates spoilage. For transportation, they are often packed in shallow baskets or crates. Due to their perishability, jamun fruits are often processed quickly into juices, pulp, jams, jellies, vinegar, or wine for longer preservation and value addition.",
+  "majorProducingCountriesOrRegions": [
+    "India (largest producer)",
+    "Pakistan",
+    "Bangladesh",
+    "Nepal",
+    "Sri Lanka",
+    "Thailand",
+    "Indonesia",
+    "Philippines",
+    "Myanmar",
+    "Brazil (introduced, grown in some areas)",
+    "Suriname",
+    "Trinidad and Tobago",
+    "Florida (USA - limited cultivation)"
+  ],
+  "marketValueAndGlobalDemand": "Jamun is a highly popular fruit in local and regional markets across South and Southeast Asia, especially during its relatively short summer season. It is valued for its unique sweet, sour, and astringent taste profile and its significant traditional medicinal properties, particularly for managing diabetes. The demand for fresh jamun fruit is strong in these regions. Additionally, there is a growing demand for processed jamun products such as juice, pulp, powder (from dried seeds), and vinegar, driven by increasing health awareness and interest in Ayurvedic remedies. International trade in fresh jamun is limited due to its high perishability, but there is an emerging global market for its extracts and health supplements.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Jamun with Black Salt",
+      "description": "The simplest way to enjoy jamun, enhancing its unique flavor.",
+      "ingredients": [
+        "1 cup fresh Jamun (Java Plum)",
+        "A pinch of black salt (kala namak)"
+      ],
+      "steps": [
+        "Wash the jamun fruits thoroughly.",
+        "Place them in a bowl.",
+        "Sprinkle a pinch of black salt over the fruits.",
+        "Toss gently and enjoy. The fruit is eaten whole, and the seed is discarded."
+      ]
+    },
+    {
+      "name": "Jamun Juice",
+      "description": "A refreshing and nutritious juice with a distinct tangy-sweet taste.",
+      "ingredients": [
+        "2 cups fresh Jamun, deseeded",
+        "1 cup cold water",
+        "2-3 tbsp sugar or honey (or to taste)",
+        "1/2 tsp black salt (optional)",
+        "Juice of 1/2 lime (optional)"
+      ],
+      "steps": [
+        "Wash jamun fruits and remove the seeds. This can be done by gently squeezing the pulp off the seed.",
+        "Combine deseeded jamun pulp, cold water, sugar/honey, black salt (if using), and lime juice (if using) in a blender.",
+        "Blend until smooth.",
+        "Strain the juice through a fine-mesh sieve if you prefer a smoother texture, or enjoy it with the pulp.",
+        "Serve chilled or over ice."
+      ]
+    },
+    {
+      "name": "Jamun Vinegar (Homemade)",
+      "description": "A traditional way to preserve jamun and utilize its health benefits.",
+      "ingredients": [
+        "1 lb ripe Jamun fruits",
+        "1/2 cup sugar (or jaggery)",
+        "4 cups water",
+        "A piece of 'mother of vinegar' (optional, for faster fermentation)"
+      ],
+      "steps": [
+        "Wash jamun fruits thoroughly. Lightly crush them.",
+        "In a clean, sterilized glass or ceramic jar, combine the crushed jamun, sugar/jaggery, and water.",
+        "If using mother of vinegar, add it to the jar.",
+        "Cover the mouth of the jar with a clean cheesecloth or muslin cloth and secure it with a rubber band or string. This allows air to circulate but keeps insects out.",
+        "Keep the jar in a warm, dark place for 2-4 weeks. Stir the mixture every couple of days with a clean wooden or plastic spoon.",
+        "After 2-4 weeks (fermentation time can vary depending on temperature), the mixture will start to smell vinegary. Strain the liquid through a cheesecloth into another clean jar.",
+        "Cover the new jar again with cheesecloth and let it age for another 4-6 weeks, or until the desired acidity is achieved.",
+        "Once ready, the jamun vinegar can be strained again and stored in airtight bottles."
+      ]
+    }
+  ]
+}

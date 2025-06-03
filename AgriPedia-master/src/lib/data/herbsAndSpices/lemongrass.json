@@ -1,0 +1,67 @@
+{
+  "id": "lemongrass",
+  "commonName": "Lemongrass",
+  "scientificName": "Cymbopogon citratus",
+  "image": "https://images.unsplash.com/photo-1580670139027-4f583b5e478b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Lemongrass is a tropical perennial grass in the Poaceae family, native to Maritime Southeast Asia and introduced to many tropical regions. It is well known for its distinct lemon flavor and aroma, derived from citral, its primary chemical component. It is widely used as a culinary herb in Asian cuisines and also for medicinal purposes and essential oil production.",
+  "origin": "Maritime Southeast Asia (e.g., Indonesia, Malaysia, Philippines).",
+  "localNames": ["Bharaunsa (Hindi - less common)", "Remongurasu (Japanese)", "Hierba de limón / Citronela (Spanish)", "Citronnelle (French)"],
+  "regions": ["Thailand", "Vietnam", "India", "Sri Lanka", "Indonesia", "Malaysia", "Philippines", "Central and South America", "Africa", "Australia"],
+  "seasons": ["Tropical perennial; grows year-round in warm climates. Harvested when stalks are mature enough (typically 4-8 months after planting)."],
+  "nutrition": {
+    "calories": "99 kcal per 100g (fresh)",
+    "macronutrients": [
+      { "name": "Protein", "value": 1.8, "unit": "g" },
+      { "name": "Carbohydrates", "value": 25.3, "unit": "g" },
+      { "name": "Fat", "value": 0.5, "unit": "g" },
+      { "name": "Fiber", "value": "Data varies, typically low in consumed portion" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": 2.6, "unit": "mg", "rdi": "3%" },
+      { "name": "Folate (B9)", "value": 75, "unit": "µg", "rdi": "19%" },
+      { "name": "Niacin (B3)", "value": 2.0, "unit": "mg", "rdi": "13%" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": 723, "unit": "mg", "rdi": "15%" },
+      { "name": "Manganese", "value": 5.224, "unit": "mg", "rdi": "227%" },
+      { "name": "Iron", "value": 8.17, "unit": "mg", "rdi": "45%" },
+      { "name": "Magnesium", "value": 60, "unit": "mg", "rdi": "14%" }
+    ]
+  },
+  "healthBenefits": [
+    "Contains citral, which has antimicrobial and anti-inflammatory properties.",
+    "Used in traditional medicine to relieve pain, reduce fever, and treat digestive issues.",
+    "Lemongrass tea is popular for its calming effects and may aid sleep.",
+    "Rich in antioxidants.",
+    "May help lower cholesterol (research ongoing)."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lemongrass Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy to lemongrass is rare but can cause skin irritation (contact dermatitis) in some individuals, especially with the essential oil. Ingesting large amounts might cause dizziness or dry mouth."
+    }
+  ],
+  "cultivationProcess": "Lemongrass is typically propagated by division of established clumps or from rooted cuttings. It requires full sun and well-drained soil. It grows in dense clumps and can be harvested multiple times a year.",
+  "growthDuration": "Perennial. Stalks are usually ready for harvest 4-8 months after planting. Clumps can be productive for 3-4 years.",
+  "sustainabilityTips": [
+    "Drought-tolerant once established.",
+    "Can be grown in pots or as a border plant.",
+    "The spent leaves after oil extraction can be used as mulch or compost."
+  ],
+  "carbonFootprintInfo": "Locally grown lemongrass has a low carbon footprint. Commercial production for essential oil or large-scale fresh markets involves energy for distillation, processing, and transport.",
+  "uses": ["culinary_herb_stalks_leaves_teas_curries_soups", "essential_oil_production_citral_perfumery_cosmetics_insect_repellent", "traditional_medicine_digestive_aid_fever_reducer", "ornamental_grass"],
+  "originAndDomesticationHistory": "Lemongrass (Cymbopogon citratus) is native to Maritime Southeast Asia. It has a long history of use in traditional medicine and cuisine in these regions. It was later introduced to other tropical areas around the world. Other species like Cymbopogon flexuosus (East Indian lemongrass) are also cultivated for similar purposes.",
+  "climaticRequirements": {
+    "temperature": "Tropical and subtropical plant. Prefers warm, sunny conditions with temperatures between 20-35°C. Does not tolerate frost.",
+    "rainfall": "Requires consistent moisture, especially during active growth. Around 700-1500mm annually, or regular irrigation. Good drainage is important.",
+    "altitude": "Typically grown in lowland tropical areas, but can be cultivated up to 1200m."
+  },
+  "soilPreferences": "Prefers well-drained, fertile loamy or sandy loam soils with a pH of 5.5-7.5. Tolerates a range of soil types but not heavy clay or waterlogged conditions.",
+  "irrigationAndWaterNeeds": "Requires regular watering to keep the soil moist, especially during dry periods and for optimal yield. Drip irrigation is suitable. However, it can withstand short periods of drought once established.",
+  "plantingAndHarvestCycles": "Propagated by dividing mature clumps or rooting stem cuttings. Planted in spring or at the beginning of the rainy season. Stalks are harvested when they reach a usable size (about 1-2 cm thick at the base). Outer leaves are stripped, and the tender lower portion of the stalk is used. Multiple harvests are possible throughout the year.",
+  "pestAndDiseaseManagement": "Generally quite resistant to pests and diseases. Rust and leaf blight can occasionally occur, especially in very humid conditions or dense plantings. Nematodes can sometimes be an issue. Good field hygiene and ensuring proper spacing for air circulation are beneficial.",
+  "postHarvestHandling": "Fresh lemongrass stalks can be stored in the refrigerator for a few weeks, wrapped to retain moisture. They can also be chopped and frozen. For drying, leaves and stalks can be air-dried or use a dehydrator, though fresh is generally preferred for culinary use. For oil extraction, fresh or partially dried material is steam distilled.",
+  "majorProducingCountriesOrRegions": ["India", "Thailand", "Vietnam", "Indonesia", "Sri Lanka", "China", "Guatemala", "Brazil", "Parts of Africa"],
+  "marketValueAndGlobalDemand": "Lemongrass is popular globally, with demand for fresh stalks in Asian cuisine, dried leaves for tea, and essential oil (citral) for food flavoring, perfumery, cosmetics, and insect repellents. Demand for natural ingredients and essential oils continues to grow."
+}

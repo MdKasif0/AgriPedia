@@ -1,0 +1,147 @@
+{
+  "id": "green-garlic",
+  "commonName": "Green Garlic",
+  "scientificName": "Allium sativum (immature plant)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Green_garlic_2.jpg",
+  "description": "The young, immature garlic plant harvested before the bulb fully develops. It resembles a large spring onion or small leek, with a long green stalk and a small, white, partially formed bulb. Its flavor is milder and fresher than mature garlic.",
+  "origin": "Central Asia and northeastern Iran (same as mature garlic)",
+  "localNames": [
+    "Spring Garlic",
+    "Hara Lahsun (Hindi)"
+  ],
+  "regions": [
+    "Cultivated globally where garlic is grown, especially popular in season"
+  ],
+  "seasons": [
+    "Late Winter",
+    "Early Spring"
+  ],
+  "nutrition": {
+    "calories": "30 kcal per 100g (estimated, similar to spring onion)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "33%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 180,
+        "unit": "µg",
+        "rdi": "225%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Folate",
+        "value": 60,
+        "unit": "µg",
+        "rdi": "15%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Contains allicin and other beneficial sulfur compounds found in garlic, but often in milder concentrations.",
+    "Good source of Vitamin K and Vitamin C.",
+    "Provides antioxidants.",
+    "Adds a fresh, mild garlic flavor to dishes without being overpowering."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Allium Sensitivity",
+      "severity": "Mild",
+      "details": "Similar to other alliums, may cause digestive upset in sensitive individuals."
+    }
+  ],
+  "cultivationProcess": "Harvested from garlic plants before the bulbs mature. Can be grown by planting garlic cloves in fall or early spring. The young shoots are pulled when they are tender and the bulb is still small and undeveloped.",
+  "growthDuration": "A few months after planting garlic cloves, typically harvested in late winter or early spring.",
+  "sustainabilityTips": [
+    "Store green garlic wrapped in a damp paper towel in the refrigerator crisper for up to a week.",
+    "Use both the white/light green bulb part and the tender green stalks.",
+    "Can be used raw in salads and salsas, or cooked in stir-fries, soups, omelets, and pestos."
+  ],
+  "carbonFootprintInfo": "Low, similar to spring onions (0.2-0.5 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Green Garlic Pesto",
+      "description": "A vibrant and flavorful pesto using fresh green garlic instead of mature garlic cloves.",
+      "ingredients": [
+        "1 cup chopped green garlic (both white and green parts)",
+        "1/2 cup pine nuts or walnuts, toasted",
+        "1/2 cup grated Parmesan cheese",
+        "1/2 cup extra virgin olive oil",
+        "Juice of 1/2 lemon (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Combine chopped green garlic, toasted nuts, and Parmesan cheese in a food processor.",
+        "Pulse a few times to roughly chop.",
+        "With the food processor running, slowly drizzle in olive oil until the pesto reaches desired consistency (smooth or slightly chunky).",
+        "Stir in lemon juice if using. Season with salt and pepper to taste.",
+        "Serve with pasta, bread, or as a spread. Store in an airtight container in the refrigerator with a thin layer of oil on top to prevent browning."
+      ]
+    },
+    {
+      "name": "Sautéed Green Garlic",
+      "description": "A simple side dish or topping that highlights the fresh flavor of green garlic.",
+      "ingredients": [
+        "1 bunch green garlic, trimmed and chopped (separate white/light green from dark green parts)",
+        "1 tbsp olive oil or butter",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Wash green garlic thoroughly. Trim root ends and any tough outer layers. Chop, keeping white/light green parts separate from darker green tops.",
+        "Heat olive oil or melt butter in a skillet over medium heat.",
+        "Add the white and light green parts of the green garlic. Sauté for 2-3 minutes until softened and fragrant.",
+        "Add the chopped dark green tops and sauté for another 1-2 minutes until wilted.",
+        "Season with salt and pepper.",
+        "Serve as a side, or use as a topping for eggs, potatoes, or grilled meats."
+      ]
+    },
+    {
+      "name": "Green Garlic and Potato Soup",
+      "description": "A light and flavorful soup, perfect for spring.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 bunch green garlic, chopped (white and green parts)",
+        "1 medium onion, chopped (optional)",
+        "2 medium potatoes, peeled and diced",
+        "4 cups vegetable or chicken broth",
+        "1/4 cup heavy cream or milk (optional)",
+        "Salt and pepper to taste",
+        "Fresh chives or parsley for garnish"
+      ],
+      "steps": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat. Add chopped onion (if using) and the white/light green parts of the green garlic. Cook until softened, about 5-7 minutes.",
+        "Add diced potatoes and broth. Bring to a boil, then reduce heat, cover, and simmer for 15-20 minutes, or until potatoes are very tender.",
+        "Stir in the chopped dark green parts of the green garlic and cook for another 2-3 minutes.",
+        "Use an immersion blender to puree the soup until smooth (or blend in batches in a regular blender).",
+        "Stir in cream or milk if using. Season with salt and pepper to taste.",
+        "Reheat gently. Serve hot, garnished with fresh chives or parsley."
+      ]
+    }
+  ]
+}

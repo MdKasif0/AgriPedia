@@ -1,0 +1,236 @@
+{
+  "id": "jackfruit",
+  "commonName": "Jackfruit",
+  "scientificName": "Artocarpus heterophyllus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Jackfruit_photo.jpg",
+  "description": "A species of tree in the fig, mulberry, and breadfruit family (Moraceae). Its fruit is the largest tree-borne fruit in the world, capable of reaching as much as 55 kg (120 lbs) in weight. Ripe jackfruit has a sweet, aromatic yellow flesh (bulbs/pods), while unripe (green) jackfruit has a neutral flavor and meat-like texture, making it a popular meat substitute.",
+  "origin": "Southwestern India (Western Ghats)",
+  "localNames": [
+    "Kathal (Hindi, Bengali)",
+    "Jaca (Spanish/Portuguese)",
+    "Nangka (Malay/Indonesian)",
+    "Chakka (Malayalam)",
+    "Panasa (Telugu)",
+    "Halasu (Kannada)",
+    "Kanthal (Assamese)"
+  ],
+  "regions": [
+    "India (major producer)",
+    "Bangladesh",
+    "Thailand",
+    "Indonesia",
+    "Vietnam",
+    "Malaysia",
+    "Philippines",
+    "Sri Lanka",
+    "Brazil",
+    "Kenya",
+    "Uganda"
+  ],
+  "seasons": [
+    "Primarily Summer (March to June/July in India), but can vary with region and type, with some off-season fruiting."
+  ],
+  "nutrition": {
+    "calories": "95 kcal per 100g (ripe fruit pulp)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.72,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 23.25,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.64,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 13.7,
+        "unit": "mg",
+        "rdi": "15-23%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.329,
+        "unit": "mg",
+        "rdi": "19-25%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 5,
+        "unit": "µg RAE",
+        "rdi": "1%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.92,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 448,
+        "unit": "mg",
+        "rdi": "10-13%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 29,
+        "unit": "mg",
+        "rdi": "7-8%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.043,
+        "unit": "mg",
+        "rdi": "2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, aiding digestion and promoting gut health.",
+    "Contains Vitamin C, an antioxidant supporting the immune system, and Vitamin B6, important for brain function and metabolism.",
+    "Rich in potassium, which helps regulate blood pressure and fluid balance.",
+    "Unripe jackfruit serves as a popular, textured meat substitute for vegetarians and vegans, low in fat and cholesterol.",
+    "Provides various phytonutrients with antioxidant properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex Allergy Cross-Reactivity",
+      "severity": "Mild",
+      "details": "Some individuals with latex allergy may experience allergic reactions to jackfruit, though this is less common than with fruits like banana or avocado. Symptoms can include itching or swelling in the mouth."
+    },
+    {
+      "name": "Birch Pollen Allergy",
+      "severity": "Mild",
+      "details": "Individuals with birch pollen allergy might experience oral allergy syndrome symptoms."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Tropical and subtropical, thrives in warm, humid climates. Sensitive to frost.\n2. Soil: Deep, well-drained, alluvial or loamy soils are best. Tolerates a variety of soils but not waterlogged conditions.\n3. Propagation: Primarily grown from seeds, which should be planted fresh. Grafting is used for select cultivars.\n4. Planting: Plant in full sun with ample space for a large tree.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but benefit from irrigation during dry periods, especially during fruit development.\n6. Fertilizing: Benefit from regular application of organic manure and balanced fertilizers.\n7. Harvesting: Jackfruit is harvested at different stages. Young, unripe fruit for vegetable use is picked when small and green. Ripe fruit is harvested when it emits a strong aroma, the skin turns slightly yellowish-brown, and the spines flatten or yield to pressure.",
+  "growthDuration": "Seedling trees can take 3-8 years to bear fruit, while grafted trees may start in 2-4 years. Fruits take 3-8 months to mature on the tree after flowering.",
+  "sustainabilityTips": [
+    "Jackfruit is a large fruit; one fruit can provide many meals. Plan usage accordingly to minimize waste.",
+    "Unripe jackfruit can be stored at room temperature for a few days. Ripe jackfruit or its extracted pods should be refrigerated.",
+    "Jackfruit seeds are edible and nutritious when cooked (boiled or roasted), offering another food source from the plant.",
+    "The tree is hardy and can be grown in agroforestry systems, providing food and timber."
+  ],
+  "carbonFootprintInfo": "Moderate to high, primarily depending on transportation distance due to its large size and weight (estimated 0.8-2.0 kg CO2e/kg for transported fruit). Locally consumed jackfruit has a much lower footprint.",
+  "uses": [
+    "culinary_ripe_fruit_eaten_fresh_fleshy_bulbs_pods",
+    "culinary_unripe_green_fruit_cooked_as_vegetable_curries_stews_meat_substitute_pulled_jackfruit",
+    "processed_ripe_fruit_desserts_ice_creams_smoothies_juices_jams_jellies_chips_dried_fruit_canned_fruit",
+    "seeds_edible_when_boiled_roasted_steamed_ground_into_flour",
+    "fodder_leaves_and_fruit_waste_for_livestock",
+    "timber_durable_wood_for_furniture_musical_instruments_construction_yellow_dye_from_wood",
+    "latex_sticky_latex_for_traditional_adhesive_bird_lime"
+  ],
+  "originAndDomesticationHistory": "Jackfruit (Artocarpus heterophyllus) is native to the Western Ghats of southwestern India, where it has been cultivated for thousands of years (estimated 3000-6000 years). It is considered an ancient crop in India. From its origin, jackfruit cultivation spread to other parts of South and Southeast Asia, including Malaysia, Indonesia, the Philippines, and Sri Lanka, as well as to East Africa. It was later introduced to tropical regions of the Americas (such as Brazil and the Caribbean) and Australia. The tree is valued for its large, nutritious fruit, which can be consumed at different stages of maturity, and for its versatile timber. Different varieties have been selected over time for fruit size, flesh characteristics, and sweetness.",
+  "climaticRequirements": {
+    "temperature": "Thrives in tropical and near-tropical, humid climates. The optimal temperature range for growth is between 20-35°C (68-95°F). Jackfruit trees are highly sensitive to frost; young trees can be killed by temperatures below 0°C (32°F), and mature trees may tolerate very brief, light frost but will suffer damage. Consistent warmth is needed for good fruit development.",
+    "rainfall": "Prefers a well-distributed annual rainfall ranging from 1000mm to 2500mm. While established trees can tolerate some periods of drought, regular moisture is essential for optimal fruit production and quality. It does not tolerate prolonged waterlogging.",
+    "altitude": "Typically grown in lowland tropical regions, from sea level up to about 1200 meters (approx. 4000 feet). Growth and fruiting may be reduced at higher elevations where temperatures are cooler."
+  },
+  "soilPreferences": "Jackfruit trees prefer deep, well-drained, alluvial or loamy soils that are rich in organic matter. They can adapt to a variety of soil types, including sandy loams and lateritic soils, but good drainage is essential to prevent root rot. The ideal soil pH range is between 6.0 and 7.5 (slightly acidic to neutral). They do not perform well in compacted or waterlogged soils.",
+  "irrigationAndWaterNeeds": "Young jackfruit trees require regular and consistent watering to ensure proper establishment and vigorous growth. Mature, fruit-bearing trees are relatively drought-tolerant once established, but they benefit significantly from supplemental irrigation during prolonged dry periods, especially during the flowering and fruit development stages. Adequate soil moisture during these critical periods is crucial for good fruit set, size, and overall yield. However, overwatering and waterlogged conditions should be avoided.",
+  "plantingAndHarvestCycles": "Propagation is primarily done using seeds, which should be planted fresh as they are recalcitrant and lose viability quickly. For superior cultivars and earlier bearing, vegetative propagation methods like grafting (e.g., epicotyl grafting, cleft grafting), budding, or air layering are employed. Planting is usually carried out at the beginning of the rainy season, ensuring ample space for the tree's large canopy. Seedling trees typically take 3-8 years to start bearing fruit, while grafted trees may begin producing in 2-4 years. Jackfruit trees are monoecious, meaning they have separate male and female flowers on the same tree; pollination is mainly by wind and insects. The massive fruits take 3-8 months to mature on the tree after flowering. Harvesting time depends on the intended use: young, unripe fruits for vegetable purposes are picked when they are small, green, and firm. Ripe fruits are harvested when they emit a strong, sweet aroma, the skin color changes from green to a slightly yellowish-brown or greenish-yellow, the spines on the skin flatten or yield to gentle pressure, and the fruit produces a dull, hollow sound when tapped. Fruits are typically cut from the tree with a portion of the stalk attached, as they are very heavy.",
+  "pestAndDiseaseManagement": "Common Pests: Jackfruit borer (Margaronia caesalis, Diaphania caesalis) larvae bore into shoots, buds, and young fruits, causing significant damage. Mealybugs and scale insects can infest young shoots and fruits. Fruit flies (Bactrocera spp.) may occasionally attack ripe fruits. Rodents, monkeys, and jackals can also damage or consume ripe fruits on the tree. Common Diseases: Rhizopus fruit rot (soft rot), caused by Rhizopus artocarpi, is a major disease affecting ripe fruits, especially if they have wounds or are overripe. Pink disease (Corticium salmonicolor) can affect branches, causing dieback. Leaf spot diseases caused by various fungi can also occur. Root rot can be an issue in poorly drained or waterlogged soils. Management Strategies: Maintaining good orchard sanitation, including the removal of fallen fruits and diseased branches, is important. Pruning to improve air circulation can help reduce fungal diseases. Protecting young trees from borers by wrapping stems or using appropriate insecticides. Bagging of young fruits can offer protection against borers and fruit flies. For Rhizopus rot, careful handling of fruits to avoid wounds and timely harvesting are crucial. Fungicidal sprays may be needed for severe leaf spot or pink disease outbreaks.",
+  "postHarvestHandling": "Unripe jackfruit intended for use as a vegetable can be stored at room temperature for a few days or refrigerated for a slightly longer period. Ripe jackfruit has a limited shelf life once harvested, typically lasting a few days to about a week at ambient room temperature, depending on its ripeness. Refrigeration at 10-13°C (50-55°F) can extend the shelf life of ripe fruit or cut portions. The fruit is large and very heavy, requiring careful handling to prevent damage. Cutting open a jackfruit can be challenging due to its size and the sticky latex it exudes; oiling hands and the knife is highly recommended. Once cut, the fleshy bulbs (pods) can be extracted and stored in an airtight container in the refrigerator for several days or frozen for longer-term storage. Seeds should be removed from the pods before storage or consumption.",
+  "majorProducingCountriesOrRegions": [
+    "India (largest producer)",
+    "Bangladesh",
+    "Thailand",
+    "Indonesia",
+    "Vietnam",
+    "Malaysia",
+    "Philippines",
+    "Sri Lanka",
+    "Brazil",
+    "Nepal",
+    "Kenya",
+    "Uganda",
+    "Various other tropical countries in Asia, Africa, and the Americas."
+  ],
+  "marketValueAndGlobalDemand": "Jackfruit is a highly valued staple food in many parts of South and Southeast Asia, consumed both in its ripe (sweet) and unripe (vegetable) forms. Its timber is also economically important in these regions. In recent years, there has been a significant surge in international demand for unripe jackfruit, particularly in Western countries, where it is used as a meat substitute in vegetarian and vegan cuisine due to its texture. Ripe jackfruit and processed products like canned jackfruit, dried jackfruit chips, and jackfruit flour also have growing niche markets globally. The market value varies significantly based on local availability, variety, whether it's sold ripe or unripe, and its intended use (fresh consumption vs. processing for meat substitute).",
+  "staticRecipes": [
+    {
+      "name": "Pulled Jackfruit (BBQ Sandwich Filling)",
+      "description": "A popular vegetarian alternative to pulled pork, using unripe jackfruit.",
+      "ingredients": [
+        "2 cans (20 oz each) young green jackfruit in brine or water, drained and rinsed",
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup BBQ sauce",
+        "1 tbsp apple cider vinegar",
+        "1 tsp smoked paprika",
+        "Salt and pepper to taste",
+        "Burger buns or rolls for serving"
+      ],
+      "steps": [
+        "Rinse and drain the jackfruit. Remove the core and any tough outer pieces. Shred the jackfruit pieces with your fingers or two forks.",
+        "Heat olive oil in a large skillet over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and cook for 1 minute more.",
+        "Add the shredded jackfruit to the skillet. Cook for 5-7 minutes, stirring occasionally, until it starts to brown slightly.",
+        "In a small bowl, mix BBQ sauce, apple cider vinegar, and smoked paprika.",
+        "Pour the sauce over the jackfruit. Stir well to coat. Reduce heat to low, cover, and simmer for 15-20 minutes, allowing the jackfruit to absorb the flavors. Add a little water if it becomes too dry.",
+        "Uncover and cook for another 5-10 minutes, stirring, until some of the liquid has evaporated and the jackfruit is tender and easily shreddable. Season with salt and pepper to taste.",
+        "Serve hot on buns as a sandwich filling, often with coleslaw."
+      ]
+    },
+    {
+      "name": "Ripe Jackfruit Pods (Fresh)",
+      "description": "Enjoying the sweet, aromatic flesh of ripe jackfruit pods.",
+      "ingredients": [
+        "1 section of ripe jackfruit"
+      ],
+      "steps": [
+        "Handling ripe jackfruit can be sticky due to latex. It's advisable to oil your hands and knife before cutting.",
+        "Cut the ripe jackfruit section open. You will see large, fleshy pods (bulbs) surrounding seeds.",
+        "Carefully extract the yellow to orange fleshy pods. Each pod contains a large seed.",
+        "The fleshy pod is eaten raw. It has a sweet, tropical flavor. The seeds are not eaten raw but can be boiled or roasted separately.",
+        "Store unused pods in an airtight container in the refrigerator."
+      ]
+    },
+    {
+      "name": "Jackfruit Seed Curry (Side Dish)",
+      "description": "A South Indian style curry made with nutritious jackfruit seeds.",
+      "ingredients": [
+        "1 cup jackfruit seeds, outer white skin removed",
+        "1 onion, chopped",
+        "1 tomato, chopped",
+        "1 inch ginger, grated",
+        "2 cloves garlic, minced",
+        "1/2 tsp turmeric powder",
+        "1 tsp red chili powder (or to taste)",
+        "1 tsp coriander powder",
+        "1/2 tsp cumin powder",
+        "1/4 cup grated coconut (optional)",
+        "Salt to taste",
+        "1 tbsp oil",
+        "Mustard seeds, curry leaves for tempering"
+      ],
+      "steps": [
+        "Boil or pressure cook the jackfruit seeds until tender (they should be easily mashable). Peel off the thin brown inner skin once cooled slightly. Roughly chop or halve the cooked seeds.",
+        "Heat oil in a pan. Add mustard seeds; when they splutter, add curry leaves.",
+        "Add chopped onion and sauté until golden brown. Add ginger and garlic, sauté for a minute.",
+        "Add chopped tomato and cook until soft.",
+        "Add turmeric powder, chili powder, coriander powder, cumin powder, and salt. Sauté for a minute.",
+        "Add the cooked jackfruit seeds and grated coconut (if using). Mix well. Add about 1/2 cup of water, cover, and simmer for 5-7 minutes, allowing flavors to combine.",
+        "Serve hot as a side dish with rice or roti."
+      ]
+    }
+  ]
+}

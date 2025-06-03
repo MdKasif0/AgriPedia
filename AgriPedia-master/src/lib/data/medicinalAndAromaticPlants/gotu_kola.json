@@ -1,0 +1,66 @@
+{
+  "id": "gotu_kola",
+  "commonName": "Gotu Kola (Centella Asiatica)",
+  "scientificName": "Centella asiatica",
+  "image": "https://images.unsplash.com/photo-1507668077129-56e328422ceb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Gotu kola is a herbaceous, frost-tender perennial plant in the flowering plant family Apiaceae. It is native to wetlands in Asia. It is used as a culinary vegetable and as a medicinal herb, particularly in Ayurvedic and traditional Chinese medicine. It is often referred to as the 'herb of longevity'.",
+  "origin": "Wetlands in Asia (India, Sri Lanka, China, Indonesia, Malaysia).",
+  "localNames": ["Brahmi (often confused with Bacopa monnieri, but also used for Gotu Kola in some regions)", "Mandukaparni (Sanskrit/Hindi)", "Vallārai (Tamil)", "Tsubokusa (Japanese)"],
+  "regions": ["India", "Sri Lanka", "China", "Indonesia", "Malaysia", "Southeast Asian countries", "Parts of Australia and Africa"],
+  "seasons": ["Perennial; grows year-round in tropical and subtropical climates. Harvested as needed."],
+  "nutrition": {
+    "calories": "Approx. 30-40 kcal per 100g (fresh leaves)",
+    "macronutrients": [
+      { "name": "Protein", "value": "~2.0", "unit": "g" },
+      { "name": "Carbohydrates", "value": "~5-7", "unit": "g" },
+      { "name": "Fat", "value": "~0.2", "unit": "g" },
+      { "name": "Fiber", "value": "~2-3", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "value": "Significant", "unit": "mg", "rdi": "Varies" },
+      { "name": "Vitamin A (as carotenoids)", "value": "Significant", "unit": "µg", "rdi": "Varies" },
+      { "name": "Vitamin B complex", "value": "Present", "unit": "", "rdi": "Varies" }
+    ],
+    "minerals": [
+      { "name": "Calcium", "value": "High", "unit": "mg", "rdi": "Varies" },
+      { "name": "Iron", "value": "Moderate", "unit": "mg", "rdi": "Varies" },
+      { "name": "Potassium", "value": "Moderate", "unit": "mg", "rdi": "Varies" }
+    ]
+  },
+  "healthBenefits": [
+    "May improve cognitive function, including memory and concentration (often called 'brain food').",
+    "Promotes wound healing and skin health; used for scars, eczema, and psoriasis.",
+    "Can improve circulation and reduce varicose veins.",
+    "Has anti-inflammatory and antioxidant properties.",
+    "Traditionally used to reduce anxiety and promote relaxation."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Gotu Kola Allergy/Sensitivity",
+      "severity": "Mild",
+      "details": "Contact dermatitis (skin rash) can occur in sensitive individuals from topical application. High doses internally may cause headache, dizziness, or photosensitivity. Should be used with caution during pregnancy and by individuals with liver conditions."
+    }
+  ],
+  "cultivationProcess": "Gotu kola is propagated by seeds or, more commonly, by runners or division of clumps. It prefers moist, fertile soil and partial shade, though it can tolerate full sun if kept consistently moist. It can spread aggressively in ideal conditions.",
+  "growthDuration": "Perennial. Can be harvested starting a few months after planting. Leaves are picked as needed.",
+  "sustainabilityTips": [
+    "Can be grown as a groundcover in moist, shady areas.",
+    "Easy to propagate, reducing the need for commercial plants for home use.",
+    "Prefers moist environments, so water conservation should be considered in drier cultivation areas."
+  ],
+  "carbonFootprintInfo": "Locally grown Gotu kola for personal use has a low carbon footprint. Commercial production for supplements and herbal products involves energy for cultivation, drying, processing, and transportation.",
+  "uses": ["traditional_medicine_ayurveda_chinese_medicine_brain_tonic_wound_healing_skin_conditions_circulatory_support", "culinary_vegetable_salads_juices_curries_in_some_asian_cuisines", "dietary_supplement_extracts_powders_teas", "cosmetics_skin_care_products"],
+  "originAndDomesticationHistory": "Gotu kola (Centella asiatica) has been used for thousands of years in Ayurvedic, traditional Chinese, and Southeast Asian medicine. It is native to the wetlands of Asia. It has a long history of use for enhancing memory, healing wounds, and promoting longevity. It is often associated with spiritual practices due to its purported cognitive benefits.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm, humid tropical or subtropical climates, 20-35°C. Sensitive to frost.",
+    "rainfall": "Requires consistent moisture and high humidity. Prefers well-distributed rainfall or regular irrigation, mimicking its native wetland habitat.",
+    "altitude": "Typically grown in lowland areas, but can be found at moderate altitudes in tropical regions."
+  },
+  "soilPreferences": "Prefers moist, fertile, loamy soils rich in organic matter. Slightly acidic to neutral pH (6.0-7.0) is optimal. Can tolerate boggy conditions but also grows in well-drained moist soils.",
+  "irrigationAndWaterNeeds": "Requires consistently moist soil. Regular watering is essential, especially in sunnier locations or drier periods. Should not be allowed to dry out completely.",
+  "plantingAndHarvestCycles": "Propagated by planting rooted runners or divisions. Plant in spring or during the rainy season. Leaves can be harvested continuously once the plant is established, typically by picking outer leaves. For larger harvests, the entire plant above ground can be cut and will regrow.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Slugs and snails can be an issue in moist conditions. Fungal leaf spots or root rot can occur if there is poor drainage or excessive humidity without good air circulation.",
+  "postHarvestHandling": "Fresh leaves are used for culinary purposes or juicing. For medicinal use, leaves are typically dried in shade to preserve their color and active compounds. Dried leaves are then powdered or used for extracts and teas. Store dried Gotu kola in airtight containers away from light.",
+  "majorProducingCountriesOrRegions": ["India", "Sri Lanka", "China", "Indonesia", "Malaysia", "Madagascar", "South Africa", "Parts of Southeast Asia and South America"],
+  "marketValueAndGlobalDemand": "Gotu kola has a growing global market, driven by its increasing popularity as a cognitive enhancer, skin health ingredient, and adaptogen in the herbal supplement and natural cosmetics industries. Demand for high-quality, sustainably sourced Gotu kola is rising in Western countries."
+}

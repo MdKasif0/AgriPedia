@@ -1,0 +1,65 @@
+{
+  "id": "rye",
+  "commonName": "Rye",
+  "scientificName": "Secale cereale",
+  "image": "https://images.unsplash.com/photo-1603621760091-d7b391568915?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Rye is a cereal grain that is closely related to wheat and barley. It is used extensively for flour, bread (especially rye bread and pumpernickel), beer, some whiskeys, some vodkas, and animal fodder. It can grow in poorer soils and colder, harsher climates than other cereals.",
+  "origin": "Southwestern Asia, likely modern-day Turkey or surrounding areas.",
+  "localNames": ["Rai (Hindi - though less common in India)", "Kuro-mugi (Japanese)", "Centeno (Spanish)", "Seigle (French)"],
+  "regions": ["Germany", "Poland", "Russia", "Belarus", "Ukraine", "Scandinavia", "Canada"],
+  "seasons": ["Primarily winter rye (planted in fall, harvested in late spring/summer)", "Some spring rye varieties exist"],
+  "nutrition": {
+    "calories": "338 kcal per 100g (raw grain)",
+    "macronutrients": [
+      { "name": "Protein", "value": 10.3, "unit": "g" },
+      { "name": "Carbohydrates", "value": 75.9, "unit": "g" },
+      { "name": "Fat", "value": 1.6, "unit": "g" },
+      { "name": "Fiber", "value": 15.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Niacin (B3)", "value": 4.27, "unit": "mg", "rdi": "28%" },
+      { "name": "Thiamin (B1)", "value": 0.316, "unit": "mg", "rdi": "26%" },
+      { "name": "Vitamin B6", "value": 0.294, "unit": "mg", "rdi": "23%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 2.68, "unit": "mg", "rdi": "117%" },
+      { "name": "Phosphorus", "value": 374, "unit": "mg", "rdi": "53%" },
+      { "name": "Magnesium", "value": 121, "unit": "mg", "rdi": "29%" }
+    ]
+  },
+  "healthBenefits": [
+    "Very high in dietary fiber, promoting digestive health and satiety.",
+    "Can help improve blood sugar control due to its high fiber content and low glycemic index.",
+    "May aid in weight management.",
+    "Contains lignans, which may have protective effects against heart disease and certain cancers."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Gluten Intolerance/Celiac Disease",
+      "severity": "Varies (Mild to Severe)",
+      "details": "Rye contains gluten (specifically secalin), which can cause adverse reactions in individuals with celiac disease or non-celiac gluten sensitivity."
+    }
+  ],
+  "cultivationProcess": "Rye cultivation involves preparing a seedbed (often less intensively than for wheat), sowing seeds, and harvesting when the grain is mature. It is known for its ability to grow in poor soils and harsh conditions.",
+  "growthDuration": "Winter rye: 9-10 months (including overwintering). Spring rye: 3-4 months.",
+  "sustainabilityTips": [
+    "Excellent as a winter cover crop to prevent soil erosion and suppress weeds.",
+    "Requires fewer pesticides and fertilizers than many other cereal crops.",
+    "Its deep root system can improve soil structure."
+  ],
+  "carbonFootprintInfo": "Rye generally has a lower carbon footprint than wheat due to lower input requirements and its ability to sequester carbon when used as a cover crop.",
+  "uses": ["culinary_bread", "animal_feed", "beverages_alcoholic", "cover_crop"],
+  "originAndDomesticationHistory": "Rye (Secale cereale) is thought to have originated as a weed in wheat and barley fields in southwestern Asia. It was domesticated later than wheat and barley, possibly around 4000-2000 BCE. Its hardiness allowed it to become a staple crop in colder regions of Northern and Eastern Europe.",
+  "climaticRequirements": {
+    "temperature": "Very hardy. Winter rye can survive temperatures as low as -35°C. Optimal growing temperatures are 15-20°C. Tolerates cool and damp conditions.",
+    "rainfall": "350-700mm annually. More drought-tolerant than wheat in sandy soils.",
+    "altitude": "Can be grown at various altitudes, performing well in cool upland areas."
+  },
+  "soilPreferences": "Adaptable to a wide range of soils, including sandy, acidic, and infertile soils where other cereals struggle. Prefers well-drained soils. Optimal pH range is 5.0-7.0.",
+  "irrigationAndWaterNeeds": "Primarily rain-fed. Its extensive root system makes it relatively drought-tolerant, especially on lighter soils.",
+  "plantingAndHarvestCycles": "Winter rye is sown in autumn and harvested in late spring or early summer. Spring rye is sown in spring. Harvested when grains are hard and moisture content is around 14%.",
+  "pestAndDiseaseManagement": "Common diseases include ergot (a fungal disease that can be toxic), rusts, and powdery mildew. Pests are generally less of an issue than for wheat. Crop rotation and resistant varieties are key management strategies.",
+  "postHarvestHandling": "Involves threshing, cleaning, and drying the grain. Proper drying is crucial to prevent ergot contamination. Stored in cool, dry conditions.",
+  "majorProducingCountriesOrRegions": ["European Union (Germany, Poland, Denmark)", "Russia", "Belarus", "Ukraine", "Canada", "United States (less common)"],
+  "marketValueAndGlobalDemand": "Rye is a niche grain compared to wheat, but has stable demand, particularly in Eastern and Northern Europe for traditional breads. Also used in the production of rye whiskey and as animal feed or forage. Growing interest in its health benefits and as a cover crop."
+}

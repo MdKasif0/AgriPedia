@@ -1,0 +1,169 @@
+{
+  "id": "lotus-stem",
+  "commonName": "Lotus Stem / Root",
+  "scientificName": "Nelumbo nucifera",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvkomzw2NvZUPhGGNQFNLcX9Ib-SQD6tutRi7RtVmhg&s",
+  "description": "Lotus stem, commonly known as lotus root, is the edible rhizome (underwater stem) of the lotus plant. When sliced, it reveals a distinctive lace-like pattern of air channels. It has a crisp, crunchy texture and a mild, slightly sweet, and starchy flavor. It is a popular ingredient in many Asian cuisines and can be stir-fried, braised, boiled in soups, or pickled.",
+  "origin": "Native to a wide region across Asia (from India through Southeast Asia to East Asia) and parts of northern and eastern Australia.",
+  "localNames": [
+    "Kamal Kakdi (Hindi)",
+    "Renkon (蓮根 - Japanese)",
+    "Yeon-geun (연근 - Korean)",
+    "Lián-ǒu (蓮藕 - Chinese)",
+    "Bhasin / Bhein (Punjabi)",
+    "Nadru (Kashmiri)"
+  ],
+  "regions": [
+    "China (major producer)",
+    "Japan",
+    "India",
+    "South Korea",
+    "Vietnam",
+    "Thailand",
+    "Indonesia",
+    "Sri Lanka",
+    "Australia (northern regions)"
+  ],
+  "seasons": [
+    "Typically harvested from late summer through winter (July to March in some regions), though availability can extend year-round in many Asian markets due to varied cultivation and storage."
+  ],
+  "nutrition": {
+    "calories": "66 kcal per 100g (cooked, boiled, drained)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.58,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 16.02,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.07,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.1,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 27.4,
+        "unit": "mg",
+        "rdi": "30%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.218,
+        "unit": "mg",
+        "rdi": "13%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.127,
+        "unit": "mg",
+        "rdi": "11%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 8,
+        "unit": "µg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 0.4,
+        "unit": "µg",
+        "rdi": "0%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Copper",
+        "value": 0.221,
+        "unit": "mg",
+        "rdi": "25%"
+      },
+      {
+        "name": "Potassium",
+        "value": 363,
+        "unit": "mg",
+        "rdi": "8%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 78,
+        "unit": "mg",
+        "rdi": "6%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.22,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.9,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which aids digestion, promotes gut health, and can help manage blood sugar levels.",
+    "Rich in Vitamin C, an antioxidant that boosts the immune system and supports collagen production.",
+    "Contains essential minerals like potassium for heart health, copper for enzyme function, and phosphorus for bone health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Parasite risk (if raw)",
+      "severity": "Moderate to High",
+      "details": "Raw lotus root may carry parasites like Fasciolopsis buski. It is strongly recommended to cook lotus root thoroughly before consumption to eliminate this risk."
+    }
+  ],
+  "cultivationProcess": "Lotus (Nelumbo nucifera) is an aquatic perennial plant. The rhizomes (lotus stems/roots) are planted in the mud of shallow ponds, lakes, or flooded fields. The plant requires warm temperatures and full sun. Leaves and flowers float on or rise above the water surface. Rhizomes spread horizontally in the mud and are harvested when they reach a suitable size, typically after the water is drained from the field or pond.",
+  "growthDuration": "Lotus rhizomes typically mature and are ready for harvest approximately 6 to 9 months after planting the initial propagule (a piece of rhizome with a bud).",
+  "sustainabilityTips": [
+    "Lotus plants are used in phytoremediation to help clean polluted water bodies, as they can absorb heavy metals and excess nutrients.",
+    "All parts of the lotus plant (roots, stems, leaves, flowers, seeds) are edible or have traditional uses, making it a very low-waste crop."
+  ],
+  "carbonFootprintInfo": "Locally grown lotus stem, especially when cultivated in traditional aquatic farming systems that mimic its natural habitat, generally has a moderate carbon footprint. Transporting fresh or processed lotus stem over long distances, particularly if requiring refrigeration, increases its environmental impact.",
+  "staticRecipes": [
+    {
+      "name": "Simple Stir-fried Lotus Root with Ginger and Soy",
+      "description": "A quick and flavorful stir-fry that showcases the uniquely crisp and crunchy texture of lotus root, enhanced with the aromatic flavors of ginger and soy sauce.",
+      "ingredients": [
+        "1 large lotus root (about 250-300g)",
+        "1 tablespoon vegetable oil or peanut oil",
+        "1-2 cloves garlic, minced",
+        "1 teaspoon fresh ginger, minced",
+        "1 tablespoon light soy sauce",
+        "1 teaspoon rice vinegar (or white vinegar)",
+        "1/2 teaspoon granulated sugar (optional)",
+        "A few drops of sesame oil (optional)",
+        "1 spring onion, thinly sliced (for garnish, optional)",
+        "A splash of water (if needed during stir-frying)"
+      ],
+      "steps": [
+        "Prepare the lotus root: Peel the tough outer skin of the lotus root using a vegetable peeler. Slice it crosswise into thin rounds (about 1/8 inch or 3mm thick). As you slice, immediately place the rounds into a bowl of cold water mixed with a teaspoon of vinegar or lemon juice to prevent them from browning due to oxidation.",
+        "Rinse the sliced lotus root under fresh cold water to remove any excess starch. Drain thoroughly.",
+        "Heat the cooking oil in a wok or large skillet over medium-high heat until the oil is hot and shimmering.",
+        "Add the minced garlic and minced ginger to the hot oil. Stir-fry for about 20-30 seconds until fragrant. Be careful not to burn them.",
+        "Add the drained lotus root slices to the wok. Stir-fry continuously for 3-5 minutes. The lotus root should become slightly translucent around the edges but remain crisp.",
+        "In a small bowl, mix together the light soy sauce, rice vinegar, and optional sugar until the sugar (if using) is dissolved.",
+        "Pour the sauce mixture over the lotus root in the wok. Stir well to ensure all the slices are evenly coated with the sauce.",
+        "Continue to stir-fry for another 1-2 minutes, or until the sauce has slightly thickened and glazed the lotus root slices. If the wok becomes too dry, add a small splash of water to prevent sticking.",
+        "If using, drizzle with a few drops of sesame oil and give it a final quick toss.",
+        "Remove from heat and transfer to a serving dish. Garnish with thinly sliced spring onions or fresh coriander if desired.",
+        "Serve immediately as a side dish or as part of a multi-course Asian meal. Enjoy the crunchy texture!"
+      ]
+    }
+  ]
+}

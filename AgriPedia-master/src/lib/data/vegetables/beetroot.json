@@ -1,0 +1,222 @@
+{
+  "id": "beetroot",
+  "commonName": "Beetroot (Beet)",
+  "scientificName": "Beta vulgaris subsp. vulgaris Conditiva Group (Table Beet/Garden Beet)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Beetroot_example.jpg/800px-Beetroot_example.jpg",
+  "description": "The beetroot is the taproot portion of the beet plant. It is commonly known in North America as the beet, and also as table beet, garden beet, red beet, dinner beet, or golden beet (for yellow varieties). It is one of several cultivated varieties of Beta vulgaris grown for their edible taproots and their leaves (called beet greens). Beetroots are characterized by their earthy flavor and vibrant color, most commonly deep red or purple, but also yellow, white, or candy-striped (chioggia).",
+  "origin": "Mediterranean region. Derived from the wild sea beet (Beta vulgaris subsp. maritima).",
+  "localNames": [
+    "Beet (North America)",
+    "Table Beet",
+    "Garden Beet",
+    "Remolacha (Spanish)",
+    "Betterave (French)",
+    "Rote Bete (German - 'red beet')",
+    "Barbabietola (Italian)",
+    "Chukandar (चुकंदर - Hindi)",
+    "Sveklā (Свекла - Russian)"
+  ],
+  "regions": [
+    "Russia (major producer, including for borscht)",
+    "France",
+    "Germany",
+    "United States (major production in states like Wisconsin, New York, Oregon)",
+    "Poland",
+    "United Kingdom",
+    "Egypt",
+    "Ukraine",
+    "Netherlands",
+    "Australia"
+  ],
+  "seasons": [
+    "Typically a cool-season crop. Main harvest in summer and autumn in temperate climates. Available year-round in many markets due to storage and global sourcing."
+  ],
+  "nutrition": {
+    "calories": "43 kcal per 100g (cooked, boiled, drained)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.61,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.56,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.17,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Folate (B9)",
+        "value": 109,
+        "unit": "µg",
+        "rdi": "27%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 4.9,
+        "unit": "mg",
+        "rdi": "5-8%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Manganese",
+        "value": 0.329,
+        "unit": "mg",
+        "rdi": "14-16%"
+      },
+      {
+        "name": "Potassium",
+        "value": 325,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 23,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.8,
+        "unit": "mg",
+        "rdi": "4-10%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in folate (Vitamin B9), which is essential for DNA synthesis, cell growth, and development, particularly important during pregnancy.",
+    "Good source of manganese, an essential mineral involved in bone formation, metabolism, and antioxidant defense.",
+    "Contains inorganic nitrates, which the body can convert to nitric oxide. Nitric oxide helps relax and dilate blood vessels, potentially lowering blood pressure and improving blood flow and athletic performance.",
+    "Betalain pigments (like betanin, responsible for the red color) possess potent antioxidant and anti-inflammatory properties.",
+    "Provides dietary fiber, aiding digestion, promoting gut health, and contributing to satiety."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Beeturia",
+      "severity": "Harmless (cosmetic)",
+      "details": "Consumption of beetroot can cause urine or stools to turn red or pink in some individuals (estimated 10-14% of the population). This is a harmless condition related to the excretion of betalain pigments and depends on individual metabolism and stomach acidity."
+    },
+    {
+      "name": "Oxalates",
+      "severity": "Low to Moderate (for susceptible individuals)",
+      "details": "Beetroot and beet greens contain moderate levels of oxalates, which may contribute to kidney stone formation in susceptible individuals if consumed in very large quantities regularly. Cooking may not significantly reduce oxalate levels in beetroot roots."
+    }
+  ],
+  "cultivationProcess": "Beetroot is a cool-season biennial crop, typically grown as an annual for its swollen taproot. Seeds are sown directly in well-drained, loose, fertile soil in spring or late summer. Consistent moisture is crucial, especially during root development. Roots are harvested when they reach 1.5-3 inches in diameter. Greens can be harvested when young. More details in specific sections.",
+  "growthDuration": "Typically 50 to 70 days from sowing to harvest of roots, depending on the variety and growing conditions. Beet greens can be harvested earlier.",
+  "sustainabilityTips": [
+    "Store beetroot with the greens removed (leave about 1 inch of stem) in the refrigerator crisper drawer for several weeks, or even months in a root cellar.",
+    "Beet greens are edible and highly nutritious; cook them like spinach or Swiss chard, or add them to salads when young and tender.",
+    "Beetroot can be roasted, boiled, steamed, pickled, or grated raw into salads. Its versatility allows for full use of the harvested root.",
+    "Consider growing your own, as beetroot is relatively easy to cultivate in home gardens in suitable climates."
+  ],
+  "carbonFootprintInfo": "Generally low, typically around 0.3-0.5 kg CO2e/kg for field-grown beetroot consumed locally or regionally. Long-distance transport or out-of-season greenhouse cultivation would increase this. Processed products like canned or pickled beetroot will have additional footprint from processing and packaging.",
+  "uses": [
+    "culinary_root_boiled_steamed_roasted_pickled_fermented_grated_raw_in_salads_juiced",
+    "culinary_greens_young_beet_greens_cooked_like_spinach_or_chard_used_in_salads",
+    "culinary_soups_borscht_stews_side_dishes_salads_dips_hummus_burgers",
+    "food_coloring_betanin_pigment_e162_natural_red_pink_food_dye",
+    "sugar_production_sugar_beet_beta_vulgaris_var_altissima_is_a_major_source_of_sucrose_different_cultivar_group",
+    "animal_fodder_fodder_beets_and_byproducts_of_sugar_beet_processing"
+  ],
+  "originAndDomesticationHistory": "Beetroot (Beta vulgaris) is native to the Mediterranean region. Its wild ancestor, the sea beet (Beta vulgaris subsp. maritima), grows along coastal areas of Europe and North Africa. Initially, humans primarily consumed the leaves of the beet plant (similar to chard, which is in the same species complex). The ancient Greeks and Romans cultivated beets, but mainly for their leaves. The development of varieties with swollen, edible taproots likely began in Roman times, with more significant selection for root characteristics occurring in Europe from the 16th century onwards. Different types of beets were developed over centuries through selection, including leaf beets (chard and spinach beet), root beets (table/garden beet), sugar beets (for sucrose extraction, developed in the late 18th century), and fodder beets (for animal feed).",
+  "climaticRequirements": {
+    "temperature": "Beetroot is a cool-season crop that performs best in temperate climates. Optimal temperatures for growth and root development are between 15°C and 20°C (60°F to 68°F). While it can tolerate light frosts, especially when mature, severe freezes can damage the roots. Extended periods of hot weather (above 25-30°C or 77-86°F) can lead to zoning (alternating light and dark colored rings) in the roots and may encourage bolting (premature flowering).",
+    "rainfall": "Requires moderate and consistent rainfall or irrigation, typically around 500mm to 750mm, during the growing season. Consistent soil moisture is crucial for good root development and to prevent cracking or toughness.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes where temperate conditions prevail."
+  },
+  "soilPreferences": "Prefers deep, well-drained, loose, and fertile loamy or sandy loam soils that are rich in organic matter. Good soil aeration is important for unobstructed root development. The ideal soil pH range is between 6.0 and 7.5 (slightly acidic to neutral). Beetroot is sensitive to soil compaction and very stony soils, which can lead to misshapen roots. It also has a moderate tolerance to soil salinity.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during seed germination and the period of rapid root development. Water stress can result in tough, stringy roots and reduced yield. Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping foliage dry, which can help reduce the risk of leaf diseases. About 25mm (1 inch) of water per week is a general guideline if rainfall is insufficient. Avoid overwatering, as this can promote some root diseases in poorly drained soils.",
+  "plantingAndHarvestCycles": "Beetroot is propagated from seeds. What appears to be a single beetroot 'seed' is often a multigerm cluster containing several actual seeds, which can result in multiple seedlings emerging close together (requiring thinning). Monogerm varieties, which produce a single seedling per seed unit, are also available. Seeds are typically sown directly in the field in early spring (as soon as the soil can be worked, after the last major frost) for a summer crop, or in late summer or early autumn for an autumn or winter crop in milder climates. Successive sowings can provide a continuous harvest. Beetroots generally mature in 50 to 70 days from sowing, depending on the specific variety and growing conditions. Roots are typically harvested when they reach a desirable size, usually between 1.5 to 3 inches (4-8 cm) in diameter. Young beet greens can be harvested selectively when they are tender, even while the roots are still developing (though over-harvesting leaves can impact root growth). Roots are usually pulled or dug by hand or with a garden fork.",
+  "pestAndDiseaseManagement": "Common Pests: Aphids can transmit viruses and cause direct feeding damage. Flea beetles can create small holes in leaves, especially on young plants. Leaf miners tunnel within leaves. Beet cyst nematode can damage roots in infested soils. Common Diseases: Cercospora leaf spot is a common fungal disease causing circular spots on leaves, which can reduce yield if severe. Downy mildew and powdery mildew can also affect foliage. Root rot diseases (e.g., caused by Rhizoctonia or Pythium) can occur, particularly in overly wet or poorly drained soils. Scab can cause rough lesions on roots. Management Strategies: Practicing crop rotation (avoiding planting beets or related crops like chard and spinach in the same spot for 3-4 years). Selecting disease-resistant varieties. Ensuring proper plant spacing to promote good air circulation. Managing weeds, which can harbor pests and diseases. Removing and destroying infected plant material promptly. Using appropriate fungicides or insecticides only when necessary and following Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Beetroots are well-suited for storage. After harvest, the tops (leaves) should be removed by twisting or cutting them off about 1-2 inches above the root crown; this prevents moisture loss from the root during storage. Do not trim the taproot at the bottom. Unwashed roots should be handled gently to avoid bruising. They can be stored for several weeks to months in a cool, humid environment (ideally around 0-4°C or 32-40°F with 90-95% relative humidity), such as in a root cellar, a sand-filled box in a cool shed, or in perforated plastic bags in the crisper drawer of a refrigerator. Beet greens are highly perishable and should be used within a few days of harvest, stored separately in the refrigerator.",
+  "majorProducingCountriesOrRegions": [
+    "Russia (a leading global producer, also for sugar beets)",
+    "France (significant European producer)",
+    "Germany",
+    "United States (major production in states like Wisconsin, New York, Oregon, and Texas)",
+    "Poland",
+    "Ukraine",
+    "Egypt",
+    "United Kingdom",
+    "Turkey",
+    "Netherlands",
+    "Australia"
+  ],
+  "marketValueAndGlobalDemand": "Beetroot is a widely consumed vegetable globally, particularly popular in European, North American, and parts of Asian cuisines. There is stable demand for fresh beetroot for home cooking and the food service industry, as well as for processed beetroot products such as pickled beetroot (very common), cooked and vacuum-packed beetroot, canned beetroot, and beetroot juice. Russia, France, Germany, and the USA are among the major producers. The market value is generally stable, with some fluctuations based on seasonality and regional supply. There is also growing interest in beetroot for its health benefits, particularly its nitrate content (for athletic performance and blood pressure) and antioxidant properties, which has boosted demand for beetroot juice and supplements.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Beetroot with Feta and Walnuts",
+      "description": "Sweet roasted beetroot paired with salty feta and crunchy walnuts.",
+      "ingredients": [
+        "4 medium beetroots, peeled and cubed",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste",
+        "1/4 cup crumbled feta cheese",
+        "1/4 cup chopped walnuts, toasted",
+        "Fresh parsley or mint for garnish"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss cubed beetroot with olive oil, salt, and pepper on a baking sheet.",
+        "Roast for 25-35 minutes, or until tender, stirring halfway through.",
+        "Transfer roasted beetroot to a serving bowl. While still warm, toss with crumbled feta cheese and toasted walnuts.",
+        "Garnish with fresh parsley or mint. Serve warm or at room temperature."
+      ]
+    },
+    {
+      "name": "Beetroot and Orange Salad with Citrus Vinaigrette",
+      "description": "A vibrant and refreshing salad with earthy beets and sweet oranges.",
+      "ingredients": [
+        "2 large cooked beetroots, peeled and sliced or diced",
+        "2 oranges, peeled and segmented (membranes removed)",
+        "1/4 red onion, thinly sliced (optional)",
+        "For dressing: 2 tbsp olive oil, 1 tbsp orange juice, 1 tsp apple cider vinegar, salt and pepper"
+      ],
+      "steps": [
+        "Arrange beetroot slices/dices and orange segments on a platter or in a bowl. Add red onion if using.",
+        "Dressing: Whisk together olive oil, orange juice, apple cider vinegar, salt, and pepper.",
+        "Drizzle dressing over the salad. Toss gently if desired.",
+        "Serve chilled or at room temperature. Can be garnished with mint or goat cheese."
+      ]
+    },
+    {
+      "name": "Classic Borscht (Simplified Beet Soup)",
+      "description": "A hearty and flavorful beet soup, popular in Eastern Europe.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 carrots, chopped",
+        "2 celery stalks, chopped",
+        "2 medium beetroots, peeled and grated or diced",
+        "4 cups vegetable or beef broth",
+        "1 bay leaf",
+        "1 tbsp apple cider vinegar or lemon juice",
+        "Salt and pepper to taste",
+        "Sour cream or plain yogurt for serving",
+        "Fresh dill for garnish"
+      ],
+      "steps": [
+        "Heat olive oil in a large pot or Dutch oven. Add onion, carrots, and celery. Cook until softened, about 7-10 minutes.",
+        "Add grated/diced beetroot and cook for another 5 minutes, stirring.",
+        "Pour in broth and add bay leaf. Bring to a boil, then reduce heat, cover, and simmer for 20-30 minutes, or until all vegetables are tender.",
+        "Remove bay leaf. If a smoother soup is desired, use an immersion blender or carefully blend in batches.",
+        "Stir in vinegar/lemon juice. Season with salt and pepper.",
+        "Serve hot, with a dollop of sour cream/yogurt and a sprinkle of fresh dill."
+      ]
+    }
+  ]
+}

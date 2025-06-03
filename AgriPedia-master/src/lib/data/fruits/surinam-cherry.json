@@ -1,0 +1,180 @@
+{
+  "id": "surinam-cherry",
+  "commonName": "Surinam Cherry (Pitanga)",
+  "scientificName": "Eugenia uniflora",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Eugenia_uniflora_fruits_-_Surinam_Cherry_-_Pitanga.jpg/800px-Eugenia_uniflora_fruits_-_Surinam_Cherry_-_Pitanga.jpg",
+  "description": "The Surinam Cherry (Eugenia uniflora), also widely known as Pitanga, is a tropical large shrub or small tree in the Myrtaceae family. It produces distinctive 7-8 ribbed fruits, about 2-4 cm in diameter. The fruit transitions from green to orange, then scarlet red, and finally to deep maroon or nearly black when fully ripe. Its flavor profile ranges from tart to sweet, often with a unique resinous or spicy note, depending on ripeness and cultivar. The flesh is juicy.",
+  "origin": "Tropical South America's east coast (Suriname, French Guiana, southern Brazil, Uruguay, parts of Paraguay and Argentina).",
+  "localNames": [
+    "Pitanga (Brazil, and now widely used internationally)",
+    "Brazilian Cherry (English)",
+    "Cayenne Cherry (English)",
+    "Ñangapirí (Guarani)",
+    "Cerise Carrée (French Caribbean - 'squared cherry')",
+    "Florida Cherry (English - in USA)"
+  ],
+  "regions": [
+    "South America (Brazil - esp. Minas Gerais, São Paulo; Suriname, French Guiana, Uruguay, Paraguay, Argentina)",
+    "Caribbean Islands (Barbados, Jamaica, Puerto Rico, Trinidad, Cuba, Dominican Republic)",
+    "United States (Florida, Hawaii, Southern California - primarily ornamental or home gardens, naturalized in some areas)",
+    "Bermuda (naturalized, often considered invasive)",
+    "Various Pacific Islands (e.g., Guam, Fiji)",
+    "Parts of Asia (India, Sri Lanka, Philippines, Indonesia - introduced)",
+    "Parts of Africa (East and West Africa - introduced)"
+  ],
+  "seasons": [
+    "Can flower and fruit multiple times a year in warm climates, with main fruiting peaks often occurring in spring and again in the fall (e.g., March-June and September-November in Florida and similar subtropical regions)."
+  ],
+  "nutrition": {
+    "calories": "33 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.49,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 26.3,
+        "unit": "mg",
+        "rdi": "29-44%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 75,
+        "unit": "µg RAE",
+        "rdi": "8-10%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.3,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Riboflavin (B2)",
+        "value": 0.04,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.03,
+        "unit": "mg",
+        "rdi": "2-3%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 103,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Calcium",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Iron",
+        "value": 0.2,
+        "unit": "mg",
+        "rdi": "1%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 12,
+        "unit": "mg",
+        "rdi": "3%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 11,
+        "unit": "mg",
+        "rdi": "1-2%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that supports the immune system, aids in collagen formation, and protects against free radical damage.",
+    "Good source of Vitamin A (primarily from carotenoid precursors like beta-carotene), which is important for vision health, immune function, and cell growth.",
+    "Contains various phytochemicals, including flavonoids, tannins, and essential oils, that have shown antioxidant, anti-inflammatory, astringent, and other potential pharmacological properties in traditional medicine and preliminary studies."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Seed Ingestion / Leaf Resin",
+      "severity": "Mild to Moderate (Caution)",
+      "details": "The seeds are generally considered inedible and may contain small amounts of resin or potentially cyanogenic compounds (though toxicity is debated and likely low from occasional accidental ingestion). It is advisable to avoid consuming the seeds. The leaves and branches have a spicy, resinous fragrance when crushed that can cause respiratory discomfort or skin irritation in very sensitive individuals. The fruit flesh itself is widely eaten and well-tolerated by most."
+    }
+  ],
+  "cultivationProcess": "Surinam Cherry (Eugenia uniflora) is a hardy and adaptable large shrub or small tree, often used as an ornamental hedge or screen plant. It thrives in tropical and subtropical climates, tolerating a wide range of soil types provided they are well-drained. Propagation can be from seeds (which germinate readily, though fruit quality may vary) or more reliably from softwood cuttings or air layering for specific cultivars, especially those selected for better fruit quality (less resinous). It responds well to pruning and can be easily shaped. It is relatively pest and disease resistant in many areas, making it a low-maintenance plant once established.",
+  "growthDuration": "Plants can start fruiting within 2-3 years from seed, and often earlier if propagated vegetatively (1-2 years). They are relatively slow-growing but long-lived, typically reaching heights of up to 8 meters (25 feet), though often kept smaller when cultivated as a hedge. Fruiting can occur multiple times a year in favorable warm climates, with fruits maturing about 3-4 weeks after flowering.",
+  "sustainabilityTips": [
+    "Due to its hardiness and adaptability, Surinam cherry can be grown with minimal pesticide or fertilizer use in suitable climates, making it an eco-friendly choice for home gardens and edible landscapes.",
+    "Often used for hedging, it can provide both fruit and a natural boundary, supporting local biodiversity by attracting birds and insects.",
+    "Harvest fruits when fully ripe (deep red to nearly black) for the best flavor and least resinous taste."
+  ],
+  "carbonFootprintInfo": "Surinam cherries grown and consumed locally (e.g., in home gardens or small local farms) have a very low carbon footprint. Due to their delicate nature and relatively short shelf life once ripe, they are not typically transported long distances for fresh consumption in large commercial volumes. Any significant transportation, especially by air, would considerably increase their environmental impact.",
+  "uses": [
+    "fresh_consumption_eaten_raw_when_fully_ripe_flavor_varies_tart_to_sweet_resinous",
+    "processed_products_jams_jellies_preserves_syrups_fruit_leather_sauces_pies",
+    "beverages_wine_vinegar_liqueurs_fruit_infused_water_juice_though_often_blended_due_to_strong_flavor",
+    "ornamental_plant_widely_grown_as_an_attractive_hedge_or_small_specimen_tree_for_foliage_flowers_fruit",
+    "medicinal_traditional_leaves_used_for_tea_colds_stomach_issues_astringent_fruit_for_diarrhea",
+    "other_crushed_leaves_used_as_an_insect_repellent_due_to_resinous_smell_flowers_attract_bees"
+  ],
+  "originAndDomesticationHistory": "The Surinam Cherry (Eugenia uniflora) is native to the tropical east coast of South America, specifically regions of Suriname, French Guiana, southern Brazil (where it's very popular and known as Pitanga), Uruguay, and parts of Paraguay and Argentina. It has been cultivated and utilized by indigenous populations in these areas for centuries for its fruit and medicinal properties. Portuguese and other European colonizers and explorers later introduced it to other tropical and subtropical parts of the world, including the Caribbean, Florida in the USA, parts of Africa, Asia, and various Pacific islands. In many of these introduced regions, it has naturalized and is valued as an ornamental plant, a hedge, and for its unique fruit. While there are some selected cultivars, it has not undergone the same intensive domestication and breeding as major commercial fruits.",
+  "climaticRequirements": {
+    "temperature": "Surinam Cherry thrives in tropical and warm subtropical climates. Optimal growing temperatures range from 18°C to 30°C (65°F to 86°F). Mature plants can tolerate brief periods of light frost, potentially down to -3°C (26°F) for very short durations, but young plants are very frost-sensitive. Prolonged cold can cause damage or inhibit fruiting.",
+    "rainfall": "Prefers moderate to high annual rainfall, typically between 1200mm and 2000mm, ideally well-distributed. However, established plants are relatively drought-tolerant, though fruit production and quality are better with consistent moisture, especially during flowering and fruit development.",
+    "altitude": "Commonly grown from sea level up to about 1000 meters (approximately 3300 feet) in tropical regions, but can be found at higher elevations (up to 1800m) in some equatorial areas."
+  },
+  "soilPreferences": "Highly adaptable to a wide range of soil types, including sandy, loamy, and clayey soils, as well as calcareous or slightly acidic conditions. However, it performs best in well-drained, fertile soils that are rich in organic matter. Good drainage is important, as it does not tolerate waterlogged conditions for extended periods.",
+  "irrigationAndWaterNeeds": "Young Surinam Cherry plants require regular watering to ensure proper establishment. Mature, established plants are relatively drought-tolerant but will benefit from supplemental irrigation during prolonged dry spells, particularly during the flowering and fruit development stages, to ensure better yields and fruit quality. Overwatering or constantly saturated soil should be avoided.",
+  "plantingAndHarvestCycles": "Propagation is commonly done using seeds, which germinate readily, although seeds should be planted fresh as they have short viability. Seedling trees may exhibit some variation in fruit quality and typically start bearing fruit within 2-3 years, sometimes earlier. Vegetative propagation methods such as softwood cuttings or air layering can be used for select cultivars, though these are less common than seed propagation for general planting. Trees can flower and fruit multiple times a year in consistently warm, tropical climates, often with one or two main fruiting peaks that usually occur in the spring and fall in many subtropical regions (e.g., March-June and September-November in Florida). Fruits mature relatively quickly, about 3-4 weeks after the flowers bloom. They are harvested by hand when they turn from green to orange, then scarlet red, and finally to a deep maroon or nearly black when fully ripe (this is when they are sweetest and least resinous). Ripe fruits detach easily from the stem.",
+  "pestAndDiseaseManagement": "Surinam Cherry trees are generally quite hardy and relatively resistant to many pests and diseases, especially when grown in suitable conditions. Pests: Fruit flies (such as the Caribbean fruit fly, Anastrepha suspensa) can be a major pest in some regions, laying eggs in the ripening fruit, leading to maggot infestation. Scale insects, aphids, and caterpillars may occasionally cause minor damage. Diseases: Fungal leaf spots or rust may occur, particularly during periods of high humidity or excessive rainfall, but these are usually not severe enough to warrant control measures. Root rot can be an issue if the soil is poorly drained or chronically waterlogged. Management Strategies: Due to its general hardiness, Surinam Cherry often requires minimal specific pest or disease control. If fruit flies are problematic, strategies such as using fruit fly traps, bait sprays, or harvesting fruit just before full ripeness (though flavor may be compromised) can be employed. Ensuring good air circulation through pruning can help minimize fungal issues. Selecting planting sites with good soil drainage is crucial.",
+  "postHarvestHandling": "Surinam cherries are very delicate and highly perishable, bruising easily. They have a short shelf life, typically lasting only 1-3 days at room temperature. Their storage life can be extended by a few more days (up to about a week) if they are carefully handled and stored under refrigeration (around 10-12°C or 50-54°F). However, refrigeration can sometimes diminish their delicate aroma and flavor. They are best consumed fresh, shortly after harvest, or processed quickly into jams, jellies, syrups, or wine. Due to their fragile nature, they are not well-suited for long-distance transportation or extensive commercial handling, which limits their availability primarily to local markets in regions where they are grown.",
+  "marketValueAndGlobalDemand": "Surinam Cherry is primarily a fruit consumed locally in the regions where it is cultivated. It is often found in home gardens or sold in local farmers' markets rather than being a major internationally traded commodity in its fresh form due to its high perishability and delicate nature. Its value is often more as an ornamental plant or for hedging. However, there is some niche market interest for processed products like jams, jellies, and syrups, particularly in areas with Brazilian or Caribbean communities or among enthusiasts of exotic fruits. The demand for fresh fruit is largely limited by its availability outside of its growing regions. It is not a fruit with significant global commercial demand in the way major tropical fruits are, but it is cherished locally for its unique flavor and versatility in home cooking.",
+  "staticRecipes": [
+    {
+      "name": "Simple Surinam Cherry Jam",
+      "description": "A delightful jam that captures the unique sweet-tart and slightly resinous flavor of Surinam cherries. Excellent on toast, with yogurt, or as a glaze.",
+      "ingredients": [
+        "500g ripe Surinam cherries, pitted",
+        "400g granulated sugar (adjust to taste, as ripeness affects sweetness)",
+        "Juice of 1/2 lemon (about 1-2 tablespoons)"
+      ],
+      "steps": [
+        "Wash the ripe Surinam cherries thoroughly. Remove the stems. The single seed in the center can be easily popped out by gently squeezing the fruit, or by halving the fruit and removing it.",
+        "Place the pitted Surinam cherries and granulated sugar into a large, heavy-bottomed saucepan. Stir gently to combine.",
+        "Let the mixture sit at room temperature for at least 1 hour, or up to 4 hours, stirring occasionally. This allows the sugar to draw out juices from the fruit.",
+        "Add the lemon juice to the fruit and sugar mixture.",
+        "Place the saucepan over medium-low heat. Cook, stirring gently and continuously, until the sugar has completely dissolved. Do not allow the mixture to boil before the sugar is dissolved.",
+        "Once the sugar is fully dissolved, increase the heat to medium-high and bring the mixture to a rolling boil (a boil that continues even when you stir it).",
+        "Continue to boil rapidly, stirring frequently to prevent sticking, for about 15-25 minutes. The cooking time will vary depending on the ripeness of the fruit and desired thickness. To test for setting point, remove the pan from heat, place a small spoonful of jam onto a chilled saucer (kept in the freezer for a few minutes), let it cool for 30 seconds, then push it with your fingertip. If the surface wrinkles, the jam is set. Alternatively, use a jam thermometer – setting point is 105°C (221°F).",
+        "Once the setting point is reached, remove the jam from the heat. Skim off any foam (scum) from the surface using a slotted spoon, if desired, for a clearer jam.",
+        "Carefully ladle the hot jam into warm, sterilized glass jars, leaving about 1/4 inch (0.5 cm) of headspace at the top.",
+        "Wipe the jar rims clean with a damp cloth, place the lids on, and tighten the screw bands securely. Allow the jars to cool completely undisturbed. As the jam cools, you should hear the lids 'pop', indicating a good seal. The jam will thicken further as it cools."
+      ]
+    }
+  ]
+}

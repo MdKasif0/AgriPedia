@@ -1,0 +1,57 @@
+{
+  "id": "coir",
+  "commonName": "Coir (from Coconut Husk)",
+  "scientificName": "Cocos nucifera",
+  "image": "https://images.unsplash.com/photo-1585930140237-093999930343?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Coir is a natural fiber extracted from the husk of coconut. It is found between the hard, internal shell and the outer coat of a coconut. Coir fibers are characterized by their strength, durability, and resistance to saltwater. There are two main types: brown coir (from mature coconuts) which is strong and thick, and white coir (from immature coconuts) which is finer and softer.",
+  "origin": "Indo-Pacific region (Southeast Asia, Melanesia) - wherever coconuts grow.",
+  "localNames": ["Nariyal Jata (Hindi)", "Koko yashi sen'i (Japanese - coconut fiber)", "Fibra de coco (Spanish)", "Fibre de coco (French)"],
+  "regions": ["India (leading producer and exporter)", "Sri Lanka", "Thailand", "Vietnam", "Philippines", "Indonesia", "Malaysia", "Brazil", "Mexico"],
+  "seasons": ["Perennial palm; coconuts are harvested year-round. Coir extraction is a post-harvest process of the coconut fruit."],
+  "nutrition": {
+    "calories": "N/A (Coir is a fiber, not consumed for nutritional caloric value).",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "N/A" },
+      { "name": "Carbohydrates", "unit": "g", "value": "N/A (Primarily cellulose and lignin)" },
+      { "name": "Fat", "unit": "g", "value": "N/A" },
+      { "name": "Fiber", "unit": "g", "value": "Very high (it is a natural fiber)" }
+    ],
+    "vitamins": [],
+    "minerals": []
+  },
+  "healthBenefits": [
+    "As a product, coir is used in applications that can contribute to safety and environmental health (e.g., erosion control, sustainable growing media).",
+    "Hypoallergenic properties make it suitable for some textile and bedding applications.",
+    "Dust from coir processing can be an occupational hazard if not managed."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Coir Dust Sensitivity",
+      "severity": "Mild",
+      "details": "Inhalation of coir dust during processing can cause respiratory irritation in workers. Finished coir products are generally considered non-allergenic."
+    }
+  ],
+  "cultivationProcess": "Coir is a byproduct of coconut cultivation. Coconut palms (Cocos nucifera) are grown from mature coconuts. They thrive in sandy, saline-tolerant soils and require high humidity, warm temperatures, and abundant sunlight. Husks are collected after coconut harvesting.",
+  "growthDuration": "Coconut palms start fruiting in 6-10 years. Coir is derived from the husks of harvested coconuts, which mature in about 12 months.",
+  "sustainabilityTips": [
+    "Coir is a renewable, biodegradable, and natural resource, utilizing a byproduct of coconut production.",
+    "Coir pith (dust) is an excellent peat moss substitute in horticulture, promoting sustainable gardening.",
+    "Use of coir for erosion control helps in land stabilization and revegetation.",
+    "Retting process for white coir needs careful water management to prevent pollution."
+  ],
+  "carbonFootprintInfo": "Coir has a relatively low carbon footprint as it's a natural byproduct. However, retting processes (especially for white coir) can release methane if not managed well. Transportation from tropical producing countries also contributes to its footprint. Its use as a peat moss substitute can be carbon positive.",
+  "uses": ["ropes_twine_cordage", "mats_doormats_matting_floor_coverings", "brushes_brooms", "geotextiles_erosion_control_slope_stabilization_landscaping_fabric", "growing_medium_horticulture_hydroponics_potting_mix_coir_pith_peat_moss_substitute", "upholstery_padding_car_seats_mattresses", "insulation_limited", "filtration_media"],
+  "originAndDomesticationHistory": "The use of coconut fiber (coir) dates back thousands of years in regions where coconut palms are native (Indo-Pacific). It was used by ancient mariners for ropes and rigging due to its saltwater resistance. Commercial coir industry developed significantly in the 19th and 20th centuries, particularly in India and Sri Lanka.",
+  "climaticRequirements": {
+    "temperature": "Tropical palm product. Optimal temperatures for coconut cultivation are 27-30°C. High humidity (70-80%+) and abundant sunlight.",
+    "rainfall": "Requires high and well-distributed rainfall, typically 1500-2500mm annually for coconut palms.",
+    "altitude": "Primarily a lowland crop, thriving near sea level (coastal regions)."
+  },
+  "soilPreferences": "Coconut palms prefer well-drained, sandy or loamy soils and are highly tolerant of saline soils.",
+  "irrigationAndWaterNeeds": "Young coconut palms require regular watering. Mature palms benefit from irrigation in areas with prolonged dry seasons. Coir processing itself (retting) requires significant water.",
+  "plantingAndHarvestCycles": "Coconuts are harvested year-round. Coir is extracted from the husks of these coconuts.",
+  "pestAndDiseaseManagement": "Pests and diseases mentioned for coconut cultivation apply. For coir itself, proper drying and storage prevent fungal growth on the fibers.",
+  "postHarvestHandling": "Coconut husks are separated from the nuts. For coir fiber extraction, husks are soaked in water for several weeks or months (retting) to loosen the fibers from the pith. This is done in ponds, streams, or tanks. After retting, fibers are separated from the pith manually or mechanically (decortication). The fibers are then washed, dried (sun-drying is common), cleaned, and sorted into grades (e.g., bristle fiber, mattress fiber). Coir pith is also collected and processed for horticultural use.",
+  "majorProducingCountriesOrRegions": ["India (leading producer and exporter of coir and coir products)", "Sri Lanka", "Thailand", "Vietnam", "Philippines", "Indonesia", "Malaysia", "Brazil", "Mexico", "Ghana"],
+  "marketValueAndGlobalDemand": "Coir has a significant global market with growing demand for its diverse applications, especially in horticulture (as a peat moss substitute), erosion control (geotextiles), and for various household and industrial products (mats, ropes, brushes). The demand for eco-friendly and sustainable materials is boosting the coir market. India and Sri Lanka are major exporters."
+}

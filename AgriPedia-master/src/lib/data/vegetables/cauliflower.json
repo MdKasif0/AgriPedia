@@ -1,0 +1,206 @@
+{
+  "id": "cauliflower",
+  "commonName": "Cauliflower",
+  "scientificName": "Brassica oleracea var. botrytis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Cauliflower.jpg",
+  "description": "Cauliflower is one of several vegetables in the species Brassica oleracea, belonging to the Brassicaceae (or mustard) family. It is an annual plant that is cultivated for its edible head, which is a white, compact curd composed of undeveloped flower buds (meristem). Variations exist in color, including orange, purple, and green (Broccoflower). Typically, only the head is eaten, though the stalk and surrounding thicker leaves are also edible and nutritious.",
+  "origin": "Northeast Mediterranean region, likely Cyprus or Asia Minor (modern-day Turkey). Developed from wild cabbage (Brassica oleracea).",
+  "localNames": [
+    "Coliflor (Spanish)",
+    "Chou-fleur (French)",
+    "Blumenkohl (German - 'flower cabbage')",
+    "Cavolfiore (Italian)",
+    "Phool Gobhi (फूल गोभी - Hindi, 'flower cabbage')",
+    "Gobi (गोभी - general term for cabbage/cauliflower in parts of India)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "India (second largest producer)",
+    "United States (California, Arizona)",
+    "Spain",
+    "Italy",
+    "France",
+    "Poland",
+    "Mexico",
+    "United Kingdom"
+  ],
+  "seasons": [
+    "Primarily a cool-season crop, with main harvests in Autumn, Winter, and Spring in temperate climates. Available year-round due to global sourcing and different growing seasons in various regions."
+  ],
+  "nutrition": {
+    "calories": "25 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 1.92,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 4.97,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.28,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.0,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 48.2,
+        "unit": "mg",
+        "rdi": "53-80%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 15.5,
+        "unit": "µg",
+        "rdi": "13-19%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 57,
+        "unit": "µg",
+        "rdi": "14%"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "value": 0.184,
+        "unit": "mg",
+        "rdi": "11-14%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 299,
+        "unit": "mg",
+        "rdi": "6-9%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.155,
+        "unit": "mg",
+        "rdi": "7-8%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that supports immune function, collagen production, and helps protect against free radicals.",
+    "Good source of Vitamin K, which is essential for blood clotting and bone health.",
+    "Contains glucosinolates and isothiocyanates (like sulforaphane), compounds that have been extensively studied for their potential anti-cancer properties and ability to support detoxification processes.",
+    "High in dietary fiber, which aids digestion, promotes bowel regularity, helps manage blood sugar levels, and contributes to satiety.",
+    "Provides choline, a nutrient important for brain health, memory, and metabolism."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassica Sensitivity / FODMAPs",
+      "severity": "Mild (digestive discomfort)",
+      "details": "Like other cruciferous vegetables, cauliflower contains raffinose (a complex sugar) and sulfur compounds, which can cause gas, bloating, and digestive discomfort in some individuals, particularly those sensitive to FODMAPs. Cooking can sometimes help make it more digestible."
+    },
+    {
+      "name": "Goitrogens (in raw form)",
+      "severity": "Low (for most individuals)",
+      "details": "Cauliflower contains goitrogens, compounds that may interfere with thyroid hormone production in individuals with pre-existing thyroid conditions, especially iodine deficiency, if consumed raw in very large quantities. Cooking typically reduces goitrogen levels significantly, making it less of a concern for most people."
+    }
+  ],
+  "cultivationProcess": "Cauliflower is a cool-season crop. It prefers well-drained, fertile soil rich in organic matter and full sun (at least 6 hours per day). Seeds are typically started indoors 4-6 weeks before the last expected frost for a spring/early summer crop, or sown directly in mid-summer for an autumn/winter crop in temperate climates. For white varieties, the developing head (curd) is often blanched by tying the outer leaves over it when it's about 2-3 inches across; this protects it from sun exposure, keeping it white and tender. Consistent moisture is essential for good head development. The head is harvested when it is firm, compact, and has reached the desired size for the variety, but before the individual florets start to separate or develop a 'ricy' texture.",
+  "growthDuration": "Typically 50 to 100 days from transplanting to harvest, depending on the specific variety (early, mid-season, late) and growing conditions. Some varieties may take up to 120 days.",
+  "sustainabilityTips": [
+    "Store whole, unwashed cauliflower heads stem-up in an open or perforated plastic bag in the refrigerator crisper drawer; they can last for up to two weeks.",
+    "Utilize the core and leaves as well as the florets. The core can be chopped and cooked, and the leaves are edible and nutritious, suitable for soups, stir-fries, or roasting.",
+    "Cauliflower can be 'riced' by grating or processing florets into small pieces, serving as a popular low-carb alternative to grains like rice.",
+    "Blanch and freeze excess cauliflower for longer storage to use in various cooked dishes."
+  ],
+  "carbonFootprintInfo": "Relatively low footprint when grown locally and in season (estimated 0.4-0.7 kg CO2e/kg). Long-distance transportation, especially refrigerated, and out-of-season greenhouse cultivation can increase this impact.",
+  "uses": [
+    "culinary_vegetable_raw_crudites_salads_pickled_cauliflower",
+    "culinary_vegetable_cooked_steamed_boiled_roasted_grilled_fried_battered_stir_fried_mashed_cauliflower_mash_riced_cauliflower_rice",
+    "culinary_ingredient_soups_cauliflower_cheese_stews_curries_aloo_gobi_gratins_casseroles_frittatas_pizza_crusts",
+    "processed_products_frozen_cauliflower_florets_pickled_cauliflower_cauliflower_flour_powder_for_supplements_or_food_products"
+  ],
+  "originAndDomesticationHistory": "Cauliflower (Brassica oleracea var. botrytis) was developed from wild cabbage (Brassica oleracea) ancestors, which are native to the coastal regions of Europe and the Mediterranean. The specific development of the cauliflower form, where the plant produces a compact head of undeveloped flower buds (curd), is believed to have occurred in the Northeast Mediterranean region, possibly Cyprus or Asia Minor (modern-day Turkey), in ancient times. Pliny the Elder, a Roman naturalist from the 1st century AD, described a cabbage-like vegetable called 'cyma' which some scholars interpret as an early form of cauliflower or broccoli. Cauliflower became more established in Italy and subsequently spread to France and other parts of Europe during the 16th and 17th centuries. It was later introduced to other parts of the world, including India and the Americas, by European traders and settlers. Various cultivars, including those with different colored curds (orange, purple, green - e.g., Broccoflower/Romanesco), have been developed over time.",
+  "climaticRequirements": {
+    "temperature": "Cauliflower is a cool-season crop that thrives in moderate temperatures. The optimal temperature range for growth and curd development is between 15°C and 20°C (60°F to 68°F). While established plants can tolerate light frosts, the developing curds are sensitive to freezing and can be damaged. Hot weather, especially temperatures consistently above 25°C (77°F), can cause premature flowering (bolting), loose or 'ricy' curds, or 'buttoning' (the formation of small, undeveloped heads).",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, preferring around 600mm to 1000mm of rainfall or equivalent irrigation. Water stress, particularly during head development, can significantly impact yield and quality. Good soil drainage is also essential, as cauliflower does not tolerate waterlogged conditions.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes (e.g., up to 1500-2000 meters) where cool growing conditions prevail. In tropical and subtropical regions, cauliflower is often grown at higher elevations during cooler parts of the year to achieve the necessary temperatures for quality curd formation."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 6.0 and 7.0, is best for cauliflower cultivation. The soil should have good moisture-retention capacity but also drain well to prevent root diseases. Cauliflower is a heavy feeder and benefits from soils amended with compost or well-rotted manure. It is also sensitive to boron deficiency, which can cause hollow stems or browning of the curd.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during the critical stages of head formation and development. Water stress can lead to the formation of small, poor-quality curds or may induce 'buttoning'. Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping the foliage and developing curds dry, which helps to reduce the risk of fungal and bacterial diseases. Typically, 25-40mm (1-1.5 inches) of water per week is needed, depending on soil type, weather conditions, and plant size.",
+  "plantingAndHarvestCycles": "Cauliflower is propagated from seeds. In temperate climates, seeds are typically started indoors 4-6 weeks before the last expected frost date for a spring or early summer crop. For an autumn or winter crop, seeds can be sown directly in the field in mid-summer, or transplants can be set out. Seedlings are usually transplanted when they have 4-5 true leaves. Spacing depends on the variety but is generally around 18-24 inches apart in rows. The time from transplanting to harvest varies by cultivar (early, mid-season, or late varieties) but typically ranges from 50 to 100 days, with some winter varieties taking longer (up to 120 days or more). The cauliflower head (curd) is harvested when it reaches its full size for the specific variety, is firm, compact, and the florets are still tightly packed. For white varieties, blanching (tying the outer leaves over the developing head when it is about 2-3 inches across) is often practiced for a few days to a week before harvest to protect the curd from sun exposure, keeping it white and tender. The head is harvested by cutting the main stem just below the curd, usually including a few wrapper leaves to protect it.",
+  "pestAndDiseaseManagement": "Common Pests: Cabbage worms (larvae of several moth species, including Cabbage White Butterfly, Diamondback Moth, and Cabbage Looper) are major pests, feeding on leaves and sometimes burrowing into heads. Aphids (e.g., cabbage aphid) can cause distorted growth and transmit viruses. Flea beetles attack seedlings. Cutworms can sever young plants at soil level. Cabbage root maggots damage roots. Thrips can also be problematic. Common Diseases: Clubroot (caused by Plasmodiophora brassicae) is a serious soilborne fungal disease causing swollen, distorted roots. Downy mildew and powdery mildew can affect foliage. Black rot (Xanthomonas campestris pv. campestris) is a bacterial disease causing V-shaped lesions on leaves. Alternaria leaf spot (brown spot) and head rot (bacterial or fungal, especially in wet conditions) can also occur. Management Strategies: Implementing crop rotation (avoiding planting cauliflower or other brassica crops in the same location for at least 3-4 years) is crucial. Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Employing row covers on young plants to protect against insect pests. Controlling weeds. Ensuring proper plant spacing and good air circulation. Practicing good field sanitation by removing and destroying infected plant debris. Promoting biological control agents. Applying appropriate and approved insecticides or fungicides based on Integrated Pest Management (IPM) principles, only when necessary based on scouting and economic thresholds.",
+  "postHarvestHandling": "Cauliflower is highly perishable and should be cooled promptly after harvest to remove field heat and maintain quality. Hydro-cooling or forced-air cooling to around 0°C (32°F) are effective methods. Cauliflower should be stored at or near 0°C (32°F) with high relative humidity (95% or more). Under these optimal conditions, it can typically be stored for 2-4 weeks. Cauliflower is sensitive to ethylene gas, so it should not be stored with ethylene-producing fruits like apples or tomatoes, as this can accelerate discoloration (browning or spotting) and decay. For retail, heads are often wrapped in perforated plastic film to maintain humidity and reduce moisture loss. The presence of jacket leaves helps protect the curd during handling and storage.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "India (second largest producer)",
+    "United States (primarily California and Arizona)",
+    "Spain",
+    "Italy",
+    "France",
+    "Poland",
+    "Mexico",
+    "United Kingdom",
+    "Pakistan"
+  ],
+  "marketValueAndGlobalDemand": "Cauliflower is a popular and economically important vegetable globally, valued for its mild flavor, culinary versatility (especially with the rise of cauliflower rice and pizza crusts as low-carb alternatives), and nutritional benefits. China and India dominate world production. There is significant international trade in fresh cauliflower, particularly within Europe and North America. The market value can fluctuate based on seasonality, regional supply, quality (size, color, compactness of the curd), and whether it is conventional or organic. Demand for fresh cauliflower is consistently strong, and there is also a substantial market for frozen cauliflower florets for both retail and food service industries. The development of colored varieties (orange, purple, green) has also added novelty and expanded market appeal.",
+  "staticRecipes": [
+    {
+      "name": "Roasted Cauliflower with Turmeric and Cumin",
+      "description": "Roasting cauliflower brings out its sweetness, enhanced by warm spices.",
+      "ingredients": [
+        "1 medium head of cauliflower, cut into florets",
+        "2 tbsp olive oil",
+        "1 tsp ground cumin",
+        "1/2 tsp ground turmeric",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "In a large bowl, toss cauliflower florets with olive oil, cumin, turmeric, salt, and pepper until evenly coated.",
+        "Spread the cauliflower in a single layer on a baking sheet.",
+        "Roast for 20-25 minutes, flipping halfway, until tender and lightly caramelized with crispy edges.",
+        "Serve hot as a side dish."
+      ]
+    },
+    {
+      "name": "Creamy Cauliflower Mash",
+      "description": "A lower-carb alternative to mashed potatoes, creamy and delicious.",
+      "ingredients": [
+        "1 large head of cauliflower, cut into florets",
+        "2-3 cloves garlic, peeled (optional)",
+        "2 tbsp butter or olive oil",
+        "1/4 cup milk, cream, or unsweetened almond milk",
+        "Salt and pepper to taste",
+        "Chopped chives or parsley for garnish (optional)"
+      ],
+      "steps": [
+        "Steam or boil cauliflower florets (and garlic cloves, if using) until very tender, about 10-15 minutes. Drain thoroughly.",
+        "Transfer cooked cauliflower (and garlic) to a food processor or use an immersion blender. Add butter/oil, milk/cream, salt, and pepper.",
+        "Blend until smooth and creamy. Add more liquid if needed to reach desired consistency.",
+        "Taste and adjust seasonings. Garnish with chives or parsley if desired. Serve hot."
+      ]
+    },
+    {
+      "name": "Cauliflower Rice",
+      "description": "A popular low-carb, grain-free alternative to rice.",
+      "ingredients": [
+        "1 medium head of cauliflower",
+        "1 tbsp olive oil or coconut oil (optional)",
+        "Salt and pepper to taste (optional)"
+      ],
+      "steps": [
+        "Remove outer leaves and core from cauliflower. Cut into large chunks.",
+        "Using a food processor, pulse the cauliflower chunks until they are broken down into rice-sized pieces. Do not over-process or it will become mushy. Alternatively, use a box grater (large holes).",
+        "To cook (optional, can be eaten raw): Heat oil in a large skillet over medium heat. Add cauliflower rice and stir-fry for 5-7 minutes, or until tender but still slightly firm.",
+        "Season with salt and pepper if desired. Serve as a side dish or base for other meals."
+      ]
+    }
+  ]
+}

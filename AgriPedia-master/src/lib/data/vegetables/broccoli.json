@@ -1,0 +1,228 @@
+{
+  "id": "broccoli",
+  "commonName": "Broccoli",
+  "scientificName": "Brassica oleracea var. italica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Broccoli_and_cross_section_edit.jpg",
+  "description": "An edible green plant in the cabbage family (Brassicaceae), whose large flowering head, stalk, and small associated leaves are eaten as a vegetable. Broccoli is characterized by its tree-like structure, with a thick, edible stalk and a head composed of numerous small, tightly packed green (or sometimes purple) florets.",
+  "origin": "Mediterranean region, specifically developed in Italy from wild cabbage (Brassica oleracea) ancestors, likely during the Roman Empire or shortly thereafter (around 6th century BCE or later).",
+  "localNames": [
+    "Brócoli (Spanish)",
+    "Brocoli (French)",
+    "Brokkoli (German, Norwegian, Danish)",
+    "Broccolo (Italian - plural: broccoli)",
+    "Hari Phool Gobi (हरी फूल गोभी - Hindi, 'green cauliflower')"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "India (second largest producer)",
+    "United States (California, Arizona)",
+    "Spain",
+    "Mexico",
+    "Italy",
+    "France",
+    "Poland",
+    "United Kingdom"
+  ],
+  "seasons": [
+    "Primarily a cool-season crop, with main harvests in Autumn, Winter, and Spring in temperate climates. Available year-round due to global sourcing and cultivation in different climate zones."
+  ],
+  "nutrition": {
+    "calories": "34 kcal per 100g (raw)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.82,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 6.64,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.37,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.6,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 89.2,
+        "unit": "mg",
+        "rdi": "99-149%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 101.6,
+        "unit": "µg",
+        "rdi": "85-127%"
+      },
+      {
+        "name": "Folate (B9)",
+        "value": 63,
+        "unit": "µg",
+        "rdi": "16%"
+      },
+      {
+        "name": "Vitamin A (as carotenoids)",
+        "value": 31,
+        "unit": "µg RAE",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.175,
+        "unit": "mg",
+        "rdi": "10-13%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 316,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.21,
+        "unit": "mg",
+        "rdi": "9-11%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 66,
+        "unit": "mg",
+        "rdi": "9%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in Vitamin C, a powerful antioxidant that boosts the immune system, supports collagen production, and aids in iron absorption.",
+    "Excellent source of Vitamin K, crucial for blood clotting and bone health.",
+    "Contains sulforaphane, a phytochemical extensively studied for its potent anti-cancer properties, ability to support detoxification pathways, and anti-inflammatory effects.",
+    "Good source of dietary fiber, which aids digestion, promotes gut health, helps regulate blood sugar levels, and can contribute to healthy cholesterol levels.",
+    "Provides antioxidants like kaempferol and quercetin, which may help reduce inflammation and protect against chronic diseases.",
+    "May support cardiovascular health through its fiber, potassium, and antioxidant content."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassica Allergy / Cruciferous Vegetable Sensitivity",
+      "severity": "Rare, Mild",
+      "details": "Allergies to broccoli are rare, but individuals sensitive to other cruciferous vegetables (like cabbage, cauliflower, kale) might experience cross-reactivity. Symptoms can include skin rash, digestive upset (gas, bloating), or oral allergy symptoms in some cases."
+    },
+    {
+      "name": "Goitrogens (in raw form)",
+      "severity": "Low (for most individuals)",
+      "details": "Broccoli contains goitrogens, compounds that may interfere with thyroid hormone production in individuals with pre-existing thyroid conditions, particularly iodine deficiency, if consumed raw in very large quantities. Cooking typically reduces goitrogen levels significantly, making it less of a concern for most people."
+    }
+  ],
+  "cultivationProcess": "Broccoli is a cool-season crop. It prefers well-drained, fertile soil rich in organic matter and full sun (at least 6 hours per day). It's typically grown from seeds started indoors 4-6 weeks before the last frost for a spring/early summer crop, or direct-sown in mid-summer for an autumn crop in temperate climates. The main central head is harvested when the florets are tightly packed and dark green (or purple, depending on the variety), and before the individual yellow flowers begin to open. Many varieties will continue to produce smaller side shoots (secondary heads) after the main head is cut, extending the harvest period. Details in specific sections.",
+  "growthDuration": "Typically 50 to 100 days from transplanting to the harvest of the main head, depending on the specific variety and growing conditions. Side shoots can be harvested for several weeks thereafter.",
+  "sustainabilityTips": [
+    "Store unwashed broccoli in an open or perforated plastic bag in the refrigerator crisper drawer for up to a week, sometimes longer.",
+    "Utilize the entire plant: the stalks are as nutritious as the florets. Peel the tough outer layer of the stalks and slice or chop them; they can be cooked along with the florets or used in slaws, soups, or stir-fries.",
+    "Blanch and freeze excess broccoli for longer storage to use in soups, stir-fries, casseroles, or smoothies.",
+    "Growing broccoli in home gardens, especially organic methods, reduces food miles and packaging."
+  ],
+  "carbonFootprintInfo": "Relatively low footprint when grown locally and in season (estimated 0.4-0.7 kg CO2e/kg). Long-distance transportation, especially refrigerated, increases this impact. Frozen broccoli can sometimes have a lower carbon footprint than out-of-season fresh broccoli that has been air-freighted.",
+  "uses": [
+    "culinary_vegetable_eaten_raw_crudites_salads_or_cooked_steamed_boiled_roasted_stir_fried_grilled_sautéed",
+    "culinary_ingredient_soups_broccoli_cheddar_soup_stews_casseroles_pasta_dishes_quiches_frittatas_omelets_pizza_toppings_side_dishes",
+    "processed_products_frozen_broccoli_florets_and_cuts_broccoli_powder_for_supplements_or_food_products",
+    "sprouts_broccoli_sprouts_are_consumed_for_their_high_concentration_of_sulforaphane"
+  ],
+  "originAndDomesticationHistory": "Broccoli (Brassica oleracea var. italica) was developed from wild cabbage (Brassica oleracea) ancestors in the Mediterranean region, with its most likely place of origin being Italy. It is believed to have been cultivated in Italy since the time of the Roman Empire or shortly thereafter, possibly around the 6th century BCE or later, though clear documentation is sparse. Pliny the Elder, a Roman scholar from the 1st century AD, wrote about a cabbage-like vegetable that some historians believe may have been an early form of broccoli. The name 'broccoli' comes from the Italian word 'broccolo', meaning 'the flowering crest of a cabbage'. It spread to other parts of Europe, notably France and England, by the 17th and 18th centuries. Broccoli was later introduced to the Americas by European immigrants, with significant commercial cultivation starting in the early 20th century in the United States.",
+  "climaticRequirements": {
+    "temperature": "Broccoli is a cool-season crop that thrives in moderate temperatures. The optimal temperature range for its growth and head development is between 15°C and 20°C (60°F to 68°F). While established plants can tolerate light frosts, young seedlings and developing heads are more sensitive to cold damage. Hot weather, especially temperatures consistently above 25-28°C (77-82°F), can cause premature flowering (bolting), loose heads, or poor quality florets.",
+    "rainfall": "Requires consistent and adequate moisture throughout its growing season, preferring around 600mm to 1000mm of rainfall or equivalent irrigation. Water stress, particularly during head development, can significantly impact yield and quality. Good soil drainage is also essential.",
+    "altitude": "Can be successfully cultivated from sea level up to moderate altitudes where cool growing conditions prevail. In tropical regions, broccoli is often grown at higher elevations to achieve the necessary cool temperatures."
+  },
+  "soilPreferences": "Prefers well-drained, fertile, loamy soils that are rich in organic matter. A slightly acidic to neutral soil pH, ideally between 6.0 and 7.0, is best for broccoli cultivation. Good soil structure is important for healthy root development and nutrient uptake. The soil should be able to retain moisture but also drain well to prevent root diseases.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture throughout the growing season, especially during the critical stages of head development. Water stress can lead to the formation of small, poor-quality heads or may induce premature flowering (bolting). Drip irrigation or soaker hoses are effective methods for providing regular watering while keeping the foliage and developing heads dry, which helps to reduce the risk of fungal and bacterial diseases. Typically, 25-40mm (1-1.5 inches) of water per week is needed, depending on soil type, weather conditions, and plant size.",
+  "plantingAndHarvestCycles": "Broccoli is propagated from seeds. In temperate climates, seeds are typically started indoors 4-6 weeks before the last expected frost date for a spring or early summer crop. For an autumn crop, seeds can be sown directly in the field in mid-summer, or transplants can be set out. Seedlings are usually transplanted when they have 4-5 true leaves. Spacing depends on the variety but is generally around 18-24 inches apart in rows. The main central head of broccoli is harvested when it reaches its full size for the specific variety, the florets are tightly packed and have a good dark green color (or purple, depending on the variety), and before the individual yellow flowers begin to open. The head should be cut with about 5-6 inches of stem attached. Many broccoli varieties will continue to produce smaller side shoots (secondary heads or florets) from the leaf axils after the main central head has been harvested, allowing for an extended harvest period. The time from transplanting to the harvest of the main head typically ranges from 50 to 100 days, depending on the cultivar and growing conditions.",
+  "pestAndDiseaseManagement": "Common Pests: Cabbage worms (which are the larvae of several moth species like the Cabbage White Butterfly, Diamondback Moth, and Cabbage Looper) are major pests, feeding on leaves and heads. Aphids can transmit viruses and cause direct feeding damage. Flea beetles can create small holes in the leaves of young plants. Cutworms can sever seedlings at ground level. Cabbage root maggots can damage roots. Common Diseases: Clubroot (caused by Plasmodiophora brassicae) is a serious soilborne disease that causes swollen, distorted roots and stunted growth. Downy mildew and powdery mildew can affect foliage. Black rot (Xanthomonas campestris) is a bacterial disease causing V-shaped lesions on leaves. Alternaria leaf spot and head rot (especially in wet conditions) can also occur. Management Strategies: Implementing crop rotation (avoid planting broccoli or other brassica crops in the same location for at least 3-4 years) is crucial for managing soilborne diseases like clubroot. Selecting disease-resistant varieties where available. Using certified disease-free seeds or transplants. Employing row covers on young plants to protect against insect pests like flea beetles and cabbage worms (remove during flowering if pollination is needed, though broccoli is self-pollinating). Controlling weeds, which can harbor pests and diseases. Ensuring good field sanitation by removing and destroying infected plant debris. Promoting biological control agents (e.g., parasitic wasps for aphids and caterpillars). Applying appropriate fungicides or insecticides based on Integrated Pest Management (IPM) principles only when necessary, based on scouting and economic thresholds.",
+  "postHarvestHandling": "Broccoli is highly perishable and has a high respiration rate, meaning it loses quality quickly after harvest if not handled properly. It should be cooled rapidly to remove field heat, ideally to around 0°C (32°F), as soon as possible after picking. Hydro-cooling (immersing in cold water) or forced-air cooling are effective methods. Broccoli should be stored at or near 0°C (32°F) with high relative humidity (95% or more) to maintain freshness and prevent wilting. Under these optimal conditions, it can typically be stored for 1-2 weeks, although some sources suggest up to 3-4 weeks for very high-quality broccoli. Using ice in packaging during transport and display can help maintain temperature and humidity. Broccoli is sensitive to ethylene gas, so it should not be stored with ethylene-producing fruits like apples or bananas, as this can accelerate yellowing and decay.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer by a significant margin)",
+    "India (second largest producer)",
+    "United States (primarily California and Arizona)",
+    "Spain",
+    "Mexico",
+    "Italy",
+    "France",
+    "Poland",
+    "United Kingdom",
+    "Germany"
+  ],
+  "marketValueAndGlobalDemand": "Broccoli is a very popular and widely consumed vegetable globally, valued for its high nutritional content (especially vitamins C and K, and sulforaphane), culinary versatility, and appealing taste. There is strong and consistent global demand for both fresh and frozen broccoli. China and India are the top two producers worldwide. Significant international trade exists, with major exporters including the United States, Mexico, and Spain, supplying markets in North America, Europe, and Asia. The market value for broccoli is generally stable, with some fluctuations based on seasonality, regional supply, and quality. There is also growing consumer interest in specialty broccoli types, such as broccolini (a hybrid of broccoli and gai lan/Chinese kale) and purple broccoli varieties.",
+  "staticRecipes": [
+    {
+      "name": "Simple Steamed Broccoli",
+      "description": "A quick and healthy way to prepare broccoli, preserving its nutrients and vibrant color.",
+      "ingredients": [
+        "1 head of broccoli, cut into florets",
+        "1-2 tbsp water (if microwaving)",
+        "Salt and pepper to taste",
+        "Lemon wedge (optional)",
+        "Olive oil drizzle (optional)"
+      ],
+      "steps": [
+        "Place broccoli florets in a steamer basket over an inch of boiling water. Cover and steam for 3-5 minutes, until tender-crisp.",
+        "Alternatively, place florets in a microwave-safe dish with 1-2 tbsp of water. Cover and microwave on high for 2-4 minutes.",
+        "Season with salt and pepper. Squeeze fresh lemon juice over and drizzle with olive oil if desired.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Broccoli Cheddar Soup",
+      "description": "A creamy and comforting soup packed with broccoli and cheesy goodness.",
+      "ingredients": [
+        "1 tbsp butter",
+        "1 small onion, chopped",
+        "2 cloves garlic, minced",
+        "1/4 cup all-purpose flour",
+        "2 cups milk",
+        "2 cups vegetable or chicken broth",
+        "1 lb broccoli florets (fresh or frozen), roughly chopped",
+        "1 1/2 cups shredded sharp cheddar cheese",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "steps": [
+        "Melt butter in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and cook for 1 minute more. Stir in flour and cook, stirring, for 1 minute.",
+        "Gradually whisk in milk and broth until smooth. Bring to a simmer, stirring constantly.",
+        "Add broccoli florets. Cook for 10-15 minutes, or until broccoli is very tender.",
+        "Reduce heat to low. If desired, use an immersion blender to partially or fully blend the soup for a smoother texture.",
+        "Stir in shredded cheddar cheese until melted and smooth. Do not allow the soup to boil after adding cheese.",
+        "Season with salt and pepper. Serve hot."
+      ]
+    },
+    {
+      "name": "Garlic Roasted Broccoli with Parmesan",
+      "description": "Roasting broccoli brings out its nutty flavor, enhanced beautifully with garlic and Parmesan cheese.",
+      "ingredients": [
+        "1 lb broccoli florets",
+        "2-3 cloves garlic, minced or thinly sliced",
+        "2 tbsp olive oil",
+        "Salt and freshly ground black pepper to taste",
+        "1/4 cup grated Parmesan cheese",
+        "Red pepper flakes (optional, for a kick)"
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "On a large baking sheet, toss broccoli florets with olive oil, minced garlic, salt, pepper, and red pepper flakes (if using) until evenly coated.",
+        "Spread broccoli in a single layer to ensure even roasting.",
+        "Roast for 15-20 minutes, or until tender-crisp and lightly browned at the edges. Florets should be slightly charred.",
+        "Remove from oven, sprinkle immediately with grated Parmesan cheese, and toss gently.",
+        "Serve hot."
+      ]
+    }
+  ]
+}

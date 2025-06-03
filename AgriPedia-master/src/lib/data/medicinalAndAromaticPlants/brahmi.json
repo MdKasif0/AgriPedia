@@ -1,0 +1,61 @@
+{
+  "id": "brahmi",
+  "commonName": "Brahmi (Water Hyssop, Herb of Grace)",
+  "scientificName": "Bacopa monnieri",
+  "image": "https://images.unsplash.com/photo-1597066400404-823a59db08c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Brahmi, scientifically known as Bacopa monnieri, is a staple plant in traditional Ayurvedic medicine. It's a perennial, creeping herb native to the wetlands of southern and Eastern India, Australia, Europe, Africa, Asia, and North and South America. It is renowned for its cognitive-enhancing properties.",
+  "origin": "Wetlands of India, and other tropical and subtropical regions worldwide.",
+  "localNames": ["Brahmi (Hindi/Sanskrit)", "Neerbrahmi (South India)", "Bacopa (English)", "Water Hyssop (English)"],
+  "regions": ["India", "Nepal", "Sri Lanka", "China", "Vietnam", "Florida (USA)", "Hawaii (USA)", "Australia"],
+  "seasons": ["Perennial; grows year-round in warm, wet climates. Harvested as needed."],
+  "nutrition": {
+    "calories": "Primarily used for its medicinal compounds (bacosides); not a significant source of dietary calories in typical dosages.",
+    "macronutrients": [
+      { "name": "Protein", "value": "Trace", "unit": "g" },
+      { "name": "Carbohydrates", "value": "Trace", "unit": "g" },
+      { "name": "Fat", "value": "Trace", "unit": "g" },
+      { "name": "Fiber", "value": "Trace", "unit": "g" }
+    ],
+    "vitamins": [],
+    "minerals": [
+      { "name": "Potassium", "value": "Present in leaves", "unit": "mg", "rdi": "" },
+      { "name": "Calcium", "value": "Present in leaves", "unit": "mg", "rdi": "" }
+    ]
+  },
+  "healthBenefits": [
+    "Enhances cognitive functions, including memory, learning, and concentration (nootropic).",
+    "Helps reduce anxiety and stress due to its adaptogenic properties.",
+    "Rich in antioxidants that protect against cell damage.",
+    "May have neuroprotective effects, potentially beneficial for age-related cognitive decline.",
+    "Traditionally used to treat epilepsy, asthma, and inflammation."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brahmi Sensitivity",
+      "severity": "Mild",
+      "details": "Generally well-tolerated. High doses may cause gastrointestinal upset such as nausea, cramping, or diarrhea. May interact with certain medications, including thyroid medications. Caution advised during pregnancy."
+    }
+  ],
+  "cultivationProcess": "Brahmi is propagated by seeds or, more commonly, by stem cuttings. It thrives in marshy or wet conditions and can be grown hydroponically or in aquariums. It prefers partial to full sun if kept consistently moist.",
+  "growthDuration": "Perennial. Establishes relatively quickly from cuttings. Can be harvested multiple times a year once established.",
+  "sustainabilityTips": [
+    "Can be cultivated in waterlogged areas where other crops might not grow.",
+    "Its ability to grow in diverse wetland environments can be leveraged for conservation efforts if native.",
+    "Organic cultivation ensures purity for medicinal use."
+  ],
+  "carbonFootprintInfo": "Cultivation itself has a low carbon footprint, especially when grown in natural wetland environments. Processing for supplements (extraction, drying, powdering) and transportation contribute to the overall footprint.",
+  "uses": ["traditional_medicine_ayurveda_nootropic_memory_enhancer_anxiolytic_nervine_tonic", "dietary_supplement_extracts_powders_capsules", "aquarium_plant", "culinary_limited_use_in_some_asian_cuisines_as_a_vegetable_or_herb"],
+  "originAndDomesticationHistory": "Brahmi (Bacopa monnieri) has been used in Ayurvedic medicine for centuries, mentioned in ancient texts like the Charaka Samhita and Sushruta Samhita. It is native to the wetlands of India and has a long tradition of use as a 'Medhya Rasayana' (brain tonic and rejuvenator). Its name is derived from 'Brahman', the Hindu concept of universal consciousness, alluding to its effects on the mind.",
+  "climaticRequirements": {
+    "temperature": "Prefers warm, tropical and subtropical climates, 20-35°C. Can tolerate high humidity.",
+    "rainfall": "Requires consistently moist to wet conditions, mimicking its natural marshland habitat. Can grow submerged in shallow water.",
+    "altitude": "Typically found in lowland wetland areas."
+  },
+  "soilPreferences": "Prefers moist to wet, boggy soils rich in organic matter. Can grow in sandy, loamy, or clayey soils as long as moisture is abundant. Slightly acidic to neutral pH (5.5-7.0) is suitable.",
+  "irrigationAndWaterNeeds": "Requires constant moisture or shallow water. Ideal for planting near water bodies, in bog gardens, or in pots placed in saucers of water. Cannot tolerate dry conditions.",
+  "plantingAndHarvestCycles": "Propagated by stem cuttings (which root easily in water or moist soil) or by seeds. Plant in spring or during the rainy season. The entire plant (leaves and stems) is harvested as needed, typically several times a year. For medicinal preparations, plants are often harvested before or during flowering.",
+  "pestAndDiseaseManagement": "Generally quite resistant to pests and diseases, especially when grown in its preferred wet environment. Snails and aphids may occasionally be an issue. Fungal issues are rare if not overcrowded.",
+  "postHarvestHandling": "Fresh Brahmi is used in some traditional preparations. For supplements and dried herb, the whole plant is harvested, washed, and then dried in shade to preserve its active compounds (bacosides). Dried Brahmi is then powdered or used for extraction. Store dried herb in airtight containers.",
+  "majorProducingCountriesOrRegions": ["India (major producer and exporter)", "Nepal", "Sri Lanka", "Vietnam", "Thailand", "Cultivated in other tropical regions for medicinal herb markets"],
+  "marketValueAndGlobalDemand": "Brahmi has a significant and growing global market, driven by the increasing demand for natural nootropics, memory enhancers, and stress-relief supplements. India is the primary supplier. Demand for standardized extracts with high bacoside content is particularly strong in Western markets."
+}

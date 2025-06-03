@@ -1,0 +1,217 @@
+{
+  "id": "fig",
+  "commonName": "Fig (Anjeer)",
+  "scientificName": "Ficus carica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Anjeer.JPG",
+  "description": "A species of flowering plant in the mulberry family, known as the common fig. It produces a unique fruit which is actually an infructescence (a cluster of many fruits and seeds contained inside a fleshy, succulent shell). Native to the Mediterranean and western Asia, figs are enjoyed fresh, dried, and in various culinary preparations.",
+  "origin": "Western Asia and Mediterranean region",
+  "localNames": [
+    "Anjeer (Hindi, Urdu, Bengali)",
+    "Higo (Spanish)",
+    "Figue (French)",
+    "Feige (German)",
+    "Fico (Italian)",
+    "Teen (Arabic)"
+  ],
+  "regions": [
+    "Turkey (leading global producer, especially for dried figs)",
+    "Egypt",
+    "Morocco",
+    "Iran",
+    "Algeria",
+    "Spain",
+    "Greece",
+    "Syria",
+    "United States (California)",
+    "Brazil"
+  ],
+  "seasons": [
+    "Breba crop: Early Summer (June-July)",
+    "Main crop: Late Summer to Early Autumn (August-October)"
+  ],
+  "nutrition": {
+    "calories": "74 kcal per 100g (fresh)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.8,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 19.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 2.9,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 4.7,
+        "unit": "µg",
+        "rdi": "4-6%"
+      },
+      {
+        "name": "Vitamin B6",
+        "value": 0.113,
+        "unit": "mg",
+        "rdi": "7-9%"
+      },
+      {
+        "name": "Thiamin (B1)",
+        "value": 0.06,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 232,
+        "unit": "mg",
+        "rdi": "5-7%"
+      },
+      {
+        "name": "Calcium",
+        "value": 35,
+        "unit": "mg",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Magnesium",
+        "value": 17,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, promoting digestive health, preventing constipation, and supporting bowel regularity.",
+    "Contains minerals like potassium (important for blood pressure regulation) and calcium (essential for bone health).",
+    "Rich in antioxidants, including phenolic compounds, which can help protect against chronic diseases by neutralizing free radicals.",
+    "Dried figs are a concentrated source of nutrients, energy, and fiber, but also higher in sugar.",
+    "Traditionally used as a natural remedy for various ailments, including as a mild laxative and for soothing sore throats."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Fig Allergy / Latex Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Some people may be allergic to figs, possibly due to cross-reactivity with birch pollen or natural rubber latex (latex-fruit syndrome). Symptoms can include itching or swelling of the mouth, lips, tongue (Oral Allergy Syndrome), or skin reactions like dermatitis from handling fig sap."
+    },
+    {
+      "name": "High Oxalate Content",
+      "severity": "Mild",
+      "details": "Figs contain oxalates, which might be a concern for individuals prone to kidney stones, if consumed in very large quantities."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate to subtropical, thrives in areas with long, hot summers and mild winters. Some varieties are more cold-hardy.\n2. Soil: Adaptable to various soils but prefers well-drained, fertile loam. Tolerates slightly alkaline conditions.\n3. Propagation: Easily propagated from cuttings. Can also be grown from seeds, but quality may vary.\n4. Planting: Plant in full sun. Can be grown in containers, especially in colder regions.\n5. Watering: Young trees require regular watering. Mature trees are relatively drought-tolerant but produce better fruit with consistent moisture, especially during fruit development.\n6. Fertilizing: Generally light feeders. A balanced fertilizer in spring may be beneficial.\n7. Pruning: Prune during dormancy to shape the tree, remove dead wood, and encourage fruit production (figs often fruit on new and old wood, depending on variety).\n8. Harvesting: Figs are harvested when they are soft to the touch, droop slightly on the stem, and have fully developed color. They do not ripen much after picking.",
+  "growthDuration": "Trees from cuttings can start bearing fruit in 1-3 years. Figs typically have two crops per year in suitable climates (breba crop on old wood in early summer, main crop on new wood in late summer/autumn).",
+  "sustainabilityTips": [
+    "Fresh figs are highly perishable; store in the refrigerator and consume within a few days.",
+    "Dried figs have a long shelf life and are a good way to preserve the fruit, reducing food waste.",
+    "Enjoy fresh figs with their skin; wash thoroughly before eating.",
+    "Compost any unused parts of the fruit."
+  ],
+  "carbonFootprintInfo": "Moderate. Fresh figs can have a higher footprint if air-freighted due to perishability (estimated 0.8-2.0 kg CO2e/kg). Dried figs generally have a lower footprint due to reduced weight and longer shelf life, making sea transport feasible.",
+  "uses": [
+    "fresh_consumption_eaten_raw",
+    "dried_fruit_snack_baking_compotes",
+    "culinary_salads_appetizers_with_cheese_prosciutto",
+    "processed_jams_preserves_pastes_fig_newtons_syrup_fig_bars",
+    "beverages_fig_wine_infused_liquors_fig_leaf_tea",
+    "medicinal_traditional_laxative_sore_throat_remedy",
+    "ornamental_plant_attractive_foliage_and_form"
+  ],
+  "originAndDomesticationHistory": "The common fig (Ficus carica) is native to Western Asia, specifically the region of the Fertile Crescent, and the Eastern Mediterranean. It is one of the earliest fruit trees to be cultivated by humans, with archaeological evidence from Neolithic sites in the Jordan Valley dating its cultivation to around 9400-9200 BCE, even predating the domestication of staple grains like wheat and barley. Figs held significant cultural and religious importance in ancient civilizations, including Egypt (depicted in tomb paintings), Greece (where they were considered sacred to Dionysus and a staple food), and Rome (associated with the legend of Romulus and Remus). Their cultivation spread throughout the Mediterranean basin with these civilizations and later to other parts of the world with suitable climates, including the Americas, by European colonizers.",
+  "climaticRequirements": {
+    "temperature": "Figs thrive in Mediterranean or temperate climates characterized by long, hot, and dry summers and mild, cool winters. Most varieties require some winter chilling (typically 100-500 hours below 7°C or 45°F) to break dormancy, although they are less demanding than many other deciduous fruit trees. Mature trees can tolerate temperatures down to -10°C to -12°C (10-14°F) when dormant, but young trees and new growth are more susceptible to frost damage.",
+    "rainfall": "Established fig trees are notably drought-tolerant but produce higher quality and quantity of fruit with adequate moisture, around 500-750mm (20-30 inches) of annual rainfall or equivalent irrigation, especially during the fruit development period. Excessive rainfall or high humidity during fruit ripening can lead to fruit splitting and an increase in fungal diseases.",
+    "altitude": "Figs can be successfully cultivated from sea level up to altitudes of 1700 meters (approx. 5600 feet) in appropriate latitudes, as long as temperature and sunlight conditions are met."
+  },
+  "soilPreferences": "Figs are adaptable to a wide range of soil types, from light sandy soils to moderately heavy clays, but they perform best in deep, well-drained loamy soils that are rich in organic matter. Good drainage is crucial, as they do not tolerate waterlogged conditions. They are relatively tolerant of alkaline soils (pH up to 7.5-8.0) and can also withstand some salinity better than many other fruit crops.",
+  "irrigationAndWaterNeeds": "Young fig trees require consistent and regular watering to help establish a strong root system. While mature trees are relatively drought-tolerant, they benefit significantly from supplemental irrigation during prolonged dry periods, particularly from fruit set through harvest. This ensures good fruit size, quality, and yield. Drip irrigation or micro-sprinklers are efficient methods. Overwatering should be avoided, as it can lead to root rot and reduced fruit quality.",
+  "plantingAndHarvestCycles": "Figs are easily propagated from dormant hardwood cuttings taken in late winter or early spring. Trees grown from cuttings can start bearing fruit within 1-3 years. In many favorable climates, fig trees can produce two distinct crops per year: the 'breba' crop, which develops on the previous year's mature wood (old wood) and ripens in early summer, and the 'main' crop, which develops on the current year's new growth and ripens in late summer or autumn. Figs must be allowed to ripen fully on the tree, as they do not ripen further after being picked. Ripeness is indicated by a change in skin color (specific to the variety), softness to the touch, and often a slight drooping of the fruit on the stem. Harvesting is done by hand, carefully, as ripe figs are delicate and bruise easily.",
+  "pestAndDiseaseManagement": "Common Pests: Fig wasps (Blastophaga psenes) are essential for the pollination of 'Smyrna' type figs (caprification) and are not considered pests. However, other pests can include fig scale, fig mites (which can transmit Fig Mosaic Virus), root-knot nematodes, fruit flies (e.g., Mediterranean fruit fly), dried fruit beetles (which attack ripe and drying fruit), and vertebrate pests like birds and squirrels. Common Diseases: Fig rust (Cerotelium fici) causes leaf spotting and defoliation. Fig Mosaic Virus can cause leaf mottling and distortion. Botrytis rot (gray mold) can affect fruit in humid conditions. Root rot (e.g., Phytophthora) can occur in poorly drained soils. Fig canker and limb blight can also be problematic. Management Strategies: Selecting resistant varieties when available, practicing good orchard sanitation (such as removing fallen fruit and diseased wood), ensuring proper pruning to promote good air circulation, controlling mite populations to reduce virus spread, using netting or other deterrents for birds, and applying appropriate biological or chemical controls for specific pests and diseases when necessary. For nematodes, using resistant rootstocks or soil solarization can be effective.",
+  "postHarvestHandling": "Fresh figs are highly perishable and must be handled with great care to avoid bruising. They should be harvested when fully ripe but still firm enough to handle. If possible, cool the figs promptly after harvest (e.g., to 0-2°C or 32-36°F) to extend their shelf life. Store fresh figs with high humidity (90-95%); under these conditions, they may last for a few days up to a week. They are often packed in shallow trays, sometimes individually wrapped, to minimize damage. For drying, figs are typically allowed to partially dry on the tree or are picked ripe and then sun-dried or mechanically dehydrated. Dried figs have a much longer shelf life and can be stored for many months in cool, dry conditions.",
+  "majorProducingCountriesOrRegions": [
+    "Turkey (world's largest producer and exporter, especially of dried figs)",
+    "Egypt",
+    "Morocco",
+    "Iran",
+    "Algeria",
+    "Spain",
+    "Greece",
+    "Syria",
+    "United States (primarily California for both fresh and dried figs)",
+    "Brazil",
+    "Tunisia"
+  ],
+  "marketValueAndGlobalDemand": "Fresh figs command a high market value due to their delicate nature, perishability, and relatively short seasonal availability; they are often considered a gourmet or specialty fruit. Dried figs constitute a very large and stable global market, with Turkey being the dominant supplier. There is significant international demand for both fresh and dried figs, particularly in Europe, North America, and the Middle East. Consumer interest is also growing for organic figs and specialty fig products like jams, pastes, and fig bars. The versatility of figs in both sweet and savory dishes contributes to their sustained demand.",
+  "staticRecipes": [
+    {
+      "name": "Fresh Figs with Prosciutto and Balsamic Glaze",
+      "description": "An elegant appetizer combining sweet figs, salty prosciutto, and tangy balsamic.",
+      "ingredients": [
+        "8-12 ripe fresh figs, halved or quartered",
+        "4-6 slices prosciutto, torn into pieces",
+        "2 tbsp balsamic glaze (store-bought or homemade by reducing balsamic vinegar)",
+        "Fresh basil leaves or microgreens for garnish (optional)"
+      ],
+      "steps": [
+        "Wash figs gently and pat dry. Cut them in half or quarters depending on size.",
+        "Arrange fig pieces on a serving platter.",
+        "Drape pieces of prosciutto around or over the figs.",
+        "Drizzle generously with balsamic glaze.",
+        "Garnish with fresh basil or microgreens if desired. Serve immediately."
+      ]
+    },
+    {
+      "name": "Baked Figs with Goat Cheese and Honey",
+      "description": "A warm, delicious dessert or appetizer featuring sweet figs and creamy goat cheese.",
+      "ingredients": [
+        "8 ripe fresh figs",
+        "4 oz soft goat cheese (chèvre)",
+        "2 tbsp honey (plus more for drizzling)",
+        "1 tbsp chopped walnuts or pecans, toasted (optional)"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Wash figs. Cut a small 'X' into the top of each fig, about halfway down, without cutting all the way through.",
+        "Gently open the fig slightly at the cuts to create a small pocket.",
+        "Stuff each fig with a small amount of goat cheese.",
+        "Arrange the stuffed figs in a small baking dish.",
+        "Drizzle with honey.",
+        "Bake for 10-15 minutes, or until the figs are softened and the goat cheese is warm and slightly melted.",
+        "Sprinkle with toasted nuts (if using) and an extra drizzle of honey before serving warm."
+      ]
+    },
+    {
+      "name": "Fig and Almond Smoothie",
+      "description": "A nutritious and flavorful smoothie made with fresh or dried figs.",
+      "ingredients": [
+        "4-5 fresh ripe figs (or 3-4 dried figs, soaked in hot water for 15 mins and drained)",
+        "1 cup almond milk (or other milk)",
+        "1/2 banana, frozen (for creaminess)",
+        "1 tbsp almond butter",
+        "1/2 tsp vanilla extract",
+        "Pinch of cinnamon",
+        "Ice cubes (optional)"
+      ],
+      "steps": [
+        "If using fresh figs, remove stems and roughly chop. If using dried figs, ensure they are soft from soaking.",
+        "Combine figs, almond milk, frozen banana, almond butter, vanilla extract, and cinnamon in a blender.",
+        "Blend until smooth and creamy. Add ice cubes if a colder, thicker smoothie is desired and blend again.",
+        "Pour into a glass and serve immediately."
+      ]
+    }
+  ]
+}

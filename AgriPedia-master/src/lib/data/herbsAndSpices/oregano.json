@@ -1,0 +1,66 @@
+{
+  "id": "oregano",
+  "commonName": "Oregano",
+  "scientificName": "Origanum vulgare",
+  "image": "https://images.unsplash.com/photo-1597362249468-f92f9d098a28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Oregano is a culinary herb, also known as wild marjoram, from the mint family (Lamiaceae). It is native to temperate Western and Southwestern Eurasia and the Mediterranean region. Oregano is a perennial herb, bearing small leaves which are used fresh or dried, and has an aromatic, warm, and slightly bitter taste.",
+  "origin": "Mediterranean region and Western Eurasia.",
+  "localNames": ["Ajwain ki pattiyan (Hindi - often confused, but sometimes used)", "Origano (Italian)", "Orégano (Spanish)", "Origan (French)", "Hanahakka (Japanese)"],
+  "regions": ["Mediterranean countries (Turkey, Greece, Italy, Spain)", "Mexico", "United States", "Worldwide cultivation"],
+  "seasons": ["Perennial; actively grows in spring and summer. Can be harvested multiple times."],
+  "nutrition": {
+    "calories": "265 kcal per 100g (dried)",
+    "macronutrients": [
+      { "name": "Protein", "value": 9.0, "unit": "g" },
+      { "name": "Carbohydrates", "value": 68.9, "unit": "g" },
+      { "name": "Fat", "value": 4.3, "unit": "g" },
+      { "name": "Fiber", "value": 42.5, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 621.7, "unit": "µg", "rdi": "518%" },
+      { "name": "Vitamin E", "value": 18.26, "unit": "mg", "rdi": "122%" },
+      { "name": "Folate (B9)", "value": 237, "unit": "µg", "rdi": "59%" }
+    ],
+    "minerals": [
+      { "name": "Iron", "value": 36.8, "unit": "mg", "rdi": "204%" },
+      { "name": "Manganese", "value": 4.99, "unit": "mg", "rdi": "217%" },
+      { "name": "Calcium", "value": 1597, "unit": "mg", "rdi": "160%" },
+      { "name": "Magnesium", "value": 270, "unit": "mg", "rdi": "64%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, particularly carvacrol and thymol, which have antimicrobial properties.",
+    "May help fight bacteria and reduce inflammation.",
+    "Good source of fiber, Vitamin K, iron, and manganese (especially dried oregano).",
+    "Traditionally used to treat colds, indigestion, and upset stomach."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Lamiaceae Allergy",
+      "severity": "Mild to Moderate",
+      "details": "Individuals allergic to other mint family plants (basil, mint, sage, marjoram) may also react to oregano. Symptoms can include oral allergy syndrome or skin irritation."
+    }
+  ],
+  "cultivationProcess": "Oregano is grown from seeds, cuttings, or division. It prefers well-drained soil and full sun. It is a hardy perennial that can tolerate some drought once established.",
+  "growthDuration": "Perennial. Can be harvested lightly in its first year, with more abundant harvests in subsequent years. Typically harvested just before flowering for best flavor.",
+  "sustainabilityTips": [
+    "Drought-tolerant once established, reducing water needs.",
+    "Can be grown in pots or as a groundcover in herb gardens.",
+    "Attracts pollinators like bees and butterflies when in bloom."
+  ],
+  "carbonFootprintInfo": "Locally grown oregano has a low carbon footprint. Dried oregano involves energy for drying and processing. Transportation for imported oregano adds to its footprint.",
+  "uses": ["culinary_herb_fresh_dried_pizza_pasta_sauces", "essential_oil_production_carvacrol_thymol", "traditional_medicine"],
+  "originAndDomesticationHistory": "Oregano (Origanum vulgare) is native to the Mediterranean region and temperate parts of Eurasia. It has been used for culinary and medicinal purposes for thousands of years, dating back to ancient Greek and Roman civilizations. The name oregano comes from Greek words meaning \"joy of the mountain.\"",
+  "climaticRequirements": {
+    "temperature": "Prefers warm temperate climates, 18-28°C. Hardy and can tolerate some cold, especially if mulched.",
+    "rainfall": "Drought-tolerant once established. Requires moderate watering, especially during establishment. Around 400-700mm equivalent if not irrigated.",
+    "altitude": "Adaptable to various altitudes, common in hilly and mountainous regions of the Mediterranean."
+  },
+  "soilPreferences": "Prefers light, well-drained, slightly alkaline soil (pH 6.0-8.0). Does not tolerate wet, boggy conditions. Sandy loam is ideal.",
+  "irrigationAndWaterNeeds": "Water moderately when plants are young and during prolonged dry spells. Allow soil to dry out between waterings once established. Overwatering can lead to root rot.",
+  "plantingAndHarvestCycles": "Can be started from seed indoors, or sown directly outdoors after the last frost. Also propagated by cuttings or division in spring or fall. Harvest leaves as needed once the plant is about 15 cm (6 inches) tall. For drying, cut stems just before the plant flowers, when essential oil concentration is highest.",
+  "pestAndDiseaseManagement": "Generally resistant to pests. Spider mites and aphids can occasionally be an issue. Root rot can occur in poorly drained soils. Fungal diseases like rust or leaf spot are less common but possible in humid conditions. Good air circulation and proper watering help prevent diseases.",
+  "postHarvestHandling": "Fresh oregano can be stored in the refrigerator for a short period. For drying, hang bunches of stems upside down in a warm, dry, dark, well-ventilated area. Once dry, strip leaves from stems and store in an airtight container. Flavor is often more intense in dried oregano.",
+  "majorProducingCountriesOrRegions": ["Turkey (leading exporter)", "Greece", "Spain", "Morocco", "Mexico", "United States"],
+  "marketValueAndGlobalDemand": "Oregano is a popular and widely traded herb, with high demand for both dried leaves and essential oil. The food industry is the primary consumer. The Mediterranean type is most sought after for its characteristic flavor. Demand for oregano oil for its purported health benefits is also growing."
+}

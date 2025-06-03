@@ -1,0 +1,207 @@
+{
+  "id": "watermelon",
+  "commonName": "Watermelon",
+  "scientificName": "Citrullus lanatus",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Watermelon.jpg",
+  "description": "A large, sweet fruit originally from southern Africa, belonging to the gourd family (Cucurbitaceae). It's known for its high water content (about 92%) and refreshing taste. The fruit typically has a smooth, green rind (often striped or mottled) and juicy, sweet flesh that is most commonly red or pink, but can also be orange, yellow, or white, usually containing black seeds (though seedless varieties are prevalent).",
+  "origin": "Southern Africa (Kalahari Desert region)",
+  "localNames": [
+    "Sandía (Spanish)",
+    "Pastèque (French)",
+    "Wassermelone (German)",
+    "Anguria (Italian)",
+    "Melancia (Portuguese)",
+    "Tarbooj (तरबूज - Hindi)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "Turkey",
+    "Iran",
+    "Brazil",
+    "United States (major production in states like Florida, Georgia, Texas, California, Arizona)",
+    "Egypt",
+    "India",
+    "Uzbekistan",
+    "Russia",
+    "Mexico"
+  ],
+  "seasons": [
+    "Summer (peak season, though available year-round in many markets due to global sourcing, greenhouse cultivation, and different hemisphere production)"
+  ],
+  "nutrition": {
+    "calories": "30 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.61,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 7.55,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.15,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 0.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 8.1,
+        "unit": "mg",
+        "rdi": "9-14%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids like beta-carotene and lycopene)",
+        "value": 28,
+        "unit": "µg RAE",
+        "rdi": "3-4%"
+      },
+      {
+        "name": "Pantothenic acid (B5)",
+        "value": 0.221,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 112,
+        "unit": "mg",
+        "rdi": "2-3%"
+      },
+      {
+        "name": "Lycopene (antioxidant, especially in red varieties)",
+        "value": 4532,
+        "unit": "µg"
+      },
+      {
+        "name": "Citrulline (amino acid)",
+        "value": "Significant amounts, especially in the rind"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent for hydration due to its high water content (about 92%), helping to maintain fluid balance.",
+    "Good source of lycopene, a powerful antioxidant (especially in red-fleshed varieties) linked to heart health, cancer prevention, and skin protection against sun damage.",
+    "Contains citrulline, an amino acid that the body can convert to arginine, which may improve blood flow, reduce blood pressure, and alleviate muscle soreness after exercise.",
+    "Provides Vitamin C, supporting immune function and acting as an antioxidant.",
+    "Contains Vitamin A (from carotenoids), important for vision and immune health."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Rare, Mild",
+      "details": "Rarely, individuals with ragweed pollen allergy may experience Oral Allergy Syndrome (OAS), causing itching or tingling in the mouth or throat after consuming watermelon."
+    },
+    {
+      "name": "High Potassium (for specific conditions)",
+      "severity": "Low (for healthy individuals)",
+      "details": "While a good source of potassium, individuals with severe kidney disease or hyperkalemia should monitor their potassium intake and consult a doctor."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Watermelons are warm-season crops, requiring long, hot summers for optimal growth and fruit development. Full sun is essential.\n2. Soil: Prefer well-drained, sandy loam soil that is rich in organic matter. Ideal pH range is 6.0-7.0.\n3. Planting: Typically grown from seeds. Seeds can be sown directly in the field after the last frost when soil temperatures have warmed (above 20°C/68°F), or started indoors 2-4 weeks prior in cooler climates and then carefully transplanted.\n4. Spacing: Vines need ample space to spread. Plant in hills or rows with significant spacing (e.g., 1.5-2.5 meters between plants and 2-3 meters between rows).\n5. Watering: Consistent and deep watering is crucial, especially during germination, vine growth, flowering, and fruit set and development. Reduce watering as fruits approach maturity to improve sweetness and prevent splitting.\n6. Fertilizing: Benefit from fertilizers rich in potassium and phosphorus for fruit development, and nitrogen during early vegetative growth.\n7. Pollination: Bees (honey bees, bumble bees) are essential for pollinating watermelon flowers (which are typically monoecious - separate male and female flowers on the same plant).\n8. Harvesting: Judged by several indicators: a dull (not shiny) rind surface, the ground spot (where the watermelon rests on the soil) turning from whitish to creamy yellow, drying or browning of the tendril nearest the fruit stem, and a dull, hollow sound when thumped (this method is subjective and requires experience).",
+  "growthDuration": "Typically 70-100 days from sowing to harvest, depending on the specific variety (e.g., icebox, picnic, seedless types) and growing conditions.",
+  "sustainabilityTips": [
+    "Store uncut watermelon at room temperature for up to a week, or in a cool place (around 10-15°C or 50-59°F) for longer. Once cut, watermelon should be wrapped tightly and refrigerated, consumed within 3-5 days.",
+    "Consider using the entire watermelon: the rind can be pickled or candied, and the seeds can be roasted and eaten (especially from traditional seeded varieties).",
+    "Choose locally grown watermelons when in season for the best flavor, nutritional value, and to reduce the environmental impact associated with long-distance transportation."
+  ],
+  "carbonFootprintInfo": "Generally low (estimated 0.2-0.4 kg CO2e/kg) if field-grown and consumed locally or transported by land. Transportation over long distances, especially for out-of-season fruit which may involve more energy-intensive storage or greenhouse cultivation (less common for watermelons), can increase this footprint.",
+  "uses": [
+    "fresh_consumption_sliced_cubed_balled_eaten_raw",
+    "beverages_fresh_juice_smoothies_agua_fresca_cocktails_watermelon_lemonade",
+    "desserts_sorbets_granitas_fruit_salads_fruit_platters_popsicles",
+    "culinary_ingredient_salads_often_with_feta_and_mint_salsas_gazpacho",
+    "pickling_rind_is_often_pickled",
+    "seeds_roasted_and_eaten_as_a_snack_or_ground_into_flour_in_some_cultures_watermelon_seed_oil"
+  ],
+  "originAndDomesticationHistory": "Watermelon (Citrullus lanatus) is native to the Kalahari Desert region of southern Africa, where its wild ancestors still grow. Archaeological evidence indicates its cultivation in Egypt as far back as over 4,000 years ago, with seeds and paintings of watermelons found in ancient Egyptian tombs, including that of Tutankhamun. From Egypt, its cultivation spread throughout the Mediterranean region by Roman times. It reached India by the 7th century AD and China by the 10th to 12th century, which is now the world's largest producer. Watermelons were introduced to the Americas by European colonists and through the slave trade in the 16th and 17th centuries. Over centuries, selective breeding has led to the development of thousands of cultivars, varying in size, shape, rind pattern, flesh color (red, pink, orange, yellow, white), and seed content (seeded vs. seedless).",
+  "climaticRequirements": {
+    "temperature": "Watermelons are a warm-season crop that thrives in hot conditions. Optimal temperatures for growth and fruit development are between 25°C and 30°C (77°F to 86°F). They require long, hot summers for fruits to mature and accumulate sugars. They are very sensitive to frost, and seeds will not germinate in cold soil (soil temperatures should be consistently above 20°C or 68°F for good germination).",
+    "rainfall": "Requires moderate rainfall, typically around 400mm to 600mm, during the growing season, or consistent irrigation. While adequate moisture is crucial during vegetative growth and fruit set, relatively dry conditions are preferred during the fruit ripening stage. This helps to increase sugar content in the fruit and reduces the risk of fungal diseases and fruit splitting. Overhead irrigation should be avoided once fruits start to develop to minimize foliage diseases.",
+    "altitude": "Typically cultivated in lowlands to moderate altitudes where warm temperatures and long growing seasons prevail. High altitude cultivation is limited by cooler temperatures and shorter seasons."
+  },
+  "soilPreferences": "Prefers well-drained, sandy loam or loamy soils that are rich in organic matter and have good aeration. The ideal soil pH range is between 6.0 and 7.0 (slightly acidic to neutral). Heavy clay soils or poorly drained soils are unsuitable as they can lead to root diseases and poor vine growth. The soil should warm up quickly in the spring.",
+  "irrigationAndWaterNeeds": "Requires consistent and adequate soil moisture, especially during seed germination, vine establishment, flowering, and particularly during fruit development. Water stress during these critical periods can result in poor fruit set, small fruit size, low sugar content, and misshapen fruits (e.g., blossom-end rot). Drip irrigation or furrow irrigation methods are commonly used to provide water directly to the root zone while keeping foliage dry. It is crucial to reduce watering as the fruits approach maturity (about 1-2 weeks before harvest) to help concentrate sugars, improve flavor, and prevent fruit splitting or blandness.",
+  "plantingAndHarvestCycles": "Watermelons are propagated from seeds. Seeds can be sown directly in the field after the last danger of frost has passed and when soil temperatures have warmed sufficiently (above 20°C or 68°F). In regions with shorter growing seasons, seeds may be started indoors 2-4 weeks prior to the last expected frost and then carefully transplanted. Plants are typically grown in hills or rows, with ample spacing (e.g., 1.5-2.5 meters between plants and 2-3 meters between rows) to allow for the extensive spread of the vines. The time from sowing to harvest varies by cultivar but generally ranges from 70 to 100 days. Ripeness is judged by several indicators: the surface of the rind changing from shiny to dull, the ground spot (the part of the watermelon resting on the soil) turning from whitish to a creamy yellow color, the drying or browning of the tendril nearest the fruit stem, and a dull, hollow sound when thumped (though this method is subjective and requires experience). Watermelons are harvested by hand by cutting the stem close to the fruit.",
+  "pestAndDiseaseManagement": "Common Pests: Cucumber beetles (striped and spotted) are significant pests as they feed on plants and can transmit bacterial wilt. Aphids can transmit viruses and cause direct feeding damage. Squash vine borer, spider mites, melon aphids, and whiteflies can also be problematic. Common Diseases: Fusarium wilt is a major soilborne fungal disease that can be devastating. Powdery mildew and downy mildew can affect foliage. Gummy stem blight (black rot) and anthracnose can cause lesions on leaves, stems, and fruit. Various viral diseases, such as Watermelon Mosaic Virus (WMV) and Cucumber Mosaic Virus (CMV), can stunt growth and reduce yield. Management Strategies: Implementing crop rotation (avoiding planting cucurbits in the same location for 3-4 years) is crucial for managing soilborne diseases like Fusarium wilt. Selecting disease-resistant varieties whenever possible. Ensuring proper plant spacing to promote good air circulation. Practicing effective weed control, as weeds can harbor pests and diseases. Timely planting to avoid peak pest seasons. Removing and destroying infected plant material promptly. Using row covers on young plants to protect against early insect infestations (remove during flowering to allow for pollination). Applying appropriate and approved insecticides or fungicides when necessary, based on scouting, pest/disease pressure, and Integrated Pest Management (IPM) principles.",
+  "postHarvestHandling": "Watermelons should be harvested carefully to avoid bruising, as this can lead to rapid spoilage. Unlike some fruits, watermelons do not ripen significantly after harvest; their sugar content does not increase, although they may soften slightly. They can be stored at cool room temperatures (e.g., around 15-20°C or 59-68°F) for about a week. For longer storage, temperatures of 10-15°C (50-59°F) with moderate humidity (around 85-90%) are recommended, under which they can last for 2-3 weeks. Storing below 10°C (50°F) can cause chilling injury, leading to loss of flavor, pitting, and decay. Once cut, watermelon must be wrapped tightly in plastic or stored in an airtight container and refrigerated, and should be consumed within a few days (3-5 days) for best quality and safety.",
+  "majorProducingCountriesOrRegions": [
+    "China (by far the world's largest producer)",
+    "Turkey",
+    "Iran",
+    "Brazil",
+    "United States (major production in states like Florida, Georgia, Texas, California, and Arizona)",
+    "Egypt",
+    "India",
+    "Uzbekistan",
+    "Russia",
+    "Mexico",
+    "Algeria",
+    "Vietnam",
+    "Spain"
+  ],
+  "marketValueAndGlobalDemand": "Watermelon is an extremely popular fruit globally, especially during the summer months in temperate regions, valued for its refreshing qualities, high water content, and sweet flavor. China dominates world production, with a significant portion consumed domestically. There is substantial international trade in watermelons. The market value is influenced by factors such as variety (seeded vs. seedless, traditional 'picnic' types vs. smaller 'icebox' or personal-sized melons), fruit quality (sweetness as measured by Brix, flesh texture, absence of defects), size, and seasonality. The demand for seedless watermelon varieties has grown considerably in many markets due to consumer preference and convenience. Watermelons are a staple item in produce sections worldwide during their season.",
+  "staticRecipes": [
+    {
+      "name": "Classic Watermelon Slices",
+      "description": "The simplest and most refreshing way to enjoy watermelon.",
+      "ingredients": [
+        "1 ripe watermelon"
+      ],
+      "steps": [
+        "Wash the outside of the watermelon thoroughly.",
+        "Place the watermelon on a sturdy cutting board.",
+        "Using a large, sharp knife, cut the watermelon in half lengthwise or crosswise.",
+        "Lay each half cut-side down and slice into wedges or rounds of desired thickness.",
+        "Serve immediately or chill for later."
+      ]
+    },
+    {
+      "name": "Watermelon Feta Mint Salad",
+      "description": "A refreshing and flavorful salad combining sweet watermelon, salty feta, and fresh mint.",
+      "ingredients": [
+        "4 cups cubed seedless watermelon",
+        "1/2 cup crumbled feta cheese",
+        "1/4 cup fresh mint leaves, chopped or torn",
+        "1-2 tbsp olive oil",
+        "1 tbsp lime juice or red wine vinegar",
+        "Pinch of salt and black pepper (optional)"
+      ],
+      "steps": [
+        "In a large bowl, gently combine cubed watermelon, crumbled feta cheese, and fresh mint.",
+        "In a small bowl, whisk together olive oil and lime juice or red wine vinegar. Season lightly with salt and pepper if desired (feta is already salty).",
+        "Drizzle the dressing over the watermelon mixture.",
+        "Toss gently to combine. Serve immediately or chilled. For best results, assemble just before serving as watermelon can release a lot of water."
+      ]
+    },
+    {
+      "name": "Refreshing Watermelon Juice/Agua Fresca",
+      "description": "A simple and hydrating drink perfect for hot days.",
+      "ingredients": [
+        "4-5 cups cubed seedless watermelon",
+        "1/2 cup water (optional, for easier blending)",
+        "Juice of 1/2 to 1 lime (to taste)",
+        "1-2 tbsp sugar or agave (optional, to taste)",
+        "Fresh mint sprigs for garnish (optional)"
+      ],
+      "steps": [
+        "Place cubed watermelon into a blender. Add water if your watermelon isn't very juicy or to help with blending.",
+        "Blend until smooth.",
+        "Strain the mixture through a fine-mesh sieve into a pitcher if you prefer a very smooth juice, pressing gently on the solids. For a more rustic agua fresca, straining is optional.",
+        "Stir in lime juice and sweetener (if using) to taste.",
+        "Serve chilled over ice, garnished with a mint sprig if desired."
+      ]
+    }
+  ]
+}

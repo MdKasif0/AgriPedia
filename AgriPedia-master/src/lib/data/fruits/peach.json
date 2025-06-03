@@ -1,0 +1,218 @@
+{
+  "id": "peach",
+  "commonName": "Peach",
+  "scientificName": "Prunus persica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
+  "description": "A deciduous tree native to Northwest China, belonging to the rose family (Rosaceae). It bears an edible juicy fruit also called a peach. Nectarines are a variety of peach (Prunus persica var. nucipersica) that lack the characteristic fuzz on the skin. Peaches have a delicate aroma, and their flesh can be white, yellow, or red, surrounding a hard stone (endocarp).",
+  "origin": "Northwest China (region between Tarim Basin and northern slopes of Kunlun Mountains)",
+  "localNames": [
+    "Melocotón (Spanish)",
+    "Pêche (French)",
+    "Pfirsich (German)",
+    "Pesca (Italian)",
+    "Aaru (Hindi)",
+    "Momo (桃 - Japanese)"
+  ],
+  "regions": [
+    "China (world's largest producer)",
+    "Spain",
+    "Italy",
+    "United States (California, Georgia, South Carolina, New Jersey)",
+    "Greece",
+    "Turkey",
+    "Iran",
+    "Chile",
+    "Argentina"
+  ],
+  "seasons": [
+    "Summer (typically May to September in the Northern Hemisphere, depending on variety and location)"
+  ],
+  "nutrition": {
+    "calories": "39 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.91,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 9.54,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.25,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.5,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 6.6,
+        "unit": "mg",
+        "rdi": "7-11%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids like beta-carotene)",
+        "value": 16,
+        "unit": "µg RAE",
+        "rdi": "2%"
+      },
+      {
+        "name": "Vitamin E",
+        "value": 0.73,
+        "unit": "mg",
+        "rdi": "5%"
+      },
+      {
+        "name": "Niacin (B3)",
+        "value": 0.806,
+        "unit": "mg",
+        "rdi": "5%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 190,
+        "unit": "mg",
+        "rdi": "4-5%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 20,
+        "unit": "mg",
+        "rdi": "3%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that supports immune function and collagen synthesis for skin health.",
+    "Contains antioxidants such as carotenoids (beta-carotene, lutein, zeaxanthin) and phenolic compounds, which can help protect cells from damage by free radicals.",
+    "Provides dietary fiber, which aids in digestion, promotes bowel regularity, and can help manage blood sugar levels.",
+    "May contribute to skin health due to its vitamin content and hydrating properties.",
+    "Contains potassium, which is important for maintaining healthy blood pressure."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Often linked to birch pollen allergy (Pollen Food Allergy Syndrome). Symptoms typically include itching or swelling of the mouth, lips, tongue, and throat after consuming fresh peaches."
+    },
+    {
+      "name": "Peach Fuzz Sensitivity",
+      "severity": "Mild (skin irritation)",
+      "details": "Some individuals may find the fuzz on peach skin irritating to touch or when eaten, though this is not a true allergic reaction. Nectarines, which are a variety of peach without fuzz, are a good alternative for those sensitive to the fuzz."
+    },
+    {
+      "name": "Lipid Transfer Protein (LTP) Allergy (rare)",
+      "severity": "Moderate to Severe",
+      "details": "In some regions (especially Mediterranean), allergy to LTPs found in peaches can cause more severe systemic reactions, including anaphylaxis. LTPs are more concentrated in the peel."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates with sufficient winter chill hours for bud break, followed by warm summers for fruit ripening. Protect from late spring frosts.\n2. Soil: Well-drained, sandy loam soil with good organic content. pH 6.0-7.0.\n3. Propagation: Usually grafted onto rootstock to ensure variety characteristics and disease resistance.\n4. Planting: Plant bare-root trees in late winter or early spring. Container-grown trees can be planted more flexibly. Full sun is essential.\n5. Watering: Regular, deep watering, especially during fruit development and dry spells. Avoid waterlogged soil.\n6. Fertilizing: Apply balanced fertilizer in early spring and possibly again in early summer.\n7. Pruning: Prune annually during dormancy to maintain an open center or vase shape, remove dead/diseased wood, and encourage fruit production on one-year-old wood.\n8. Thinning: Thin young fruits to 6-8 inches apart to ensure larger, higher-quality mature fruits.\n9. Harvesting: Peaches are harvested when they reach full color (yellow/red, depending on variety), soften slightly, and have a sweet aroma. They are typically picked by hand.",
+  "growthDuration": "Grafted trees can start bearing fruit in 2-4 years. Fruits mature 3-5 months after flowering, typically in the summer months.",
+  "sustainabilityTips": [
+    "Store unripe peaches at room temperature (stem-end down) to ripen. Once ripe, they can be refrigerated for a few days to extend freshness.",
+    "Peaches bruise easily; handle them with care. Store in a single layer if possible.",
+    "Freeze sliced peaches (with or without skin) for later use in smoothies, pies, or cobblers. Blanching before freezing can help preserve color and texture.",
+    "Compost peach pits and any spoiled fruit."
+  ],
+  "carbonFootprintInfo": "Moderate. Locally grown peaches consumed in season have a lower carbon footprint (estimated 0.4-0.8 kg CO2e/kg). Transportation from distant growing regions, especially by air for out-of-season fruit, significantly increases this footprint.",
+  "uses": [
+    "fresh_consumption_eaten_raw_sliced_in_salads_cereals",
+    "processed_products_canned_peaches_slices_halves_in_syrup_jams_jellies_preserves_peach_butter_puree",
+    "culinary_desserts_pies_cobblers_tarts_cakes_ice_cream_sorbet_yogurt_grilled_peaches",
+    "beverages_peach_nectar_juice_iced_tea_smoothies_bellinis_peach_schnapps_brandy",
+    "dried_peaches_snack_baking",
+    "ornamental_some_varieties_grown_for_their_spring_blossoms"
+  ],
+  "originAndDomesticationHistory": "The peach (Prunus persica) is native to Northwest China, specifically in the region between the Tarim Basin and the northern slopes of the Kunlun Mountains. Archaeological evidence indicates that peaches were cultivated in China as far back as the Neolithic period, around 6000 BCE. The fruit held cultural significance in China and was associated with longevity and immortality. From China, peaches spread westwards via the Silk Road to Persia (modern-day Iran), which is why its specific name is 'persica' (meaning Persian). Alexander the Great is credited by some with introducing the peach to Greece. The Romans later cultivated peaches throughout their empire. Peaches were introduced to the Americas by Spanish explorers in the 16th century. Over centuries of cultivation, thousands of cultivars have been developed worldwide, varying in flesh color (yellow, white, red), stone adhesion (freestone vs. clingstone), and skin texture (fuzzy peaches vs. smooth-skinned nectarines).",
+  "climaticRequirements": {
+    "temperature": "Peaches thrive in temperate climates. They require a significant winter chilling period (typically 600-900 hours with temperatures between 0-7°C or 32-45°F, depending on the cultivar) to break dormancy and ensure proper bud development and flowering. Flowers and young fruit are susceptible to damage from late spring frosts. Warm summers with optimal temperatures between 20-30°C (68-86°F) are needed for fruit ripening and sugar development.",
+    "rainfall": "Requires moderate annual rainfall, typically between 750mm and 1000mm, well-distributed throughout the growing season. Good soil drainage is essential, as peach trees do not tolerate waterlogged conditions. Supplemental irrigation is often necessary, especially during dry periods and critical growth stages. High humidity can increase the risk of fungal diseases like brown rot.",
+    "altitude": "Can be grown successfully from lowlands to moderate altitudes (up to 1500 meters or higher in some temperate regions), provided that chilling requirements are met and the site is protected from severe frosts during vulnerable stages."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained sandy loam or loamy soils. Good soil aeration is crucial for root health. The ideal soil pH is slightly acidic to neutral, typically between 6.0 and 7.0. Peach trees are sensitive to heavy clay soils with poor drainage, which can lead to root rot (Phytophthora). They also do not perform well in highly alkaline or saline soils.",
+  "irrigationAndWaterNeeds": "Requires regular and deep watering, especially for young trees during their establishment phase (first 1-2 years). For mature, fruit-bearing trees, consistent moisture is critical during dry spells, and particularly during the flowering period and the final swell stage of fruit development (about 2-4 weeks before harvest). Water stress during these times can significantly reduce fruit size, quality, and overall yield. Drip irrigation or micro-sprinklers are commonly used to provide efficient and targeted watering. Avoid overwatering, especially in heavier soils.",
+  "plantingAndHarvestCycles": "Peach trees are commonly propagated by grafting or budding desired fruit-bearing cultivars onto compatible peach seedling rootstocks or specific clonal rootstocks (which can influence tree size, vigor, disease resistance, and soil adaptability). Bare-root trees are typically planted in late winter or early spring while dormant. Full sun exposure (at least 6 hours per day) is essential for good fruit quality and yield. Grafted trees usually start bearing fruit within 2-4 years of planting. Peach trees primarily bear fruit on wood that grew during the previous season (one-year-old wood). Pruning is essential for maintaining tree vigor, an open canopy structure (often an open center or vase shape), and ensuring good light penetration and air circulation, which helps in fruit ripening and disease reduction. Fruit thinning (removing some young fruits when they are small) is crucial to ensure the remaining fruits grow to a good size and to prevent branch breakage. Peaches are harvested when they reach full ripeness on the tree, indicated by skin color change (the background color shifts from green to yellow or creamy white, with a characteristic red blush depending on the variety), a slight softening of the flesh (especially near the stem end), and the development of a sweet aroma. They do not increase in sugar content significantly after picking, only soften. The harvest season is primarily in the summer (June to August/September in the Northern Hemisphere), varying by cultivar and region. Fruits are hand-picked carefully to avoid bruising.",
+  "pestAndDiseaseManagement": "Common Pests: Plum curculio, Oriental fruit moth, peach tree borer, aphids (e.g., green peach aphid), various scale insects, spider mites, and tarnished plant bugs can cause significant damage to fruit and trees. Common Diseases: Peach leaf curl (Taphrina deformans) is a very common fungal disease affecting leaves in spring. Brown rot (Monilinia fructicola) is a major fungal disease causing blossom blight and fruit rot, especially in warm, humid conditions. Powdery mildew, bacterial spot (Xanthomonas arboricola pv. pruni), peach scab (Cladosporium carpophilum), various canker diseases (e.g., Cytospora, Leucostoma), and root rot (Phytophthora) in wet soils are also important. Management Strategies: Integrated Pest Management (IPM) is critical for successful peach cultivation. This includes selecting disease-resistant varieties and rootstocks when available, applying dormant sprays (e.g., copper fungicides for peach leaf curl), practicing good orchard sanitation (such as removing and destroying mummified fruit and diseased wood), proper pruning to improve air circulation, effective fruit thinning to reduce brown rot spread, monitoring pest populations, and applying appropriate insecticides and fungicides in a timely manner based on pest/disease pressure and economic thresholds. Mating disruption for Oriental fruit moth can also be effective.",
+  "postHarvestHandling": "Peaches are highly perishable and bruise easily, requiring careful handling during and after harvest. Pre-cooling (e.g., hydro-cooling or forced-air cooling) shortly after picking is essential to remove field heat and extend shelf life. They are typically stored at cool temperatures, around 0°C (32°F), with high relative humidity (90-95%). Under optimal storage conditions, peaches can last for about 1-3 weeks, depending on the variety and initial ripeness. They are often packed in single layers with protective padding or in cell-pack trays to prevent bruising during transport and handling. Controlled atmosphere storage can further extend shelf life for some varieties.",
+  "majorProducingCountriesOrRegions": [
+    "China (by far the world's largest producer of peaches and nectarines)",
+    "Spain",
+    "Italy",
+    "United States (major production in California, South Carolina, Georgia, New Jersey)",
+    "Greece",
+    "Turkey",
+    "Iran",
+    "Chile (major Southern Hemisphere exporter)",
+    "Argentina",
+    "Egypt"
+  ],
+  "marketValueAndGlobalDemand": "Peaches and nectarines are major temperate fruits with high global demand for both fresh consumption and processing (canning, freezing, jams, juices, purees). China dominates world production. There is significant international trade in fresh peaches, especially to supply markets during their off-season. The market value depends on factors such as variety (e.g., yellow vs. white flesh, freestone vs. clingstone), fruit size, quality (appearance, firmness, sugar content), and seasonality. 'Freestone' varieties, where the flesh easily separates from the stone, are generally preferred for fresh eating, while 'clingstone' varieties, where the flesh adheres to the stone, are often used for processing. The demand for fresh, high-quality peaches remains strong globally.",
+  "staticRecipes": [
+    {
+      "name": "Classic Peach Cobbler",
+      "description": "A warm and comforting dessert with sweet, juicy peaches and a buttery biscuit topping.",
+      "ingredients": [
+        "For filling: 5-6 ripe peaches, peeled, pitted, and sliced",
+        "1/4 cup granulated sugar",
+        "1 tbsp lemon juice",
+        "1/4 tsp cinnamon",
+        "For topping: 1 cup all-purpose flour, 1/4 cup granulated sugar, 1 tsp baking powder, 1/4 tsp salt, 1/4 cup cold butter (cubed), 1/4 cup milk",
+        "1 tbsp melted butter for brushing (optional)"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Filling: In a large bowl, gently toss sliced peaches with sugar, lemon juice, and cinnamon. Pour into a 9x9 inch baking dish or similar.",
+        "Topping: In another bowl, whisk together flour, sugar, baking powder, and salt. Cut in cold butter until mixture resembles coarse crumbs. Stir in milk until just combined.",
+        "Drop spoonfuls of the topping mixture over the peaches.",
+        "If desired, brush the topping with melted butter.",
+        "Bake for 30-40 minutes, or until the topping is golden brown and the peach filling is bubbly. Let cool slightly before serving warm, perhaps with vanilla ice cream."
+      ]
+    },
+    {
+      "name": "Grilled Peaches with Honey and Yogurt",
+      "description": "Grilling brings out the sweetness of peaches, perfect for a light dessert or breakfast.",
+      "ingredients": [
+        "2-3 ripe but firm peaches, halved and pitted",
+        "1 tbsp olive oil or melted butter",
+        "2 tbsp honey or maple syrup",
+        "1 cup plain Greek yogurt",
+        "Chopped nuts or granola for topping (optional)"
+      ],
+      "steps": [
+        "Preheat grill to medium heat. Clean and lightly oil the grates.",
+        "Brush the cut sides of the peach halves with olive oil or melted butter.",
+        "Place peaches cut-side down on the grill. Grill for 3-5 minutes per side, or until they have nice grill marks and are slightly softened.",
+        "Remove peaches from the grill. Serve warm topped with a dollop of Greek yogurt, a drizzle of honey or maple syrup, and a sprinkle of nuts or granola if desired."
+      ]
+    },
+    {
+      "name": "Fresh Peach Salsa",
+      "description": "A sweet and savory salsa, great with grilled chicken, fish, or tortilla chips.",
+      "ingredients": [
+        "2 ripe peaches, peeled, pitted, and diced",
+        "1/2 red bell pepper, diced",
+        "1/4 red onion, finely chopped",
+        "1 jalapeño, minced (optional, seeds removed for less heat)",
+        "1/4 cup chopped fresh cilantro",
+        "Juice of 1 lime",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "In a medium bowl, combine diced peaches, red bell pepper, red onion, jalapeño (if using), and cilantro.",
+        "Add lime juice and season with salt and pepper to taste.",
+        "Stir gently to combine all ingredients.",
+        "For best flavor, cover and refrigerate for at least 15-30 minutes to allow flavors to meld before serving."
+      ]
+    }
+  ]
+}

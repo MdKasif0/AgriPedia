@@ -1,0 +1,162 @@
+{
+  "id": "karonda",
+  "commonName": "Karonda (Bengal Currant)",
+  "scientificName": "Carissa carandas",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Karvand_Fruit.jpg/800px-Karvand_Fruit.jpg",
+  "description": "Karonda (Carissa carandas) is a hardy, drought-tolerant, thorny shrub that produces small, berry-sized fruits. The fruits are green when unripe (used for pickles and chutneys), turning to a rich dark purple or black when ripe. Ripe fruits have a distinctly tart to sweet-sour flavor and are used in jams, jellies, and sometimes as a substitute for cranberries.",
+  "origin": "Indian subcontinent and adjoining regions of Southeast Asia",
+  "localNames": [
+    "Bengal Currant",
+    "Christ's Thorn",
+    "Karvand (Marathi)",
+    "Karamcha (Bengali)",
+    "Kalakai (Tamil)",
+    "Vakkay (Telugu)",
+    "Karau(n)da (Hindi)"
+  ],
+  "regions": [
+    "India (widely across states like Maharashtra, Goa, Karnataka, Rajasthan, Gujarat, Bihar, West Bengal, Uttar Pradesh, Himalayas)",
+    "Nepal",
+    "Sri Lanka",
+    "Pakistan",
+    "Bangladesh",
+    "Afghanistan",
+    "Myanmar",
+    "Malaysia",
+    "Indonesia",
+    "Thailand"
+  ],
+  "seasons": [
+    "Rainy season to early autumn (typically July to September/October in India and surrounding regions)"
+  ],
+  "nutrition": {
+    "calories": "71 kcal per 100g (ripe fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 16.3,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.2,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.8,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 9,
+        "unit": "mg",
+        "rdi": "10%"
+      },
+      {
+        "name": "Vitamin A (from carotenoids)",
+        "value": 6,
+        "unit": "µg RAE",
+        "rdi": "1%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Iron",
+        "value": 1.3,
+        "unit": "mg",
+        "rdi": "7%"
+      },
+      {
+        "name": "Calcium",
+        "value": 21,
+        "unit": "mg",
+        "rdi": "2%"
+      },
+      {
+        "name": "Phosphorus",
+        "value": 28,
+        "unit": "mg",
+        "rdi": "4%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant that boosts the immune system and supports skin health.",
+    "Traditionally valued for its iron content, believed to help in managing anemia.",
+    "Used in Ayurvedic medicine for digestive ailments like acidity and indigestion; its tartness can stimulate appetite.",
+    "Contains pectin, which can act as a gelling agent and provide some dietary fiber."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Latex sensitivity (rare)",
+      "severity": "Mild",
+      "details": "The plant and unripe fruits exude a white latex which could be an irritant for individuals with latex sensitivity. Generally, ripe fruits are well-tolerated, especially when cooked or pickled."
+    }
+  ],
+  "cultivationProcess": "Karonda is a very hardy, drought-tolerant, and resilient shrub that can grow in a wide range of soils, including marginal and wasteland areas. It's often propagated from seeds sown during the monsoon season (August-September) or vegetatively through budding or inarching. The plant is thorny and grows rapidly, making it suitable for use as a protective hedge. It requires minimal care once established. Detailed cultivation aspects are covered in specific sections like climaticRequirements, soilPreferences etc.",
+  "growthDuration": "Plants grown from seed typically begin to bear fruit within 2-3 years of planting. Flowering usually occurs in March (Northern India), and fruits ripen from July to September/October. More details in plantingAndHarvestCycles.",
+  "sustainabilityTips": [
+    "Its hardy and drought-tolerant nature makes it an excellent crop for arid and semi-arid regions, requiring significantly less water than many other fruit crops.",
+    "Can be grown as a live fence or hedge, providing fruit as well as acting as a natural barrier, preventing soil erosion, and offering habitat for small wildlife.",
+    "Utilizes marginal lands effectively."
+  ],
+  "carbonFootprintInfo": "Karonda grown locally, especially in regions where it thrives with minimal agricultural inputs (like parts of India), has a very low carbon footprint. Its hardiness reduces the need for intensive farming practices, fertilizers, and pesticides. Transportation to distant markets would be the primary contributor to its carbon footprint.",
+  "uses": [
+    "culinary_pickles_unripe_fruit_chutneys_relishes",
+    "culinary_jams_jellies_syrups_tarts_ripe_fruit",
+    "culinary_souring_agent_in_curries_unripe_fruit",
+    "culinary_substitute_for_cranberries",
+    "medicinal_traditional_ayurvedic_fruit_leaves_roots_for_acidity_indigestion_anemia_appetizer",
+    "live_fencing_protective_hedge_due_to_thorns",
+    "ornamental_shrub",
+    "wood_occasionally_for_small_implements_fuel"
+  ],
+  "originAndDomesticationHistory": "Karonda (Carissa carandas) is native to the Indian subcontinent, including India, Nepal, Sri Lanka, Bangladesh, Pakistan, and Afghanistan, and extends into parts of Southeast Asia such as Myanmar, Malaysia, and Indonesia. It is an ancient plant in these regions, often found growing wild or in a semi-domesticated state. While it hasn't undergone formal domestication to the extent of major fruit crops, it has been utilized and managed by local populations for centuries for its versatile fruit (both unripe and ripe), medicinal properties, and its effectiveness as a hardy, thorny hedge plant. Specific named cultivars are not widely documented, indicating that its cultivation has largely relied on seed propagation of locally adapted types.",
+  "climaticRequirements": {
+    "temperature": "Karonda is well-suited to tropical and subtropical climates and thrives in warm conditions. It is highly drought-tolerant and can withstand high summer temperatures, often up to 40-45°C (104-113°F). Once established, mature plants can also tolerate mild frost for short durations, but prolonged or severe frost is detrimental. It prefers frost-free conditions for optimal growth and fruiting.",
+    "rainfall": "It is adapted to arid and semi-arid conditions and can grow successfully in areas with annual rainfall ranging from 500mm to over 2000mm. However, it performs very well in drier regions. While it can survive significant dry spells, a distinct dry period can be beneficial. Excessive rainfall or high humidity during the flowering period might negatively affect fruit set.",
+    "altitude": "Commonly found growing from sea level up to elevations of 1800 meters (approx. 6000 feet) in hilly and mountainous regions of its native range."
+  },
+  "soilPreferences": "This species is highly adaptable and can grow in a wide array of soil types, including poor, sandy, rocky, lateritic, alkaline, and even mildly saline soils. However, it prefers well-drained soils. While it can tolerate various soil textures, it performs best in light soils with good aeration. It is not suited to waterlogged or permanently wet conditions.",
+  "irrigationAndWaterNeeds": "Karonda is exceptionally drought-tolerant once its deep root system is established, typically after the first 1-2 years. Young plants require regular watering to ensure survival and proper growth. For mature plants, irrigation is generally not necessary if there is some seasonal rainfall. However, in very arid regions or during extended severe droughts, supplemental watering during the fruit development stage can improve yield and fruit quality. Over-irrigation should be avoided.",
+  "plantingAndHarvestCycles": "Propagation is commonly done using seeds, which germinate readily, especially if sown fresh during the monsoon season (e.g., August-September in India). Vegetative propagation through stem cuttings or layering is also practiced, particularly if specific plant characteristics are desired. Seedling plants typically start bearing fruit within 2-3 years of planting. Flowering usually occurs in early spring (around February-March in Northern India). The fruits ripen during the rainy season and into early autumn, generally from July to September or October. Fruits are harvested by hand when they reach the desired stage of maturity: green and firm for pickles, or fully colored (dark purple to black) and slightly softer for jams or fresh (though tart) consumption. One plant can yield several kilograms of fruit.",
+  "pestAndDiseaseManagement": "Karonda is known for its hardiness and is generally not severely affected by many pests or diseases, making it a low-maintenance crop. Occasionally, pests such as aphids, mealybugs, or scale insects may appear on young shoots or leaves, but they rarely cause significant economic damage. Fruit flies might infest ripe fruits in some areas if left on the bush for too long. Diseases are also uncommon; leaf spot or fruit rot might occur under unusually humid or waterlogged conditions. Due to its resilience, it typically requires minimal to no specific pest and disease control measures, especially when grown in suitable environments.",
+  "postHarvestHandling": "Unripe (green) karonda fruits, intended for pickling, are relatively firm and can be stored for a few days at room temperature. Ripe fruits are more perishable and should be used within 2-4 days if kept at room temperature. Refrigeration can extend the shelf life of ripe karondas for about a week. They are often processed into pickles, jams, jellies, or chutneys for longer preservation, as fresh consumption of ripe fruit is limited by its tartness for some palates. The latex exuded from cut fruit can be managed by briefly soaking in water.",
+  "marketValueAndGlobalDemand": "Karonda is primarily a fruit of local and regional importance within South and Southeast Asia, particularly in India. It is highly valued for making pickles, chutneys, and preserves, which are staples in Indian cuisine. The fresh fruit has a seasonal market presence. There is limited international trade for fresh karonda due to its specific culinary uses and regional popularity. However, there is growing interest in its nutraceutical properties (rich in iron and Vitamin C) and its potential as a hardy, low-input crop suitable for marginal lands and agroforestry systems. Processed karonda products, such as pickles and chutneys, have a wider market reach, including ethnic food stores internationally.",
+  "staticRecipes": [
+    {
+      "name": "Spicy Karonda Pickle (Karvand Achar)",
+      "description": "A traditional Indian pickle made from tart karonda berries, celebrated for its spicy, tangy, and slightly sweet flavor. It's a popular condiment served with meals.",
+      "ingredients": [
+        "250g fresh karonda berries, washed and halved (seeds removed if large and hard)",
+        "2-3 tablespoons mustard oil",
+        "1 teaspoon mustard seeds (rai)",
+        "1/2 teaspoon fenugreek seeds (methi dana)",
+        "1/4 teaspoon asafoetida (hing)",
+        "1 tablespoon red chili powder (adjust to taste)",
+        "1/2 teaspoon turmeric powder (haldi)",
+        "1 tablespoon salt (or to taste)",
+        "1/2 teaspoon fennel seeds (saunf), coarsely ground (optional)"
+      ],
+      "steps": [
+        "Wash the karonda berries thoroughly. Slice them in half. If the seeds are large and hard, remove them; otherwise, they can be left in.",
+        "Optional: Sun-dry the halved karondas on a clean cloth for 1-2 hours to remove excess moisture. This helps in extending the shelf life of the pickle.",
+        "Heat the mustard oil in a small pan until it just starts to smoke. Remove from heat and let it cool down until it's warm (not hot).",
+        "Once the oil is warm, add the mustard seeds and fenugreek seeds. Allow them to splutter for a few seconds.",
+        "Add the asafoetida to the oil and stir briefly.",
+        "Turn off the heat completely. Add the red chili powder, turmeric powder, salt, and optional coarsely ground fennel seeds to the warm oil. Mix all the spices well.",
+        "Add the prepared karonda berries to this spice-oil mixture. Stir thoroughly to ensure all the berries are evenly coated with the spices.",
+        "Transfer the mixture to a clean, dry glass jar with an airtight lid.",
+        "The pickle can be consumed after 1-2 days, as this allows the flavors to meld and the karondas to soften slightly. For a longer shelf life, ensure the pickle is covered with a layer of oil if possible, or store it in the refrigerator after it has matured for a few days at room temperature."
+      ]
+    }
+  ]
+}

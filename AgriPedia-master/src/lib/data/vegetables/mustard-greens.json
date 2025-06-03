@@ -1,0 +1,169 @@
+{
+  "id": "mustard-greens",
+  "commonName": "Mustard Greens (Sarson)",
+  "scientificName": "Brassica juncea",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhVBDtAljkEX4O0p9Iba59OF0d9MxwgVuR4PdfPh_g283lNNAE6isGRU3&s=10",
+  "description": "The leaves of the mustard plant, Brassica juncea. They have a pungent, peppery flavor that mellows with cooking. A popular vegetable in various cuisines, especially in Indian (Punjabi) and Southern US cooking.",
+  "origin": "Himalayan region of India",
+  "localNames": [
+    "Sarson ka Saag (Hindi/Punjabi dish)",
+    "Gai Choy (Chinese)",
+    "Mostaza (Spanish)"
+  ],
+  "regions": [
+    "India",
+    "China",
+    "Nepal",
+    "Southern United States"
+  ],
+  "seasons": [
+    "Winter"
+  ],
+  "nutrition": {
+    "calories": "27 kcal per 100g (cooked)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 2.9,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 4.7,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 3.2,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin K",
+        "value": 257.5,
+        "unit": "µg",
+        "rdi": "322%"
+      },
+      {
+        "name": "Vitamin A",
+        "value": 187,
+        "unit": "µg RAE",
+        "rdi": "21%"
+      },
+      {
+        "name": "Vitamin C",
+        "value": 70,
+        "unit": "mg",
+        "rdi": "117%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Calcium",
+        "value": 115,
+        "unit": "mg",
+        "rdi": "12%"
+      },
+      {
+        "name": "Manganese",
+        "value": 0.535,
+        "unit": "mg",
+        "rdi": "27%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Excellent source of Vitamin K, crucial for blood clotting and bone health.",
+    "Rich in Vitamin A and Vitamin C, supporting immune function and vision.",
+    "Contains glucosinolates, compounds with potential anti-cancer properties.",
+    "Good source of dietary fiber and antioxidants."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassica Sensitivity",
+      "severity": "Mild",
+      "details": "Like other cruciferous vegetables, can cause gas. Their pungent flavor might be strong for some."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Planting: Cool-season crop. Sow seeds directly in early spring or late summer/early fall.\n2. Soil: Well-drained, fertile soil rich in organic matter. pH 6.0-7.5.\n3. Spacing: Sow seeds thinly, 1/2 inch deep. Thin seedlings to 6-12 inches apart.\n4. Watering: Keep soil consistently moist.\n5. Harvesting: Harvest young leaves when they are tender (4-6 inches long) for a milder flavor, or let them mature for a more pungent taste. Can be harvested as cut-and-come-again.",
+  "growthDuration": "30-50 days from sowing to first harvest of young leaves.",
+  "sustainabilityTips": [
+    "Store unwashed mustard greens in a plastic bag in the refrigerator crisper for 3-5 days.",
+    "Wash thoroughly before use to remove any grit.",
+    "Often cooked with other greens like spinach or bathua (chenopodium) in Indian cuisine."
+  ],
+  "carbonFootprintInfo": "Low, especially when grown locally (0.3-0.6 kg CO2e/kg).",
+  "staticRecipes": [
+    {
+      "name": "Sarson ka Saag (Mustard Greens Curry)",
+      "description": "A traditional Punjabi dish made from mustard greens, often served with makki di roti (corn flatbread) and a dollop of butter.",
+      "ingredients": [
+        "1 lb mustard greens (sarson), chopped",
+        "1/2 lb spinach (palak), chopped",
+        "1/4 lb bathua (chenopodium) or more spinach, chopped (optional)",
+        "1 onion, chopped",
+        "1 inch ginger, grated",
+        "2-3 cloves garlic, minced",
+        "1-2 green chilies, chopped",
+        "2 tbsp cornmeal (makki ka atta) or gram flour (besan)",
+        "Salt to taste",
+        "Water",
+        "For tempering: 2 tbsp ghee, 1/2 tsp cumin seeds, pinch of asafoetida, 1 dried red chili"
+      ],
+      "steps": [
+        "Wash greens thoroughly. Pressure cook mustard greens, spinach, and bathua with a little water and salt for 4-5 whistles or until very soft. Alternatively, boil until tender.",
+        "Let cool slightly, then blend the cooked greens to a coarse or smooth paste.",
+        "In a separate pan, heat some ghee or oil. Add chopped onion, sauté until golden. Add ginger, garlic, and green chilies. Sauté.",
+        "Add the blended greens paste. Stir in cornmeal/besan mixed with a little water. Cook for 10-15 minutes, stirring, until thickened and flavors meld. Add more water if too thick.",
+        "Tempering: Heat ghee in a small pan. Add cumin seeds, asafoetida, and dried red chili. Pour over the saag. Serve hot."
+      ]
+    },
+    {
+      "name": "Simple Sautéed Mustard Greens",
+      "description": "A quick way to cook mustard greens, retaining some of their peppery bite.",
+      "ingredients": [
+        "1 bunch mustard greens, washed and roughly chopped",
+        "1 tbsp olive oil or sesame oil",
+        "2 cloves garlic, thinly sliced",
+        "Pinch of red pepper flakes (optional)",
+        "Salt to taste",
+        "Splash of soy sauce or lemon juice (optional)"
+      ],
+      "steps": [
+        "Heat oil in a large skillet or wok over medium-high heat.",
+        "Add sliced garlic and red pepper flakes (if using). Cook for about 30 seconds until fragrant.",
+        "Add chopped mustard greens (they will wilt down considerably).",
+        "Stir-fry for 3-5 minutes, or until greens are wilted but still bright green.",
+        "Season with salt. If desired, add a splash of soy sauce or lemon juice in the last minute of cooking.",
+        "Serve immediately as a side dish."
+      ]
+    },
+    {
+      "name": "Mustard Greens and Potato Stir-fry",
+      "description": "A flavorful stir-fry combining the pungency of mustard greens with hearty potatoes.",
+      "ingredients": [
+        "1 bunch mustard greens, chopped",
+        "2 medium potatoes, peeled and diced",
+        "1 onion, sliced",
+        "1 tbsp oil",
+        "1/2 tsp mustard seeds",
+        "1/2 tsp cumin seeds",
+        "1/4 tsp turmeric powder",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Heat oil in a pan. Add mustard seeds and cumin seeds. When they splutter, add sliced onion and sauté until translucent.",
+        "Add diced potatoes and turmeric powder. Sauté for 5 minutes.",
+        "Add chopped mustard greens and salt. Mix well.",
+        "Cover and cook on low-medium heat for 10-15 minutes, or until potatoes and greens are tender, stirring occasionally.",
+        "Uncover and cook for a few more minutes if there's excess moisture. Serve hot."
+      ]
+    }
+  ]
+}

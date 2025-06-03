@@ -1,0 +1,213 @@
+{
+  "id": "plum",
+  "commonName": "Plum",
+  "scientificName": "Prunus domestica (European Plum), Prunus salicina (Japanese Plum), and other Prunus spp.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Plums_on_market.JPG/800px-Plums_on_market.JPG",
+  "description": "A fruit of several species in the Prunus genus, subgenus Prunus. Mature plum fruits are drupes, varying widely in size, shape, skin color (purple, red, yellow, green, black), and flesh color (yellow, amber, red). They may have a dusty-white waxy coating (wax bloom). Flavor ranges from sweet to tart. Dried plums are known as prunes.",
+  "origin": "European Plum (P. domestica): Caucasus Mountains, Eastern Europe or Western Asia. Japanese Plum (P. salicina): China. American Plums (e.g., P. americana): North America.",
+  "localNames": [
+    "Ciruela (Spanish)",
+    "Prune (French - also means dried plum/prune)",
+    "Pflaume (German - for P. domestica), Zwetschge (German - specific type of P. domestica)",
+    "Susina (Italian)",
+    "Aloo Bukhara (Hindi/Urdu - for some varieties)",
+    "Ume (梅 - Japanese, often refers to P. mume, a related species used for pickling/liqueurs)"
+  ],
+  "regions": [
+    "China (world's largest producer of plums)",
+    "Romania",
+    "Serbia",
+    "United States (California, Pacific Northwest)",
+    "Turkey",
+    "Chile (major exporter)",
+    "France",
+    "Spain",
+    "Italy",
+    "South Africa"
+  ],
+  "seasons": [
+    "Summer to Early Autumn (typically June to September in the Northern Hemisphere, depending on variety and location)"
+  ],
+  "nutrition": {
+    "calories": "46 kcal per 100g (fresh fruit)",
+    "macronutrients": [
+      {
+        "name": "Protein",
+        "value": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Carbohydrates",
+        "value": 11.42,
+        "unit": "g"
+      },
+      {
+        "name": "Fat",
+        "value": 0.28,
+        "unit": "g"
+      },
+      {
+        "name": "Fiber",
+        "value": 1.4,
+        "unit": "g"
+      }
+    ],
+    "vitamins": [
+      {
+        "name": "Vitamin C",
+        "value": 9.5,
+        "unit": "mg",
+        "rdi": "11-16%"
+      },
+      {
+        "name": "Vitamin K",
+        "value": 6.4,
+        "unit": "µg",
+        "rdi": "5-8%"
+      },
+      {
+        "name": "Vitamin A (as beta-carotene)",
+        "value": 17,
+        "unit": "µg RAE",
+        "rdi": "2%"
+      }
+    ],
+    "minerals": [
+      {
+        "name": "Potassium",
+        "value": 157,
+        "unit": "mg",
+        "rdi": "3-5%"
+      },
+      {
+        "name": "Copper",
+        "value": 0.057,
+        "unit": "mg",
+        "rdi": "6%"
+      }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of dietary fiber, which aids digestion, helps prevent constipation, and can contribute to maintaining healthy cholesterol levels.",
+    "Rich in antioxidants, including phenolic compounds and anthocyanins (especially in dark-colored varieties), which help protect against cell damage.",
+    "May help improve bone health and reduce the risk of osteoporosis, particularly dried plums (prunes).",
+    "Can help regulate blood sugar levels due to their relatively low glycemic index and fiber content.",
+    "Provide Vitamin C and Vitamin K, important for immune function and blood clotting/bone health, respectively."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Oral Allergy Syndrome (OAS)",
+      "severity": "Mild",
+      "details": "Can occur in individuals allergic to birch pollen (Pollen Food Allergy Syndrome). Symptoms typically include itching or swelling of the mouth, lips, and throat after consuming fresh plums."
+    },
+    {
+      "name": "Sorbitol Content (especially in prunes)",
+      "severity": "Mild (digestive discomfort)",
+      "details": "Plums, and especially dried plums (prunes), contain sorbitol, a sugar alcohol that can have a natural laxative effect if consumed in large quantities, potentially causing gas, bloating, or diarrhea in sensitive individuals."
+    },
+    {
+      "name": "Sulfite Sensitivity (in some dried prunes)",
+      "severity": "Mild to Moderate",
+      "details": "Some commercially dried plums (prunes) may be treated with sulfites to preserve color and extend shelf life. Individuals sensitive to sulfites may experience allergic reactions."
+    }
+  ],
+  "cultivationProcess": "Step-by-Step Growing Guide:\n1. Climate: Temperate climates. Different varieties have different chilling requirements (hours below 7°C/45°F) for bud break.\n2. Soil: Well-drained, fertile loamy soil. Slightly acidic to neutral pH (6.0-7.0).\n3. Propagation: Usually by grafting or budding desired cultivars onto compatible plum or peach rootstocks.\n4. Planting: Plant in full sun. Allow adequate space for tree growth, depending on rootstock and variety.\n5. Watering: Regular watering, especially during dry periods and critical growth stages like fruit development.\n6. Fertilizing: Apply balanced fertilizer in early spring. Avoid excessive nitrogen.\n7. Pruning: Prune annually during dormancy to maintain an open structure, remove dead/diseased wood, and encourage fruit production (plums bear on spurs and/or one-year-old wood, depending on type).\n8. Thinning: Thin young fruits to prevent branch breakage, ensure larger fruit size, and promote consistent annual bearing.",
+  "growthDuration": "Grafted trees can start bearing fruit in 3-5 years. Fruit matures in late summer to early autumn, depending on the variety and climate.",
+  "sustainabilityTips": [
+    "Store ripe plums in the refrigerator for a few days to a week. Some firmer varieties store longer.",
+    "Plums can be eaten fresh, dried (to make prunes), or used in a wide variety of culinary applications like jams, jellies, sauces, and baked goods, allowing for full utilization of the harvest.",
+    "Compost plum pits and any spoiled fruit."
+  ],
+  "carbonFootprintInfo": "Moderate (estimated 0.4-0.9 kg CO2e/kg for conventionally grown and transported plums). Locally grown plums consumed in season have a lower footprint. Prunes (dried plums) have a different footprint profile due to drying processes and reduced weight for transport.",
+  "uses": [
+    "fresh_consumption_eaten_raw",
+    "dried_fruit_prunes_especially_from_prunus_domestica_varieties",
+    "processed_products_jams_jellies_preserves_compotes_fruit_butters_sauces_plum_sauce",
+    "culinary_baking_pies_tarts_cakes_cobblers_clafoutis",
+    "beverages_plum_juice_plum_wine_slivovitz_plum_brandy_umeshu_japanese_plum_liqueur_using_prunus_mume",
+    "flavoring_for_yogurt_ice_cream_sorbet",
+    "ornamental_some_varieties_grown_for_their_spring_blossoms_or_foliage"
+  ],
+  "originAndDomesticationHistory": "The origins of plums are diverse, depending on the species. European Plum (Prunus domestica) is believed to be an ancient natural hybrid of cherry plum (Prunus cerasifera) and sloe (Prunus spinosa), likely originating in the Caucasus Mountains region, Eastern Europe, or Western Asia. It has been cultivated since ancient times and was known to the Romans and Greeks. Japanese Plums (Prunus salicina) originated in China and were later introduced to Japan, where many cultivars were developed. They were subsequently introduced to other parts of the world, including California in the late 19th century. American Plums (e.g., Prunus americana, Prunus hortulana) are native to North America and were utilized by Native Americans before European settlement. Each group has a distinct history of cultivation and selection for desirable traits.",
+  "climaticRequirements": {
+    "temperature": "Plums are best suited to temperate climates. Most varieties require a significant period of winter chilling (typically 400-1000+ hours with temperatures between 0-7°C or 32-45°F) to break dormancy and ensure proper flowering and fruit set. Flowers are susceptible to damage from late spring frosts. Warm summers are needed for fruit ripening, but extreme heat can be detrimental to some varieties.",
+    "rainfall": "Requires moderate annual rainfall, generally between 750mm and 1200mm, well-distributed throughout the growing season. Good soil drainage is essential, as plum trees do not tolerate waterlogged conditions. Supplemental irrigation is often necessary in drier climates or during prolonged dry spells to ensure good fruit development and yield.",
+    "altitude": "Can be cultivated from lowlands up to moderate altitudes, provided that chilling requirements are met and the site is protected from severe frosts during vulnerable stages. Specific altitude suitability can vary by species and cultivar."
+  },
+  "soilPreferences": "Prefers deep, fertile, well-drained loamy or clay-loam soils. Good soil aeration is important for healthy root growth. The ideal soil pH is slightly acidic to neutral, typically between 6.0 and 7.0. While adaptable to a range of soil types, plums generally do not perform well in very heavy, poorly drained clay soils or very light, sandy soils unless amended with organic matter.",
+  "irrigationAndWaterNeeds": "Young plum trees require regular and consistent watering to ensure proper establishment. For mature, fruit-bearing trees, adequate soil moisture is crucial, especially during dry periods and critical growth stages such as flowering, fruit set, and particularly during fruit development (final swell stage). Water stress during these times can significantly reduce fruit size, quality, and overall yield. Drip irrigation or micro-sprinklers are commonly used in commercial orchards.",
+  "plantingAndHarvestCycles": "Plum trees are commonly propagated by grafting or budding desired fruit-bearing cultivars onto compatible plum or sometimes peach rootstocks, which can influence tree size, vigor, and disease resistance. Planting is usually done in late winter or early spring while trees are dormant. Full sun exposure is essential for good fruit quality and yield. Grafted trees typically start bearing fruit within 3-5 years of planting. Pruning is important to develop a strong framework, maintain tree size, ensure good light penetration, and encourage regular fruit production (as plums bear fruit on both spurs and one-year-old wood, depending on the species and cultivar). Fruit thinning is often necessary to prevent branch breakage from overcropping and to ensure larger, higher-quality fruits. Plums are harvested when they reach full color and firmness appropriate for their variety; some varieties soften slightly when ripe, while others remain relatively firm. The harvest season is generally from summer to early autumn (June to September in the Northern Hemisphere), varying widely by cultivar and region. Fruits are typically hand-picked carefully to avoid bruising.",
+  "pestAndDiseaseManagement": "Common Pests: Plum curculio is a major pest of stone fruits in North America, damaging young fruit. Aphids, scale insects, spider mites, Oriental fruit moth, and codling moth (less common than in apples/pears but can occur) are also problematic. Birds can cause significant damage to ripening fruit. Common Diseases: Brown rot (Monilinia fructicola) is a very destructive fungal disease affecting blossoms and fruit, especially in warm, humid conditions. Black knot (Apiosporina morbosa) is a common fungal disease causing black, warty growths on branches. Bacterial spot (Xanthomonas arboricola pv. pruni), plum pockets (Taphrina communis), silver leaf (Chondrostereum purpureum), and root rot (in poorly drained soils) can also be significant. Management Strategies: Integrated Pest Management (IPM) is crucial. This involves selecting resistant varieties where available, applying dormant oil sprays, practicing good orchard sanitation (e.g., removing mummified fruit and pruning out black knots and cankered wood), proper pruning for good air circulation, fruit thinning to reduce brown rot spread, monitoring for pests, and applying appropriate insecticides and fungicides in a timely manner based on pest/disease pressure and economic thresholds.",
+  "postHarvestHandling": "Plums should be handled carefully to avoid bruising, as they are relatively perishable. Pre-cooling after harvest can help extend shelf life. Storage conditions depend on the variety and intended use. Fresh market plums can typically be stored for 2-4 weeks at cool temperatures (around 0°C or 32°F) with high relative humidity (90-95%). Plums intended for drying into prunes are harvested when fully ripe or slightly overripe to maximize sugar content. Some plum varieties ripen further and soften after picking if harvested mature but firm, while others are best ripened on the tree.",
+  "majorProducingCountriesOrRegions": [
+    "China (world's largest producer of plums and prunes)",
+    "Romania",
+    "Serbia",
+    "United States (primarily California for dried prunes and fresh plums)",
+    "Turkey",
+    "Chile (major exporter to Northern Hemisphere)",
+    "France (known for 'Reine Claude' greengages and prunes d'Agen)",
+    "Spain",
+    "Italy",
+    "Iran",
+    "South Africa"
+  ],
+  "marketValueAndGlobalDemand": "Plums, including their dried form (prunes), are important temperate fruits with significant global production and consumption. China is the dominant producer. There is high demand for fresh plums for direct consumption, as well as for processed products such as prunes (which have a large market due to their nutritional benefits and long shelf life), jams, jellies, juices, and plum wine or brandy (like Slivovitz in Eastern Europe). International trade in both fresh plums and prunes is substantial. The market value of plums is influenced by factors such as variety (e.g., Japanese vs. European types, specific cultivars like 'Santa Rosa' or 'Victoria'), fruit size and quality, seasonality, and origin. Demand for high-quality fresh plums and convenient prune products remains strong globally.",
+  "staticRecipes": [
+    {
+      "name": "Simple Plum Compote",
+      "description": "A sweet and slightly tart compote, perfect over yogurt, ice cream, or pancakes.",
+      "ingredients": [
+        "1 lb plums, pitted and sliced or quartered",
+        "1/4 cup sugar (or to taste)",
+        "1/4 cup water",
+        "1 cinnamon stick (optional)",
+        "1 star anise (optional)",
+        "1 tsp lemon juice"
+      ],
+      "steps": [
+        "Combine plums, sugar, water, cinnamon stick (if using), and star anise (if using) in a saucepan.",
+        "Bring to a simmer over medium heat, then reduce heat to low.",
+        "Cook for 15-20 minutes, or until plums are soft and the sauce has thickened slightly. Stir occasionally.",
+        "Remove from heat, discard cinnamon stick and star anise. Stir in lemon juice.",
+        "Serve warm or chilled."
+      ]
+    },
+    {
+      "name": "Plum Crumble",
+      "description": "A delicious dessert with a sweet plum filling and a buttery crumble topping.",
+      "ingredients": [
+        "For filling: 2 lbs plums, pitted and sliced",
+        "1/2 cup granulated sugar",
+        "1 tbsp cornstarch",
+        "1/2 tsp cinnamon",
+        "For topping: 1 cup all-purpose flour, 1/2 cup brown sugar, 1/2 cup cold butter (cubed), 1/2 cup rolled oats (optional)"
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Filling: In a large bowl, toss sliced plums with granulated sugar, cornstarch, and cinnamon. Transfer to a baking dish.",
+        "Topping: In another bowl, combine flour and brown sugar. Cut in butter until mixture resembles coarse crumbs. Stir in oats if using.",
+        "Sprinkle topping evenly over the plums.",
+        "Bake for 30-40 minutes, or until topping is golden brown and filling is bubbly. Let cool slightly before serving."
+      ]
+    },
+    {
+      "name": "Fresh Plum Salad with Mint",
+      "description": "A refreshing and simple salad showcasing the flavor of fresh plums.",
+      "ingredients": [
+        "4-5 ripe plums, pitted and sliced",
+        "1 tbsp honey",
+        "1 tbsp lime juice",
+        "1/4 cup fresh mint leaves, chopped",
+        "Optional: A sprinkle of feta cheese or toasted almonds"
+      ],
+      "steps": [
+        "In a bowl, gently combine sliced plums.",
+        "In a small bowl, whisk together honey and lime juice.",
+        "Drizzle the honey-lime mixture over the plums.",
+        "Sprinkle with fresh chopped mint.",
+        "If desired, add feta cheese or toasted almonds. Toss gently and serve immediately."
+      ]
+    }
+  ]
+}

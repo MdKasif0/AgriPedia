@@ -1,0 +1,65 @@
+{
+  "id": "radish",
+  "commonName": "Radish",
+  "scientificName": "Raphanus sativus",
+  "image": "https://images.unsplash.com/photo-1580822416068-a2a901d09068?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Radish is an edible root vegetable of the family Brassicaceae that was domesticated in Asia prior to Roman times. Radishes are grown and consumed throughout the world, being mostly eaten raw as a crunchy salad vegetable with a pungent, peppery flavor. There are numerous varieties, varying in size, flavor, color, and length of time they take to mature.",
+  "origin": "Southeast Asia or Central Asia.",
+  "localNames": ["Mooli (Hindi)", "Daikon (Japanese - for large white varieties)", "Rábano (Spanish)", "Radis (French)"],
+  "regions": ["China (leading producer)", "Japan", "South Korea", "United States", "Mexico", "European countries", "India", "Pakistan"],
+  "seasons": ["Cool-season crop; typically sown in spring or autumn. Some varieties are very fast-maturing, ready in a few weeks."],
+  "nutrition": {
+    "calories": "Raw radish: ~16 kcal per 100g.",
+    "macronutrients": [
+      { "name": "Protein", "unit": "g", "value": "~0.7" },
+      { "name": "Carbohydrates", "unit": "g", "value": "~3.4 (Sugars ~1.9, Fiber ~1.6)" },
+      { "name": "Fat", "unit": "g", "value": "~0.1" },
+      { "name": "Fiber", "unit": "g", "value": "~1.6" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin C", "unit": "mg", "rdi": "~14.8 (16%)" },
+      { "name": "Folate (B9)", "unit": "µg", "rdi": "~25 (6%)" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "unit": "mg", "rdi": "~233 (5%)" },
+      { "name": "Calcium", "unit": "mg", "rdi": "~25 (3%)" },
+      { "name": "Manganese", "unit": "mg", "rdi": "~0.069 (3%)" }
+    ]
+  },
+  "healthBenefits": [
+    "Good source of Vitamin C, an antioxidant.",
+    "Provides dietary fiber, aiding digestion.",
+    "Contains compounds like glucosinolates and isothiocyanates, which may have anti-cancer properties.",
+    "Low in calories, making it a good choice for weight management.",
+    "Traditionally used as a diuretic and to support liver function."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Brassicaceae Sensitivity",
+      "severity": "Mild",
+      "details": "Allergy is rare. Some individuals may experience gas or digestive upset due to certain compounds if consumed in large quantities. Those with thyroid issues should consume Brassicaceae vegetables in moderation due to goitrogenic compounds, though typical radish consumption amounts are unlikely to be an issue."
+    }
+  ],
+  "cultivationProcess": "Radishes are grown from seeds. They are fast-growing and prefer cool, moist conditions and well-drained soil. They mature quickly, making them suitable for succession planting.",
+  "growthDuration": "Very fast-growing. Small globe varieties can mature in 20-30 days. Larger daikon types take 50-70 days or more.",
+  "sustainabilityTips": [
+    "Fast growth cycle allows for quick crop rotation and efficient land use.",
+    "Can be intercropped with other vegetables.",
+    "Attracts some beneficial insects and can act as a trap crop for certain pests."
+  ],
+  "carbonFootprintInfo": "Radishes generally have a low carbon footprint due to their fast growth and relatively low input requirements. Local and seasonal consumption minimizes transportation impacts.",
+  "uses": ["culinary_vegetable_root_raw_in_salads_pickled_cooked_in_stews_soups_stir_fries", "culinary_vegetable_leaves_radish_greens_cooked_or_in_salads", "animal_feed_fodder_crop_some_large_varieties", "cover_crop_biofumigant_some_oilseed_radish_varieties"],
+  "originAndDomesticationHistory": "The radish (Raphanus sativus) was likely domesticated in Southeast Asia or Central Asia, as wild forms are found in these regions. It was cultivated in ancient Egypt, Greece, and Rome. Different forms (small globe, long daikon) were developed in various parts of the world over centuries.",
+  "climaticRequirements": {
+    "temperature": "Cool-season crop. Optimal growing temperatures are 10-18°C. Hot weather can cause roots to become pungent and woody, and plants to bolt (go to seed).",
+    "rainfall": "Requires consistent moisture for rapid growth and tender roots. About 25mm of water per week is ideal.",
+    "altitude": "Adaptable to various altitudes in temperate and subtropical regions."
+  },
+  "soilPreferences": "Prefers loose, well-drained, fertile sandy loam or loamy soils rich in organic matter. Slightly acidic to neutral pH (6.0-7.0) is optimal. Avoid stony or compacted soils.",
+  "irrigationAndWaterNeeds": "Requires regular and consistent watering to ensure rapid growth and prevent roots from becoming tough or pithy. Soil should be kept consistently moist but not waterlogged.",
+  "plantingAndHarvestCycles": "Seeds are sown directly in the garden in early spring as soon as soil can be worked, or in late summer/autumn for a fall/winter crop. Sow seeds shallowly. Thin seedlings to proper spacing. Harvested when roots reach desired size; do not leave them in the ground too long as they can become woody or split.",
+  "pestAndDiseaseManagement": "Pests include flea beetles (can damage leaves), root maggots, and aphids. Diseases include clubroot (in acidic soils), downy mildew, and white rust. Crop rotation (avoiding other Brassicas), proper thinning for air circulation, and timely harvesting can help prevent issues. Floating row covers can protect against flea beetles.",
+  "postHarvestHandling": "Harvested radishes are washed. Tops are often removed to prolong storage life of the roots. Store in the refrigerator in plastic bags for 1-2 weeks (small varieties). Winter radishes (like daikon) can be stored for longer periods in cool, moist conditions, similar to turnips or carrots.",
+  "majorProducingCountriesOrRegions": ["China (leading producer)", "Japan", "South Korea", "United States", "Mexico", "European countries (Germany, France, Netherlands)", "Turkey", "Egypt", "India", "Pakistan"],
+  "marketValueAndGlobalDemand": "Radishes are a popular vegetable globally, with consistent demand for fresh market consumption. Different varieties cater to diverse culinary preferences (e.g., small red radishes in Western salads, large daikon radishes in Asian cuisine). They are a common garden vegetable and also grown commercially on a large scale."
+}

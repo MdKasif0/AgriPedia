@@ -1,0 +1,67 @@
+{
+  "id": "cinnamon",
+  "commonName": "Cinnamon",
+  "scientificName": "Cinnamomum spp. (mainly Cinnamomum verum - Ceylon cinnamon; and Cinnamomum cassia - Cassia cinnamon)",
+  "image": "https://images.unsplash.com/photo-1556604820-85f771b01952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Cinnamon is a spice obtained from the inner bark of several tree species from the genus Cinnamomum. The term 'cinnamon' also refers to its mid-brown colour. Ceylon cinnamon (Cinnamomum verum), often considered 'true cinnamon', has a delicate flavor. Cassia cinnamon (C. cassia, C. burmannii, C. loureiroi) has a stronger, spicier flavor and is more common.",
+  "origin": "Sri Lanka (Ceylon cinnamon); Southern China and Indochina (Cassia cinnamon).",
+  "localNames": ["Dalchini (Hindi)", "Shinamon (Japanese)", "Canela (Spanish)", "Cannelle (French)"],
+  "regions": ["Sri Lanka", "Indonesia", "China", "Vietnam", "India", "Madagascar"],
+  "seasons": ["Perennial evergreen tree; bark is typically harvested during the rainy season when it's more pliable."],
+  "nutrition": {
+    "calories": "247 kcal per 100g (ground cinnamon)",
+    "macronutrients": [
+      { "name": "Protein", "value": 4.0, "unit": "g" },
+      { "name": "Carbohydrates", "value": 80.6, "unit": "g" },
+      { "name": "Fat", "value": 1.2, "unit": "g" },
+      { "name": "Fiber", "value": 53.1, "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Vitamin K", "value": 31.2, "unit": "µg", "rdi": "26%" },
+      { "name": "Vitamin E", "value": 2.32, "unit": "mg", "rdi": "15%" },
+      { "name": "Niacin (B3)", "value": 1.332, "unit": "mg", "rdi": "9%" }
+    ],
+    "minerals": [
+      { "name": "Manganese", "value": 17.466, "unit": "mg", "rdi": "759%" },
+      { "name": "Calcium", "value": 1002, "unit": "mg", "rdi": "100%" },
+      { "name": "Iron", "value": 8.32, "unit": "mg", "rdi": "46%" },
+      { "name": "Potassium", "value": 431, "unit": "mg", "rdi": "9%" }
+    ]
+  },
+  "healthBenefits": [
+    "Rich in antioxidants, particularly polyphenols.",
+    "May have anti-inflammatory properties.",
+    "Can help lower blood sugar levels and improve insulin sensitivity (especially Cassia type).",
+    "May reduce risk factors for heart disease, such as lowering LDL cholesterol and triglycerides.",
+    "Has antimicrobial properties."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Cinnamon Allergy/Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Allergy to cinnamon can cause symptoms like skin rash (contact dermatitis), mouth sores, or digestive upset. Cassia cinnamon contains higher levels of coumarin, which can be toxic to the liver in very high doses over prolonged periods."
+    }
+  ],
+  "cultivationProcess": "Cinnamon trees are grown for their bark. Young stems are cut, the outer bark is scraped off, and the inner bark is carefully peeled. As it dries, the bark curls into rolls called quills. Cassia is often harvested from older trees and is thicker.",
+  "growthDuration": "Trees are typically harvested for bark after 2-3 years of growth. Coppicing (cutting back to encourage new shoots) is practiced. Harvest occurs every 2-3 years from the same plant.",
+  "sustainabilityTips": [
+    "Sustainable harvesting practices are important to ensure long-term productivity of trees.",
+    "Can be grown in mixed agroforestry systems.",
+    "Organic cultivation helps maintain soil health and avoids synthetic pesticides/fertilizers."
+  ],
+  "carbonFootprintInfo": "The carbon footprint of cinnamon is influenced by land use, agricultural practices, processing (drying, grinding), and transportation. Shipping from producing countries to global markets is a significant factor.",
+  "uses": ["culinary_spice_ground_quills_sweet_savory_dishes_baked_goods_beverages", "traditional_medicine_digestive_aid_antimicrobial", "essential_oil_production_flavoring_perfumery", "incense"],
+  "originAndDomesticationHistory": "Ceylon cinnamon (Cinnamomum verum) is native to Sri Lanka. Cassia cinnamon (various species) originates from Southern China and mainland Southeast Asia. Cinnamon has been known since antiquity. Ancient Egyptians used it for embalming and flavoring. It was a highly prized and expensive commodity in the ancient world and a key driver of the spice trade.",
+  "climaticRequirements": {
+    "temperature": "Tropical crop. Prefers warm, humid conditions with temperatures between 20-30°C. Cannot tolerate frost.",
+    "rainfall": "Requires high rainfall, typically 1250-2500mm annually, well-distributed. High humidity is beneficial.",
+    "altitude": "Ceylon cinnamon is typically grown from sea level up to 500m. Cassia species can be found at higher altitudes as well."
+  },
+  "soilPreferences": "Prefers well-drained, lateritic or sandy loam soils rich in organic matter. Slightly acidic pH (5.5-6.5) is optimal. Good drainage is important.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture, especially during early growth. In areas with distinct dry seasons, supplemental irrigation may be necessary. However, mature trees can withstand some drought.",
+  "plantingAndHarvestCycles": "Propagated from seeds or cuttings. Trees are allowed to grow for about 2 years, then coppiced to encourage the growth of multiple shoots from the base. Shoots are harvested when they reach a certain diameter (2-3 cm) and length, usually during the rainy season when the bark is easier to peel. The inner bark is carefully stripped and dried.",
+  "pestAndDiseaseManagement": "Pests include cinnamon gall mite and various insect borers. Diseases include leaf spot, grey blight, and seedling blight. Management involves phytosanitation, proper pruning, and use of disease-resistant planting material. Chemical control is sometimes used.",
+  "postHarvestHandling": "Harvested bark strips are carefully layered and dried, first in the shade and then in partial sun. As they dry, they curl into quills. Quills are graded based on thickness, appearance, and aroma. Cassia bark is often sold as thicker pieces or chips, or ground.",
+  "majorProducingCountriesOrRegions": ["Indonesia (leading producer, mainly Cassia)", "China (Cassia)", "Vietnam (Cassia)", "Sri Lanka (leading producer of Ceylon cinnamon)", "Madagascar", "India"],
+  "marketValueAndGlobalDemand": "Cinnamon is one of the most popular and widely used spices globally. Demand is consistently high for both Ceylon and Cassia types, though they have different flavor profiles and price points. Cassia is more common and cheaper. Ceylon cinnamon is considered superior by many and fetches a higher price. Used extensively in food, beverage, and fragrance industries."
+}

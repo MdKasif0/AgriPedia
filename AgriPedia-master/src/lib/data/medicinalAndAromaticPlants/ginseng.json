@@ -1,0 +1,66 @@
+{
+  "id": "ginseng",
+  "commonName": "Ginseng",
+  "scientificName": "Panax spp. (e.g., Panax ginseng - Asian Ginseng, Panax quinquefolius - American Ginseng)",
+  "image": "https://images.unsplash.com/photo-1568402483097-400710f7a3c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "description": "Ginseng is the root of plants in the genus Panax, such as Korean ginseng (P. ginseng), South China ginseng (P. notoginseng), and American ginseng (P. quinquefolius), typically characterized by the presence of ginsenosides and gintonin. It has been used in traditional medicine for centuries, particularly in East Asia, as an adaptogen and for its various purported health benefits.",
+  "origin": "East Asia (specifically Korea and Northeastern China for Panax ginseng) and North America (for Panax quinquefolius).",
+  "localNames": ["Renshen (Chinese)", "Ninjin (Japanese - often refers to carrot, but also ginseng as 'yakuyō ninjin')", "Insam (Korean)", "Jen-shen (common romanization)"],
+  "regions": ["South Korea", "China", "North Korea", "Canada", "United States (Wisconsin, Appalachian region)"],
+  "seasons": ["Perennial; roots are typically harvested after 4-6 years of growth, usually in the autumn."],
+  "nutrition": {
+    "calories": "Nutritional value is primarily for its bioactive compounds (ginsenosides) rather than macronutrients. Root powder may have approx. 300-350 kcal per 100g, but typical dosage is very small.",
+    "macronutrients": [
+      { "name": "Protein", "value": "~10-12 (root powder)", "unit": "g" },
+      { "name": "Carbohydrates", "value": "~60-70 (root powder, includes complex carbs)", "unit": "g" },
+      { "name": "Fat", "value": "~1-2 (root powder)", "unit": "g" },
+      { "name": "Fiber", "value": "~5-10 (root powder)", "unit": "g" }
+    ],
+    "vitamins": [
+      { "name": "Various B Vitamins", "value": "Present in trace amounts", "unit": "", "rdi": "" },
+      { "name": "Vitamin C", "value": "Trace amounts", "unit": "mg", "rdi": "" }
+    ],
+    "minerals": [
+      { "name": "Potassium", "value": "Moderate", "unit": "mg", "rdi": "" },
+      { "name": "Calcium", "value": "Moderate", "unit": "mg", "rdi": "" },
+      { "name": "Phosphorus", "value": "Moderate", "unit": "mg", "rdi": "" }
+    ]
+  },
+  "healthBenefits": [
+    "Considered an adaptogen, helping the body resist stress.",
+    "May boost the immune system.",
+    "Can improve brain function, memory, and mood.",
+    "May have anti-inflammatory effects.",
+    "Potentially beneficial for managing blood sugar levels.",
+    "May enhance physical stamina and reduce fatigue."
+  ],
+  "potentialAllergies": [
+    {
+      "name": "Ginseng Allergy/Sensitivity",
+      "severity": "Mild to Moderate",
+      "details": "Side effects can include headaches, digestive problems, and sleep disturbances. May interact with medications (e.g., blood thinners, diabetes drugs, antidepressants). Not recommended for pregnant or breastfeeding women or children without medical advice. Overuse can lead to 'ginseng abuse syndrome'."
+    }
+  ],
+  "cultivationProcess": "Ginseng cultivation is a long-term process. It requires shaded conditions (natural forest or artificial shade structures) and well-drained soil rich in organic matter. Seeds are planted, and roots are carefully cultivated for several years before harvest.",
+  "growthDuration": "Slow-growing perennial. Roots are typically harvested after 4-6 years, though some are harvested earlier or later. Wild-simulated ginseng can take much longer.",
+  "sustainabilityTips": [
+    "Wild ginseng is overharvested in many areas; cultivated or 'wild-simulated' ginseng is more sustainable.",
+    "Requires specific growing conditions, often mimicking its natural forest habitat.",
+    "Agroforestry practices can be employed for shade-grown ginseng."
+  ],
+  "carbonFootprintInfo": "The carbon footprint can be significant for commercially cultivated ginseng due to the long growth cycle, need for shade structures, potential inputs, processing (drying, extraction), and international transportation. Wild-simulated or forest-farmed ginseng may have a lower footprint.",
+  "uses": ["traditional_medicine_adaptogen_tonic_immune_booster_cognitive_enhancer", "dietary_supplement_capsules_extracts_powders_teas", "functional_foods_and_beverages"],
+  "originAndDomesticationHistory": "Asian ginseng (Panax ginseng) has been used in traditional Chinese medicine for thousands of years, with records dating back to the 1st century AD. It's native to the mountainous regions of Korea and northeastern China. American ginseng (Panax quinquefolius) is native to eastern North America and was used by Native Americans; it began to be exported to Asia in the 18th century.",
+  "climaticRequirements": {
+    "temperature": "Cool temperate climates. Requires distinct seasons with cold winters for dormancy. Optimal growing temperatures are 15-25°C. Needs protection from direct, intense summer sun.",
+    "rainfall": "Requires moderate and consistent rainfall (750-1500mm annually) during the growing season. Well-drained soil is crucial to prevent root rot.",
+    "altitude": "Typically grown in forested or mountainous regions, at altitudes from 200m to 1000m or higher, depending on the species and local conditions."
+  },
+  "soilPreferences": "Prefers deep, well-drained, loamy soils rich in organic matter (forest soils are ideal). Slightly acidic to neutral pH (5.5-6.5) is optimal. Good aeration is essential.",
+  "irrigationAndWaterNeeds": "Requires consistent moisture throughout the growing season, but soil should not be waterlogged. Supplemental irrigation is often necessary, especially under artificial shade. Good drainage is paramount.",
+  "plantingAndHarvestCycles": "Propagated from seeds, which require stratification (cold, moist period) to germinate. Seedlings are grown in nurseries for 1-2 years before transplanting. Roots are typically harvested in the fall after 4-6 years of growth when the plant tops die back. Careful digging is required to avoid damaging the valuable roots.",
+  "pestAndDiseaseManagement": "Susceptible to various fungal diseases like Alternaria blight, damping-off, and root rot (Phytophthora, Cylindrocarpon). Pests include slugs, snails, nematodes, and rodents. Integrated pest management involves careful site selection, good drainage, proper shade management, crop rotation (long rotations needed), and sometimes fungicides.",
+  "postHarvestHandling": "Harvested roots are carefully washed to remove soil. They are then dried, either air-dried or using low heat with good air circulation, until they reach a specific moisture content (around 10-12%). Dried roots are graded based on size, shape (e.g., man-like form is prized for Asian ginseng), and age. They are then sold whole, sliced, or powdered, or used for extracts.",
+  "majorProducingCountriesOrRegions": ["South Korea (Asian ginseng)", "China (Asian ginseng)", "Canada (American ginseng, primarily Ontario and British Columbia)", "United States (Wisconsin is a major producer of American ginseng)", "North Korea (Asian ginseng)"],
+  "marketValueAndGlobalDemand": "Ginseng is a high-value medicinal crop with significant global demand, particularly in East Asia, North America, and Europe. Demand is driven by its use in traditional medicine and as a popular dietary supplement. Prices vary greatly based on species, age, quality, and whether it's wild, wild-simulated, or cultivated. Wild ginseng commands extremely high prices."
+}
