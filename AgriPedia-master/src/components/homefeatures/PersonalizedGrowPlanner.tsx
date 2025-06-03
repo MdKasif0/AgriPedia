@@ -194,7 +194,7 @@ const PersonalizedGrowPlanner: React.FC = () => {
           <ErrorBoundary fallbackMessage="There was an issue displaying the recommendations. Please try starting over.">
             <div className="space-y-6">
               <div className="text-center">
-                <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
+              <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Planner Complete!</h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   Based on your preferences, here are some plants that would be perfect for your garden:
                 </p>
@@ -207,8 +207,8 @@ const PersonalizedGrowPlanner: React.FC = () => {
 
               <div className="flex justify-center gap-4 mt-6">
                 <Button onClick={handleStartOver} variant="outline">
-                  Start Over
-                </Button>
+                Start Over
+              </Button>
                 <Button onClick={() => window.print()}>
                   Save Recommendations
                 </Button>
