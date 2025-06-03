@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getCurrentUserMode, type UserModeId } from '@/lib/userDataStore';
-import { USER_MODES, DEFAULT_USER_MODE_ID } from '@/lib/constants';
+import { getCurrentUserMode } from '@/lib/userDataStore';
+import { USER_MODES, DEFAULT_USER_MODE_ID, type UserModeId } from '@/lib/constants'; // Import UserModeId from constants
 import { ShieldCheck } from 'lucide-react'; // Example Icon
 
 export default function ActiveUserModeDisplay() {

@@ -13,12 +13,14 @@ interface NotificationPrefs {
   recipeTips: boolean;
 }
 
+const initialPrefsState: NotificationPrefs = {
+  seasonalAlerts: true,
+  recipeTips: false,
+};
+
 export default function NotificationPreferences() {
   const [mounted, setMounted] = useState(false);
-  const [prefs, setPrefs] = useState<NotificationPrefs>({
-    seasonalAlerts: true,
-    recipeTips: false,
-  });
+  const [prefs, setPrefs] = useState<NotificationPrefs>(initialPrefsState);
 
   useEffect(() => {
     setMounted(true);
@@ -28,25 +30,28 @@ export default function NotificationPreferences() {
         const parsedPrefs = JSON.parse(storedPrefs);
         // Ensure all keys exist to prevent errors with old localStorage data
         setPrefs(prev => ({
-            seasonalAlerts: typeof parsedPrefs.seasonalAlerts === 'boolean' ? parsedPrefs.seasonalAlerts : prev.seasonalAlerts,
-            recipeTips: typeof parsedPrefs.recipeTips === 'boolean' ? parsedPrefs.recipeTips : prev.recipeTips,
+            seasonalAlerts: typeof parsedPrefs.seasonalAlerts === 'boolean' ? parsedPrefs.seasonalAlerts : prev.seasonalAlerts, // prev is fine here
+            recipeTips: typeof parsedPrefs.recipeTips === 'boolean' ? parsedPrefs.recipeTips : prev.recipeTips,     // prev is fine here
         }));
       } catch (e) {
         console.error("Failed to parse notification preferences from localStorage", e);
         // Fallback to default if parsing fails
-        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
+        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(initialPrefsState)); // Use initial state
       }
     } else {
         // Initialize localStorage if no prefs are stored
-        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
+        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(initialPrefsState)); // Use initial state
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Reason: This effect is for one-time initialization. `setPrefs` uses a callback,
+    // and fallbacks use a constant `initialPrefsState`, so `prefs` is not strictly needed as a dependency.
   }, []); // Initial load of prefs
 
   useEffect(() => {
     if (mounted) { // Only save to localStorage after initial mount & load
         localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
     }
-  }, [prefs, mounted]);
+  }, [prefs, mounted]); // Removed the incorrect disable comment here
 
   const handleToggle = (key: keyof NotificationPrefs) => {
     setPrefs((prev) => ({

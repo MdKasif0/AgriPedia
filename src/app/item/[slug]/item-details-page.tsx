@@ -4,7 +4,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import { useParams, notFound, useRouter } from 'next/navigation';
-import { getProduceByCommonName, type ProduceInfo, type Recipe } from '@/lib/produceData';
+import { getProduceByCommonName, type ProduceInfo, type Recipe, type AllergySeverity } from '@/lib/produceData'; // Added AllergySeverity
 import { getProduceOffline, saveProduceOffline } from '@/lib/offlineStore';
 import * as UserDataStore from '@/lib/userDataStore';
 import { triggerHapticFeedback, playSound } from '@/lib/utils';
@@ -19,7 +19,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Leaf, Globe, Languages, MapPin, Activity, Heart, AlertTriangle, Sprout, CalendarDays, Info, WifiOff, MessageCircleWarning,
   CalendarCheck2, CalendarX2, Store, LocateFixed, Share2, ArrowLeft, Recycle,
-  History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, CalendarCog, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTubeDiagonal, NotebookPen, Newspaper
+  History, Thermometer, CloudRain, Mountain, Layers, Waves, Droplets, Bug, ShieldAlert, Truck, Archive, MapPinned, AreaChart, TrendingUp, FlaskConical, TestTubeIcon, NotebookPen, Newspaper
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
@@ -39,7 +39,7 @@ const MineralChart = dynamic(() => import('@/components/charts/MineralChart'), {
   ssr: false
 });
 
-const getSeverityBadgeVariant = (severity: ProduceInfo['potentialAllergies'][0]['severity']): "default" | "secondary" | "destructive" | "outline" => {
+const getSeverityBadgeVariant = (severity: AllergySeverity): "default" | "secondary" | "destructive" | "outline" => { // Changed type to AllergySeverity
   switch (severity) {
     case 'Severe':
       return 'destructive';
@@ -359,7 +359,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
           </section>
           <IconLabel icon={Heart} label="Health Benefits" className="bg-card rounded-lg shadow-lg">
             <ul className="list-disc list-inside space-y-1 text-card-foreground/90">
-              {produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
+              {produce.healthBenefits && produce.healthBenefits.map(benefit => <li key={benefit}>{benefit}</li>)}
             </ul>
           </IconLabel>
         </TabsContent>
@@ -400,7 +400,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
 
         <TabsContent value="additional" className="mt-6 space-y-6 px-2 md:px-0">
             <IconLabel icon={AlertTriangle} label="Potential Allergies & Sensitivities" className="bg-card rounded-lg shadow-lg">
-            {produce.potentialAllergies.length > 0 ? (
+            {produce.potentialAllergies && produce.potentialAllergies.length > 0 ? (
                 <ul className="space-y-3">
                 {produce.potentialAllergies.map((allergy, index) => (
                     <li key={index} className="flex flex-col gap-1">
@@ -542,7 +542,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
             <IconLabel icon={FlaskConical} label="Soil Suitability Checker (Future AI Feature)" className="bg-card rounded-lg shadow-lg">
               {produce.soilPreferences && produce.soilPreferences.trim() !== "" ? (
                 <p className="text-card-foreground/90 mb-2">
-                  This plant's general soil preferences: <span className="italic">{produce.soilPreferences}</span>
+                  This plant&apos;s general soil preferences: <span className="italic">{produce.soilPreferences}</span>
                 </p>
               ) : (
                 <p className="text-muted-foreground mb-2">
@@ -554,7 +554,7 @@ export default function ItemDetailsPage({ slugFromParams: slugFromParamsProp }: 
               </p>
             </IconLabel>
 
-            <IconLabel icon={TestTubeDiagonal} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
+            <IconLabel icon={TestTubeIcon} label="Fertilizer & Treatment Guide (Coming Soon)" className="bg-card rounded-lg shadow-lg">
               <p className="text-sm text-muted-foreground">
                 A comprehensive guide on organic and chemical fertilizers and treatments, including safe usage guidelines, is planned for this section. For current recommendations, please consult local agricultural extension services or qualified experts.
               </p>
