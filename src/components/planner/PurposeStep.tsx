@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button'; // Button is not used in the refactored version directly for nav
 import { Carrot, Leaf, Grape, Flower2, HeartPulse, ShieldCheck } from 'lucide-react';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
 const purposeOptions = [
   { id: 'vegetables', label: 'Vegetables', icon: Carrot, description: "Grow your own food like tomatoes, cucumbers, peppers, etc." },
@@ -12,22 +12,19 @@ const purposeOptions = [
   { id: 'pet_safe', label: 'Pet-Safe Plants', icon: ShieldCheck, description: "Choose plants that are non-toxic to your beloved pets." }, // Renamed for clarity
 ];
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const PurposeStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  // Initialize from plannerData.purpose or default to an empty array
-  const [selectedPurposes, setSelectedPurposes] = useState<string[]>(plannerData.purpose || []);
+const PurposeStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  // Initialize from data.purpose or default to an empty array
+  const [selectedPurposes, setSelectedPurposes] = useState<string[]>(data.purpose || []);
 
   useEffect(() => {
-    if (Array.isArray(plannerData.purpose)) {
-      setSelectedPurposes(plannerData.purpose);
-    } else if (plannerData.purpose === undefined) { // If parent data explicitly clears it
+    if (Array.isArray(data.purpose)) {
+      setSelectedPurposes(data.purpose);
+    } else if (data.purpose === undefined) { // If parent data explicitly clears it
         setSelectedPurposes([]);
     }
-  }, [plannerData.purpose]);
+  }, [data.purpose]);
 
   const handleTogglePurpose = (purposeId: string) => {
     const newSelectedPurposes = selectedPurposes.includes(purposeId)

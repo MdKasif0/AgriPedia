@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import type { GrowingGuide, GrowingStage, PlantGuideProgress } from '@/lib/produceData';
+import type { GrowingGuide, GrowingStage } from '@/lib/produceData';
+import type { PlantGuideProgress, StageProgress } from '@/lib/userDataStore'; // Corrected import
 import { getPlantGuideProgressByPlanterId, upsertPlantGuideProgress } from '@/lib/userDataStore';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import CollapsibleInfoSection from '@/components/ui/CollapsibleInfoSection';

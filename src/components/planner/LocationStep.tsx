@@ -2,33 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { MapPin, Search } from 'lucide-react';
-import type { PlannerData } from '@/types/planner'; // Import PlannerData
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const LocationStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  // Initialize internal state from plannerData.location or default
-  const [manualAddress, setManualAddress] = useState(plannerData.location?.address || '');
+const LocationStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  // Initialize internal state from data.location or default
+  const [manualAddress, setManualAddress] = useState(data.location?.address || '');
   const [locationInfo, setLocationInfo] = useState<PlannerData['location']>(
-    plannerData.location || { lat: null, lon: null, address: '', climateZone: '' }
+    data.location || { lat: null, lon: null, address: '', climateZone: '' }
   );
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Effect to update local state if plannerData.location changes (e.g., user goes back and forth)
+  // Effect to update local state if data.location changes (e.g., user goes back and forth)
   useEffect(() => {
-    if (plannerData.location) {
-      setLocationInfo(plannerData.location);
-      setManualAddress(plannerData.location.address || '');
+    if (data.location) {
+      setLocationInfo(data.location);
+      setManualAddress(data.location.address || '');
     } else {
-      // Reset if plannerData.location is cleared
-      setLocationInfo({ lat: null, lon: null, address: '', climateZone: '' });
+      // Reset if data.location is cleared
+      setLocationInfo({ lat: null, lon: null, address: '', climateZone: '', simplifiedClimate: '' });
       setManualAddress('');
     }
-  }, [plannerData.location]);
+  }, [data.location]);
 
   const updateParentState = (newLocationData: PlannerData['location']) => {
     setLocationInfo(newLocationData);
@@ -47,6 +44,7 @@ const LocationStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
             lon: longitude,
             address: `Coordinates: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`,
             climateZone: 'Temperate (Placeholder)', // Replace with actual climate zone logic
+            simplifiedClimate: 'Temperate (Placeholder)', // Add placeholder
           };
           updateParentState(detectedLocation);
           setManualAddress(detectedLocation.address || '');
@@ -71,6 +69,7 @@ const LocationStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
       lon: null,
       address: manualAddress,
       climateZone: 'Varies (Placeholder)', // Replace with actual climate zone logic based on address
+            simplifiedClimate: 'Varies (Placeholder)', // Add placeholder
     };
     updateParentState(searchedLocation);
     setIsLoading(false);

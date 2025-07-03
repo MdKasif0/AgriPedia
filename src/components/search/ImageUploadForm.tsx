@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useRef, type ChangeEvent, type FormEvent, useEffect } from 'react';
+import { useState, useRef, type ChangeEvent, type FormEvent, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { UploadCloud, Image as ImageIcon, Camera, AlertTriangle, X, Zap, RefreshCcw, ImageUp, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';

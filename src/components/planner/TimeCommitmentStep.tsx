@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Clock3, Zap } from 'lucide-react';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
 // Note: PlannerData.timeCommitment is string. These values might need to map to string IDs.
 // For now, assuming the component will store a number internally and convert if needed via onDataChange.
@@ -23,21 +23,18 @@ const findLevelByStringId = (id?: string) => {
     return commitmentLevels.find(level => level.id === id) || commitmentLevels[2]; // Default to Moderate
 }
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const TimeCommitmentStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  const initialLevel = findLevelByStringId(plannerData.timeCommitment);
+const TimeCommitmentStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  const initialLevel = findLevelByStringId(data.timeCommitment);
   const [commitmentValue, setCommitmentValue] = useState<number>(initialLevel.value);
 
   useEffect(() => {
-    if (plannerData.timeCommitment !== undefined) {
-      const currentSelectedLevel = findLevelByStringId(plannerData.timeCommitment);
+    if (data.timeCommitment !== undefined) {
+      const currentSelectedLevel = findLevelByStringId(data.timeCommitment);
       setCommitmentValue(currentSelectedLevel.value);
     }
-  }, [plannerData.timeCommitment]);
+  }, [data.timeCommitment]);
 
   const handleSliderChange = (value: number[]) => {
     if (value.length > 0) {

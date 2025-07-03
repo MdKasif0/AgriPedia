@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button'; // Button is not used in the refactored version directly for nav
 import { Baby, User, Award } from 'lucide-react';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
 const experienceOptions = [
   { id: 'beginner', label: 'Beginner', icon: Baby, description: "New to gardening, looking for easy-to-grow plants and lots of guidance." },
@@ -9,19 +9,16 @@ const experienceOptions = [
   { id: 'advanced', label: 'Advanced', icon: Award, description: "Experienced gardener, confident with complex techniques and challenging plants." },
 ];
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const ExperienceLevelStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  const [selectedLevel, setSelectedLevel] = useState<string | undefined>(plannerData.experience);
+const ExperienceLevelStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  const [selectedLevel, setSelectedLevel] = useState<string | undefined>(data.experience);
 
   useEffect(() => {
-    if (plannerData.experience !== undefined) {
-      setSelectedLevel(plannerData.experience);
+    if (data.experience !== undefined) {
+      setSelectedLevel(data.experience);
     }
-  }, [plannerData.experience]);
+  }, [data.experience]);
 
   const handleSelectLevel = (levelId: string) => {
     setSelectedLevel(levelId);

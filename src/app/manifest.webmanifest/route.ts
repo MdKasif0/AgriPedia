@@ -16,6 +16,7 @@ export function GET(): Response {
         sizes: '192x192',
         type: 'image/png',
         purpose: 'any',
+        // @ts-ignore data-ai-hint is a custom property for AI understanding
         "data-ai-hint": "logo app icon"
       },
       {
@@ -23,6 +24,7 @@ export function GET(): Response {
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any',
+        // @ts-ignore data-ai-hint is a custom property for AI understanding
         "data-ai-hint": "logo app icon"
       },
       {
@@ -30,6 +32,7 @@ export function GET(): Response {
         sizes: '192x192',
         type: 'image/png',
         purpose: 'maskable',
+        // @ts-ignore data-ai-hint is a custom property for AI understanding
         "data-ai-hint": "logo app icon"
       },
       {
@@ -37,6 +40,7 @@ export function GET(): Response {
         sizes: '512x512',
         type: 'image/png',
         purpose: 'maskable',
+        // @ts-ignore data-ai-hint is a custom property for AI understanding
         "data-ai-hint": "logo app icon"
       }
     ],

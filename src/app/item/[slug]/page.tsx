@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
           width: 600, // Adjust if your placeholders have different default sizes
           height: 400, // Adjust
           alt: produce.commonName,
+          // @ts-ignore data-ai-hint is a custom property for AI understanding
           'data-ai-hint': imageHint,
         },
       ],
@@ -54,8 +55,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function ItemPageWrapper({ params }: { params: { slug: string } }) {
-  const decodedSlug = decodeURIComponent(params.slug);
+export default function ItemPageWrapper(props: { params: { slug: string } }): JSX.Element {
+  const decodedSlug = decodeURIComponent(props.params.slug);
   const produce = getProduceByCommonName(decodedSlug);
 
   if (!produce) {
@@ -72,5 +73,5 @@ export default function ItemPageWrapper({ params }: { params: { slug: string } }
   const growingGuideData = plantGuideId ? getProduceGuide(plantGuideId) : null;
 
   // Pass both produce and growingGuideData to the client component
-  return <ItemDetailsPage slugFromParams={params.slug} initialProduce={produce} initialGrowingGuide={growingGuideData} />;
+  return <ItemDetailsPage slugFromParams={props.params.slug} initialProduce={produce} initialGrowingGuide={growingGuideData} />;
 }

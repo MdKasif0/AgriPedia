@@ -6,12 +6,20 @@ interface CropCalendarDisplayProps {
 }
 
 export default function CropCalendarDisplay({ produce }: CropCalendarDisplayProps) {
-  const hasPlantingHarvestInfo = produce.plantingAndHarvestCycles && produce.plantingAndHarvestCycles.trim() !== "";
+  const cycles = produce.plantingAndHarvestCycles;
+  const hasPlantingHarvestInfo = typeof cycles === 'string' && cycles.trim() !== "";
+  const isCyclesObject = typeof cycles === 'object' && cycles !== null && !Array.isArray(cycles);
 
   return (
     <div className="text-card-foreground/90">
       {hasPlantingHarvestInfo ? (
-        <p className="whitespace-pre-line">{produce.plantingAndHarvestCycles}</p>
+        <p className="whitespace-pre-line">{cycles}</p>
+      ) : isCyclesObject ? (
+        <div className="space-y-1">
+          {Object.entries(cycles).map(([month, activity]) => (
+            <p key={month}><strong>{month}:</strong> {activity}</p>
+          ))}
+        </div>
       ) : (
         produce.seasons && produce.seasons.length > 0 ? (
           <div className="flex items-start gap-2">

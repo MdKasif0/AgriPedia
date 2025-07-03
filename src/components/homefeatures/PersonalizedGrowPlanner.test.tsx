@@ -9,65 +9,78 @@ const mockLocationStep = jest.fn();
 const mockGrowingSpaceStep = jest.fn();
 const mockSunlightExposureStep = jest.fn();
 const mockPurposeStep = jest.fn();
+import type { PlannerData, StepProps } from '@/types/planner';
+
 const mockTimeCommitmentStep = jest.fn();
 const mockExperienceLevelStep = jest.fn();
 
-const MockLocationStep = (props) => {
+// Define a more specific type for mock step props if needed, or use StepProps
+interface MockStepProps extends StepProps {
+  onNext: (data: any) => void; // Keep onNext for these mocks as PersonalizedGrowPlanner uses it internally for its own navigation
+  onBack: () => void;
+}
+
+
+const MockLocationStep: React.FC<MockStepProps> = (props) => {
   mockLocationStep(props);
   return (
     <div>
       <h2>Location Step Content</h2>
-      <button onClick={() => props.onNext({ location: { address: 'Test Location' } })}>Next Location</button>
-      {/* No Back button for the first step in the mock */}
+      {/* PersonalizedGrowPlanner expects onNext to be called with step data */}
+      <button onClick={() => props.onNext({ location: { address: 'Test Location', lat: 0, lon: 0, climateZone: 'test', simplifiedClimate: 'test' } })}>Next Location</button>
     </div>
   );
 };
 MockLocationStep.displayName = 'MockLocationStep';
 jest.mock('../planner/LocationStep', () => MockLocationStep);
 
-const MockGrowingSpaceStep = (props) => {
+const MockGrowingSpaceStep: React.FC<MockStepProps> = (props) => {
   mockGrowingSpaceStep(props);
   return (
     <div>
       <h2>Growing Space Step Content</h2>
       <button onClick={props.onBack}>Back GrowingSpace</button>
-      <button onClick={() => props.onNext({ growingSpace: 'balcony' })}>Next GrowingSpace</button>
+      <button onClick={() => props.onNext({ space: 'balcony' })}>Next GrowingSpace</button>
     </div>
   );
 };
 MockGrowingSpaceStep.displayName = 'MockGrowingSpaceStep';
 jest.mock('../planner/GrowingSpaceStep', () => MockGrowingSpaceStep);
 
-const MockSunlightExposureStep = (props) => {
+const MockSunlightExposureStep: React.FC<MockStepProps> = (props) => {
   mockSunlightExposureStep(props);
-  return <div><h2>Sunlight Exposure Step Content</h2><button onClick={props.onBack}>Back Sunlight</button><button onClick={() => props.onNext({ sunlightExposure: 'full' })}>Next Sunlight</button></div>;
+  return <div><h2>Sunlight Exposure Step Content</h2><button onClick={props.onBack}>Back Sunlight</button><button onClick={() => props.onNext({ sunlight: 'full' })}>Next Sunlight</button></div>;
 };
 MockSunlightExposureStep.displayName = 'MockSunlightExposureStep';
 jest.mock('../planner/SunlightExposureStep', () => MockSunlightExposureStep);
 
-const MockPurposeStep = (props) => {
+const MockPurposeStep: React.FC<MockStepProps> = (props) => {
   mockPurposeStep(props);
-  return <div><h2>Purpose Step Content</h2><button onClick={props.onBack}>Back Purpose</button><button onClick={() => props.onNext({ purposes: ['vegetables'] })}>Next Purpose</button></div>;
+  return <div><h2>Purpose Step Content</h2><button onClick={props.onBack}>Back Purpose</button><button onClick={() => props.onNext({ purpose: ['vegetables'] })}>Next Purpose</button></div>;
 };
 MockPurposeStep.displayName = 'MockPurposeStep';
 jest.mock('../planner/PurposeStep', () => MockPurposeStep);
 
-const MockTimeCommitmentStep = (props) => {
+const MockTimeCommitmentStep: React.FC<MockStepProps> = (props) => {
   mockTimeCommitmentStep(props);
-  return <div><h2>Time Commitment Step Content</h2><button onClick={props.onBack}>Back Time</button><button onClick={() => props.onNext({ timeCommitment: 3 })}>Next Time</button></div>;
+  return <div><h2>Time Commitment Step Content</h2><button onClick={props.onBack}>Back Time</button><button onClick={() => props.onNext({ timeCommitment: 'moderate' })}>Next Time</button></div>;
 };
 MockTimeCommitmentStep.displayName = 'MockTimeCommitmentStep';
 jest.mock('../planner/TimeCommitmentStep', () => MockTimeCommitmentStep);
 
-const MockExperienceLevelStep = (props) => {
+const MockExperienceLevelStep: React.FC<MockStepProps> = (props) => {
   mockExperienceLevelStep(props);
-  return <div><h2>Experience Level Step Content</h2><button onClick={props.onBack}>Back Experience</button><button onClick={() => props.onNext({ experienceLevel: 'intermediate' })}>Finish</button></div>;
+  return <div><h2>Experience Level Step Content</h2><button onClick={props.onBack}>Back Experience</button><button onClick={() => props.onNext({ experience: 'intermediate' })}>Finish</button></div>;
 };
 MockExperienceLevelStep.displayName = 'MockExperienceLevelStep';
 jest.mock('../planner/ExperienceLevelStep', () => MockExperienceLevelStep);
 
 // Mock ProgressBar
-const MockProgressBar = ({ currentStep, totalSteps }) => (
+interface MockProgressBarProps {
+    currentStep: number;
+    totalSteps: number;
+}
+const MockProgressBar: React.FC<MockProgressBarProps> = ({ currentStep, totalSteps }) => (
   <div data-testid="progress-bar">
     Progress: {currentStep + 1} / {totalSteps}
   </div>

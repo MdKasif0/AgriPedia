@@ -43,6 +43,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'AgriPedia - Fruits and Vegetables Guide',
+        // @ts-ignore data-ai-hint is a custom property for AI understanding
         'data-ai-hint': 'app logo',
       },
     ],

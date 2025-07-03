@@ -15,10 +15,16 @@ jest.mock('lucide-react', () => ({
 // jest.mock('@/components/ui/button', () => ({ children, ...props }) => <button {...props}>{children}</button>);
 // jest.mock('@/components/ui/input', () => (props) => <input {...props} />);
 
+import type { PlannerData, StepProps } from '@/types/planner';
+
 describe('LocationStep', () => {
-  const mockOnNext = jest.fn();
-  const mockOnBack = jest.fn();
-  const initialData = {};
+  const mockOnDataChange: jest.MockedFunction<(updatedData: Partial<PlannerData>) => void> = jest.fn();
+  const initialData: Partial<PlannerData> = {};
+
+  const defaultProps: StepProps = {
+    data: initialData,
+    onDataChange: mockOnDataChange,
+  };
 
   // Mock navigator.geolocation
   const mockGeolocation = {
@@ -46,17 +52,16 @@ describe('LocationStep', () => {
   });
 
   it('renders correctly with initial elements', () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
+    render(<LocationStep {...defaultProps} />);
     expect(screen.getByText(/Where are you planning to grow?/i)).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/e.g., 123 Main St, Anytown/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Use My Current Location/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Search/i })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Next/i })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Back/i })).toBeInTheDocument();
+    // "Next" and "Back" buttons are not part of LocationStep itself
   });
 
-  it('allows manual address input, search, and calls onNext', async () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
+  it('allows manual address input, search, and calls onDataChange', async () => {
+    render(<LocationStep {...defaultProps} />);
     const input = screen.getByPlaceholderText(/e.g., 123 Main St, Anytown/i);
 
     fireEvent.change(input, { target: { value: 'Test Address' } });
@@ -71,17 +76,17 @@ describe('LocationStep', () => {
       expect(screen.getByText(/Selected Location: Test Address/i)).toBeInTheDocument();
     });
 
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({
+    expect(mockOnDataChange).toHaveBeenCalledWith({
       location: expect.objectContaining({
         address: 'Test Address',
         climateZone: 'Varies (Placeholder)', // As per current implementation
+        simplifiedClimate: 'Varies (Placeholder)',
       }),
     });
   });
 
-  it('handles "Use My Current Location" button click, geolocation success, and calls onNext', async () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
+  it('handles "Use My Current Location" button click, geolocation success, and calls onDataChange', async () => {
+    render(<LocationStep {...defaultProps} />);
 
     fireEvent.click(screen.getByRole('button', { name: /Use My Current Location/i }));
 
@@ -96,53 +101,43 @@ describe('LocationStep', () => {
       expect(screen.getByText(/Selected Location: Coordinates: 51.51, 0.13/i)).toBeInTheDocument();
     });
 
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({
+    expect(mockOnDataChange).toHaveBeenCalledWith({
       location: expect.objectContaining({
         lat: 51.5074,
         lon: 0.1278,
-        address: 'Coordinates: 51.5074, 0.1278', // Exact formatting from component
+        address: 'Coordinates: 51.5074, 0.1278',
         climateZone: 'Temperate (Placeholder)',
+        simplifiedClimate: 'Temperate (Placeholder)',
       }),
     });
   });
 
   it('handles geolocation error and displays error message', async () => {
-    mockGeolocation.getCurrentPosition.mockImplementationOnce((successCallback, errorCallback) =>
-      errorCallback({ message: 'User denied Geolocation' })
-    );
+    mockGeolocation.getCurrentPosition.mockImplementationOnce((successCallback, errorCallback) => {
+      if (errorCallback) { // Ensure errorCallback is defined before calling
+        errorCallback({ code: 1, message: 'User denied Geolocation' } as GeolocationPositionError);
+      }
+    });
 
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
+    render(<LocationStep {...defaultProps} />);
     fireEvent.click(screen.getByRole('button', { name: /Use My Current Location/i }));
 
     await waitFor(() => {
       expect(screen.getByText(/Error detecting location: User denied Geolocation/i)).toBeInTheDocument();
     });
-
-    // Next button should be enabled, but location data might be incomplete or error shown
-    // Depending on desired behavior, you might check that onNext is not called with location data
-    // or that it's called with empty/error state if that's how it's designed.
-    // For now, just checking error message is fine.
-    const nextButton = screen.getByRole('button', { name: /Next/i });
-    expect(nextButton).not.toBeDisabled(); // Or check if it should be disabled based on requirements
-  });
-
-  it('calls onBack when the "Back" button is clicked', () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
-    fireEvent.click(screen.getByRole('button', { name: /Back/i }));
-    expect(mockOnBack).toHaveBeenCalledTimes(1);
   });
 
   it('initializes with and displays data from props', () => {
-    const existingData = {
+    const existingData: Partial<PlannerData> = {
       location: {
         lat: 12.34,
         lon: 56.78,
         address: 'Existing Address',
         climateZone: 'Tropical (Test)',
+        simplifiedClimate: 'Tropical',
       },
     };
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={existingData} />);
+    render(<LocationStep data={existingData} onDataChange={mockOnDataChange} />);
 
     expect(screen.getByPlaceholderText(/e.g., 123 Main St, Anytown/i)).toHaveValue('Existing Address');
     expect(screen.getByText(/Selected Location: Existing Address/i)).toBeInTheDocument();
@@ -150,28 +145,25 @@ describe('LocationStep', () => {
     expect(screen.getByText(/Climate Zone: Tropical \(Test\)/i)).toBeInTheDocument();
   });
 
+  // The "Next" button is handled by the parent component, so tests for its disabled/enabled state
+  // based on local conditions within LocationStep are removed. LocationStep's responsibility is to call onDataChange.
+  // Removing the test below as it was for a "Next" button that's not in this component.
+  /*
   it('disables Next button if no address is available', () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={{ location: { address: '' } }} />);
-    // Clear any default address that might be set by useEffect if data.location is empty but present
+    render(<LocationStep {...defaultProps} data={{ location: { address: '', lat: null, lon: null, climateZone: '' } }} />);
     const input = screen.getByPlaceholderText(/e.g., 123 Main St, Anytown/i);
-    fireEvent.change(input, { target: { value: '' } }); // Ensure input is empty
-
-    // If there's a "Search" button that sets the address, we need to consider its state.
-    // The condition is `!locationInfo.address && !manualAddress`
-    // So if manualAddress is also empty, it should be disabled.
-
-    expect(screen.getByRole('button', { name: /Next/i })).toBeDisabled();
+    fireEvent.change(input, { target: { value: '' } });
+    // Check some condition that would make parent disable next
   });
 
   it('enables Next button if an address is present', async () => {
-    render(<LocationStep onNext={mockOnNext} onBack={mockOnBack} data={initialData} />);
+    render(<LocationStep {...defaultProps} />);
     const input = screen.getByPlaceholderText(/e.g., 123 Main St, Anytown/i);
     fireEvent.change(input, { target: { value: 'New Address' } });
-     fireEvent.click(screen.getByRole('button', { name: /Search/i })); // Simulate search to update locationInfo
-
+    fireEvent.click(screen.getByRole('button', { name: /Search/i }));
     await waitFor(() => {
-        expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
+      // Check some condition that would make parent enable next
     });
   });
-
+  */
 });

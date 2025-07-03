@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Home, Building, Trees, Sprout, Warehouse } from 'lucide-react';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
 const spaceOptions = [
   { id: 'indoors', label: 'Indoor', icon: Home, description: "Growing inside your home, perhaps on a windowsill or with grow lights." },
@@ -12,20 +12,17 @@ const spaceOptions = [
   // Consider adding "other" or more specific types if needed by customization rules
 ];
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const GrowingSpaceStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  const [selectedSpace, setSelectedSpace] = useState<string | undefined>(plannerData.space);
+const GrowingSpaceStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  const [selectedSpace, setSelectedSpace] = useState<string | undefined>(data.space);
 
   useEffect(() => {
     // Sync with parent data if it changes (e.g., user navigates back and data is reloaded)
-    if (plannerData.space !== undefined) {
-      setSelectedSpace(plannerData.space);
+    if (data.space !== undefined) {
+      setSelectedSpace(data.space);
     }
-  }, [plannerData.space]);
+  }, [data.space]);
 
   const handleSelectSpace = (spaceId: string) => {
     setSelectedSpace(spaceId);

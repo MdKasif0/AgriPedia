@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Sun, SunMedium, CloudSun } from 'lucide-react';
-import type { PlannerData } from '@/types/planner';
+import type { PlannerData, StepProps } from '@/types/planner'; // Import StepProps
 
 const sunlightOptions = [
   { id: 'shade', label: 'Shade', description: 'Minimal direct sun (less than 4 hours)', icon: CloudSun, detailedGuide: 'Ideal for shade-tolerant plants like leafy greens (e.g., lettuce, spinach) or many indoor houseplants.' }, // Changed 'low' to 'shade'
@@ -10,19 +10,16 @@ const sunlightOptions = [
   { id: 'full', label: 'Full Sun', description: 'Plenty of direct sun (6+ hours)', icon: Sun, detailedGuide: 'Perfect for sun-loving, fruit-bearing plants like tomatoes, peppers, cucumbers, and squash, as well as herbs like basil and rosemary.' },
 ];
 
-interface StepProps {
-  plannerData: Partial<PlannerData>;
-  onDataChange: (updatedData: Partial<PlannerData>) => void;
-}
+// No longer need local StepProps interface
 
-const SunlightExposureStep: React.FC<StepProps> = ({ plannerData, onDataChange }) => {
-  const [selectedExposure, setSelectedExposure] = useState<string | undefined>(plannerData.sunlight);
+const SunlightExposureStep: React.FC<StepProps> = ({ data, onDataChange }) => {
+  const [selectedExposure, setSelectedExposure] = useState<string | undefined>(data.sunlight);
 
   useEffect(() => {
-    if (plannerData.sunlight !== undefined) {
-      setSelectedExposure(plannerData.sunlight);
+    if (data.sunlight !== undefined) {
+      setSelectedExposure(data.sunlight);
     }
-  }, [plannerData.sunlight]);
+  }, [data.sunlight]);
 
   const handleSelectExposure = (exposureId: string) => {
     setSelectedExposure(exposureId);

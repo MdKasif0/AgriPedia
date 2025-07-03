@@ -61,12 +61,18 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@opentelemetry/exporter-jaeger": "^2.0.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "18.3.23",
     "@types/react-dom": "^18",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.3.3",
+    "eslint-plugin-jest": "^29.0.1",
     "genkit-cli": "^1.8.0",
+    "jest": "^30.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "5.8.3"

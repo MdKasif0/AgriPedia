@@ -13,58 +13,58 @@ jest.mock('lucide-react', () => ({
   Warehouse: () => <svg data-testid="warehouse-icon" />,
 }));
 
+import type { PlannerData, StepProps } from '@/types/planner';
+
 describe('GrowingSpaceStep', () => {
-  const mockOnNext = jest.fn();
-  const mockOnBack = jest.fn();
-  const spaceOptions = [
-    { id: 'indoor', label: 'Indoor' },
+  const mockOnDataChange: jest.MockedFunction<(updatedData: Partial<PlannerData>) => void> = jest.fn();
+  // spaceOptions from the component itself, if needed for test verification:
+  const componentSpaceOptions = [
+    { id: 'indoors', label: 'Indoor' },
     { id: 'balcony', label: 'Balcony' },
-    { id: 'small_yard', label: 'Small Yard' },
-    { id: 'large_garden', label: 'Large Garden' },
+    { id: 'outdoors_small', label: 'Small Yard/Patio' },
+    { id: 'outdoors_large', label: 'Large Garden/Yard' },
     { id: 'greenhouse', label: 'Greenhouse' },
   ];
+
+  const defaultProps: StepProps = {
+    data: {},
+    onDataChange: mockOnDataChange,
+  };
 
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it('renders correctly with options', () => {
-    render(<GrowingSpaceStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
+    render(<GrowingSpaceStep {...defaultProps} />);
     expect(screen.getByText(/What kind of space are you working with?/i)).toBeInTheDocument();
-    spaceOptions.forEach(option => {
+    componentSpaceOptions.forEach(option => {
       expect(screen.getByText(option.label)).toBeInTheDocument();
     });
-    expect(screen.getByRole('button', { name: /Next/i })).toBeDisabled(); // Initially disabled
   });
 
-  it('allows selecting an option and calls onNext', () => {
-    render(<GrowingSpaceStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
-    const balconyOption = screen.getByText('Balcony'); // Button role is implicit for these clickable cards
-    fireEvent.click(balconyOption);
-
-    // Check if selection styling is applied (optional, depends on DOM structure for selection)
-    // For example, if a class 'selected' is added:
-    // expect(balconyOption.closest('button')).toHaveClass('ring-2'); // Example check
-
-    expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({ growingSpace: 'balcony' });
-  });
-
-  it('calls onBack when back button is clicked', () => {
-    render(<GrowingSpaceStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
-    fireEvent.click(screen.getByRole('button', { name: /Back/i }));
-    expect(mockOnBack).toHaveBeenCalledTimes(1);
+  it('allows selecting an option and calls onDataChange', () => {
+    render(<GrowingSpaceStep {...defaultProps} />);
+    const balconyButton = screen.getByText('Balcony').closest('button');
+    if (!balconyButton) throw new Error("Balcony button not found");
+    fireEvent.click(balconyButton);
+    expect(mockOnDataChange).toHaveBeenCalledWith({ space: 'balcony' });
   });
 
   it('initializes with and highlights data from props', () => {
-    render(<GrowingSpaceStep onNext={mockOnNext} onBack={mockOnBack} data={{ growingSpace: 'small_yard' }} />);
-    // Check that 'Small Yard' is somehow marked as selected.
-    // This requires knowing how selection is indicated (e.g., a specific class on the button or a child).
-    // For example, if the button gets a ring:
-    const smallYardButton = screen.getByText('Small Yard').closest('button');
-    expect(smallYardButton).toHaveClass('ring-green-500'); // Based on current implementation's selected style
+    render(<GrowingSpaceStep data={{ space: 'outdoors_small' }} onDataChange={mockOnDataChange} />);
+    const smallYardButton = screen.getByText('Small Yard/Patio').closest('button');
+    expect(smallYardButton).toHaveClass('ring-green-500');
+  });
 
-    expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
+  it('updates selection when data prop changes', () => {
+    const { rerender } = render(<GrowingSpaceStep data={{ space: 'indoors' }} onDataChange={mockOnDataChange} />);
+    const indoorButton = screen.getByText('Indoor').closest('button');
+    expect(indoorButton).toHaveClass('ring-green-500');
+
+    rerender(<GrowingSpaceStep data={{ space: 'greenhouse' }} onDataChange={mockOnDataChange} />);
+    const greenhouseButton = screen.getByText('Greenhouse').closest('button');
+    expect(greenhouseButton).toHaveClass('ring-green-500');
+    expect(indoorButton).not.toHaveClass('ring-green-500');
   });
 });

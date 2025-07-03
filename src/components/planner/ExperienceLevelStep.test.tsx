@@ -11,52 +11,56 @@ jest.mock('lucide-react', () => ({
   Award: () => <svg data-testid="award-icon" />,
 }));
 
+import { StepProps, PlannerData } from '@/types/planner';
+
 describe('ExperienceLevelStep', () => {
-  const mockOnNext = jest.fn();
-  const mockOnBack = jest.fn();
+  const mockOnDataChange: jest.MockedFunction<(updatedData: Partial<PlannerData>) => void> = jest.fn();
   const experienceOptions = [
     { id: 'beginner', label: 'Beginner' },
     { id: 'intermediate', label: 'Intermediate' },
     { id: 'advanced', label: 'Advanced' },
   ];
 
+  const defaultProps: StepProps = {
+    data: {},
+    onDataChange: mockOnDataChange,
+  };
+
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  it('renders correctly with options and "Finish" button', () => {
-    render(<ExperienceLevelStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
+  it('renders correctly with options', () => {
+    render(<ExperienceLevelStep {...defaultProps} />);
     expect(screen.getByText(/What's your gardening experience level?/i)).toBeInTheDocument();
     experienceOptions.forEach(option => {
       expect(screen.getByText(option.label)).toBeInTheDocument();
     });
-    expect(screen.getByRole('button', { name: /Finish/i })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Finish/i })).toBeDisabled(); // Initially disabled
   });
 
-  it('allows selecting an option and calls onNext with "Finish"', () => {
-    render(<ExperienceLevelStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
-    // The text 'Advanced' is part of a button
+  it('allows selecting an option and calls onDataChange', () => {
+    render(<ExperienceLevelStep {...defaultProps} />);
     const advancedButton = screen.getByText('Advanced').closest('button');
-    expect(advancedButton).toBeInTheDocument();
+    if (!advancedButton) throw new Error("Advanced button not found");
     fireEvent.click(advancedButton);
 
-    expect(screen.getByRole('button', { name: /Finish/i })).not.toBeDisabled();
-    fireEvent.click(screen.getByRole('button', { name: /Finish/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({ experienceLevel: 'advanced' });
-  });
-
-  it('calls onBack when back button is clicked', () => {
-    render(<ExperienceLevelStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
-    fireEvent.click(screen.getByRole('button', { name: /Back/i }));
-    expect(mockOnBack).toHaveBeenCalledTimes(1);
+    expect(mockOnDataChange).toHaveBeenCalledWith({ experience: 'advanced' });
   });
 
   it('initializes with and highlights data from props', () => {
-    render(<ExperienceLevelStep onNext={mockOnNext} onBack={mockOnBack} data={{ experienceLevel: 'intermediate' }} />);
+    render(<ExperienceLevelStep data={{ experience: 'intermediate' }} onDataChange={mockOnDataChange} />);
     const intermediateButton = screen.getByText('Intermediate').closest('button');
     expect(intermediateButton).toHaveClass('ring-purple-500'); // Based on current implementation's selected style
+  });
 
-    expect(screen.getByRole('button', { name: /Finish/i })).not.toBeDisabled();
+  it('updates selection when data prop changes', () => {
+    const { rerender } = render(<ExperienceLevelStep data={{ experience: 'beginner' }} onDataChange={mockOnDataChange} />);
+    const beginnerButton = screen.getByText('Beginner').closest('button');
+    expect(beginnerButton).toHaveClass('ring-purple-500');
+
+    rerender(<ExperienceLevelStep data={{ experience: 'advanced' }} onDataChange={mockOnDataChange} />);
+    const advancedButton = screen.getByText('Advanced').closest('button');
+    expect(advancedButton).toHaveClass('ring-purple-500');
+    expect(beginnerButton).not.toHaveClass('ring-purple-500');
   });
 });

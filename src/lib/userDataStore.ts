@@ -40,7 +40,10 @@ const USER_MODE_KEY = 'agripedia-user-mode';
 // For now, let's assume it's accessible. If not, these two lines might need adjustment or to be temporarily commented out.
 // For the subtask, we will assume `constants.ts` is in the same directory for simplicity of this step.
 // If it fails, we'll address it.
-import { type UserModeId, DEFAULT_USER_MODE_ID } from './constants';
+import { type UserModeId as ImportedUserModeId, DEFAULT_USER_MODE_ID } from './constants';
+
+// Re-export UserModeId so other modules can import it from userDataStore
+export type UserModeId = ImportedUserModeId;
 
 
 // --- Planner Data Validation ---

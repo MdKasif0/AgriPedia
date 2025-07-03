@@ -114,7 +114,7 @@ export default function PlannerPage() {
       toast({
         title: 'Grow Planner Saved!',
         description: 'Your preferences have been saved. You can now get personalized advice.',
-        variant: 'success', // Assuming 'success' variant exists or use default
+        variant: 'default',
       });
       router.push('/');
     }
@@ -136,7 +136,7 @@ export default function PlannerPage() {
     <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 max-w-2xl">
       <Card className="shadow-xl rounded-xl overflow-hidden bg-card text-card-foreground">
         <CardHeader className="bg-muted/50 dark:bg-muted/20 p-6">
-          {TOTAL_STEPS > 0 && <ProgressBar currentStep={currentStep -1} totalSteps={TOTAL_STEPS} className="mb-4"/>}
+          {TOTAL_STEPS > 0 && <ProgressBar currentStep={currentStep -1} totalSteps={TOTAL_STEPS} />}
           <CardTitle className="text-2xl sm:text-3xl font-bold text-center">
             Your Grow Planner
           </CardTitle>

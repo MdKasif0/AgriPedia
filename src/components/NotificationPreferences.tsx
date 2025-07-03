@@ -13,12 +13,14 @@ interface NotificationPrefs {
   recipeTips: boolean;
 }
 
+const defaultPrefs: NotificationPrefs = {
+  seasonalAlerts: true,
+  recipeTips: false,
+};
+
 export default function NotificationPreferences() {
   const [mounted, setMounted] = useState(false);
-  const [prefs, setPrefs] = useState<NotificationPrefs>({
-    seasonalAlerts: true,
-    recipeTips: false,
-  });
+  const [prefs, setPrefs] = useState<NotificationPrefs>(defaultPrefs);
 
   useEffect(() => {
     setMounted(true);
@@ -28,25 +30,25 @@ export default function NotificationPreferences() {
         const parsedPrefs = JSON.parse(storedPrefs);
         // Ensure all keys exist to prevent errors with old localStorage data
         setPrefs(prev => ({
-            seasonalAlerts: typeof parsedPrefs.seasonalAlerts === 'boolean' ? parsedPrefs.seasonalAlerts : prev.seasonalAlerts,
-            recipeTips: typeof parsedPrefs.recipeTips === 'boolean' ? parsedPrefs.recipeTips : prev.recipeTips,
+            seasonalAlerts: typeof parsedPrefs.seasonalAlerts === 'boolean' ? parsedPrefs.seasonalAlerts : defaultPrefs.seasonalAlerts,
+            recipeTips: typeof parsedPrefs.recipeTips === 'boolean' ? parsedPrefs.recipeTips : defaultPrefs.recipeTips,
         }));
       } catch (e) {
         console.error("Failed to parse notification preferences from localStorage", e);
         // Fallback to default if parsing fails
-        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
+        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(defaultPrefs));
       }
     } else {
         // Initialize localStorage if no prefs are stored
-        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
+        localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(defaultPrefs));
     }
-  }, []); // Initial load of prefs
+  }, []); // Initial load of prefs - no longer depends on `prefs` state for initialization
 
   useEffect(() => {
     if (mounted) { // Only save to localStorage after initial mount & load
         localStorage.setItem(NOTIFICATION_PREFS_KEY, JSON.stringify(prefs));
     }
-  }, [prefs, mounted]);
+  }, [prefs, mounted]); // This dependency array is correct
 
   const handleToggle = (key: keyof NotificationPrefs) => {
     setPrefs((prev) => ({

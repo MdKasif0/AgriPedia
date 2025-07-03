@@ -287,20 +287,73 @@ export interface ProduceInfo {
   seasons: string[];
   nutrition: {
     calories: string;
-    macronutrients: Array<{ name: string; value: number; unit: string }>;
-    vitamins: Array<{ name: string; value: number; unit: string; rdi?: string }>;
-    minerals: Array<{ name: string; value: number; unit: string; rdi?: string }>;
+    macronutrients: Array<{ name: string; value: string | number; unit: string }>;
+    vitamins: Array<{ name: string; value?: string | number; unit: string; rdi?: string }>;
+    minerals: Array<{ name: string; value?: string | number; unit: string; rdi?: string }>;
   };
-  healthBenefits: string[];
-  potentialAllergies: Array<{
+  healthBenefits?: string[];
+  potentialAllergies?: Array<{ // Made optional
     name: string;
     severity: 'Mild' | 'Moderate' | 'Severe' | 'Common' | 'Rare' | 'Varies' | 'Harmless' | 'Low' | 'Low to Moderate' | 'Moderate to High' | 'Very Low';
     details?: string;
   }>;
-  cultivationProcess: string;
-  growthDuration: string;
+  cultivationProcess?: string; // Made optional, as some older JSON might miss it
+  growthDuration?: string; // Made optional
+
+  // Fields from item-details-page.tsx and other errors
+  uses?: string[];
+  originAndDomesticationHistory?: string;
+  climaticRequirements?: {
+    temperature?: string;
+    rainfall?: string;
+    altitude?: string;
+    notes?: string; // Added notes based on typical data structure
+  };
+  soilPreferences?: string; // This can be detailed text
+  irrigationAndWaterNeeds?: string;
+  plantingAndHarvestCycles?: { // Define a basic structure
+    [month: string]: string; // e.g., "January": "Planting"
+  } | string; // Some JSONs might have a string
+  pestAndDiseaseManagement?: string;
+  postHarvestHandling?: string;
+  majorProducingCountriesOrRegions?: string[];
+  marketValueAndGlobalDemand?: string;
+  botanicalClassification?: { // Example of a potentially missing but useful field
+    family?: string;
+    genus?: string;
+    species?: string;
+  };
+  varieties?: Array<{ // Example for crop varieties
+    name: string;
+    description?: string;
+    characteristics?: string[];
+    image?: string;
+  }>;
+  culturalSignificance?: string;
+  environmentalImpact?: {
+    waterUsage?: string;
+    landUsage?: string;
+    carbonFootprint?: string; // More specific than carbonFootprintInfo
+    sustainabilityPractices?: string[];
+  };
+  storageAndShelfLife?: string;
+  preparationTips?: string[];
+  culinaryProfile?: {
+    flavor?: string;
+    texture?: string;
+    aroma?: string;
+    commonPairings?: string[];
+  };
+  historicalData?: {
+    averageYield?: string;
+    priceFluctuations?: string;
+  };
+  researchAndDevelopment?: string;
+  regulatoryInformation?: string;
+  exportAndImportDetails?: string;
+
   sustainabilityTips?: string[];
-  carbonFootprintInfo?: string;
+  carbonFootprintInfo?: string; // General info, keep if used
   staticRecipes?: Recipe[];
 }
 

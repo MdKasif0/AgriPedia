@@ -102,21 +102,21 @@ const PersonalizedGrowPlanner: React.FC = () => {
   }, [currentStep, formData]); // Trigger when currentStep or formData changes
 
 
-  const handleNext = (stepData: any) => {
+  // This function will be passed as onDataChange to step components
+  const updateStepData = (stepData: Partial<PlannerData>) => {
     if (!isValidStepData(stepData)) {
-      console.error("Problematic step data received. Not merging:", stepData);
-      // Still advance the step, but without merging the problematic data.
-      // This prevents the user from getting stuck but flags the issue.
-      if (currentStep < TOTAL_PLANNER_STEPS) {
-        setCurrentStep(prev => prev + 1);
-      }
-      return;
+      console.error("Problematic step data received from step. Not merging:", stepData);
+      // Decide if you want to prevent proceeding or allow proceeding without merging
+      return; // Or some other error handling
     }
-
     setFormData(prev => ({ ...prev, ...stepData }));
+  };
+
+  const handleNext = () => { // Now simply navigates
     if (currentStep < TOTAL_PLANNER_STEPS) {
       setCurrentStep(prev => prev + 1);
     }
+    // Save logic is now in useEffect based on currentStep === TOTAL_PLANNER_STEPS
   };
 
   const handleBack = () => {
@@ -141,19 +141,22 @@ const PersonalizedGrowPlanner: React.FC = () => {
 
 
   const renderStep = () => {
+    // Note: The step components (LocationStep, etc.) expect `plannerData` and `onDataChange`.
+    // We are passing `formData` as `plannerData` and `updateStepData` as `onDataChange`.
+    // The `onBack` and `onNext` for navigation are handled by buttons within this component.
     switch (displayedStep) {
       case 0:
-        return <LocationStep onNext={handleNext} data={formData} onBack={() => {}} />;
+        return <LocationStep data={formData} onDataChange={updateStepData} />;
       case 1:
-        return <GrowingSpaceStep onNext={handleNext} onBack={handleBack} data={formData} />;
+        return <GrowingSpaceStep data={formData} onDataChange={updateStepData} />;
       case 2:
-        return <SunlightExposureStep onNext={handleNext} onBack={handleBack} data={formData} />;
+        return <SunlightExposureStep data={formData} onDataChange={updateStepData} />;
       case 3:
-        return <PurposeStep onNext={handleNext} onBack={handleBack} data={formData} />;
+        return <PurposeStep data={formData} onDataChange={updateStepData} />;
       case 4:
-        return <TimeCommitmentStep onNext={handleNext} onBack={handleBack} data={formData} />;
+        return <TimeCommitmentStep data={formData} onDataChange={updateStepData} />;
       case 5:
-        return <ExperienceLevelStep onNext={handleNext} onBack={handleBack} data={formData} />;
+        return <ExperienceLevelStep data={formData} onDataChange={updateStepData} />;
       default: // Summary screen
         let summaryContent = "Loading summary...";
         try {
@@ -212,6 +215,13 @@ const PersonalizedGrowPlanner: React.FC = () => {
       <div className={`min-h-[420px] ${animationClass}`}>
         {renderStep()}
       </div>
+      {/* Navigation buttons for PersonalizedGrowPlanner, distinct from PlannerPage's */}
+      {displayedStep < TOTAL_PLANNER_STEPS && (
+        <div className="mt-6 flex justify-between">
+          <Button onClick={handleBack} variant="outline" disabled={currentStep === 0}>Back</Button>
+          <Button onClick={handleNext}>Next</Button>
+        </div>
+      )}
     </div>
   );
 };

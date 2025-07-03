@@ -14,71 +14,67 @@ jest.mock('lucide-react', () => ({
   ShieldCheck: () => <svg data-testid="shieldcheck-icon" />,
 }));
 
+import type { PlannerData, StepProps } from '@/types/planner';
+
 describe('PurposeStep', () => {
-  const mockOnNext = jest.fn();
-  const mockOnBack = jest.fn();
-  const purposeOptionsLabels = ['Vegetables', 'Herbs', 'Fruits', 'Flowers', 'Medicinal', 'Pet-Safe'];
+  const mockOnDataChange: jest.MockedFunction<(updatedData: Partial<PlannerData>) => void> = jest.fn();
+  const purposeOptionsLabels = ['Vegetables', 'Herbs', 'Fruits', 'Flowers', 'Medicinal', 'Pet-Safe Plants']; // Updated Pet-Safe label
+
+  const defaultProps: StepProps = {
+    data: {},
+    onDataChange: mockOnDataChange,
+  };
 
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it('renders correctly with options', () => {
-    render(<PurposeStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
+    render(<PurposeStep {...defaultProps} />);
     expect(screen.getByText(/What are your gardening goals?/i)).toBeInTheDocument();
     purposeOptionsLabels.forEach(label => {
       expect(screen.getByText(label)).toBeInTheDocument();
     });
-    expect(screen.getByRole('button', { name: /Next/i })).toBeDisabled();
   });
 
-  it('allows selecting multiple options and calls onNext with an array of selections', () => {
-    render(<PurposeStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
+  it('allows selecting multiple options and calls onDataChange with an array of selections', () => {
+    render(<PurposeStep {...defaultProps} />);
 
     const vegetablesButton = screen.getByText('Vegetables').closest('button');
+    if (!vegetablesButton) throw new Error("Vegetables button not found");
     const herbsButton = screen.getByText('Herbs').closest('button');
+    if (!herbsButton) throw new Error("Herbs button not found");
 
     fireEvent.click(vegetablesButton);
-    fireEvent.click(herbsButton);
+    expect(mockOnDataChange).toHaveBeenCalledWith({ purpose: ['vegetables'] });
 
-    // Check selection styling (example for one button)
+    fireEvent.click(herbsButton);
+    expect(mockOnDataChange).toHaveBeenCalledWith({ purpose: ['vegetables', 'herbs'] });
+
+
+    // Check selection styling
     expect(vegetablesButton).toHaveClass('ring-blue-500');
     expect(herbsButton).toHaveClass('ring-blue-500');
-
-    expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({ purposes: ['vegetables', 'herbs'] });
   });
 
   it('allows deselecting an option', () => {
-    render(<PurposeStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
+    render(<PurposeStep {...defaultProps} data={{ purpose: ['vegetables']}} />);
     const vegetablesButton = screen.getByText('Vegetables').closest('button');
+    if (!vegetablesButton) throw new Error("Vegetables button not found");
 
-    // Select
-    fireEvent.click(vegetablesButton);
+    // Pre-selected from props
     expect(vegetablesButton).toHaveClass('ring-blue-500');
-    expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
 
     // Deselect
     fireEvent.click(vegetablesButton);
     expect(vegetablesButton).not.toHaveClass('ring-blue-500');
-    expect(screen.getByRole('button', { name: /Next/i })).toBeDisabled(); // Assuming it becomes disabled if empty
-
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    // onNext should not be called if no items are selected and button is disabled
-    expect(mockOnNext).not.toHaveBeenCalled();
+    expect(mockOnDataChange).toHaveBeenCalledWith({ purpose: [] });
   });
 
-
-  it('calls onBack when back button is clicked', () => {
-    render(<PurposeStep onNext={mockOnNext} onBack={mockOnBack} data={{}} />);
-    fireEvent.click(screen.getByRole('button', { name: /Back/i }));
-    expect(mockOnBack).toHaveBeenCalledTimes(1);
-  });
 
   it('initializes with and highlights data from props', () => {
     const initialPurposes = ['fruits', 'flowers'];
-    render(<PurposeStep onNext={mockOnNext} onBack={mockOnBack} data={{ purposes: initialPurposes }} />);
+    render(<PurposeStep data={{ purpose: initialPurposes }} onDataChange={mockOnDataChange} />);
 
     const fruitsButton = screen.getByText('Fruits').closest('button');
     const flowersButton = screen.getByText('Flowers').closest('button');
@@ -87,9 +83,18 @@ describe('PurposeStep', () => {
     expect(fruitsButton).toHaveClass('ring-blue-500');
     expect(flowersButton).toHaveClass('ring-blue-500');
     expect(vegetablesButton).not.toHaveClass('ring-blue-500');
+  });
 
-    expect(screen.getByRole('button', { name: /Next/i })).not.toBeDisabled();
-    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
-    expect(mockOnNext).toHaveBeenCalledWith({ purposes: initialPurposes });
+  it('updates selection when data prop changes', () => {
+    const { rerender } = render(<PurposeStep data={{ purpose: ['herbs'] }} onDataChange={mockOnDataChange} />);
+    const herbsButton = screen.getByText('Herbs').closest('button');
+    expect(herbsButton).toHaveClass('ring-blue-500');
+
+    rerender(<PurposeStep data={{ purpose: ['vegetables', 'medicinal'] }} onDataChange={mockOnDataChange} />);
+    const vegetablesButton = screen.getByText('Vegetables').closest('button');
+    const medicinalButton = screen.getByText('Medicinal').closest('button');
+    expect(vegetablesButton).toHaveClass('ring-blue-500');
+    expect(medicinalButton).toHaveClass('ring-blue-500');
+    expect(herbsButton).not.toHaveClass('ring-blue-500');
   });
 });
