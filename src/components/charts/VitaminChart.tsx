@@ -43,7 +43,7 @@ export default function VitaminChart({ data, className }: VitaminChartProps) {
   });
 
   return (
-    <div className={cn("p-2 sm:p-4 bg-card rounded-lg shadow overflow-hidden", className)}>
+    <div className={cn("p-2 sm:p-4 bg-transparent rounded-lg overflow-hidden", className)}>
       <h4 className="text-md sm:text-lg font-semibold mb-2 sm:mb-4 text-primary text-center">Vitamins per 100g</h4>
       <ChartContainer config={chartConfig} className="h-[250px] sm:h-[300px] w-full">
         <ResponsiveContainer width="100%" height="100%">

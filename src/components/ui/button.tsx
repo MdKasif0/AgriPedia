@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-accent-emerald text-white hover:bg-accent-emerald/90 hover:shadow-[0_0_15px_5px_rgba(0,195,122,0.2)]",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_0_15px_5px_theme(colors.primary/30%)]",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:shadow-[0_0_15px_5px_rgba(255,102,102,0.3)]",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:shadow-[0_0_15px_5px_theme(colors.destructive/30%)]",
         outline:
-          "border border-border bg-transparent hover:bg-accent-emerald/10 hover:text-accent-emerald hover:border-accent-emerald",
+          "border border-secondary text-secondary-foreground bg-transparent hover:bg-accent/10 hover:text-accent-foreground",
         secondary:
-          "bg-button-primary text-foreground border border-border hover:bg-neutral-800/60 hover:border-accent-emerald",
-        ghost: "hover:bg-accent-emerald/10 hover:text-accent-emerald text-foreground",
-        link: "text-accent-emerald underline-offset-4 hover:underline hover:text-accent-emerald/80",
+          "bg-muted text-muted-foreground hover:bg-muted/80",
+        ghost: "hover:bg-accent/10 hover:text-accent-foreground text-foreground",
+        link: "text-primary underline-offset-4 hover:underline hover:text-primary/80",
       },
       size: {
         default: "h-10 px-4 py-2",
