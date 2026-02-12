@@ -174,5 +174,8 @@
         "Serve immediately at room temperature for the best flavor."
       ]
     }
-  ]
+  ],
+  "lightRequirement": "full_sun",
+  "experienceLevel": "beginner",
+  "spaceSuitability": ["garden", "balcony_pots"]
 }
