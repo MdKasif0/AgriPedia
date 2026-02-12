@@ -49,6 +49,79 @@
   ],
   "carbonFootprintInfo": "Rye generally has a lower carbon footprint than wheat due to lower input requirements and its ability to sequester carbon when used as a cover crop.",
   "uses": ["culinary_bread", "animal_feed", "beverages_alcoholic", "cover_crop"],
+  "staticRecipes": [
+    {
+      "name": "Basic Homemade Rye Bread",
+      "ingredients": [
+        "1.5 cups warm water (105-115°F)",
+        "1 tbsp active dry yeast",
+        "1 tbsp sugar or molasses",
+        "1.5 cups rye flour",
+        "1.5-2 cups bread flour (or all-purpose flour)",
+        "1.5 tsp salt",
+        "1 tbsp caraway seeds (optional)",
+        "1 tbsp vegetable oil"
+      ],
+      "instructions": [
+        "In a large bowl, dissolve yeast and sugar/molasses in warm water. Let stand for 5-10 minutes until foamy.",
+        "Add rye flour, 1.5 cups of bread flour, salt, caraway seeds (if using), and oil to the yeast mixture. Stir until a shaggy dough forms.",
+        "Turn dough out onto a lightly floured surface. Knead for 8-10 minutes, adding more bread flour as needed (up to 1/2 cup) until the dough is smooth and elastic but still slightly sticky.",
+        "Place dough in a lightly oiled bowl, turning to coat. Cover and let rise in a warm place for 1-1.5 hours, or until doubled in size.",
+        "Punch down the dough. Shape into a round or oval loaf and place on a baking sheet lined with parchment paper or dusted with cornmeal.",
+        "Cover and let rise for another 45-60 minutes, or until nearly doubled.",
+        "Preheat oven to 375°F (190°C).",
+        "Optional: Brush loaf with an egg wash (1 egg beaten with 1 tbsp water) and slash the top with a sharp knife.",
+        "Bake for 30-40 minutes, or until golden brown and the internal temperature reaches 200-210°F (93-99°C). The loaf should sound hollow when tapped on the bottom.",
+        "Let cool completely on a wire rack before slicing."
+      ],
+      "notes": "Rye flour has less gluten than wheat flour, so rye breads are typically denser. Using a mix of rye and bread flour gives a lighter texture. Molasses adds a traditional dark color and flavor."
+    },
+    {
+      "name": "Rye Flour Pancakes",
+      "ingredients": [
+        "1 cup rye flour",
+        "1/2 cup all-purpose flour (or more rye flour for 100% rye)",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1/4 tsp ground cinnamon or cardamom (optional)",
+        "1 large egg",
+        "1.25 cups milk (dairy or non-dairy)",
+        "2 tbsp melted butter or oil, plus more for greasing"
+      ],
+      "instructions": [
+        "In a large bowl, whisk together rye flour, all-purpose flour (if using), sugar, baking powder, salt, and spices (if using).",
+        "In a separate bowl, whisk together the egg, milk, and melted butter/oil.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix; some lumps are okay.",
+        "Let the batter rest for 10-15 minutes. Rye flour absorbs more liquid, so the batter may thicken.",
+        "Heat a lightly oiled griddle or non-stick frying pan over medium heat.",
+        "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle.",
+        "Cook for 2-3 minutes per side, or until golden brown and cooked through. Flip when bubbles appear on the surface and edges look set.",
+        "Serve warm with maple syrup, fruit, or your favorite toppings."
+      ],
+      "notes": "Rye pancakes will be heartier and may have a slightly tangier flavor than regular pancakes. Adjust milk if batter seems too thick after resting."
+    },
+    {
+      "name": "Cooked Rye Berries",
+      "ingredients": [
+        "1 cup whole rye berries, rinsed",
+        "3 cups water or broth",
+        "1/2 tsp salt (optional)"
+      ],
+      "instructions": [
+        "Rinse the rye berries thoroughly under cold running water.",
+        "Optional: Soak rye berries in water overnight. This will reduce cooking time.",
+        "In a medium saucepan, combine the rinsed (and soaked, if applicable) rye berries, water or broth, and salt (if using).",
+        "Bring to a boil over medium-high heat.",
+        "Once boiling, reduce the heat to low, cover the saucepan, and simmer.",
+        "If unsoaked: Simmer for 50-60 minutes, or until tender but still chewy.",
+        "If soaked: Simmer for 30-45 minutes, or until tender.",
+        "Drain any excess liquid. Fluff with a fork.",
+        "Serve warm as a side dish, add to salads, soups, or use as a base for grain bowls."
+      ],
+      "notes": "Rye berries have a firm, chewy texture and a robust, slightly earthy flavor. They are excellent for adding texture and nutrients to various dishes."
+    }
+  ],
   "originAndDomesticationHistory": "Rye (Secale cereale) is thought to have originated as a weed in wheat and barley fields in southwestern Asia. It was domesticated later than wheat and barley, possibly around 4000-2000 BCE. Its hardiness allowed it to become a staple crop in colder regions of Northern and Eastern Europe.",
   "climaticRequirements": {
     "temperature": "Very hardy. Winter rye can survive temperatures as low as -35°C. Optimal growing temperatures are 15-20°C. Tolerates cool and damp conditions.",

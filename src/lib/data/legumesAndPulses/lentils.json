@@ -51,6 +51,97 @@
   ],
   "carbonFootprintInfo": "Lentils generally have a low carbon footprint, primarily due to their nitrogen-fixing capabilities and low input requirements. They are considered a climate-friendly protein source.",
   "uses": ["culinary_soups_stews_salads_dal", "animal_feed_plant_residue", "cover_crop"],
+  "staticRecipes": [
+    {
+      "name": "Hearty Lentil Soup",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 large onion, chopped",
+        "2 carrots, diced",
+        "2 celery stalks, diced",
+        "2 cloves garlic, minced",
+        "1 cup brown or green lentils, rinsed",
+        "6 cups vegetable or chicken broth",
+        "1 can (14.5 oz) diced tomatoes, undrained",
+        "1 tsp dried thyme",
+        "1/2 tsp dried rosemary",
+        "1 bay leaf",
+        "Salt and black pepper to taste",
+        "Optional: a splash of balsamic vinegar or lemon juice at the end"
+      ],
+      "instructions": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat.",
+        "Add onion, carrots, and celery. Cook, stirring occasionally, for 5-7 minutes until softened.",
+        "Add minced garlic and cook for another minute until fragrant.",
+        "Stir in the rinsed lentils, broth, diced tomatoes, thyme, rosemary, and bay leaf.",
+        "Bring the soup to a boil, then reduce heat to low, cover, and simmer for 30-40 minutes, or until lentils are tender.",
+        "Remove the bay leaf. Season with salt and pepper to taste.",
+        "If desired, stir in a splash of balsamic vinegar or lemon juice before serving for brightness.",
+        "Ladle into bowls and serve hot. Can be garnished with fresh parsley."
+      ],
+      "notes": "This soup is very versatile. Feel free to add other vegetables like potatoes, spinach, or kale. For a thicker soup, you can blend a portion of it and return it to the pot."
+    },
+    {
+      "name": "Quick Red Lentil Dal (Masoor Dal Tadka)",
+      "ingredients": [
+        "1 cup red lentils (masoor dal), rinsed thoroughly",
+        "3 cups water",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "For Tempering (Tadka):",
+        "1-2 tbsp ghee or vegetable oil",
+        "1 tsp cumin seeds",
+        "1/2 tsp mustard seeds (optional)",
+        "1-2 dried red chilies, broken",
+        "1 small onion, thinly sliced (optional)",
+        "1-2 cloves garlic, minced",
+        "1/2 inch ginger, grated or finely chopped (optional)",
+        "Pinch of asafoetida (hing) (optional)",
+        "Fresh cilantro, chopped, for garnish"
+      ],
+      "instructions": [
+        "Cook Lentils: In a medium saucepan, combine rinsed red lentils, water, turmeric powder, and salt. Bring to a boil.",
+        "Once boiling, reduce heat to low, cover partially (to prevent boiling over), and simmer for 15-20 minutes, or until lentils are soft and well-cooked. Stir occasionally. Add more water if dal becomes too thick.",
+        "Prepare Tempering (Tadka): While lentils are cooking or once cooked, heat ghee or oil in a small frying pan over medium heat.",
+        "Add cumin seeds and mustard seeds (if using). Let them splutter.",
+        "Add dried red chilies and asafoetida (if using). Sauté for a few seconds.",
+        "If using onion, add it now and sauté until golden brown. Then add minced garlic and ginger (if using) and sauté until fragrant (about 30 seconds to 1 minute).",
+        "Combine: Pour the hot tempering mixture immediately into the cooked lentils. Be careful as it may splatter.",
+        "Stir well to combine. Simmer for another 1-2 minutes.",
+        "Garnish with fresh cilantro and serve hot with rice or roti."
+      ],
+      "notes": "Red lentils cook quickly and break down, creating a creamy texture. Adjust consistency with water. The 'tadka' or tempering is key to the flavor."
+    },
+    {
+      "name": "French Green Lentil Salad with Herbs",
+      "ingredients": [
+        "1 cup French green lentils (Le Puy lentils if available), rinsed",
+        "3 cups water or vegetable broth",
+        "1 bay leaf",
+        "1/2 red onion, finely diced",
+        "1/2 cup chopped fresh parsley",
+        "1/4 cup chopped fresh mint or dill (or a mix)",
+        "1/4 cup crumbled feta or goat cheese (optional)",
+        "For the Vinaigrette:",
+        "1/4 cup extra virgin olive oil",
+        "2 tbsp red wine vinegar or lemon juice",
+        "1 tsp Dijon mustard",
+        "1 small clove garlic, minced",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook Lentils: In a saucepan, combine rinsed lentils, water or broth, and bay leaf. Bring to a boil, then reduce heat, cover, and simmer for 20-25 minutes, or until lentils are tender but still hold their shape (al dente). Do not overcook.",
+        "Drain lentils well and discard the bay leaf. Let them cool slightly.",
+        "Prepare Vinaigrette: In a small bowl, whisk together olive oil, red wine vinegar or lemon juice, Dijon mustard, minced garlic, salt, and pepper.",
+        "Assemble Salad: In a large bowl, combine the cooked and cooled lentils, finely diced red onion, chopped parsley, and chopped mint/dill.",
+        "Pour the vinaigrette over the lentil mixture and toss gently to combine.",
+        "If using, gently stir in the crumbled feta or goat cheese.",
+        "Taste and adjust seasoning if necessary.",
+        "Serve chilled or at room temperature. This salad often tastes better after sitting for a while, allowing flavors to meld."
+      ],
+      "notes": "French green lentils (or Le Puy lentils) are ideal for salads as they hold their shape well when cooked. Other green or brown lentils can be used, but cooking time may vary."
+    }
+  ],
   "originAndDomesticationHistory": "Lentils (Lens culinaris) are one of the oldest domesticated crops, with origins in the Near East (Fertile Crescent) around 7,000-8,000 BCE. Wild progenitor is believed to be Lens orientalis. They were a staple food in ancient Egypt, Greece, and Rome, and spread throughout Europe, Asia, and North Africa.",
   "climaticRequirements": {
     "temperature": "Cool-season crop. Optimal temperatures for growth are 18-24°C. Tolerates light frost but sensitive to high temperatures during flowering.",

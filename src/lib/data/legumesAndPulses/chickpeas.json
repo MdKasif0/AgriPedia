@@ -51,6 +51,84 @@
   ],
   "carbonFootprintInfo": "Chickpeas generally have a low carbon footprint due to their nitrogen-fixing ability and relatively low input requirements. Processing and transportation contribute to the overall footprint.",
   "uses": ["culinary_hummus_curries_salads", "flour_production_besan", "animal_feed_plant_residue"],
+  "staticRecipes": [
+    {
+      "name": "Classic Creamy Hummus",
+      "ingredients": [
+        "1 can (15 oz) chickpeas, rinsed and drained (or 1.5 cups cooked chickpeas)",
+        "1/4 cup tahini (sesame paste)",
+        "1/4 cup fresh lemon juice",
+        "1-2 cloves garlic, minced",
+        "2 tbsp olive oil, plus more for drizzling",
+        "2-4 tbsp ice water (or liquid from canned chickpeas/aquafaba)",
+        "1/2 tsp ground cumin",
+        "Salt to taste",
+        "Optional garnish: paprika, chopped parsley, whole chickpeas"
+      ],
+      "instructions": [
+        "Combine tahini and lemon juice in a food processor. Process for 1 minute until whipped and lighter in color. Scrape down sides.",
+        "Add minced garlic and olive oil to the food processor. Process for another 30 seconds.",
+        "Add half of the chickpeas to the food processor and process for 1 minute. Add the remaining chickpeas and process until very smooth, about 1-2 minutes. Scrape down sides as needed.",
+        "With the food processor running, slowly add ice water, one tablespoon at a time, until the hummus reaches desired creamy consistency.",
+        "Add cumin and salt to taste. Process briefly to combine.",
+        "Taste and adjust seasonings (lemon juice, salt, garlic) if needed.",
+        "To serve, spread hummus in a shallow bowl, drizzle with olive oil, and sprinkle with paprika and parsley if desired.",
+        "Serve with pita bread, vegetables, or as a spread."
+      ],
+      "notes": "For extra smooth hummus, you can remove the skins from the chickpeas after rinsing, though this is optional. Using ice water helps make the hummus fluffier."
+    },
+    {
+      "name": "Simple Chickpea Curry (Chana Masala Style)",
+      "ingredients": [
+        "1 tbsp vegetable oil",
+        "1 large onion, finely chopped",
+        "2 cloves garlic, minced",
+        "1 inch ginger, grated",
+        "1-2 green chilies, slit (optional)",
+        "1 tsp ground cumin",
+        "1 tsp ground coriander",
+        "1/2 tsp turmeric powder",
+        "1/4 tsp cayenne pepper (or to taste)",
+        "1 can (14.5 oz) diced tomatoes, undrained",
+        "1 can (15 oz) chickpeas, rinsed and drained (or 1.5 cups cooked chickpeas)",
+        "1/2 cup water or vegetable broth",
+        "1 tsp garam masala",
+        "Salt to taste",
+        "Fresh cilantro, chopped (for garnish)",
+        "Lemon wedges for serving (optional)"
+      ],
+      "instructions": [
+        "Heat oil in a large skillet or pot over medium heat. Add onion and cook until softened and translucent, about 5-7 minutes.",
+        "Add garlic, ginger, and green chilies (if using). Sauté for 1-2 minutes until fragrant.",
+        "Stir in cumin, coriander, turmeric, and cayenne pepper. Cook for 1 minute more, stirring constantly.",
+        "Add diced tomatoes (with their juice) and cook, stirring occasionally, for 5 minutes, until the tomatoes break down and the sauce thickens slightly.",
+        "Add the rinsed chickpeas and water/broth. Bring to a simmer.",
+        "Reduce heat to low, cover, and cook for 10-15 minutes, allowing flavors to meld. Stir occasionally.",
+        "Stir in garam masala and salt to taste. Cook for another 1-2 minutes.",
+        "Garnish with fresh cilantro. Serve hot with rice, naan, or roti. Offer lemon wedges on the side."
+      ],
+      "notes": "Adjust spices to your preference. For a creamier curry, you can stir in a few tablespoons of coconut milk or plain yogurt at the end (off heat if using yogurt)."
+    },
+    {
+      "name": "Crunchy Roasted Chickpeas",
+      "ingredients": [
+        "1 can (15 oz) chickpeas, rinsed and drained thoroughly",
+        "1-2 tbsp olive oil",
+        "1/2 tsp salt (or to taste)",
+        "Optional spices: 1/2 tsp smoked paprika, 1/4 tsp garlic powder, 1/4 tsp cumin, pinch of cayenne pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Dry Chickpeas: This is a key step for crunchiness. After rinsing and draining, pat the chickpeas very dry with paper towels or a clean kitchen towel. You can even let them air dry for a bit.",
+        "Toss with Oil and Seasonings: In a medium bowl, toss the dried chickpeas with olive oil until evenly coated. Add salt and any optional spices. Toss again to distribute seasonings.",
+        "Roast: Spread the chickpeas in a single layer on a baking sheet lined with parchment paper (for easier cleanup).",
+        "Bake for 20-30 minutes, shaking the pan or stirring them halfway through, until they are golden brown and crunchy. Cooking time will vary depending on your oven and desired crispiness.",
+        "Cool: Let the roasted chickpeas cool on the baking sheet for a few minutes. They will crisp up more as they cool.",
+        "Serve: Enjoy as a snack, salad topper, or a crunchy addition to bowls."
+      ],
+      "notes": "Ensure chickpeas are very dry before roasting. Don't overcrowd the baking sheet. Store cooled roasted chickpeas in an airtight container at room temperature for a few days, though they are best enjoyed fresh as they can lose some crispness over time."
+    }
+  ],
   "originAndDomesticationHistory": "Chickpeas (Cicer arietinum) were domesticated in the Fertile Crescent, specifically in southeastern Turkey, around 7,500 years ago. Archaeological evidence suggests wild Cicer reticulatum as the progenitor. They spread to the Mediterranean basin, India, and Ethiopia in ancient times. Two main types evolved: the larger-seeded Kabuli type (Mediterranean and Middle East) and the smaller-seeded Desi type (Indian subcontinent and Ethiopia).",
   "climaticRequirements": {
     "temperature": "Cool-season crop. Optimal temperature for growth is 18-26°C. Tolerates some heat during pod fill but sensitive to frost, especially during flowering.",

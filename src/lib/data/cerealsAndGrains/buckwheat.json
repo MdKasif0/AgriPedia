@@ -52,6 +52,72 @@
   ],
   "carbonFootprintInfo": "Buckwheat generally has a low carbon footprint due to its ability to grow with minimal inputs and its use as a soil-improving cover crop.",
   "uses": ["culinary_flour_groats_noodles", "animal_feed", "cover_crop", "honey_production_flowers"],
+  "staticRecipes": [
+    {
+      "name": "Fluffy Buckwheat Pancakes",
+      "ingredients": [
+        "1 cup buckwheat flour",
+        "2 tbsp sugar (or maple syrup)",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 large egg",
+        "1 cup milk (dairy or non-dairy)",
+        "2 tbsp melted butter or oil, plus more for greasing"
+      ],
+      "instructions": [
+        "In a large bowl, whisk together buckwheat flour, sugar, baking powder, and salt.",
+        "In a separate bowl, whisk the egg, then add milk and melted butter/oil.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix; a few lumps are okay. The batter will be relatively thick.",
+        "Let the batter rest for 5-10 minutes.",
+        "Heat a lightly oiled griddle or non-stick frying pan over medium heat.",
+        "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle.",
+        "Cook for 2-3 minutes per side, or until golden brown and cooked through. Flip when bubbles appear on the surface and edges look set.",
+        "Serve warm with maple syrup, fresh fruit, or your favorite toppings."
+      ],
+      "notes": "Buckwheat flour gives these pancakes a distinct nutty and earthy flavor. They are naturally gluten-free if pure buckwheat flour is used and baking powder is gluten-free."
+    },
+    {
+      "name": "Cooked Buckwheat Groats (Kasha)",
+      "ingredients": [
+        "1 cup buckwheat groats (raw or toasted/kasha)",
+        "2 cups water or broth",
+        "1 tbsp butter or oil (optional)",
+        "1/2 tsp salt (optional)"
+      ],
+      "instructions": [
+        "Rinse buckwheat groats if they are not pre-toasted (kasha). If using kasha (toasted buckwheat), rinsing is optional.",
+        "Optional Toasting (if using raw groats): Heat a dry saucepan over medium heat. Add raw groats and toast for 4-5 minutes, stirring frequently, until fragrant and lightly browned. This enhances their nutty flavor. (Skip if using pre-toasted kasha).",
+        "Combine Ingredients: In the saucepan, combine buckwheat groats, water or broth, butter/oil (if using), and salt (if using).",
+        "Bring to a Boil: Bring the mixture to a boil over medium-high heat.",
+        "Simmer: Once boiling, reduce the heat to low, cover the saucepan with a tight-fitting lid, and simmer for 10-15 minutes for toasted groats (kasha) or 15-20 minutes for raw groats, until all the liquid has been absorbed and the groats are tender but still slightly firm.",
+        "Rest: Remove the saucepan from the heat and let it stand, covered, for 5-10 minutes.",
+        "Fluff: After resting, remove the lid and fluff the buckwheat groats gently with a fork.",
+        "Serve: Serve warm as a side dish (traditionally with butter and onions for kasha varnishkes), in salads, or as a base for stews."
+      ],
+      "notes": "Toasted buckwheat groats (kasha) have a stronger flavor and cook slightly faster. Do not overcook, or they can become mushy."
+    },
+    {
+      "name": "Simple Soba (Buckwheat) Noodles with Dipping Sauce",
+      "ingredients": [
+        "8 oz dried soba (buckwheat) noodles",
+        "For the Dipping Sauce (Mentsuyu - simplified):",
+        "1/2 cup soy sauce",
+        "1/2 cup mirin (sweet Japanese cooking wine)",
+        "1/4 cup dashi stock (can use instant dashi powder mixed with water)",
+        "1 tbsp sugar (optional, to taste)",
+        "Optional garnishes: thinly sliced green onions, toasted sesame seeds, shredded nori seaweed, wasabi"
+      ],
+      "instructions": [
+        "Prepare Dipping Sauce: In a small saucepan, combine soy sauce, mirin, dashi stock, and sugar (if using). Bring to a gentle simmer over medium heat, stirring until sugar dissolves. Remove from heat and let cool. This can be made ahead and chilled.",
+        "Cook Soba Noodles: Bring a large pot of unsalted water to a rolling boil.",
+        "Add soba noodles and cook according to package directions, usually 4-7 minutes, or until al dente. Stir occasionally to prevent sticking.",
+        "Drain and Rinse: Drain the cooked noodles immediately into a colander. Rinse thoroughly under cold running water to remove excess starch and stop the cooking process. This is a crucial step for good texture.",
+        "Serve: Divide the cold soba noodles into individual serving bowls or plates. Serve with the chilled dipping sauce on the side in small bowls.",
+        "Add garnishes to the dipping sauce or directly onto the noodles as desired."
+      ],
+      "notes": "Soba noodles can be made from 100% buckwheat flour (juwari soba) or a blend of buckwheat and wheat flour (often hachiwari - 80% buckwheat). Check package if gluten is a concern. Dip noodles into the sauce before eating; do not pour sauce over all the noodles at once."
+    }
+  ],
   "originAndDomesticationHistory": "Buckwheat (Fagopyrum esculentum) was domesticated in Southeast Asia, likely in Yunnan province, China, around 6000 BCE. It spread to Central Asia, Tibet, the Middle East, and Europe by the Middle Ages. It was one of the first crops introduced by Europeans to North America.",
   "climaticRequirements": {
     "temperature": "Prefers cool, moist conditions. Optimal growing temperatures are 18-22°C. Sensitive to high temperatures and frost, especially during flowering.",

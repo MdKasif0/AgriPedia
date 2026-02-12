@@ -51,6 +51,87 @@
   ],
   "carbonFootprintInfo": "Green gram generally has a low carbon footprint due to its nitrogen-fixing ability, short duration, and low input requirements. It's a sustainable protein source.",
   "uses": ["culinary_dal_soups_sprouts_desserts", "cover_crop", "green_manure"],
+  "staticRecipes": [
+    {
+      "name": "Simple Yellow Mung Dal (Split Mung Beans)",
+      "ingredients": [
+        "1 cup yellow split mung beans (moong dal), rinsed",
+        "3 cups water",
+        "1/2 tsp turmeric powder",
+        "1 tsp salt (or to taste)",
+        "For Tempering (Tadka):",
+        "1-2 tbsp ghee or oil",
+        "1 tsp cumin seeds",
+        "1/2 tsp mustard seeds (optional)",
+        "1-2 dried red chilies, broken",
+        "Pinch of asafoetida (hing)",
+        "1/2 tsp ginger, grated (optional)",
+        "Chopped fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Combine rinsed yellow mung dal, water, turmeric powder, and salt in a medium saucepan or pot.",
+        "Bring to a boil. Skim off any foam that rises to the surface.",
+        "Reduce heat to low, cover partially, and simmer for 15-25 minutes, or until the dal is soft and cooked through. Stir occasionally to prevent sticking. Add more water if it becomes too thick.",
+        "While dal is cooking, prepare the tempering. Heat ghee or oil in a small pan over medium heat.",
+        "Add cumin seeds and mustard seeds (if using). Let them splutter.",
+        "Add dried red chilies and asafoetida. Sauté for a few seconds. Add grated ginger if using and sauté for another 30 seconds.",
+        "Pour the hot tempering into the cooked dal. Stir well.",
+        "Simmer for another 2-3 minutes for flavors to meld.",
+        "Garnish with chopped fresh cilantro and serve hot with rice or roti."
+      ],
+      "notes": "Yellow split mung beans cook relatively quickly and become creamy. Adjust consistency as desired."
+    },
+    {
+      "name": "Quick Mung Bean Sprouts Stir-fry",
+      "ingredients": [
+        "2 cups fresh mung bean sprouts",
+        "1 tbsp vegetable oil",
+        "1-2 cloves garlic, minced",
+        "1/2 inch ginger, grated or thinly sliced",
+        "1/4 cup sliced carrots (optional)",
+        "1/4 cup sliced bell peppers (any color, optional)",
+        "1 tbsp soy sauce (or tamari for gluten-free)",
+        "1 tsp sesame oil",
+        "Pinch of sugar (optional)",
+        "Salt and white pepper to taste",
+        "Optional garnish: toasted sesame seeds, chopped green onions"
+      ],
+      "instructions": [
+        "Rinse mung bean sprouts thoroughly. If they have long roots, you can pinch them off if desired.",
+        "Heat vegetable oil in a wok or large skillet over medium-high heat.",
+        "Add garlic and ginger, stir-fry for about 30 seconds until fragrant.",
+        "If using carrots or bell peppers, add them now and stir-fry for 1-2 minutes until slightly tender-crisp.",
+        "Add the mung bean sprouts to the wok. Stir-fry for 1-2 minutes. Sprouts cook very quickly and are best when still slightly crisp.",
+        "Add soy sauce, sesame oil, sugar (if using), salt, and white pepper. Toss everything together to combine well.",
+        "Cook for another 30 seconds to 1 minute.",
+        "Serve immediately, garnished with toasted sesame seeds or green onions if desired."
+      ],
+      "notes": "Do not overcook the sprouts, as they will become limp. This stir-fry is quick and best enjoyed fresh."
+    },
+    {
+      "name": "Sweet Mung Bean Dessert (Kheer/Payasam Style)",
+      "ingredients": [
+        "1/2 cup yellow split mung beans (moong dal), rinsed",
+        "3 cups milk (dairy or non-dairy like coconut milk)",
+        "1/2 cup sugar (or jaggery, adjust to taste)",
+        "1/4 cup water (if needed)",
+        "1/4 tsp cardamom powder",
+        "1 tbsp ghee or unsalted butter (optional)",
+        "1 tbsp chopped nuts (cashews, almonds, pistachios)",
+        "1 tbsp raisins (optional)"
+      ],
+      "instructions": [
+        "Optional: Dry roast the rinsed moong dal in a pan over low heat for 3-5 minutes until lightly golden and aromatic. This enhances flavor. Set aside.",
+        "In a heavy-bottomed pot, combine the roasted or plain moong dal with 1 cup of milk and 1 cup of water. Bring to a boil, then reduce heat and simmer, stirring occasionally, until the dal is very soft and cooked through (about 20-25 minutes). Mash some of the dal against the side of the pot to thicken.",
+        "Add the remaining 2 cups of milk and sugar (or jaggery). Stir well and bring to a gentle simmer.",
+        "Cook on low heat for another 10-15 minutes, stirring frequently, until the dessert thickens to a creamy consistency. Add a little water or milk if it becomes too thick.",
+        "Stir in cardamom powder.",
+        "Optional Tempering: In a small pan, heat ghee or butter. Fry chopped nuts until golden. Add raisins and fry for a few seconds until they plump up. Pour this tempering over the dessert.",
+        "Serve warm or chilled."
+      ],
+      "notes": "This is a simplified version. Coconut milk can be used for a richer, distinct flavor. Jaggery will give a more traditional, earthy sweetness. Consistency can be adjusted to preference."
+    }
+  ],
   "originAndDomesticationHistory": "Green gram (Vigna radiata) was domesticated in India from its wild progenitor Vigna radiata var. sublobata. Archaeological evidence dates its cultivation back to around 4,500 years ago in the Indian subcontinent. It spread from India to other parts of Asia, Africa, and Australia.",
   "climaticRequirements": {
     "temperature": "Warm-season crop, preferring temperatures between 25-35°C. Sensitive to frost. High humidity can promote diseases.",

@@ -43,6 +43,67 @@
   ],
   "carbonFootprintInfo": "Sorghum generally has a lower carbon footprint compared to other grains like maize, particularly due to its lower nitrogen fertilizer requirements and water use efficiency.",
   "uses": ["culinary", "animal_feed", "biofuel", "beverages_alcoholic", "building_material"],
+  "staticRecipes": [
+    {
+      "name": "Simple Cooked Sorghum Grain",
+      "ingredients": [
+        "1 cup whole grain sorghum, rinsed",
+        "3 cups water or broth",
+        "1/2 tsp salt (optional)"
+      ],
+      "instructions": [
+        "Rinse the sorghum grain thoroughly under cold water.",
+        "In a medium saucepan, combine the rinsed sorghum, water or broth, and salt (if using).",
+        "Bring to a boil over medium-high heat.",
+        "Once boiling, reduce the heat to low, cover the saucepan, and simmer for 50-60 minutes, or until the sorghum is tender and has absorbed most of the liquid.",
+        "If there's excess liquid, drain it off. Fluff with a fork.",
+        "Let it sit covered for 5-10 minutes before serving.",
+        "Use as a side dish, in salads, soups, or grain bowls."
+      ],
+      "notes": "Cooking time can vary. Soaking sorghum overnight can reduce cooking time by about 10-15 minutes. Sorghum has a pleasantly chewy texture."
+    },
+    {
+      "name": "Gluten-Free Sorghum Pancakes",
+      "ingredients": [
+        "1 cup sorghum flour",
+        "1 tbsp sugar (or other sweetener)",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 large egg",
+        "1 cup milk (dairy or non-dairy)",
+        "2 tbsp melted butter or oil, plus more for greasing"
+      ],
+      "instructions": [
+        "In a large bowl, whisk together sorghum flour, sugar, baking powder, and salt.",
+        "In a separate bowl, whisk together the egg, milk, and melted butter/oil.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix; a few lumps are okay.",
+        "Let the batter rest for 5-10 minutes.",
+        "Heat a lightly oiled griddle or non-stick frying pan over medium heat.",
+        "Pour or scoop about 1/4 cup of batter per pancake onto the hot griddle.",
+        "Cook for 2-3 minutes per side, or until golden brown and cooked through. Flip when bubbles appear on the surface.",
+        "Serve warm with your favorite pancake toppings like maple syrup, fruit, or yogurt."
+      ],
+      "notes": "Sorghum flour can be denser than wheat flour. You might need to adjust liquid slightly for desired consistency. For fluffier pancakes, ensure baking powder is fresh."
+    },
+    {
+      "name": "Popped Sorghum",
+      "ingredients": [
+        "1/4 cup whole grain sorghum",
+        "1 tsp oil (optional, e.g., coconut oil or vegetable oil)"
+      ],
+      "instructions": [
+        "Heat a dry, heavy-bottomed pot or skillet with a tight-fitting lid over medium-high heat. If using oil, add it to the pot.",
+        "Test the heat by adding 2-3 sorghum grains. If they pop, the pot is ready.",
+        "Add the 1/4 cup of sorghum grains in a single layer.",
+        "Cover the pot immediately. Shake the pot gently and frequently to prevent burning and ensure even heating.",
+        "Listen for the popping. It will sound like tiny popcorn. The popping will slow down after a minute or two.",
+        "Once the popping slows to several seconds between pops, remove the pot from the heat.",
+        "Keep the lid on for another minute to allow any residual popping to finish.",
+        "Carefully remove the lid (beware of hot steam). Season as desired with salt, spices, or nutritional yeast."
+      ],
+      "notes": "Popped sorghum is much smaller than popcorn. Not all grains may pop. Use a pot with a good seal. Do not overcrowd the pot."
+    }
+  ],
   "originAndDomesticationHistory": "Sorghum bicolor was domesticated in northeastern Africa (likely Ethiopia or Sudan) over 5,000 years ago from its wild ancestor Sorghum arundinaceum. It spread throughout Africa and then to India and China along trade routes. It reached the Americas via the slave trade in the 17th century. Different types (grain, sweet, forage, broom) were developed through selection.",
   "climaticRequirements": {
     "temperature": "Warm-season crop, requiring average temperatures of 25-30°C for optimal growth. Very drought-tolerant but sensitive to frost.",
